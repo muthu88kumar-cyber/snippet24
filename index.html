@@ -97,9 +97,25 @@
         .sidebar-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
         .sidebar-title { font-size: 14px; font-weight: 700; text-transform: uppercase; color: #0f172a; border-bottom: 2px solid #0f172a; padding-bottom: 8px; margin-bottom: 15px; }
 
-        .compact-upload-box { border: 1px dashed #0284c7; background: #f0f9ff; padding: 15px; border-radius: 8px; text-align: center; }
-        .compact-upload-link { display: inline-block; background: #0284c7; color: #fff; text-decoration: none; font-size: 11px; font-weight: 600; padding: 6px 14px; border-radius: 4px; margin-top: 10px; transition: background 0.2s; }
-        .compact-upload-link:hover { background: #0369a1; }
+        /* Animated Eye-Catcher Citizen Hub Box */
+        .compact-upload-box { 
+            border: 2px solid #0284c7; 
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
+            padding: 18px; 
+            border-radius: 10px; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2); }
+            50% { transform: scale(1.02); box-shadow: 0 6px 22px rgba(2, 132, 199, 0.4); }
+            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2); }
+        }
+
+        .compact-upload-link { display: inline-block; background: #0284c7; color: #fff; text-decoration: none; font-size: 11px; font-weight: 600; padding: 7px 16px; border-radius: 4px; margin-top: 10px; transition: background 0.2s, transform 0.2s; }
+        .compact-upload-link:hover { background: #0369a1; transform: translateY(-2px); }
 
         .app-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1100; justify-content: center; align-items: center; padding: 20px; }
         .modal-wrapper { position: relative; width: 100%; max-width: 800px; }
@@ -117,7 +133,13 @@
         .submit-news-btn { background: #0f172a; color: #fff; border: none; padding: 10px 15px; font-size: 12px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; }
         .submit-news-btn:hover { background: #1e293b; }
 
-        footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 25px 20px; margin-top: 40px; text-align: center; font-size: 11px; color: #64748b; }
+        /* Full-Width Copyright Compliance Section Above Footer */
+        .copyright-banner-section { max-width: 1200px; margin: 40px auto 20px auto; padding: 0 20px; }
+        .copyright-banner-box { background: #0f172a; color: #fff; border-radius: 8px; padding: 22px 25px; border-left: 4px solid #FF3B30; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .copyright-banner-title { font-size: 13px; font-weight: 700; text-transform: uppercase; color: #fff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .copyright-banner-text { font-size: 11px; color: #94a3b8; line-height: 1.6; }
+
+        footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 25px 20px; text-align: center; font-size: 11px; color: #64748b; }
         footer a { color: #0f172a; text-decoration: none; font-weight: 600; margin: 0 8px; }
     </style>
 </head>
@@ -165,7 +187,7 @@
             <main>
                 <nav id="category-nav" class="category-nav"></nav>
                 
-                <!-- Front Page Hero Hot Topic Area -->
+                <!-- Front Page Hero Trend in Talk Area -->
                 <div id="frontPageHeroContainer"></div>
 
                 <!-- Remaining Feed Section -->
@@ -173,19 +195,23 @@
             </main>
 
             <aside class="sidebar">
+                <!-- Eye-Catcher Animated Citizen Hub Box -->
                 <div class="compact-upload-box">
-                    <div style="font-size: 13px; font-weight: 700; color: #0369a1; margin-bottom: 4px;" id="lblUploadTitle">Citizen Local News Hub</div>
-                    <p style="font-size: 11px; color: #475569; line-height: 1.4;" id="lblUploadSubtitle">Contribute verified stories, local updates, or trending media to our editorial desk.</p>
+                    <div style="font-size: 13px; font-weight: 700; color: #0369a1; margin-bottom: 4px;" id="lblUploadTitle"><i class="fa-solid fa-bullhorn"></i> Citizen Local News Hub</div>
+                    <p style="font-size: 11px; color: #334155; line-height: 1.4;" id="lblUploadSubtitle">Contribute verified stories, local updates, or trending media to our editorial desk.</p>
                     <a href="javascript:void(0)" class="compact-upload-link" onclick="openSubmitModal()" id="lblSubmitLinkBtn">Publish / Trend Submit</a>
                 </div>
-
-                <div class="sidebar-box" style="background: #0f172a; color: #fff;">
-                    <div class="sidebar-title" style="color: #fff; border-color: #FF3B30;" id="sidebarTitle">Copyright Compliance</div>
-                    <p style="font-size: 11px; color: #94a3b8; line-height: 1.6;" id="sidebarText">
-                        snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.
-                    </p>
-                </div>
             </aside>
+        </div>
+    </div>
+
+    <!-- Copyright Compliance Section Placed Above Footer -->
+    <div class="copyright-banner-section">
+        <div class="copyright-banner-box">
+            <div class="copyright-banner-title"><i class="fa-solid fa-scale-balanced" style="color: #FF3B30;"></i> <span id="sidebarTitle">Copyright Compliance</span></div>
+            <p class="copyright-banner-text" id="sidebarText">
+                snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.
+            </p>
         </div>
     </div>
 
@@ -258,7 +284,7 @@
                 liveWire: "Live Wire", loading: "Loading Feed...", sync: "Synchronizing secure items...",
                 sidebarTitle: "Copyright Compliance", sidebarText: "snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.",
                 footerRights: "© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.",
-                all: "All Updates", deepDive: "Deep Dive", hotTopicBadge: "🔥 Hot Topic", aiCurated: "AI-Driven Comprehensive Deep Dive Report",
+                all: "All Updates", deepDive: "Deep Dive", trendInTalk: "📈 Trend in Talk", aiCurated: "AI-Driven Comprehensive Deep Dive Report",
                 sourceLabel: "Source", 
                 uploadTitle: "Citizen Local News Hub", uploadSubtitle: "Contribute verified stories, local updates, or trending media to our editorial desk.",
                 submitLinkBtn: "Publish / Trend Submit", modalSubmitHeader: "Publish / Trend Submit Form",
@@ -274,7 +300,7 @@
                 liveWire: "लाइव वायर", loading: "फ़ीड लोड हो रहा है...", sync: "सुरक्षित आइटम सिंक हो रहे हैं...",
                 sidebarTitle: "कॉपीराइट अनुपालन", sidebarText: "snippet24 मूल प्रकाशक स्रोतों पर पूरा ट्रैफ़िक पुनर्निर्देशित करते हुए एआई-संश्मित विस्तृत विवरण प्रदान करता है।",
                 footerRights: "© 2026 snippet24.in • सभी स्रोत एट्रिब्यूशन और ट्रेडमार्क उनके संबंधित प्रकाशकों के हैं।",
-                all: "सभी अपडेट", deepDive: "विस्तृत विवरण", hotTopicBadge: "🔥 हॉट टॉपिक", aiCurated: "AI-संचालित व्यापक विस्तृत रिपोर्ट",
+                all: "सभी अपडेट", deepDive: "विस्तृत विवरण", trendInTalk: "📈 चर्चा में ट्रेंड", aiCurated: "AI-संचालित व्यापक विस्तृत रिपोर्ट",
                 sourceLabel: "स्रोत",
                 uploadTitle: "नागरिक स्थानीय समाचार केंद्र", uploadSubtitle: "सत्यापित कहानियाँ, स्थानीय अपडेट या ट्रेंडिंग मीडिया हमारे संपादकीय डेस्क पर योगदान करें।",
                 submitLinkBtn: "प्रकाशित करें / ट्रेंड सबमिट करें", modalSubmitHeader: "प्रकाशित / ट्रेंड सबमिट फॉर्म",
@@ -290,7 +316,7 @@
                 liveWire: "நேரலை கம்பி", loading: "ஊட்டம் ஏற்றப்படுகிறது...", sync: "பாதுகாப்பான உருப்படிகள் ஒத்திசைக்கப்படுகின்றன...",
                 sidebarTitle: "பதிப்புரிமை இணக்கம்", sidebarText: "snippet24 AI மூலம் தொகுக்கப்பட்ட ஆழமான பார்வைகளை வழங்குகிறது, அதே நேரத்தில் முழுமையான போக்குவரத்து வாசகர்களை மூல தளத்திற்கு அனுப்புகிறது.",
                 footerRights: "© 2026 snippet24.in • அனைத்து மூல குறிப்புகளும் வர்த்தக முத்திரைகளும் அந்தந்த வெளியீட்டாளர்களுக்கு சொந்தமானவை.",
-                all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", hotTopicBadge: "🔥 முக்கிய தலைப்பு", aiCurated: "AI-இயக்கப்படும் விரிவான ஆழமான அறிக்கை",
+                all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", trendInTalk: "📈 பேச்சில் உள்ள டிரெண்ட்", aiCurated: "AI-இயக்கப்படும் விரிவான ஆழமான அறிக்கை",
                 sourceLabel: "மூலம்",
                 uploadTitle: "குடிமக்கள் உள்ளூர் செய்தி மையம்", uploadSubtitle: "சரிபார்க்கப்பட்ட கதைகள், உள்ளூர் புதுப்பிப்புகள் அல்லது பிரபலமான ஊடகங்களை எங்களிடம் சமர்ப்பிக்கவும்.",
                 submitLinkBtn: "வெளியிடு / டிரெண்ட் சமர்ப்பி", modalSubmitHeader: "வெளியிடு / டிரெண்ட் சமர்ப்பிக்கும் படிவம்",
@@ -306,7 +332,7 @@
                 liveWire: "లైవ్ వైర్", loading: "ఫీడ్ లోడ్ అవుతోంది...", sync: "సురక్షిత అంశాలు సమకాలీకరించబడుతున్నాయి...",
                 sidebarTitle: "కాపీరైట్ అనుకూలత", sidebarText: "snippet24 పూర్తి ట్రాఫిక్‌ను అసలు ప్రచురణకర్త మూలాలకు మళ్లిస్తూ AI-సమగ్ర నివేదికలను అందిస్తుంది.",
                 footerRights: "© 2026 snippet24.in • అన్ని మూల ఆపాదப்புகள் మరియు ట్రేడ్‌మార్క్‌లు వాటి సంబంధిత ప్రచురణకర్తలకి చెందుతాయి.",
-                all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", hotTopicBadge: "🔥 హాట్ టాపిక్", aiCurated: "AI-ఆధారిత సమగ్ర వివరణాత్మక నివేదిక",
+                all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", trendInTalk: "📈 చర్చలో ట్రెండ్", aiCurated: "AI-ఆధారిత సమగ్ర వివరణాత్మక నివేదిక",
                 sourceLabel: "మూలం",
                 uploadTitle: "పౌర స్థానిక వార్తల కేంద్రం", uploadSubtitle: "ధృవీకరించబడిన కథనాలు లేదా ట్రెండింగ్ మీడియాను మా ఎడిటోరియల్ డెస్క్‌కు అందించండి.",
                 submitLinkBtn: "ప్రచురించు / ట్రెండ్ సమర్పించు", modalSubmitHeader: "ప్రచురణ / ట్రెండ్ సమర్పణ ఫారమ్",
@@ -322,7 +348,7 @@
                 liveWire: "ಲೈವ್ ವೈರ್", loading: "ಫೀಡ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ...", sync: "ಸುರಕ್ಷಿತ ಐಟಂಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
                 sidebarTitle: "ಕಾಪಿರೈಟ್ ಅನುಸರಣೆ", sidebarText: "snippet24 ಪೂರ್ಣ ದಟ್ಟಣೆಯನ್ನು ಮೂಲ ಪ್ರಕಾಶಕರಿಗೆ ಮರುನಿರ್ದೇಶಿಸುವಾಗ AI-ಸಂಶ್ಲೇಷಿತ ಆಳವಾದ ವರದಿಗಳನ್ನು ನೀಡುತ್ತದೆ.",
                 footerRights: "© 2026 snippet24.in • ಎಲ್ಲಾ ಮೂಲ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಆಯಾ ಪ್ರಕಾಶಕರಿಗೆ ಸೇರಿವೆ.",
-                all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", hotTopicBadge: "🔥 ಹಾಟ್ ಟಾಪಿಕ್", aiCurated: "AI-চালಿತ ಸಮಗ್ರ ಆಳವಾದ ವರದಿ",
+                all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", trendInTalk: "📈 ಚರ್ಚೆಯಲ್ಲಿರುವ ಟ್ರೆಂಡ್", aiCurated: "AI-চালಿತ ಸಮಗ್ರ ಆಳವಾದ ವರದಿ",
                 sourceLabel: "ಮೂಲ",
                 uploadTitle: "ನಾಗರಿಕ ಸ್ಥಳೀಯ ಸುದ್ದಿ ಕೇಂದ್ರ", uploadSubtitle: "ಪರಿಶೀಲಿಸಿದ ಸುದ್ದಿಗಳು ಅಥವಾ ಟ್ರೆಂಡಿಂಗ್ ಮಾಧ್ಯಮಗಳನ್ನು ನಮ್ಮ ಸಂಪಾದಕೀಯ ಮೇಜಿಗೆ ಸಲ್ಲಿಸಿ.",
                 submitLinkBtn: "ಪ್ರಕಟಿಸಿ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಸಿ", modalSubmitHeader: "ಪ್ರಕಟಣೆ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಕೆ ಫಾರ್ಮ್",
@@ -338,7 +364,7 @@
                 liveWire: "ലൈവ് വയർ", loading: "ഫീഡ് ലോഡ് ചെയ്യുന്നു...", sync: "സുരക്ഷിത വാർത്തകൾ സിങ്ക് ചെയ്യുന്നു...",
                 sidebarTitle: "പകർപ്പവകാശ പാലനം", sidebarText: "snippet24 യഥാർത്ഥ പ്രസാധക ഉറവിടങ്ങളിലേക്ക് മുഴുവൻ ട്രാഫിക്കും തിരിച്ചുവിട്ടുകൊണ്ട് AI വിശകലനങ്ങൾ നൽകുന്നു.",
                 footerRights: "© 2026 snippet24.in • എല്ലാ ഉറവിട ആട്രിബ്യൂട്ടുകളും വ്യാപാരമുദ്രകളും അതത് പ്രസാധകരുടെ ഉടമസ്ഥതയിലുള്ളതാണ്.",
-                all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", hotTopicBadge: "🔥 ഹോട്ട് ടോപിക്", aiCurated: "AI-ഡ്രൈവ്ഡ് സമഗ്ര ഡീപ് ഡൈവ് റിപ്പോർട്ട്",
+                all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", trendInTalk: "📈 ചർച്ചയിലുള്ള ട്രെൻഡ്", aiCurated: "AI-ഡ്രൈവ്ഡ് സമഗ്ര ഡീപ് ഡൈവ് റിപ്പോർട്ട്",
                 sourceLabel: "ഉറവിടം",
                 uploadTitle: "പൗരന്മാരുടെ പ്രാദേശിക വാർത്താ കേന്ദ്രം", uploadSubtitle: "പരിശോധിച്ച വാർത്തകളോ ട്രെൻഡിങ് വിവരങ്ങളോ ഞങ്ങളുടെ ഡെസ്കിലേക്ക് സമർപ്പിക്കാം.",
                 submitLinkBtn: "പ്രസിദ്ധീകരിക്കുക / ട്രെൻഡ് സമർപ്പിക്കുക", modalSubmitHeader: "പ്രസിദ്ധീകരിക്കൽ / ട്രെൻഡ് ഫോം",
@@ -418,7 +444,7 @@
             document.getElementById('sidebarText').innerText = labels.sidebarText;
             document.getElementById('lblFooterRights').innerText = labels.footerRights;
 
-            document.getElementById('lblUploadTitle').innerText = labels.uploadTitle;
+            document.getElementById('lblUploadTitle').innerHTML = `<i class="fa-solid fa-bullhorn"></i> ${labels.uploadTitle}`;
             document.getElementById('lblUploadSubtitle').innerText = labels.uploadSubtitle;
             document.getElementById('lblSubmitLinkBtn').innerText = labels.submitLinkBtn;
             document.getElementById('modalSubmitHeader').innerText = labels.modalSubmitHeader;
@@ -448,7 +474,6 @@
             const track = document.getElementById('ticker-track-container');
             if (!track || !articles.length) return;
             let html = '';
-            // Display only snippet/headline text without category prefixes
             articles.slice(0, 25).forEach(art => {
                 const title = getLocalized(art.title);
                 html += `<div class="ticker-item">${title} •</div>`;
@@ -500,7 +525,6 @@
 
             let subHead1, text1, subHead2, text2, subHead3, text3;
 
-            // Dynamically generate relevant subheadings and content based on article context/category
             if (category === "Tech & AI") {
                 subHead1 = "1. Core Technological Innovations & Architecture";
                 text1 = `${summary} Engineering teams are leveraging advanced frameworks to streamline deployment and reduce latency across decentralized nodes.`;
@@ -619,7 +643,7 @@
                     <div class="hero-main-card">
                         <img src="${heroImage}" alt="${heroTitle}" class="hero-main-thumb">
                         <div class="hero-main-body">
-                            <span class="hero-badge"><i class="fa-solid fa-fire"></i> ${labels.hotTopicBadge} • ${heroCat}</span>
+                            <span class="hero-badge">${labels.trendInTalk} • ${heroCat}</span>
                             <h2>${heroTitle}</h2>
                             <p class="hero-main-snippet">${heroSummary}</p>
                             <div style="margin-top: auto;">
