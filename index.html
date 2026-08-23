@@ -101,17 +101,13 @@
         .sidebar-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
         .sidebar-title { font-size: 14px; font-weight: 700; text-transform: uppercase; color: #0f172a; border-bottom: 2px solid #0f172a; padding-bottom: 8px; margin-bottom: 15px; }
 
-        /* Citizen Upload Corner */
-        .upload-form-group { margin-bottom: 10px; }
-        .upload-form-group label { display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px; }
-        .upload-input, .upload-textarea { width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 11px; font-family: 'Poppins', sans-serif; }
-        .upload-textarea { resize: vertical; height: 65px; }
-        .legal-notice-box { background: #fef2f2; border: 1px solid #fecaca; padding: 8px; border-radius: 4px; font-size: 10px; color: #991b1b; line-height: 1.4; margin-bottom: 10px; }
-        .submit-news-btn { background: #0f172a; color: #fff; border: none; padding: 8px 12px; font-size: 11px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; }
-        .submit-news-btn:hover { background: #1e293b; }
+        /* Compact Citizen Upload Corner Box */
+        .compact-upload-box { border: 1px dashed #0284c7; background: #f0f9ff; padding: 15px; border-radius: 8px; text-align: center; }
+        .compact-upload-link { display: inline-block; background: #0284c7; color: #fff; text-decoration: none; font-size: 11px; font-weight: 600; padding: 6px 14px; border-radius: 4px; margin-top: 10px; transition: background 0.2s; }
+        .compact-upload-link:hover { background: #0369a1; }
 
-        /* Deep Dive Modal with External Close Symbol */
-        #articleModal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1100; justify-content: center; align-items: center; padding: 20px; }
+        /* Universal Modal Framework (Shared for Deep Dive & Submit Form) */
+        .app-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1100; justify-content: center; align-items: center; padding: 20px; }
         .modal-wrapper { position: relative; width: 100%; max-width: 800px; }
         
         /* Close Symbol positioned above the box */
@@ -119,6 +115,15 @@
         .modal-close-symbol:hover { background: #FF3B30; color: #fff; }
 
         .modal-content-box { background: #fff; width: 100%; max-height: 85vh; overflow-y: auto; border-radius: 10px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+
+        /* Form Controls inside Submit Modal */
+        .upload-form-group { margin-bottom: 12px; text-align: left; }
+        .upload-form-group label { display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px; }
+        .upload-input, .upload-textarea { width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 11px; font-family: 'Poppins', sans-serif; }
+        .upload-textarea { resize: vertical; height: 75px; }
+        .legal-notice-box { background: #fef2f2; border: 1px solid #fecaca; padding: 8px; border-radius: 4px; font-size: 10px; color: #991b1b; line-height: 1.4; margin-bottom: 12px; text-align: left; }
+        .submit-news-btn { background: #0f172a; color: #fff; border: none; padding: 10px 15px; font-size: 12px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; }
+        .submit-news-btn:hover { background: #1e293b; }
 
         footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 25px 20px; margin-top: 40px; text-align: center; font-size: 11px; color: #64748b; }
         footer a { color: #0f172a; text-decoration: none; font-weight: 600; margin: 0 8px; }
@@ -176,35 +181,11 @@
             </main>
 
             <aside class="sidebar">
-                <!-- Public Local News Upload Corner -->
-                <div class="sidebar-box" style="border: 2px dashed #0284c7; background: #f0f9ff;">
-                    <div class="sidebar-title" style="color: #0369a1; border-color: #0284c7;" id="lblUploadTitle">Citizen Local News Hub</div>
-                    <form id="citizenUploadForm" onsubmit="handleCitizenUpload(event)">
-                        <div class="upload-form-group">
-                            <label id="lblUploaderName">Your Name / Reporter ID</label>
-                            <input type="text" id="citizenName" class="upload-input" required placeholder="Enter full name">
-                        </div>
-                        <div class="upload-form-group">
-                            <label id="lblNewsTitle">Local Headline</label>
-                            <input type="text" id="citizenHeadline" class="upload-input" required placeholder="Brief title of local event">
-                        </div>
-                        <div class="upload-form-group">
-                            <label id="lblNewsDesc">News Content & Details</label>
-                            <textarea id="citizenContent" class="upload-textarea" required placeholder="Describe what happened clearly..."></textarea>
-                        </div>
-                        <div class="upload-form-group">
-                            <label id="lblUploadMedia">Upload Image / Media</label>
-                            <input type="file" id="citizenMedia" class="upload-input" accept="image/*" required>
-                        </div>
-                        <div class="legal-notice-box">
-                            <i class="fa-solid fa-triangle-exclamation"></i> <span id="lblLegalWarning">Legal Compliance Notice: Per Indian Law (IT Rules & BNS) and International regulations, uploading false, defamatory, unverified, plagiarized, or copyrighted content/images without authorization is strictly prohibited and carries severe legal penalties. You hold full legal liability.</span>
-                        </div>
-                        <div style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 6px;">
-                            <input type="checkbox" id="legalConsent" required style="margin-top: 2px;">
-                            <label for="legalConsent" style="font-size: 10px; color: #475569; line-height: 1.3;" id="lblConsentText">I declare under penalty of law that this submission is authentic, original, does not violate copyright or defamation laws, and complies with all applicable statutes.</label>
-                        </div>
-                        <button type="submit" class="submit-news-btn" id="lblSubmitBtn">Submit Local Report</button>
-                    </form>
+                <!-- Compact Citizen Local News Hub Box with Link / Button -->
+                <div class="compact-upload-box">
+                    <div style="font-size: 13px; font-weight: 700; color: #0369a1; margin-bottom: 4px;" id="lblUploadTitle">Citizen Local News Hub</div>
+                    <p style="font-size: 11px; color: #475569; line-height: 1.4;" id="lblUploadSubtitle">Contribute verified stories, local updates, or trending media to our editorial desk.</p>
+                    <a href="javascript:void(0)" class="compact-upload-link" onclick="openSubmitModal()" id="lblSubmitLinkBtn">Publish / Trend Submit</a>
                 </div>
 
                 <!-- Copyright Compliance Box positioned right above footer -->
@@ -219,10 +200,46 @@
     </div>
 
     <!-- Deep Dive Modal with External Close Symbol Above Box -->
-    <div id="articleModal">
+    <div id="articleModal" class="app-modal">
         <div class="modal-wrapper">
-            <button class="modal-close-symbol" onclick="document.getElementById('articleModal').style.display='none'" title="Close">&times;</button>
+            <button class="modal-close-symbol" onclick="closeModal('articleModal')" title="Close">&times;</button>
             <div class="modal-content-box" id="modalArticleBody"></div>
+        </div>
+    </div>
+
+    <!-- Publish / Trend Submit Modal -->
+    <div id="submitModal" class="app-modal">
+        <div class="modal-wrapper" style="max-width: 600px;">
+            <button class="modal-close-symbol" onclick="closeModal('submitModal')" title="Close">&times;</button>
+            <div class="modal-content-box">
+                <h3 style="font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 15px; border-bottom: 2px solid #0284c7; padding-bottom: 6px;" id="modalSubmitHeader">Publish / Trend Submit Form</h3>
+                <form id="citizenUploadForm" onsubmit="handleCitizenUpload(event)">
+                    <div class="upload-form-group">
+                        <label id="lblUploaderName">Your Name / Reporter ID</label>
+                        <input type="text" id="citizenName" class="upload-input" required placeholder="Enter full name">
+                    </div>
+                    <div class="upload-form-group">
+                        <label id="lblNewsTitle">Headline / Trend Topic</label>
+                        <input type="text" id="citizenHeadline" class="upload-input" required placeholder="Brief title of event or trend">
+                    </div>
+                    <div class="upload-form-group">
+                        <label id="lblNewsDesc">News Content & Details</label>
+                        <textarea id="citizenContent" class="upload-textarea" required placeholder="Describe what happened clearly..."></textarea>
+                    </div>
+                    <div class="upload-form-group">
+                        <label id="lblUploadMedia">Upload Image / Media</label>
+                        <input type="file" id="citizenMedia" class="upload-input" accept="image/*" required>
+                    </div>
+                    <div class="legal-notice-box">
+                        <i class="fa-solid fa-triangle-exclamation"></i> <span id="lblLegalWarning">Legal Compliance Notice: Per Indian Law (IT Rules & BNS) and International regulations, uploading false, defamatory, unverified, plagiarized, or copyrighted content/images without authorization is strictly prohibited and carries severe legal penalties. You hold full legal liability.</span>
+                    </div>
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 6px; text-align: left;">
+                        <input type="checkbox" id="legalConsent" required style="margin-top: 2px;">
+                        <label for="legalConsent" style="font-size: 10px; color: #475569; line-height: 1.3;" id="lblConsentText">I declare under penalty of law that this submission is authentic, original, does not violate copyright or defamation laws, and complies with all applicable statutes.</label>
+                    </div>
+                    <button type="submit" class="submit-news-btn" id="lblSubmitBtn">Publish / Trend Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -253,11 +270,13 @@
                 footerRights: "© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.",
                 all: "All Updates", deepDive: "Deep Dive", hotTopicBadge: "🔥 Hot Topic", aiCurated: "AI-Driven Comprehensive Deep Dive Report",
                 sourceLabel: "Source", 
-                uploadTitle: "Citizen Local News Hub", uploaderName: "Your Name / Reporter ID", newsTitle: "Local Headline",
+                uploadTitle: "Citizen Local News Hub", uploadSubtitle: "Contribute verified stories, local updates, or trending media to our editorial desk.",
+                submitLinkBtn: "Publish / Trend Submit", modalSubmitHeader: "Publish / Trend Submit Form",
+                uploaderName: "Your Name / Reporter ID", newsTitle: "Headline / Trend Topic",
                 newsDesc: "News Content & Details", uploadMedia: "Upload Image / Media",
                 legalWarning: "Legal Compliance Notice: Per Indian Law (IT Rules & BNS) and International regulations, uploading false, defamatory, unverified, plagiarized, or copyrighted content/images without authorization is strictly prohibited and carries severe legal penalties. You hold full legal liability.",
                 consentText: "I declare under penalty of law that this submission is authentic, original, does not violate copyright or defamation laws, and complies with all applicable statutes.",
-                submitBtn: "Submit Local Report", alertSuccess: "Your local report has been securely submitted for moderation.",
+                submitBtn: "Publish / Trend Submit", alertSuccess: "Your item has been securely submitted for publish/trend review.",
                 categories: { "India & Global": "India & Global", "Business & Economy": "Business & Economy", "Tech & AI": "Tech & AI", "Lifestyle & Living": "Lifestyle & Living", "Earth & Environment": "Earth & Environment", "Entertainment": "Entertainment", "Sports & Cultural": "Sports & Cultural" }
             },
             hi: {
@@ -267,11 +286,13 @@
                 footerRights: "© 2026 snippet24.in • सभी स्रोत एट्रिब्यूशन और ट्रेडमार्क उनके संबंधित प्रकाशकों के हैं।",
                 all: "सभी अपडेट", deepDive: "विस्तृत विवरण", hotTopicBadge: "🔥 हॉट टॉपिक", aiCurated: "AI-संचालित व्यापक विस्तृत रिपोर्ट",
                 sourceLabel: "स्रोत",
-                uploadTitle: "नागरिक स्थानीय समाचार केंद्र", uploaderName: "आपका नाम / रिपोर्टर आईडी", newsTitle: "स्थानीय मुख्य समाचार",
+                uploadTitle: "नागरिक स्थानीय समाचार केंद्र", uploadSubtitle: "सत्यापित कहानियाँ, स्थानीय अपडेट या ट्रेंडिंग मीडिया हमारे संपादकीय डेस्क पर योगदान करें।",
+                submitLinkBtn: "प्रकाशित करें / ट्रेंड सबमिट करें", modalSubmitHeader: "प्रकाशित / ट्रेंड सबमिट फॉर्म",
+                uploaderName: "आपका नाम / रिपोर्टर आईडी", newsTitle: "मुख्य समाचार / ट्रेंड विषय",
                 newsDesc: "समाचार सामग्री और विवरण", uploadMedia: "छवि / मीडिया अपलोड करें",
                 legalWarning: "कानूनी अनुपालन सूचना: भारतीय कानून (IT नियम और BNS) और अंतर्राष्ट्रीय नियमों के अनुसार, झूठी, मानहानिकारक, असत्यापित या कॉपीराइट सामग्री अपलोड करना प्रतिबंधित है।",
                 consentText: "मैं कानून के तहत घोषणा करता हूँ कि यह प्रस्तुति प्रामाणिक, मौलिक है और किसी भी कानून का उल्लंघन नहीं करती है।",
-                submitBtn: "स्थानीय रिपोर्ट जमा करें", alertSuccess: "आपकी स्थानीय रिपोर्ट मॉडरेशन के लिए सफलतापूर्वक जमा कर दी गई है।",
+                submitBtn: "प्रकाशित करें / ट्रेंड सबमिट करें", alertSuccess: "आपकी सामग्री समीक्षा के लिए सफलतापूर्वक जमा कर दी गई है।",
                 categories: { "India & Global": "भारत और वैश्विक", "Business & Economy": "व्यापार और अर्थव्यवस्था", "Tech & AI": "तकनीक और AI", "Lifestyle & Living": "जीवन शैली", "Earth & Environment": "पर्यावरण", "Entertainment": "मनोरंजन", "Sports & Cultural": "खेल और संस्कृति" }
             },
             ta: {
@@ -281,11 +302,13 @@
                 footerRights: "© 2026 snippet24.in • அனைத்து மூல குறிப்புகளும் வர்த்தக முத்திரைகளும் அந்தந்த வெளியீட்டாளர்களுக்கு சொந்தமானவை.",
                 all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", hotTopicBadge: "🔥 முக்கிய தலைப்பு", aiCurated: "AI-இயக்கப்படும் விரிவான ஆழமான அறிக்கை",
                 sourceLabel: "மூலம்",
-                uploadTitle: "குடிமக்கள் உள்ளூர் செய்தி மையம்", uploaderName: "உங்கள் பெயர் / நிருபர் ஐடி", newsTitle: "உள்ளூர் தலைப்புச் செய்தி",
+                uploadTitle: "குடிமக்கள் உள்ளூர் செய்தி மையம்", uploadSubtitle: "சரிபார்க்கப்பட்ட கதைகள், உள்ளூர் புதுப்பிப்புகள் அல்லது பிரபலமான ஊடகங்களை எங்களிடம் சமர்ப்பிக்கவும்.",
+                submitLinkBtn: "வெளியிடு / டிரெண்ட் சமர்ப்பி", modalSubmitHeader: "வெளியிடு / டிரெண்ட் சமர்ப்பிக்கும் படிவம்",
+                uploaderName: "உங்கள் பெயர் / நிருபர் ஐடி", newsTitle: "தலைப்புச் செய்தி / டிரெண்ட் தலைப்பு",
                 newsDesc: "செய்தி உள்ளடக்கம் & விவரங்கள்", uploadMedia: "படம் / ஊடகத்தை பதிவேற்றுக",
                 legalWarning: "சட்ட இணக்க அறிவிப்பு: இந்திய சட்டம் மற்றும் சர்வதேச விதிமுறைகளின்படி, பொய்யான, அவதூறான அல்லது பதிப்புரிமை பெற்ற உள்ளடக்கத்தைப் பதிவேற்றுவது தடைசெய்யப்பட்டுள்ளது.",
                 consentText: "இந்த சமர்ப்பிப்பு உண்மையானது, அசலானது மற்றும் சட்டங்களை மீறவில்லை என்று நான் அறிவிக்கிறேன்.",
-                submitBtn: "உள்ளூர் அறிக்கையை சமர்ப்பிக்கவும்", alertSuccess: "உங்கள் உள்ளூர் அறிக்கை மதிப்பாய்வுக்காக வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது.",
+                submitBtn: "வெளியிடு / டிரெண்ட் சமர்ப்பி", alertSuccess: "உங்கள் உள்ளூர் அறிக்கை மதிப்பாய்வுக்காக வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது.",
                 categories: { "India & Global": "இந்தியா & உலகளாவிய", "Business & Economy": "வணிகம் & பொருளாதாரம்", "Tech & AI": "தொழில்நுட்பம் & AI", "Lifestyle & Living": "வாழ்க்கை முறை", "Earth & Environment": "பூமி & சுற்றுச்சூழல்", "Entertainment": "பொழுதுபோக்கு", "Sports & Cultural": "விளையாட்டு & கலாச்சாரம்" }
             },
             te: {
@@ -295,11 +318,13 @@
                 footerRights: "© 2026 snippet24.in • అన్ని మూల ఆపాదப்புகள் మరియు ట్రేడ్‌మార్క్‌లు వాటి సంబంధిత ప్రచురణకర్తలకి చెందుతాయి.",
                 all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", hotTopicBadge: "🔥 హాట్ టాపిక్", aiCurated: "AI-ఆధారిత సమగ్ర వివరణాత్మక నివేదిక",
                 sourceLabel: "మూలం",
-                uploadTitle: "పౌర స్థానిక వార్తల కేంద్రం", uploaderName: "మీ పేరు / రిపోర్టర్ ID", newsTitle: "స్థానిక శీర్షిక",
+                uploadTitle: "పౌర స్థానిక వార్తల కేంద్రం", uploadSubtitle: "ధృవీకరించబడిన కథనాలు లేదా ట్రెండింగ్ మీడియాను మా ఎడిటోరియల్ డెస్క్‌కు అందించండి.",
+                submitLinkBtn: "ప్రచురించు / ట్రెండ్ సమర్పించు", modalSubmitHeader: "ప్రచురణ / ట్రెండ్ సమర్పణ ఫారమ్",
+                uploaderName: "మీ పేరు / రిపోర్టర్ ID", newsTitle: "శీర్షిక / ట్రెండ్ టాపిక్",
                 newsDesc: "వార్తల సారాంశం & వివరాలు", uploadMedia: "చిత్రం / మీడియాను అప్‌లోడ్ చేయండి",
                 legalWarning: "చట్టపరమైన అనుకూలత నోటీసు: భారతీయ చట్టం మరియు అంతర్జాతీయ నిబంధనల ప్రకారం, తప్పుడు లేదా కాపీరైట్ లేని సమాచారాన్ని అప్‌లోడ్ చేయడం నిషేధించబడింది.",
                 consentText: "ఈ సమర్పణ ప్రామాణికమైనది మరియు అన్ని నిబంధనలకు బద్ధమై ఉంటుందని నేను ప్రకటిస్తున్నాను.",
-                submitBtn: "స్థానిక నివేదికను సమర్పించండి", alertSuccess: "మీ స్థానిక నివేదిక మోడరేషన్ కోసం విజయవంతంగా సమర్పించబడింది.",
+                submitBtn: "ప్రచురించు / ట్రెండ్ సమర్పించు", alertSuccess: "మీ అంశం ప్రచురణ సమీక్ష కోసం విజయవంతంగా సమర్పించబడింది.",
                 categories: { "India & Global": "భారతదేశం & ప్రపంచం", "Business & Economy": "వ్యాపారం & ఆర్థిక వ్యవస్థ", "Tech & AI": "టెక్ & AI", "Lifestyle & Living": "జీవనశైలి", "Earth & Environment": "పర్యావరణం", "Entertainment": "వినోదం", "Sports & Cultural": "క్రీడలు & సంస్కృతి" }
             },
             kn: {
@@ -309,11 +334,13 @@
                 footerRights: "© 2026 snippet24.in • ಎಲ್ಲಾ ಮೂಲ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಆಯಾ ಪ್ರಕಾಶಕರಿಗೆ ಸೇರಿವೆ.",
                 all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", hotTopicBadge: "🔥 ಹಾಟ್ ಟಾಪಿಕ್", aiCurated: "AI-চালಿತ ಸಮಗ್ರ ಆಳವಾದ ವರದಿ",
                 sourceLabel: "ಮೂಲ",
-                uploadTitle: "ನಾಗರಿಕ ಸ್ಥಳೀಯ ಸುದ್ದಿ ಕೇಂದ್ರ", uploaderName: "ನಿಮ್ಮ ಹೆಸರು / ವರದಿಗಾರರ ಐಡಿ", newsTitle: "ಸ್ಥಳೀಯ ಮುಖ್ಯಾಂಶ",
+                uploadTitle: "ನಾಗರಿಕ ಸ್ಥಳೀಯ ಸುದ್ದಿ ಕೇಂದ್ರ", uploadSubtitle: "ಪರಿಶೀಲಿಸಿದ ಸುದ್ದಿಗಳು ಅಥವಾ ಟ್ರೆಂಡಿಂಗ್ ಮಾಧ್ಯಮಗಳನ್ನು ನಮ್ಮ ಸಂಪಾದಕೀಯ ಮೇಜಿಗೆ ಸಲ್ಲಿಸಿ.",
+                submitLinkBtn: "ಪ್ರಕಟಿಸಿ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಸಿ", modalSubmitHeader: "ಪ್ರಕಟಣೆ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಕೆ ಫಾರ್ಮ್",
+                uploaderName: "ನಿಮ್ಮ ಹೆಸರು / ವರದಿಗಾರರ ಐಡಿ", newsTitle: "ಮುಖ್ಯಾಂಶ / ಟ್ರೆಂಡ್ ವಿಷಯ",
                 newsDesc: "ಸುದ್ದಿ ವಿಷಯ ಮತ್ತು ವಿವರಗಳು", uploadMedia: "ಚಿತ್ರ / ಮಾಧ್ಯಮ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
                 legalWarning: "ಕಾನೂನು ಅನುಸರಣೆ ಎಚ್ಚರಿಕೆ: ಭಾರತೀಯ ಕಾನೂನು ಮತ್ತು ಅಂತರರಾಷ್ಟ್ರೀಯ ನಿಯಮಗಳ ಪ್ರಕಾರ, ಸುಳ್ಳು ಅಥವಾ ಹಕ್ಕುಸ್ವಾಮ್ಯ ಉಲ್ಲಂಘಿಸುವ ವಿಷಯವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ.",
                 consentText: "ಈ ಸಲ್ಲಿಕೆಯು ಅಧಿಕೃತವಾಗಿದೆ ಮತ್ತು ಯಾವುದೇ ಕಾನೂನುಗಳನ್ನು ಉಲ್ಲಂಘಿಸುವುದಿಲ್ಲ ಎಂದು ನಾನು ಘೋಷಿಸುತ್ತೇನೆ.",
-                submitBtn: "ಸ್ಥಳೀಯ ವರದಿಯನ್ನು ಸಲ್ಲಿಸಿ", alertSuccess: "ನಿಮ್ಮ ಸ್ಥಳೀಯ ವರದಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.",
+                submitBtn: "ಪ್ರಕಟಿಸಿ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಸಿ", alertSuccess: "ನಿಮ್ಮ ವರದಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.",
                 categories: { "India & Global": "ಭಾರತ ಮತ್ತು ಜಾಗತಿಕ", "Business & Economy": "ವ್ಯಹಾರ ಮತ್ತು ಆರ್ಥಿಕತೆ", "Tech & AI": "ತಂತ್ರಜ್ಞಾನ ಮತ್ತು AI", "Lifestyle & Living": "ಜೀವನಶೈಲಿ", "Earth & Environment": "ಪರಿಸರ", "Entertainment": "ಮನರಂಜನೆ", "Sports & Cultural": "ಕ್ರೀಡೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ" }
             },
             ml: {
@@ -323,11 +350,13 @@
                 footerRights: "© 2026 snippet24.in • എല്ലാ ഉറവിട ആട്രിബ്യൂട്ടുകളും വ്യാപാരമുദ്രകളും അതത് പ്രസാധകരുടെ ഉടമസ്ഥതയിലുള്ളതാണ്.",
                 all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", hotTopicBadge: "🔥 ഹോട്ട് ടോപിക്", aiCurated: "AI-ഡ്രൈവ്ഡ് സമഗ്ര ഡീപ് ഡൈവ് റിപ്പോർട്ട്",
                 sourceLabel: "ഉറവിടം",
-                uploadTitle: "പൗരന്മാരുടെ പ്രാദേശിക വാർത്താ കേന്ദ്രം", uploaderName: "നിങ്ങളുടെ പേര് / ഐഡി", newsTitle: "പ്രാദേശിക തലക്കെട്ട്",
+                uploadTitle: "പൗരന്മാരുടെ പ്രാദേശിക വാർത്താ കേന്ദ്രം", uploadSubtitle: "പരിശോധിച്ച വാർത്തകളോ ട്രെൻഡിങ് വിവരങ്ങളോ ഞങ്ങളുടെ ഡെസ്കിലേക്ക് സമർപ്പിക്കാം.",
+                submitLinkBtn: "പ്രസിദ്ധീകരിക്കുക / ട്രെൻഡ് സമർപ്പിക്കുക", modalSubmitHeader: "പ്രസിദ്ധീകരിക്കൽ / ട്രെൻഡ് ഫോം",
+                uploaderName: "നിങ്ങളുടെ പേര് / ഐഡി", newsTitle: "തലക്കെട്ട് / ട്രെൻഡ് വിഷയം",
                 newsDesc: "വാർത്തയുടെ ഉള്ളടക്കം", uploadMedia: "ചിത്രം അപ്‌ലോഡ് ചെയ്യുക",
                 legalWarning: "നിയമപരമായ മുന്നറിയിപ്പ്: ഇന്ത്യൻ നിയമപ്രകാരം തെറ്റായതോ വ്യാജമായതോ പകർപ്പവകാശമുള്ളതോ ആയ ഉള്ളടക്കം അപ്‌ലോഡ് ചെയ്യുന്നത് കർശനമായി നിരോധിച്ചിരിക്കുന്നു.",
                 consentText: "ഈ സമർപ്പണം നിയമവിധേയവും കൃത്യവുമാണെന്ന് ഞാൻ പ്രഖ്യാപിക്കുന്നു.",
-                submitBtn: "പ്രാദേശിക റിപ്പോർട്ട് സമർപ്പിക്കുക", alertSuccess: "നിങ്ങളുടെ പ്രാദേശിക റിപ്പോർട്ട് വിജയകരമായി സമർപ്പിച്ചു.",
+                submitBtn: "പ്രസിദ്ധീകരിക്കുക / ട്രെൻഡ് സമർപ്പിക്കുക", alertSuccess: "നിങ്ങളുടെ റിപ്പോർട്ട് വിജയകരമായി സമർപ്പിച്ചു.",
                 categories: { "India & Global": "ഇന്ത്യയും ലോകവും", "Business & Economy": "ബിസിനസ്സും സമ്പദ്‌വ്യവസ്ഥയും", "Tech & AI": "ടെക് & AI", "Lifestyle & Living": "ജീവിതശൈലി", "Earth & Environment": "പരിസ്ഥിതി", "Entertainment": "വിനോദം", "Sports & Cultural": "കായികം & സംസ്കാരം" }
             }
         };
@@ -347,7 +376,6 @@
 
         function generateCleanArticles(baseList) {
             let expanded = [];
-            // "All Updates" combines items from all categories smoothly
             preferredCategoryOrder.forEach(cat => {
                 let catItems = baseList.filter(item => item && item.category === cat);
                 for (let i = 0; i < 15; i++) {
@@ -401,6 +429,10 @@
             document.getElementById('lblFooterRights').innerText = labels.footerRights;
 
             document.getElementById('lblUploadTitle').innerText = labels.uploadTitle;
+            document.getElementById('lblUploadSubtitle').innerText = labels.uploadSubtitle;
+            document.getElementById('lblSubmitLinkBtn').innerText = labels.submitLinkBtn;
+            document.getElementById('modalSubmitHeader').innerText = labels.modalSubmitHeader;
+
             document.getElementById('lblUploaderName').innerText = labels.uploaderName;
             document.getElementById('lblNewsTitle').innerText = labels.newsTitle;
             document.getElementById('lblNewsDesc').innerText = labels.newsDesc;
@@ -458,7 +490,6 @@
             });
         }
 
-        // Topic-Aware Dynamic Subheadings Generator for Deep Dives (Minimum 3 Subheadings)
         window.openDeepDiveModal = function(index) {
             const article = allArticles[index];
             if (!article) return;
@@ -471,7 +502,6 @@
             const imageUrl = article.image || `https://picsum.photos/seed/deep_${index}/800/500`;
             const labels = uiText[currentLang] || uiText['en'];
 
-            // Tailored subheads and content based on topic category
             let subHead1, text1, subHead2, text2, subHead3, text3;
 
             if (category === "Tech & AI") {
@@ -523,11 +553,20 @@
             document.getElementById('articleModal').style.display = 'flex';
         };
 
+        window.openSubmitModal = function() {
+            document.getElementById('submitModal').style.display = 'flex';
+        };
+
+        window.closeModal = function(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        };
+
         window.handleCitizenUpload = function(event) {
             event.preventDefault();
             const labels = uiText[currentLang] || uiText['en'];
             alert(labels.alertSuccess);
             document.getElementById('citizenUploadForm').reset();
+            closeModal('submitModal');
         };
 
         function renderPageFeed(list, isFiltered = false) {
@@ -537,7 +576,6 @@
 
             const labels = uiText[currentLang] || uiText['en'];
 
-            // "All Updates" or specific category tabs use the consistent layout: Hero section (1 big image + summary & 4 side news) + remaining grid
             if (!list.length) {
                 heroContainer.innerHTML = "";
                 feedContainer.innerHTML = `<p style="color: #64748b;">No items available in this category.</p>`;
@@ -572,7 +610,7 @@
             heroContainer.innerHTML = heroHtml;
 
             const sideListContainer = document.getElementById('heroSideListContainer');
-            const sideArticles = list.slice(1, 5); // 4 side news items
+            const sideArticles = list.slice(1, 5);
             sideArticles.forEach(art => {
                 const origIdx = allArticles.indexOf(art);
                 const title = getLocalized(art.title);
@@ -592,7 +630,6 @@
                 sideListContainer.appendChild(sideCard);
             });
 
-            // Render remaining articles in grid
             feedContainer.innerHTML = "";
             const remainingArticles = list.slice(5);
             remainingArticles.forEach(art => {
