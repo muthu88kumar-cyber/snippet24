@@ -3,779 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snippet24 - Professional News Intelligence & Curation</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <title>AI-Driven Deep Dive Report</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; background-color: #f4f5f7; color: #1e293b; }
-
-        .top-bar { background: #111827; color: #9ca3af; font-size: 11px; padding: 6px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .top-bar-left { display: flex; align-items: center; gap: 15px; }
-        .top-bar a { color: #9ca3af; text-decoration: none; }
-        .top-bar a:hover { color: #ffffff; }
-
-        .lang-selector { background: #1f2937; color: #f8fafc; border: 1px solid #374151; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: 'Poppins', sans-serif; }
-        .lang-selector:focus { outline: none; border-color: #FF3B30; }
-
-        header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .logo-brand { display: flex; align-items: center; gap: 8px; }
-        .logo-snippet { font-size: 26px; font-weight: 700; color: #061A4A; letter-spacing: -1.5px; line-height: 1; }
-        .logo-box24 { background: #FF3B30; color: #fff; width: 44px; height: 26px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; }
-
-        .trending-bar { background: #ffffff; border-bottom: 1px solid #e2e8f0; max-width: 1200px; margin: 0 auto; padding: 8px 20px; display: flex; align-items: center; gap: 15px; font-size: 12px; overflow: hidden; }
-        .trending-badge { background: #FF3B30; color: #fff; padding: 3px 8px; font-weight: 700; font-size: 10px; text-transform: uppercase; border-radius: 3px; flex-shrink: 0; }
-        .ticker-container { overflow: hidden; width: 100%; white-space: nowrap; }
-        .ticker-track { display: inline-block; animation: marquee 120s linear infinite; }
-        .ticker-track:hover { animation-play-state: paused; }
-        .ticker-item { display: inline-block; color: #334155; font-weight: 500; margin-right: 50px; }
-
-        @keyframes marquee {
-            0% { transform: translate3d(0, 0, 0); }
-            100% { transform: translate3d(-50%, 0, 0); }
+        :root {
+            --primary-color: #e63946;
+            --text-main: #1d3557;
+            --text-muted: #457b9d;
+            --bg-card: #ffffff;
+            --bg-panel: #f8f9fa;
         }
 
-        .main-container { max-width: 1200px; margin: 15px auto 30px auto; padding: 0 20px; }
-        .content-layout { display: grid; grid-template-columns: 2.3fr 1fr; gap: 30px; }
-        
-        @media (max-width: 1024px) {
-            .content-layout { grid-template-columns: 1fr; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        .category-nav { display: flex; gap: 20px; margin-bottom: 20px; overflow-x: auto; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; white-space: nowrap; }
-        .tab-btn { background: transparent; border: none; font-size: 13px; font-weight: 600; color: #64748b; cursor: pointer; padding-bottom: 8px; margin-bottom: -12px; border-bottom: 2px solid transparent; transition: all 0.2s; }
-        .tab-btn.active { color: #061A4A; border-bottom-color: #FF3B30; }
-
-        .hero-section { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-bottom: 25px; }
-        
-        @media (max-width: 640px) {
-            .hero-section { grid-template-columns: 1fr; }
-            .top-bar { font-size: 10px; padding: 6px 10px; }
-            header { padding: 10px; }
-        }
-
-        .hero-main-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
-        .hero-main-thumb { width: 100%; height: 250px; object-fit: cover; }
-        .hero-main-body { padding: 18px; display: flex; flex-direction: column; flex: 1; }
-        .hero-badge { background: #FF3B30; color: #fff; font-size: 9px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; align-self: flex-start; margin-bottom: 8px; }
-        .hero-main-body h2 { font-size: 16px; color: #0f172a; margin-bottom: 10px; line-height: 1.4; }
-        .hero-main-snippet { font-size: 12px; color: #475569; line-height: 1.6; margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
-
-        .hero-side-list { display: flex; flex-direction: column; gap: 10px; }
-        .hero-side-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; display: flex; gap: 12px; align-items: center; cursor: pointer; transition: background 0.2s; }
-        .hero-side-card:hover { background: #f8fafc; }
-        .hero-side-thumb { width: 70px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
-        .hero-side-body h4 { font-size: 12px; color: #0f172a; line-height: 1.3; margin-bottom: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-        .feed-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-        .news-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
-        .news-thumb { width: 100%; height: 170px; object-fit: cover; }
-        .news-body { padding: 15px; display: flex; flex-direction: column; flex: 1; }
-        .news-body h3 { font-size: 14px; color: #0f172a; margin-bottom: 8px; line-height: 1.4; }
-        
-        .news-snippet-text { 
-            font-size: 12px; 
-            color: #475569; 
-            line-height: 1.5; 
-            margin-bottom: 12px; 
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
+        .modal-container {
+            background: var(--bg-card);
+            width: 90%;
+            max-width: 750px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             overflow: hidden;
-            flex: 1; 
-        }
-        
-        .card-action-btn { background: #f8fafc; border: 1px solid #cbd5e1; color: #0f172a; font-weight: 600; font-size: 11px; cursor: pointer; text-align: center; padding: 6px 10px; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; width: 100%; transition: background 0.2s; }
-        .card-action-btn:hover { background: #0f172a; color: #fff; border-color: #0f172a; }
-
-        .sidebar { display: flex; flex-direction: column; gap: 25px; }
-        
-        /* Animated Eye-Catcher Citizen Hub Box */
-        .compact-upload-box { 
-            border: 2px solid #0284c7; 
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
-            padding: 18px; 
-            border-radius: 10px; 
-            text-align: center; 
-            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
-            animation: pulseGlow 3s infinite ease-in-out;
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
         }
 
-        @keyframes pulseGlow {
-            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2); }
-            50% { transform: scale(1.02); box-shadow: 0 6px 22px rgba(2, 132, 199, 0.4); }
-            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2); }
+        .modal-header {
+            padding: 24px;
+            border-bottom: 1px solid #eee;
+            position: relative;
         }
 
-        .compact-upload-link { display: inline-block; background: #0284c7; color: #fff; text-decoration: none; font-size: 11px; font-weight: 600; padding: 7px 16px; border-radius: 4px; margin-top: 10px; transition: background 0.2s, transform 0.2s; }
-        .compact-upload-link:hover { background: #0369a1; transform: translateY(-2px); }
+        .modal-header h2 {
+            margin: 0 0 16px 0;
+            font-size: 1.4rem;
+            color: var(--text-main);
+        }
 
-        .app-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1100; justify-content: center; align-items: center; padding: 20px; }
-        .modal-wrapper { position: relative; width: 100%; max-width: 800px; }
-        
-        .modal-close-symbol { position: absolute; top: -45px; right: 0; background: #ffffff; border: none; font-size: 22px; font-weight: 700; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #1e293b; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: background 0.2s, color 0.2s; z-index: 1200; }
-        .modal-close-symbol:hover { background: #FF3B30; color: #fff; }
+        .hero-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
-        .modal-content-box { background: #fff; width: 100%; max-height: 85vh; overflow-y: auto; border-radius: 10px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+            background: var(--bg-panel);
+            flex-grow: 1;
+        }
 
-        .upload-form-group { margin-bottom: 12px; text-align: left; }
-        .upload-form-group label { display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px; }
-        .upload-input, .upload-textarea { width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 11px; font-family: 'Poppins', sans-serif; }
-        .upload-textarea { resize: vertical; height: 75px; }
-        .legal-notice-box { background: #fef2f2; border: 1px solid #fecaca; padding: 8px; border-radius: 4px; font-size: 10px; color: #991b1b; line-height: 1.4; margin-bottom: 12px; text-align: left; }
-        .submit-news-btn { background: #0f172a; color: #fff; border: none; padding: 10px 15px; font-size: 12px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; }
-        .submit-news-btn:hover { background: #1e293b; }
+        .report-tag {
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: block;
+        }
 
-        /* Full-Width Copyright Compliance Section Above Footer */
-        .copyright-banner-section { max-width: 1200px; margin: 40px auto 20px auto; padding: 0 20px; }
-        .copyright-banner-box { background: #0f172a; color: #fff; border-radius: 8px; padding: 22px 25px; border-left: 4px solid #FF3B30; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .copyright-banner-title { font-size: 13px; font-weight: 700; text-transform: uppercase; color: #fff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-        .copyright-banner-text { font-size: 11px; color: #94a3b8; line-height: 1.6; }
+        .report-section {
+            margin-bottom: 20px;
+            background: var(--bg-card);
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
 
-        footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 25px 20px; text-align: center; font-size: 11px; color: #64748b; }
-        footer a { color: #0f172a; text-decoration: none; font-weight: 600; margin: 0 8px; }
+        .report-section h4 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .report-section p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .modal-footer {
+            padding: 16px 24px;
+            background: #ffffff;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .source-btn {
+            background-color: #111827;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .source-btn:hover {
+            background-color: #1f2937;
+        }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <div><i class="fa-solid fa-shield-halved"></i> <span id="lblEngine">Multilingual Intelligence Engine</span></div>
-            <div>
-                <label for="languageSelect" style="font-weight: 600; margin-right: 4px;"><i class="fa-solid fa-globe"></i> <span id="lblLangPrompt">Language:</span></label>
-                <select id="languageSelect" class="lang-selector">
-                    <option value="en">English</option>
-                    <option value="hi">हिंदी (Hindi)</option>
-                    <option value="ta">தமிழ் (Tamil)</option>
-                    <option value="te">తెలుగు (Telugu)</option>
-                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
-                    <option value="ml">മലയാളം (Malayalam)</option>
-                </select>
+    <div class="modal-container">
+        <!-- Header with Dynamic Title & Image -->
+        <div class="modal-header">
+            <h2 id="article-title">Loading Topic Title...</h2>
+            <img id="article-image" class="hero-image" src="" alt="Report Banner">
+        </div>
+
+        <!-- Dynamic Body Content -->
+        <div class="modal-body">
+            <span class="report-tag">⚡ AI-Driven Comprehensive Deep Dive Report</span>
+
+            <div class="report-section">
+                <h4>📈 <span id="sec-1-title">1. Background Context</span></h4>
+                <p id="sec-1-text">Fetching specific background metrics and core developments...</p>
+            </div>
+
+            <div class="report-section">
+                <h4>🛡️ <span id="sec-2-title">2. Strategic Impact</span></h4>
+                <p id="sec-2-text">Fetching distinct ecosystem changes and stakeholder impacts...</p>
+            </div>
+
+            <div class="report-section">
+                <h4>🧭 <span id="sec-3-title">3. Forward Projections</span></h4>
+                <p id="sec-3-text">Fetching targeted timelines and future steps...</p>
             </div>
         </div>
-        <div><a href="#" id="lblDmca">DMCA Policy</a> | <a href="#" id="lblTerms">Terms</a></div>
-    </div>
 
-    <header>
-        <div class="logo-brand">
-            <div class="logo-snippet">snippet</div>
-            <div class="logo-box24">24</div>
-        </div>
-        <div style="font-size: 11px; font-weight: 600; color: #475569;">
-            Deep Dive Intelligence • Multilingual Feed
-        </div>
-    </header>
-
-    <div class="trending-bar">
-        <span class="trending-badge" id="liveWireBadge">Live Wire</span>
-        <div class="ticker-container">
-            <div class="ticker-track" id="ticker-track-container">
-                <div class="ticker-item"><span id="lblLoading">Loading Feed...</span></div>
-            </div>
+        <!-- Footer -->
+        <div class="modal-footer">
+            <a id="source-link" href="#" target="_blank" class="source-btn">Source: The Economic Times ↗</a>
         </div>
     </div>
-
-    <div class="main-container">
-        <div class="content-layout">
-            <main>
-                <nav id="category-nav" class="category-nav"></nav>
-                
-                <!-- Front Page Hero Trend in Talk Area -->
-                <div id="frontPageHeroContainer"></div>
-
-                <!-- Remaining Feed Section -->
-                <div id="news-feed-container" class="feed-grid"></div>
-            </main>
-
-            <aside class="sidebar">
-                <!-- Eye-Catcher Animated Citizen Hub Box -->
-                <div class="compact-upload-box">
-                    <div style="font-size: 13px; font-weight: 700; color: #0369a1; margin-bottom: 4px;" id="lblUploadTitle"><i class="fa-solid fa-bullhorn"></i> Citizen Local News Hub</div>
-                    <p style="font-size: 11px; color: #334155; line-height: 1.4;" id="lblUploadSubtitle">Contribute verified stories, local updates, or trending media to our editorial desk.</p>
-                    <a href="javascript:void(0)" class="compact-upload-link" onclick="openSubmitModal()" id="lblSubmitLinkBtn">Publish / Trend Submit</a>
-                </div>
-            </aside>
-        </div>
-    </div>
-
-    <!-- Copyright Compliance Section Placed Above Footer -->
-    <div class="copyright-banner-section">
-        <div class="copyright-banner-box">
-            <div class="copyright-banner-title"><i class="fa-solid fa-scale-balanced" style="color: #FF3B30;"></i> <span id="sidebarTitle">Copyright Compliance</span></div>
-            <p class="copyright-banner-text" id="sidebarText">
-                snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.
-            </p>
-        </div>
-    </div>
-
-    <!-- Deep Dive Modal -->
-    <div id="articleModal" class="app-modal">
-        <div class="modal-wrapper">
-            <button class="modal-close-symbol" onclick="closeModal('articleModal')" title="Close">&times;</button>
-            <div class="modal-content-box" id="modalArticleBody"></div>
-        </div>
-    </div>
-
-    <!-- Publish / Trend Submit Modal -->
-    <div id="submitModal" class="app-modal">
-        <div class="modal-wrapper" style="max-width: 600px;">
-            <button class="modal-close-symbol" onclick="closeModal('submitModal')" title="Close">&times;</button>
-            <div class="modal-content-box">
-                <h3 style="font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 15px; border-bottom: 2px solid #0284c7; padding-bottom: 6px;" id="modalSubmitHeader">Publish / Trend Submit Form</h3>
-                <form id="citizenUploadForm" onsubmit="handleCitizenUpload(event)">
-                    <div class="upload-form-group">
-                        <label id="lblUploaderName">Your Name / Reporter ID</label>
-                        <input type="text" id="citizenName" class="upload-input" required placeholder="Enter full name">
-                    </div>
-                    <div class="upload-form-group">
-                        <label id="lblNewsTitle">Headline / Trend Topic</label>
-                        <input type="text" id="citizenHeadline" class="upload-input" required placeholder="Brief title of event or trend">
-                    </div>
-                    <div class="upload-form-group">
-                        <label id="lblNewsDesc">News Content & Details</label>
-                        <textarea id="citizenContent" class="upload-textarea" required placeholder="Describe what happened clearly..."></textarea>
-                    </div>
-                    <div class="upload-form-group">
-                        <label id="lblUploadMedia">Upload Image / Media</label>
-                        <input type="file" id="citizenMedia" class="upload-input" accept="image/*" required>
-                    </div>
-                    <div class="legal-notice-box">
-                        <i class="fa-solid fa-triangle-exclamation"></i> <span id="lblLegalWarning">Legal Compliance Notice: Per Indian Law (IT Rules & BNS) and International regulations, uploading false, defamatory, unverified, plagiarized, or copyrighted content/images without authorization is strictly prohibited and carries severe legal penalties. You hold full legal liability.</span>
-                    </div>
-                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 6px; text-align: left;">
-                        <input type="checkbox" id="legalConsent" required style="margin-top: 2px;">
-                        <label for="legalConsent" style="font-size: 10px; color: #475569; line-height: 1.3;" id="lblConsentText">I declare under penalty of law that this submission is authentic, original, does not violate copyright or defamation laws, and complies with all applicable statutes.</label>
-                    </div>
-                    <button type="submit" class="submit-news-btn" id="lblSubmitBtn">Publish / Trend Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p><span id="lblFooterRights">© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.</span></p>
-    </footer>
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        let allArticles = [];
-        let currentLang = 'en';
+        // Example script simulating how you inject dynamic unique data per article
+        function loadArticleData(articleData) {
+            document.getElementById('article-title').innerText = articleData.title;
+            document.getElementById('article-image').src = articleData.imageUrl;
+            
+            document.getElementById('sec-1-title').innerText = articleData.section1.title;
+            document.getElementById('sec-1-text').innerText = articleData.section1.text;
+            
+            document.getElementById('sec-2-title').innerText = articleData.section2.title;
+            document.getElementById('sec-2-text').innerText = articleData.section2.text;
+            
+            document.getElementById('sec-3-title').innerText = articleData.section3.title;
+            document.getElementById('sec-3-text').innerText = articleData.section3.text;
+            
+            document.getElementById('source-link').innerText = `Source: ${articleData.sourceName} ↗`;
+            document.getElementById('source-link').href = articleData.sourceUrl;
+        }
 
-        const preferredCategoryOrder = [
-            "India & Global",
-            "Business & Economy",
-            "Tech & AI",
-            "Lifestyle & Living",
-            "Earth & Environment",
-            "Entertainment",
-            "Sports & Cultural"
-        ];
-
-        const headlinePools = {
-            "India & Global": [
-                { t: "Diplomatic Summit Unveils New Regional Trade Corridors", s: "Leaders finalize multilateral pacts to secure supply chain resilience and accelerate cross-border infrastructure projects." },
-                { t: "Urban Transit Overhauls Transform Metropolitan Commuting", s: "State authorities introduce multi-modal transport hubs to curb urban congestion and reduce transit times significantly." },
-                { t: "National Infrastructure Pipeline Accelerates Key Projects", s: "Key highway and rail corridors witness record execution speeds ahead of upcoming fiscal deadlines." },
-                { t: "Bilateral Energy Dialogue Focuses on Green Transition", s: "Delegates establish joint task forces for grid modernization and renewable energy financing frameworks." },
-                { t: "Digital Public Infrastructure Expands to Rural Districts", s: "Government initiatives scale up digital identity and financial inclusion networks across underserved regions." },
-                { t: "Maritime Security Exercises Enhance Regional Cooperation", s: "Naval forces conduct joint patrols to safeguard critical shipping lanes and trade routes in the Indian Ocean." },
-                { t: "Higher Education Reforms Emphasize Skill-Based Learning", s: "Universities unveil updated curricula aligned with emerging industry demands and technological advancements." },
-                { t: "Public Health Campaigns Target Vector-Borne Diseases", s: "Municipal bodies launch proactive community sanitation drives and vaccination programs nationwide." }
-            ],
-            "Business & Economy": [
-                { t: "Central Bank Maintains Benchmark Rates Amid Inflation Shifts", s: "Monetary policy committee highlights balanced growth trajectories while keeping a close eye on commodity price fluctuations." },
-                { t: "FDI Inflows Reach Record Highs in Manufacturing Sectors", s: "Global multinational corporations expand local production facilities, boosting exports and local employment numbers." },
-                { t: "Retail Sector Witnesses Surge in Omnichannel Shopping", s: "Consumer spending patterns indicate robust demand across both digital marketplaces and brick-and-mortar storefronts." },
-                { t: "Startup Funding Ecosystem Pivots Toward Sustainable Ventures", s: "Venture capitalists direct capital toward clean-tech, agritech, and enterprise automation startups." },
-                { t: "Corporate Earnings Surpass Analysts' Quarterly Projections", s: "Major banking and technology firms report strong balance sheets and positive revenue guidance for the fiscal year." },
-                { t: "Supply Chain Digitization Cuts Logistics Costs for SMEs", s: "Cloud-based ERP and automated freight platforms enable small businesses to streamline inventory and fulfillment." },
-                { t: "Real Estate Markets Adapt to New Commercial Hub Models", s: "Flexible workspace demand surges as hybrid corporate models become the permanent operational standard." },
-                { t: "Agribusiness Exports Expand Into New International Markets", s: "Processed food and organic produce suppliers secure lucrative trade agreements across European and Asian markets." }
-            ],
-            "Tech & AI": [
-                { t: "Enterprise AI Adoption Reaches Inflection Point Globally", s: "Organizations integrate custom LLMs and automated agent workflows to optimize customer support and data analytics." },
-                { t: "Semiconductor Fabrication Plants Break Ground in Key Hubs", s: "Multi-billion dollar investments bolster domestic chip manufacturing capabilities to insulate against global shortages." },
-                { t: "Cybersecurity Frameworks Upgrade to Counter Advanced Threats", s: "Enterprise security teams deploy zero-trust architectures and automated threat-detection tools." },
-                { t: "Quantum Computing Breakthroughs Accelerate Cryptographic Research", s: "Researchers achieve stable qubit entanglement milestones, paving the way for next-gen computational models." },
-                { t: "Open-Source AI Models Empower Small Developer Teams", s: "Lightweight, high-performance models allow independent developers to build localized AI applications efficiently." },
-                { t: "Cloud Infrastructure Providers Expand Edge Computing Nodes", s: "Lower latency and localized data processing capabilities transform real-time IoT and industrial automation." },
-                { t: "Autonomous Vehicle Testing Zones Scale Up in Urban Centers", s: "Regulatory bodies issue updated guidelines for commercial autonomous fleet testing and safety validation." },
-                { t: "Data Privacy Regulations Drive Decentralized Storage Solutions", s: "Enterprises adopt encrypted decentralized networks to ensure absolute compliance with global privacy laws." }
-            ],
-            "Lifestyle & Living": [
-                { t: "Urban Wellness Trends Favor Holistic Health and Mindfullness", s: "City residents embrace preventive healthcare, organic nutrition regimens, and community fitness spaces." },
-                { t: "Sustainable Fashion Brands Gain Traction Among Gen Z", s: "Eco-friendly apparel manufacturers leverage recycled materials and transparent supply chain disclosures." },
-                { t: "Remote Work Revolution Sparks Suburban Migration Waves", s: "Professionals relocate to tier-2 and tier-3 cities, boosting local housing demand and regional economies." },
-                { t: "Culinary Tourism Reshapes Regional Hospitality Sectors", s: "Food enthusiasts travel to explore authentic heritage recipes, farm-to-table dining, and artisan bakeries." },
-                { t: "Minimalist Interior Design Trends Dominate Modern Housing", s: "Homeowners prioritize multifunctional furniture, natural lighting, and energy-efficient smart appliances." },
-                { t: "Mindful Travel and Ecotourism Witness Exponential Growth", s: "Tourists seek low-impact nature retreats, wildlife conservation lodges, and community-led heritage tours." },
-                { t: "Digital Detox Retreats Become the Ultimate Luxury Escape", s: "Professionals check into offline wilderness sanctuaries to disconnect from constant device connectivity." },
-                { t: "Urban Gardening Initiatives Green Up Concrete Landscapes", s: "Neighborhood communities transform rooftop terraces and vacant lots into thriving organic vegetable patches." }
-            ],
-            "Earth & Environment": [
-                { t: "Renewable Energy Capacity Surpasses Fossil Fuels in Q2", s: "Solar and wind installations hit historic milestones as grid operators integrate large-scale battery storage." },
-                { t: "Global Conservation Pacts Target Deforestation Rates", s: "International coalitions pledge funding to protect vital tropical rainforests and restore degraded ecosystems." },
-                { t: "Electric Vehicle Adoption Transforms Urban Air Quality", s: "Rapid transition to electric two-wheelers and public buses measurably reduces particulate matter in cities." },
-                { t: "Water Conservation Tech Gains Urgency in Arid Regions", s: "Municipalities invest in smart metering, wastewater recycling, and rainwater harvesting infrastructure." },
-                { t: "Marine Conservation Reserves Expand Along Coastal Zones", s: "Fisheries and environmental ministries collaborate to establish protected breeding grounds for endangered marine life." },
-                { t: "Circular Economy Models Reduce Industrial Plastic Waste", s: "Manufacturing conglomerates redesign product packaging to achieve zero-waste manufacturing targets." },
-                { t: "Reforestation Drives Mobilize Millions of Volunteers", s: "Community-led planting initiatives successfully restore thousands of hectares of native forest cover." },
-                { t: "Smart Grid Technologies Optimize Regional Power Distribution", s: "AI-driven power grids balance renewable load intermittency and eliminate transmission energy losses." }
-            ],
-            "Entertainment": [
-                { t: "Regional Cinema Breaks Box Office Records Worldwide", s: "Diverse storytelling and high production values captivate international audiences across major streaming platforms." },
-                { t: "Streaming Giants Pivot Toward Interactive Storytelling Formats", s: "Viewers influence plot directions in real time through branching narrative features on digital apps." },
-                { t: "Independent Music Artists Thrive on Decentralized Platforms", s: "Direct-to-fan distribution models empower musicians to retain creative control and monetize streams effectively." },
-                { t: "Virtual Production Stages Revolutionize Film Making", s: "LED volume stages replace traditional green screens, allowing actors and directors to shoot dynamic virtual sets." },
-                { t: "Global Gaming Industry Expands Into Immersive Esports Arenas", s: "Competitive gaming tournaments draw stadium-scale crowds and lucrative multi-year corporate sponsorships." },
-                { t: "Artisan Documentaries Shed Light on Untold Social Stories", s: "Filmmakers utilize crowdfunding and global streaming distribution to bring grassroots narratives to light." },
-                { t: "Festivals Celebrate Cross-Cultural Musical Collaborations", s: "Artists from diverse musical traditions unite on stage to create unique fusion albums and live performances." },
-                { t: "Podcast Networks Transform Audio Journalism and Narration", s: "Investigative investigative series and long-form storytelling capture millions of dedicated daily listeners." }
-            ],
-            "Sports & Cultural": [
-                { t: "National League Finals Draw Record Stadium Attendance", s: "Thrilling athletic performances and packed arenas showcase the surging popularity of domestic sports leagues." },
-                { t: "Grassroots Sports Academies Unearth Rural Talent", s: "State-sponsored training programs identify and nurture young athletes in remote districts for national camps." },
-                { t: "Heritage Festivals Celebrate Indigenous Art and Folklore", s: "Cultural exhibitions highlight traditional handlooms, classical music, and ancestral craftsmanship." },
-                { t: "Advanced Sports Analytics Redefined Team Coaching Tactics", s: "Coaching staffs utilize computer vision and wearable biometric data to prevent injuries and optimize players." },
-                { t: "Marathon Events Promote Fitness and Community Unity", s: "Thousands of runners participate in annual city marathons supporting various social and environmental causes." },
-                { t: "Museums Leverage Augmented Reality for Immersive Exhibits", s: "Historical artifacts and ancient galleries come alive through interactive AR smartphone overlays." },
-                { t: "Traditional Martial Arts Gain Global Recognition", s: "Ancient combat disciplines attract international practitioners and secure spots in international exhibition games." },
-                { t: "Youth Sports Tournaments Foster International Sportsmanship", s: "Junior delegations compete in multi-sport exchanges designed to build cultural understanding and friendship." }
-            ]
-        };
-
-        const uiText = {
-            en: {
-                engine: "Multilingual Intelligence Engine", langPrompt: "Language:", dmca: "DMCA Policy", terms: "Terms",
-                liveWire: "Live Wire", loading: "Loading Feed...", sync: "Synchronizing secure items...",
-                sidebarTitle: "Copyright Compliance", sidebarText: "snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.",
-                footerRights: "© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.",
-                all: "All Updates", deepDive: "Deep Dive", trendInTalk: "📈 Trend in Talk", aiCurated: "AI-Driven Comprehensive Deep Dive Report",
-                sourceLabel: "Source", 
-                uploadTitle: "Citizen Local News Hub", uploadSubtitle: "Contribute verified stories, local updates, or trending media to our editorial desk.",
-                submitLinkBtn: "Publish / Trend Submit", modalSubmitHeader: "Publish / Trend Submit Form",
-                uploaderName: "Your Name / Reporter ID", newsTitle: "Headline / Trend Topic",
-                newsDesc: "News Content & Details", uploadMedia: "Upload Image / Media",
-                legalWarning: "Legal Compliance Notice: Per Indian Law (IT Rules & BNS) and International regulations, uploading false, defamatory, unverified, plagiarized, or copyrighted content/images without authorization is strictly prohibited and carries severe legal penalties. You hold full legal liability.",
-                consentText: "I declare under penalty of law that this submission is authentic, original, does not violate copyright or defamation laws, and complies with all applicable statutes.",
-                submitBtn: "Publish / Trend Submit", alertSuccess: "Your item has been securely submitted for publish/trend review.",
-                categories: { "India & Global": "India & Global", "Business & Economy": "Business & Economy", "Tech & AI": "Tech & AI", "Lifestyle & Living": "Lifestyle & Living", "Earth & Environment": "Earth & Environment", "Entertainment": "Entertainment", "Sports & Cultural": "Sports & Cultural" }
-            },
-            hi: {
-                engine: "बहुभाषी खुफिया इंजन", langPrompt: "भाषा:", dmca: "डीएमसीए नीति", terms: "नियम एवं शर्तें",
-                liveWire: "लाइव वायर", loading: "फ़ीड लोड हो रहा है...", sync: "सुरक्षित आइटम सिंक हो रहे हैं...",
-                sidebarTitle: "कॉपीराइट अनुपालन", sidebarText: "snippet24 मूल प्रकाशक स्रोतों पर पूरा ट्रैफ़िक पुनर्निर्देशित करते हुए एआई-संश्मित विस्तृत विवरण प्रदान करता है।",
-                footerRights: "© 2026 snippet24.in • सभी स्रोत एट्रिब्यूशन और ट्रेडमार्क उनके संबंधित प्रकाशकों के हैं।",
-                all: "सभी अपडेट", deepDive: "विस्तृत विवरण", trendInTalk: "📈 चर्चा में ट्रेंड", aiCurated: "AI-संचालित व्यापक विस्तृत रिपोर्ट",
-                sourceLabel: "स्रोत",
-                uploadTitle: "नागरिक स्थानीय समाचार केंद्र", uploadSubtitle: "सत्यापित कहानियाँ, स्थानीय अपडेट या ट्रेंडिंग मीडिया हमारे संपादकीय डेस्क पर योगदान करें।",
-                submitLinkBtn: "प्रकाशित करें / ट्रेंड सबमिट करें", modalSubmitHeader: "प्रकाशित / ट्रेंड सबमिट फॉर्म",
-                uploaderName: "आपका नाम / रिपोर्टर आईडी", newsTitle: "मुख्य समाचार / ट्रेंड विषय",
-                newsDesc: "समाचार सामग्री और विवरण", uploadMedia: "छवि / मीडिया अपलोड करें",
-                legalWarning: "कानूनी अनुपालन सूचना: भारतीय कानून (IT नियम और BNS) और अंतर्राष्ट्रीय नियमों के अनुसार, झूठी, मानहानिकारक, असत्यापित या कॉपीराइट सामग्री अपलोड करना प्रतिबंधित है।",
-                consentText: "मैं कानून के तहत घोषणा करता हूँ कि यह प्रस्तुति प्रामाणिक, मौलिक है और किसी भी कानून का उल्लंघन नहीं करती है।",
-                submitBtn: "प्रकाशित करें / ट्रेंड सबमिट करें", alertSuccess: "आपकी सामग्री समीक्षा के लिए सफलतापूर्वक जमा कर दी गई है।",
-                categories: { "India & Global": "भारत और वैश्विक", "Business & Economy": "व्यापार और अर्थव्यवस्था", "Tech & AI": "तकनीक और AI", "Lifestyle & Living": "जीवन शैली", "Earth & Environment": "पर्यावरण", "Entertainment": "मनोरंजन", "Sports & Cultural": "खेल और संस्कृति" }
-            },
-            ta: {
-                engine: "பன்மொழி நுண்ணறிவு இயந்திரம்", langPrompt: "மொழி:", dmca: "DMCA கொள்கை", terms: "நிபந்தனைகள்",
-                liveWire: "நேரலை கம்பி", loading: "ஊட்டம் ஏற்றப்படுகிறது...", sync: "பாதுகாப்பான உருப்படிகள் ஒத்திசைக்கப்படுகின்றன...",
-                sidebarTitle: "பதிப்புரிமை இணக்கம்", sidebarText: "snippet24 AI மூலம் தொகுக்கப்பட்ட ஆழமான பார்வைகளை வழங்குகிறது, அதே நேரத்தில் முழுமையான போக்குவரத்து வாசகர்களை மூல தளத்திற்கு அனுப்புகிறது.",
-                footerRights: "© 2026 snippet24.in • அனைத்து மூல குறிப்புகளும் வர்த்தக முத்திரைகளும் அந்தந்த வெளியீட்டாளர்களுக்கு சொந்தமானவை.",
-                all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", trendInTalk: "📈 பேச்சில் உள்ள டிரெண்ட்", aiCurated: "AI-இயக்கப்படும் விரிவான ஆழமான அறிக்கை",
-                sourceLabel: "மூலம்",
-                uploadTitle: "குடிமக்கள் உள்ளூர் செய்தி மையம்", uploadSubtitle: "சரிபார்க்கப்பட்ட கதைகள், உள்ளூர் புதுப்பிப்புகள் அல்லது பிரபலமான ஊடகங்களை எங்களிடம் சமர்ப்பிக்கவும்.",
-                submitLinkBtn: "வெளியிடு / டிரெண்ட் சமர்ப்பி", modalSubmitHeader: "வெளியிடு / டிரெண்ட் சமர்ப்பிக்கும் படிவம்",
-                uploaderName: "உங்கள் பெயர் / நிருபர் ஐடி", newsTitle: "தலைப்புச் செய்தி / டிரெண்ட் தலைப்பு",
-                newsDesc: "செய்தி உள்ளடக்கம் & விவரங்கள்", uploadMedia: "படம் / ஊடகத்தை பதிவேற்றுக",
-                legalWarning: "சட்ட இணக்க அறிவிப்பு: இந்திய சட்டம் மற்றும் சர்வதேச விதிமுறைகளின்படி, பொய்யான, அவதூறான அல்லது பதிப்புரிமை பெற்ற உள்ளடக்கத்தைப் பதிவேற்றுவது தடைசெய்யப்பட்டுள்ளது.",
-                consentText: "இந்த சமர்ப்பிப்பு உண்மையானது, அசலானது மற்றும் சட்டங்களை மீறவில்லை என்று நான் அறிவிக்கிறேன்.",
-                submitBtn: "வெளியிடு / டிரெண்ட் சமர்ப்பி", alertSuccess: "உங்கள் உள்ளூர் அறிக்கை மதிப்பாய்வுக்காக வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது.",
-                categories: { "India & Global": "இந்தியா & உலகளாவிய", "Business & Economy": "வணிகம் & பொருளாதாரம்", "Tech & AI": "தொழில்நுட்பம் & AI", "Lifestyle & Living": "வாழ்க்கை முறை", "Earth & Environment": "பூமி & சுற்றுச்சூழல்", "Entertainment": "பொழுதுபோக்கு", "Sports & Cultural": "விளையாட்டு & கலாச்சாரம்" }
-            },
-            te: {
-                engine: "బహుభాషా ఇంటెలిజెన్స్ ఇంజిన్", langPrompt: "భాష:", dmca: "DMCA విధానం", terms: "నిబంధనలు",
-                liveWire: "లైవ్ వైర్", loading: "ఫీడ్ లోడ్ అవుతోంది...", sync: "సురక్షిత అంశాలు సమకాలీకరించబడుతున్నాయి...",
-                sidebarTitle: "కాపీరైట్ అనుకూలత", sidebarText: "snippet24 పూర్తి ట్రాఫిక్‌ను అసలు ప్రచురణకర్త మూలాలకు మళ్లిస్తూ AI-సమగ్ర నివేదికలను అందిస్తుంది.",
-                footerRights: "© 2026 snippet24.in • అన్ని మూల ఆపాదப்புகள் మరియు ట్రేడ్‌మార్క్‌లు వాటి సంబంధిత ప్రచురణకర్తలకి చెందుతాయి.",
-                all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", trendInTalk: "📈 చర్చలో ట్రెండ్", aiCurated: "AI-ఆధారిత సమగ్ర వివరణాత్మక నివేదిక",
-                sourceLabel: "మూలం",
-                uploadTitle: "పౌర స్థానిక వార్తల కేంద్రం", uploadSubtitle: "ధృవీకరించబడిన కథనాలు లేదా ట్రెండింగ్ మీడియాను మా ఎడిటోరియల్ డెస్క్‌కు అందించండి.",
-                submitLinkBtn: "ప్రచురించు / ట్రెండ్ సమర్పించు", modalSubmitHeader: "ప్రచురణ / ట్రెండ్ సమర్పణ ఫారమ్",
-                uploaderName: "మీ పేరు / రిపోర్టర్ ID", newsTitle: "శీర్షిక / ట్రెండ్ టాపిక్",
-                newsDesc: "వార్తల సారాంశం & వివరాలు", uploadMedia: "చిత్రం / మీడియాను అప్‌లోడ్ చేయండి",
-                legalWarning: "చట్టపరమైన అనుకూలత నోటీసు: భారతీయ చట్టం మరియు అంతర్జాతీయ నిబంధనల ప్రకారం, తప్పుడు లేదా కాపీరైట్ లేని సమాచారాన్ని అప్‌లోడ్ చేయడం నిషేధించబడింది.",
-                consentText: "ఈ సమర్పణ ప్రామాణికమైనది మరియు అన్ని నిబంధనలకు బద్ధమై ఉంటుందని నేను ప్రకటిస్తున్నాను.",
-                submitBtn: "ప్రచురించు / ట్రెండ్ సమర్పించు", alertSuccess: "మీ అంశం ప్రచురణ సమీక్ష కోసం విజయవంతంగా సమర్పించబడింది.",
-                categories: { "India & Global": "భారతదేశం & ప్రపంచం", "Business & Economy": "వ్యాపారం & ఆర్థిక వ్యవస్థ", "Tech & AI": "టెక్ & AI", "Lifestyle & Living": "జీవనశైలి", "Earth & Environment": "పర్యావరణం", "Entertainment": "వినోదం", "Sports & Cultural": "క్రీడలు & సంస్కృతి" }
-            },
-            kn: {
-                engine: "ಬಹುಭಾಷಾ ಗುಪ್ತಚರ ಎಂಜಿನ್", langPrompt: "ಭಾಷೆ:", dmca: "DMCA ನೀತಿ", terms: "ನಿಯಮಗಳು",
-                liveWire: "ಲೈವ್ ವೈರ್", loading: "ಫೀಡ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ...", sync: "ಸುರಕ್ಷಿತ ಐಟಂಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
-                sidebarTitle: "ಕಾಪಿರೈಟ್ ಅನುಸರಣೆ", sidebarText: "snippet24 ಪೂರ್ಣ ದಟ್ಟಣೆಯನ್ನು ಮೂಲ ಪ್ರಕಾಶಕರಿಗೆ ಮರುನಿರ್ದೇಶಿಸುವಾಗ AI-ಸಂಶ್ಲೇಷಿತ ಆಳವಾದ ವರದಿಗಳನ್ನು ನೀಡುತ್ತದೆ.",
-                footerRights: "© 2026 snippet24.in • ಎಲ್ಲಾ ಮೂಲ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಆಯಾ ಪ್ರಕಾಶಕರಿಗೆ ಸೇರಿವೆ.",
-                all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", trendInTalk: "📈 ಚರ್ಚೆಯಲ್ಲಿರುವ ಟ್ರೆಂಡ್", aiCurated: "AI-চালಿತ ಸಮಗ್ರ ಆಳವಾದ ವರದಿ",
-                sourceLabel: "ಮೂಲ",
-                uploadTitle: "ನಾಗರಿಕ ಸ್ಥಳೀಯ ಸುದ್ದಿ ಕೇಂದ್ರ", uploadSubtitle: "ಪರಿಶೀಲಿಸಿದ ಸುದ್ದಿಗಳು ಅಥವಾ ಟ್ರೆಂಡಿಂಗ್ ಮಾಧ್ಯಮಗಳನ್ನು ನಮ್ಮ ಸಂಪಾದಕೀಯ ಮೇಜಿಗೆ ಸಲ್ಲಿಸಿ.",
-                submitLinkBtn: "ಪ್ರಕಟಿಸಿ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಸಿ", modalSubmitHeader: "ಪ್ರಕಟಣೆ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಕೆ ಫಾರ್ಮ್",
-                uploaderName: "ನಿಮ್ಮ ಹೆಸರು / ವರದಿಗಾರರ ಐಡಿ", newsTitle: "ಮುಖ್ಯಾಂಶ / ಟ್ರೆಂಡ್ ವಿಷಯ",
-                newsDesc: "ಸುದ್ದಿ ವಿಷಯ ಮತ್ತು ವಿವರಗಳು", uploadMedia: "ಚಿತ್ರ / ಮಾಧ್ಯಮ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
-                legalWarning: "ಕಾನೂನು ಅನುಸರಣೆ ಎಚ್ಚರಿಕೆ: ಭಾರತೀಯ ಕಾನೂನು ಮತ್ತು ಅಂತರರಾಷ್ಟ್ರೀಯ ನಿಯಮಗಳ ಪ್ರಕಾರ, ಸುಳ್ಳು ಅಥವಾ ಹಕ್ಕುಸ್ವಾಮ್ಯ ಉಲ್ಲಂಘಿಸುವ ವಿಷಯವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ.",
-                consentText: "ಈ ಸಲ್ಲಿಕೆಯು ಅಧಿಕೃತವಾಗಿದೆ ಮತ್ತು ಯಾವುದೇ ಕಾನೂನುಗಳನ್ನು ಉಲ್ಲಂಘಿಸುವುದಿಲ್ಲ ಎಂದು ನಾನು ಘೋಷಿಸುತ್ತೇನೆ.",
-                submitBtn: "ಪ್ರಕಟಿಸಿ / ಟ್ರೆಂಡ್ ಸಲ್ಲಿಸಿ", alertSuccess: "ನಿಮ್ಮ ವರದಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.",
-                categories: { "India & Global": "ಭಾರತ ಮತ್ತು ಜಾಗತಿಕ", "Business & Economy": "ವ್ಯಹಾರ ಮತ್ತು ಆರ್ಥಿಕತೆ", "Tech & AI": "ತಂತ್ರಜ್ಞಾನ ಮತ್ತು AI", "Lifestyle & Living": "ಜೀವನಶೈಲಿ", "Earth & Environment": "ಪರಿಸರ", "Entertainment": "ಮನರಂಜನೆ", "Sports & Cultural": "ಕ್ರೀಡೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ" }
-            },
-            ml: {
-                engine: "മലബാർ ഇന്റലിജൻസ് എൻജിൻ", langPrompt: "ഭാഷ:", dmca: "DMCA നയം", terms: "വ്യവസ്ഥകൾ",
-                liveWire: "ലൈവ് വയർ", loading: "ഫീഡ് ലോഡ് ചെയ്യുന്നു...", sync: "സുരക്ഷിത വാർത്തകൾ സിങ്ക് ചെയ്യുന്നു...",
-                sidebarTitle: "പകർപ്പവകാശ പാലനം", sidebarText: "snippet24 യഥാർത്ഥ പ്രസാധക ഉറവിടങ്ങളിലേക്ക് മുഴുവൻ ട്രാഫിക്കും തിരിച്ചുവിട്ടുകൊണ്ട് AI വിശകലനങ്ങൾ നൽകുന്നു.",
-                footerRights: "© 2026 snippet24.in • എല്ലാ ഉറവിട ആട്രിബ്യൂട്ടുകളും വ്യാപാരമുദ്രകളും അതത് പ്രസാധകരുടെ ഉടമസ്ഥതയിലുള്ളതാണ്.",
-                all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", trendInTalk: "📈 ചർച്ചയിലുള്ള ട്രെൻഡ്", aiCurated: "AI-ഡ്രൈവ്ഡ് സമഗ്ര ഡീപ് ഡൈവ് റിപ്പോർട്ട്",
-                sourceLabel: "ഉറവിടം",
-                uploadTitle: "പൗരന്മാരുടെ പ്രാദേശിക വാർത്താ കേന്ദ്രം", uploadSubtitle: "പരിശോധിച്ച വാർത്തകളോ ട്രെൻഡിങ് വിവരങ്ങളോ ഞങ്ങളുടെ ഡെസ്കിലേക്ക് സമർപ്പിക്കാം.",
-                submitLinkBtn: "പ്രസിദ്ധീകരിക്കുക / ട്രെൻഡ് സമർപ്പിക്കുക", modalSubmitHeader: "പ്രസിദ്ധീകരിക്കൽ / ട്രെൻഡ് ഫോം",
-                uploaderName: "നിങ്ങളുടെ പേര് / ഐഡി", newsTitle: "തലക്കെട്ട് / ട്രെൻഡ് വിഷയം",
-                newsDesc: "വാർത്തയുടെ ഉള്ളടക്കം", uploadMedia: "ചിത്രം അപ്‌ലോഡ് ചെയ്യുക",
-                legalWarning: "നിയമപരമായ മുന്നറിയിപ്പ്: ഇന്ത്യൻ നിയമപ്രകാരം തെറ്റായതോ വ്യാജമായതോ പകർപ്പവകാശമുള്ളതോ ആയ ഉള്ളടക്കം അപ്‌ലോഡ് ചെയ്യുന്നത് കർശനമായി നിരോധിച്ചിരിക്കുന്നു.",
-                consentText: "ഈ സമർപ്പണം നിയമവിധേയവും കൃത്യവുമാണെന്ന് ഞാൻ പ്രഖ്യാപിക്കുന്നു.",
-                submitBtn: "പ്രസിദ്ധീകരിക്കുക / ട്രെൻഡ് സമർപ്പിക്കുക", alertSuccess: "നിങ്ങളുടെ റിപ്പോർട്ട് വിജയകരമായി സമർപ്പിച്ചു.",
-                categories: { "India & Global": "ഇന്ത്യയും ലോകവും", "Business & Economy": "ബിസിനസ്സും സമ്പദ്‌വ്യവസ്ഥയും", "Tech & AI": "ടെക് & AI", "Lifestyle & Living": "ജീവിതശൈലി", "Earth & Environment": "പരിസ്ഥിതി", "Entertainment": "വിനോദം", "Sports & Cultural": "കായികം & സംസ്കാരം" }
-            }
-        };
-
-        fetch('/articles.json')
-            .then(res => res.json())
-            .then(data => {
-                const baseFeed = Array.isArray(data.live_feed) ? data.live_feed : Object.values(data.live_feed || data);
-                allArticles = generateCleanArticles(baseFeed);
-                initApp();
-            })
-            .catch(err => {
-                console.warn("Fallback simulated data:", err);
-                allArticles = generateCleanArticles([]);
-                initApp();
-            });
-
-        function generateCleanArticles(baseList) {
-            let expanded = [];
-            preferredCategoryOrder.forEach(cat => {
-                let catItems = baseList.filter(item => item && item.category === cat);
-                let pool = headlinePools[cat] || headlinePools["India & Global"];
-                
-                for (let i = 0; i < 15; i++) {
-                    if (catItems[i]) {
-                        expanded.push(catItems[i]);
-                    } else {
-                        let poolItem = pool[i % pool.length];
-                        expanded.push({
-                            category: cat,
-                            title: {
-                                en: poolItem.t,
-                                hi: poolItem.t,
-                                ta: poolItem.t,
-                                te: poolItem.t,
-                                kn: poolItem.t,
-                                ml: poolItem.t
-                            },
-                            summary: {
-                                en: poolItem.s,
-                                hi: poolItem.s,
-                                ta: poolItem.s,
-                                te: poolItem.s,
-                                kn: poolItem.s,
-                                ml: poolItem.s
-                            },
-                            source: i % 2 === 0 ? "The Economic Times" : "LiveMint Intelligence",
-                            url: "https://www.livemint.com",
-                            image: `https://picsum.photos/seed/news_${cat}_${i}_${Math.random()}/800/500`
-                        });
-                    }
+        // Test implementation with sample unique payload
+        setTimeout(() => {
+            loadArticleData({
+                title: "Rural Digital Public Infrastructure Expands Rapidly",
+                imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop",
+                sourceName: "The Economic Times",
+                sourceUrl: "https://example.com",
+                section1: {
+                    title: "1. Rural Aadhaar & UPI Saturation",
+                    text: "Gram panchayats across Tier-3 districts report a 40% surge in localized biometric authentications, driven by localized banking correspondents."
+                },
+                section2: {
+                    title: "2. Cooperative Banking & Merchant Adoption",
+                    text: "Local Kirana store owners note an unexpected shift toward QR-based micro-credits, bypassing traditional regional moneylenders entirely."
+                },
+                section3: {
+                    title: "3. Q3 Target Milestones",
+                    text: "State banking federations plan to deploy 5,000 new micro-ATM terminals across hilly terrains before the fiscal close."
                 }
             });
-            return expanded;
-        }
-
-        document.getElementById('languageSelect').addEventListener('change', (e) => {
-            currentLang = e.target.value;
-            initApp();
-        });
-
-        function initApp() {
-            const labels = uiText[currentLang] || uiText['en'];
-            
-            document.getElementById('lblEngine').innerText = labels.engine;
-            document.getElementById('lblLangPrompt').innerText = labels.langPrompt;
-            document.getElementById('lblDmca').innerText = labels.dmca;
-            document.getElementById('lblTerms').innerText = labels.terms;
-            document.getElementById('liveWireBadge').innerText = labels.liveWire;
-            document.getElementById('lblLoading').innerText = labels.loading;
-            document.getElementById('sidebarTitle').innerText = labels.sidebarTitle;
-            document.getElementById('sidebarText').innerText = labels.sidebarText;
-            document.getElementById('lblFooterRights').innerText = labels.footerRights;
-
-            document.getElementById('lblUploadTitle').innerHTML = `<i class="fa-solid fa-bullhorn"></i> ${labels.uploadTitle}`;
-            document.getElementById('lblUploadSubtitle').innerText = labels.uploadSubtitle;
-            document.getElementById('lblSubmitLinkBtn').innerText = labels.submitLinkBtn;
-            document.getElementById('modalSubmitHeader').innerText = labels.modalSubmitHeader;
-
-            document.getElementById('lblUploaderName').innerText = labels.uploaderName;
-            document.getElementById('lblNewsTitle').innerText = labels.newsTitle;
-            document.getElementById('lblNewsDesc').innerText = labels.newsDesc;
-            document.getElementById('lblUploadMedia').innerText = labels.uploadMedia;
-            document.getElementById('lblLegalWarning').innerText = labels.legalWarning;
-            document.getElementById('lblConsentText').innerText = labels.consentText;
-            document.getElementById('lblSubmitBtn').innerText = labels.submitBtn;
-
-            buildRunningTicker(allArticles);
-            buildCategoryTabs(allArticles);
-            renderPageFeed(allArticles, false);
-        }
-
-        function getLocalized(field) {
-            if (!field) return "";
-            if (typeof field === 'object') {
-                return field[currentLang] || field['en'] || Object.values(field)[0] || "";
-            }
-            return field;
-        }
-
-        function buildRunningTicker(articles) {
-            const track = document.getElementById('ticker-track-container');
-            if (!track || !articles.length) return;
-            let html = '';
-            articles.slice(0, 25).forEach(art => {
-                const title = getLocalized(art.title);
-                html += `<div class="ticker-item">${title} •</div>`;
-            });
-            track.innerHTML = html;
-        }
-
-        function buildCategoryTabs(articles) {
-            const nav = document.getElementById('category-nav');
-            if (!nav) return;
-            const labels = uiText[currentLang] || uiText['en'];
-            
-            let html = `<button class="tab-btn active" data-category="All">${labels.all}</button>`;
-            preferredCategoryOrder.forEach(cat => {
-                const localizedCatName = labels.categories[cat] || cat;
-                html += `<button class="tab-btn" data-category="${cat}">${localizedCatName}</button>`;
-            });
-            nav.innerHTML = html;
-            
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                    e.target.classList.add('active');
-                    const cat = e.target.getAttribute('data-category');
-                    
-                    let filtered;
-                    if (cat === 'All' || cat === 'India & Global') {
-                        filtered = allArticles;
-                    } else {
-                        filtered = allArticles.filter(a => a && a.category === cat);
-                    }
-                    
-                    renderPageFeed(filtered, cat !== 'All');
-                });
-            });
-        }
-
-        window.openDeepDiveModal = function(index) {
-            const article = allArticles[index];
-            if (!article) return;
-
-            const title = getLocalized(article.title);
-            const summary = getLocalized(article.summary);
-            const category = article.category || "General";
-            const sourceName = article.source || "Original Publisher";
-            const sourceUrl = article.url || "#";
-            const imageUrl = article.image || `https://picsum.photos/seed/deep_${index}/800/500`;
-            const labels = uiText[currentLang] || uiText['en'];
-
-            let subHead1, text1, subHead2, text2, subHead3, text3;
-
-            if (category === "Tech & AI") {
-                subHead1 = "1. Core Technological Innovations & Architecture";
-                text1 = `${summary} Engineering teams are leveraging advanced frameworks to streamline deployment and reduce latency across decentralized nodes.`;
-                subHead2 = "2. Security Audits, Data Governance & Compliance";
-                text2 = `Robust encryption standards and automated auditing mechanisms ensure full adherence to international data sovereignty and privacy requirements.`;
-                subHead3 = "3. Enterprise Scalability & Developer Ecosystem Outlook";
-                text3 = `Enterprise adoption cycles indicate strong ROI trajectories, paving the way for next-generation automated workflows and developer toolkits.`;
-            } else if (category === "Business & Economy") {
-                subHead1 = "1. Market Dynamics & Valuation Drivers";
-                text1 = `${summary} Market sentiment reflects cautious optimism as fiscal policies adapt to evolving global supply chain dynamics.`;
-                subHead2 = "2. Strategic Operations & Margin Optimization";
-                text2 = `Key industry leaders are prioritizing capital allocation toward automation, margin optimization, and regional market penetration.`;
-                subHead3 = "3. Regulatory Outlook & Financial Risk Mitigation";
-                text3 = `Financial institutions are closely monitoring forthcoming regulatory reforms to safeguard portfolios against volatility and ensure compliance.`;
-            } else if (category === "Lifestyle & Living") {
-                subHead1 = "1. Consumer Trends & Everyday Integration";
-                text1 = `${summary} Modern preferences emphasize lifestyle convenience, wellness integration, and sustainable product choices.`;
-                subHead2 = "2. Community Impact & Behavioral Shifts";
-                text2 = `Urban and regional communities are rapidly adapting to new service models that foster better personal engagement.`;
-                subHead3 = "3. Future Outlook & Lifestyle Recommendations";
-                text3 = `Experts suggest proactive adoption of these emerging habits to achieve long-term wellness and balanced living benefits.`;
-            } else if (category === "Earth & Environment") {
-                subHead1 = "1. Ecological Impact & Climate Observations";
-                text1 = `${summary} Environmental scientists are monitoring ecological shifts and assessing long-term climate implications.`;
-                subHead2 = "2. Sustainability Initiatives & Policy Response";
-                text2 = `Governments and private entities are fast-tracking green technologies and resource-conservation frameworks.`;
-                subHead3 = "3. Long-term Ecological Projections";
-                text3 = `Mitigating rapid environmental changes requires synchronized international cooperation and rigorous carbon footprint tracking.`;
-            } else if (category === "Entertainment") {
-                subHead1 = "1. Production Insights & Audience Reception";
-                text1 = `${summary} Creative direction and casting choices have sparked widespread viewer discussion across social platforms.`;
-                subHead2 = "2. Cultural Resonance & Media Industry Impact";
-                text2 = `Industry analysts note a distinct shift in distribution models and streaming preferences among target demographics.`;
-                subHead3 = "3. Upcoming Releases & Franchise Expansion";
-                text3 = `Studio executives are already planning follow-up projects and multi-platform promotional campaigns to sustain momentum.`;
-            } else if (category === "Sports & Cultural") {
-                subHead1 = "1. Match Performance & Tactical Breakdown";
-                text1 = `${summary} Tactical execution and stellar individual performances dictated the competitive pace of the event.`;
-                subHead2 = "2. Athlete Conditioning & Team Strategy";
-                text2 = `Coaching staffs emphasized rigorous training protocols and mental resilience to maintain high-level competitive advantages.`;
-                subHead3 = "3. Tournament Implications & Future Fixtures";
-                text3 = `Fans and analysts are eagerly anticipating upcoming matchups as the race for championship standings intensifies.`;
-            } else {
-                subHead1 = "1. Background Context & Core Developments";
-                text1 = `${summary} Recent milestones highlight significant stakeholder engagement and shifting consumer preferences across key demographics.`;
-                subHead2 = "2. Strategic Impact & Ecosystem Evolution";
-                text2 = `Sector participants note that streamlined collaboration and proactive infrastructure upgrades are vital for long-term sustainability.`;
-                subHead3 = "3. Forward-Looking Projections & Next Steps";
-                text3 = `Analysts anticipate steady expansion as regional networks mature and multi-channel integration deepens in the coming quarters.`;
-            }
-
-            document.getElementById('modalArticleBody').innerHTML = `
-                <h2 style="font-size: 19px; color: #0f172a; line-height: 1.3; margin-bottom: 12px;">${title}</h2>
-                <img src="${imageUrl}" alt="${title}" style="width: 100%; height: 240px; object-fit: cover; border-radius: 6px; margin-bottom: 15px;">
-                
-                <div style="background: #f8fafc; border-left: 3px solid #0f172a; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
-                    <h4 style="font-size: 13px; font-weight: 700; text-transform: uppercase; color: #FF3B30; margin-bottom: 15px;"><i class="fa-solid fa-microchip"></i> ${labels.aiCurated}</h4>
-                    
-                    <h3 style="font-size: 14px; font-weight: 700; color: #0f172a; margin-top: 10px; margin-bottom: 6px;"><i class="fa-solid fa-chart-line" style="margin-right: 6px; color: #0284c7;"></i> ${subHead1}</h3>
-                    <p style="font-size: 12px; color: #334155; line-height: 1.6; margin-bottom: 14px;">${text1}</p>
-
-                    <h3 style="font-size: 14px; font-weight: 700; color: #0f172a; margin-top: 14px; margin-bottom: 6px;"><i class="fa-solid fa-shield-halved" style="margin-right: 6px; color: #0284c7;"></i> ${subHead2}</h3>
-                    <p style="font-size: 12px; color: #334155; line-height: 1.6; margin-bottom: 14px;">${text2}</p>
-
-                    <h3 style="font-size: 14px; font-weight: 700; color: #0f172a; margin-top: 14px; margin-bottom: 6px;"><i class="fa-solid fa-compass" style="margin-right: 6px; color: #0284c7;"></i> ${subHead3}</h3>
-                    <p style="font-size: 12px; color: #334155; line-height: 1.6;">${text3}</p>
-                </div>
-
-                <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 15px; margin-top: 15px;">
-                    <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: #fff; padding: 10px 20px; font-size: 12px; font-weight: 700; border-radius: 5px; text-decoration: none;">
-                        ${labels.sourceLabel}: ${sourceName} <i class="fa-solid fa-external-link-alt" style="font-size: 10px; margin-left: 4px;"></i>
-                    </a>
-                </div>
-            `;
-            document.getElementById('articleModal').style.display = 'flex';
-        };
-
-        window.openSubmitModal = function() {
-            document.getElementById('submitModal').style.display = 'flex';
-        };
-
-        window.closeModal = function(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        };
-
-        window.handleCitizenUpload = function(event) {
-            event.preventDefault();
-            const labels = uiText[currentLang] || uiText['en'];
-            alert(labels.alertSuccess);
-            document.getElementById('citizenUploadForm').reset();
-            closeModal('submitModal');
-        };
-
-        function renderPageFeed(list, isFiltered = false) {
-            const heroContainer = document.getElementById('frontPageHeroContainer');
-            const feedContainer = document.getElementById('news-feed-container');
-            if (!heroContainer || !feedContainer) return;
-
-            const labels = uiText[currentLang] || uiText['en'];
-
-            if (!list.length) {
-                heroContainer.innerHTML = "";
-                feedContainer.innerHTML = `<p style="color: #64748b;">No items available in this category.</p>`;
-                return;
-            }
-
-            const heroArticle = list[0];
-            const heroOrigIdx = allArticles.indexOf(heroArticle);
-            const heroTitle = getLocalized(heroArticle.title);
-            const heroSummary = getLocalized(heroArticle.summary);
-            const heroImage = heroArticle.image || `https://picsum.photos/seed/hero_main/800/500`;
-            const heroCat = labels.categories[heroArticle.category] || heroArticle.category;
-
-            let heroHtml = `
-                <div class="hero-section">
-                    <div class="hero-main-card">
-                        <img src="${heroImage}" alt="${heroTitle}" class="hero-main-thumb">
-                        <div class="hero-main-body">
-                            <span class="hero-badge">${labels.trendInTalk} • ${heroCat}</span>
-                            <h2>${heroTitle}</h2>
-                            <p class="hero-main-snippet">${heroSummary}</p>
-                            <div style="margin-top: auto;">
-                                <button class="card-action-btn" onclick="openDeepDiveModal(${heroOrigIdx})">
-                                    <i class="fa-solid fa-book-open"></i> ${labels.deepDive}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-side-list" id="heroSideListContainer"></div>
-                </div>
-            `;
-            heroContainer.innerHTML = heroHtml;
-
-            const sideListContainer = document.getElementById('heroSideListContainer');
-            const sideArticles = list.slice(1, 5);
-            sideArticles.forEach(art => {
-                const origIdx = allArticles.indexOf(art);
-                const title = getLocalized(art.title);
-                const imageUrl = art.image || `https://picsum.photos/seed/side_${origIdx}/300/200`;
-
-                const sideCard = document.createElement('div');
-                sideCard.className = 'hero-side-card';
-                sideCard.onclick = () => openDeepDiveModal(origIdx);
-                sideCard.innerHTML = `
-                    <img src="${imageUrl}" alt="${title}" class="hero-side-thumb">
-                    <div class="hero-side-body">
-                        <h4>${title}</h4>
-                    </div>
-                `;
-                sideListContainer.appendChild(sideCard);
-            });
-
-            feedContainer.innerHTML = "";
-            const remainingArticles = list.slice(5);
-            remainingArticles.forEach(art => {
-                const origIdx = allArticles.indexOf(art);
-                const title = getLocalized(art.title);
-                const summary = getLocalized(art.summary);
-                const imageUrl = art.image || `https://picsum.photos/seed/grid_${origIdx}/800/500`;
-
-                const card = document.createElement('div');
-                card.className = 'news-card';
-                card.innerHTML = `
-                    <img src="${imageUrl}" alt="${title}" class="news-thumb" loading="lazy">
-                    <div class="news-body">
-                        <h3>${title}</h3>
-                        <p class="news-snippet-text">${summary}</p>
-                        <div style="margin-top: auto;">
-                            <button class="card-action-btn" onclick="openDeepDiveModal(${origIdx})">
-                                <i class="fa-solid fa-book-open"></i> ${labels.deepDive}
-                            </button>
-                        </div>
-                    </div>
-                `;
-                feedContainer.appendChild(card);
-            });
-        }
-    });
+        }, 500);
     </script>
 </body>
 </html>
