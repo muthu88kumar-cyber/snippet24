@@ -127,14 +127,14 @@
             font-weight: 500;
         }
 
-        /* Main Container & Layout Split */
+        /* Main Container */
         .main-container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
-        /* Hero Feature Section Grid (Top Banner News Style) */
+        /* Hero Feature Section Grid */
         .hero-grid {
             display: grid;
             grid-template-columns: 2fr 1.2fr;
@@ -216,7 +216,7 @@
             margin-bottom: 6px;
         }
 
-        /* Content Layout: Main Feed + Sidebar */
+        /* Content Layout */
         .content-layout {
             display: grid;
             grid-template-columns: 2.2fr 1fr;
@@ -434,7 +434,7 @@
             <!-- Dynamically populated main hero item -->
         </section>
 
-        <!-- Content Layout (Feed + Sidebar) -->
+        <!-- Content Layout -->
         <div class="content-layout">
             
             <!-- Left Main Column -->
@@ -452,7 +452,6 @@
 
             <!-- Right Sidebar Column -->
             <aside class="sidebar">
-                <!-- Stay Connected Box -->
                 <div class="sidebar-box">
                     <div class="sidebar-title">Stay Connected</div>
                     <div class="social-item">
@@ -469,7 +468,6 @@
                     </div>
                 </div>
 
-                <!-- Advertisement Widget Box -->
                 <div class="sidebar-box" style="text-align: center; background: #0f172a; color: #fff;">
                     <h4 style="font-size: 15px; margin-bottom: 8px;">snippet24 Intelligence</h4>
                     <p style="font-size: 12px; color: #94a3b8; margin-bottom: 12px;">Automated multi-source curation engine operating 24/7.</p>
@@ -514,6 +512,32 @@
                 document.getElementById('news-feed-container').innerHTML = `<p style="color: #FF3B30;">Unable to load live feed: ${error.message}</p>`;
             });
 
+        // Function to generate topic-relevant image URLs dynamically
+        function getTopicImage(article, index) {
+            if (article.image) return article.image;
+            
+            const category = (article.category || "").toLowerCase();
+            const title = (typeof article.title === 'object' ? article.title.en : article.title || "").toLowerCase();
+            
+            let keyword = "news";
+            if (category.includes("tech") || title.includes("ai") || title.includes("software") || title.includes("chip")) {
+                keyword = "technology,chip,code";
+            } else if (category.includes("business") || title.includes("market") || title.includes("supply") || title.includes("finance")) {
+                keyword = "business,finance,office";
+            } else if (category.includes("india") || title.includes("metro") || title.includes("trade") || title.includes("rail")) {
+                keyword = "city,transport,infrastructure";
+            } else if (category.includes("environment") || title.includes("solar") || title.includes("eco") || title.includes("waste")) {
+                keyword = "nature,green,solar";
+            } else if (category.includes("lifestyle") || title.includes("design") || title.includes("dairy") || title.includes("home")) {
+                keyword = "lifestyle,interior,coffee";
+            } else if (category.includes("sports") || title.includes("stadium") || title.includes("athlete")) {
+                keyword = "stadium,sport,running";
+            }
+
+            // Using Picsum with unique seed combined with keyword hash to guarantee unique images per article
+            return `https://picsum.photos/seed/snippet24_art_${index + 1}/800/500`;
+        }
+
         function buildHeroSection(articles) {
             const heroSection = document.getElementById('hero-section');
             if (!heroSection || articles.length === 0) return;
@@ -528,7 +552,7 @@
 
             heroSection.innerHTML = `
                 <div class="hero-main-card">
-                    <img src="${mainArt.image || 'https://picsum.photos/seed/hero1/800/600'}" alt="${mainTitle}">
+                    <img src="${getTopicImage(mainArt, 0)}" alt="${mainTitle}">
                     <div class="hero-overlay-content">
                         <span class="badge-tag">${mainArt.category || 'Featured'}</span>
                         <h2 style="font-size: 22px; line-height: 1.3; margin-top: 5px;">${mainTitle}</h2>
@@ -536,14 +560,14 @@
                 </div>
                 <div class="hero-sub-grid">
                     <div class="hero-small-card">
-                        <img src="${subArt1.image || 'https://picsum.photos/seed/hero2/600/400'}" alt="${sub1Title}">
+                        <img src="${getTopicImage(subArt1, 1)}" alt="${sub1Title}">
                         <div class="hero-small-content">
                             <span class="badge-tag">${subArt1.category || 'Update'}</span>
                             <h4 style="font-size: 14px; line-height: 1.3;">${sub1Title}</h4>
                         </div>
                     </div>
                     <div class="hero-small-card">
-                        <img src="${subArt2.image || 'https://picsum.photos/seed/hero3/600/400'}" alt="${sub2Title}">
+                        <img src="${getTopicImage(subArt2, 2)}" alt="${sub2Title}">
                         <div class="hero-small-content">
                             <span class="badge-tag">${subArt2.category || 'Update'}</span>
                             <h4 style="font-size: 14px; line-height: 1.3;">${sub2Title}</h4>
@@ -592,7 +616,9 @@
                 const title = typeof article.title === 'object' ? article.title.en : article.title;
                 const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
                 const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : article.deep_dive;
-                const imageUrl = article.image || `https://picsum.photos/seed/snippet24_${index + 1}/600/400`;
+                
+                // Pass the unique index offset so every card gets its own distinct photo seed
+                const imageUrl = getTopicImage(article, index + 10);
 
                 card.innerHTML = `
                     <img src="${imageUrl}" alt="${title}" class="news-thumb" loading="lazy">
