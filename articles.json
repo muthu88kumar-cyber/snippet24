@@ -1,8 +1,8 @@
 {
-    "last_updated": "2026-08-22 17:17:54",
+    "last_updated": "2026-08-23 07:48:13",
     "live_feed": {
         "1": {
-            "id": "art_1787399274_1",
+            "id": "art_1787471293_1",
             "category": "India & Global",
             "state": "Tamil Nadu",
             "meta": "Tamil Nadu | Chennai Hub | State News",
@@ -32,7 +32,7 @@
             }
         },
         "2": {
-            "id": "art_1787399274_2",
+            "id": "art_1787471293_2",
             "category": "Tech & Business",
             "state": "Telangana",
             "meta": "Telangana | Hyderabad Tech | Business",
@@ -62,7 +62,7 @@
             }
         },
         "3": {
-            "id": "art_1787399274_3",
+            "id": "art_1787471293_3",
             "category": "Earth & Environment",
             "state": "Karnataka",
             "meta": "Karnataka | Bengaluru Metro | Planet Learning",
