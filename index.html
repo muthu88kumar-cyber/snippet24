@@ -126,12 +126,10 @@
         .modal-summary-box h4 { font-size: 13px; color: #1e40af; margin-bottom: 6px; font-weight: 700; }
         .modal-summary-box p { font-size: 12px; color: #1e3a8a; line-height: 1.6; margin: 0; }
 
-        /* Subtitle Sections */
+        /* Subtitle Sections as Passage Blocks */
         .modal-subtitle-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; margin-bottom: 15px; }
-        .modal-subtitle-block h5 { font-size: 13px; color: #0f172a; margin-bottom: 8px; font-weight: 700; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
-        .modal-subtitle-block ul { list-style-type: none; padding-left: 0; margin: 0; }
-        .modal-subtitle-block li { font-size: 11px; color: #334155; padding: 4px 0; border-bottom: 1px dashed #f1f5f9; display: flex; gap: 8px; line-height: 1.5; }
-        .modal-subtitle-block li:last-child { border-bottom: none; }
+        .modal-subtitle-block h5 { font-size: 13px; color: #0f172a; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+        .modal-subtitle-block p { font-size: 12px; color: #334155; line-height: 1.8; text-align: justify; margin: 0; }
 
         .modal-source-btn-wrap { margin-top: 25px; text-align: center; }
         .modal-source-link-btn { background: #111827; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: 600; display: inline-block; }
@@ -180,7 +178,7 @@
             <div class="logo-box24">24</div>
         </div>
         <div style="font-size: 11px; font-weight: 600; color: #475569;">
-            50 Topics Per Category • Structured Summaries & Subtitle Breakdowns (50+ Lines)
+            Deep Dive Intelligence • Trending • Live updates
         </div>
     </header>
 
@@ -188,7 +186,7 @@
         <span class="trending-badge">Live Wire</span>
         <div class="ticker-container">
             <div class="ticker-track" id="ticker-track-container">
-                <div class="ticker-item">Loading 350+ Curated Intelligence Briefs...</div>
+                <div class="ticker-item">Loading Curated Intelligence Briefs...</div>
             </div>
         </div>
     </div>
@@ -303,7 +301,6 @@
 
         const publisherPool = ["The Economic Times", "LiveMint Intelligence", "Business Standard", "Financial Express", "TechCrunch India", "Mint Tech", "Living Media", "Green Post", "Variety India", "Sports Today"];
 
-        // Generate exactly 50 distinct topics per category with summaries and structured 50+ line subtitle sections
         function generateDataset() {
             allArticles = [];
             preferredCategoryOrder.forEach(cat => {
@@ -322,78 +319,23 @@
                         subtitles: [
                             {
                                 subtitle: "1. Macroeconomic Framework & Strategic Alignment",
-                                lines: [
-                                    "Initial macroscopic framework assessment confirms heightened multi-agency collaboration across sectors.",
-                                    "Baseline telemetry metrics from central monitoring units indicate robust structural expansion.",
-                                    "Key legislative adjustments introduced this quarter aim to streamline compliance overhead for enterprise operators.",
-                                    "Supply chain optimization protocols have successfully reduced transit friction across primary metropolitan conduits.",
-                                    "Financial liquidity indices reflect stabilizing investor sentiment despite broader macroeconomic crosscurrents.",
-                                    "Regional operational hubs report enhanced throughput capacity following targeted capital expenditure injections.",
-                                    "Stakeholder councils emphasize the critical necessity of adhering to stringent governance standards.",
-                                    "Technological integration frameworks are currently undergoing pilot trials across high-density operational clusters."
-                                ]
+                                passage: "Initial macroscopic framework assessment confirms heightened multi-agency collaboration across sectors. Baseline telemetry metrics from central monitoring units indicate robust structural expansion, while key legislative adjustments introduced this quarter aim to streamline compliance overhead for enterprise operators. Supply chain optimization protocols have successfully reduced transit friction across primary metropolitan conduits, and financial liquidity indices reflect stabilizing investor sentiment despite broader macroeconomic crosscurrents. Regional operational hubs report enhanced throughput capacity following targeted capital expenditure injections, leading stakeholder councils to emphasize the critical necessity of adhering to stringent governance standards as technological integration frameworks undergo pilot trials across high-density operational clusters."
                             },
                             {
                                 subtitle: "2. Operational Efficiency & Technological Integration",
-                                lines: [
-                                    "Consumer adoption metrics demonstrate an increasing preference for digitized, automated interaction channels.",
-                                    "Risk mitigation protocols have been systematically overhauled to counter emerging cyber and physical vulnerabilities.",
-                                    "Cross-border synergy initiatives continue to unlock lucrative avenues for medium-scale domestic enterprises.",
-                                    "Workforce upskilling programs are scaling rapidly to meet specialized technical demands across the sector.",
-                                    "Independent audit findings corroborate enhanced transparency in transactional ledger management procedures.",
-                                    "Infrastructure modernization schedules remain ahead of target benchmarks established in the preceding fiscal cycle.",
-                                    "Public-private partnerships are proving instrumental in financing high-risk capital projects.",
-                                    "Regulatory bodies have signaled readiness to introduce agile sandbox environments for novel innovations."
-                                ]
+                                passage: "Consumer adoption metrics demonstrate an increasing preference for digitized, automated interaction channels. Risk mitigation protocols have been systematically overhauled to counter emerging cyber and physical vulnerabilities, while cross-border synergy initiatives continue to unlock lucrative avenues for medium-scale domestic enterprises. Workforce upskilling programs are scaling rapidly to meet specialized technical demands across the sector, supported by independent audit findings corroborating enhanced transparency in transactional ledger management procedures. Infrastructure modernization schedules remain ahead of target benchmarks established in the preceding fiscal cycle, with public-private partnerships proving instrumental in financing high-risk capital projects as regulatory bodies signal readiness to introduce agile sandbox environments for novel innovations."
                             },
                             {
                                 subtitle: "3. Market Penetration & Resource Allocation",
-                                lines: [
-                                    "Market penetration vectors in tier-2 and tier-3 geographical zones show unprecedented growth velocity.",
-                                    "Resource allocation strategies now incorporate predictive analytics to preempt seasonal supply bottlenecks.",
-                                    "Sustainability benchmarks are being rigorously integrated into core corporate Key Performance Indicators.",
-                                    "Strategic advisory panels advocate for diversified asset portfolios to buffer against external commodity volatility.",
-                                    "Operational cost efficiencies achieved through automation have directly bolstered net operating margins.",
-                                    "Collaborative research initiatives between academic institutes and industry leaders are yielding patentable breakthroughs.",
-                                    "Logistical dwell times have experienced a notable downward correction due to automated gate processing.",
-                                    "Consumer feedback loops are now directly driving iterative product enhancement cycles within 48 hours."
-                                ]
+                                passage: "Market penetration vectors in tier-2 and tier-3 geographical zones show unprecedented growth velocity. Resource allocation strategies now incorporate predictive analytics to preempt seasonal supply bottlenecks, and sustainability benchmarks are being rigorously integrated into core corporate Key Performance Indicators. Strategic advisory panels advocate for diversified asset portfolios to buffer against external commodity volatility, noting that operational cost efficiencies achieved through automation have directly bolstered net operating margins. Collaborative research initiatives between academic institutes and industry leaders are yielding patentable breakthroughs, while logistical dwell times have experienced a notable downward correction due to automated gate processing and proactive consumer feedback loops."
                             },
                             {
                                 subtitle: "4. Governance, Compliance & Risk Management",
-                                lines: [
-                                    "Foreign institutional investments registered consecutive net positive inflows over the preceding three quarters.",
-                                    "Cybersecurity hardening measures have successfully repelled multiple advanced persistent threat vectors.",
-                                    "Regional trade agreements are being renegotiated to secure favorable tariff structures for local manufacturers.",
-                                    "Municipal planning boards have approved zoning amendments to accommodate specialized warehousing clusters.",
-                                    "Energy consumption metrics show a decisive shift toward decentralized renewable microgrids.",
-                                    "Executive compensation models are increasingly tied to long-term ESG compliance rather than short-term gains.",
-                                    "Data governance frameworks have been strengthened to comply with emerging international privacy mandates.",
-                                    "Supply chain resilience indices place domestic operators in a highly competitive global standing."
-                                ]
+                                passage: "Foreign institutional investments registered consecutive net positive inflows over the preceding three quarters. Cybersecurity hardening measures have successfully repelled multiple advanced persistent threat vectors, and regional trade agreements are being renegotiated to secure favorable tariff structures for local manufacturers. Municipal planning boards have approved zoning amendments to accommodate specialized warehousing clusters, aligning with energy consumption metrics that show a decisive shift toward decentralized renewable microgrids. Executive compensation models are increasingly tied to long-term ESG compliance rather than short-term gains, supported by strengthened data governance frameworks that comply with emerging international privacy mandates."
                             },
                             {
                                 subtitle: "5. Future Projections & Strategic Roadmap",
-                                lines: [
-                                    "Micro-financing instruments are empowering grassroots participants to scale their operational footprints.",
-                                    "Quality assurance protocols now utilize automated computer vision systems to eliminate manual inspection errors.",
-                                    "Inter-ministerial task forces are actively cutting bureaucratic red tape for expedited project clearances.",
-                                    "Customer retention rates have climbed steadily following the deployment of proactive AI support agents.",
-                                    "Capital expenditure in R&D infrastructure reached an all-time high across leading institutional participants.",
-                                    "Contingency reserve funds have been augmented to absorb unforeseen geopolitical or climatic shocks.",
-                                    "Intellectual property filings in core technical domains have expanded significantly year-on-year.",
-                                    "Commercial leasing rates across prime business districts reflect steady demand and balanced vacancy levels.",
-                                    "Multi-modal transport integration is effectively lowering the carbon footprint of heavy freight logistics.",
-                                    "Stakeholder voting transparency has been markedly improved through secure distributed ledger mechanisms.",
-                                    "Specialized insurance products are now available to hedge against emerging technological downtime risks.",
-                                    "Local talent retention initiatives have successfully curtailed attrition rates among senior technical personnel.",
-                                    "Fiscal deficit targets remain well within projected bounds according to mid-term parliamentary reviews.",
-                                    "Consumer protection watchdog agencies have instituted stricter disclosure norms for online service providers.",
-                                    "Export diversification strategies are successfully opening new commercial corridors in emerging economies.",
-                                    "Automated inventory balancing algorithms have minimized holding costs across large-scale distributor networks.",
-                                    "Comprehensive post-audit assessments confirm absolute alignment with national strategic growth blueprints.",
-                                    "Forward projections for the upcoming fiscal cycle anticipate sustained double-digit expansion across all vital indexes."
-                                ]
+                                passage: "Micro-financing instruments are empowering grassroots participants to scale their operational footprints. Quality assurance protocols now utilize automated computer vision systems to eliminate manual inspection errors, while inter-ministerial task forces actively cut bureaucratic red tape for expedited project clearances. Customer retention rates have climbed steadily following the deployment of proactive AI support agents, and capital expenditure in research and development infrastructure reached an all-time high across leading institutional participants. Contingency reserve funds have been augmented to absorb unforeseen geopolitical or climatic shocks, intellectual property filings in core technical domains have expanded significantly year-on-year, and forward projections for the upcoming fiscal cycle anticipate sustained double-digit expansion across all vital indexes."
                             }
                         ]
                     });
@@ -403,9 +345,9 @@
 
         function renderCategories() {
             const nav = document.getElementById('category-nav');
-            nav.innerHTML = `<button class="tab-btn active" onclick="filterCategory('All', this)">All Updates (350)</button>`;
+            nav.innerHTML = `<button class="tab-btn active" onclick="filterCategory('All', this)">All Updates</button>`;
             preferredCategoryOrder.forEach(cat => {
-                nav.innerHTML += `<button class="tab-btn" onclick="filterCategory('${cat}', this)">${cat} (50)</button>`;
+                nav.innerHTML += `<button class="tab-btn" onclick="filterCategory('${cat}', this)">${cat}</button>`;
             });
         }
 
@@ -436,7 +378,7 @@
             const gridArts = filtered.slice(4);
 
             heroContainer.innerHTML = `
-                <div style="font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 10px;"><i class="fa-solid fa-bolt" style="color: #FF3B30;"></i> Trend in Talk (${filtered.length} Curated Topics Available)</div>
+                <div style="font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 10px;"><i class="fa-solid fa-bolt" style="color: #FF3B30;"></i> Trending Feed</div>
                 <div class="hero-section">
                     <div class="hero-main-card" onclick='openArticleModal(${JSON.stringify(heroArt).replace(/'/g, "&#39;")})'>
                         <img class="hero-main-thumb" src="${heroArt.image}" alt="Hero Thumb">
@@ -477,17 +419,12 @@
         window.openArticleModal = function(art) {
             const modalBody = document.getElementById('modalArticleBody');
             
-            // Build subtitles and structured line blocks
             let subtitlesHtml = '';
             art.subtitles.forEach(sub => {
-                let linesHtml = '';
-                sub.lines.forEach(line => {
-                    linesHtml += `<li><span>🔸</span> <span>${line}</span></li>`;
-                });
                 subtitlesHtml += `
                     <div class="modal-subtitle-block">
                         <h5><i class="fa-solid fa-chevron-right" style="font-size: 10px; color: #FF3B30;"></i> ${sub.subtitle}</h5>
-                        <ul>${linesHtml}</ul>
+                        <p>${sub.passage}</p>
                     </div>
                 `;
             });
@@ -505,7 +442,7 @@
                 </div>
 
                 <div style="margin-bottom: 15px; font-size: 13px; font-weight: 700; color: #0f172a;">
-                    🔍 Detailed Subtitle Breakdowns (50+ Lines)
+                    🔍 Detailed Subtitle Breakdowns
                 </div>
 
                 <div style="max-height: 450px; overflow-y: auto; padding-right: 5px;">
