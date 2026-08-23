@@ -2,14 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
     let allArticles = [];
 
     fetch('articles.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
         .then(data => {
-            const feed = data.live_feed;
+            const feed = data.live_feed || data;
             allArticles = Object.keys(feed).map(key => feed[key]);
             renderArticles(allArticles);
             setupCategoryFilters();
         })
-        .catch(error => console.error('Error loading live wire feed:', error));
+        .catch(error => {
+            console.error('Error loading live wire feed:', error);
+            const container = document.getElementById('news-feed-container');
+            if (container) {
+                container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed at the moment. Please check if articles.json is deployed.</p>`;
+            }
+        });
 
     function renderArticles(articlesToRender) {
         const container = document.getElementById('news-feed-container');
@@ -18,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = "";
 
         if (articlesToRender.length === 0) {
-            container.innerHTML = `<p style="text-align: center; color: #777; padding: 40px;">No live updates found in this category right now. Checking feed...</p>`;
+            container.innerHTML = `<p style="text-align: center; color: #777; padding: 40px;">No live updates found in this category right now.</p>`;
             return;
         }
 
@@ -27,14 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
             card.className = 'news-card';
             card.style.cssText = "background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);";
 
+            // Safely handle both string and object (.en) formats
+            const meta = article.meta || article.category || "News Update";
+            const title = typeof article.title === 'object' ? article.title.en : article.title;
+            const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
+            const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : (article.deep_dive || "");
+
             card.innerHTML = `
-                <span class="category" style="font-size: 12px; font-weight: bold; color: #c0392b; text-transform: uppercase; letter-spacing: 0.5px;">${article.meta}</span>
-                <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${article.title.en}</h3>
-                <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${article.summary.en}</p>
+                <span class="category" style="font-size: 12px; font-weight: bold; color: #c0392b; text-transform: uppercase; letter-spacing: 0.5px;">${meta}</span>
+                <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${title || "Untitled Update"}</h3>
+                <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${summary || ""}</p>
+                ${deepDive ? `
                 <details style="margin-top: 10px; color: #333; font-size: 14px;">
                     <summary style="cursor: pointer; color: #0066cc; font-weight: 500;">Deep Dive →</summary>
-                    <p style="margin-top: 10px; line-height: 1.6; white-space: pre-line; color: #444;">${article.deep_dive.en}</p>
-                </details>
+                    <p style="margin-top: 10px; line-height: 1.6; white-space: pre-line; color: #444;">${deepDive}</p>
+                </details>` : ''}
             `;
 
             container.appendChild(card);
