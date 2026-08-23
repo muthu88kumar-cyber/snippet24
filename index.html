@@ -145,7 +145,7 @@
         </div>
     </footer>
 
-    <!-- Frontend Live Wire Script -->
+    <!-- Frontend Script to Fetch and Render articles.json -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         let allArticles = [];
@@ -165,7 +165,7 @@
                 console.error('Error loading live wire feed:', error);
                 const container = document.getElementById('news-feed-container');
                 if (container) {
-                    container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed at the moment. Please try again shortly.</p>`;
+                    container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed at the moment. Please check if articles.json is deployed.</p>`;
                 }
             });
 
@@ -183,6 +183,7 @@
             articlesToRender.forEach(article => {
                 const card = document.createElement('div');
                 card.className = 'news-card';
+                card.style.cssText = "background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);";
 
                 const meta = article.meta || article.category || "News Update";
                 const title = typeof article.title === 'object' ? article.title.en : article.title;
@@ -191,8 +192,8 @@
 
                 card.innerHTML = `
                     <span class="category-tag">${meta}</span>
-                    <h3>${title}</h3>
-                    <p>${summary}</p>
+                    <h3>${title || "Untitled Update"}</h3>
+                    <p>${summary || ""}</p>
                     ${deepDive ? `
                     <details>
                         <summary>Deep Dive →</summary>
