@@ -33,7 +33,6 @@
         .ticker-track { display: inline-block; animation: marquee 120s linear infinite; }
         .ticker-track:hover { animation-play-state: paused; }
         .ticker-item { display: inline-block; color: #334155; font-weight: 500; margin-right: 50px; }
-        .ticker-item span { color: #FF3B30; font-weight: 600; margin-right: 6px; }
 
         @keyframes marquee {
             0% { transform: translate3d(0, 0, 0); }
@@ -449,11 +448,10 @@
             const track = document.getElementById('ticker-track-container');
             if (!track || !articles.length) return;
             let html = '';
-            const labels = uiText[currentLang] || uiText['en'];
+            // Display only snippet/headline text without category prefixes
             articles.slice(0, 25).forEach(art => {
                 const title = getLocalized(art.title);
-                const catName = labels.categories[art.category] || art.category || 'Wire';
-                html += `<div class="ticker-item"><span>[${catName}]</span> ${title} •</div>`;
+                html += `<div class="ticker-item">${title} •</div>`;
             });
             track.innerHTML = html;
         }
@@ -476,7 +474,6 @@
                     e.target.classList.add('active');
                     const cat = e.target.getAttribute('data-category');
                     
-                    // Map both "All" and "India & Global" to the full article feed
                     let filtered;
                     if (cat === 'All' || cat === 'India & Global') {
                         filtered = allArticles;
@@ -503,20 +500,49 @@
 
             let subHead1, text1, subHead2, text2, subHead3, text3;
 
+            // Dynamically generate relevant subheadings and content based on article context/category
             if (category === "Tech & AI") {
-                subHead1 = "1. Technical Architecture & Algorithmic Scalability";
+                subHead1 = "1. Core Technological Innovations & Architecture";
                 text1 = `${summary} Engineering teams are leveraging advanced frameworks to streamline deployment and reduce latency across decentralized nodes.`;
-                subHead2 = "2. Data Governance, Security & Compliance Protocols";
+                subHead2 = "2. Security Audits, Data Governance & Compliance";
                 text2 = `Robust encryption standards and automated auditing mechanisms ensure full adherence to international data sovereignty and privacy requirements.`;
-                subHead3 = "3. Commercial Integration & Future Roadmap";
+                subHead3 = "3. Enterprise Scalability & Developer Ecosystem Outlook";
                 text3 = `Enterprise adoption cycles indicate strong ROI trajectories, paving the way for next-generation automated workflows and developer toolkits.`;
             } else if (category === "Business & Economy") {
-                subHead1 = "1. Macroeconomic Drivers & Market Valuation";
+                subHead1 = "1. Market Dynamics & Valuation Drivers";
                 text1 = `${summary} Market sentiment reflects cautious optimism as fiscal policies adapt to evolving global supply chain dynamics.`;
-                subHead2 = "2. Corporate Strategy & Operational Efficiency";
+                subHead2 = "2. Strategic Operations & Margin Optimization";
                 text2 = `Key industry leaders are prioritizing capital allocation toward automation, margin optimization, and regional market penetration.`;
-                subHead3 = "3. Regulatory Outlook & Risk Mitigation";
+                subHead3 = "3. Regulatory Outlook & Financial Risk Mitigation";
                 text3 = `Financial institutions are closely monitoring forthcoming regulatory reforms to safeguard portfolios against volatility and ensure compliance.`;
+            } else if (category === "Lifestyle & Living") {
+                subHead1 = "1. Consumer Trends & Everyday Integration";
+                text1 = `${summary} Modern preferences emphasize lifestyle convenience, wellness integration, and sustainable product choices.`;
+                subHead2 = "2. Community Impact & Behavioral Shifts";
+                text2 = `Urban and regional communities are rapidly adapting to new service models that foster better personal engagement.`;
+                subHead3 = "3. Future Outlook & Lifestyle Recommendations";
+                text3 = `Experts suggest proactive adoption of these emerging habits to achieve long-term wellness and balanced living benefits.`;
+            } else if (category === "Earth & Environment") {
+                subHead1 = "1. Ecological Impact & Climate Observations";
+                text1 = `${summary} Environmental scientists are monitoring ecological shifts and assessing long-term climate implications.`;
+                subHead2 = "2. Sustainability Initiatives & Policy Response";
+                text2 = `Governments and private entities are fast-tracking green technologies and resource-conservation frameworks.`;
+                subHead3 = "3. Long-term Ecological Projections";
+                text3 = `Mitigating rapid environmental changes requires synchronized international cooperation and rigorous carbon footprint tracking.`;
+            } else if (category === "Entertainment") {
+                subHead1 = "1. Production Insights & Audience Reception";
+                text1 = `${summary} Creative direction and casting choices have sparked widespread viewer discussion across social platforms.`;
+                subHead2 = "2. Cultural Resonance & Media Industry Impact";
+                text2 = `Industry analysts note a distinct shift in distribution models and streaming preferences among target demographics.`;
+                subHead3 = "3. Upcoming Releases & Franchise Expansion";
+                text3 = `Studio executives are already planning follow-up projects and multi-platform promotional campaigns to sustain momentum.`;
+            } else if (category === "Sports & Cultural") {
+                subHead1 = "1. Match Performance & Tactical Breakdown";
+                text1 = `${summary} Tactical execution and stellar individual performances dictated the competitive pace of the event.`;
+                subHead2 = "2. Athlete Conditioning & Team Strategy";
+                text2 = `Coaching staffs emphasized rigorous training protocols and mental resilience to maintain high-level competitive advantages.`;
+                subHead3 = "3. Tournament Implications & Future Fixtures";
+                text3 = `Fans and analysts are eagerly anticipating upcoming matchups as the race for championship standings intensifies.`;
             } else {
                 subHead1 = "1. Background Context & Core Developments";
                 text1 = `${summary} Recent milestones highlight significant stakeholder engagement and shifting consumer preferences across key demographics.`;
