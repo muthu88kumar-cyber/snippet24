@@ -274,6 +274,7 @@
             "Sports & Cultural"
         ];
 
+        // Expanded unique image pool to guarantee no image repeats across cards
         const imagePool = [
             "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
@@ -289,7 +290,42 @@
             "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1504384501633-911850125749?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1542744094-3a31243364d0?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1534536281715-e28d76684b4d?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop"
         ];
 
         const publisherPool = ["The Economic Times", "LiveMint Intelligence", "Business Standard", "Financial Express", "TechCrunch India", "Mint Tech", "Living Media", "Green Post", "Variety India", "Sports Today"];
@@ -360,54 +396,47 @@
             ]
         };
 
-        const summaryPools = [
-            "This comprehensive briefing examines the core structural shifts, regulatory updates, and market dynamics currently shaping the sector, providing key stakeholders with actionable intelligence.",
-            "Analyzing multi-agency telemetry and recent legislative adjustments, this report breaks down operational efficiencies, risk mitigation protocols, and upcoming fiscal targets.",
-            "An executive review detailing supply chain optimizations, consumer behavior shifts, and technological integrations driving robust growth across primary metropolitan hubs.",
-            "Highlighting cross-border synergies and investment flows, this update evaluates sustainable asset allocation and strategic benchmarks for the upcoming quarter.",
-            "A synthesized overview focusing on regulatory compliance frameworks, infrastructure modernization schedules, and market penetration metrics across tier-2 and tier-3 regions."
-        ];
-
         function generateDataset() {
             allArticles = [];
+            let globalIndex = 0;
             preferredCategoryOrder.forEach(cat => {
                 const headlines = headlinePools[cat] || headlinePools["India & Global"];
                 headlines.forEach((headline, index) => {
-                    const imgUrl = imagePool[(index + cat.length) % imagePool.length];
-                    const pubName = publisherPool[(index * 3) % publisherPool.length];
-                    const summaryText = summaryPools[index % summaryPools.length];
+                    const imgUrl = imagePool[globalIndex % imagePool.length];
+                    const pubName = publisherPool[(globalIndex * 3) % publisherPool.length];
 
                     allArticles.push({
                         category: cat,
                         title: headline,
-                        snippet: `An in-depth look at ${headline.toLowerCase()}, analyzing key market developments, strategic shifts, and long-term sector impacts.`,
+                        snippet: `A detailed analysis examining how ${headline.toLowerCase()}, reviewing key industry milestones, market implications, and strategic outcomes.`,
                         image: imgUrl,
                         source: pubName,
                         url: "#",
-                        summary: summaryText,
+                        summary: `This report investigates the core dynamics behind "${headline}", breaking down strategic catalysts, operational impacts, and long-term sector forecasts.`,
                         subtitles: [
                             {
-                                subtitle: "1. Macroeconomic Framework & Strategic Alignment",
-                                passage: `Initial macroscopic framework assessment for ${cat.toLowerCase()} confirms heightened multi-agency collaboration. Baseline telemetry metrics indicate robust structural expansion, while key legislative adjustments introduced this quarter aim to streamline compliance overhead for enterprise operators.`
+                                subtitle: "1. Background & Core Objectives",
+                                passage: `Examining the primary drivers behind ${headline.toLowerCase()}, this section outlines key policy frameworks, stakeholder participation, and initial milestone targets established for the current fiscal period.`
                             },
                             {
-                                subtitle: "2. Operational Efficiency & Technological Integration",
-                                passage: `Consumer adoption metrics demonstrate an increasing preference for digitized, automated interaction channels within the ${cat.toLowerCase()} sector. Risk mitigation protocols have been systematically overhauled to counter emerging vulnerabilities and streamline operations.`
+                                subtitle: "2. Strategic Implementation & Market Impact",
+                                passage: `An evaluation of operational shifts and market reception. Key performance indicators demonstrate measurable adaptation across primary enterprise networks and commercial channels.`
                             },
                             {
-                                subtitle: "3. Market Penetration & Resource Allocation",
-                                passage: `Market penetration vectors show unprecedented growth velocity across tier-2 and tier-3 geographical zones. Resource allocation strategies now incorporate predictive analytics to preempt seasonal bottlenecks and optimize corporate performance.`
+                                subtitle: "3. Technological & Logistical Integration",
+                                passage: `Detailing the digital tools, automated workflows, and infrastructural upgrades deployed to maximize efficiency and minimize friction throughout the implementation cycle.`
                             },
                             {
-                                subtitle: "4. Governance, Compliance & Risk Management",
-                                passage: `Corporate governance and compliance frameworks have been strengthened to align with emerging international privacy mandates and regulatory standards, ensuring secure operational practices across all participating entities.`
+                                subtitle: "4. Compliance, Regulation & Risk Assessment",
+                                passage: `Reviewing regulatory compliance mandates, security protocols, and risk mitigation strategies designed to safeguard participants against emerging market vulnerabilities.`
                             },
                             {
-                                subtitle: "5. Future Projections & Strategic Roadmap",
-                                passage: `Forward projections for the upcoming fiscal cycle anticipate sustained expansion across all vital indexes, supported by increased capital expenditure in research and development infrastructure and robust contingency planning.`
+                                subtitle: "5. Future Outlook & Strategic Roadmap",
+                                passage: `Concluding with forward-looking projections, anticipated milestone schedules, and growth expectations for stakeholders navigating this evolving sector landscape.`
                             }
                         ]
                     });
+                    globalIndex++;
                 });
             });
         }
