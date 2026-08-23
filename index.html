@@ -1,13 +1,96 @@
-<nav class="category-nav" style="display: flex; gap: 10px; margin: 20px 0; overflow-x: auto; padding-bottom: 10px; white-space: nowrap;">
-    <button class="tab-btn active" data-category="All" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #111; color: #fff; border-radius: 4px; font-weight: 500;">All Updates</button>
-    <button class="tab-btn" data-category="India & Global" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">India & Global</button>
-    <button class="tab-btn" data-category="Tech & AI" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Tech & AI</button>
-    <button class="tab-btn" data-category="Business & Economy" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Business & Economy</button>
-    <button class="tab-btn" data-category="Earth & Environment" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Earth & Environment</button>
-    <button class="tab-btn" data-category="Lifestyle & Living" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Lifestyle & Living</button>
-    <button class="tab-btn" data-category="Sports & Cultural" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Sports & Cultural</button>
-</nav>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    let allArticles = [];
 
-<div id="news-feed-container">
-    <!-- Live wire cards load dynamically here -->
-</div>
+    // Fetch the automated articles.json feed
+    fetch('articles.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const feed = data.live_feed || data;
+            // Convert the feed object into an array for filtering and rendering
+            allArticles = Object.keys(feed).map(key => feed[key]);
+            
+            // Render all articles by default on page load
+            renderArticles(allArticles);
+            
+            // Set up click interactions for your category tabs
+            setupCategoryFilters();
+        })
+        .catch(error => {
+            console.error('Error loading live wire feed:', error);
+            const container = document.getElementById('news-feed-container');
+            if (container) {
+                container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed at the moment. Please try again shortly.</p>`;
+            }
+        });
+
+    function renderArticles(articlesToRender) {
+        const container = document.getElementById('news-feed-container');
+        if (!container) return;
+
+        container.innerHTML = "";
+
+        if (articlesToRender.length === 0) {
+            container.innerHTML = `<p style="text-align: center; color: #777; padding: 40px;">No live updates found in this category right now.</p>`;
+            return;
+        }
+
+        articlesToRender.forEach(article => {
+            const card = document.createElement('div');
+            card.className = 'news-card';
+            card.style.cssText = "background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);";
+
+            // Safely handle localized or standard text fields
+            const meta = article.meta || article.category || "News Update";
+            const title = typeof article.title === 'object' ? article.title.en : article.title;
+            const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
+            const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : (article.deep_dive || "");
+
+            card.innerHTML = `
+                <span class="category" style="font-size: 12px; font-weight: bold; color: #c0392b; text-transform: uppercase; letter-spacing: 0.5px;">${meta}</span>
+                <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${title}</h3>
+                <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${summary}</p>
+                ${deepDive ? `
+                <details style="margin-top: 10px; color: #333; font-size: 14px;">
+                    <summary style="cursor: pointer; color: #0066cc; font-weight: 500;">Deep Dive →</summary>
+                    <p style="margin-top: 10px; line-height: 1.6; white-space: pre-line; color: #444;">${deepDive}</p>
+                </details>` : ''}
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
+    function setupCategoryFilters() {
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Update active tab styles
+                buttons.forEach(btn => {
+                    btn.style.background = '#fff';
+                    btn.style.color = '#333';
+                    btn.classList.remove('active');
+                });
+                e.target.style.background = '#111';
+                e.target.style.color = '#fff';
+                e.target.classList.add('active');
+
+                const selectedCategory = e.target.getAttribute('data-category');
+
+                if (selectedCategory === 'All') {
+                    renderArticles(allArticles);
+                } else {
+                    // Filter articles matching the selected category tag
+                    const filtered = allArticles.filter(article => article.category === selectedCategory);
+                    renderArticles(filtered);
+                }
+            });
+        });
+    }
+});
+</script>
