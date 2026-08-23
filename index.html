@@ -4,59 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snippet24 - AI Automated News Platform</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
             background-color: #f8fafc;
             color: #0f172a;
         }
+
         header {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
-            padding: 25px 20px;
+            padding: 20px 20px;
             text-align: center;
         }
+
+        /* Exact Logo Styling Adapted for Header */
         .logo-container {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
+            display: inline-block;
+            text-align: center;
         }
-        .logo-main {
+
+        .logo-brand {
             display: flex;
             align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-weight: 800;
-            font-size: 38px;
-            letter-spacing: -1px;
-            color: #0f172a;
+            justify-content: center;
+            gap: 10px;
         }
-        .logo-box {
-            background-color: #e31b23;
-            color: #ffffff;
-            padding: 2px 10px;
-            border-radius: 4px;
-            margin-left: 6px;
-            display: inline-flex;
+
+        .logo-snippet {
+            font-size: 38px;
+            font-weight: 700;
+            color: #061A4A;
+            letter-spacing: -1.5px;
+            line-height: 1;
+        }
+
+        .logo-box24 {
+            background: #FF3B30;
+            color: #fff;
+            width: 72px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 800;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1;
         }
+
         .logo-tagline {
             margin-top: 6px;
-            font-size: 11px;
-            font-weight: 700;
-            color: #475569;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            color: #444;
             text-transform: uppercase;
-            letter-spacing: 1.8px;
         }
+
         .main-container {
             max-width: 900px;
             margin: 30px auto;
             padding: 0 20px;
         }
+
         .category-nav {
             display: flex;
             gap: 10px;
@@ -65,6 +86,7 @@
             padding-bottom: 10px;
             white-space: nowrap;
         }
+
         .tab-btn {
             padding: 8px 16px;
             cursor: pointer;
@@ -76,11 +98,13 @@
             font-size: 14px;
             transition: all 0.2s ease;
         }
+
         .tab-btn.active {
-            background: #0f172a;
+            background: #061A4A;
             color: #ffffff;
-            border-color: #0f172a;
+            border-color: #061A4A;
         }
+
         .news-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -91,6 +115,7 @@
             display: flex;
             flex-direction: column;
         }
+
         @media(min-width: 640px) {
             .news-card {
                 flex-direction: row;
@@ -104,50 +129,73 @@
                 padding: 24px;
             }
         }
+
         .news-thumb {
             width: 100%;
             height: 200px;
             object-fit: cover;
             background-color: #e2e8f0;
         }
+
         .news-content {
             padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         .category {
             font-size: 11px;
-            font-weight: 800;
-            color: #e31b23;
+            font-weight: 700;
+            color: #FF3B30;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             margin-bottom: 6px;
             display: block;
         }
+
         .news-card h3 {
             margin: 0 0 10px 0;
             font-size: 20px;
             color: #0f172a;
             line-height: 1.4;
         }
+
         .news-card p {
             color: #475569;
             font-size: 14px;
             line-height: 1.6;
             margin: 0 0 15px 0;
         }
+
         details summary {
             cursor: pointer;
-            color: #2563eb;
+            color: #0066cc;
             font-weight: 600;
             font-size: 14px;
         }
+
         details p {
             margin-top: 10px;
             line-height: 1.6;
             white-space: pre-line;
             color: #334155;
+        }
+
+        /* Responsive Logo Scaling for Small Mobile Screens */
+        @media(max-width: 480px) {
+            .logo-snippet {
+                font-size: 30px;
+            }
+            .logo-box24 {
+                width: 58px;
+                height: 32px;
+                font-size: 20px;
+            }
+            .logo-tagline {
+                font-size: 8px;
+                letter-spacing: 2px;
+            }
         }
     </style>
 </head>
@@ -155,8 +203,9 @@
 
     <header>
         <div class="logo-container">
-            <div class="logo-main">
-                snippet<span class="logo-box">24</span>
+            <div class="logo-brand">
+                <div class="logo-snippet">snippet</div>
+                <div class="logo-box24">24</div>
             </div>
             <div class="logo-tagline">AI Automated News Platform</div>
         </div>
@@ -224,7 +273,7 @@
                 console.error('Error loading live wire feed:', error);
                 const container = document.getElementById('news-feed-container');
                 if (container) {
-                    container.innerHTML = `<p style="text-align: center; color: #e31b23; padding: 40px;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
+                    container.innerHTML = `<p style="text-align: center; color: #FF3B30; padding: 40px;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
                 }
             });
 
@@ -250,17 +299,7 @@
                 const summary = typeof article.summary === 'object' && article.summary !== null ? article.summary.en : (article.summary || "");
                 const deepDive = typeof article.deep_dive === 'object' && article.deep_dive !== null ? article.deep_dive.en : (article.deep_dive || "");
                 
-                // Safe royalty-free 4K/HD image integration per item using Unsplash Source matching keywords
-                const categoryKeywords = {
-                    "Tech & AI": "technology,ai,server",
-                    "Business & Economy": "business,finance,market",
-                    "India & Global": "globe,news,city",
-                    "Earth & Environment": "nature,earth,green",
-                    "Lifestyle & Living": "lifestyle,people,modern",
-                    "Sports & Cultural": "sports,stadium,culture"
-                };
-                const queryTerm = categoryKeywords[article.category] || "news,abstract";
-                // Using unique image IDs based on index/title to guarantee consistent high-res generation without copyright claims
+                // Uses copyright-free high-res placeholder imagery mapped safely per article
                 const imageUrl = article.image || `https://picsum.photos/seed/snippet24_${index + 1}/800/500`;
 
                 card.innerHTML = `
