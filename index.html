@@ -113,7 +113,7 @@
             text-align: center;
         }
 
-        /* Running Wire Live Trending Ticker (Slowed Down) */
+        /* Running Wire Live Trending Ticker */
         .trending-bar {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
@@ -181,7 +181,7 @@
             padding: 0 20px;
         }
 
-        /* Hero Feature Section Grid */
+        /* Hero Feature Section Grid (Now accommodates 4 news stories: 1 main + 3 stacked) */
         .hero-grid {
             display: grid;
             grid-template-columns: 2fr 1.2fr;
@@ -199,7 +199,7 @@
             position: relative;
             border-radius: 8px;
             overflow: hidden;
-            height: 420px;
+            height: 480px;
             background: #000;
         }
 
@@ -223,14 +223,14 @@
         .hero-sub-grid {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 12px;
         }
 
         .hero-small-card {
             position: relative;
             border-radius: 8px;
             overflow: hidden;
-            height: 200px;
+            height: 152px;
             background: #000;
         }
 
@@ -246,7 +246,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 15px;
+            padding: 12px;
             background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
             color: #fff;
         }
@@ -260,7 +260,7 @@
             border-radius: 3px;
             text-transform: uppercase;
             display: inline-block;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         /* Content Layout */
@@ -483,9 +483,9 @@
     <!-- Main Container -->
     <div class="main-container">
 
-        <!-- Hero Feature Grid -->
+        <!-- Hero Feature Grid (4 Featured News Stories) -->
         <section class="hero-grid" id="hero-section">
-            <!-- Dynamically populated main hero item -->
+            <!-- Dynamically populated hero items -->
         </section>
 
         <!-- Content Layout -->
@@ -580,17 +580,19 @@
             const mainArt = articles[0];
             const subArt1 = articles[1] || articles[0];
             const subArt2 = articles[2] || articles[0];
+            const subArt3 = articles[3] || articles[0]; // 4th news card addition
 
             const mainTitle = typeof mainArt.title === 'object' ? mainArt.title.en : mainArt.title;
             const sub1Title = typeof subArt1.title === 'object' ? subArt1.title.en : subArt1.title;
             const sub2Title = typeof subArt2.title === 'object' ? subArt2.title.en : subArt2.title;
+            const sub3Title = typeof subArt3.title === 'object' ? subArt3.title.en : subArt3.title;
 
             heroSection.innerHTML = `
                 <div class="hero-main-card">
                     <img src="${getUniqueImage(mainArt, 100)}" alt="${mainTitle}">
                     <div class="hero-overlay-content">
                         <span class="badge-tag">${mainArt.category || 'Featured'}</span>
-                        <h2 style="font-size: 22px; line-height: 1.3; margin-top: 5px;">${mainTitle}</h2>
+                        <h2 style="font-size: 20px; line-height: 1.3; margin-top: 4px;">${mainTitle}</h2>
                     </div>
                 </div>
                 <div class="hero-sub-grid">
@@ -598,14 +600,21 @@
                         <img src="${getUniqueImage(subArt1, 101)}" alt="${sub1Title}">
                         <div class="hero-small-content">
                             <span class="badge-tag">${subArt1.category || 'Update'}</span>
-                            <h4 style="font-size: 14px; line-height: 1.3;">${sub1Title}</h4>
+                            <h4 style="font-size: 12px; line-height: 1.25;">${sub1Title}</h4>
                         </div>
                     </div>
                     <div class="hero-small-card">
                         <img src="${getUniqueImage(subArt2, 102)}" alt="${sub2Title}">
                         <div class="hero-small-content">
                             <span class="badge-tag">${subArt2.category || 'Update'}</span>
-                            <h4 style="font-size: 14px; line-height: 1.3;">${sub2Title}</h4>
+                            <h4 style="font-size: 12px; line-height: 1.25;">${sub2Title}</h4>
+                        </div>
+                    </div>
+                    <div class="hero-small-card">
+                        <img src="${getUniqueImage(subArt3, 103)}" alt="${sub3Title}">
+                        <div class="hero-small-content">
+                            <span class="badge-tag">${subArt3.category || 'Update'}</span>
+                            <h4 style="font-size: 12px; line-height: 1.25;">${sub3Title}</h4>
                         </div>
                     </div>
                 </div>
@@ -665,7 +674,7 @@
                 const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
                 const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : article.deep_dive;
                 
-                // Assign an offset starting at 200 so feed card images never overlap hero card seeds
+                // Offset feed images starting at 200 so they never clash with the 4 hero images
                 const imageUrl = getUniqueImage(article, 200 + index);
 
                 card.innerHTML = `
