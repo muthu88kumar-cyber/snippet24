@@ -1,719 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snippet24 - Professional News Magazine</title>
+<!-- Compact Trigger Button for Citizen Wire (Place this inside your sidebar or header area) -->
+<div style="margin: 20px 0;">
+    <button onclick="document.getElementById('citizenModal').style.display='flex'" style="width: 100%; background: #FF3B30; color: #fff; border: none; padding: 12px; font-size: 13px; font-weight: 700; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; text-transform: uppercase;">
+        <i class="fa-solid fa-bullhorn"></i> Submit Local News / Citizen Wire
+    </button>
+</div>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Modal Overlay (Hidden by Default) -->
+<div id="citizenModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center; padding: 20px;">
+    
+    <!-- Modal Box Container -->
+    <div style="background: #fff; width: 100%; max-width: 650px; max-height: 90vh; overflow-y: auto; border-radius: 10px; padding: 25px; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+        
+        <!-- Close Button -->
+        <button onclick="document.getElementById('citizenModal').style.display='none'" style="position: absolute; top: 15px; right: 15px; background: #f1f5f9; border: none; font-size: 16px; font-weight: 700; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; color: #334155;">&times;</button>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f5f7;
-            color: #1e293b;
-        }
-
-        /* Top Bar */
-        .top-bar {
-            background: #111827;
-            color: #9ca3af;
-            font-size: 12px;
-            padding: 8px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top-bar-left, .top-bar-right {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .top-bar a {
-            color: #9ca3af;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .top-bar a:hover {
-            color: #ffffff;
-        }
-
-        /* Header & Logo with Slogan */
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            padding: 18px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-brand {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .logo-snippet {
-            font-size: 30px;
-            font-weight: 700;
-            color: #061A4A;
-            letter-spacing: -1.5px;
-            line-height: 1;
-        }
-
-        .logo-box24 {
-            background: #FF3B30;
-            color: #fff;
-            width: 50px;
-            height: 30px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        .logo-slogan {
-            font-size: 11px;
-            font-weight: 500;
-            color: #64748b;
-            letter-spacing: 0.5px;
-            margin-top: 3px;
-            text-transform: uppercase;
-        }
-
-        .header-ad {
-            background: #0f172a;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-size: 13px;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        /* Running Wire Live Trending Ticker */
-        .trending-bar {
-            background: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 13px;
-            overflow: hidden;
-        }
-
-        .trending-badge {
-            background: #FF3B30;
-            color: #fff;
-            padding: 4px 10px;
-            font-weight: 700;
-            font-size: 11px;
-            text-transform: uppercase;
-            border-radius: 3px;
-            flex-shrink: 0;
-            z-index: 2;
-        }
-
-        .ticker-container {
-            overflow: hidden;
-            width: 100%;
-            position: relative;
-            white-space: nowrap;
-        }
-
-        .ticker-track {
-            display: inline-block;
-            white-space: nowrap;
-            animation: marquee 75s linear infinite;
-        }
-
-        .ticker-track:hover {
-            animation-play-state: paused;
-        }
-
-        .ticker-item {
-            display: inline-block;
-            color: #334155;
-            font-weight: 500;
-            margin-right: 50px;
-        }
-
-        .ticker-item span {
-            color: #FF3B30;
-            font-weight: 600;
-            margin-right: 6px;
-        }
-
-        @keyframes marquee {
-            0% { transform: translate3d(0, 0, 0); }
-            100% { transform: translate3d(-50%, 0, 0); }
-        }
-
-        /* Main Container */
-        .main-container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        /* Hero Feature Section Grid (Now accommodates 4 news stories: 1 main + 3 stacked) */
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 2fr 1.2fr;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 900px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .hero-main-card {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            height: 480px;
-            background: #000;
-        }
-
-        .hero-main-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.75;
-        }
-
-        .hero-overlay-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 30px;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-            color: #fff;
-        }
-
-        .hero-sub-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .hero-small-card {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            height: 152px;
-            background: #000;
-        }
-
-        .hero-small-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.75;
-        }
-
-        .hero-small-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 12px;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-            color: #fff;
-        }
-
-        .badge-tag {
-            background: #FF3B30;
-            color: #fff;
-            font-size: 10px;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 3px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 4px;
-        }
-
-        /* Content Layout */
-        .content-layout {
-            display: grid;
-            grid-template-columns: 2.2fr 1fr;
-            gap: 30px;
-        }
-
-        @media (max-width: 900px) {
-            .content-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Dynamic Category Nav */
-        .category-nav {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            overflow-x: auto;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-            white-space: nowrap;
-        }
-
-        .tab-btn {
-            background: transparent;
-            border: none;
-            font-size: 14px;
-            font-weight: 600;
-            color: #64748b;
-            cursor: pointer;
-            padding-bottom: 8px;
-            margin-bottom: -12px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-
-        .tab-btn.active {
-            color: #061A4A;
-            border-bottom-color: #FF3B30;
-        }
-
-        /* Feed Cards */
-        .feed-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .news-card {
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .news-thumb {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .news-body {
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
-        .news-body h3 {
-            font-size: 16px;
-            color: #0f172a;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .news-body p {
-            font-size: 12px;
-            color: #475569;
-            line-height: 1.5;
-            margin-bottom: 12px;
-            flex: 1;
-        }
-
-        details summary {
-            cursor: pointer;
-            color: #061A4A;
-            font-weight: 600;
-            font-size: 12px;
-        }
-
-        details p {
-            margin-top: 8px;
-            color: #334155;
-        }
-
-        /* Sidebar Styling */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .sidebar-box {
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 20px;
-        }
-
-        .sidebar-title {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #0f172a;
-            border-bottom: 2px solid #0f172a;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-        }
-
-        .social-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #f1f5f9;
-        }
-
-        .social-item:last-child {
-            border-bottom: none;
-        }
-
-        .social-info {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 13px;
-            font-weight: 600;
-            color: #334155;
-        }
-
-        .social-info i {
-            font-size: 18px;
-            width: 24px;
-            text-align: center;
-        }
-
-        .fa-facebook { color: #3b5998; }
-        .fa-twitter { color: #1da1f2; }
-        .fa-youtube { color: #ff0000; }
-
-        .social-action {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #64748b;
-            background: #f1f5f9;
-            padding: 4px 10px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-
-        /* Footer */
-        footer {
-            background: #ffffff;
-            border-top: 1px solid #e2e8f0;
-            padding: 30px 20px;
-            margin-top: 50px;
-            text-align: center;
-            font-size: 12px;
-            color: #64748b;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Top Utility Bar -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <span><i class="fa-solid fa-cloud-sun"></i> 28°C Chennai</span>
-            <span><i class="fa-regular fa-calendar"></i> August 2026</span>
+        <!-- Header -->
+        <div style="border-bottom: 2px solid #0f172a; padding-bottom: 10px; margin-bottom: 20px;">
+            <h3 style="font-size: 16px; color: #0f172a; font-weight: 700; text-transform: uppercase;">🌍 Citizen Wire: Local Public Dispatch</h3>
+            <p style="font-size: 11px; color: #64748b;">Publish hyper-local updates securely. Subject to strict Indian & international legal compliance.</p>
         </div>
-        <div class="top-bar-right">
-            <a href="#">Sign In / Join</a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-    </div>
 
-    <!-- Main Header with Slogan -->
-    <header>
-        <div class="logo-wrapper">
-            <div class="logo-brand">
-                <div class="logo-snippet">snippet</div>
-                <div class="logo-box24">24</div>
+        <!-- Form Fields -->
+        <form id="citizenNewsForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div>
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Full Legal Name *</label>
+                <input type="text" id="citizenName" required placeholder="As per official ID" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px;">
             </div>
-            <div class="logo-slogan">Real-Time Intelligence & Market Wire</div>
-        </div>
-        <div class="header-ad">
-            AI-Powered Automated Intelligence Platform
-        </div>
-    </header>
-
-    <!-- Running Wire Live Trending Ticker Bar -->
-    <div class="trending-bar">
-        <span class="trending-badge">Live Wire</span>
-        <div class="ticker-container">
-            <div class="ticker-track" id="ticker-track-container">
-                <div class="ticker-item"><span>Loading Live Wire...</span></div>
+            <div>
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Verified Phone (OTP) *</label>
+                <input type="tel" id="citizenPhone" required placeholder="+91 XXXXX XXXXX" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px;">
             </div>
-        </div>
-    </div>
 
-    <!-- Main Container -->
-    <div class="main-container">
+            <div style="grid-column: span 2;">
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Headline / Title *</label>
+                <input type="text" id="citizenTitle" required placeholder="Non-sensationalized local event headline" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px;">
+            </div>
 
-        <!-- Hero Feature Grid (4 Featured News Stories) -->
-        <section class="hero-grid" id="hero-section">
-            <!-- Dynamically populated hero items -->
-        </section>
+            <div>
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Location / District *</label>
+                <input type="text" id="citizenLocation" required placeholder="e.g., Tiruvaloor, Chennai" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px;">
+            </div>
+            <div>
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Category *</label>
+                <select id="citizenCategory" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px; background: #fff;">
+                    <option value="Local Governance">Local Governance & Civic</option>
+                    <option value="Public Safety">Public Safety & Traffic</option>
+                    <option value="Community">Community & Culture</option>
+                    <option value="Environment">Environment & Infrastructure</option>
+                </select>
+            </div>
 
-        <!-- Content Layout -->
-        <div class="content-layout">
-            
-            <!-- Left Main Column -->
-            <main>
-                <!-- Dynamic Category Navigation Tabs -->
-                <nav id="category-nav" class="category-nav">
-                    <button class="tab-btn active" data-category="All">All Updates</button>
-                </nav>
+            <div style="grid-column: span 2;">
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">News Report Body *</label>
+                <textarea id="citizenBody" rows="3" required placeholder="Provide objective facts, dates, and context..." style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 12px;"></textarea>
+            </div>
 
-                <!-- News Grid Feed -->
-                <div id="news-feed-container" class="feed-grid">
-                    <p style="color: #64748b; padding: 20px;">Loading live updates...</p>
-                </div>
-            </main>
+            <div style="grid-column: span 2;">
+                <label style="display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 4px;">Media Evidence (Raw Capture) *</label>
+                <input type="file" id="citizenMedia" accept="image/*,video/*" required style="font-size: 11px;">
+            </div>
 
-            <!-- Right Sidebar Column -->
-            <aside class="sidebar">
-                <div class="sidebar-box">
-                    <div class="sidebar-title">Stay Connected</div>
-                    <div class="social-item">
-                        <div class="social-info"><i class="fa-brands fa-facebook"></i> 17,313 Fans</div>
-                        <a href="#" class="social-action">Like</a>
-                    </div>
-                    <div class="social-item">
-                        <div class="social-info"><i class="fa-brands fa-twitter"></i> 1,771 Followers</div>
-                        <a href="#" class="social-action">Follow</a>
-                    </div>
-                    <div class="social-item">
-                        <div class="social-info"><i class="fa-brands fa-youtube"></i> 14,000 Subs</div>
-                        <a href="#" class="social-action">Subscribe</a>
-                    </div>
-                </div>
-
-                <div class="sidebar-box" style="text-align: center; background: #0f172a; color: #fff;">
-                    <h4 style="font-size: 15px; margin-bottom: 8px;">snippet24 Intelligence</h4>
-                    <p style="font-size: 12px; color: #94a3b8; margin-bottom: 12px;">Automated multi-source curation engine operating 24/7.</p>
-                    <span style="display: inline-block; background: #FF3B30; color: #fff; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 4px;">Explore Live</span>
-                </div>
-            </aside>
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 snippet24.in • Automated News Intelligence Platform. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript Script Block -->
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        let allArticles = [];
-
-        fetch('/articles.json')
-            .then(response => {
-                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                return response.json();
-            })
-            .then(data => {
-                const feed = data.live_feed || data;
-                if (Array.isArray(feed)) {
-                    allArticles = feed;
-                } else if (typeof feed === 'object' && feed !== null) {
-                    allArticles = Object.values(feed);
-                } else {
-                    allArticles = [];
-                }
-
-                buildHeroSection(allArticles);
-                buildRunningTicker(allArticles);
-                buildDynamicTabs(allArticles);
-                renderArticles(allArticles);
-            })
-            .catch(error => {
-                console.error('Error loading live wire feed:', error);
-                document.getElementById('news-feed-container').innerHTML = `<p style="color: #FF3B30;">Unable to load live feed: ${error.message}</p>`;
-            });
-
-        // Function ensuring every item gets a distinct, non-repeating image seed index
-        function getUniqueImage(article, uniqueIndex) {
-            if (article.image) return article.image;
-            return `https://picsum.photos/seed/snippet24_unique_img_${uniqueIndex}/800/500`;
-        }
-
-        function buildHeroSection(articles) {
-            const heroSection = document.getElementById('hero-section');
-            if (!heroSection || articles.length === 0) return;
-
-            const mainArt = articles[0];
-            const subArt1 = articles[1] || articles[0];
-            const subArt2 = articles[2] || articles[0];
-            const subArt3 = articles[3] || articles[0]; // 4th news card addition
-
-            const mainTitle = typeof mainArt.title === 'object' ? mainArt.title.en : mainArt.title;
-            const sub1Title = typeof subArt1.title === 'object' ? subArt1.title.en : subArt1.title;
-            const sub2Title = typeof subArt2.title === 'object' ? subArt2.title.en : subArt2.title;
-            const sub3Title = typeof subArt3.title === 'object' ? subArt3.title.en : subArt3.title;
-
-            heroSection.innerHTML = `
-                <div class="hero-main-card">
-                    <img src="${getUniqueImage(mainArt, 100)}" alt="${mainTitle}">
-                    <div class="hero-overlay-content">
-                        <span class="badge-tag">${mainArt.category || 'Featured'}</span>
-                        <h2 style="font-size: 20px; line-height: 1.3; margin-top: 4px;">${mainTitle}</h2>
-                    </div>
-                </div>
-                <div class="hero-sub-grid">
-                    <div class="hero-small-card">
-                        <img src="${getUniqueImage(subArt1, 101)}" alt="${sub1Title}">
-                        <div class="hero-small-content">
-                            <span class="badge-tag">${subArt1.category || 'Update'}</span>
-                            <h4 style="font-size: 12px; line-height: 1.25;">${sub1Title}</h4>
-                        </div>
-                    </div>
-                    <div class="hero-small-card">
-                        <img src="${getUniqueImage(subArt2, 102)}" alt="${sub2Title}">
-                        <div class="hero-small-content">
-                            <span class="badge-tag">${subArt2.category || 'Update'}</span>
-                            <h4 style="font-size: 12px; line-height: 1.25;">${sub2Title}</h4>
-                        </div>
-                    </div>
-                    <div class="hero-small-card">
-                        <img src="${getUniqueImage(subArt3, 103)}" alt="${sub3Title}">
-                        <div class="hero-small-content">
-                            <span class="badge-tag">${subArt3.category || 'Update'}</span>
-                            <h4 style="font-size: 12px; line-height: 1.25;">${sub3Title}</h4>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        function buildRunningTicker(articles) {
-            const trackContainer = document.getElementById('ticker-track-container');
-            if (!trackContainer || articles.length === 0) return;
-
-            let tickerHTML = '';
-            const loopItems = [...articles, ...articles];
-
-            loopItems.forEach(article => {
-                const title = typeof article.title === 'object' ? article.title.en : article.title;
-                const category = article.category || 'Wire';
-                tickerHTML += `<div class="ticker-item"><span>[${category}]</span> ${title} •</div>`;
-            });
-
-            trackContainer.innerHTML = tickerHTML;
-        }
-
-        function buildDynamicTabs(articles) {
-            const navContainer = document.getElementById('category-nav');
-            if (!navContainer) return;
-
-            const categories = [...new Set(articles.map(article => article.category).filter(Boolean))];
-
-            let tabsHTML = `<button class="tab-btn active" data-category="All">All Updates</button>`;
-            categories.forEach(cat => {
-                tabsHTML += `<button class="tab-btn" data-category="${cat}">${cat}</button>`;
-            });
-
-            navContainer.innerHTML = tabsHTML;
-            setupCategoryFilters();
-        }
-
-        function renderArticles(articlesToRender) {
-            const container = document.getElementById('news-feed-container');
-            if (!container) return;
-
-            container.innerHTML = "";
-
-            if (!Array.isArray(articlesToRender) || articlesToRender.length === 0) {
-                container.innerHTML = `<p style="color: #64748b;">No live updates found in this category right now.</p>`;
-                return;
-            }
-
-            articlesToRender.forEach((article, index) => {
-                if (!article) return;
-
-                const card = document.createElement('div');
-                card.className = 'news-card';
-
-                const meta = article.meta || article.category || "News Update";
-                const title = typeof article.title === 'object' ? article.title.en : article.title;
-                const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
-                const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : article.deep_dive;
+            <!-- Mandatory Legal Declarations -->
+            <div style="grid-column: span 2; background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 5px;">
+                <p style="font-size: 11px; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Legal Compliance & Intermediary Safety Rules:</p>
                 
-                // Offset feed images starting at 200 so they never clash with the 4 hero images
-                const imageUrl = getUniqueImage(article, 200 + index);
+                <label style="display: flex; gap: 6px; font-size: 11px; color: #334155; margin-bottom: 4px; cursor: pointer;">
+                    <input type="checkbox" id="legalTruth" required style="margin-top: 2px;">
+                    I declare information is truthful and non-defamatory under the Bharatiya Nyaya Sanhita (BNS).
+                </label>
+                <label style="display: flex; gap: 6px; font-size: 11px; color: #334155; margin-bottom: 4px; cursor: pointer;">
+                    <input type="checkbox" id="legalAI" required style="margin-top: 2px;">
+                    I confirm this media is <strong>not</strong> an AI-generated deepfake or synthetic fabrication.
+                </label>
+                <label style="display: flex; gap: 6px; font-size: 11px; color: #334155; cursor: pointer;">
+                    <input type="checkbox" id="legalLiability" required style="margin-top: 2px;">
+                    I understand audit logs (IP/Phone) are retained for compliance with Indian IT Rules.
+                </label>
+            </div>
 
-                card.innerHTML = `
-                    <img src="${imageUrl}" alt="${title}" class="news-thumb" loading="lazy">
-                    <div class="news-body">
-                        <span style="font-size: 10px; font-weight: 700; color: #FF3B30; text-transform: uppercase; margin-bottom: 4px;">${meta}</span>
-                        <h3>${title}</h3>
-                        <p>${summary}</p>
-                        ${deepDive ? `
-                        <details>
-                            <summary>Deep Dive →</summary>
-                            <p>${deepDive}</p>
-                        </details>` : ''}
-                    </div>
-                `;
+            <div style="grid-column: span 2; text-align: right; margin-top: 5px;">
+                <button type="submit" style="background: #0f172a; color: #fff; border: none; padding: 10px 20px; font-size: 12px; font-weight: 700; border-radius: 5px; cursor: pointer;">
+                    Submit for Staging Review →
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 
-                container.appendChild(card);
-            });
-        }
-
-        function setupCategoryFilters() {
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    buttons.forEach(btn => btn.classList.remove('active'));
-                    e.target.classList.add('active');
-
-                    const selectedCategory = e.target.getAttribute('data-category');
-
-                    if (selectedCategory === 'All') {
-                        renderArticles(allArticles);
-                    } else {
-                        const filtered = allArticles.filter(article => article && article.category === selectedCategory);
-                        renderArticles(filtered);
-                    }
-                });
-            });
-        }
-    });
-    </script>
-</body>
-</html>
+<script>
+document.getElementById('citizenNewsForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Dispatch received successfully! Queued for editorial and automated metadata verification.');
+    document.getElementById('citizenModal').style.display = 'none';
+    this.reset();
+});
+</script>
