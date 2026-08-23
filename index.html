@@ -126,7 +126,7 @@
         .modal-summary-box h4 { font-size: 13px; color: #1e40af; margin-bottom: 6px; font-weight: 700; }
         .modal-summary-box p { font-size: 12px; color: #1e3a8a; line-height: 1.6; margin: 0; }
 
-        /* Subtitle Sections as Passage Blocks */
+        /* Subtitle Sections as Passage Blocks (No Bullets) */
         .modal-subtitle-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; margin-bottom: 15px; }
         .modal-subtitle-block h5 { font-size: 13px; color: #0f172a; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
         .modal-subtitle-block p { font-size: 12px; color: #334155; line-height: 1.8; text-align: justify; margin: 0; }
@@ -301,41 +301,96 @@
 
         const publisherPool = ["The Economic Times", "LiveMint Intelligence", "Business Standard", "Financial Express", "TechCrunch India", "Mint Tech", "Living Media", "Green Post", "Variety India", "Sports Today"];
 
+        const headlinePools = {
+            "India & Global": [
+                "New Bilateral Trade Pact Signed to Boost Regional Supply Chain Resilience",
+                "Diplomatic Summit Concludes with Landmark Agreements on Digital Infrastructure",
+                "National Logistics Policy Update Targets 20% Reduction in Freight Costs",
+                "Cross-Border Fintech Corridor Opens Up New Settlement Avenues",
+                "Strategic Maritime Security Dialogue Highlights Indo-Pacific Cooperation"
+            ],
+            "Business & Economy": [
+                "RBI Maintains Repo Rate Steady Amid Balanced Inflation Projections",
+                "Retail Sector Reports Record Q2 Growth Driven by Tier-2 Demand",
+                "Venture Capital Funding Shifts Toward Deep-Tech and Sustainable Startups",
+                "Corporate Tax Collections Surge Following Automated Compliance Reforms",
+                "Foreign Institutional Investors Record Consecutive Net Positive Inflows"
+            ],
+            "Tech & AI": [
+                "Enterprise Adoption of Generative AI Agents Rises Sharply Across Financial Sectors",
+                "Semiconductor Manufacturing Hubs Break Ground on Next-Gen Fabrication Units",
+                "Cybersecurity Frameworks Enhanced to Combat Advanced Cloud Threat Vectors",
+                "Open-Source LLMs Gain Traction Among Domestic Software Enterprises",
+                "Cloud Infrastructure Providers Expand Regional Edge Data Center Footprint"
+            ],
+            "Lifestyle & Living": [
+                "Urban Housing Trends Shift Toward Sustainable Communities and Smart Microgrids",
+                "Clean-Label Consumer Goods See Exponential Demand in Metropolitan Markets",
+                "Wellness Tourism and Heritage Retreats Witness Record Summer Bookings",
+                "Traditional Artisans Embrace E-Commerce Platforms for Global Reach",
+                "Smart Home Automation Standards Unified for Seamless Interoperability"
+            ],
+            "Earth & Environment": [
+                "Renewable Energy Capacity Surpasses Fossil Fuels in Grid Contribution",
+                "Municipal Corporations Mandate Decentralized Composting and Water Recycling",
+                "Electric Vehicle Adoption Accelerates with Expanded Charging Networks",
+                "Green Building Certifications Become Standard for Commercial Real Estate",
+                "Agri-Tech Innovations Help Farmers Optimize Water Usage and Crop Yields"
+            ],
+            "Entertainment": [
+                "Regional Cinema Breakthroughs Dominate Global Streaming Charts",
+                "Independent Music Producers Leverage Algorithmic Distribution Tools",
+                "Immersive Virtual Production Studios Redefine Visual Effects Standards",
+                "Festival Circuits Celebrate Diverse Storytelling and Documentaries",
+                "Direct-to-Consumer Content Platforms Introduce Flexible Tiered Subscriptions"
+            ],
+            "Sports & Cultural": [
+                "National Sports Academies Upgrade Training Regimens with Advanced Analytics",
+                "Indigenous Sports Gain Mainstream Attention Through Youth Leagues",
+                "Stadium Infrastructure Modernization Completed Ahead of International Tournaments",
+                "Digital Fan Engagement Platforms Transform Live Match Experiences",
+                "Grassroots Talent Scouting Programs Expand Across Rural Districts"
+            ]
+        };
+
         function generateDataset() {
             allArticles = [];
             preferredCategoryOrder.forEach(cat => {
-                for (let i = 1; i <= 50; i++) {
+                const headlines = headlinePools[cat] || headlinePools["India & Global"];
+                for (let i = 1; i <= 25; i++) {
                     const imgUrl = imagePool[(i + cat.length) % imagePool.length];
                     const pubName = publisherPool[(i * 3) % publisherPool.length];
-                    
+                    const headlineBase = headlines[(i - 1) % headlines.length];
+                    const uniqueTitle = `${headlineBase} (${i})`;
+
                     allArticles.push({
                         category: cat,
-                        title: `${cat} Strategic Intelligence Brief #${i}: Comprehensive Sectoral Evolution & Analytics`,
-                        snippet: `Detailed examination of developments in ${cat.toLowerCase()} covering core operational vectors, stakeholder implications, and projected fiscal impact for Q3/Q4.`,
+                        title: uniqueTitle,
+                        snippet: `An in-depth look at ${uniqueTitle.toLowerCase()}, analyzing key market developments, strategic shifts, and long-term sector impacts.`,
                         image: imgUrl,
                         source: pubName,
                         url: "#",
-                        summary: `Executive briefing overview for ${cat} Topic #${i}. This comprehensive report aggregates key multi-agency telemetry, regulatory frameworks, fiscal projections, and operational risk metrics to provide decision-makers with absolute clarity on current market trends and structural shifts.`,
+                        summary: `Executive briefing overview for ${uniqueTitle}. This report aggregates multi-agency telemetry, regulatory frameworks, fiscal projections, and operational risk metrics to provide decision-makers with clear market insights.`,
                         subtitles: [
                             {
                                 subtitle: "1. Macroeconomic Framework & Strategic Alignment",
-                                passage: "Initial macroscopic framework assessment confirms heightened multi-agency collaboration across sectors. Baseline telemetry metrics from central monitoring units indicate robust structural expansion, while key legislative adjustments introduced this quarter aim to streamline compliance overhead for enterprise operators. Supply chain optimization protocols have successfully reduced transit friction across primary metropolitan conduits, and financial liquidity indices reflect stabilizing investor sentiment despite broader macroeconomic crosscurrents. Regional operational hubs report enhanced throughput capacity following targeted capital expenditure injections, leading stakeholder councils to emphasize the critical necessity of adhering to stringent governance standards as technological integration frameworks undergo pilot trials across high-density operational clusters."
+                                passage: `Initial macroscopic framework assessment for ${cat.toLowerCase()} confirms heightened multi-agency collaboration. Baseline telemetry metrics indicate robust structural expansion, while key legislative adjustments introduced this quarter aim to streamline compliance overhead for enterprise operators.`
                             },
                             {
                                 subtitle: "2. Operational Efficiency & Technological Integration",
-                                passage: "Consumer adoption metrics demonstrate an increasing preference for digitized, automated interaction channels. Risk mitigation protocols have been systematically overhauled to counter emerging cyber and physical vulnerabilities, while cross-border synergy initiatives continue to unlock lucrative avenues for medium-scale domestic enterprises. Workforce upskilling programs are scaling rapidly to meet specialized technical demands across the sector, supported by independent audit findings corroborating enhanced transparency in transactional ledger management procedures. Infrastructure modernization schedules remain ahead of target benchmarks established in the preceding fiscal cycle, with public-private partnerships proving instrumental in financing high-risk capital projects as regulatory bodies signal readiness to introduce agile sandbox environments for novel innovations."
+                                passage: `Consumer adoption metrics demonstrate an increasing preference for digitized, automated interaction channels within the ${cat.toLowerCase()} sector. Risk mitigation protocols have been systematically overhauled to counter emerging vulnerabilities and streamline operations.`
                             },
                             {
                                 subtitle: "3. Market Penetration & Resource Allocation",
-                                passage: "Market penetration vectors in tier-2 and tier-3 geographical zones show unprecedented growth velocity. Resource allocation strategies now incorporate predictive analytics to preempt seasonal supply bottlenecks, and sustainability benchmarks are being rigorously integrated into core corporate Key Performance Indicators. Strategic advisory panels advocate for diversified asset portfolios to buffer against external commodity volatility, noting that operational cost efficiencies achieved through automation have directly bolstered net operating margins. Collaborative research initiatives between academic institutes and industry leaders are yielding patentable breakthroughs, while logistical dwell times have experienced a notable downward correction due to automated gate processing and proactive consumer feedback loops."
+                                passage: `Market penetration vectors show unprecedented growth velocity across tier-2 and tier-3 geographical zones. Resource allocation strategies now incorporate predictive analytics to preempt seasonal bottlenecks and optimize corporate performance.`
                             },
                             {
                                 subtitle: "4. Governance, Compliance & Risk Management",
-                                passage: "Foreign institutional investments registered consecutive net positive inflows over the preceding three quarters. Cybersecurity hardening measures have successfully repelled multiple advanced persistent threat vectors, and regional trade agreements are being renegotiated to secure favorable tariff structures for local manufacturers. Municipal planning boards have approved zoning amendments to accommodate specialized warehousing clusters, aligning with energy consumption metrics that show a decisive shift toward decentralized renewable microgrids. Executive compensation models are increasingly tied to long-term ESG compliance rather than short-term gains, supported by strengthened data governance frameworks that comply with emerging international privacy mandates."
+                                passage: `Corporate governance and compliance frameworks have been strengthened to align with emerging international privacy mandates and regulatory standards, ensuring secure operational practices across all participating entities.`
                             },
                             {
                                 subtitle: "5. Future Projections & Strategic Roadmap",
-                                passage: "Micro-financing instruments are empowering grassroots participants to scale their operational footprints. Quality assurance protocols now utilize automated computer vision systems to eliminate manual inspection errors, while inter-ministerial task forces actively cut bureaucratic red tape for expedited project clearances. Customer retention rates have climbed steadily following the deployment of proactive AI support agents, and capital expenditure in research and development infrastructure reached an all-time high across leading institutional participants. Contingency reserve funds have been augmented to absorb unforeseen geopolitical or climatic shocks, intellectual property filings in core technical domains have expanded significantly year-on-year, and forward projections for the upcoming fiscal cycle anticipate sustained double-digit expansion across all vital indexes."
+                                passage: `Forward projections for the upcoming fiscal cycle anticipate sustained expansion across all vital indexes, supported by increased capital expenditure in research and development infrastructure and robust contingency planning.`
                             }
                         ]
                     });
