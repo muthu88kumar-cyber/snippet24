@@ -113,7 +113,7 @@
             text-align: center;
         }
 
-        /* Running Wire Live Trending Ticker */
+        /* Running Wire Live Trending Ticker (Slowed Down) */
         .trending-bar {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
@@ -149,7 +149,8 @@
         .ticker-track {
             display: inline-block;
             white-space: nowrap;
-            animation: marquee 35s linear infinite;
+            /* Adjusted duration to 75s for a smooth, easily readable pace */
+            animation: marquee 75s linear infinite;
         }
 
         .ticker-track:hover {
@@ -567,7 +568,6 @@
                 document.getElementById('news-feed-container').innerHTML = `<p style="color: #FF3B30;">Unable to load live feed: ${error.message}</p>`;
             });
 
-        // Function to generate topic-relevant image URLs dynamically
         function getTopicImage(article, index) {
             if (article.image) return article.image;
             return `https://picsum.photos/seed/snippet24_art_${index + 1}/800/500`;
@@ -612,13 +612,11 @@
             `;
         }
 
-        // Build continuous running ticker items
         function buildRunningTicker(articles) {
             const trackContainer = document.getElementById('ticker-track-container');
             if (!trackContainer || articles.length === 0) return;
 
             let tickerHTML = '';
-            // Duplicate the items once to ensure a seamless looping effect across the track width
             const loopItems = [...articles, ...articles];
 
             loopItems.forEach(article => {
