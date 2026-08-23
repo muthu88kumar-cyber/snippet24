@@ -211,15 +211,9 @@
 
     <!-- Main Content & Grid Layout -->
     <div class="main-container">
-        <!-- Category Navigation Tabs -->
-        <nav class="category-nav">
+        <!-- Dynamic Category Navigation Tabs Container -->
+        <nav id="category-nav" class="category-nav">
             <button class="tab-btn active" data-category="All">All Updates</button>
-            <button class="tab-btn" data-category="India & Global">India & Global</button>
-            <button class="tab-btn" data-category="Tech & AI">Tech & AI</button>
-            <button class="tab-btn" data-category="Business & Economy">Business & Economy</button>
-            <button class="tab-btn" data-category="Earth & Environment">Earth & Environment</button>
-            <button class="tab-btn" data-category="Lifestyle & Living">Lifestyle & Living</button>
-            <button class="tab-btn" data-category="Sports & Cultural">Sports & Cultural</button>
         </nav>
 
         <!-- Dynamic News Feed Grid Container -->
@@ -265,8 +259,8 @@
                     allArticles = [];
                 }
 
+                buildDynamicTabs(allArticles);
                 renderArticles(allArticles);
-                setupCategoryFilters();
             })
             .catch(error => {
                 console.error('Error loading live wire feed:', error);
@@ -275,6 +269,23 @@
                     container.innerHTML = `<p style="text-align: center; color: #FF3B30; padding: 40px; grid-column: 1 / -1;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
                 }
             });
+
+        function buildDynamicTabs(articles) {
+            const navContainer = document.getElementById('category-nav');
+            if (!navContainer) return;
+
+            // Extract unique categories dynamically from the articles dataset
+            const categories = [...new Set(articles.map(article => article.category).filter(Boolean))];
+
+            // Keep the "All Updates" button first, then append dynamic ones
+            let tabsHTML = `<button class="tab-btn active" data-category="All">All Updates</button>`;
+            categories.forEach(cat => {
+                tabsHTML += `<button class="tab-btn" data-category="${cat}">${cat}</button>`;
+            });
+
+            navContainer.innerHTML = tabsHTML;
+            setupCategoryFilters();
+        }
 
         function renderArticles(articlesToRender) {
             const container = document.getElementById('news-feed-container');
