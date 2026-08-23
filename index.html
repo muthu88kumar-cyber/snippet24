@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Driven News Intelligence Hub</title>
+    <title>Snippet24 News Hub</title>
     <style>
         :root {
             --primary-color: #e63946;
             --text-main: #1d3557;
-            --text-muted: #457b9d;
-            --bg-card: #ffffff;
-            --bg-body: #f1faee;
             --border-color: #eaeaea;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-body);
+            background-color: #f1fbe9; /* Matches your light green background theme */
             margin: 0;
             padding: 40px 20px;
             color: var(--text-main);
@@ -30,10 +27,9 @@
         h1 {
             text-align: center;
             margin-bottom: 30px;
-            color: var(--text-main);
         }
 
-        /* News Grid Layout */
+        /* News Grid Layout (Preserving your current style) */
         .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -41,19 +37,18 @@
         }
 
         .news-card {
-            background: var(--bg-card);
-            border-radius: 12px;
+            background: #ffffff;
+            border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease;
         }
 
         .news-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         .card-thumb {
@@ -95,7 +90,7 @@
 
         .card-footer {
             font-size: 0.8rem;
-            color: var(--text-muted);
+            color: #457b9d;
             border-top: 1px solid var(--border-color);
             padding-top: 12px;
             display: flex;
@@ -103,7 +98,7 @@
             align-items: center;
         }
 
-        /* Modal Overlay Styles */
+        /* Modal Overlay Styles matching your screenshots */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -126,7 +121,7 @@
         }
 
         .modal-container {
-            background: var(--bg-card);
+            background: #ffffff;
             width: 90%;
             max-width: 750px;
             border-radius: 12px;
@@ -135,12 +130,6 @@
             display: flex;
             flex-direction: column;
             max-height: 90vh;
-            transform: scale(0.95);
-            transition: transform 0.3s ease;
-        }
-
-        .modal-overlay.active .modal-container {
-            transform: scale(1);
         }
 
         .modal-header {
@@ -164,7 +153,6 @@
             align-items: center;
             justify-content: center;
             color: #333;
-            transition: background 0.2s;
         }
 
         .close-btn:hover {
@@ -204,7 +192,7 @@
 
         .report-section {
             margin-bottom: 16px;
-            background: var(--bg-card);
+            background: #ffffff;
             padding: 16px;
             border-radius: 8px;
             border: 1px solid var(--border-color);
@@ -242,11 +230,6 @@
             font-size: 0.85rem;
             font-weight: 600;
             display: inline-block;
-            transition: background 0.2s;
-        }
-
-        .source-btn:hover {
-            background-color: #1f2937;
         }
     </style>
 </head>
@@ -254,116 +237,85 @@
 
     <div class="container">
         <h1>Global Policy & Infrastructure Feed</h1>
-        <!-- Dynamic News Grid Cards -->
-        <div class="news-grid" id="news-grid">
-            <!-- Cards populated dynamically via script -->
-        </div>
+        <!-- Cards Grid -->
+        <div class="news-grid" id="news-grid"></div>
     </div>
 
-    <!-- Interactive Deep Dive Modal Component -->
+    <!-- Modal Popup Structure matching your screenshots -->
     <div class="modal-overlay" id="report-modal">
         <div class="modal-container">
             <div class="modal-header">
                 <button class="close-btn" id="close-modal">&times;</button>
-                <h2 id="modal-title">Loading Report Title...</h2>
+                <h2 id="modal-title"></h2>
                 <img id="modal-image" class="hero-image" src="" alt="Report Banner">
             </div>
 
             <div class="modal-body">
-                <span class="report-tag">⚡ AI-Driven Comprehensive Deep Dive Report</span>
+                <span class="report-tag">⚡ AI-DRIVEN COMPREHENSIVE DEEP DIVE REPORT</span>
 
                 <div class="report-section">
-                    <h4 id="sec-1-heading">📈 1. Core Background</h4>
-                    <p id="sec-1-text">Loading...</p>
+                    <h4 id="sec-1-heading">📈 1. Background Context & Core Developments</h4>
+                    <p id="sec-1-text"></p>
                 </div>
 
                 <div class="report-section">
-                    <h4 id="sec-2-heading">🛡️ 2. Strategic Impact</h4>
-                    <p id="sec-2-text">Loading...</p>
+                    <h4 id="sec-2-heading">🛡️ 2. Strategic Impact & Ecosystem Evolution</h4>
+                    <p id="sec-2-text"></p>
                 </div>
 
                 <div class="report-section">
-                    <h4 id="sec-3-heading">🧭 3. Forward Projections</h4>
-                    <p id="sec-3-text">Loading...</p>
+                    <h4 id="sec-3-heading">🧭 3. Forward-Looking Projections & Next Steps</h4>
+                    <p id="sec-3-text"></p>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <a id="modal-source-link" href="#" target="_blank" class="source-btn">Source: Publisher ↗</a>
+                <a id="modal-source-link" href="#" target="_blank" class="source-btn">Source: The Economic Times ↗</a>
             </div>
         </div>
     </div>
 
     <script>
-        // Sample dynamic dataset representing unique reports per topic 
-        // (Ensures sections 1, 2, and 3 vary completely across distinct subject matters)
+        // Unique data mapping for each card ensuring sections 2 and 3 do not duplicate
         const newsData = [
             {
                 id: 1,
-                category: "India & Global • Digital Economy",
+                category: "INDIA & GLOBAL • DIGITAL ECONOMY",
                 title: "Digital Public Infrastructure Expands to Rural Districts",
                 excerpt: "Government initiatives scale up digital identity and financial inclusion networks across underserved regions...",
                 image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop",
                 sourceName: "The Economic Times",
                 sourceUrl: "#",
-                section1: {
-                    heading: "1. Biometric Saturation & Localized Onboarding",
-                    text: "Gram panchayats across Tier-3 districts report a 40% surge in localized biometric authentications, driven heavily by local banking correspondents."
-                },
-                section2: {
-                    heading: "2. Cooperative Merchant & Credit Shifts",
-                    text: "Kirana store networks have experienced an unexpected transition toward QR-based micro-credits, entirely bypassing conventional regional moneylenders."
-                },
-                section3: {
-                    heading: "3. Fiscal Quarter Deployment Targets",
-                    text: "State banking federations plan to roll out 5,000 localized micro-ATM terminals across rugged terrains ahead of the upcoming financial year closing."
-                }
+                section1: "Government initiatives scale up digital identity and financial inclusion networks across underserved rural regions.",
+                section2: "Local merchants report a 35% jump in QR transaction adoption, directly cutting down reliance on physical cash flow bottlenecks.",
+                section3: "State banking task forces plan to deploy 2,500 additional micro-ATM terminals across remote blocks before the fiscal close."
             },
             {
                 id: 2,
-                category: "Infrastructure • Logistics",
+                category: "INFRASTRUCTURE • LOGISTICS",
                 title: "National Infrastructure Pipeline Accelerates Key Projects",
                 excerpt: "Key highway and rail corridors witness record execution speeds ahead of upcoming fiscal deadlines...",
                 image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&auto=format&fit=crop",
                 sourceName: "The Economic Times",
                 sourceUrl: "#",
-                section1: {
-                    heading: "1. Corridor Execution Metrics",
-                    text: "Heavy freight rail corridors achieved a milestone completion rate of 4.2 kilometers per day, outperforming prior structural output targets."
-                },
-                section2: {
-                    heading: "2. Freight Optimization & Supply Chains",
-                    text: "Industrial manufacturing clusters note a 14% drop in transit bottleneck delays following the integration of automated freight sorting hubs."
-                },
-                section3: {
-                    heading: "3. Upcoming Phase-II Expansion Steps",
-                    text: "Contractors are shifting focus toward tunnel reinforcement and signaling grid modernizations scheduled to begin next month."
-                }
+                section1: "Key highway and rail corridors witness record execution speeds ahead of upcoming federal fiscal deadlines.",
+                section2: "Heavy freight logistics providers note a 14% decrease in cargo dwell times following terminal automation upgrades.",
+                section3: "Contractors are shifting focus toward tunnel reinforcement and signaling grid modernizations scheduled for next quarter."
             },
             {
                 id: 3,
-                category: "Metropolitan • Urban Planning",
+                category: "METROPOLITAN • URBAN PLANNING",
                 title: "Urban Transit Overhauls Transform Metropolitan Commuting",
                 excerpt: "State authorities introduce multi-modal transport hubs to curb urban congestion and reduce transit times...",
                 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
                 sourceName: "LiveMint Intelligence",
                 sourceUrl: "#",
-                section1: {
-                    heading: "1. Intermodal Terminal Integration",
-                    text: "Unified ticketing passes now seamlessly link metro systems with local electric bus fleets, cutting daily commuter boarding friction down significantly."
-                },
-                section2: {
-                    heading: "2. Carbon Footprint & Traffic Redistribution",
-                    text: "Early municipal metrics highlight a 22% reduction in inner-city private vehicle density along major business district corridors during peak hours."
-                },
-                section3: {
-                    heading: "3. Next-Gen Fleet Electrification Schedule",
-                    text: "Metropolitan transport authorities plan to transition 60% of legacy diesel feeder buses to EV configurations before the end of Q4."
-                }
+                section1: "State authorities introduce multi-modal transport hubs to curb urban congestion and reduce commuter transit times.",
+                section2: "Unified transit ticketing passes successfully link metro lines with electric feeder buses, reducing daily boarding friction.",
+                section3: "Metropolitan transport divisions target a 60% transition of legacy diesel feeder fleets to clean-energy EVs by Q4."
             }
         ];
 
-        // Render Cards into Grid
         const gridContainer = document.getElementById('news-grid');
 
         newsData.forEach(item => {
@@ -385,7 +337,6 @@
             gridContainer.appendChild(card);
         });
 
-        // Modal Elements Control
         const modalOverlay = document.getElementById('report-modal');
         const closeModalBtn = document.getElementById('close-modal');
 
@@ -393,21 +344,16 @@
             document.getElementById('modal-title').innerText = data.title;
             document.getElementById('modal-image').src = data.image;
 
-            document.getElementById('sec-1-heading').innerHTML = `📈 ${data.section1.heading}`;
-            document.getElementById('sec-1-text').innerText = data.section1.text;
-
-            document.getElementById('sec-2-heading').innerHTML = `🛡️ ${data.section2.heading}`;
-            document.getElementById('sec-2-text').innerText = data.section2.text;
-
-            document.getElementById('sec-3-heading').innerHTML = `🧭 ${data.section3.heading}`;
-            document.getElementById('sec-3-text').innerText = data.section3.text;
+            document.getElementById('sec-1-text').innerText = data.section1;
+            document.getElementById('sec-2-text').innerText = data.section2;
+            document.getElementById('sec-3-text').innerText = data.section3;
 
             const sourceLink = document.getElementById('modal-source-link');
             sourceLink.innerText = `Source: ${data.sourceName} ↗`;
             sourceLink.href = data.sourceUrl;
 
             modalOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
@@ -418,9 +364,6 @@
         closeModalBtn.addEventListener('click', closeModal);
         modalOverlay.addEventListener('click', (e) => {
             if (e.target === modalOverlay) closeModal();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
         });
     </script>
 </body>
