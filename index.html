@@ -6,7 +6,7 @@
     <title>snippet24 - AI Automated News Platform</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -17,18 +17,18 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-            color: #0f172a;
+            background-color: #f4f5f7;
+            color: #1e293b;
         }
 
+        /* Header & Logo */
         header {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
-            padding: 20px 20px;
+            padding: 20px;
             text-align: center;
         }
 
-        /* Exact Logo Styling Adapted for Header */
         .logo-container {
             display: inline-block;
             text-align: center;
@@ -42,7 +42,7 @@
         }
 
         .logo-snippet {
-            font-size: 38px;
+            font-size: 34px;
             font-weight: 700;
             color: #061A4A;
             letter-spacing: -1.5px;
@@ -52,28 +52,78 @@
         .logo-box24 {
             background: #FF3B30;
             color: #fff;
-            width: 72px;
-            height: 40px;
-            border-radius: 8px;
+            width: 64px;
+            height: 36px;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 26px;
+            font-size: 22px;
             font-weight: 700;
             line-height: 1;
         }
 
         .logo-tagline {
-            margin-top: 6px;
-            font-size: 10px;
+            margin-top: 4px;
+            font-size: 9px;
             font-weight: 500;
-            letter-spacing: 3px;
-            color: #444;
+            letter-spacing: 2.5px;
+            color: #64748b;
             text-transform: uppercase;
         }
 
+        /* Hero Feature Banner (Like Reference Top Image) */
+        .hero-banner {
+            max-width: 1100px;
+            margin: 24px auto 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(6, 26, 74, 0.9), transparent);
+            padding: 30px;
+            color: #ffffff;
+        }
+
+        .hero-overlay span {
+            font-size: 11px;
+            font-weight: 700;
+            background: #FF3B30;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-overlay h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        /* Main Container & Layout Grid */
         .main-container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 30px auto;
             padding: 0 20px;
         }
@@ -81,28 +131,36 @@
         .category-nav {
             display: flex;
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             overflow-x: auto;
             padding-bottom: 10px;
             white-space: nowrap;
+            border-bottom: 1px solid #e2e8f0;
         }
 
         .tab-btn {
             padding: 8px 16px;
             cursor: pointer;
-            border: 1px solid #cbd5e1;
-            background: #ffffff;
-            color: #334155;
-            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: #64748b;
             font-weight: 600;
             font-size: 14px;
             transition: all 0.2s ease;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -10px;
         }
 
         .tab-btn.active {
-            background: #061A4A;
-            color: #ffffff;
-            border-color: #061A4A;
+            color: #061A4A;
+            border-bottom-color: #FF3B30;
+        }
+
+        /* Magazine Grid Feed */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
         }
 
         .news-card {
@@ -110,24 +168,9 @@
             border: 1px solid #e2e8f0;
             border-radius: 10px;
             overflow: hidden;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
             display: flex;
             flex-direction: column;
-        }
-
-        @media(min-width: 640px) {
-            .news-card {
-                flex-direction: row;
-            }
-            .news-thumb {
-                width: 280px;
-                min-height: 200px;
-            }
-            .news-content {
-                flex: 1;
-                padding: 24px;
-            }
         }
 
         .news-thumb {
@@ -141,7 +184,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            flex: 1;
         }
 
         .category {
@@ -151,28 +194,28 @@
             text-transform: uppercase;
             letter-spacing: 0.8px;
             margin-bottom: 6px;
-            display: block;
         }
 
         .news-card h3 {
             margin: 0 0 10px 0;
-            font-size: 20px;
+            font-size: 18px;
             color: #0f172a;
             line-height: 1.4;
         }
 
         .news-card p {
             color: #475569;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 1.6;
-            margin: 0 0 15px 0;
+            margin-bottom: 15px;
+            flex: 1;
         }
 
         details summary {
             cursor: pointer;
-            color: #0066cc;
+            color: #061A4A;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         details p {
@@ -182,25 +225,29 @@
             color: #334155;
         }
 
-        /* Responsive Logo Scaling for Small Mobile Screens */
-        @media(max-width: 480px) {
-            .logo-snippet {
-                font-size: 30px;
-            }
-            .logo-box24 {
-                width: 58px;
-                height: 32px;
-                font-size: 20px;
-            }
-            .logo-tagline {
-                font-size: 8px;
-                letter-spacing: 2px;
-            }
+        /* Footer */
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            padding: 40px 20px;
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header & Logo -->
     <header>
         <div class="logo-container">
             <div class="logo-brand">
@@ -211,6 +258,18 @@
         </div>
     </header>
 
+    <!-- Hero Featured Banner Area -->
+    <div class="hero-banner">
+        <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80" alt="Featured Intelligence">
+            <div class="hero-overlay">
+                <span>Featured Intelligence</span>
+                <h2>Global Infrastructure Framework Reaches Next-Gen Automation Milestone</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content & Grid Layout -->
     <div class="main-container">
         <!-- Category Navigation Tabs -->
         <nav class="category-nav">
@@ -223,24 +282,24 @@
             <button class="tab-btn" data-category="Sports & Cultural">Sports & Cultural</button>
         </nav>
 
-        <!-- Dynamic News Feed Container -->
-        <div id="news-feed-container">
-            <p style="text-align: center; color: #64748b; padding: 40px;">Loading live feed...</p>
+        <!-- Dynamic News Feed Grid Container -->
+        <div id="news-feed-container" class="news-grid">
+            <p style="text-align: center; color: #64748b; padding: 40px; grid-column: 1 / -1;">Loading live feed...</p>
         </div>
     </div>
 
-    <!-- Legal & Copyright Policy Footer -->
-    <footer style="background-color: #f1f5f9; border-top: 1px solid #e2e8f0; padding: 40px 20px; margin-top: 60px; color: #475569; font-size: 13px;">
-        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
             <div style="flex: 1; min-width: 250px;">
-                <h4 style="color: #0f172a; margin-bottom: 10px; font-size: 15px;">snippet24</h4>
-                <p style="line-height: 1.5; margin: 0;">Automated AI-curated intelligence platform bringing you real-time headlines, summaries, and structured insights safely.</p>
+                <h4 style="color: #061A4A; margin-bottom: 10px; font-size: 15px;">snippet24</h4>
+                <p style="line-height: 1.5; margin: 0;">Automated AI-curated intelligence platform bringing you real-time headlines and structured insights safely.</p>
             </div>
             <div style="flex: 2; min-width: 300px;">
-                <h4 style="color: #0f172a; margin-bottom: 10px; font-size: 15px;">Copyright & Fair Use Notice</h4>
-                <p style="line-height: 1.5; margin: 0 0 10px 0;">
+                <h4 style="color: #061A4A; margin-bottom: 10px; font-size: 15px;">Copyright & Fair Use Notice</h4>
+                <p style="line-height: 1.5; margin: 0;">
                     © 2026 <strong>snippet24.in</strong>. All rights reserved. 
-                    This platform functions as an automated news intelligence provider. All thumbnails utilize royalty-free editorial assets that carry no copyright restriction.
+                    This platform functions as an automated news intelligence provider using royalty-free layout and editorial assets.
                 </p>
             </div>
         </div>
@@ -273,7 +332,7 @@
                 console.error('Error loading live wire feed:', error);
                 const container = document.getElementById('news-feed-container');
                 if (container) {
-                    container.innerHTML = `<p style="text-align: center; color: #FF3B30; padding: 40px;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
+                    container.innerHTML = `<p style="text-align: center; color: #FF3B30; padding: 40px; grid-column: 1 / -1;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
                 }
             });
 
@@ -284,7 +343,7 @@
             container.innerHTML = "";
 
             if (!Array.isArray(articlesToRender) || articlesToRender.length === 0) {
-                container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 40px;">No live updates found in this category right now.</p>`;
+                container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 40px; grid-column: 1 / -1;">No live updates found in this category right now.</p>`;
                 return;
             }
 
@@ -299,7 +358,6 @@
                 const summary = typeof article.summary === 'object' && article.summary !== null ? article.summary.en : (article.summary || "");
                 const deepDive = typeof article.deep_dive === 'object' && article.deep_dive !== null ? article.deep_dive.en : (article.deep_dive || "");
                 
-                // Uses copyright-free high-res placeholder imagery mapped safely per article
                 const imageUrl = article.image || `https://picsum.photos/seed/snippet24_${index + 1}/800/500`;
 
                 card.innerHTML = `
