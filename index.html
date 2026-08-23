@@ -50,11 +50,11 @@
             color: #ffffff;
         }
 
-        /* Header & Logo */
+        /* Header & Logo with Slogan */
         header {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
-            padding: 20px;
+            padding: 18px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -62,14 +62,19 @@
             margin: 0 auto;
         }
 
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
         .logo-brand {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .logo-snippet {
-            font-size: 32px;
+            font-size: 30px;
             font-weight: 700;
             color: #061A4A;
             letter-spacing: -1.5px;
@@ -79,14 +84,23 @@
         .logo-box24 {
             background: #FF3B30;
             color: #fff;
-            width: 54px;
-            height: 32px;
+            width: 50px;
+            height: 30px;
             border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
+        }
+
+        .logo-slogan {
+            font-size: 11px;
+            font-weight: 500;
+            color: #64748b;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            text-transform: uppercase;
         }
 
         .header-ad {
@@ -99,7 +113,7 @@
             text-align: center;
         }
 
-        /* Trending Ticker Bar */
+        /* Running Wire Live Trending Ticker */
         .trending-bar {
             background: #ffffff;
             border-bottom: 1px solid #e2e8f0;
@@ -110,21 +124,54 @@
             align-items: center;
             gap: 15px;
             font-size: 13px;
+            overflow: hidden;
         }
 
         .trending-badge {
-            background: #111827;
+            background: #FF3B30;
             color: #fff;
             padding: 4px 10px;
             font-weight: 700;
             font-size: 11px;
             text-transform: uppercase;
             border-radius: 3px;
+            flex-shrink: 0;
+            z-index: 2;
         }
 
-        .trending-title {
+        .ticker-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .ticker-track {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 35s linear infinite;
+        }
+
+        .ticker-track:hover {
+            animation-play-state: paused;
+        }
+
+        .ticker-item {
+            display: inline-block;
             color: #334155;
             font-weight: 500;
+            margin-right: 50px;
+        }
+
+        .ticker-item span {
+            color: #FF3B30;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
         }
 
         /* Main Container */
@@ -409,21 +456,28 @@
         </div>
     </div>
 
-    <!-- Main Header -->
+    <!-- Main Header with Slogan -->
     <header>
-        <div class="logo-brand">
-            <div class="logo-snippet">snippet</div>
-            <div class="logo-box24">24</div>
+        <div class="logo-wrapper">
+            <div class="logo-brand">
+                <div class="logo-snippet">snippet</div>
+                <div class="logo-box24">24</div>
+            </div>
+            <div class="logo-slogan">Real-Time Intelligence & Market Wire</div>
         </div>
         <div class="header-ad">
             AI-Powered Automated Intelligence Platform
         </div>
     </header>
 
-    <!-- Trending Ticker Bar -->
+    <!-- Running Wire Live Trending Ticker Bar -->
     <div class="trending-bar">
-        <span class="trending-badge">Trending</span>
-        <span class="trending-title" id="trending-text">Global Infrastructure Framework Reaches Next-Gen Automation Milestone</span>
+        <span class="trending-badge">Live Wire</span>
+        <div class="ticker-container">
+            <div class="ticker-track" id="ticker-track-container">
+                <div class="ticker-item"><span>Loading Live Wire...</span></div>
+            </div>
+        </div>
     </div>
 
     <!-- Main Container -->
@@ -504,6 +558,7 @@
                 }
 
                 buildHeroSection(allArticles);
+                buildRunningTicker(allArticles);
                 buildDynamicTabs(allArticles);
                 renderArticles(allArticles);
             })
@@ -515,26 +570,6 @@
         // Function to generate topic-relevant image URLs dynamically
         function getTopicImage(article, index) {
             if (article.image) return article.image;
-            
-            const category = (article.category || "").toLowerCase();
-            const title = (typeof article.title === 'object' ? article.title.en : article.title || "").toLowerCase();
-            
-            let keyword = "news";
-            if (category.includes("tech") || title.includes("ai") || title.includes("software") || title.includes("chip")) {
-                keyword = "technology,chip,code";
-            } else if (category.includes("business") || title.includes("market") || title.includes("supply") || title.includes("finance")) {
-                keyword = "business,finance,office";
-            } else if (category.includes("india") || title.includes("metro") || title.includes("trade") || title.includes("rail")) {
-                keyword = "city,transport,infrastructure";
-            } else if (category.includes("environment") || title.includes("solar") || title.includes("eco") || title.includes("waste")) {
-                keyword = "nature,green,solar";
-            } else if (category.includes("lifestyle") || title.includes("design") || title.includes("dairy") || title.includes("home")) {
-                keyword = "lifestyle,interior,coffee";
-            } else if (category.includes("sports") || title.includes("stadium") || title.includes("athlete")) {
-                keyword = "stadium,sport,running";
-            }
-
-            // Using Picsum with unique seed combined with keyword hash to guarantee unique images per article
             return `https://picsum.photos/seed/snippet24_art_${index + 1}/800/500`;
         }
 
@@ -575,9 +610,24 @@
                     </div>
                 </div>
             `;
-            
-            const trendingText = document.getElementById('trending-text');
-            if (trendingText) trendingText.innerText = mainTitle;
+        }
+
+        // Build continuous running ticker items
+        function buildRunningTicker(articles) {
+            const trackContainer = document.getElementById('ticker-track-container');
+            if (!trackContainer || articles.length === 0) return;
+
+            let tickerHTML = '';
+            // Duplicate the items once to ensure a seamless looping effect across the track width
+            const loopItems = [...articles, ...articles];
+
+            loopItems.forEach(article => {
+                const title = typeof article.title === 'object' ? article.title.en : article.title;
+                const category = article.category || 'Wire';
+                tickerHTML += `<div class="ticker-item"><span>[${category}]</span> ${title} •</div>`;
+            });
+
+            trackContainer.innerHTML = tickerHTML;
         }
 
         function buildDynamicTabs(articles) {
@@ -617,7 +667,6 @@
                 const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
                 const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : article.deep_dive;
                 
-                // Pass the unique index offset so every card gets its own distinct photo seed
                 const imageUrl = getTopicImage(article, index + 10);
 
                 card.innerHTML = `
