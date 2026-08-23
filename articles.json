@@ -1,354 +1,94 @@
 {
-  "live_feed": {
-    "article_1": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Live Update",
-      "title": { "en": "Global AI Infrastructure Expansion Reaches New Milestone" },
-      "summary": { "en": "Major tech firms announce collaborative frameworks to streamline next-generation data center energy distribution." },
-      "deep_dive": { "en": "The initiative targets a 30% reduction in grid strain through predictive machine learning models that dynamically balance energy loads across regional sectors." }
-    },
-    "article_2": {
-      "category": "Business & Economy",
-      "meta": "Business & Economy • Live Update",
-      "title": { "en": "Supply Chain Automation Trends Focus on Resilient Logistics" },
-      "summary": { "en": "Enterprises pivot toward predictive multi-modal logistics networks to mitigate cross-border operational bottlenecks." },
-      "deep_dive": { "en": "Automated inventory balancing and real-time vendor routing are driving significant efficiency gains across major manufacturing hubs." }
-    },
-    "article_3": {
+  "live_feed": [
+    {
       "category": "India & Global",
-      "meta": "India & Global • Market Brief",
-      "title": { "en": "Cross-Border Digital Infrastructure Accelerates South Asian Trade" },
-      "summary": { "en": "New interoperable payment corridors lower transaction overhead for regional merchants and micro-entrepreneurs." },
-      "deep_dive": { "en": "Integration of secure APIs across municipal and commercial banking networks enhances transparency and liquidity for growing enterprises." }
+      "title": {
+        "en": "Economic Growth Surges Past Expectations in Q1",
+        "hi": "पहली तिमाही में आर्थिक वृद्धि उम्मीदों से आगे निकली",
+        "ta": "முதல் காலாண்டில் பொருளாதார வளர்ச்சி எதிர்பார்ப்புகளைத் தாண்டியது",
+        "te": "మొదటి త్రైమాసికంలో ఊహల కంటే ఆర్థిక వృద్ధి వేగవంతం",
+        "kn": "ಮೊದಲ trimestre ನಲ್ಲಿ ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆ ನಿರೀಕ್ಷೆಗೂ ಮೀರಿ ಜಿಗಿತ",
+        "ml": "ഒന്നാം പാദത്തിൽ സാമ്പത്തിക വളർച്ച പ്രതീക്ഷകൾക്കപ്പുറത്തേക്ക് കുതിച്ചുയർന്നു"
+      },
+      "summary": {
+        "en": "India's latest market metrics highlight robust structural expansions across manufacturing and digital financial infrastructure.",
+        "hi": "भारत के नवीनतम बाजार मेट्रिक्स विनिर्माण और डिजिटल वित्तीय बुनियादी ढांचे में मजबूत संरचनात्मक विस्तार को उजागर करते हैं।",
+        "ta": "இந்தியாவின் சமீபத்திய சந்தை அளவீடுகள் உற்பத்தி மற்றும் டிஜிட்டல் நிதி உள்கட்டமைப்பில் வலுவான கட்டமைப்பு விரிவாக்கங்களை எடுத்துக்காட்டுகின்றன.",
+        "te": "భారతదేశ తాజా మార్కెట్ మెట్రిక్స్ తయారీ మరియు డిజిటల్ ఆర్థిక అవస్థాపనలో పటిష్టమైన నిర్మాణ వృద్ధిని హైలైట్ చేస్తున్నాయి.",
+        "kn": "ಭಾರತದ ಇತ್ತೀಚಿನ ಮಾರುಕಟ್ಟೆ ಮೆಟ್ರಿಕ್‌ಗಳು ಉತ್ಪಾದನೆ ಮತ್ತು ಡಿಜಿಟಲ್ ಹಣಕಾಸು ಮೂಲಸೌಕರ್ಯದಲ್ಲಿ ಬಲವಾದ ರಚನಾತ್ಮಕ ವಿಸ್ತರಣೆಯನ್ನು ಎತ್ತಿ ತೋರಿಸುತ್ತವೆ.",
+        "ml": "ഇന്ത്യയുടെ ഏറ്റവും പുതിയ വിപണി മെട്രിക്കുകൾ നിർമ്മാണത്തിലും ഡിജിറ്റൽ സാമ്പത്തിക ഇൻഫ്രാസ്ട്രക്ചറിലുമുള്ള ശക്തമായ ഘടനാപരമായ വിപുലീകരണത്തെ എടുത്തുകാണിക്കുന്നു."
+      },
+      "deep_dive": {
+        "en": "A comprehensive look into the fiscal policies driving Q1 growth. Increased capital expenditure by the central government combined with private sector credit uptake has fueled significant momentum in urban consumption and core industries.",
+        "hi": "राजकोषीय नीतियों का एक व्यापक विवरण जो पहली तिमाही की वृद्धि को गति दे रही है। केंद्र सरकार द्वारा पूंजीगत व्यय में वृद्धि और निजी क्षेत्र के ऋण उठाव ने शहरी खपत और प्रमुख उद्योगों में महत्वपूर्ण गति प्रदान की है।",
+        "ta": "முதல் காலாண்டு வளர்ச்சியைத் தூண்டும் நிதிப் கொள்கைகள் பற்றிய விரிவான பார்வை. மத்திய அரசின் மூலதனச் செலவினமும் தனியார் துறை கடன் ஈர்ப்பும் நகர்ப்புற நுகர்வு மற்றும் முக்கியத் தொழில்களில் குறிப்பிடத்தக்க வேகத்தைத் தூண்டிவிட்டுள்ளன.",
+        "te": "మొదటి త్రైమాసిక వృద్ధిని నడిపిస్తున్న ఆర్థిక విధానాలపై సమగ్ర పరిశీలన. కేంద్ర ప్రభుత్వం మూలధన వ్యయం పెంచడం మరియు ప్రైవేట్ రంగ రుణాల స్వీకరణ పట్టణ వినియోగం మరియు ప్రధాన రంగాలలో గణనీయమైన ఊపునిచ్చాయి.",
+        "kn": "ಮೊದಲ ತ್ರೈಮಾಸಿಕ ಬೆಳವಣಿಗೆಗೆ ಕಾರಣವಾಗಿರುವ ವಿತ್ತೀಯ ನೀತಿಗಳ ಸಮಗ್ರ ಅವಲೋಕನ. ಕೇಂದ್ರ ಸರ್ಕಾರದ ಬಂಡವಾಳ ವೆಚ್ಚದ ಹೆಚ್ಚಳ ಮತ್ತು ಖಾಸಗಿ ವಲಯದ ಸಾಲದ ಬಳಕೆಯು ನಗರ ಪ್ರದೇಶದ ಬಳಕೆ ಮತ್ತು ಪ್ರಮುಖ ಕೈಗಾರಿಕೆಗಳಲ್ಲಿ ಗಮನಾರ್ಹ ಚೇತರಿಕೆಯನ್ನು ಉಂಟುಮಾಡಿದೆ.",
+        "ml": "ഒന്നാം പാദത്തിലെ വളർച്ചയെ നയിക്കുന്ന സാമ്പത്തിക നയങ്ങളെക്കുറിച്ചുള്ള സമഗ്രമായ വിശകലനം. കേന്ദ്ര സർക്കാരിന്റെ ക്യാപിറ്റൽ എക്സ്പെൻഡിച്ചറും സ്വകാര്യ മേഖലയിലെ വായ്പാ വർദ്ധനവും നഗരങ്ങളിലെ ഉപഭോഗത്തിലും പ്രധാന വ്യവസായങ്ങളിലും കാര്യമായ ചലനങ്ങൾ സൃഷ്ടിച്ചു."
+      },
+      "source": "Mint",
+      "url": "https://www.livemint.com",
+      "image": "https://picsum.photos/seed/news_eco/800/500"
     },
-    "article_4": {
+    {
       "category": "Tech & AI",
-      "meta": "Tech & AI • Software Update",
-      "title": { "en": "Advanced Spreadsheet Automation Redefines Financial Modeling" },
-      "summary": { "en": "Modern BI tools incorporate agentic data pipelines to automate routine reconciliation tasks and budget variance reporting." },
-      "deep_dive": { "en": "Finance managers leverage natural language prompts to construct complex multi-variable revenue simulations within seconds." }
+      "title": {
+        "en": "Next-Gen AI Agents Transform Automated Financial Workflows",
+        "hi": "अगली पीढ़ी के AI एजेंट स्वचालित वित्तीय कार्यप्रवाह को बदल रहे हैं",
+        "ta": "அடுத்த தலைமுறை AI முகவர்கள் தானியங்கி நிதிப் பணிகளை மாற்றியமைக்கின்றன",
+        "te": "తదుపరి తరం AI ఏజెంట్లు ఆటోమేటెడ్ ఆర్థిక వర్క్‌ఫ్లోలను మారుస్తున్నాయి",
+        "kn": "ಮುಂದಿನ ಪೀಳಿಗೆಯ AI ಏಜೆಂಟ್‌ಗಳು ಸ್ವಯಂಚಾಲಿತ ಹಣಕಾಸು ಕಾರ್ಯಪ್ರವಾಹಗಳನ್ನು ಪರಿವರ್ತಿಸುತ್ತವೆ",
+        "ml": "അടുത്ത തലമുറ AI ഏജന്റുകൾ ഓട്ടോമേറ്റഡ് സാമ്പത്തിക വർക്ക്ഫ്ലോകളെ മാറ്റിമറിക്കുന്നു"
+      },
+      "summary": {
+        "en": "Enterprises are increasingly adopting autonomous workflow agents to handle reconciliation, reporting, and predictive tax analysis.",
+        "hi": "उद्यम समाधान, रिपोर्टिंग और पूर्वानुमानित कर विश्लेषण को संभालने के लिए तेजी से स्वायत्त कार्यप्रवाह एजेंटों को अपना रहे हैं।",
+        "ta": "நிறுவனங்கள் நல்லிணக்கம், அறிக்கையிடல் மற்றும் கணிப்பு வரி பகுப்பாய்வு ஆகியவற்றைக் கையாள தன்னாட்சி பணிப்பாய்வு முகவர்களை அதிகளவில் ஏற்றுக்கொள்கின்றன.",
+        "te": "సయోధ్య, నివేదికలు మరియు అంచనా పన్ను విశ్లేషణను నిర్వహించడానికి సంస్థలు స్వయంప్రతిపత్తి కలిగిన వర్క్‌ఫ్లో ఏజెంట్లను ఎక్కువగా స్వీకరిస్తున్నాయి.",
+        "kn": "ಹಣಕಾಸು ಸರಿಹೊಂದಿಸುವಿಕೆ, ವರದಿ ಮಾಡುವಿಕೆ ಮತ್ತು ಮುನ್ಸೂಚಕ ತೆರಿಗೆ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಉದ್ಯಮಗಳು ಸ್ವಾಯತ್ತ ಕಾರ್ಯಪ್ರವಾಹ ಏಜೆಂಟ್‌ಗಳನ್ನು ಹೆಚ್ಚು ಅಳವಡಿಸಿಕೊಳ್ಳುತ್ತಿವೆ.",
+        "ml": "കണക്കുകൾ ഒത്തുനോക്കൽ, റിപ്പോർട്ടിംഗ്, പ്രവചനപരമായ ടാക്സ് വിശകലനം എന്നിവ കൈകാര്യം ചെയ്യാൻ സംരംഭങ്ങൾ സ്വയംഭരണ വർക്ക്ഫ്ലോ ഏജന്റുകളെ കൂടുതലായി സ്വീകരിക്കുന്നു."
+      },
+      "deep_dive": {
+        "en": "Exploring how large language models and vertical AI agents integrate with ERP systems. Financial teams are reducing manual spreadsheet bottlenecks by up to 70%, allowing managers to focus on strategic pricing models and cost optimization.",
+        "hi": "यह पता लगाना कि कैसे बड़े भाषा मॉडल और वर्टिकल AI एजेंट ERP प्रणालियों के साथ एकीकृत होते हैं। वित्तीय टीमें मैन्युअल स्प्रेडशीट बाधाओं को 70% तक कम कर रही हैं, जिससे प्रबंधकों को रणनीतिक मूल्य निर्धारण मॉडल और लागत अनुकूलन पर ध्यान केंद्रित करने की अनुमति मिलती है।",
+        "ta": "பெரிய மொழி மாதிரிகள் மற்றும் செங்குத்து AI முகவர்கள் எவ்வாறு ERP அமைப்புகளுடன் ஒருங்கிணைக்கப்படுகின்றன என்பதை ஆராய்தல். நிதிக்குழுக்கள் கையேடு விரிதாள் தடைகளை 70% வரை குறைக்கின்றன.",
+        "te": "పెద్ద భాషా నమూనాలు మరియు నిలువు AI ఏజెంట్లు ERP సిస్టమ్‌లతో ఎలా అనుసంధానించబడతాయో అన్వేషించడం. ఆర్థిక బృందాలు మాన్యువల్ స్ప్రెడ్‌షీట్ అడ్డంకులను 70% వరకు తగ్గಿಸುತ್ತಿವೆ.",
+        "kn": "ದೊಡ್ಡ ಭಾಷಾ ಮಾದರಿಗಳು ಮತ್ತು ಲಂಬವಾದ AI ಏಜೆಂಟ್‌ಗಳು ERP ಸಿಸ್ಟಮ್‌ಗಳೊಂದಿಗೆ ಹೇಗೆ ಸಂಯೋಜನೆಗೊಳ್ಳುತ್ತವೆ ಎಂಬುದನ್ನು ಅನ್ವೇಷಿಸುವುದು. ಹಣಕಾಸು ತಂಡಗಳು ಹಸ್ತಚಾಲಿತ ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅಡಚಣೆಗಳನ್ನು 70% ರಷ್ಟು ಕಡಿಮೆ ಮಾಡುತ್ತಿವೆ.",
+        "ml": "വലിയ ഭാഷാ മോഡലുകളും വെർട്ടിക്കൽ AI ഏജന്റുകളും ERP സിസ്റ്റങ്ങളുമായി എങ്ങനെ സംയോജിക്കുന്നു എന്ന് പരിശോധിക്കുന്നു. ധകാര്യ ടീമുകൾ മാന്വൽ സ്പ്രെഡ്ഷീറ്റ് തടസ്സങ്ങൾ 70% വരെ കുറയ്ക്കുന്നു."
+      },
+      "source": "YourStory",
+      "url": "https://yourstory.com",
+      "image": "https://picsum.photos/seed/news_tech/800/500"
     },
-    "article_5": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Clean Energy",
-      "title": { "en": "Urban Micro-Grids Adopt Decentralized Solar Storage" },
-      "summary": { "en": "Municipalities incentivize commercial real estate complexes to deploy high-efficiency battery storage systems." },
-      "deep_dive": { "en": "Smart inverters automatically shift local energy consumption profiles during peak grid demand windows." }
-    },
-    "article_6": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Culinary Science",
-      "title": { "en": "The Artisan Revival of Clean-Label Dairy Production" },
-      "summary": { "en": "Independent producers embrace traditional formulations utilizing fresh dairy cream and natural fruit extracts without stabilizers." },
-      "deep_dive": { "en": "Consumer demand for transparent ingredient sourcing fuels micro-scale processing units focusing on traditional texture and purity." }
-    },
-    "article_7": {
-      "category": "Sports & Cultural",
-      "meta": "Culture • Heritage",
-      "title": { "en": "Digital Preservation Projects Safeguard Regional Folk Arts" },
-      "summary": { "en": "Cultural archives deploy high-resolution volumetric capture to document classical dance forms and indigenous craftsmanship." },
-      "deep_dive": { "en": "Open-access digital repositories allow global educators to study traditional techniques and regional music compositions." }
-    },
-    "article_8": {
+    {
       "category": "Business & Economy",
-      "meta": "Business • Enterprise",
-      "title": { "en": "Revenue Cycle Management Platforms Integrate Smart Automation" },
-      "summary": { "en": "Healthcare and enterprise billing systems implement robotic process automation to minimize claim rejections." },
-      "deep_dive": { "en": "Real-time auditing dashboards flag coding discrepancies instantly, accelerating cash flow velocity for service providers." }
-    },
-    "article_9": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Hardware",
-      "title": { "en": "Next-Gen Edge Computing Chips Optimize Retail Checkout Systems" },
-      "summary": { "en": "Smart point-of-sale terminals utilize local neural processing units to execute instant basket verification." },
-      "deep_dive": { "en": "Low-latency computer vision models identify scanned merchandise accurately while ensuring strict customer data privacy." }
-    },
-    "article_10": {
-      "category": "India & Global",
-      "meta": "India & Global • Urban Mobility",
-      "title": { "en": "Metro Expansion Projects Transform Metropolitan Transit Corridors" },
-      "summary": { "en": "Integrated multi-modal transit hubs reduce commuter transit times and alleviate inner-city traffic congestion." },
-      "deep_dive": { "en": "Digital pass systems and smart feeder bus coordination provide seamless last-mile connectivity for daily commuters." }
-    },
-    "article_11": {
-      "category": "Business & Economy",
-      "meta": "Business • Micro-Enterprise",
-      "title": { "en": "Hyper-Local Marketplace Models Empower Home Entrepreneurs" },
-      "summary": { "en": "Digital platforms connect independent artisanal creators directly with urban consumers through streamlined logistics." },
-      "deep_dive": { "en": "Automated order routing and inventory syncing allow cottage industries to scale distribution without heavy capital outlays." }
-    },
-    "article_12": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Wellness",
-      "title": { "en": "Ergonomic Workspace Designs Gain Momentum in Remote Offices" },
-      "summary": { "en": "Professionals invest in modular standing desks and lighting calibration systems to improve daily productivity." },
-      "deep_dive": { "en": "Circadian lighting synchronization helps maintain healthy sleep-wake cycles for individuals working flexible hours." }
-    },
-    "article_13": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Cloud",
-      "title": { "en": "Multi-Cloud Security Frameworks Adopt Zero-Trust Architecture" },
-      "summary": { "en": "Enterprise security teams enforce continuous identity verification across distributed cloud storage repositories." },
-      "deep_dive": { "en": "Automated threat intelligence feeds isolate compromised API endpoints before unauthorized data access occurs." }
-    },
-    "article_14": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Conservation",
-      "title": { "en": "Coastal Mangrove Restoration Initiatives Show Positive Impact" },
-      "summary": { "en": "Community-led conservation projects reinforce shorelines against tidal erosion while restoring marine nurseries." },
-      "deep_dive": { "en": "Satellite telemetry tracks canopy density growth to measure carbon sequestration rates accurately over time." }
-    },
-    "article_15": {
-      "category": "Sports & Cultural",
-      "meta": "Sports • Analytics",
-      "title": { "en": "Wearable Biometrics Revolutionize Athlete Recovery Protocols" },
-      "summary": { "en": "Coaching staffs analyze real-time muscular load and sleep metrics to prevent overtraining injuries." },
-      "deep_dive": { "en": "Customized recovery schedules adapt dynamically based on daily cardiovascular strain indices." }
-    },
-    "article_16": {
-      "category": "Business & Economy",
-      "meta": "Business • Finance",
-      "title": { "en": "Bucket-Based Cash Flow Management Tools Gain Traction" },
-      "summary": { "en": "Small business owners utilize automated fund allocation software to separate tax liabilities from operating capital." },
-      "deep_dive": { "en": "Visual cash flow forecasting modules project liquidity runways across 90-day rolling horizons." }
-    },
-    "article_17": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Robotics",
-      "title": { "en": "Warehouse Autonomous Mobile Robots Feature Improved Navigation" },
-      "summary": { "en": "Fleet management software integrates lidar sensor data to optimize picking paths in congested distribution centers." },
-      "deep_dive": { "en": "Dynamic obstacle avoidance algorithms allow robots to operate safely alongside human warehouse associates." }
-    },
-    "article_18": {
-      "category": "India & Global",
-      "meta": "India & Global • Agriculture",
-      "title": { "en": "Precision Farming Sensors Optimize Irrigation Water Usage" },
-      "summary": { "en": "IoT soil moisture monitors transmit real-time telemetry to automated valve controllers across rural farming belts." },
-      "deep_dive": { "en": "Data-driven irrigation scheduling reduces groundwater depletion while improving crop yield consistency." }
-    },
-    "article_19": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Gastronomy",
-      "title": { "en": "Traditional Clay Pot Fermentation Methods Modernize" },
-      "summary": { "en": "Producers package traditional curd and probiotic beverages in hygienic earthenware containers for retail distribution." },
-      "deep_dive": { "en": "Porous clay characteristics naturally regulate temperature and moisture, enhancing texture and probiotic viability." }
-    },
-    "article_20": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Development",
-      "title": { "en": "Low-Code AI Agent Builders Empower Financial Analysts" },
-      "summary": { "en": "Domain experts construct custom workflow automations without writing underlying syntax scripts." },
-      "deep_dive": { "en": "Pre-built connectors link enterprise spreadsheets directly to secure LLM endpoints for rapid data extraction." }
-    },
-    "article_21": {
-      "category": "Business & Economy",
-      "meta": "Business • Advisory",
-      "title": { "en": "Boutique Financial Advisory Practices Focus on Digital Compliance" },
-      "summary": { "en": "Consultancies adopt automated tax filing checkers to streamline client audit readiness across jurisdictions." },
-      "deep_dive": { "en": "Integrated document management portals securely store verified financial statements for instant retrieval." }
-    },
-    "article_22": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Urban",
-      "title": { "en": "Vertical Green Walls Combat Heat Island Effect in Cities" },
-      "summary": { "en": "Commercial office developers install exterior botanical facades to lower building cooling energy consumption." },
-      "deep_dive": { "en": "Automated drip irrigation and nutrient dosing systems ensure lush plant health with minimal water waste." }
-    },
-    "article_23": {
-      "category": "Sports & Cultural",
-      "meta": "Culture • Literature",
-      "title": { "en": "Digital Audio Archives Preserve Rare Regional Poetry" },
-      "summary": { "en": "Linguists collaborate with community elders to record and transcribe vanishing dialects and oral traditions." },
-      "deep_dive": { "en": "Speech-to-text machine learning models trained on regional phonetics accelerate archival indexing." }
-    },
-    "article_24": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Cybersecurity",
-      "title": { "en": "Biometric Authentication Protocols Replace Legacy Passwords" },
-      "summary": { "en": "Consumer applications implement FIDO2 passkeys to eliminate credential stuffing vulnerabilities." },
-      "deep_dive": { "en": "Device-bound cryptographic keys ensure user credentials never leave local hardware security modules." }
-    },
-    "article_25": {
-      "category": "India & Global",
-      "meta": "India & Global • Logistics",
-      "title": { "en": "Multimodal Freight Corridors Reduce Transit Times" },
-      "summary": { "en": "Rail and coastal shipping integration lowers carbon footprints for bulk industrial cargo movements." },
-      "deep_dive": { "en": "Digital bill of lading systems speed up customs clearance checkpoints at major shipping terminals." }
-    },
-    "article_26": {
-      "category": "Business & Economy",
-      "meta": "Business • Retail",
-      "title": { "en": "Omnichannel Inventory Syncing Eliminates Stockouts" },
-      "summary": { "en": "Retailers unify online and physical storefront inventories through centralized cloud ledger databases." },
-      "deep_dive": { "en": "Predictive restocking algorithms anticipate regional demand spikes weeks in advance of holiday seasons." }
-    },
-    "article_27": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Quantum",
-      "title": { "en": "Quantum Encryption Protocols Enter Commercial Testing" },
-      "summary": { "en": "Financial institutions evaluate quantum-resistant cryptographic algorithms to secure long-term data archives." },
-      "deep_dive": { "en": "Key distribution networks utilize fiber-optic photon polarization to detect unauthorized wiretapping instantly." }
-    },
-    "article_28": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Recycling",
-      "title": { "en": "AI-Powered Optical Sorters Revolutionize Waste Recycling" },
-      "summary": { "en": "Automated sorting facilities recover high-purity plastics and metals from commingled municipal waste streams." },
-      "deep_dive": { "en": "High-speed computer vision classifiers separate polymer grades at rates exceeding three thousand items per minute." }
-    },
-    "article_29": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Smart Home",
-      "title": { "en": "Matter Protocol Unifies Smart Home Ecosystems" },
-      "summary": { "en": "Cross-brand device compatibility allows seamless voice and mobile control across home automation fixtures." },
-      "deep_dive": { "en": "Local network routing ensures responsive automation performance even during broadband internet outages." }
-    },
-    "article_30": {
-      "category": "Sports & Cultural",
-      "meta": "Sports • Infrastructure",
-      "title": { "en": "Modular Stadium Design Reduces Permanent Environmental Footprint" },
-      "summary": { "en": "Event organizers construct temporary seating frameworks utilizing recyclable composite building materials." },
-      "deep_dive": { "en": "Post-event disassembly protocols allow structural components to be repurposed for community recreational facilities." }
-    },
-    "article_31": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Networks",
-      "title": { "en": "5G Standalone Deployments Enable Industrial Automation" },
-      "summary": { "en": "Manufacturing plants utilize private cellular slices to operate wireless automated guided vehicle fleets." },
-      "deep_dive": { "en": "Ultra-reliable low-latency communication guarantees millisecond-level response times for robotic safety interlocks." }
-    },
-    "article_32": {
-      "category": "Business & Economy",
-      "meta": "Business • Banking",
-      "title": { "en": "Embedded Finance APIs Expand Merchant Lending Services" },
-      "summary": { "en": "Non-financial software platforms offer integrated working capital loans based on verified transaction histories." },
-      "deep_dive": { "en": "Automated underwriting models assess risk profiles instantly without requiring traditional physical collateral." }
-    },
-    "article_33": {
-      "category": "India & Global",
-      "meta": "India & Global • Education",
-      "title": { "en": "Vernacular EdTech Platforms Expand Rural Skill Training" },
-      "summary": { "en": "Interactive mobile tutorials deliver vocational instruction in multiple regional Indian languages." },
-      "deep_dive": { "en": "Offline synchronization capabilities allow students in remote districts to complete coursework without constant connectivity." }
-    },
-    "article_34": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Design",
-      "title": { "en": "Minimalist Interior Aesthetics Focus on Acoustic Comfort" },
-      "summary": { "en": "Architects integrate sound-absorbing natural wood panels and recycled felt partitions into open-plan living spaces." },
-      "deep_dive": { "en": "Improved acoustic dampening reduces indoor stress levels in busy metropolitan residential complexes." }
-    },
-    "article_35": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Software",
-      "title": { "en": "Automated Code Review Agents Accelerate Software Deployment" },
-      "summary": { "en": "Development teams deploy specialized LLM agents to detect security vulnerabilities during pull request creation." },
-      "deep_dive": { "en": "Context-aware static analysis reduces software bug leakage into production environments significantly." }
-    },
-    "article_36": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Energy",
-      "title": { "en": "Offshore Wind Farms Adopt Floating Turbine Technology" },
-      "summary": { "en": "Deep-water mooring systems unlock high-velocity wind resources far beyond traditional continental shelf limits." },
-      "deep_dive": { "en": "Telescopic anchoring towers withstand severe oceanic storm surges while maximizing generator efficiency." }
-    },
-    "article_37": {
-      "category": "Business & Economy",
-      "meta": "Business • Corporate",
-      "title": { "en": "Subscription Billing Management Platforms Automate Revenue Recognition" },
-      "summary": { "en": "SaaS businesses implement ASC 606 compliant ledger tracking to streamline quarterly financial audits." },
-      "deep_dive": { "en": "Automated prorations and usage-based billing adjustments eliminate manual accounting error risks." }
-    },
-    "article_38": {
-      "category": "India & Global",
-      "meta": "India & Global • Healthcare",
-      "title": { "en": "Telemedicine Networks Bridge Rural Specialist Care Gaps" },
-      "summary": { "en": "District health clinics connect patients with metropolitan cardiologists via encrypted video diagnostic portals." },
-      "deep_dive": { "en": "Portable diagnostic toolkits transmit vital signs and imaging scans securely during live consultations." }
-    },
-    "article_39": {
-      "category": "Sports & Cultural",
-      "meta": "Culture • Museum",
-      "title": { "en": "Immersive Virtual Reality Exhibits Recreate Ancient Historical Sites" },
-      "summary": { "en": "Museums deploy room-scale VR headsets to let visitors explore reconstructed archaeological monuments." },
-      "deep_dive": { "en": "Photogrammetry scans of ancient artifacts ensure millimeter-accurate digital preservation for researchers." }
-    },
-    "article_40": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Chips",
-      "title": { "en": "Neuromorphic Processors Mimic Biological Neural Networks" },
-      "summary": { "en": "Event-driven microchips process sensory input with ultra-low power consumption profiles for edge robotics." },
-      "deep_dive": { "en": "Asynchronous spiking neuron architectures eliminate clock-cycle overhead present in traditional CPUs." }
-    },
-    "article_41": {
-      "category": "Business & Economy",
-      "meta": "Business • Marketing",
-      "title": { "en": "Privacy-First Analytics Platforms Replace Third-Party Cookies" },
-      "summary": { "en": "Digital marketers adopt cohort-based behavioral modeling to measure campaign effectiveness anonymously." },
-      "deep_dive": { "en": "Zero-knowledge proofs verify advertising conversion metrics without exposing individual consumer browsing histories." }
-    },
-    "article_42": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Water",
-      "title": { "en": "Solar-Powered Desalination Units Provide Arid Region Relief" },
-      "summary": { "en": "Off-grid reverse osmosis plants convert brackish groundwater into potable supplies for remote agricultural settlements." },
-      "deep_dive": { "en": "Energy recovery pressure exchangers minimize electrical power requirements per cubic meter of purified water." }
-    },
-    "article_43": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Wellness",
-      "title": { "en": "Circadian Sleep Trackers Guide Personalized Lighting Adjustments" },
-      "summary": { "en": "Smart bedroom ecosystems adjust color temperature gradually to encourage natural melatonin production." },
-      "deep_dive": { "en": "Sleep stage analytics help users identify environmental disruptions affecting deep restorative rest phases." }
-    },
-    "article_44": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Storage",
-      "title": { "en": "DNA Data Storage Research Achieves High Write Density" },
-      "summary": { "en": "Molecular biologists encode digital files into synthetic oligonucleotide sequences for ultra-long-term archiving." },
-      "deep_dive": { "en": "Enzymatic synthesis improvements reduce data writing costs while preserving archival longevity for millennia." }
-    },
-    "article_45": {
-      "category": "India & Global",
-      "meta": "India & Global • Infrastructure",
-      "title": { "en": "High-Speed Freight Rail Corridors Accelerate Industrial Transit" },
-      "summary": { "en": "Dedicated railway tracks separate heavy cargo freight from passenger express routes to improve network punctuality." },
-      "deep_dive": { "en": "Automated signaling blocks increase train frequency and overall line capacity across major industrial arteries." }
-    },
-    "article_46": {
-      "category": "Business & Economy",
-      "meta": "Business • Logistics",
-      "title": { "en": "Autonomous Delivery Drones Receive Urban Flight Corridors" },
-      "summary": { "en": "Aviation regulators establish low-altitude geofenced routing networks for commercial package delivery fleets." },
-      "deep_dive": { "en": "Collision avoidance radar and redundant battery systems ensure safe operations over populated residential sectors." }
-    },
-    "article_47": {
-      "category": "Tech & AI",
-      "meta": "Tech & AI • Vision",
-      "title": { "en": "Computer Vision Models Enhance Structural Engineering Audits" },
-      "summary": { "en": "Unmanned aerial drones inspect bridge pylons and skyscraper facades for hairline concrete micro-fractures." },
-      "deep_dive": { "en": "Thermal imaging cameras detect hidden subsurface moisture infiltration before structural degradation accelerates." }
-    },
-    "article_48": {
-      "category": "Earth & Environment",
-      "meta": "Environment • Forestry",
-      "title": { "en": "Satellite LiDAR Mapping Tracks Global Forest Carbon Stocks" },
-      "summary": { "en": "Orbital laser altimeters measure canopy height and biomass volume with unprecedented centimeter accuracy." },
-      "deep_dive": { "en": "Open-source carbon accounting dashboards verify corporate offset claims against real-world ecological growth." }
-    },
-    "article_49": {
-      "category": "Lifestyle & Living",
-      "meta": "Lifestyle • Mobility",
-      "title": { "en": "E-Cargo Bikes Transform Urban Last-Mile Delivery Fleets" },
-      "summary": { "en": "Courier services adopt electric cargo cycles to bypass inner-city congestion and parking restrictions." },
-      "deep_dive": { "en": "Pedal-assist torque sensors allow couriers to transport heavy payloads efficiently across pedestrian zones." }
-    },
-    "article_50": {
-      "category": "Sports & Cultural",
-      "meta": "Sports • Broadcasting",
-      "title": { "en": "Volumetric Video Capture Enables 360-Degree Sports Replays" },
-      "summary": { "en": "Stadium arrays synchronize dozens of 4K cameras to render interactive three-dimensional game moments." },
-      "deep_dive": { "en": "Broadcasting platforms allow viewers to select custom camera perspectives during live athletic events." }
+      "title": {
+        "en": "South Indian Direct-to-Consumer Brands Scale Retail Footprint",
+        "hi": "दक्षिण भारतीय डायरेक्ट-टू-कंज्यूमर ब्रांड्स ने खुदरा पदचिह्न बढ़ाया",
+        "ta": "தென்னிந்திய நேரடி நுகர்வோர் பிராண்டுகள் சில்லறை விற்பனை தடத்தை விரிவுபடுத்துகின்றன",
+        "te": "దక్షిణాది డైరెక్ట్-టు-కన్స్యూమర్ బ్రాండ్‌లు రిటైల్ పాదముద్రను విస్తరిస్తున్నాయి",
+        "kn": "ದಕ್ಷಿಣ ಭಾರತದ ನೇರ-ಗ್ರಾಹಕ ಬ್ರ್ಯಾಂಡ್‌ಗಳು ಚಿಲ್ಲರೆ ವ್ಯಾಪಾರವನ್ನು ವಿಸ್ತರಿಸುತ್ತಿವೆ",
+        "ml": "ദക്ഷിണേന്ത്യൻ ഡയറക്ട്-ടു-കൺസ്യൂമർ ബ്രാൻഡുകൾ റീട്ടെയിൽ സാന്നിധ്യം വിപുലീകരിക്കുന്നു"
+      },
+      "summary": {
+        "en": "Agile regional startups focusing on clean-label dairy, organic foods, and local artisanal goods are capturing urban markets.",
+        "hi": "स्वच्छ-लेबल डेयरी, जैविक खाद्य पदार्थों और स्थानीय शिल्प वस्तुओं पर ध्यान केंद्रित करने वाले चुस्त क्षेत्रीय स्टार्टअप शहरी बाजारों पर कब्जा कर रहे हैं।",
+        "ta": "தூய்மையான லேபிள் பால் பொருட்கள், கரிம உணவுகள் மற்றும் உள்ளூர் கைவினைப் பொருட்கள் மீது கவனம் செலுத்தும் சுறுசுறுப்பான பிராந்திய ஸ்டார்ட்அப்கள் நகர்ப்புற சந்தைகளைக் கைப்பற்றுகின்றன.",
+        "te": "క్లీన్-లేబుల్ డైరీ, ఆర్గానిక్ ఆహారాలు మరియు స్థానిక హస్తకళా వస్తువులపై దృష్టి సారించే ప్రాంతీయ స్టార్టప్‌లు పట్టణ మార్కెట్లను కైవసం చేసుకుంటున్నాయి.",
+        "kn": "ಶುದ್ಧ-ಲೇಬಲ್ ಡೈರಿ, ಸಾವಯವ ಆಹಾರಗಳು ಮತ್ತು ಸ್ಥಳೀಯ ಕರಕುಶಲ ವಸ್ತುಗಳ ಮೇಲೆ ಗಮನಹರಿಸುವ ಚುರುಕಾದ ಪ್ರಾದೇಶಿಕ ಸ್ಟಾರ್ಟ್‌ಅಪ್‌ಗಳು ನಗರ ಮಾರುಕಟ್ಟೆಗಳನ್ನು ವಶಪಡಿಸಿಕೊಳ್ಳುತ್ತಿವೆ.",
+        "ml": "ശുദ്ധമായ ഡയറി ഉൽപ്പന്നങ്ങൾ, ഓർഗാനിക് ഭക്ഷണങ്ങൾ, പ്രാദേശിക കരകൗശല വസ്തുക്കൾ എന്നിവയിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്ന പ്രാദേശിക സ്റ്റാർട്ടപ്പുകൾ നഗര വിപടികൾ പിടിച്ചെടുക്കുന്നു."
+      },
+      "deep_dive": {
+        "en": "A deep analysis into how localized supply chain optimization and hyper-local delivery models allow home-grown South Indian brands to compete effectively against national conglomerates by offering fresher ingredients and culturally tailored items.",
+        "hi": "इस बात का गहरा विश्लेषण कि कैसे स्थानीयकृत आपूर्ति श्रृंखला अनुकूलन और हाइपर-लोकल डिलीवरी मॉडल घर के बने दक्षिण भारतीय ब्रांडों को ताज़ा सामग्री और सांस्कृतिक रूप से अनुकूलित वस्तुएं प्रदान करके राष्ट्रीय समूहों के खिलाफ प्रभावी ढंग से प्रतिस्पर्धा करने की अनुमति देते हैं।",
+        "ta": "உள்ளூர்மயமாக்கப்பட்ட விநியோகச் சங்கிலி மேம்படுத்தல் மற்றும் அதி-உள்ளூர் விநியோக மாதிரிகள் எப்படி உள்நாட்டு பிராண்டுகளை தேசிய நிறுவனங்களுடன் திறம்பட போட்டியிட வைக்கின்றன என்பதற்கான ஆழமான பகுப்பாய்வு.",
+        "te": "స్థానికీకరించిన సరఫరా గొలుసు ఆప్టిమైజేషన్ మరియు హైపర్-లోకల్ డెలివరీ మోడల్‌లు స్థానిక బ్రాండ్‌లకు జాతీయ సంస్థలతో సమర్థవంతంగా పోటీపడేలా ఎలా సహాయపడుతున్నాయనే దానిపై లోతుയായ విశ్లేಷಣೆ.",
+        "kn": "ಸ್ಥಳೀಯ ಸರಪಳಿ ಆಪ್ಟಿಮೈಸೇಷನ್ ಮತ್ತು ಹೈಪರ್-ಲೋಕಲ್ ವಿತರಣಾ ಮಾದರಿಗಳು ಸ್ಥಳೀಯ ಬ್ರ್ಯಾಂಡ್‌ಗಳಿಗೆ ರಾಷ್ಟ್ರೀಯ ಸಂಸ್ಥೆಗಳೊಂದಿಗೆ ಸ್ಪರ್ಧಿಸಲು ಹೇಗೆ ಅವಕಾಶ ಮಾಡಿಕೊಡುತ್ತವೆ ಎಂಬುದರ ಆಳವಾದ ವಿಶ್ಲೇಷಣೆ.",
+        "ml": "പ്രാദേശികവൽക്കരിച്ച സപ്ലൈ ചെയിൻ ഒപ്റ്റിമൈസേഷനും ഹൈപ്പർ-ലോക്കൽ ഡെലിവറി മോഡലുകളും പ്രാദേശിക ബ്രാൻഡുകളെ ദേശീയ കമ്പനികളോട് ശക്തമായി മത്സരിക്കാൻ എങ്ങനെ സഹായിക്കുന്നു എന്നതിന്റെ വിശകലനം."
+      },
+      "source": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "image": "https://picsum.photos/seed/news_biz/800/500"
     }
-  }
+  ]
 }
