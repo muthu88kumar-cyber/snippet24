@@ -69,8 +69,7 @@
         .hero-side-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; display: flex; gap: 12px; align-items: center; cursor: pointer; transition: background 0.2s; }
         .hero-side-card:hover { background: #f8fafc; }
         .hero-side-thumb { width: 70px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
-        .hero-side-body h4 { font-size: 12px; color: #0f172a; line-height: 1.3; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        .hero-side-meta { font-size: 10px; color: #64748b; }
+        .hero-side-body h4 { font-size: 12px; color: #0f172a; line-height: 1.3; margin-bottom: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
         .feed-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
         .news-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
@@ -664,7 +663,6 @@
                 const origIdx = allArticles.indexOf(art);
                 const title = getLocalized(art.title);
                 const imageUrl = art.image || `https://picsum.photos/seed/side_${origIdx}/300/200`;
-                const catName = labels.categories[art.category] || art.category;
 
                 const sideCard = document.createElement('div');
                 sideCard.className = 'hero-side-card';
@@ -672,7 +670,6 @@
                 sideCard.innerHTML = `
                     <img src="${imageUrl}" alt="${title}" class="hero-side-thumb">
                     <div class="hero-side-body">
-                        <div class="hero-side-meta">[${catName}]</div>
                         <h4>${title}</h4>
                     </div>
                 `;
