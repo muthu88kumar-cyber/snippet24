@@ -144,19 +144,30 @@
         </div>
     </footer>
 
-    <!-- Updated JavaScript Script Block -->
+    <!-- JavaScript Script Block -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         let allArticles = [];
 
-        fetch('articles.json')
+        // Using absolute path '/articles.json' to ensure custom domain compatibility
+        fetch('/articles.json')
             .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 return response.json();
             })
             .then(data => {
+                console.log("Successfully fetched articles.json:", data);
+                
                 const feed = data.live_feed || data;
-                allArticles = Object.keys(feed).map(key => feed[key]);
+                if (Array.isArray(feed)) {
+                    allArticles = feed;
+                } else if (typeof feed === 'object' && feed !== null) {
+                    allArticles = Object.values(feed);
+                } else {
+                    allArticles = [];
+                }
+
+                console.log("Parsed articles list:", allArticles);
                 renderArticles(allArticles);
                 setupCategoryFilters();
             })
@@ -164,7 +175,7 @@
                 console.error('Error loading live wire feed:', error);
                 const container = document.getElementById('news-feed-container');
                 if (container) {
-                    container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed at the moment. Please check if articles.json is deployed.</p>`;
+                    container.innerHTML = `<p style="text-align: center; color: #c0392b; padding: 40px;">Unable to load live feed: ${error.message}. Please check if articles.json is deployed correctly.</p>`;
                 }
             });
 
@@ -174,26 +185,27 @@
 
             container.innerHTML = "";
 
-            if (articlesToRender.length === 0) {
+            if (!Array.isArray(articlesToRender) || articlesToRender.length === 0) {
                 container.innerHTML = `<p style="text-align: center; color: #777; padding: 40px;">No live updates found in this category right now.</p>`;
                 return;
             }
 
             articlesToRender.forEach(article => {
+                if (!article) return;
+
                 const card = document.createElement('div');
                 card.className = 'news-card';
                 card.style.cssText = "background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);";
 
-                // Safely handle both string and object (.en) formats
                 const meta = article.meta || article.category || "News Update";
-                const title = typeof article.title === 'object' ? article.title.en : article.title;
-                const summary = typeof article.summary === 'object' ? article.summary.en : article.summary;
-                const deepDive = typeof article.deep_dive === 'object' ? article.deep_dive.en : (article.deep_dive || "");
+                const title = typeof article.title === 'object' && article.title !== null ? article.title.en : (article.title || "Untitled Update");
+                const summary = typeof article.summary === 'object' && article.summary !== null ? article.summary.en : (article.summary || "");
+                const deepDive = typeof article.deep_dive === 'object' && article.deep_dive !== null ? article.deep_dive.en : (article.deep_dive || "");
 
                 card.innerHTML = `
                     <span class="category" style="font-size: 12px; font-weight: bold; color: #c0392b; text-transform: uppercase; letter-spacing: 0.5px;">${meta}</span>
-                    <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${title || "Untitled Update"}</h3>
-                    <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${summary || ""}</p>
+                    <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${title}</h3>
+                    <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${summary}</p>
                     ${deepDive ? `
                     <details style="margin-top: 10px; color: #333; font-size: 14px;">
                         <summary style="cursor: pointer; color: #0066cc; font-weight: 500;">Deep Dive →</summary>
@@ -223,7 +235,7 @@
                     if (selectedCategory === 'All') {
                         renderArticles(allArticles);
                     } else {
-                        const filtered = allArticles.filter(article => article.category === selectedCategory);
+                        const filtered = allArticles.filter(article => article && article.category === selectedCategory);
                         renderArticles(filtered);
                     }
                 });
