@@ -75,9 +75,9 @@
 
     <div class="top-bar">
         <div class="top-bar-left">
-            <div><i class="fa-solid fa-shield-halved"></i> Multilingual Intelligence Engine</div>
+            <div><i class="fa-solid fa-shield-halved"></i> <span id="lblEngine">Multilingual Intelligence Engine</span></div>
             <div>
-                <label for="languageSelect" style="font-weight: 600; margin-right: 4px;"><i class="fa-solid fa-globe"></i> Language:</label>
+                <label for="languageSelect" style="font-weight: 600; margin-right: 4px;"><i class="fa-solid fa-globe"></i> <span id="lblLangPrompt">Language:</span></label>
                 <select id="languageSelect" class="lang-selector">
                     <option value="en">English</option>
                     <option value="hi">हिंदी (Hindi)</option>
@@ -88,7 +88,7 @@
                 </select>
             </div>
         </div>
-        <div><a href="#">DMCA Policy</a> | <a href="#">Terms</a></div>
+        <div><a href="#" id="lblDmca">DMCA Policy</a> | <a href="#" id="lblTerms">Terms</a></div>
     </div>
 
     <header>
@@ -96,7 +96,7 @@
             <div class="logo-snippet">snippet</div>
             <div class="logo-box24">24</div>
         </div>
-        <div style="font-size: 11px; font-weight: 600; color: #475569;" id="headerSubtitle">
+        <div style="font-size: 11px; font-weight: 600; color: #475569;">
             Deep Dive Intelligence • Multilingual Feed
         </div>
     </header>
@@ -105,7 +105,7 @@
         <span class="trending-badge" id="liveWireBadge">Live Wire</span>
         <div class="ticker-container">
             <div class="ticker-track" id="ticker-track-container">
-                <div class="ticker-item"><span>Loading Feed...</span></div>
+                <div class="ticker-item"><span id="lblLoading">Loading Feed...</span></div>
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@
             <main>
                 <nav id="category-nav" class="category-nav"></nav>
                 <div id="news-feed-container" class="feed-grid">
-                    <p style="color: #64748b; padding: 20px;">Synchronizing secure feed parameters...</p>
+                    <p style="color: #64748b; padding: 20px;" id="lblSync">Synchronizing secure feed parameters...</p>
                 </div>
             </main>
             <aside class="sidebar">
@@ -138,7 +138,7 @@
     </div>
 
     <footer>
-        <p>© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.</p>
+        <p><span id="lblFooterRights">© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.</span></p>
     </footer>
 
     <script>
@@ -156,14 +156,68 @@
             "Sports & Cultural"
         ];
 
-        // UI Translations for Static Labels
+        // Localized strings for categories and interface elements
         const uiText = {
-            en: { all: "All Updates", deepDive: "Deep Dive", source: "Source", verified: "Verified Source", supportText: "Support original reporting and read the complete story at the publisher's site:", visit: "Visit Original Source" },
-            hi: { all: "सभी अपडेट", deepDive: "विस्तृत विवरण", source: "स्रोत", verified: "सत्यापित स्रोत", supportText: "मूल रिपोर्टिंग का समर्थन करें और प्रकाशक की साइट पर पूरी कहानी पढ़ें:", visit: "मूल स्रोत पर जाएँ" },
-            ta: { all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", source: "மூலம்", verified: "சரிபார்க்க린 மூலம்", supportText: "அசல் செய்தியை ஆதரிக்கவும் மற்றும் வெளியீட்டாளரின் தளத்தில் முழு கதையைப் படிக்கவும்:", visit: "அசல் மூலத்தைப் பார்வையிடவும்" },
-            te: { all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", source: "మూలం", verified: "ధృవీకరించబడిన మూలం", supportText: "అసలు నివేదికకు మద్దతు ఇవ్వండి మరియు ప్రచురణకర్త సైట్‌లో పూర్తి కథనాన్ని చదవండి:", visit: "అసలు మూలాన్ని సందర్శించండి" },
-            kn: { all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", source: "ಮೂಲ", verified: "ಪರಿಶೀಲಿಸಿದ ಮೂಲ", supportText: "ಮೂಲ ವರದಿಯನ್ನು ಬೆಂಬಲಿಸಿ ಮತ್ತು ಪ್ರಕಾಶಕರ ಸೈಟ್‌ನಲ್ಲಿ ಸಂಪೂರ್ಣ ಕಥೆಯನ್ನು ಓದಿ:", visit: "ಮೂಲ ಮೂಲಕ್ಕೆ ಭೇಟಿ ನೀಡಿ" },
-            ml: { all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", source: "ഉറവിടം", verified: "സ്ഥിരീകരിച്ച ഉറവിടം", supportText: "യഥാർത്ഥ റിപ്പോർട്ടിംഗിനെ പിന്തുണയ്ക്കുകയും പ്രസാധകന്റെ സൈറ്റിൽ മുഴുവൻ സ്റ്റോറിയും വായിക്കുകയും ചെയ്യുക:", visit: "യഥാർത്ഥ ഉറവിടം സന്ദർശിക്കുക" }
+            en: {
+                engine: "Multilingual Intelligence Engine", langPrompt: "Language:", dmca: "DMCA Policy", terms: "Terms",
+                liveWire: "Live Wire", loading: "Loading Feed...", sync: "Synchronizing secure feed parameters...",
+                sidebarTitle: "Copyright Compliance", sidebarText: "snippet24 offers AI-synthesized Deep Dives while seamlessly directing full investigative traffic back to original publisher sources.",
+                footerRights: "© 2026 snippet24.in • All source attributions and trademarks belong to their respective publishers.",
+                all: "All Updates", deepDive: "Deep Dive", source: "Source", verified: "Verified Source",
+                aiCurated: "Deep Dive Report",
+                supportText: "Support original reporting and read the complete story at the publisher's site:", visit: "Visit Original Source",
+                categories: { "India & Global": "India & Global", "Business & Economy": "Business & Economy", "Tech & AI": "Tech & AI", "Lifestyle & Living": "Lifestyle & Living", "Earth & Environment": "Earth & Environment", "Entertainment": "Entertainment", "Sports & Cultural": "Sports & Cultural" }
+            },
+            hi: {
+                engine: "बहुभाषी खुफिया इंजन", langPrompt: "भाषा:", dmca: "डीएमसीए नीति", terms: "नियम एवं शर्तें",
+                liveWire: "लाइव वायर", loading: "फ़ीड लोड हो रहा है...", sync: "सुरक्षित फ़ीड पैरामीटर सिंक्रनाइज़ हो रहे हैं...",
+                sidebarTitle: "कॉपीराइट अनुपालन", sidebarText: "snippet24 मूल प्रकाशक स्रोतों पर पूरा ट्रैफ़िक पुनर्निर्देशित करते हुए एआई-संश्मित विस्तृत विवरण प्रदान करता है।",
+                footerRights: "© 2026 snippet24.in • सभी स्रोत एट्रिब्यूशन और ट्रेडमार्क उनके संबंधित प्रकाशकों के हैं।",
+                all: "सभी अपडेट", deepDive: "विस्तृत विवरण", source: "स्रोत", verified: "सत्यापित स्रोत",
+                aiCurated: "विस्तृत रिपोर्ट",
+                supportText: "मूल रिपोर्टिंग का समर्थन करें और प्रकाशक की साइट पर पूरी कहानी पढ़ें:", visit: "मूल स्रोत पर जाएँ",
+                categories: { "India & Global": "भारत और वैश्विक", "Business & Economy": "व्यापार और अर्थव्यवस्था", "Tech & AI": "तकनीक और AI", "Lifestyle & Living": "जीवन शैली", "Earth & Environment": "पर्यावरण", "Entertainment": "मनोरंजन", "Sports & Cultural": "खेल और संस्कृति" }
+            },
+            ta: {
+                engine: "பன்மொழி நுண்ணறிவு இயந்திரம்", langPrompt: "மொழி:", dmca: "DMCA கொள்கை", terms: "நிபந்தனைகள்",
+                liveWire: "நேரலை கம்பி", loading: "ஊட்டம் ஏற்றப்படுகிறது...", sync: "பாதுகாப்பான ஊடக அளவுருக்கள் ஒத்திசைக்கப்படுகின்றன...",
+                sidebarTitle: "பதிப்புரிமை இணக்கம்", sidebarText: "snippet24 AI மூலம் தொகுக்கப்பட்ட ஆழமான பார்வைகளை வழங்குகிறது, அதே நேரத்தில் முழுமையான போக்குவரத்து வாசகர்களை மூல தளத்திற்கு அனுப்புகிறது.",
+                footerRights: "© 2026 snippet24.in • அனைத்து மூல குறிப்புகளும் வர்த்தக முத்திரைகளும் அந்தந்த வெளியீட்டாளர்களுக்கு சொந்தமானவை.",
+                all: "அனைத்து புதுப்பிப்புகளும்", deepDive: "ஆழமான பார்வை", source: "மூலம்", verified: "சரிபார்க்கப்பட்ட மூலம்",
+                aiCurated: "ஆழமான அறிக்கை",
+                supportText: "அசல் செய்தியை ஆதரிக்கவும் மற்றும் வெளியீட்டாளரின் தளத்தில் முழு கதையைப் படிக்கவும்:", visit: "அசல் மூலத்தைப் பார்வையிடவும்",
+                categories: { "India & Global": "இந்தியா & உலகளாவிய", "Business & Economy": "வணிகம் & பொருளாதாரம்", "Tech & AI": "தொழில்நுட்பம் & AI", "Lifestyle & Living": "வாழ்க்கை முறை", "Earth & Environment": "பூமி & சுற்றுச்சூழல்", "Entertainment": "பொழுதுபோக்கு", "Sports & Cultural": "விளையாட்டு & கலாச்சாரம்" }
+            },
+            te: {
+                engine: "బహుభాషా ఇంటెలిజెన్స్ ఇంజిన్", langPrompt: "భాష:", dmca: "DMCA విధానం", terms: "నిబంధనలు",
+                liveWire: "లైవ్ వైర్", loading: "ఫీడ్ లోడ్ అవుతోంది...", sync: "సురక్షిత ఫీడ్ పారామితులు సమకాలీకరించబడుతున్నాయి...",
+                sidebarTitle: "కాపీరైట్ అనుకూలత", sidebarText: "snippet24 పూర్తి ట్రాఫిక్‌ను అసలు ప్రచురణకర్త మూలాలకు మళ్లిస్తూ AI-సమగ్ర నివేదికలను అందిస్తుంది.",
+                footerRights: "© 2026 snippet24.in • అన్ని మూల ఆపాదப்புகள் మరియు ట్రేడ్‌మార్క్‌లు వాటి సంబంధిత ప్రచురణకర్తలకి చెందుతాయి.",
+                all: "అన్ని నవీకరణలు", deepDive: "వివరణాత్మక నివేదిక", source: "మూలం", verified: "ధృవీకరించబడిన మూలం",
+                aiCurated: "వివరణాత్మక నివేదిక",
+                supportText: "అసలు నివేదికకు మద్దతు ఇవ్వండి మరియు ప్రచురణకర్త సైట్‌లో పూర్తి కథనాన్ని చదవండి:", visit: "అసలు మూలాన్ని సందర్శించండి",
+                categories: { "India & Global": "భారతదేశం & ప్రపంచం", "Business & Economy": "వ్యాపారం & ఆర్థిక వ్యవస్థ", "Tech & AI": "టెక్ & AI", "Lifestyle & Living": "జీవనశైలి", "Earth & Environment": "పర్యావరణం", "Entertainment": "వినోదం", "Sports & Cultural": "క్రీడలు & సంస్కృతి" }
+            },
+            kn: {
+                engine: "ಬಹುಭಾಷಾ ಗುಪ್ತಚರ ಎಂಜಿನ್", langPrompt: "ಭಾಷೆ:", dmca: "DMCA ನೀತಿ", terms: "ನಿಯಮಗಳು",
+                liveWire: "ಲೈವ್ ವೈರ್", loading: "ಫೀಡ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ...", sync: "ಸುರಕ್ಷಿತ ಫೀಡ್ ನಿಯತಾಂಕಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
+                sidebarTitle: "ಕಾಪಿರೈಟ್ ಅನುಸರಣೆ", sidebarText: "snippet24 ಪೂರ್ಣ ದಟ್ಟಣೆಯನ್ನು ಮೂಲ ಪ್ರಕಾಶಕರಿಗೆ ಮರುನಿರ್ದೇಶಿಸುವಾಗ AI-ಸಂಶ್ಲೇಷಿತ ಆಳವಾದ ವರದಿಗಳನ್ನು ನೀಡುತ್ತದೆ.",
+                footerRights: "© 2026 snippet24.in • ಎಲ್ಲಾ ಮೂಲ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಆಯಾ ಪ್ರಕಾಶಕರಿಗೆ ಸೇರಿವೆ.",
+                all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು", deepDive: "ವಿವರವಾದ ವರದಿ", source: "ಮೂಲ", verified: "ಪರಿಶೀಲಿಸಿದ ಮೂಲ",
+                aiCurated: "ವಿವರವಾದ ವರದಿ",
+                supportText: "ಮೂಲ ವರದಿಯನ್ನು ಬೆಂಬಲಿಸಿ ಮತ್ತು ಪ್ರಕಾಶಕರ ಸೈಟ್‌ನಲ್ಲಿ ಸಂಪೂರ್ಣ ಕಥೆಯನ್ನು ಓದಿ:", visit: "ಮೂಲ ಮೂಲಕ್ಕೆ ಭೇಟಿ ನೀಡಿ",
+                categories: { "India & Global": "ಭಾರತ ಮತ್ತು ಜಾಗತಿಕ", "Business & Economy": "ವ್ಯಹಾರ ಮತ್ತು ಆರ್ಥಿಕತೆ", "Tech & AI": "ತಂತ್ರಜ್ಞಾನ ಮತ್ತು AI", "Lifestyle & Living": "ಜೀವನಶೈಲಿ", "Earth & Environment": "ಪರಿಸರ", "Entertainment": "ಮನರಂಜನೆ", "Sports & Cultural": "ಕ್ರೀಡೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ" }
+            },
+            ml: {
+                engine: "മലബാർ ഇന്റലിജൻസ് എൻജിൻ", langPrompt: "ഭാഷ:", dmca: "DMCA നയം", terms: "വ്യവസ്ഥകൾ",
+                liveWire: "ലൈവ് വയർ", loading: "ഫീഡ് ലോഡ് ചെയ്യുന്നു...", sync: "സുരക്ഷിത ഫീഡ് പാരാമീറ്ററുകൾ സിങ്ക് ചെയ്യുന്നു...",
+                sidebarTitle: "പകർപ്പവകാശ പാലനം", sidebarText: "snippet24 യഥാർത്ഥ പ്രസാധക ഉറവിടങ്ങളിലേക്ക് മുഴുവൻ ട്രാഫിക്കും തിരിച്ചുവിട്ടുകൊണ്ട് AI വിശകലനങ്ങൾ നൽകുന്നു.",
+                footerRights: "© 2026 snippet24.in • എല്ലാ ഉറവിട ആട്രിബ്യൂട്ടുകളും വ്യാപാരമുദ്രകളും അതത് പ്രസാധകരുടെ ഉടമസ്ഥതയിലുള്ളതാണ്.",
+                all: "എല്ലാ അപ്ഡേറ്റുകളും", deepDive: "ആഴത്തിലുള്ള വിശകലനം", source: "ഉറവിടം", verified: "സ്ഥിരീകരിച്ച ഉറവിടം",
+                aiCurated: "ആഴത്തിലുള്ള വിശകലന റിപ്പോർട്ട്",
+                supportText: "യഥാർത്ഥ റിപ്പോർട്ടിംഗിനെ പിന്തുണയ്ക്കുകയും പ്രസാധകന്റെ സൈറ്റിൽ മുഴുവൻ സ്റ്റോറിയും വായിക്കുകയും ചെയ്യുക:", visit: "യഥാർത്ഥ ഉറവിടം സന്ദർശിക്കുക",
+                categories: { "India & Global": "ഇന്ത്യയും ലോകവും", "Business & Economy": "ബിസിനസ്സും സമ്പദ്‌വ്യവസ്ഥയും", "Tech & AI": "ടെക് & AI", "Lifestyle & Living": "ജീവിതശൈലി", "Earth & Environment": "പരിസ്ഥിതി", "Entertainment": "വിനോദം", "Sports & Cultural": "കായികം & സംസ്കാരം" }
+            }
         };
 
         fetch('/articles.json')
@@ -180,6 +234,20 @@
         });
 
         function initApp() {
+            const labels = uiText[currentLang] || uiText['en'];
+            
+            // Translate static elements
+            document.getElementById('lblEngine').innerText = labels.engine;
+            document.getElementById('lblLangPrompt').innerText = labels.langPrompt;
+            document.getElementById('lblDmca').innerText = labels.dmca;
+            document.getElementById('lblTerms').innerText = labels.terms;
+            document.getElementById('liveWireBadge').innerText = labels.liveWire;
+            document.getElementById('lblLoading').innerText = labels.loading;
+            document.getElementById('lblSync').innerText = labels.sync;
+            document.getElementById('sidebarTitle').innerText = labels.sidebarTitle;
+            document.getElementById('sidebarText').innerText = labels.sidebarText;
+            document.getElementById('lblFooterRights').innerText = labels.footerRights;
+
             buildRunningTicker(allArticles);
             buildOrderedCategoryTabs(allArticles);
             renderArticles(allArticles);
@@ -190,16 +258,18 @@
             if (typeof field === 'object') {
                 return field[currentLang] || field['en'] || Object.values(field)[0] || "";
             }
-            return field; // Fallback if string
+            return field;
         }
 
         function buildRunningTicker(articles) {
             const track = document.getElementById('ticker-track-container');
             if (!track || !articles.length) return;
             let html = '';
+            const labels = uiText[currentLang] || uiText['en'];
             [...articles, ...articles].forEach(art => {
                 const title = getLocalized(art.title);
-                html += `<div class="ticker-item"><span>[${art.category || 'Wire'}]</span> ${title} •</div>`;
+                const catName = labels.categories[art.category] || art.category || 'Wire';
+                html += `<div class="ticker-item"><span>[${catName}]</span> ${title} •</div>`;
             });
             track.innerHTML = html;
         }
@@ -211,7 +281,8 @@
             
             let html = `<button class="tab-btn active" data-category="All">${labels.all}</button>`;
             preferredCategoryOrder.forEach(cat => {
-                html += `<button class="tab-btn" data-category="${cat}">${cat}</button>`;
+                const localizedCatName = labels.categories[cat] || cat;
+                html += `<button class="tab-btn" data-category="${cat}">${localizedCatName}</button>`;
             });
             nav.innerHTML = html;
             
@@ -242,7 +313,7 @@
                 <img src="${imageUrl}" alt="${title}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 6px; margin-bottom: 15px;">
                 
                 <div style="background: #f8fafc; border-left: 3px solid #0f172a; padding: 15px; font-size: 13px; color: #334155; line-height: 1.7; margin-bottom: 20px;">
-                    <h4 style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 8px;"><i class="fa-solid fa-layer-group"></i> ${labels.deepDive}</h4>
+                    <h4 style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 8px;"><i class="fa-solid fa-layer-group"></i> ${labels.aiCurated}</h4>
                     <p>${deepDiveText}</p>
                 </div>
 
