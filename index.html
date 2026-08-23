@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snippet24 - AI-Curated Intelligence</title>
+    <style>
+        :root {
+            --wire-red: #b71c1c; 
+            --scroll-dark: #111111; 
+            --bg-color: #ffffff;
+            --border-color: #e5e5e5;
+            --light-bg: #f9f9f9;
+        }
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--scroll-dark);
+        }
+        header {
+            border-bottom: 3px solid var(--wire-red);
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .logo-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-badge {
+            background-color: var(--wire-red);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+        .logo-text {
+            font-family: Arial, sans-serif;
+            font-size: 34px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        header p {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #666;
+            margin: 8px 0 0 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav {
+            background: var(--light-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #444;
+            text-decoration: none;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        nav a:hover, nav a.active {
+            color: var(--wire-red);
+            border-bottom: 2px solid var(--wire-red);
+        }
+        .lang-select {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            padding: 4px 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .article-card {
+            background: #fff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 25px 0;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .article-content {
+            flex: 1;
+        }
+        .article-thumb {
+            width: 160px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 2px;
+            border: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+        .meta {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--wire-red);
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        .article-title {
+            font-size: 20px;
+            line-height: 1.25;
+            margin: 0 0 8px 0;
+        }
+        .article-title a {
+            color: var(--scroll-dark);
+            text-decoration: none;
+        }
+        .article-title a:hover {
+            text-decoration: underline;
+        }
+        .summary {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+            margin: 0 0 12px 0;
+        }
+        .deep-dive-btn {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            background: none;
+            border: 1px solid var(--scroll-dark);
+            color: var(--scroll-dark);
+            padding: 4px 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.2s;
+        }
+        .deep-dive-btn:hover {
+            background: var(--scroll-dark);
+            color: #fff;
+        }
+
+        /* Modal Overlay Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-content {
+            background: #fff;
+            max-width: 650px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 4px;
+            position: relative;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #666;
+        }
+        .close-btn:hover {
+            color: var(--wire-red);
+        }
+        .modal-meta {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: var(--wire-red);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .modal-title {
+            font-size: 26px;
+            margin: 0 0 15px 0;
+            line-height: 1.25;
+        }
+        .modal-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+        .modal-body {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo-badge">S24</span>
+            <span class="logo-text">Snippet</span>
+        </div>
+        <p id="header-subtitle">AI-Curated Intelligence &bull; Live State Updates &bull; Deep Dives</p>
+    </header>
+
+    <nav>
+        <div class="nav-links" id="category-nav">
+            <a class="active" onclick="filterCategory('All', this)" data-i18n="all">All Updates</a>
+            <a onclick="filterCategory('India & Global', this)" data-i18n="india_global">India & Global</a>
+            <a onclick="filterCategory('Tech & Business', this)" data-i18n="tech_business">Tech & Business</a>
+            <a onclick="filterCategory('Earth & Environment', this)" data-i18n="earth_environment">Earth & Environment</a>
+            <a onclick="filterCategory('Lifestyle & Living', this)" data-i18n="lifestyle_living">Lifestyle & Living</a>
+        </div>
+        <div>
+            <select class="lang-select" id="languageSelector" onchange="changeLanguage()">
+                <option value="en">English (EN)</option>
+                <option value="ta">Tamil (தமிழ்)</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                <option value="ml">Malayalam (മലയാളം)</option>
+                <option value="hi">Hindi (हिन्दी)</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="container" id="feed-container">
+        <p>Loading live state articles...</p>
+    </div>
+
+    <!-- Deep Dive Modal -->
+    <div class="modal" id="deepDiveModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-meta" id="modalMeta"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <img class="modal-img" id="modalImg" src="" alt="Deep Dive Image">
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        let allArticlesData = {};
+        let currentCategory = 'All';
+        let currentLang = 'en';
+
+        // UI translation dictionary
+        const uiText = {
+            en: {
+                subtitle: "AI-Curated Intelligence • Live State Updates • Deep Dives",
+                all: "All Updates",
+                india_global: "India & Global",
+                tech_business: "Tech & Business",
+                earth_environment: "Earth & Environment",
+                lifestyle_living: "Lifestyle & Living",
+                deep_dive: "Deep Dive →",
+                loading: "Loading live state articles..."
+            },
+            ta: {
+                subtitle: "AI-தொகுக்கப்பட்ட நுண்ணறிவு • நேரலை மாநிலச் செய்திகள் • ஆழமான ஆய்வுகள்",
+                all: "அனைத்துச் செய்திகள்",
+                india_global: "இந்தியா & உலகம்",
+                tech_business: "தொழில்நுட்பம் & வணிகம்",
+                earth_environment: "பூமி & சுற்றுச்சூழல்",
+                lifestyle_living: "வாழ்க்கை முறை",
+                deep_dive: "ஆழமான பார்வை →",
+                loading: "மாநிலச் செய்திகள் ஏற்றப்படுகின்றன..."
+            },
+            te: {
+                subtitle: "AI-క్యూరేటెడ్ ఇంటెలిజెన్స్ • ప్రత్యక్ష రాష్ట్ర వార్తలు • లోతైన విశ్లేషణ",
+                all: "అన్ని అప్‌డేట్‌లు",
+                india_global: "భారత్ & ప్రపంచం",
+                tech_business: "టెక్ & వ్యాపారం",
+                earth_environment: "పర్యావరణం",
+                lifestyle_living: "జీవన శైలి",
+                deep_dive: "పూర్తి విశ్లేషణ →",
+                loading: "రాష్ట్ర వార్తలు లోడ్ అవుతున్నాయి..."
+            },
+            kn: {
+                subtitle: "AI-ಸಂಗ್ರಹಿಸಿದ ಮಾಹಿತಿ • ನೇರ ರಾಜ್ಯ ನವೀಕರಣಗಳು • ಆಳವಾದ ವಿಶ್ಲೇಷಣೆ",
+                all: "ಎಲ್ಲಾ ನವೀಕರಣಗಳು",
+                india_global: "ಭಾರತ ಮತ್ತು ಜಾಗತಿಕ",
+                tech_business: "ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ವ್ಯಾಪಾರ",
+                earth_environment: "ಭೂಮಿ ಮತ್ತು ಪರಿಸರ",
+                lifestyle_living: "ಜೀವನಶೈಲಿ",
+                deep_dive: "ಆಳವಾದ ನೋಟ →",
+                loading: "ರಾಜ್ಯ ಸುದ್ದಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+            },
+            ml: {
+                subtitle: "AI ക്യൂറേറ്റഡ് ഇന്റലിജൻസ് • തത്സമയ സംസ്ഥാന വാർത്തകൾ • ഡീപ് ഡൈവ്",
+                all: "എല്ലാ വാർത്തകളും",
+                india_global: "ഇന്ത്യ & ലോകം",
+                tech_business: "ടെക് & ബിസിനസ്സ്",
+                earth_environment: "ഭൂമി & പരിസ്ഥിതി",
+                lifestyle_living: "ജീവിതരീതി",
+                deep_dive: "ഡീപ് ഡൈവ് →",
+                loading: "സംസ്ഥാന വാർത്തകൾ ലോഡ് ചെയ്യുന്നു..."
+            },
+            hi: {
+                subtitle: "AI-क्यूरेटेड इंटेलिजेंस • लाइव राज्य अपडेट • गहरी अंतर्दृष्टि",
+                all: "सभी अपडेट",
+                india_global: "भारत और वैश्विक",
+                tech_business: "टेक और व्यापार",
+                earth_environment: "पर्यावरण",
+                lifestyle_living: "जीवन शैली",
+                deep_dive: "विस्तृत विवरण →",
+                loading: "राज्य के समाचार लोड हो रहे हैं..."
+            }
+        };
+
+        async function fetchLiveFeed() {
+            try {
+                const response = await fetch('articles.json');
+                if (!response.ok) throw new Error("Could not load feed");
+                const data = await response.json();
+                
+                allArticlesData = data.live_feed || {};
+                renderArticles();
+            } catch (error) {
+                document.getElementById('feed-container').innerHTML = `<p>${uiText[currentLang].loading}</p>`;
+            }
+        }
+
+        function filterCategory(category, element) {
+            currentCategory = category;
+            const links = document.querySelectorAll('#category-nav a');
+            links.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+            renderArticles();
+        }
+
+        function changeLanguage() {
+            currentLang = document.getElementById('languageSelector').value;
+            
+            // Translate UI elements
+            document.getElementById('header-subtitle').innerText = uiText[currentLang].subtitle;
+            document.querySelector('[data-i18n="all"]').innerText = uiText[currentLang].all;
+            document.querySelector('[data-i18n="india_global"]').innerText = uiText[currentLang].india_global;
+            document.querySelector('[data-i18n="tech_business"]').innerText = uiText[currentLang].tech_business;
+            document.querySelector('[data-i18n="earth_environment"]').innerText = uiText[currentLang].earth_environment;
+            document.querySelector('[data-i18n="lifestyle_living"]').innerText = uiText[currentLang].lifestyle_living;
+
+            renderArticles();
+        }
+
+        function renderArticles() {
+            const container = document.getElementById('feed-container');
+            container.innerHTML = "";
+
+            let count = 0;
+            for (const key in allArticlesData) {
+                const art = allArticlesData[key];
+                
+                if (currentCategory !== 'All' && art.category !== currentCategory) {
+                    continue;
+                }
+
+                count++;
+                const titleText = art.title[currentLang] || art.title['en'];
+                const summaryText = art.summary[currentLang] || art.summary['en'];
+                const imageUrl = `https://picsum.photos/seed/${art.id}/300/200`;
+
+                const card = document.createElement('div');
+                card.className = 'article-card';
+                card.innerHTML = `
+                    <img class="article-thumb" src="${imageUrl}" alt="Thumbnail">
+                    <div class="article-content">
+                        <div class="meta">${art.meta}</div>
+                        <h2 class="article-title"><a href="#" onclick="openDeepDive('${key}'); return false;">${titleText}</a></h2>
+                        <p class="summary">${summaryText}</p>
+                        <button class="deep-dive-btn" onclick="openDeepDive('${key}')">${uiText[currentLang].deep_dive}</button>
+                    </div>
+                `;
+                container.appendChild(card);
+            }
+
+            if (count === 0) {
+                container.innerHTML = `<p style="color:#666; font-family:Arial; font-size:14px; text-align:center; padding: 40px 0;">No articles available for this category right now.</p>`;
+            }
+        }
+
+        function openDeepDive(key) {
+            const art = allArticlesData[key];
+            if (!art) return;
+
+            document.getElementById('modalMeta').innerText = art.meta;
+            document.getElementById('modalTitle').innerText = art.title[currentLang] || art.title['en'];
+            document.getElementById('modalImg').src = `https://picsum.photos/seed/${art.id}/800/500`;
+            
+            // Format full deep dive text into clean multi-paragraph blocks
+            const rawText = art.deep_dive[currentLang] || art.deep_dive['en'];
+            const formattedHtml = rawText.split('\n\n').map(p => `<p style="margin-bottom: 16px; line-height: 1.7;">${p}</p>`).join('');
+            document.getElementById('modalBody').innerHTML = formattedHtml;
+
+            document.getElementById('deepDiveModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('deepDiveModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('deepDiveModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        window.onload = function() {
+            fetchLiveFeed();
+            setInterval(fetchLiveFeed, 5 * 60 * 1000);
+        };
+    </script>
+</body>
+</html>
