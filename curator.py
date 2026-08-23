@@ -1,4 +1,6 @@
-# Map incoming RSS tags or keywords into your exact 6 primary active categories
+import json
+import os
+
 VALID_CATEGORIES = [
     "India & Global",
     "Tech & AI",
@@ -22,3 +24,23 @@ def classify_article(title, summary):
         return "Sports & Cultural"
     else:
         return "India & Global"
+
+# Example function hook to generate articles.json during your build workflow
+def generate_feed_json(sample_articles, output_path="articles.json"):
+    feed_data = {"live_feed": {}}
+    
+    for i, art in enumerate(sample_articles, start=1):
+        cat = classify_article(art.get("title", ""), art.get("summary", ""))
+        feed_data["live_feed"][f"article_{i}"] = {
+            "category": cat,
+            "meta": f"{cat} • Live Update",
+            "title": {"en": art.get("title", "")},
+            "summary": {"en": art.get("summary", "")},
+            "deep_dive": {"en": art.get("deep_dive", "")}
+        }
+        
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(feed_data, f, indent=4, ensure_ascii=False)
+
+if __name__ == "__main__":
+    print("Curator script template loaded successfully.")
