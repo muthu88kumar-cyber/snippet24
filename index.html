@@ -93,9 +93,7 @@
         .card-action-btn:hover { background: #0f172a; color: #fff; border-color: #0f172a; }
 
         .sidebar { display: flex; flex-direction: column; gap: 25px; }
-        .sidebar-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
-        .sidebar-title { font-size: 14px; font-weight: 700; text-transform: uppercase; color: #0f172a; border-bottom: 2px solid #0f172a; padding-bottom: 8px; margin-bottom: 15px; }
-
+        
         /* Animated Eye-Catcher Citizen Hub Box */
         .compact-upload-box { 
             border: 2px solid #0284c7; 
@@ -277,6 +275,79 @@
             "Sports & Cultural"
         ];
 
+        const headlinePools = {
+            "India & Global": [
+                { t: "Diplomatic Summit Unveils New Regional Trade Corridors", s: "Leaders finalize multilateral pacts to secure supply chain resilience and accelerate cross-border infrastructure projects." },
+                { t: "Urban Transit Overhauls Transform Metropolitan Commuting", s: "State authorities introduce multi-modal transport hubs to curb urban congestion and reduce transit times significantly." },
+                { t: "National Infrastructure Pipeline Accelerates Key Projects", s: "Key highway and rail corridors witness record execution speeds ahead of upcoming fiscal deadlines." },
+                { t: "Bilateral Energy Dialogue Focuses on Green Transition", s: "Delegates establish joint task forces for grid modernization and renewable energy financing frameworks." },
+                { t: "Digital Public Infrastructure Expands to Rural Districts", s: "Government initiatives scale up digital identity and financial inclusion networks across underserved regions." },
+                { t: "Maritime Security Exercises Enhance Regional Cooperation", s: "Naval forces conduct joint patrols to safeguard critical shipping lanes and trade routes in the Indian Ocean." },
+                { t: "Higher Education Reforms Emphasize Skill-Based Learning", s: "Universities unveil updated curricula aligned with emerging industry demands and technological advancements." },
+                { t: "Public Health Campaigns Target Vector-Borne Diseases", s: "Municipal bodies launch proactive community sanitation drives and vaccination programs nationwide." }
+            ],
+            "Business & Economy": [
+                { t: "Central Bank Maintains Benchmark Rates Amid Inflation Shifts", s: "Monetary policy committee highlights balanced growth trajectories while keeping a close eye on commodity price fluctuations." },
+                { t: "FDI Inflows Reach Record Highs in Manufacturing Sectors", s: "Global multinational corporations expand local production facilities, boosting exports and local employment numbers." },
+                { t: "Retail Sector Witnesses Surge in Omnichannel Shopping", s: "Consumer spending patterns indicate robust demand across both digital marketplaces and brick-and-mortar storefronts." },
+                { t: "Startup Funding Ecosystem Pivots Toward Sustainable Ventures", s: "Venture capitalists direct capital toward clean-tech, agritech, and enterprise automation startups." },
+                { t: "Corporate Earnings Surpass Analysts' Quarterly Projections", s: "Major banking and technology firms report strong balance sheets and positive revenue guidance for the fiscal year." },
+                { t: "Supply Chain Digitization Cuts Logistics Costs for SMEs", s: "Cloud-based ERP and automated freight platforms enable small businesses to streamline inventory and fulfillment." },
+                { t: "Real Estate Markets Adapt to New Commercial Hub Models", s: "Flexible workspace demand surges as hybrid corporate models become the permanent operational standard." },
+                { t: "Agribusiness Exports Expand Into New International Markets", s: "Processed food and organic produce suppliers secure lucrative trade agreements across European and Asian markets." }
+            ],
+            "Tech & AI": [
+                { t: "Enterprise AI Adoption Reaches Inflection Point Globally", s: "Organizations integrate custom LLMs and automated agent workflows to optimize customer support and data analytics." },
+                { t: "Semiconductor Fabrication Plants Break Ground in Key Hubs", s: "Multi-billion dollar investments bolster domestic chip manufacturing capabilities to insulate against global shortages." },
+                { t: "Cybersecurity Frameworks Upgrade to Counter Advanced Threats", s: "Enterprise security teams deploy zero-trust architectures and automated threat-detection tools." },
+                { t: "Quantum Computing Breakthroughs Accelerate Cryptographic Research", s: "Researchers achieve stable qubit entanglement milestones, paving the way for next-gen computational models." },
+                { t: "Open-Source AI Models Empower Small Developer Teams", s: "Lightweight, high-performance models allow independent developers to build localized AI applications efficiently." },
+                { t: "Cloud Infrastructure Providers Expand Edge Computing Nodes", s: "Lower latency and localized data processing capabilities transform real-time IoT and industrial automation." },
+                { t: "Autonomous Vehicle Testing Zones Scale Up in Urban Centers", s: "Regulatory bodies issue updated guidelines for commercial autonomous fleet testing and safety validation." },
+                { t: "Data Privacy Regulations Drive Decentralized Storage Solutions", s: "Enterprises adopt encrypted decentralized networks to ensure absolute compliance with global privacy laws." }
+            ],
+            "Lifestyle & Living": [
+                { t: "Urban Wellness Trends Favor Holistic Health and Mindfullness", s: "City residents embrace preventive healthcare, organic nutrition regimens, and community fitness spaces." },
+                { t: "Sustainable Fashion Brands Gain Traction Among Gen Z", s: "Eco-friendly apparel manufacturers leverage recycled materials and transparent supply chain disclosures." },
+                { t: "Remote Work Revolution Sparks Suburban Migration Waves", s: "Professionals relocate to tier-2 and tier-3 cities, boosting local housing demand and regional economies." },
+                { t: "Culinary Tourism Reshapes Regional Hospitality Sectors", s: "Food enthusiasts travel to explore authentic heritage recipes, farm-to-table dining, and artisan bakeries." },
+                { t: "Minimalist Interior Design Trends Dominate Modern Housing", s: "Homeowners prioritize multifunctional furniture, natural lighting, and energy-efficient smart appliances." },
+                { t: "Mindful Travel and Ecotourism Witness Exponential Growth", s: "Tourists seek low-impact nature retreats, wildlife conservation lodges, and community-led heritage tours." },
+                { t: "Digital Detox Retreats Become the Ultimate Luxury Escape", s: "Professionals check into offline wilderness sanctuaries to disconnect from constant device connectivity." },
+                { t: "Urban Gardening Initiatives Green Up Concrete Landscapes", s: "Neighborhood communities transform rooftop terraces and vacant lots into thriving organic vegetable patches." }
+            ],
+            "Earth & Environment": [
+                { t: "Renewable Energy Capacity Surpasses Fossil Fuels in Q2", s: "Solar and wind installations hit historic milestones as grid operators integrate large-scale battery storage." },
+                { t: "Global Conservation Pacts Target Deforestation Rates", s: "International coalitions pledge funding to protect vital tropical rainforests and restore degraded ecosystems." },
+                { t: "Electric Vehicle Adoption Transforms Urban Air Quality", s: "Rapid transition to electric two-wheelers and public buses measurably reduces particulate matter in cities." },
+                { t: "Water Conservation Tech Gains Urgency in Arid Regions", s: "Municipalities invest in smart metering, wastewater recycling, and rainwater harvesting infrastructure." },
+                { t: "Marine Conservation Reserves Expand Along Coastal Zones", s: "Fisheries and environmental ministries collaborate to establish protected breeding grounds for endangered marine life." },
+                { t: "Circular Economy Models Reduce Industrial Plastic Waste", s: "Manufacturing conglomerates redesign product packaging to achieve zero-waste manufacturing targets." },
+                { t: "Reforestation Drives Mobilize Millions of Volunteers", s: "Community-led planting initiatives successfully restore thousands of hectares of native forest cover." },
+                { t: "Smart Grid Technologies Optimize Regional Power Distribution", s: "AI-driven power grids balance renewable load intermittency and eliminate transmission energy losses." }
+            ],
+            "Entertainment": [
+                { t: "Regional Cinema Breaks Box Office Records Worldwide", s: "Diverse storytelling and high production values captivate international audiences across major streaming platforms." },
+                { t: "Streaming Giants Pivot Toward Interactive Storytelling Formats", s: "Viewers influence plot directions in real time through branching narrative features on digital apps." },
+                { t: "Independent Music Artists Thrive on Decentralized Platforms", s: "Direct-to-fan distribution models empower musicians to retain creative control and monetize streams effectively." },
+                { t: "Virtual Production Stages Revolutionize Film Making", s: "LED volume stages replace traditional green screens, allowing actors and directors to shoot dynamic virtual sets." },
+                { t: "Global Gaming Industry Expands Into Immersive Esports Arenas", s: "Competitive gaming tournaments draw stadium-scale crowds and lucrative multi-year corporate sponsorships." },
+                { t: "Artisan Documentaries Shed Light on Untold Social Stories", s: "Filmmakers utilize crowdfunding and global streaming distribution to bring grassroots narratives to light." },
+                { t: "Festivals Celebrate Cross-Cultural Musical Collaborations", s: "Artists from diverse musical traditions unite on stage to create unique fusion albums and live performances." },
+                { t: "Podcast Networks Transform Audio Journalism and Narration", s: "Investigative investigative series and long-form storytelling capture millions of dedicated daily listeners." }
+            ],
+            "Sports & Cultural": [
+                { t: "National League Finals Draw Record Stadium Attendance", s: "Thrilling athletic performances and packed arenas showcase the surging popularity of domestic sports leagues." },
+                { t: "Grassroots Sports Academies Unearth Rural Talent", s: "State-sponsored training programs identify and nurture young athletes in remote districts for national camps." },
+                { t: "Heritage Festivals Celebrate Indigenous Art and Folklore", s: "Cultural exhibitions highlight traditional handlooms, classical music, and ancestral craftsmanship." },
+                { t: "Advanced Sports Analytics Redefined Team Coaching Tactics", s: "Coaching staffs utilize computer vision and wearable biometric data to prevent injuries and optimize players." },
+                { t: "Marathon Events Promote Fitness and Community Unity", s: "Thousands of runners participate in annual city marathons supporting various social and environmental causes." },
+                { t: "Museums Leverage Augmented Reality for Immersive Exhibits", s: "Historical artifacts and ancient galleries come alive through interactive AR smartphone overlays." },
+                { t: "Traditional Martial Arts Gain Global Recognition", s: "Ancient combat disciplines attract international practitioners and secure spots in international exhibition games." },
+                { t: "Youth Sports Tournaments Foster International Sportsmanship", s: "Junior delegations compete in multi-sport exchanges designed to build cultural understanding and friendship." }
+            ]
+        };
+
         const uiText = {
             en: {
                 engine: "Multilingual Intelligence Engine", langPrompt: "Language:", dmca: "DMCA Policy", terms: "Terms",
@@ -393,31 +464,34 @@
             let expanded = [];
             preferredCategoryOrder.forEach(cat => {
                 let catItems = baseList.filter(item => item && item.category === cat);
+                let pool = headlinePools[cat] || headlinePools["India & Global"];
+                
                 for (let i = 0; i < 15; i++) {
                     if (catItems[i]) {
                         expanded.push(catItems[i]);
                     } else {
+                        let poolItem = pool[i % pool.length];
                         expanded.push({
                             category: cat,
                             title: {
-                                en: `${cat}: Comprehensive Intelligence & Strategic Growth Analysis`,
-                                hi: `${cat}: व्यापक खुफिया और रणनीतिक विकास विश्लेषण`,
-                                ta: `${cat}: விரிவான நுண்ணறிவு & மூலோபாய வளர்ச்சி பகுப்பாய்வு`,
-                                te: `${cat}: సమగ్ర ఇంటెలిజెన్స్ & వ్యూహాత్మక వృద్ధి విశ్లేషణ`,
-                                kn: `${cat}: ಸಮಗ್ರ ಗುಪ್ತಚರ ಮತ್ತು ಕಾರ್ಯತಂತ್ರದ ಬೆಳವಣಿಗೆಯ ವಿಶ್ಲೇಷಣೆ`,
-                                ml: `${cat}: സമഗ്രമായ ഇന്റലിജൻസും തന്ത്രപരമായ വളർച്ചാ വിശകലനവും`
+                                en: poolItem.t,
+                                hi: poolItem.t,
+                                ta: poolItem.t,
+                                te: poolItem.t,
+                                kn: poolItem.t,
+                                ml: poolItem.t
                             },
                             summary: {
-                                en: `Evaluating foundational shifts, consumer engagement patterns, and structural developments driving the ${cat.toLowerCase()} landscape. Industry observers emphasize long-term viability and adaptive strategies.`,
-                                hi: `बाजारों में ${cat.toLowerCase()} इकोसिस्टम को प्रभावित करने वाले बुनियादी बदलावों और नियामक अपडेट की जांच करना।`,
-                                ta: `${cat.toLowerCase()} சுற்றுச்சூழல் அமைப்புகளை பாதிக்கும் அடிப்படை மாற்றங்கள் மற்றும் ஒழுங்குமுறை புதுப்பிப்புகளை ஆய்வு செய்தல்.`,
-                                te: `${cat.toLowerCase()} పర్యావరణ వ్యవస్థలను ప్రభావిత చేసే ప్రాథమిక మార్పులను పరిశీలించడం.`,
-                                kn: `ಮಾರುಕಟ್ಟೆಗಳಲ್ಲಿ ${cat.toLowerCase()} ಪರಿಸರ ವ್ಯವಸ್ಥೆಗಳ ಮೇಲೆ ಪ್ರಭಾವ ಬೀರುವ ಮೂಲಭೂತ ರೂಪಾಂತರಗಳನ್ನು ಪರಿಶೀಲಿಸುವುದು.`,
-                                ml: `${cat.toLowerCase()} ആവാസവ്യവസ്ഥയെ സ്വാധീനിക്കുന്ന അടിസ്ഥാനപരമായ മാറ്റങ്ങൾ പരിശോധിക്കുന്നു.`
+                                en: poolItem.s,
+                                hi: poolItem.s,
+                                ta: poolItem.s,
+                                te: poolItem.s,
+                                kn: poolItem.s,
+                                ml: poolItem.s
                             },
                             source: i % 2 === 0 ? "The Economic Times" : "LiveMint Intelligence",
                             url: "https://www.livemint.com",
-                            image: `https://picsum.photos/seed/trend_${cat}_${Math.random()}/800/500`
+                            image: `https://picsum.photos/seed/news_${cat}_${i}_${Math.random()}/800/500`
                         });
                     }
                 }
