@@ -1,13 +1,68 @@
-<nav class="category-nav" style="display: flex; gap: 10px; margin: 20px 0; overflow-x: auto; padding-bottom: 10px; white-space: nowrap;">
-    <button class="tab-btn active" data-category="All" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #111; color: #fff; border-radius: 4px; font-weight: 500;">All Updates</button>
-    <button class="tab-btn" data-category="India & Global" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">India & Global</button>
-    <button class="tab-btn" data-category="Tech & AI" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Tech & AI</button>
-    <button class="tab-btn" data-category="Business & Economy" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Business & Economy</button>
-    <button class="tab-btn" data-category="Earth & Environment" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Earth & Environment</button>
-    <button class="tab-btn" data-category="Lifestyle & Living" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Lifestyle & Living</button>
-    <button class="tab-btn" data-category="Sports & Cultural" style="padding: 8px 16px; cursor: pointer; border: 1px solid #ccc; background: #fff; color: #333; border-radius: 4px; font-weight: 500;">Sports & Cultural</button>
-</nav>
+document.addEventListener("DOMContentLoaded", () => {
+    let allArticles = [];
 
-<div id="news-feed-container">
-    <!-- Live wire cards load dynamically here -->
-</div>
+    fetch('articles.json')
+        .then(response => response.json())
+        .then(data => {
+            const feed = data.live_feed;
+            allArticles = Object.keys(feed).map(key => feed[key]);
+            renderArticles(allArticles);
+            setupCategoryFilters();
+        })
+        .catch(error => console.error('Error loading live wire feed:', error));
+
+    function renderArticles(articlesToRender) {
+        const container = document.getElementById('news-feed-container');
+        if (!container) return;
+
+        container.innerHTML = "";
+
+        if (articlesToRender.length === 0) {
+            container.innerHTML = `<p style="text-align: center; color: #777; padding: 40px;">No live updates found in this category right now. Checking feed...</p>`;
+            return;
+        }
+
+        articlesToRender.forEach(article => {
+            const card = document.createElement('div');
+            card.className = 'news-card';
+            card.style.cssText = "background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);";
+
+            card.innerHTML = `
+                <span class="category" style="font-size: 12px; font-weight: bold; color: #c0392b; text-transform: uppercase; letter-spacing: 0.5px;">${article.meta}</span>
+                <h3 style="margin: 10px 0 8px 0; font-size: 20px; color: #111;">${article.title.en}</h3>
+                <p style="color: #555; font-size: 14px; line-height: 1.5; margin-bottom: 15px;">${article.summary.en}</p>
+                <details style="margin-top: 10px; color: #333; font-size: 14px;">
+                    <summary style="cursor: pointer; color: #0066cc; font-weight: 500;">Deep Dive →</summary>
+                    <p style="margin-top: 10px; line-height: 1.6; white-space: pre-line; color: #444;">${article.deep_dive.en}</p>
+                </details>
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
+    function setupCategoryFilters() {
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                buttons.forEach(btn => {
+                    btn.style.background = '#fff';
+                    btn.style.color = '#333';
+                    btn.classList.remove('active');
+                });
+                e.target.style.background = '#111';
+                e.target.style.color = '#fff';
+                e.target.classList.add('active');
+
+                const selectedCategory = e.target.getAttribute('data-category');
+
+                if (selectedCategory === 'All') {
+                    renderArticles(allArticles);
+                } else {
+                    const filtered = allArticles.filter(article => article.category === selectedCategory);
+                    renderArticles(filtered);
+                }
+            });
+        });
+    }
+});
