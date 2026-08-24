@@ -3,393 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snippet24 - Professional News Intelligence & Curation</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <title>Snippet24 - Professional News Briefs</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; background-color: #f4f5f7; color: #1e293b; }
-
-        .top-bar { background: #111827; color: #9ca3af; font-size: 11px; padding: 6px 15px; display: flex; justify-content: space-between; align-items: center; }
-        .top-bar a { color: #9ca3af; text-decoration: none; }
-        .top-bar a:hover { color: #ffffff; }
-
-        /* Centered Header Styles */
-        header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 18px 15px; text-align: center; }
-        .logo-brand { display: inline-flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 4px; }
-        .logo-snippet { font-size: 30px; font-weight: 700; color: #061A4A; letter-spacing: -1.5px; line-height: 1; }
-        .logo-box24 { background: #FF3B30; color: #fff; width: 48px; height: 28px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; }
+        :root { --primary: #e63946; --bg: #f8f9fa; --card-bg: #ffffff; --text: #212529; --muted: #6c757d; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; }
+        header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-weight: 800; font-size: 1.4rem; color: var(--primary); text-decoration: none; }
+        select { padding: 6px 12px; border-radius: 6px; border: 1px solid #ced4da; background: #fff; font-size: 0.9rem; }
+        .categories { display: flex; overflow-x: auto; background: #fff; padding: 10px 15px; gap: 10px; border-bottom: 1px solid #dee2e6; white-space: nowrap; }
+        .cat-btn { background: #f1f3f5; border: none; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--muted); transition: 0.2s; }
+        .cat-btn.active { background: var(--primary); color: #fff; }
+        .container { max-width: 680px; margin: 20px auto; padding: 0 15px; }
+        .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px; overflow: hidden; border: 1px solid #edf2f7; }
+        .card img { width: 100%; height: 220px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .badge { background: #ffe3e3; color: var(--primary); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+        h2 { font-size: 1.25rem; margin: 0 0 10px 0; line-height: 1.4; }
+        p.summary { font-size: 0.95rem; color: #495057; line-height: 1.6; margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+        .deep-btn { width: 100%; background: #f8f9fa; border: 1px solid #ced4da; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--text); }
+        .deep-btn:hover { background: #e9ecef; }
         
-        .header-slogan { font-size: 12px; color: #64748b; font-weight: 500; margin-top: 2px; }
-        .engine-subtext { font-size: 11px; color: #0284c7; font-weight: 600; margin-top: 6px; display: inline-block; background: #e0f2fe; padding: 2px 10px; border-radius: 12px; }
-
-        .trending-bar { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 8px 15px; display: flex; align-items: center; gap: 10px; font-size: 12px; overflow: hidden; }
-        .trending-badge { background: #FF3B30; color: #fff; padding: 3px 8px; font-weight: 700; font-size: 10px; text-transform: uppercase; border-radius: 3px; flex-shrink: 0; }
-        .ticker-container { overflow: hidden; width: 100%; white-space: nowrap; }
-        .ticker-track { display: inline-block; animation: marquee 120s linear infinite; }
-        .ticker-track:hover { animation-play-state: paused; }
-        .ticker-item { display: inline-block; color: #334155; font-weight: 500; margin-right: 40px; }
-
-        @keyframes marquee {
-            0% { transform: translate3d(0, 0, 0); }
-            100% { transform: translate3d(-50%, 0, 0); }
-        }
-
-        /* Citizen Hub Banner */
-        .citizen-hub-banner { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-bottom: 1px solid #bae6fd; padding: 12px 15px; display: flex; flex-direction: column; gap: 10px; }
-        .citizen-hub-content { display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 10px; }
-        .citizen-hub-text { font-size: 12px; color: #0369a1; font-weight: 500; display: flex; align-items: center; gap: 8px; line-height: 1.4; }
-        .citizen-hub-btn { background: #0284c7; color: #fff; text-decoration: none; font-weight: 600; padding: 6px 14px; border-radius: 4px; font-size: 11px; white-space: nowrap; box-shadow: 0 2px 5px rgba(2, 132, 199, 0.2); }
-        .citizen-hub-btn:hover { background: #0369a1; }
-
-        /* Language Bar Below Citizen Hub */
-        .language-bar { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 8px 15px; display: flex; align-items: center; justify-content: flex-end; gap: 8px; font-size: 11px; }
-        .lang-selector { background: #f8fafc; color: #1e293b; border: 1px solid #cbd5e1; padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600; }
-        .lang-selector:focus { outline: none; border-color: #0284c7; }
-
-        .main-container { max-width: 1200px; margin: 15px auto 30px auto; padding: 0 12px; }
-        
-        .category-nav { display: flex; gap: 15px; margin-bottom: 15px; overflow-x: auto; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; white-space: nowrap; -webkit-overflow-scrolling: touch; }
-        .tab-btn { background: transparent; border: none; font-size: 13px; font-weight: 600; color: #64748b; cursor: pointer; padding-bottom: 6px; margin-bottom: -10px; border-bottom: 2px solid transparent; transition: all 0.2s; }
-        .tab-btn.active { color: #061A4A; border-bottom-color: #FF3B30; }
-
-        .hero-section { display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; }
-
-        .hero-main-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; }
-        .hero-main-thumb { width: 100%; height: 210px; object-fit: cover; }
-        .hero-main-body { padding: 15px; display: flex; flex-direction: column; flex: 1; }
-        .hero-badge { background: #FF3B30; color: #fff; font-size: 9px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; align-self: flex-start; margin-bottom: 8px; }
-        .hero-main-body h2 { font-size: 16px; color: #0f172a; margin-bottom: 8px; line-height: 1.35; }
-        .hero-main-snippet { font-size: 12px; color: #475569; line-height: 1.5; margin-bottom: 12px; }
-
-        .hero-side-list { display: flex; flex-direction: column; gap: 10px; }
-        .hero-side-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; display: flex; gap: 12px; align-items: center; cursor: pointer; }
-        .hero-side-thumb { width: 70px; height: 60px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
-        .hero-side-body h4 { font-size: 12px; color: #0f172a; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-        .feed-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
-        
-        @media (min-width: 768px) {
-            .hero-section { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
-            .hero-main-thumb { height: 260px; }
-            .feed-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (min-width: 1024px) {
-            .feed-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-
-        .news-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; }
-        .news-thumb { width: 100%; height: 160px; object-fit: cover; }
-        .news-body { padding: 14px; display: flex; flex-direction: column; flex: 1; }
-        .news-body h3 { font-size: 14px; color: #0f172a; margin-bottom: 8px; line-height: 1.35; }
-        .news-snippet-text { font-size: 12px; color: #475569; line-height: 1.5; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
-        
-        .card-action-btn { background: #f8fafc; border: 1px solid #cbd5e1; color: #0f172a; font-weight: 600; font-size: 11px; cursor: pointer; text-align: center; padding: 6px 10px; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; width: 100%; }
-        
-        .app-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1100; justify-content: center; align-items: center; padding: 15px; }
-        .modal-wrapper { position: relative; width: 100%; max-width: 800px; }
-        .modal-close-symbol { position: absolute; top: -40px; right: 0; background: #ffffff; border: none; font-size: 22px; font-weight: 700; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #1e293b; z-index: 1200; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .modal-content-box { background: #fff; width: 100%; max-height: 85vh; overflow-y: auto; border-radius: 10px; padding: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.25); }
-
-        .modal-report-header { border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 15px; }
-        .modal-report-tag { color: #FF3B30; font-size: 10px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 4px; }
-        .modal-report-title { font-size: 18px; color: #0f172a; margin-bottom: 8px; line-height: 1.3; }
-        .modal-report-img { width: 100%; height: 190px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
-        
-        .modal-summary-box { background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid #3b82f6; padding: 12px; border-radius: 6px; margin-bottom: 15px; }
-        .modal-summary-box h4 { font-size: 12px; color: #1e40af; margin-bottom: 4px; font-weight: 700; }
-        .modal-summary-box p { font-size: 11px; color: #1e3a8a; line-height: 1.5; margin: 0; }
-
-        .modal-subtitle-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; margin-bottom: 12px; }
-        .modal-subtitle-block h5 { font-size: 12px; color: #0f172a; margin-bottom: 6px; font-weight: 700; display: flex; align-items: center; gap: 6px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
-        .modal-subtitle-block p { font-size: 11px; color: #334155; line-height: 1.6; margin: 0; }
-
-        .modal-source-btn-wrap { margin-top: 20px; text-align: center; }
-        .modal-source-link-btn { background: #111827; color: #fff; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-size: 11px; font-weight: 600; display: inline-block; }
-
-        .upload-form-group { margin-bottom: 10px; text-align: left; }
-        .upload-form-group label { display: block; font-size: 11px; font-weight: 600; color: #334155; margin-bottom: 3px; }
-        .upload-input, .upload-textarea { width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 11px; font-family: 'Poppins', sans-serif; }
-        .upload-textarea { resize: vertical; height: 70px; }
-        .legal-notice-box { background: #fef2f2; border: 1px solid #fecaca; padding: 8px; border-radius: 4px; font-size: 9px; color: #991b1b; line-height: 1.35; margin-bottom: 10px; text-align: left; }
-        .submit-news-btn { background: #0f172a; color: #fff; border: none; padding: 10px; font-size: 12px; font-weight: 600; border-radius: 4px; cursor: pointer; width: 100%; }
-
-        footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 20px 12px; text-align: center; font-size: 10px; color: #64748b; }
+        /* Modal */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: flex-end; }
+        .modal.active { display: flex; }
+        .modal-content { background: #fff; width: 100%; max-width: 680px; max-height: 85vh; border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 25px; overflow-y: auto; box-sizing: border-box; animation: slideUp 0.3s ease-out; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        .close-btn { float: right; background: #f1f3f5; border: none; width: 32px; height: 32px; border-radius: 50%; font-weight: bold; cursor: pointer; font-size: 1rem; }
+        .modal-body p { line-height: 1.7; color: #333; margin-bottom: 15px; }
+        footer { text-align: center; padding: 30px; color: var(--muted); font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">
-        <div><i class="fa-solid fa-shield-halved"></i> <span>Secure Platform</span></div>
-        <div><a href="#">DMCA Policy</a> | <a href="#">Terms</a></div>
-    </div>
-
-    <!-- Centered Header & Branding -->
     <header>
-        <div class="logo-brand">
-            <div class="logo-snippet">snippet</div>
-            <div class="logo-box24">24</div>
-        </div>
-        <div class="header-slogan">Deep Dive Intelligence • Trending • Live Updates</div>
-        <div>
-            <span class="engine-subtext"><i class="fa-solid fa-microchip"></i> Multilingual Intelligence Engine</span>
-        </div>
+        <a href="#" class="logo">snippet24.in</a>
+        <select id="langSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ml">മലയാളം</option>
+        </select>
     </header>
 
-    <div class="trending-bar">
-        <span class="trending-badge">Live Wire</span>
-        <div class="ticker-container">
-            <div class="ticker-track" id="ticker-track-container">
-                <div class="ticker-item">Loading Curated Intelligence Briefs...</div>
-            </div>
-        </div>
+    <div class="categories" id="categoryNav">
+        <button class="cat-btn active" onclick="filterCategory('All', this)">All News</button>
     </div>
 
-    <!-- Citizen Hub Banner -->
-    <div class="citizen-hub-banner">
-        <div class="citizen-hub-content">
-            <div class="citizen-hub-text">
-                <i class="fa-solid fa-bullhorn" style="color: #0284c7; font-size: 14px;"></i>
-                <span><b>Citizen Local News Hub:</b> Contribute verified stories, local updates, or trending media.</span>
-            </div>
-            <a href="javascript:void(0)" class="citizen-hub-btn" onclick="openSubmitModal()">Publish / Submit ↗</a>
-        </div>
-    </div>
-
-    <!-- Language Selector Bar Placed Right Below Citizen Hub -->
-    <div class="language-bar">
-        <label for="languageSelect" style="font-weight: 600; color: #475569;"><i class="fa-solid fa-globe"></i> Language:</label>
-        <select id="languageSelect" class="lang-selector" onchange="changeLanguage(this.value)">
-            <option value="en">English</option>
-            <option value="hi">हिंदी (Hindi)</option>
-            <option value="ta">தமிழ் (Tamil)</option>
-            <option value="te">తెలుగు (Telugu)</option>
-            <option value="kn">ಕನ್ನಡ (Kannada)</option>
-            <option value="ml">മലയാളം (Malayalam)</option>
-        </select>
-    </div>
-
-    <div class="main-container">
-        <nav id="category-nav" class="category-nav"></nav>
-        <div id="frontPageHeroContainer"></div>
-        <div id="news-feed-container" class="feed-grid"></div>
-    </div>
+    <main class="container" id="newsFeed">
+        <!-- Articles loaded dynamically -->
+    </main>
 
     <!-- Deep Dive Modal -->
-    <div id="articleModal" class="app-modal">
-        <div class="modal-wrapper">
-            <button class="modal-close-symbol" onclick="closeModal('articleModal')" title="Close">&times;</button>
-            <div class="modal-content-box" id="modalArticleBody"></div>
-        </div>
-    </div>
-
-    <!-- Publish / Submit Modal -->
-    <div id="submitModal" class="app-modal">
-        <div class="modal-wrapper" style="max-width: 500px;">
-            <button class="modal-close-symbol" onclick="closeModal('submitModal')" title="Close">&times;</button>
-            <div class="modal-content-box">
-                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 12px; border-bottom: 2px solid #0284c7; padding-bottom: 5px;">Publish / Trend Submit Form</h3>
-                <form id="citizenUploadForm" onsubmit="handleCitizenUpload(event)">
-                    <div class="upload-form-group">
-                        <label>Your Name / Reporter ID</label>
-                        <input type="text" id="citizenName" class="upload-input" required placeholder="Enter full name">
-                    </div>
-                    <div class="upload-form-group">
-                        <label>Headline / Trend Topic</label>
-                        <input type="text" id="citizenHeadline" class="upload-input" required placeholder="Brief title of event">
-                    </div>
-                    <div class="upload-form-group">
-                        <label>News Content & Details</label>
-                        <textarea id="citizenContent" class="upload-textarea" required placeholder="Describe what happened clearly..."></textarea>
-                    </div>
-                    <div class="upload-form-group">
-                        <label>Upload Image / Media</label>
-                        <input type="file" id="citizenMedia" class="upload-input" accept="image/*" required>
-                    </div>
-                    <div class="legal-notice-box">
-                        <i class="fa-solid fa-triangle-exclamation"></i> Legal Compliance Notice: Unverified, plagiarized, or copyrighted content uploads are strictly prohibited under applicable laws. You hold full liability.
-                    </div>
-                    <div style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 6px; text-align: left;">
-                        <input type="checkbox" id="legalConsent" required style="margin-top: 2px;">
-                        <label for="legalConsent" style="font-size: 9px; color: #475569; line-height: 1.3;">I declare that this submission is authentic, original, and complies with all legal standards.</label>
-                    </div>
-                    <button type="submit" class="submit-news-btn">Publish / Trend Submit</button>
-                </form>
-            </div>
+    <div class="modal" id="deepDiveModal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="toggleModal(false)">&times;</button>
+            <h3 id="modalTitle" style="margin-top:0; font-size: 1.3rem;"></h3>
+            <div class="modal-body" id="modalBody"></div>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 snippet24.in • All source attributions belong to their respective publishers.</p>
+        &copy; 2026 snippet24.in • All source protections apply.
     </footer>
 
     <script>
-    let globalArticles = [];
-    let currentCategory = 'All';
-    let currentLang = 'en';
+        let articlesData = [];
+        let currentLang = 'en';
+        let currentCategory = 'All';
 
-    document.addEventListener("DOMContentLoaded", async () => {
-        try {
-            const response = await fetch('articles.json');
-            const data = await response.json();
-            globalArticles = data.live_feed || [];
-        } catch (e) {
-            console.error("Could not load articles.json, using fallback data.", e);
-            globalArticles = [];
+        async function loadArticles() {
+            try {
+                const response = await fetch('articles.json');
+                const data = await response.json();
+                articlesData = data.live_feed;
+                buildCategories();
+                renderFeed();
+            } catch (error) {
+                console.error('Error loading articles:', error);
+            }
         }
 
-        renderCategories();
-        renderTicker();
-        renderMainContent(currentCategory);
-    });
-
-    function changeLanguage(langCode) {
-        currentLang = langCode;
-        renderTicker();
-        renderMainContent(currentCategory);
-    }
-
-    function renderCategories() {
-        const nav = document.getElementById('category-nav');
-        const categories = ["All", "India & Global", "Tech & AI", "Business & Economy"];
-        
-        nav.innerHTML = categories.map((cat, idx) => `
-            <button class="tab-btn ${idx === 0 ? 'active' : ''}" onclick="filterCategory('${cat}', this)">${cat === 'All' ? 'All Updates' : cat}</button>
-        `).join('');
-    }
-
-    window.filterCategory = function(cat, btn) {
-        currentCategory = cat;
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderMainContent(cat);
-    };
-
-    function renderTicker() {
-        const track = document.getElementById('ticker-track-container');
-        if (!globalArticles.length) return;
-        let html = '';
-        globalArticles.forEach(art => {
-            const titleText = art.title[currentLang] || art.title['en'];
-            html += `<div class="ticker-item">⚡ <b>[${art.category}]</b> ${titleText}</div>`;
-        });
-        track.innerHTML = html + html;
-    }
-
-    function renderMainContent(selectedCategory = 'All') {
-        const heroContainer = document.getElementById('frontPageHeroContainer');
-        const feedContainer = document.getElementById('news-feed-container');
-
-        if (!globalArticles.length) {
-            heroContainer.innerHTML = '<p style="padding: 20px; text-align:center;">Loading live intelligence briefs...</p>';
-            feedContainer.innerHTML = '';
-            return;
+        function buildCategories() {
+            const nav = document.getElementById('categoryNav');
+            const categories = ['All', ...new Set(articlesData.map(item => item.category))];
+            nav.innerHTML = categories.map(cat => `
+                <button class="cat-btn ${cat === 'All' ? 'active' : ''}" onclick="filterCategory('${cat}', this)">${cat}</button>
+            `).join('');
         }
 
-        let filtered = selectedCategory === 'All' ? globalArticles : globalArticles.filter(a => a.category === selectedCategory);
-        if (filtered.length === 0) filtered = globalArticles;
+        function filterCategory(cat, btn) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderFeed();
+        }
 
-        const heroArt = filtered[0];
-        const sideArts = filtered.slice(1, 4);
-        const gridArts = filtered.slice(4);
+        function changeLanguage() {
+            currentLang = document.getElementById('langSelect').value;
+            renderFeed();
+        }
 
-        const heroTitle = heroArt.title[currentLang] || heroArt.title['en'];
-        const heroSummary = heroArt.summary[currentLang] || heroArt.summary['en'];
+        function renderFeed() {
+            const feed = document.getElementById('newsFeed');
+            const filtered = currentCategory === 'All' ? articlesData : articlesData.filter(i => i.category === currentCategory);
 
-        heroContainer.innerHTML = `
-            <div style="font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 8px;"><i class="fa-solid fa-bolt" style="color: #FF3B30;"></i> Trending Feed</div>
-            <div class="hero-section">
-                <div class="hero-main-card" onclick='openArticleModal(${JSON.stringify(heroArt)})'>
-                    <img class="hero-main-thumb" src="${heroArt.image}" alt="Hero Thumb">
-                    <div class="hero-main-body">
-                        <span class="hero-badge">${heroArt.category}</span>
-                        <h2>${heroTitle}</h2>
-                        <p class="hero-main-snippet">${heroSummary}</p>
-                        <span class="card-action-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Deep Dive (Summary & Subtitles)</span>
-                    </div>
-                </div>
-                <div class="hero-side-list">
-                    ${sideArts.map(art => {
-                        const sideTitle = art.title[currentLang] || art.title['en'];
-                        return `
-                            <div class="hero-side-card" onclick='openArticleModal(${JSON.stringify(art)})'>
-                                <img class="hero-side-thumb" src="${art.image}" alt="Side Thumb">
-                                <div class="hero-side-body">
-                                    <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase;">${art.category}</span>
-                                    <h4>${sideTitle}</h4>
-                                </div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-            </div>
-        `;
+            feed.innerHTML = filtered.map((item, index) => {
+                const title = item.title[currentLang] || item.title['en'];
+                const summary = item.summary[currentLang] || item.summary['en'];
+                return `
+                    <article class="card">
+                        <img src="${item.image}" alt="News Image" loading="lazy">
+                        <div class="card-content">
+                            <span class="badge">${item.category}</span>
+                            <h2>${title}</h2>
+                            <p class="summary">${summary}</p>
+                            <button class="deep-btn" onclick="openDeepDive(${index})">
+                                🚀 Deep Dive (Summary & Subtitles)
+                            </button>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
 
-        feedContainer.innerHTML = gridArts.map(art => {
-            const gridTitle = art.title[currentLang] || art.title['en'];
-            const gridSummary = art.summary[currentLang] || art.summary['en'];
-            return `
-                <div class="news-card" onclick='openArticleModal(${JSON.stringify(art)})'>
-                    <img class="news-thumb" src="${art.image}" alt="Grid Thumb">
-                    <div class="news-body">
-                        <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase; margin-bottom: 4px;">${art.category}</span>
-                        <h3>${gridTitle}</h3>
-                        <p class="news-snippet-text">${gridSummary}</p>
-                        <span class="card-action-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Deep Dive (Summary & Subtitles)</span>
-                    </div>
-                </div>
-            `;
-        }).join('');
-    }
+        function openDeepDive(index) {
+            const filtered = currentCategory === 'All' ? articlesData : articlesData.filter(i => i.category === currentCategory);
+            const item = filtered[index];
+            const title = item.title[currentLang] || item.title['en'];
+            const deepDiveText = item.deep_dive[currentLang] || item.deep_dive['en'];
 
-    window.openArticleModal = function(art) {
-        const modalBody = document.getElementById('modalArticleBody');
-        const titleText = art.title[currentLang] || art.title['en'];
-        const summaryText = art.summary[currentLang] || art.summary['en'];
-        const deepDiveText = art.deep_dive ? (art.deep_dive[currentLang] || art.deep_dive['en']) : summaryText;
+            document.getElementById('modalTitle').innerText = title;
+            // Split 3 paragraphs cleanly by double line breaks
+            const paragraphs = deepDiveText.split('\n\n').map(p => `<p>${p}</p>`).join('');
+            document.getElementById('modalBody').innerHTML = paragraphs;
+            toggleModal(true);
+        }
 
-        modalBody.innerHTML = `
-            <div class="modal-report-header">
-                <span class="modal-report-tag">⚡ AI Intelligence Report</span>
-                <h2 class="modal-report-title">${titleText}</h2>
-            </div>
-            <img class="modal-report-img" src="${art.image}" alt="Report Banner">
-            <div class="modal-summary-box">
-                <h4>📋 Executive Summary</h4>
-                <p>${summaryText}</p>
-            </div>
-            <div class="modal-subtitle-block">
-                <h5><i class="fa-solid fa-chevron-right" style="font-size: 10px; color: #FF3B30;"></i> Comprehensive Deep Dive</h5>
-                <p>${deepDiveText}</p>
-            </div>
-            <div class="modal-source-btn-wrap">
-                <a href="${art.url}" target="_blank" class="modal-source-link-btn">Original Publisher Source: ${art.source} ↗</a>
-            </div>
-        `;
-        document.getElementById('articleModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    };
+        function toggleModal(show) {
+            document.getElementById('deepDiveModal').classList.toggle('active', show);
+        }
 
-    window.openSubmitModal = function() {
-        document.getElementById('submitModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    };
+        function closeModal(e) {
+            if (e.target.id === 'deepDiveModal') toggleModal(false);
+        }
 
-    window.closeModal = function(modalId) {
-        document.getElementById(modalId).style.display = 'none';
-        document.body.style.overflow = 'auto';
-    };
-
-    window.handleCitizenUpload = function(e) {
-        e.preventDefault();
-        alert("Your item has been securely submitted for review.");
-        document.getElementById('citizenUploadForm').reset();
-        closeModal('submitModal');
-    };
+        loadArticles();
     </script>
 </body>
 </html>
