@@ -163,7 +163,7 @@
     <!-- Language Selector Bar Placed Right Below Citizen Hub -->
     <div class="language-bar">
         <label for="languageSelect" style="font-weight: 600; color: #475569;"><i class="fa-solid fa-globe"></i> Language:</label>
-        <select id="languageSelect" class="lang-selector">
+        <select id="languageSelect" class="lang-selector" onchange="changeLanguage(this.value)">
             <option value="en">English</option>
             <option value="hi">हिंदी (Hindi)</option>
             <option value="ta">தமிழ் (Tamil)</option>
@@ -228,267 +228,168 @@
     </footer>
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        let allArticles = [];
+    let globalArticles = [];
+    let currentCategory = 'All';
+    let currentLang = 'en';
 
-        const preferredCategoryOrder = [
-            "India & Global",
-            "Business & Economy",
-            "Tech & AI",
-            "Lifestyle & Living",
-            "Earth & Environment",
-            "Entertainment",
-            "Sports & Cultural"
-        ];
-
-        const imagePool = [
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop"
-        ];
-
-        const publisherPool = ["The Economic Times", "LiveMint Intelligence", "Business Standard", "Financial Express", "TechCrunch India", "Mint Tech", "Living Media", "Green Post", "Variety India", "Sports Today"];
-
-        const headlinePools = {
-            "India & Global": [
-                "New Bilateral Trade Pact Signed to Boost Regional Supply Chain Resilience",
-                "Diplomatic Summit Concludes with Landmark Agreements on Digital Infrastructure",
-                "National Logistics Policy Update Targets Major Reductions in Freight Costs",
-                "Cross-Border Fintech Corridor Opens Up New Settlement Avenues",
-                "Strategic Maritime Security Dialogue Highlights Indo-Pacific Cooperation",
-                "Global Economic Forum Emphasizes Green Energy Transition Strategies",
-                "Multilateral Cybersecurity Task Force Unveils Unified Threat Response Protocol"
-            ],
-            "Business & Economy": [
-                "RBI Maintains Repo Rate Steady Amid Balanced Inflation Projections",
-                "Retail Sector Reports Record Growth Driven by Tier-2 Metropolitan Demand",
-                "Venture Capital Funding Shifts Toward Deep-Tech and Sustainable Startups",
-                "Corporate Tax Collections Surge Following Automated Compliance Reforms",
-                "Foreign Institutional Investors Record Consecutive Net Positive Inflows",
-                "Infrastructure Bond Issuances Witness Record Subscription Rates",
-                "Agri-Business Ventures Expand Export Channels Across European Markets"
-            ],
-            "Tech & AI": [
-                "Enterprise Adoption of Generative AI Agents Rises Sharply Across Financial Sectors",
-                "Semiconductor Manufacturing Hubs Break Ground on Next-Gen Fabrication Units",
-                "Cybersecurity Frameworks Enhanced to Combat Advanced Cloud Threat Vectors",
-                "Open-Source LLMs Gain Traction Among Domestic Software Enterprises",
-                "Cloud Infrastructure Providers Expand Regional Edge Data Center Footprint",
-                "Quantum Computing Research Labs Announce Breakthrough Processing Speeds",
-                "Autonomous Logistics Networks Streamline Last-Mile Delivery Operations"
-            ],
-            "Lifestyle & Living": [
-                "Urban Housing Trends Shift Toward Sustainable Communities and Smart Microgrids",
-                "Clean-Label Consumer Goods See Exponential Demand in Metropolitan Markets",
-                "Wellness Tourism and Heritage Retreats Witness Record Summer Bookings",
-                "Traditional Artisans Embrace E-Commerce Platforms for Global Reach",
-                "Smart Home Automation Standards Unified for Seamless Interoperability",
-                "Organic Farming Initiatives Transform Peri-Urban Food Supply Chains",
-                "Interior Architecture Embraces Biophilic Design Principles for Workspace Wellness"
-            ],
-            "Earth & Environment": [
-                "Renewable Energy Capacity Surpasses Fossil Fuels in Grid Contribution",
-                "Municipal Corporations Mandate Decentralized Composting and Water Recycling",
-                "Electric Vehicle Adoption Accelerates with Expanded Charging Networks",
-                "Green Building Certifications Become Standard for Commercial Real Estate",
-                "Agri-Tech Innovations Help Farmers Optimize Water Usage and Crop Yields",
-                "Ocean Cleanup Ventures Report Successful Pilot Deployments in Coastal Zones",
-                "Biodiversity Preservation Pacts Signed Across Protected Forest Reserves"
-            ],
-            "Entertainment": [
-                "Regional Cinema Breakthroughs Dominate Global Streaming Charts",
-                "Independent Music Producers Leverage Algorithmic Distribution Tools",
-                "Immersive Virtual Production Studios Redefine Visual Effects Standards",
-                "Festival Circuits Celebrate Diverse Storytelling and Independent Documentaries",
-                "Direct-to-Consumer Content Platforms Introduce Flexible Tiered Subscriptions",
-                "Animation Studios Adopt Cloud-Based Rendering Pipelines for Faster Delivery",
-                "Cultural Heritage Festivals Draw Record International Audiences"
-            ],
-            "Sports & Cultural": [
-                "National Sports Academies Upgrade Training Regimens with Advanced Analytics",
-                "Indigenous Sports Gain Mainstream Attention Through Youth Leagues",
-                "Stadium Infrastructure Modernization Completed Ahead of International Tournaments",
-                "Digital Fan Engagement Platforms Transform Live Match Experiences",
-                "Grassroots Talent Scouting Programs Expand Across Rural Districts",
-                "Marathon and Endurance Events Register All-Time High Registrations",
-                "Traditional Martial Arts Academies Experience Global Revival"
-            ]
-        };
-
-        function generateDataset() {
-            allArticles = [];
-            let globalIndex = 0;
-            preferredCategoryOrder.forEach(cat => {
-                const headlines = headlinePools[cat] || headlinePools["India & Global"];
-                headlines.forEach((headline) => {
-                    const imgUrl = imagePool[globalIndex % imagePool.length];
-                    const pubName = publisherPool[(globalIndex * 3) % publisherPool.length];
-
-                    allArticles.push({
-                        category: cat,
-                        title: headline,
-                        snippet: `A detailed analysis examining how ${headline.toLowerCase()}, reviewing key industry milestones, market implications, and strategic outcomes.`,
-                        image: imgUrl,
-                        source: pubName,
-                        url: "#",
-                        summary: `This report investigates the core dynamics behind "${headline}", breaking down strategic catalysts, operational impacts, and long-term sector forecasts.`,
-                        subtitles: [
-                            { subtitle: "1. Background & Core Objectives", passage: `Examining primary drivers behind ${headline.toLowerCase()}, outlining key policy frameworks and target milestones.` },
-                            { subtitle: "2. Strategic Implementation & Market Impact", passage: `Evaluation of operational shifts and market reception across primary enterprise networks and commercial channels.` },
-                            { subtitle: "3. Technological Integration", passage: `Detailing digital tools, automated workflows, and infrastructural upgrades deployed to maximize efficiency.` },
-                            { subtitle: "4. Compliance & Risk Assessment", passage: `Reviewing regulatory compliance mandates, security protocols, and risk mitigation strategies.` },
-                            { subtitle: "5. Future Outlook", passage: `Concluding with forward-looking projections and growth expectations for stakeholders navigating this sector.` }
-                        ]
-                    });
-                    globalIndex++;
-                });
-            });
+    document.addEventListener("DOMContentLoaded", async () => {
+        try {
+            const response = await fetch('articles.json');
+            const data = await response.json();
+            globalArticles = data.live_feed || [];
+        } catch (e) {
+            console.error("Could not load articles.json, using fallback data.", e);
+            globalArticles = [];
         }
 
-        function renderCategories() {
-            const nav = document.getElementById('category-nav');
-            nav.innerHTML = `<button class="tab-btn active" onclick="filterCategory('All', this)">All Updates</button>`;
-            preferredCategoryOrder.forEach(cat => {
-                nav.innerHTML += `<button class="tab-btn" onclick="filterCategory('${cat}', this)">${cat}</button>`;
-            });
+        renderCategories();
+        renderTicker();
+        renderMainContent(currentCategory);
+    });
+
+    function changeLanguage(langCode) {
+        currentLang = langCode;
+        renderTicker();
+        renderMainContent(currentCategory);
+    }
+
+    function renderCategories() {
+        const nav = document.getElementById('category-nav');
+        const categories = ["All", "India & Global", "Tech & AI", "Business & Economy"];
+        
+        nav.innerHTML = categories.map((cat, idx) => `
+            <button class="tab-btn ${idx === 0 ? 'active' : ''}" onclick="filterCategory('${cat}', this)">${cat === 'All' ? 'All Updates' : cat}</button>
+        `).join('');
+    }
+
+    window.filterCategory = function(cat, btn) {
+        currentCategory = cat;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderMainContent(cat);
+    };
+
+    function renderTicker() {
+        const track = document.getElementById('ticker-track-container');
+        if (!globalArticles.length) return;
+        let html = '';
+        globalArticles.forEach(art => {
+            const titleText = art.title[currentLang] || art.title['en'];
+            html += `<div class="ticker-item">⚡ <b>[${art.category}]</b> ${titleText}</div>`;
+        });
+        track.innerHTML = html + html;
+    }
+
+    function renderMainContent(selectedCategory = 'All') {
+        const heroContainer = document.getElementById('frontPageHeroContainer');
+        const feedContainer = document.getElementById('news-feed-container');
+
+        if (!globalArticles.length) {
+            heroContainer.innerHTML = '<p style="padding: 20px; text-align:center;">Loading live intelligence briefs...</p>';
+            feedContainer.innerHTML = '';
+            return;
         }
 
-        window.filterCategory = function(cat, btn) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderMainContent(cat);
-        };
+        let filtered = selectedCategory === 'All' ? globalArticles : globalArticles.filter(a => a.category === selectedCategory);
+        if (filtered.length === 0) filtered = globalArticles;
 
-        function renderTicker() {
-            const track = document.getElementById('ticker-track-container');
-            let html = '';
-            allArticles.slice(0, 30).forEach(art => {
-                html += `<div class="ticker-item">⚡ <b>[${art.category}]</b> ${art.title}</div>`;
-            });
-            track.innerHTML = html + html;
-        }
+        const heroArt = filtered[0];
+        const sideArts = filtered.slice(1, 4);
+        const gridArts = filtered.slice(4);
 
-        function renderMainContent(selectedCategory = 'All') {
-            const heroContainer = document.getElementById('frontPageHeroContainer');
-            const feedContainer = document.getElementById('news-feed-container');
+        const heroTitle = heroArt.title[currentLang] || heroArt.title['en'];
+        const heroSummary = heroArt.summary[currentLang] || heroArt.summary['en'];
 
-            let filtered = selectedCategory === 'All' ? allArticles : allArticles.filter(a => a.category === selectedCategory);
-            if (filtered.length === 0) filtered = allArticles;
-
-            const heroArt = filtered[0];
-            const sideArts = filtered.slice(1, 4);
-            const gridArts = filtered.slice(4);
-
-            heroContainer.innerHTML = `
-                <div style="font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 8px;"><i class="fa-solid fa-bolt" style="color: #FF3B30;"></i> Trending Feed</div>
-                <div class="hero-section">
-                    <div class="hero-main-card" onclick='openArticleModal(${JSON.stringify(heroArt).replace(/'/g, "&#39;")})'>
-                        <img class="hero-main-thumb" src="${heroArt.image}" alt="Hero Thumb">
-                        <div class="hero-main-body">
-                            <span class="hero-badge">${heroArt.category}</span>
-                            <h2>${heroArt.title}</h2>
-                            <p class="hero-main-snippet">${heroArt.snippet}</p>
-                            <span class="card-action-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Deep Dive (Summary & Subtitles)</span>
-                        </div>
-                    </div>
-                    <div class="hero-side-list">
-                        ${sideArts.map(art => `
-                            <div class="hero-side-card" onclick='openArticleModal(${JSON.stringify(art).replace(/'/g, "&#39;")})'>
-                                <img class="hero-side-thumb" src="${art.image}" alt="Side Thumb">
-                                <div class="hero-side-body">
-                                    <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase;">${art.category}</span>
-                                    <h4>${art.title}</h4>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `;
-
-            feedContainer.innerHTML = gridArts.map(art => `
-                <div class="news-card" onclick='openArticleModal(${JSON.stringify(art).replace(/'/g, "&#39;")})'>
-                    <img class="news-thumb" src="${art.image}" alt="Grid Thumb">
-                    <div class="news-body">
-                        <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase; margin-bottom: 4px;">${art.category}</span>
-                        <h3>${art.title}</h3>
-                        <p class="news-snippet-text">${art.snippet}</p>
+        heroContainer.innerHTML = `
+            <div style="font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 8px;"><i class="fa-solid fa-bolt" style="color: #FF3B30;"></i> Trending Feed</div>
+            <div class="hero-section">
+                <div class="hero-main-card" onclick='openArticleModal(${JSON.stringify(heroArt)})'>
+                    <img class="hero-main-thumb" src="${heroArt.image}" alt="Hero Thumb">
+                    <div class="hero-main-body">
+                        <span class="hero-badge">${heroArt.category}</span>
+                        <h2>${heroTitle}</h2>
+                        <p class="hero-main-snippet">${heroSummary}</p>
                         <span class="card-action-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Deep Dive (Summary & Subtitles)</span>
                     </div>
                 </div>
-            `).join('');
-        }
+                <div class="hero-side-list">
+                    ${sideArts.map(art => {
+                        const sideTitle = art.title[currentLang] || art.title['en'];
+                        return `
+                            <div class="hero-side-card" onclick='openArticleModal(${JSON.stringify(art)})'>
+                                <img class="hero-side-thumb" src="${art.image}" alt="Side Thumb">
+                                <div class="hero-side-body">
+                                    <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase;">${art.category}</span>
+                                    <h4>${sideTitle}</h4>
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        `;
 
-        window.openArticleModal = function(art) {
-            const modalBody = document.getElementById('modalArticleBody');
-            let subtitlesHtml = '';
-            art.subtitles.forEach(sub => {
-                subtitlesHtml += `
-                    <div class="modal-subtitle-block">
-                        <h5><i class="fa-solid fa-chevron-right" style="font-size: 10px; color: #FF3B30;"></i> ${sub.subtitle}</h5>
-                        <p>${sub.passage}</p>
+        feedContainer.innerHTML = gridArts.map(art => {
+            const gridTitle = art.title[currentLang] || art.title['en'];
+            const gridSummary = art.summary[currentLang] || art.summary['en'];
+            return `
+                <div class="news-card" onclick='openArticleModal(${JSON.stringify(art)})'>
+                    <img class="news-thumb" src="${art.image}" alt="Grid Thumb">
+                    <div class="news-body">
+                        <span style="font-size: 8px; font-weight: 700; color: #FF3B30; text-transform: uppercase; margin-bottom: 4px;">${art.category}</span>
+                        <h3>${gridTitle}</h3>
+                        <p class="news-snippet-text">${gridSummary}</p>
+                        <span class="card-action-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Deep Dive (Summary & Subtitles)</span>
                     </div>
-                `;
-            });
-
-            modalBody.innerHTML = `
-                <div class="modal-report-header">
-                    <span class="modal-report-tag">⚡ AI Intelligence Report</span>
-                    <h2 class="modal-report-title">${art.title}</h2>
-                </div>
-                <img class="modal-report-img" src="${art.image}" alt="Report Banner">
-                <div class="modal-summary-box">
-                    <h4>📋 Executive Summary</h4>
-                    <p>${art.summary}</p>
-                </div>
-                <div style="margin-bottom: 12px; font-size: 12px; font-weight: 700; color: #0f172a;">🔍 Subtitle Breakdowns</div>
-                <div style="max-height: 380px; overflow-y: auto; padding-right: 4px;">${subtitlesHtml}</div>
-                <div class="modal-source-btn-wrap">
-                    <a href="${art.url}" target="_blank" class="modal-source-link-btn">Original Publisher Source: ${art.source} ↗</a>
                 </div>
             `;
-            document.getElementById('articleModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        };
+        }).join('');
+    }
 
-        window.openSubmitModal = function() {
-            document.getElementById('submitModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        };
+    window.openArticleModal = function(art) {
+        const modalBody = document.getElementById('modalArticleBody');
+        const titleText = art.title[currentLang] || art.title['en'];
+        const summaryText = art.summary[currentLang] || art.summary['en'];
+        const deepDiveText = art.deep_dive ? (art.deep_dive[currentLang] || art.deep_dive['en']) : summaryText;
 
-        window.closeModal = function(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-            document.body.style.overflow = 'auto';
-        };
+        modalBody.innerHTML = `
+            <div class="modal-report-header">
+                <span class="modal-report-tag">⚡ AI Intelligence Report</span>
+                <h2 class="modal-report-title">${titleText}</h2>
+            </div>
+            <img class="modal-report-img" src="${art.image}" alt="Report Banner">
+            <div class="modal-summary-box">
+                <h4>📋 Executive Summary</h4>
+                <p>${summaryText}</p>
+            </div>
+            <div class="modal-subtitle-block">
+                <h5><i class="fa-solid fa-chevron-right" style="font-size: 10px; color: #FF3B30;"></i> Comprehensive Deep Dive</h5>
+                <p>${deepDiveText}</p>
+            </div>
+            <div class="modal-source-btn-wrap">
+                <a href="${art.url}" target="_blank" class="modal-source-link-btn">Original Publisher Source: ${art.source} ↗</a>
+            </div>
+        `;
+        document.getElementById('articleModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
 
-        window.handleCitizenUpload = function(e) {
-            e.preventDefault();
-            alert("Your item has been securely submitted for review.");
-            document.getElementById('citizenUploadForm').reset();
-            closeModal('submitModal');
-        };
+    window.openSubmitModal = function() {
+        document.getElementById('submitModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
 
-        generateDataset();
-        renderCategories();
-        renderTicker();
-        renderMainContent();
-    });
+    window.closeModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+        document.body.style.overflow = 'auto';
+    };
+
+    window.handleCitizenUpload = function(e) {
+        e.preventDefault();
+        alert("Your item has been securely submitted for review.");
+        document.getElementById('citizenUploadForm').reset();
+        closeModal('submitModal');
+    };
     </script>
 </body>
 </html>
