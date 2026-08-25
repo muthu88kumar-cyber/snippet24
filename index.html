@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 
 <meta
   name="viewport"
-  content="width=device-width, initial-scale=1.0"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 >
 
-<meta
-  name="theme-color"
-  content="#0b1020"
->
-
-<title>Snippet24 — What matters. In a minute.</title>
+<title>Snippet24 — Know More. Read Less.</title>
 
 <meta
   name="description"
-  content="Snippet24 — quick, clear news stories you can understand in seconds."
+  content="Snippet24 — concise news and explanations across India, technology, business, lifestyle, entertainment, environment and sports."
 >
 
 <style>
 
-/* ================================
-   SNIPPET24 V2
-================================ */
+:root {
+  --navy: #08111f;
+  --navy2: #101b2d;
+  --blue: #2f80ed;
+  --text: #101827;
+  --muted: #697386;
+  --line: #e6eaf0;
+  --bg: #f4f6f9;
+  --white: #ffffff;
+}
 
 * {
   box-sizing: border-box;
@@ -38,73 +38,91 @@ html {
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
+    "SF Pro Display",
     "Segoe UI",
-    Roboto,
     Arial,
     sans-serif;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f7f9fc 0%,
-      #eef2f7 100%
-    );
-
-  color: #111827;
 }
 
-
-/* ================================
+/* =========================
    HEADER
-================================ */
+========================= */
 
-header {
-  background: #0b1020;
+.header {
+  background:
+    linear-gradient(
+      135deg,
+      #07111f 0%,
+      #101d31 55%,
+      #15243b 100%
+    );
+
   color: white;
+  padding: 22px 18px 0;
 
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 50;
 
-  border-bottom:
-    1px solid rgba(255,255,255,.08);
-
-  backdrop-filter: blur(20px);
+  box-shadow:
+    0 4px 20px rgba(0,0,0,.12);
 }
 
-.header-inner {
-  max-width: 1180px;
+.header-top {
+  max-width: 1200px;
   margin: auto;
 
-  padding:
-    16px
-    18px
-    14px;
-}
-
-.top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
 }
 
 .logo span {
-  color: #60a5fa;
+  color: #4da3ff;
 }
 
 .tagline {
   margin-top: 2px;
-  color: #aeb7ca;
+  color: #aeb8c8;
   font-size: 12px;
+  letter-spacing: .2px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.16);
+
+  background: rgba(255,255,255,.08);
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+
+  cursor: pointer;
 }
 
 .live {
@@ -112,8 +130,14 @@ header {
   align-items: center;
   gap: 6px;
 
+  padding: 7px 10px;
+
+  border: 1px solid #ff496c;
+
+  border-radius: 999px;
+
   font-size: 11px;
-  color: #cbd5e1;
+  font-weight: 700;
 }
 
 .live-dot {
@@ -122,237 +146,91 @@ header {
 
   border-radius: 50%;
 
-  background: #22c55e;
-
-  box-shadow:
-    0 0 0 4px rgba(34,197,94,.12);
+  background: #ff3d63;
 }
 
+/* =========================
+   CATEGORY NAV
+========================= */
 
-/* ================================
-   CATEGORIES
-================================ */
+.category-bar {
+  max-width: 1200px;
+  margin: 20px auto 0;
 
-.categories {
   display: flex;
-  gap: 9px;
+  gap: 8px;
 
   overflow-x: auto;
 
-  padding:
-    14px
-    0
-    2px;
-
   scrollbar-width: none;
+
+  padding-bottom: 13px;
 }
 
-.categories::-webkit-scrollbar {
+.category-bar::-webkit-scrollbar {
   display: none;
 }
 
-.category-btn {
-  flex-shrink: 0;
+.category {
+  flex: 0 0 auto;
 
-  border:
-    1px solid rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.13);
 
-  background:
-    rgba(255,255,255,.06);
+  background: rgba(255,255,255,.06);
 
-  color: #dbe4f0;
-
-  padding:
-    8px
-    13px;
+  color: #dbe3ef;
 
   border-radius: 999px;
 
-  font-size: 12px;
+  padding: 8px 13px;
+
+  font-size: 11px;
   font-weight: 700;
 
   cursor: pointer;
+
+  white-space: nowrap;
 }
 
-.category-btn.active {
+.category.active {
   background: white;
-  color: #0b1020;
+  color: #111827;
 }
 
-
-/* ================================
+/* =========================
    MAIN
-================================ */
+========================= */
 
 main {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: auto;
 
-  padding:
-    22px
-    16px
-    60px;
+  padding: 24px 16px 60px;
 }
 
-
-/* ================================
-   HERO
-================================ */
-
-.hero {
-  background:
-    linear-gradient(
-      135deg,
-      #111a33,
-      #1d2a50
-    );
-
-  color: white;
-
-  border-radius: 28px;
-
-  padding:
-    26px
-    22px;
-
-  margin-bottom: 22px;
-
-  position: relative;
-  overflow: hidden;
-
-  box-shadow:
-    0 16px 45px
-    rgba(15,23,42,.18);
-}
-
-.hero::after {
-  content: "";
-
-  position: absolute;
-
-  width: 180px;
-  height: 180px;
-
-  right: -70px;
-  top: -70px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #60a5fa,
-      #c084fc
-    );
-
-  border-radius: 50%;
-
-  opacity: .35;
-
-  filter: blur(5px);
-}
-
-.hero-label {
-  position: relative;
-  z-index: 1;
-
-  font-size: 11px;
-
-  letter-spacing: 1.5px;
-
-  font-weight: 800;
-
-  color: #93c5fd;
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 1;
-
-  margin:
-    8px
-    0
-    8px;
-
-  font-size:
-    clamp(30px, 8vw, 54px);
-
-  line-height: 1.03;
-
-  letter-spacing: -2px;
-}
-
-.hero p {
-  position: relative;
-  z-index: 1;
-
-  margin: 0;
-
-  color: #cbd5e1;
-
-  font-size: 15px;
-
-  line-height: 1.55;
-
-  max-width: 600px;
-}
-
-.hero-meta {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-
-  gap: 8px;
-
-  margin-top: 18px;
-
-  flex-wrap: wrap;
-}
-
-.hero-pill {
-  background:
-    rgba(255,255,255,.10);
-
-  border:
-    1px solid
-    rgba(255,255,255,.12);
-
-  padding:
-    7px
-    10px;
-
-  border-radius: 999px;
-
-  font-size: 11px;
-
-  color: #e2e8f0;
-}
-
-
-/* ================================
-   INTRO
-================================ */
+/* =========================
+   WELCOME
+========================= */
 
 .intro {
   background: white;
 
-  border-radius: 22px;
+  border-radius: 20px;
 
-  padding: 20px;
+  padding: 22px;
 
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
-  border:
-    1px solid #e5e7eb;
+  border: 1px solid #edf0f4;
 
   box-shadow:
-    0 8px 25px
-    rgba(15,23,42,.05);
+    0 6px 25px rgba(15,23,42,.04);
 }
 
 .intro strong {
   display: block;
 
-  font-size: 17px;
+  font-size: 18px;
 
   margin-bottom: 5px;
 }
@@ -360,586 +238,598 @@ main {
 .intro p {
   margin: 0;
 
-  color: #667085;
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 25px 2px 12px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: .5px;
+}
+
+.section-link {
+  color: var(--blue);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 390px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,12,24,.05),
+      rgba(5,12,24,.94)
+    );
+
+  box-shadow:
+    0 10px 35px rgba(15,23,42,.12);
+}
+
+.hero-content {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 25px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(4,10,20,.96)
+    );
+}
+
+.hero-category {
+  display: inline-block;
+
+  background: #ffbd2e;
+
+  color: #111827;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(27px, 6vw, 48px);
+
+  line-height: 1.04;
+
+  letter-spacing: -1px;
+
+  max-width: 850px;
+}
+
+.hero-summary {
+  color: #d8dee8;
+
+  margin-top: 12px;
+
+  max-width: 700px;
 
   line-height: 1.5;
 
   font-size: 14px;
 }
 
-
-/* ================================
-   SECTION HEADER
-================================ */
-
-.section-head {
+.hero-meta {
   display: flex;
+  gap: 14px;
 
-  align-items: end;
+  margin-top: 15px;
 
-  justify-content: space-between;
+  color: #c5cedb;
 
-  margin:
-    25px
-    2px
-    13px;
-}
-
-.section-title {
-  font-size: 22px;
-
-  font-weight: 900;
-
-  letter-spacing: -.7px;
-}
-
-.section-subtitle {
   font-size: 11px;
-
-  color: #7b8494;
-
-  margin-top: 3px;
 }
 
+/* =========================
+   IMAGE PLACEHOLDER
+========================= */
 
-/* ================================
-   NEWS GRID
-================================ */
+.hero-image {
+  position: absolute;
 
-.news-grid {
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #243b55,
+      #141e30
+    );
+
+  z-index: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: .78;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+/* =========================
+   STORIES
+========================= */
+
+.stories {
   display: grid;
 
   grid-template-columns:
-    1fr;
+    repeat(4, 1fr);
 
-  gap: 16px;
+  gap: 13px;
 }
 
-
-/* ================================
-   CARD
-================================ */
-
-.card {
+.story {
   background: white;
 
-  border-radius: 23px;
+  border-radius: 15px;
 
   overflow: hidden;
 
-  border:
-    1px solid #e5e7eb;
-
-  box-shadow:
-    0 7px 25px
-    rgba(15,23,42,.055);
+  border: 1px solid #e9edf2;
 
   transition:
-    transform .18s ease,
-    box-shadow .18s ease;
+    transform .2s ease,
+    box-shadow .2s ease;
 
-  animation:
-    appear .35s ease both;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform:
-    translateY(-3px);
+.story:hover {
+  transform: translateY(-3px);
 
   box-shadow:
-    0 14px 35px
-    rgba(15,23,42,.10);
+    0 10px 25px rgba(15,23,42,.09);
 }
 
-@keyframes appear {
+.story-image {
+  height: 120px;
 
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
+  background:
+    linear-gradient(
+      135deg,
+      #dbeafe,
+      #eff6ff
+    );
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
+  overflow: hidden;
 }
 
-
-/* ================================
-   VISUAL AREA
-================================ */
-
-.card-image {
+.story-image img {
   width: 100%;
+  height: 100%;
 
-  height: 190px;
+  object-fit: cover;
+}
+
+.story-body {
+  padding: 13px;
+}
+
+.story-category {
+  font-size: 9px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  color: var(--blue);
+
+  margin-bottom: 7px;
+}
+
+.story-title {
+  font-size: 15px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  margin-bottom: 10px;
+}
+
+.story-meta {
+  color: #7b8493;
+
+  font-size: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 5px;
+}
+
+/* =========================
+   CATEGORY GRID
+========================= */
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, 1fr);
+
+  gap: 9px;
+}
+
+.category-card {
+  background: white;
+
+  border: 1px solid #e7ebf0;
+
+  border-radius: 14px;
+
+  padding: 15px 10px;
+
+  min-height: 90px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(15,23,42,.07);
+}
+
+.category-icon {
+  font-size: 21px;
+}
+
+.category-name {
+  font-size: 10px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+/* =========================
+   QUICK FEED
+========================= */
+
+.quick-feed {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.quick-item {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 15px;
+
+  display: flex;
+
+  gap: 14px;
+
+  border: 1px solid #e8ecf1;
+}
+
+.quick-number {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  border-radius: 50%;
+
+  background: #edf4ff;
+
+  color: var(--blue);
 
   display: flex;
 
   align-items: center;
   justify-content: center;
 
-  position: relative;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      #172554,
-      #312e81,
-      #581c87
-    );
-}
-
-.card-image::before {
-  content: "";
-
-  position: absolute;
-
-  width: 180px;
-  height: 180px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(255,255,255,.12);
-
-  top: -90px;
-  right: -40px;
-}
-
-.card-image::after {
-  content: "";
-
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(96,165,250,.18);
-
-  bottom: -50px;
-  left: -30px;
-}
-
-.image-word {
-  position: relative;
-  z-index: 2;
-
-  color: white;
-
-  font-size: 42px;
-
-  font-weight: 900;
-
-  letter-spacing: -2px;
-
-  opacity: .92;
-}
-
-
-/* ================================
-   CARD BODY
-================================ */
-
-.card-body {
-  padding: 20px;
-}
-
-.category {
-  color: #2563eb;
-
-  font-size: 11px;
-
-  font-weight: 900;
-
-  letter-spacing: 1.3px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 8px;
-}
-
-.card h2 {
-  margin:
-    0
-    0
-    10px;
-
-  font-size:
-    clamp(21px, 5.5vw, 28px);
-
-  line-height: 1.13;
-
-  letter-spacing: -.8px;
-
-  color: #101828;
-}
-
-.summary {
-  color: #596273;
-
-  font-size: 15px;
-
-  line-height: 1.58;
-}
-
-
-/* ================================
-   CARD FOOTER
-================================ */
-
-.card-bottom {
-  margin-top: 17px;
-
-  padding-top: 14px;
-
-  border-top:
-    1px solid #edf0f4;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 10px;
-}
-
-.time {
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 5px;
-
-  padding:
-    7px
-    10px;
-
-  background: #f1f5f9;
-
-  color: #475569;
-
-  border-radius: 999px;
-
-  font-size: 11px;
-
-  font-weight: 800;
-}
-
-.time::before {
-  content: "◷";
-}
-
-.read {
-  display: inline-block;
-
-  text-decoration: none;
-
-  background: #111827;
-
-  color: white;
-
-  padding:
-    9px
-    12px;
-
-  border-radius: 10px;
-
   font-size: 12px;
 
-  font-weight: 800;
+  font-weight: 900;
 }
 
+.quick-title {
+  font-weight: 800;
 
-/* ================================
-   EMPTY / ERROR
-================================ */
+  font-size: 14px;
 
-.status-message {
+  line-height: 1.3;
+}
+
+.quick-meta {
+  color: #818a98;
+
+  font-size: 10px;
+
+  margin-top: 6px;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty {
   background: white;
 
-  border-radius: 22px;
+  border-radius: 20px;
 
-  padding:
-    45px
-    20px;
+  padding: 55px 25px;
 
   text-align: center;
 
-  border:
-    1px solid #e5e7eb;
-
-  color: #667085;
+  border: 1px solid #e7ebf0;
 }
 
-.status-message strong {
-  display: block;
+.empty h2 {
+  margin: 0 0 10px;
 
-  color: #111827;
-
-  font-size: 23px;
-
-  margin-bottom: 8px;
+  font-size: 22px;
 }
 
+.empty p {
+  color: var(--muted);
 
-/* ================================
+  margin: 0 auto;
+
+  max-width: 500px;
+
+  line-height: 1.5;
+}
+
+/* =========================
    FOOTER
-================================ */
+========================= */
 
 footer {
   text-align: center;
 
-  padding:
-    45px
-    20px
-    70px;
+  padding: 45px 20px 80px;
 
-  color: #7b8494;
+  color: #7a8390;
 
   font-size: 12px;
 
   line-height: 1.7;
 }
 
-.footer-logo {
-  font-size: 18px;
+/* =========================
+   RESPONSIVE
+========================= */
 
-  font-weight: 900;
+@media (max-width: 900px) {
 
-  color: #111827;
-
-  margin-bottom: 8px;
-}
-
-
-/* ================================
-   CATEGORY COLORS
-================================ */
-
-.cat-india {
-  background:
-    linear-gradient(
-      135deg,
-      #ea580c,
-      #f59e0b
-    );
-}
-
-.cat-tech {
-  background:
-    linear-gradient(
-      135deg,
-      #2563eb,
-      #7c3aed
-    );
-}
-
-.cat-business {
-  background:
-    linear-gradient(
-      135deg,
-      #047857,
-      #0f766e
-    );
-}
-
-.cat-life {
-  background:
-    linear-gradient(
-      135deg,
-      #db2777,
-      #9333ea
-    );
-}
-
-.cat-entertainment {
-  background:
-    linear-gradient(
-      135deg,
-      #c026d3,
-      #e11d48
-    );
-}
-
-.cat-earth {
-  background:
-    linear-gradient(
-      135deg,
-      #15803d,
-      #0f766e
-    );
-}
-
-.cat-sports {
-  background:
-    linear-gradient(
-      135deg,
-      #dc2626,
-      #ea580c
-    );
-}
-
-
-/* ================================
-   DESKTOP
-================================ */
-
-@media (min-width: 720px) {
-
-  .header-inner {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  main {
-    padding:
-      32px
-      24px
-      80px;
-  }
-
-  .hero {
-    padding:
-      42px
-      40px;
-  }
-
-  .news-grid {
+  .stories {
     grid-template-columns:
       repeat(2, 1fr);
   }
 
-  .card:first-child {
-    grid-column:
-      span 2;
-  }
-
-  .card:first-child .card-image {
-    height: 260px;
+  .category-grid {
+    grid-template-columns:
+      repeat(4, 1fr);
   }
 
 }
 
+@media (max-width: 600px) {
 
-@media (min-width: 1050px) {
-
-  .news-grid {
-    grid-template-columns:
-      repeat(3, 1fr);
+  .header {
+    padding-top: 17px;
   }
 
-  .card:first-child {
-    grid-column:
-      span 2;
+  .logo {
+    font-size: 25px;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 29px;
+  }
+
+  .stories {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .story-image {
+    height: 105px;
+  }
+
+  .story-title {
+    font-size: 14px;
+  }
+
+  .category-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .quick-feed {
+    grid-template-columns: 1fr;
   }
 
 }
 
 </style>
-
 </head>
 
 
 <body>
 
+<header class="header">
 
-<header>
+  <div class="header-top">
 
-  <div class="header-inner">
-
-    <div class="top-row">
-
-      <div>
-
-        <div class="logo">
-          Snippet<span>24</span>
-        </div>
-
-        <div class="tagline">
-          What matters. In a minute.
-        </div>
-
+    <div>
+      <div class="logo">
+        Snippet<span>24</span>
       </div>
 
+      <div class="tagline">
+        Know more. Read less.
+      </div>
+    </div>
+
+    <div class="header-actions">
 
       <div class="live">
-
         <span class="live-dot"></span>
-
         LIVE
-
       </div>
+
+      <button
+        class="icon-btn"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})"
+      >
+        ⌕
+      </button>
 
     </div>
 
+  </div>
 
-    <nav class="categories">
 
-      <button
-        class="category-btn active"
-        onclick="filterNews('ALL', this)"
-      >
-        All
-      </button>
+  <div class="category-bar">
 
-      <button
-        class="category-btn"
-        onclick="filterNews('INDIA', this)"
-      >
-        🇮🇳 India & World
-      </button>
+    <button
+      class="category active"
+      onclick="filterCategory('All')"
+    >
+      ALL
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('TECHNOLOGY', this)"
-      >
-        ⚡ Tech & AI
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Indian & International')"
+    >
+      INDIA & WORLD
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('BUSINESS', this)"
-      >
-        💼 Business
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Tech & AI')"
+    >
+      TECH & AI
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('LIFESTYLE', this)"
-      >
-        🌿 Lifestyle
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Business & Economy')"
+    >
+      BUSINESS
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('ENTERTAINMENT', this)"
-      >
-        🎬 Entertainment
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Lifestyle & Health')"
+    >
+      LIFESTYLE
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('EARTH', this)"
-      >
-        🌍 Earth
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Entertainment & Living')"
+    >
+      ENTERTAINMENT
+    </button>
 
-      <button
-        class="category-btn"
-        onclick="filterNews('SPORTS', this)"
-      >
-        🏆 Sports
-      </button>
+    <button
+      class="category"
+      onclick="filterCategory('Earth & Environment')"
+    >
+      EARTH
+    </button>
 
-    </nav>
+    <button
+      class="category"
+      onclick="filterCategory('Sports & Cultural')"
+    >
+      SPORTS
+    </button>
 
   </div>
 
@@ -949,40 +839,7 @@ footer {
 <main>
 
 
-  <section class="hero">
-
-    <div class="hero-label">
-      TODAY IN 24
-    </div>
-
-    <h1>
-      Know more.<br>
-      Read less.
-    </h1>
-
-    <p>
-      The important stories of the day,
-      simplified into quick, clear snippets.
-    </p>
-
-    <div class="hero-meta">
-
-      <span class="hero-pill">
-        ⚡ Quick reads
-      </span>
-
-      <span class="hero-pill">
-        📰 Source credited
-      </span>
-
-      <span class="hero-pill">
-        ⏱ Under 2 minutes
-      </span>
-
-    </div>
-
-  </section>
-
+  <!-- INTRO -->
 
   <section class="intro">
 
@@ -991,47 +848,167 @@ footer {
     </strong>
 
     <p>
-      Short explanations of important stories.
-      Understand what happened, why it matters,
-      and move on.
+      Important stories explained quickly,
+      with clear source attribution and
+      a short reading experience.
     </p>
 
   </section>
 
 
+  <!-- TOP STORY -->
+
   <div class="section-head">
 
-    <div>
+    <div class="section-title">
+      ⚡ Top story
+    </div>
 
-      <div class="section-title">
-        Latest snippets
-      </div>
+    <div
+      class="section-link"
+      onclick="showAllStories()"
+    >
+      View all →
+    </div>
 
-      <div class="section-subtitle">
-        Fresh stories from our approved sources
-      </div>
+  </div>
 
+
+  <section id="hero"></section>
+
+
+  <!-- MORE STORIES -->
+
+  <div class="section-head">
+
+    <div class="section-title">
+      More important stories
+    </div>
+
+    <div class="section-link">
+      Updated today
     </div>
 
   </div>
 
 
   <section
-    id="news"
-    class="news-grid"
-  >
+    id="stories"
+    class="stories"
+  ></section>
 
-    <div class="status-message">
 
-      <strong>
-        Loading today's stories…
-      </strong>
+  <!-- CATEGORIES -->
 
-      Please wait.
+  <div class="section-head">
 
+    <div class="section-title">
+      Explore by category
+    </div>
+
+  </div>
+
+
+  <section class="category-grid">
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Indian & International')"
+    >
+      <div class="category-icon">🌏</div>
+      <div class="category-name">
+        India & World
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Tech & AI')"
+    >
+      <div class="category-icon">⚙️</div>
+      <div class="category-name">
+        Tech & AI
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Business & Economy')"
+    >
+      <div class="category-icon">📈</div>
+      <div class="category-name">
+        Business & Economy
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Lifestyle & Health')"
+    >
+      <div class="category-icon">♡</div>
+      <div class="category-name">
+        Lifestyle & Health
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Entertainment & Living')"
+    >
+      <div class="category-icon">🎬</div>
+      <div class="category-name">
+        Entertainment & Living
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Earth & Environment')"
+    >
+      <div class="category-icon">🌱</div>
+      <div class="category-name">
+        Earth & Environment
+      </div>
+    </div>
+
+
+    <div
+      class="category-card"
+      onclick="filterCategory('Sports & Cultural')"
+    >
+      <div class="category-icon">🏆</div>
+      <div class="category-name">
+        Sports & Cultural
+      </div>
     </div>
 
   </section>
+
+
+  <!-- QUICK STORIES -->
+
+  <div class="section-head">
+
+    <div class="section-title">
+      Quick read
+    </div>
+
+    <div class="section-link">
+      Under 1 minute
+    </div>
+
+  </div>
+
+
+  <section
+    id="quickFeed"
+    class="quick-feed"
+  ></section>
 
 
 </main>
@@ -1039,222 +1016,278 @@ footer {
 
 <footer>
 
-  <div class="footer-logo">
-    Snippet24
-  </div>
-
-  What matters. In a minute.
+  <strong>Snippet24 © 2026</strong>
 
   <br><br>
 
-  AI-assisted summaries with
-  transparent source attribution.
+  Know more. Read less.
 
   <br>
 
+  News is presented with source attribution.
   Original publishers retain their rights.
-
-  <br><br>
-
-  © 2026 Snippet24
 
 </footer>
 
 
 <script>
 
-/* =================================
-   GLOBAL DATA
-================================= */
-
 let allArticles = [];
+let currentCategory = "All";
 
 
-/* =================================
-   LOAD NEWS
-================================= */
+/* =========================
+   SECURITY
+========================= */
 
-async function loadNews() {
+function escapeHtml(value) {
 
-  const container =
-    document.getElementById("news");
-
-  try {
-
-    const response =
-      await fetch(
-        "articles.json?x=" +
-        Date.now()
-      );
-
-    if (!response.ok) {
-
-      throw new Error(
-        "Unable to load articles.json"
-      );
-
-    }
-
-    const articles =
-      await response.json();
-
-    if (!Array.isArray(articles)) {
-
-      throw new Error(
-        "articles.json is not an array"
-      );
-
-    }
-
-    allArticles =
-      articles.filter(
-        article =>
-          article &&
-          article.snippet24_status ===
-          "PUBLISHED"
-      );
-
-    renderNews(allArticles);
-
-  } catch (error) {
-
-    console.error(error);
-
-    container.innerHTML = `
-
-      <div class="status-message">
-
-        <strong>
-          News feed unavailable
-        </strong>
-
-        Please try again shortly.
-
-      </div>
-
-    `;
-
-  }
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 
 }
 
 
-/* =================================
-   RENDER NEWS
-================================= */
+function safeUrl(value) {
 
-function renderNews(articles) {
+  try {
 
-  const container =
-    document.getElementById("news");
+    const url = new URL(value);
 
-  container.innerHTML = "";
+    if (
+      url.protocol === "https:" ||
+      url.protocol === "http:"
+    ) {
+      return url.href;
+    }
+
+  } catch (e) {}
+
+  return "#";
+
+}
 
 
-  if (!articles.length) {
+/* =========================
+   READING TIME
+========================= */
 
-    container.innerHTML = `
+function readingTime(article) {
 
-      <div class="status-message">
+  const text =
+    (
+      article.summary ||
+      article.title ||
+      ""
+    ).trim();
 
-        <strong>
-          No stories yet
-        </strong>
+  const words =
+    text.split(/\s+/).length;
 
-        New snippets will appear here
-        when the curator publishes them.
+  const seconds =
+    Math.max(
+      15,
+      Math.min(
+        60,
+        Math.round(words / 3)
+      )
+    );
+
+  return seconds + " sec read";
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+function renderHero(article) {
+
+  if (!article) {
+
+    document.getElementById("hero").innerHTML = `
+
+      <div class="empty">
+
+        <h2>
+          No top story yet
+        </h2>
+
+        <p>
+          Your news curator is collecting
+          the latest stories.
+        </p>
 
       </div>
 
     `;
 
     return;
-
   }
 
 
-  articles.forEach(
-    (article) => {
+  const title =
+    escapeHtml(article.title);
+
+  const summary =
+    escapeHtml(article.summary || "");
+
+  const category =
+    escapeHtml(article.category || "News");
+
+  const source =
+    escapeHtml(article.source || "");
+
+  const url =
+    safeUrl(article.source_url);
+
+
+  document.getElementById("hero").innerHTML = `
+
+    <article
+      class="hero"
+      onclick="
+        window.location.href =
+        'article.html?id=${encodeURIComponent(article.id)}'
+      "
+    >
+
+      <div class="hero-image">
+
+        <div
+          style="
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:80px;
+          "
+        >
+          📰
+        </div>
+
+      </div>
+
+
+      <div class="hero-content">
+
+        <div class="hero-category">
+          ${category}
+        </div>
+
+        <h1>
+          ${title}
+        </h1>
+
+        <div class="hero-summary">
+          ${summary}
+        </div>
+
+        <div class="hero-meta">
+
+          <span>
+            ◷ ${readingTime(article)}
+          </span>
+
+          <span>
+            • ${source}
+          </span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  `;
+
+}
+
+
+/* =========================
+   STORY CARDS
+========================= */
+
+function renderStories(articles) {
+
+  const container =
+    document.getElementById("stories");
+
+  container.innerHTML = "";
+
+
+  articles
+    .slice(0, 8)
+    .forEach(article => {
 
       const card =
         document.createElement("article");
 
-      card.className =
-        "card";
+      card.className = "story";
 
 
-      const category =
-        normalizeCategory(
-          article.category
-        );
+      card.onclick = function() {
 
+        window.location.href =
+          "article.html?id=" +
+          encodeURIComponent(article.id);
 
-      const imageClass =
-        getCategoryClass(category);
-
-
-      const imageWord =
-        getImageWord(category);
-
-
-      const readingTime =
-        getReadingTime(
-          article.summary
-        );
+      };
 
 
       card.innerHTML = `
 
-        <div
-          class="card-image ${imageClass}"
-        >
+        <div class="story-image">
 
-          <div class="image-word">
-            ${escapeHtml(imageWord)}
+          <div
+            style="
+              width:100%;
+              height:100%;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:42px;
+            "
+          >
+            📰
           </div>
 
         </div>
 
 
-        <div class="card-body">
+        <div class="story-body">
 
-          <div class="category">
-            ${escapeHtml(category)}
+          <div class="story-category">
+            ${escapeHtml(
+              article.category || "News"
+            )}
           </div>
 
 
-          <h2>
+          <div class="story-title">
             ${escapeHtml(
-              article.title ||
-              "Untitled story"
+              article.title
             )}
-          </h2>
-
-
-          <div class="summary">
-
-            ${escapeHtml(
-              article.summary || ""
-            )}
-
           </div>
 
 
-          <div class="card-bottom">
+          <div class="story-meta">
 
-            <span class="time">
-              ${readingTime}
+            <span>
+              ${readingTime(article)}
             </span>
 
-
-            <a
-              class="read"
-              href="article.html?id=${encodeURIComponent(
-                article.id || ""
-              )}"
-            >
-              Read →
-            </a>
+            <span>
+              ${escapeHtml(
+                article.source || ""
+              )}
+            </span>
 
           </div>
 
@@ -1265,290 +1298,328 @@ function renderNews(articles) {
 
       container.appendChild(card);
 
-    }
-  );
+    });
 
 }
 
 
-/* =================================
-   FILTER
-================================= */
+/* =========================
+   QUICK FEED
+========================= */
 
-function filterNews(category, button) {
+function renderQuickFeed(articles) {
+
+  const container =
+    document.getElementById("quickFeed");
+
+  container.innerHTML = "";
+
+
+  articles
+    .slice(0, 6)
+    .forEach((article, index) => {
+
+      const item =
+        document.createElement("article");
+
+      item.className = "quick-item";
+
+
+      item.onclick = function() {
+
+        window.location.href =
+          "article.html?id=" +
+          encodeURIComponent(article.id);
+
+      };
+
+
+      item.innerHTML = `
+
+        <div class="quick-number">
+          ${index + 1}
+        </div>
+
+
+        <div>
+
+          <div class="quick-title">
+
+            ${escapeHtml(
+              article.title
+            )}
+
+          </div>
+
+
+          <div class="quick-meta">
+
+            ${escapeHtml(
+              article.category || "News"
+            )}
+
+            ·
+
+            ${readingTime(article)}
+
+          </div>
+
+        </div>
+
+      `;
+
+
+      container.appendChild(item);
+
+    });
+
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+function filterCategory(category) {
+
+  currentCategory = category;
+
 
   document
-    .querySelectorAll(".category-btn")
-    .forEach(
-      btn =>
-        btn.classList.remove("active")
-    );
+    .querySelectorAll(".category")
+    .forEach(button => {
+
+      button.classList.remove("active");
+
+      if (
+        button.textContent
+          .trim()
+          .toLowerCase()
+          .includes(
+            category
+              .replace("&", "")
+              .split(" ")[0]
+              .toLowerCase()
+          )
+      ) {
+        button.classList.add("active");
+      }
+
+    });
 
 
-  if (button) {
-    button.classList.add("active");
+  let filtered;
+
+
+  if (category === "All") {
+
+    filtered = allArticles;
+
+  } else {
+
+    filtered =
+      allArticles.filter(article => {
+
+        return (
+          String(
+            article.category || ""
+          ).toLowerCase()
+          === category.toLowerCase()
+        );
+
+      });
+
   }
 
 
-  if (category === "ALL") {
+  renderPage(filtered);
 
-    renderNews(allArticles);
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+/* =========================
+   RENDER PAGE
+========================= */
+
+function renderPage(articles) {
+
+  if (!articles.length) {
+
+    renderHero(null);
+
+    document.getElementById(
+      "stories"
+    ).innerHTML = "";
+
+    document.getElementById(
+      "quickFeed"
+    ).innerHTML = `
+
+      <div class="empty"
+           style="grid-column:1/-1">
+
+        <h2>
+          No stories in this category yet
+        </h2>
+
+        <p>
+          More stories will appear here
+          as the curator updates Snippet24.
+        </p>
+
+      </div>
+
+    `;
 
     return;
 
   }
 
 
-  const filtered =
-    allArticles.filter(
-      article =>
-        normalizeCategory(
-          article.category
-        ) === category
+  renderHero(articles[0]);
+
+  renderStories(
+    articles.slice(1)
+  );
+
+  renderQuickFeed(
+    articles
+  );
+
+}
+
+
+/* =========================
+   SHOW ALL
+========================= */
+
+function showAllStories() {
+
+  currentCategory = "All";
+
+  renderPage(allArticles);
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+/* =========================
+   LOAD NEWS
+========================= */
+
+async function loadNews() {
+
+  try {
+
+    const response =
+      await fetch(
+        "articles.json?cache=" +
+        Date.now()
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Unable to load articles.json"
+      );
+
+    }
+
+
+    const articles =
+      await response.json();
+
+
+    if (!Array.isArray(articles)) {
+
+      throw new Error(
+        "articles.json is not an array"
+      );
+
+    }
+
+
+    allArticles =
+      articles.filter(article => {
+
+        return (
+          article &&
+          article.snippet24_status ===
+          "PUBLISHED"
+        );
+
+      });
+
+
+    /*
+      Newest articles first.
+    */
+
+    allArticles.sort(
+      (a, b) => {
+
+        return String(
+          b.published_at || ""
+        ).localeCompare(
+          String(
+            a.published_at || ""
+          )
+        );
+
+      }
     );
 
 
-  renderNews(filtered);
+    renderPage(allArticles);
 
-}
 
+  } catch (error) {
 
-/* =================================
-   CATEGORY NORMALIZATION
-================================= */
-
-function normalizeCategory(value) {
-
-  const text =
-    String(value || "")
-      .trim()
-      .toUpperCase();
-
-
-  if (
-    text.includes("TECH") ||
-    text.includes("AI")
-  ) {
-
-    return "TECHNOLOGY";
-
-  }
-
-
-  if (
-    text.includes("BUSINESS") ||
-    text.includes("ECONOM") ||
-    text.includes("MARKET")
-  ) {
-
-    return "BUSINESS";
-
-  }
-
-
-  if (
-    text.includes("LIFESTYLE") ||
-    text.includes("HEALTH")
-  ) {
-
-    return "LIFESTYLE";
-
-  }
-
-
-  if (
-    text.includes("ENTERTAIN") ||
-    text.includes("CULTURE")
-  ) {
-
-    return "ENTERTAINMENT";
-
-  }
-
-
-  if (
-    text.includes("EARTH") ||
-    text.includes("ENVIRONMENT") ||
-    text.includes("CLIMATE")
-  ) {
-
-    return "EARTH";
-
-  }
-
-
-  if (
-    text.includes("SPORT")
-  ) {
-
-    return "SPORTS";
-
-  }
-
-
-  if (
-    text.includes("INDIA") ||
-    text.includes("WORLD") ||
-    text.includes("INTERNATIONAL")
-  ) {
-
-    return "INDIA";
-
-  }
-
-
-  return text || "INDIA";
-
-}
-
-
-/* =================================
-   CATEGORY BACKGROUNDS
-================================= */
-
-function getCategoryClass(category) {
-
-  const map = {
-
-    INDIA:
-      "cat-india",
-
-    TECHNOLOGY:
-      "cat-tech",
-
-    BUSINESS:
-      "cat-business",
-
-    LIFESTYLE:
-      "cat-life",
-
-    ENTERTAINMENT:
-      "cat-entertainment",
-
-    EARTH:
-      "cat-earth",
-
-    SPORTS:
-      "cat-sports"
-
-  };
-
-
-  return map[category]
-    || "cat-tech";
-
-}
-
-
-/* =================================
-   IMAGE WORD
-================================= */
-
-function getImageWord(category) {
-
-  const map = {
-
-    INDIA: "INDIA",
-
-    TECHNOLOGY: "AI",
-
-    BUSINESS: "₹",
-
-    LIFESTYLE: "LIFE",
-
-    ENTERTAINMENT: "PLAY",
-
-    EARTH: "EARTH",
-
-    SPORTS: "SPORT"
-
-  };
-
-
-  return map[category]
-    || "NEWS";
-
-}
-
-
-/* =================================
-   READING TIME
-================================= */
-
-function getReadingTime(text) {
-
-  const words =
-    String(text || "")
-      .trim()
-      .split(/\s+/)
-      .filter(Boolean)
-      .length;
-
-
-  if (words <= 70) {
-
-    return "30 sec";
-
-  }
-
-
-  if (words <= 150) {
-
-    return "1 min";
-
-  }
-
-
-  return "2 min";
-
-}
-
-
-/* =================================
-   HTML ESCAPE
-================================= */
-
-function escapeHtml(value) {
-
-  return String(value || "")
-
-    .replace(
-      /&/g,
-      "&amp;"
-    )
-
-    .replace(
-      /</g,
-      "&lt;"
-    )
-
-    .replace(
-      />/g,
-      "&gt;"
-    )
-
-    .replace(
-      /"/g,
-      "&quot;"
-    )
-
-    .replace(
-      /'/g,
-      "&#039;"
+    console.error(
+      "Snippet24 error:",
+      error
     );
 
+
+    document.getElementById(
+      "hero"
+    ).innerHTML = `
+
+      <div class="empty">
+
+        <h2>
+          News feed unavailable
+        </h2>
+
+        <p>
+          Please check that
+          articles.json is present
+          and contains valid JSON.
+        </p>
+
+      </div>
+
+    `;
+
+  }
+
 }
 
-
-/* =================================
-   START
-================================= */
 
 loadNews();
 
 </script>
 
-
 </body>
-
 </html>
