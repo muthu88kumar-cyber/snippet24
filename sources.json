@@ -2,9 +2,8 @@
   {
     "name": "Press Information Bureau",
     "category": "India",
-    "feed_url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1",
-    "fallback_url": "https://www.pib.gov.in/AllRelease.aspx?MenuId=2&lang=1&reg=1",
-    "website": "https://www.pib.gov.in/",
+    "feed_url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1",
+    "website": "https://pib.gov.in/",
     "reuse_policy_checked": true,
     "allow_ai_rewrite": true,
     "allow_publish": true
