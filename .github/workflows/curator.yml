@@ -1,31 +1,29 @@
 name: Auto-Curate News Feed
 
 on:
-  schedule:
-    # Every hour
-    - cron: "0 * * * *"
-
   workflow_dispatch:
+
+  schedule:
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
 
-concurrency:
-  group: news-curation
-  cancel-in-progress: false
-
 jobs:
-  build:
+
+  curate:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -38,17 +36,23 @@ jobs:
         run: |
           python curator.py
 
+      - name: Show articles result
+        run: |
+          echo "===== articles.json ====="
+          cat articles.json
+
       - name: Commit generated articles
         run: |
-          git config --global user.name "snippet24-bot"
-          git config --global user.email "actions@github.com"
+
+          git config user.name "Snippet24 Bot"
+
+          git config user.email "actions@users.noreply.github.com"
 
           git add articles.json
 
           if git diff --cached --quiet; then
-            echo "No article changes."
-            exit 0
+            echo "No article changes to commit."
+          else
+            git commit -m "Update curated news"
+            git push
           fi
-
-          git commit -m "Automated news update"
-          git push
