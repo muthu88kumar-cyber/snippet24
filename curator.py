@@ -1,50 +1,43 @@
 import json
-import os
+import hashlib
+import html
 import re
 import time
-import hashlib
-from datetime import datetime, timezone
+from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
-import xml.etree.ElementTree as ET
-from html import unescape
 
+BASE_DIR = Path(__file__).resolve().parent
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SOURCES_FILE = BASE_DIR / "sources.json"
+ARTICLES_FILE = BASE_DIR / "articles.json"
 
-SOURCES_FILE = os.path.join(BASE_DIR, "sources.json")
-ARTICLES_FILE = os.path.join(BASE_DIR, "articles.json")
-
-MAX_ARTICLES_PER_SOURCE = 10
-REQUEST_TIMEOUT = 30
-
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; Snippet24NewsBot/1.0; "
-    "+https://snippet24.in/)"
-)
+MAX_ARTICLES_PER_SOURCE = 5
+MAX_TOTAL_ARTICLES = 30
+TIMEOUT = 15
 
 
 def log(message):
-    print(f"[SNIPPET24] {message}", flush=True)
+    print("[SNIPPET24]", message, flush=True)
 
 
-def load_json(filename, default):
+def load_json(path, default):
     try:
-        if not os.path.exists(filename):
+        if not path.exists():
             return default
 
-        with open(filename, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
     except Exception as e:
-        log(f"Could not read {filename}: {e}")
+        log(f"JSON load warning: {e}")
         return default
 
 
-def save_json(filename, data):
-    temp_file = filename + ".tmp"
+def save_json(path, data):
+    temp = path.with_suffix(".tmp")
 
-    with open(temp_file, "w", encoding="utf-8") as f:
+    with open(temp, "w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -52,491 +45,377 @@ def save_json(filename, data):
             indent=2
         )
 
-    os.replace(temp_file, filename)
+    temp.replace(path)
 
 
-def clean_text(text):
-    if not text:
+def clean_text(value):
+    if value is None:
         return ""
 
-    text = unescape(str(text))
+    value = html.unescape(str(value))
 
-    text = re.sub(r"<script.*?</script>", " ", text, flags=re.I | re.S)
-    text = re.sub(r"<style.*?</style>", " ", text, flags=re.I | re.S)
-    text = re.sub(r"<[^>]+>", " ", text)
-
-    text = re.sub(r"\s+", " ", text)
-
-    return text.strip()
-
-
-def make_id(source_name, title, url):
-    raw = f"{source_name}|{title}|{url}".encode(
-        "utf-8",
-        errors="ignore"
+    value = re.sub(
+        r"<script.*?</script>",
+        " ",
+        value,
+        flags=re.I | re.S
     )
 
-    return hashlib.sha256(raw).hexdigest()[:20]
+    value = re.sub(
+        r"<style.*?</style>",
+        " ",
+        value,
+        flags=re.I | re.S
+    )
+
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    )
+
+    return value.strip()
 
 
-def fetch_url(url):
+def make_id(title, url):
+    raw = f"{title}|{url}".encode("utf-8")
+
+    return hashlib.sha256(raw).hexdigest()[:16]
+
+
+def get_tag(item, tag):
+    match = re.search(
+        rf"<{tag}(?:\s[^>]*)?>(.*?)</{tag}>",
+        item,
+        flags=re.I | re.S
+    )
+
+    if not match:
+        return ""
+
+    return clean_text(match.group(1))
+
+
+def get_link(item):
+    # RSS <link>URL</link>
+    match = re.search(
+        r"<link(?:\s[^>]*)?>(.*?)</link>",
+        item,
+        flags=re.I | re.S
+    )
+
+    if match:
+        value = clean_text(match.group(1))
+
+        if value.startswith("http"):
+            return value
+
+    # Atom <link href="URL">
+    match = re.search(
+        r"<link[^>]+href=[\"']([^\"']+)[\"']",
+        item,
+        flags=re.I
+    )
+
+    if match:
+        return html.unescape(match.group(1))
+
+    return ""
+
+
+def get_items(xml):
+    items = re.findall(
+        r"<item(?:\s[^>]*)?>(.*?)</item>",
+        xml,
+        flags=re.I | re.S
+    )
+
+    if items:
+        return items
+
+    # Atom feeds
+    entries = re.findall(
+        r"<entry(?:\s[^>]*)?>(.*?)</entry>",
+        xml,
+        flags=re.I | re.S
+    )
+
+    return entries
+
+
+def fetch_feed(source):
+    url = source["feed_url"]
+
     request = Request(
         url,
         headers={
-            "User-Agent": USER_AGENT,
-            "Accept": (
-                "application/rss+xml, "
-                "application/xml, "
-                "text/xml, "
-                "text/html;q=0.9, "
-                "*/*;q=0.8"
+            "User-Agent": (
+                "Snippet24NewsReader/1.0 "
+                "(RSS reader; +https://snippet24.in)"
             ),
-            "Cache-Control": "no-cache",
+            "Accept": (
+                "application/rss+xml,"
+                "application/atom+xml,"
+                "application/xml,"
+                "text/xml,"
+                "*/*"
+            )
         }
     )
 
-    last_error = None
-
-    for attempt in range(3):
-
-        try:
-
-            log(
-                f"Downloading source "
-                f"(attempt {attempt + 1}/3)"
-            )
-
-            with urlopen(
-                request,
-                timeout=REQUEST_TIMEOUT
-            ) as response:
-
-                data = response.read()
-
-                log(
-                    f"Downloaded {len(data)} bytes"
-                )
-
-                return data
-
-        except HTTPError as e:
-
-            last_error = e
-
-            log(
-                f"HTTP error {e.code}: {e.reason}"
-            )
-
-        except URLError as e:
-
-            last_error = e
-
-            log(
-                f"URL error: {e.reason}"
-            )
-
-        except TimeoutError as e:
-
-            last_error = e
-
-            log(
-                "Connection timed out"
-            )
-
-        except Exception as e:
-
-            last_error = e
-
-            log(
-                f"Download error: {e}"
-            )
-
-        if attempt < 2:
-            time.sleep(3)
-
-    raise last_error
-
-
-def parse_rss(xml_data):
     try:
+        log(f"Reading RSS: {source['name']}")
+        log(f"RSS URL: {url}")
 
-        root = ET.fromstring(xml_data)
+        with urlopen(request, timeout=TIMEOUT) as response:
+            data = response.read()
 
-    except ET.ParseError as e:
-
-        log(f"RSS XML parsing failed: {e}")
-
-        return []
-
-    items = []
-
-    # Standard RSS
-    for item in root.findall(".//item"):
-
-        title = clean_text(
-            item.findtext("title", "")
+        return data.decode(
+            "utf-8",
+            errors="replace"
         )
 
-        link = clean_text(
-            item.findtext("link", "")
-        )
-
-        description = clean_text(
-            item.findtext("description", "")
-        )
-
-        pub_date = clean_text(
-            item.findtext("pubDate", "")
-        )
-
-        if title and link:
-
-            items.append({
-                "title": title,
-                "url": link,
-                "description": description,
-                "published": pub_date
-            })
-
-    # Atom fallback
-    if not items:
-
-        namespaces = {
-            "atom": "http://www.w3.org/2005/Atom"
-        }
-
-        for entry in root.findall(
-            ".//atom:entry",
-            namespaces
-        ):
-
-            title_node = entry.find(
-                "atom:title",
-                namespaces
-            )
-
-            summary_node = entry.find(
-                "atom:summary",
-                namespaces
-            )
-
-            link_node = entry.find(
-                "atom:link",
-                namespaces
-            )
-
-            title = clean_text(
-                title_node.text
-                if title_node is not None
-                else ""
-            )
-
-            summary = clean_text(
-                summary_node.text
-                if summary_node is not None
-                else ""
-            )
-
-            link = ""
-
-            if link_node is not None:
-                link = link_node.attrib.get(
-                    "href",
-                    ""
-                )
-
-            if title and link:
-
-                items.append({
-                    "title": title,
-                    "url": link,
-                    "description": summary,
-                    "published": ""
-                })
-
-    return items
-
-
-def make_summary(title, description):
-    """
-    Creates a short original summary from RSS metadata.
-    No article text is copied to the site.
-    """
-
-    title = clean_text(title)
-    description = clean_text(description)
-
-    if description:
-
-        sentences = re.split(
-            r"(?<=[.!?])\s+",
-            description
-        )
-
-        sentences = [
-            s.strip()
-            for s in sentences
-            if s.strip()
-        ]
-
-        summary = " ".join(
-            sentences[:2]
-        )
-
-        if len(summary) > 500:
-            summary = summary[:497].rsplit(
-                " ",
-                1
-            )[0] + "..."
-
-        return summary
-
-    return (
-        "This Snippet24 story summarizes the "
-        "latest information published by the source."
-    )
-
-
-def process_source(source, existing_articles):
-
-    name = source.get(
-        "name",
-        "Unknown source"
-    )
-
-    category = source.get(
-        "category",
-        "News"
-    )
-
-    feed_url = source.get(
-        "feed_url",
-        ""
-    )
-
-    allow_publish = source.get(
-        "allow_publish",
-        False
-    )
-
-    if not allow_publish:
-
+    except HTTPError as e:
         log(
-            f"Publishing disabled for {name}"
+            f"RSS WARNING for {source['name']}: "
+            f"HTTP {e.code}"
         )
+        return ""
 
-        return []
-
-    if not feed_url:
-
+    except URLError as e:
         log(
-            f"No feed URL for {name}"
+            f"RSS WARNING for {source['name']}: "
+            f"network error: {e.reason}"
         )
+        return ""
 
-        return []
-
-    log(
-        f"READING RSS: {name}"
-    )
-
-    log(
-        f"RSS URL: {feed_url}"
-    )
-
-    try:
-
-        xml_data = fetch_url(feed_url)
+    except TimeoutError:
+        log(
+            f"RSS WARNING for {source['name']}: "
+            "connection timed out"
+        )
+        return ""
 
     except Exception as e:
-
         log(
-            f"RSS WARNING for {name}: {e}"
+            f"RSS WARNING for {source['name']}: "
+            f"{type(e).__name__}: {e}"
+        )
+        return ""
+
+
+def make_original_summary(description, title):
+    description = clean_text(description)
+    title = clean_text(title)
+
+    if description:
+        summary = description
+
+    else:
+        summary = (
+            f"This story reports on {title}. "
+            "See the original publication for the "
+            "complete report and latest details."
         )
 
+    # Keep the displayed summary reasonably short.
+    if len(summary) > 650:
+        summary = summary[:647].rsplit(" ", 1)[0] + "..."
+
+    return summary
+
+
+def parse_source(source):
+    xml = fetch_feed(source)
+
+    if not xml:
+        log(f"No RSS data: {source['name']}")
         return []
 
-    entries = parse_rss(xml_data)
+    items = get_items(xml)
 
     log(
-        f"RSS entries found for {name}: "
-        f"{len(entries)}"
+        f"RSS entries found for "
+        f"{source['name']}: {len(items)}"
     )
 
-    if not entries:
+    articles = []
 
-        log(
-            f"NO RSS ARTICLES FOUND: {name}"
+    for item in items[:MAX_ARTICLES_PER_SOURCE]:
+
+        title = get_tag(item, "title")
+        link = get_link(item)
+
+        description = (
+            get_tag(item, "description")
+            or get_tag(item, "summary")
+            or get_tag(item, "content")
         )
 
-        return []
-
-    existing_ids = {
-        article.get("id")
-        for article in existing_articles
-        if article.get("id")
-    }
-
-    new_articles = []
-
-    for entry in entries[:MAX_ARTICLES_PER_SOURCE]:
-
-        title = clean_text(
-            entry.get("title", "")
-        )
-
-        url = clean_text(
-            entry.get("url", "")
-        )
-
-        description = clean_text(
-            entry.get("description", "")
-        )
-
-        published = clean_text(
-            entry.get("published", "")
-        )
-
-        if not title or not url:
+        if not title or not link:
             continue
 
-        article_id = make_id(
-            name,
-            title,
-            url
-        )
+        title = clean_text(title)
+        description = clean_text(description)
 
-        if article_id in existing_ids:
-            continue
-
-        summary = make_summary(
-            title,
-            description
-        )
+        article_id = make_id(title, link)
 
         article = {
             "id": article_id,
             "title": title,
-            "summary": summary,
-            "category": category,
-            "source": name,
-            "source_url": url,
-            "published_at": published,
-            "created_at": datetime.now(
-                timezone.utc
-            ).isoformat(),
+            "summary": make_original_summary(
+                description,
+                title
+            ),
+            "category": source.get(
+                "category",
+                "News"
+            ),
+            "source": source["name"],
+            "source_url": link,
+            "source_website": source.get(
+                "website",
+                ""
+            ),
             "snippet24_status": "PUBLISHED",
-            "summary_method": "automated",
-            "rights_note": (
-                "Original publication remains "
-                "with the source publisher."
+            "summary_type": "RSS-based summary",
+            "published_at": time.strftime(
+                "%Y-%m-%dT%H:%M:%SZ",
+                time.gmtime()
             )
         }
 
-        new_articles.append(article)
+        articles.append(article)
 
-    return new_articles
+    return articles
 
 
 def main():
 
-    log("=" * 50)
+    log("======================================")
     log("SNIPPET24 CURATOR START")
-    log("=" * 50)
+    log("======================================")
 
     sources = load_json(
         SOURCES_FILE,
         []
     )
 
-    articles = load_json(
+    if not isinstance(sources, list):
+        log("ERROR: sources.json must contain a list")
+        return 1
+
+    log(
+        f"Approved sources loaded: "
+        f"{len(sources)}"
+    )
+
+    existing = load_json(
         ARTICLES_FILE,
         []
     )
 
-    if not isinstance(sources, list):
-        log("sources.json must contain an array")
-        return
-
-    if not isinstance(articles, list):
-        articles = []
+    if not isinstance(existing, list):
+        existing = []
 
     log(
-        f"Approved sources loaded: {len(sources)}"
+        f"Existing articles: "
+        f"{len(existing)}"
     )
 
-    log(
-        f"Existing articles: {len(articles)}"
-    )
+    existing_urls = {
+        str(article.get("source_url", ""))
+        for article in existing
+        if isinstance(article, dict)
+    }
 
-    all_new_articles = []
+    new_articles = []
 
     for source in sources:
 
+        if not source.get("enabled", True):
+            continue
+
         try:
 
-            new_articles = process_source(
-                source,
-                articles
-            )
+            articles = parse_source(source)
 
-            if new_articles:
+            for article in articles:
 
-                log(
-                    f"New articles from "
-                    f"{source.get('name')}: "
-                    f"{len(new_articles)}"
-                )
+                if article["source_url"] in existing_urls:
+                    continue
 
-                all_new_articles.extend(
-                    new_articles
-                )
+                if any(
+                    x["source_url"]
+                    == article["source_url"]
+                    for x in new_articles
+                ):
+                    continue
 
-            else:
+                new_articles.append(article)
 
-                log(
-                    f"No new articles from "
-                    f"{source.get('name')}"
-                )
+                if len(new_articles) >= MAX_TOTAL_ARTICLES:
+                    break
 
         except Exception as e:
 
             log(
-                f"Source processing error: {e}"
+                f"Source failed but curator "
+                f"will continue: {source.get('name')}: {e}"
             )
 
-    if all_new_articles:
-
-        articles = (
-            all_new_articles +
-            articles
-        )
-
-        # Keep newest 100 articles
-        articles = articles[:100]
+        if len(new_articles) >= MAX_TOTAL_ARTICLES:
+            break
 
     log(
         f"New articles: "
-        f"{len(all_new_articles)}"
+        f"{len(new_articles)}"
     )
 
-    log(
-        f"Total stored: "
-        f"{len(articles)}"
-    )
+    combined = new_articles + existing
+
+    # Keep newest generated items first.
+    combined = combined[:100]
 
     save_json(
         ARTICLES_FILE,
-        articles
+        combined
+    )
+
+    published_count = sum(
+        1
+        for article in combined
+        if article.get(
+            "snippet24_status"
+        ) == "PUBLISHED"
+    )
+
+    log(
+        f"Total stored articles: "
+        f"{len(combined)}"
+    )
+
+    log(
+        f"Published articles: "
+        f"{published_count}"
     )
 
     log(
         "articles.json saved successfully."
     )
 
-    log("=" * 50)
-    log("SNIPPET24 CURATOR END")
-    log("=" * 50)
+    log("======================================")
+    log("SNIPPET24 CURATOR COMPLETE")
+    log("======================================")
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
