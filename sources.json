@@ -1,11 +1,58 @@
 [
   {
-    "name": "Press Information Bureau",
+    "name": "Indian Express - India",
     "category": "India",
-    "feed_url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1",
-    "website": "https://pib.gov.in/",
-    "reuse_policy_checked": true,
-    "allow_ai_rewrite": true,
-    "allow_publish": true
+    "feed_url": "https://indianexpress.com/section/india/feed/",
+    "website": "https://indianexpress.com/",
+    "enabled": true
+  },
+  {
+    "name": "Indian Express - World",
+    "category": "World",
+    "feed_url": "https://indianexpress.com/section/world/feed/",
+    "website": "https://indianexpress.com/",
+    "enabled": true
+  },
+  {
+    "name": "Indian Express - Technology",
+    "category": "Technology",
+    "feed_url": "https://indianexpress.com/section/technology/feed/",
+    "website": "https://indianexpress.com/",
+    "enabled": true
+  },
+  {
+    "name": "Indian Express - Business",
+    "category": "Business",
+    "feed_url": "https://indianexpress.com/section/business/feed/",
+    "website": "https://indianexpress.com/",
+    "enabled": true
+  },
+  {
+    "name": "BBC News - World",
+    "category": "World",
+    "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "website": "https://www.bbc.com/news",
+    "enabled": true
+  },
+  {
+    "name": "BBC News - Technology",
+    "category": "Technology",
+    "feed_url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "website": "https://www.bbc.com/news",
+    "enabled": true
+  },
+  {
+    "name": "BBC News",
+    "category": "International",
+    "feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
+    "website": "https://www.bbc.com/news",
+    "enabled": true
+  },
+  {
+    "name": "The Hindu",
+    "category": "India",
+    "feed_url": "https://www.thehindu.com/news/national/feeder/",
+    "website": "https://www.thehindu.com/",
+    "enabled": true
   }
 ]
