@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T23:00:07.264494+00:00",
+  "updated_at": "2026-08-25T23:52:17.548941+00:00",
   "article_count": 500,
   "categories": {
     "India": 100,
@@ -10,13 +10,292 @@
   },
   "articles": [
     {
+      "id": "6306cc96b5b9c37e65a06cb1",
+      "title": "UH Hilo students test AI in nature - University of Hawaii System",
+      "description": "UH Hilo students test AI in nature &nbsp;&nbsp; University of Hawaii System",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aVUxGd0lLa0NLVFZySTVmdHhrV2QwWFY3VlJHRm95YVRsVEE3YllWT3haRmJORnFST1RuM2EzRW93ZzFtSHI0R0p3ZmZJWGFJNEUzNVNkaDRUQ3RCMS1MSFVzLTg3S3VENEhyYzBtbGtobG5zbzdvNnBQRTRPSkE?oc=5",
+      "source": "University of Hawaii System",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:38:10+00:00"
+    },
+    {
+      "id": "9577c5fc71ca1b6ff59e84e6",
+      "title": "Bitcoin tops $80,000 as bullish mood returns to crypto market - Moneycontrol.com",
+      "description": "Bitcoin tops $80,000 as bullish mood returns to crypto market &nbsp;&nbsp; Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU0sxRGJsZzZ6ZWRKWFl3ZXFvYTl2R0h2S3d4VkxwU0FQZmhGWnY5RU9JZHY3Q3lhWkowY0pHMUFaZGw2UXFkZkhkeEp2YjNjWGZ1TGV3OTQwOS1mMm1JajJIdW04dUIxZHRyQmNKNmkyTVMwd1NnU29LcF9zS0xiMEd6bUpadmY4aTNhaHZUMWxRNXEtYVgzTUZvTEJwUWpnZ0pxY3RuZWQxVFo3c3VwblktZjRrbGdRWmZLTV84ZHl6bmvSAcgBQVVfeXFMUHRsWE55SVNCdHZFV3A3Uk43VnZpeENJdUZHUGMtUXJ0SFlQM3REYVdqRzl5WUNJaXdKRTdoSzRRZ1FsdG5UQXMyZ19sSDBwTDFqOVUyczkzQV9uay1tS0F3QV9Ba0ZNVlltWHZkNXBvemJtczBhY1BIVm0zQm1XUV9heUp2OXdMSE1lcktKalZ2cGE3V3k3QUgtWUNEX1ZYVF8zRDBMejJta3JFYXR1V3pqZWdqWWZxN0dyeHBtZTZDVTJxWkg0T3Q?oc=5",
+      "source": "Moneycontrol.com",
+      "category": "Business",
+      "published_at": "2026-08-25T23:37:03+00:00"
+    },
+    {
+      "id": "a0e6d7e65951338f72d25f21",
+      "title": "AI Investment Bubble: Is Global Capital Facing a New Financial Crisis? - Daily Pioneer",
+      "description": "AI Investment Bubble: Is Global Capital Facing a New Financial Crisis? &nbsp;&nbsp; Daily Pioneer",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbGhmVkUxNXBxVU9sbkdDekZNNWRZN0JjWGE3djdkOWtZOVZKdWMwWXhaTm0xamJfTzM4c2pqckxRcG44WW1wSzM3dE4tcWJmeXhja1B4VnhwUE1JY3VKWXI0U1AtbUdTRVpFVTRYWUhKd1BqR3dxZnJld0Z6Tkk5V2hiVm5pU3dOOUFhVmtlcTFsYW5QMjg1czRB?oc=5",
+      "source": "Daily Pioneer",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:34:30+00:00"
+    },
+    {
+      "id": "b6fa826695864dce9705f402",
+      "title": "Virginia Tech adopts universitywide human-centered AI vision - EdTech Innovation Hub",
+      "description": "Virginia Tech adopts universitywide human-centered AI vision &nbsp;&nbsp; EdTech Innovation Hub",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdzVaUW9iSTY0Qjg1QnRUWmUxSG1BaHRZaXVOSmE4alhaTi1wUGcyMkxDTW1WVHlWZDdZVldrazJuNFhiRnI4c3ZXbTcxempIMXlzSzZnY0NlUFZ3c2R0alNMbXRYU3VGR2QzU1BuS1NFaEh0bjcyR0lyay1HckZwOXZ4UnNJcmt4a3B6SXY0MWszT2QzSlZkOEVwZlRvdWdTd0Z3?oc=5",
+      "source": "EdTech Innovation Hub",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:32:51+00:00"
+    },
+    {
+      "id": "4d2728963d66f13b8ab7e8b5",
+      "title": "Karnataka CM D K Shivakumar tells MLAs to prioritise Bharat Jodo Yuva Sanghas - Deccan Herald",
+      "description": "Karnataka CM D K Shivakumar tells MLAs to prioritise Bharat Jodo Yuva Sanghas &nbsp;&nbsp; Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNElVRUpwSURBUDYwNU1MOFNuRExuSTBZU1J2cTNaMld0aXJoSEZ2ZjBMUDlCM1prR1NXaUVMakx6QnJycGpsVTRiY25zY2NENlRJVHJaT0pvYjkySWozcGpzd2E0TzhfQS1LWk5rZ0NCWFJYUW9DV21PRXB5b3BwV0ExMUdFT2RLUkVWbURQQy1IWnZLd0VfZVVLMDRyX1UydG9sNk9kNThkWkl3OEM0dDZrWHRyWkEzWGVTLU1qNW9jYzF4VFFVbkJn?oc=5",
+      "source": "Deccan Herald",
+      "category": "States",
+      "published_at": "2026-08-25T23:32:43+00:00"
+    },
+    {
+      "id": "fa15bb12b780d35b61d6fd6a",
+      "title": "'Stop with the manifestos', OpenAI's former communications director says - thenationalnews.com",
+      "description": "'Stop with the manifestos', OpenAI's former communications director says &nbsp;&nbsp; thenationalnews.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMzNUbGlkam5yVmNwOHJsRFl4TjJ1bVpqLUtJdWlaSE1wcE5aejl0ZWd1cWZkaWlFY1Jmd0U5czlBVmx4UkVRZHItcmFreDhONU9jM2piUlVsVUI3bW5hdXRxQ1ZaalBma1dxT0Y1aXI3NkxSMmNvQkVXMEwyMm00WWVxdDQ5UlJkLVVRLTRscTRwYURnZnYzZ1dPVGl1TW8?oc=5",
+      "source": "thenationalnews.com",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:32:37+00:00"
+    },
+    {
+      "id": "e423520b850dcec3b0f9ab2a",
+      "title": "‘I’ve had enough’: Customers fume over shoes - News.com.au",
+      "description": "‘I’ve had enough’: Customers fume over shoes &nbsp;&nbsp; News.com.au",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNUjdHZDVlSVMwaUh0QklXUjd4NVgxaGJuWWhMZ3NzdW5Jb3YzdnV0TERYUG1LdXJlVEhMblJLT0FqbXJDeTROYWlvYmJ3R3hsYXRCdlBFU0RiZFFtVmtaWjdhdVpZaldqZ0xPa2Fuci0yZDl1enliXzIyLU53RFBMOWMteWJlVlVxYWRqZlZDZWpYTE9rRkU0Y3pOdElwZUtTUmlpSzZNcU84QmdaLXIydWFRQS11d1JLNU5lbWNsU2s4RFJPWnVSMi1zSXNMZkpBNEhwZFFsM1ZxbGUwblVlZ0FMSDNBNFBULWQ5MnRnR05Bb2d4aF9CbUZ4eC1Za3drRHfSAYcCQVVfeXFMT0d4eEpIdDlLSV91alRObW9UNXhoMmJOZnFWcVdBNzR3R28zOGpXN2paTzlmNlJ0OGdVcFZHSGNPSERiRThZYzBxam1xQm1ZNUJQMUVfMkF0Mm9VSDNrZGlDZjk1Q3YxVUNNOWVBNUdHRm9nMjNqaXJRLWtZZ2dCd2Y4UFYwdHVEZzFNVXhaazJyaldyM1hyVFZmRFpQY2paZjVPNUc1TGozclBDWUxSdG5BRHlDMzg1OHYycENoMWJfNnpJblRNSTBLQnl0MVgxUVdHU0tSTHlOcDBmaFBmbEhxUjhQam5nWDRxTzU2aFloeVBRN1QzeDlsMmhic1JSMWo4ei1EMTA?oc=5",
+      "source": "News.com.au",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T23:32:30+00:00"
+    },
+    {
+      "id": "aea68d4f4e0b4645f0ad63d8",
+      "title": "We tested Woolworths' new $10 gluten-free mudcake against iconic original - with impressive results - Yahoo Lifestyle Australia",
+      "description": "We tested Woolworths' new $10 gluten-free mudcake against iconic original - with impressive results &nbsp;&nbsp; Yahoo Lifestyle Australia",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSEJTVXB6WEEtTEIyRV9kSWtWZEN4MlhqRkRoWk1taDZoZkdqVVNER0xDWHViSFFLVWJwY1Z4d3MyXzgyWlFLSWgyWXJIbFdPT2JEQVZtY2JtNXFjdVlDR2lyNGlvWnlwbTRpSFlZT09SQTZ1MHNnSDBKdVA2cnkyY184ZzBQZjlMWS1reGRzVmdkWGNiTkVzQ0M1NjJYay1XaENZN2pYeWFVUDg0ZENkX3lGZ1Jfc1FibzZOT0c5bHJvYVJFM2NTaG5Eal9tdkU0RUd5X0JldkJmeVk?oc=5",
+      "source": "Yahoo Lifestyle Australia",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T23:32:15+00:00"
+    },
+    {
+      "id": "31816c1a23d0844aad4f4033",
+      "title": "GIEWS Country Brief: Lebanon 25-August-2026 - ReliefWeb",
+      "description": "GIEWS Country Brief: Lebanon 25-August-2026 &nbsp;&nbsp; ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWDRIaEZBSHRVQllqWXg2SHM3LTlkdDUxNm9HRDhFZ3ZFUGVVRGVOX2s4V2RqRkhrcTFHem1vbFFpQjlSR0kzZ3BwWlFSa2pRWGd0elFsRDY3ZHhobXQyWXl1dlp1R3BYbDEtYzFVc01YX3ozSV93c0wwb3ZpeC1hVFl4VUtXZw?oc=5",
+      "source": "ReliefWeb",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T23:30:24+00:00"
+    },
+    {
+      "id": "2cd1f1267d1f94766da86a3d",
+      "title": "Madras built the engine, Chennai is shifting gears - The Hindu",
+      "description": "Madras built the engine, Chennai is shifting gears &nbsp;&nbsp; The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEcwRVZMMEdEX3JYLXFnazR1TnBvS09GeW16V3RCMjl1MlpUaUZWNEx1aDl1THdSQnpDZEVCS05MVWhCTkVaTEFpb2ZHaUgxb1ZWSjlGYU9BZllqcFcyRW9DcmhnM1k2aXdoNURMLVRmd3YwS20yYl9vM01rM2VBOEpBMW5HelRHeXp6SDFpa1N6LTdodE5GcC1USEpTa0RQT0RWZ2RWQkhmUHd2d2h4UUdUamnSAbsBQVVfeXFMTTBlZnkzXzF2OWtGU2h4NVBiNUZfOHpmT29vUktvVUdNMmJQQmt4NENLRVdvdjdsSnJENVJFdU0zeWNwOVQtTFY1WTJPZHY0bTRCaGdwUEhUM0RLdGRPSllnb2VaN1BQV1lfUzVCNjFoa1AwSzBBNl9BQ0g3aG91T0hLa0ZCSDdRZ1FLRS16dGRHUzBrSlhEOHVpd0JlME1INVpheWRWTVBQUV9PNVdoNFZfNEtQZ25wTE9Pdw?oc=5",
+      "source": "The Hindu",
+      "category": "States",
+      "published_at": "2026-08-25T23:30:00+00:00"
+    },
+    {
+      "id": "9545bf556d863f3ea6941507",
+      "title": "Stock Radar: Elgi Equipments stock hits fresh 52-week high in August 2026; time to buy or book profits? - The Economic Times",
+      "description": "Stock Radar: Elgi Equipments stock hits fresh 52-week high in August 2026; time to buy or book profits? &nbsp;&nbsp; The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNc3FoTHdQNk9oT0V4YUpXczlyTlotejY2V1pQeWtUME9LZkFFVEFGaUFFWHRVNzY5T25SSFZWRjVuUVR2NnZLVHpkQXpLRGVnSEpYVzcyUjA4a1JKV0V4Qm85UWxQcWYzc1VWV0x1Q3hEbWV6cTQ3clRhZE15REZfZEYtYXlUTmd3WGJnODg2R0UyeHVNcEVxcVdQb1ZnVXdjWUFDejlEbUJnWlJHUEJLUk5JdWhnNGNUNmRudkpHaXlDMXg2eGlwT2dzODFpUkNubEczZXhmRUNFNGMzeVZybUItZ29peWpOVl82cVAwazJWS2JQdE5LVThOOVhySk5MTC1FZtIBigJBVV95cUxPX2F2TjhCR2R5RmNmYmxhN1NXc2RUdUpNT0NTVl9qTWJCcnVpY25Oc0VxeE9qR0JFSXhHR1BBZmRGR0JiSUNJVGFLV1lCU1lGTlhlQmxWMnRhdXZ6LWJoR0VfZUtSOXl3SXoxWi1SazYtX0R3SldNLUx2ZDI0dGNnejZtZUVGYi1MRU52cTFHRWozRUVicE5JdWxvNzVMRkxMY0d6bHFEc1ZMOUpPY2MwUUQ3cjYwU01tVm5JNTJWSkctc3RFN3B6M1d5aC1aM1pRX0hpTENPV2VudFhHS3dTaThZVDdYRXBOajRfdlFHRTkxWHRCYmRaUmV5UVJkNjB5U013MGY0NkpxQQ?oc=5",
+      "source": "The Economic Times",
+      "category": "Business",
+      "published_at": "2026-08-25T23:30:00+00:00"
+    },
+    {
+      "id": "d1221eb0c1c37c4a169dd967",
+      "title": "Businesses concerned over India, Japan trade deal: Ficci president Anant Goenka - The Times of India",
+      "description": "Businesses concerned over India, Japan trade deal: Ficci president Anant Goenka &nbsp;&nbsp; The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWHh6ZU9rM2toSEd6VWVuUlhqMF9ld0JHSWJrWGdmVlh1T3pndFMxeVZydzRjWVppNERlb3NmOS1SVXpSZWlISVRpNl83MVp0aXJyMjdRZVZMUEhNT29XU2thZGVNSjctZlhYRFpZR0I1SGJ3dWFYVDZZa1ZxRTJvRWZCUktpMUpfVTRFY0hMb0ZxZHBRNWJFOTBWQjZ6UURUWjRLeUJkQWFQNnloeEhwamw1RUU2bDdCYi1LamtKa2lBSGcxa09tXzVsZHZuLXZsY21IVlcyQU9BV2hSaWYxMDRGQ0VjSzZsV015Sy1aZzJSX2tVNHfSAfsBQVVfeXFMUEM4R1RLRVo2Z3BtdTUwX2lEUjZVN1JwZWVLbkZzUVBzczNfWlJLWnYyMkJ0NnNtVFNGZFBDZUdWejBDR1V3dDFCYnk4VTlsaUc2Vjk1c25OdE5NQlhDd3FlSmxKOVQzU05KcWNVamM2Qi14d1E4RWVjQURyc2dieGFzWlhuSXB2VDlab2pZM3UzZGdmWTdDd3FWbE1uQU9kSEo1U01rbjh0NHVDMDVBbkluMVNBd21CVGVCbXFJN1lBdVBKS1VWbV9Oc2ZuWDRvOGs4VVpkNHRHOTEtQzVUZDV0SF9fajFyWHFlelZmWWpkMTVCTnVGckJjS00?oc=5",
+      "source": "The Times of India",
+      "category": "Business",
+      "published_at": "2026-08-25T23:29:00+00:00"
+    },
+    {
+      "id": "3a920185a096b9144c8dfb25",
+      "title": "Modi’s Big Make-In-India Moves in Defense and Space - Bloomberg",
+      "description": "Modi’s Big Make-In-India Moves in Defense and Space &nbsp;&nbsp; Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFpzcWlTQ2VHczFELVA0cEVVMF9nRlplc21pZzF5MTJYR0tXbFh3bWt1VTFpU2tXc0MwUW1nZTljMmVJZW5TalJqMDgyS05oWGNoSThsMk4tWlRDd1V2UUtXekQ2ZDlxLVlKZDg2Z3l6OU1KM2ppZW96c2p0WFpQTTdpYldaTTEyZ3poNDBmR29jQm1MTWpzQzhXVkZLNFMzdlpyaV9oMl9ENWxBQTZkV1lR?oc=5",
+      "source": "Bloomberg",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:26:47+00:00"
+    },
+    {
+      "id": "1c9aee3d6ef5e65419a44b61",
+      "title": "Karnataka: Heavy rains return to parts of Malnad region - Deccan Herald",
+      "description": "Karnataka: Heavy rains return to parts of Malnad region &nbsp;&nbsp; Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ0xEZGRxdXZSVVBxdU1Yb2tBRkZRbFluYVNxQzluak01X2V1azc4UjhUOHA5T1V4c2pVZm5BWmVnV09acXZtd3YxUWhSMlRHU20wYlB1TjExX0ZKR2pHamdoQl9xUlp6N0ZBOXAwMFhIdDBjNlNESW13QkxpekhDNWt2d3NfVDZySFgzN2pWaUVTTlJ1MGYxMGZaYmdXbTVqQWNuYklrak81Sm8?oc=5",
+      "source": "Deccan Herald",
+      "category": "States",
+      "published_at": "2026-08-25T23:24:06+00:00"
+    },
+    {
+      "id": "7777af02f7972162e98b728b",
+      "title": "Pune tribal students’ protest enters 13th day as talks with Tribal Minister yield no breakthrough, say students - The Hindu",
+      "description": "Pune tribal students’ protest enters 13th day as talks with Tribal Minister yield no breakthrough, say students &nbsp;&nbsp; The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOdm9YT2w0QXNtZVRBVENSTzFfeEo0LVd2NnJkR0cxQ0MwTFF1aS1iTzA0a0EzcXJtVnNWRFljckE0ZEd3U3QtUFlQdWRaNTBYTllkVmZEem5HejdPVWpid2ZFSU1SdVVTUHNSRGV0QVYyUnZqczhIN01GNnpfTkJBVVVQWDdUUHpJZkw4S3JBYzNNY2lYTWh6bmZxRmdYd2FCMUJUMUZBSTZrcUdoSDdHMkxZZFBucUdZOEhERXpWR0EtOUV5NHUwa25MaF8yM04yQ29rQUdxa3VfS2k0cmg5SUFIR2gtMlhKNy1kbmhWb2NVdGZxNkE4RjRaSFJTLUJxM0xXeldXMDBpckJh0gGTAkFVX3lxTFBSdjJvRm92QjVNeVZ3RU5XU1B6M0VkZ1F6YW1SbUpNTWdBWW1LQUZaWkZXNFYyT3F1bFVSbmZQbWZEbjVQS2hqTGliTzJaRGo4dWNGc3g5OG1IcktvZ0FvTzZVeEhmeENSYktrbjJTanNMNFdERnJWNl9CWF8xUEoxVVlITk9OXzRmWF9yeTM3TE9ObDgwaXpTUjVsc2NmUUplck9BWk40eDhQT1dOUzJjSVBkYmlYaENrRHNxQ2xwM1g3RWZnMnlVVUFFRWVGM045TjdKYW92SUFockkzNXFyT3pfVVRsN000ck0xc21HWXNZVFFOclYxRzFzYWhyU19CMmtaYURkVFBfcUJmdjlLS1hv?oc=5",
+      "source": "The Hindu",
+      "category": "States",
+      "published_at": "2026-08-25T23:23:18+00:00"
+    },
+    {
+      "id": "00da02d509d6fdc94437885c",
+      "title": "We made a chip and it is fast: OpenAI unveils Jalapeno custom AI inference chip - The Tribune",
+      "description": "We made a chip and it is fast: OpenAI unveils Jalapeno custom AI inference chip &nbsp;&nbsp; The Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPc0lkeVVVcUNLbkozVmphTEY0UzNza1FkVnQ1bVBNNVdJNmt5bFp2MlZCenF3dkM4ZGhfQzBqS3ZnWjQ3WEl5T3FhbUNpaTNGNi0zTDRWWjFLeXVkdzBBMEpRekFuVmloNV9WbWJXQmROdEQxYkVZRW44ajd6bURsanQ3Z1JhRFdxM1RMMXVrcHBOcWpKR3NuYnJOU0hxN3RxUFZOdmpIcU5MSXpWODhFMG1pSnhOaEpxR0l0SnBjNkN5U21XWXhiaTZmSUstdVl1WU5iUm9meHpKaldpeG1v0gHfAUFVX3lxTE9zSWR5VVVxQ0tuSjNWamFMRjRTM3NrUWRWdDVtUE01V0k2a3lsWnYyVkJ6cXd2QzhkaF9DMGpLdmdaNDdYSXlPcWFtQ2lpM0Y2LTNMNFZaMUt5dWR3MEEwSlF6QW5WaWg1X1ZtYldCZE50RDFiRVlFbjhqN3ptRGxqdDdnUmFEV3EzVEwxdWtwcE5xakpHc25ick5TSHE3dHFQVk52akhxTkxJelY4OEUwbWlKeE5oSnFHSXRKcGM2Q3lTbVdZeGJpNmZJSy11WXVZTmJSb2Z4ekpqV2l4bW8?oc=5",
+      "source": "The Tribune",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:22:55+00:00"
+    },
+    {
+      "id": "cee6f60161b29f8b1128936e",
+      "title": "Pained over wasted House time, says Legislative Council chairman Saleem Ahmed - Deccan Herald",
+      "description": "Pained over wasted House time, says Legislative Council chairman Saleem Ahmed &nbsp;&nbsp; Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZjFmYjloSFljb0Q0aE93c085SkhEenFOYU5zLUJYaUk4SkpCQmNqYk84Y3lURVNSWWxHZzRiRHRGNk1oX282LXpFTXZLam1MdlFUVkVZc1pjYlZYYVhOMktFWlVfQXlHamQ4YmhldHR4Ymh5MkFCQ0thRS1tVlNWQW1TTU1PQ3pyVUNBQVhSbC1IckpHdWQzTDM3U3NvV2Nnc2k5MWZzR2c0NVRrSmZzVlhVZEYycjZ4aTdFVUdQTlJKWDNxb2VaUQ?oc=5",
+      "source": "Deccan Herald",
+      "category": "States",
+      "published_at": "2026-08-25T23:19:32+00:00"
+    },
+    {
+      "id": "d154430af1885637baaf4e2f",
+      "title": "Alabama investigating whether OpenAI violated consumer protection laws after Hugging Face hack - Yahoo News Canada",
+      "description": "Alabama investigating whether OpenAI violated consumer protection laws after Hugging Face hack &nbsp;&nbsp; Yahoo News Canada",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUWpMUmt2Q1pIYW93MlRnOXozOFFqYUpCcW16bFdyMF8xX3ZvcWktbmlkdWlyck94RURqZ2F1RjY4V282S2xnVGV2T0x0TXZCUmd1MEZrR3lFd2loMFFtV2w2ZnItQVVVN1hmNXBMQlJWN2Npa3NMeGVvRTFVUnlqVjJEU1RENUszMWwyNl9BZw?oc=5",
+      "source": "Yahoo News Canada",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:16:31+00:00"
+    },
+    {
+      "id": "ed852cf455762dd11b982fd7",
+      "title": "Gold Edges Up After Four-Day Gain as Traders Eye Treasury Moves - Livemint",
+      "description": "Gold Edges Up After Four-Day Gain as Traders Eye Treasury Moves &nbsp;&nbsp; Livemint",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZWJSN0xTNWQ2UkloV2daTllpcjJQUEl1U3lzSU1GbEE4NGxnY1Nsb3o1TldsR3o1VDhlVzZ3aXFUbHRYSTJDeHRZTFpYd2t3M0RsUG16eUxxbEtoN2ZvRk43cWp4WXhmU19qYUJjTWZsbDVoR1ltb0V4NldDVEpLLVZCUmx3RGY2WS1hZDl3eTBLR0pCTzVVelVLTnUzUjRDQzA1V0x5MXNxRWhWeTBya2Z5cGRFd9IBuwFBVV95cUxPREQtelJQSEFGSlBTSHpIV0dJalo5QldEZHdIc184V1BFVFZiTEVaOGVhM1lQbE8tRS1COElJc0Q0MDVPSTUwNTF1NnlkS21jRDlTX1lWeWUzc3JNV2dXTTRmcm9DSUV3WXBUcmlLUG1NNmZDSnE4b1NOdVQwQjl0SWtoanpDeHdfc2UxUlZOcmw4NkRwSnBNSXI1NDR6YWl5M0x6U1p4TFJHRWJzQjdfZEtUcmZkX0RwTTRN?oc=5",
+      "source": "Livemint",
+      "category": "Business",
+      "published_at": "2026-08-25T23:15:54+00:00"
+    },
+    {
+      "id": "02122ff09d2034e45ba3cfe2",
+      "title": "Suvendu vows to keep Mamata off the streets, TMC chairperson says not taking political sanyas - The Hindu",
+      "description": "Suvendu vows to keep Mamata off the streets, TMC chairperson says not taking political sanyas &nbsp;&nbsp; The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOU3BKWkVEQTRyRFl0X2QzY2tEbDJpTjNOakZWUVRyX3NQZVdKbnN0ZWxHRTdJRnJ3MnF5OHRKNVVwWWpHcnc1Zl82S2Y3TDFRdW1PbFFscHFQN25JVkE4MHRKbDlNZXREWm9KNHk3RHM0Y2I2N29ETU93cWFsV3J1VkFxUUI3M29jMkN6OTFGb2dZNlM3M2M3dmNmbXdJcjFHV3M4QUJCei1DeV9SV2tQcUthaDdFT2VUOUgzMWo4WkdzUU5GdFZaeUdyR2c0WmlaVkdzdzI2ZnNZY0JaWm92N0RiVlhRSmR1b2Q0ZEl4dDJMZFJLZkHSAfwBQVVfeXFMT2NQU0VVS2YwTTh6MzQ2VmlqUHZac2ppWmlIZTBQUmsyVHM5RWI5VG5yOU45NFVLSTd3SHgzaEpFdVFKdnlKS1cwdjVTWG1uS013X3ZuV1VQS3NwYU1vZW02RTVGVE1DTUhjcGlQTGxZQ1U4eHY0SUdnUllkUHdtUFFIRXp6d0M4YzV0Ukl0NlNveXRxMGZwc2s0S3pHd2VseGZWMXB1ZXFfTU55NURoVkRUQUwwamZjc2lQeEVBUm5ta2FDaERJSzd6Zi0xdjVVb053cl8ySEdROXRrUUJNWU5RX3pqdUNNMU9aTkRkd2syR3pQbDFSS29vZDh4?oc=5",
+      "source": "The Hindu",
+      "category": "States",
+      "published_at": "2026-08-25T23:13:06+00:00"
+    },
+    {
+      "id": "548f9a5e14feec6de9b1b035",
+      "title": "Karnataka gives food business operators 15 days to set right safety deficiencies - Deccan Herald",
+      "description": "Karnataka gives food business operators 15 days to set right safety deficiencies &nbsp;&nbsp; Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT1pfS3BuaEw4Rm9nMWNjU2tUTndsY1FzanBMRV9JSlN6QTJ1c3BWeTgwSDBjZUVzam1lX29fWmk0NUVZNlhMOHpnUV9wdXFCUGFrdHJ1dlV0NU42Vl9tRGVUZHBZQkpwcXhCalM4M2lvVTJPclRjRG41enNiVlVPVGpzSDJ5ZVdkamUyOGFTZlBPOFhyRGY4Z0pRZTNnUU45ajNkWm9OTHBfd01Zb2JIWksxbGgzNkJRSzhadUdoWUFPQzdrei1NLUFBVGx0Zw?oc=5",
+      "source": "Deccan Herald",
+      "category": "States",
+      "published_at": "2026-08-25T23:09:06+00:00"
+    },
+    {
+      "id": "7ffe49094af8fbfee8598827",
+      "title": "Memphis food drive aids residents without power after storms - Action News 5",
+      "description": "Memphis food drive aids residents without power after storms &nbsp;&nbsp; Action News 5",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeEF0M1ZLbkRyc3pkNVlncVBHQ2RKMGU2b05KZzY3cXZvUnZ1RGdzXzUxWkxiSWFOcERhOEVuR3Y2cnRtSy1Yc3lYal81YVN1aElMZVJYU0ZwdG1ZUHpBc2hleG5TWnpya0tBbzlxQ2c4UEk1Tk1lM1BMYjdnT21zeEdQUlF3SzJhd3UzNlRjVjlTek5xVWkxaEhTalRnSmt3TUE?oc=5",
+      "source": "Action News 5",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T23:09:00+00:00"
+    },
+    {
+      "id": "bf34f379c2839313fa426993",
+      "title": "Uttar Pradesh to spend Rs 4,239 crore on 24 new power transmission projects - Power Peak Digest",
+      "description": "Uttar Pradesh to spend Rs 4,239 crore on 24 new power transmission projects &nbsp;&nbsp; Power Peak Digest",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBIRFphYlAtY1luXzJZTGw3ZU1wcHJxSUp6NkloQjVGd0R5NjZnYXVvcEczN2ZWVmdjdDh5VTBqSFI3VmtzZ3pES29zSHBRemhlQlkyMGt5MWNPTUJuX0poaHhnQlA2ZmQ1UllTTERuM1pHWUNGcE9EWnF6MWVBdw?oc=5",
+      "source": "Power Peak Digest",
+      "category": "States",
+      "published_at": "2026-08-25T23:04:56+00:00"
+    },
+    {
+      "id": "6afcd41ced35b4aefb15972c",
+      "title": "Green gram yield to come a cropper in north Karnataka this year - Deccan Herald",
+      "description": "Green gram yield to come a cropper in north Karnataka this year &nbsp;&nbsp; Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeERvcTd1d2Nzd3pibDk1T1U1Y1hSSHlhNjM3VWc3VVdvWjVxV29neGxfdW51WWtudzRjYUV1V29ObGJGdWVPNGpqVVBKcVpNVHZfRVNwN2Nocmxpb0hqZFhIS0dzQnRSUFl3eV9mTHlMQmNiMy1HYm1xRjhWZFZPSDR3eVQ5LWZ0bUU4bmpBSTlUZlJKdDZ6RUwzZ1ZJbGIyR3JkTFZzUUJhU0hqVkRJQnhhQmJTYnM?oc=5",
+      "source": "Deccan Herald",
+      "category": "States",
+      "published_at": "2026-08-25T23:04:41+00:00"
+    },
+    {
+      "id": "c3d51fd33ba520774cdd486e",
+      "title": "Who gains in an AI-supercharged economy? - The Japan Times",
+      "description": "Who gains in an AI-supercharged economy? &nbsp;&nbsp; The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWXdNenNWZnZQMHJYR1E1ajV6aG05M2VYUmw3bGhXbm4xc2d6WDZsZ29zX05PWThKV3RKdnVrelBPRFVfWURxQ2RWZmZWbUhtbGJqYkl4TlExMTlWUS1nOHhWZktnRWdFNXF1ZWtiS0pmN2F1bVYtYkNEN29yTlk4WXU3TEx5LW83VTJzMldVeU9iQmc?oc=5",
+      "source": "The Japan Times",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:03:45+00:00"
+    },
+    {
+      "id": "f6278a69b4572f6d0fbdaf5b",
+      "title": "TTV Dinakaran submits Tamil Nadu Governor memo over poaching claims - The News Mill",
+      "description": "TTV Dinakaran submits Tamil Nadu Governor memo over poaching claims &nbsp;&nbsp; The News Mill",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN2hMMDIyR2gtX0ZXOUpjTTI2RU1nTXVrZFhNT1pOZ2xaVmN5RC1XclZxVzAyZjB1dThYMW5peXZiZms1OHpJeFQwZU9LSnF0T1BLS09XaWZYQlNKVVYzaGVzcTV1b1hhdE84VEpfdVdiMHUzR2hfT0ZtNXp6VVA4Y2F5NGVza0wzWjFGN1doblhtTEdXVUpHSEp6ZjVKWlpUYmhmOGdjbWI4bUhFLVRnbFhVX0JYNmp2MUR4WA?oc=5",
+      "source": "The News Mill",
+      "category": "States",
+      "published_at": "2026-08-25T23:02:17+00:00"
+    },
+    {
+      "id": "6a05e031d18f94c37e5e8f9d",
+      "title": "Tax break ‘Megadeals’ spurred innovation in communities - University of California, Riverside",
+      "description": "Tax break ‘Megadeals’ spurred innovation in communities &nbsp;&nbsp; University of California, Riverside",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaVdlVWJWZ0d5Y213N2JleDlUNkViLS1iTEl5dXQ5X01nY0xoZ3RZdDFZNHV2endVd0dnQ0lzNl84QXFaUTFoaHFBdG9TNTR1cjdIdmJlSEp3MmE1YnFQa3RRekhyUWlSa0R6V2NyMlJ4bFZOTW9IalZlYVN0dnhZNnRjZDdKa3U0TUI5djFTS3RZYlR0ZkE?oc=5",
+      "source": "University of California, Riverside",
+      "category": "Business",
+      "published_at": "2026-08-25T23:02:05+00:00"
+    },
+    {
+      "id": "4a6a7f34ac9847e02925f63d",
+      "title": "Apple introduces new Mac Studio with M5 Max and M5 Ultra - Apple",
+      "description": "Apple introduces new Mac Studio with M5 Max and M5 Ultra &nbsp;&nbsp; Apple",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNM2ZxQ3lxQ1NUai1ZSFpUZldZS002TWl2d3JKSTNrRHRGdml1SnBjZVlzZ3d1NDctbzhGNVJNZWpQelh1WUZseWFKQ3hYMnNlLV9JWVpXaG9lcVJfUXMybmhNNlBhc1R5X2lJTTZUdVNqbXdOczBWNkMzQm11T0dwcVdtcWE2R1pmcVk1YTRkLUpHLTJORVBtZTVDZXE?oc=5",
+      "source": "Apple",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:01:16+00:00"
+    },
+    {
+      "id": "29846650615c75d98d67820e",
+      "title": "AI tends to mark students’ essays higher than humans – study - Times Higher Education",
+      "description": "AI tends to mark students’ essays higher than humans – study &nbsp;&nbsp; Times Higher Education",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNM0txOFQ0cmdacVVCanFyeEZ6TmRpaVBHQmx1MUtfOGpETkNKcWJ2VXhZRHNMVlFZX25rZnk5UF9uajJyTDdfTGpDZEFBcGR5a2ViUkc5c3JDLWN2NlhIZGo2WW5naEp5bmNFMVBpcjVYaGY2TkdTUUMtY3Z0TThXSDgxV1d4RE0zZFp3aU1xcmNxcVlHcGc?oc=5",
+      "source": "Times Higher Education",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T23:01:00+00:00"
+    },
+    {
+      "id": "d65b1e28f90c33ab5bc81acd",
+      "title": "Alice raises $140M as its AI security business grows more than 500% - SiliconANGLE",
+      "description": "Alice raises $140M as its AI security business grows more than 500% &nbsp;&nbsp; SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYmVscXlJNlJWQllOU0cxY0tVeWJhbk8xdjlxdVhMQ1N1ekh2SU1haF9HUzFnUGxUZ2U5cDhwdDZJZXptYllJSEREVjNBcVQ5TlNkNjZVU29TR0cyc0FGd25oQkxYVjdCUXpYTHRQUFE5Q1NlUlVVZFVuejdpMnUtbjlkdXFjVUczM0h4cjJrbDNjajVaVUtoVUFxblBtRWQ1SEtZbw?oc=5",
+      "source": "SiliconANGLE",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T22:53:00+00:00"
+    },
+    {
       "id": "2d34eabb6bdf3e85e6b0c4dc",
       "title": "Oil drop steadies Wall Street as bond yields ease - CommBank",
       "description": "Oil drop steadies Wall Street as bond yields ease &nbsp;&nbsp; CommBank",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcjdERUpjX0haLUllemZwYzZJUkdrM3pNZHNBQ1IzWGVNX3ZmX29NcThLanVkNzBNYWtwOUdlNkZxaEk0RFZhR0JXSnhQX0w2Qkt4N2FFZWVmQWs0R1ZYOWhVOUNJQTEtUHk5MTF5Q1ZNUndTSV8wSFBoZ1Rtb3RaQnFVXzByWjByeUp3VHlvZmVpb25jdzNlNFNVX0hVRjJQWTdHVVVmVTFraXEy?oc=5",
       "source": "CommBank",
       "category": "Business",
-      "published_at": "2026-08-25T22:51:11+00:00"
+      "published_at": "2026-08-25T22:50:53+00:00"
+    },
+    {
+      "id": "fa59564b419146e8ac23d98a",
+      "title": "Securing Bengal Frontier - Daily Excelsior",
+      "description": "Securing Bengal Frontier &nbsp;&nbsp; Daily Excelsior",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40UXJNanBKaWhSbzFnaVJSS2tTYVRKcFQ4dFJOUE9obURkaHBLV0hOZWtvVHA3OUk1VFE3ZHZrUGhIeE9vYXRvWmJtOW5QVE9jcU1VSGpkSFpnbXFfLWZ6cGtxY1hSdENYNnBlONIBbEFVX3lxTE40UXJNanBKaWhSbzFnaVJSS2tTYVRKcFQ4dFJOUE9obURkaHBLV0hOZWtvVHA3OUk1VFE3ZHZrUGhIeE9vYXRvWmJtOW5QVE9jcU1VSGpkSFpnbXFfLWZ6cGtxY1hSdENYNnBlOA?oc=5",
+      "source": "Daily Excelsior",
+      "category": "States",
+      "published_at": "2026-08-25T22:50:46+00:00"
     },
     {
       "id": "1902b4f23aec27fa0cf36c32",
@@ -136,6 +415,15 @@
       "published_at": "2026-08-25T22:19:14+00:00"
     },
     {
+      "id": "b103582e2e7092a7b35b55b5",
+      "title": "Drake's Lifestyle Brand OVO Drops UFC Collab, With Famous Fighters Front and Center on New Merch - Rolling Stone",
+      "description": "Drake's Lifestyle Brand OVO Drops UFC Collab, With Famous Fighters Front and Center on New Merch &nbsp;&nbsp; Rolling Stone",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWlhzdE9DOUw2VVVxMjFNT2R4RlZCV3B4akVSLWp3RzdxNHh6RTFPTXJ3bzBmZ2FQZ2czajNJYW94UjdGT3lPcWJyM2pUNlZwNzlIcTFWNFNnNHY0akw0VDB0a1hnSFNaWEliMmhSSU5YbVdWR1lCTVJGT0xaVDBqVjVvdTdsX3lzazBXUU1rNHhmQzJTYklHU3FtcExibU9fTXlRWFdIMEFTZGJ0eDBVOHZDY3ZTZnFBaUdzUEJCVXc0YjNIbGxRMEpB?oc=5",
+      "source": "Rolling Stone",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T22:19:14+00:00"
+    },
+    {
       "id": "2c5b749925a53cc536ec4e21",
       "title": "Is QUALCOMM (QCOM) Undervalued As Its New Mobile And AI Chief Takes Charge? - Yahoo Finance Singapore",
       "description": "Is QUALCOMM (QCOM) Undervalued As Its New Mobile And AI Chief Takes Charge? &nbsp;&nbsp; Yahoo Finance Singapore",
@@ -181,15 +469,6 @@
       "published_at": "2026-08-25T22:11:04+00:00"
     },
     {
-      "id": "c2caf6c996a3e99f661dfb4d",
-      "title": "The World’s Craziest Stock Market Has Turned Into a Fright Ride - WSJ",
-      "description": "The World’s Craziest Stock Market Has Turned Into a Fright Ride &nbsp;&nbsp; WSJ",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHc1cktvMF9zTEkxYm0tVVhfR1doLVVORmZTZGdjanhnbEJTdEtnWEVFb3ZhT3ZTcnRrYXo1MjJDc0tMdmNwTHMyRnRFYnctZEtrVE9BWFNQRVZpOTJPZS1Gc3R2UjZzSFpkSDdOSkhZSk5pLXU2d2p3S1EwMUl2b0lCRQ?oc=5",
-      "source": "WSJ",
-      "category": "Business",
-      "published_at": "2026-08-25T22:07:07+00:00"
-    },
-    {
       "id": "c6437c767b6add318bf0457a",
       "title": "Billionaire Stanley Druckenmiller’s WSJ Op-Ed Criticizing Bessent Was Written With AI - News of the United States - NOTUS",
       "description": "Billionaire Stanley Druckenmiller’s WSJ Op-Ed Criticizing Bessent Was Written With AI &nbsp;&nbsp; News of the United States - NOTUS",
@@ -197,6 +476,15 @@
       "source": "News of the United States - NOTUS",
       "category": "Tech & AI",
       "published_at": "2026-08-25T22:06:10+00:00"
+    },
+    {
+      "id": "9d7f8b5d5b42237040675397",
+      "title": "UP CM Yogi Adityanath allocates portfolios to newly inducted and promoted ministers - News On AIR",
+      "description": "UP CM Yogi Adityanath allocates portfolios to newly inducted and promoted ministers &nbsp;&nbsp; News On AIR",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOVdDSExFZi1hOHFtS2VFclNKLUlhS0NoZ1p2YkxxLTZfS1JKU2NJV2RZVDdacENhQUl5T1hhY2lGSWlnNlItMlotbWptWWhRem1wSDMxMkJXR3M3cGlPb0pSUk9NNjBsVWo3WUpCa2dMVl9fTHlvU2U3Yk1KUGRVOTR1REJRdjBGSGJveTZmXzdNZHEzRmNld3BncXh4ZC1JakxiMFNpY3lpb2xxZFE?oc=5",
+      "source": "News On AIR",
+      "category": "States",
+      "published_at": "2026-08-25T22:05:33+00:00"
     },
     {
       "id": "fc7f587e78809970012c5513",
@@ -244,6 +532,15 @@
       "published_at": "2026-08-25T22:02:00+00:00"
     },
     {
+      "id": "61772fcc3c2a14fc983ef9d3",
+      "title": "AI firms debate cyber testing standards after model sandbox escapes - qz.com",
+      "description": "AI firms debate cyber testing standards after model sandbox escapes &nbsp;&nbsp; qz.com",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMQUwxeC1EOHFoeEp0TW14UUF5VWRGMDFGNC1KcVJGR2pkaldCdVkzOGR5WnB1T3RXM0t5ZVFWT19sQ3B6MVVPWDN1cWQ3RGxOU1lhcjhyU2gxX0VDNnZpUWFPbi1hMU5xTWJZcTZPQjhjUmpIN1ROdmVMZjNfdw?oc=5",
+      "source": "qz.com",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T22:01:50+00:00"
+    },
+    {
       "id": "fa66aaa66ea0fb198dc7f6ab",
       "title": "Stowers scientists develop a new way to visualize what AI models learn from DNA -- and discover how to control what the models learn next - PR Newswire",
       "description": "Stowers scientists develop a new way to visualize what AI models learn from DNA -- and discover how to control what the models learn next &nbsp;&nbsp; PR Newswire",
@@ -262,22 +559,13 @@
       "published_at": "2026-08-25T21:59:29+00:00"
     },
     {
-      "id": "3a920185a096b9144c8dfb25",
-      "title": "Modi’s Big Make-In-India Moves in Defense and Space - Bloomberg",
-      "description": "Modi’s Big Make-In-India Moves in Defense and Space &nbsp;&nbsp; Bloomberg",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFpzcWlTQ2VHczFELVA0cEVVMF9nRlplc21pZzF5MTJYR0tXbFh3bWt1VTFpU2tXc0MwUW1nZTljMmVJZW5TalJqMDgyS05oWGNoSThsMk4tWlRDd1V2UUtXekQ2ZDlxLVlKZDg2Z3l6OU1KM2ppZW96c2p0WFpQTTdpYldaTTEyZ3poNDBmR29jQm1MTWpzQzhXVkZLNFMzdlpyaV9oMl9ENWxBQTZkV1lR?oc=5",
-      "source": "Bloomberg",
+      "id": "cca4398975977d813c18f57f",
+      "title": "Android Car Systems Infected With Malware Through Software Updates - eSecurity Planet",
+      "description": "Android Car Systems Infected With Malware Through Software Updates &nbsp;&nbsp; eSecurity Planet",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOanJFZWtkUEl2NXkxNlpBVWpYMzA4N09QRGxwcnhGT1VhdHBvSnFTd1BSZ2NYMjlnVE9FUGpRRG9Sbmp2dXFCM05STkUwclI0WWtKMVE1b2otSUYxN2xHc09sSi1FX0R4YzN4bVhGdVlwcjZyaUxRaENFbUVBUEh0cThpb184NW9TVElteGNlckNpTkRxMTNGVTZsN29yb0dpTTFKaA?oc=5",
+      "source": "eSecurity Planet",
       "category": "Tech & AI",
-      "published_at": "2026-08-25T21:56:47+00:00"
-    },
-    {
-      "id": "61772fcc3c2a14fc983ef9d3",
-      "title": "AI firms debate cyber testing standards after model sandbox escapes - qz.com",
-      "description": "AI firms debate cyber testing standards after model sandbox escapes &nbsp;&nbsp; qz.com",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMQUwxeC1EOHFoeEp0TW14UUF5VWRGMDFGNC1KcVJGR2pkaldCdVkzOGR5WnB1T3RXM0t5ZVFWT19sQ3B6MVVPWDN1cWQ3RGxOU1lhcjhyU2gxX0VDNnZpUWFPbi1hMU5xTWJZcTZPQjhjUmpIN1ROdmVMZjNfdw?oc=5",
-      "source": "qz.com",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T21:56:15+00:00"
+      "published_at": "2026-08-25T21:55:53+00:00"
     },
     {
       "id": "e402bf863594f56fa588d8d3",
@@ -496,6 +784,15 @@
       "published_at": "2026-08-25T21:28:00+00:00"
     },
     {
+      "id": "5d9bc702a2dc8c35bda5cd62",
+      "title": "UP Cabinet Expansion: Six BJP leaders take oath as ministers - News On AIR",
+      "description": "UP Cabinet Expansion: Six BJP leaders take oath as ministers &nbsp;&nbsp; News On AIR",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWFdHUlY2ZV81NmZVR04wY3ZENkJDNlJlMU4wMWJEaFMzRFNoY3BkT2Voa0VWYkdkaW9Jd19SM3pNVkc1TFdhZk1kQU5sQl9aMzdydHhlNXlNczVYRDZmeVc5aFVMZUFIOE9PVVVnWWJDc0pRV3VxYno2Z1MwWGQ0SFNVZHc5bEQ5cTFRVGJ3?oc=5",
+      "source": "News On AIR",
+      "category": "States",
+      "published_at": "2026-08-25T21:27:12+00:00"
+    },
+    {
       "id": "b49bb55ff7952e6a083d69da",
       "title": "All Banke Bihari donations must go to deity: Supreme Court - The Times of India",
       "description": "All Banke Bihari donations must go to deity: Supreme Court &nbsp;&nbsp; The Times of India",
@@ -622,6 +919,15 @@
       "published_at": "2026-08-25T21:08:37+00:00"
     },
     {
+      "id": "cbc2bbe1fcae9e830c5df09c",
+      "title": "Special Investigation Team is conducting comprehensive probe into case involving self | Akashvani News - News On AIR",
+      "description": "Special Investigation Team is conducting comprehensive probe into case involving self | Akashvani News &nbsp;&nbsp; News On AIR",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNOUhwaXp2ZVQ2YW5zUGc1VVFMZ2xESERPcWJQaVVoZ3ZRZ29vczViY29aZHZnemRDSkMzRkExM0E5QzZSX2pUQnpGaGFsUk1MbmNRdzYySVpSazBlcXJyYzZhVy0xc0FBT2FjRENSeGRzcDFhUnJTOW5NY3Iwd19CWG5sRTVpWnJ5b01FR1RiQzZYanhnNVFRWXBlWUNnRXN5Y2tydVhmZ1FhX2pEVjNEZUl1WkZ4VENLcmU1UkNyYmhrM2lxRDVDaF95bEdLR0dOSEVleFVOOEl3VjJHUGZhbW96TjV6OG94c0tLdXdFcVdSMTRab18xNHhoR0JVRnpJ?oc=5",
+      "source": "News On AIR",
+      "category": "States",
+      "published_at": "2026-08-25T21:08:21+00:00"
+    },
+    {
       "id": "e736a3383fc6b9fa503d74f6",
       "title": "Andrew Garfield Admits He Didn’t Love Playing OpenAI CEO Sam Altman: ‘Thank God That’s Over’ - IMDb",
       "description": "Andrew Garfield Admits He Didn’t Love Playing OpenAI CEO Sam Altman: ‘Thank God That’s Over’ &nbsp;&nbsp; IMDb",
@@ -701,6 +1007,15 @@
       "source": "Prop News Time",
       "category": "States",
       "published_at": "2026-08-25T21:04:23+00:00"
+    },
+    {
+      "id": "8c4c895f04361370142d1f76",
+      "title": "FP Markets Replaces Global Business Development Head After Less Than a Year - TradingView",
+      "description": "FP Markets Replaces Global Business Development Head After Less Than a Year &nbsp;&nbsp; TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOLXQ4UXJxWUZ4d3ltMHM1bTloemZCa29sQmRSVFdXbUI2WEVwUUJveW9GcmNrU3l2VVVuZnpnaE1MOFZ6ZzRuaEI0dHdzakNPMUYyeUNSamZkaUNsOXZkektwRlNWcEVJVUoybkVqcXVIUlR2S3pFdW5mRjlqY0o5NWdCZlFsSHEwRDkwZmQ4RW5ZNUZDS3EteGFtVW9WcGN1RlJXYi1yY1FCTExzb0g1STBmM2JfRldHMXZ0M1RoY3h5RnVtaFVlU21yTDk5YVlyanRsVGJTS2c?oc=5",
+      "source": "TradingView",
+      "category": "Business",
+      "published_at": "2026-08-25T21:01:00+00:00"
     },
     {
       "id": "79cd19ded155409304f12137",
@@ -917,15 +1232,6 @@
       "source": "Yahoo Sports",
       "category": "Business",
       "published_at": "2026-08-25T20:32:34+00:00"
-    },
-    {
-      "id": "e423520b850dcec3b0f9ab2a",
-      "title": "‘I’ve had enough’: Customers fume over shoes - News.com.au",
-      "description": "‘I’ve had enough’: Customers fume over shoes &nbsp;&nbsp; News.com.au",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNUjdHZDVlSVMwaUh0QklXUjd4NVgxaGJuWWhMZ3NzdW5Jb3YzdnV0TERYUG1LdXJlVEhMblJLT0FqbXJDeTROYWlvYmJ3R3hsYXRCdlBFU0RiZFFtVmtaWjdhdVpZaldqZ0xPa2Fuci0yZDl1enliXzIyLU53RFBMOWMteWJlVlVxYWRqZlZDZWpYTE9rRkU0Y3pOdElwZUtTUmlpSzZNcU84QmdaLXIydWFRQS11d1JLNU5lbWNsU2s4RFJPWnVSMi1zSXNMZkpBNEhwZFFsM1ZxbGUwblVlZ0FMSDNBNFBULWQ5MnRnR05Bb2d4aF9CbUZ4eC1Za3drRHfSAYcCQVVfeXFMT0d4eEpIdDlLSV91alRObW9UNXhoMmJOZnFWcVdBNzR3R28zOGpXN2paTzlmNlJ0OGdVcFZHSGNPSERiRThZYzBxam1xQm1ZNUJQMUVfMkF0Mm9VSDNrZGlDZjk1Q3YxVUNNOWVBNUdHRm9nMjNqaXJRLWtZZ2dCd2Y4UFYwdHVEZzFNVXhaazJyaldyM1hyVFZmRFpQY2paZjVPNUc1TGozclBDWUxSdG5BRHlDMzg1OHYycENoMWJfNnpJblRNSTBLQnl0MVgxUVdHU0tSTHlOcDBmaFBmbEhxUjhQam5nWDRxTzU2aFloeVBRN1QzeDlsMmhic1JSMWo4ei1EMTA?oc=5",
-      "source": "News.com.au",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T20:31:36+00:00"
     },
     {
       "id": "9e91ba2a2a7aaf56e86a8f69",
@@ -1189,6 +1495,15 @@
       "published_at": "2026-08-25T20:08:00+00:00"
     },
     {
+      "id": "2fbc2ce6dd2ddf65c66414e9",
+      "title": "Pope Leo XIV on AI's new 'form of domination': it risks becoming a tool of 'economic colonialism' - Fortune",
+      "description": "Pope Leo XIV on AI's new 'form of domination': it risks becoming a tool of 'economic colonialism' &nbsp;&nbsp; Fortune",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMnEzd1p4TjFMQV82U1VSYTN2aXAwOHVVdG5BOVRwdjRReE1YSVJjSnl1NUd6SDhJT0RES05OektGNnFBSnlCMEltVGNlMWVmVm9nUEdhYmZiT19XY0xrbEprRGlXcTVZQ2JoY3M3aTlJZTM0Y25VUzZUYkVEWFR0ZjZXbWNpd3BwTDkyaDJB?oc=5",
+      "source": "Fortune",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T20:08:00+00:00"
+    },
+    {
       "id": "05bda25d937e6ed3532b55e4",
       "title": "Cybersecurity Firms Weigh Controlled Internet Access for Frontier AI During Testing - PYMNTS.com",
       "description": "Cybersecurity Firms Weigh Controlled Internet Access for Frontier AI During Testing &nbsp;&nbsp; PYMNTS.com",
@@ -1250,6 +1565,15 @@
       "source": "marketscreener.com",
       "category": "Tech & AI",
       "published_at": "2026-08-25T20:02:56+00:00"
+    },
+    {
+      "id": "f9770c92ac4ac2c42398bce9",
+      "title": "'Good thing' U.S. Treasury is getting ahead of stress in funding markets, says SMBC's Joe Lavorgna - CNBC",
+      "description": "'Good thing' U.S. Treasury is getting ahead of stress in funding markets, says SMBC's Joe Lavorgna &nbsp;&nbsp; CNBC",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOc2JGZ0oteGp3TGdRankyaU9fVUpsR3dmZ25MTExyVmMyMlRLVnRGbXUtbzhNNlVhWXRRdmRVQzNEalJGc0s1OGhIUmZ1R3lINXdaUWtSeUVOYmFtMkp5aVBnOUh0ZndUaXlaTXJWX1N1YlcwdC1SNnlYbDBwWGpwU1MzSHpFZXo2TGFyelA2SWVvelltV2Y0TFd1a3pYclViSWJfLTdiaHJwVjdiZjd2amJqVHNxWmtHY0ZhWGNQLXVreDYzLXpUTlZYS196R0la?oc=5",
+      "source": "CNBC",
+      "category": "Business",
+      "published_at": "2026-08-25T20:02:10+00:00"
     },
     {
       "id": "7d8ac496e052275e8867b8d3",
@@ -1358,6 +1682,15 @@
       "source": "Spectrum News",
       "category": "Business",
       "published_at": "2026-08-25T19:53:00+00:00"
+    },
+    {
+      "id": "7bc22c19a06716408970a6dc",
+      "title": "Karnataka to begin cloud seeding in two days amid rainfall deficit - Udayavani",
+      "description": "Karnataka to begin cloud seeding in two days amid rainfall deficit &nbsp;&nbsp; Udayavani",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa2prdEhXTFJ0OWRoakVSNWxBa3FKbXpsQTdZRGRoa3M5eGlJU1VWZ1JQUW9BQUF6dlJPMF9obHc0RTVxUVhYV3AxelhfcFUtdVpUMWh5a05mUXh3SGlxbnNEako4ZEhhYnVsbzJiN3RoTEYxajhGVVhUUFJGbE9IcHJGdmlvRFBsb2lHYWk0ZWNxbGViOERXNmxTbjJHQ3B2MG1vMzNtZU9Nc0p6RkNyY0xfS3pUTnJE?oc=5",
+      "source": "Udayavani",
+      "category": "States",
+      "published_at": "2026-08-25T19:51:35+00:00"
     },
     {
       "id": "5fc587273d49d452c0ff9261",
@@ -1675,15 +2008,6 @@
       "published_at": "2026-08-25T19:32:30+00:00"
     },
     {
-      "id": "f9770c92ac4ac2c42398bce9",
-      "title": "'Good thing' U.S. Treasury is getting ahead of stress in funding markets, says SMBC's Joe Lavorgna - CNBC",
-      "description": "'Good thing' U.S. Treasury is getting ahead of stress in funding markets, says SMBC's Joe Lavorgna &nbsp;&nbsp; CNBC",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOc2JGZ0oteGp3TGdRankyaU9fVUpsR3dmZ25MTExyVmMyMlRLVnRGbXUtbzhNNlVhWXRRdmRVQzNEalJGc0s1OGhIUmZ1R3lINXdaUWtSeUVOYmFtMkp5aVBnOUh0ZndUaXlaTXJWX1N1YlcwdC1SNnlYbDBwWGpwU1MzSHpFZXo2TGFyelA2SWVvelltV2Y0TFd1a3pYclViSWJfLTdiaHJwVjdiZjd2amJqVHNxWmtHY0ZhWGNQLXVreDYzLXpUTlZYS196R0la?oc=5",
-      "source": "CNBC",
-      "category": "Business",
-      "published_at": "2026-08-25T19:32:10+00:00"
-    },
-    {
       "id": "b3dc3bb9e615fc9c6fbff72d",
       "title": "Tamil Nadu can lead India on revenue reform - The Hindu",
       "description": "Tamil Nadu can lead India on revenue reform &nbsp;&nbsp; The Hindu",
@@ -1828,6 +2152,15 @@
       "published_at": "2026-08-25T19:20:49+00:00"
     },
     {
+      "id": "fdc752b2e6ab29d52f929203",
+      "title": "Natalie Portman’s Latest Chapter of Miss Dior - FASHION Magazine",
+      "description": "Natalie Portman’s Latest Chapter of Miss Dior &nbsp;&nbsp; FASHION Magazine",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOUs4T1hiNFZUdFkyMjFCTmxMTmZudWVBQjJ3Nnk4WjJVeXBIMGZVcDdPMEJTbzM0VElRNDAwRmlGY19xbHAwTnBHMTU0YTdLenlqU2YyaGFGY1U2WHBXSGRUV014d1NjQUlSdU15NmkzRnhpd2sxRGhTYkp1Um10ZFBJZ3BwbXBOYTIySGxHR3dKdnRwTGQ0?oc=5",
+      "source": "FASHION Magazine",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T19:19:07+00:00"
+    },
+    {
       "id": "993e48880c2aafac04bcd609",
       "title": "Oil Futures Fall Further on Hopes for Hormuz - WSJ",
       "description": "Oil Futures Fall Further on Hopes for Hormuz &nbsp;&nbsp; WSJ",
@@ -1835,15 +2168,6 @@
       "source": "WSJ",
       "category": "Business",
       "published_at": "2026-08-25T19:19:00+00:00"
-    },
-    {
-      "id": "fdc752b2e6ab29d52f929203",
-      "title": "Natalie Portman’s Latest Chapter of Miss Dior - FASHION Magazine",
-      "description": "Natalie Portman’s Latest Chapter of Miss Dior &nbsp;&nbsp; FASHION Magazine",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOUs4T1hiNFZUdFkyMjFCTmxMTmZudWVBQjJ3Nnk4WjJVeXBIMGZVcDdPMEJTbzM0VElRNDAwRmlGY19xbHAwTnBHMTU0YTdLenlqU2YyaGFGY1U2WHBXSGRUV014d1NjQUlSdU15NmkzRnhpd2sxRGhTYkp1Um10ZFBJZ3BwbXBOYTIySGxHR3dKdnRwTGQ0?oc=5",
-      "source": "FASHION Magazine",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T19:18:45+00:00"
     },
     {
       "id": "ce71a3e78bda24d39a36a17d",
@@ -1925,6 +2249,15 @@
       "source": "Telangana Today",
       "category": "States",
       "published_at": "2026-08-25T19:13:59+00:00"
+    },
+    {
+      "id": "308b88960cc5f67f2f4b75b0",
+      "title": "AAPL Stock Alert: What to Know as Apple Unveils New Mac Models With AI Upgrades - Barchart.com",
+      "description": "AAPL Stock Alert: What to Know as Apple Unveils New Mac Models With AI Upgrades &nbsp;&nbsp; Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQV0lueV9OV0FjUnZoWF9VLW9wR3ZrZmZsZnVGbWNBVjdnMi1BejI0eENxQi1nY0JBYXk3MVpuTmRVQklQbTR3M1NKX0NINGNxaF9PaDRvdEk4MTNib1NWZ0V4WXlsUUdTcVBQcXFVY0xWWGZtbzlRQy0wOUQyQVRZaDF3ODZMMTh6aGNyNG9LTHh1Tm43SWlPTXlkTkNrQ3dGdXNnMGxvc2xFZUc3RkxQTlFtcmJGLTJOdXRRUVhTZw?oc=5",
+      "source": "Barchart.com",
+      "category": "Tech & AI",
+      "published_at": "2026-08-25T19:13:21+00:00"
     },
     {
       "id": "2d2d588f031ee294bfce0f55",
@@ -2260,6 +2593,15 @@
       "published_at": "2026-08-25T18:59:00+00:00"
     },
     {
+      "id": "71e6977596e46e2db33a2a9d",
+      "title": "‘Heritage properties can become living economic & cultural assets’ - The Times of India",
+      "description": "‘Heritage properties can become living economic & cultural assets’ &nbsp;&nbsp; The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZEt3SFh3eUFuMHh4QkstcWZfRjMydDQxUjRXNmhMS01RNXU0cndSYzV0S1k1cWo1MURPYkRWaXVRQ042SHVzMkFXNVZEZlVxTnJ5NWRCQk1hS19MT2laXzBJbVdmd00tcnN3cFNXSVNkNE5tQ1d6SVNnRGgxUEJJaUhWM3RCeEFheGphUl9jU2Nha3U0b3dqb2xHZTRSdGQ4NFhSRUcxeWd4VUxDZzZHem9YLUFJdlEtQlFWQUN2TDBhLXFXaE5ISU4yNlBDaFNjUDhZ0gHYAUFVX3lxTE41aFFpM3BZSzVtazh0bXJIT3NaY1A2bkc0M3FxZ2xqaWxkeERJN3JfaDlPZmdXRUROb0tjRXVuaklTTHhuT05xUDl3bmhWSXJTcEVVTE9naFlmRWRNTHNzcVUtaE1pQU94SzNTVGI1U0lPRzFVMHNNaGM2RTRmMlUxaEhBVXMwWlU5T3NpY2YzTDM3UUpQbEZ2WUtaVWtqeFFjdGpWdU1oWk01bWs3bE0xOGRyc0xnWjk5aGVIY0Y3WVpzOWViN2FxZ0ppaHVjZkFWdUxJNTlwMQ?oc=5",
+      "source": "The Times of India",
+      "category": "States",
+      "published_at": "2026-08-25T18:59:00+00:00"
+    },
+    {
       "id": "890421d8c9ef0e21a6f67ac6",
       "title": "UK to warn citizens to stock up on food amid threat from climate crisis and hostile states - The Guardian",
       "description": "UK to warn citizens to stock up on food amid threat from climate crisis and hostile states &nbsp;&nbsp; The Guardian",
@@ -2359,15 +2701,6 @@
       "published_at": "2026-08-25T18:56:08+00:00"
     },
     {
-      "id": "d032f2137da325a6ea272af2",
-      "title": "Gujarat sees fastest rise in active investors in July - The Times of India",
-      "description": "Gujarat sees fastest rise in active investors in July &nbsp;&nbsp; The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZXpnOVVyMk9IU09NclVJNm9BZDJYbHhFRjVacS1XRk5hMUc2b1Nxall3WFY2NGNiNWswV0VKbDNFelpsX0kwaGMxb1lxbHhLR0ExeTJZME1DaS1WTklUVTVub3lENjhKV3ItdmVXUjM5eW9Xb3llQjg3czhjLWlYdXJwX3l1ZXFaa1Z4eXhGRkZoYUFkV19nRlNmdk9HWEF1Wk5fQVBaWnE3eXN2bXNTbE1IWHZuTWRUaFFZSnJCdTFOR04zMzc1TFlR0gHPAUFVX3lxTE5nZU1ndks1SG90akV6MVVRSmYwcHhHSDBybVRvRWVsWTJtc1UzR1RQSnpGYzh1X1JRMmlJUWJsMHJKMDhZWlFKWDZKMkF2OFotV1BweFdhOGhFLUNfQWVhMGkyR0NfakhYUjJwRVN0TmkteEtoYk52cUNkUTFoRFExeHFYU1AydzZBbDRBdGFpQ1hTTEFzTnV1SXJhVFhIM1V4VFBhdmdZZmhHaHpIbmo1SnYzM1NpWFpKWTZCdU1SbFpvdUJyYnZ4bWZjdzIyYw?oc=5",
-      "source": "The Times of India",
-      "category": "States",
-      "published_at": "2026-08-25T18:56:00+00:00"
-    },
-    {
       "id": "83131edbe0828d6b95e6ac84",
       "title": "Gujarat sees fastest rise in active investors in July - timesofindia.indiatimes.com",
       "description": "Gujarat sees fastest rise in active investors in July &nbsp;&nbsp; timesofindia.indiatimes.com",
@@ -2395,24 +2728,6 @@
       "published_at": "2026-08-25T18:55:41+00:00"
     },
     {
-      "id": "91c285f2e5f14826b8efd4bc",
-      "title": "SC seeks Tata Steel reply to Odisha government's appeal against High Court order - The Economic Times",
-      "description": "SC seeks Tata Steel reply to Odisha government's appeal against High Court order &nbsp;&nbsp; The Economic Times",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVTFkNkpTODFuVUJROXp6cTBTNFpNQmtNd1lNVUJQQmlBQ1ZIaUNjYVExQ0Vxcy1kMnYyYjlaVWtidEVocXFoWVhLdENjbmlNT1FCNzhWYmItWEhIaGh0ck9rUWdzampRQTRmXzk5N1lXcjYyakhFWGszcnlLQUNLU3MtVUNfRG5fSUdiR2pUNmU0NzVvLXVhd0RtdkRFdWRXeXdjYXAwYWZEd2VfZkNFQXJnblVxdmVpWUJnY2REbWpzRGVyOXFpQmUxMFVZcl9LaFpILUJPQUNUejgt0gHiAUFVX3lxTE90S3NQdWJsMmhYUnRLVmVaeDFSNHZDV2ZQWXNHV1AzRWVia0xKNm5rMGYxc29MSjJ2SFc1TGZZWkFDSHB0Y3Jhd0FXSEtydVZPUlNrejB2a2tibTFsS1NuTnhlOHI4eWp1bzdNMTZCdnAtVjlWRUJUYU03aFFtV1FmWTg4T0NVMkYxejBKaW5CTjc4bGVDUkJMd0tUYjB4ZUZDb2IteHF1ZTdVT241V2pkNkViYmk2SGV0S2VWWkJkcC1RVFVxTDNfejAxWldid1lDVFI2UmFHRnlmNjA5bXZuZkE?oc=5",
-      "source": "The Economic Times",
-      "category": "States",
-      "published_at": "2026-08-25T18:55:09+00:00"
-    },
-    {
-      "id": "3431a78b63990d998060fbc8",
-      "title": "Weather Highlights: Heavy Rain In Delhi, Waterlogging, Traffic Jams In Many Areas - NDTV",
-      "description": "Weather Highlights: Heavy Rain In Delhi, Waterlogging, Traffic Jams In Many Areas &nbsp;&nbsp; NDTV",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTnB4Q1kwT3VIcDlLQkU1QkVJMnVvalkzbWdLOHRUSGNwTTh4Uy1seGt4bjdROWNxdnZEaXpnNXdNUXlKTlNIUVR0eFNBRk56QVVWNS1PWE1OMFBpOXVPa1AzbFBuaHNBNlRtRUw2eVBjNUptVEZaNmxjT1pnbXRvT3lrSUVkZHpjakh6NmYzbmtfUGlqNl9UbzJpd1BlVWZZSnVkc21WZTdER3pITzJGMnpDcDNDVzNwcTV4NkhIdnVMRHJWOURDRUVaYlRKSFJPVlBmbUQxV090QnBmZzduSTlPcWZxTjM4Um1XMzIteVd5UlnSAfsBQVVfeXFMTWkyaHBLS2NYU09sYVFjeC0ycHN4N2l5LWVNQzNQd3VPOGpWWjJHV3p0bktLc291aHlsYS1Va3BSWGtMMWVzbXdKS01UOWRFM3ExMkM3d0l5VVVOSUhTekxqYUJyRVVEajRwOFZQOHJPU2EyNkhfWTlaS0Jad1p0MHQxU2RuZGE0TTR6Z3FhRDE2ZElEcUFycHVONDAwTFJIejB1UWkxZ3RsTlBLQnhNdWZRbk9KcGJub1kwWGIxMmZaUWFWZGRVU1llbTZqRnMxQ1lnbW52UVJNYlBEWWgyOW1ja1J2SlZveDVfdG5oNkJ4YXd5NDJqQVJiWWM?oc=5",
-      "source": "NDTV",
-      "category": "States",
-      "published_at": "2026-08-25T18:54:54+00:00"
-    },
-    {
       "id": "36e0e695f62ceefaed859565",
       "title": "Abbott receives FDA authorization for world's first dual glucose-ketone sensing technology for people with diabetes - Abbott MediaRoom",
       "description": "Abbott receives FDA authorization for world's first dual glucose-ketone sensing technology for people with diabetes &nbsp;&nbsp; Abbott MediaRoom",
@@ -2420,15 +2735,6 @@
       "source": "Abbott MediaRoom",
       "category": "Tech & AI",
       "published_at": "2026-08-25T18:53:18+00:00"
-    },
-    {
-      "id": "adde9153b48659e628c220b0",
-      "title": "G Sathiyan calls for stronger support to make India a sporting powerhouse - Telangana Today",
-      "description": "G Sathiyan calls for stronger support to make India a sporting powerhouse &nbsp;&nbsp; Telangana Today",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTE9pTzliQ1RWTV9KNXZ2ZmozUnMtU1dhM0c4azhOY0xwYUZlQm5wU3B0NTVOdngxeWQ5Tzl5ZUUxR0prU0NPUTJ1SVBBR0hoM282eWRtWE5GV29hVjlvSkVIaW5VV2lEWG9SS2hlMG5PWGVuNkVRbzNraXUwTGczc2JWenU0eXFSOUtuZWFULWFWdWE0T0h4QlJRZGJUOWxMMGc?oc=5",
-      "source": "Telangana Today",
-      "category": "States",
-      "published_at": "2026-08-25T18:53:01+00:00"
     },
     {
       "id": "de43d897257b594d294d31d1",
@@ -2447,42 +2753,6 @@
       "source": "Castanet",
       "category": "Business",
       "published_at": "2026-08-25T18:53:00+00:00"
-    },
-    {
-      "id": "42264800554d684d34a9e1ef",
-      "title": "Red alert as heavy rain lashes Varanasi; schools for classes 1-8 shut - The Times of India",
-      "description": "Red alert as heavy rain lashes Varanasi; schools for classes 1-8 shut &nbsp;&nbsp; The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRjJWT181WGs2UE15ZTMxYUdIS29jWkdxOEpFcUE3TDRoSFNtQU41WmpVbERGRjNvY3QzQ0hmYTZ2THNZMS1MVHlKcGsxZnVwTlNGRkxxQlBFcTlsdVQ0dTc4amgwZkNSS1cxMmRLanhoNDRzYzF6UmRZakpKSWxiT3ZvTzUtVk1SUE1WZE9WYmZKRFhVQXFfRUFQTXJMZzd6Zl9LS2I4OEJ5cHhxajVrc3lNblJDTS15dUNDV0tTZkxLR1lqajFrYV9Nam1yX084MkRwV2xQVlRBTGFk0gHiAUFVX3lxTE5DSDBDN0VUOThoR01xdlRTZllnaEtoMHlGR2FQeUc3VE03bGVNM2VxQVlybDZEZDFPbVBVOHhudU5YZ0tkVmFvYzhJYjNPOGdyckpOd0ROdDhaNXE5eTgwaERlSWJMX1VXeGRmUm16dHppTU9jYlpPYmpwVE8tSEtzdFdXVm85UnJUZ0cxcXJSb2FWREFXWVNNZ0xDUkE0TzV2MlFPSFNybHFZcDVwM0M2RC1meWJlelRVU0UyWk5fVHZQWklTUEFXWlpEN0sxeFl0MFYyaFRNek5sY3ItVS1vYmc?oc=5",
-      "source": "The Times of India",
-      "category": "States",
-      "published_at": "2026-08-25T18:52:00+00:00"
-    },
-    {
-      "id": "d3294a80ec1d4f2159359e02",
-      "title": "Red alert as heavy rain lashes Varanasi; schools for classes 1-8 shut - timesofindia.indiatimes.com",
-      "description": "Red alert as heavy rain lashes Varanasi; schools for classes 1-8 shut &nbsp;&nbsp; timesofindia.indiatimes.com",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRjJWT181WGs2UE15ZTMxYUdIS29jWkdxOEpFcUE3TDRoSFNtQU41WmpVbERGRjNvY3QzQ0hmYTZ2THNZMS1MVHlKcGsxZnVwTlNGRkxxQlBFcTlsdVQ0dTc4amgwZkNSS1cxMmRLanhoNDRzYzF6UmRZakpKSWxiT3ZvTzUtVk1SUE1WZE9WYmZKRFhVQXFfRUFQTXJMZzd6Zl9LS2I4OEJ5cHhxajVrc3lNblJDTS15dUNDV0tTZkxLR1lqajFrYV9Nam1yX084MkRwV2xQVlRBTGFk0gHiAUFVX3lxTE5DSDBDN0VUOThoR01xdlRTZllnaEtoMHlGR2FQeUc3VE03bGVNM2VxQVlybDZEZDFPbVBVOHhudU5YZ0tkVmFvYzhJYjNPOGdyckpOd0ROdDhaNXE5eTgwaERlSWJMX1VXeGRmUm16dHppTU9jYlpPYmpwVE8tSEtzdFdXVm85UnJUZ0cxcXJSb2FWREFXWVNNZ0xDUkE0TzV2MlFPSFNybHFZcDVwM0M2RC1meWJlelRVU0UyWk5fVHZQWklTUEFXWlpEN0sxeFl0MFYyaFRNek5sY3ItVS1vYmc?oc=5",
-      "source": "timesofindia.indiatimes.com",
-      "category": "States",
-      "published_at": "2026-08-25T18:52:00+00:00"
-    },
-    {
-      "id": "c84b7e4894c4d489b4670c5f",
-      "title": "News Section - Udayavani",
-      "description": "News Section &nbsp;&nbsp; Udayavani",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa2prdEhXTFJ0OWRoakVSNWxBa3FKbXpsQTdZRGRoa3M5eGlJU1VWZ1JQUW9BQUF6dlJPMF9obHc0RTVxUVhYV3AxelhfcFUtdVpUMWh5a05mUXh3SGlxbnNEako4ZEhhYnVsbzJiN3RoTEYxajhGVVhUUFJGbE9IcHJGdmlvRFBsb2lHYWk0ZWNxbGViOERXNmxTbjJHQ3B2MG1vMzNtZU9Nc0p6RkNyY0xfS3pUTnJE?oc=5",
-      "source": "Udayavani",
-      "category": "States",
-      "published_at": "2026-08-25T18:51:59+00:00"
-    },
-    {
-      "id": "01c699667976c4c5d01bd7d5",
-      "title": "West Bengal government launches special drive to bring over 22 lakh migrant workers under rural job scheme - Deccan Herald",
-      "description": "West Bengal government launches special drive to bring over 22 lakh migrant workers under rural job scheme &nbsp;&nbsp; Deccan Herald",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdDIyalAxT0tONmFTUnpBdmNxRTVDMzc3NmhPZkstS2xka1RSNFgxbU9oZGFacXo3Rnh3aERXcEY2ODVTaEJNNmFDWS1QNlBTZFYzaE9sMVY5ZWN0TFhqMHN6Zjc5cHB6REJzV0dObVk5cjNQc1pFZjVtX3JqNURPcEc5MXJjcktOWFBDRWdLaHdnLTdVQ1pqWGhPTjRJekpYRHdnT0FvczBFb05ydERzZG85NXhKblZMWjBnS19XNzkteXQ3U3FxV3VkN1pmVFRzcUhhd2p2SmFGU1FjSWdsWWdJV3V3RnlBN0FwVzNXNkJ1Y3c?oc=5",
-      "source": "Deccan Herald",
-      "category": "States",
-      "published_at": "2026-08-25T18:51:34+00:00"
     },
     {
       "id": "1f0a8671e6d1aedb45c4dbf5",
@@ -2529,24 +2799,6 @@
       "published_at": "2026-08-25T18:50:00+00:00"
     },
     {
-      "id": "0e0d3a64f741db4a12e81470",
-      "title": "‘Temporary accumulation’: Delhi PWD Minister says steps being taken to clear rainwater - The Hindu",
-      "description": "‘Temporary accumulation’: Delhi PWD Minister says steps being taken to clear rainwater &nbsp;&nbsp; The Hindu",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQV3FlTlJzazFDNjNPcVQwNWlPQ3ZhRExHZUNJNlRDUW1vdG5RT25HTjhWZUwtU282MHJyeU9NdmdGRG5RT01xSG1qZ1hTUzRTTHBIUFkxcjRISTljWkJKYTc2QXVKYzlucnpoTE1HcElReHRKcFZUSGJLOWNHbXlJZXU4Z3Nub19iNUdnVENYN2VkQ1J6YVZua3NFNWFQYURWaE9HaEdXeVIxcGU2dEp1TTNUWWF6QkxzLTVSbDFIMWhLUGhTLTFQaWZWRlhtWFQyZW1GY0EtVjNPS0dWMW1V0gHmAUFVX3lxTE0tQTUwNmFncDhpdUNRWkVsUUJmSm9WNlZSZHBpMzBXU043VURueW56S0tBbFpoNmRMVmdxY2hSRGJuckZwZUJkaFlycGUzNGJnWk42WmNzM0VpSk9HNWlwMkdlOV9LbEcybk42UEJCeUwydFJ0cFRkaEZNZEk4VzYtdFR2WGNPd2pQQ3VpY0xqbWtDQlotZURiNndQVVhTamtMay1lYWJ0QkxGdjFvQURvN0lpWHdHczV2VUFNZ0pFN0UwN2pHVkJQZGx2NkJJczhlbEdCM09MalUzT3k3VUsxbEtLRzdn?oc=5",
-      "source": "The Hindu",
-      "category": "States",
-      "published_at": "2026-08-25T18:49:59+00:00"
-    },
-    {
-      "id": "ad0e3d130f23851d98f9bc71",
-      "title": "Allahabad HC directs UP government to tackle water crisis in 88 Lucknow villages - Telangana Today",
-      "description": "Allahabad HC directs UP government to tackle water crisis in 88 Lucknow villages &nbsp;&nbsp; Telangana Today",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMWJ5RHoxM2VjeWFwSWdnWjRHNDB0cnRGemdFTzNJTkhnOUtZVVFZVl9keUtwNzFnb0tzTE1FazBBTlN6dFBuMDlmYW1xWFFpMnhPQlh2QUNWOGlWazJ3dW5NeWw3VktQd0Rqc1hUNkozT1FQYkd2SGdHQmczcGJGRklmSzd6eE9aSGdpT01nM3FrQWhEQzBqSHMwa2pweU5iYllGWWRhakgtVms?oc=5",
-      "source": "Telangana Today",
-      "category": "States",
-      "published_at": "2026-08-25T18:49:50+00:00"
-    },
-    {
       "id": "66660983f8afbecd22732846",
       "title": "Abbott receives FDA authorization for world's first dual glucose-ketone sensing technology for people with diabetes - PR Newswire",
       "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOYlFMdXJaVzBGSGF5MVdkX24yYWZkWE9xYmFTekJwbVRoUjFTNTVZams1eXZwbHp6dWV1TmFJMzV0SnVFZ0JxVHJWSTN5Q09NWklVYTdHWkVoR1U5ano5cG54Z2ZkUDdqeDF3bkhNUkstcDJWU0dWV1pHR3h0OTJfaHVhdTA1ZDdyY0M3NXBVSHBmUGxRVF9nWFowVWNVdFJxUXdzQ3J1MGQ1Q194Q2hNQ1V2M3c1ekd3RjFLS1pwN2FaajQza0lZOWZBN1JxbE9LQ0ttanpSM3dRdFZnTkVxekZhRUh4alByNkxIbHJNY0tCUHFGNWk3VzY4YmFLaVE?oc=5",
@@ -2573,15 +2825,6 @@
       "published_at": "2026-08-25T18:48:56+00:00"
     },
     {
-      "id": "4651faa498c67cde92463a0d",
-      "title": "Chouhan launches Mission Samriddh Gaon, pilot projects to begin in two MP blocks | Hindustan Times - Hindustan Times",
-      "description": "Chouhan launches Mission Samriddh Gaon, pilot projects to begin in two MP blocks | Hindustan Times &nbsp;&nbsp; Hindustan Times",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcnlOc3Roc0ptcWdYM0pia1JXRFVsaDdwSER6MHRUdk4xMkl4SjRNcS1xY29NSTdBamhBSk5FYVhTSHgwT3R2ZVNWX014WmxPbHB0cUZDc3k3ckdVYzZSQjkxQVdKTkpfbGw4bEVVVUdwRzJodXd4Y3J2Z0w0Y1d5bHk0ZGFUb29idXEwWUlaT0FSejA3QWhiN2xsRUxoN1JZVk5CYWFCSlZsT3ZQcmJPVll5ZGRxY0xLN3NtTkFTYUtkbWNWVDRYZDRoQnBxYzVWbThLelR2UDZIZHpBdzhHOTlhSlXSAeoBQVVfeXFMTVdTWEdkT01KZVZkZXRFVXlHaFY5M29CeHoweEhUM0p5aHNIZnZESTdoaHJDMzJuUXlGSFlobk5GMW5pcXlsek01SGpyM2xpQTUwQnVWUk5KbHBQdGxVMVdLNy1McW5LVHRTbnphMjAtVjZCZmozLXBwcEdpS3pVMHFjTG9xVnJiamRJMDAyd29MbnA1NkRwS3QzYkpuNDczWXpienJtUkxnNm83ZUp2RG1ZTzlxOUhjMXhMQTVzamN3MFR6dVNKQWE0bjYzRllIOG4zNVJTb19seDhvS3lMN1R0NjZ4RXF1ajhn?oc=5",
-      "source": "Hindustan Times",
-      "category": "States",
-      "published_at": "2026-08-25T18:48:20+00:00"
-    },
-    {
       "id": "faa9db48cbbb8d00e3368094",
       "title": "Dallas activists travel to Big Bend region to protest border wall construction - CBS News",
       "description": "Dallas activists travel to Big Bend region to protest border wall construction &nbsp;&nbsp; CBS News",
@@ -2589,33 +2832,6 @@
       "source": "CBS News",
       "category": "Lifestyle",
       "published_at": "2026-08-25T18:48:00+00:00"
-    },
-    {
-      "id": "027bd5c9730366f86d8320ff",
-      "title": "Odisha flood situation remains grim, over 1 lakh people affected - Deccan Herald",
-      "description": "Odisha flood situation remains grim, over 1 lakh people affected &nbsp;&nbsp; Deccan Herald",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdnNDMzlUNjNNbjFTZnhsSlA4MXdJVzBYZmloZ0tidzY4bmY0Qm1Ga0Y2UjZvdG4yaWROV3dpczJDQUtzM2tfTkptR05GaXExbHRGcXdLZFNrWTZTMUFvS0dPczBVZzlmN0RpaDVmOGJ0RkhvQnJEN1h2QXlYS1lMWTNvLVI0NmRkMzJjZmxhUmcxZWR0R2U1UE1aQkJYeHF3M1dMSGhlMlAya2gza0ZoVzBTbw?oc=5",
-      "source": "Deccan Herald",
-      "category": "States",
-      "published_at": "2026-08-25T18:47:13+00:00"
-    },
-    {
-      "id": "0adc0d79661b29b50c336e55",
-      "title": "As AI data centers expand, new cooling chemicals raise PFAS concerns - WRAL",
-      "description": "As AI data centers expand, new cooling chemicals raise PFAS concerns &nbsp;&nbsp; WRAL",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVDJ4XzE4UUE5SFdnVDdyTGtyZk83aFNsVHlySS1uME9abVc4YkpDekhDenpHdk9WWXkyd1NkRFpYeDJqVXVud2NyWUQ5V1pJWjE4cDNLVkwyTjBlTXNLVDh1eEVKSTdCRDBhUDZ3SlZXMTVOZzdBVEROVzVUQkswSldIZ3lrQkVpOU1fMGNYdTI5N1ViWW9MempudEFsVklJRFdYY0FYXzg3Mm5wdkNOaUJR?oc=5",
-      "source": "WRAL",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:46:59+00:00"
-    },
-    {
-      "id": "8def169765b789fa4330b250",
-      "title": "Madhya Pradesh Forest Department To Launch Snake-Catcher App Soon - NDTV",
-      "description": "Madhya Pradesh Forest Department To Launch Snake-Catcher App Soon &nbsp;&nbsp; NDTV",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWF82U212alJpVEZMMVdhRVZZcUFfQlNTbmFFdnJXd0ZnazJXMkNBbFJ3UHd1akM1bTdCR3YtV0JHTTBlT2hVTFRFNlF0UWhCWVZDelJhdVZrYkxndXp5bmdzandEZXR3U01IMjkydE9kZmp2WGpHeG5iaXdxTkhCeGZoS0h1Wk9XRVlUOXloZUlremhYMUhXOUI1UVNxc0NPMjRpeHM4Q0pnZ9IBsgFBVV95cUxPX05uQzdSQVZSLXdoMG4xNDVDRG5oM1FkNGI5dWczQV9PWTJzckhRak5RSUJBTnRob3hOeDU5REZoUzRwZ29DXzBYN1FtSWVIdVgzTVBKYWhDMEs2Q2lNaWlOSnN2cHlOaGMzZmZoMHRfenBpc1JIU1lQWnoxUjc4MHJ0akRHZHFZUThpSXF3Tl9NNFpBM0xRZ2ptVTY3N0RNdEN2eFNjMm13VlpyYklmbURB?oc=5",
-      "source": "NDTV",
-      "category": "States",
-      "published_at": "2026-08-25T18:46:36+00:00"
     },
     {
       "id": "18b3a908f413a6f6d97621b0",
@@ -2627,41 +2843,6 @@
       "published_at": "2026-08-25T18:45:02+00:00"
     },
     {
-      "id": "3a5aba2f40f13b9566e1a0ad",
-      "title": "Gujarat home minister Harsh Sanghavi, ministers meet RSS leaders in Ahmedabad - The Times of India",
-      "description": "Gujarat home minister Harsh Sanghavi, ministers meet RSS leaders in Ahmedabad &nbsp;&nbsp; The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeFNOaHkyQzhXM08ya1ZvQkFVZFpOTDBEQWd5T2JsRkhiTjJpMlRGMFhmSnh5dUNycWg3X1RUYXRJWUlYTVdDV1dURFFXMTBQZTVtV3JJVmpnS2JJTXpzZ3lJR2otcndrZXpYeEVwMW1HR3BreGRHSEtLTTNnVU1lYURMRUFnMWpZeGxuTTRQUDZMNjBmdE9Gb0toMGI3R0J1Vkh6czlKSU1KRWNGaGtrSl82c0djeW4tV0l0R2pJOE9XaHNndUM4NWlHRXlobG1xY0R2bV9fa3M2enV1OU54eHZHdFNzNlpf0gHuAUFVX3lxTE9maWVocEF2bHB3Yks2UjVfa0pBQkwwMEhabUFNYmFfWWY3WnlvdjJzUXdSX0NFRWtpRGwwQXBJUmIyTi1EQjNJWXhURmplOXJEZGlVWC1DbGJUT1RYWlpwcmdTRlNFSXlna3NIZWVjcFlvZU5RZzNrU0NwUHI4ZVFoUDhaaTl3cTQ1Rml1VXVtV09SUEFyWmhaNnJvT3liMXdpeHVsTU9SajdDOHpkbzM5bUphVEdhUVJCZVB2TGZxQ01nV3FBWE5oN09XeHFIdWcxTjhBaVRwNU44ay10blJKUkE5QktuTmRMWDlDQVE?oc=5",
-      "source": "The Times of India",
-      "category": "States",
-      "published_at": "2026-08-25T18:45:00+00:00"
-    },
-    {
-      "id": "4381411f674cebcc214e2e6a",
-      "title": "Gujarat home minister Harsh Sanghavi, ministers meet RSS leaders in Ahmedabad - timesofindia.indiatimes.com",
-      "description": "Gujarat home minister Harsh Sanghavi, ministers meet RSS leaders in Ahmedabad &nbsp;&nbsp; timesofindia.indiatimes.com",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeFNOaHkyQzhXM08ya1ZvQkFVZFpOTDBEQWd5T2JsRkhiTjJpMlRGMFhmSnh5dUNycWg3X1RUYXRJWUlYTVdDV1dURFFXMTBQZTVtV3JJVmpnS2JJTXpzZ3lJR2otcndrZXpYeEVwMW1HR3BreGRHSEtLTTNnVU1lYURMRUFnMWpZeGxuTTRQUDZMNjBmdE9Gb0toMGI3R0J1Vkh6czlKSU1KRWNGaGtrSl82c0djeW4tV0l0R2pJOE9XaHNndUM4NWlHRXlobG1xY0R2bV9fa3M2enV1OU54eHZHdFNzNlpf0gHuAUFVX3lxTE9maWVocEF2bHB3Yks2UjVfa0pBQkwwMEhabUFNYmFfWWY3WnlvdjJzUXdSX0NFRWtpRGwwQXBJUmIyTi1EQjNJWXhURmplOXJEZGlVWC1DbGJUT1RYWlpwcmdTRlNFSXlna3NIZWVjcFlvZU5RZzNrU0NwUHI4ZVFoUDhaaTl3cTQ1Rml1VXVtV09SUEFyWmhaNnJvT3liMXdpeHVsTU9SajdDOHpkbzM5bUphVEdhUVJCZVB2TGZxQ01nV3FBWE5oN09XeHFIdWcxTjhBaVRwNU44ay10blJKUkE5QktuTmRMWDlDQVE?oc=5",
-      "source": "timesofindia.indiatimes.com",
-      "category": "States",
-      "published_at": "2026-08-25T18:45:00+00:00"
-    },
-    {
-      "id": "0840d7825bc4418a3dffa500",
-      "title": "When technology becomes easy to rent, what still separates life and annuity carriers? - InsuranceNewsNet",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWXZsZHBvYno5OFNRMUJ6T3ZxME53VF9HYjFKbE1UWER5MEZYYVRYak9rWWlwNEhrdnhqVHRLSTRyREZjVmIyd09ORVdfblhIaGRHX1dMcUN0eTJwSlJPTC1ULUtadUJGRzhJbFltbUUxZ1Nyb3FUSXRiSWtGdnBjVHBxMVlMS1ZiTW5wMTljdEx6M1VCZ19ON3F4WjhIekMzejE3dDl4ejVuM05jeEY1VVNVVzJLQ2ZlVXFMTWY2S3o?oc=5",
-      "description": "When technology becomes easy to rent, what still separates life and annuity carriers? InsuranceNewsNet",
-      "source": "Google News - Technology",
-      "website": "",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "author": "",
-      "published_at": "2026-08-25T18:44:06+00:00",
-      "fetched_at": "2026-08-25T19:06:34.048380+00:00",
-      "guid": "CBMiwAFBVV95cUxNWXZsZHBvYno5OFNRMUJ6T3ZxME53VF9HYjFKbE1UWER5MEZYYVRYak9rWWlwNEhrdnhqVHRLSTRyREZjVmIyd09ORVdfblhIaGRHX1dMcUN0eTJwSlJPTC1ULUtadUJGRzhJbFltbUUxZ1Nyb3FUSXRiSWtGdnBjVHBxMVlMS1ZiTW5wMTljdEx6M1VCZ19ON3F4WjhIekMzejE3dDl4ejVuM05jeEY1VVNVVzJLQ2ZlVXFMTWY2S3o"
-    },
-    {
       "id": "c078f7e9f7e2ff21579f01a2",
       "title": "Robinhood Markets climbs 8%, resuming a rally from late last week (HOOD:NASDAQ) - Seeking Alpha",
       "description": "Robinhood Markets climbs 8%, resuming a rally from late last week (HOOD:NASDAQ) &nbsp;&nbsp; Seeking Alpha",
@@ -2669,50 +2850,6 @@
       "source": "Seeking Alpha",
       "category": "Business",
       "published_at": "2026-08-25T18:43:50+00:00"
-    },
-    {
-      "id": "1d256a5b609de5c556bd99e6",
-      "title": "Man Detained For Throwing Stones At Vande Bharat. UP Governor Was On Board - NDTV",
-      "description": "Man Detained For Throwing Stones At Vande Bharat. UP Governor Was On Board &nbsp;&nbsp; NDTV",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSjhpTU9mOER6VmJkUUJsa050R25MY09scDlkenNHR1lCR3FBQ2VKempDMkJ4bzlVLTBxNnNzYjNvRUhfTzRkaWMyNk45eWVyRUwwUjcwVkNFWVNIY2hVRW9fQlVNcDlqREJoeHFDaDVVUFMxak9QUFJsWUlXRHEzTzdvamZkVTFqV3RKN045VHl2M096ZE5BSlZPcWdnN24yWllWbzhHanFfcG82REFYUC0wY2PSAbwBQVVfeXFMTmd4MDNxMDNPOGlWN0VPdkQwTHExNm9nUFV4dy0wemR5NTdBd21PYWtJdHpLLVJuS0g2Y21HRElYQjJLbVFpLTY3NHBhbVFxSmpVdEQ1Z0hhdzFEdGdXTFM3TzNJY0IwMWY2bkZ5c2Z5UnN2N1MwdGRUc2tFT3JyaTZrYTFJQW5zc3c0Zkh4NlNBZ0EtM2E2blFRYThHbDZvNHRFQm9qQ3ZlYXg2TEVKU2EzRjBwU2pOdlJabVc?oc=5",
-      "source": "NDTV",
-      "category": "States",
-      "published_at": "2026-08-25T18:43:39+00:00"
-    },
-    {
-      "id": "22269be6855151cc6043db76",
-      "title": "As AI Gets Smarter, Being Human Matters More - Psychology Today",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWVA2Nm94eVlfZW5Sa2dWOW5DRzhKUVVLbUozUWhOazlZN3Z1enI2NU9ndzJmYVlSTEFwdEZLOUp4QUxFZ2plWW9tYzJlS3dVYVhULUFqaDZFZl9XYTYyYkRjVjlWODJWQmU1bnhEX2VHZ1V4eUJKblg1ejR0WEN0YS1jZ09PTFRLWGRGT1BBSGRkNzd4bkNyTjFEbVpmb1c1V3J4ZHlmRk1DTDA5N00zWmVNdlMweFRFXzJCb0lWU01YZw?oc=5",
-      "description": "As AI Gets Smarter, Being Human Matters More Psychology Today",
-      "source": "Google News - AI",
-      "website": "",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "author": "",
-      "published_at": "2026-08-25T18:43:12+00:00",
-      "fetched_at": "2026-08-25T19:06:34.597000+00:00",
-      "guid": "CBMiwgFBVV95cUxQWVA2Nm94eVlfZW5Sa2dWOW5DRzhKUVVLbUozUWhOazlZN3Z1enI2NU9ndzJmYVlSTEFwdEZLOUp4QUxFZ2plWW9tYzJlS3dVYVhULUFqaDZFZl9XYTYyYkRjVjlWODJWQmU1bnhEX2VHZ1V4eUJKblg1ejR0WEN0YS1jZ09PTFRLWGRGT1BBSGRkNzd4bkNyTjFEbVpmb1c1V3J4ZHlmRk1DTDA5N00zWmVNdlMweFRFXzJCb0lWU01YZw"
-    },
-    {
-      "id": "a1b9dcf43f14331bb0bccbe7",
-      "title": "CoreWeave (CRWV) Lands Multi Year AI Cloud Deal With A Trading Firm - simplywall.st",
-      "description": "CoreWeave (CRWV) Lands Multi Year AI Cloud Deal With A Trading Firm &nbsp;&nbsp; simplywall.st",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNS2F4UkJ4ckN0R1FieDhsQUhoY2hPWkowMDhTSkRIdExRRHdScjljRldyYTRLOHVBU0xUWGJoX0dCVTUybTlTenhObDItSktCaVVrcnRJeU41Y042QzlSMjhQODYwalBraHFCTWlNZnFjcFQtWXFfc0k3VXd3QkN6YkI1eE9Wd2RiSGlvdEY3R0N2MmxHazlMVHBoY2dGNGhmdW9GUjBVTF9qUVlPMUtsb0ozSTVuV1RSc0hUeGpJMHNfUHZzVlo40gHMAUFVX3lxTE5abkFNQkZmMUpwdEtCUTdzcVF0YVptNGJ6SlN2VXhxNkVSOGVvbUE5bmF0VVBLS21zRUF0VkNIMWlXSEFEMTlzVFN0N3A3S2RZMEQzcGtFN0FxTmRVYkdNcWhKd29Vd1RsN2dCTzhtSU1OaHA5aXhQMFVnaU14R2xVR1h6NFlrTlotQjYtZE1meUwyTFRkUldCaGtHSWRfVjM3N0hUdENfbG9BUlBWZmlqX1owa1k5OVAtdTZQSWZMRUU1TTd4Rlpuc3NuVA?oc=5",
-      "source": "simplywall.st",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:42:58+00:00"
-    },
-    {
-      "id": "cee87204a73fcf64eae868cf",
-      "title": "Apple (AAPL) Stock Looks Fully Priced After New AI Push - simplywall.st",
-      "description": "Apple (AAPL) Stock Looks Fully Priced After New AI Push &nbsp;&nbsp; simplywall.st",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUlVLVWd5SU5BS0FZemY2SjZlSzh5VEZFcGVpN1NlZ2drVjItaXVfYVo0Z0lpamZ1c0JsSkstd3JwUVZrZC1MRjRjMDN4QnJfaDdZXzh1MnVjQzEta3hJVTd3clh3eXdYamdqVTk2alI3UFAtNmVlVEUxdGVTR3J6cTRCUkc4UHRQM3h3dkxiWjVMSnpPbDFBQzhiMndSbW5kWXZXY1ZWVEI1aHlaQVpCSUNHZ9IBuAFBVV95cUxPWE81eDlXMW5mbVJZY3dpekNaSEdVcEh4M1EySFNXaDRMb3AtSDFLajZmRm9zRjlTVGotTklsLS1SUUdNR19JeFg1WUlVbm9oNW9IOHNGb3VsYkl5T1VJdVpoRl8tXzN6WWV4R3QxYXF2ZHdhNDZaVWJlX1FlXzVPeDIzWUpsWUNxNTQ3RG1aWDBic1NKLXU0dVFNSGNUMXF1V3V3SW1RLTJBbWZCdmRlZzBFZmQ2U2Yt?oc=5",
-      "source": "simplywall.st",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:42:58+00:00"
     },
     {
       "id": "43bc5fa6ef966b8c170d6cb7",
@@ -2733,93 +2870,6 @@
       "published_at": "2026-08-25T18:42:00+00:00"
     },
     {
-      "id": "2995e298e7be717402cbe8cd",
-      "title": "Beyond Bengaluru: How Tier 2 and Tier 3 Cities Are Driving India’s Next Startup Wave - TheTechPanda",
-      "description": "Beyond Bengaluru: How Tier 2 and Tier 3 Cities Are Driving India’s Next Startup Wave &nbsp;&nbsp; TheTechPanda",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQkVXUXBEaEc5SEZBMjVKX08wUGpFRkNRME9vTkd1WDEtMFpTU1BHTUFTbW9IUi1raGthR1kxY0ZxcDl3RzNqZnNLeEY5c2Q1NEdWOXY3QVkxRWtKcVhVSnExd1EzcHE2LUMxcmdxeWNaQ25iNGpJX1c2MVcxYzBFWmRrWkt0MDR3ZHhRcEFqclVxTi10UEZ4T2hNYWxWeXJENGpiOVVRTkFLVE1TYjRqMlpQRjE?oc=5",
-      "source": "TheTechPanda",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:41:50+00:00"
-    },
-    {
-      "id": "59f08aa00d84270a8780d07d",
-      "title": "TN Pushes AI, Digital Governance And High-Speed Connectivity - Deccan Chronicle",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWXdsa3BFZmM3VWYzNmVjT3h4N2MwOXdxbDhDSUFjZmV2V0ZTcG51NFR6SzFBZEwyc29jSEtYUmZaYzhVakw1enludUFyUjk0NldQaWl0Nmhoem02NEZDRkVmaWVibGdlaThFenFfRFFtMkFFMWdZVmxQRTBBQjhwZ3puME80Y1RMbDdHd1lXLVRDYmttRno4bkJTd3Z1UjF5TjN4TzZDQm9BcW9wTE1zeDUtNG9Qd3FLRW9VQTZVVW52dlBn0gHKAUFVX3lxTE43LWxBSmxuOFVHcVBQLW1NQjdjOEEwcVBPOG5PRUFLNF91U2hDUVpjYlkybmthUGhJWnVPTHZpSGsxVnB0eDJEZ3ViQmw1d1lFUVNkbTFHVFRBMHJKTVptM2pzbl9lZ1c2MXV1UGNhNDRYV2ZwY0NBY1FHRkZZUUtsTXlvOEwzTWZSOU9wWVY0bG8tYUQ0ejBwRVR6WkM3Y2tvYXBiQ1VDdFBqd0FqYWp4ZXN6VFBaVEl5ZjR6V2hPM041UXk5VHYtX1E?oc=5",
-      "description": "TN Pushes AI, Digital Governance And High-Speed Connectivity Deccan Chronicle",
-      "source": "Google News - AI",
-      "website": "",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "author": "",
-      "published_at": "2026-08-25T18:41:40+00:00",
-      "fetched_at": "2026-08-25T19:06:34.595498+00:00",
-      "guid": "CBMixAFBVV95cUxPWXdsa3BFZmM3VWYzNmVjT3h4N2MwOXdxbDhDSUFjZmV2V0ZTcG51NFR6SzFBZEwyc29jSEtYUmZaYzhVakw1enludUFyUjk0NldQaWl0Nmhoem02NEZDRkVmaWVibGdlaThFenFfRFFtMkFFMWdZVmxQRTBBQjhwZ3puME80Y1RMbDdHd1lXLVRDYmttRno4bkJTd3Z1UjF5TjN4TzZDQm9BcW9wTE1zeDUtNG9Qd3FLRW9VQTZVVW52dlBn0gHKAUFVX3lxTE43LWxBSmxuOFVHcVBQLW1NQjdjOEEwcVBPOG5PRUFLNF91U2hDUVpjYlkybmthUGhJWnVPTHZpSGsxVnB0eDJEZ3ViQmw1d1lFUVNkbTFHVFRBMHJKTVptM2pzbl9lZ1c2MXV1UGNhNDRYV2ZwY0NBY1FHRkZZUUtsTXlvOEwzTWZSOU9wWVY0bG8tYUQ0ejBwRVR6WkM3Y2tvYXBiQ1VDdFBqd0FqYWp4ZXN6VFBaVEl5ZjR6V2hPM041UXk5VHYtX1E"
-    },
-    {
-      "id": "e4cd568e2071e76bd483f11d",
-      "title": "Jensen Huang Said Nvidia's $30 Billion OpenAI Investment Might Be the Last. Nvidia Just Guaranteed Up to $105 Billion of OpenAI's Leases. - Yahoo Finance",
-      "description": "Jensen Huang Said Nvidia's $30 Billion OpenAI Investment Might Be the Last. Nvidia Just Guaranteed Up to $105 Billion of OpenAI's Leases. &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYWdRbktSVnJBS0xSemZucjVLaldRWkMyMi05aG1RUmJxelJMdXhBdml2NjFZaV9TeXRtRUtkN3lEanprcDJsS2ZkN08zak03RTZpRnhRUXFqSGw1MXV4dzZHclZ0Ri12cUozNUlkVk9Xc2pHRDlTNzVTOGtYWEtZUkh6cGZnaU4xT0M4blhhSk5RMU5FNm5Z?oc=5",
-      "source": "Yahoo Finance",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:41:01+00:00"
-    },
-    {
-      "id": "ccbf826fe4281a5d29354481",
-      "title": "Future Kids and AI - Rising Kashmir",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45UmtNa2d3TkFjc25QeVk3QXAxRVdSYVl2M2lPLTlLQW5JeVpSMlhCdWR5dHZJSFZENC1KbmhmYjR5WHktZ1ZwNE1NWU1kQzh3bG1GX1FZN2ZWU21DLVdUTWZzTXlNaVlYU3VOVVJpV2c?oc=5",
-      "description": "Future Kids and AI Rising Kashmir",
-      "source": "Google News - AI",
-      "website": "",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "author": "",
-      "published_at": "2026-08-25T18:40:23+00:00",
-      "fetched_at": "2026-08-25T19:06:34.595060+00:00",
-      "guid": "CBMicEFVX3lxTE45UmtNa2d3TkFjc25QeVk3QXAxRVdSYVl2M2lPLTlLQW5JeVpSMlhCdWR5dHZJSFZENC1KbmhmYjR5WHktZ1ZwNE1NWU1kQzh3bG1GX1FZN2ZWU21DLVdUTWZzTXlNaVlYU3VOVVJpV2c"
-    },
-    {
-      "id": "232bfc917fa50e39b131fa47",
-      "title": "Mission-Critical Results: IMTS 2026 Attraction Showcases Technologies That Strengthen U.S. Industrial Base - Robotics Tomorrow",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaldqaDB1amc4UVZ2aVU3WllFaU1lMmNhdUI1Qnc3RVFKY2pDbC1fRWlqa29XVHF6bnFpc282cXJXZ0U5OHBOeE1YYm5MVnJPSEJHWTVvSFpGS0xNVnQwYnVLRDVSazZZMjV2SWR0T0gtWXRhZFhBNDNFMG9TQ2ZVQnpmaDgtVUtYWTVoTXdWNk5XOWpEWjAyZEphNFo5blFiZVlScFhIR3d2bjJYdmtpM1k1VjdSanYzRFVrMy1mUXRMVnBWTmktcEVRRjFLS0cyZVdUOHFiUEJCUXp3bkJkeVd0NDNKa1NZQWVqeXJvdTA?oc=5",
-      "description": "Mission-Critical Results: IMTS 2026 Attraction Showcases Technologies That Strengthen U.S. Industrial Base Robotics Tomorrow",
-      "source": "Google News - Technology",
-      "website": "",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "author": "",
-      "published_at": "2026-08-25T18:39:30+00:00",
-      "fetched_at": "2026-08-25T19:06:34.047950+00:00",
-      "guid": "CBMi8AFBVV95cUxPaldqaDB1amc4UVZ2aVU3WllFaU1lMmNhdUI1Qnc3RVFKY2pDbC1fRWlqa29XVHF6bnFpc282cXJXZ0U5OHBOeE1YYm5MVnJPSEJHWTVvSFpGS0xNVnQwYnVLRDVSazZZMjV2SWR0T0gtWXRhZFhBNDNFMG9TQ2ZVQnpmaDgtVUtYWTVoTXdWNk5XOWpEWjAyZEphNFo5blFiZVlScFhIR3d2bjJYdmtpM1k1VjdSanYzRFVrMy1mUXRMVnBWTmktcEVRRjFLS0cyZVdUOHFiUEJCUXp3bkJkeVd0NDNKa1NZQWVqeXJvdTA"
-    },
-    {
-      "id": "579c54b763f306dc71609193",
-      "title": "I'm an Amazon SVP who hadn't coded in 25 years. Then I wrote 100,000 lines of code with AI. - About Amazon",
-      "description": "I'm an Amazon SVP who hadn't coded in 25 years. Then I wrote 100,000 lines of code with AI. &nbsp;&nbsp; About Amazon",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNHV3eXR4YWFwdm5BSjR5aHNiTXRfbnl1TDV3SVZkMG5DajB4enM2VFNURUtUbGdST3U1emhscGpsQ2JFNUxwd0c3Q3BmRnFRdFpCQktPYi04bEJ0NTVITnFmY0lac0ZXRHJyeHNBSGRCcjg1dS1PM0UyU01XOE83bUx3ZnJxbE0?oc=5",
-      "source": "About Amazon",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:38:52+00:00"
-    },
-    {
-      "id": "43ec0e9b92f82783bd7aaee4",
-      "title": "Democratizing the AI data center: How Cisco and Nvidia are bringing rack-scale power to the enterprise - SiliconANGLE",
-      "description": "Democratizing the AI data center: How Cisco and Nvidia are bringing rack-scale power to the enterprise &nbsp;&nbsp; SiliconANGLE",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUHM2V0JwM2JYS2V0UjNzYnp6OU5YUUQ3TDZ3ZWl1bGNob29XNWhhcUFVUTZyc2kwZUkyUXpXdFFoR2JsWXE3bkw4alctY1p2VFEzSlNRZXJBMGc2X2lmMTh4U1V3dGx3UzRSNWxzY2FYQmVNZllGT0tNcDdIajNzOVQ5UlVtZk1UWXY1eWk5Ny1fQkEzS1M5eXo0c0o0VnBSN3BnRU1RNks0WDh1YmFBazBxUVQxd0VpeUZlZ0ZJNVdnTHBLTzFUTE10YUlfYkZjS3J6ZA?oc=5",
-      "source": "SiliconANGLE",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:38:00+00:00"
-    },
-    {
       "id": "a5235fd0714ee0351f42d0cf",
       "title": "Hydel project shutdown triggers power crisis in J&K - The Times of India",
       "description": "Hydel project shutdown triggers power crisis in J&K &nbsp;&nbsp; The Times of India",
@@ -2836,15 +2886,6 @@
       "source": "timesofindia.indiatimes.com",
       "category": "India",
       "published_at": "2026-08-25T18:37:00+00:00"
-    },
-    {
-      "id": "8eeb0b1da70105064bede9b4",
-      "title": "Photonics ETFs: The Next Big AI Infrastructure Opportunity? - TradingView",
-      "description": "Photonics ETFs: The Next Big AI Infrastructure Opportunity? &nbsp;&nbsp; TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQTByNUtkUnBOelRGVU1lSGRXNjZ5MGU3eF9GUVF6RmhGYk1xMm03SGRtYjdPSS1nS25YMzB5U3ZuLXE0bnhVYjVuWkRxTGx2c3lYbU90c1FXSGl6R0pmSEFmNjZ6RURybm44cFFxMWt6UGJ3MnFYVW5QS0U3cGVWSWtRbEoyWXBJbjlGUlhvQUpSTlp1aDFEc21kS18tOGRMN2dzYUd2aUJRSWt6cnZaVUY4MA?oc=5",
-      "source": "TradingView",
-      "category": "Tech & AI",
-      "published_at": "2026-08-25T18:36:00+00:00"
     },
     {
       "id": "a459f0bc948619ab377a2109",
@@ -2881,6 +2922,15 @@
       "source": "The Times of India",
       "category": "India",
       "published_at": "2026-08-25T18:33:00+00:00"
+    },
+    {
+      "id": "306bece8d7fe67a7c4d5f72a",
+      "title": "Grip strength, gait may soon measure biological lifespan, says Dr Prateek Sharma - The Economic Times",
+      "description": "Grip strength, gait may soon measure biological lifespan, says Dr Prateek Sharma &nbsp;&nbsp; The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQaUEzWG0yR2FidUN2UTZyV3dseGNzT1dzUm9xUV9sNW5WSENMWmpPaFNEbzVvM2UzSEprQkQwbmtfZWhHc3V4XzFxeDJBZHR1cmIxT1pCa1ZjbnE2TzFPOFRad0NERzZpMm1zRjJpRU9yTkZwbEpRUDdMZmtoU201MlhIdENmdDVfc1pRSVdvWVNMYTNFRElwWmVtWkc2akIwWnZPWHp4aGgza3RSbGE4OFRIYkJoeFp1Q281bUhVbzljeGdYbXBkVDNXSXMtUmlVNE5yVkZjYi16d3ZyTzA3QW1VWW9YUE5QS3gtbFB2QVl6dGpuZGRxT29LTlRla1dH0gGGAkFVX3lxTFB5V2lZZnlVVTVsZGJTVWs1QUZqM2Y1UWxiYkcyYU9pMG9vbk1VQVhwTkFhR0haVmRPclhhTVRFUm1oUzBma1dBbTlCaURBWHpMSGtOTGx3MS1ndm55V1hRNER2dWozRGRNaWppYVh3TktKcnpBN2NzS2hiOTZwZXRpc0hfdzlzMnloLVFZZWJzaS1XUnNuWlltT1NsY3VpczNDRWNJYzlfR3dxSDk2eHduZGlGd2hpaE1qRF9jaFU5SHREM3ZPWF83bVdubnJjc2FnaUNkLXhVaXdqN0JuS0dMUjFISzh3REV0SjBRRm1aZGVpOUx0M28yaTd2Y2JhVTRpMUNWV0E?oc=5",
+      "source": "The Economic Times",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T18:31:05+00:00"
     },
     {
       "id": "39241c973107661501ce5b1b",
@@ -2955,6 +3005,24 @@
       "published_at": "2026-08-25T18:28:17+00:00"
     },
     {
+      "id": "5a320bad53fdd74acd9ca7fe",
+      "title": "Software stocks get an earnings gut check after hot summer rally - Moneycontrol.com",
+      "description": "Software stocks get an earnings gut check after hot summer rally &nbsp;&nbsp; Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYnM2SmpuYmtoVWFIeWJITEZQWnQwcFlwWmtyOEZjUHk0QWxlekVMU1Q0dmhWSlNkeU50MWMtS0RHb3cxZC1jMDY2Q2lFWGxQY25ISTVKSXEzOFV4ZG5JVHZoM2dPazZyTGdTRUIyd2pfUVVTdjNYWFJlTnZHQVRnTUU2UmhVYjhSQ0F4eWpBeGlMXzNadlZzcmV6U0MyQ3VoS29UMU9BSGtoZ0tNYWxmU2NmQnRXSzBvckpEdlAwWW4yOGFtZF9zV9IBzgFBVV95cUxQWUhmWXJJcGJDejlhWVFJYVR2YlUyWDY4RGhJVFdMUnZ3bnRrX0d2Ums4MUdOS3Q0TGZlSkRzbTFzN1lBaDJXaEMwdnU5T0JWZmhEQ0MtOEwwTHhUZUx4SWJ5VEhPMzIwUEMwaFoyQ0Znb3c2VDRQQ2R2LVVGUEpGbndURjRsVnpFR1FFR0ZfUFBtbUNtMjhEZDBKWndORjhHWEhTY0dfWXoxYkdmV1BNLTJidXNlMWIzbmV1S0xkSnQ5Z0o3S3U0cWV4REhVZw?oc=5",
+      "source": "Moneycontrol.com",
+      "category": "Business",
+      "published_at": "2026-08-25T18:27:48+00:00"
+    },
+    {
+      "id": "e7e250163f826c521f0da19c",
+      "title": "Culture change may help firefighters reduce cancer risk - University of California, Riverside",
+      "description": "Culture change may help firefighters reduce cancer risk &nbsp;&nbsp; University of California, Riverside",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVmlYb2JoOHdQQ09NTHdYbW44YlExTFFkZEdpU2h5VTN1dThoTTJSeUFYd0M4cHVTbXotQmxZWWYzUGxfQlpIRUp1NEJwQllYMnVwMU85S1FaLTN2ZWZjZ0gyLUVQOE9oMWNJbFNzd0NLM0JwLUEzWS1vUDl3aFJDNTZlejlhT1JPMjVSWkI3MElXMmJaMGExUk0zajA?oc=5",
+      "source": "University of California, Riverside",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T18:26:41+00:00"
+    },
+    {
       "id": "acc093521cc79bb82658aaf1",
       "title": "Japan and India discuss collaboration in health & medical device fields | Akashvani News - News On AIR",
       "description": "Japan and India discuss collaboration in health & medical device fields | Akashvani News &nbsp;&nbsp; News On AIR",
@@ -2964,6 +3032,15 @@
       "published_at": "2026-08-25T18:25:28+00:00"
     },
     {
+      "id": "455c3e5593b531c256e60df6",
+      "title": "India is not 'Dharamshala', aim is to make the country infiltrator-free in short span of time: Amit Shah - ANI News",
+      "description": "India is not 'Dharamshala', aim is to make the country infiltrator-free in short span of time: Amit Shah &nbsp;&nbsp; ANI News",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNQkx3ZjByOWZrR1RnZU5lZWF4LW9xUHRMUDhiWTBNVVp2eTd4emJkdnVFOFJnTnJfeWxCdEFoT0FGTUxxSmRSVW9SWFBMWjVTYVlqTm8wY245WkF3ZHRLeTducUVtYzVOTHhUOUwzZmZsa2ZUeGVDWmFNTWhXNHh5OXdveDdzcEZCbzdmV19fU1prSURwbnljc2U0RXVLcW5temJiSFUyLWdGOWRFN2hFVVA4TWNycVNneE0xRXBlcHM4TFR0SEZjOTZVejllLVhkUVZUeTZ6WFcydXpTYUdzRnJHT3RtQWMwTjZWZjZpbFNmV3RyM3h3?oc=5",
+      "source": "ANI News",
+      "category": "India",
+      "published_at": "2026-08-25T18:25:00+00:00"
+    },
+    {
       "id": "14aa012f7ce9d3465d8529ec",
       "title": "MRK, RPRX Stocks Hit 52-Week Highs – What Drove Today’s Gains? - Yahoo Finance",
       "description": "MRK, RPRX Stocks Hit 52-Week Highs – What Drove Today’s Gains? &nbsp;&nbsp; Yahoo Finance",
@@ -2971,15 +3048,6 @@
       "source": "Yahoo Finance",
       "category": "Business",
       "published_at": "2026-08-25T18:24:59+00:00"
-    },
-    {
-      "id": "e7e250163f826c521f0da19c",
-      "title": "Culture change may help firefighters reduce cancer risk - University of California, Riverside",
-      "description": "Culture change may help firefighters reduce cancer risk &nbsp;&nbsp; University of California, Riverside",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVmlYb2JoOHdQQ09NTHdYbW44YlExTFFkZEdpU2h5VTN1dThoTTJSeUFYd0M4cHVTbXotQmxZWWYzUGxfQlpIRUp1NEJwQllYMnVwMU85S1FaLTN2ZWZjZ0gyLUVQOE9oMWNJbFNzd0NLM0JwLUEzWS1vUDl3aFJDNTZlejlhT1JPMjVSWkI3MElXMmJaMGExUk0zajA?oc=5",
-      "source": "University of California, Riverside",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T18:24:29+00:00"
     },
     {
       "id": "7842a19b5e313a65",
@@ -3028,6 +3096,15 @@
       "snippet24_status": "PUBLISHED",
       "summary_type": "RSS-based original summary",
       "published_at": "2026-08-25T18:20:00Z"
+    },
+    {
+      "id": "452733ec8a7e3d0f4de70480",
+      "title": "India’s Economy Holds Firm in July; Food Inflation, Monsoon and Tariffs Remain Key Risks: RBI Bulletin - The Policy Edge",
+      "description": "India’s Economy Holds Firm in July; Food Inflation, Monsoon and Tariffs Remain Key Risks: RBI Bulletin &nbsp;&nbsp; The Policy Edge",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMzItSWdfQlFlR25vTThMdkk1VHhBSzh1TnJwaEVHbVNSekJVWkJia3NwblhQZ3RHcXRBWVdwQmU2bk12dXhfS09sOWhCb1hkSngxbHQ0Y2haRWxZOWY0amxrM2hGS0c5RnprQmZhWjZEdmw2ZHdVMkI5ZWtWT0hUX2oxWktyOVdSc2pWNkdYQ1p5NTJqNmRyV0FTSzBsX1JPd01xWENOVWh1T0pqTlItNUhfODZZQzhVemhTS2pRRmVVYkI4?oc=5",
+      "source": "The Policy Edge",
+      "category": "India",
+      "published_at": "2026-08-25T18:19:15+00:00"
     },
     {
       "id": "7b720279019a065a9d94e335",
@@ -3543,15 +3620,6 @@
       "published_at": "2026-08-25T17:29:04+00:00"
     },
     {
-      "id": "452733ec8a7e3d0f4de70480",
-      "title": "India’s Economy Holds Firm in July; Food Inflation, Monsoon and Tariffs Remain Key Risks: RBI Bulletin - The Policy Edge",
-      "description": "India’s Economy Holds Firm in July; Food Inflation, Monsoon and Tariffs Remain Key Risks: RBI Bulletin &nbsp;&nbsp; The Policy Edge",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMzItSWdfQlFlR25vTThMdkk1VHhBSzh1TnJwaEVHbVNSekJVWkJia3NwblhQZ3RHcXRBWVdwQmU2bk12dXhfS09sOWhCb1hkSngxbHQ0Y2haRWxZOWY0amxrM2hGS0c5RnprQmZhWjZEdmw2ZHdVMkI5ZWtWT0hUX2oxWktyOVdSc2pWNkdYQ1p5NTJqNmRyV0FTSzBsX1JPd01xWENOVWh1T0pqTlItNUhfODZZQzhVemhTS2pRRmVVYkI4?oc=5",
-      "source": "The Policy Edge",
-      "category": "India",
-      "published_at": "2026-08-25T17:24:28+00:00"
-    },
-    {
       "id": "9badce4234f8fa1ceccb0b3c",
       "title": "Prime Minister Narendra Modi makes seven appeals for economic self-reliance - News On AIR",
       "description": "Prime Minister Narendra Modi makes seven appeals for economic self-reliance &nbsp;&nbsp; News On AIR",
@@ -4041,24 +4109,6 @@
       "published_at": "2026-08-25T16:17:00+00:00"
     },
     {
-      "id": "74885e556ec3f651aaee85bb",
-      "title": "Why Marvell Technology Stock Is Rocketing Higher Today - Yahoo Finance",
-      "description": "Why Marvell Technology Stock Is Rocketing Higher Today &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWW5ham4zaVdfdVJLTlJnazZxSmxhX0ZxTDhJWk01SjdJUmRzZzhEMGdDOE50SjVYcktEZXpiVlYxaDBROGRFNVZLZzRTbmdhOTRTQkdsdmU1WG02bmVocDVPcWJMajJMVkQtUjNXc3ZJMnhramFkc2dDMUZpc1pKaS12V0lNcmxXVkJBR0dtSDl4Qi16ZGtKZll0M0pzZGpMQlBoNFZ3?oc=5",
-      "source": "Yahoo Finance",
-      "category": "Business",
-      "published_at": "2026-08-25T16:14:52+00:00"
-    },
-    {
-      "id": "77f76c771663fb644acdfe0a",
-      "title": "Midcap index scales new peak as domestic demand, earnings drive gains - Business Standard",
-      "description": "Midcap index scales new peak as domestic demand, earnings drive gains &nbsp;&nbsp; Business Standard",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYXdsbEpjbGFBcVMyWDhWQ2JPNmFFOHl5WjkxcUxTcVRtRTJJZ21HVmZBRVNnSTlxQW5DZ19pU25tenVnWWQtLUFlM1pjNzF4VTJzejZOMXgtUVZNQzFEa1NZc3JqWVFyb1doeE1yeTRuR2VOOUtLZ1FqdkliWVpwYUNoRFA5NGpVLW1XVC13WjhjdGZaa1dfRlJBTjNyUHVUcVQzUFVFNldnSW9GYmhVakFXVVVrcFlLUnc1SG03UU5mVk8tX3VaS2plZVNoMFc0YllLWGxIMzBvS0VxT3hpNDdYN07SAeoBQVVfeXFMTXJnSG5CYnQwQlBfaUtqLUZhTTU3d290MlhkejRuYUFGSmR6dlVicC16NHI5bm5SYVV0ZHA2MG1WTTN3RkNxUnhSYWtFZWZIaHdtUmZIbGEzR2R5U05HUUY5Sl9pb1dHTUwtbmc1LVJYXzJFVW52dllqdnJOckJ5UlZpMS1TU3dOel9oNm1tQkYwbGVlbUd2ajd6V0s5eF9NdVJzSHRYanRwZmJJVGpqR3JWU1huZkwxZW56REs4RDdrRFNPQ3JOcGY2SFNYaVZQcXd4YlJyejRhTWxpSkJGRG5pN3laU3ViTTBn?oc=5",
-      "source": "Business Standard",
-      "category": "Business",
-      "published_at": "2026-08-25T16:13:29+00:00"
-    },
-    {
       "id": "f792e3594d73fcaff774e7bb",
       "title": "As wars spread, the global food system unravels - UN News",
       "description": "As wars spread, the global food system unravels &nbsp;&nbsp; UN News",
@@ -4077,33 +4127,6 @@
       "published_at": "2026-08-25T16:13:00+00:00"
     },
     {
-      "id": "28bb910eb9cbc17dcca2edf1",
-      "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail - CNBC",
-      "description": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail &nbsp;&nbsp; CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHQ4SFdwVmlaQmxKYlpyQWhKd2xyLVlZX28wbFh6YmdhWkZ6bHF0Y2dkMUJCNXRvbmNjSEF3bXNxdDNhMExRSDg5WG4zSWR5aWVUc1kwd24tNDJlR0p4Ui1PYnU2dWxJdmJqZTIweThXM3pXS1A0dUVQWWV6Z2FvVmZBVGV3MGI0Yy1LU19aR1lJQ3pObFI5bElHTnp3ZlYxc3hUZW9RMFM3WWVxbVVBdmIzUdIBuAFBVV95cUxQNE93MDJBTHVmN3NwT05fVW9SZ0N2TndOdnptd1k5UG45RHoyLU92bm8weXdkV2NyUjVYay15S29Eb1BkYnFSbW9Vd0Q4RHo5UXcyVmh0cVFRUGxhLVFIeGJmOThtSHJaX0IwRmhHT2lvOVR2NllUTUxaUzF1d293MHRtOGFCVnhpb2dSdUVsTEx3RlRaWjczaXRZZElzYTVaOTZySnVyOVdpQVlObEdXdGdaYjFSNk9f?oc=5",
-      "source": "CNBC",
-      "category": "Business",
-      "published_at": "2026-08-25T16:12:21+00:00"
-    },
-    {
-      "id": "7fba456f996a8ec2e7af50f6",
-      "title": "Mamaearth parent Honasa calls off Fluence Pharma acquisition - The Times of India",
-      "description": "Mamaearth parent Honasa calls off Fluence Pharma acquisition &nbsp;&nbsp; The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOLUhVa0ZDMlhOMUVlNFduckhpdU1nSkpZam1uYlVOcWdFcGNxNVdiOEs2N2xzRWYyMl9iTXNIWW1ZWXVVZHBLZXhrcU5aZ0xWWnVNcDZpSk02MXNvUnJiWjZkLXBWeGVoMVpTeXV5ajBjck1BYVBVcTlPZlFQNmtzWVhzX0VXeWMwVEZ3UlBQM0NlMFZzbVlCM3JUMGNMSGYwR3AyQjJrREJTZkxUTk1XUkQ3WE5ybkViVkdwWk9hVEUtQWwwaUw5eUw3MUl4cThfWU1JbmsyZkszdTc3bFdR0gHkAUFVX3lxTFA0amt2VjN2X2hEWm9iRE52aFBJNTVaUDQ2WGlFUE5UWW9jemxFUEQ5Y2N3aFU2S0lRYXQ0Y3RvNFNtN2hnbzVqUHJ4Z1VvV05KMWF6Z0dkZkdfeEttT3QxRmc3RldNQmRsa1AtRlFuS1FyVG1JSFU5NDNzVkxVbmE2ZDFBcS0wOF9falZZeE4tZjZTYTdPMGJOOUtRVm93amR1YW5mdzNFakhNQXBIaUlsMzBrNVpFdWNWXzRfMGppZUYwRFRlVkEwaktaRTJXWVpZbDR1ckpOVElsaGR1REt6RlIxMw?oc=5",
-      "source": "The Times of India",
-      "category": "Business",
-      "published_at": "2026-08-25T16:11:00+00:00"
-    },
-    {
-      "id": "499fd203ef0139ad4b146f4c",
-      "title": "Mamaearth parent Honasa calls off Fluence Pharma acquisition - timesofindia.indiatimes.com",
-      "description": "Mamaearth parent Honasa calls off Fluence Pharma acquisition &nbsp;&nbsp; timesofindia.indiatimes.com",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOLUhVa0ZDMlhOMUVlNFduckhpdU1nSkpZam1uYlVOcWdFcGNxNVdiOEs2N2xzRWYyMl9iTXNIWW1ZWXVVZHBLZXhrcU5aZ0xWWnVNcDZpSk02MXNvUnJiWjZkLXBWeGVoMVpTeXV5ajBjck1BYVBVcTlPZlFQNmtzWVhzX0VXeWMwVEZ3UlBQM0NlMFZzbVlCM3JUMGNMSGYwR3AyQjJrREJTZkxUTk1XUkQ3WE5ybkViVkdwWk9hVEUtQWwwaUw5eUw3MUl4cThfWU1JbmsyZkszdTc3bFdR0gHkAUFVX3lxTFA0amt2VjN2X2hEWm9iRE52aFBJNTVaUDQ2WGlFUE5UWW9jemxFUEQ5Y2N3aFU2S0lRYXQ0Y3RvNFNtN2hnbzVqUHJ4Z1VvV05KMWF6Z0dkZkdfeEttT3QxRmc3RldNQmRsa1AtRlFuS1FyVG1JSFU5NDNzVkxVbmE2ZDFBcS0wOF9falZZeE4tZjZTYTdPMGJOOUtRVm93amR1YW5mdzNFakhNQXBIaUlsMzBrNVpFdWNWXzRfMGppZUYwRFRlVkEwaktaRTJXWVpZbDR1ckpOVElsaGR1REt6RlIxMw?oc=5",
-      "source": "timesofindia.indiatimes.com",
-      "category": "Business",
-      "published_at": "2026-08-25T16:11:00+00:00"
-    },
-    {
       "id": "de3d180a2070715f6c9d9690",
       "title": "Adler Heritage launches New Orleans lifestyle brand - New Orleans CityBusiness",
       "description": "Adler Heritage launches New Orleans lifestyle brand &nbsp;&nbsp; New Orleans CityBusiness",
@@ -4111,15 +4134,6 @@
       "source": "New Orleans CityBusiness",
       "category": "Lifestyle",
       "published_at": "2026-08-25T16:08:40+00:00"
-    },
-    {
-      "id": "de39f6c96fe24014a746d5d0",
-      "title": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
-      "description": "Ahead of Market: 10 things that will decide stock market action on Wednesday &nbsp;&nbsp; The Economic Times",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNkNmX0w3NVdiZ25MT3FTa192Z1Vsa1RzZmtRamFXLVNEVnZWWG5fTFc1NnpKdE1uWlZ0b0lyZmJGYTRsS3o4Z2JXX3E0ekhRam5mV25Lc0VCZTAzRHE4bWlsLWI0SEZyVGk4czdTbHR6MzhnNEVlRzFtSFZOekVDLTNlVWk2NGl1ZnlheVl0YUliNVludEpOS202ei1uLW00REJMcTdPalNQelh1bkJkNGUyaFMtRjVjUVFKcGpvRnpfSHpVaWpsVmhGbnY4WlVuUl8tdFA1T0hrM05fN0lCWVFrTdIB6AFBVV95cUxPaHdkSDF3WHcwWTV6eHEtazF5Q2JCUmUyYjdMU1I4ejZYOGQ0TmtUVHFzZ2lraHdZSXJMcTltbjNQTFFsekRjLWVodGo5UzluM2dSTHVKd1V6ZXp0TVRzdGtkQ2pQdnJqV0ZoTWZVbGpPWFUzT2VCemhMVjE0R2pST1dIY3FfdnNINDNtczY0eHhwX29QWk1wR1JtdE5RWmJfbXkwQTV2VVFOR1p5WWtSWEVhVEpiYUkxLWZ6RzZ4TF9BTUJ5R0dqLUdUQ0NDMGxDeVBSMkxpdEN5c1JwV1hObkVaNS1jajlp?oc=5",
-      "source": "The Economic Times",
-      "category": "Business",
-      "published_at": "2026-08-25T16:08:38+00:00"
     },
     {
       "id": "a4e5e03bab6fecb3b7a673ae",
@@ -4266,15 +4280,6 @@
       "published_at": "2026-08-25T15:39:26+00:00"
     },
     {
-      "id": "58f94345c6ae9bc8ccfa9acf",
-      "title": "India, China review ties, discuss border issue in Beijing talks, Indian Embassy in China says - Yahoo News Australia",
-      "description": "India, China review ties, discuss border issue in Beijing talks, Indian Embassy in China says &nbsp;&nbsp; Yahoo News Australia",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10YWxPbzJOVkN4LVVROXd6SlZfeUl5N3dEWlotQmRURHBtZXNlOHJqUFExTjJ3YU9nbml2QlJhSWRQcWYyM0hndlB0LWxLakVsUFVnbEhsbV82THg3SHBfdE5tUkJ3Ym1qUUg4SjlSazZKNVVOZ2syZ0dHNmI?oc=5",
-      "source": "Yahoo News Australia",
-      "category": "India",
-      "published_at": "2026-08-25T15:37:34+00:00"
-    },
-    {
       "id": "fdb66bf9f42920bcadccd4ec",
       "title": "'Skyscanner for Scotch whisky' to offers rare access for dram lovers - The Herald",
       "description": "'Skyscanner for Scotch whisky' to offers rare access for dram lovers &nbsp;&nbsp; The Herald",
@@ -4282,6 +4287,15 @@
       "source": "The Herald",
       "category": "Lifestyle",
       "published_at": "2026-08-25T15:33:05+00:00"
+    },
+    {
+      "id": "79b6ab5f9b2892c29b14057e",
+      "title": "The Entertainment Industry's Biggest Names Back Stability AI in Latest Funding Round - PR Newswire",
+      "description": "The Entertainment Industry's Biggest Names Back Stability AI in Latest Funding Round &nbsp;&nbsp; PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSTZBWTZRN0RBRmp3bVlaMUlJSVh1bGdfdFlieVByNFJoVTNMdXl5R0NlSE9pX0poc2dsbUNVWkJjQTZGWHk4RTgxNTU0ZFVvVlpnaEJnOHllbWpZNVpUVXlCS2JoalRzQVdxaldWbThPaHhvempvbmpLLVdjY1JXemxLUXRFYWx3UVdvQnhmSWd1bzlUMlA0ZlFpdmJtNnNoRkV3dDJyUVdxa0x3U3E2X2x0YUpvcFktQzhSZkxnem9fbXBRZ002S3p2S0xTd3N3RVI4bjRn?oc=5",
+      "source": "PR Newswire",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T15:31:00+00:00"
     },
     {
       "id": "7e82098a6931e0b1b16ee914",
@@ -4300,6 +4314,15 @@
       "source": "Grocery Dive",
       "category": "Lifestyle",
       "published_at": "2026-08-25T15:25:24+00:00"
+    },
+    {
+      "id": "5071a580f449529974c87089",
+      "title": "‘Toxic: A Fairy Tale for Grown-Ups’ box office collection: Yash’s film crosses Rs 40 crore before release - The Times of India",
+      "description": "‘Toxic: A Fairy Tale for Grown-Ups’ box office collection: Yash’s film crosses Rs 40 crore before release &nbsp;&nbsp; The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQYnQ4UkxHNXlZQldJY1NHSHhpUTZNb1FDdG9DMFF4LUJleUxFZTZvd3ZzLXNURW41NUNDaks1YjJOYWNPUnhCRjlQX2pYTUY0SzBBT3p6OXA0WWM1T29wTmM3d3FjdHNOQ1NRczZyRDhrY1c4UngwSE5TcWxPWENsNUpSRXhONXNQOVk4SFpnWExFS3VacW5zNmRhZDFDeW1nUXk4eXBYY2RseWlLYU9fWjQ4N3VuNjRDLXBpS1A0MS0zX2poU1RERGJ6bFZDMXBMamhZVm1kUkFTYURFbGNoRWlXREZrRXJQdFAwT0NJSnJCT2NjdU9yT05mYThIbFE4SlVpVFJYZ0ZxZ0JWOU9oaUQzbjJMTWpIRWlYVVlKS01NOVQxS0lSSExvNjFhSlJVckxNZnF2RC1VT3ctWGl1d3NwQWpIU2didVNXM292QTFvQ0FX0gHaAkFVX3lxTFBLa2tmNWtXNjFfX3RIYVBDcTA4NjJVdkNoc2dnbFo4ZEdwY05DR24xLXNpYXR6aWRsV3JsV193bDJKSFJ5SHpCajdGVlBMWVkwVmdOZ3BQZm9pMnRFdjM0VEVNSHhkcTlXYi1MYnhzb0RRcXNVZjU3YXoyd0VBclJRelJ1VnVsYnExOXV4UEk3UFlGd2NCcm1Sd3BXa2JiVndhQWR5X2JTN1hoQk1TOW9idlVob0FXeEhCbFU3UzFiVnNwckhEV1BDc0xBcXpPcTQwY2xLSjhpZDJBYmVRalJRZGt1VnQ5OURGYXQ5aDVOVmhxaTc0YVd4YXdPRUZfUmpPam5rYXVoZFJ4OURMTkZZQTQ4OE10cTdFWGxEdXpyQ2s2T3pKbHJ5REt0SVNmSEkyTGdXZXNjalcycVJTcHFDSDN5QVl0b0UzR2RKWXo5V2xzVlIxaEhUU1E?oc=5",
+      "source": "The Times of India",
+      "category": "Lifestyle",
+      "published_at": "2026-08-25T15:19:00+00:00"
     },
     {
       "id": "3a45b034de239fc8fb231a2f",
@@ -4588,69 +4611,6 @@
       "source": "WSJ",
       "category": "Lifestyle",
       "published_at": "2026-08-25T11:15:00+00:00"
-    },
-    {
-      "id": "ce8f8be9374fe1d6807233bd",
-      "title": "Braves homestand brings new ballpark food and new Ronald Acuña Jr. hats - CBS News",
-      "description": "Braves homestand brings new ballpark food and new Ronald Acuña Jr. hats &nbsp;&nbsp; CBS News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNnNsQm9LZGl5RVFhYl9ZTTBTV1NMSHpBbGhXZ3gwNnR3LU00OWZERGtLTnlVMXByczBOcTA0Z015QWdTR3lZdjZ4QUcxOWRuaEV5TmZqQ2VxVHpXdGQ3SGhqSFNEQXg1T3BYT3NITTc2UlNTaFpnaTJmMmlud19xN3phRWx0VDA5N2xmbTNDQVJCeC1zY2w1QUlielMwU0hFZG84QnhNZnZfVlNEa1E?oc=5",
-      "source": "CBS News",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T11:01:00+00:00"
-    },
-    {
-      "id": "f14da03b4b1987c9fe1c890c",
-      "title": "United Airlines adds 2027 flights spanning Sardinia to Okinawa. Here's what it says about travel today - CNBC",
-      "description": "United Airlines adds 2027 flights spanning Sardinia to Okinawa. Here's what it says about travel today &nbsp;&nbsp; CNBC",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMGhuX3BzZ0FtVVdPendoZ1FPazBxeWRseXd0TWwtb0dTU3hEaHAwbVRfRElpTDRfdUhtY2E3OVZuZkhxYUNieVhvTllXQXgyRUlYZ2FRZnI3WnlDUWt2Y1hWaWxRZ2hMTVlwTVFJMFZoaUlRZFRhZWh2NExIeDFua1pyNWbSAYoBQVVfeXFMUEVSeTVLekpMWl9NVF9hUkVuWkVVYzdKMll0d0R5MEZqNlc2TE14aVR4cGNqaVdrOURzbGhVR3ZCS00wa3J6VVBUdmlzZ1JNMDRXaEdsSnBDb1lYNTYtN2JiUXNEQnBpMzRLdE5NRDN3b1k3dlJwZVozelB1STZwTnlibDlCMjk3MmJn?oc=5",
-      "source": "CNBC",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T11:00:01+00:00"
-    },
-    {
-      "id": "ddb361628677061cfdb41278",
-      "title": "The FDA is targeting food dyes over concerns beyond cancer - Earth.com",
-      "description": "The FDA is targeting food dyes over concerns beyond cancer &nbsp;&nbsp; Earth.com",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGejdaT3E2SEVGN1d3ZDluN1hfeEZWb2hnVmZpUGd4SllyeDBsaUlVZ1RXQnV3OFFlTkxiRVBoQWZQUWhSaGhLTlNYbkFNQ096R1dpV2hfck1QYWgzLVBxZ2hZT3pzSDFzbC1LZUwzbzNlWXE2?oc=5",
-      "source": "Earth.com",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T10:50:00+00:00"
-    },
-    {
-      "id": "a30599265d4065599ac54ff0",
-      "title": "TTC issues statement following Kelly Walker’s departure - Travel Gossip",
-      "description": "TTC issues statement following Kelly Walker’s departure &nbsp;&nbsp; Travel Gossip",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQalAzYTRQSGwybW1NR2hUNXBVUEY5RnhOY0R1NFdtWS1nMEFRTWdZWU9iVlY2bjNkbExGQ2ZZWEVVbWFTbjRRWTUwN1FNdlFTeXhnVGxraUVoSVJzOVJtUWJRTks0SGJyNWE1YW55TkUzWEkyVG1kVU1vRkRrRkdNZFJXeno1cWR2QVM1Yk9lVktpbXltbEE0Sg?oc=5",
-      "source": "Travel Gossip",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T10:29:04+00:00"
-    },
-    {
-      "id": "0523e0b8c3a476c473d702a3",
-      "title": "Ferrero Travel Market to showcase latest innovations at TFWA Cannes 2026 - DFNI",
-      "description": "Ferrero Travel Market to showcase latest innovations at TFWA Cannes 2026 &nbsp;&nbsp; DFNI",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU0ZjSGRsbnNacl9iTkU0eC1UYmdOaVV1SEktOWlYdVhmRl90eXJMenkwUlF5UkZkbEM1MU82RXd5SHQwZFozZU5keFFGc0ExUVMxNjA5VTBNdURJTktESzJiWFRMeUxlaHkxT0RyYjdvb3RSVDBJRDI1aDluMk9jTzdhSmx0ZWJiT2p1SHJPRGQ3UzY2SUxOMU5fRnhQbDRkazRyMzMtNm9aeFFSaG9VWTVBWmxUT2h1LXc?oc=5",
-      "source": "DFNI",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T10:24:03+00:00"
-    },
-    {
-      "id": "c8b6938dea2c4c84c2dd75cc",
-      "title": "Eye On Entertainment: Latest films - WKMG",
-      "description": "Eye On Entertainment: Latest films &nbsp;&nbsp; WKMG",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVDc5b3hXaWpQVTEzd0c2dzF3aUIybElZUHRNRDlNTWR6eWE1Rm5UZkZsbzJnZEVSNXNXOTA2elA2WTh3VVBUbFZoQ1JNNjRleDZyQ0Fteks3dkRUX2c1Sy1jUnpSMDdjSkF0MU5vdDdab1ZBUFVQLXVOb3JWTzhBa01UcE9GVnZCS3JFSEJn?oc=5",
-      "source": "WKMG",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T10:02:56+00:00"
-    },
-    {
-      "id": "2c1a84f66f4f9ccc74540eb1",
-      "title": "GLP-1 boom could reshape restaurant bars as diners cut back on alcohol - Fox News",
-      "description": "GLP-1 boom could reshape restaurant bars as diners cut back on alcohol &nbsp;&nbsp; Fox News",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUzVqN1dHTkVhQ3NZNjNOeWNzRTE1bmVsR0E2X0JMYkhtTUxORzdiQ3pYckU1Q0xFN0xETzZyRzZEZFRkcHUwQm5CYXhfWmoyVnByYkdLdE41VFV0dXBWd2xPLU9hc2g2dFFUVHdBVGRaQzA1QTQ2dURzYnhkYldOVU5rS1g2dHVucFppTVNab3Q1bUZWWkhkZDRPd2N3NWVL0gGmAUFVX3lxTE5GU1ItYzhRQUE3ZEc4UzBJZXVjSHJzcEZFQjhaVnNMeHFkdm5uRzQ4dm5UaDNkV0Z2SXpVZjRMTm9ObXVvRktMUlNBVzJBelJ5YkdZSUJfN2FRTVFpdG1PbWhhc3F1U2htQU9YRzJZaGFucS1SZlFNRzdSNGhWQ1ljSzZIRkU4NmhNTnJXOUxINGo2WExTX1ZPWU9jTDBwYV91V20temc?oc=5",
-      "source": "Fox News",
-      "category": "Lifestyle",
-      "published_at": "2026-08-25T10:00:45+00:00"
     }
   ]
 }
