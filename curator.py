@@ -1,114 +1,38 @@
 import json
+import os
+import re
 import hashlib
 import html
-import re
 import time
-from pathlib import Path
-from urllib.request import Request, urlopen
-from urllib.error import URLError, HTTPError
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
-BASE_DIR = Path(__file__).resolve().parent
+import feedparser
+import requests
 
-SOURCES_FILE = BASE_DIR / "sources.json"
-ARTICLES_FILE = BASE_DIR / "articles.json"
 
-MAX_ARTICLES_PER_SOURCE = 5
-MAX_TOTAL_ARTICLES = 50
-MAX_STORED_ARTICLES = 200
-TIMEOUT = 15
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+SOURCES_FILE = os.path.join(BASE_DIR, "sources.json")
+ARTICLES_FILE = os.path.join(BASE_DIR, "articles.json")
 
 
 # ============================================================
-# SNIPPET24 REGION / LANGUAGE SYSTEM
+# CONFIGURATION
 # ============================================================
 
-STATE_LANGUAGES = {
-    "Tamil Nadu": {
-        "code": "ta",
-        "name": "தமிழ்"
-    },
-    "Kerala": {
-        "code": "ml",
-        "name": "മലയാളം"
-    },
-    "Karnataka": {
-        "code": "kn",
-        "name": "ಕನ್ನಡ"
-    },
-    "Andhra Pradesh": {
-        "code": "te",
-        "name": "తెలుగు"
-    },
-    "Telangana": {
-        "code": "te",
-        "name": "తెలుగు"
-    },
-    "Maharashtra": {
-        "code": "mr",
-        "name": "मराठी"
-    },
-    "Gujarat": {
-        "code": "gu",
-        "name": "ગુજરાતી"
-    },
-    "West Bengal": {
-        "code": "bn",
-        "name": "বাংলা"
-    },
-    "Odisha": {
-        "code": "or",
-        "name": "ଓଡ଼ିଆ"
-    },
-    "Punjab": {
-        "code": "pa",
-        "name": "ਪੰਜਾਬੀ"
-    },
-    "Assam": {
-        "code": "as",
-        "name": "অসমীয়া"
-    },
-    "Rajasthan": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Uttar Pradesh": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Bihar": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Madhya Pradesh": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Chhattisgarh": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Jharkhand": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Uttarakhand": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Himachal Pradesh": {
-        "code": "hi",
-        "name": "हिन्दी"
-    },
-    "Goa": {
-        "code": "kok",
-        "name": "कोंकणी"
-    },
-    "Delhi": {
-        "code": "hi",
-        "name": "हिन्दी"
-    }
-}
+MAX_ARTICLES = 300
 
+MIN_ARTICLES = 50
+
+MIN_PER_CATEGORY = 6
+
+REQUEST_TIMEOUT = 15
+
+USER_AGENT = (
+    "Mozilla/5.0 "
+    "(compatible; Snippet24 News Aggregator/1.0)"
+)
 
 CATEGORIES = [
     "Indian & International",
@@ -117,37 +41,29 @@ CATEGORIES = [
     "Lifestyle & Health",
     "Entertainment & Living",
     "Earth & Environment",
-    "Sports & Culture"
+    "Sports & Cultural"
 ]
 
 
 # ============================================================
-# LOGGING
-# ============================================================
-
-def log(message):
-    print("[SNIPPET24]", message, flush=True)
-
-
-# ============================================================
-# JSON
+# FILE HELPERS
 # ============================================================
 
 def load_json(path, default):
     try:
-        if not path.exists():
+        if not os.path.exists(path):
             return default
 
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
     except Exception as e:
-        log(f"JSON load warning: {e}")
+        print(f"Could not read {path}: {e}")
         return default
 
 
 def save_json(path, data):
-    temp = path.with_suffix(".tmp")
+    temp = path + ".tmp"
 
     with open(temp, "w", encoding="utf-8") as f:
         json.dump(
@@ -157,7 +73,7 @@ def save_json(path, data):
             indent=2
         )
 
-    temp.replace(path)
+    os.replace(temp, path)
 
 
 # ============================================================
@@ -165,24 +81,10 @@ def save_json(path, data):
 # ============================================================
 
 def clean_text(value):
-    if value is None:
+    if not value:
         return ""
 
     value = html.unescape(str(value))
-
-    value = re.sub(
-        r"<script.*?</script>",
-        " ",
-        value,
-        flags=re.I | re.S
-    )
-
-    value = re.sub(
-        r"<style.*?</style>",
-        " ",
-        value,
-        flags=re.I | re.S
-    )
 
     value = re.sub(
         r"<[^>]+>",
@@ -200,140 +102,105 @@ def clean_text(value):
 
 
 # ============================================================
-# ARTICLE ID
+# DATE
 # ============================================================
 
-def make_id(title, url):
-    raw = f"{title}|{url}".encode("utf-8")
+def parse_date(entry):
+    possible_dates = [
+        entry.get("published"),
+        entry.get("updated"),
+        entry.get("created")
+    ]
 
-    return hashlib.sha256(raw).hexdigest()[:16]
+    for value in possible_dates:
+
+        if not value:
+            continue
+
+        try:
+            dt = parsedate_to_datetime(value)
+
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+
+            return dt.astimezone(
+                timezone.utc
+            ).isoformat()
+
+        except Exception:
+            pass
+
+    return datetime.now(
+        timezone.utc
+    ).isoformat()
 
 
 # ============================================================
-# RSS PARSING
+# IMAGE EXTRACTION
 # ============================================================
 
-def get_tag(item, tag):
-    match = re.search(
-        rf"<{tag}(?:\s[^>]*)?>(.*?)</{tag}>",
-        item,
-        flags=re.I | re.S
+def extract_image(entry):
+
+    # media_content
+    media = entry.get("media_content")
+
+    if media:
+        for item in media:
+            url = item.get("url")
+
+            if url:
+                return url
+
+    # media_thumbnail
+    thumbnails = entry.get("media_thumbnail")
+
+    if thumbnails:
+        for item in thumbnails:
+            url = item.get("url")
+
+            if url:
+                return url
+
+    # enclosure
+    enclosures = entry.get("enclosures")
+
+    if enclosures:
+        for item in enclosures:
+
+            url = item.get("href") or item.get("url")
+
+            if url:
+                mime = item.get("type", "")
+
+                if (
+                    "image" in mime
+                    or url.lower().endswith(
+                        (
+                            ".jpg",
+                            ".jpeg",
+                            ".png",
+                            ".webp"
+                        )
+                    )
+                ):
+                    return url
+
+    # HTML image
+    html_content = (
+        entry.get("summary")
+        or entry.get("description")
+        or ""
     )
 
-    if not match:
-        return ""
-
-    return clean_text(match.group(1))
-
-
-def get_link(item):
-
     match = re.search(
-        r"<link(?:\s[^>]*)?>(.*?)</link>",
-        item,
-        flags=re.I | re.S
+        r'<img[^>]+src=["\']([^"\']+)',
+        html_content,
+        re.I
     )
 
     if match:
-        value = clean_text(match.group(1))
-
-        if value.startswith("http"):
-            return value
-
-    match = re.search(
-        r"<link[^>]+href=[\"']([^\"']+)[\"']",
-        item,
-        flags=re.I
-    )
-
-    if match:
-        return html.unescape(match.group(1))
-
-    return ""
-
-
-def get_items(xml):
-
-    items = re.findall(
-        r"<item(?:\s[^>]*)?>(.*?)</item>",
-        xml,
-        flags=re.I | re.S
-    )
-
-    if items:
-        return items
-
-    return re.findall(
-        r"<entry(?:\s[^>]*)?>(.*?)</entry>",
-        xml,
-        flags=re.I | re.S
-    )
-
-
-# ============================================================
-# RSS DOWNLOAD
-# ============================================================
-
-def fetch_feed(source):
-
-    url = source.get("feed_url", "")
-
-    if not url:
-        return ""
-
-    request = Request(
-        url,
-        headers={
-            "User-Agent":
-                "Snippet24NewsReader/1.0 "
-                "(RSS reader; +https://snippet24.in)",
-
-            "Accept":
-                "application/rss+xml,"
-                "application/atom+xml,"
-                "application/xml,"
-                "text/xml,"
-                "*/*"
-        }
-    )
-
-    try:
-
-        log(f"Reading: {source.get('name', 'Unknown')}")
-        log(f"RSS: {url}")
-
-        with urlopen(
-            request,
-            timeout=TIMEOUT
-        ) as response:
-
-            data = response.read()
-
-        return data.decode(
-            "utf-8",
-            errors="replace"
-        )
-
-    except HTTPError as e:
-
-        log(
-            f"HTTP {e.code}: "
-            f"{source.get('name')}"
-        )
-
-    except URLError as e:
-
-        log(
-            f"Network error: "
-            f"{source.get('name')}: {e.reason}"
-        )
-
-    except Exception as e:
-
-        log(
-            f"Feed error: "
-            f"{source.get('name')}: "
-            f"{type(e).__name__}: {e}"
+        return html.unescape(
+            match.group(1)
         )
 
     return ""
@@ -343,269 +210,365 @@ def fetch_feed(source):
 # SUMMARY
 # ============================================================
 
-def make_original_summary(
-    description,
-    title
-):
+def make_summary(title, description):
 
-    description = clean_text(description)
     title = clean_text(title)
+    description = clean_text(description)
 
     if description:
 
-        summary = description
-
-    else:
-
-        summary = (
-            f"This story reports on {title}. "
-            "See the original publication "
-            "for complete details and the "
-            "latest information."
+        description = re.sub(
+            r"\s+",
+            " ",
+            description
         )
 
-    if len(summary) > 650:
+        if len(description) > 320:
+            description = (
+                description[:317].rsplit(
+                    " ",
+                    1
+                )[0]
+                + "..."
+            )
 
-        summary = (
-            summary[:647]
-            .rsplit(" ", 1)[0]
-            + "..."
+        return description
+
+    return (
+        f"{title}. "
+        "Read the key development and why it matters."
+    )
+
+
+# ============================================================
+# UNIQUE ID
+# ============================================================
+
+def make_id(title, url):
+
+    raw = (
+        clean_text(title).lower()
+        + "|"
+        + url.strip().lower()
+    )
+
+    return hashlib.sha256(
+        raw.encode("utf-8")
+    ).hexdigest()[:20]
+
+
+# ============================================================
+# SOURCE NAME
+# ============================================================
+
+def source_name(entry, source):
+
+    value = (
+        entry.get("author")
+        or entry.get("source", {}).get("title")
+        or source.get("name")
+        or "News Source"
+    )
+
+    value = clean_text(value)
+
+    # Google News often produces ugly author strings.
+    if value.lower().startswith("google news"):
+        return source.get(
+            "name",
+            "News Source"
         )
 
-    return summary
+    return value
 
 
 # ============================================================
-# LOCATION
+# FETCH RSS
 # ============================================================
 
-def determine_region(source):
+def fetch_feed(source):
 
-    region = source.get(
-        "region",
-        "WORLD"
-    )
+    url = source.get("feed_url")
 
-    return region.upper()
-
-
-def determine_country(source):
-
-    return source.get(
-        "country",
-        ""
-    )
-
-
-def determine_state(source):
-
-    return source.get(
-        "state",
-        ""
-    )
-
-
-def determine_category(source):
-
-    category = source.get(
-        "category",
-        "Indian & International"
-    )
-
-    if category not in CATEGORIES:
-
-        category = "Indian & International"
-
-    return category
-
-
-# ============================================================
-# LANGUAGE INFORMATION
-# ============================================================
-
-def get_language_info(state):
-
-    if state in STATE_LANGUAGES:
-
-        return STATE_LANGUAGES[state]
-
-    return {
-        "code": "en",
-        "name": "English"
-    }
-
-
-# ============================================================
-# PARSE SOURCE
-# ============================================================
-
-def parse_source(source):
-
-    xml = fetch_feed(source)
-
-    if not xml:
-
-        log(
-            f"No RSS data: "
-            f"{source.get('name')}"
-        )
-
+    if not url:
         return []
 
-    items = get_items(xml)
-
-    log(
-        f"Entries found: "
-        f"{source.get('name')}: "
-        f"{len(items)}"
+    print(
+        f"Fetching: {source.get('name', url)}"
     )
 
-    articles = []
+    try:
 
-    for item in items[:MAX_ARTICLES_PER_SOURCE]:
-
-        title = get_tag(
-            item,
-            "title"
+        response = requests.get(
+            url,
+            headers={
+                "User-Agent": USER_AGENT
+            },
+            timeout=REQUEST_TIMEOUT
         )
 
-        link = get_link(item)
+        response.raise_for_status()
 
-        description = (
-            get_tag(item, "description")
-            or get_tag(item, "summary")
-            or get_tag(item, "content")
+        feed = feedparser.parse(
+            response.content
         )
 
-        if not title or not link:
-            continue
+        results = []
 
-        title = clean_text(title)
-        description = clean_text(description)
+        for entry in feed.entries:
 
-        region = determine_region(source)
-        country = determine_country(source)
-        state = determine_state(source)
-        category = determine_category(source)
+            title = clean_text(
+                entry.get("title", "")
+            )
 
-        language = get_language_info(state)
+            link = (
+                entry.get("link")
+                or entry.get("id")
+                or ""
+            )
 
-        article_id = make_id(
-            title,
-            link
-        )
+            if not title or not link:
+                continue
 
-        article = {
+            description = clean_text(
+                entry.get("summary")
+                or entry.get("description")
+                or ""
+            )
 
-            # ------------------------------------------------
-            # BASIC
-            # ------------------------------------------------
-
-            "id": article_id,
-
-            "title": title,
-
-            "summary":
-                make_original_summary(
-                    description,
-                    title
+            article = {
+                "id": make_id(
+                    title,
+                    link
                 ),
 
-            # ------------------------------------------------
-            # CLASSIFICATION
-            # ------------------------------------------------
+                "title": title,
 
-            "region": region,
+                "summary": make_summary(
+                    title,
+                    description
+                ),
 
-            "country": country,
+                "description": description,
 
-            "state": state,
+                "url": link,
 
-            "category": category,
+                "source": source_name(
+                    entry,
+                    source
+                ),
 
-            # ------------------------------------------------
-            # LANGUAGE
-            # ------------------------------------------------
-
-            "default_language":
-                language["code"],
-
-            "default_language_name":
-                language["name"],
-
-            "available_languages": [
-                "en",
-                language["code"]
-            ],
-
-            # ------------------------------------------------
-            # SOURCE
-            # ------------------------------------------------
-
-            "source":
-                source.get(
+                "source_feed": source.get(
                     "name",
                     ""
                 ),
 
-            "source_url":
-                link,
+                "image_url": extract_image(
+                    entry
+                ),
 
-            "source_website":
-                source.get(
-                    "website",
+                "published_at": parse_date(
+                    entry
+                ),
+
+                "category": source.get(
+                    "category",
+                    "Indian & International"
+                ),
+
+                "region": source.get(
+                    "region",
                     ""
                 ),
 
-            # ------------------------------------------------
-            # STATUS
-            # ------------------------------------------------
+                "country": source.get(
+                    "country",
+                    ""
+                ),
 
-            "snippet24_status":
-                "PUBLISHED",
+                "state": source.get(
+                    "state",
+                    ""
+                ),
 
-            "summary_type":
-                "RSS-based summary",
+                "language": source.get(
+                    "language",
+                    "English"
+                ),
 
-            "published_at":
-                time.strftime(
-                    "%Y-%m-%dT%H:%M:%SZ",
-                    time.gmtime()
-                )
-        }
+                "ai_image": False,
 
-        # ----------------------------------------------------
-        # LANGUAGE CONTAINER
-        #
-        # English is always available.
-        # State language is prepared for translation.
-        # ----------------------------------------------------
-
-        article["translations"] = {
-
-            "en": {
-                "title": title,
-                "summary":
-                    make_original_summary(
-                        description,
-                        title
-                    )
+                "created_at": datetime.now(
+                    timezone.utc
+                ).isoformat()
             }
 
-        }
+            results.append(article)
 
-        if language["code"] != "en":
+        print(
+            f"  → {len(results)} articles"
+        )
 
-            article["translations"][
-                language["code"]
-            ] = {
-                "title": "",
-                "summary": ""
-            }
+        return results
 
-        articles.append(article)
+    except Exception as e:
+
+        print(
+            f"  ERROR: {e}"
+        )
+
+        return []
+
+
+# ============================================================
+# DUPLICATES
+# ============================================================
+
+def deduplicate(articles):
+
+    seen_ids = set()
+
+    output = []
+
+    for article in articles:
+
+        article_id = article.get("id")
+
+        if not article_id:
+            continue
+
+        if article_id in seen_ids:
+            continue
+
+        seen_ids.add(article_id)
+
+        output.append(article)
+
+    return output
+
+
+# ============================================================
+# CATEGORY BALANCING
+# ============================================================
+
+def category_balance(articles):
+
+    selected = []
+
+    remaining = []
+
+    used = set()
+
+    # First guarantee minimum per category.
+    for category in CATEGORIES:
+
+        count = 0
+
+        for article in articles:
+
+            if article.get(
+                "category"
+            ) != category:
+                continue
+
+            if article["id"] in used:
+                continue
+
+            selected.append(article)
+
+            used.add(article["id"])
+
+            count += 1
+
+            if count >= MIN_PER_CATEGORY:
+                break
+
+    # Then add newest remaining articles.
+    for article in articles:
+
+        if article["id"] in used:
+            continue
+
+        remaining.append(article)
+
+    selected.extend(
+        remaining
+    )
+
+    return selected
+
+
+# ============================================================
+# FIFO
+# ============================================================
+
+def fifo_limit(articles):
+
+    # Newest first.
+    articles.sort(
+        key=lambda x: x.get(
+            "published_at",
+            ""
+        ),
+        reverse=True
+    )
+
+    # Keep only newest MAX_ARTICLES.
+    #
+    # Therefore:
+    #
+    # NEW ARTICLE
+    #      ↓
+    # TOP
+    #      ↓
+    # ...
+    #      ↓
+    # OLDEST
+    #      ↓
+    # REMOVE
+    #
+
+    if len(articles) > MAX_ARTICLES:
+
+        articles = articles[
+            :MAX_ARTICLES
+        ]
 
     return articles
+
+
+# ============================================================
+# ENSURE MINIMUM
+# ============================================================
+
+def enough_news(articles):
+
+    if len(articles) < MIN_ARTICLES:
+        return False
+
+    counts = {}
+
+    for category in CATEGORIES:
+
+        counts[category] = 0
+
+    for article in articles:
+
+        category = article.get(
+            "category"
+        )
+
+        if category in counts:
+            counts[category] += 1
+
+    missing = [
+        category
+        for category, count
+        in counts.items()
+        if count < MIN_PER_CATEGORY
+    ]
+
+    return len(missing) == 0
 
 
 # ============================================================
@@ -614,175 +577,206 @@ def parse_source(source):
 
 def main():
 
-    log("======================================")
-    log("SNIPPET24 CURATOR START")
-    log("======================================")
-
-    sources = load_json(
-        SOURCES_FILE,
-        []
+    print(
+        "\n=============================="
     )
 
-    if not isinstance(
-        sources,
-        list
-    ):
-
-        log(
-            "ERROR: sources.json "
-            "must contain a list"
-        )
-
-        return 1
-
-    log(
-        f"Sources loaded: "
-        f"{len(sources)}"
+    print(
+        "       SNIPPET24 CURATOR"
     )
 
-    existing = load_json(
+    print(
+        "==============================\n"
+    )
+
+    # --------------------------------------------------------
+    # Load existing articles FIRST.
+    # --------------------------------------------------------
+
+    old_articles = load_json(
         ARTICLES_FILE,
         []
     )
 
-    if not isinstance(
-        existing,
-        list
-    ):
+    if not isinstance(old_articles, list):
+        old_articles = []
 
-        existing = []
-
-    log(
+    print(
         f"Existing articles: "
-        f"{len(existing)}"
+        f"{len(old_articles)}"
     )
 
-    existing_urls = {
+    # --------------------------------------------------------
+    # Load sources
+    # --------------------------------------------------------
 
-        str(
-            article.get(
-                "source_url",
-                ""
-            )
+    config = load_json(
+        SOURCES_FILE,
+        {"sources": []}
+    )
+
+    sources = config.get(
+        "sources",
+        []
+    )
+
+    enabled_sources = [
+        source
+        for source in sources
+        if source.get(
+            "enabled",
+            True
         )
+    ]
 
-        for article in existing
+    print(
+        f"Enabled sources: "
+        f"{len(enabled_sources)}"
+    )
 
-        if isinstance(
-            article,
-            dict
-        )
-    }
+    # --------------------------------------------------------
+    # Fetch new articles
+    # --------------------------------------------------------
 
     new_articles = []
 
-    for source in sources:
+    for source in enabled_sources:
 
-        if not source.get(
-            "enabled",
-            True
-        ):
-            continue
+        fetched = fetch_feed(
+            source
+        )
 
-        try:
+        new_articles.extend(
+            fetched
+        )
 
-            articles = parse_source(
-                source
-            )
+        time.sleep(0.2)
 
-            for article in articles:
-
-                url = article[
-                    "source_url"
-                ]
-
-                if url in existing_urls:
-                    continue
-
-                if any(
-                    x.get("source_url")
-                    == url
-                    for x in new_articles
-                ):
-                    continue
-
-                new_articles.append(
-                    article
-                )
-
-                if (
-                    len(new_articles)
-                    >= MAX_TOTAL_ARTICLES
-                ):
-                    break
-
-        except Exception as e:
-
-            log(
-                "Source failed: "
-                f"{source.get('name')}: "
-                f"{e}"
-            )
-
-        if (
-            len(new_articles)
-            >= MAX_TOTAL_ARTICLES
-        ):
-            break
-
-    log(
-        f"New articles: "
+    print(
+        f"\nNew articles: "
         f"{len(new_articles)}"
     )
 
+    # --------------------------------------------------------
+    # Combine OLD + NEW
+    #
+    # This is critical.
+    #
+    # A failed RSS feed does NOT destroy
+    # previously collected stories.
+    # --------------------------------------------------------
+
     combined = (
-        new_articles
-        + existing
+        old_articles
+        + new_articles
     )
 
-    combined = combined[
-        :MAX_STORED_ARTICLES
-    ]
+    # --------------------------------------------------------
+    # Remove duplicates
+    # --------------------------------------------------------
+
+    combined = deduplicate(
+        combined
+    )
+
+    print(
+        f"After deduplication: "
+        f"{len(combined)}"
+    )
+
+    # --------------------------------------------------------
+    # Sort newest
+    # --------------------------------------------------------
+
+    combined.sort(
+        key=lambda x: x.get(
+            "published_at",
+            ""
+        ),
+        reverse=True
+    )
+
+    # --------------------------------------------------------
+    # Balance categories
+    # --------------------------------------------------------
+
+    combined = category_balance(
+        combined
+    )
+
+    # --------------------------------------------------------
+    # FIFO
+    # --------------------------------------------------------
+
+    combined = fifo_limit(
+        combined
+    )
+
+    # --------------------------------------------------------
+    # Save
+    # --------------------------------------------------------
 
     save_json(
         ARTICLES_FILE,
         combined
     )
 
-    published_count = sum(
-
-        1
-
-        for article in combined
-
-        if article.get(
-            "snippet24_status"
-        )
-        == "PUBLISHED"
-    )
-
-    log(
-        f"Total stored: "
+    print(
+        f"\nSaved articles: "
         f"{len(combined)}"
     )
 
-    log(
-        f"Published: "
-        f"{published_count}"
+    # --------------------------------------------------------
+    # Category report
+    # --------------------------------------------------------
+
+    print(
+        "\nCATEGORY REPORT"
     )
 
-    log(
-        "articles.json saved."
+    for category in CATEGORIES:
+
+        count = sum(
+            1
+            for article in combined
+            if article.get(
+                "category"
+            ) == category
+        )
+
+        print(
+            f"{category}: {count}"
+        )
+
+    # --------------------------------------------------------
+    # Warning
+    # --------------------------------------------------------
+
+    if len(combined) < MIN_ARTICLES:
+
+        print(
+            "\nWARNING:"
+        )
+
+        print(
+            f"Only {len(combined)} "
+            f"articles available."
+        )
+
+        print(
+            "Existing stories were preserved."
+        )
+
+    else:
+
+        print(
+            "\n✓ Minimum news requirement met."
+        )
+
+    print(
+        "\n==============================\n"
     )
-
-    log("======================================")
-    log("SNIPPET24 CURATOR COMPLETE")
-    log("======================================")
-
-    return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(
-        main()
-    )
+    main()
