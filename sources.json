@@ -1,44 +1,22 @@
 [
   {
-    "name": "BBC News",
-    "website": "https://www.bbc.com/news",
-    "feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
-    "category": "World",
-    "enabled": true
+    "name": "Example Tamil Nadu News",
+    "feed_url": "https://example.com/rss",
+    "website": "https://example.com",
+    "enabled": true,
+    "region": "INDIA",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "category": "Indian & International"
   },
   {
-    "name": "BBC Technology",
-    "website": "https://www.bbc.com/news/technology",
-    "feed_url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-    "category": "Technology",
-    "enabled": true
-  },
-  {
-    "name": "BBC Business",
-    "website": "https://www.bbc.com/news/business",
-    "feed_url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-    "category": "Business",
-    "enabled": true
-  },
-  {
-    "name": "The Guardian",
-    "website": "https://www.theguardian.com/",
-    "feed_url": "https://www.theguardian.com/world/rss",
-    "category": "World",
-    "enabled": true
-  },
-  {
-    "name": "The Guardian Technology",
-    "website": "https://www.theguardian.com/uk/technology",
-    "feed_url": "https://www.theguardian.com/uk/technology/rss",
-    "category": "Technology",
-    "enabled": true
-  },
-  {
-    "name": "NPR",
-    "website": "https://www.npr.org/",
-    "feed_url": "https://feeds.npr.org/1001/rss.xml",
-    "category": "World",
-    "enabled": true
+    "name": "Example Technology News",
+    "feed_url": "https://example.com/rss",
+    "website": "https://example.com",
+    "enabled": true,
+    "region": "WORLD",
+    "country": "",
+    "state": "",
+    "category": "Tech & AI"
   }
 ]
