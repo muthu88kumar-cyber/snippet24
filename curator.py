@@ -2,17 +2,14 @@ import os
 import json
 import hashlib
 import re
-import urllib.request
-import urllib.error
+import time
 from datetime import datetime, timezone
 
 import feedparser
+import requests
+from bs4 import BeautifulSoup
 from google import genai
 
-
-# ============================================================
-# CONFIGURATION
-# ============================================================
 
 ARTICLES_FILE = "articles.json"
 SOURCES_FILE = "sources.json"
@@ -21,20 +18,19 @@ MAX_ARTICLES_PER_SOURCE = 10
 MAX_TOTAL_ARTICLES = 30
 MAX_STORED_ARTICLES = 500
 
-RSS_TIMEOUT = 30
+REQUEST_TIMEOUT = 30
 
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/126.0 Safari/537.36 "
+    "Snippet24-NewsBot/1.0"
+)
 
-# ============================================================
-# LOGGING
-# ============================================================
 
 def log(message):
-    print(f"[SNIPPET24] {message}")
+    print(f"[SNIPPET24] {message}", flush=True)
 
-
-# ============================================================
-# JSON HELPERS
-# ============================================================
 
 def load_json(filename, default):
     if not os.path.exists(filename):
@@ -43,14 +39,15 @@ def load_json(filename, default):
     try:
         with open(filename, "r", encoding="utf-8") as f:
             return json.load(f)
-
     except Exception as error:
         log(f"Could not read {filename}: {error}")
         return default
 
 
 def save_json(filename, data):
-    with open(filename, "w", encoding="utf-8") as f:
+    temp_file = filename + ".tmp"
+
+    with open(temp_file, "w", encoding="utf-8") as f:
         json.dump(
             data,
             f,
@@ -58,10 +55,8 @@ def save_json(filename, data):
             indent=2
         )
 
+    os.replace(temp_file, filename)
 
-# ============================================================
-# TEXT CLEANING
-# ============================================================
 
 def clean_text(text):
     if not text:
@@ -69,14 +64,26 @@ def clean_text(text):
 
     text = str(text)
 
-    # Remove HTML
+    text = re.sub(
+        r"<script.*?</script>",
+        " ",
+        text,
+        flags=re.IGNORECASE | re.DOTALL
+    )
+
+    text = re.sub(
+        r"<style.*?</style>",
+        " ",
+        text,
+        flags=re.IGNORECASE | re.DOTALL
+    )
+
     text = re.sub(
         r"<[^>]+>",
         " ",
         text
     )
 
-    # Remove excessive whitespace
     text = re.sub(
         r"\s+",
         " ",
@@ -86,10 +93,6 @@ def clean_text(text):
     return text.strip()
 
 
-# ============================================================
-# ARTICLE ID
-# ============================================================
-
 def make_id(title, url):
     value = f"{title}|{url}".encode("utf-8")
 
@@ -97,10 +100,6 @@ def make_id(title, url):
         value
     ).hexdigest()[:20]
 
-
-# ============================================================
-# LOAD APPROVED SOURCES
-# ============================================================
 
 def load_sources():
 
@@ -110,7 +109,6 @@ def load_sources():
     )
 
     if not isinstance(sources, list):
-        log("sources.json is not a list.")
         return []
 
     valid = []
@@ -120,21 +118,16 @@ def load_sources():
         if not isinstance(source, dict):
             continue
 
-        if not source.get(
-            "reuse_policy_checked",
-            False
-        ):
+        if not source.get("reuse_policy_checked"):
             continue
 
-        if not source.get(
-            "allow_publish",
-            False
-        ):
+        if not source.get("allow_publish"):
             continue
 
-        if not source.get(
-            "feed_url"
-        ):
+        if not source.get("allow_ai_rewrite"):
+            continue
+
+        if not source.get("feed_url"):
             continue
 
         valid.append(source)
@@ -142,122 +135,264 @@ def load_sources():
     return valid
 
 
-# ============================================================
-# FETCH RSS FEED
-# ============================================================
+def request_url(url):
 
-def fetch_feed(source):
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": (
+            "application/rss+xml, "
+            "application/xml, "
+            "text/xml, "
+            "text/html, "
+            "*/*"
+        ),
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive"
+    }
 
-    source_name = source.get(
-        "name",
-        "Unknown source"
+    last_error = None
+
+    for attempt in range(1, 4):
+
+        try:
+
+            log(
+                f"HTTP attempt {attempt}/3: {url}"
+            )
+
+            response = requests.get(
+                url,
+                headers=headers,
+                timeout=REQUEST_TIMEOUT,
+                allow_redirects=True
+            )
+
+            response.raise_for_status()
+
+            log(
+                f"HTTP {response.status_code}: "
+                f"{len(response.content)} bytes"
+            )
+
+            return response
+
+        except Exception as error:
+
+            last_error = error
+
+            log(
+                f"HTTP attempt {attempt} failed: "
+                f"{error}"
+            )
+
+            if attempt < 3:
+                time.sleep(attempt * 2)
+
+    raise last_error
+
+
+def parse_rss_response(response):
+
+    parsed = feedparser.parse(
+        response.content
     )
 
-    feed_url = source.get(
-        "feed_url",
-        ""
+    if parsed.bozo:
+        log(
+            f"RSS parser warning: "
+            f"{parsed.bozo_exception}"
+        )
+
+    entries = parsed.entries or []
+
+    log(
+        f"RSS entries found: {len(entries)}"
     )
 
-    log(f"Reading RSS: {source_name}")
-    log(f"RSS URL: {feed_url}")
+    return entries
 
-    articles = []
+
+def fetch_rss(source):
+
+    url = source["feed_url"]
+
+    log(
+        f"READING RSS: {source['name']}"
+    )
+
+    log(
+        f"RSS URL: {url}"
+    )
 
     try:
 
-        request = urllib.request.Request(
-            feed_url,
-            headers={
-                "User-Agent": (
-                    "Mozilla/5.0 "
-                    "(compatible; Snippet24/1.0; "
-                    "+https://snippet24.in/)"
-                ),
-                "Accept": (
-                    "application/rss+xml, "
-                    "application/xml, "
-                    "text/xml, "
-                    "*/*"
-                )
-            }
+        response = request_url(url)
+
+        entries = parse_rss_response(
+            response
         )
 
-        with urllib.request.urlopen(
-            request,
-            timeout=RSS_TIMEOUT
-        ) as response:
-
-            data = response.read()
-
-        feed = feedparser.parse(data)
-
-    except urllib.error.URLError as error:
-
-        log(
-            f"RSS connection error for "
-            f"{source_name}: {error}"
-        )
-
-        return []
+        if entries:
+            return entries
 
     except Exception as error:
 
         log(
-            f"RSS error for "
-            f"{source_name}: {error}"
+            f"RSS failed for "
+            f"{source['name']}: {error}"
+        )
+
+    return []
+
+
+def fetch_pib_fallback(source):
+
+    fallback_url = source.get(
+        "fallback_url"
+    )
+
+    if not fallback_url:
+        return []
+
+    log(
+        "RSS unavailable. Trying PIB "
+        "web-page fallback."
+    )
+
+    log(
+        f"Fallback URL: {fallback_url}"
+    )
+
+    try:
+
+        response = request_url(
+            fallback_url
+        )
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser"
+        )
+
+        entries = []
+
+        seen_urls = set()
+
+        /*
+        Find PIB press release links.
+        */
+
+        for link in soup.find_all("a"):
+
+            href = link.get(
+                "href",
+                ""
+            )
+
+            title = clean_text(
+                link.get_text(
+                    " ",
+                    strip=True
+                )
+            )
+
+            if not href or not title:
+                continue
+
+            if "PressRelease" not in href:
+                continue
+
+            if not (
+                "PressReleasePage" in href
+                or "PressReleseDetail" in href
+            ):
+                continue
+
+            if href.startswith("/"):
+                href = (
+                    "https://www.pib.gov.in"
+                    + href
+                )
+
+            elif href.startswith(
+                "http://"
+            ):
+                href = (
+                    "https://"
+                    + href[7:]
+                )
+
+            elif not href.startswith(
+                "https://"
+            ):
+                continue
+
+            if href in seen_urls:
+                continue
+
+            seen_urls.add(href)
+
+            entries.append({
+                "title": title,
+                "link": href,
+                "summary": "",
+                "description": "",
+                "published": ""
+            })
+
+            if len(entries) >= (
+                MAX_ARTICLES_PER_SOURCE
+            ):
+                break
+
+        log(
+            "PIB fallback entries found: "
+            f"{len(entries)}"
+        )
+
+        return entries
+
+    except Exception as error:
+
+        log(
+            f"PIB fallback failed: {error}"
         )
 
         return []
 
-    if feed.bozo:
 
-        log(
-            f"RSS warning for "
-            f"{source_name}: "
-            f"{feed.bozo_exception}"
-        )
+def build_articles(source, entries):
 
-    entries = feed.entries
-
-    log(
-        f"RSS entries found for "
-        f"{source_name}: {len(entries)}"
-    )
+    articles = []
 
     for item in entries[
         :MAX_ARTICLES_PER_SOURCE
     ]:
 
         title = clean_text(
-            item.get(
-                "title",
-                ""
-            )
+            item.get("title", "")
         )
 
         link = (
-            item.get(
-                "link",
-                ""
-            )
-            .strip()
+            item.get("link", "")
+            or item.get("url", "")
         )
+
+        link = str(link).strip()
 
         description = clean_text(
-            item.get(
-                "summary",
-                ""
-            )
-            or item.get(
-                "description",
-                ""
-            )
+            item.get("summary", "")
+            or item.get("description", "")
+            or item.get("content", "")
         )
 
-        if not title:
-            continue
+        published = (
+            item.get("published", "")
+            or item.get("updated", "")
+            or ""
+        )
 
-        if not link:
+        if not title or not link:
             continue
 
         article_id = make_id(
@@ -265,23 +400,10 @@ def fetch_feed(source):
             link
         )
 
-        published = (
-            item.get(
-                "published",
-                ""
-            )
-            or item.get(
-                "updated",
-                ""
-            )
-            or ""
-        )
-
         articles.append({
-
             "id": article_id,
 
-            "source": source_name,
+            "source": source["name"],
 
             "source_website": source.get(
                 "website",
@@ -292,168 +414,119 @@ def fetch_feed(source):
 
             "feed_title": title,
 
-            "feed_summary": (
-                description[:5000]
-            ),
+            "feed_summary": description[
+                :5000
+            ],
 
-            "published": published,
+            "published": str(
+                published
+            ),
 
             "category": source.get(
                 "category",
                 "General"
             ),
 
-            "allow_ai_rewrite": source.get(
-                "allow_ai_rewrite",
-                False
+            "allow_ai_rewrite": bool(
+                source.get(
+                    "allow_ai_rewrite",
+                    False
+                )
             )
         })
 
     return articles
 
 
-# ============================================================
-# AI PROMPT
-# ============================================================
-
 def build_prompt(article):
 
     return f"""
 You are the editorial AI for Snippet24.
 
-IMPORTANT RULES:
+You are NOT the original publisher.
 
-1. Do NOT copy sentences from the source.
-2. Do NOT reproduce the source article.
-3. Do NOT pretend Snippet24 is the original publisher.
-4. Write genuinely original wording.
-5. Use ONLY facts explicitly present in the supplied RSS information.
-6. Do NOT add facts from your own knowledge.
-7. If the supplied information is insufficient, say so.
-8. Do not invent names, numbers, dates, quotes or events.
-9. Do not create direct quotations.
-10. Keep the source URL unchanged.
-11. Do not create facts merely to reach 30 lines.
-12. Do not make unsupported claims.
+Create an original news explanation using ONLY
+the information supplied below.
 
-SOURCE INFORMATION:
+COPYRIGHT RULES:
 
-Source:
+- Do not copy sentences from the source.
+- Do not reproduce the source article.
+- Do not create fake quotations.
+- Do not add information from your own knowledge.
+- Do not invent names, numbers, dates or events.
+- Do not pretend Snippet24 is the original publisher.
+- Keep the original source URL unchanged.
+- Use genuinely original wording.
+
+SOURCE:
+
+Publisher:
 {article["source"]}
 
-Original RSS headline:
+Original headline:
 {article["feed_title"]}
 
-RSS summary:
+RSS information:
 {article["feed_summary"]}
 
-Original source URL:
+Original URL:
 {article["source_url"]}
 
 Return ONLY valid JSON.
 
-Required structure:
+Required JSON:
 
 {{
   "headline_1": "",
   "headline_2": "",
   "headline_3": "",
-
   "summary": "",
-
-  "deep_dive": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-
-  "risk_level": "AUTO",
+  "deep_dive": [],
+  "risk_level": "REVIEW",
   "risk_reasons": []
 }}
 
 HEADLINES:
 
-Create three substantially different original headlines.
+Create 3 substantially different
+original headlines.
 
 SUMMARY:
 
-Write a concise original summary based ONLY on the supplied RSS information.
+Write a concise original summary based
+ONLY on the supplied information.
 
 DEEP DIVE:
 
-Write exactly 30 short numbered-information lines.
+Write exactly 30 short information lines.
 
-Every line must be based only on the supplied RSS information.
+Do NOT invent facts.
 
-If there are not enough facts for 30 lines, clearly state that additional verified information is not available rather than inventing facts.
+If the supplied information is insufficient,
+say that the supplied information is limited.
+Do not invent details merely to reach 30 lines.
 
-RISK LEVEL:
+RISK:
 
-Use AUTO only when:
+AUTO:
+Straightforward factual information.
 
-- information is straightforward;
-- no allegations are being made;
-- no private personal information appears;
-- no obvious defamation issue exists;
-- no medical emergency advice is involved;
-- no unverified accusation appears.
+REVIEW:
+Allegations, accusations, crime, politics,
+named individuals accused of wrongdoing,
+deaths, serious injuries, medical claims,
+financial claims, uncertain information,
+sensitive personal information.
 
-Use REVIEW for:
+BLOCK:
+Clearly unsafe, malicious, fabricated,
+private personal information, or instructions
+for wrongdoing.
 
-- allegations;
-- crime accusations;
-- political controversy;
-- named individuals accused of wrongdoing;
-- deaths or serious injuries;
-- medical claims;
-- financial claims;
-- potentially defamatory statements;
-- uncertain factual information;
-- sensitive personal information.
-
-Use BLOCK for:
-
-- clearly unsafe content;
-- private personal information;
-- content that appears malicious or fabricated;
-- instructions for wrongdoing;
-- content that should not be published.
-
-Never use a source quote.
+Never create direct quotations.
 """
 
-
-# ============================================================
-# SAFE FALLBACK
-# ============================================================
 
 def fallback_article(article):
 
@@ -465,32 +538,28 @@ def fallback_article(article):
     if not summary:
 
         summary = (
-            "The available RSS information "
-            "does not contain enough detail "
-            "for a full summary."
+            "The available source information "
+            "is limited. Please open the original "
+            "publication for the complete report."
         )
 
     lines = []
 
-    for i in range(30):
+    lines.append(
+        "The available source information "
+        "was insufficient for a complete "
+        "30-point explanation."
+    )
 
-        if i == 0:
+    for _ in range(29):
 
-            lines.append(
-                "The source reports: "
-                + summary[:250]
-            )
-
-        else:
-
-            lines.append(
-                "Additional verified detail is "
-                "not available in the supplied "
-                "RSS information."
-            )
+        lines.append(
+            "Additional verified detail is "
+            "not available in the supplied "
+            "source information."
+        )
 
     return {
-
         "headline_1": article[
             "feed_title"
         ],
@@ -501,7 +570,7 @@ def fallback_article(article):
         ),
 
         "headline_3": (
-            "What we know about "
+            "What the source reports: "
             + article["feed_title"]
         ),
 
@@ -512,14 +581,11 @@ def fallback_article(article):
         "risk_level": "REVIEW",
 
         "risk_reasons": [
-            "AI generation was unavailable."
+            "AI generation was unavailable "
+            "or source information was limited."
         ]
     }
 
-
-# ============================================================
-# GEMINI GENERATION
-# ============================================================
 
 def generate_ai(article):
 
@@ -530,7 +596,7 @@ def generate_ai(article):
     if not api_key:
 
         log(
-            "GEMINI_API_KEY is missing."
+            "GEMINI_API_KEY not found."
         )
 
         return fallback_article(
@@ -539,19 +605,12 @@ def generate_ai(article):
 
     try:
 
-        log(
-            f"Generating AI article: "
-            f"{article['feed_title']}"
-        )
-
         client = genai.Client(
             api_key=api_key
         )
 
         response = client.models.generate_content(
-
             model="gemini-2.5-flash",
-
             contents=build_prompt(
                 article
             )
@@ -559,20 +618,19 @@ def generate_ai(article):
 
         text = (
             response.text
-            or ""
+            if response.text
+            else ""
         ).strip()
 
         if not text:
-
             raise ValueError(
                 "Gemini returned empty response."
             )
 
-        # Remove Markdown JSON fences
         if text.startswith("```"):
 
             text = re.sub(
-                r"^```json\s*",
+                r"^```(?:json)?\s*",
                 "",
                 text,
                 flags=re.IGNORECASE
@@ -588,12 +646,7 @@ def generate_ai(article):
             text
         )
 
-        # ----------------------------------------------------
-        # HEADLINES
-        # ----------------------------------------------------
-
         headlines = [
-
             str(
                 result.get(
                     "headline_1",
@@ -616,15 +669,31 @@ def generate_ai(article):
             ).strip()
         ]
 
+        deep_dive = result.get(
+            "deep_dive",
+            []
+        )
+
+        if not isinstance(
+            deep_dive,
+            list
+        ):
+            raise ValueError(
+                "deep_dive is not a list."
+            )
+
+        if len(deep_dive) != 30:
+
+            raise ValueError(
+                "Deep dive must contain "
+                "exactly 30 lines."
+            )
+
         if not all(headlines):
 
             raise ValueError(
-                "One or more headlines are missing."
+                "Missing headline."
             )
-
-        # ----------------------------------------------------
-        # SUMMARY
-        # ----------------------------------------------------
 
         summary = str(
             result.get(
@@ -636,51 +705,8 @@ def generate_ai(article):
         if not summary:
 
             raise ValueError(
-                "AI summary is empty."
+                "Missing summary."
             )
-
-        # ----------------------------------------------------
-        # DEEP DIVE
-        # ----------------------------------------------------
-
-        deep_dive = result.get(
-            "deep_dive",
-            []
-        )
-
-        if not isinstance(
-            deep_dive,
-            list
-        ):
-
-            raise ValueError(
-                "Deep dive is not a list."
-            )
-
-        if len(deep_dive) != 30:
-
-            raise ValueError(
-                "Deep dive must contain "
-                "exactly 30 lines."
-            )
-
-        deep_dive = [
-
-            str(x).strip()
-
-            for x in deep_dive
-        ]
-
-        if not all(deep_dive):
-
-            raise ValueError(
-                "Deep dive contains "
-                "an empty line."
-            )
-
-        # ----------------------------------------------------
-        # RISK LEVEL
-        # ----------------------------------------------------
 
         risk_level = str(
             result.get(
@@ -689,17 +715,13 @@ def generate_ai(article):
             )
         ).upper().strip()
 
-        if risk_level not in [
+        if risk_level not in {
             "AUTO",
             "REVIEW",
             "BLOCK"
-        ]:
+        }:
 
             risk_level = "REVIEW"
-
-        # ----------------------------------------------------
-        # RISK REASONS
-        # ----------------------------------------------------
 
         risk_reasons = result.get(
             "risk_reasons",
@@ -711,19 +733,11 @@ def generate_ai(article):
             list
         ):
 
-            risk_reasons = []
-
-        risk_reasons = [
-
-            str(x).strip()
-
-            for x in risk_reasons
-
-            if str(x).strip()
-        ]
+            risk_reasons = [
+                str(risk_reasons)
+            ]
 
         return {
-
             "headline_1": headlines[0],
 
             "headline_2": headlines[1],
@@ -732,18 +746,23 @@ def generate_ai(article):
 
             "summary": summary,
 
-            "deep_dive": deep_dive,
+            "deep_dive": [
+                str(x).strip()
+                for x in deep_dive
+            ],
 
             "risk_level": risk_level,
 
-            "risk_reasons": risk_reasons
+            "risk_reasons": [
+                str(x).strip()
+                for x in risk_reasons
+            ]
         }
 
     except Exception as error:
 
         log(
-            f"AI generation failed: "
-            f"{error}"
+            f"AI generation failed: {error}"
         )
 
         return fallback_article(
@@ -751,9 +770,23 @@ def generate_ai(article):
         )
 
 
-# ============================================================
-# MAIN PROCESS
-# ============================================================
+def fetch_feed(source):
+
+    entries = fetch_rss(
+        source
+    )
+
+    if not entries:
+
+        entries = fetch_pib_fallback(
+            source
+        )
+
+    return build_articles(
+        source,
+        entries
+    )
+
 
 def process():
 
@@ -761,28 +794,12 @@ def process():
         "========== SNIPPET24 CURATOR START =========="
     )
 
-    # --------------------------------------------------------
-    # LOAD SOURCES
-    # --------------------------------------------------------
-
     sources = load_sources()
 
     log(
         f"Approved sources loaded: "
         f"{len(sources)}"
     )
-
-    if not sources:
-
-        log(
-            "No approved sources found."
-        )
-
-        return
-
-    # --------------------------------------------------------
-    # LOAD EXISTING ARTICLES
-    # --------------------------------------------------------
 
     existing = load_json(
         ARTICLES_FILE,
@@ -802,119 +819,73 @@ def process():
     )
 
     existing_ids = {
-
         item.get("id")
-
         for item in existing
-
-        if isinstance(
-            item,
-            dict
-        )
-
+        if isinstance(item, dict)
         and item.get("id")
     }
 
     new_articles = []
 
-    # --------------------------------------------------------
-    # PROCESS SOURCES
-    # --------------------------------------------------------
-
     for source in sources:
 
         try:
 
-            feed_articles = fetch_feed(
+            articles = fetch_feed(
                 source
             )
 
-            if not feed_articles:
+            if not articles:
 
                 log(
-                    f"No RSS articles found: "
-                    f"{source.get('name', 'Unknown')}"
+                    f"No articles from "
+                    f"{source['name']}"
                 )
 
                 continue
 
-            for article in feed_articles:
+            log(
+                f"Usable articles from "
+                f"{source['name']}: "
+                f"{len(articles)}"
+            )
 
-                # ------------------------------------------------
-                # DUPLICATE CHECK
-                # ------------------------------------------------
+            for article in articles:
 
                 if article["id"] in existing_ids:
-
-                    log(
-                        f"Skipping duplicate: "
-                        f"{article['feed_title']}"
-                    )
-
                     continue
-
-                # ------------------------------------------------
-                # AI PERMISSION CHECK
-                # ------------------------------------------------
 
                 if not article[
                     "allow_ai_rewrite"
                 ]:
-
-                    log(
-                        f"AI rewrite disabled: "
-                        f"{article['feed_title']}"
-                    )
-
                     continue
 
-                # ------------------------------------------------
-                # GENERATE ARTICLE
-                # ------------------------------------------------
+                log(
+                    "Generating: "
+                    + article["feed_title"]
+                )
 
                 ai = generate_ai(
                     article
                 )
 
-                # ------------------------------------------------
-                # PUBLICATION STATUS
-                # ------------------------------------------------
-
-                if ai[
-                    "risk_level"
-                ] == "AUTO":
-
-                    status = "PUBLISHED"
-
-                else:
-
-                    status = ai[
-                        "risk_level"
-                    ]
-
-                # ------------------------------------------------
-                # CREATE RECORD
-                # ------------------------------------------------
+                status = (
+                    "PUBLISHED"
+                    if ai["risk_level"] == "AUTO"
+                    else ai["risk_level"]
+                )
 
                 record = {
 
-                    "id": article[
-                        "id"
-                    ],
+                    "id": article["id"],
 
                     "title": ai[
                         "headline_1"
                     ],
 
                     "alternative_headlines": [
-
-                        ai[
-                            "headline_2"
-                        ],
-
-                        ai[
-                            "headline_3"
-                        ]
+                        ai["headline_2"],
+                        ai["headline_3"]
                     ],
 
                     "summary": ai[
@@ -975,13 +946,9 @@ def process():
                 )
 
                 log(
-                    f"Article created: "
-                    f"{record['title']}"
+                    f"Created article "
+                    f"status={status}"
                 )
-
-                # ------------------------------------------------
-                # MAX NEW ARTICLES
-                # ------------------------------------------------
 
                 if len(
                     new_articles
@@ -998,32 +965,51 @@ def process():
         except Exception as error:
 
             log(
-                f"Source processing error "
-                f"for {source.get('name', 'Unknown')}: "
+                f"Source error "
+                f"{source.get('name', 'Unknown')}: "
                 f"{error}"
             )
-
-    # --------------------------------------------------------
-    # COMBINE ARTICLES
-    # --------------------------------------------------------
 
     combined = (
         new_articles
         + existing
     )
 
-    # Keep latest 500
     combined = combined[
         :MAX_STORED_ARTICLES
     ]
 
-    # --------------------------------------------------------
-    # SAVE
-    # --------------------------------------------------------
-
     save_json(
         ARTICLES_FILE,
         combined
+    )
+
+    published_count = sum(
+        1
+        for article in combined
+        if article.get(
+            "snippet24_status"
+        ) == "PUBLISHED"
+    )
+
+    review_count = sum(
+        1
+        for article in combined
+        if article.get(
+            "snippet24_status"
+        ) == "REVIEW"
+    )
+
+    block_count = sum(
+        1
+        for article in combined
+        if article.get(
+            "snippet24_status"
+        ) == "BLOCK"
+    )
+
+    log(
+        "============================================"
     )
 
     log(
@@ -1032,8 +1018,23 @@ def process():
     )
 
     log(
-        f"Total stored articles: "
+        f"Total stored: "
         f"{len(combined)}"
+    )
+
+    log(
+        f"Published: "
+        f"{published_count}"
+    )
+
+    log(
+        f"Review: "
+        f"{review_count}"
+    )
+
+    log(
+        f"Blocked: "
+        f"{block_count}"
     )
 
     log(
@@ -1041,13 +1042,9 @@ def process():
     )
 
     log(
-        "========== SNIPPET24 CURATOR END =========="
+        "=========== SNIPPET24 CURATOR END =========="
     )
 
-
-# ============================================================
-# START PROGRAM
-# ============================================================
 
 if __name__ == "__main__":
     process()
