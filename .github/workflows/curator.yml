@@ -1,18 +1,16 @@
-name: Auto-Curate News Feed
+name: Update Snippet24 News
 
 on:
-  workflow_dispatch:
-
   schedule:
     - cron: "*/30 * * * *"
+
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-
-  curate:
-
+  update-news:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,39 +18,48 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python-version: "3.12"
 
       - name: Run news curator
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python curator.py
 
-      - name: Show articles result
+      - name: Check generated JSON
         run: |
-          echo "===== articles.json ====="
-          cat articles.json
+          python - <<'PY'
+          import json
 
-      - name: Commit generated articles
+          with open("articles.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          articles = data.get("articles", [])
+
+          print("Total articles:", len(articles))
+
+          categories = data.get("categories", {})
+
+          for name, count in categories.items():
+              print(f"{name}: {count}")
+
+          if not articles:
+              raise SystemExit(
+                  "ERROR: articles.json contains no articles"
+              )
+          PY
+
+      - name: Commit updated news
         run: |
-
           git config user.name "Snippet24 Bot"
-
           git config user.email "actions@users.noreply.github.com"
 
           git add articles.json
 
           if git diff --cached --quiet; then
-            echo "No article changes to commit."
+            echo "No news changes to commit."
           else
-            git commit -m "Update curated news"
+            git commit -m "Update news feed"
             git push
           fi
