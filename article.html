@@ -10,9 +10,18 @@
   content="width=device-width, initial-scale=1.0"
 >
 
-<title>Snippet24 — Story</title>
+<title>Snippet24 — Article</title>
+
+<meta
+  name="description"
+  content="Snippet24 news explanation"
+>
 
 <style>
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -25,218 +34,257 @@ body {
     sans-serif;
 
   background: #f5f7fa;
+
   color: #111827;
 }
 
 header {
   background: #111827;
+
   color: white;
-  padding: 20px;
+
+  padding: 24px 20px;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
+.header-inner {
+  max-width: 850px;
+
+  margin: auto;
+}
+
+.logo {
+  font-size: 28px;
+
   font-weight: 800;
+}
+
+.tagline {
+  opacity: .7;
+
+  margin-top: 4px;
 }
 
 main {
   max-width: 850px;
+
   margin: auto;
-  padding: 30px 18px;
+
+  padding: 25px 16px 60px;
 }
 
-article {
+.article {
   background: white;
-  padding: 28px;
 
-  border-radius: 16px;
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 2px 12px rgba(0,0,0,.05);
+}
+
+.category {
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: .5px;
 }
 
 h1 {
+  font-size: 34px;
+
   line-height: 1.2;
+
+  margin:
+    10px 0 18px;
 }
 
 .summary {
   font-size: 18px;
-  line-height: 1.7;
+
   color: #4b5563;
+
+  line-height: 1.7;
+
+  padding-bottom: 20px;
+
+  border-bottom:
+    1px solid #e5e7eb;
 }
 
-.deep {
-  margin-top: 30px;
+.deep-dive {
+  margin-top: 25px;
 }
 
-.line {
-  padding: 12px 0;
-  border-bottom: 1px solid #e5e7eb;
-  line-height: 1.6;
+.deep-dive h2 {
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.deep-dive ol {
+  padding-left: 22px;
+}
+
+.deep-dive li {
+  margin-bottom: 14px;
+
+  line-height: 1.7;
+
+  color: #374151;
 }
 
 .source {
   margin-top: 30px;
-  padding: 18px;
 
-  background: #f3f4f6;
-  border-radius: 10px;
+  padding-top: 20px;
+
+  border-top:
+    1px solid #e5e7eb;
+
+  font-size: 14px;
+
+  color: #6b7280;
 }
 
 .source a {
+  color: #2563eb;
+
   word-break: break-all;
+}
+
+.back {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.notice {
+  background: #eff6ff;
+
+  color: #1e40af;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.error {
+  background: #fef2f2;
+
+  color: #991b1b;
+
+  padding: 20px;
+
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .article {
+    padding: 20px;
+  }
+
 }
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<a href="index.html">
-  Snippet24
-</a>
+  <div class="header-inner">
+
+    <div class="logo">
+      Snippet24
+    </div>
+
+    <div class="tagline">
+      News, explained.
+    </div>
+
+  </div>
 
 </header>
 
 
 <main>
 
-<article id="article">
+  <a
+    class="back"
+    href="index.html"
+  >
+    ← Back to news
+  </a>
 
-Loading...
 
-</article>
+  <div
+    id="article"
+    class="article"
+  >
+    Loading article...
+  </div>
+
 
 </main>
 
 
 <script>
 
-async function loadArticle() {
-
-  const params =
-    new URLSearchParams(
-      window.location.search
-    );
-
-  const id =
-    params.get("id");
-
-  const box =
-    document.getElementById("article");
-
-  if (!id) {
-
-    box.innerHTML =
-      "<h1>Article not found</h1>";
-
-    return;
-  }
-
-  try {
-
-    const response =
-      await fetch(
-        "articles.json?x=" + Date.now()
-      );
-
-    const articles =
-      await response.json();
-
-    const article =
-      articles.find(
-        item => item.id === id
-      );
-
-    if (!article) {
-
-      box.innerHTML =
-        "<h1>Article not found</h1>";
-
-      return;
-    }
-
-    const lines =
-      (article.deep_dive || [])
-        .map(
-          (line, index) => `
-            <div class="line">
-              <strong>${index + 1}.</strong>
-              ${escapeHtml(line)}
-            </div>
-          `
-        )
-        .join("");
-
-    box.innerHTML = `
-
-      <h1>
-        ${escapeHtml(article.title)}
-      </h1>
-
-      <p class="summary">
-        ${escapeHtml(article.summary)}
-      </p>
-
-      <div class="deep">
-
-        <h2>
-          Deep Dive
-        </h2>
-
-        ${lines}
-
-      </div>
-
-      <div class="source">
-
-        <strong>
-          Source:
-        </strong>
-
-        ${escapeHtml(article.source)}
-
-        <br><br>
-
-        <strong>
-          Original URL:
-        </strong>
-
-        <br>
-
-        <a
-          href="${safeUrl(article.source_url)}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ${escapeHtml(article.source_url)}
-        </a>
-
-      </div>
-
-    `;
-
-  } catch (error) {
-
-    box.innerHTML =
-      "<h1>Unable to load article.</h1>";
-
-    console.error(error);
-
-  }
-
-}
-
 
 function escapeHtml(value) {
 
   return String(value || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+
+    .replace(
+      /</g,
+      "&lt;"
+    )
+
+    .replace(
+      />/g,
+      "&gt;"
+    )
+
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+
+    .replace(
+      /'/g,
+      "&#039;"
+    );
 
 }
 
@@ -249,10 +297,12 @@ function safeUrl(value) {
       new URL(value);
 
     if (
-      url.protocol === "https:" ||
-      url.protocol === "http:"
+      url.protocol === "http:" ||
+      url.protocol === "https:"
     ) {
+
       return url.href;
+
     }
 
   } catch {}
@@ -262,9 +312,220 @@ function safeUrl(value) {
 }
 
 
+async function loadArticle() {
+
+  const container =
+    document.getElementById(
+      "article"
+    );
+
+
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+
+  const id =
+    params.get("id");
+
+
+  if (!id) {
+
+    container.innerHTML = `
+      <div class="error">
+        Article ID is missing.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        "articles.json?v=" +
+        Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Unable to load articles.json."
+      );
+
+    }
+
+
+    const articles =
+      await response.json();
+
+
+    const article =
+      articles.find(
+        item =>
+          item.id === id
+      );
+
+
+    if (!article) {
+
+      container.innerHTML = `
+        <div class="error">
+          Article not found.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    if (
+      article.snippet24_status !==
+      "PUBLISHED"
+    ) {
+
+      container.innerHTML = `
+        <div class="error">
+          This article is not currently published.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    const deepDive =
+      Array.isArray(
+        article.deep_dive
+      )
+        ? article.deep_dive
+        : [];
+
+
+    const deepDiveHtml =
+      deepDive
+        .map(
+          line =>
+            `<li>${escapeHtml(line)}</li>`
+        )
+        .join("");
+
+
+    const sourceUrl =
+      safeUrl(
+        article.source_url
+      );
+
+
+    container.innerHTML = `
+
+      <div class="category">
+        ${escapeHtml(
+          article.category || "News"
+        )}
+      </div>
+
+
+      <h1>
+        ${escapeHtml(
+          article.title
+        )}
+      </h1>
+
+
+      <div class="summary">
+        ${escapeHtml(
+          article.summary || ""
+        )}
+      </div>
+
+
+      <div class="deep-dive">
+
+        <h2>
+          Deep dive
+        </h2>
+
+        <ol>
+          ${deepDiveHtml}
+        </ol>
+
+      </div>
+
+
+      <div class="notice">
+        This is an AI-assisted original
+        summary based on the supplied
+        source information. It is not the
+        original publication.
+      </div>
+
+
+      <div class="source">
+
+        <strong>
+          Original source:
+        </strong>
+
+        <br><br>
+
+        ${escapeHtml(
+          article.source || ""
+        )}
+
+        <br><br>
+
+        <a
+          href="${sourceUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open original publication
+        </a>
+
+      </div>
+
+    `;
+
+
+    document.title =
+      (
+        article.title ||
+        "Article"
+      ) +
+      " — Snippet24";
+
+
+  } catch (error) {
+
+    console.error(error);
+
+    container.innerHTML = `
+      <div class="error">
+        Unable to load this article.
+        <br><br>
+        ${escapeHtml(
+          error.message
+        )}
+      </div>
+    `;
+
+  }
+
+}
+
+
 loadArticle();
 
 </script>
+
 
 </body>
 
