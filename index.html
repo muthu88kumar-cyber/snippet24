@@ -40,6 +40,7 @@ header {
   background: #111827;
   color: white;
   padding: 20px;
+
   position: sticky;
   top: 0;
   z-index: 10;
@@ -55,13 +56,14 @@ header {
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
 }
 
 .tagline {
+  margin-top: 3px;
   opacity: .75;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 main {
@@ -71,15 +73,20 @@ main {
 }
 
 .status {
-  padding: 12px 16px;
+  padding: 16px 18px;
   background: white;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-bottom: 22px;
   font-size: 14px;
+  line-height: 1.5;
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,.04);
 }
 
 .grid {
   display: grid;
+
   grid-template-columns:
     repeat(auto-fit, minmax(320px, 1fr));
 
@@ -100,25 +107,42 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   color: #2563eb;
+  letter-spacing: .04em;
 }
 
 h2 {
   margin: 8px 0 12px;
   font-size: 22px;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .summary {
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+.badge {
+  display: inline-block;
+
+  margin-top: 14px;
+
+  font-size: 11px;
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  background: #dcfce7;
+  color: #166534;
 }
 
 .source {
   margin-top: 18px;
   padding-top: 14px;
+
   border-top: 1px solid #e5e7eb;
 
   font-size: 13px;
+  line-height: 1.5;
 }
 
 .source a {
@@ -128,6 +152,7 @@ h2 {
 
 .read {
   display: inline-block;
+
   margin-top: 16px;
 
   padding: 10px 14px;
@@ -136,226 +161,458 @@ h2 {
   color: white;
 
   text-decoration: none;
+
   border-radius: 8px;
 }
 
-.badge {
-  display: inline-block;
-  margin-top: 10px;
-
-  font-size: 11px;
-  padding: 5px 8px;
-
-  border-radius: 999px;
-  background: #dcfce7;
-  color: #166534;
+.read:hover {
+  opacity: .85;
 }
 
-.review {
-  background: #fef3c7;
-  color: #92400e;
+.empty {
+  grid-column: 1 / -1;
+
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,.04);
+}
+
+.empty h2 {
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.error {
+  grid-column: 1 / -1;
+
+  background: #fee2e2;
+  color: #991b1b;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+.loading {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 40px;
+
+  color: #6b7280;
 }
 
 footer {
   text-align: center;
+
   padding: 40px 20px;
 
   color: #6b7280;
+
   font-size: 13px;
+
+  line-height: 1.6;
 }
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<div class="header-inner">
+  <div class="header-inner">
 
-<div>
-  <div class="logo">Snippet24</div>
+    <div>
 
-  <div class="tagline">
-    News, explained.
+      <div class="logo">
+        Snippet24
+      </div>
+
+      <div class="tagline">
+        News, explained.
+      </div>
+
+    </div>
+
   </div>
-</div>
-
-</div>
 
 </header>
 
 
 <main>
 
-<div class="status">
-  AI-assisted original summaries.
-  Sources are credited and linked to the original publication.
-</div>
 
-<div
-  id="news"
-  class="grid"
->
-  Loading news...
-</div>
+  <div class="status">
+
+    <strong>AI-assisted original summaries.</strong>
+
+    <br>
+
+    Sources are credited and linked to the original publication.
+
+  </div>
+
+
+  <div
+    id="news"
+    class="grid"
+  >
+
+    <div class="loading">
+      Loading news...
+    </div>
+
+  </div>
+
 
 </main>
 
 
 <footer>
 
-Snippet24 © 2026
+  Snippet24 © 2026
 
-<br><br>
+  <br><br>
 
-News is presented with source attribution.
-Original publishers retain their rights.
+  News is presented with source attribution.
+  Original publishers retain their rights.
 
 </footer>
 
 
 <script>
 
+
 async function loadNews() {
 
   const container =
     document.getElementById("news");
 
+
   try {
 
+
     const response =
-      await fetch("articles.json?x=" + Date.now());
+      await fetch(
+        "articles.json?cache=" +
+        Date.now()
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Could not load articles.json"
+      );
+
+    }
+
 
     const articles =
       await response.json();
 
-    container.innerHTML = "";
+
+    if (!Array.isArray(articles)) {
+
+      throw new Error(
+        "articles.json is not a valid list"
+      );
+
+    }
+
 
     const published =
       articles.filter(
         article =>
+          article &&
           article.snippet24_status === "PUBLISHED"
       );
 
+
+    container.innerHTML = "";
+
+
     if (published.length === 0) {
 
-      container.innerHTML =
-        "<p>No automatically published stories yet.</p>";
+      container.innerHTML = `
+
+        <div class="empty">
+
+          <h2>
+            No news stories yet
+          </h2>
+
+          <p>
+            The news curator has not produced
+            any automatically published stories yet.
+          </p>
+
+        </div>
+
+      `;
 
       return;
+
     }
 
+
     published.forEach(article => {
+
 
       const card =
         document.createElement("article");
 
+
       card.className = "card";
+
+
+      const category =
+        escapeHtml(
+          article.category || "News"
+        );
+
+
+      const title =
+        escapeHtml(
+          article.title ||
+          "Untitled story"
+        );
+
+
+      const summary =
+        escapeHtml(
+          article.summary || ""
+        );
+
+
+      const source =
+        escapeHtml(
+          article.source ||
+          "Unknown source"
+        );
+
+
+      const sourceUrl =
+        safeUrl(
+          article.source_url
+        );
+
+
+      const displayedUrl =
+        escapeHtml(
+          article.source_url || ""
+        );
+
+
+      const articleId =
+        encodeURIComponent(
+          article.id || ""
+        );
+
 
       card.innerHTML = `
 
         <div class="category">
-          ${escapeHtml(article.category || "News")}
+
+          ${category}
+
         </div>
+
 
         <h2>
-          ${escapeHtml(article.title)}
+
+          ${title}
+
         </h2>
 
+
         <div class="summary">
-          ${escapeHtml(article.summary || "")}
+
+          ${summary}
+
         </div>
 
+
         <div class="badge">
+
           AI-assisted original summary
+
         </div>
+
 
         <div class="source">
 
           Source:
+
           <strong>
-            ${escapeHtml(article.source)}
+
+            ${source}
+
           </strong>
+
 
           <br><br>
 
-          Original URL:
+
+          Original publication:
+
 
           <br>
 
+
           <a
-            href="${safeUrl(article.source_url)}"
+            href="${sourceUrl}"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ${escapeHtml(article.source_url)}
+
+            ${displayedUrl}
+
           </a>
 
         </div>
 
+
         <a
           class="read"
-          href="article.html?id=${encodeURIComponent(article.id)}"
+          href="article.html?id=${articleId}"
         >
+
           Read deep dive
+
         </a>
 
       `;
 
+
       container.appendChild(card);
+
 
     });
 
+
   } catch (error) {
 
-    container.innerHTML =
-      "<p>Unable to load the news feed.</p>";
 
-    console.error(error);
+    console.error(
+      "Snippet24 error:",
+      error
+    );
+
+
+    container.innerHTML = `
+
+      <div class="error">
+
+        <strong>
+          Unable to load the news feed.
+        </strong>
+
+        <br><br>
+
+        Please try again later.
+
+      </div>
+
+    `;
 
   }
 
 }
 
 
+
 function escapeHtml(value) {
 
   return String(value || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+
+    .replace(
+      /</g,
+      "&lt;"
+    )
+
+    .replace(
+      />/g,
+      "&gt;"
+    )
+
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+
+    .replace(
+      /'/g,
+      "&#039;"
+    );
 
 }
+
 
 
 function safeUrl(value) {
 
   try {
 
+
     const url =
-      new URL(value);
+      new URL(
+        String(value || "")
+      );
+
 
     if (
       url.protocol === "https:" ||
       url.protocol === "http:"
     ) {
+
       return url.href;
+
     }
 
-  } catch {}
+
+  } catch (error) {
+
+    console.warn(
+      "Invalid source URL:",
+      value
+    );
+
+  }
+
 
   return "#";
 
 }
 
 
+
 loadNews();
 
+
 </script>
+
 
 </body>
 
