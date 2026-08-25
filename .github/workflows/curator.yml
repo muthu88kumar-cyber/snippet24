@@ -2,31 +2,53 @@ name: Auto-Curate News Feed
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Runs automatically every 30 minutes
-  workflow_dispatch:        # Allows manual trigger
+    # Every hour
+    - cron: "0 * * * *"
+
+  workflow_dispatch:
 
 permissions:
-  contents: write           # Grants permission to push changes to articles.json
+  contents: write
+
+concurrency:
+  group: news-curation
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.12"
 
-      - name: Run Curator Script
-        run: python curator.py
-
-      - name: Commit and Push New Articles
+      - name: Install dependencies
         run: |
-          git config --global user.name "GitHub Actions Bot"
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run news curator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python curator.py
+
+      - name: Commit generated articles
+        run: |
+          git config --global user.name "snippet24-bot"
           git config --global user.email "actions@github.com"
+
           git add articles.json
-          git commit -m "Auto-update news feed via curator.py" || exit 0
+
+          if git diff --cached --quiet; then
+            echo "No article changes."
+            exit 0
+          fi
+
+          git commit -m "Automated news update"
           git push
