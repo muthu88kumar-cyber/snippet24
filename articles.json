@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "snippet24-demo-001",
+    "title": "Welcome to Snippet24",
+    "summary": "Snippet24 is an independent news platform designed to provide concise explanations of important stories while clearly attributing information to the original sources.",
+    "category": "Technology",
+    "source": "Snippet24",
+    "source_url": "https://snippet24.in/",
+    "snippet24_status": "PUBLISHED",
+    "published_at": "2026-08-25T12:00:00+05:30"
+  },
+  {
+    "id": "snippet24-demo-002",
+    "title": "India's Digital Economy Continues to Grow",
+    "summary": "India's digital ecosystem continues to expand across payments, online services, artificial intelligence and digital public infrastructure.",
+    "category": "India",
+    "source": "Snippet24",
+    "source_url": "https://snippet24.in/",
+    "snippet24_status": "PUBLISHED",
+    "published_at": "2026-08-25T11:30:00+05:30"
+  },
+  {
+    "id": "snippet24-demo-003",
+    "title": "Artificial Intelligence Is Changing How People Access Information",
+    "summary": "AI-powered tools are increasingly being used to discover, summarize and organize information, creating new opportunities as well as challenges around accuracy and attribution.",
+    "category": "Technology",
+    "source": "Snippet24",
+    "source_url": "https://snippet24.in/",
+    "snippet24_status": "PUBLISHED",
+    "published_at": "2026-08-25T11:00:00+05:30"
+  }
+]
