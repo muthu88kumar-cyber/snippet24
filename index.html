@@ -1,250 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<title>Snippet24 — Fast News. Real Impact.</title>
 
-  <title>Snippet24 — Fast News. Real Impact.</title>
+<meta
+  name="description"
+  content="Snippet24 — concise, original explanations of important stories with the original publication credited."
+>
 
-  <meta
-    name="description"
-    content="Snippet24 — Fast news. Real impact."
-  >
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <style>
+body {
+  margin: 0;
+  background: #080b10;
+  color: #f5f5f5;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+header {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px 10px;
+}
 
-    body {
-      margin: 0;
-      background: #080b10;
-      color: #f5f5f5;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-    }
+.logo {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
 
-    header {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px 10px;
-    }
+.logo span {
+  background: #ff1616;
+  padding: 2px 10px;
+  border-radius: 12px;
+  letter-spacing: -1px;
+}
 
-    .logo {
-      font-size: 42px;
-      font-weight: 900;
-      letter-spacing: -3px;
-    }
+.tagline {
+  margin-top: 8px;
+  color: #888f9c;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
 
-    .logo span {
-      background: #ff1616;
-      padding: 2px 10px;
-      border-radius: 12px;
-      letter-spacing: -1px;
-    }
+nav {
+  max-width: 1100px;
+  margin: 25px auto 0;
+  padding: 0 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
 
-    .tagline {
-      margin-top: 8px;
-      color: #888f9c;
-      letter-spacing: 5px;
-      font-size: 12px;
-      font-weight: 700;
-    }
+nav button {
+  border: 0;
+  background: transparent;
+  color: #9da3ae;
+  padding: 13px 20px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
 
-    nav {
-      max-width: 1100px;
-      margin: 25px auto 0;
-      padding: 0 20px;
+nav button.active {
+  background: #ff1515;
+  color: white;
+}
 
-      display: flex;
-      gap: 10px;
+.controls {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
 
-      overflow-x: auto;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
 
-    nav button {
-      border: 0;
-      background: transparent;
-      color: #9da3ae;
+select {
+  background: #151a23;
+  color: white;
+  border: 1px solid #303744;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+}
 
-      padding: 13px 20px;
-      border-radius: 18px;
+.local-info {
+  color: #9299a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
 
-      font-size: 16px;
-      font-weight: 700;
+.local-info strong {
+  color: #f5f5f5;
+}
 
-      white-space: nowrap;
-    }
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
 
-    nav button.active {
-      background: #ff1515;
-      color: white;
-    }
+.section-heading {
+  margin: 25px 0 18px;
+}
 
-    .controls {
-      max-width: 1100px;
-      margin: 25px auto;
-      padding: 0 20px;
+.section-heading h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
 
-      display: flex;
-      justify-content: flex-end;
-    }
+.section-heading p {
+  margin: 8px 0 0;
+  color: #9299a5;
+  line-height: 1.6;
+}
 
-    select {
-      background: #151a23;
-      color: white;
+.count {
+  color: #9299a5;
+  margin: 20px 0 15px;
+}
 
-      border: 1px solid #303744;
-      border-radius: 12px;
+.article {
+  background: #121720;
+  border: 1px solid #27303d;
+  border-radius: 22px;
 
-      padding: 12px 16px;
+  padding: 18px;
+  margin-bottom: 18px;
 
-      font-size: 15px;
-    }
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 22px;
 
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px 60px;
-    }
+  overflow: hidden;
+}
 
-    .feed-card {
-      background: #121720;
-      border: 1px solid #27303d;
-      border-radius: 22px;
+.article-image-wrap {
+  width: 100%;
+  min-height: 170px;
 
-      padding: 28px;
+  border-radius: 16px;
+  overflow: hidden;
 
-      margin-bottom: 25px;
-    }
+  background: #0d1118;
+}
 
-    .feed-label {
-      color: #858c98;
-      font-size: 15px;
-    }
+.article-image {
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
 
-    .feed-title {
-      margin-top: 4px;
-      font-size: 34px;
-      font-weight: 800;
-    }
+  display: block;
+  object-fit: cover;
+}
 
-    .intro {
-      background: #121720;
-      border: 1px solid #27303d;
-      border-radius: 22px;
+.article-content {
+  min-width: 0;
+}
 
-      padding: 30px;
+.source {
+  color: #ff4a4a;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  font-size: 13px;
 
-      margin-bottom: 25px;
-    }
+  margin-bottom: 8px;
+}
 
-    .intro h2 {
-      margin: 0 0 10px;
-      font-size: 30px;
-    }
+.article h2 {
+  margin: 0 0 10px;
 
-    .intro p {
-      color: #9ba2ae;
-      line-height: 1.7;
-      font-size: 17px;
-    }
+  font-size: 24px;
+  line-height: 1.28;
+}
 
-    .count {
-      color: #9299a5;
-      margin: 25px 0 15px;
-    }
+.summary {
+  color: #aab1bc;
+  line-height: 1.65;
+  font-size: 16px;
+}
 
-    .article {
-      background: #121720;
-      border: 1px solid #27303d;
-      border-radius: 22px;
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
 
-      padding: 28px;
+  margin-top: 15px;
 
-      margin-bottom: 18px;
-    }
+  color: #707887;
+  font-size: 12px;
+}
 
-    .source {
-      color: #ff3b3b;
-      font-weight: 800;
-      letter-spacing: 1px;
-      font-size: 14px;
-    }
+.original {
+  display: inline-block;
 
-    .article h2 {
-      margin: 12px 0;
+  margin-top: 15px;
 
-      font-size: 25px;
-      line-height: 1.3;
-    }
+  color: #ff4a4a;
+  font-weight: 800;
+  text-decoration: none;
+}
 
-    .summary {
-      color: #9da4b0;
-      line-height: 1.7;
-      font-size: 16px;
-    }
+.original:hover {
+  text-decoration: underline;
+}
 
-    .meta {
-      display: flex;
-      justify-content: space-between;
+.image-label {
+  margin-top: 7px;
 
-      margin-top: 20px;
+  color: #6f7785;
+  font-size: 11px;
+}
 
-      color: #707887;
-      font-size: 13px;
-    }
+.status {
+  text-align: center;
+  padding: 45px 20px;
 
-    .original {
-      display: inline-block;
+  color: #9299a5;
+}
 
-      margin-top: 18px;
+.status.error {
+  color: #ff5555;
+}
 
-      color: #ff3b3b;
-      font-weight: 800;
+/* Public submission area */
+.submit-box {
+  margin-top: 35px;
 
-      text-decoration: none;
-    }
+  padding: 24px;
 
-    .loading,
-    .error {
-      text-align: center;
-      padding: 50px;
-      color: #9299a5;
-    }
+  background: #121720;
+  border: 1px solid #27303d;
+  border-radius: 22px;
+}
 
-    .error {
-      color: #ff5555;
-    }
+.submit-box h2 {
+  margin: 0 0 8px;
+  font-size: 23px;
+}
 
-    @media (max-width: 600px) {
+.submit-box p {
+  margin: 0;
 
-      .logo {
-        font-size: 35px;
-      }
+  color: #9ba2ae;
+  line-height: 1.65;
+}
 
-      .feed-title {
-        font-size: 29px;
-      }
+.submit-box .disabled-note {
+  margin-top: 14px;
 
-      .article h2 {
-        font-size: 21px;
-      }
+  color: #777f8d;
+  font-size: 13px;
+}
 
-      .article {
-        padding: 22px;
-      }
-    }
+.submit-button {
+  margin-top: 17px;
 
-  </style>
+  border: 1px solid #3a4351;
+  background: #1a202b;
+  color: #777f8d;
+
+  padding: 12px 16px;
+  border-radius: 12px;
+
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+
+  header {
+    padding-top: 24px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .controls {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .article {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 15px;
+  }
+
+  .article-image-wrap {
+    min-height: 190px;
+  }
+
+  .article-image {
+    min-height: 190px;
+  }
+
+  .article h2 {
+    font-size: 21px;
+  }
+
+  .section-heading h1 {
+    font-size: 28px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -265,22 +341,19 @@
 
 <div class="controls">
 
+  <div id="localInfo" class="local-info">
+    Detecting local time...
+  </div>
+
   <select id="languageSelect">
 
     <option value="en">English</option>
-
     <option value="ta">தமிழ்</option>
-
     <option value="hi">हिन्दी</option>
-
     <option value="te">తెలుగు</option>
-
     <option value="kn">ಕನ್ನಡ</option>
-
     <option value="ml">മലയാളം</option>
-
     <option value="bn">বাংলা</option>
-
     <option value="mr">मराठी</option>
 
   </select>
@@ -289,138 +362,159 @@
 
 <main>
 
-  <section class="feed-card">
+  <section class="section-heading">
 
-    <div class="feed-label">
-      Current feed:
-    </div>
+    <h1 id="sectionTitle">
+      Latest news
+    </h1>
 
-    <div
-      id="feedTitle"
-      class="feed-title"
-    >
-      Loading...
-    </div>
-
-  </section>
-
-  <section class="intro">
-
-    <h2 id="introTitle">
-      Know more. Read less.
-    </h2>
-
-    <p id="introText">
-      Short, original explanations of important
-      stories, with the original publication
-      always credited.
+    <p id="sectionSubtitle">
+      Short, original explanations of important stories,
+      with the original publication credited.
     </p>
 
   </section>
 
-  <div
-    id="storyCount"
-    class="count"
-  ></div>
+  <div id="storyCount" class="count"></div>
 
   <div id="articles">
 
-    <div class="loading">
+    <div class="status">
       Loading news...
     </div>
 
   </div>
+
+  <!--
+    PUBLIC SUBMISSIONS
+
+    IMPORTANT:
+    This is intentionally NOT an active upload form yet.
+
+    A secure moderation backend must exist before
+    accepting public uploads.
+  -->
+
+  <section class="submit-box">
+
+    <h2>
+      Submit local news or an original article
+    </h2>
+
+    <p>
+      Have a genuine local story, public-interest report,
+      or your own article? Submissions will require review
+      and approval before publication.
+    </p>
+
+    <div class="disabled-note">
+
+      Public uploads are currently disabled until a secure
+      moderation system, abuse controls, copyright process
+      and legal review are connected.
+
+    </div>
+
+    <button
+      class="submit-button"
+      disabled
+    >
+      Submissions coming soon
+    </button>
+
+  </section>
 
 </main>
 
 <script>
 
 const CATEGORY_ORDER = [
+
   "World",
   "India",
   "Business",
-  "Technology & AI",
+  "Technology",
   "Sports",
   "Entertainment",
   "Lifestyle"
+
 ];
 
 const UI_TRANSLATIONS = {
 
   en: {
-    current: "Current feed:",
-    introTitle: "Know more. Read less.",
-    introText:
-      "Short, original explanations of important stories, with the original publication always credited.",
-    stories: "stories available",
-    original: "Read original →"
+    latest: "Latest news",
+    subtitle:
+      "Short, original explanations of important stories, with the original publication credited.",
+    stories: "stories",
+    original: "Read original →",
+    ai: "AI-generated illustration"
   },
 
   ta: {
-    current: "தற்போதைய செய்தி:",
-    introTitle: "அதிகம் தெரிந்து கொள்ளுங்கள். குறைவாகப் படியுங்கள்.",
-    introText:
-      "முக்கிய செய்திகளின் சுருக்கமான விளக்கங்கள். அசல் செய்தி வெளியீட்டிற்கு எப்போதும் உரிய கிரெடிட் வழங்கப்படும்.",
-    stories: "செய்திகள் உள்ளன",
-    original: "அசல் செய்தியைப் படிக்க →"
+    latest: "சமீபத்திய செய்திகள்",
+    subtitle:
+      "முக்கிய செய்திகளின் சுருக்கமான, அசல் விளக்கங்கள். அசல் வெளியீட்டிற்கு உரிய கிரெடிட் வழங்கப்படுகிறது.",
+    stories: "செய்திகள்",
+    original: "அசல் செய்தியைப் படிக்க →",
+    ai: "AI உருவாக்கிய விளக்கப்படம்"
   },
 
   hi: {
-    current: "वर्तमान फ़ीड:",
-    introTitle: "ज्यादा जानें। कम पढ़ें।",
-    introText:
-      "महत्वपूर्ण खबरों की संक्षिप्त और मूल व्याख्याएं, जिसमें मूल प्रकाशन को हमेशा श्रेय दिया जाता है।",
-    stories: "खबरें उपलब्ध हैं",
-    original: "मूल खबर पढ़ें →"
+    latest: "नवीनतम खबरें",
+    subtitle:
+      "महत्वपूर्ण खबरों की संक्षिप्त और मूल व्याख्याएं, मूल प्रकाशन को श्रेय के साथ।",
+    stories: "खबरें",
+    original: "मूल खबर पढ़ें →",
+    ai: "AI द्वारा बनाई गई छवि"
   },
 
   te: {
-    current: "ప్రస్తుత ఫీడ్:",
-    introTitle: "ఎక్కువ తెలుసుకోండి. తక్కువ చదవండి.",
-    introText:
-      "ముఖ్యమైన వార్తల సంక్షిప్త వివరణలు. అసలు ప్రచురణకు ఎల్లప్పుడూ క్రెడిట్ ఇవ్వబడుతుంది.",
-    stories: "వార్తలు అందుబాటులో ఉన్నాయి",
-    original: "అసలు వార్త చదవండి →"
+    latest: "తాజా వార్తలు",
+    subtitle:
+      "ముఖ్యమైన వార్తల సంక్షిప్త, అసలైన వివరణలు. అసలు ప్రచురణకు క్రెడిట్ ఇవ్వబడుతుంది.",
+    stories: "వార్తలు",
+    original: "అసలు వార్త చదవండి →",
+    ai: "AI రూపొందించిన చిత్రం"
   },
 
   kn: {
-    current: "ಪ್ರಸ್ತುತ ಫೀಡ್:",
-    introTitle: "ಹೆಚ್ಚು ತಿಳಿಯಿರಿ. ಕಡಿಮೆ ಓದಿ.",
-    introText:
-      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಯಾವಾಗಲೂ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
-    stories: "ಸುದ್ದಿಗಳು ಲಭ್ಯವಿವೆ",
-    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →"
+    latest: "ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು",
+    subtitle:
+      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ, ಮೂಲ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
+    stories: "ಸುದ್ದಿಗಳು",
+    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →",
+    ai: "AI ರಚಿಸಿದ ಚಿತ್ರ"
   },
 
   ml: {
-    current: "നിലവിലെ ഫീഡ്:",
-    introTitle: "കൂടുതൽ അറിയൂ. കുറച്ച് വായിക്കൂ.",
-    introText:
-      "പ്രധാന വാർത്തകളുടെ ചുരുക്കത്തിലുള്ള വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് എല്ലായ്പ്പോഴും ക്രെഡിറ്റ് നൽകുന്നു.",
-    stories: "വാർത്തകൾ ലഭ്യമാണ്",
-    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →"
+    latest: "ഏറ്റവും പുതിയ വാർത്തകൾ",
+    subtitle:
+      "പ്രധാന വാർത്തകളുടെ ചുരുക്കവും യഥാർത്ഥവുമായ വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് ക്രെഡിറ്റ് നൽകുന്നു.",
+    stories: "വാർത്തകൾ",
+    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →",
+    ai: "AI സൃഷ്ടിച്ച ചിത്രം"
   },
 
   bn: {
-    current: "বর্তমান ফিড:",
-    introTitle: "বেশি জানুন। কম পড়ুন।",
-    introText:
-      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ব্যাখ্যা, যেখানে মূল প্রকাশনাকে সবসময় কৃতিত্ব দেওয়া হয়।",
-    stories: "টি খবর পাওয়া যাচ্ছে",
-    original: "মূল খবর পড়ুন →"
+    latest: "সর্বশেষ খবর",
+    subtitle:
+      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ও মৌলিক ব্যাখ্যা, মূল প্রকাশনাকে কৃতিত্বসহ।",
+    stories: "খবর",
+    original: "মূল খবর পড়ুন →",
+    ai: "AI-তৈরি ছবি"
   },
 
   mr: {
-    current: "सध्याचा फीड:",
-    introTitle: "जास्त जाणून घ्या. कमी वाचा.",
-    introText:
-      "महत्त्वाच्या बातम्यांचे संक्षिप्त स्पष्टीकरण, मूळ प्रकाशनाला नेहमी श्रेय दिले जाते.",
-    stories: "बातम्या उपलब्ध आहेत",
-    original: "मूळ बातमी वाचा →"
+    latest: "ताज्या बातम्या",
+    subtitle:
+      "महत्त्वाच्या बातम्यांचे संक्षिप्त आणि मूळ स्पष्टीकरण, मूळ प्रकाशनाला श्रेयासह.",
+    stories: "बातम्या",
+    original: "मूळ बातमी वाचा →",
+    ai: "AI-निर्मित चित्र"
   }
 
 };
-
 
 let allData = null;
 
@@ -431,11 +525,110 @@ let currentLanguage = "en";
 
 function escapeHTML(value) {
 
-  const div = document.createElement("div");
+  const div =
+    document.createElement("div");
 
-  div.textContent = value || "";
+  div.textContent =
+    value == null ? "" : String(value);
 
   return div.innerHTML;
+
+}
+
+
+function safeURL(value) {
+
+  try {
+
+    const url =
+      new URL(value);
+
+    if (
+      url.protocol === "http:" ||
+      url.protocol === "https:"
+    ) {
+
+      return url.href;
+
+    }
+
+  } catch (error) {}
+
+  return "#";
+
+}
+
+
+/*
+  IMPORTANT FIX
+
+  Your articles.json structure is:
+
+  {
+    "categories": {
+      "World": 20,
+      "India": 20
+    },
+
+    "articles": [
+      {...},
+      {...}
+    ]
+  }
+
+  categories contains COUNTS.
+
+  The actual stories are in articles[].
+*/
+
+function getArticles() {
+
+  if (!allData) {
+    return [];
+  }
+
+  const articles =
+    Array.isArray(allData.articles)
+      ? allData.articles
+      : [];
+
+  return articles
+
+    .filter(article => {
+
+      const category =
+        String(
+          article.category || ""
+        ).trim();
+
+      if (
+        currentCategory === "Technology" &&
+        category === "Technology & AI"
+      ) {
+
+        return true;
+
+      }
+
+      return category === currentCategory;
+
+    })
+
+    .sort((a, b) => {
+
+      const first =
+        Date.parse(
+          a.published_at || ""
+        ) || 0;
+
+      const second =
+        Date.parse(
+          b.published_at || ""
+        ) || 0;
+
+      return second - first;
+
+    });
 
 }
 
@@ -453,19 +646,23 @@ function createCategoryButtons() {
     category => {
 
       const button =
-        document.createElement("button");
+        document.createElement(
+          "button"
+        );
 
-      button.textContent = category;
-
-      button.dataset.category =
-        category;
+      button.textContent =
+        category === "Technology"
+          ? "Technology & AI"
+          : category;
 
       if (
         category === currentCategory
       ) {
+
         button.classList.add(
           "active"
         );
+
       }
 
       button.onclick = () => {
@@ -487,161 +684,67 @@ function createCategoryButtons() {
 }
 
 
-async function translateText(
-  text,
-  target
-) {
-
-  if (
-    !text ||
-    target === "en"
-  ) {
-    return text;
-  }
-
-  try {
-
-    const url =
-      "https://translate.googleapis.com/" +
-      "translate_a/single" +
-      "?client=gtx" +
-      "&sl=en" +
-      "&tl=" +
-      encodeURIComponent(target) +
-      "&dt=t" +
-      "&q=" +
-      encodeURIComponent(text);
-
-    const response =
-      await fetch(url);
-
-    if (!response.ok) {
-      return text;
-    }
-
-    const data =
-      await response.json();
-
-    if (
-      !data ||
-      !data[0]
-    ) {
-      return text;
-    }
-
-    return data[0]
-      .map(part => part[0])
-      .join("");
-
-  } catch (error) {
-
-    console.error(
-      "Translation error:",
-      error
-    );
-
-    return text;
-  }
-
-}
-
-
-async function translateArticle(
-  article
-) {
-
-  if (
-    currentLanguage === "en"
-  ) {
-    return {
-      ...article
-    };
-  }
-
-  const title =
-    await translateText(
-      article.title,
-      currentLanguage
-    );
-
-  const summary =
-    await translateText(
-      article.summary,
-      currentLanguage
-    );
-
-  return {
-    ...article,
-    title,
-    summary
-  };
-
-}
-
-
 function formatDate(dateString) {
 
-  try {
+  if (!dateString) {
+    return "";
+  }
 
-    return new Date(
-      dateString
-    ).toLocaleString(
-      undefined,
-      {
-        day: "2-digit",
-        month: "short",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit"
-      }
-    );
+  const date =
+    new Date(dateString);
 
-  } catch {
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
 
-    return dateString;
+    return String(dateString);
 
   }
+
+  return new Intl.DateTimeFormat(
+    undefined,
+    {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    }
+  ).format(date);
 
 }
 
 
-async function render() {
+function render() {
 
   if (!allData) {
     return;
   }
 
-  const articles =
-    (
-      allData.categories[
-        currentCategory
-      ] || []
-    );
-
   const ui =
     UI_TRANSLATIONS[
       currentLanguage
-    ] || UI_TRANSLATIONS.en;
+    ] ||
+    UI_TRANSLATIONS.en;
 
-  document.querySelector(
-    ".feed-label"
-  ).textContent =
-    ui.current;
-
-  document.getElementById(
-    "feedTitle"
-  ).textContent =
-    currentCategory;
+  const articles =
+    getArticles();
 
   document.getElementById(
-    "introTitle"
+    "sectionTitle"
   ).textContent =
-    ui.introTitle;
+    `${ui.latest} — ${
+      currentCategory === "Technology"
+        ? "Technology & AI"
+        : currentCategory
+    }`;
 
   document.getElementById(
-    "introText"
+    "sectionSubtitle"
   ).textContent =
-    ui.introText;
+    ui.subtitle;
 
   document.getElementById(
     "storyCount"
@@ -657,29 +760,19 @@ async function render() {
 
   if (!articles.length) {
 
-    container.innerHTML =
-      `<div class="error">
-        No stories available.
-      </div>`;
+    container.innerHTML = `
+      <div class="status">
+        News is temporarily unavailable
+        for this section.
+      </div>
+    `;
 
     return;
-  }
-
-  const translated = [];
-
-  for (
-    const article of articles
-  ) {
-
-    translated.push(
-      await translateArticle(
-        article
-      )
-    );
 
   }
 
-  translated.forEach(
+
+  articles.forEach(
     article => {
 
       const card =
@@ -690,25 +783,456 @@ async function render() {
       card.className =
         "article";
 
+
+      /*
+        Support both the current JSON
+        and the future AI-image fields.
+      */
+
+      const image =
+        safeURL(
+          article.ai_image_url ||
+          article.image_url ||
+          ""
+        );
+
+
+      /*
+        Support current field names:
+
+        headline
+        summary
+        publisher
+        source_url
+
+        and future names:
+
+        rephrased_headline
+        original_summary
+      */
+
+      const headline =
+        article.rephrased_headline ||
+        article.headline ||
+        article.title ||
+        "";
+
+      const summary =
+        article.original_summary ||
+        article.summary ||
+        "";
+
+      const publisher =
+        article.publisher ||
+        article.source ||
+        "Original publication";
+
+      const sourceURL =
+        safeURL(
+          article.source_url ||
+          article.url ||
+          ""
+        );
+
+
+      const isAI =
+        Boolean(
+          article.ai_image_url
+        ) ||
+        String(
+          article.image_type || ""
+        ).toLowerCase() === "ai";
+
+
       card.innerHTML = `
 
-        <div class="source">
-          ${escapeHTML(
-            article.source
-          )}
+        <div>
+
+          <div class="article-image-wrap">
+
+            ${
+              image !== "#"
+              ?
+              `
+              <img
+                class="article-image"
+                src="${escapeHTML(image)}"
+                alt=""
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.style.display='none';
+                "
+              >
+              `
+              :
+              ""
+            }
+
+          </div>
+
+          <div class="image-label">
+
+            ${
+              isAI
+                ? escapeHTML(ui.ai)
+                : "Story image"
+            }
+
+          </div>
+
         </div>
+
+
+        <div class="article-content">
+
+          <div class="source">
+
+            ${escapeHTML(publisher)}
+
+          </div>
+
+
+          <h2>
+
+            ${escapeHTML(headline)}
+
+          </h2>
+
+
+          <div class="summary">
+
+            ${escapeHTML(summary)}
+
+          </div>
+
+
+          <div class="meta">
+
+            <span>
+              ${escapeHTML(
+                formatDate(
+                  article.published_at
+                )
+              )}
+            </span>
+
+            <span>
+              ${escapeHTML(
+                article.category ||
+                currentCategory
+              )}
+            </span>
+
+          </div>
+
+
+          ${
+            sourceURL !== "#"
+            ?
+            `
+            <a
+              class="original"
+              href="${escapeHTML(sourceURL)}"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              ${escapeHTML(
+                ui.original
+              )}
+            </a>
+            `
+            :
+            ""
+          }
+
+        </div>
+
+      `;
+
+
+      container.appendChild(
+        card
+      );
+
+    }
+  );
+
+}
+
+
+/*
+  Browser translation for the
+  language selector.
+
+  The actual headline and summary
+  remain generated by curator.py.
+*/
+
+async function translateText(
+  text,
+  target
+) {
+
+  if (
+    !text ||
+    target === "en"
+  ) {
+
+    return text;
+
+  }
+
+  try {
+
+    const url =
+      "https://translate.googleapis.com/" +
+      "translate_a/single" +
+      "?client=gtx" +
+      "&sl=en" +
+      "&tl=" +
+      encodeURIComponent(target) +
+      "&dt=t" +
+      "&q=" +
+      encodeURIComponent(text);
+
+
+    const response =
+      await fetch(url);
+
+
+    if (!response.ok) {
+      return text;
+    }
+
+
+    const data =
+      await response.json();
+
+
+    if (
+      !data ||
+      !data[0]
+    ) {
+
+      return text;
+
+    }
+
+
+    return data[0]
+      .map(
+        part => part[0]
+      )
+      .join("");
+
+
+  } catch (error) {
+
+    console.warn(
+      "Translation unavailable:",
+      error
+    );
+
+    return text;
+
+  }
+
+}
+
+
+async function renderTranslated() {
+
+  if (
+    currentLanguage === "en"
+  ) {
+
+    render();
+
+    return;
+
+  }
+
+
+  const articles =
+    getArticles();
+
+  const ui =
+    UI_TRANSLATIONS[
+      currentLanguage
+    ] ||
+    UI_TRANSLATIONS.en;
+
+
+  document.getElementById(
+    "sectionTitle"
+  ).textContent =
+    `${ui.latest} — ${
+      currentCategory === "Technology"
+        ? "Technology & AI"
+        : currentCategory
+    }`;
+
+
+  document.getElementById(
+    "sectionSubtitle"
+  ).textContent =
+    ui.subtitle;
+
+
+  document.getElementById(
+    "storyCount"
+  ).textContent =
+    `${articles.length} ${ui.stories}`;
+
+
+  const container =
+    document.getElementById(
+      "articles"
+    );
+
+  container.innerHTML = "";
+
+
+  if (!articles.length) {
+
+    container.innerHTML = `
+      <div class="status">
+        News is temporarily unavailable
+        for this section.
+      </div>
+    `;
+
+    return;
+
+  }
+
+
+  for (
+    const article of articles
+  ) {
+
+    const headline =
+      await translateText(
+        article.rephrased_headline ||
+        article.headline ||
+        article.title ||
+        "",
+        currentLanguage
+      );
+
+
+    const summary =
+      await translateText(
+        article.original_summary ||
+        article.summary ||
+        "",
+        currentLanguage
+      );
+
+
+    const image =
+      safeURL(
+        article.ai_image_url ||
+        article.image_url ||
+        ""
+      );
+
+
+    const publisher =
+      article.publisher ||
+      article.source ||
+      "Original publication";
+
+
+    const sourceURL =
+      safeURL(
+        article.source_url ||
+        article.url ||
+        ""
+      );
+
+
+    const isAI =
+      Boolean(
+        article.ai_image_url
+      ) ||
+      String(
+        article.image_type || ""
+      ).toLowerCase() === "ai";
+
+
+    const card =
+      document.createElement(
+        "article"
+      );
+
+    card.className =
+      "article";
+
+
+    card.innerHTML = `
+
+      <div>
+
+        <div class="article-image-wrap">
+
+          ${
+            image !== "#"
+            ?
+            `
+            <img
+              class="article-image"
+              src="${escapeHTML(image)}"
+              alt=""
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="
+                this.style.display='none';
+              "
+            >
+            `
+            :
+            ""
+          }
+
+        </div>
+
+        <div class="image-label">
+
+          ${
+            isAI
+              ? escapeHTML(ui.ai)
+              : "Story image"
+          }
+
+        </div>
+
+      </div>
+
+
+      <div class="article-content">
+
+        <div class="source">
+
+          ${escapeHTML(publisher)}
+
+        </div>
+
 
         <h2>
-          ${escapeHTML(
-            article.title
-          )}
+
+          ${escapeHTML(headline)}
+
         </h2>
 
+
         <div class="summary">
-          ${escapeHTML(
-            article.summary
-          )}
+
+          ${escapeHTML(summary)}
+
         </div>
+
 
         <div class="meta">
 
@@ -722,84 +1246,226 @@ async function render() {
 
           <span>
             ${escapeHTML(
-              article.category
+              article.category ||
+              currentCategory
             )}
           </span>
 
         </div>
 
-        <a
-          class="original"
-          href="${escapeHTML(
-            article.url
-          )}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ${ui.original}
-        </a>
 
-      `;
+        ${
+          sourceURL !== "#"
+          ?
+          `
+          <a
+            class="original"
+            href="${escapeHTML(sourceURL)}"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            ${escapeHTML(
+              ui.original
+            )}
+          </a>
+          `
+          :
+          ""
+        }
 
-      container.appendChild(card);
+      </div>
 
-    }
-  );
+    `;
+
+
+    container.appendChild(
+      card
+    );
+
+  }
 
 }
 
 
 async function loadNews() {
 
+  const container =
+    document.getElementById(
+      "articles"
+    );
+
+
   try {
 
     const response =
       await fetch(
         "articles.json?t=" +
-        Date.now()
+        Date.now(),
+        {
+          cache: "no-store"
+        }
       );
 
+
     if (!response.ok) {
+
       throw new Error(
         "Unable to load articles.json"
       );
+
     }
+
 
     allData =
       await response.json();
 
+
+    if (
+      !allData ||
+      !Array.isArray(
+        allData.articles
+      )
+    ) {
+
+      throw new Error(
+        "articles.json does not contain an articles array"
+      );
+
+    }
+
+
     createCategoryButtons();
 
-    await render();
+    render();
+
 
   } catch (error) {
 
     console.error(error);
 
-    document.getElementById(
-      "articles"
-    ).innerHTML =
-      `<div class="error">
-        Unable to load news.
-      </div>`;
+
+    container.innerHTML = `
+      <div class="status error">
+
+        News could not be loaded
+        right now. Please try again later.
+
+      </div>
+    `;
 
   }
 
 }
 
 
-document.getElementById(
-  "languageSelect"
-).addEventListener(
-  "change",
-  async event => {
+/*
+  Local date/time.
 
-    currentLanguage =
-      event.target.value;
+  This automatically uses the visitor's
+  device timezone.
 
-    await render();
+  Example:
 
-  }
+  Chennai:
+  Asia/Kolkata
+
+  London:
+  Europe/London
+
+  New York:
+  America/New_York
+*/
+
+function updateLocalDateTime() {
+
+  const element =
+    document.getElementById(
+      "localInfo"
+    );
+
+
+  const now =
+    new Date();
+
+
+  const date =
+    new Intl.DateTimeFormat(
+      undefined,
+      {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }
+    ).format(now);
+
+
+  const time =
+    new Intl.DateTimeFormat(
+      undefined,
+      {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      }
+    ).format(now);
+
+
+  let timezone = "";
+
+
+  try {
+
+    timezone =
+      Intl.DateTimeFormat()
+        .resolvedOptions()
+        .timeZone || "";
+
+  } catch (error) {}
+
+
+  element.innerHTML =
+    `
+    <strong>
+      ${escapeHTML(date)}
+    </strong>
+
+    ·
+
+    ${escapeHTML(time)}
+
+    ${
+      timezone
+        ? " · " + escapeHTML(timezone)
+        : ""
+    }
+    `;
+
+}
+
+
+document
+  .getElementById(
+    "languageSelect"
+  )
+  .addEventListener(
+    "change",
+    async event => {
+
+      currentLanguage =
+        event.target.value;
+
+      await renderTranslated();
+
+    }
+  );
+
+
+updateLocalDateTime();
+
+setInterval(
+  updateLocalDateTime,
+  1000
 );
 
 
