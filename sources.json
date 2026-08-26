@@ -1,111 +1,65 @@
 {
-  "version": 1,
+  "version": 2,
   "provider": "Google News RSS",
   "language": "en-IN",
   "country": "IN",
-
-  "minimum_per_category": 50,
-  "maximum_per_category": 100,
-
-  "fifo": true,
-
   "categories": {
     "World": [
       "world news",
       "international news",
       "global politics",
       "world economy",
-      "United Nations news",
-      "US news",
-      "UK news",
-      "Europe news",
-      "Middle East news",
-      "Asia news"
+      "geopolitics"
     ],
-
     "India": [
       "India news",
       "Indian politics",
       "India government",
       "India Supreme Court",
       "India economy",
-      "India business",
-      "India Parliament",
-      "Indian defence",
-      "India technology",
       "India national news"
     ],
-
-    "States": [
-      "Tamil Nadu news",
-      "Karnataka news",
-      "Kerala news",
-      "Maharashtra news",
-      "Delhi news",
-      "Andhra Pradesh news",
-      "Telangana news",
-      "West Bengal news",
-      "Gujarat news",
-      "Uttar Pradesh news",
-      "Rajasthan news",
-      "Madhya Pradesh news",
-      "Punjab news",
-      "Bihar news",
-      "Odisha news"
+    "Business": [
+      "business news",
+      "India business",
+      "stock market India",
+      "Indian economy business",
+      "companies India",
+      "finance India"
     ],
-
-    "Tech & AI": [
+    "Technology & AI": [
       "technology news",
-      "artificial intelligence news",
+      "artificial intelligence",
       "AI news",
       "Google AI",
       "Microsoft AI",
-      "OpenAI news",
-      "Apple technology",
-      "Meta AI",
-      "Amazon technology",
-      "cybersecurity news",
-      "semiconductor news",
-      "startup technology",
-      "robotics news",
-      "cloud computing news",
-      "software technology"
+      "OpenAI",
+      "technology India",
+      "cybersecurity"
     ],
-
-    "Business": [
-      "India business news",
-      "Indian economy",
-      "stock market India",
-      "Sensex Nifty news",
-      "global markets",
-      "business news",
-      "finance news",
-      "banking news",
-      "RBI news",
-      "startup business",
-      "corporate India",
-      "companies India",
-      "IPO India",
-      "oil prices",
-      "gold prices"
+    "Sports": [
+      "sports news",
+      "cricket news",
+      "football news",
+      "tennis news",
+      "Olympics news",
+      "Formula 1"
     ],
-
-    "Lifestyle": [
-      "India lifestyle news",
-      "health lifestyle news",
-      "travel news India",
-      "food news India",
-      "entertainment news India",
+    "Entertainment": [
+      "entertainment news",
       "Bollywood news",
-      "sports lifestyle",
-      "fashion news India",
-      "education news India",
-      "culture news India",
-      "science news",
-      "environment news",
-      "automobile news India",
-      "family lifestyle",
-      "consumer news"
+      "Hollywood news",
+      "Tamil cinema",
+      "OTT news",
+      "celebrity news"
+    ],
+    "Lifestyle": [
+      "lifestyle news",
+      "health lifestyle",
+      "travel news",
+      "food news",
+      "fashion news",
+      "culture news"
     ]
   }
 }
