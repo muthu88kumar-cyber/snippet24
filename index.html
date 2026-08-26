@@ -1,723 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snippet24 — Fast News. Real Impact.</title>
-<style>
-* {
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-}
-body {
-    margin: 0;
-    background: #080b11;
-    color: #f5f5f5;
-    font-family:
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Snippet24 — Fast News. Real Impact.</title>
+
+  <meta
+    name="description"
+    content="Snippet24 — Fast news. Real impact."
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #080b10;
+      color: #f5f5f5;
+      font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
         sans-serif;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
-.header {
-    padding: 32px 28px 22px;
-    background: #080b11;
-}
-.logo {
-    font-size: 42px;
-    font-weight: 900;
-    letter-spacing: -3px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-.logo24 {
-    background: #ed0714;
-    color: white;
-    border-radius: 13px;
-    padding: 2px 11px 5px;
-    font-size: 34px;
-    letter-spacing: -2px;
-}
-.tagline {
-    margin-top: 7px;
-    color: #8d929d;
-    font-size: 16px;
-    letter-spacing: 5px;
-    font-weight: 500;
-}
-.nav-wrapper {
-    overflow-x: auto;
-    border-bottom: 1px solid #252b36;
-    background: #080b11;
-    scrollbar-width: none;
-}
-.nav-wrapper::-webkit-scrollbar {
-    display: none;
-}
-.nav {
-    display: flex;
-    gap: 12px;
-    padding: 18px 28px;
-    min-width: max-content;
-}
-.nav button {
-    border: 0;
-    background: transparent;
-    color: #aeb3bd;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 12px 20px;
-    border-radius: 14px;
-    cursor: pointer;
-}
-.nav button.active {
-    background: #ed0714;
-    color: white;
-}
-.container {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 28px;
-}
-.feed-header {
-    background: #121721;
-    border: 1px solid #29313d;
-    border-radius: 22px;
-    padding: 25px;
-    margin-bottom: 22px;
-}
-.feed-label {
-    color: #a2a8b3;
-    font-size: 17px;
-    margin-bottom: 3px;
-}
-.feed-title {
-    font-size: 31px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-.language {
-    width: 100%;
-    border: 0;
-    border-radius: 12px;
-    background: #ed0714;
-    color: white;
-    padding: 15px;
-    font-size: 17px;
-    font-weight: 600;
-}
-.intro {
-    background: #10151e;
-    border: 1px solid #29313d;
-    border-radius: 22px;
-    padding: 28px;
-    margin-bottom: 25px;
-}
-.intro h2 {
-    margin: 0 0 12px;
-    font-size: 28px;
-}
-.intro p {
-    margin: 0;
-    color: #9da3ae;
-    font-size: 18px;
-    line-height: 1.6;
-}
-.status {
-    margin-bottom: 20px;
-    color: #8e96a3;
-    font-size: 14px;
-}
-.error {
-    background: #151923;
-    border: 1px solid #4a2025;
-    border-radius: 22px;
-    padding: 50px 25px;
-    text-align: center;
-}
-.error h2 {
-    font-size: 31px;
-    margin: 0 0 15px;
-}
-.error p {
-    color: #9da3ae;
-    line-height: 1.6;
-}
-.retry {
-    border: 0;
-    background: #ed0714;
-    color: white;
-    padding: 13px 24px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 10px;
-}
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-.article {
-    background: #111620;
-    border: 1px solid #29313d;
-    border-radius: 20px;
-    padding: 22px;
-    transition: transform .15s ease, border-color .15s ease;
-}
-.article:hover {
-    transform: translateY(-2px);
-    border-color: #555e6d;
-}
-.article-source {
-    color: #ed3340;
-    font-size: 13px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: .7px;
-    margin-bottom: 10px;
-}
-.article h3 {
-    font-size: 21px;
-    line-height: 1.35;
-    margin: 0 0 12px;
-}
-.article-description {
-    color: #9ca3af;
-    line-height: 1.55;
-    font-size: 15px;
-    margin-bottom: 16px;
-}
-.article-meta {
-    color: #707987;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.read-more {
-    display: inline-block;
-    margin-top: 16px;
-    color: #ff3a46;
-    font-size: 14px;
-    font-weight: 700;
-}
-.empty {
-    background: #111620;
-    border: 1px solid #29313d;
-    border-radius: 22px;
-    padding: 55px 25px;
-    text-align: center;
-}
-.loading {
-    background: #111620;
-    border: 1px solid #29313d;
-    border-radius: 22px;
-    padding: 55px 25px;
-    text-align: center;
-    color: #9da3ae;
-}
-@media (max-width: 700px) {
-    .header {
-        padding: 25px 20px 17px;
     }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px 10px;
+    }
+
     .logo {
-        font-size: 36px;
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -3px;
     }
-    .logo24 {
-        font-size: 29px;
+
+    .logo span {
+      background: #ff1616;
+      padding: 2px 10px;
+      border-radius: 12px;
+      letter-spacing: -1px;
     }
+
     .tagline {
-        font-size: 12px;
-        letter-spacing: 3.5px;
+      margin-top: 8px;
+      color: #888f9c;
+      letter-spacing: 5px;
+      font-size: 12px;
+      font-weight: 700;
     }
-    .nav {
-        padding: 14px 20px;
+
+    nav {
+      max-width: 1100px;
+      margin: 25px auto 0;
+      padding: 0 20px;
+
+      display: flex;
+      gap: 10px;
+
+      overflow-x: auto;
     }
-    .nav button {
-        font-size: 17px;
-        padding: 11px 16px;
+
+    nav button {
+      border: 0;
+      background: transparent;
+      color: #9da3ae;
+
+      padding: 13px 20px;
+      border-radius: 18px;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      white-space: nowrap;
     }
-    .container {
-        padding: 20px;
+
+    nav button.active {
+      background: #ff1515;
+      color: white;
     }
-    .news-grid {
-        grid-template-columns: 1fr;
+
+    .controls {
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 0 20px;
+
+      display: flex;
+      justify-content: flex-end;
     }
+
+    select {
+      background: #151a23;
+      color: white;
+
+      border: 1px solid #303744;
+      border-radius: 12px;
+
+      padding: 12px 16px;
+
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px 60px;
+    }
+
+    .feed-card {
+      background: #121720;
+      border: 1px solid #27303d;
+      border-radius: 22px;
+
+      padding: 28px;
+
+      margin-bottom: 25px;
+    }
+
+    .feed-label {
+      color: #858c98;
+      font-size: 15px;
+    }
+
     .feed-title {
-        font-size: 28px;
+      margin-top: 4px;
+      font-size: 34px;
+      font-weight: 800;
     }
-}
-</style>
+
+    .intro {
+      background: #121720;
+      border: 1px solid #27303d;
+      border-radius: 22px;
+
+      padding: 30px;
+
+      margin-bottom: 25px;
+    }
+
+    .intro h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .intro p {
+      color: #9ba2ae;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .count {
+      color: #9299a5;
+      margin: 25px 0 15px;
+    }
+
+    .article {
+      background: #121720;
+      border: 1px solid #27303d;
+      border-radius: 22px;
+
+      padding: 28px;
+
+      margin-bottom: 18px;
+    }
+
+    .source {
+      color: #ff3b3b;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+
+    .article h2 {
+      margin: 12px 0;
+
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    .summary {
+      color: #9da4b0;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: 20px;
+
+      color: #707887;
+      font-size: 13px;
+    }
+
+    .original {
+      display: inline-block;
+
+      margin-top: 18px;
+
+      color: #ff3b3b;
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
+    .loading,
+    .error {
+      text-align: center;
+      padding: 50px;
+      color: #9299a5;
+    }
+
+    .error {
+      color: #ff5555;
+    }
+
+    @media (max-width: 600px) {
+
+      .logo {
+        font-size: 35px;
+      }
+
+      .feed-title {
+        font-size: 29px;
+      }
+
+      .article h2 {
+        font-size: 21px;
+      }
+
+      .article {
+        padding: 22px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
-<header class="header">
-    <div class="logo">
-        snippet
-        <span class="logo24">24</span>
-    </div>
-    <div class="tagline">
-        FAST NEWS. REAL IMPACT.
-    </div>
+
+<header>
+
+  <div class="logo">
+    snippet <span>24</span>
+  </div>
+
+  <div class="tagline">
+    FAST NEWS. REAL IMPACT.
+  </div>
+
 </header>
-<div class="nav-wrapper">
-    <nav class="nav" id="nav"></nav>
+
+<nav id="categoryNav"></nav>
+
+<div class="controls">
+
+  <select id="languageSelect">
+
+    <option value="en">English</option>
+
+    <option value="ta">தமிழ்</option>
+
+    <option value="hi">हिन्दी</option>
+
+    <option value="te">తెలుగు</option>
+
+    <option value="kn">ಕನ್ನಡ</option>
+
+    <option value="ml">മലയാളം</option>
+
+    <option value="bn">বাংলা</option>
+
+    <option value="mr">मराठी</option>
+
+  </select>
+
 </div>
-<main class="container">
-    <section class="feed-header">
-        <div class="feed-label">Current feed:</div>
-        <div class="feed-title" id="feedTitle">Top Stories</div>
-        <div class="language">
-            English
-        </div>
-    </section>
-    <section class="intro">
-        <h2>Know more. Read less.</h2>
-        <p>
-            Short, original explanations of important stories,
-            with the original publication always credited.
-        </p>
-    </section>
-    <div id="status" class="status">
-        Loading news…
+
+<main>
+
+  <section class="feed-card">
+
+    <div class="feed-label">
+      Current feed:
     </div>
-    <section id="content">
-        <div class="loading">
-            Loading the latest news…
-        </div>
-    </section>
+
+    <div
+      id="feedTitle"
+      class="feed-title"
+    >
+      Loading...
+    </div>
+
+  </section>
+
+  <section class="intro">
+
+    <h2 id="introTitle">
+      Know more. Read less.
+    </h2>
+
+    <p id="introText">
+      Short, original explanations of important
+      stories, with the original publication
+      always credited.
+    </p>
+
+  </section>
+
+  <div
+    id="storyCount"
+    class="count"
+  ></div>
+
+  <div id="articles">
+
+    <div class="loading">
+      Loading news...
+    </div>
+
+  </div>
+
 </main>
+
 <script>
-const CATEGORIES = [
-    "Top Stories",
-    "World",
-    "India",
-    "States",
-    "Tech & AI",
-    "Business",
-    "Lifestyle"
+
+const CATEGORY_ORDER = [
+  "World",
+  "India",
+  "Business",
+  "Technology & AI",
+  "Sports",
+  "Entertainment",
+  "Lifestyle"
 ];
-const MAX_ARTICLES = 50;
-let newsData = {
-    categories: {}
+
+const UI_TRANSLATIONS = {
+
+  en: {
+    current: "Current feed:",
+    introTitle: "Know more. Read less.",
+    introText:
+      "Short, original explanations of important stories, with the original publication always credited.",
+    stories: "stories available",
+    original: "Read original →"
+  },
+
+  ta: {
+    current: "தற்போதைய செய்தி:",
+    introTitle: "அதிகம் தெரிந்து கொள்ளுங்கள். குறைவாகப் படியுங்கள்.",
+    introText:
+      "முக்கிய செய்திகளின் சுருக்கமான விளக்கங்கள். அசல் செய்தி வெளியீட்டிற்கு எப்போதும் உரிய கிரெடிட் வழங்கப்படும்.",
+    stories: "செய்திகள் உள்ளன",
+    original: "அசல் செய்தியைப் படிக்க →"
+  },
+
+  hi: {
+    current: "वर्तमान फ़ीड:",
+    introTitle: "ज्यादा जानें। कम पढ़ें।",
+    introText:
+      "महत्वपूर्ण खबरों की संक्षिप्त और मूल व्याख्याएं, जिसमें मूल प्रकाशन को हमेशा श्रेय दिया जाता है।",
+    stories: "खबरें उपलब्ध हैं",
+    original: "मूल खबर पढ़ें →"
+  },
+
+  te: {
+    current: "ప్రస్తుత ఫీడ్:",
+    introTitle: "ఎక్కువ తెలుసుకోండి. తక్కువ చదవండి.",
+    introText:
+      "ముఖ్యమైన వార్తల సంక్షిప్త వివరణలు. అసలు ప్రచురణకు ఎల్లప్పుడూ క్రెడిట్ ఇవ్వబడుతుంది.",
+    stories: "వార్తలు అందుబాటులో ఉన్నాయి",
+    original: "అసలు వార్త చదవండి →"
+  },
+
+  kn: {
+    current: "ಪ್ರಸ್ತುತ ಫೀಡ್:",
+    introTitle: "ಹೆಚ್ಚು ತಿಳಿಯಿರಿ. ಕಡಿಮೆ ಓದಿ.",
+    introText:
+      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಯಾವಾಗಲೂ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
+    stories: "ಸುದ್ದಿಗಳು ಲಭ್ಯವಿವೆ",
+    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →"
+  },
+
+  ml: {
+    current: "നിലവിലെ ഫീഡ്:",
+    introTitle: "കൂടുതൽ അറിയൂ. കുറച്ച് വായിക്കൂ.",
+    introText:
+      "പ്രധാന വാർത്തകളുടെ ചുരുക്കത്തിലുള്ള വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് എല്ലായ്പ്പോഴും ക്രെഡിറ്റ് നൽകുന്നു.",
+    stories: "വാർത്തകൾ ലഭ്യമാണ്",
+    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →"
+  },
+
+  bn: {
+    current: "বর্তমান ফিড:",
+    introTitle: "বেশি জানুন। কম পড়ুন।",
+    introText:
+      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ব্যাখ্যা, যেখানে মূল প্রকাশনাকে সবসময় কৃতিত্ব দেওয়া হয়।",
+    stories: "টি খবর পাওয়া যাচ্ছে",
+    original: "মূল খবর পড়ুন →"
+  },
+
+  mr: {
+    current: "सध्याचा फीड:",
+    introTitle: "जास्त जाणून घ्या. कमी वाचा.",
+    introText:
+      "महत्त्वाच्या बातम्यांचे संक्षिप्त स्पष्टीकरण, मूळ प्रकाशनाला नेहमी श्रेय दिले जाते.",
+    stories: "बातम्या उपलब्ध आहेत",
+    original: "मूळ बातमी वाचा →"
+  }
+
 };
-let currentCategory = "Top Stories";
-/* -------------------------------------------------------
-   NAVIGATION
-------------------------------------------------------- */
-function createNavigation() {
-    const nav = document.getElementById("nav");
-    nav.innerHTML = "";
-    CATEGORIES.forEach(category => {
-        const button = document.createElement("button");
-        button.textContent = category;
-        if (category === currentCategory) {
-            button.classList.add("active");
-        }
-        button.addEventListener("click", () => {
-            currentCategory = category;
-            document
-                .querySelectorAll(".nav button")
-                .forEach(btn => btn.classList.remove("active"));
-            button.classList.add("active");
-            document.getElementById("feedTitle").textContent =
-                category;
-            renderArticles();
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-        nav.appendChild(button);
-    });
+
+
+let allData = null;
+
+let currentCategory = "World";
+
+let currentLanguage = "en";
+
+
+function escapeHTML(value) {
+
+  const div = document.createElement("div");
+
+  div.textContent = value || "";
+
+  return div.innerHTML;
+
 }
-/* -------------------------------------------------------
-   DATE
-------------------------------------------------------- */
-function getArticleDate(article) {
-    return (
-        article.published_at ||
-        article.fetched_at ||
-        article.updated_at ||
-        ""
+
+
+function createCategoryButtons() {
+
+  const nav =
+    document.getElementById(
+      "categoryNav"
     );
-}
-/* -------------------------------------------------------
-   NORMALIZE ARTICLE
-------------------------------------------------------- */
-function normalizeArticle(article, category) {
-    if (!article || typeof article !== "object") {
-        return null;
+
+  nav.innerHTML = "";
+
+  CATEGORY_ORDER.forEach(
+    category => {
+
+      const button =
+        document.createElement("button");
+
+      button.textContent = category;
+
+      button.dataset.category =
+        category;
+
+      if (
+        category === currentCategory
+      ) {
+        button.classList.add(
+          "active"
+        );
+      }
+
+      button.onclick = () => {
+
+        currentCategory =
+          category;
+
+        createCategoryButtons();
+
+        render();
+
+      };
+
+      nav.appendChild(button);
+
     }
-    const title =
-        String(article.title || "").trim();
+  );
+
+}
+
+
+async function translateText(
+  text,
+  target
+) {
+
+  if (
+    !text ||
+    target === "en"
+  ) {
+    return text;
+  }
+
+  try {
+
     const url =
-        String(article.url || article.link || "").trim();
-    if (!title || !url) {
-        return null;
+      "https://translate.googleapis.com/" +
+      "translate_a/single" +
+      "?client=gtx" +
+      "&sl=en" +
+      "&tl=" +
+      encodeURIComponent(target) +
+      "&dt=t" +
+      "&q=" +
+      encodeURIComponent(text);
+
+    const response =
+      await fetch(url);
+
+    if (!response.ok) {
+      return text;
     }
+
+    const data =
+      await response.json();
+
+    if (
+      !data ||
+      !data[0]
+    ) {
+      return text;
+    }
+
+    return data[0]
+      .map(part => part[0])
+      .join("");
+
+  } catch (error) {
+
+    console.error(
+      "Translation error:",
+      error
+    );
+
+    return text;
+  }
+
+}
+
+
+async function translateArticle(
+  article
+) {
+
+  if (
+    currentLanguage === "en"
+  ) {
     return {
-        id:
-            article.id ||
-            url ||
-            title,
-        title,
-        description:
-            String(
-                article.description ||
-                article.summary ||
-                ""
-            ).trim(),
-        url,
-        source:
-            String(
-                article.source ||
-                article.publisher ||
-                "News source"
-            ).trim(),
-        category:
-            article.category ||
-            category,
-        published_at:
-            article.published_at ||
-            article.publishedAt ||
-            "",
-        fetched_at:
-            article.fetched_at ||
-            ""
+      ...article
     };
+  }
+
+  const title =
+    await translateText(
+      article.title,
+      currentLanguage
+    );
+
+  const summary =
+    await translateText(
+      article.summary,
+      currentLanguage
+    );
+
+  return {
+    ...article,
+    title,
+    summary
+  };
+
 }
-/* -------------------------------------------------------
-   DEDUPLICATION
-------------------------------------------------------- */
-function deduplicateArticles(articles) {
-    const seen = new Set();
-    const result = [];
-    for (const article of articles) {
-        if (!article) {
-            continue;
-        }
-        const key =
-            article.id ||
-            article.url ||
-            article.title.toLowerCase();
-        if (seen.has(key)) {
-            continue;
-        }
-        seen.add(key);
-        result.push(article);
-    }
-    return result;
-}
-/* -------------------------------------------------------
-   SORT NEWEST FIRST
-------------------------------------------------------- */
-function sortNewest(articles) {
-    return [...articles].sort((a, b) => {
-        const dateA =
-            Date.parse(getArticleDate(a)) || 0;
-        const dateB =
-            Date.parse(getArticleDate(b)) || 0;
-        return dateB - dateA;
-    });
-}
-/* -------------------------------------------------------
-   TOP STORIES
-------------------------------------------------------- */
-function getTopStories() {
-    const all = [];
-    const categories =
-        newsData.categories || {};
-    Object.keys(categories).forEach(category => {
-        const articles =
-            Array.isArray(categories[category])
-                ? categories[category]
-                : [];
-        articles.forEach(article => {
-            const normalized =
-                normalizeArticle(article, category);
-            if (normalized) {
-                all.push(normalized);
-            }
-        });
-    });
-    return sortNewest(
-        deduplicateArticles(all)
-    ).slice(0, MAX_ARTICLES);
-}
-/* -------------------------------------------------------
-   CATEGORY ARTICLES
-------------------------------------------------------- */
-function getCategoryArticles(category) {
-    if (category === "Top Stories") {
-        return getTopStories();
-    }
-    const articles =
-        Array.isArray(newsData.categories?.[category])
-            ? newsData.categories[category]
-            : [];
-    return sortNewest(
-        deduplicateArticles(
-            articles.map(article =>
-                normalizeArticle(article, category)
-            )
-        )
-    ).slice(0, MAX_ARTICLES);
-}
-/* -------------------------------------------------------
-   DATE DISPLAY
-------------------------------------------------------- */
-function formatDate(value) {
-    if (!value) {
-        return "";
-    }
-    const date = new Date(value);
-    if (Number.isNaN(date.getTime())) {
-        return "";
-    }
-    return date.toLocaleString("en-IN", {
+
+
+function formatDate(dateString) {
+
+  try {
+
+    return new Date(
+      dateString
+    ).toLocaleString(
+      undefined,
+      {
         day: "2-digit",
         month: "short",
         year: "numeric",
         hour: "2-digit",
         minute: "2-digit"
-    });
+      }
+    );
+
+  } catch {
+
+    return dateString;
+
+  }
+
 }
-/* -------------------------------------------------------
-   HTML ESCAPE
-------------------------------------------------------- */
-function escapeHtml(value) {
-    return String(value || "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-}
-/* -------------------------------------------------------
-   RENDER
-------------------------------------------------------- */
-function renderArticles() {
-    const content =
-        document.getElementById("content");
-    const articles =
-        getCategoryArticles(currentCategory);
-    document.getElementById("feedTitle").textContent =
-        currentCategory;
-    document.getElementById("status").textContent =
-        `${articles.length} stories available`;
-    if (!articles.length) {
-        content.innerHTML = `
-            <div class="empty">
-                <h2>No stories available</h2>
-                <p>
-                    There are currently no articles in
-                    ${escapeHtml(currentCategory)}.
-                </p>
-            </div>
-        `;
-        return;
-    }
-    content.innerHTML = `
-        <div class="news-grid">
-            ${articles.map(article => {
-                const title =
-                    escapeHtml(article.title);
-                const description =
-                    escapeHtml(article.description);
-                const source =
-                    escapeHtml(article.source);
-                const date =
-                    escapeHtml(
-                        formatDate(
-                            getArticleDate(article)
-                        )
-                    );
-                const url =
-                    escapeHtml(article.url);
-                return `
-                    <article class="article">
-                        <div class="article-source">
-                            ${source}
-                        </div>
-                        <h3>
-                            ${title}
-                        </h3>
-                        ${
-                            description
-                                ? `
-                                    <div class="article-description">
-                                        ${description}
-                                    </div>
-                                  `
-                                : ""
-                        }
-                        <div class="article-meta">
-                            <span>
-                                ${date}
-                            </span>
-                            <span>
-                                ${escapeHtml(article.category)}
-                            </span>
-                        </div>
-                        <a
-                            class="read-more"
-                            href="${url}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Read original →
-                        </a>
-                    </article>
-                `;
-            }).join("")}
+
+
+async function render() {
+
+  if (!allData) {
+    return;
+  }
+
+  const articles =
+    (
+      allData.categories[
+        currentCategory
+      ] || []
+    );
+
+  const ui =
+    UI_TRANSLATIONS[
+      currentLanguage
+    ] || UI_TRANSLATIONS.en;
+
+  document.querySelector(
+    ".feed-label"
+  ).textContent =
+    ui.current;
+
+  document.getElementById(
+    "feedTitle"
+  ).textContent =
+    currentCategory;
+
+  document.getElementById(
+    "introTitle"
+  ).textContent =
+    ui.introTitle;
+
+  document.getElementById(
+    "introText"
+  ).textContent =
+    ui.introText;
+
+  document.getElementById(
+    "storyCount"
+  ).textContent =
+    `${articles.length} ${ui.stories}`;
+
+  const container =
+    document.getElementById(
+      "articles"
+    );
+
+  container.innerHTML = "";
+
+  if (!articles.length) {
+
+    container.innerHTML =
+      `<div class="error">
+        No stories available.
+      </div>`;
+
+    return;
+  }
+
+  const translated = [];
+
+  for (
+    const article of articles
+  ) {
+
+    translated.push(
+      await translateArticle(
+        article
+      )
+    );
+
+  }
+
+  translated.forEach(
+    article => {
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+      card.className =
+        "article";
+
+      card.innerHTML = `
+
+        <div class="source">
+          ${escapeHTML(
+            article.source
+          )}
         </div>
-    `;
+
+        <h2>
+          ${escapeHTML(
+            article.title
+          )}
+        </h2>
+
+        <div class="summary">
+          ${escapeHTML(
+            article.summary
+          )}
+        </div>
+
+        <div class="meta">
+
+          <span>
+            ${escapeHTML(
+              formatDate(
+                article.published_at
+              )
+            )}
+          </span>
+
+          <span>
+            ${escapeHTML(
+              article.category
+            )}
+          </span>
+
+        </div>
+
+        <a
+          class="original"
+          href="${escapeHTML(
+            article.url
+          )}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ${ui.original}
+        </a>
+
+      `;
+
+      container.appendChild(card);
+
+    }
+  );
+
 }
-/* -------------------------------------------------------
-   LOAD JSON
-------------------------------------------------------- */
+
+
 async function loadNews() {
-    const content =
-        document.getElementById("content");
-    const status =
-        document.getElementById("status");
-    content.innerHTML = `
-        <div class="loading">
-            Loading the latest news…
-        </div>
-    `;
-    status.textContent =
-        "Connecting to news database…";
-    try {
-        /*
-         * IMPORTANT:
-         * articles.json must be in the SAME folder
-         * as index.html.
-         */
-        const jsonUrl =
-            new URL(
-                "articles.json",
-                document.baseURI
-            ).href
-            + "?v="
-            + Date.now();
-        console.log(
-            "Loading articles from:",
-            jsonUrl
-        );
-        const response =
-            await fetch(
-                jsonUrl,
-                {
-                    method: "GET",
-                    cache: "no-store"
-                }
-            );
-        console.log(
-            "articles.json HTTP status:",
-            response.status
-        );
-        if (!response.ok) {
-            throw new Error(
-                `HTTP ${response.status} while loading articles.json`
-            );
-        }
-        const data =
-            await response.json();
-        console.log(
-            "articles.json loaded:",
-            data
-        );
-        if (
-            !data ||
-            typeof data !== "object"
-        ) {
-            throw new Error(
-                "articles.json is not a valid JSON object"
-            );
-        }
-        if (
-            !data.categories ||
-            typeof data.categories !== "object"
-        ) {
-            throw new Error(
-                "articles.json does not contain a categories object"
-            );
-        }
-        newsData = data;
-        let total = 0;
-        Object.keys(
-            newsData.categories
-        ).forEach(category => {
-            if (
-                Array.isArray(
-                    newsData.categories[category]
-                )
-            ) {
-                total +=
-                    newsData.categories[category].length;
-            }
-        });
-        console.log(
-            "Total articles:",
-            total
-        );
-        if (total === 0) {
-            throw new Error(
-                "articles.json contains 0 articles"
-            );
-        }
-        status.textContent =
-            `${total} articles loaded successfully`;
-        createNavigation();
-        renderArticles();
-    } catch (error) {
-        console.error(
-            "NEWS LOAD ERROR:",
-            error
-        );
-        status.textContent =
-            "Unable to load news";
-        content.innerHTML = `
-            <div class="error">
-                <h2>
-                    News feed unavailable
-                </h2>
-                <p>
-                    The website could not load
-                    <strong>articles.json</strong>.
-                </p>
-                <p style="font-size:13px;">
-                    Error:
-                    ${escapeHtml(error.message)}
-                </p>
-                <button
-                    class="retry"
-                    onclick="loadNews()"
-                >
-                    Try again
-                </button>
-            </div>
-        `;
+
+  try {
+
+    const response =
+      await fetch(
+        "articles.json?t=" +
+        Date.now()
+      );
+
+    if (!response.ok) {
+      throw new Error(
+        "Unable to load articles.json"
+      );
     }
+
+    allData =
+      await response.json();
+
+    createCategoryButtons();
+
+    await render();
+
+  } catch (error) {
+
+    console.error(error);
+
+    document.getElementById(
+      "articles"
+    ).innerHTML =
+      `<div class="error">
+        Unable to load news.
+      </div>`;
+
+  }
+
 }
-/* -------------------------------------------------------
-   START
-------------------------------------------------------- */
-createNavigation();
+
+
+document.getElementById(
+  "languageSelect"
+).addEventListener(
+  "change",
+  async event => {
+
+    currentLanguage =
+      event.target.value;
+
+    await render();
+
+  }
+);
+
+
 loadNews();
+
 </script>
+
 </body>
 </html>
