@@ -1,29 +1,26 @@
 import json
-import hashlib
-import html
+import os
 import re
+import html
 import time
 from datetime import datetime, timezone
-from pathlib import Path
-from urllib.parse import urlparse
+from email.utils import parsedate_to_datetime
 
 import feedparser
 import requests
 
 
-ROOT = Path(__file__).resolve().parent
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-SOURCES_FILE = ROOT / "sources.json"
-OUTPUT_FILE = ROOT / "articles.json"
+SOURCES_FILE = os.path.join(BASE_DIR, "sources.json")
+ARTICLES_FILE = os.path.join(BASE_DIR, "articles.json")
 
-MIN_PER_CATEGORY = 50
-MAX_PER_CATEGORY = 100
-
-REQUEST_TIMEOUT = 20
+MINIMUM_PER_CATEGORY = 50
+MAXIMUM_PER_CATEGORY = 100
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (compatible; Snippet24News/1.0; "
+        "Mozilla/5.0 (compatible; Snippet24NewsBot/2.0; "
         "+https://snippet24.in)"
     )
 }
@@ -34,9 +31,9 @@ def clean_text(value):
         return ""
 
     value = html.unescape(str(value))
-    value = re.sub(r"<script.*?</script>", " ", value, flags=re.I | re.S)
-    value = re.sub(r"<style.*?</style>", " ", value, flags=re.I | re.S)
+
     value = re.sub(r"<[^>]+>", " ", value)
+
     value = re.sub(r"\s+", " ", value)
 
     return value.strip()
@@ -46,150 +43,79 @@ def normalize_url(url):
     if not url:
         return ""
 
-    url = url.strip()
-
-    if url.startswith("//"):
-        url = "https:" + url
-
-    return url
-
-
-def article_id(title, url):
-    raw = f"{title.strip().lower()}|{normalize_url(url).lower()}"
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
+    return url.strip()
 
 
 def parse_date(entry):
-    for key in (
-        "published_parsed",
-        "updated_parsed",
-        "created_parsed",
-    ):
+    for key in ["published", "updated", "created"]:
         value = entry.get(key)
 
-        if value:
-            try:
-                return datetime(
-                    value.tm_year,
-                    value.tm_mon,
-                    value.tm_mday,
-                    value.tm_hour,
-                    value.tm_min,
-                    value.tm_sec,
-                    tzinfo=timezone.utc,
-                ).isoformat()
-            except Exception:
-                pass
+        if not value:
+            continue
+
+        try:
+            dt = parsedate_to_datetime(value)
+
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+
+            return dt.astimezone(timezone.utc).isoformat()
+        except Exception:
+            pass
 
     return datetime.now(timezone.utc).isoformat()
 
 
-def get_description(entry):
-    description = (
+def google_news_rss(query):
+    encoded_query = requests.utils.quote(query)
+
+    return (
+        "https://news.google.com/rss/search?"
+        f"q={encoded_query}"
+        "&hl=en-IN"
+        "&gl=IN"
+        "&ceid=IN:en"
+    )
+
+
+def get_source_name(entry):
+    source = entry.get("source")
+
+    if isinstance(source, dict):
+        name = source.get("title")
+        if name:
+            return clean_text(name)
+
+    title = clean_text(entry.get("title", ""))
+
+    if " - " in title:
+        parts = title.rsplit(" - ", 1)
+
+        if len(parts) == 2:
+            return parts[1].strip()
+
+    return "News source"
+
+
+def get_article_title(entry):
+    title = clean_text(entry.get("title", ""))
+
+    if " - " in title:
+        title = title.rsplit(" - ", 1)[0].strip()
+
+    return title
+
+
+def get_summary(entry):
+    summary = (
         entry.get("summary")
         or entry.get("description")
         or ""
     )
 
-    description = clean_text(description)
+    summary = clean_text(summary)
 
-    if len(description) > 700:
-        description = description[:697] + "..."
-
-    return description
-
-
-def get_image(entry):
-    media = entry.get("media_content")
-
-    if media and isinstance(media, list):
-        for item in media:
-            if isinstance(item, dict):
-                url = item.get("url")
-                if url:
-                    return normalize_url(url)
-
-    media = entry.get("media_thumbnail")
-
-    if media and isinstance(media, list):
-        for item in media:
-            if isinstance(item, dict):
-                url = item.get("url")
-                if url:
-                    return normalize_url(url)
-
-    for enclosure in entry.get("enclosures", []):
-        if isinstance(enclosure, dict):
-            url = enclosure.get("href") or enclosure.get("url")
-            mime = enclosure.get("type", "")
-
-            if url and (
-                mime.startswith("image/")
-                or re.search(r"\.(jpg|jpeg|png|webp)(\?|$)", url, re.I)
-            ):
-                return normalize_url(url)
-
-    return ""
-
-
-def load_sources():
-    if not SOURCES_FILE.exists():
-        raise RuntimeError("sources.json not found")
-
-    with open(SOURCES_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    if isinstance(data, dict):
-        sources = data.get("sources", data)
-    elif isinstance(data, list):
-        sources = data
-    else:
-        sources = []
-
-    return sources
-
-
-def source_name(source):
-    if isinstance(source, dict):
-        return (
-            source.get("name")
-            or source.get("source")
-            or source.get("publisher")
-            or "Unknown Source"
-        )
-
-    return "Unknown Source"
-
-
-def source_url(source):
-    if isinstance(source, dict):
-        return (
-            source.get("url")
-            or source.get("feed")
-            or source.get("rss")
-            or ""
-        )
-
-    return str(source)
-
-
-def source_categories(source):
-    if not isinstance(source, dict):
-        return []
-
-    categories = (
-        source.get("categories")
-        or source.get("category")
-        or []
-    )
-
-    if isinstance(categories, str):
-        return [categories]
-
-    if isinstance(categories, list):
-        return [str(x) for x in categories if x]
-
-    return []
+    return summary[:500]
 
 
 def fetch_feed(url):
@@ -197,413 +123,274 @@ def fetch_feed(url):
         response = requests.get(
             url,
             headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
+            timeout=20
         )
 
         response.raise_for_status()
 
         parsed = feedparser.parse(response.content)
 
-        return parsed
-
-    except Exception as exc:
-        print(f"Feed failed: {url} -> {exc}")
-        return None
-
-
-def make_article(entry, source, category):
-    title = clean_text(entry.get("title", ""))
-    url = normalize_url(
-        entry.get("link")
-        or entry.get("guid")
-        or ""
-    )
-
-    if not title or not url:
-        return None
-
-    publisher = source_name(source)
-
-    article = {
-        "id": article_id(title, url),
-        "title": title,
-        "description": get_description(entry),
-        "url": url,
-        "source": publisher,
-        "category": category,
-        "published_at": parse_date(entry),
-        "image": get_image(entry),
-        "language": "en",
-        "country": "IN",
-        "domain": urlparse(url).netloc,
-    }
-
-    return article
-
-
-def load_existing():
-    if not OUTPUT_FILE.exists():
-        return []
-
-    try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        if isinstance(data, dict):
-            articles = data.get("articles", [])
-        elif isinstance(data, list):
-            articles = data
-        else:
-            articles = []
-
-        if not isinstance(articles, list):
+        if parsed.bozo and not parsed.entries:
             return []
 
-        return articles
+        return parsed.entries
 
     except Exception as exc:
-        print(f"Existing articles.json could not be read: {exc}")
+        print(f"Feed error: {url}")
+        print(f"Reason: {exc}")
         return []
 
 
-def unique_articles(items):
-    seen = set()
-    result = []
+def collect_category(category, queries):
+    articles = []
+    seen_urls = set()
+    seen_titles = set()
 
-    for article in items:
-        if not isinstance(article, dict):
-            continue
+    print("")
+    print("=" * 60)
+    print(f"COLLECTING: {category}")
+    print("=" * 60)
 
-        title = clean_text(article.get("title", ""))
-        url = normalize_url(article.get("url", ""))
+    for query in queries:
+        print(f"Query: {query}")
 
-        if not title or not url:
-            continue
+        url = google_news_rss(query)
 
-        key = (
-            article.get("id")
-            or article_id(title, url)
-        )
+        entries = fetch_feed(url)
 
-        if key in seen:
-            continue
-
-        seen.add(key)
-
-        article["id"] = key
-        article["title"] = title
-        article["url"] = url
-
-        result.append(article)
-
-    return result
-
-
-def fetch_new_articles():
-    sources = load_sources()
-
-    all_new = []
-
-    for source in sources:
-        feed_url = source_url(source)
-
-        if not feed_url:
-            continue
-
-        categories = source_categories(source)
-
-        if not categories:
-            categories = ["Top Stories"]
-
-        print(f"Fetching: {source_name(source)}")
-
-        feed = fetch_feed(feed_url)
-
-        if not feed:
-            continue
-
-        entries = feed.entries[:150]
+        print(f"  Found: {len(entries)}")
 
         for entry in entries:
-            for category in categories:
-                article = make_article(
-                    entry,
-                    source,
-                    category,
-                )
 
-                if article:
-                    all_new.append(article)
+            title = get_article_title(entry)
 
-        time.sleep(0.2)
+            link = normalize_url(entry.get("link", ""))
 
-    return unique_articles(all_new)
+            if not title or not link:
+                continue
 
+            title_key = re.sub(
+                r"[^a-z0-9]+",
+                " ",
+                title.lower()
+            ).strip()
 
-def normalize_categories(articles):
-    result = []
+            if link in seen_urls:
+                continue
 
-    for article in articles:
-        if not isinstance(article, dict):
-            continue
+            if title_key in seen_titles:
+                continue
 
-        category = clean_text(
-            article.get("category")
-            or "Top Stories"
-        )
+            seen_urls.add(link)
+            seen_titles.add(title_key)
 
-        article["category"] = category
+            article = {
+                "id": "",
+                "category": category,
+                "language": "en",
+                "title": title,
+                "summary": get_summary(entry),
+                "source": get_source_name(entry),
+                "url": link,
+                "published_at": parse_date(entry)
+            }
 
-        result.append(article)
+            articles.append(article)
 
-    return result
+        time.sleep(0.3)
 
+    articles.sort(
+        key=lambda item: item["published_at"],
+        reverse=True
+    )
 
-def group_by_category(articles):
-    groups = {}
+    for index, article in enumerate(articles):
+        article["id"] = f"{category.lower().replace(' ', '-')}-{index + 1}"
 
-    for article in articles:
-        category = article.get("category", "Top Stories")
+    articles = articles[:MAXIMUM_PER_CATEGORY]
 
-        if category not in groups:
-            groups[category] = []
-
-        groups[category].append(article)
-
-    return groups
-
-
-def fifo_merge(existing, new):
-    """
-    FIFO strategy:
-    Existing articles are retained first.
-    New articles are added after them.
-    The oldest entries are removed when a category exceeds
-    MAX_PER_CATEGORY.
-
-    New articles are then moved to the front for display.
-    """
-
-    existing = unique_articles(existing)
-    new = unique_articles(new)
-
-    combined = existing + new
-
-    combined = unique_articles(combined)
-
-    groups = group_by_category(combined)
-
-    final = []
-
-    for category, items in groups.items():
-
-        # Newest first
-        items.sort(
-            key=lambda x: x.get("published_at", ""),
-            reverse=True,
-        )
-
-        # Keep maximum
-        items = items[:MAX_PER_CATEGORY]
-
-        final.extend(items)
-
-    return unique_articles(final)
-
-
-def ensure_minimum_categories(articles):
-    """
-    We never manufacture fake news.
-
-    If a category has fewer than 50 real RSS articles,
-    we keep every valid article available from its feeds.
-    """
-
-    groups = group_by_category(articles)
-
-    for category in sorted(groups):
-        count = len(groups[category])
-
-        if count < MIN_PER_CATEGORY:
-            print(
-                f"WARNING: {category} has only "
-                f"{count} real articles; "
-                f"target is {MIN_PER_CATEGORY}."
-            )
+    print(f"FINAL {category}: {len(articles)} articles")
 
     return articles
 
 
-def sort_articles(articles):
-    return sorted(
-        articles,
-        key=lambda x: x.get("published_at", ""),
-        reverse=True,
-    )
+def load_previous_articles():
+    if not os.path.exists(ARTICLES_FILE):
+        return {}
+
+    try:
+        with open(
+            ARTICLES_FILE,
+            "r",
+            encoding="utf-8"
+        ) as file:
+            data = json.load(file)
+
+        if isinstance(data, dict):
+            return data.get("categories", {})
+
+    except Exception as exc:
+        print(f"Could not read previous articles: {exc}")
+
+    return {}
 
 
-def build_output(articles):
-    articles = normalize_categories(articles)
-    articles = unique_articles(articles)
-    articles = sort_articles(articles)
+def merge_fifo(previous, fresh):
+    """
+    FIFO-style retention.
 
-    categories = {}
+    New stories are added.
+    Duplicate stories are removed.
+    The newest 100 stories are retained.
+    Oldest stories are discarded.
+    """
 
-    for article in articles:
-        category = article["category"]
-
-        if category not in categories:
-            categories[category] = 0
-
-        categories[category] += 1
-
-    output = {
-        "version": 1,
-        "site": "Snippet24 News",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "language": "en-IN",
-        "country": "IN",
-        "minimum_per_category": MIN_PER_CATEGORY,
-        "maximum_per_category": MAX_PER_CATEGORY,
-        "fifo": True,
-        "total_articles": len(articles),
-        "category_counts": categories,
-        "articles": articles,
-    }
-
-    return output
-
-
-def validate_output(data):
-    if not isinstance(data, dict):
-        raise ValueError("Root must be a JSON object")
-
-    required = [
-        "version",
-        "site",
-        "generated_at",
-        "articles",
-    ]
-
-    for field in required:
-        if field not in data:
-            raise ValueError(
-                f"Missing required field: {field}"
-            )
-
-    if not isinstance(data["articles"], list):
-        raise ValueError(
-            "'articles' must be an array"
-        )
+    combined = []
 
     seen = set()
 
-    for index, article in enumerate(data["articles"]):
+    for article in fresh + previous:
 
-        if not isinstance(article, dict):
-            raise ValueError(
-                f"Article {index} is not an object"
-            )
+        url = article.get("url", "").strip()
 
-        for field in (
-            "id",
-            "title",
-            "url",
-            "source",
-            "category",
+        if not url:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+
+        combined.append(article)
+
+    combined.sort(
+        key=lambda item: item.get(
             "published_at",
-        ):
-            if not article.get(field):
-                raise ValueError(
-                    f"Article {index} missing '{field}'"
-                )
+            ""
+        ),
+        reverse=True
+    )
 
-        article_id_value = article["id"]
-
-        if article_id_value in seen:
-            raise ValueError(
-                f"Duplicate article id: {article_id_value}"
-            )
-
-        seen.add(article_id_value)
-
-    return True
+    return combined[:MAXIMUM_PER_CATEGORY]
 
 
-def save_output(data):
-    temporary = OUTPUT_FILE.with_suffix(".tmp")
+def save_articles(categories):
+    total = sum(
+        len(items)
+        for items in categories.values()
+    )
+
+    output = {
+        "version": 2,
+        "generated_at": datetime.now(
+            timezone.utc
+        ).isoformat(),
+        "minimum_per_category": MINIMUM_PER_CATEGORY,
+        "maximum_per_category": MAXIMUM_PER_CATEGORY,
+        "total": total,
+        "categories": categories
+    }
 
     with open(
-        temporary,
+        ARTICLES_FILE,
         "w",
-        encoding="utf-8",
-    ) as f:
+        encoding="utf-8"
+    ) as file:
         json.dump(
-            data,
-            f,
+            output,
+            file,
             ensure_ascii=False,
-            indent=2,
+            indent=2
         )
 
-    # Validate the exact bytes we are going to publish
-    with open(
-        temporary,
-        "r",
-        encoding="utf-8",
-    ) as f:
-        check = json.load(f)
+    print("")
+    print("=" * 60)
+    print("ARTICLES.JSON CREATED")
+    print("=" * 60)
 
-    validate_output(check)
+    for category, items in categories.items():
+        print(f"{category}: {len(items)}")
 
-    temporary.replace(OUTPUT_FILE)
+    print(f"TOTAL: {total}")
+
+
+def validate(categories):
+
+    print("")
+    print("=" * 60)
+    print("VALIDATION")
+    print("=" * 60)
+
+    failed = False
+
+    for category, items in categories.items():
+
+        count = len(items)
+
+        print(f"{category}: {count}")
+
+        if count < MINIMUM_PER_CATEGORY:
+            print(
+                f"ERROR: {category} has only "
+                f"{count} articles"
+            )
+            failed = True
+
+    total = sum(
+        len(items)
+        for items in categories.values()
+    )
+
+    print(f"TOTAL: {total}")
+
+    if failed:
+        raise SystemExit(1)
+
+    print("VALIDATION PASSED")
 
 
 def main():
-    print("======================================")
-    print("Snippet24 News Curator")
-    print("======================================")
 
-    existing = load_existing()
+    print("=" * 60)
+    print("SNIPPET24 NEWS CURATOR")
+    print("=" * 60)
 
-    print(
-        f"Existing articles: {len(existing)}"
-    )
+    with open(
+        SOURCES_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+        config = json.load(file)
 
-    new_articles = fetch_new_articles()
+    category_queries = config["categories"]
 
-    print(
-        f"New articles: {len(new_articles)}"
-    )
+    previous = load_previous_articles()
 
-    merged = fifo_merge(
-        existing,
-        new_articles,
-    )
+    categories = {}
 
-    merged = ensure_minimum_categories(
-        merged
-    )
+    for category, queries in category_queries.items():
 
-    output = build_output(merged)
-
-    validate_output(output)
-
-    save_output(output)
-
-    print(
-        f"Saved {len(output['articles'])} articles"
-    )
-
-    print("Category counts:")
-
-    for category, count in sorted(
-        output["category_counts"].items()
-    ):
-        print(
-            f"  {category}: {count}"
+        fresh = collect_category(
+            category,
+            queries
         )
 
-    print("SUCCESS")
+        old = previous.get(
+            category,
+            []
+        )
+
+        categories[category] = merge_fifo(
+            old,
+            fresh
+        )
+
+    save_articles(categories)
+
+    validate(categories)
+
+    print("")
+    print("DONE")
 
 
 if __name__ == "__main__":
