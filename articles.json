@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T06:45:58.239537+00:00",
+  "updated_at": "2026-08-26T06:47:16.984143+00:00",
   "total": 100,
   "categories": {
     "World": 20,
@@ -11,6 +11,17 @@
     "Entertainment": 20
   },
   "articles": [
+    {
+      "id": "118ca6fe6fc248246b30",
+      "category": "World",
+      "headline": "Fears grow for fourth rate hike after higher than expected July inflation rate",
+      "summary": "ABS says CPI was 3.5% in July, casting doubt on Reserve Bank meeting its 2.5% inflation target without further hike Fears are growing that the Reserve Bank will hit millions of mortgage holders with a fourth rate hike this year, after inflation eased in July but by far less than expected. Consumer prices climbed by 3.5% through the year, down from 3.8%...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T06:44:23+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/fears-grow-for-fourth-rate-hike-after-higher-than-expected-july-inflation-rate",
+      "image_url": "https://i.guim.co.uk/img/media/ded625f2f56d2bfbc7f20677b7734b06fc80192c/446_0_4446_3559/master/4446.jpg?width=140&quality=85&auto=format&fit=max&s=fee209537618f9914ec287e4b22b3e28",
+      "image_type": "source"
+    },
     {
       "id": "f973e658af70fff56245",
       "category": "India",
@@ -692,17 +703,6 @@
       "source_url": "https://economictimes.indiatimes.com/mf/analysis/over-rs-1-crore-invested-in-mutual-funds-nps-ppf-and-fds-should-this-psu-banker-increase-equity-exposure-with-18-years-to-retirement/articleshow/133528903.cms",
       "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Over%20Rs%201%20crore%20invested%20in%20mutual%20funds%2C%20NPS%2C%20PPF%20and%20FDs%3A%20Should%20this%20PSU%20banker%20increase%20equity%20exposure%20with%2018%20years%20to%20retirement%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1729352783",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "f3c7aacdab70f8b75a06",
-      "category": "World",
-      "headline": "Antisemitism royal commission ends hearings but delays report to avoid ‘distraction’ from Bondi anniversary",
-      "summary": "Commissioner Virginia Bell resists push to extend antisemitism inquiry noting need for timely recommendations Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Commissioner Virginia Bell says she will delay – by four days – handing down her final report into antisemitism and social...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T03:55:27+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/antisemitism-royal-commission-ends-hearings-but-delays-report-to-avoid-distraction-from-bondi-anniversary-ntwnfb",
-      "image_url": "https://i.guim.co.uk/img/media/ae947d5f48470cb45ffff6dc2090fa82166d8be2/398_0_4160_3328/master/4160.jpg?width=140&quality=85&auto=format&fit=max&s=ea6bcc440cc642247413a720f2e79b96",
-      "image_type": "source"
     },
     {
       "id": "f44b867b9655577e857d",
