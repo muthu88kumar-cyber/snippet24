@@ -145,7 +145,12 @@ nav {
   gap: 8px;
 
   overflow-x: auto;
+  overflow-y: hidden;
+
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  white-space: nowrap;
 }
 
 nav::-webkit-scrollbar {
@@ -153,6 +158,8 @@ nav::-webkit-scrollbar {
 }
 
 nav button {
+  flex: 0 0 auto;
+
   border: 0;
   background: transparent;
   color: #9ca4b0;
@@ -174,6 +181,44 @@ nav button:hover {
 nav button.active {
   background: var(--red);
   color: white;
+}
+
+
+/* MOBILE CATEGORY SCROLL */
+
+@media (max-width: 760px) {
+
+  nav {
+    width: 100%;
+    max-width: none;
+
+    margin-top: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+
+    white-space: nowrap;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
 }
 
 /* =========================
