@@ -1803,6 +1803,33 @@ document
 loadNews();
 
 </script>
+<script>
+async function loadArticles() {
+  try {
+    const response = await fetch("articles.json");
 
+    if (!response.ok) {
+      throw new Error("Could not load articles.json");
+    }
+
+    const data = await response.json();
+
+    console.log("Articles loaded:", data.articles.length);
+
+    window.snippet24Articles = data.articles;
+
+    const count = document.querySelector(".story-count");
+
+    if (count) {
+      count.textContent = `${data.articles.length} stories available`;
+    }
+
+  } catch (error) {
+    console.error("Error loading articles:", error);
+  }
+}
+
+loadArticles();
+</script>
 </body>
 </html>
