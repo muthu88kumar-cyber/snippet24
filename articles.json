@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T06:19:23.311667+00:00",
+  "updated_at": "2026-08-26T06:45:58.239537+00:00",
   "total": 100,
   "categories": {
     "World": 20,
@@ -11,6 +11,215 @@
     "Entertainment": 20
   },
   "articles": [
+    {
+      "id": "f973e658af70fff56245",
+      "category": "India",
+      "headline": "MoEFCC urges NGT to direct States to submit annual plan of operation for Neelakurinji conservation",
+      "summary": "MoEFCC urges NGT to direct States to submit annual plan of operation for Neelakurinji conservation. The latest developments are being reported as more information becomes available.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:42:31+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/moefcc-urges-ngt-to-direct-states-to-submit-annual-plan-of-operation-for-neelakurinji-conservation/article71391562.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/6blq00/article71391800.ece/alternates/LANDSCAPE_1200/Kurinji-blooms-G8CG7QADM.3.jpg.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "eac9969966345013b6a1",
+      "category": "India",
+      "headline": "‘Achche din’ keep wrecking common person’s budget: Congress slams Modi Govt",
+      "summary": "Congress president Mallikarjun Kharge said that the BJP wants to dodge accountability for its misdeeds",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:40:31+00:00",
+      "source_url": "https://www.thehindu.com/news/national/achche-din-keep-wrecking-common-persons-budget-congress-slams-modi-govt/article71391741.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/xef0ew/article71391752.ece/alternates/LANDSCAPE_1200/10258_21_8_2026_18_34_31_1_MALLIKARJUN_KHARGE_1.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "ae63730b1f0e370338c2",
+      "category": "India",
+      "headline": "U.S. Ambassador hosts business roundtable in Hyderabad to drive trade and industrial ties",
+      "summary": "U.S. Ambassador hosts business roundtable in Hyderabad to drive trade and industrial ties. The latest developments are being reported as more information becomes available.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:38:10+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/us-ambassador-hosts-business-roundtable-in-hyderabad-to-drive-trade-and-industrial-ties/article71385767.ece",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Hyderabad/kchrmi/article71391754.ece/alternates/LANDSCAPE_1200/Image%2017.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "5c8577c163950ffaee91",
+      "category": "Entertainment",
+      "headline": "Vidio Teams With ReelShort for First Indonesian Short-Drama Partnership",
+      "summary": "Indonesian streaming platform Vidio has partnered with ReelShort, the microdrama platform owned by Crazy Maple Studio, marking ReelShort’s first entry into the Indonesian market. Hundreds of ReelShort titles will become available on Vidio starting Sept. 1. The content will stream through a dedicated Short Drama tab, accessible to subscribers on Vidio’s...",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T06:36:48+00:00",
+      "source_url": "https://variety.com/2026/tv/news/vidio-reelshort-indonesia-partnership-short-drama-1236843567/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/Vidio-ReelShort.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "00bbf8fa4e9080e5c50f",
+      "category": "Sports",
+      "headline": "What happens when an athlete has a life-changing accident?",
+      "summary": "Saffron Cresswell was a promising eventer before a fall left her paralysed. Just eight months after first sitting in a canoe, she is heading to the Worlds.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T06:35:01+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/canoeing/articles/cgjep9e7pxvo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7c5b/live/3d88cff0-9f37-11f1-a66b-81e9f6973d13.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "dfa74676bbf832426263",
+      "category": "Sports",
+      "headline": "NBA recruits boost GB bid for EuroBasket success",
+      "summary": "Great Britain have managed to land three current, former and future NBA players for their EuroBasket qualifying double",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T06:32:56+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/basketball/articles/cy7z6nnm4mdo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e80a/live/1a00a260-a090-11f1-a291-b542ee92de7c.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "79e37f65a5237827c157",
+      "category": "India",
+      "headline": "AISA backs CJP's September 5 Delhi march; seeks withdrawal of FIRs, probe into pellet firing",
+      "summary": "The issues that have prompted the youth mobilisation remain unresolved, with cases still pending against students despite the government's earlier commitment to withdraw them, AISA president Neha Bora said",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:31:12+00:00",
+      "source_url": "https://www.thehindu.com/news/national/aisa-backs-cjps-september-5-delhi-march-seeks-withdrawal-of-firs-probe-into-pellet-firing/article71391689.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/ipjziu/article71391724.ece/alternates/LANDSCAPE_1200/PTI08_25_2026_000319B.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "e3e5e2fe776591147826",
+      "category": "World",
+      "headline": "Tributes pour in after country music legend Dolly Parton dies – latest updates",
+      "summary": "Legendary country singer died surrounded by loved ones after being diagnosed with cancer, her team says; Beyoncé, Dionne Warwick, Kacey Musgraves and others pay tribute Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T06:30:36+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
+      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
+      "image_type": "source"
+    },
+    {
+      "id": "ea999870858c6bd5596a",
+      "category": "India",
+      "headline": "Identify, eliminate threats before they grow big: Amit Shah urges security agencies",
+      "summary": "India’s security policy must be framed keeping in view emerging global challenges, including geopolitical instability, energy and resource insecurity, rising radicalisation and cyber misinformation campaigns, says Home Minister",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:30:06+00:00",
+      "source_url": "https://www.thehindu.com/news/national/identify-eliminate-threats-before-they-grow-big-amit-shah-urges-security-agencies/article71390304.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/d9pd05/article71390397.ece/alternates/LANDSCAPE_1200/20260825530L.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "2565b3dde3feb9ea7308",
+      "category": "Entertainment",
+      "headline": "LevelK Boards Haugesund-Bound Norwegian Psycho Thriller ‘Anathema,’ About Repression, Denial and Collective Madness (EXCLUSIVE)",
+      "summary": "Copenhagen-based sales and aggregation outlet LevelK has boarded the Norwegian psycho-thriller “Anathema” by promising directing duo Ea Johanne Sandberg and Alpha Nord. One of 21 projects in development to be pitched today at the Nordic Co-Production Market in Haugesund, “Anathema” is being shepherded by the seasoned Janne Hjeltnes (Netflix’s...",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T06:30:00+00:00",
+      "source_url": "https://variety.com/2026/film/global/levelk-sales-norwegian-thriller-anathema-1236843078/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/directors-Ea-Johanne-Sandberg-left-and-Alpha-Nord-right-courtesy-Empathitude-Pictures-1-1.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "5ed4d332f1541ac9aa38",
+      "category": "Sports",
+      "headline": "From influencers to queens of women's boxing - five years of MVP",
+      "summary": "On Saturday, Most Valuable Promotions celebrates its fifth anniversary. One of the feistiest upstarts in modern boxing has given a new platform to the world's best female fighters.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T06:28:28+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c9w0z9ydre2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/14bb/live/1841e3c0-a082-11f1-a9bc-ad5fed338eb5.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "9ebcfbd16a2b836896ce",
+      "category": "India",
+      "headline": "Parandur airport project: What happens now to the land acquired? | Explained",
+      "summary": "What options does a State have to pull out of a project? What happens when a government reverses course mid-acquisition?",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:26:08+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/parandur-airport-project-what-happens-now-to-the-land-acquired-explained/article71391545.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/56wd7k/article71391559.ece/alternates/LANDSCAPE_1200/BVR_7122.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "b5f4e444a963b659e86f",
+      "category": "India",
+      "headline": "Case Closed. Big Relief For Senior Rajasthan Cop In Rs 2 Crore Bribery Case",
+      "summary": "Rajasthan Police Service (RPS) officer and former Additional Superintendent of Police (ASP) Divya Mittal.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:25:35+00:00",
+      "source_url": "https://www.ndtv.com/india-news/case-closed-big-relief-for-senior-rajasthan-cop-divya-mittal-in-rs-2-crore-bribery-case-11960195#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2025-12/s984fftk_rps-divya-mittal_625x300_13_December_25.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "25ae1b2258692c4b79f5",
+      "category": "India",
+      "headline": "UKSSSC Exam Calendar 2026 Out: Check Recruitment-Wise Exam Dates",
+      "summary": "UKSSSC Exam Calendar 2026 released for 26 recruitments from September to November.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:22:14+00:00",
+      "source_url": "https://www.ndtv.com/education/uksssc-exam-calendar-2026-out-check-recruitment-wise-exam-dates-11960182#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/pj5uc9q_uksssc_625x300_26_August_26.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "026ad7a0cef411a73966",
+      "category": "India",
+      "headline": "PM Modi To Interact With Students Ahead Of National Sports Day",
+      "summary": "PM Modi will interact with students nationwide via Khelo India Dialogue on Thursday.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:21:09+00:00",
+      "source_url": "https://www.ndtv.com/india-news/pm-modi-to-interact-with-students-ahead-of-national-sports-day-11960185#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/t7dkglh_pm-modi-extends-milad-unnabi-onam-greetings_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "59face76cd10dc41cf27",
+      "category": "India",
+      "headline": "Mamdani says he opposes RSS, does not support Mohan Bhagwat’s event at Madison Square Garden",
+      "summary": "The New York City Mayor also clarified that he is unsure if the city has any jurisdiction on cancelling a private event in the U.S.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:20:31+00:00",
+      "source_url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/zq5n5/article71391643.ece/alternates/LANDSCAPE_1200/2026-08-12T191541Z_503525274_RC25XMA6LHSX_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "6f2517ca699023b3b60c",
+      "category": "India",
+      "headline": "Video: Fire Brigade Washing BJP MLA's Innova Triggers Row In Madhya Pradesh",
+      "summary": "The footage quickly sparked a political controversy",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:20:00+00:00",
+      "source_url": "https://www.ndtv.com/india-news/video-fire-brigade-washing-bjp-mla-ramniwas-shahs-innova-triggers-row-in-madhya-pradeshs-singrauli-11960181#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/cvgnnj4o_mp-car-wash-fire-brigade_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "dc150f9022b3a8f746bb",
+      "category": "India",
+      "headline": "International community must work collectively to safeguard critical sea lanes: India tells UNSC",
+      "summary": "“Food insecurity remains one of the gravest humanitarian consequences of armed conflict. Today’s conflicts increasingly generate ripple effects far beyond the immediate theatre of hostilities,” says India’s Permanent Representative to the UN Ambassador",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:19:21+00:00",
+      "source_url": "https://www.thehindu.com/news/national/international-community-must-work-collectively-to-safeguard-critical-sea-lanes-india-tells-unsc/article71391331.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/1io1ot/article71391358.ece/alternates/LANDSCAPE_1200/20260310487L.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "03324fd6b0c4be215c59",
+      "category": "India",
+      "headline": "₹840-cr Buttaigudem-Kovvur highway upgradation approved for Godavari Pushkarams: Purandeswari",
+      "summary": "The project will significantly improve connectivity to the Polavaram Irrigation Project and surrounding villages, says Nitin Gadkari",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T06:16:59+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/840-cr-buttaigudem-kovvur-highway-upgradation-approved-for-godavari-pushkarams-purandeswari/article71391518.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%82%B9840-cr%20Buttaigudem-Kovvur%20highway%20upgradation%20approved%20for%20Godavari%20Pushkarams%3A%20Purandeswari%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2717593191",
+      "image_type": "ai_generated"
+    },
     {
       "id": "03a3ae0f2f5eab10eafa",
       "category": "World",
@@ -34,25 +243,14 @@
       "image_type": "source"
     },
     {
-      "id": "03324fd6b0c4be215c59",
+      "id": "9e5bf71a3752f443e631",
       "category": "India",
-      "headline": "₹840-cr Buttaigudem-Kovvur highway upgradation approved for Godavari Pushkarams: Purandeswari",
-      "summary": "The project will significantly improve connectivity to the Polavaram Irrigation Project and surrounding villages, says Nitin Gadkari",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:12:26+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/840-cr-buttaigudem-kovvur-highway-upgradation-approved-for-godavari-pushkarams-purandeswari/article71391518.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%82%B9840-cr%20Buttaigudem-Kovvur%20highway%20upgradation%20approved%20for%20Godavari%20Pushkarams%3A%20Purandeswari%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2717593191",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "23037e1cbc6cd11d4a89",
-      "category": "World",
-      "headline": "Tributes pour in after country music legend Dolly Parton, 80, dies following ‘brief battle with cancer’ – latest updates",
-      "summary": "Beyoncé, Dionne Warwick, Kacey Musgraves, Donald Trump and others mourn star’s death Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our picture editors have collated Dolly Parton ’s life in pictures: In the UK, top radio...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T06:06:03+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
-      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
+      "headline": "Why CBSE Reopened CTET 2026 Application Window? Revised Exam Date Soon",
+      "summary": "Earlier, the CTET registration portal was open from May 11 to June 10, 2026.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:06:18+00:00",
+      "source_url": "https://www.ndtv.com/education/why-cbse-reopened-ctet-2026-application-window-revised-exam-date-soon-11960130#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2023-08/gjt7k2h8_shivraj-government-will-distribute-tablets-to-teachers_625x300_27_August_23.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -67,10 +265,10 @@
       "image_type": "source"
     },
     {
-      "id": "b045e9ba3f46b95326f6",
+      "id": "6bdd86d300da359b0968",
       "category": "World",
-      "headline": "Britons to face highest price cap in three years as energy bills rise 4% from October",
-      "summary": "Households in Great Britain will pay equivalent of £1,723 a year, prompting calls for more support Millions of households in Great Britain will face the highest energy charges in three years this winter after months of soaring market prices caused the government’s price cap to rise for a second time in three months. Gas and electricity prices will rise...",
+      "headline": "Britons face highest price cap in three years as energy bills rise 4% from October",
+      "summary": "Households in Great Britain will pay equivalent of £1,723 a year, prompting calls for more support Nils Pratley: Labour’s energy bills crisis is getting worse. Political honesty is essential Business live – latest updates Millions of households in Great Britain will face the highest energy charges in three years this winter after months of soaring market...",
       "publisher": "Guardian World",
       "published_at": "2026-08-26T06:04:34+00:00",
       "source_url": "https://www.theguardian.com/money/2026/aug/26/energy-price-cap-great-britain-to-rise-from-october",
@@ -89,14 +287,47 @@
       "image_type": "source"
     },
     {
+      "id": "f1c4ef18af47cbbac083",
+      "category": "Lifestyle",
+      "headline": "Should you eat slightly burned or charred food? Oncologist reveals what is safe",
+      "summary": "Learn from a specialist how the chemical composition changes when you overcook any food.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T06:04:21+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/should-you-eat-slightly-burned-or-charred-food-oncologist-reveals-what-is-safe-101787717359245.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/carcinogenictoast_1787718725329_1787718731234_71a73b45-09b7-490f-8319-2bbf63f259f2.jpg",
+      "image_type": "source"
+    },
+    {
       "id": "265f9ecd0335c70b28f0",
       "category": "World",
       "headline": "Raygun opens up on her infamous Olympics breakdancing debut: ‘not as bad as I thought!’",
-      "summary": "Australia’s first Olympic breakdancer became a viral sensation after her performance at Paris ‘24, where she failed to receive a single point Rachael “Raygun” Gunn says her performance at the 2024 Paris Olympics was “not as bad as I thought!” after the Sydney-based breakdancer revealed she had finally watched back the moment that catapulted her to...",
+      "summary": "Australia’s first Olympic breakdancer became a viral sensation after her performance at Paris 2024, where she failed to receive a single point Rachael “Raygun” Gunn says her performance at the 2024 Paris Olympics was “not as bad as I thought!” after the Sydney-based breaker revealed she had finally watched back the moment that catapulted her to...",
       "publisher": "Guardian World",
       "published_at": "2026-08-26T06:01:22+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/raygun-breakdance-routine-cnn-interview-reaction-australian-olympics",
       "image_url": "https://i.guim.co.uk/img/media/f80bcd4116068bd46b305ceb1a7e6ff1f7ac9e27/401_850_3002_2403/master/3002.jpg?width=140&quality=85&auto=format&fit=max&s=0fbfe5fd45d6a7921f2472b9e118c1c5",
+      "image_type": "source"
+    },
+    {
+      "id": "643d5eea1c5ecdec9a3d",
+      "category": "India",
+      "headline": "Banana Leaves, Payasam And Monkeys: Kerala Temple's Unique Onam Tradition",
+      "summary": "An entire troop of monkeys enjoyed a traditional feast.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T06:00:03+00:00",
+      "source_url": "https://www.ndtv.com/india-news/banana-leaves-payasam-and-monkeys-kerala-temples-unique-onam-tradition-11960109#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/uidh3bq8_kerala-monkey-sadya_625x300_26_August_26.jpeg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "994a1121e24c508fb9d2",
+      "category": "India",
+      "headline": "Andhra Pradesh Special TET 2026: Registration Opens For In-Service Teachers, Check Details",
+      "summary": "Applications for AP Special TET 2026 are open from August 25 to September 24",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T05:59:14+00:00",
+      "source_url": "https://www.ndtv.com/education/andhra-pradesh-special-tet-2026-registration-opens-for-in-service-teachers-check-details-11960106#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/8sjk42h4_ap-tet_625x300_26_August_26.jpeg",
       "image_type": "source"
     },
     {
@@ -130,6 +361,17 @@
       "published_at": "2026-08-26T05:46:31+00:00",
       "source_url": "https://variety.com/2026/film/global/amanda-kernell-brace-your-heart-1236842342/",
       "image_url": "https://variety.com/wp-content/uploads/2026/08/MixCollage-25-Aug-2026-02-37-PM-7754.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "8543c5b4b790c0ca24df",
+      "category": "India",
+      "headline": "Gurugram Bans School Buses On Flooded Roads, Citizens Ask Why Not Fix Them",
+      "summary": "School buses stuck on waterlogged Gurugram roads on August 24",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T05:46:29+00:00",
+      "source_url": "https://www.ndtv.com/india-news/gurugram-waterlogging-rain-gurugram-bans-school-buses-on-flooded-roads-citizens-ask-why-not-fix-them-11960005#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/vrr5kugo_bus_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -177,28 +419,6 @@
       "image_type": "source"
     },
     {
-      "id": "8ff3d081100a7d9d0d94",
-      "category": "India",
-      "headline": "NYC Mayor Mamdani opposes RSS chief Bhagwat's Madison Square event",
-      "summary": "Zohran Mamdani said the vision of India that his family taught him was that of \"a pluralistic society, of a secular republic that believed in the belonging of each and every person who was from India\"",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:35:12+00:00",
-      "source_url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/pllikx/article71390381.ece/alternates/LANDSCAPE_1200/2026-08-12T191157Z_893822250_RC25XMAFBBXC_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "c20637d7417c6a338fbf",
-      "category": "India",
-      "headline": "Kakinada Gateway Port set to be commissioned by early 2027",
-      "summary": "The first berth will be ready by early next year, as construction of the South and North Breakwater facilities has been completed; Railways has consented to a railway track connecting to the port, with an estimated cost of ₹400 crore",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:34:33+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/kakinada-gateway-port-set-to-be-commissioned-by-early-2027/article71389546.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/sh37ge/article71391532.ece/alternates/LANDSCAPE_1200/10237_25_8_2026_20_2_35_1_KGPL3.JPG",
-      "image_type": "source"
-    },
-    {
       "id": "cc1180e3de48436db0f1",
       "category": "Lifestyle",
       "headline": "6 last-minute, thoughtful Rakhi gifts for the brother who puts health and self-care first",
@@ -207,50 +427,6 @@
       "published_at": "2026-08-26T05:31:04+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/6-last-minute-thoughtful-rakhi-gifts-for-the-brother-who-puts-health-and-self-care-first-101787664969404.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/rakhi_1754546077724_1754546091755_1787665746029_2b9969a2-710f-4375-94c7-af1d365c087c.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "97ec12bc9be283964753",
-      "category": "India",
-      "headline": "User charges at Hyderabad airport cut by 30%; sets new tariff regime",
-      "summary": "AERA has introduced an incremental ARR approach for the tariff period. It is intended to prevent passengers from being charged upfront for large projects that are yet to become operational",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:27:38+00:00",
-      "source_url": "https://www.thehindu.com/news/national/user-charges-at-hyderabad-airport-cut-by-30-sets-new-tariff-regime/article71389398.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/ld38m2/article71389745.ece/alternates/LANDSCAPE_1200/3e6155e1-3b11-4587-b9d6-6a25dd6aa7db.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "db4458c3972b0860f791",
-      "category": "India",
-      "headline": "Labourer Killed After Under-Construction Flyover Collapses In J&K's Samba",
-      "summary": "Police have taken cognisance of the matter and started investigation.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T05:27:07+00:00",
-      "source_url": "https://www.ndtv.com/india-news/labourer-killed-after-under-construction-flyover-collapses-in-jammu-and-kashmirs-samba-11959943#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/l23q27bk_underconstruction-flyover-collapses-samba_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "5fef93ac830b902ce4df",
-      "category": "India",
-      "headline": "Gurugram waterlogging sparks outrage; Residents, Opposition question government and MP",
-      "summary": "Videos and photographs of school buses stranded near Subhash Chowk, with children reportedly stuck inside for hours, went viral on social media, triggering widespread anger among residents.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:22:16+00:00",
-      "source_url": "https://www.thehindu.com/news/national/haryana/gurugram-waterlogging-sparks-outrage-residents-opposition-question-government-and-mp/article71389768.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/1pmvkq/article71391540.ece/alternates/LANDSCAPE_1200/20260824503L.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "2cb3d47314206885c6a4",
-      "category": "India",
-      "headline": "Six militants involved in extortion, kidnapping arrested in Manipur",
-      "summary": "A total of 23 letterheads of UPPK were seized from the possession of the arrested militants, it said, adding that the insurgents confessed to their involvement in kidnapping, extortion and intimidation",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:21:44+00:00",
-      "source_url": "https://www.thehindu.com/news/national/manipur/six-militants-involved-in-extortion-kidnapping-arrested-in-manipur/article71391473.ece",
-      "image_url": "https://th-i.thgim.com/public/news/national/sgo8jk/article71391527.ece/alternates/LANDSCAPE_1200/iStock-1905024012%2012.jpg",
       "image_type": "source"
     },
     {
@@ -273,39 +449,6 @@
       "published_at": "2026-08-26T05:16:06+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c8jdl0n0r7mo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6786/live/ae28a060-9fae-11f1-bff6-57f1422ebb0b.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "c6ad031a3f70aadfa0aa",
-      "category": "India",
-      "headline": "BA, BSc, BCom Degrees Have 'Weak Job Linkages': NITI Aayog Calls For Reforms",
-      "summary": "The NITI Aayog report also highlighted high levels of educated unemployment.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T05:08:46+00:00",
-      "source_url": "https://www.ndtv.com/education/ba-bsc-bcom-degrees-have-weak-job-linkages-niti-aayog-calls-for-reforms-11959906#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/h07s21ug_niti-aayog-_625x300_26_August_26.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "52c87985037d800f2e29",
-      "category": "India",
-      "headline": "Bournvita maker acts after notice as FSSAI steps up crackdown on misleading claims",
-      "summary": "The Bournvita issue had drawn scrutiny in 2023 over its sugar content and nutritional claims, particularly its marketing to children",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:07:29+00:00",
-      "source_url": "https://www.thehindu.com/sci-tech/health/bournvita-maker-acts-after-notice-as-fssai-steps-up-crackdown-on-misleading-claims/article71388314.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/earxat/article66780496.ece/alternates/LANDSCAPE_1200/ct10_bournvita_1.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "0aea60b65dc1b2314e35",
-      "category": "India",
-      "headline": "Jharkhand Teen Loses Hands While Making Reel Near Railway Track",
-      "summary": "The group was reportedly making reels on their mobile phones when Purnima was hit by the train",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T05:04:38+00:00",
-      "source_url": "https://www.ndtv.com/india-news/jharkhand-teen-loses-both-hands-while-making-reel-near-railway-track-11959850#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2024-07/i1p2dbko_train-generic_625x300_22_July_24.jpg?im=FaceCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -375,50 +518,6 @@
       "image_type": "source"
     },
     {
-      "id": "6b00891c1fb3de1ea509",
-      "category": "India",
-      "headline": "Cab Drivers Challenge Maharashtra Marathi Mandate, Ask Court To Slam Brakes",
-      "summary": "Maharashtra has made working knowledge of Marathi must for drivers",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T04:54:28+00:00",
-      "source_url": "https://www.ndtv.com/india-news/cab-drivers-challenge-maharashtra-marathi-mandate-ask-court-to-slam-breaks-11959684#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/r2cq1scs_taxi_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "4692b0a6d19e42b42a14",
-      "category": "India",
-      "headline": "Man dies after village headman in Uttar Pradesh opens fire at his child's naming ceremony",
-      "summary": "The village headman, Sukhdev, arrived at the venue and began firing as he was not invited to the function",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T04:51:36+00:00",
-      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/man-dies-after-village-headman-in-uttar-pradesh-opens-fire-at-his-childs-naming-ceremony/article70096895.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/kefcin/article69046238.ece/alternates/LANDSCAPE_1200/CCI_UDHindu_KSL_UPR5UO7T7_R1559328378_6_85e9a16e-9612-476b-9ef3-3eead25572c4.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "786867f01280a30a6a6b",
-      "category": "India",
-      "headline": "Muthanga eviction was a bid to crush the Adivasi movement: Geethanandan",
-      "summary": "Muthanga eviction was a bid to crush the Adivasi movement: Geethanandan. The latest developments are being reported as more information becomes available.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T04:51:27+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/muthanga-eviction-was-a-bid-to-crush-the-adivasi-movement-geethanandan/article71388105.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/rysoz5/article71388595.ece/alternates/LANDSCAPE_1200/11073_25_8_2026_15_11_48_3_26TVKZ3_GEETHANANDAN.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "5b13d1d96d0a2d7f9398",
-      "category": "India",
-      "headline": "No one should engage in 'narrow politics': Mayawati on hijab row",
-      "summary": "The BSP is an Ambedkarite party that guarantees respect for all sections of society and the safety of their lives, property and religion, says BSP supremo Mayawati",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T04:50:43+00:00",
-      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/no-one-should-engage-in-narrow-politics-mayawati-on-hijab-row/article71391443.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/lf6vc9/article71391458.ece/alternates/LANDSCAPE_1200/PTI08_11_2026_000083B.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "b5c7f61f2694424b43fc",
       "category": "World",
       "headline": "Two Dan Sullivans to appear on Alaska’s US Senate ballot in November’s midterm elections",
@@ -427,17 +526,6 @@
       "published_at": "2026-08-26T04:48:55+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/26/alaska-dan-sullivan-senate",
       "image_url": "https://i.guim.co.uk/img/media/88e3fc7e92aa3d3c10e538940c2b62cd600844dd/0_0_1500_1200/master/1500.jpg?width=140&quality=85&auto=format&fit=max&s=96553a839e2b0e948a7b106e102878a2",
-      "image_type": "source"
-    },
-    {
-      "id": "bb7596337e3fa3e2c840",
-      "category": "India",
-      "headline": "Adani Energy Solutions Wins Rs 4,700 Crore Transmission Project In Maharashtra",
-      "summary": "Adani Energy Solutions wins Rs 4,700 crore Maharashtra project.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T04:45:35+00:00",
-      "source_url": "https://www.ndtv.com/india-news/adani-energy-solutions-wins-rs-4-700-crore-transmission-project-in-maharashtra-11959832#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-04/42gkaqjs_adani-energy-solutions_625x300_23_April_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -463,17 +551,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "1da60961e1fcf403a0ee",
-      "category": "India",
-      "headline": "Born After 7 Years, Sikkim's Red Panda Cubs Are Thriving, Can Be Adopted Now",
-      "summary": "After seven years without births, red panda cubs are thriving at Sikkim's Himalayan Zoological Park",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T04:39:30+00:00",
-      "source_url": "https://www.ndtv.com/india-news/born-after-7-years-sikkims-red-panda-cubs-are-thriving-can-be-adopted-now-11959361#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/3kcdlsk8_red-panda-sikkim_625x300_26_August_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
       "id": "cc7b789411b0f4bf51ea",
       "category": "Business",
       "headline": "MTAR Tech shares rally 3%, extend gains for second session. What’s triggering the surge?",
@@ -494,17 +571,6 @@
       "source_url": "https://www.hollywoodreporter.com/business/business-news/haim-saban-lawrence-bender-teddy-schwarzman-slam-mark-ruffalo-1236681689/",
       "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Haim%20Saban%2C%20Lawrence%20Bender%20and%20Teddy%20Schwarzman%20Among%20Industry%20Group%20Accusing%20Mark%20Ruffalo%20of%20%E2%80%9CAntisemitism%E2%80%9D%20in%20Attack%20on%20Paramount%20Leadership%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1869597927",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "16986074c83e7026b412",
-      "category": "India",
-      "headline": "Karnataka Minister B Nagendra Offers To Resign Over Corruption Allegations",
-      "summary": "Nagendra had quit the Cabinet in 2024, was re",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T04:31:35+00:00",
-      "source_url": "https://www.ndtv.com/india-news/karnataka-minister-b-nagendra-offers-to-resign-over-corruption-allegations-11959678#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/vspv39gk_nagendra_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
     },
     {
       "id": "22284c8a8ca46d9efd9e",
@@ -892,25 +958,14 @@
       "image_type": "source"
     },
     {
-      "id": "cca97ed3a6f7a7c339ed",
-      "category": "Entertainment",
-      "headline": "Luis Castro, Trish Reilly and Barry Wilkinson Named 2026 MacGuffin Award Honorees",
-      "summary": "Luis Castro, Trish Reilly and Barry Wilkinson will be honored at the third annual MacGuffin Awards. The Property Masters Guild aims to highlight and elevate the craft of the Property Master by raising awareness, fostering collaboration among craft artisans, educating its members and inspiring future generations of Property Masters. The honorees,...",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T00:15:00+00:00",
-      "source_url": "https://variety.com/2026/artisans/news/property-masters-guild-macguffin-award-honorees-1236841984/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/2026-PMG-Honorees.png",
-      "image_type": "source"
-    },
-    {
-      "id": "f78c3ee78b6cf92db943",
+      "id": "dcc8e56b7909a0f34970",
       "category": "Technology",
-      "headline": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
-      "summary": "Before Malone left, OpenAI had already reshuffled its infrastructure org, shifting his reporting line away from President Greg Brockman and putting Vice President Sachin Katti in charge of the group.",
+      "headline": "OpenAI loses a top data center exec as stream of high-profile departures continues",
+      "summary": "In a statement to TechCrunch about Malone's departure, OpenAI said it had \"recently reorganized\" its \"infrastructure organization to support the scale and pace of our work.\"",
       "publisher": "TechCrunch",
       "published_at": "2026-08-26T00:06:20+00:00",
       "source_url": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20OpenAI%20loses%20a%20top%20data%20center%20exec%2C%20as%20stream%20of%20high-profile%20departures%20continues%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=4231267227",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20OpenAI%20loses%20a%20top%20data%20center%20exec%20as%20stream%20of%20high-profile%20departures%20continues%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2432551712",
       "image_type": "ai_generated"
     },
     {
@@ -923,17 +978,6 @@
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/watch-dolly-parton-20-20-special-aug-25-2026-streaming-free-1236681447/",
       "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%80%9820/20%E2%80%99%20Sets%20Dolly%20Parton%20Special%20Tribute%3A%20Where%20to%20Watch%20Online%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3540117657",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "926fe7090e9c1dd5e272",
-      "category": "Entertainment",
-      "headline": "‘The Dog Stars’ Review: Jacob Elordi’s Sensitive Survivalist Can’t Sustain a Dreary Dystopian Adventure",
-      "summary": "It’s the end of the world as we know it in “The Dog Stars,” and everyone feels — well, not fine exactly, but, you know, fine? Alive, hanging in there, taking it one day at a time. Things could be better, which goes without saying in the aftermath of a flu pandemic that has wiped […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://variety.com/2026/film/reviews/the-dog-stars-review-jacob-elordi-1236839483/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/dog-stars.jpg",
-      "image_type": "source"
     },
     {
       "id": "bf721b04f9f175945a9b",
@@ -1065,50 +1109,6 @@
       "published_at": "2026-08-25T22:12:35+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/cm27ymnk7jwo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31d5/live/6a4a76b0-a0d1-11f1-b109-879e35c24276.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "de91500a0e4f64482a4a",
-      "category": "Technology",
-      "headline": "The Witcher 3 is getting a remaster",
-      "summary": "CD Projekt Red is remastering The Witcher 3: Wild Hunt, the hit RPG that first launched in 2015, and the updated game will be available starting September 29th. The Witcher 3: Wild Hunt - Remastered will bring improvements to visuals and combat, a \"reimagined\" skill tree, and more, and it also includes the first two […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T22:05:52+00:00",
-      "source_url": "https://www.theverge.com/games/984680/the-witcher-3-wild-hunt-remastered-launch-date-trailer",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/3-2.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "e6e07e12b9e58d5430d0",
-      "category": "Technology",
-      "headline": "Trump is upping the price of Big Tech’s favorite visa",
-      "summary": "In the span of a few hours on Monday, the Department of Homeland Security announced that it would be implementing a fee of over $103,000 on H-1B visas, and news broke that the State Department plans on revoking the visas of up to 200,000 asylum seekers - which, according to The Associated Press, would be […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T21:43:53+00:00",
-      "source_url": "https://www.theverge.com/policy/984723/trump-h1b-fee-asylum-legal-immigration",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/257976_h1b_visa_chaos__CVirginia.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "b7468b481d08b2396365",
-      "category": "Sports",
-      "headline": "'I'm very proud of this' - Fernandes wins PFA player of the year",
-      "summary": "Manchester United captain Bruno Fernandes reacts to winning the men's 2026 PFA player of the year award.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T21:29:08+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/videos/cjdv55g4871o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2098/live/8e886f20-a0ca-11f1-aed2-8d6da8d75094.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "ef371a959dae1b34b571",
-      "category": "Sports",
-      "headline": "Cardiff's Anyadike, 15, sets new EFL Cup record as youngest player",
-      "summary": "Cardiff City's Noah Anyadike, 15, becomes the youngest player in EFL Cup history after starting their second",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T21:17:12+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/czrzgzn1z5ro?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8980/live/cb4e7180-a0b0-11f1-8229-b91d73b62f74.jpg",
       "image_type": "source"
     }
   ]
