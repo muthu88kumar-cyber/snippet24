@@ -1,1635 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0"
->
-
-<title>snippet24 — Fast News. Real Impact.</title>
-
-<meta
-  name="description"
-  content="snippet24 — concise news from India and the world."
->
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snippet24 — Fast News. Real Impact.</title>
 <style>
-
-:root {
-
-  --black: #080A0F;
-  --header: #0D1320;
-  --card: #151A23;
-  --white: #F5F3EE;
-  --gray: #9CA3AF;
-  --red: #E50914;
-  --red-dark: #9B0D14;
-  --border: #29303B;
-  --page: #0A0D13;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
 body {
-
-  margin: 0;
-
-  background:
-    radial-gradient(
-      circle at top,
-      #111827 0,
-      var(--page) 45%
-    );
-
-  color: var(--white);
-
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif;
+    margin: 0;
+    background: #080b11;
+    color: #f5f5f5;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 }
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-header {
-
-  position: sticky;
-  top: 0;
-
-  z-index: 100;
-
-  background:
-    rgba(8,10,15,.96);
-
-  backdrop-filter:
-    blur(18px);
-
-  border-bottom:
-    1px solid var(--border);
+a {
+    color: inherit;
+    text-decoration: none;
 }
-
 .header {
-
-  max-width: 1200px;
-
-  margin: auto;
-
-  padding:
-    18px 20px;
-
-  display: flex;
-
-  justify-content:
-    space-between;
-
-  align-items: center;
+    padding: 32px 28px 22px;
+    background: #080b11;
 }
-
 .logo {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
-
-  font-size: 30px;
-
-  font-weight: 800;
-
-  letter-spacing: -1.5px;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
-
 .logo24 {
-
-  background: var(--red);
-
-  color: white;
-
-  padding:
-    2px 8px;
-
-  border-radius: 7px;
-
-  line-height: 1;
-
+    background: #ed0714;
+    color: white;
+    border-radius: 13px;
+    padding: 2px 11px 5px;
+    font-size: 34px;
+    letter-spacing: -2px;
 }
-
 .tagline {
-
-  margin-top: 3px;
-
-  color: var(--gray);
-
-  font-size: 11px;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
+    margin-top: 7px;
+    color: #8d929d;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 500;
 }
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
+.nav-wrapper {
+    overflow-x: auto;
+    border-bottom: 1px solid #252b36;
+    background: #080b11;
+    scrollbar-width: none;
+}
+.nav-wrapper::-webkit-scrollbar {
+    display: none;
+}
 .nav {
-
-  max-width: 1200px;
-
-  margin: auto;
-
-  padding:
-    0 20px 12px;
-
-  display: flex;
-
-  gap: 8px;
-
-  overflow-x: auto;
-
-  scrollbar-width: none;
+    display: flex;
+    gap: 12px;
+    padding: 18px 28px;
+    min-width: max-content;
 }
-
-.nav::-webkit-scrollbar {
-  display: none;
-}
-
 .nav button {
-
-  border: 0;
-
-  background:
-    transparent;
-
-  color:
-    #AAB1BC;
-
-  padding:
-    8px 12px;
-
-  border-radius:
-    7px;
-
-  white-space:
-    nowrap;
-
-  cursor: pointer;
-
-  font-weight:
-    600;
-
-  font-size:
-    13px;
+    border: 0;
+    background: transparent;
+    color: #aeb3bd;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 14px;
+    cursor: pointer;
 }
-
-.nav button:hover {
-
-  color: white;
-
-  background:
-    #151A23;
-}
-
 .nav button.active {
-
-  color: white;
-
-  background:
-    var(--red);
+    background: #ed0714;
+    color: white;
 }
-
-
-/* =========================================================
-   MAIN
-========================================================= */
-
-main {
-
-  max-width: 1200px;
-
-  margin: auto;
-
-  padding:
-    25px 20px 70px;
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 28px;
 }
-
-
-/* =========================================================
-   LOCATION BAR
-========================================================= */
-
-.location {
-
-  display: flex;
-
-  justify-content:
-    space-between;
-
-  align-items: center;
-
-  gap: 15px;
-
-  margin-bottom:
-    20px;
-
-  padding:
-    16px 18px;
-
-  border:
-    1px solid var(--border);
-
-  border-radius:
-    12px;
-
-  background:
-    rgba(21,26,35,.8);
+.feed-header {
+    background: #121721;
+    border: 1px solid #29313d;
+    border-radius: 22px;
+    padding: 25px;
+    margin-bottom: 22px;
 }
-
-.location-title {
-
-  font-size:
-    13px;
-
-  color:
-    var(--gray);
+.feed-label {
+    color: #a2a8b3;
+    font-size: 17px;
+    margin-bottom: 3px;
 }
-
-.location-title strong {
-
-  color:
-    white;
-
-  font-size:
-    17px;
+.feed-title {
+    font-size: 31px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
-
-
-/* =========================================================
-   LANGUAGE
-========================================================= */
-
 .language {
-
-  display:
-    flex;
-
-  gap:
-    6px;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    background: #ed0714;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 600;
 }
-
-.language button {
-
-  border:
-    1px solid var(--border);
-
-  background:
-    transparent;
-
-  color:
-    var(--gray);
-
-  border-radius:
-    7px;
-
-  padding:
-    7px 11px;
-
-  cursor:
-    pointer;
-}
-
-.language button.active {
-
-  background:
-    var(--red);
-
-  border-color:
-    var(--red);
-
-  color:
-    white;
-}
-
-
-/* =========================================================
-   INTRO
-========================================================= */
-
 .intro {
-
-  background:
-    linear-gradient(
-      135deg,
-      #151A23,
-      #0F131B
-    );
-
-  border:
-    1px solid var(--border);
-
-  border-radius:
-    16px;
-
-  padding:
-    22px;
-
-  margin-bottom:
-    24px;
+    background: #10151e;
+    border: 1px solid #29313d;
+    border-radius: 22px;
+    padding: 28px;
+    margin-bottom: 25px;
 }
-
-.intro strong {
-
-  display:
-    block;
-
-  font-size:
-    18px;
-
-  margin-bottom:
-    6px;
+.intro h2 {
+    margin: 0 0 12px;
+    font-size: 28px;
 }
-
-.intro span {
-
-  color:
-    var(--gray);
-
-  font-size:
-    14px;
-
-  line-height:
-    1.6;
+.intro p {
+    margin: 0;
+    color: #9da3ae;
+    font-size: 18px;
+    line-height: 1.6;
 }
-
-
-/* =========================================================
-   SECTION
-========================================================= */
-
-.section-title {
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    space-between;
-
-  margin:
-    30px 0 15px;
+.status {
+    margin-bottom: 20px;
+    color: #8e96a3;
+    font-size: 14px;
 }
-
-.section-title h2 {
-
-  margin: 0;
-
-  font-size:
-    18px;
-
-  letter-spacing:
-    -.3px;
+.error {
+    background: #151923;
+    border: 1px solid #4a2025;
+    border-radius: 22px;
+    padding: 50px 25px;
+    text-align: center;
 }
-
-.section-title h2::before {
-
-  content: "";
-
-  display:
-    inline-block;
-
-  width:
-    4px;
-
-  height:
-    18px;
-
-  background:
-    var(--red);
-
-  margin-right:
-    9px;
-
-  vertical-align:
-    -3px;
+.error h2 {
+    font-size: 31px;
+    margin: 0 0 15px;
 }
-
-
-/* =========================================================
-   GRID
-========================================================= */
-
-.grid {
-
-  display:
-    grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(290px, 1fr)
-    );
-
-  gap:
-    18px;
+.error p {
+    color: #9da3ae;
+    line-height: 1.6;
 }
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.card {
-
-  background:
-    linear-gradient(
-      145deg,
-      #171C25,
-      #11151D
-    );
-
-  border:
-    1px solid var(--border);
-
-  border-radius:
-    15px;
-
-  padding:
-    20px;
-
-  transition:
-    transform .18s ease,
-    border-color .18s ease;
+.retry {
+    border: 0;
+    background: #ed0714;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
 }
-
-.card:hover {
-
-  transform:
-    translateY(-3px);
-
-  border-color:
-    #4A5260;
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
 }
-
-.category {
-
-  color:
-    #FF3943;
-
-  font-size:
-    11px;
-
-  font-weight:
-    800;
-
-  text-transform:
-    uppercase;
-
-  letter-spacing:
-    1px;
+.article {
+    background: #111620;
+    border: 1px solid #29313d;
+    border-radius: 20px;
+    padding: 22px;
+    transition: transform .15s ease, border-color .15s ease;
 }
-
-.card h2 {
-
-  margin:
-    9px 0 12px;
-
-  font-size:
-    21px;
-
-  line-height:
-    1.25;
-
-  color:
-    var(--white);
+.article:hover {
+    transform: translateY(-2px);
+    border-color: #555e6d;
 }
-
-.summary {
-
-  color:
-    #B7BEC9;
-
-  line-height:
-    1.6;
-
-  font-size:
-    14px;
+.article-source {
+    color: #ed3340;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    margin-bottom: 10px;
 }
-
-.meta {
-
-  margin-top:
-    15px;
-
-  color:
-    #7F8896;
-
-  font-size:
-    11px;
+.article h3 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin: 0 0 12px;
 }
-
-.meta span {
-
-  color:
-    #FF3943;
+.article-description {
+    color: #9ca3af;
+    line-height: 1.55;
+    font-size: 15px;
+    margin-bottom: 16px;
 }
-
-.source {
-
-  margin-top:
-    15px;
-
-  padding-top:
-    13px;
-
-  border-top:
-    1px solid var(--border);
-
-  color:
-    #8F98A5;
-
-  font-size:
-    12px;
+.article-meta {
+    color: #707987;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
-
-.read {
-
-  display:
-    inline-block;
-
-  margin-top:
-    16px;
-
-  padding:
-    10px 15px;
-
-  background:
-    var(--red);
-
-  color:
-    white;
-
-  text-decoration:
-    none;
-
-  border-radius:
-    7px;
-
-  font-weight:
-    700;
-
-  font-size:
-    13px;
+.read-more {
+    display: inline-block;
+    margin-top: 16px;
+    color: #ff3a46;
+    font-size: 14px;
+    font-weight: 700;
 }
-
-.read:hover {
-
-  background:
-    #FF1B25;
-}
-
-
-/* =========================================================
-   EMPTY
-========================================================= */
-
 .empty {
-
-  text-align:
-    center;
-
-  padding:
-    70px 20px;
-
-  border:
-    1px solid var(--border);
-
-  border-radius:
-    16px;
-
-  background:
-    #11151D;
+    background: #111620;
+    border: 1px solid #29313d;
+    border-radius: 22px;
+    padding: 55px 25px;
+    text-align: center;
 }
-
-.empty h2 {
-
-  margin:
-    0 0 10px;
-
-  font-size:
-    25px;
+.loading {
+    background: #111620;
+    border: 1px solid #29313d;
+    border-radius: 22px;
+    padding: 55px 25px;
+    text-align: center;
+    color: #9da3ae;
 }
-
-.empty p {
-
-  color:
-    var(--gray);
-
-  line-height:
-    1.6;
+@media (max-width: 700px) {
+    .header {
+        padding: 25px 20px 17px;
+    }
+    .logo {
+        font-size: 36px;
+    }
+    .logo24 {
+        font-size: 29px;
+    }
+    .tagline {
+        font-size: 12px;
+        letter-spacing: 3.5px;
+    }
+    .nav {
+        padding: 14px 20px;
+    }
+    .nav button {
+        font-size: 17px;
+        padding: 11px 16px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .feed-title {
+        font-size: 28px;
+    }
 }
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-
-  max-width:
-    1200px;
-
-  margin:
-    auto;
-
-  padding:
-    40px 20px 70px;
-
-  color:
-    #737C89;
-
-  font-size:
-    12px;
-
-  text-align:
-    center;
-
-  border-top:
-    1px solid var(--border);
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:650px) {
-
-  .header {
-
-    padding:
-      16px;
-  }
-
-  .logo {
-
-    font-size:
-      26px;
-  }
-
-  main {
-
-    padding:
-      20px 14px 60px;
-  }
-
-  .location {
-
-    align-items:
-      flex-start;
-
-    flex-direction:
-      column;
-  }
-
-  .language {
-
-    width:
-      100%;
-  }
-
-  .language button {
-
-    flex:
-      1;
-  }
-
-  .grid {
-
-    grid-template-columns:
-      1fr;
-  }
-
-  .card h2 {
-
-    font-size:
-      22px;
-  }
-
-}
-
 </style>
-
 </head>
-
-
 <body>
-
-
-<header>
-
-  <div class="header">
-
-    <div>
-
-      <div class="logo">
-
-        <span>snippet</span>
-
-        <span class="logo24">
-          24
-        </span>
-
-      </div>
-
-      <div class="tagline">
-        Fast news. Real impact.
-      </div>
-
+<header class="header">
+    <div class="logo">
+        snippet
+        <span class="logo24">24</span>
     </div>
-
-  </div>
-
-
-  <nav class="nav">
-
-    <button
-      class="active"
-      data-filter="ALL"
-    >
-      Top Stories
-    </button>
-
-    <button data-filter="WORLD">
-      World
-    </button>
-
-    <button data-filter="INDIA">
-      India
-    </button>
-
-    <button data-filter="STATES">
-      States
-    </button>
-
-    <button data-filter="Tech & AI">
-      Tech & AI
-    </button>
-
-    <button data-filter="Business & Economy">
-      Business
-    </button>
-
-    <button data-filter="Lifestyle & Health">
-      Lifestyle
-    </button>
-
-    <button data-filter="Entertainment & Living">
-      Entertainment
-    </button>
-
-    <button data-filter="Earth & Environment">
-      Environment
-    </button>
-
-    <button data-filter="Sports & Culture">
-      Sports
-    </button>
-
-  </nav>
-
+    <div class="tagline">
+        FAST NEWS. REAL IMPACT.
+    </div>
 </header>
-
-
-<main>
-
-
-  <div class="location">
-
-    <div class="location-title">
-
-      Current feed:
-
-      <br>
-
-      <strong id="locationName">
-        Top Stories
-      </strong>
-
+<div class="nav-wrapper">
+    <nav class="nav" id="nav"></nav>
+</div>
+<main class="container">
+    <section class="feed-header">
+        <div class="feed-label">Current feed:</div>
+        <div class="feed-title" id="feedTitle">Top Stories</div>
+        <div class="language">
+            English
+        </div>
+    </section>
+    <section class="intro">
+        <h2>Know more. Read less.</h2>
+        <p>
+            Short, original explanations of important stories,
+            with the original publication always credited.
+        </p>
+    </section>
+    <div id="status" class="status">
+        Loading news…
     </div>
-
-
-    <div
-      class="language"
-      id="languageButtons"
-    >
-
-      <button
-        class="active"
-        data-language="en"
-      >
-        English
-      </button>
-
-    </div>
-
-  </div>
-
-
-  <div class="intro">
-
-    <strong>
-      Know more. Read less.
-    </strong>
-
-    <span>
-      Short, original explanations of
-      important stories, with the original
-      publication always credited.
-    </span>
-
-  </div>
-
-
-  <div
-    id="news"
-    class="grid"
-  >
-  </div>
-
-
+    <section id="content">
+        <div class="loading">
+            Loading the latest news…
+        </div>
+    </section>
 </main>
-
-
-<footer>
-
-  <strong>
-    snippet24
-  </strong>
-
-  © 2026
-
-  <br><br>
-
-  Fast news. Real impact.
-
-  <br>
-
-  Original publishers retain their rights.
-
-</footer>
-
-
 <script>
-
-let allArticles = [];
-
-let currentFilter = "ALL";
-
-let currentLanguage = "en";
-
-let currentState = "";
-
-
-/* =========================================================
-   LOAD
-========================================================= */
-
-async function loadNews() {
-
-  const container =
-    document.getElementById(
-      "news"
-    );
-
-  try {
-
-    const response =
-      await fetch(
-        "articles.json?x="
-        + Date.now()
-      );
-
-    if (!response.ok) {
-
-      throw new Error(
-        "articles.json failed"
-      );
-
-    }
-
-    allArticles =
-      await response.json();
-
-    if (!Array.isArray(
-      allArticles
-    )) {
-
-      throw new Error(
-        "Invalid articles.json"
-      );
-
-    }
-
-    render();
-
-  } catch(error) {
-
-    console.error(error);
-
-    container.innerHTML = `
-
-      <div class="empty">
-
-        <h2>
-          News feed unavailable
-        </h2>
-
-        <p>
-          Please try again shortly.
-        </p>
-
-      </div>
-
-    `;
-
-  }
-
-}
-
-
-/* =========================================================
-   FILTER
-========================================================= */
-
-function getFilteredArticles() {
-
-  if (
-    currentFilter === "ALL"
-  ) {
-
-    return allArticles;
-
-  }
-
-
-  if (
-    currentFilter === "WORLD"
-  ) {
-
-    return allArticles.filter(
-      article =>
-        String(
-          article.region || ""
-        ).toUpperCase()
-        === "WORLD"
-    );
-
-  }
-
-
-  if (
-    currentFilter === "INDIA"
-  ) {
-
-    return allArticles.filter(
-      article =>
-        String(
-          article.region || ""
-        ).toUpperCase()
-        === "INDIA"
-        &&
-        !article.state
-    );
-
-  }
-
-
-  if (
-    currentFilter === "STATES"
-  ) {
-
-    return allArticles.filter(
-      article =>
-        article.state
-    );
-
-  }
-
-
-  return allArticles.filter(
-    article =>
-      article.category
-      === currentFilter
-  );
-
-}
-
-
-/* =========================================================
-   LANGUAGE BUTTONS
-========================================================= */
-
-function setupLanguages() {
-
-  const box =
-    document.getElementById(
-      "languageButtons"
-    );
-
-  box.innerHTML = "";
-
-  const languages = [
-    {
-      code: "en",
-      name: "English"
-    }
-  ];
-
-
-  if (currentState) {
-
-    const stateArticle =
-      allArticles.find(
-        article =>
-          article.state
-          === currentState
-      );
-
-    if (
-      stateArticle &&
-      stateArticle.default_language
-      &&
-      stateArticle.default_language
-      !== "en"
-    ) {
-
-      languages.push({
-
-        code:
-          stateArticle
-            .default_language,
-
-        name:
-          stateArticle
-            .default_language_name
-
-      });
-
-    }
-
-  }
-
-
-  languages.forEach(
-    language => {
-
-      const button =
-        document.createElement(
-          "button"
-        );
-
-      button.textContent =
-        language.name;
-
-      button.dataset.language =
-        language.code;
-
-      if (
-        language.code
-        === currentLanguage
-      ) {
-
-        button.classList.add(
-          "active"
-        );
-
-      }
-
-      button.onclick = () => {
-
-        currentLanguage =
-          language.code;
-
-        setupLanguages();
-
-        render();
-
-      };
-
-      box.appendChild(
-        button
-      );
-
-    }
-  );
-
-}
-
-
-/* =========================================================
-   RENDER
-========================================================= */
-
-function render() {
-
-  const container =
-    document.getElementById(
-      "news"
-    );
-
-  const locationName =
-    document.getElementById(
-      "locationName"
-    );
-
-
-  let articles =
-    getFilteredArticles();
-
-
-  /*
-   Find state when using STATES.
-  */
-
-  if (
-    currentFilter === "STATES"
-    &&
-    currentState
-  ) {
-
-    articles =
-      articles.filter(
-        article =>
-          article.state
-          === currentState
-      );
-
-  }
-
-
-  /*
-   Translation.
-  */
-
-  const displayArticles =
-    articles.slice(
-      0,
-      50
-    );
-
-
-  if (
-    displayArticles.length
-    === 0
-  ) {
-
-    container.innerHTML = `
-
-      <div class="empty">
-
-        <h2>
-          No stories yet
-        </h2>
-
-        <p>
-          Snippet24 is collecting
-          stories for this section.
-        </p>
-
-      </div>
-
-    `;
-
-    return;
-
-  }
-
-
-  container.innerHTML = "";
-
-
-  displayArticles.forEach(
-    article => {
-
-      const card =
-        document.createElement(
-          "article"
-        );
-
-      card.className =
-        "card";
-
-
-      const translation =
-        article.translations
-        &&
-        article.translations[
-          currentLanguage
-        ];
-
-
-      const title =
-        translation
-        &&
-        translation.title
-        ?
-        translation.title
-        :
-        article.title;
-
-
-      const summary =
-        translation
-        &&
-        translation.summary
-        ?
-        translation.summary
-        :
-        article.summary;
-
-
-      card.innerHTML = `
-
-        <div class="category">
-
-          ${escapeHtml(
-            article.category
-            || "News"
-          )}
-
-        </div>
-
-
-        <h2>
-
-          ${escapeHtml(
-            title
-          )}
-
-        </h2>
-
-
-        <div class="summary">
-
-          ${escapeHtml(
-            summary
-          )}
-
-        </div>
-
-
-        <div class="meta">
-
-          ${escapeHtml(
-            article.country
-            || ""
-          )}
-
-          ${article.state
-            ? " · "
-            + escapeHtml(
-                article.state
-              )
-            : ""}
-
-          ·
-
-          <span>
-            ${escapeHtml(
-              article.category
-              || "News"
-            )}
-          </span>
-
-        </div>
-
-
-        <div class="source">
-
-          Source:
-
-          <strong>
-
-            ${escapeHtml(
-              article.source
-              || ""
-            )}
-
-          </strong>
-
-        </div>
-
-
-        <a
-          class="read"
-          href="article.html?id=${
-            encodeURIComponent(
-              article.id
-            )
-          }"
-        >
-
-          Read deep dive
-
-        </a>
-
-      `;
-
-
-      container.appendChild(
-        card
-      );
-
-    }
-  );
-
-
-  setupLanguages();
-
-}
-
-
-/* =========================================================
+const CATEGORIES = [
+    "Top Stories",
+    "World",
+    "India",
+    "States",
+    "Tech & AI",
+    "Business",
+    "Lifestyle"
+];
+const MAX_ARTICLES = 50;
+let newsData = {
+    categories: {}
+};
+let currentCategory = "Top Stories";
+/* -------------------------------------------------------
    NAVIGATION
-========================================================= */
-
-document
-  .querySelectorAll(
-    ".nav button"
-  )
-  .forEach(
-    button => {
-
-      button.addEventListener(
-        "click",
-        () => {
-
-          document
-            .querySelectorAll(
-              ".nav button"
-            )
-            .forEach(
-              item =>
-                item.classList
-                  .remove(
-                    "active"
-                  )
-            );
-
-
-          button.classList.add(
-            "active"
-          );
-
-
-          currentFilter =
-            button.dataset.filter;
-
-
-          currentState = "";
-
-          currentLanguage = "en";
-
-
-          document
-            .getElementById(
-              "locationName"
-            )
-            .textContent =
-              button.textContent;
-
-
-          /*
-           States opens state picker.
-          */
-
-          if (
-            currentFilter
-            === "STATES"
-          ) {
-
-            showStates();
-
-            return;
-
-          }
-
-
-          render();
-
+------------------------------------------------------- */
+function createNavigation() {
+    const nav = document.getElementById("nav");
+    nav.innerHTML = "";
+    CATEGORIES.forEach(category => {
+        const button = document.createElement("button");
+        button.textContent = category;
+        if (category === currentCategory) {
+            button.classList.add("active");
         }
-      );
-
-    }
-  );
-
-
-/* =========================================================
-   STATE PICKER
-========================================================= */
-
-function showStates() {
-
-  const states = [
-    ...new Set(
-      allArticles
-        .map(
-          article =>
-            article.state
-        )
-        .filter(Boolean)
-    )
-  ];
-
-
-  const container =
-    document.getElementById(
-      "news"
+        button.addEventListener("click", () => {
+            currentCategory = category;
+            document
+                .querySelectorAll(".nav button")
+                .forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+            document.getElementById("feedTitle").textContent =
+                category;
+            renderArticles();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        nav.appendChild(button);
+    });
+}
+/* -------------------------------------------------------
+   DATE
+------------------------------------------------------- */
+function getArticleDate(article) {
+    return (
+        article.published_at ||
+        article.fetched_at ||
+        article.updated_at ||
+        ""
     );
-
-
-  if (!states.length) {
-
-    container.innerHTML = `
-
-      <div class="empty">
-
-        <h2>
-          States coming soon
-        </h2>
-
-        <p>
-          State feeds will appear
-          as sources are connected.
-        </p>
-
-      </div>
-
-    `;
-
-    return;
-
-  }
-
-
-  container.innerHTML = "";
-
-
-  states.forEach(
-    state => {
-
-      const card =
-        document.createElement(
-          "article"
-        );
-
-      card.className =
-        "card";
-
-
-      const language =
-        allArticles.find(
-          article =>
-            article.state
-            === state
-        );
-
-
-      card.innerHTML = `
-
-        <div class="category">
-          INDIA
-        </div>
-
-        <h2>
-          ${escapeHtml(state)}
-        </h2>
-
-        <div class="summary">
-
-          News from
-          ${escapeHtml(state)}
-          in
-          ${escapeHtml(
-            language
-              ?.default_language_name
-              || "English"
-          )}
-          and English.
-
-        </div>
-
-        <button
-          class="read"
-          type="button"
-        >
-          Open state news
-        </button>
-
-      `;
-
-
-      card
-        .querySelector(
-          "button"
-        )
-        .onclick = () => {
-
-          currentState =
-            state;
-
-          currentFilter =
-            "STATES";
-
-          currentLanguage =
-            language
-              ?.default_language
-              || "en";
-
-
-          document
-            .getElementById(
-              "locationName"
+}
+/* -------------------------------------------------------
+   NORMALIZE ARTICLE
+------------------------------------------------------- */
+function normalizeArticle(article, category) {
+    if (!article || typeof article !== "object") {
+        return null;
+    }
+    const title =
+        String(article.title || "").trim();
+    const url =
+        String(article.url || article.link || "").trim();
+    if (!title || !url) {
+        return null;
+    }
+    return {
+        id:
+            article.id ||
+            url ||
+            title,
+        title,
+        description:
+            String(
+                article.description ||
+                article.summary ||
+                ""
+            ).trim(),
+        url,
+        source:
+            String(
+                article.source ||
+                article.publisher ||
+                "News source"
+            ).trim(),
+        category:
+            article.category ||
+            category,
+        published_at:
+            article.published_at ||
+            article.publishedAt ||
+            "",
+        fetched_at:
+            article.fetched_at ||
+            ""
+    };
+}
+/* -------------------------------------------------------
+   DEDUPLICATION
+------------------------------------------------------- */
+function deduplicateArticles(articles) {
+    const seen = new Set();
+    const result = [];
+    for (const article of articles) {
+        if (!article) {
+            continue;
+        }
+        const key =
+            article.id ||
+            article.url ||
+            article.title.toLowerCase();
+        if (seen.has(key)) {
+            continue;
+        }
+        seen.add(key);
+        result.push(article);
+    }
+    return result;
+}
+/* -------------------------------------------------------
+   SORT NEWEST FIRST
+------------------------------------------------------- */
+function sortNewest(articles) {
+    return [...articles].sort((a, b) => {
+        const dateA =
+            Date.parse(getArticleDate(a)) || 0;
+        const dateB =
+            Date.parse(getArticleDate(b)) || 0;
+        return dateB - dateA;
+    });
+}
+/* -------------------------------------------------------
+   TOP STORIES
+------------------------------------------------------- */
+function getTopStories() {
+    const all = [];
+    const categories =
+        newsData.categories || {};
+    Object.keys(categories).forEach(category => {
+        const articles =
+            Array.isArray(categories[category])
+                ? categories[category]
+                : [];
+        articles.forEach(article => {
+            const normalized =
+                normalizeArticle(article, category);
+            if (normalized) {
+                all.push(normalized);
+            }
+        });
+    });
+    return sortNewest(
+        deduplicateArticles(all)
+    ).slice(0, MAX_ARTICLES);
+}
+/* -------------------------------------------------------
+   CATEGORY ARTICLES
+------------------------------------------------------- */
+function getCategoryArticles(category) {
+    if (category === "Top Stories") {
+        return getTopStories();
+    }
+    const articles =
+        Array.isArray(newsData.categories?.[category])
+            ? newsData.categories[category]
+            : [];
+    return sortNewest(
+        deduplicateArticles(
+            articles.map(article =>
+                normalizeArticle(article, category)
             )
-            .textContent =
-              state;
-
-
-          render();
-
-        };
-
-
-      container.appendChild(
-        card
-      );
-
+        )
+    ).slice(0, MAX_ARTICLES);
+}
+/* -------------------------------------------------------
+   DATE DISPLAY
+------------------------------------------------------- */
+function formatDate(value) {
+    if (!value) {
+        return "";
     }
-  );
-
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) {
+        return "";
+    }
+    return date.toLocaleString("en-IN", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    });
 }
-
-
-/* =========================================================
-   SECURITY
-========================================================= */
-
+/* -------------------------------------------------------
+   HTML ESCAPE
+------------------------------------------------------- */
 function escapeHtml(value) {
-
-  return String(
-    value || ""
-  )
-    .replace(
-      /&/g,
-      "&amp;"
-    )
-    .replace(
-      /</g,
-      "&lt;"
-    )
-    .replace(
-      />/g,
-      "&gt;"
-    )
-    .replace(
-      /"/g,
-      "&quot;"
-    )
-    .replace(
-      /'/g,
-      "&#039;"
-    );
-
+    return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
 }
-
-
-/* =========================================================
+/* -------------------------------------------------------
+   RENDER
+------------------------------------------------------- */
+function renderArticles() {
+    const content =
+        document.getElementById("content");
+    const articles =
+        getCategoryArticles(currentCategory);
+    document.getElementById("feedTitle").textContent =
+        currentCategory;
+    document.getElementById("status").textContent =
+        `${articles.length} stories available`;
+    if (!articles.length) {
+        content.innerHTML = `
+            <div class="empty">
+                <h2>No stories available</h2>
+                <p>
+                    There are currently no articles in
+                    ${escapeHtml(currentCategory)}.
+                </p>
+            </div>
+        `;
+        return;
+    }
+    content.innerHTML = `
+        <div class="news-grid">
+            ${articles.map(article => {
+                const title =
+                    escapeHtml(article.title);
+                const description =
+                    escapeHtml(article.description);
+                const source =
+                    escapeHtml(article.source);
+                const date =
+                    escapeHtml(
+                        formatDate(
+                            getArticleDate(article)
+                        )
+                    );
+                const url =
+                    escapeHtml(article.url);
+                return `
+                    <article class="article">
+                        <div class="article-source">
+                            ${source}
+                        </div>
+                        <h3>
+                            ${title}
+                        </h3>
+                        ${
+                            description
+                                ? `
+                                    <div class="article-description">
+                                        ${description}
+                                    </div>
+                                  `
+                                : ""
+                        }
+                        <div class="article-meta">
+                            <span>
+                                ${date}
+                            </span>
+                            <span>
+                                ${escapeHtml(article.category)}
+                            </span>
+                        </div>
+                        <a
+                            class="read-more"
+                            href="${url}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read original →
+                        </a>
+                    </article>
+                `;
+            }).join("")}
+        </div>
+    `;
+}
+/* -------------------------------------------------------
+   LOAD JSON
+------------------------------------------------------- */
+async function loadNews() {
+    const content =
+        document.getElementById("content");
+    const status =
+        document.getElementById("status");
+    content.innerHTML = `
+        <div class="loading">
+            Loading the latest news…
+        </div>
+    `;
+    status.textContent =
+        "Connecting to news database…";
+    try {
+        /*
+         * IMPORTANT:
+         * articles.json must be in the SAME folder
+         * as index.html.
+         */
+        const jsonUrl =
+            new URL(
+                "articles.json",
+                document.baseURI
+            ).href
+            + "?v="
+            + Date.now();
+        console.log(
+            "Loading articles from:",
+            jsonUrl
+        );
+        const response =
+            await fetch(
+                jsonUrl,
+                {
+                    method: "GET",
+                    cache: "no-store"
+                }
+            );
+        console.log(
+            "articles.json HTTP status:",
+            response.status
+        );
+        if (!response.ok) {
+            throw new Error(
+                `HTTP ${response.status} while loading articles.json`
+            );
+        }
+        const data =
+            await response.json();
+        console.log(
+            "articles.json loaded:",
+            data
+        );
+        if (
+            !data ||
+            typeof data !== "object"
+        ) {
+            throw new Error(
+                "articles.json is not a valid JSON object"
+            );
+        }
+        if (
+            !data.categories ||
+            typeof data.categories !== "object"
+        ) {
+            throw new Error(
+                "articles.json does not contain a categories object"
+            );
+        }
+        newsData = data;
+        let total = 0;
+        Object.keys(
+            newsData.categories
+        ).forEach(category => {
+            if (
+                Array.isArray(
+                    newsData.categories[category]
+                )
+            ) {
+                total +=
+                    newsData.categories[category].length;
+            }
+        });
+        console.log(
+            "Total articles:",
+            total
+        );
+        if (total === 0) {
+            throw new Error(
+                "articles.json contains 0 articles"
+            );
+        }
+        status.textContent =
+            `${total} articles loaded successfully`;
+        createNavigation();
+        renderArticles();
+    } catch (error) {
+        console.error(
+            "NEWS LOAD ERROR:",
+            error
+        );
+        status.textContent =
+            "Unable to load news";
+        content.innerHTML = `
+            <div class="error">
+                <h2>
+                    News feed unavailable
+                </h2>
+                <p>
+                    The website could not load
+                    <strong>articles.json</strong>.
+                </p>
+                <p style="font-size:13px;">
+                    Error:
+                    ${escapeHtml(error.message)}
+                </p>
+                <button
+                    class="retry"
+                    onclick="loadNews()"
+                >
+                    Try again
+                </button>
+            </div>
+        `;
+    }
+}
+/* -------------------------------------------------------
    START
-========================================================= */
-
+------------------------------------------------------- */
+createNavigation();
 loadNews();
-
 </script>
-
-
 </body>
-
 </html>
