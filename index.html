@@ -8,7 +8,7 @@
 
 <meta
   name="description"
-  content="Snippet24 — concise, original explanations of important stories with the original publication credited."
+  content="Snippet24 — fast, concise news with original publication credits."
 >
 
 <style>
@@ -16,184 +16,309 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #07090d;
+  --card: #11151d;
+  --card2: #151a23;
+  --border: #29313d;
+  --text: #f5f7fa;
+  --muted: #929aa7;
+  --muted2: #68717e;
+  --red: #ff1717;
+  --red2: #ff3b3b;
+  --max: 1180px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #080b10;
-  color: #f5f5f5;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 23, 23, 0.08),
+      transparent 32%
+    ),
+    var(--bg);
+  color: var(--text);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
     sans-serif;
 }
 
+button,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
-  max-width: 1100px;
+  max-width: var(--max);
   margin: auto;
-  padding: 30px 20px 10px;
+  padding: 30px 22px 12px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .logo {
-  font-size: 42px;
-  font-weight: 900;
-  letter-spacing: -3px;
+  font-size: 48px;
+  line-height: 0.95;
+  font-weight: 950;
+  letter-spacing: -4px;
 }
 
 .logo span {
-  background: #ff1616;
-  padding: 2px 10px;
-  border-radius: 12px;
-  letter-spacing: -1px;
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  padding: 5px 12px 7px;
+  border-radius: 14px;
+  letter-spacing: -2px;
 }
 
 .tagline {
-  margin-top: 8px;
-  color: #888f9c;
+  margin-top: 12px;
+  color: #858d9a;
   letter-spacing: 5px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-nav {
-  max-width: 1100px;
-  margin: 25px auto 0;
-  padding: 0 20px;
+.local-time {
+  text-align: right;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.local-time strong {
+  color: white;
+  display: block;
+  font-size: 16px;
+}
+
+.controls {
+  margin-top: 18px;
   display: flex;
-  gap: 10px;
+  justify-content: flex-end;
+}
+
+select {
+  appearance: none;
+  background: var(--card2);
+  color: white;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 12px 38px 12px 15px;
+  cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  max-width: var(--max);
+  margin: 22px auto 0;
+  padding: 0 22px;
+
+  display: flex;
+  gap: 8px;
+
   overflow-x: auto;
+  scrollbar-width: none;
+}
+
+nav::-webkit-scrollbar {
+  display: none;
 }
 
 nav button {
   border: 0;
   background: transparent;
-  color: #9da3ae;
-  padding: 13px 20px;
-  border-radius: 18px;
-  font-size: 16px;
-  font-weight: 700;
+  color: #9ca4b0;
+
+  padding: 11px 18px;
+  border-radius: 16px;
+
+  font-size: 14px;
+  font-weight: 750;
+
   white-space: nowrap;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: white;
 }
 
 nav button.active {
-  background: #ff1515;
+  background: var(--red);
   color: white;
 }
 
-.controls {
-  max-width: 1100px;
-  margin: 20px auto;
-  padding: 0 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-
-select {
-  background: #151a23;
-  color: white;
-  border: 1px solid #303744;
-  border-radius: 12px;
-  padding: 12px 16px;
-  font-size: 15px;
-}
-
-.local-info {
-  color: #9299a5;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-.local-info strong {
-  color: #f5f5f5;
-}
+/* =========================
+   MAIN
+========================= */
 
 main {
-  max-width: 1100px;
+  max-width: var(--max);
   margin: auto;
-  padding: 0 20px 60px;
+  padding: 22px 22px 80px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  padding: 18px 0 25px;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 16px;
 }
 
 .section-heading {
-  margin: 25px 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 18px 0 12px;
 }
 
-.section-heading h1 {
+.section-heading h2 {
   margin: 0;
-  font-size: 32px;
-  letter-spacing: -1px;
+  font-size: 18px;
+  letter-spacing: 0.3px;
 }
 
-.section-heading p {
-  margin: 8px 0 0;
-  color: #9299a5;
-  line-height: 1.6;
+.section-heading h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: var(--red);
+  border-radius: 4px;
+  margin-right: 9px;
+  vertical-align: -2px;
 }
 
 .count {
-  color: #9299a5;
-  margin: 20px 0 15px;
+  color: var(--muted2);
+  font-size: 13px;
 }
 
-.article {
-  background: #121720;
-  border: 1px solid #27303d;
-  border-radius: 22px;
+/* =========================
+   FEATURED STORY
+========================= */
 
-  padding: 18px;
-  margin-bottom: 18px;
-
+.featured {
   display: grid;
-  grid-template-columns: 230px 1fr;
-  gap: 22px;
+  grid-template-columns: 1.25fr 1fr;
 
+  min-height: 390px;
+
+  background: linear-gradient(
+    135deg,
+    #151a22,
+    #0d1117
+  );
+
+  border: 1px solid var(--border);
+  border-radius: 24px;
   overflow: hidden;
+
+  margin-bottom: 30px;
 }
 
-.article-image-wrap {
-  width: 100%;
-  min-height: 170px;
-
-  border-radius: 16px;
-  overflow: hidden;
-
-  background: #0d1118;
+.featured-image {
+  min-height: 390px;
+  position: relative;
+  background: #0c1016;
 }
 
-.article-image {
+.featured-image img {
   width: 100%;
   height: 100%;
-  min-height: 170px;
-
-  display: block;
   object-fit: cover;
+  display: block;
 }
 
-.article-content {
-  min-width: 0;
-}
+.image-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
 
-.source {
-  color: #ff4a4a;
+  background: rgba(0, 0, 0, 0.78);
+  color: white;
+
+  padding: 7px 10px;
+  border-radius: 8px;
+
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.6px;
-  font-size: 13px;
-
-  margin-bottom: 8px;
+  letter-spacing: 0.8px;
 }
 
-.article h2 {
-  margin: 0 0 10px;
-
-  font-size: 24px;
-  line-height: 1.28;
+.featured-content {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.summary {
+.category {
+  color: var(--red2);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.featured h2 {
+  margin: 12px 0 14px;
+
+  font-size: clamp(28px, 4vw, 43px);
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+}
+
+.featured-summary {
   color: #aab1bc;
-  line-height: 1.65;
   font-size: 16px;
+  line-height: 1.65;
 }
 
 .meta {
@@ -201,123 +326,313 @@ main {
   flex-wrap: wrap;
   gap: 10px 18px;
 
-  margin-top: 15px;
+  margin-top: 22px;
 
-  color: #707887;
+  color: var(--muted2);
   font-size: 12px;
 }
 
-.original {
+.read-original {
   display: inline-block;
+  margin-top: 22px;
 
-  margin-top: 15px;
-
-  color: #ff4a4a;
-  font-weight: 800;
+  color: #ff4b4b;
   text-decoration: none;
+
+  font-weight: 850;
+  font-size: 14px;
 }
 
-.original:hover {
-  text-decoration: underline;
+.read-original:hover {
+  color: white;
 }
 
-.image-label {
-  margin-top: 7px;
+/* =========================
+   STORY LIST
+========================= */
 
-  color: #6f7785;
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+
+  min-height: 170px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.story:hover {
+  transform: translateY(-2px);
+  border-color: #3b4655;
+}
+
+.story-image {
+  position: relative;
+  min-height: 170px;
+  background: #0b0e13;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-content {
+  padding: 22px 24px;
+}
+
+.story h3 {
+  margin: 7px 0 8px;
+
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.story-summary {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.story-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 13px;
+}
+
+.story-meta {
+  color: var(--muted2);
   font-size: 11px;
 }
 
-.status {
-  text-align: center;
-  padding: 45px 20px;
-
-  color: #9299a5;
+.story-link {
+  color: var(--red2);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
 }
 
-.status.error {
-  color: #ff5555;
-}
+/* =========================
+   SUBMISSION AREA
+========================= */
 
-/* Public submission area */
 .submit-box {
-  margin-top: 35px;
+  margin-top: 42px;
 
-  padding: 24px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 23, 23, 0.09),
+      rgba(255, 255, 255, 0.02)
+    );
 
-  background: #121720;
-  border: 1px solid #27303d;
+  border: 1px solid #353d49;
   border-radius: 22px;
+
+  padding: 28px;
 }
 
 .submit-box h2 {
-  margin: 0 0 8px;
-  font-size: 23px;
+  margin: 0 0 9px;
+  font-size: 25px;
 }
 
 .submit-box p {
   margin: 0;
 
-  color: #9ba2ae;
+  max-width: 760px;
+
+  color: var(--muted);
   line-height: 1.65;
+  font-size: 15px;
 }
 
-.submit-box .disabled-note {
-  margin-top: 14px;
+.submit-note {
+  margin-top: 17px;
 
-  color: #777f8d;
+  padding: 14px 16px;
+
+  border-radius: 12px;
+  background: rgba(255,255,255,0.035);
+
+  color: #b8bec7;
   font-size: 13px;
+  line-height: 1.6;
 }
 
 .submit-button {
-  margin-top: 17px;
+  margin-top: 18px;
 
-  border: 1px solid #3a4351;
-  background: #1a202b;
-  color: #777f8d;
+  border: 1px solid #4a5360;
+  background: #1a2029;
+  color: #777f8b;
 
-  padding: 12px 16px;
+  padding: 12px 17px;
   border-radius: 12px;
 
-  font-weight: 700;
+  font-weight: 750;
   cursor: not-allowed;
 }
 
-@media (max-width: 700px) {
+/* =========================
+   STATES
+========================= */
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+}
+
+.error {
+  text-align: center;
+  padding: 60px 20px;
+  color: #ff6666;
+}
+
+.empty {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 760px) {
 
   header {
-    padding-top: 24px;
+    padding-top: 22px;
+  }
+
+  .topbar {
+    align-items: flex-start;
   }
 
   .logo {
-    font-size: 35px;
+    font-size: 39px;
   }
 
-  .controls {
-    align-items: flex-start;
-    flex-direction: column-reverse;
+  .tagline {
+    font-size: 9px;
+    letter-spacing: 3.5px;
   }
 
-  .article {
+  .local-time {
+    font-size: 11px;
+  }
+
+  .local-time strong {
+    font-size: 13px;
+  }
+
+  .featured {
     grid-template-columns: 1fr;
-    gap: 14px;
+  }
+
+  .featured-image {
+    min-height: 230px;
+    max-height: 270px;
+  }
+
+  .featured-content {
+    padding: 24px;
+  }
+
+  .featured h2 {
+    font-size: 29px;
+  }
+
+  .story {
+    grid-template-columns: 125px 1fr;
+  }
+
+  .story-image {
+    min-height: 150px;
+  }
+
+  .story-content {
     padding: 15px;
   }
 
-  .article-image-wrap {
-    min-height: 190px;
+  .story h3 {
+    font-size: 17px;
   }
 
-  .article-image {
-    min-height: 190px;
+  .story-summary {
+    -webkit-line-clamp: 2;
+    font-size: 13px;
   }
 
-  .article h2 {
-    font-size: 21px;
+  .story-bottom {
+    align-items: flex-end;
   }
 
-  .section-heading h1 {
-    font-size: 28px;
+  .story-meta {
+    font-size: 10px;
+  }
+
+  .story-link {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .local-time {
+    display: none;
+  }
+
+  .story {
+    grid-template-columns: 105px 1fr;
+  }
+
+  .story-image {
+    min-height: 145px;
+  }
+
+  .story-content {
+    padding: 13px;
+  }
+
+  .story h3 {
+    font-size: 15px;
+  }
+
+  .story-summary {
+    font-size: 12px;
+  }
+
+  .story-link {
+    display: none;
   }
 }
 </style>
@@ -327,201 +642,264 @@ main {
 
 <header>
 
-  <div class="logo">
-    snippet <span>24</span>
+  <div class="topbar">
+
+    <div>
+      <div class="logo">
+        snippet <span>24</span>
+      </div>
+
+      <div class="tagline">
+        FAST NEWS. REAL IMPACT.
+      </div>
+    </div>
+
+    <div class="local-time">
+      <strong id="localTime">--:--</strong>
+      <span id="localDate">Loading local date...</span>
+    </div>
+
   </div>
 
-  <div class="tagline">
-    FAST NEWS. REAL IMPACT.
+  <div class="controls">
+    <select id="languageSelect" aria-label="Language">
+
+      <option value="en">English</option>
+      <option value="ta">தமிழ்</option>
+      <option value="hi">हिन्दी</option>
+      <option value="te">తెలుగు</option>
+      <option value="kn">ಕನ್ನಡ</option>
+      <option value="ml">മലയാളം</option>
+      <option value="bn">বাংলা</option>
+      <option value="mr">मराठी</option>
+
+    </select>
   </div>
 
 </header>
 
 <nav id="categoryNav"></nav>
 
-<div class="controls">
-
-  <div id="localInfo" class="local-info">
-    Detecting local time...
-  </div>
-
-  <select id="languageSelect">
-
-    <option value="en">English</option>
-    <option value="ta">தமிழ்</option>
-    <option value="hi">हिन्दी</option>
-    <option value="te">తెలుగు</option>
-    <option value="kn">ಕನ್ನಡ</option>
-    <option value="ml">മലയാളം</option>
-    <option value="bn">বাংলা</option>
-    <option value="mr">मराठी</option>
-
-  </select>
-
-</div>
-
 <main>
 
-  <section class="section-heading">
+  <section class="intro">
 
-    <h1 id="sectionTitle">
-      Latest news
+    <h1 id="introTitle">
+      Know more. Read less.
     </h1>
 
-    <p id="sectionSubtitle">
+    <p id="introText">
       Short, original explanations of important stories,
-      with the original publication credited.
+      with the original publication always credited.
     </p>
 
   </section>
 
-  <div id="storyCount" class="count"></div>
 
-  <div id="articles">
+  <div class="section-heading">
 
-    <div class="status">
-      Loading news...
-    </div>
+    <h2 id="sectionTitle">
+      Latest Stories
+    </h2>
+
+    <div
+      id="storyCount"
+      class="count"
+    ></div>
 
   </div>
 
-  <!--
-    PUBLIC SUBMISSIONS
 
-    IMPORTANT:
-    This is intentionally NOT an active upload form yet.
+  <section
+    id="featured"
+    class="featured"
+    style="display:none;"
+  ></section>
 
-    A secure moderation backend must exist before
-    accepting public uploads.
-  -->
+
+  <section
+    id="storyList"
+    class="story-list"
+  >
+    <div class="loading">
+      Loading news...
+    </div>
+  </section>
+
 
   <section class="submit-box">
 
     <h2>
-      Submit local news or an original article
+      Submit local news
     </h2>
 
     <p>
       Have a genuine local story, public-interest report,
-      or your own article? Submissions will require review
-      and approval before publication.
+      photograph, or original article? Snippet24 plans to
+      accept public submissions after a secure moderation
+      system is in place.
     </p>
 
-    <div class="disabled-note">
-
-      Public uploads are currently disabled until a secure
-      moderation system, abuse controls, copyright process
-      and legal review are connected.
-
+    <div class="submit-note">
+      <strong>Important:</strong>
+      Public submissions are not published automatically.
+      Every submission must undergo identity, copyright,
+      authenticity, safety, defamation, privacy and
+      applicable legal review before publication.
+      Uploads are currently disabled until the moderation
+      backend is connected.
     </div>
 
     <button
       class="submit-button"
+      type="button"
       disabled
     >
-      Submissions coming soon
+      Submissions opening soon
     </button>
 
   </section>
 
 </main>
 
+
 <script>
 
-const CATEGORY_ORDER = [
+/* =========================================
+   SNIPPET24 FRONTEND
+========================================= */
 
+const CATEGORY_ORDER = [
   "World",
   "India",
   "Business",
-  "Technology",
+  "Technology & AI",
   "Sports",
   "Entertainment",
   "Lifestyle"
-
 ];
+
+
+/*
+   Your current articles.json uses:
+   headline
+   summary
+   publisher
+   published_at
+   source_url
+   image_url
+   image_type
+
+   This frontend also accepts the older:
+   title
+   source
+   url
+*/
+
+const CATEGORY_MAP = {
+  "Technology & AI": [
+    "Technology & AI",
+    "Technology",
+    "Tech",
+    "AI"
+  ]
+};
+
 
 const UI_TRANSLATIONS = {
 
   en: {
-    latest: "Latest news",
-    subtitle:
-      "Short, original explanations of important stories, with the original publication credited.",
-    stories: "stories",
-    original: "Read original →",
-    ai: "AI-generated illustration"
+    introTitle: "Know more. Read less.",
+    introText:
+      "Short, original explanations of important stories, with the original publication always credited.",
+    latest: "Latest Stories",
+    available: "stories available",
+    original: "Read original →"
   },
 
   ta: {
+    introTitle:
+      "அதிகம் தெரிந்து கொள்ளுங்கள். குறைவாகப் படியுங்கள்.",
+    introText:
+      "முக்கிய செய்திகளின் சுருக்கமான விளக்கங்கள். அசல் வெளியீட்டிற்கு எப்போதும் உரிய கிரெடிட் வழங்கப்படும்.",
     latest: "சமீபத்திய செய்திகள்",
-    subtitle:
-      "முக்கிய செய்திகளின் சுருக்கமான, அசல் விளக்கங்கள். அசல் வெளியீட்டிற்கு உரிய கிரெடிட் வழங்கப்படுகிறது.",
-    stories: "செய்திகள்",
-    original: "அசல் செய்தியைப் படிக்க →",
-    ai: "AI உருவாக்கிய விளக்கப்படம்"
+    available: "செய்திகள் உள்ளன",
+    original: "அசல் செய்தியைப் படிக்க →"
   },
 
   hi: {
-    latest: "नवीनतम खबरें",
-    subtitle:
-      "महत्वपूर्ण खबरों की संक्षिप्त और मूल व्याख्याएं, मूल प्रकाशन को श्रेय के साथ।",
-    stories: "खबरें",
-    original: "मूल खबर पढ़ें →",
-    ai: "AI द्वारा बनाई गई छवि"
+    introTitle:
+      "ज्यादा जानें। कम पढ़ें।",
+    introText:
+      "महत्वपूर्ण खबरों की संक्षिप्त और मौलिक व्याख्याएं, जिसमें मूल प्रकाशन को हमेशा श्रेय दिया जाता है।",
+    latest: "ताज़ा खबरें",
+    available: "खबरें उपलब्ध हैं",
+    original: "मूल खबर पढ़ें →"
   },
 
   te: {
+    introTitle:
+      "ఎక్కువ తెలుసుకోండి. తక్కువ చదవండి.",
+    introText:
+      "ముఖ్యమైన వార్తల సంక్షిప్త మరియు స్వతంత్ర వివరణలు. అసలు ప్రచురణకు ఎల్లప్పుడూ క్రెడిట్ ఇవ్వబడుతుంది.",
     latest: "తాజా వార్తలు",
-    subtitle:
-      "ముఖ్యమైన వార్తల సంక్షిప్త, అసలైన వివరణలు. అసలు ప్రచురణకు క్రెడిట్ ఇవ్వబడుతుంది.",
-    stories: "వార్తలు",
-    original: "అసలు వార్త చదవండి →",
-    ai: "AI రూపొందించిన చిత్రం"
+    available: "వార్తలు అందుబాటులో ఉన్నాయి",
+    original: "అసలు వార్త చదవండి →"
   },
 
   kn: {
+    introTitle:
+      "ಹೆಚ್ಚು ತಿಳಿಯಿರಿ. ಕಡಿಮೆ ಓದಿ.",
+    introText:
+      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ ಮತ್ತು ಸ್ವತಂತ್ರ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಯಾವಾಗಲೂ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
     latest: "ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು",
-    subtitle:
-      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ, ಮೂಲ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
-    stories: "ಸುದ್ದಿಗಳು",
-    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →",
-    ai: "AI ರಚಿಸಿದ ಚಿತ್ರ"
+    available: "ಸುದ್ದಿಗಳು ಲಭ್ಯವಿವೆ",
+    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →"
   },
 
   ml: {
+    introTitle:
+      "കൂടുതൽ അറിയൂ. കുറച്ച് വായിക്കൂ.",
+    introText:
+      "പ്രധാന വാർത്തകളുടെ ചുരുക്കവും സ്വതന്ത്രവുമായ വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് എല്ലായ്പ്പോഴും ക്രെഡിറ്റ് നൽകുന്നു.",
     latest: "ഏറ്റവും പുതിയ വാർത്തകൾ",
-    subtitle:
-      "പ്രധാന വാർത്തകളുടെ ചുരുക്കവും യഥാർത്ഥവുമായ വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് ക്രെഡിറ്റ് നൽകുന്നു.",
-    stories: "വാർത്തകൾ",
-    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →",
-    ai: "AI സൃഷ്ടിച്ച ചിത്രം"
+    available: "വാർത്തകൾ ലഭ്യമാണ്",
+    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →"
   },
 
   bn: {
+    introTitle:
+      "বেশি জানুন। কম পড়ুন।",
+    introText:
+      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ও মৌলিক ব্যাখ্যা, যেখানে মূল প্রকাশনাকে সবসময় কৃতিত্ব দেওয়া হয়।",
     latest: "সর্বশেষ খবর",
-    subtitle:
-      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ও মৌলিক ব্যাখ্যা, মূল প্রকাশনাকে কৃতিত্বসহ।",
-    stories: "খবর",
-    original: "মূল খবর পড়ুন →",
-    ai: "AI-তৈরি ছবি"
+    available: "টি খবর পাওয়া যাচ্ছে",
+    original: "মূল খবর পড়ুন →"
   },
 
   mr: {
+    introTitle:
+      "जास्त जाणून घ्या. कमी वाचा.",
+    introText:
+      "महत्त्वाच्या बातम्यांचे संक्षिप्त आणि स्वतंत्र स्पष्टीकरण. मूळ प्रकाशनाला नेहमी श्रेय दिले जाते.",
     latest: "ताज्या बातम्या",
-    subtitle:
-      "महत्त्वाच्या बातम्यांचे संक्षिप्त आणि मूळ स्पष्टीकरण, मूळ प्रकाशनाला श्रेयासह.",
-    stories: "बातम्या",
-    original: "मूळ बातमी वाचा →",
-    ai: "AI-निर्मित चित्र"
+    available: "बातम्या उपलब्ध आहेत",
+    original: "मूळ बातमी वाचा →"
   }
 
 };
 
-let allData = null;
+
+let allArticles = [];
 
 let currentCategory = "World";
 
 let currentLanguage = "en";
 
+
+/* =========================================
+   SECURITY
+========================================= */
 
 function escapeHTML(value) {
 
@@ -532,7 +910,6 @@ function escapeHTML(value) {
     value == null ? "" : String(value);
 
   return div.innerHTML;
-
 }
 
 
@@ -547,91 +924,109 @@ function safeURL(value) {
       url.protocol === "http:" ||
       url.protocol === "https:"
     ) {
-
       return url.href;
-
     }
 
   } catch (error) {}
 
   return "#";
+}
+
+
+/* =========================================
+   ARTICLE NORMALIZATION
+========================================= */
+
+function normalizeArticle(article) {
+
+  return {
+
+    id:
+      article.id ||
+      article.source_url ||
+      article.url ||
+      Math.random().toString(36),
+
+    category:
+      article.category ||
+      "World",
+
+    headline:
+      article.headline ||
+      article.title ||
+      "Untitled story",
+
+    summary:
+      article.summary ||
+      "",
+
+    publisher:
+      article.publisher ||
+      article.source ||
+      "Original publication",
+
+    published_at:
+      article.published_at ||
+      article.date ||
+      "",
+
+    source_url:
+      article.source_url ||
+      article.url ||
+      "#",
+
+    image_url:
+      article.image_url ||
+      article.image ||
+      "",
+
+    image_type:
+      article.image_type ||
+      "source"
+
+  };
 
 }
 
 
-/*
-  IMPORTANT FIX
+/* =========================================
+   CATEGORY
+========================================= */
 
-  Your articles.json structure is:
+function articleBelongsToCategory(
+  article,
+  category
+) {
 
-  {
-    "categories": {
-      "World": 20,
-      "India": 20
-    },
+  if (category === "Technology & AI") {
 
-    "articles": [
-      {...},
-      {...}
-    ]
+    return CATEGORY_MAP[
+      "Technology & AI"
+    ].includes(article.category);
+
   }
 
-  categories contains COUNTS.
-
-  The actual stories are in articles[].
-*/
-
-function getArticles() {
-
-  if (!allData) {
-    return [];
-  }
-
-  const articles =
-    Array.isArray(allData.articles)
-      ? allData.articles
-      : [];
-
-  return articles
-
-    .filter(article => {
-
-      const category =
-        String(
-          article.category || ""
-        ).trim();
-
-      if (
-        currentCategory === "Technology" &&
-        category === "Technology & AI"
-      ) {
-
-        return true;
-
-      }
-
-      return category === currentCategory;
-
-    })
-
-    .sort((a, b) => {
-
-      const first =
-        Date.parse(
-          a.published_at || ""
-        ) || 0;
-
-      const second =
-        Date.parse(
-          b.published_at || ""
-        ) || 0;
-
-      return second - first;
-
-    });
+  return article.category === category;
 
 }
 
+
+function getCategoryArticles(category) {
+
+  return allArticles.filter(
+    article =>
+      articleBelongsToCategory(
+        article,
+        category
+      )
+  );
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 function createCategoryButtons() {
 
@@ -646,17 +1041,14 @@ function createCategoryButtons() {
     category => {
 
       const button =
-        document.createElement(
-          "button"
-        );
+        document.createElement("button");
 
       button.textContent =
-        category === "Technology"
-          ? "Technology & AI"
-          : category;
+        category;
 
       if (
-        category === currentCategory
+        category ===
+        currentCategory
       ) {
 
         button.classList.add(
@@ -665,16 +1057,24 @@ function createCategoryButtons() {
 
       }
 
-      button.onclick = () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-        currentCategory =
-          category;
+          currentCategory =
+            category;
 
-        createCategoryButtons();
+          createCategoryButtons();
 
-        render();
+          render();
 
-      };
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+      );
 
       nav.appendChild(button);
 
@@ -683,6 +1083,66 @@ function createCategoryButtons() {
 
 }
 
+
+/* =========================================
+   LOCAL TIME
+========================================= */
+
+function updateLocalTime() {
+
+  const now =
+    new Date();
+
+  const time =
+    now.toLocaleTimeString(
+      undefined,
+      {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      }
+    );
+
+  const date =
+    now.toLocaleDateString(
+      undefined,
+      {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }
+    );
+
+  const timezone =
+    Intl.DateTimeFormat()
+      .resolvedOptions()
+      .timeZone;
+
+  document.getElementById(
+    "localTime"
+  ).textContent =
+    time;
+
+  document.getElementById(
+    "localDate"
+  ).textContent =
+    `${date} • ${timezone}`;
+
+}
+
+
+updateLocalTime();
+
+setInterval(
+  updateLocalTime,
+  1000
+);
+
+
+/* =========================================
+   DATE FORMAT
+========================================= */
 
 function formatDate(dateString) {
 
@@ -699,11 +1159,11 @@ function formatDate(dateString) {
     )
   ) {
 
-    return String(dateString);
+    return "";
 
   }
 
-  return new Intl.DateTimeFormat(
+  return date.toLocaleString(
     undefined,
     {
       day: "2-digit",
@@ -712,262 +1172,53 @@ function formatDate(dateString) {
       hour: "2-digit",
       minute: "2-digit"
     }
-  ).format(date);
-
-}
-
-
-function render() {
-
-  if (!allData) {
-    return;
-  }
-
-  const ui =
-    UI_TRANSLATIONS[
-      currentLanguage
-    ] ||
-    UI_TRANSLATIONS.en;
-
-  const articles =
-    getArticles();
-
-  document.getElementById(
-    "sectionTitle"
-  ).textContent =
-    `${ui.latest} — ${
-      currentCategory === "Technology"
-        ? "Technology & AI"
-        : currentCategory
-    }`;
-
-  document.getElementById(
-    "sectionSubtitle"
-  ).textContent =
-    ui.subtitle;
-
-  document.getElementById(
-    "storyCount"
-  ).textContent =
-    `${articles.length} ${ui.stories}`;
-
-  const container =
-    document.getElementById(
-      "articles"
-    );
-
-  container.innerHTML = "";
-
-  if (!articles.length) {
-
-    container.innerHTML = `
-      <div class="status">
-        News is temporarily unavailable
-        for this section.
-      </div>
-    `;
-
-    return;
-
-  }
-
-
-  articles.forEach(
-    article => {
-
-      const card =
-        document.createElement(
-          "article"
-        );
-
-      card.className =
-        "article";
-
-
-      /*
-        Support both the current JSON
-        and the future AI-image fields.
-      */
-
-      const image =
-        safeURL(
-          article.ai_image_url ||
-          article.image_url ||
-          ""
-        );
-
-
-      /*
-        Support current field names:
-
-        headline
-        summary
-        publisher
-        source_url
-
-        and future names:
-
-        rephrased_headline
-        original_summary
-      */
-
-      const headline =
-        article.rephrased_headline ||
-        article.headline ||
-        article.title ||
-        "";
-
-      const summary =
-        article.original_summary ||
-        article.summary ||
-        "";
-
-      const publisher =
-        article.publisher ||
-        article.source ||
-        "Original publication";
-
-      const sourceURL =
-        safeURL(
-          article.source_url ||
-          article.url ||
-          ""
-        );
-
-
-      const isAI =
-        Boolean(
-          article.ai_image_url
-        ) ||
-        String(
-          article.image_type || ""
-        ).toLowerCase() === "ai";
-
-
-      card.innerHTML = `
-
-        <div>
-
-          <div class="article-image-wrap">
-
-            ${
-              image !== "#"
-              ?
-              `
-              <img
-                class="article-image"
-                src="${escapeHTML(image)}"
-                alt=""
-                loading="lazy"
-                referrerpolicy="no-referrer"
-                onerror="
-                  this.style.display='none';
-                "
-              >
-              `
-              :
-              ""
-            }
-
-          </div>
-
-          <div class="image-label">
-
-            ${
-              isAI
-                ? escapeHTML(ui.ai)
-                : "Story image"
-            }
-
-          </div>
-
-        </div>
-
-
-        <div class="article-content">
-
-          <div class="source">
-
-            ${escapeHTML(publisher)}
-
-          </div>
-
-
-          <h2>
-
-            ${escapeHTML(headline)}
-
-          </h2>
-
-
-          <div class="summary">
-
-            ${escapeHTML(summary)}
-
-          </div>
-
-
-          <div class="meta">
-
-            <span>
-              ${escapeHTML(
-                formatDate(
-                  article.published_at
-                )
-              )}
-            </span>
-
-            <span>
-              ${escapeHTML(
-                article.category ||
-                currentCategory
-              )}
-            </span>
-
-          </div>
-
-
-          ${
-            sourceURL !== "#"
-            ?
-            `
-            <a
-              class="original"
-              href="${escapeHTML(sourceURL)}"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              ${escapeHTML(
-                ui.original
-              )}
-            </a>
-            `
-            :
-            ""
-          }
-
-        </div>
-
-      `;
-
-
-      container.appendChild(
-        card
-      );
-
-    }
   );
 
 }
 
 
-/*
-  Browser translation for the
-  language selector.
+/* =========================================
+   IMAGE FALLBACK
+========================================= */
 
-  The actual headline and summary
-  remain generated by curator.py.
-*/
+function imageForArticle(article) {
+
+  if (
+    article.image_url &&
+    article.image_url.startsWith(
+      "http"
+    )
+  ) {
+
+    return article.image_url;
+
+  }
+
+  /*
+     Fallback visual.
+
+     The curator should eventually provide
+     the AI-generated image_url.
+  */
+
+  const prompt =
+    encodeURIComponent(
+      article.headline
+    );
+
+  return (
+    "https://image.pollinations.ai/" +
+    "prompt/" +
+    prompt +
+    "?width=900&height=600&nologo=true"
+  );
+
+}
+
+
+/* =========================================
+   TRANSLATION
+========================================= */
 
 async function translateText(
   text,
@@ -996,19 +1247,15 @@ async function translateText(
       "&q=" +
       encodeURIComponent(text);
 
-
     const response =
       await fetch(url);
-
 
     if (!response.ok) {
       return text;
     }
 
-
     const data =
       await response.json();
-
 
     if (
       !data ||
@@ -1019,20 +1266,13 @@ async function translateText(
 
     }
 
-
     return data[0]
       .map(
         part => part[0]
       )
       .join("");
 
-
-  } catch (error) {
-
-    console.warn(
-      "Translation unavailable:",
-      error
-    );
+  } catch {
 
     return text;
 
@@ -1041,21 +1281,239 @@ async function translateText(
 }
 
 
-async function renderTranslated() {
+async function translateArticle(
+  article
+) {
 
   if (
     currentLanguage === "en"
   ) {
 
-    render();
+    return article;
+
+  }
+
+  const [
+    headline,
+    summary
+  ] = await Promise.all([
+
+    translateText(
+      article.headline,
+      currentLanguage
+    ),
+
+    translateText(
+      article.summary,
+      currentLanguage
+    )
+
+  ]);
+
+  return {
+
+    ...article,
+
+    headline,
+    summary
+
+  };
+
+}
+
+
+/* =========================================
+   FEATURED STORY
+========================================= */
+
+function renderFeatured(
+  article,
+  ui
+) {
+
+  const container =
+    document.getElementById(
+      "featured"
+    );
+
+  if (!article) {
+
+    container.style.display =
+      "none";
 
     return;
 
   }
 
+  container.style.display =
+    "grid";
 
-  const articles =
-    getArticles();
+  const image =
+    imageForArticle(article);
+
+  const imageType =
+    article.image_type ===
+    "ai_generated"
+      ? "AI VISUAL"
+      : "STORY IMAGE";
+
+  container.innerHTML = `
+
+    <div class="featured-image">
+
+      <img
+        src="${escapeHTML(image)}"
+        alt="${escapeHTML(article.headline)}"
+        loading="eager"
+        onerror="this.src='https://placehold.co/900x600/11151d/ffffff?text=Snippet24'"
+      >
+
+      <div class="image-label">
+        ${imageType}
+      </div>
+
+    </div>
+
+
+    <div class="featured-content">
+
+      <div class="category">
+        ${escapeHTML(article.category)}
+      </div>
+
+      <h2>
+        ${escapeHTML(article.headline)}
+      </h2>
+
+      <div class="featured-summary">
+        ${escapeHTML(article.summary)}
+      </div>
+
+      <div class="meta">
+
+        <span>
+          ${escapeHTML(article.publisher)}
+        </span>
+
+        <span>
+          ${escapeHTML(
+            formatDate(
+              article.published_at
+            )
+          )}
+        </span>
+
+      </div>
+
+      <a
+        class="read-original"
+        href="${escapeHTML(
+          safeURL(
+            article.source_url
+          )
+        )}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ${ui.original}
+      </a>
+
+    </div>
+
+  `;
+
+}
+
+
+/* =========================================
+   STORY CARD
+========================================= */
+
+function createStoryCard(
+  article,
+  ui
+) {
+
+  const card =
+    document.createElement(
+      "article"
+    );
+
+  card.className =
+    "story";
+
+  const image =
+    imageForArticle(article);
+
+  card.innerHTML = `
+
+    <div class="story-image">
+
+      <img
+        src="${escapeHTML(image)}"
+        alt="${escapeHTML(article.headline)}"
+        loading="lazy"
+        onerror="this.src='https://placehold.co/600x400/11151d/ffffff?text=Snippet24'"
+      >
+
+    </div>
+
+
+    <div class="story-content">
+
+      <div class="category">
+        ${escapeHTML(article.category)}
+      </div>
+
+      <h3>
+        ${escapeHTML(article.headline)}
+      </h3>
+
+      <div class="story-summary">
+        ${escapeHTML(article.summary)}
+      </div>
+
+      <div class="story-bottom">
+
+        <div class="story-meta">
+          ${escapeHTML(article.publisher)}
+          ${article.published_at ? " • " : ""}
+          ${escapeHTML(
+            formatDate(
+              article.published_at
+            )
+          )}
+        </div>
+
+        <a
+          class="story-link"
+          href="${escapeHTML(
+            safeURL(
+              article.source_url
+            )
+          )}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ${ui.original}
+        </a>
+
+      </div>
+
+    </div>
+
+  `;
+
+  return card;
+
+}
+
+
+/* =========================================
+   RENDER
+========================================= */
+
+async function render() {
 
   const ui =
     UI_TRANSLATIONS[
@@ -1065,41 +1523,70 @@ async function renderTranslated() {
 
 
   document.getElementById(
-    "sectionTitle"
+    "introTitle"
   ).textContent =
-    `${ui.latest} — ${
-      currentCategory === "Technology"
-        ? "Technology & AI"
-        : currentCategory
-    }`;
+    ui.introTitle;
 
 
   document.getElementById(
-    "sectionSubtitle"
+    "introText"
   ).textContent =
-    ui.subtitle;
+    ui.introText;
+
+
+  document.getElementById(
+    "sectionTitle"
+  ).textContent =
+    ui.latest;
+
+
+  let articles =
+    getCategoryArticles(
+      currentCategory
+    );
+
+
+  articles =
+    articles.sort(
+      (
+        a,
+        b
+      ) =>
+        new Date(
+          b.published_at
+        ) -
+        new Date(
+          a.published_at
+        )
+    );
 
 
   document.getElementById(
     "storyCount"
   ).textContent =
-    `${articles.length} ${ui.stories}`;
+    `${articles.length} ${ui.available}`;
 
 
-  const container =
+  const featured =
     document.getElementById(
-      "articles"
+      "featured"
     );
 
-  container.innerHTML = "";
+  const list =
+    document.getElementById(
+      "storyList"
+    );
 
 
   if (!articles.length) {
 
-    container.innerHTML = `
-      <div class="status">
-        News is temporarily unavailable
-        for this section.
+    featured.style.display =
+      "none";
+
+    list.innerHTML = `
+      <div class="empty">
+        No stories are available in
+        this category right now.
       </div>
     `;
 
@@ -1108,202 +1595,66 @@ async function renderTranslated() {
   }
 
 
-  for (
-    const article of articles
-  ) {
+  /*
+     Translate only the stories that
+     are actually being displayed.
+  */
 
-    const headline =
-      await translateText(
-        article.rephrased_headline ||
-        article.headline ||
-        article.title ||
-        "",
-        currentLanguage
-      );
-
-
-    const summary =
-      await translateText(
-        article.original_summary ||
-        article.summary ||
-        "",
-        currentLanguage
-      );
-
-
-    const image =
-      safeURL(
-        article.ai_image_url ||
-        article.image_url ||
-        ""
-      );
-
-
-    const publisher =
-      article.publisher ||
-      article.source ||
-      "Original publication";
-
-
-    const sourceURL =
-      safeURL(
-        article.source_url ||
-        article.url ||
-        ""
-      );
-
-
-    const isAI =
-      Boolean(
-        article.ai_image_url
-      ) ||
-      String(
-        article.image_type || ""
-      ).toLowerCase() === "ai";
-
-
-    const card =
-      document.createElement(
-        "article"
-      );
-
-    card.className =
-      "article";
-
-
-    card.innerHTML = `
-
-      <div>
-
-        <div class="article-image-wrap">
-
-          ${
-            image !== "#"
-            ?
-            `
-            <img
-              class="article-image"
-              src="${escapeHTML(image)}"
-              alt=""
-              loading="lazy"
-              referrerpolicy="no-referrer"
-              onerror="
-                this.style.display='none';
-              "
-            >
-            `
-            :
-            ""
-          }
-
-        </div>
-
-        <div class="image-label">
-
-          ${
-            isAI
-              ? escapeHTML(ui.ai)
-              : "Story image"
-          }
-
-        </div>
-
-      </div>
-
-
-      <div class="article-content">
-
-        <div class="source">
-
-          ${escapeHTML(publisher)}
-
-        </div>
-
-
-        <h2>
-
-          ${escapeHTML(headline)}
-
-        </h2>
-
-
-        <div class="summary">
-
-          ${escapeHTML(summary)}
-
-        </div>
-
-
-        <div class="meta">
-
-          <span>
-            ${escapeHTML(
-              formatDate(
-                article.published_at
-              )
-            )}
-          </span>
-
-          <span>
-            ${escapeHTML(
-              article.category ||
-              currentCategory
-            )}
-          </span>
-
-        </div>
-
-
-        ${
-          sourceURL !== "#"
-          ?
-          `
-          <a
-            class="original"
-            href="${escapeHTML(sourceURL)}"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            ${escapeHTML(
-              ui.original
-            )}
-          </a>
-          `
-          :
-          ""
-        }
-
-      </div>
-
-    `;
-
-
-    container.appendChild(
-      card
+  const visibleArticles =
+    await Promise.all(
+      articles.map(
+        article =>
+          translateArticle(
+            article
+          )
+      )
     );
 
-  }
+
+  renderFeatured(
+    visibleArticles[0],
+    ui
+  );
+
+
+  list.innerHTML = "";
+
+
+  visibleArticles
+    .slice(1)
+    .forEach(
+      article => {
+
+        list.appendChild(
+          createStoryCard(
+            article,
+            ui
+          )
+        );
+
+      }
+    );
 
 }
 
 
+/* =========================================
+   LOAD ARTICLES.JSON
+========================================= */
+
 async function loadNews() {
 
-  const container =
+  const list =
     document.getElementById(
-      "articles"
+      "storyList"
     );
-
 
   try {
 
     const response =
       await fetch(
         "articles.json?t=" +
-        Date.now(),
-        {
-          cache: "no-store"
-        }
+        Date.now()
       );
 
 
@@ -1316,14 +1667,23 @@ async function loadNews() {
     }
 
 
-    allData =
+    const data =
       await response.json();
 
 
+    /*
+       Current articles.json:
+
+       {
+         "total": 100,
+         "articles": [...]
+       }
+    */
+
     if (
-      !allData ||
+      !data ||
       !Array.isArray(
-        allData.articles
+        data.articles
       )
     ) {
 
@@ -1334,22 +1694,35 @@ async function loadNews() {
     }
 
 
+    allArticles =
+      data.articles
+        .map(
+          normalizeArticle
+        )
+        .filter(
+          article =>
+            article.headline &&
+            article.source_url
+        );
+
+
     createCategoryButtons();
 
-    render();
+    await render();
 
 
   } catch (error) {
 
-    console.error(error);
+    console.error(
+      "Snippet24 error:",
+      error
+    );
 
 
-    container.innerHTML = `
-      <div class="status error">
-
-        News could not be loaded
-        right now. Please try again later.
-
+    list.innerHTML = `
+      <div class="error">
+        Unable to load the news feed.
+        Please try again shortly.
       </div>
     `;
 
@@ -1358,91 +1731,9 @@ async function loadNews() {
 }
 
 
-/*
-  Local date/time.
-
-  This automatically uses the visitor's
-  device timezone.
-
-  Example:
-
-  Chennai:
-  Asia/Kolkata
-
-  London:
-  Europe/London
-
-  New York:
-  America/New_York
-*/
-
-function updateLocalDateTime() {
-
-  const element =
-    document.getElementById(
-      "localInfo"
-    );
-
-
-  const now =
-    new Date();
-
-
-  const date =
-    new Intl.DateTimeFormat(
-      undefined,
-      {
-        weekday: "short",
-        day: "2-digit",
-        month: "short",
-        year: "numeric"
-      }
-    ).format(now);
-
-
-  const time =
-    new Intl.DateTimeFormat(
-      undefined,
-      {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit"
-      }
-    ).format(now);
-
-
-  let timezone = "";
-
-
-  try {
-
-    timezone =
-      Intl.DateTimeFormat()
-        .resolvedOptions()
-        .timeZone || "";
-
-  } catch (error) {}
-
-
-  element.innerHTML =
-    `
-    <strong>
-      ${escapeHTML(date)}
-    </strong>
-
-    ·
-
-    ${escapeHTML(time)}
-
-    ${
-      timezone
-        ? " · " + escapeHTML(timezone)
-        : ""
-    }
-    `;
-
-}
-
+/* =========================================
+   LANGUAGE
+========================================= */
 
 document
   .getElementById(
@@ -1455,19 +1746,15 @@ document
       currentLanguage =
         event.target.value;
 
-      await renderTranslated();
+      await render();
 
     }
   );
 
 
-updateLocalDateTime();
-
-setInterval(
-  updateLocalDateTime,
-  1000
-);
-
+/* =========================================
+   START
+========================================= */
 
 loadNews();
 
