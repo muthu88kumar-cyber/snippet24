@@ -1,20 +1,19 @@
-name: Update Snippet24 News
+name: Snippet24 News Curator
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
-
   workflow_dispatch:
+
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
 jobs:
-  update-news:
+  curate:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -27,7 +26,7 @@ jobs:
         run: |
           python curator.py
 
-      - name: Check generated JSON
+      - name: Show article counts
         run: |
           python - <<'PY'
           import json
@@ -35,30 +34,25 @@ jobs:
           with open("articles.json", "r", encoding="utf-8") as f:
               data = json.load(f)
 
-          articles = data.get("articles", [])
+          total = 0
 
-          print("Total articles:", len(articles))
+          for category, articles in data["categories"].items():
+              count = len(articles)
+              total += count
+              print(f"{category}: {count}")
 
-          categories = data.get("categories", {})
-
-          for name, count in categories.items():
-              print(f"{name}: {count}")
-
-          if not articles:
-              raise SystemExit(
-                  "ERROR: articles.json contains no articles"
-              )
+          print(f"TOTAL: {total}")
           PY
 
       - name: Commit updated news
         run: |
           git config user.name "Snippet24 Bot"
-          git config user.email "actions@users.noreply.github.com"
+          git config user.email "actions@github.com"
 
           git add articles.json
 
           if git diff --cached --quiet; then
-            echo "No news changes to commit."
+            echo "No article changes."
           else
             git commit -m "Update news feed"
             git push
