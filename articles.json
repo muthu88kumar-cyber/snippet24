@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T06:47:16.984143+00:00",
+  "updated_at": "2026-08-26T08:25:25.921162+00:00",
   "total": 100,
   "categories": {
     "World": 20,
@@ -12,47 +12,531 @@
   },
   "articles": [
     {
-      "id": "118ca6fe6fc248246b30",
+      "id": "8bb2eb6889f51790bc16",
+      "category": "India",
+      "headline": "H1N1 surge: IMA urges caution, warns against self-medication with antibiotics and antivirals",
+      "summary": "The IMA advised people to follow preventive measures including frequent handwashing with soap and water for at least 20 seconds or using an alcohol",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:19:02+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/health/h1n1-surge-ima-urges-caution-warns-against-self-medication-with-antibiotics-and-antivirals/article71392059.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/ftmtgm/article71392074.ece/alternates/LANDSCAPE_1200/iStock-1216977553.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "1333d4d3f30beea149d2",
+      "category": "Sports",
+      "headline": "Tottenham agree loan for Man City's Marmoush",
+      "summary": "Tottenham agree a loan deal to sign Manchester City forward Omar Marmoush, with an obligation to make the deal permanent for £60m next summer.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T08:18:41+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cx2z5ewlrwko?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d37f/live/a0422f70-a125-11f1-92eb-a9b3bbcf6f4a.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "8b2b9588d3a7de9f9179",
+      "category": "India",
+      "headline": "Six bodies found in Vijayapura lake",
+      "summary": "While the exact cause of the deaths was not known, police suspect they must have slipped into the water body while visiting it.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:14:09+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/six-bodies-found-in-vijayapura-lake/article71391478.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/po176n/article71392066.ece/alternates/LANDSCAPE_1200/Vijayapura_02.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "3355c9cfc982d04daf7f",
+      "category": "India",
+      "headline": "Six killed, 12 injured as Hyderabad-Eluru electric bus rams into container truck near Suryapet",
+      "summary": "The bus was carrying 42 passengers who were travelling from Hyderabad to Eluru via Vijayawada when the accident took place at about 4.55 a.m.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:13:03+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/six-killed-12-injured-as-speeding-bus-crashes-into-lorry-in-telanganas-suryapet/article71391286.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/njdbrt/article71391301.ece/alternates/LANDSCAPE_1200/Accident%20stock.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "9b3f167615cc11dcc8fe",
+      "category": "Entertainment",
+      "headline": "Korea’s DRX Signs Strategic Partnership With Indonesia’s Nuon to Expand Gaming and Entertainment Ties (EXCLUSIVE)",
+      "summary": "Korea’s DRX Corp. and PT Nuon Digital Indonesia signed a strategic partnership in Jakarta to expand gaming and entertainment ties between Indonesia and Korea, starting with an entertainment festival called DRX Homefront Indonesia and a joint game publishing initiative between the two countries. The agreement pairs DRX’s esports, content production and...",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T08:09:54+00:00",
+      "source_url": "https://variety.com/2026/gaming/news/drx-nuon-indonesia-korea-partnership-1236843595/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/DRX-Nuon.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "d5b669d96edd0d462138",
+      "category": "India",
+      "headline": "NCB busts cross-border heroin cartel in Jammu; mastermind among 3 arrested with 5.16 kg heroin",
+      "summary": "The NCB team traced him to Leh district of Ladakh where he was arrested on Monday (August 24), within two days of the seizure",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:08:38+00:00",
+      "source_url": "https://www.thehindu.com/news/national/jammu-and-kashmir/ncb-busts-cross-border-heroin-cartel-in-jammu-mastermind-among-3-arrested-with-516-kg-heroin/article71392015.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20NCB%20busts%20cross-border%20heroin%20cartel%20in%20Jammu%3B%20mastermind%20among%203%20arrested%20with%205.16%20kg%20heroin%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=13283655",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4717c2b8d88cddb413eb",
       "category": "World",
-      "headline": "Fears grow for fourth rate hike after higher than expected July inflation rate",
-      "summary": "ABS says CPI was 3.5% in July, casting doubt on Reserve Bank meeting its 2.5% inflation target without further hike Fears are growing that the Reserve Bank will hit millions of mortgage holders with a fourth rate hike this year, after inflation eased in July but by far less than expected. Consumer prices climbed by 3.5% through the year, down from 3.8%...",
+      "headline": "Burnham to announce plan for 10,000 work experience placements for young people – UK politics live",
+      "summary": "Prime minister to speak to press this morning while on visit to Sainsbury’s supermarket Miatta Fahnbulleh , the energy sectary, said the government will explore “what more we can do” to help those struggling with high bills, via “fundamental reforms” including investment in renewable energy. Families will be understandably concerned about the cost of...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T08:07:04+00:00",
+      "source_url": "https://www.theguardian.com/politics/live/2026/aug/26/andy-burnham-labour-neets-youth-unemployment-work-placements-ofgem-energy-bills-reform-jenrick-latest-news-updates",
+      "image_url": "https://i.guim.co.uk/img/media/ec5ab201a234b677e01f7ffb698c4732a4247edb/349_0_5146_4117/master/5146.jpg?width=140&quality=85&auto=format&fit=max&s=fdf7a7b2092cb461aadc2b8d394f26c7",
+      "image_type": "source"
+    },
+    {
+      "id": "6b71b7c179aa6fcd45db",
+      "category": "India",
+      "headline": "A new right of way: What Andhra Pradesh’s Pedestrian Policy means for the public",
+      "summary": "For millions of people who walk to bus stops, schools, markets, workplaces and other public places every day, Andhra Pradesh’s new Pedestrian Safety and Universal Accessibility Policy could bring a fundamental change",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:06:19+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/a-new-right-of-way-what-andhra-pradesh-pedestrian-policy-means-for-the-public/article71391976.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/5swr0l/article71392016.ece/alternates/LANDSCAPE_1200/VJKVG-FOOTPATH%202.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "9ba3377afbcabd893465",
+      "category": "India",
+      "headline": "Deletions in Karnataka’s draft SIR rolls alarming | Data",
+      "summary": "Five constituencies in core Bengaluru region see more than 50% of its electoral rolls getting deleted, unseen in other major States. Despite concerning levels of deletions, the office of Karnataka CEO has neither made the deletions lists easily accessible nor has it made public the gender",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:05:38+00:00",
+      "source_url": "https://www.thehindu.com/data/deletions-in-karnatakas-draft-sir-rolls-alarming-data/article71391961.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/a8gp8p/article71392018.ece/alternates/LANDSCAPE_1200/SIR-reports-16.G79GEBV91.3.jpg.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "75f677268c1caf92dd05",
+      "category": "India",
+      "headline": "From vibrant pookkalams to traditional feasts, Keralites around the globe celebrate Thiruvonam",
+      "summary": "President Droupadi Murmu, Vice President C.P. Radhakrishnan, Prime Minister Narendra Modi, and Keralam Chief Minister V.D. Satheesan have all extended Onam greetings to all citizens",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:02:31+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/keralites-around-the-globe-celebrate-thiruvonam/article71391900.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/pyzafy/article71392007.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-26%20at%2013.15.22.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "a9ebdedce380bd3b9963",
+      "category": "India",
+      "headline": "H1N1 in India: A seasonal surge, not a new strain, says ICMR",
+      "summary": "Delhi has reported 1,777 H1N1 cases this year, while Karnataka had recorded 4,212 laboratory-confirmed influenza cases across 32 districts by August 22. Maharashtra, too, has reported a rise in H1N1 infections",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T08:02:17+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/health/h1n1-in-india-a-seasonal-surge-not-a-new-strain-says-icmr/article71391367.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/ucv8w/article71391397.ece/alternates/LANDSCAPE_1200/4col_Lead_StoryG1OGEOT2L.2.jpg.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "72182b2a7535f66c2b21",
+      "category": "Entertainment",
+      "headline": "Netflix’ Latest Marketing Mash-Up Pairs Stella Artois With ‘The Gentlemen’",
+      "summary": "Netflix has what looks to be a great show set to launch, but you can’t see the program on its flagship streaming service. The company plans to take over the history Marlborough Pub in London between September 3 and September 5, when it will outfit the place much like its comedic action series “The Gentlemen,” […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T08:00:00+00:00",
+      "source_url": "https://variety.com/2026/tv/news/netflix-stella-artois-the-gentlemen-marketing-partnership-1236843299/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/07/The-Gentlemen-Season-2.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "2f26b24014925be31d24",
+      "category": "Entertainment",
+      "headline": "Sky U.K.’s Meghan Lyvers Discusses IP, Original Content Mix and “Increasing the Emotional Stakes”",
+      "summary": "The Comcast company's scripted originals exec talks about 'War,' 'The Day of the Jackal,' working with partners, championing auteurs and British stories, and that 'The Girl With the Dragon Tattoo' adaptation.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-26T08:00:00+00:00",
+      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/sky-uk-original-content-interview-jackal-dragon-tattoo-ip-1236679890/",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Sky%20U.K.%E2%80%99s%20Meghan%20Lyvers%20Discusses%20IP%2C%20Original%20Content%20Mix%20and%20%E2%80%9CIncreasing%20the%20Emotional%20Stakes%E2%80%9D%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2701031183",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ee8e181a23182955b31a",
+      "category": "Sports",
+      "headline": "Man City's Gonzalez set for £52m Newcastle move",
+      "summary": "Newcastle United agree a deal worth up to £52m for Manchester City midfielder Nico Gonzalez.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T07:59:50+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cx2zlnpnk4zo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8de4/live/0483cd70-a123-11f1-92eb-a9b3bbcf6f4a.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "dc428f9ae42f74a4a40a",
+      "category": "Entertainment",
+      "headline": "Dominic West and Sienna Miller Star in Image From Sky and HBO Legal Thriller ‘War’ (Exclusive)",
+      "summary": "The drama from 'Hijack' creator George Kay, which received a two-season commitment and is set in the elite world of London law, stars the duo as a tech titan and his estranged film star wife.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-26T07:59:00+00:00",
+      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/hbo-sky-show-war-sienna-miller-dominic-west-photo-exclusive-1236679668/",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Dominic%20West%20and%20Sienna%20Miller%20Star%20in%20Image%20From%20Sky%20and%20HBO%20Legal%20Thriller%20%E2%80%98War%E2%80%99%20%28Exclusive%29%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1709879623",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "59face76cd10dc41cf27",
+      "category": "India",
+      "headline": "Mamdani says he opposes RSS, does not support Mohan Bhagwat’s event at Madison Square Garden",
+      "summary": "The New York City Mayor also clarified that he is unsure if the city has any jurisdiction on cancelling a private event in the U.S.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:56:56+00:00",
+      "source_url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/zq5n5/article71391643.ece/alternates/LANDSCAPE_1200/2026-08-12T191541Z_503525274_RC25XMA6LHSX_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "76b29c2805e64ee25b54",
+      "category": "India",
+      "headline": "Murder accused shot in leg by police during arrest bid in Neyveli",
+      "summary": "When the history-sheeter who was in hiding was confronted, he allegedly attacked two police constables with a machete.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:53:14+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/murder-accused-shot-in-leg-by-police-during-arrest-bid-in-neyveli/article71391678.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/n5egd0/article71392005.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-26%20at%2012.56.51%20PM.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "dd982ccb54ebc263c05a",
+      "category": "India",
+      "headline": "Rebel TMC MPs get notices from Lok Sabha Secretariat on disqualification pleas; Mahua Moitra alleges ‘cover up’",
+      "summary": "The development comes a day after the Supreme Court agreed to hear Abhishek Banerjee's plea seeking an expeditious decision on the disqualification petitions",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:50:38+00:00",
+      "source_url": "https://www.thehindu.com/news/national/rebel-tmc-mps-get-notices-from-lok-sabha-secretariat-on-disqualification-pleas-asked-to-reply-within-7-days/article71391461.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/icht0y/article71391507.ece/alternates/LANDSCAPE_1200/PTI06_14_2026_000531B.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "98c7bffa80264c8a9d12",
+      "category": "World",
+      "headline": "Celebrity tributes pour in for Dolly Parton: ‘a gift to the world’",
+      "summary": "Lily Tomlin, Taylor Swift, Beyoncé, Céline Dion and Oprah Winfrey are among those remembering the queen of country after she died aged 80 Alexis Petridis on Dolly Parton’s peerless career that turned country music cliches inside out Dolly Parton – a life in pictures Country music legend Dolly Parton dies aged 80 – latest updates Tributes have poured in...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:46:12+00:00",
+      "source_url": "https://www.theguardian.com/music/2026/aug/25/dolly-parton-death-celebrity-reactions",
+      "image_url": "https://i.guim.co.uk/img/media/419dcde587a81fef910d18913b2b3cab5f025172/0_0_3000_2400/master/3000.jpg?width=140&quality=85&auto=format&fit=max&s=82e38f53b9cc829d56a39cce6a91339f",
+      "image_type": "source"
+    },
+    {
+      "id": "6e8d0164119ef6ca09a9",
+      "category": "World",
+      "headline": "Australia news live: PM, premiers and chief ministers sign firearms agreement; Sarah Hanson-Young scathing on Malcolm Roberts’ gay rights comments",
+      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:43:42+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/64037b5c9eb8a685718aec69bbbe9544f71291ab/0_4_5716_4573/master/5716.jpg?width=140&quality=85&auto=format&fit=max&s=7cc461910faa10a8d41555327e4925e6",
+      "image_type": "source"
+    },
+    {
+      "id": "e3e5e2fe776591147826",
+      "category": "World",
+      "headline": "Tributes pour in after country music legend Dolly Parton dies – latest updates",
+      "summary": "Legendary country singer died surrounded by loved ones after being diagnosed with cancer, her team says; Beyoncé, Taylor Swift and Dionne Warwick lead tributes Dolly Parton dies aged 80 Celebrity tributes A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our picture...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:43:20+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
+      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
+      "image_type": "source"
+    },
+    {
+      "id": "f08ab8034c584fe6e1fb",
+      "category": "India",
+      "headline": "Sonya Gill, AIDWA leader and women’s rights activist, dies at 70",
+      "summary": "Co-founder of the People’s Archive of Rural India (PARI), Sonya was dedicated to uplifting women in marginalised communities",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:43:13+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/sonya-gill-aidwa-leader-and-womens-rights-activist-dies-at-70/article71391923.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/p1k6j8/article71391939.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-26%20at%2011.54.13%20AM.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "4f4975064cb8c7410fb8",
+      "category": "Sports",
+      "headline": "Sterling charged with dangerous driving after crash",
+      "summary": "Raheem Sterling will appear in court next month to face charges of dangerous driving after crashing his car into motorway barriers in May.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T07:42:51+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c23xkk1vkkpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/225a/live/77b8e540-a0ca-11f1-ad58-4d48ded76db6.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "ee9f538404c6739259fe",
+      "category": "Lifestyle",
+      "headline": "Thinking about another IUI? Fertility specialist explains 5 things doctors check before trying again",
+      "summary": "If you are considering a second IUI, a fertility specialist explains what doctors look at before recommending it.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T07:42:29+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/thinking-about-another-iui-fertility-specialist-explains-5-things-doctors-check-before-trying-again-101787726552428.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/photo-1615461066159-fea0960485d5_1787726766890_1787726775054_43ba5be2-d2d0-4716-b3ee-0ed0f986a024.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "f70beab85d19d8950f48",
+      "category": "Entertainment",
+      "headline": "Oscars: Japan Selects ‘All of a Sudden’ for International Feature Race",
+      "summary": "Hamaguchi Ryusuke’s “All of a Sudden” has been selected as Japan’s entry in the international feature category at the 99th Academy Awards, the Motion Picture Producers Association of Japan (Eiren) has revealed. The selection marks the second time a Hamaguchi film has represented Japan in the category, five years after “Drive My Car” won the […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T07:39:14+00:00",
+      "source_url": "https://variety.com/2026/film/awards/oscars-japan-all-of-a-sudden-oscars-1236843581/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/05/ALL-OF-A-SUDDEN_Courtesy-of-NEON-e1778778122990.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "c626e1e5b6806364ae04",
+      "category": "India",
+      "headline": "Karnataka to bar political affiliations in student polls; first phase in PU, degree colleges",
+      "summary": "All the provisions will be made clear once the government order is passed, in about 15 days: Minister",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:38:45+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-to-bar-political-affiliations-in-student-polls-first-phase-in-pu-degree-colleges/article71389289.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/9zjpoa/article71389988.ece/alternates/LANDSCAPE_1200/10258_9_4_2026_17_17_17_1_KLB_SHARAN_PRAKASH_PATIL_1.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "97f11b542a35304e5471",
+      "category": "World",
+      "headline": "Productivity Commission says ‘line was crossed’ when WA premier labelled them ‘east coast clowns’ over GST",
+      "summary": "Commissioner Angela Jackson also said it was ‘disappointing’ that Anthony Albanese had ruled out changes to Western Australia’s GST arrangements Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The Productivity Commission has condemned attacks on its integrity as “unacceptable” after its...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:38:30+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/wa-gst-deal-productivity-commission-western-australia-premier-roger-cook",
+      "image_url": "https://i.guim.co.uk/img/media/8f1bac64cf0024319475de2fe23b287a3bcbccb5/490_0_4188_3350/master/4188.jpg?width=140&quality=85&auto=format&fit=max&s=11d61c525b7349c05c23a8f5b317ab65",
+      "image_type": "source"
+    },
+    {
+      "id": "c8e103112510480b814b",
+      "category": "India",
+      "headline": "When Chennai’s sea food edged out catch from rivers, estuaries in the city",
+      "summary": "When Chennai’s sea food edged out catch from rivers, estuaries in the city. The latest developments are being reported as more information becomes available.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:37:29+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/madras-day-2026-when-sea-food-edged-out-catch-from-rivers-estuaries-in-the-city/article71385832.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/7w3l05/article71389645.ece/alternates/LANDSCAPE_1200/DSC_8107.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "bab239e84e9ed400e0a6",
+      "category": "India",
+      "headline": "Seven low-pressure systems, but little rain relief for Andhra Pradesh",
+      "summary": "State faces a 51.2% monsoon deficit as the systems bring only localised rainfall, raising concerns over the impact on farmers",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:35:10+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/seven-low-pressure-systems-but-little-rain-relief-for-andhra-pradesh/article71388879.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/6ij326/article71389634.ece/alternates/LANDSCAPE_1200/10215_23_8_2026_16_8_15_4_DSC_3216JPG.JPEG",
+      "image_type": "source"
+    },
+    {
+      "id": "9e01f563f4db2a2ae2a9",
+      "category": "World",
+      "headline": "Hospital nursery fire kills 14 newborns in Pakistan's capital, officials order immediate inquiry",
+      "summary": "A fire erupted early Wednesday in a nursery for newborns at a major government hospital in Pakistan's capital, killing 14 babies, according to hospital officials and the government.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-26T07:34:59+00:00",
+      "source_url": "https://www.npr.org/2026/08/26/nx-s1-5944808/hospital-nursery-fire-kills-14-newborns-pakistan",
+      "image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1280x960+0+0/resize/1280x960!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2F96%2Fd94f6e344edfbc2a4b612bef6b61%2Fap26238214051379.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "d303f935418e7a23e36a",
+      "category": "India",
+      "headline": "Boy Survives After Iron Rod Pierces Shoulder, Comes Out Of Mouth In Surat",
+      "summary": "The boy, identified as Nazish, is a native of Bihar",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T07:32:31+00:00",
+      "source_url": "https://www.ndtv.com/india-news/boy-13-survives-after-iron-rod-pierces-shoulder-comes-out-of-mouth-in-gujarats-surat-11960343#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/2qp3quk8_boy-iron-rod_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "084696eb617fab421e16",
+      "category": "India",
+      "headline": "ICSI CS June 2026: Marks Verification Starts Today, Know Fee, Steps And Deadline",
+      "summary": "Candidates can apply for marks verification online via the SMASH portal.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T07:31:36+00:00",
+      "source_url": "https://www.ndtv.com/education/icsi-cs-june-2026-marks-verification-starts-today-know-fee-steps-and-deadline-11960508#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2024-10/miipj9a8_icsi_625x300_16_October_24.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "d193e785adafd2e3ac4d",
+      "category": "India",
+      "headline": "FGG urges Telangana govt to establish functional Town Planning and Building Tribunal to address unauthorised constructions",
+      "summary": "A tribunal was constituted in 2016, but chairpersons and members have not been appointed so far, says FGG president M. Padmanabha Reddy",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T07:29:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/fgg-urges-telangana-govt-to-establish-functional-town-planning-and-building-tribunal-to-address-unauthorised-constructions/article71389955.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/n3j08h/article71391942.ece/alternates/LANDSCAPE_1200/demolitions_of_realty_in_it_corridor-bl9.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "bd4cbdbee65ca2c05fe8",
+      "category": "India",
+      "headline": "BJP's 2027 Punjab Strategy: Drugs At Centre, Booths On Ground",
+      "summary": "Outreach programmes will be organised to publicise central government welfare schemes.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T07:26:34+00:00",
+      "source_url": "https://www.ndtv.com/india-news/bjps-2027-punjab-strategy-drugs-at-centre-booths-on-ground-11960484#publisher=newsstand",
+      "image_url": "https://i.ndtvimg.com/i/2017-03/bjp-rally-afp-650_650x400_61488535688.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "7c0291e3047c28498212",
+      "category": "Sports",
+      "headline": "The relationship between the Irish League and gambling",
+      "summary": "From changing culture to investment and criticism, BBC Sport NI examines the Irish League's ever",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T07:26:26+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cwy0dp85688o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/84a7/live/a28e8420-a09b-11f1-b109-879e35c24276.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "0c0c4e7b04fb2f0b366a",
+      "category": "India",
+      "headline": "\"Wait Till 2047. All Will Be Fixed\": Haryana MP To NDTV As Gurugram Sinks",
+      "summary": "\"Wait Till 2047. All Will Be Fixed\": Haryana MP To NDTV As Gurugram Sinks. The latest developments are being reported as more information becomes available.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T07:26:25+00:00",
+      "source_url": "https://www.ndtv.com/india-news/gurugram-waterlogging-rain-wait-till-2047-all-will-be-fixed-haryana-mp-dharambir-singh-tells-sinking-gurugram-11960297#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/ktopk3rg_mp_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "f83c7cb508298de2bd7b",
+      "category": "World",
+      "headline": "Suburban Rail Loop: Victorian government secretly increased public transport fares to help pay for controversial SRL",
+      "summary": "Labor put ‘levy on all public transport fares in metropolitan Melbourne and regional Victoria’ since January 2025, auditor general finds, as questions raised over premier’s involvement Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Questions have been raised about Ben Carroll’s...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:17:56+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/victoria-suburban-rail-loop-srl-public-transport-fare-levy-increase",
+      "image_url": "https://i.guim.co.uk/img/media/6b34aa0ac2d64b241941b18011c541e72aaea8d5/309_0_5828_4663/master/5828.jpg?width=140&quality=85&auto=format&fit=max&s=f8fad53e9791ed5ab575dde4bf74986d",
+      "image_type": "source"
+    },
+    {
+      "id": "b92e4993a2f5d8838224",
+      "category": "Sports",
+      "headline": "Belichick 'wisdom' guiding UNC on Dublin trip",
+      "summary": "North Carolina punter Adam Gibbs-McCann says he has been \"blown away\" by Bill Belichick's coaching.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T07:09:11+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/american-football/articles/cew9l0j1v5ro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3eec/live/f9934b10-a0c4-11f1-b8cc-1bd2cc322bf4.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "65c6e1145f140ae5fb80",
+      "category": "World",
+      "headline": "At least 14 newborn babies die in fire at Pakistan hospital’s maternity ward",
+      "summary": "Authorities at biggest state hospital in Islamabad say 15 babies were in the ward when fire broke out At least 14 newborn babies have died in a fire that broke out in the maternity ward at one of Pakistan’s most prominent state hospitals. The blaze began in the early hours of Wednesday and engulfed the ward at Pakistan Institute of Medical Sciences, the...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:05:43+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/26/newborn-babies-die-fire-pakistan-hospital-maternity-ward",
+      "image_url": "https://i.guim.co.uk/img/media/9adad222c9e0c03341f2f814da4724786c9a8d6c/324_0_3228_2582/master/3228.jpg?width=140&quality=85&auto=format&fit=max&s=f25d4938cbe6be5ac3551052c09ba480",
+      "image_type": "source"
+    },
+    {
+      "id": "55fdb8358384f9ba3ff2",
+      "category": "World",
+      "headline": "Heatwaves show UK must do more to promote cycling and walking, campaigners say",
+      "summary": "Civil society groups argue climate crisis means transport sector needs to urgently reduce its carbon emissions Dozens of civil society groups have demanded the UK government do more to promote cycling and walking, after this summer’s extreme heat exposed the desperate need to decarbonise transport. This summer’s heatwaves and wildfires were “immediate,...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T07:00:37+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/26/heatwaves-uk-promote-cycling-walking",
+      "image_url": "https://i.guim.co.uk/img/media/fc489efd3f48e8462de130053468f07bfe0ad7a6/100_33_4035_3230/master/4035.jpg?width=140&quality=85&auto=format&fit=max&s=4ac18acd7afa163cdc7160e994ab44da",
+      "image_type": "source"
+    },
+    {
+      "id": "02ed87ebe11f2eba8b65",
+      "category": "Lifestyle",
+      "headline": "Dolly Parton’s flamboyant, fun style: ‘I’m not a fashion icon; I’m an eyesore’",
+      "summary": "With her gaudy rhinestones and ever mushrooming hair, the country star pioneered a new vision of femininity Dolly Parton, country star, actor and philanthropist, dies aged 80 Dolly Parton – a life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Dolly Parton ’s voluminous hair...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T07:00:37+00:00",
+      "source_url": "https://www.theguardian.com/music/2026/aug/26/dolly-parton-style-fashion",
+      "image_url": "https://i.guim.co.uk/img/media/cc101ea6aab4fc74d190ceb00efc30059f5b1c49/543_0_2974_2379/master/2974.jpg?width=140&quality=85&auto=format&fit=max&s=064869252d8e0ccdc6cc9060894329b5",
+      "image_type": "source"
+    },
+    {
+      "id": "2377e1ab453801d59eb3",
+      "category": "Entertainment",
+      "headline": "Google DeepMind, Amazon Web Services, Kling AI Join Busan Market Tech Program InnoAsia",
+      "summary": "The Asian Contents & Film Market (ACFM), the market of the Busan International Film Festival, will present InnoAsia 2026, its program built around the intersection of film and emerging technology. This year’s participants include Amazon Web Services (AWS), Kling AI, Google DeepMind and Alibaba Group, alongside a range of other technology and content...",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T07:00:20+00:00",
+      "source_url": "https://variety.com/2026/film/news/google-deepmind-amazon-web-services-busan-market-innoasia-1236843573/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/Busan-ACFM-poster.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "fe73f470631701904206",
+      "category": "Technology",
+      "headline": "Ventures Platform goes bigger — and broader — with its second Africa fund",
+      "summary": "The Pan-African venture firm has raised $83 million and plans to invest in startups beyond its home market of Nigeria.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-26T07:00:00+00:00",
+      "source_url": "https://techcrunch.com/2026/08/26/ventures-platform-goes-bigger-and-broader-with-its-second-africa-fund/",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Ventures%20Platform%20goes%20bigger%20%E2%80%94%20and%20broader%20%E2%80%94%20with%20its%20second%20Africa%20fund%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3039219998",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3e09d31aee01d6c8d31d",
+      "category": "Lifestyle",
+      "headline": "You’re working out regularly but not losing fat? Fitness coach explains which muscles you should actually train",
+      "summary": "The muscles you train matter for fat loss. Fitness trainer Chadoy Leon reveals what your workout may be missing.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T06:59:05+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/you-are-working-out-regularly-but-not-losing-fat-fitness-coach-explains-which-muscles-you-should-actually-train-101787724670515.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/photo-1546483875-ad9014c88eba_1787725088897_1787725097861_441910bb-688d-4494-b1a3-29425b847634.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "34cccfdec13972057bc6",
+      "category": "Entertainment",
+      "headline": "Motherhood Horror Film ‘Vagina Dentata,’ ‘From The Eclipse’ Director Nataša Urban, Boarded by Romanian Partner Manifest Film (EXCLUSIVE)",
+      "summary": "“Vagina Dentata,” the new film from Norwegian filmmaker Nataša Urban, whose “The Eclipse” won top honors at CPH:DOX in 2022, has been boarded by Manifest Film. The Romanian outfit will co-produce “Vagina Dentata,” a genre-bending exploration of motherhood and postnatal depression that will be pitched at this week’s Nordic Co-Production Market in...",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T06:57:58+00:00",
+      "source_url": "https://variety.com/2026/film/global/vagina-dentata-natasa-urban-manifest-film-haugesund-1236843570/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/Still-Vagina-Dentata.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "a7ae2a28676c1100530a",
+      "category": "Sports",
+      "headline": "Celtic deficiencies laid bare on another night of Champions League pain",
+      "summary": "When Callum McGregor eviscerated his own team-mates in the wake of Celtic's stupefying Champions League collapse against LASK, he delivered their one coherent moment of a spineless night, writes Tom English.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T06:52:56+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cjdv5xvgv9lo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fce/live/e1442240-a115-11f1-92eb-a9b3bbcf6f4a.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "3145fe7f06479f521e2e",
+      "category": "Lifestyle",
+      "headline": "Craving a fulfilling snack? Try this pesto hummus open toast recipe made with fresh, homemade ingredients",
+      "summary": "This recipe is perfect for days when you don't feel like snacking on biscuits and want something more satisfying. The best part? It can be made from scratch.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T06:52:34+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/recipe/craving-a-fulfilling-snack-try-this-pesto-hummus-open-toast-recipe-made-with-fresh-homemade-ingredients-101787722928669.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/toast_1787724058991_1787724067024_06bad8a7-a940-4cdb-b091-fe331c83f124.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "c5ed4ba29c7de67a7c4c",
+      "category": "World",
+      "headline": "Fears grow for fourth rate hike after Australia sees higher-than-expected July inflation",
+      "summary": "Bureau of Statistics says CPI was 3.5% in July, casting doubt on Reserve Bank meeting its 2.5% inflation target without further hike Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Fears are growing that the Reserve Bank will hit millions of mortgage holders with a fourth rate hike this...",
       "publisher": "Guardian World",
       "published_at": "2026-08-26T06:44:23+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/fears-grow-for-fourth-rate-hike-after-higher-than-expected-july-inflation-rate",
       "image_url": "https://i.guim.co.uk/img/media/ded625f2f56d2bfbc7f20677b7734b06fc80192c/446_0_4446_3559/master/4446.jpg?width=140&quality=85&auto=format&fit=max&s=fee209537618f9914ec287e4b22b3e28",
-      "image_type": "source"
-    },
-    {
-      "id": "f973e658af70fff56245",
-      "category": "India",
-      "headline": "MoEFCC urges NGT to direct States to submit annual plan of operation for Neelakurinji conservation",
-      "summary": "MoEFCC urges NGT to direct States to submit annual plan of operation for Neelakurinji conservation. The latest developments are being reported as more information becomes available.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:42:31+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/moefcc-urges-ngt-to-direct-states-to-submit-annual-plan-of-operation-for-neelakurinji-conservation/article71391562.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/6blq00/article71391800.ece/alternates/LANDSCAPE_1200/Kurinji-blooms-G8CG7QADM.3.jpg.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "eac9969966345013b6a1",
-      "category": "India",
-      "headline": "‘Achche din’ keep wrecking common person’s budget: Congress slams Modi Govt",
-      "summary": "Congress president Mallikarjun Kharge said that the BJP wants to dodge accountability for its misdeeds",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:40:31+00:00",
-      "source_url": "https://www.thehindu.com/news/national/achche-din-keep-wrecking-common-persons-budget-congress-slams-modi-govt/article71391741.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/xef0ew/article71391752.ece/alternates/LANDSCAPE_1200/10258_21_8_2026_18_34_31_1_MALLIKARJUN_KHARGE_1.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "ae63730b1f0e370338c2",
-      "category": "India",
-      "headline": "U.S. Ambassador hosts business roundtable in Hyderabad to drive trade and industrial ties",
-      "summary": "U.S. Ambassador hosts business roundtable in Hyderabad to drive trade and industrial ties. The latest developments are being reported as more information becomes available.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:38:10+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/us-ambassador-hosts-business-roundtable-in-hyderabad-to-drive-trade-and-industrial-ties/article71385767.ece",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Hyderabad/kchrmi/article71391754.ece/alternates/LANDSCAPE_1200/Image%2017.jpg",
       "image_type": "source"
     },
     {
@@ -89,36 +573,14 @@
       "image_type": "source"
     },
     {
-      "id": "79e37f65a5237827c157",
-      "category": "India",
-      "headline": "AISA backs CJP's September 5 Delhi march; seeks withdrawal of FIRs, probe into pellet firing",
-      "summary": "The issues that have prompted the youth mobilisation remain unresolved, with cases still pending against students despite the government's earlier commitment to withdraw them, AISA president Neha Bora said",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:31:12+00:00",
-      "source_url": "https://www.thehindu.com/news/national/aisa-backs-cjps-september-5-delhi-march-seeks-withdrawal-of-firs-probe-into-pellet-firing/article71391689.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/ipjziu/article71391724.ece/alternates/LANDSCAPE_1200/PTI08_25_2026_000319B.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "e3e5e2fe776591147826",
-      "category": "World",
-      "headline": "Tributes pour in after country music legend Dolly Parton dies – latest updates",
-      "summary": "Legendary country singer died surrounded by loved ones after being diagnosed with cancer, her team says; Beyoncé, Dionne Warwick, Kacey Musgraves and others pay tribute Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T06:30:36+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
-      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
-      "image_type": "source"
-    },
-    {
-      "id": "ea999870858c6bd5596a",
-      "category": "India",
-      "headline": "Identify, eliminate threats before they grow big: Amit Shah urges security agencies",
-      "summary": "India’s security policy must be framed keeping in view emerging global challenges, including geopolitical instability, energy and resource insecurity, rising radicalisation and cyber misinformation campaigns, says Home Minister",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:30:06+00:00",
-      "source_url": "https://www.thehindu.com/news/national/identify-eliminate-threats-before-they-grow-big-amit-shah-urges-security-agencies/article71390304.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/d9pd05/article71390397.ece/alternates/LANDSCAPE_1200/20260825530L.jpg",
+      "id": "2ec9c4f24d3b25740ca1",
+      "category": "Lifestyle",
+      "headline": "Rakhi Sawant reveals her 3 must-have makeup essentials and shares the secret to her glowing skin: ‘Stay happy’",
+      "summary": "Kitty Su Beauty steps into the world of makeup by launching five smudge-proof and transfer",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T06:31:05+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/rakhi-sawant-reveals-her-3-must-have-makeup-essentials-and-shares-the-secret-to-her-glowing-skin-stay-happy-101787654900952.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/Kitty_Su_Beauty_1787657605654_1787657612720_1dd676ee-a6de-4438-83ee-954a81965a8e.png",
       "image_type": "source"
     },
     {
@@ -144,136 +606,15 @@
       "image_type": "source"
     },
     {
-      "id": "9ebcfbd16a2b836896ce",
-      "category": "India",
-      "headline": "Parandur airport project: What happens now to the land acquired? | Explained",
-      "summary": "What options does a State have to pull out of a project? What happens when a government reverses course mid-acquisition?",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:26:08+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/parandur-airport-project-what-happens-now-to-the-land-acquired-explained/article71391545.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/56wd7k/article71391559.ece/alternates/LANDSCAPE_1200/BVR_7122.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "b5f4e444a963b659e86f",
-      "category": "India",
-      "headline": "Case Closed. Big Relief For Senior Rajasthan Cop In Rs 2 Crore Bribery Case",
-      "summary": "Rajasthan Police Service (RPS) officer and former Additional Superintendent of Police (ASP) Divya Mittal.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:25:35+00:00",
-      "source_url": "https://www.ndtv.com/india-news/case-closed-big-relief-for-senior-rajasthan-cop-divya-mittal-in-rs-2-crore-bribery-case-11960195#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2025-12/s984fftk_rps-divya-mittal_625x300_13_December_25.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "25ae1b2258692c4b79f5",
-      "category": "India",
-      "headline": "UKSSSC Exam Calendar 2026 Out: Check Recruitment-Wise Exam Dates",
-      "summary": "UKSSSC Exam Calendar 2026 released for 26 recruitments from September to November.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:22:14+00:00",
-      "source_url": "https://www.ndtv.com/education/uksssc-exam-calendar-2026-out-check-recruitment-wise-exam-dates-11960182#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/pj5uc9q_uksssc_625x300_26_August_26.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "026ad7a0cef411a73966",
-      "category": "India",
-      "headline": "PM Modi To Interact With Students Ahead Of National Sports Day",
-      "summary": "PM Modi will interact with students nationwide via Khelo India Dialogue on Thursday.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:21:09+00:00",
-      "source_url": "https://www.ndtv.com/india-news/pm-modi-to-interact-with-students-ahead-of-national-sports-day-11960185#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/t7dkglh_pm-modi-extends-milad-unnabi-onam-greetings_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "59face76cd10dc41cf27",
-      "category": "India",
-      "headline": "Mamdani says he opposes RSS, does not support Mohan Bhagwat’s event at Madison Square Garden",
-      "summary": "The New York City Mayor also clarified that he is unsure if the city has any jurisdiction on cancelling a private event in the U.S.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:20:31+00:00",
-      "source_url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/zq5n5/article71391643.ece/alternates/LANDSCAPE_1200/2026-08-12T191541Z_503525274_RC25XMA6LHSX_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "6f2517ca699023b3b60c",
-      "category": "India",
-      "headline": "Video: Fire Brigade Washing BJP MLA's Innova Triggers Row In Madhya Pradesh",
-      "summary": "The footage quickly sparked a political controversy",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:20:00+00:00",
-      "source_url": "https://www.ndtv.com/india-news/video-fire-brigade-washing-bjp-mla-ramniwas-shahs-innova-triggers-row-in-madhya-pradeshs-singrauli-11960181#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/cvgnnj4o_mp-car-wash-fire-brigade_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "dc150f9022b3a8f746bb",
-      "category": "India",
-      "headline": "International community must work collectively to safeguard critical sea lanes: India tells UNSC",
-      "summary": "“Food insecurity remains one of the gravest humanitarian consequences of armed conflict. Today’s conflicts increasingly generate ripple effects far beyond the immediate theatre of hostilities,” says India’s Permanent Representative to the UN Ambassador",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:19:21+00:00",
-      "source_url": "https://www.thehindu.com/news/national/international-community-must-work-collectively-to-safeguard-critical-sea-lanes-india-tells-unsc/article71391331.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/1io1ot/article71391358.ece/alternates/LANDSCAPE_1200/20260310487L.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "03324fd6b0c4be215c59",
-      "category": "India",
-      "headline": "₹840-cr Buttaigudem-Kovvur highway upgradation approved for Godavari Pushkarams: Purandeswari",
-      "summary": "The project will significantly improve connectivity to the Polavaram Irrigation Project and surrounding villages, says Nitin Gadkari",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:16:59+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/840-cr-buttaigudem-kovvur-highway-upgradation-approved-for-godavari-pushkarams-purandeswari/article71391518.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%82%B9840-cr%20Buttaigudem-Kovvur%20highway%20upgradation%20approved%20for%20Godavari%20Pushkarams%3A%20Purandeswari%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2717593191",
+      "id": "dd7d21cc4432669d74f7",
+      "category": "Business",
+      "headline": "Physicswallah shares jump 5% after block deal worth Rs 550 crore. What’s ahead after 63% rally in 6 months?",
+      "summary": "PhysicsWallah shares surged around 5% after nearly 4.67 crore shares worth about Rs 550 crore changed hands in a block deal at Rs 117.72 apiece. The stock has recovered sharply from its March low, while improving Q1 FY27 financials and a Buy rating from JM Financial point to a more positive outlook.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T06:26:59+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/physicswallah-shares-jump-5-after-block-deal-worth-rs-550-crore-whats-ahead-after-63-rally-in-6-months/articleshow/133532214.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Physicswallah%20shares%20jump%205%25%20after%20block%20deal%20worth%20Rs%20550%20crore.%20What%E2%80%99s%20ahead%20after%2063%25%20rally%20in%206%20months%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=297939325",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "03a3ae0f2f5eab10eafa",
-      "category": "World",
-      "headline": "Australia news live: Chalmers hits back at WA premier’s ‘east coast clowns’ sledge; NSW police investigate alleged theft of 400,000 oysters",
-      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T06:14:07+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
-      "image_url": "https://i.guim.co.uk/img/media/b849ebe6cd0edde35af18b1ab40f402228d3c1d3/581_468_3527_2822/master/3527.jpg?width=140&quality=85&auto=format&fit=max&s=f353ec1d773ed15782b351b5ef283877",
-      "image_type": "source"
-    },
-    {
-      "id": "dd982ccb54ebc263c05a",
-      "category": "India",
-      "headline": "Rebel TMC MPs get notices from Lok Sabha Secretariat on disqualification pleas; Mahua Moitra alleges ‘cover up’",
-      "summary": "The development comes a day after the Supreme Court agreed to hear Abhishek Banerjee's plea seeking an expeditious decision on the disqualification petitions",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:13:41+00:00",
-      "source_url": "https://www.thehindu.com/news/national/rebel-tmc-mps-get-notices-from-lok-sabha-secretariat-on-disqualification-pleas-asked-to-reply-within-7-days/article71391461.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/icht0y/article71391507.ece/alternates/LANDSCAPE_1200/PTI06_14_2026_000531B.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "9e5bf71a3752f443e631",
-      "category": "India",
-      "headline": "Why CBSE Reopened CTET 2026 Application Window? Revised Exam Date Soon",
-      "summary": "Earlier, the CTET registration portal was open from May 11 to June 10, 2026.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:06:18+00:00",
-      "source_url": "https://www.ndtv.com/education/why-cbse-reopened-ctet-2026-application-window-revised-exam-date-soon-11960130#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2023-08/gjt7k2h8_shivraj-government-will-distribute-tablets-to-teachers_625x300_27_August_23.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "749732dc3b681a589bd9",
-      "category": "India",
-      "headline": "Villagers in Telangana wage a war to protect 75-year-old Peepal tree",
-      "summary": "“I got the platform demolished and constructed the compound wall around it, because the platform was attracting drunkards and vagabonds. Villagers who are protesting now had helped me construct the wall. Now, an issue is being made out of it purely due to personal rivalries,” says owner who applied for felling permission",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T06:05:02+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/villagers-in-telangana-wage-a-war-to-protect-75-year-old-peepal-tree/article71385040.ece",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Hyderabad/6bf3xb/article71391645.ece/alternates/LANDSCAPE_1200/918666.jpg",
-      "image_type": "source"
     },
     {
       "id": "6bdd86d300da359b0968",
@@ -283,7 +624,7 @@
       "publisher": "Guardian World",
       "published_at": "2026-08-26T06:04:34+00:00",
       "source_url": "https://www.theguardian.com/money/2026/aug/26/energy-price-cap-great-britain-to-rise-from-october",
-      "image_url": "https://i.guim.co.uk/img/media/e67f334ce2d02195caef171c26c43817bac276a4/302_0_3540_2832/master/3540.jpg?width=140&quality=85&auto=format&fit=max&s=dc6064e25df2affe2fbb0eb4aee7cc80",
+      "image_url": "https://i.guim.co.uk/img/media/aab036bfd86c0c3cd3b1a77cfc9f264015c10d8a/329_0_1527_1221/master/1527.jpg?width=140&quality=85&auto=format&fit=max&s=ddc2c414b28a0c304ea92b3afb335198",
       "image_type": "source"
     },
     {
@@ -320,37 +661,48 @@
       "image_type": "source"
     },
     {
-      "id": "643d5eea1c5ecdec9a3d",
-      "category": "India",
-      "headline": "Banana Leaves, Payasam And Monkeys: Kerala Temple's Unique Onam Tradition",
-      "summary": "An entire troop of monkeys enjoyed a traditional feast.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T06:00:03+00:00",
-      "source_url": "https://www.ndtv.com/india-news/banana-leaves-payasam-and-monkeys-kerala-temples-unique-onam-tradition-11960109#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/uidh3bq8_kerala-monkey-sadya_625x300_26_August_26.jpeg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
+      "id": "e5e83d00f67696c32e0d",
+      "category": "Business",
+      "headline": "Welspun Corp shares drop 6% after CEO, promoter group likely sell stake worth Rs 1,433 crore via block deal",
+      "summary": "Welspun Corp shares fell sharply on Wednesday after 63 lakh shares worth Rs 1,433 crore changed hands in a block deal. Promoter group entity Welspun Investments and Commercials and CEO Vipul Mathur were likely sellers. The transaction represented about 2.4% of the company’s outstanding shares and came after a sharp rally.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T05:56:38+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/welspun-corp-shares-drop-6-after-ceo-promoter-group-likely-sell-stake-worth-rs-1433-crore-via-block-deal/articleshow/133531522.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Welspun%20Corp%20shares%20drop%206%25%20after%20CEO%2C%20promoter%20group%20likely%20sell%20stake%20worth%20Rs%201%2C433%20crore%20via%20block%20deal%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2858564476",
+      "image_type": "ai_generated"
     },
     {
-      "id": "994a1121e24c508fb9d2",
-      "category": "India",
-      "headline": "Andhra Pradesh Special TET 2026: Registration Opens For In-Service Teachers, Check Details",
-      "summary": "Applications for AP Special TET 2026 are open from August 25 to September 24",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T05:59:14+00:00",
-      "source_url": "https://www.ndtv.com/education/andhra-pradesh-special-tet-2026-registration-opens-for-in-service-teachers-check-details-11960106#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/8sjk42h4_ap-tet_625x300_26_August_26.jpeg",
-      "image_type": "source"
+      "id": "402ef9fa6bf350367734",
+      "category": "Business",
+      "headline": "Cyient shares rocket 8% after investor day, but brokerages see up to 24% downside. Here’s why",
+      "summary": "Cyient shares jumped 8% after the IT services company outlined its growth and margin roadmap at its investor day. Management is targeting double-digit revenue growth and EBIT margins above 15% in the near term, while brokerages remained divided on the pace of recovery. Motilal Oswal retained its Sell rating, while Nuvama and PL Capital maintained Hold...",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T05:53:12+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/cyient-shares-rocket-8-after-investor-day-but-brokerages-see-up-to-24-downside-heres-why/articleshow/133531459.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Cyient%20shares%20rocket%208%25%20after%20investor%20day%2C%20but%20brokerages%20see%20up%20to%2024%25%20downside.%20Here%E2%80%99s%20why%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=761935557",
+      "image_type": "ai_generated"
     },
     {
-      "id": "199b960ad770b12e3d45",
+      "id": "fa3756d3f35d1e7b4ebb",
       "category": "Lifestyle",
-      "headline": "How does Qatar Airways prepare 2 lakh fresh meals from scratch daily, serve it fresh 30,000 feet in air? Watch video",
+      "headline": "How does Qatar Airways prepare 2 lakh meals from scratch daily, serves them fresh 30,000 feet in air? Watch video",
       "summary": "Qatar Airways' Doha catering facility processes 30 metric tons of fresh produce daily, utilising advanced machinery, alongside manual preparation.",
       "publisher": "Hindustan Times Lifestyle",
       "published_at": "2026-08-26T05:51:16+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/travel/how-does-qatar-airways-prepare-200000-fresh-meals-from-scratch-daily-serve-it-fresh-30000-feet-in-air-kitchen-video-101787719835833.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/qatar_airline_1787722577177_1787722577613_0f9a43f4-f748-4295-8f29-c590e859fdb8.jpg",
       "image_type": "source"
+    },
+    {
+      "id": "b0e70be573374e1ee1e0",
+      "category": "Business",
+      "headline": "Vedanta Aluminium at earnings inflection point? Here's why Motilal Oswal sees 21% upside",
+      "summary": "Motilal Oswal has reiterated its Buy rating on Vedanta Aluminium Metal with a target price of Rs 540, implying 21% upside. The brokerage expects EBITDA to grow at an 18% CAGR through FY26-28, supported by higher volumes, cost efficiencies, greater value",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T05:50:28+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-aluminium-at-earnings-inflection-point-heres-why-motilal-oswal-sees-21-upside/articleshow/133531348.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Vedanta%20Aluminium%20at%20earnings%20inflection%20point%3F%20Here%27s%20why%20Motilal%20Oswal%20sees%2021%25%20upside%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1593407872",
+      "image_type": "ai_generated"
     },
     {
       "id": "900e3d6e62e41f60e181",
@@ -372,17 +724,6 @@
       "published_at": "2026-08-26T05:46:31+00:00",
       "source_url": "https://variety.com/2026/film/global/amanda-kernell-brace-your-heart-1236842342/",
       "image_url": "https://variety.com/wp-content/uploads/2026/08/MixCollage-25-Aug-2026-02-37-PM-7754.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "8543c5b4b790c0ca24df",
-      "category": "India",
-      "headline": "Gurugram Bans School Buses On Flooded Roads, Citizens Ask Why Not Fix Them",
-      "summary": "School buses stuck on waterlogged Gurugram roads on August 24",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T05:46:29+00:00",
-      "source_url": "https://www.ndtv.com/india-news/gurugram-waterlogging-rain-gurugram-bans-school-buses-on-flooded-roads-citizens-ask-why-not-fix-them-11960005#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/vrr5kugo_bus_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -408,17 +749,6 @@
       "image_type": "source"
     },
     {
-      "id": "916f4b068f60d8a98bf6",
-      "category": "India",
-      "headline": "Identifying stressors and acting on them early can prevent binge eating, say specialists",
-      "summary": "Why do people resort to binge eating? Can it be controlled? Can it be reversed? What kind of medical treatment are available and what are the modalities?",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T05:43:59+00:00",
-      "source_url": "https://www.thehindu.com/sci-tech/health/identifying-stressors-and-acting-on-them-early-can-prevent-binge-eating-say-specialists/article70368660.ece",
-      "image_url": "https://th-i.thgim.com/public/migration_catalog/eeedt7/article51314636.ece/alternates/LANDSCAPE_1200/Binge-eating.ARKIMP_EATING_2.jpg.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "6b9a5deb16e15f5f98f7",
       "category": "Sports",
       "headline": "Is Joao Pedro ready to break Chelsea's so-called number nine curse?",
@@ -426,7 +756,7 @@
       "publisher": "BBC Sport",
       "published_at": "2026-08-26T05:41:12+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cgk5ydy0vk4o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/65d1/live/aebf6ed0-a082-11f1-a9bc-ad5fed338eb5.jpg",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2f9/live/2ff1ca00-a11b-11f1-aed2-8d6da8d75094.jpg",
       "image_type": "source"
     },
     {
@@ -460,17 +790,6 @@
       "published_at": "2026-08-26T05:16:06+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c8jdl0n0r7mo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6786/live/ae28a060-9fae-11f1-bff6-57f1422ebb0b.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "f54b61e45ed94a85844b",
-      "category": "World",
-      "headline": "Teenage girl allegedly raped in ‘heinous’ attack at Queensland residential care home",
-      "summary": "State’s child safety minister Amanda Camm confirms police are investigating alleged attack west of Brisbane A Queensland teenager has allegedly been raped in a state-funded residential care home in what has been described as a “heinous” act. A staff member is accused of assaulting the girl, who is understood to be intellectually impaired, at the home...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T05:03:51+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/teenage-girl-allegedly-raped-residential-resi-care-home-queensland-ntwnfb",
-      "image_url": "https://i.guim.co.uk/img/media/f565c2f1c1b3bdb0da1b16d346ee8da8ed93aa6e/126_0_3779_3024/master/3779.jpg?width=140&quality=85&auto=format&fit=max&s=f847b8b3d7c279ef32a3d1cc5ed6914f",
       "image_type": "source"
     },
     {
@@ -518,17 +837,6 @@
       "image_type": "source"
     },
     {
-      "id": "0e8ba9a552b3549f6237",
-      "category": "World",
-      "headline": "Autism and ADHD care complaints more than triple in five years in England",
-      "summary": "NHS ombudsman warns of years-long waits and patients paying thousands to go private as demand for services soars Complaints about autism and attention deficit hyperactivity disorder services in England have more than tripled in five years, official figures show, with the NHS ombudsman warning of years-long waits and patients paying thousands of pounds...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T05:00:34+00:00",
-      "source_url": "https://www.theguardian.com/society/2026/aug/26/autism-adhd-care-complaints-england-triple-five-years",
-      "image_url": "https://i.guim.co.uk/img/media/1bac933be4f50d093ae21b22eac47d1aef623e78/414_0_4099_3280/master/4099.jpg?width=140&quality=85&auto=format&fit=max&s=9d9cd7e04e95524ed97132cc0798de50",
-      "image_type": "source"
-    },
-    {
       "id": "b5c7f61f2694424b43fc",
       "category": "World",
       "headline": "Two Dan Sullivans to appear on Alaska’s US Senate ballot in November’s midterm elections",
@@ -549,28 +857,6 @@
       "source_url": "https://www.hindustantimes.com/lifestyle/health/you-thought-calcium-was-enough-for-strong-bones-this-surgeon-says-think-again-101787718143388.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/2148314518_1787718404850_1787718413719_1b919532-2b4b-4e17-b63f-00ffb0a25b33.jpg",
       "image_type": "source"
-    },
-    {
-      "id": "87575ca766201b964caf",
-      "category": "Business",
-      "headline": "Buy, Sell or Hold: Morgan Stanley maintains overweight on Varun Beverages; Nuvama retains hold on Cyient",
-      "summary": "Morgan Stanley retained its Overweight rating on Varun Beverages with a Rs 557 target, while Nuvama maintained a Hold on Cyient and raised its target to Rs 1,050. Elara Securities retained its Buy rating on Nykaa and increased its target to Rs 475, citing premiumisation, stronger customer quality and growth in online beauty and personal care.",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T04:41:01+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/buy-sell-or-hold-morgan-stanley-maintains-overweight-on-varun-beverages-nuvama-retains-hold-on-cyient/articleshow/133529809.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Buy%2C%20Sell%20or%20Hold%3A%20Morgan%20Stanley%20maintains%20overweight%20on%20Varun%20Beverages%3B%20Nuvama%20retains%20hold%20on%20Cyient%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2777195387",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "cc7b789411b0f4bf51ea",
-      "category": "Business",
-      "headline": "MTAR Tech shares rally 3%, extend gains for second session. What’s triggering the surge?",
-      "summary": "MTAR Technologies shares gained 3% after the company secured a Rs 127 crore order from Nuclear Power Corporation of India for coolant channel assemblies used in reactor refurbishment. The order takes its civil nuclear order book above Rs 775 crore, while the company expects 80% revenue growth in FY27 and sees further opportunities from reactor...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T04:37:17+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-tech-shares-rally-3-extend-gains-for-second-session-whats-triggering-the-surge/articleshow/133529737.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20MTAR%20Tech%20shares%20rally%203%25%2C%20extend%20gains%20for%20second%20session.%20What%E2%80%99s%20triggering%20the%20surge%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1985769254",
-      "image_type": "ai_generated"
     },
     {
       "id": "5712e4c504209c9a64c4",
@@ -595,17 +881,6 @@
       "image_type": "source"
     },
     {
-      "id": "223a840d742d1b56638a",
-      "category": "World",
-      "headline": "Nine CEO sees ‘world of growth in publishing’ as network slashes costs",
-      "summary": "Matt Stanton says company has ‘good pipeline’ of AI deals ahead even as it aims to cut $160m in costs Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The head of Nine Entertainment sees a “world of growth in publishing” on the horizon backed by laws designed to force tech platforms into...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T04:18:16+00:00",
-      "source_url": "https://www.theguardian.com/media/2026/aug/26/nine-entertainment-ai-deals-network-slashes-costs",
-      "image_url": "https://i.guim.co.uk/img/media/2dbd704ccae84819fa14f48faa477d8aa4be5a12/498_0_5308_4247/master/5308.jpg?width=140&quality=85&auto=format&fit=max&s=187e1dddcc4ed0499d74c48b8a00b777",
-      "image_type": "source"
-    },
-    {
       "id": "d718330908574e06c842",
       "category": "Lifestyle",
       "headline": "Onam greetings 2026: 60+ wishes, quotes, messages, images to share with loved ones on August 26",
@@ -626,17 +901,6 @@
       "source_url": "https://www.hindustantimes.com/lifestyle/festivals/eid-mubarak-2026-100-eid-e-milad-un-nabi-wishes-images-and-greetings-to-share-with-loved-ones-on-eid-holiday-today-101787715451975.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/eid_mubarak_1787716889384_1787716889502_37553eef-af8c-4e7e-95af-07374fa8f2ae.png",
       "image_type": "source"
-    },
-    {
-      "id": "cd5d24bc1fbe21bf9df2",
-      "category": "Business",
-      "headline": "Hy-Tech Engineers IPO Day 3: GMP at 57%, subscription reaches 19.33x. Should you subscribe?",
-      "summary": "The Hy-Tech Engineers IPO entered its third day of bidding on August 26, with the issue subscribed 19.33 times by the end of Day 2. Retail investors led the demand, while the IPO’s grey market premium of Rs 30 indicated a potential 57% listing premium. Anand Rathi Research has assigned a “Subscribe - Long Term” rating to the issue, citing the company’s...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T04:05:11+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/hy-tech-engineers-ipo-day-3-gmp-at-57-subscription-reaches-19-33x-should-you-subscribe/articleshow/133529025.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Hy-Tech%20Engineers%20IPO%20Day%203%3A%20GMP%20at%2057%25%2C%20subscription%20reaches%2019.33x.%20Should%20you%20subscribe%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3808289369",
-      "image_type": "ai_generated"
     },
     {
       "id": "d2d31fc4825bb03cf450",
@@ -681,28 +945,6 @@
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/26/the-row-over-rutland-can-englands-smallest-county-survive",
       "image_url": "https://i.guim.co.uk/img/media/fb59a4dbed40931b38b6ffcf99d6286f10f3030e/681_0_6830_5464/master/6830.jpg?width=140&quality=85&auto=format&fit=max&s=2179aea6c4a1037f893b005b6f8d6f93",
       "image_type": "source"
-    },
-    {
-      "id": "7144afe552319e7e4143",
-      "category": "World",
-      "headline": "Iran faces strait of Hormuz paradox as strategic value of chokehold erodes",
-      "summary": "Internal calls to end war get louder as Gulf neighbours plan alternative pipelines to cut reliance on waterway Is the strait of Hormuz, recently cited by the office of the Iranian supreme leader as “the pillar of Iran’s new security order”, and as transformative as possessing a nuclear weapon, in reality becoming a fast-diminishing asset, leaving Iran...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T04:00:33+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/26/iran-faces-strait-of-hormuz-paradox-as-strategic-value-of-chokehold-erodes",
-      "image_url": "https://i.guim.co.uk/img/media/cecc0b2135602c76d6ff1050b553e25a90b8d3f1/771_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=54c7af4ca8927d29156852da1301608b",
-      "image_type": "source"
-    },
-    {
-      "id": "ea64754570ec355b80a6",
-      "category": "Business",
-      "headline": "Over Rs 1 crore invested in mutual funds, NPS, PPF and FDs: Should this PSU banker increase equity exposure with 18 years to retirement?",
-      "summary": "A 42-year-old PSU bank chief manager, who recently welcomed twins, sought a review of his family’s financial portfolio. With around 18 years to retirement, the couple has investments across mutual funds, fixed deposits, NPS and PPF, along with home and car loans. The key priorities are building a retirement corpus, funding their children’s education and...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T04:00:27+00:00",
-      "source_url": "https://economictimes.indiatimes.com/mf/analysis/over-rs-1-crore-invested-in-mutual-funds-nps-ppf-and-fds-should-this-psu-banker-increase-equity-exposure-with-18-years-to-retirement/articleshow/133528903.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Over%20Rs%201%20crore%20invested%20in%20mutual%20funds%2C%20NPS%2C%20PPF%20and%20FDs%3A%20Should%20this%20PSU%20banker%20increase%20equity%20exposure%20with%2018%20years%20to%20retirement%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1729352783",
-      "image_type": "ai_generated"
     },
     {
       "id": "f44b867b9655577e857d",
@@ -804,17 +1046,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "efccfc0cb352df845f6a",
-      "category": "Entertainment",
-      "headline": "Jane Fonda Slams Paramount For Calling Mark Ruffalo’s Comments ‘Antisemitic’: ‘A Smear to Delegitimize Criticism of the Merger’",
-      "summary": "Jane Fonda has released a statement in support of Mark Ruffalo after Paramount slammed the four-time Oscar nominee as “antisemitic” for a recent post denouncing Larry Ellison’s ties to Israel and David Ellison’s planned merger with Warner Bros. “Especially as a Jewish American, I find it deeply troubling to see false accusations of antisemitism used […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T02:42:02+00:00",
-      "source_url": "https://variety.com/2026/film/news/jane-fonda-paramount-mark-ruffalo-smear-merger-warner-bros-1236843419/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/MixCollage-25-Aug-2026-07-21-PM-6726.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "28988142e7fbc81a09c5",
       "category": "Business",
       "headline": "Gaja Alternative Asset shares list at 16% premium over IPO price on NSE, BSE",
@@ -824,17 +1055,6 @@
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/gaja-alternative-asset-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/133527367.cms",
       "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Gaja%20Alternative%20Asset%20shares%20list%20at%2016%25%20premium%20over%20IPO%20price%20on%20NSE%2C%20BSE%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=260443265",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "93b1b2bbf8ea9282c400",
-      "category": "World",
-      "headline": "Trump endorsement helps boost Darline Graham in South Carolina primary to replace her late brother in US Senate – as it happened",
-      "summary": "This live blog is now closed. South Carolina chooses Darline Graham as Republican nominee for US Senate Sign up for the US Breaking News email On Truth Social, however, the president shot down assertions that the US talks with Canada collapsed in part due a proposed trade deal that would have weakened French language protections . “I would never...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T01:59:47+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates",
-      "image_url": "https://i.guim.co.uk/img/media/520e2f2d26a6fbd0c991abe4e8ec356cb50122b9/570_0_6236_4990/master/6236.jpg?width=140&quality=85&auto=format&fit=max&s=573b1fa114716619807aa6b2db51e2f8",
-      "image_type": "source"
     },
     {
       "id": "eeb1cac3deb1ee66da92",
@@ -848,39 +1068,6 @@
       "image_type": "source"
     },
     {
-      "id": "9ed863b799bed9468db3",
-      "category": "World",
-      "headline": "Typhoon Narra: record flood waters submerge homes and force mass evacuations in China",
-      "summary": "Heavy rain expected in parts of Vietnam and southern ‌China, as another storm system, Typhoon Saudel, heads for Japan and Taiwan Widespread flooding triggered by Typhoon Narra has submerged homes and forced mass evacuations in southern China, as another storm system tracked towards Japan and Taiwan. Authorities in Chongzuo, in China’s Guangxi region –...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T01:46:25+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/26/typhoon-narra-floods-evacuations-china",
-      "image_url": "https://i.guim.co.uk/img/media/ddc5b89ffe9742f50c75380c051ff9ac6d23aced/566_0_4398_3518/master/4398.jpg?width=140&quality=85&auto=format&fit=max&s=e5328c88f0ccc149f56fa79c6a4afaa7",
-      "image_type": "source"
-    },
-    {
-      "id": "6339cad596e95b6ef634",
-      "category": "Entertainment",
-      "headline": "Iowa Attorney General Says She’s Taking California to the Supreme Court Over Paramount-Warner Bros. Lawsuit",
-      "summary": "Iowa Attorney General Brenna Bird wrote in an op-ed for The Daily Wire that she is suing California for leading the charge in the lawsuit against the Paramount-Warner Bros. merger. “California is once again trying to be the country’s regulator. And once again California is defying common sense to raise costs around the country,” Bird […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T01:34:48+00:00",
-      "source_url": "https://variety.com/2026/film/news/iowa-attorney-general-sue-california-paramount-warner-bros-1236843385/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/07/Rob-Bonta.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "3c03dacc55d358c67206",
-      "category": "Entertainment",
-      "headline": "‘Love Island USA’ Host Ariana Madix on Bringing ‘Sexiness’ and ‘Danger’ to Her Hosting Gig: ‘I Initially Scare the Crap Out of’ Islanders",
-      "summary": "Ariana Madix has had a meteoric rise as a host — one that landed her an Emmy nomination this year. After a guest-hosting gig during the fifth season of the summertime dating show “Love Island USA,” she officially took over the reins for the sixth season in 2024. Two years later, she has wrapped Season […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T01:32:17+00:00",
-      "source_url": "https://variety.com/2026/awards/features/ariana-madix-love-island-usa-host-sexiness-island-1236840928/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/Ariana-madix.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "9f5b37f285fdf461f810",
       "category": "Lifestyle",
       "headline": "Rakhi Purnima 2026: Date, timings and what the sacred Full Moon means for spiritual seekers",
@@ -889,39 +1076,6 @@
       "published_at": "2026-08-26T01:25:56+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/rakhi-purnima-2026-date-timings-and-what-the-sacred-full-moon-means-for-spiritual-seekers-101787705768782.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/photo-1522030299830-16b8d3d049fe_1759663565783_1759663578066_1787706148468_bdea60e3-f8bb-45d0-bc40-49af16738789.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "9a71741a74b3dc652671",
-      "category": "World",
-      "headline": "US halts all immigrant visa applications amid tightening restrictions",
-      "summary": "Move by state department to limit access is part of Trump’s crackdown on both lawful and undocumented immigration All US immigrant visa applications have been paused by the Trump administration as the state department moves to tighten restrictions and limit access to applicants who they deem could end up relying on US assistance, a state department...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T01:16:18+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/25/us-immigrant-visa-application-trump-crackdwon",
-      "image_url": "https://i.guim.co.uk/img/media/2d303f1c00bd3175b4c5f7faebac7877b8e08984/339_0_4858_3889/master/4858.jpg?width=140&quality=85&auto=format&fit=max&s=acf4e4bd8eef3e8f755ffa5eef686bd9",
-      "image_type": "source"
-    },
-    {
-      "id": "9273ceb84c8bfcec0727",
-      "category": "Entertainment",
-      "headline": "‘Paranormal Activity’ Review: Spooky Franchise Gets a Hair-Raising Stage Experience",
-      "summary": "Taking the spirit of the “Paranormal Activity” films and turning it into a scare-‘em stage experience could have been a terrifying trip for its creators, too. After all, horror isn’t exactly a Broadway staple and producers have mostly given up that particular ghost. But the franchise — Oren Peli’s indie film was originally shot in […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T01:00:00+00:00",
-      "source_url": "https://variety.com/2026/legit/reviews/paranormal-activity-review-broadway-stage-experience-1236841925/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/PARANORMAL_ACTIVITY_BOSTON_1381_PJZEDIT_v001_faa617.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "5f6302da1f159965d4a1",
-      "category": "Entertainment",
-      "headline": "Can Guy Fieri Unite America? Inside His Lifelong Advocacy of Global Cuisine: ‘When You Talk About Food, You Talk About Culture’",
-      "summary": "“I called Taylor Sheridan to ask him just for some meat for the event. Taylor said, ‘I’ll only give you the meat if I can come cook it.’ And Taylor Sheridan shows up to cook.” Guy Fieri is reminiscing about a 2023 fundraiser he held for Maui fire relief that made $1.7 million for restaurants, […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T00:46:20+00:00",
-      "source_url": "https://variety.com/2026/awards/features/guy-fieri-diners-drive-ins-and-dives-host-unite-america-1236840922/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/Guy-Fieri.jpg",
       "image_type": "source"
     },
     {
@@ -955,160 +1109,6 @@
       "published_at": "2026-08-26T00:15:45+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/rakhi-purnima-2026-why-this-full-moon-is-considered-spiritually-significant-according-to-an-expert-101787701789748.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/QATAR-ASTRONOMY-MOON-2_1777561523272_1777561585735_1787702734188_6fa43f5e-70bd-49c6-a363-05346710e97a.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "dcc8e56b7909a0f34970",
-      "category": "Technology",
-      "headline": "OpenAI loses a top data center exec as stream of high-profile departures continues",
-      "summary": "In a statement to TechCrunch about Malone's departure, OpenAI said it had \"recently reorganized\" its \"infrastructure organization to support the scale and pace of our work.\"",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-26T00:06:20+00:00",
-      "source_url": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20OpenAI%20loses%20a%20top%20data%20center%20exec%20as%20stream%20of%20high-profile%20departures%20continues%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2432551712",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "6673abdd0b71d9057bd8",
-      "category": "Entertainment",
-      "headline": "‘20/20’ Sets Dolly Parton Special Tribute: Where to Watch Online",
-      "summary": "Airing Aug. 25, the episode joins a growing list of dedicated primetime coverage from networks like CBS and CMT.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-26T00:01:58+00:00",
-      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/watch-dolly-parton-20-20-special-aug-25-2026-streaming-free-1236681447/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%80%9820/20%E2%80%99%20Sets%20Dolly%20Parton%20Special%20Tribute%3A%20Where%20to%20Watch%20Online%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3540117657",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "bf721b04f9f175945a9b",
-      "category": "Entertainment",
-      "headline": "‘The Dog Stars’ Review: Jacob Elordi and Margaret Qualley in Ridley Scott’s Subdued but Pleasingly Soulful Dystopian Western",
-      "summary": "Josh Brolin, Guy Pearce, Allison Janney and Benedict Wong also star in this adaptation of Peter Heller’s novel about survivors trying to stay alive in a post",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-reviews/the-dog-stars-review-jacob-elordi-ridley-scott-1236680319/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%80%98The%20Dog%20Stars%E2%80%99%20Review%3A%20Jacob%20Elordi%20and%20Margaret%20Qualley%20in%20Ridley%20Scott%E2%80%99s%20Subdued%20but%20Pleasingly%20Soulful%20Dystopian%20Western%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2426131893",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "be769b408085c46c80d3",
-      "category": "Entertainment",
-      "headline": "Netflix Sets Lee Jung-eun, Kim Moo-yul for Korean Action-Noir Series ‘The Shooter’",
-      "summary": "From the director of ‘A Shop for Killers,’ the new series casts Lee Jung-eun, of 'Parasite' fame, as a woman in her 70s who is driven to pick up a gun after her grandson is attacked.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/netflix-lee-jung-eun-kim-moo-yul-korean-series-the-shooter-1236680472/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Netflix%20Sets%20Lee%20Jung-eun%2C%20Kim%20Moo-yul%20for%20Korean%20Action-Noir%20Series%20%E2%80%98The%20Shooter%E2%80%99%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=381866875",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b80e212c799caf75df61",
-      "category": "Entertainment",
-      "headline": "Dolly Parton’s Cause of Death Revealed",
-      "summary": "The country music icon, who was hospitalized Friday and died Tuesday, recently acknowledged that she had neglected her health as she looked after her husband, who died in 2025.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://www.hollywoodreporter.com/news/general-news/dolly-parton-cause-of-death-cancer-1236681221/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Dolly%20Parton%E2%80%99s%20Cause%20of%20Death%20Revealed%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=4010106050",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9748a7b3db6847285838",
-      "category": "Sports",
-      "headline": "O'Neill takes responsibility after Celtic's latest European capitulation",
-      "summary": "Celtic throw away a four-goal aggregate lead as they suffer a 5",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T23:35:46+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/c7506lkw1gno?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/62ff/live/3a0293a0-a0dd-11f1-9eb4-25fa73e257d0.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "f0a4b68ee41b571921d9",
-      "category": "Sports",
-      "headline": "Alcaraz and Williams thrill in brief but bright US Open mixed doubles showing",
-      "summary": "Serena Williams and Carlos Alcaraz were among the star double",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T23:25:29+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/cn5drv06w2ro?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6c61/live/244bbbd0-a0d4-11f1-879c-376a9fd2230d.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "f8e60c6f15bdf30f67ef",
-      "category": "Sports",
-      "headline": "Hrgovic taunts starting to wind me up - Itauma",
-      "summary": "Moses Itauma says Filip Hrgovic's comments are starting to \"wind him up\" before their fight on Saturday.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T22:59:47+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/cly46v7zepgo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6096/live/6344a4f0-a0d4-11f1-879c-376a9fd2230d.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "5985a2afdedc25bc131b",
-      "category": "Sports",
-      "headline": "St Helens legend Lomax to retire at end of season",
-      "summary": "St Helens legend Jonny Lomax announces he is to retire at the end of the Super League season.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T22:28:49+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/cgrvy0n7evvo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/47b0/live/1f7709a0-a0d1-11f1-897d-3f2b3b8ed886.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "a8d6e8e120cedec4155f",
-      "category": "Sports",
-      "headline": "GB's Dart and Jones advance in US Open qualifying",
-      "summary": "Britons Harriet Dart and Fran Jones both make winning starts in their bids to reach the US Open singles main draw.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T22:27:13+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/c1mv0m7exxko?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cc3/live/574d7570-a0cd-11f1-897d-3f2b3b8ed886.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "dd059cf581c802d7f955",
-      "category": "Technology",
-      "headline": "Garmin’s new Fenix 9 adds brighter screens and smoother map panning",
-      "summary": "Garmin just took the wraps off its new line of rugged Fenix 9 smartwatches, with the base model featuring an OLED display with a brightness of up to 3,000 nits, making it twice as bright as its predecessor. Starting at $999.99 for the 43mm case option, the Fenix 9 has 50 percent more RAM and […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T22:23:04+00:00",
-      "source_url": "https://www.theverge.com/gadgets/984753/garmin-fenix-9-smartwatch-launch",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/garmin-fenix-9.png",
-      "image_type": "source"
-    },
-    {
-      "id": "bade8f4037e91f463682",
-      "category": "Technology",
-      "headline": "The world's busiest spaceport is about to get a lot quieter, at least for now",
-      "summary": "SpaceX aims to launch Starship from Florida by the end of the year. 2027 seems more likely.",
-      "publisher": "Ars Technica",
-      "published_at": "2026-08-25T22:21:06+00:00",
-      "source_url": "https://arstechnica.com/space/2026/08/the-worlds-busiest-spaceport-is-about-to-get-a-lot-quieter-at-least-for-now/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/f9_streak1-1152x648.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "ac9f8fe6ece7d0f39c26",
-      "category": "Lifestyle",
-      "headline": "What are the 7 chakras? What this ancient spiritual practice means and how people use it today",
-      "summary": "Western science does not recognize chakras as physical structures or prove that they can be balanced.",
-      "publisher": "Hindustan Times Lifestyle",
-      "published_at": "2026-08-25T22:14:41+00:00",
-      "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/what-are-the-7-chakras-what-this-ancient-spiritual-practice-means-and-how-people-use-it-today-101787695132248.html",
-      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/pexels-photo-6931776_1781725163848_1781725175532_df2a171d-d9ac-4309-a664-f306f2386152_1787695449137_00ce1f0d-80b6-4f25-9c9a-08cde9b349c0.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "1a6095ba84444e20aa13",
-      "category": "Sports",
-      "headline": "'Truly honoured' - Shaw wins PFA player of the year award",
-      "summary": "Manchester City forward Khadija Shaw reacts to winning her second PFA player of the year award in three seasons.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T22:12:35+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/videos/cm27ymnk7jwo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31d5/live/6a4a76b0-a0d1-11f1-b109-879e35c24276.jpg",
       "image_type": "source"
     }
   ]
