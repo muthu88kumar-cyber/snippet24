@@ -29,13 +29,57 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run AI news curator
+      - name: Run news curator
         run: |
           python curator.py
 
       - name: Validate articles.json
         run: |
-          python validate_articles.py
+          python - <<'PY'
+          import json
+          import sys
+
+          with open("articles.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          if not isinstance(data, dict):
+              print("ERROR: articles.json must contain an object")
+              sys.exit(1)
+
+          articles = data.get("articles")
+
+          if not isinstance(articles, list):
+              print("ERROR: articles must be a list")
+              sys.exit(1)
+
+          print(f"Validated {len(articles)} articles")
+
+          required = [
+              "headline",
+              "summary",
+              "publisher",
+              "published_at",
+              "source_url",
+              "category"
+          ]
+
+          for index, article in enumerate(articles):
+
+              if not isinstance(article, dict):
+                  print(f"ERROR: Article {index} is not an object")
+                  sys.exit(1)
+
+              for field in required:
+
+                  if not article.get(field):
+                      print(
+                          f"ERROR: Article {index} missing {field}"
+                      )
+
+                      sys.exit(1)
+
+          print("articles.json validation successful")
+          PY
 
       - name: Configure Git
         run: |
@@ -47,9 +91,9 @@ jobs:
           git add articles.json
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No news changes to commit."
           else
-            git commit -m "Update news feed"
+            git commit -m "Update Snippet24 news"
           fi
 
       - name: Push changes
