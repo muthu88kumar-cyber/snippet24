@@ -1831,5 +1831,22 @@ async function loadArticles() {
 
 loadArticles();
 </script>
+<script>
+async function loadArticles() {
+  try {
+    const response = await fetch("articles.json");
+    const data = await response.json();
+
+    window.snippet24Articles = data.articles;
+
+    console.log("Loaded " + data.articles.length + " articles");
+  } catch (error) {
+    console.error("Articles failed to load:", error);
+  }
+}
+
+loadArticles();
+</script>
+
 </body>
 </html>
