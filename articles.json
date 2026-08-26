@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T01:44:32.223290+00:00",
+  "updated_at": "2026-08-26T01:46:02.445873+00:00",
   "minimum_per_category": 50,
   "maximum_per_category": 100,
   "fifo": true,
@@ -13,7 +13,7 @@
         "source": "India.com",
         "category": "India",
         "published_at": "2026-08-26T01:30:30+00:00",
-        "fetched_at": "2026-08-26T01:43:49.536413+00:00"
+        "fetched_at": "2026-08-26T01:45:17.914894+00:00"
       },
       {
         "id": "a7ab075e38b0a6c02e2ad9c9",
@@ -23,7 +23,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T01:30:10+00:00",
-        "fetched_at": "2026-08-26T01:43:54.934172+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606567+00:00"
       },
       {
         "id": "8686863aea5ef605cd11e210",
@@ -33,7 +33,7 @@
         "source": "The Hindu",
         "category": "India",
         "published_at": "2026-08-26T01:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:50.311346+00:00"
+        "fetched_at": "2026-08-26T01:45:18.734973+00:00"
       },
       {
         "id": "266bff0b01f51b92d0a287fb",
@@ -43,7 +43,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T01:23:03+00:00",
-        "fetched_at": "2026-08-26T01:43:54.933838+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606229+00:00"
       },
       {
         "id": "526f34f5f12c39753a19aa5e",
@@ -53,7 +53,7 @@
         "source": "Alt News",
         "category": "India",
         "published_at": "2026-08-26T01:20:11+00:00",
-        "fetched_at": "2026-08-26T01:43:49.536645+00:00"
+        "fetched_at": "2026-08-26T01:45:17.915133+00:00"
       },
       {
         "id": "8b5a10ce19ce90993f656e9c",
@@ -63,7 +63,7 @@
         "source": "Deccan Herald",
         "category": "India",
         "published_at": "2026-08-26T01:17:55+00:00",
-        "fetched_at": "2026-08-26T01:43:49.540017+00:00"
+        "fetched_at": "2026-08-26T01:45:17.918312+00:00"
       },
       {
         "id": "7697e0666610fa89c1db49e6",
@@ -73,7 +73,7 @@
         "source": "Telegraph India",
         "category": "India",
         "published_at": "2026-08-26T01:16:10+00:00",
-        "fetched_at": "2026-08-26T01:43:52.526910+00:00"
+        "fetched_at": "2026-08-26T01:45:21.206970+00:00"
       },
       {
         "id": "0d0438a52f7b923adea224c1",
@@ -83,7 +83,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T01:08:58+00:00",
-        "fetched_at": "2026-08-26T01:43:52.523854+00:00"
+        "fetched_at": "2026-08-26T01:45:21.203652+00:00"
       },
       {
         "id": "a14c29156b0cc0dfb6b64be6",
@@ -93,7 +93,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-26T01:07:17+00:00",
-        "fetched_at": "2026-08-26T01:43:49.538025+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916556+00:00"
       },
       {
         "id": "f2969e2d0d6dd893f731030f",
@@ -103,7 +103,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T01:04:08+00:00",
-        "fetched_at": "2026-08-26T01:43:54.934378+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606756+00:00"
       },
       {
         "id": "13904ea274efd15986363497",
@@ -113,7 +113,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T01:00:59+00:00",
-        "fetched_at": "2026-08-26T01:43:49.539026+00:00"
+        "fetched_at": "2026-08-26T01:45:17.917438+00:00"
       },
       {
         "id": "7f5123f4e201fe129aa58f56",
@@ -123,7 +123,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T01:00:51+00:00",
-        "fetched_at": "2026-08-26T01:43:51.074212+00:00"
+        "fetched_at": "2026-08-26T01:45:19.561078+00:00"
       },
       {
         "id": "b105aeca391853ac1dd45a82",
@@ -133,7 +133,7 @@
         "source": "The Federal",
         "category": "India",
         "published_at": "2026-08-26T01:00:00+00:00",
-        "fetched_at": "2026-08-26T01:43:51.074921+00:00"
+        "fetched_at": "2026-08-26T01:45:19.561742+00:00"
       },
       {
         "id": "a4cffa66c1b2717fb3f3971c",
@@ -143,7 +143,7 @@
         "source": "The Federal",
         "category": "India",
         "published_at": "2026-08-26T01:00:00+00:00",
-        "fetched_at": "2026-08-26T01:43:53.283767+00:00"
+        "fetched_at": "2026-08-26T01:45:22.020310+00:00"
       },
       {
         "id": "e715ad7221296c95db27cfce",
@@ -153,7 +153,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T01:00:00+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062399+00:00"
+        "fetched_at": "2026-08-26T01:45:22.831186+00:00"
       },
       {
         "id": "3052aa3de552e1588539ff20",
@@ -173,7 +173,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T00:52:42+00:00",
-        "fetched_at": "2026-08-26T01:43:49.540231+00:00"
+        "fetched_at": "2026-08-26T01:45:17.918559+00:00"
       },
       {
         "id": "e8b6f95e62d135b133e91df9",
@@ -203,7 +203,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T00:47:33+00:00",
-        "fetched_at": "2026-08-26T01:43:54.933901+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606296+00:00"
       },
       {
         "id": "2d1a330428d2163cdbea39fa",
@@ -213,7 +213,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T00:46:56+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061716+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830435+00:00"
       },
       {
         "id": "8f11cb622036a0899de01287",
@@ -223,7 +223,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-26T00:46:48+00:00",
-        "fetched_at": "2026-08-26T01:43:54.934672+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606942+00:00"
       },
       {
         "id": "402841a9d16e8255b0f5efce",
@@ -233,7 +233,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T00:40:19+00:00",
-        "fetched_at": "2026-08-26T01:43:54.063168+00:00"
+        "fetched_at": "2026-08-26T01:45:22.831897+00:00"
       },
       {
         "id": "19ab20be010ee28ac242c2f7",
@@ -243,7 +243,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T00:35:54+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061985+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830729+00:00"
       },
       {
         "id": "c0326f74cb2f7b25119c8a42",
@@ -273,7 +273,7 @@
         "source": "Bar and Bench",
         "category": "India",
         "published_at": "2026-08-26T00:30:34+00:00",
-        "fetched_at": "2026-08-26T01:43:52.524407+00:00"
+        "fetched_at": "2026-08-26T01:45:21.204253+00:00"
       },
       {
         "id": "96c1cb2b540144ae68cd6bfd",
@@ -283,7 +283,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-26T00:30:27+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062906+00:00"
+        "fetched_at": "2026-08-26T01:45:22.831686+00:00"
       },
       {
         "id": "b910e52072e63d45f6f06839",
@@ -293,7 +293,7 @@
         "source": "Livemint",
         "category": "India",
         "published_at": "2026-08-26T00:30:21+00:00",
-        "fetched_at": "2026-08-26T01:43:49.536695+00:00"
+        "fetched_at": "2026-08-26T01:45:17.915186+00:00"
       },
       {
         "id": "ac730746c8cf9a873ccd6e58",
@@ -303,7 +303,7 @@
         "source": "India Today",
         "category": "India",
         "published_at": "2026-08-26T00:25:40+00:00",
-        "fetched_at": "2026-08-26T01:43:51.777121+00:00"
+        "fetched_at": "2026-08-26T01:45:20.421516+00:00"
       },
       {
         "id": "e93810f68857eff0c50ad705",
@@ -323,7 +323,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:54:31+00:00",
-        "fetched_at": "2026-08-26T01:43:54.064879+00:00"
+        "fetched_at": "2026-08-26T01:45:22.833440+00:00"
       },
       {
         "id": "1fd626051646403fb7f7d45f",
@@ -333,7 +333,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:50:49+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062299+00:00"
+        "fetched_at": "2026-08-26T01:45:22.831079+00:00"
       },
       {
         "id": "0532d428ece42c82ac9b66df",
@@ -343,7 +343,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:50:48+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062139+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830903+00:00"
       },
       {
         "id": "7c028d0215759e429ea1d35a",
@@ -353,7 +353,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:50:41+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061921+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830680+00:00"
       },
       {
         "id": "86f3c58184466629f0890944",
@@ -363,7 +363,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:50:31+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061769+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830504+00:00"
       },
       {
         "id": "4a85dc7e366fe296feec7a3c",
@@ -373,7 +373,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:50:29+00:00",
-        "fetched_at": "2026-08-26T01:43:54.060660+00:00"
+        "fetched_at": "2026-08-26T01:45:22.829410+00:00"
       },
       {
         "id": "922bc265e30c3dcbef20be4e",
@@ -383,7 +383,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-25T23:39:37+00:00",
-        "fetched_at": "2026-08-26T01:43:49.536220+00:00"
+        "fetched_at": "2026-08-26T01:45:17.914665+00:00"
       },
       {
         "id": "34eb50223f2feab8d322b629",
@@ -393,7 +393,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061370+00:00"
+        "fetched_at": "2026-08-26T01:45:22.828775+00:00"
       },
       {
         "id": "dbb95197c6b9818f15cdf32d",
@@ -413,7 +413,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:20:53+00:00",
-        "fetched_at": "2026-08-26T01:43:49.539187+00:00"
+        "fetched_at": "2026-08-26T01:45:17.917599+00:00"
       },
       {
         "id": "c6a20b9cca8884fd32291a5c",
@@ -443,7 +443,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T23:02:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.537672+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916271+00:00"
       },
       {
         "id": "ab755771d9d6ddf0f43ffa6e",
@@ -453,7 +453,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T23:00:29+00:00",
-        "fetched_at": "2026-08-26T01:43:54.061668+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830382+00:00"
       },
       {
         "id": "af0ba1c9a7ad90c5e98c0a9a",
@@ -483,7 +483,7 @@
         "source": "India Tribune - Chicago",
         "category": "India",
         "published_at": "2026-08-25T22:38:04+00:00",
-        "fetched_at": "2026-08-26T01:43:51.076881+00:00"
+        "fetched_at": "2026-08-26T01:45:19.564102+00:00"
       },
       {
         "id": "57ef81de7036d665f8f6b50e",
@@ -493,7 +493,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T22:29:22+00:00",
-        "fetched_at": "2026-08-26T01:43:54.060077+00:00"
+        "fetched_at": "2026-08-26T01:45:22.828712+00:00"
       },
       {
         "id": "b16e5cb9d86731ac5c984c04",
@@ -503,7 +503,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-25T22:25:37+00:00",
-        "fetched_at": "2026-08-26T01:43:54.933730+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606113+00:00"
       },
       {
         "id": "9e77f32e6f26c645bd530571",
@@ -513,7 +513,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T22:25:19+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062041+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830788+00:00"
       },
       {
         "id": "6e32559df9c10c28595f735a",
@@ -523,7 +523,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T22:25:17+00:00",
-        "fetched_at": "2026-08-26T01:43:54.060018+00:00"
+        "fetched_at": "2026-08-26T01:45:17.919209+00:00"
       },
       {
         "id": "be41462cd74ed8d505e59a96",
@@ -543,7 +543,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T22:02:00+00:00",
-        "fetched_at": "2026-08-26T01:43:52.526140+00:00"
+        "fetched_at": "2026-08-26T01:45:21.206222+00:00"
       },
       {
         "id": "b8e9fef7982603c5077579b3",
@@ -553,7 +553,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T21:44:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.538724+00:00"
+        "fetched_at": "2026-08-26T01:45:17.917195+00:00"
       },
       {
         "id": "2e572f97737cea8da69c86ef",
@@ -563,7 +563,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T21:33:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.537827+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916429+00:00"
       },
       {
         "id": "162891fb1d51d85422e99961",
@@ -573,7 +573,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T21:26:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.538451+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916942+00:00"
       },
       {
         "id": "e086356d6f9c49f1347dc9fe",
@@ -583,7 +583,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T21:18:00+00:00",
-        "fetched_at": "2026-08-26T01:43:52.526640+00:00"
+        "fetched_at": "2026-08-26T01:45:21.206809+00:00"
       },
       {
         "id": "06fc71df1eae06df97535ace",
@@ -593,7 +593,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T21:16:14+00:00",
-        "fetched_at": "2026-08-26T01:43:54.063124+00:00"
+        "fetched_at": "2026-08-26T01:45:22.831860+00:00"
       },
       {
         "id": "5cb8eb8690c797d10b18b60b",
@@ -603,7 +603,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T21:13:57+00:00",
-        "fetched_at": "2026-08-26T01:43:54.062089+00:00"
+        "fetched_at": "2026-08-26T01:45:22.830843+00:00"
       },
       {
         "id": "f9149f427822bd0b139e0f1a",
@@ -613,7 +613,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T21:11:37+00:00",
-        "fetched_at": "2026-08-26T01:43:54.063614+00:00"
+        "fetched_at": "2026-08-26T01:45:22.832303+00:00"
       },
       {
         "id": "84ab1a6b1ffe3657a809ca1a",
@@ -623,7 +623,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T21:08:24+00:00",
-        "fetched_at": "2026-08-26T01:43:54.064403+00:00"
+        "fetched_at": "2026-08-26T01:45:22.833006+00:00"
       },
       {
         "id": "1510de3f89bd6652fe05892f",
@@ -633,7 +633,7 @@
         "source": "News On AIR",
         "category": "India",
         "published_at": "2026-08-25T20:53:02+00:00",
-        "fetched_at": "2026-08-26T01:43:53.283670+00:00"
+        "fetched_at": "2026-08-26T01:45:22.020200+00:00"
       },
       {
         "id": "0e4abdbab254a94f0b056cfe",
@@ -643,7 +643,7 @@
         "source": "Deccan Chronicle",
         "category": "India",
         "published_at": "2026-08-25T20:49:53+00:00",
-        "fetched_at": "2026-08-26T01:43:51.776675+00:00"
+        "fetched_at": "2026-08-26T01:45:20.421180+00:00"
       },
       {
         "id": "6279efa40d2288c0fc392da3",
@@ -653,7 +653,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T20:46:00+00:00",
-        "fetched_at": "2026-08-26T01:43:51.075778+00:00"
+        "fetched_at": "2026-08-26T01:45:19.563035+00:00"
       },
       {
         "id": "0cfccbea4dcf0c1f1ead1c05",
@@ -663,7 +663,7 @@
         "source": "News On AIR",
         "category": "India",
         "published_at": "2026-08-25T20:45:14+00:00",
-        "fetched_at": "2026-08-26T01:43:52.524502+00:00"
+        "fetched_at": "2026-08-26T01:45:21.204363+00:00"
       },
       {
         "id": "247ab0edd655df1b100eb8e8",
@@ -673,7 +673,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T20:27:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.536265+00:00"
+        "fetched_at": "2026-08-26T01:45:17.914720+00:00"
       },
       {
         "id": "7449a4d0615c8a8a17f7ef7f",
@@ -683,7 +683,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-25T20:20:17+00:00",
-        "fetched_at": "2026-08-26T01:43:55.757165+00:00"
+        "fetched_at": "2026-08-26T01:45:24.365758+00:00"
       },
       {
         "id": "2df3932d4eccca745067c3b5",
@@ -713,7 +713,7 @@
         "source": "Al Jazeera",
         "category": "India",
         "published_at": "2026-08-25T20:13:54+00:00",
-        "fetched_at": "2026-08-26T01:43:49.537101+00:00"
+        "fetched_at": "2026-08-26T01:45:17.915606+00:00"
       },
       {
         "id": "8b2dc1f22adec068e3ba09cf",
@@ -733,7 +733,7 @@
         "source": "News On AIR",
         "category": "India",
         "published_at": "2026-08-25T20:03:08+00:00",
-        "fetched_at": "2026-08-26T01:43:49.537206+00:00"
+        "fetched_at": "2026-08-26T01:45:17.915724+00:00"
       },
       {
         "id": "7587a35cc2c1606999335795",
@@ -743,7 +743,7 @@
         "source": "The New Indian Express",
         "category": "India",
         "published_at": "2026-08-25T19:58:11+00:00",
-        "fetched_at": "2026-08-26T01:43:51.077466+00:00"
+        "fetched_at": "2026-08-26T01:45:19.563868+00:00"
       },
       {
         "id": "4a66a5a7f4a52c33447a0472",
@@ -753,7 +753,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T19:52:23+00:00",
-        "fetched_at": "2026-08-26T01:43:49.540526+00:00"
+        "fetched_at": "2026-08-26T01:45:17.918831+00:00"
       },
       {
         "id": "ce85a367f9e674b53d78066e",
@@ -763,7 +763,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T19:46:13+00:00",
-        "fetched_at": "2026-08-26T01:43:54.064685+00:00"
+        "fetched_at": "2026-08-26T01:45:22.833264+00:00"
       },
       {
         "id": "d95971547e29b07b77c4411a",
@@ -773,7 +773,7 @@
         "source": "India Today",
         "category": "India",
         "published_at": "2026-08-25T19:44:24+00:00",
-        "fetched_at": "2026-08-26T01:43:51.076173+00:00"
+        "fetched_at": "2026-08-26T01:45:19.563356+00:00"
       },
       {
         "id": "242ce7a8f60f529e78339b43",
@@ -783,7 +783,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T19:43:07+00:00",
-        "fetched_at": "2026-08-26T01:43:54.060130+00:00"
+        "fetched_at": "2026-08-26T01:45:22.828834+00:00"
       },
       {
         "id": "824204fe4c0cab304509d0cb",
@@ -793,7 +793,7 @@
         "source": "News On AIR",
         "category": "India",
         "published_at": "2026-08-25T19:41:37+00:00",
-        "fetched_at": "2026-08-26T01:43:49.537050+00:00"
+        "fetched_at": "2026-08-26T01:45:17.915550+00:00"
       },
       {
         "id": "3ffad175b74946de06d934c5",
@@ -803,7 +803,7 @@
         "source": "Maktoob",
         "category": "India",
         "published_at": "2026-08-25T19:36:35+00:00",
-        "fetched_at": "2026-08-26T01:43:52.525691+00:00"
+        "fetched_at": "2026-08-26T01:45:21.205110+00:00"
       },
       {
         "id": "e28b8a39ee9383a00eb97548",
@@ -813,7 +813,7 @@
         "source": "Al Jazeera",
         "category": "India",
         "published_at": "2026-08-25T19:33:54+00:00",
-        "fetched_at": "2026-08-26T01:43:51.074785+00:00"
+        "fetched_at": "2026-08-26T01:45:19.561684+00:00"
       },
       {
         "id": "bb88501f5128f3519cc3bac3",
@@ -853,7 +853,7 @@
         "source": "The Indian Express",
         "category": "India",
         "published_at": "2026-08-25T19:08:55+00:00",
-        "fetched_at": "2026-08-26T01:43:54.063989+00:00"
+        "fetched_at": "2026-08-26T01:45:22.832628+00:00"
       },
       {
         "id": "4cc9cc0294942c123658868c",
@@ -873,7 +873,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-25T18:58:18+00:00",
-        "fetched_at": "2026-08-26T01:43:54.934069+00:00"
+        "fetched_at": "2026-08-26T01:45:23.606451+00:00"
       },
       {
         "id": "26ae7782311a43d139314b62",
@@ -883,7 +883,7 @@
         "source": "The Economic Times",
         "category": "India",
         "published_at": "2026-08-25T18:55:09+00:00",
-        "fetched_at": "2026-08-26T01:43:51.078835+00:00"
+        "fetched_at": "2026-08-26T01:45:19.565415+00:00"
       },
       {
         "id": "280f3ea93b5a22b773ea3f74",
@@ -923,7 +923,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-25T18:46:36+00:00",
-        "fetched_at": "2026-08-26T01:43:49.539782+00:00"
+        "fetched_at": "2026-08-26T01:45:17.918111+00:00"
       },
       {
         "id": "c40ff1fcc7876da20114d976",
@@ -933,7 +933,7 @@
         "source": "India IPO",
         "category": "India",
         "published_at": "2026-08-25T18:45:02+00:00",
-        "fetched_at": "2026-08-26T01:43:51.075691+00:00"
+        "fetched_at": "2026-08-26T01:45:19.562978+00:00"
       },
       {
         "id": "6fde581fe2b882ee50aa4e72",
@@ -943,7 +943,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-25T18:43:39+00:00",
-        "fetched_at": "2026-08-26T01:43:49.539231+00:00"
+        "fetched_at": "2026-08-26T01:45:17.917639+00:00"
       },
       {
         "id": "47c1d912c8fbb1473d3b60dc",
@@ -953,7 +953,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-25T18:42:54+00:00",
-        "fetched_at": "2026-08-26T01:43:54.936524+00:00"
+        "fetched_at": "2026-08-26T01:45:23.608698+00:00"
       },
       {
         "id": "79dfb26c8ad04b76ef58bd14",
@@ -963,7 +963,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T18:42:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.538076+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916605+00:00"
       },
       {
         "id": "ebaaf0fcb4c8b4c1f0541bfe",
@@ -983,7 +983,7 @@
         "source": "Hindustan Times",
         "category": "India",
         "published_at": "2026-08-25T18:38:56+00:00",
-        "fetched_at": "2026-08-26T01:43:54.934761+00:00"
+        "fetched_at": "2026-08-26T01:45:23.607116+00:00"
       },
       {
         "id": "555e7e214b257cbd95636cee",
@@ -993,7 +993,7 @@
         "source": "The Times of India",
         "category": "India",
         "published_at": "2026-08-25T18:37:00+00:00",
-        "fetched_at": "2026-08-26T01:43:49.538365+00:00"
+        "fetched_at": "2026-08-26T01:45:17.916862+00:00"
       },
       {
         "id": "820115fc13f24d657ac79a84",
@@ -1003,7 +1003,7 @@
         "source": "NDTV",
         "category": "India",
         "published_at": "2026-08-25T18:35:57+00:00",
-        "fetched_at": "2026-08-26T01:43:49.539865+00:00"
+        "fetched_at": "2026-08-26T01:45:17.918229+00:00"
       }
     ],
     "World": [
@@ -1015,7 +1015,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:42:55+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116148+00:00"
+        "fetched_at": "2026-08-26T01:45:15.297917+00:00"
       },
       {
         "id": "15a61f76899ff615d11ecdae",
@@ -1025,7 +1025,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:38:02+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116258+00:00"
+        "fetched_at": "2026-08-26T01:45:15.298040+00:00"
       },
       {
         "id": "2e2efde9710e9f35e25b7867",
@@ -1035,17 +1035,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:38:01+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117263+00:00"
-      },
-      {
-        "id": "33eee3d62384eaf1d6c0178d",
-        "title": "Malaysian university fires professor who said Romans learnt shipbuilding from Malays - Asia News Network",
-        "description": "Malaysian university fires professor who said Romans learnt shipbuilding from Malays Asia News Network",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMVpqbUppeE15NVBEanA3SXF0TFpiUFVkRWFmTmVldGZYNWRwc1FvYTdnaFVQbVJLX3k1NTc3aGIweXloVnVMemFsTWN3R1huNmxpNTd4VjdrQmhLMnhuZF9yb3JiR0stWndYaG5pU1NpU3JEUFZCOHFEdGJHajZaQ2k2N09iWXJMd1NIandSYmVsM3FBUkVTeTBXNTB5U0N0NWlBSWI3VDEzUWM0ZGpj?oc=5",
-        "source": "Asia News Network",
-        "category": "World",
-        "published_at": "2026-08-26T01:38:00+00:00",
-        "fetched_at": "2026-08-26T01:43:47.119128+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299041+00:00"
       },
       {
         "id": "12b223ad8c4c6e4cce005999",
@@ -1055,7 +1045,17 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:37:58+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118066+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299916+00:00"
+      },
+      {
+        "id": "33eee3d62384eaf1d6c0178d",
+        "title": "Malaysian university fires professor who said Romans learnt shipbuilding from Malays - Asia News Network",
+        "description": "Malaysian university fires professor who said Romans learnt shipbuilding from Malays Asia News Network",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMVpqbUppeE15NVBEanA3SXF0TFpiUFVkRWFmTmVldGZYNWRwc1FvYTdnaFVQbVJLX3k1NTc3aGIweXloVnVMemFsTWN3R1huNmxpNTd4VjdrQmhLMnhuZF9yb3JiR0stWndYaG5pU1NpU3JEUFZCOHFEdGJHajZaQ2k2N09iWXJMd1NIandSYmVsM3FBUkVTeTBXNTB5U0N0NWlBSWI3VDEzUWM0ZGpj?oc=5",
+        "source": "Asia News Network",
+        "category": "World",
+        "published_at": "2026-08-26T01:37:53+00:00",
+        "fetched_at": "2026-08-26T01:45:15.301147+00:00"
       },
       {
         "id": "2153998a9004be6ec0706ff2",
@@ -1065,7 +1065,7 @@
         "source": "Xinhua",
         "category": "World",
         "published_at": "2026-08-26T01:37:15+00:00",
-        "fetched_at": "2026-08-26T01:43:47.119844+00:00"
+        "fetched_at": "2026-08-26T01:45:15.301873+00:00"
       },
       {
         "id": "78d960f95c370925448a76bc",
@@ -1075,7 +1075,7 @@
         "source": "FXStreet",
         "category": "World",
         "published_at": "2026-08-26T01:35:41+00:00",
-        "fetched_at": "2026-08-26T01:43:47.965896+00:00"
+        "fetched_at": "2026-08-26T01:45:16.161656+00:00"
       },
       {
         "id": "84ec754987bbf7d505d0da20",
@@ -1085,7 +1085,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:32:51+00:00",
-        "fetched_at": "2026-08-26T01:43:47.120706+00:00"
+        "fetched_at": "2026-08-26T01:45:15.302591+00:00"
       },
       {
         "id": "73ddee9dd29616d1a4c86b69",
@@ -1095,7 +1095,7 @@
         "source": "Shanghai Metals Market",
         "category": "World",
         "published_at": "2026-08-26T01:31:52+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118602+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300756+00:00"
       },
       {
         "id": "19dd74037b511e64bc2bc63c",
@@ -1105,7 +1105,7 @@
         "source": "China Daily",
         "category": "World",
         "published_at": "2026-08-26T01:29:22+00:00",
-        "fetched_at": "2026-08-26T01:43:45.434216+00:00"
+        "fetched_at": "2026-08-26T01:45:13.565744+00:00"
       },
       {
         "id": "6d88632937209f2339177549",
@@ -1115,7 +1115,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:27:58+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118540+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300412+00:00"
       },
       {
         "id": "4f114eb97258a5bc51a23769",
@@ -1125,7 +1125,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:27:51+00:00",
-        "fetched_at": "2026-08-26T01:43:47.119447+00:00"
+        "fetched_at": "2026-08-26T01:45:15.301509+00:00"
       },
       {
         "id": "08ac0b6dacb7d63dd20c9b55",
@@ -1135,7 +1135,7 @@
         "source": "TradingView",
         "category": "World",
         "published_at": "2026-08-26T01:26:00+00:00",
-        "fetched_at": "2026-08-26T01:43:46.287356+00:00"
+        "fetched_at": "2026-08-26T01:45:14.448665+00:00"
       },
       {
         "id": "353ad300a46cea70065407b1",
@@ -1145,7 +1145,7 @@
         "source": "News18",
         "category": "World",
         "published_at": "2026-08-26T01:25:48+00:00",
-        "fetched_at": "2026-08-26T01:43:42.315786+00:00"
+        "fetched_at": "2026-08-26T01:45:10.190267+00:00"
       },
       {
         "id": "31f85f892a8a142afca72f31",
@@ -1175,7 +1175,7 @@
         "source": "Hindustan Times",
         "category": "World",
         "published_at": "2026-08-26T01:23:03+00:00",
-        "fetched_at": "2026-08-26T01:43:42.313530+00:00"
+        "fetched_at": "2026-08-26T01:45:10.187986+00:00"
       },
       {
         "id": "9eb7dcb9342624168db61c95",
@@ -1185,7 +1185,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:22:50+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117514+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299323+00:00"
       },
       {
         "id": "24f6696aa83d03f79652823f",
@@ -1195,7 +1195,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:22:50+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118732+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300688+00:00"
       },
       {
         "id": "0a00a2fe7251311f7307a18b",
@@ -1215,7 +1215,7 @@
         "source": "S&P Global",
         "category": "World",
         "published_at": "2026-08-26T01:18:45+00:00",
-        "fetched_at": "2026-08-26T01:43:46.287466+00:00"
+        "fetched_at": "2026-08-26T01:45:14.448792+00:00"
       },
       {
         "id": "d82a0185e3ba37aa351d4500",
@@ -1225,7 +1225,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:18:45+00:00",
-        "fetched_at": "2026-08-26T01:43:47.119266+00:00"
+        "fetched_at": "2026-08-26T01:45:15.301307+00:00"
       },
       {
         "id": "921f801644424acbbaa2782e",
@@ -1235,7 +1235,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:17:58+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116210+00:00"
+        "fetched_at": "2026-08-26T01:45:15.297986+00:00"
       },
       {
         "id": "323cbe19e8a7a90286954af9",
@@ -1245,7 +1245,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:17:58+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118019+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299867+00:00"
       },
       {
         "id": "be1c36db3fece92fd151d3ce",
@@ -1255,7 +1255,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:17:57+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118818+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300855+00:00"
       },
       {
         "id": "3e58a68e8b68579bcae25911",
@@ -1265,7 +1265,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:17:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.120495+00:00"
+        "fetched_at": "2026-08-26T01:45:15.302427+00:00"
       },
       {
         "id": "80bc45f7ef13d5a2de186f1d",
@@ -1285,7 +1285,7 @@
         "source": "ICC",
         "category": "World",
         "published_at": "2026-08-26T01:15:20+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116671+00:00"
+        "fetched_at": "2026-08-26T01:45:15.298519+00:00"
       },
       {
         "id": "6ac95fa59e17fe4b4d7bd2f6",
@@ -1295,7 +1295,7 @@
         "source": "Українські Національні Новини (УНН)",
         "category": "World",
         "published_at": "2026-08-26T01:15:17+00:00",
-        "fetched_at": "2026-08-26T01:43:46.289066+00:00"
+        "fetched_at": "2026-08-26T01:45:14.450480+00:00"
       },
       {
         "id": "448b8b4d47c3ceef271d9569",
@@ -1315,7 +1315,7 @@
         "source": "The Washington Post",
         "category": "World",
         "published_at": "2026-08-26T01:13:34+00:00",
-        "fetched_at": "2026-08-26T01:43:44.674890+00:00"
+        "fetched_at": "2026-08-26T01:45:12.633282+00:00"
       },
       {
         "id": "98e6190f58d5a21ca61a07d1",
@@ -1335,7 +1335,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:12:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117842+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299707+00:00"
       },
       {
         "id": "f18941b28bc25c4a20185469",
@@ -1345,7 +1345,7 @@
         "source": "WRAL",
         "category": "World",
         "published_at": "2026-08-26T01:11:59+00:00",
-        "fetched_at": "2026-08-26T01:43:42.315740+00:00"
+        "fetched_at": "2026-08-26T01:45:10.190224+00:00"
       },
       {
         "id": "680bd4beb603f9b496bdbc17",
@@ -1355,7 +1355,7 @@
         "source": "The Economic Times",
         "category": "World",
         "published_at": "2026-08-26T01:11:40+00:00",
-        "fetched_at": "2026-08-26T01:43:42.314437+00:00"
+        "fetched_at": "2026-08-26T01:45:10.189018+00:00"
       },
       {
         "id": "610c1e6645409f63aae6baff",
@@ -1365,7 +1365,7 @@
         "source": "dw.com",
         "category": "World",
         "published_at": "2026-08-26T01:10:24+00:00",
-        "fetched_at": "2026-08-26T01:43:45.437801+00:00"
+        "fetched_at": "2026-08-26T01:45:13.569688+00:00"
       },
       {
         "id": "df781bf574caaa8959b51239",
@@ -1375,7 +1375,7 @@
         "source": "News18",
         "category": "World",
         "published_at": "2026-08-26T01:10:05+00:00",
-        "fetched_at": "2026-08-26T01:43:42.315493+00:00"
+        "fetched_at": "2026-08-26T01:45:10.190006+00:00"
       },
       {
         "id": "7a94c0d9c5a9f162c94364e4",
@@ -1385,7 +1385,7 @@
         "source": "CNN",
         "category": "World",
         "published_at": "2026-08-26T01:08:00+00:00",
-        "fetched_at": "2026-08-26T01:43:47.963813+00:00"
+        "fetched_at": "2026-08-26T01:45:16.159231+00:00"
       },
       {
         "id": "d57039b30e97d0f68c793919",
@@ -1395,7 +1395,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:07:30+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117469+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299271+00:00"
       },
       {
         "id": "a4086703ec247110191ab7c2",
@@ -1425,7 +1425,7 @@
         "source": "Firstpost",
         "category": "World",
         "published_at": "2026-08-26T01:04:02+00:00",
-        "fetched_at": "2026-08-26T01:43:44.673105+00:00"
+        "fetched_at": "2026-08-26T01:45:12.631254+00:00"
       },
       {
         "id": "fc57750d6db498c0093e14a0",
@@ -1435,7 +1435,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T01:02:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116730+00:00"
+        "fetched_at": "2026-08-26T01:45:15.298588+00:00"
       },
       {
         "id": "0f3991be44719cd3607e6fc0",
@@ -1445,7 +1445,7 @@
         "source": "Hindustan Times",
         "category": "World",
         "published_at": "2026-08-26T01:01:44+00:00",
-        "fetched_at": "2026-08-26T01:43:42.313578+00:00"
+        "fetched_at": "2026-08-26T01:45:10.188040+00:00"
       },
       {
         "id": "18d8f8d144415709f8d331d0",
@@ -1455,7 +1455,7 @@
         "source": "Arabian Business",
         "category": "World",
         "published_at": "2026-08-26T01:01:11+00:00",
-        "fetched_at": "2026-08-26T01:43:47.966794+00:00"
+        "fetched_at": "2026-08-26T01:45:16.162522+00:00"
       },
       {
         "id": "f625afcb5984cf0e8d2c3128",
@@ -1495,7 +1495,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T00:55:53+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118647+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300588+00:00"
       },
       {
         "id": "db28850cbf46fd4bee11f8d4",
@@ -1525,7 +1525,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T00:47:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117089+00:00"
+        "fetched_at": "2026-08-26T01:45:15.298898+00:00"
       },
       {
         "id": "edc1dd03da28ed206f089896",
@@ -1565,7 +1565,7 @@
         "source": "ABC News - Breaking News, Latest News and Videos",
         "category": "World",
         "published_at": "2026-08-26T00:44:36+00:00",
-        "fetched_at": "2026-08-26T01:43:42.315028+00:00"
+        "fetched_at": "2026-08-26T01:45:10.189576+00:00"
       },
       {
         "id": "076c6ce4373eef2e49a37f62",
@@ -1575,7 +1575,7 @@
         "source": "CNA",
         "category": "World",
         "published_at": "2026-08-26T00:43:48+00:00",
-        "fetched_at": "2026-08-26T01:43:47.120532+00:00"
+        "fetched_at": "2026-08-26T01:45:15.302462+00:00"
       },
       {
         "id": "b25a254bfab32e591eff6142",
@@ -1605,7 +1605,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T00:42:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.120578+00:00"
+        "fetched_at": "2026-08-26T01:45:15.302510+00:00"
       },
       {
         "id": "71c2ab297b26c677e8c51ee6",
@@ -1615,7 +1615,7 @@
         "source": "Al Jazeera",
         "category": "World",
         "published_at": "2026-08-26T00:41:44+00:00",
-        "fetched_at": "2026-08-26T01:43:45.435648+00:00"
+        "fetched_at": "2026-08-26T01:45:13.567455+00:00"
       },
       {
         "id": "ef8bfbde314d621a598d24e5",
@@ -1625,7 +1625,7 @@
         "source": "Crikey",
         "category": "World",
         "published_at": "2026-08-26T00:39:35+00:00",
-        "fetched_at": "2026-08-26T01:43:47.967687+00:00"
+        "fetched_at": "2026-08-26T01:45:16.163273+00:00"
       },
       {
         "id": "1a2e7e8e1eb5a1ebaad48e7f",
@@ -1635,7 +1635,7 @@
         "source": "Asia News Network",
         "category": "World",
         "published_at": "2026-08-26T00:37:49+00:00",
-        "fetched_at": "2026-08-26T01:43:47.118776+00:00"
+        "fetched_at": "2026-08-26T01:45:15.300806+00:00"
       },
       {
         "id": "2d1fd278a323738b9f09eaa8",
@@ -1655,7 +1655,7 @@
         "source": "Shipping Telegraph",
         "category": "World",
         "published_at": "2026-08-26T00:31:57+00:00",
-        "fetched_at": "2026-08-26T01:43:46.289346+00:00"
+        "fetched_at": "2026-08-26T01:45:14.450781+00:00"
       },
       {
         "id": "3581f9cb8326e9d054aca7ff",
@@ -1665,7 +1665,7 @@
         "source": "CBS News",
         "category": "World",
         "published_at": "2026-08-26T00:28:00+00:00",
-        "fetched_at": "2026-08-26T01:43:43.058721+00:00"
+        "fetched_at": "2026-08-26T01:45:11.016477+00:00"
       },
       {
         "id": "91a85dea2241f036c03d4743",
@@ -1675,7 +1675,7 @@
         "source": "TradingView",
         "category": "World",
         "published_at": "2026-08-26T00:28:00+00:00",
-        "fetched_at": "2026-08-26T01:43:47.117648+00:00"
+        "fetched_at": "2026-08-26T01:45:15.299493+00:00"
       },
       {
         "id": "673c39b0394a54090b6e24bf",
@@ -1715,7 +1715,7 @@
         "source": "The Star",
         "category": "World",
         "published_at": "2026-08-26T00:19:42+00:00",
-        "fetched_at": "2026-08-26T01:43:46.290832+00:00"
+        "fetched_at": "2026-08-26T01:45:14.452139+00:00"
       },
       {
         "id": "ec7d300e0e1eeda283732bb2",
@@ -1755,7 +1755,7 @@
         "source": "The Straits Times",
         "category": "World",
         "published_at": "2026-08-26T00:08:00+00:00",
-        "fetched_at": "2026-08-26T01:43:44.676321+00:00"
+        "fetched_at": "2026-08-26T01:45:12.634474+00:00"
       },
       {
         "id": "2f3f2d27d5aa4a285ab4d323",
@@ -1765,7 +1765,7 @@
         "source": "Al Jazeera",
         "category": "World",
         "published_at": "2026-08-26T00:07:07+00:00",
-        "fetched_at": "2026-08-26T01:43:47.963771+00:00"
+        "fetched_at": "2026-08-26T01:45:16.159178+00:00"
       },
       {
         "id": "93bb8a492d476ed259fc95f8",
@@ -1775,7 +1775,7 @@
         "source": "WRAL",
         "category": "World",
         "published_at": "2026-08-26T00:05:59+00:00",
-        "fetched_at": "2026-08-26T01:43:42.316282+00:00"
+        "fetched_at": "2026-08-26T01:45:10.190714+00:00"
       },
       {
         "id": "e23ae89a67fdf9da9398d40d",
@@ -1785,7 +1785,7 @@
         "source": "WSJ",
         "category": "World",
         "published_at": "2026-08-26T00:05:00+00:00",
-        "fetched_at": "2026-08-26T01:43:47.965223+00:00"
+        "fetched_at": "2026-08-26T01:45:16.160858+00:00"
       },
       {
         "id": "5f1044b4e6d41d462ec12b07",
@@ -1805,7 +1805,7 @@
         "source": "Asia Insurance Review",
         "category": "World",
         "published_at": "2026-08-26T00:00:42+00:00",
-        "fetched_at": "2026-08-26T01:43:47.116904+00:00"
+        "fetched_at": "2026-08-26T01:45:15.298791+00:00"
       },
       {
         "id": "4050c2a21f39277202b6a2e6",
@@ -1825,7 +1825,7 @@
         "source": "The Jerusalem Post",
         "category": "World",
         "published_at": "2026-08-26T00:00:05+00:00",
-        "fetched_at": "2026-08-26T01:43:47.964190+00:00"
+        "fetched_at": "2026-08-26T01:45:16.159645+00:00"
       },
       {
         "id": "8a37f7c8ff973f0f5e6159c9",
@@ -1835,7 +1835,7 @@
         "source": "Hindustan Times",
         "category": "World",
         "published_at": "2026-08-25T23:57:58+00:00",
-        "fetched_at": "2026-08-26T01:43:42.314600+00:00"
+        "fetched_at": "2026-08-26T01:45:10.189186+00:00"
       },
       {
         "id": "883479dbbf7391b199bb11ec",
@@ -1855,7 +1855,7 @@
         "source": "Devdiscourse",
         "category": "World",
         "published_at": "2026-08-25T23:52:58+00:00",
-        "fetched_at": "2026-08-26T01:43:48.800226+00:00"
+        "fetched_at": "2026-08-26T01:45:17.011364+00:00"
       },
       {
         "id": "b99c94e63846de9bf4a87095",
@@ -1875,7 +1875,7 @@
         "source": "Devdiscourse",
         "category": "World",
         "published_at": "2026-08-25T23:52:53+00:00",
-        "fetched_at": "2026-08-26T01:43:43.054508+00:00"
+        "fetched_at": "2026-08-26T01:45:11.012553+00:00"
       },
       {
         "id": "9c5a64c14756057dc3eaf29b",
@@ -1885,7 +1885,7 @@
         "source": "Devdiscourse",
         "category": "World",
         "published_at": "2026-08-25T23:52:48+00:00",
-        "fetched_at": "2026-08-26T01:43:42.312859+00:00"
+        "fetched_at": "2026-08-26T01:45:10.187399+00:00"
       },
       {
         "id": "b882e48c52dfb3b06254f91a",
@@ -1895,7 +1895,7 @@
         "source": "Agência de Notícias Brasil-Árabe - ANBA",
         "category": "World",
         "published_at": "2026-08-25T23:47:41+00:00",
-        "fetched_at": "2026-08-26T01:43:44.674404+00:00"
+        "fetched_at": "2026-08-26T01:45:12.632733+00:00"
       },
       {
         "id": "f06624d6f4564dd644b370ff",
@@ -1905,7 +1905,7 @@
         "source": "Reuters",
         "category": "World",
         "published_at": "2026-08-25T23:47:23+00:00",
-        "fetched_at": "2026-08-26T01:43:44.673472+00:00"
+        "fetched_at": "2026-08-26T01:45:12.631687+00:00"
       },
       {
         "id": "174657f9d3461a3e5a38b32e",
@@ -1915,7 +1915,7 @@
         "source": "The Sunday Guardian",
         "category": "World",
         "published_at": "2026-08-25T23:43:43+00:00",
-        "fetched_at": "2026-08-26T01:43:46.286894+00:00"
+        "fetched_at": "2026-08-26T01:45:14.448175+00:00"
       },
       {
         "id": "7b509d6ff7faf4d7f5831dba",
@@ -1925,7 +1925,7 @@
         "source": "InsuranceAsia News",
         "category": "World",
         "published_at": "2026-08-25T23:39:12+00:00",
-        "fetched_at": "2026-08-26T01:43:47.119028+00:00"
+        "fetched_at": "2026-08-26T01:45:15.301045+00:00"
       },
       {
         "id": "70d92dec3d271c8a28c64206",
@@ -1935,7 +1935,7 @@
         "source": "ReliefWeb",
         "category": "World",
         "published_at": "2026-08-25T23:39:10+00:00",
-        "fetched_at": "2026-08-26T01:43:45.434396+00:00"
+        "fetched_at": "2026-08-26T01:45:13.565950+00:00"
       },
       {
         "id": "05d5d9e7023b182e58179671",
@@ -1955,7 +1955,7 @@
         "source": "Reuters",
         "category": "World",
         "published_at": "2026-08-25T23:30:30+00:00",
-        "fetched_at": "2026-08-26T01:43:44.674602+00:00"
+        "fetched_at": "2026-08-26T01:45:12.632958+00:00"
       },
       {
         "id": "e3a23119236e40fe0888001e",
@@ -1995,7 +1995,7 @@
         "source": "CNA",
         "category": "World",
         "published_at": "2026-08-25T23:18:37+00:00",
-        "fetched_at": "2026-08-26T01:43:47.120615+00:00"
+        "fetched_at": "2026-08-26T01:45:15.302544+00:00"
       },
       {
         "id": "cf56418d0814b1eef2492cfc",
@@ -2005,7 +2005,7 @@
         "source": "The New York Times",
         "category": "World",
         "published_at": "2026-08-25T23:17:59+00:00",
-        "fetched_at": "2026-08-26T01:43:44.675046+00:00"
+        "fetched_at": "2026-08-26T01:45:12.633412+00:00"
       }
     ],
     "States": [
@@ -2017,7 +2017,17 @@
         "source": "Daily Pioneer",
         "category": "States",
         "published_at": "2026-08-26T01:40:22+00:00",
-        "fetched_at": "2026-08-26T01:43:57.384441+00:00"
+        "fetched_at": "2026-08-26T01:45:26.023394+00:00"
+      },
+      {
+        "id": "d0b789c2a3cf60f13a0a7a46",
+        "title": "Bhuleshwar दुर्घटनेनंतर BMC चा मोठा निर्णय, मोठ्या मूर्तींसाठी सर्टिफिकेट बंधनकारक - News18 Marathi",
+        "description": "Bhuleshwar दुर्घटनेनंतर BMC चा मोठा निर्णय, मोठ्या मूर्तींसाठी सर्टिफिकेट बंधनकारक News18 Marathi",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1oQXpSb2tVd0xTVmtxR1BuR1ZqRXpuZ2lpNUpuNk1aN0dyQjFOcXNqeF8zcWxOOWJlZVhxenYyQ0Q5dTZYMGxJMFFXclZTSnJaUXRySkNrSk00eTZEUmJMdFdoUUlqSG5ta3BUbEVCTlhPb3NlNVh0aWFIeV8?oc=5",
+        "source": "News18 Marathi",
+        "category": "States",
+        "published_at": "2026-08-26T01:38:40+00:00",
+        "fetched_at": "2026-08-26T01:45:29.348423+00:00"
       },
       {
         "id": "b4c0fbc75a8ef73c58c4b1c5",
@@ -2027,7 +2037,7 @@
         "source": "News18 Tamil",
         "category": "States",
         "published_at": "2026-08-26T01:37:44+00:00",
-        "fetched_at": "2026-08-26T01:43:56.544257+00:00"
+        "fetched_at": "2026-08-26T01:45:25.187323+00:00"
       },
       {
         "id": "5f98c094a10785342005a4ba",
@@ -2037,7 +2047,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-26T01:33:00+00:00",
-        "fetched_at": "2026-08-26T01:44:00.491550+00:00"
+        "fetched_at": "2026-08-26T01:45:29.344867+00:00"
       },
       {
         "id": "b7f2bb8a8051ad52fb2922d5",
@@ -2047,7 +2057,7 @@
         "source": "Daily Pioneer",
         "category": "States",
         "published_at": "2026-08-26T01:31:30+00:00",
-        "fetched_at": "2026-08-26T01:44:05.288022+00:00"
+        "fetched_at": "2026-08-26T01:45:34.349655+00:00"
       },
       {
         "id": "271b2c224088072db4627206",
@@ -2057,7 +2067,7 @@
         "source": "Daily Pioneer",
         "category": "States",
         "published_at": "2026-08-26T01:31:29+00:00",
-        "fetched_at": "2026-08-26T01:44:00.495813+00:00"
+        "fetched_at": "2026-08-26T01:45:29.349427+00:00"
       },
       {
         "id": "a7ab075e38b0a6c02e2ad9c9",
@@ -2067,7 +2077,7 @@
         "source": "Hindustan Times",
         "category": "States",
         "published_at": "2026-08-26T01:30:10+00:00",
-        "fetched_at": "2026-08-26T01:44:01.290428+00:00"
+        "fetched_at": "2026-08-26T01:45:30.143558+00:00"
       },
       {
         "id": "ffdca334540a4a06ec899269",
@@ -2077,7 +2087,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T01:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:56.539930+00:00"
+        "fetched_at": "2026-08-26T01:45:25.183394+00:00"
       },
       {
         "id": "97e729e5493a139e5e948a4f",
@@ -2087,7 +2097,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T01:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:58.208703+00:00"
+        "fetched_at": "2026-08-26T01:45:26.879059+00:00"
       },
       {
         "id": "06100fdd2c8d74ae35bc6ecc",
@@ -2097,7 +2107,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T01:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:58.208998+00:00"
+        "fetched_at": "2026-08-26T01:45:26.879305+00:00"
       },
       {
         "id": "bc8a311a8b1d9f2cf699d575",
@@ -2107,7 +2117,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-26T01:22:00+00:00",
-        "fetched_at": "2026-08-26T01:43:57.383648+00:00"
+        "fetched_at": "2026-08-26T01:45:26.022685+00:00"
       },
       {
         "id": "d07f2e497da05f0e9b3909fa",
@@ -2117,7 +2127,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-26T01:19:49+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067609+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961589+00:00"
       },
       {
         "id": "c3b6c50fad5e9fd0ef8cf459",
@@ -2127,7 +2137,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T01:17:32+00:00",
-        "fetched_at": "2026-08-26T01:44:02.908073+00:00"
+        "fetched_at": "2026-08-26T01:45:31.881660+00:00"
       },
       {
         "id": "7697e0666610fa89c1db49e6",
@@ -2137,7 +2147,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T01:16:10+00:00",
-        "fetched_at": "2026-08-26T01:44:02.907137+00:00"
+        "fetched_at": "2026-08-26T01:45:31.880773+00:00"
       },
       {
         "id": "a2c219ddbde4b948ff4cb306",
@@ -2147,7 +2157,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T01:11:49+00:00",
-        "fetched_at": "2026-08-26T01:44:02.908508+00:00"
+        "fetched_at": "2026-08-26T01:45:31.882155+00:00"
       },
       {
         "id": "4f39de9b9e1dcc292835ece8",
@@ -2157,7 +2167,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-26T01:09:32+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067281+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961194+00:00"
       },
       {
         "id": "0d0438a52f7b923adea224c1",
@@ -2167,7 +2177,7 @@
         "source": "Hindustan Times",
         "category": "States",
         "published_at": "2026-08-26T01:08:58+00:00",
-        "fetched_at": "2026-08-26T01:44:01.290090+00:00"
+        "fetched_at": "2026-08-26T01:45:30.143234+00:00"
       },
       {
         "id": "a14c29156b0cc0dfb6b64be6",
@@ -2177,7 +2187,7 @@
         "source": "NDTV",
         "category": "States",
         "published_at": "2026-08-26T01:07:17+00:00",
-        "fetched_at": "2026-08-26T01:44:06.881983+00:00"
+        "fetched_at": "2026-08-26T01:45:35.981865+00:00"
       },
       {
         "id": "e715ad7221296c95db27cfce",
@@ -2187,7 +2197,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-26T01:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:01.290338+00:00"
+        "fetched_at": "2026-08-26T01:45:30.143455+00:00"
       },
       {
         "id": "ec8022a4b407a79a3522b3fb",
@@ -2197,7 +2207,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T00:59:21+00:00",
-        "fetched_at": "2026-08-26T01:44:02.907736+00:00"
+        "fetched_at": "2026-08-26T01:45:31.881354+00:00"
       },
       {
         "id": "26e24c0efb15e0f8deefb619",
@@ -2207,7 +2217,7 @@
         "source": "Daily Pioneer",
         "category": "States",
         "published_at": "2026-08-26T00:57:18+00:00",
-        "fetched_at": "2026-08-26T01:44:05.288418+00:00"
+        "fetched_at": "2026-08-26T01:45:34.349985+00:00"
       },
       {
         "id": "1df1d688aae85bf43931ffd1",
@@ -2217,7 +2227,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T00:56:29+00:00",
-        "fetched_at": "2026-08-26T01:44:02.903503+00:00"
+        "fetched_at": "2026-08-26T01:45:31.877075+00:00"
       },
       {
         "id": "bdeb331849979980bf346c9b",
@@ -2227,7 +2237,7 @@
         "source": "Telegraph India",
         "category": "States",
         "published_at": "2026-08-26T00:50:08+00:00",
-        "fetched_at": "2026-08-26T01:44:02.906778+00:00"
+        "fetched_at": "2026-08-26T01:45:31.880446+00:00"
       },
       {
         "id": "1dd9702a7a068e82836b0194",
@@ -2237,7 +2247,7 @@
         "source": "Hindustan Times",
         "category": "States",
         "published_at": "2026-08-26T00:45:33+00:00",
-        "fetched_at": "2026-08-26T01:44:01.289590+00:00"
+        "fetched_at": "2026-08-26T01:45:30.142652+00:00"
       },
       {
         "id": "e98c8f6991f039acedd9a7b6",
@@ -2247,7 +2257,7 @@
         "source": "BusinessLine",
         "category": "States",
         "published_at": "2026-08-26T00:45:00+00:00",
-        "fetched_at": "2026-08-26T01:43:56.541778+00:00"
+        "fetched_at": "2026-08-26T01:45:25.184962+00:00"
       },
       {
         "id": "317266a3cdf6d64f0b7cb36b",
@@ -2257,7 +2267,7 @@
         "source": "The News Mill",
         "category": "States",
         "published_at": "2026-08-26T00:42:31+00:00",
-        "fetched_at": "2026-08-26T01:44:03.821267+00:00"
+        "fetched_at": "2026-08-26T01:45:32.621052+00:00"
       },
       {
         "id": "45a87da449b5a3630b855f6f",
@@ -2267,7 +2277,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T00:31:00+00:00",
-        "fetched_at": "2026-08-26T01:43:57.380050+00:00"
+        "fetched_at": "2026-08-26T01:45:26.019321+00:00"
       },
       {
         "id": "75a04203039ec8cd4cb54adf",
@@ -2277,7 +2287,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T00:30:00+00:00",
-        "fetched_at": "2026-08-26T01:43:56.543105+00:00"
+        "fetched_at": "2026-08-26T01:45:25.186227+00:00"
       },
       {
         "id": "87963816f553f091297a3b44",
@@ -2287,7 +2297,7 @@
         "source": "The Hans India",
         "category": "States",
         "published_at": "2026-08-26T00:17:25+00:00",
-        "fetched_at": "2026-08-26T01:43:57.380886+00:00"
+        "fetched_at": "2026-08-26T01:45:26.020253+00:00"
       },
       {
         "id": "6b4d5ef0941a27a79dd5acb7",
@@ -2297,7 +2307,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-26T00:16:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.066283+00:00"
+        "fetched_at": "2026-08-26T01:45:30.960059+00:00"
       },
       {
         "id": "d74f3a9096f022b2ecce3c30",
@@ -2307,7 +2317,7 @@
         "source": "Prop News Time",
         "category": "States",
         "published_at": "2026-08-26T00:00:40+00:00",
-        "fetched_at": "2026-08-26T01:43:58.977533+00:00"
+        "fetched_at": "2026-08-26T01:45:27.696654+00:00"
       },
       {
         "id": "651c6caef2eb823d73a1c649",
@@ -2317,7 +2327,7 @@
         "source": "Daily Pioneer",
         "category": "States",
         "published_at": "2026-08-25T23:58:39+00:00",
-        "fetched_at": "2026-08-26T01:44:02.070093+00:00"
+        "fetched_at": "2026-08-26T01:45:30.964063+00:00"
       },
       {
         "id": "c471b6532b08d30a7363049d",
@@ -2327,7 +2337,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T23:54:31+00:00",
-        "fetched_at": "2026-08-26T01:44:02.905027+00:00"
+        "fetched_at": "2026-08-26T01:45:31.878563+00:00"
       },
       {
         "id": "9bef9ffc04242cd95026b795",
@@ -2337,7 +2347,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T23:52:16+00:00",
-        "fetched_at": "2026-08-26T01:44:02.066347+00:00"
+        "fetched_at": "2026-08-26T01:45:30.960130+00:00"
       },
       {
         "id": "1fd626051646403fb7f7d45f",
@@ -2347,17 +2357,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T23:50:49+00:00",
-        "fetched_at": "2026-08-26T01:43:58.208928+00:00"
-      },
-      {
-        "id": "12312c0df173f0df403bf91b",
-        "title": "Bihar Declared Naxal-Free After Surrender of Last Armed Maoist in Munger - News On AIR",
-        "description": "Bihar Declared Naxal-Free After Surrender of Last Armed Maoist in Munger News On AIR",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOemhuV21ULUFxM1EzSWpxb2dodmIwQ2JEVFpRM2dCTVFFOXI1ZjdyUGxDWnZXdjZXdnhtbE9uM0RIdW5pbmt3NW9WejRWdjZfTkZpSHoyS1JCMEJ5Y0d2c081N19pVnladnBkS3NkTEhSelE4dW1GT2xvcF9WYlhaRlBIRV9ldVRUU1hyU3ZBMXpZY2MxcngtOHA5R3hFOUU?oc=5",
-        "source": "News On AIR",
-        "category": "States",
-        "published_at": "2026-08-25T23:45:50+00:00",
-        "fetched_at": "2026-08-26T01:44:06.076346+00:00"
+        "fetched_at": "2026-08-26T01:45:26.879265+00:00"
       },
       {
         "id": "56bee766939be4699fa4f1ec",
@@ -2367,7 +2367,7 @@
         "source": "The Tribune",
         "category": "States",
         "published_at": "2026-08-25T23:43:20+00:00",
-        "fetched_at": "2026-08-26T01:44:01.292774+00:00"
+        "fetched_at": "2026-08-26T01:45:30.144777+00:00"
       },
       {
         "id": "c0c454c88322d26c337f9f24",
@@ -2387,7 +2387,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T23:23:18+00:00",
-        "fetched_at": "2026-08-26T01:44:00.494481+00:00"
+        "fetched_at": "2026-08-26T01:45:29.348203+00:00"
       },
       {
         "id": "86bfc503264dd66ce38adefb",
@@ -2397,7 +2397,7 @@
         "source": "Pragativadi",
         "category": "States",
         "published_at": "2026-08-25T23:18:26+00:00",
-        "fetched_at": "2026-08-26T01:44:07.610732+00:00"
+        "fetched_at": "2026-08-26T01:45:36.718777+00:00"
       },
       {
         "id": "5fadce824c54acb929dd33c1",
@@ -2407,7 +2407,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T23:13:06+00:00",
-        "fetched_at": "2026-08-26T01:44:02.904757+00:00"
+        "fetched_at": "2026-08-26T01:45:31.878270+00:00"
       },
       {
         "id": "c4c29240cd4d858083628193",
@@ -2417,7 +2417,7 @@
         "source": "Power Peak Digest",
         "category": "States",
         "published_at": "2026-08-25T23:04:56+00:00",
-        "fetched_at": "2026-08-26T01:44:02.069833+00:00"
+        "fetched_at": "2026-08-26T01:45:30.963936+00:00"
       },
       {
         "id": "22c9cd77d5d47f75ab02ed5e",
@@ -2427,7 +2427,7 @@
         "source": "The News Mill",
         "category": "States",
         "published_at": "2026-08-25T23:02:17+00:00",
-        "fetched_at": "2026-08-26T01:43:56.543371+00:00"
+        "fetched_at": "2026-08-26T01:45:25.186530+00:00"
       },
       {
         "id": "238fb26c28de705f5b6925ae",
@@ -2437,7 +2437,7 @@
         "source": "Daily Excelsior",
         "category": "States",
         "published_at": "2026-08-25T22:50:46+00:00",
-        "fetched_at": "2026-08-26T01:44:02.907981+00:00"
+        "fetched_at": "2026-08-26T01:45:31.881572+00:00"
       },
       {
         "id": "902dad306d1836af8016b668",
@@ -2447,7 +2447,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T22:40:59+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542398+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185607+00:00"
       },
       {
         "id": "a491368eb556d618bee62c04",
@@ -2457,7 +2457,7 @@
         "source": "NDTV",
         "category": "States",
         "published_at": "2026-08-25T22:40:27+00:00",
-        "fetched_at": "2026-08-26T01:44:01.288776+00:00"
+        "fetched_at": "2026-08-26T01:45:30.141810+00:00"
       },
       {
         "id": "e2df637cfde5e56cf31a6777",
@@ -2467,7 +2467,7 @@
         "source": "Daily Excelsior",
         "category": "States",
         "published_at": "2026-08-25T22:35:09+00:00",
-        "fetched_at": "2026-08-26T01:44:02.068344+00:00"
+        "fetched_at": "2026-08-26T01:45:30.962392+00:00"
       },
       {
         "id": "2e7bb5a3e1253897ec879cf3",
@@ -2477,7 +2477,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T22:30:49+00:00",
-        "fetched_at": "2026-08-26T01:44:00.493760+00:00"
+        "fetched_at": "2026-08-26T01:45:29.347326+00:00"
       },
       {
         "id": "2f7dc12c8d5ed2a3b973c934",
@@ -2487,7 +2487,7 @@
         "source": "Deccan Herald",
         "category": "States",
         "published_at": "2026-08-25T22:29:45+00:00",
-        "fetched_at": "2026-08-26T01:43:57.384355+00:00"
+        "fetched_at": "2026-08-26T01:45:26.023314+00:00"
       },
       {
         "id": "2c8bf778d340e98459616147",
@@ -2497,7 +2497,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T22:25:22+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542489+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185694+00:00"
       },
       {
         "id": "5e498a83c533bbc15026ea8b",
@@ -2507,7 +2507,17 @@
         "source": "News18",
         "category": "States",
         "published_at": "2026-08-25T22:20:58+00:00",
-        "fetched_at": "2026-08-26T01:44:02.904809+00:00"
+        "fetched_at": "2026-08-26T01:45:31.878330+00:00"
+      },
+      {
+        "id": "34259a24fbd1c3ffb50acdd9",
+        "title": "Madhya Pradesh pole vaulter Kuldeep Kumar breaks national record at Bhubaneswar - News On AIR",
+        "description": "Madhya Pradesh pole vaulter Kuldeep Kumar breaks national record at Bhubaneswar News On AIR",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOGg4TG5jTnNZMXVwdmdVYzk1Si1kWVkwTmpfQTAzLTVRZjJBR2FCUk5jc3BlQnkyanBRbkRuM2JWcXpuZmZQVW04ZWEtOWJpdDBDMWs3T3Z6NEVHdUV6WGVlaHBCdXhKbTNwak9nMGJNSG1jWkR1RFhEalYzZkhDR1B2SE9neDRiNFVlYnNHVE1WWHM0U2RiR0F1VWlSS2pwTUNDanNjOVY?oc=5",
+        "source": "News On AIR",
+        "category": "States",
+        "published_at": "2026-08-25T22:19:31+00:00",
+        "fetched_at": "2026-08-26T01:45:34.348982+00:00"
       },
       {
         "id": "84ddbcc30da1166277592405",
@@ -2517,7 +2527,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T22:14:49+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067561+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961532+00:00"
       },
       {
         "id": "13034410f83924c83910cf53",
@@ -2527,7 +2537,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T22:05:33+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067747+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961749+00:00"
       },
       {
         "id": "6365cb30b569698e70a49315",
@@ -2537,7 +2547,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T22:04:00+00:00",
-        "fetched_at": "2026-08-26T01:43:56.543244+00:00"
+        "fetched_at": "2026-08-26T01:45:25.186398+00:00"
       },
       {
         "id": "dce939cac475c06aa90cf705",
@@ -2547,7 +2557,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:53:57+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542737+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185932+00:00"
       },
       {
         "id": "e122422d86662b1effb43c34",
@@ -2557,7 +2567,7 @@
         "source": "The Hans India",
         "category": "States",
         "published_at": "2026-08-25T21:51:49+00:00",
-        "fetched_at": "2026-08-26T01:43:59.686471+00:00"
+        "fetched_at": "2026-08-26T01:45:28.564373+00:00"
       },
       {
         "id": "9588222533a9381cf71e10c6",
@@ -2567,7 +2577,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:48:51+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542349+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185561+00:00"
       },
       {
         "id": "b0e38a207f5d809ef45d5a74",
@@ -2577,7 +2587,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:48:10+00:00",
-        "fetched_at": "2026-08-26T01:44:07.610470+00:00"
+        "fetched_at": "2026-08-26T01:45:36.718449+00:00"
       },
       {
         "id": "23122a3e2374a7abff668006",
@@ -2587,7 +2597,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:39:01+00:00",
-        "fetched_at": "2026-08-26T01:44:06.076772+00:00"
+        "fetched_at": "2026-08-26T01:45:35.141600+00:00"
       },
       {
         "id": "7404ee1de6e67ac5fb9b0c42",
@@ -2597,7 +2607,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:32:37+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067424+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961363+00:00"
       },
       {
         "id": "0ff01a872f31a4a90a43646b",
@@ -2607,7 +2617,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:27:12+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067652+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961639+00:00"
       },
       {
         "id": "6a35b29d74b3303cd756d20b",
@@ -2617,7 +2627,7 @@
         "source": "Deccan Herald",
         "category": "States",
         "published_at": "2026-08-25T21:19:26+00:00",
-        "fetched_at": "2026-08-26T01:43:59.688702+00:00"
+        "fetched_at": "2026-08-26T01:45:28.566411+00:00"
       },
       {
         "id": "5c0fdca5baf7e626947f4333",
@@ -2627,7 +2637,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T21:19:10+00:00",
-        "fetched_at": "2026-08-26T01:44:01.292222+00:00"
+        "fetched_at": "2026-08-26T01:45:30.144520+00:00"
       },
       {
         "id": "06fc71df1eae06df97535ace",
@@ -2637,7 +2647,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T21:16:14+00:00",
-        "fetched_at": "2026-08-26T01:44:01.289733+00:00"
+        "fetched_at": "2026-08-26T01:45:30.142921+00:00"
       },
       {
         "id": "5cb8eb8690c797d10b18b60b",
@@ -2647,7 +2657,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T21:13:57+00:00",
-        "fetched_at": "2026-08-26T01:44:01.288991+00:00"
+        "fetched_at": "2026-08-26T01:45:30.142026+00:00"
       },
       {
         "id": "5d3989316598098b97a00506",
@@ -2657,7 +2667,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:09:11+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542529+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185733+00:00"
       },
       {
         "id": "84ab1a6b1ffe3657a809ca1a",
@@ -2667,7 +2677,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T21:08:24+00:00",
-        "fetched_at": "2026-08-26T01:44:01.292486+00:00"
+        "fetched_at": "2026-08-26T01:45:30.144644+00:00"
       },
       {
         "id": "12dfbfec5942f288a71bc5c7",
@@ -2677,7 +2687,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T21:05:12+00:00",
-        "fetched_at": "2026-08-26T01:43:56.542444+00:00"
+        "fetched_at": "2026-08-26T01:45:25.185650+00:00"
       },
       {
         "id": "3f3b9cfe27460d88bbb0b470",
@@ -2687,7 +2697,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T20:59:45+00:00",
-        "fetched_at": "2026-08-26T01:44:03.821049+00:00"
+        "fetched_at": "2026-08-26T01:45:32.620810+00:00"
       },
       {
         "id": "6cb27f6c45500d8792177422",
@@ -2697,7 +2707,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T20:46:00+00:00",
-        "fetched_at": "2026-08-26T01:44:00.494104+00:00"
+        "fetched_at": "2026-08-26T01:45:29.347729+00:00"
       },
       {
         "id": "02a3c4c2395263d2118b778c",
@@ -2707,7 +2717,7 @@
         "source": "The Tribune",
         "category": "States",
         "published_at": "2026-08-25T20:41:07+00:00",
-        "fetched_at": "2026-08-26T01:44:06.883522+00:00"
+        "fetched_at": "2026-08-26T01:45:35.983461+00:00"
       },
       {
         "id": "20fc64599548eb986b7c97ca",
@@ -2717,7 +2727,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T20:37:29+00:00",
-        "fetched_at": "2026-08-26T01:44:03.821619+00:00"
+        "fetched_at": "2026-08-26T01:45:32.621440+00:00"
       },
       {
         "id": "63b0986f7c47e03ef476ad84",
@@ -2727,7 +2737,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T20:27:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.903622+00:00"
+        "fetched_at": "2026-08-26T01:45:31.877204+00:00"
       },
       {
         "id": "8f2386e767237515c40eec73",
@@ -2737,7 +2747,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T20:22:10+00:00",
-        "fetched_at": "2026-08-26T01:44:06.076115+00:00"
+        "fetched_at": "2026-08-26T01:45:35.141271+00:00"
       },
       {
         "id": "ab70aba9b623a82406970fd2",
@@ -2747,7 +2757,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T20:21:00+00:00",
-        "fetched_at": "2026-08-26T01:44:00.494382+00:00"
+        "fetched_at": "2026-08-26T01:45:29.348099+00:00"
       },
       {
         "id": "a75de3da3f1d95a1cd4e8f21",
@@ -2757,7 +2767,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T20:17:07+00:00",
-        "fetched_at": "2026-08-26T01:44:02.067701+00:00"
+        "fetched_at": "2026-08-26T01:45:30.961697+00:00"
       },
       {
         "id": "9280be43c8370f81b43f0aaa",
@@ -2767,7 +2777,7 @@
         "source": "The Tribune",
         "category": "States",
         "published_at": "2026-08-25T20:12:52+00:00",
-        "fetched_at": "2026-08-26T01:44:06.884565+00:00"
+        "fetched_at": "2026-08-26T01:45:35.984492+00:00"
       },
       {
         "id": "24c4f474f89de3de140b90a9",
@@ -2777,7 +2787,7 @@
         "source": ":: India News Calling ::",
         "category": "States",
         "published_at": "2026-08-25T20:11:16+00:00",
-        "fetched_at": "2026-08-26T01:44:06.882055+00:00"
+        "fetched_at": "2026-08-26T01:45:35.981946+00:00"
       },
       {
         "id": "557e4c2e90deb805e3c1663f",
@@ -2787,7 +2797,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T20:02:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.068481+00:00"
+        "fetched_at": "2026-08-26T01:45:30.962563+00:00"
       },
       {
         "id": "1fea58f05b13c3264804f038",
@@ -2797,7 +2807,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T19:58:09+00:00",
-        "fetched_at": "2026-08-26T01:43:58.209730+00:00"
+        "fetched_at": "2026-08-26T01:45:26.879958+00:00"
       },
       {
         "id": "5c38df4420a259ff46c7baca",
@@ -2807,7 +2817,7 @@
         "source": "The Indian Express",
         "category": "States",
         "published_at": "2026-08-25T19:57:46+00:00",
-        "fetched_at": "2026-08-26T01:44:01.291238+00:00"
+        "fetched_at": "2026-08-26T01:45:30.144016+00:00"
       },
       {
         "id": "9dbabfe1116a9f408b71755c",
@@ -2817,7 +2827,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T19:56:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.069340+00:00"
+        "fetched_at": "2026-08-26T01:45:30.963388+00:00"
       },
       {
         "id": "262e7d25c0845b35fe00793a",
@@ -2827,7 +2837,7 @@
         "source": "Andhra Prabha ePaper",
         "category": "States",
         "published_at": "2026-08-25T19:50:04+00:00",
-        "fetched_at": "2026-08-26T01:43:59.689424+00:00"
+        "fetched_at": "2026-08-26T01:45:28.567080+00:00"
       },
       {
         "id": "6be99b045d16036520c6e979",
@@ -2837,7 +2847,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T19:48:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.068709+00:00"
+        "fetched_at": "2026-08-26T01:45:30.962818+00:00"
       },
       {
         "id": "024ba8db6904a2cc7a8af098",
@@ -2847,7 +2857,7 @@
         "source": "NDTV",
         "category": "States",
         "published_at": "2026-08-25T19:44:33+00:00",
-        "fetched_at": "2026-08-26T01:44:01.289372+00:00"
+        "fetched_at": "2026-08-26T01:45:30.142435+00:00"
       },
       {
         "id": "1cbc8c61ed255aba08e1e398",
@@ -2857,7 +2867,7 @@
         "source": "The Economic Times",
         "category": "States",
         "published_at": "2026-08-25T19:43:26+00:00",
-        "fetched_at": "2026-08-26T01:44:02.906864+00:00"
+        "fetched_at": "2026-08-26T01:45:31.880542+00:00"
       },
       {
         "id": "5219f409b8b59f468b234af7",
@@ -2867,7 +2877,7 @@
         "source": "MillenniumPost",
         "category": "States",
         "published_at": "2026-08-25T19:40:49+00:00",
-        "fetched_at": "2026-08-26T01:44:02.907322+00:00"
+        "fetched_at": "2026-08-26T01:45:31.881006+00:00"
       },
       {
         "id": "0d6d7d66f961c4adcc43d575",
@@ -2877,7 +2887,7 @@
         "source": "News On AIR",
         "category": "States",
         "published_at": "2026-08-25T19:40:46+00:00",
-        "fetched_at": "2026-08-26T01:43:58.208467+00:00"
+        "fetched_at": "2026-08-26T01:45:26.878828+00:00"
       },
       {
         "id": "fa2aa231631a45c2867aad38",
@@ -2887,7 +2897,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T19:32:00+00:00",
-        "fetched_at": "2026-08-26T01:43:56.540730+00:00"
+        "fetched_at": "2026-08-26T01:45:25.184133+00:00"
       },
       {
         "id": "7591861d063c49953a01eb53",
@@ -2897,7 +2907,7 @@
         "source": "navhindtimes.in",
         "category": "States",
         "published_at": "2026-08-25T19:31:53+00:00",
-        "fetched_at": "2026-08-26T01:44:04.577923+00:00"
+        "fetched_at": "2026-08-26T01:45:33.460644+00:00"
       },
       {
         "id": "5a0516e765e5063acc7cd4b9",
@@ -2907,7 +2917,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T19:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:02.068255+00:00"
+        "fetched_at": "2026-08-26T01:45:30.962293+00:00"
       },
       {
         "id": "cbb8cdf573e12bfa7c12a210",
@@ -2917,7 +2927,7 @@
         "source": "The Economic Times",
         "category": "States",
         "published_at": "2026-08-25T19:22:10+00:00",
-        "fetched_at": "2026-08-26T01:44:00.492361+00:00"
+        "fetched_at": "2026-08-26T01:45:29.345801+00:00"
       },
       {
         "id": "71af60290ffe5d45bed7b458",
@@ -2927,7 +2937,7 @@
         "source": "The Economic Times",
         "category": "States",
         "published_at": "2026-08-25T19:22:10+00:00",
-        "fetched_at": "2026-08-26T01:44:00.495210+00:00"
+        "fetched_at": "2026-08-26T01:45:29.348862+00:00"
       },
       {
         "id": "60ec92eab641b91b1ee01dbb",
@@ -2937,7 +2947,7 @@
         "source": "The Economic Times",
         "category": "States",
         "published_at": "2026-08-25T19:21:07+00:00",
-        "fetched_at": "2026-08-26T01:44:06.076496+00:00"
+        "fetched_at": "2026-08-26T01:45:35.141718+00:00"
       },
       {
         "id": "b0d9ee3561ca42191f5c8a65",
@@ -2947,7 +2957,7 @@
         "source": "BigInfo.in",
         "category": "States",
         "published_at": "2026-08-25T19:20:31+00:00",
-        "fetched_at": "2026-08-26T01:43:59.689467+00:00"
+        "fetched_at": "2026-08-26T01:45:28.567118+00:00"
       },
       {
         "id": "d4b4590e5a81e444aeafd8cb",
@@ -2957,7 +2967,7 @@
         "source": "MillenniumPost",
         "category": "States",
         "published_at": "2026-08-25T19:19:17+00:00",
-        "fetched_at": "2026-08-26T01:44:02.908727+00:00"
+        "fetched_at": "2026-08-26T01:45:31.882263+00:00"
       },
       {
         "id": "d24cee3bf555f52ef829c8ca",
@@ -2967,7 +2977,7 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T19:15:35+00:00",
-        "fetched_at": "2026-08-26T01:43:57.384107+00:00"
+        "fetched_at": "2026-08-26T01:45:26.023083+00:00"
       },
       {
         "id": "798aa83ec73bd71cbce4d336",
@@ -2977,7 +2987,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T19:13:00+00:00",
-        "fetched_at": "2026-08-26T01:44:00.492593+00:00"
+        "fetched_at": "2026-08-26T01:45:29.346115+00:00"
       },
       {
         "id": "b6d5c9c63726e8b1c529c8fc",
@@ -2987,7 +2997,7 @@
         "source": "The Times of India",
         "category": "States",
         "published_at": "2026-08-25T19:13:00+00:00",
-        "fetched_at": "2026-08-26T01:44:01.290923+00:00"
+        "fetched_at": "2026-08-26T01:45:30.143813+00:00"
       },
       {
         "id": "76ae57b55e2636600659c4cf",
@@ -2997,20 +3007,20 @@
         "source": "The Hindu",
         "category": "States",
         "published_at": "2026-08-25T19:11:03+00:00",
-        "fetched_at": "2026-08-26T01:43:57.383691+00:00"
-      },
-      {
-        "id": "7a48f67f2bfc6e05e7e54327",
-        "title": "AP MEPMA, GoMill Join Hands To Empower 500 Women With Millet Enterprises - Deccan Chronicle",
-        "description": "AP MEPMA, GoMill Join Hands To Empower 500 Women With Millet Enterprises Deccan Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNHJ6SjhTdml3eFlFUUpCY0dnekd5X0ctRnRiU012bTFqT3NHQmlUMzJYbDdCUExqWm91V0dKZUpJZ1pFdU9WcElOd3Nld3VFMnZEdC1Zek1ja1JuTTkxOHJ3Z191Y2M4OUxJMnJpSlAteUpCLTQybW15TFcyaTJGOHJVZnRZbjV4LXpzaHhvU1czZHN3a2FjNkZDUnFsYzROVXoybGU4TWVIZFcwLXd6SzE4blpvYUw0Q0VUOFhtTW95SE5iemRVbTdkclBsRmxyd3pFWFpIamxKQdIB3wFBVV95cUxOUXJEQTVoODA1SnVEUnNhMmtyM1BxWVdGcWJlNHJLSVhhSk04QnFhXzcxLUZJZURYZExTY0M0bUVORE9KSnRlNEpNYmlLeS1BbFlwMlZ1OWlHVVAtZVIwcHRMOEs1dHVEVlcwRkJfb0FmdTU4ZFdrR2lWVnN6Q3hNbjNlSWRWdnllRy0wbVkzZ2p2NUVTRlViZUNoRThWd2hsWUd5empfV0JnSElDZmliZGhrbndLVDBRLUpscmFTQmxBalBTSUlGWXRSd0dRRy1YM3UxRlBpSlp4YnBacUlF?oc=5",
-        "source": "Deccan Chronicle",
-        "category": "States",
-        "published_at": "2026-08-25T19:10:00+00:00",
-        "fetched_at": "2026-08-26T01:43:58.979274+00:00"
+        "fetched_at": "2026-08-26T01:45:26.022727+00:00"
       }
     ],
     "Tech & AI": [
+      {
+        "id": "d9e3a6fe1e673667854f962f",
+        "title": "NVIDIA (NVDA) Earnings Report Set to Impact AI Market Dynamics - GuruFocus",
+        "description": "NVIDIA (NVDA) Earnings Report Set to Impact AI Market Dynamics GuruFocus",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTm45blVpbmlVNzlJN0IxbW5EdmV0SEVTaUZRRjdlT2s1eG5PdGFFM2ZLaHZYbkI2cjg2UUZ1NmtwYXEzeXZhM21UQlVUSGhTeXo4QjUyLV9CRzJ4SDNNTmFRdDZEWXUxWmdOc1hBTWkxQmxkUTlRU0Jxc3NUTk5yZklDcjd4alFlYUs3SURQb0NkaHUxcEhuSVBIS0liWnND?oc=5",
+        "source": "GuruFocus",
+        "category": "Tech & AI",
+        "published_at": "2026-08-26T01:43:43+00:00",
+        "fetched_at": "2026-08-26T01:45:43.380922+00:00"
+      },
       {
         "id": "2b0621d9a04ba56a78830ef2",
         "title": "OpenAI Data Center Chief Exits as Executive Exodus Intensifies Before IPO - finance.biggo.com",
@@ -3019,7 +3029,7 @@
         "source": "finance.biggo.com",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:35:00+00:00",
-        "fetched_at": "2026-08-26T01:44:10.268816+00:00"
+        "fetched_at": "2026-08-26T01:45:39.293004+00:00"
       },
       {
         "id": "349cf021f09f30a73f41a6d1",
@@ -3029,7 +3039,7 @@
         "source": "simplywall.st",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:34:47+00:00",
-        "fetched_at": "2026-08-26T01:44:11.768628+00:00"
+        "fetched_at": "2026-08-26T01:45:40.956521+00:00"
       },
       {
         "id": "0209d21aebf186c813d61964",
@@ -3039,7 +3049,7 @@
         "source": "TradingView",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:28:00+00:00",
-        "fetched_at": "2026-08-26T01:44:08.671540+00:00"
+        "fetched_at": "2026-08-26T01:45:37.606887+00:00"
       },
       {
         "id": "05319472faa5464a454f8ea6",
@@ -3049,7 +3059,7 @@
         "source": "The Washington Post",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:25:40+00:00",
-        "fetched_at": "2026-08-26T01:44:09.468376+00:00"
+        "fetched_at": "2026-08-26T01:45:38.456281+00:00"
       },
       {
         "id": "4530855e7d26286070ecb496",
@@ -3059,7 +3069,7 @@
         "source": "Yahoo Tech",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:19:49+00:00",
-        "fetched_at": "2026-08-26T01:44:12.499491+00:00"
+        "fetched_at": "2026-08-26T01:45:41.682538+00:00"
       },
       {
         "id": "f4bab6f957d002f001efe67e",
@@ -3079,7 +3089,7 @@
         "source": "MLex",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:17:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.469498+00:00"
+        "fetched_at": "2026-08-26T01:45:38.457312+00:00"
       },
       {
         "id": "1786bd5dcea17129fa939bb2",
@@ -3099,7 +3109,7 @@
         "source": "finance.biggo.com",
         "category": "Tech & AI",
         "published_at": "2026-08-26T01:05:00+00:00",
-        "fetched_at": "2026-08-26T01:44:15.516715+00:00"
+        "fetched_at": "2026-08-26T01:45:45.075132+00:00"
       },
       {
         "id": "d89383c08ab3063937078014",
@@ -3119,7 +3129,7 @@
         "source": "The Economic Times",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:55:28+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067147+00:00"
+        "fetched_at": "2026-08-26T01:45:43.380050+00:00"
       },
       {
         "id": "a2f37e5ef5eca6331331e1bb",
@@ -3139,7 +3149,7 @@
         "source": "digitimes",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:51:45+00:00",
-        "fetched_at": "2026-08-26T01:44:10.269205+00:00"
+        "fetched_at": "2026-08-26T01:45:39.293348+00:00"
       },
       {
         "id": "7e474a381e179cdadd434d76",
@@ -3159,7 +3169,7 @@
         "source": "The Killeen Daily Herald",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:45:00+00:00",
-        "fetched_at": "2026-08-26T01:44:11.029503+00:00"
+        "fetched_at": "2026-08-26T01:45:40.146457+00:00"
       },
       {
         "id": "a1d16d24276eadddf2a20dd2",
@@ -3169,7 +3179,7 @@
         "source": "Temple Daily Telegram",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:45:00+00:00",
-        "fetched_at": "2026-08-26T01:44:11.029890+00:00"
+        "fetched_at": "2026-08-26T01:45:40.146918+00:00"
       },
       {
         "id": "7acadb4183d96c5ec480d095",
@@ -3179,17 +3189,17 @@
         "source": "digitimes",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:44:22+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067458+00:00"
+        "fetched_at": "2026-08-26T01:45:43.380336+00:00"
       },
       {
-        "id": "79febc57be6ef2929a2e6dbc",
-        "title": "AI Revamp at WiseTech Leads to Output Surge, End of Manual Code - Bloomberg.com",
-        "description": "AI Revamp at WiseTech Leads to Output Surge, End of Manual Code Bloomberg.com",
+        "id": "4758c37a9bb49e0fd3154047",
+        "title": "AI Revamp at WiseTech Leads to Output Surge, End of Manual Code - Bloomberg",
+        "description": "AI Revamp at WiseTech Leads to Output Surge, End of Manual Code Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSGxMMFFrTlhhVnY0MzljSGdjdHZLWlpjQUwtSG93c1hhaXRTZ0N1Tk9zb2J2blBTb2J4a3VIX3dGbDNBdHFSYWFCMnUyVU5GbWppUFZramdVd2Jqa2RPMHBOWXJFcGVsdXR0czlWRi1XUEJrbGdIVExJSXVFRlNEeklVcE0tWlluekJsNnFERFF1WlNCSUVSb3dCRzJCMVpVM1NMTjVLYVJOV3dVb0FnZHM1RQ?oc=5",
-        "source": "Bloomberg.com",
+        "source": "Bloomberg",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:43:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.466135+00:00"
+        "fetched_at": "2026-08-26T01:45:38.453785+00:00"
       },
       {
         "id": "121a4993a264169181a4b1e3",
@@ -3199,7 +3209,7 @@
         "source": "FXLeaders",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:38:51+00:00",
-        "fetched_at": "2026-08-26T01:44:14.066999+00:00"
+        "fetched_at": "2026-08-26T01:45:43.379927+00:00"
       },
       {
         "id": "0746ba0b856d3cfb0161b4b4",
@@ -3209,7 +3219,7 @@
         "source": "조선일보",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:38:10+00:00",
-        "fetched_at": "2026-08-26T01:44:15.519696+00:00"
+        "fetched_at": "2026-08-26T01:45:45.078188+00:00"
       },
       {
         "id": "cd2e104672d1bb838233ce9e",
@@ -3219,7 +3229,7 @@
         "source": "The Guardian",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:38:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.468037+00:00"
+        "fetched_at": "2026-08-26T01:45:38.455807+00:00"
       },
       {
         "id": "a91bc6a529f7d69e9cbc01a8",
@@ -3229,7 +3239,7 @@
         "source": "Yahoo Finance",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:36:00+00:00",
-        "fetched_at": "2026-08-26T01:44:15.517210+00:00"
+        "fetched_at": "2026-08-26T01:45:45.075681+00:00"
       },
       {
         "id": "b65e64e21adf321f05c942e2",
@@ -3239,7 +3249,7 @@
         "source": "microwire.info",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:35:39+00:00",
-        "fetched_at": "2026-08-26T01:44:14.790354+00:00"
+        "fetched_at": "2026-08-26T01:45:44.203932+00:00"
       },
       {
         "id": "b9f76dc614f13c5094022918",
@@ -3249,7 +3259,7 @@
         "source": "CNBC",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:34:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.465247+00:00"
+        "fetched_at": "2026-08-26T01:45:38.452779+00:00"
       },
       {
         "id": "6c1ee684a71a80bfdcc1ee22",
@@ -3259,7 +3269,7 @@
         "source": "Pluang",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:28:24+00:00",
-        "fetched_at": "2026-08-26T01:44:10.268648+00:00"
+        "fetched_at": "2026-08-26T01:45:39.292851+00:00"
       },
       {
         "id": "7e76cf9d492d0ba6cae51c6a",
@@ -3269,7 +3279,7 @@
         "source": "TradingView",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:27:58+00:00",
-        "fetched_at": "2026-08-26T01:44:10.267537+00:00"
+        "fetched_at": "2026-08-26T01:45:39.291643+00:00"
       },
       {
         "id": "42e35753f12427141dc71ee2",
@@ -3289,7 +3299,7 @@
         "source": "KuCoin",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:16:52+00:00",
-        "fetched_at": "2026-08-26T01:44:10.267371+00:00"
+        "fetched_at": "2026-08-26T01:45:39.291409+00:00"
       },
       {
         "id": "7f79f7ba896734f6b29cdc43",
@@ -3319,7 +3329,7 @@
         "source": "조선일보",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:15:26+00:00",
-        "fetched_at": "2026-08-26T01:44:15.517429+00:00"
+        "fetched_at": "2026-08-26T01:45:45.075939+00:00"
       },
       {
         "id": "896703d26b44ad18fd3cb4f5",
@@ -3329,7 +3339,7 @@
         "source": "Yahoo Finance Australia",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:15:00+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067975+00:00"
+        "fetched_at": "2026-08-26T01:45:43.380815+00:00"
       },
       {
         "id": "1f87b2429b10310d5c02f2c2",
@@ -3359,7 +3369,7 @@
         "source": "TechCrunch",
         "category": "Tech & AI",
         "published_at": "2026-08-26T00:06:20+00:00",
-        "fetched_at": "2026-08-26T01:44:10.267457+00:00"
+        "fetched_at": "2026-08-26T01:45:39.291545+00:00"
       },
       {
         "id": "e5a46e1e059926361bc5496b",
@@ -3389,7 +3399,7 @@
         "source": "MLex",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:58:00+00:00",
-        "fetched_at": "2026-08-26T01:44:11.028688+00:00"
+        "fetched_at": "2026-08-26T01:45:40.145528+00:00"
       },
       {
         "id": "7919efd044b2dbd27590bdd4",
@@ -3409,7 +3419,7 @@
         "source": "조선일보",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:50:16+00:00",
-        "fetched_at": "2026-08-26T01:44:15.518463+00:00"
+        "fetched_at": "2026-08-26T01:45:45.077139+00:00"
       },
       {
         "id": "159a58e071af4f20d15f7ee5",
@@ -3429,7 +3439,7 @@
         "source": "TradingView",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:44:38+00:00",
-        "fetched_at": "2026-08-26T01:44:14.064992+00:00"
+        "fetched_at": "2026-08-26T01:45:43.377854+00:00"
       },
       {
         "id": "de9a65b0743812970d60a2f2",
@@ -3439,7 +3449,7 @@
         "source": "PYMNTS.com",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:43:34+00:00",
-        "fetched_at": "2026-08-26T01:44:09.467512+00:00"
+        "fetched_at": "2026-08-26T01:45:38.455258+00:00"
       },
       {
         "id": "a2a41c84bbbe111b496fe7b8",
@@ -3449,7 +3459,7 @@
         "source": "Digital Music News",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:40:06+00:00",
-        "fetched_at": "2026-08-26T01:44:10.269686+00:00"
+        "fetched_at": "2026-08-26T01:45:39.293856+00:00"
       },
       {
         "id": "8171cf51696c278de69fd34f",
@@ -3459,7 +3469,7 @@
         "source": "University of Hawaii System",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:38:10+00:00",
-        "fetched_at": "2026-08-26T01:44:09.467924+00:00"
+        "fetched_at": "2026-08-26T01:45:38.455712+00:00"
       },
       {
         "id": "b50c03edb854a99f396e1bc6",
@@ -3469,7 +3479,7 @@
         "source": "The Killeen Daily Herald",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:38:00+00:00",
-        "fetched_at": "2026-08-26T01:44:11.029925+00:00"
+        "fetched_at": "2026-08-26T01:45:40.146959+00:00"
       },
       {
         "id": "dc21504e1c3c4c19304778f2",
@@ -3479,7 +3489,7 @@
         "source": "Pluang",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:37:13+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067052+00:00"
+        "fetched_at": "2026-08-26T01:45:43.379964+00:00"
       },
       {
         "id": "ff5e8d73e356a162346da5fb",
@@ -3499,7 +3509,7 @@
         "source": "thenationalnews.com",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:32:37+00:00",
-        "fetched_at": "2026-08-26T01:44:10.267620+00:00"
+        "fetched_at": "2026-08-26T01:45:39.291743+00:00"
       },
       {
         "id": "845602092e016342075416d7",
@@ -3509,7 +3519,7 @@
         "source": "EIN News",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:15.516305+00:00"
+        "fetched_at": "2026-08-26T01:45:45.074655+00:00"
       },
       {
         "id": "d31a2782ba1ac5bacbc6aff8",
@@ -3569,7 +3579,7 @@
         "source": "The Tribune",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:22:55+00:00",
-        "fetched_at": "2026-08-26T01:44:10.267580+00:00"
+        "fetched_at": "2026-08-26T01:45:39.291695+00:00"
       },
       {
         "id": "852ee2802d49bccf7169293c",
@@ -3589,7 +3599,7 @@
         "source": "The Indian Express",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:20:53+00:00",
-        "fetched_at": "2026-08-26T01:44:09.466714+00:00"
+        "fetched_at": "2026-08-26T01:45:38.454415+00:00"
       },
       {
         "id": "8e48058c70a4e944cdc449f7",
@@ -3599,7 +3609,7 @@
         "source": "SiliconANGLE",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:20:47+00:00",
-        "fetched_at": "2026-08-26T01:44:14.066079+00:00"
+        "fetched_at": "2026-08-26T01:45:43.379082+00:00"
       },
       {
         "id": "a6f9132525a6d82706aaf563",
@@ -3609,7 +3619,7 @@
         "source": "CyberSecurityNews",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:19:15+00:00",
-        "fetched_at": "2026-08-26T01:44:14.790571+00:00"
+        "fetched_at": "2026-08-26T01:45:44.204457+00:00"
       },
       {
         "id": "28d74395080c110740bc8acf",
@@ -3624,12 +3634,12 @@
       {
         "id": "0176a9e300cdb1c93b515360",
         "title": "Wall Street ends higher as tech rebounds before Nvidia results - Reuters",
-        "description": "Wall Street ends higher as tech rebounds before Nvidia results Reuters U.S. stock futures fall as investors await PCE inflation, Nvidia results By Investing.com Investing.com Why Nvidia rival AMD may see a 40% rip in its stock Yahoo Finance",
+        "description": "Wall Street ends higher as tech rebounds before Nvidia results Reuters U.S. stock futures fall as investors await PCE inflation, Nvidia results By Investing.com Investing.com Nvidia Stock Bulls Get Punished in the Run-Up to Earnings Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdmhxOE10Q2J5RzR6U1lxZjRCX0FUYmdxdkl5SE5fT1N2SG5RSmMxb0xPekZ2eDNjbVhyVE54N0FIOTByZEdrMFUtSmp0U3A0R2RLVldRczJ2aW5PU2QzUzZ6Y0FYUThQU01jdEJOdzdtbndvdThwXzhUbDAzQ2lHeVIwbHE4dkZITlhxZ0JLLWVEVHdzZmcxYTdub3dWRjh1QnRNUzRhU0V3bnJZV2c?oc=5",
         "source": "Reuters",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:14:21+00:00",
-        "fetched_at": "2026-08-26T01:44:14.063812+00:00"
+        "fetched_at": "2026-08-26T01:45:43.376631+00:00"
       },
       {
         "id": "0eb22e7877736a5bd31f20ec",
@@ -3649,7 +3659,7 @@
         "source": "CNBC",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:11:23+00:00",
-        "fetched_at": "2026-08-26T01:44:14.066316+00:00"
+        "fetched_at": "2026-08-26T01:45:43.379278+00:00"
       },
       {
         "id": "3af0de58346e461c56546164",
@@ -3659,7 +3669,7 @@
         "source": "CNBC",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:10:23+00:00",
-        "fetched_at": "2026-08-26T01:44:14.065934+00:00"
+        "fetched_at": "2026-08-26T01:45:43.378963+00:00"
       },
       {
         "id": "706d3dba2bc05c15a3f127e7",
@@ -3679,7 +3689,7 @@
         "source": "The Japan Times",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:05:29+00:00",
-        "fetched_at": "2026-08-26T01:44:09.465883+00:00"
+        "fetched_at": "2026-08-26T01:45:38.453531+00:00"
       },
       {
         "id": "8bc6476053096f481149d23c",
@@ -3689,7 +3699,7 @@
         "source": "StartupHub.ai",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:03:14+00:00",
-        "fetched_at": "2026-08-26T01:44:09.466359+00:00"
+        "fetched_at": "2026-08-26T01:45:38.454144+00:00"
       },
       {
         "id": "73594b0234c0ddcf483917cf",
@@ -3699,7 +3709,7 @@
         "source": "Finextra Research",
         "category": "Tech & AI",
         "published_at": "2026-08-25T23:02:01+00:00",
-        "fetched_at": "2026-08-26T01:44:11.028184+00:00"
+        "fetched_at": "2026-08-26T01:45:40.144932+00:00"
       },
       {
         "id": "7036642282c9628bbe1f8e94",
@@ -3709,7 +3719,7 @@
         "source": "CNBC",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:55:34+00:00",
-        "fetched_at": "2026-08-26T01:44:14.064343+00:00"
+        "fetched_at": "2026-08-26T01:45:43.377215+00:00"
       },
       {
         "id": "a1e360f930b3ceeaf8d5ea58",
@@ -3732,6 +3742,16 @@
         "fetched_at": "2026-08-26T01:34:35.129906+00:00"
       },
       {
+        "id": "8bb2146b6fbe789c92de4440",
+        "title": "'Big Short' investor Danny Moses calls 10-year yield, Nvidia the two most important assets for markets right now - CNBC",
+        "description": "'Big Short' investor Danny Moses calls 10-year yield, Nvidia the two most important assets for markets right now CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVEVubGo5SG5SVnZWM2dwSFB2XzR6TUN1WUhVcXg0Skw5V0NfS05FelBVZHhlUEJCcWpwcVNoSng0cTBoUkxMR3BCOU9SNWh3WjlqUFYyNFMzbkdLYzBnc2R3ZlFadS0yakZqaFNHQ0diV3ZGOHlDdlFZTXQ5dXk0Z1lOWGhyc2tIQ2pONWpUWFpWRVhQTTMyUUxYTHQwQWJfZkRjMllfYldzQWY1VHJfRW5nWFFlQkZZdHlPSXZRcjdzUQ?oc=5",
+        "source": "CNBC",
+        "category": "Tech & AI",
+        "published_at": "2026-08-25T22:37:39+00:00",
+        "fetched_at": "2026-08-26T01:45:43.379236+00:00"
+      },
+      {
         "id": "9b26b45ca2eee51ab4732e70",
         "title": "Meta Platforms (META) Is Building A $50 Billion AI Data Center - simplywall.st",
         "description": "Meta Platforms (META) Is Building A $50 Billion AI Data Center simplywall.st",
@@ -3739,7 +3759,7 @@
         "source": "simplywall.st",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:36:46+00:00",
-        "fetched_at": "2026-08-26T01:44:13.251751+00:00"
+        "fetched_at": "2026-08-26T01:45:42.603621+00:00"
       },
       {
         "id": "9568659109c7ebfe5d54d03a",
@@ -3759,7 +3779,7 @@
         "source": "Dealroom",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:30:57+00:00",
-        "fetched_at": "2026-08-26T01:44:14.790394+00:00"
+        "fetched_at": "2026-08-26T01:45:44.203775+00:00"
       },
       {
         "id": "5f41270ccbcf150ccbf1759a",
@@ -3769,7 +3789,7 @@
         "source": "WSJ",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:25:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.468878+00:00"
+        "fetched_at": "2026-08-26T01:45:38.456676+00:00"
       },
       {
         "id": "1e5f61c7d6ee080b36b9fc0b",
@@ -3789,7 +3809,7 @@
         "source": "CNBC",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:21:52+00:00",
-        "fetched_at": "2026-08-26T01:44:14.066120+00:00"
+        "fetched_at": "2026-08-26T01:45:43.379118+00:00"
       },
       {
         "id": "f17d3f9ffbacf32423617a1e",
@@ -3799,7 +3819,7 @@
         "source": "News of the United States - NOTUS",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:06:10+00:00",
-        "fetched_at": "2026-08-26T01:44:09.465500+00:00"
+        "fetched_at": "2026-08-26T01:45:38.453074+00:00"
       },
       {
         "id": "c397342c1100bba0ea90111f",
@@ -3822,14 +3842,14 @@
         "fetched_at": "2026-08-26T01:34:35.129671+00:00"
       },
       {
-        "id": "d6a920f2a94e2b7ea7694462",
-        "title": "OpenAI Data Center Executive Chris Malone Departs the AI Startup - Bloomberg.com",
-        "description": "OpenAI Data Center Executive Chris Malone Departs the AI Startup Bloomberg.com",
+        "id": "0930bbd11df89c7e6cceedf7",
+        "title": "OpenAI Data Center Executive Chris Malone Departs the AI Startup - Bloomberg",
+        "description": "OpenAI Data Center Executive Chris Malone Departs the AI Startup Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPLTlGekdBY0h3c1Q3SE9lRzFhUUpFX2N6WEl5dFFQZVUyRXRrdWpSZm9ZbDJuWmh1NUt0TU41c0dVNlVlZkdzWWZfSU9OZ3pLT2lqN21FNjJCdWtRWkxGMjF4c0laMzBTZUlMdXBLbm9seGFNemlDSDd6dnM5T1pSMldPa19SNE1uamsyYm5ULVZPc3BDZ1BoWnFSZk04b21DWkpCVjYtWHMxVlVSc0FDMU9iUC0wZw?oc=5",
-        "source": "Bloomberg.com",
+        "source": "Bloomberg",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:04:51+00:00",
-        "fetched_at": "2026-08-26T01:44:10.266492+00:00"
+        "fetched_at": "2026-08-26T01:45:39.289867+00:00"
       },
       {
         "id": "a7271720f3b846950afebc6b",
@@ -3839,7 +3859,7 @@
         "source": "Pluang",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:02:05+00:00",
-        "fetched_at": "2026-08-26T01:44:10.269398+00:00"
+        "fetched_at": "2026-08-26T01:45:39.293579+00:00"
       },
       {
         "id": "15cd1e4ecaefdd0b6280167c",
@@ -3849,7 +3869,7 @@
         "source": "PR Newswire",
         "category": "Tech & AI",
         "published_at": "2026-08-25T22:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.467258+00:00"
+        "fetched_at": "2026-08-26T01:45:38.454943+00:00"
       },
       {
         "id": "f2e0203853da8c365e33f794",
@@ -3859,7 +3879,7 @@
         "source": "The New York Times",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:59:39+00:00",
-        "fetched_at": "2026-08-26T01:44:09.465441+00:00"
+        "fetched_at": "2026-08-26T01:45:38.453003+00:00"
       },
       {
         "id": "dcd994cec5f57c6b4aefdc5c",
@@ -3869,7 +3889,7 @@
         "source": "eSecurity Planet",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:55:53+00:00",
-        "fetched_at": "2026-08-26T01:44:14.791427+00:00"
+        "fetched_at": "2026-08-26T01:45:44.204880+00:00"
       },
       {
         "id": "fd360126b2083da8f90a93ef",
@@ -3879,7 +3899,7 @@
         "source": "Channel 3000",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:53:00+00:00",
-        "fetched_at": "2026-08-26T01:44:10.269282+00:00"
+        "fetched_at": "2026-08-26T01:45:39.293425+00:00"
       },
       {
         "id": "88b171334a49d2abd7ebd6cb",
@@ -3889,7 +3909,7 @@
         "source": "La Trobe University",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:47:00+00:00",
-        "fetched_at": "2026-08-26T01:44:09.468752+00:00"
+        "fetched_at": "2026-08-26T01:45:38.456592+00:00"
       },
       {
         "id": "7bd8e9ad489caceb6f3db0e9",
@@ -3909,7 +3929,7 @@
         "source": "Barchart.com",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:42:47+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067732+00:00"
+        "fetched_at": "2026-08-26T01:45:43.380603+00:00"
       },
       {
         "id": "77fd5b9cdd4d1a4d61450901",
@@ -3919,7 +3939,7 @@
         "source": "SFGATE",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:40:36+00:00",
-        "fetched_at": "2026-08-26T01:44:12.499440+00:00"
+        "fetched_at": "2026-08-26T01:45:41.682460+00:00"
       },
       {
         "id": "02e4444c9ca0395d8fbe25c2",
@@ -3929,7 +3949,7 @@
         "source": "PCMag",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:37:56+00:00",
-        "fetched_at": "2026-08-26T01:44:12.499076+00:00"
+        "fetched_at": "2026-08-26T01:45:41.682050+00:00"
       },
       {
         "id": "fe926b85291c60924b34fb31",
@@ -3939,7 +3959,7 @@
         "source": "marketscreener.com",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:36:23+00:00",
-        "fetched_at": "2026-08-26T01:44:14.067614+00:00"
+        "fetched_at": "2026-08-26T01:45:43.380491+00:00"
       },
       {
         "id": "ff961ec99ee8bcebfee7ffc2",
@@ -3979,7 +3999,7 @@
         "source": "WSJ",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:10.266323+00:00"
+        "fetched_at": "2026-08-26T01:45:39.290321+00:00"
       },
       {
         "id": "6998ad6c2c1f3d1b6b0349b1",
@@ -3989,30 +4009,20 @@
         "source": "13newsnow.com",
         "category": "Tech & AI",
         "published_at": "2026-08-25T21:28:00+00:00",
-        "fetched_at": "2026-08-26T01:44:14.793081+00:00"
-      },
-      {
-        "id": "0616b91aeef8163ca5a84651",
-        "title": "AI Trade at Risk From US Voter Ire Over Buildout, Barclays Says - Bloomberg.com",
-        "description": "AI Trade at Risk From US Voter Ire Over Buildout, Barclays Says &nbsp;&nbsp; Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSTdRSk1xQldTZ0N2NVQ2WUtRT3JrajM5UjJOWk1SRTc5Zk5fRWxmeUc5a012VWZCcUhST3p4dE9EdXNRVTZFdTFqR09NR1ktOElYMUp6YTJPRXhFTENfWlhnNHdaMnlLSk1GSDd1bDhhYkJlUm9zT3drU3pOVEVkUFhGX2owSGFIbGg3b0ZxRVBrV2M0a01yU1d1cVRIYUhxTlFLcjcxd3AxRWdfd2hZWWltVQ?oc=5",
-        "source": "Bloomberg.com",
-        "category": "Tech & AI",
-        "published_at": "2026-08-25T21:24:12+00:00",
-        "fetched_at": "2026-08-26T01:34:35.128084+00:00"
-      },
-      {
-        "id": "59c0da786a61ffaa37ca820c",
-        "title": "OpenAI data center chief Chris Malone is out, the latest in a string of executive exits - CNBC",
-        "description": "OpenAI data center chief Chris Malone is out, the latest in a string of executive exits CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaHN6cUtXZ0UyUlhaQlBNUXVpc2F4YU9ETnhHeTZzWnlLN3FTR0ZMWE42d3FkQmZKNUJHT183ekcya2pYRGNOSGIwMkVwa2xuZkhueW01ck4wb1E4RFdKVkdaN3d0SzBQMy1lclAxNng0eDZiX0tmdGpnRUF2ZDRDSTMtQkdjQW96N2M4WlBEZmRKQnE5TGhHOVJDNDVqSEU3aDVmbzVOdUnSAa4BQVVfeXFMTWVLVW80ck9uenpyZmdaTF9wY3BxLVNxMHZfblBsZXpBVFpfQnQxcjU1cUdwLTJDUGlQajR0QXV5MWNWNTUwSllMMzktZkl5NEt1ckNjYUdKNEZFbDYzaWxJQ3BQNUJmSjhRY0c2V1FISXV4UVMxXzhjVm1FZ1didndMWVFsU3VPcTIxQWRMTVhGR3Vyc1pVbUduaW00UGx6dTN4TTB4Um4xQzhFNnZn?oc=5",
-        "source": "CNBC",
-        "category": "Tech & AI",
-        "published_at": "2026-08-25T21:23:28+00:00",
-        "fetched_at": "2026-08-26T01:44:10.266450+00:00"
+        "fetched_at": "2026-08-26T01:45:44.206173+00:00"
       }
     ],
     "Business": [
+      {
+        "id": "c02123f469dab020281dfd44",
+        "title": "Gross FDI climbs as net inflows turn positive - The Economic Times",
+        "description": "Gross FDI climbs as net inflows turn positive The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRG5Ba1Y4RF94dWlwZ1pWVVdwd19ISkxvSFdxblhQQ2VlbkZXbnQyS3c3MThMSlJrSk9UVVlfNEg0eGJ5SjdhRnlvQXQ1aVBHdUtBNTkwTk13VWp3SE5zVml5NXBWM3dLaWxsOURQRlFkX096Wlg1a1I2dVQyVkl1WU1hNjg0ckQtYkp1aUFVckhSa2FERDhMUHJtRmZtNXVYakNTQlU3bUs4VHI1aHM3YVN0c1dFNkdpek1j0gHAAUFVX3lxTE9uaV85cnAzS0FuRXc4Y3hlUnBBSm1za1RVYjlBaEJDVU53LVc3ZVczWS1PZ3pFcmxqNklRaVR0OS1DUHF0QWtqZWFYTjZrU1FfRWtMQTZBM0dsSXM0VEh4TU5pM3J2akRfaXBIaDR5S0dQbTV2S2hqYW1TMEotOURPU2hCUERvOTVHaF9CVXFiUUlRRTFVdWF0STNuNjE4NFlyenhBeHVBSmdjSTFNUlRidGhSc0hoY1BYQlYtY0pHVQ?oc=5",
+        "source": "The Economic Times",
+        "category": "Business",
+        "published_at": "2026-08-26T01:39:33+00:00",
+        "fetched_at": "2026-08-26T01:45:52.828807+00:00"
+      },
       {
         "id": "5e117f06cad3688fc1949ef0",
         "title": "First Tick: Top global cues to watch in today's trade - Moneycontrol.com",
@@ -4021,7 +4031,7 @@
         "source": "Moneycontrol.com",
         "category": "Business",
         "published_at": "2026-08-26T01:36:53+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870409+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827602+00:00"
       },
       {
         "id": "69810f9747548a61d91ccd67",
@@ -4031,7 +4041,7 @@
         "source": "CNBC TV18",
         "category": "Business",
         "published_at": "2026-08-26T01:36:12+00:00",
-        "fetched_at": "2026-08-26T01:44:22.869540+00:00"
+        "fetched_at": "2026-08-26T01:45:52.826632+00:00"
       },
       {
         "id": "f20a9a78d8fe9260443404c6",
@@ -4041,7 +4051,7 @@
         "source": "CNBC",
         "category": "Business",
         "published_at": "2026-08-26T01:29:00+00:00",
-        "fetched_at": "2026-08-26T01:44:22.869865+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827064+00:00"
       },
       {
         "id": "8fd4caaee75cc7358034af6a",
@@ -4051,7 +4061,7 @@
         "source": "India.com",
         "category": "Business",
         "published_at": "2026-08-26T01:28:41+00:00",
-        "fetched_at": "2026-08-26T01:44:23.681531+00:00"
+        "fetched_at": "2026-08-26T01:45:53.748906+00:00"
       },
       {
         "id": "a902db644eaf3280d0ea3d35",
@@ -4061,7 +4071,7 @@
         "source": "Sahi",
         "category": "Business",
         "published_at": "2026-08-26T01:20:15+00:00",
-        "fetched_at": "2026-08-26T01:44:18.662544+00:00"
+        "fetched_at": "2026-08-26T01:45:48.341104+00:00"
       },
       {
         "id": "e177e60b5b25262a221fd20f",
@@ -4081,7 +4091,7 @@
         "source": "The Washington Post",
         "category": "Business",
         "published_at": "2026-08-26T01:13:34+00:00",
-        "fetched_at": "2026-08-26T01:44:19.600307+00:00"
+        "fetched_at": "2026-08-26T01:45:49.521724+00:00"
       },
       {
         "id": "02c8ba10e5127f2befee14e7",
@@ -4091,7 +4101,7 @@
         "source": "The Economic Times",
         "category": "Business",
         "published_at": "2026-08-26T01:13:33+00:00",
-        "fetched_at": "2026-08-26T01:44:22.871437+00:00"
+        "fetched_at": "2026-08-26T01:45:52.828598+00:00"
       },
       {
         "id": "e80836ed055dddf8962b68fc",
@@ -4101,7 +4111,7 @@
         "source": "Telegraph India",
         "category": "Business",
         "published_at": "2026-08-26T01:09:22+00:00",
-        "fetched_at": "2026-08-26T01:44:22.868705+00:00"
+        "fetched_at": "2026-08-26T01:45:52.825674+00:00"
       },
       {
         "id": "25b9038a54fbf1adfb20186e",
@@ -4111,7 +4121,7 @@
         "source": "CNBC",
         "category": "Business",
         "published_at": "2026-08-26T01:05:30+00:00",
-        "fetched_at": "2026-08-26T01:44:22.868657+00:00"
+        "fetched_at": "2026-08-26T01:45:52.825619+00:00"
       },
       {
         "id": "476a15739b1c9c849ae5d26c",
@@ -4121,7 +4131,7 @@
         "source": "Firstpost",
         "category": "Business",
         "published_at": "2026-08-26T01:04:02+00:00",
-        "fetched_at": "2026-08-26T01:44:19.598509+00:00"
+        "fetched_at": "2026-08-26T01:45:49.520078+00:00"
       },
       {
         "id": "5918cddab7db87de9b26d717",
@@ -4141,7 +4151,7 @@
         "source": "The Business Journals",
         "category": "Business",
         "published_at": "2026-08-26T01:02:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.085494+00:00"
+        "fetched_at": "2026-08-26T01:45:46.737501+00:00"
       },
       {
         "id": "d202cff45ae30fe5bbe15628",
@@ -4154,14 +4164,14 @@
         "fetched_at": "2026-08-26T01:34:38.330210+00:00"
       },
       {
-        "id": "f553e280fa4cecac990739e3",
-        "title": "The Billionaires Behind India’s Finance Boom - Bloomberg.com",
-        "description": "The Billionaires Behind India’s Finance Boom Bloomberg.com",
+        "id": "b1af7d58a8f1c309d949bb8e",
+        "title": "The Billionaires Behind India’s Finance Boom - Bloomberg",
+        "description": "The Billionaires Behind India’s Finance Boom Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5seTYxU3JsQ3pCLWFKU2pyYjJYbk41VmZtU3d0QW5fLTMtNEhNZEtKT2V6dldjdWJsS0xxV0NrMWFtWUJaam9UZEhwY1N2NjZzTnN6THoxUk9hYWtfQXAtdXpRNGVHYVRiMlRJ?oc=5",
-        "source": "Bloomberg.com",
+        "source": "Bloomberg",
         "category": "Business",
         "published_at": "2026-08-26T01:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:21.211575+00:00"
+        "fetched_at": "2026-08-26T01:45:51.188360+00:00"
       },
       {
         "id": "50bbefc5cf1d2a2f855bd355",
@@ -4191,7 +4201,7 @@
         "source": "The Economic Times",
         "category": "Business",
         "published_at": "2026-08-26T00:55:28+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870018+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827215+00:00"
       },
       {
         "id": "869e98cbe18d7ff81f0ee19d",
@@ -4201,7 +4211,7 @@
         "source": "India IPO",
         "category": "Business",
         "published_at": "2026-08-26T00:54:52+00:00",
-        "fetched_at": "2026-08-26T01:44:21.212762+00:00"
+        "fetched_at": "2026-08-26T01:45:51.189722+00:00"
       },
       {
         "id": "86898692c33a8ada3bb5fc9a",
@@ -4211,7 +4221,7 @@
         "source": "The Economic Times",
         "category": "Business",
         "published_at": "2026-08-26T00:51:05+00:00",
-        "fetched_at": "2026-08-26T01:44:22.871135+00:00"
+        "fetched_at": "2026-08-26T01:45:52.828295+00:00"
       },
       {
         "id": "4ca5a11a34533049bc0ee45a",
@@ -4221,7 +4231,7 @@
         "source": "The Business Journals",
         "category": "Business",
         "published_at": "2026-08-26T00:45:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.085773+00:00"
+        "fetched_at": "2026-08-26T01:45:46.737743+00:00"
       },
       {
         "id": "10c71b8ff40e6b918730bec2",
@@ -4231,7 +4241,7 @@
         "source": "S&P Global",
         "category": "Business",
         "published_at": "2026-08-26T00:45:00+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870219+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827441+00:00"
       },
       {
         "id": "476c2cd9434279928ef1717c",
@@ -4241,7 +4251,7 @@
         "source": "Business Standard",
         "category": "Business",
         "published_at": "2026-08-26T00:41:26+00:00",
-        "fetched_at": "2026-08-26T01:44:20.444432+00:00"
+        "fetched_at": "2026-08-26T01:45:50.360310+00:00"
       },
       {
         "id": "2a5105ee9b526fcaf6ce03a7",
@@ -4251,7 +4261,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-26T00:35:41+00:00",
-        "fetched_at": "2026-08-26T01:44:18.662678+00:00"
+        "fetched_at": "2026-08-26T01:45:48.341290+00:00"
       },
       {
         "id": "b910e52072e63d45f6f06839",
@@ -4261,7 +4271,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-26T00:30:21+00:00",
-        "fetched_at": "2026-08-26T01:44:17.083937+00:00"
+        "fetched_at": "2026-08-26T01:45:46.735733+00:00"
       },
       {
         "id": "d1c1553d4b0b52d04857fc41",
@@ -4271,7 +4281,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-26T00:30:20+00:00",
-        "fetched_at": "2026-08-26T01:44:17.084476+00:00"
+        "fetched_at": "2026-08-26T01:45:46.736312+00:00"
       },
       {
         "id": "e39b678be5e5c1293fb943a1",
@@ -4281,7 +4291,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-26T00:30:20+00:00",
-        "fetched_at": "2026-08-26T01:44:17.084529+00:00"
+        "fetched_at": "2026-08-26T01:45:46.736374+00:00"
       },
       {
         "id": "f9d4434d39427e58010acff4",
@@ -4291,7 +4301,7 @@
         "source": "Yahoo Finance",
         "category": "Business",
         "published_at": "2026-08-26T00:30:13+00:00",
-        "fetched_at": "2026-08-26T01:44:20.445016+00:00"
+        "fetched_at": "2026-08-26T01:45:50.360986+00:00"
       },
       {
         "id": "b80f1aaf94e464155f0c9955",
@@ -4301,7 +4311,7 @@
         "source": "The Business Journals",
         "category": "Business",
         "published_at": "2026-08-26T00:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.086886+00:00"
+        "fetched_at": "2026-08-26T01:45:46.738880+00:00"
       },
       {
         "id": "224a3381cb3b5078086adf80",
@@ -4311,7 +4321,7 @@
         "source": "Equitymaster",
         "category": "Business",
         "published_at": "2026-08-26T00:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:18.662638+00:00"
+        "fetched_at": "2026-08-26T01:45:48.341234+00:00"
       },
       {
         "id": "101e5ae0f11cd492c9e4f318",
@@ -4321,7 +4331,7 @@
         "source": "The Economic Times",
         "category": "Business",
         "published_at": "2026-08-26T00:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870542+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827769+00:00"
       },
       {
         "id": "127c16f8d6cae167ebb93235",
@@ -4331,7 +4341,7 @@
         "source": "The Economic Times",
         "category": "Business",
         "published_at": "2026-08-26T00:28:50+00:00",
-        "fetched_at": "2026-08-26T01:44:22.872541+00:00"
+        "fetched_at": "2026-08-26T01:45:52.829623+00:00"
       },
       {
         "id": "bdb89f3d9b9b013b1c689fd1",
@@ -4371,7 +4381,7 @@
         "source": "The Straits Times",
         "category": "Business",
         "published_at": "2026-08-26T00:08:00+00:00",
-        "fetched_at": "2026-08-26T01:44:19.601625+00:00"
+        "fetched_at": "2026-08-26T01:45:49.522924+00:00"
       },
       {
         "id": "88079c2621310ce3da5f8efa",
@@ -4421,7 +4431,7 @@
         "source": "Yahoo Finance UK",
         "category": "Business",
         "published_at": "2026-08-25T23:55:00+00:00",
-        "fetched_at": "2026-08-26T01:44:20.443642+00:00"
+        "fetched_at": "2026-08-26T01:45:50.359428+00:00"
       },
       {
         "id": "406c398a6a5de690423f64de",
@@ -4431,7 +4441,7 @@
         "source": "saga.co.uk",
         "category": "Business",
         "published_at": "2026-08-25T23:51:17+00:00",
-        "fetched_at": "2026-08-26T01:44:20.445378+00:00"
+        "fetched_at": "2026-08-26T01:45:50.361339+00:00"
       },
       {
         "id": "83f1f1d17204809608ed832c",
@@ -4451,7 +4461,7 @@
         "source": "Agência de Notícias Brasil-Árabe - ANBA",
         "category": "Business",
         "published_at": "2026-08-25T23:47:41+00:00",
-        "fetched_at": "2026-08-26T01:44:19.599797+00:00"
+        "fetched_at": "2026-08-26T01:45:49.521273+00:00"
       },
       {
         "id": "f06624d6f4564dd644b370ff",
@@ -4461,7 +4471,7 @@
         "source": "Reuters",
         "category": "Business",
         "published_at": "2026-08-25T23:47:23+00:00",
-        "fetched_at": "2026-08-26T01:44:19.598871+00:00"
+        "fetched_at": "2026-08-26T01:45:49.520414+00:00"
       },
       {
         "id": "60b0b329cf0da1a943bf220e",
@@ -4521,7 +4531,7 @@
         "source": "Moneycontrol.com",
         "category": "Business",
         "published_at": "2026-08-25T23:37:03+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870846+00:00"
+        "fetched_at": "2026-08-26T01:45:52.828046+00:00"
       },
       {
         "id": "1eddd1c15d1b047e0083dc09",
@@ -4531,7 +4541,7 @@
         "source": "Reuters",
         "category": "Business",
         "published_at": "2026-08-25T23:30:30+00:00",
-        "fetched_at": "2026-08-26T01:44:19.600020+00:00"
+        "fetched_at": "2026-08-26T01:45:49.521455+00:00"
       },
       {
         "id": "587798a4828d603d22973d70",
@@ -4541,7 +4551,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-25T23:30:23+00:00",
-        "fetched_at": "2026-08-26T01:44:21.211487+00:00"
+        "fetched_at": "2026-08-26T01:45:51.188259+00:00"
       },
       {
         "id": "9137a8023da4d9530261d079",
@@ -4551,7 +4561,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:29:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.849400+00:00"
+        "fetched_at": "2026-08-26T01:45:47.567412+00:00"
       },
       {
         "id": "acb050c67edfdec379eadb96",
@@ -4561,7 +4571,7 @@
         "source": "Yahoo Finance Australia",
         "category": "Business",
         "published_at": "2026-08-25T23:28:42+00:00",
-        "fetched_at": "2026-08-26T01:44:20.445615+00:00"
+        "fetched_at": "2026-08-26T01:45:50.361617+00:00"
       },
       {
         "id": "418d811c48ea03f1062801df",
@@ -4591,7 +4601,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:22:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.849859+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568027+00:00"
       },
       {
         "id": "28d74395080c110740bc8acf",
@@ -4611,7 +4621,7 @@
         "source": "The New York Times",
         "category": "Business",
         "published_at": "2026-08-25T23:17:59+00:00",
-        "fetched_at": "2026-08-26T01:44:19.600439+00:00"
+        "fetched_at": "2026-08-26T01:45:49.521846+00:00"
       },
       {
         "id": "bcef84affdfc52d156d9f455",
@@ -4621,7 +4631,7 @@
         "source": "Livemint",
         "category": "Business",
         "published_at": "2026-08-25T23:15:54+00:00",
-        "fetched_at": "2026-08-26T01:44:22.871178+00:00"
+        "fetched_at": "2026-08-26T01:45:52.828335+00:00"
       },
       {
         "id": "3e169b9c28c3a57c35c4994c",
@@ -4631,7 +4641,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:15:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.850010+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568223+00:00"
       },
       {
         "id": "959ff94eff6101899343134f",
@@ -4651,7 +4661,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:12:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.850052+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568271+00:00"
       },
       {
         "id": "bc8f4b28704a83e4a9e9eae9",
@@ -4661,7 +4671,7 @@
         "source": "IndexBox",
         "category": "Business",
         "published_at": "2026-08-25T23:10:00+00:00",
-        "fetched_at": "2026-08-26T01:44:19.599334+00:00"
+        "fetched_at": "2026-08-26T01:45:49.520840+00:00"
       },
       {
         "id": "28a5e450a59a6e153ede103c",
@@ -4671,7 +4681,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:09:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.849731+00:00"
+        "fetched_at": "2026-08-26T01:45:47.567809+00:00"
       },
       {
         "id": "673cee59b0323332082970c4",
@@ -4681,7 +4691,7 @@
         "source": "News On AIR",
         "category": "Business",
         "published_at": "2026-08-25T23:08:11+00:00",
-        "fetched_at": "2026-08-26T01:44:17.083765+00:00"
+        "fetched_at": "2026-08-26T01:45:46.735534+00:00"
       },
       {
         "id": "874b3f9e9be64bfe291ca027",
@@ -4691,7 +4701,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:05:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.849900+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568075+00:00"
       },
       {
         "id": "8c63d933b7e3bc1bcbc2e752",
@@ -4701,7 +4711,7 @@
         "source": "Reuters",
         "category": "Business",
         "published_at": "2026-08-25T23:03:31+00:00",
-        "fetched_at": "2026-08-26T01:44:23.681934+00:00"
+        "fetched_at": "2026-08-26T01:45:53.749373+00:00"
       },
       {
         "id": "c6c377c306042ba116f6e29e",
@@ -4711,7 +4721,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T23:02:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.849632+00:00"
+        "fetched_at": "2026-08-26T01:45:47.567697+00:00"
       },
       {
         "id": "2fb65ba28db05be7babefc13",
@@ -4721,7 +4731,7 @@
         "source": "The Times of India",
         "category": "Business",
         "published_at": "2026-08-25T22:57:00+00:00",
-        "fetched_at": "2026-08-26T01:44:17.850214+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568445+00:00"
       },
       {
         "id": "af2a5de59a1f878034bc15b7",
@@ -4731,7 +4741,7 @@
         "source": "Reuters",
         "category": "Business",
         "published_at": "2026-08-25T22:54:26+00:00",
-        "fetched_at": "2026-08-26T01:44:23.681349+00:00"
+        "fetched_at": "2026-08-26T01:45:53.748693+00:00"
       },
       {
         "id": "17e35c5476d90f9a4b3f4dbb",
@@ -4751,7 +4761,7 @@
         "source": "Yahoo Finance Singapore",
         "category": "Business",
         "published_at": "2026-08-25T22:51:00+00:00",
-        "fetched_at": "2026-08-26T01:44:20.443266+00:00"
+        "fetched_at": "2026-08-26T01:45:50.358989+00:00"
       },
       {
         "id": "f182789c37f7fbc34ef7b4c5",
@@ -4781,7 +4791,7 @@
         "source": "INSIGHT EU MONITORING",
         "category": "Business",
         "published_at": "2026-08-25T22:47:56+00:00",
-        "fetched_at": "2026-08-26T01:44:19.599473+00:00"
+        "fetched_at": "2026-08-26T01:45:49.520970+00:00"
       },
       {
         "id": "bc81bdf87a18078a14e0d432",
@@ -4791,7 +4801,7 @@
         "source": "CBC",
         "category": "Business",
         "published_at": "2026-08-25T22:43:57+00:00",
-        "fetched_at": "2026-08-26T01:44:20.446318+00:00"
+        "fetched_at": "2026-08-26T01:45:50.362283+00:00"
       },
       {
         "id": "34b718fb1b75e6d95323f9b1",
@@ -4801,7 +4811,7 @@
         "source": "markets.businessinsider.com",
         "category": "Business",
         "published_at": "2026-08-25T22:43:39+00:00",
-        "fetched_at": "2026-08-26T01:44:22.869776+00:00"
+        "fetched_at": "2026-08-26T01:45:52.826960+00:00"
       },
       {
         "id": "9b7aa9a914f2ee6b59ef5f6c",
@@ -4811,7 +4821,7 @@
         "source": "Business Today",
         "category": "Business",
         "published_at": "2026-08-25T22:40:03+00:00",
-        "fetched_at": "2026-08-26T01:44:17.850627+00:00"
+        "fetched_at": "2026-08-26T01:45:47.568888+00:00"
       },
       {
         "id": "ee99afa0099759c483f95b9c",
@@ -4821,7 +4831,17 @@
         "source": "Free Malaysia Today",
         "category": "Business",
         "published_at": "2026-08-25T22:38:33+00:00",
-        "fetched_at": "2026-08-26T01:44:19.602583+00:00"
+        "fetched_at": "2026-08-26T01:45:49.523836+00:00"
+      },
+      {
+        "id": "8bb2146b6fbe789c92de4440",
+        "title": "'Big Short' investor Danny Moses calls 10-year yield, Nvidia the two most important assets for markets right now - CNBC",
+        "description": "'Big Short' investor Danny Moses calls 10-year yield, Nvidia the two most important assets for markets right now CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVEVubGo5SG5SVnZWM2dwSFB2XzR6TUN1WUhVcXg0Skw5V0NfS05FelBVZHhlUEJCcWpwcVNoSng0cTBoUkxMR3BCOU9SNWh3WjlqUFYyNFMzbkdLYzBnc2R3ZlFadS0yakZqaFNHQ0diV3ZGOHlDdlFZTXQ5dXk0Z1lOWGhyc2tIQ2pONWpUWFpWRVhQTTMyUUxYTHQwQWJfZkRjMllfYldzQWY1VHJfRW5nWFFlQkZZdHlPSXZRcjdzUQ?oc=5",
+        "source": "CNBC",
+        "category": "Business",
+        "published_at": "2026-08-25T22:37:39+00:00",
+        "fetched_at": "2026-08-26T01:45:52.826912+00:00"
       },
       {
         "id": "c1c9618fd91594bdf9865845",
@@ -4831,7 +4851,7 @@
         "source": "WLOS",
         "category": "Business",
         "published_at": "2026-08-25T22:34:06+00:00",
-        "fetched_at": "2026-08-26T01:44:20.444388+00:00"
+        "fetched_at": "2026-08-26T01:45:50.360261+00:00"
       },
       {
         "id": "6a5e6601f81d33ca825ce7ba",
@@ -4851,7 +4871,7 @@
         "source": "WRAL",
         "category": "Business",
         "published_at": "2026-08-25T22:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:19.602272+00:00"
+        "fetched_at": "2026-08-26T01:45:49.523564+00:00"
       },
       {
         "id": "ddd3716fd5c8e0fcb0a7a801",
@@ -4871,7 +4891,7 @@
         "source": "TheTechPanda",
         "category": "Business",
         "published_at": "2026-08-25T22:27:12+00:00",
-        "fetched_at": "2026-08-26T01:44:21.211862+00:00"
+        "fetched_at": "2026-08-26T01:45:51.188709+00:00"
       },
       {
         "id": "8823dcc113f7923000fa3bac",
@@ -4904,14 +4924,14 @@
         "fetched_at": "2026-08-26T01:34:37.501052+00:00"
       },
       {
-        "id": "7b7bd83868bf047376f65c7c",
-        "title": "Asian Stocks Set to Gain as Oil Extends Declines: Markets Wrap - Bloomberg.com",
-        "description": "Asian Stocks Set to Gain as Oil Extends Declines: Markets Wrap Bloomberg.com",
+        "id": "6fd3f5244dfe134a777bf931",
+        "title": "Asian Stocks Set to Gain as Oil Extends Declines: Markets Wrap - Bloomberg",
+        "description": "Asian Stocks Set to Gain as Oil Extends Declines: Markets Wrap Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTEp0MDBrTWc0UWtjcEVfNThBU1NJc0xNN3pLVUMwZDIxTDFSMU9OdFY1Yk1VUm9CajJJUlVjdnRfWWpLLV94T21mV291NmdBWFRzNzZIa0UxcUZsVVFJcXlWTHYwa29Zd1Z0YUZKMk4tYlNscm1XVTdiSjJVRmlzZG9JdXl2TkpCQ2ZCWlYxX1pGa1BLZTUxbng0WGV2V2FDa21FdExxcjFjSFFvNTJjQ093?oc=5",
-        "source": "Bloomberg.com",
+        "source": "Bloomberg",
         "category": "Business",
         "published_at": "2026-08-25T22:08:45+00:00",
-        "fetched_at": "2026-08-26T01:44:22.869330+00:00"
+        "fetched_at": "2026-08-26T01:45:52.826368+00:00"
       },
       {
         "id": "9690046e358059d0aaf64924",
@@ -4921,7 +4941,7 @@
         "source": "markets.businessinsider.com",
         "category": "Business",
         "published_at": "2026-08-25T22:04:30+00:00",
-        "fetched_at": "2026-08-26T01:44:22.869818+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827009+00:00"
       },
       {
         "id": "39671ad0903cbc5805de4054",
@@ -4941,7 +4961,7 @@
         "source": "Marine News Magazine",
         "category": "Business",
         "published_at": "2026-08-25T22:02:42+00:00",
-        "fetched_at": "2026-08-26T01:44:19.599205+00:00"
+        "fetched_at": "2026-08-26T01:45:49.520717+00:00"
       },
       {
         "id": "fb316eb3d56b3958899f39ce",
@@ -4961,7 +4981,7 @@
         "source": "Free Malaysia Today",
         "category": "Business",
         "published_at": "2026-08-25T21:58:00+00:00",
-        "fetched_at": "2026-08-26T01:44:19.600066+00:00"
+        "fetched_at": "2026-08-26T01:45:49.521506+00:00"
       },
       {
         "id": "eef548d0ff8d5801e58112f7",
@@ -4981,7 +5001,7 @@
         "source": "Mexico Business News",
         "category": "Business",
         "published_at": "2026-08-25T21:54:18+00:00",
-        "fetched_at": "2026-08-26T01:44:17.083848+00:00"
+        "fetched_at": "2026-08-26T01:45:46.735632+00:00"
       },
       {
         "id": "343cda873a82ea377765a05a",
@@ -4991,30 +5011,20 @@
         "source": "CNBC",
         "category": "Business",
         "published_at": "2026-08-25T21:52:59+00:00",
-        "fetched_at": "2026-08-26T01:44:22.870495+00:00"
-      },
-      {
-        "id": "7177a0d575e300bd02b6ad71",
-        "title": "Iran Economy - Columbia Missourian",
-        "description": "Iran Economy &nbsp;&nbsp; Columbia Missourian",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM2tQU3RxMV83WGZxZnRKQ2J2YlpNWHpFOHU1SXVUbWEwd3JRcTB4Z0h4b3JCQXRNYlI4ZnNLLXRpUDNpMGROMDRyUVBJNXd5QzhyZzhCb3lMQUVDaGpsQXA0ME1fLWlnaGFXNjVoS0pKbENjempHMElId0R2Y0Q5blpwQWM4TnRpa21IR2JOS1kxYW04bUhYY0s3U1REUWdfME13N0hXSTV1clY1cWtOcUxaQQ?oc=5",
-        "source": "Columbia Missourian",
-        "category": "Business",
-        "published_at": "2026-08-25T21:52:55+00:00",
-        "fetched_at": "2026-08-26T01:34:38.329794+00:00"
-      },
-      {
-        "id": "46af90bad030ba3ea1430a6d",
-        "title": "Iran Economy - Columbia Missourian",
-        "description": "Iran Economy &nbsp;&nbsp; Columbia Missourian",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkVKRmxUWmE3Wm10S2dNaW5lemI5czczRm4wR2lIZHh3bVBhRm0yWHBCZWtGenlLZzlMTjdkdkVpLWdqbXBBMTFURTlINjZEc2VfQ05mUUcxcXl1MWNXYnl3dGRZWGFkN25oWGlWUUdzQ0ZzLVV5Rmk5TGE1MWNLRVRlelpkNlJRMWw3OWZrcEJHUlZ4dTZ5OXN6MnU0T1dqNGdnMGJoTE16SzV0a2hIYXhPOA?oc=5",
-        "source": "Columbia Missourian",
-        "category": "Business",
-        "published_at": "2026-08-25T21:52:54+00:00",
-        "fetched_at": "2026-08-26T01:34:38.329614+00:00"
+        "fetched_at": "2026-08-26T01:45:52.827725+00:00"
       }
     ],
     "Lifestyle": [
+      {
+        "id": "a6bc289128506beae6101d1c",
+        "title": "This new L.A. fashion exhibition will spotlight one of Hollywood's most iconic Golden Age designers, and it's totally free - Time Out Worldwide",
+        "description": "This new L.A. fashion exhibition will spotlight one of Hollywood's most iconic Golden Age designers, and it's totally free Time Out Worldwide",
+        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNkdXR0lpalVZWS1rOFdIbXo5dmxZTlNvMEp5cEVJQ0JmSkJtbkxoTUZsOEZCRXR1Q3p0SG1tbC11TEg0TzY1Ylo4TjJaOGljWGVTWFNRVi0zTlo5X2x0N1k2UHJsV1RJdXdpSzBGTU1oeko4TkplWEFUTEVFdmZ2MGhMd01QWXJJQWxpQklNYzNwckpoMGdNWlJiSE96eDdndVVwdFNlVmJCblVxR0w1M1NBT1AtNVNJaGZjV1hDOHJjUm5nT25jbklXa1NDaDVweTJMRDE4aF9rb1UyNkx2NjlJVHdINWZ6bktublBFc01CT2N6RzFOdTNR?oc=5",
+        "source": "Time Out Worldwide",
+        "category": "Lifestyle",
+        "published_at": "2026-08-26T01:45:02+00:00",
+        "fetched_at": "2026-08-26T01:45:59.733768+00:00"
+      },
       {
         "id": "215a4f88b7bbd509b949ac8e",
         "title": "RRB NTPC UG 2026 Result: CBT 1 shortlist released; scorecards due today - Business Standard",
@@ -5023,7 +5033,7 @@
         "source": "Business Standard",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:31:18+00:00",
-        "fetched_at": "2026-08-26T01:44:31.955086+00:00"
+        "fetched_at": "2026-08-26T01:46:02.178326+00:00"
       },
       {
         "id": "89e9baa8bfddb25ff775d620",
@@ -5036,16 +5046,6 @@
         "fetched_at": "2026-08-26T01:44:26.116572+00:00"
       },
       {
-        "id": "a6bc289128506beae6101d1c",
-        "title": "This new L.A. fashion exhibition will spotlight one of Hollywood's most iconic Golden Age designers, and it's totally free - Time Out Worldwide",
-        "description": "This new L.A. fashion exhibition will spotlight one of Hollywood's most iconic Golden Age designers, and it's totally free Time Out Worldwide",
-        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNkdXR0lpalVZWS1rOFdIbXo5dmxZTlNvMEp5cEVJQ0JmSkJtbkxoTUZsOEZCRXR1Q3p0SG1tbC11TEg0TzY1Ylo4TjJaOGljWGVTWFNRVi0zTlo5X2x0N1k2UHJsV1RJdXdpSzBGTU1oeko4TkplWEFUTEVFdmZ2MGhMd01QWXJJQWxpQklNYzNwckpoMGdNWlJiSE96eDdndVVwdFNlVmJCblVxR0w1M1NBT1AtNVNJaGZjV1hDOHJjUm5nT25jbklXa1NDaDVweTJMRDE4aF9rb1UyNkx2NjlJVHdINWZ6bktublBFc01CT2N6RzFOdTNR?oc=5",
-        "source": "Time Out Worldwide",
-        "category": "Lifestyle",
-        "published_at": "2026-08-26T01:23:54+00:00",
-        "fetched_at": "2026-08-26T01:44:29.599045+00:00"
-      },
-      {
         "id": "7f9ebabe2684fca0ad0eaff6",
         "title": "TSA ditches Gold+ privatized airport security program - DC News Now",
         "description": "TSA ditches Gold+ privatized airport security program DC News Now",
@@ -5053,7 +5053,7 @@
         "source": "DC News Now",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:21:59+00:00",
-        "fetched_at": "2026-08-26T01:44:26.113991+00:00"
+        "fetched_at": "2026-08-26T01:45:56.423533+00:00"
       },
       {
         "id": "b2abb17e9560f580c07d5554",
@@ -5063,7 +5063,7 @@
         "source": "Business Travel News",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:15:41+00:00",
-        "fetched_at": "2026-08-26T01:44:26.112617+00:00"
+        "fetched_at": "2026-08-26T01:45:56.421948+00:00"
       },
       {
         "id": "b79a402284407d56be76603c",
@@ -5073,7 +5073,7 @@
         "source": "Global News",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:12:51+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933088+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290258+00:00"
       },
       {
         "id": "eb29306d828ae18fce8f84d0",
@@ -5083,7 +5083,7 @@
         "source": "MPR News",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:10:36+00:00",
-        "fetched_at": "2026-08-26T01:44:26.930744+00:00"
+        "fetched_at": "2026-08-26T01:45:57.287942+00:00"
       },
       {
         "id": "f47151e24a56a1f3d88c04e2",
@@ -5093,7 +5093,7 @@
         "source": "The New Indian Express",
         "category": "Lifestyle",
         "published_at": "2026-08-26T01:10:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.960288+00:00"
+        "fetched_at": "2026-08-26T01:45:58.118808+00:00"
       },
       {
         "id": "2b330a24ba4eaded72881adf",
@@ -5103,7 +5103,7 @@
         "source": "Business Standard",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:59:00+00:00",
-        "fetched_at": "2026-08-26T01:44:24.490318+00:00"
+        "fetched_at": "2026-08-26T01:45:54.601148+00:00"
       },
       {
         "id": "552a29b51d8fad55b0a05d78",
@@ -5113,7 +5113,7 @@
         "source": "The News Mill",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:42:11+00:00",
-        "fetched_at": "2026-08-26T01:44:31.955041+00:00"
+        "fetched_at": "2026-08-26T01:46:02.178380+00:00"
       },
       {
         "id": "f64cbfa2947e77c3a95ee1f5",
@@ -5123,7 +5123,7 @@
         "source": "Business Standard",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:41:15+00:00",
-        "fetched_at": "2026-08-26T01:44:24.490860+00:00"
+        "fetched_at": "2026-08-26T01:45:54.601802+00:00"
       },
       {
         "id": "e542af0df9144aec2397e713",
@@ -5133,7 +5133,7 @@
         "source": "Investing.com India",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:38:14+00:00",
-        "fetched_at": "2026-08-26T01:44:26.930788+00:00"
+        "fetched_at": "2026-08-26T01:45:57.287994+00:00"
       },
       {
         "id": "b8ddd195ea200bc219d9a512",
@@ -5143,7 +5143,7 @@
         "source": "Business Standard",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:33:54+00:00",
-        "fetched_at": "2026-08-26T01:44:24.490663+00:00"
+        "fetched_at": "2026-08-26T01:45:54.601571+00:00"
       },
       {
         "id": "eae9559352120f93ac1a8536",
@@ -5153,7 +5153,7 @@
         "source": "Fox News",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:30:14+00:00",
-        "fetched_at": "2026-08-26T01:44:29.599130+00:00"
+        "fetched_at": "2026-08-26T01:45:59.733866+00:00"
       },
       {
         "id": "1fcedabbc4b30a7460ac071d",
@@ -5163,7 +5163,7 @@
         "source": "The Times of India",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:15:00+00:00",
-        "fetched_at": "2026-08-26T01:44:28.724887+00:00"
+        "fetched_at": "2026-08-26T01:45:58.934234+00:00"
       },
       {
         "id": "c0ba42bf8bc0af1455f30790",
@@ -5173,7 +5173,7 @@
         "source": "Kalkine",
         "category": "Lifestyle",
         "published_at": "2026-08-26T00:10:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.114803+00:00"
+        "fetched_at": "2026-08-26T01:45:56.424525+00:00"
       },
       {
         "id": "6ce7d06593d26739b21d648b",
@@ -5183,7 +5183,7 @@
         "source": "12News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:54:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.962138+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120902+00:00"
       },
       {
         "id": "eb53cad7448ba484a8f1ddaf",
@@ -5193,7 +5193,7 @@
         "source": "GlobeNewswire",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:46:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931118+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288330+00:00"
       },
       {
         "id": "a0b6ce3bb16cb81ddc3a92f2",
@@ -5203,7 +5203,7 @@
         "source": "Hindustan Times",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:45:51+00:00",
-        "fetched_at": "2026-08-26T01:44:29.597231+00:00"
+        "fetched_at": "2026-08-26T01:45:59.731678+00:00"
       },
       {
         "id": "3d51fcf370c969467e4aaf32",
@@ -5213,7 +5213,7 @@
         "source": "foodsafetynews.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:45:38+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933862+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290994+00:00"
       },
       {
         "id": "2e19aa18a64f5bf129e20874",
@@ -5223,7 +5223,17 @@
         "source": "Food & Beverage Industry News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:45:11+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933134+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290300+00:00"
+      },
+      {
+        "id": "1a9d0b99fdaed3542441dfd5",
+        "title": "New Protein Plus program to cut eligible food costs in half at Las Cruces farmers market - Organ Mountain News",
+        "description": "New Protein Plus program to cut eligible food costs in half at Las Cruces farmers market Organ Mountain News",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONDVCWTNTWklWUFYydkZfSGs3d2ZIU0tJbGFTX2RhdFJVbmZ0NHBkcXdlalRZejh2bVdnN2VsR09kUjNfOUdXT2oxSlp6QU5pTjN5cjlybWZObmdXdHJhZWpSSmZqaXRwZDdwTkxfTXZYb3JRU1hKNVRxak5HSWZJRDlyaExGOGFfTnl1NDNXTU5GYlBEb19B?oc=5",
+        "source": "Organ Mountain News",
+        "category": "Lifestyle",
+        "published_at": "2026-08-25T23:34:57+00:00",
+        "fetched_at": "2026-08-26T01:45:57.291114+00:00"
       },
       {
         "id": "dca617709abb2800768ad81f",
@@ -5233,7 +5243,7 @@
         "source": "UA.NEWS",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:34:10+00:00",
-        "fetched_at": "2026-08-26T01:44:26.932107+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289359+00:00"
       },
       {
         "id": "82906a22ca676c90257674b4",
@@ -5243,7 +5253,7 @@
         "source": "NZ Herald",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:31:18+00:00",
-        "fetched_at": "2026-08-26T01:44:31.957210+00:00"
+        "fetched_at": "2026-08-26T01:46:02.180886+00:00"
       },
       {
         "id": "32d936713e8eee4aa51c9b41",
@@ -5253,7 +5263,7 @@
         "source": "Laodong.vn",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:23:27+00:00",
-        "fetched_at": "2026-08-26T01:44:31.957763+00:00"
+        "fetched_at": "2026-08-26T01:46:02.182422+00:00"
       },
       {
         "id": "ec44af28a1603326a6d12d77",
@@ -5263,7 +5273,7 @@
         "source": "marketscreener.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:21:17+00:00",
-        "fetched_at": "2026-08-26T01:44:26.932875+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290094+00:00"
       },
       {
         "id": "86bfc503264dd66ce38adefb",
@@ -5273,7 +5283,7 @@
         "source": "Pragativadi",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:18:26+00:00",
-        "fetched_at": "2026-08-26T01:44:31.955260+00:00"
+        "fetched_at": "2026-08-26T01:46:02.178605+00:00"
       },
       {
         "id": "50a6eb51b3201153ab0872c7",
@@ -5283,7 +5293,7 @@
         "source": "NewsNation",
         "category": "Lifestyle",
         "published_at": "2026-08-25T23:12:47+00:00",
-        "fetched_at": "2026-08-26T01:44:27.962177+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120946+00:00"
       },
       {
         "id": "3ba2ec37b5f28a8aa5352639",
@@ -5293,7 +5303,7 @@
         "source": "ABC News - Breaking News, Latest News and Videos",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:59:55+00:00",
-        "fetched_at": "2026-08-26T01:44:29.597882+00:00"
+        "fetched_at": "2026-08-26T01:45:59.732457+00:00"
       },
       {
         "id": "b11eb0896606d3f0f38071d5",
@@ -5303,7 +5313,7 @@
         "source": "AP News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:50:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.114757+00:00"
+        "fetched_at": "2026-08-26T01:45:56.424462+00:00"
       },
       {
         "id": "ef1198964bc1360e0f3fd30a",
@@ -5313,7 +5323,7 @@
         "source": "Food Tank",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:49:35+00:00",
-        "fetched_at": "2026-08-26T01:44:26.930031+00:00"
+        "fetched_at": "2026-08-26T01:45:57.287097+00:00"
       },
       {
         "id": "9ec3654d2b30421fa17c361d",
@@ -5323,7 +5333,7 @@
         "source": "thenationalnews.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:48:54+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933228+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290388+00:00"
       },
       {
         "id": "969eb0cd454966f86d7bf26c",
@@ -5343,7 +5353,7 @@
         "source": "Travel Industry Today",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:39:27+00:00",
-        "fetched_at": "2026-08-26T01:44:26.114582+00:00"
+        "fetched_at": "2026-08-26T01:45:56.424219+00:00"
       },
       {
         "id": "bc28def540679d4e4be0a799",
@@ -5353,7 +5363,7 @@
         "source": "Medical Xpress",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:30:02+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931249+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288492+00:00"
       },
       {
         "id": "c7921e4029a4872abc4eb552",
@@ -5373,7 +5383,7 @@
         "source": "NBC News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T22:06:29+00:00",
-        "fetched_at": "2026-08-26T01:44:28.726233+00:00"
+        "fetched_at": "2026-08-26T01:45:58.935784+00:00"
       },
       {
         "id": "5710b48cbb2733d91389291f",
@@ -5383,7 +5393,7 @@
         "source": "FashionNetwork - The World's Fashion Business News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:59:33+00:00",
-        "fetched_at": "2026-08-26T01:44:29.598232+00:00"
+        "fetched_at": "2026-08-26T01:45:59.732854+00:00"
       },
       {
         "id": "f7240f6e5f313f6320497d22",
@@ -5393,7 +5403,7 @@
         "source": "FashionNetwork - The World's Fashion Business News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:59:24+00:00",
-        "fetched_at": "2026-08-26T01:44:29.597279+00:00"
+        "fetched_at": "2026-08-26T01:45:59.731736+00:00"
       },
       {
         "id": "e449b770d64b9125fc150ed0",
@@ -5403,7 +5413,7 @@
         "source": "CTV News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:56:23+00:00",
-        "fetched_at": "2026-08-26T01:44:26.116152+00:00"
+        "fetched_at": "2026-08-26T01:45:56.425692+00:00"
       },
       {
         "id": "27c6850b7906099ad3fd02a8",
@@ -5413,7 +5423,7 @@
         "source": "crossroadstoday.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:51:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.932323+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289580+00:00"
       },
       {
         "id": "e89026b01cb24465cd01fe74",
@@ -5423,7 +5433,7 @@
         "source": "Porterville Recorder",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:47:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.960940+00:00"
+        "fetched_at": "2026-08-26T01:45:58.119573+00:00"
       },
       {
         "id": "3eb74dc6bb89e9d70e9075bb",
@@ -5433,7 +5443,7 @@
         "source": "cbs19news.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:45:00+00:00",
-        "fetched_at": "2026-08-26T01:44:31.958138+00:00"
+        "fetched_at": "2026-08-26T01:46:02.181450+00:00"
       },
       {
         "id": "d175afa034d2ff4c214612a6",
@@ -5443,7 +5453,7 @@
         "source": "News Channel 3-12",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:44:35+00:00",
-        "fetched_at": "2026-08-26T01:44:26.115042+00:00"
+        "fetched_at": "2026-08-26T01:45:56.424734+00:00"
       },
       {
         "id": "4d4cd6d996fccfd8f094599e",
@@ -5453,7 +5463,7 @@
         "source": "wtsp.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:42:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961858+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120605+00:00"
       },
       {
         "id": "d67bbee794921971af1d907b",
@@ -5463,7 +5473,7 @@
         "source": "The Business of Fashion",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:37:43+00:00",
-        "fetched_at": "2026-08-26T01:44:29.599218+00:00"
+        "fetched_at": "2026-08-26T01:45:59.733968+00:00"
       },
       {
         "id": "bfe3af40d0722f44ef70557e",
@@ -5473,7 +5483,7 @@
         "source": "thegazette.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:30:00+00:00",
-        "fetched_at": "2026-08-26T01:44:31.957593+00:00"
+        "fetched_at": "2026-08-26T01:46:02.181283+00:00"
       },
       {
         "id": "14b8c1e0f3462e90568b3cc2",
@@ -5483,7 +5493,7 @@
         "source": "News On AIR",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:27:25+00:00",
-        "fetched_at": "2026-08-26T01:44:26.112574+00:00"
+        "fetched_at": "2026-08-26T01:45:56.421892+00:00"
       },
       {
         "id": "7fb6c6f09621da8c327a3b17",
@@ -5493,7 +5503,7 @@
         "source": "thenationalnews.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:23:11+00:00",
-        "fetched_at": "2026-08-26T01:44:26.112706+00:00"
+        "fetched_at": "2026-08-26T01:45:56.422068+00:00"
       },
       {
         "id": "181200fa0c718d8b8d4c6c64",
@@ -5503,7 +5513,7 @@
         "source": "Audacy",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:23:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931812+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289158+00:00"
       },
       {
         "id": "ada3cae53c57fed9cd8160e5",
@@ -5513,7 +5523,7 @@
         "source": "Yahoo News Singapore",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:20:30+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931291+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288543+00:00"
       },
       {
         "id": "33ec7e166727b36c1b5bb456",
@@ -5523,7 +5533,17 @@
         "source": "puck.news",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:17:38+00:00",
-        "fetched_at": "2026-08-26T01:44:26.932496+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289742+00:00"
+      },
+      {
+        "id": "e7433418b9a68459b2ec95b3",
+        "title": "Ministry of Education to organise Bharat Innovates Deep-Tech Pre-Summit in Mumbai tomorrow - News On AIR",
+        "description": "Ministry of Education to organise Bharat Innovates Deep-Tech Pre-Summit in Mumbai tomorrow News On AIR",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNb0o0U1N1RU1DYjJCOV9IT3JRT2Jfb3lpNnBlYTRJNk5PZG9hRmVhQkRlc0tXbFhtZEtET3FvOWNHeFVxUVlyUElSekhGWXczdlREOEcxMDF3dE9GelhVZ2kxZldrZFFSUDBuVFJkb0tON2trbGN5ajlOemxGXzBKNzRrYVBKNXlfaDFnNDNtYWF5bHYzbmhnLWdzMFBHSWJDOFZCUzNHeXpNMUhlUVg2cV9FUWVWU2c?oc=5",
+        "source": "News On AIR",
+        "category": "Lifestyle",
+        "published_at": "2026-08-25T21:13:53+00:00",
+        "fetched_at": "2026-08-26T01:46:02.178037+00:00"
       },
       {
         "id": "9230bbf1a07bb9ffe1cde59b",
@@ -5533,7 +5553,7 @@
         "source": "thegazette.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:12:39+00:00",
-        "fetched_at": "2026-08-26T01:44:31.956706+00:00"
+        "fetched_at": "2026-08-26T01:46:02.180143+00:00"
       },
       {
         "id": "128bd553c2d259d1e160748e",
@@ -5543,7 +5563,7 @@
         "source": "localmemphis.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:12:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933583+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290731+00:00"
       },
       {
         "id": "d58b40d448690381949042e2",
@@ -5553,17 +5573,17 @@
         "source": "Fox News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:08:54+00:00",
-        "fetched_at": "2026-08-26T01:44:28.726092+00:00"
+        "fetched_at": "2026-08-26T01:45:58.935622+00:00"
       },
       {
-        "id": "e5334bbce61da98b213941f1",
-        "title": "The Top Restaurants in Jakarta for Street Food and the World’s Best Desserts - Bloomberg.com",
-        "description": "The Top Restaurants in Jakarta for Street Food and the World’s Best Desserts Bloomberg.com",
+        "id": "1359509a7d1beda72229c2f5",
+        "title": "The Top Restaurants in Jakarta for Street Food and the World’s Best Desserts - Bloomberg",
+        "description": "The Top Restaurants in Jakarta for Street Food and the World’s Best Desserts Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQejlOV3dYYUdPTXByLTh5SHVtMlVVUjhseHlITlJVdEJ3bVVUNVNOTURBdUg0SWtqRXpMd3pORVl4bEtWYVJYQmRFcko5TWJYeHIxQmVETlBsRWM3RzduU0RVbVZOZEticlg3d1FEWmwxbFBwTmI5TS1TM05GcVU5emZMR1lFRXNMN1NCV1RLbjIzZTZxY01tY1JxWTFsbVkyU2tReHpPcUduWVNMUEJuLXo5MzU5TFFwcnIxYTA3S2RsT3Q0M3Fn?oc=5",
-        "source": "Bloomberg.com",
+        "source": "Bloomberg",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:05:03+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931771+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289108+00:00"
       },
       {
         "id": "d29d84f16c9af100d42f54d7",
@@ -5573,7 +5593,7 @@
         "source": "thecanadianpressnews.ca",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:03:22+00:00",
-        "fetched_at": "2026-08-26T01:44:27.962051+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120801+00:00"
       },
       {
         "id": "06c827e1558f373de8bd1be9",
@@ -5583,7 +5603,7 @@
         "source": "Blizzard News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T21:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961726+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120442+00:00"
       },
       {
         "id": "11b3110d0a0358a9e8a4344a",
@@ -5593,7 +5613,7 @@
         "source": "WTVG",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:58:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.114997+00:00"
+        "fetched_at": "2026-08-26T01:45:56.424692+00:00"
       },
       {
         "id": "3ba5efde7ad5cfc98d6ee916",
@@ -5603,7 +5623,7 @@
         "source": "Devdiscourse",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:57:10+00:00",
-        "fetched_at": "2026-08-26T01:44:27.960221+00:00"
+        "fetched_at": "2026-08-26T01:45:58.118735+00:00"
       },
       {
         "id": "1dbf88a4f26a48b70136232f",
@@ -5613,7 +5633,7 @@
         "source": "University of Hawaii System",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:54:19+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933046+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290222+00:00"
       },
       {
         "id": "88374cce598cdb1438500030",
@@ -5623,7 +5643,7 @@
         "source": "ABC News - Breaking News, Latest News and Videos",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:46:41+00:00",
-        "fetched_at": "2026-08-26T01:44:28.726192+00:00"
+        "fetched_at": "2026-08-26T01:45:58.935737+00:00"
       },
       {
         "id": "32b9b7035fdd9188342335ba",
@@ -5633,7 +5653,7 @@
         "source": "ABC News - Breaking News, Latest News and Videos",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:45:17+00:00",
-        "fetched_at": "2026-08-26T01:44:28.725264+00:00"
+        "fetched_at": "2026-08-26T01:45:58.934667+00:00"
       },
       {
         "id": "952a31a0f19dca8770bdb634",
@@ -5643,7 +5663,7 @@
         "source": "The Tribune",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:42:04+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931509+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288799+00:00"
       },
       {
         "id": "720142e2b8f962031741d6f1",
@@ -5653,7 +5673,7 @@
         "source": "Phys.org",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:40:01+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931334+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288594+00:00"
       },
       {
         "id": "4aa39712d6b1bf37a8563c0d",
@@ -5663,7 +5683,7 @@
         "source": "wfmynews2.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:39:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.962350+00:00"
+        "fetched_at": "2026-08-26T01:45:58.121145+00:00"
       },
       {
         "id": "5d29b78e9568b2d98a123aa5",
@@ -5673,7 +5693,7 @@
         "source": "Hometown News Now",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:35:31+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961686+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120396+00:00"
       },
       {
         "id": "49d6d6064266e5db1382980d",
@@ -5683,7 +5703,7 @@
         "source": "UBC News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:35:25+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933371+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290529+00:00"
       },
       {
         "id": "68a36895d4c35957df5d67d3",
@@ -5693,7 +5713,7 @@
         "source": "Hometown News Now",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:35:22+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961107+00:00"
+        "fetched_at": "2026-08-26T01:45:58.119730+00:00"
       },
       {
         "id": "35bc9425ffd94c038327156b",
@@ -5703,7 +5723,7 @@
         "source": "Hometown News Now",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:35:22+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961244+00:00"
+        "fetched_at": "2026-08-26T01:45:58.119884+00:00"
       },
       {
         "id": "8cb6d532b071975a59b74ede",
@@ -5713,7 +5733,7 @@
         "source": "newscentermaine.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:35:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.933466+00:00"
+        "fetched_at": "2026-08-26T01:45:57.290619+00:00"
       },
       {
         "id": "eecb475fd700040c2158add2",
@@ -5723,7 +5743,7 @@
         "source": "PYMNTS.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:27:52+00:00",
-        "fetched_at": "2026-08-26T01:44:29.597053+00:00"
+        "fetched_at": "2026-08-26T01:45:59.731445+00:00"
       },
       {
         "id": "ae9dc9b03563afac0782babe",
@@ -5733,7 +5753,7 @@
         "source": "Rolling Stone",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:25:54+00:00",
-        "fetched_at": "2026-08-26T01:44:29.600209+00:00"
+        "fetched_at": "2026-08-26T01:45:59.735091+00:00"
       },
       {
         "id": "ffc1f628a279cc53b8fe1d50",
@@ -5743,7 +5763,7 @@
         "source": "FOX 13 Seattle",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:25:40+00:00",
-        "fetched_at": "2026-08-26T01:44:29.600299+00:00"
+        "fetched_at": "2026-08-26T01:45:59.735175+00:00"
       },
       {
         "id": "2f77d72f4a4569a912b40ea3",
@@ -5753,7 +5773,7 @@
         "source": "Channel 3000",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:19:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961061+00:00"
+        "fetched_at": "2026-08-26T01:45:58.119678+00:00"
       },
       {
         "id": "c2e6ee93f77c5dfbf5223608",
@@ -5763,7 +5783,7 @@
         "source": "George Herald",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:18:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.963418+00:00"
+        "fetched_at": "2026-08-26T01:45:58.122489+00:00"
       },
       {
         "id": "245cc22cff2b300482c73d56",
@@ -5783,7 +5803,7 @@
         "source": "WLIW",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:06:11+00:00",
-        "fetched_at": "2026-08-26T01:44:28.726005+00:00"
+        "fetched_at": "2026-08-26T01:45:58.935518+00:00"
       },
       {
         "id": "e6e314fe22e15cad68843232",
@@ -5793,7 +5813,7 @@
         "source": "TravelPulse Canada",
         "category": "Lifestyle",
         "published_at": "2026-08-25T20:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.115800+00:00"
+        "fetched_at": "2026-08-26T01:45:56.425324+00:00"
       },
       {
         "id": "c84d04ddd4a88b91cfd9b9ec",
@@ -5803,7 +5823,7 @@
         "source": "Harvard Gazette",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:56:16+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931463+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288747+00:00"
       },
       {
         "id": "b95216982e6ef95b2e357d62",
@@ -5813,7 +5833,7 @@
         "source": "Yahoo News Singapore",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:54:08+00:00",
-        "fetched_at": "2026-08-26T01:44:28.725440+00:00"
+        "fetched_at": "2026-08-26T01:45:58.934870+00:00"
       },
       {
         "id": "96b1c7b49c2cf8f45a57d9dd",
@@ -5823,7 +5843,7 @@
         "source": "Porterville Recorder",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:51:00+00:00",
-        "fetched_at": "2026-08-26T01:44:27.960439+00:00"
+        "fetched_at": "2026-08-26T01:45:58.118974+00:00"
       },
       {
         "id": "9b2bb1863426ad3fc3c9bbc1",
@@ -5833,7 +5853,7 @@
         "source": "Mississauga.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:47:00+00:00",
-        "fetched_at": "2026-08-26T01:44:28.728251+00:00"
+        "fetched_at": "2026-08-26T01:45:58.937901+00:00"
       },
       {
         "id": "3888dfe4ccd5e4fe8d14f8aa",
@@ -5843,7 +5863,7 @@
         "source": "ETV News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:42:04+00:00",
-        "fetched_at": "2026-08-26T01:44:28.726049+00:00"
+        "fetched_at": "2026-08-26T01:45:58.935571+00:00"
       },
       {
         "id": "a7216bcb6d4322c43d96db98",
@@ -5853,7 +5873,7 @@
         "source": "The Times of India",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:40:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.930225+00:00"
+        "fetched_at": "2026-08-26T01:45:57.287318+00:00"
       },
       {
         "id": "deb5e928688bffdf2e093f10",
@@ -5863,7 +5883,7 @@
         "source": "Government of Dubai Media Office",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:39:39+00:00",
-        "fetched_at": "2026-08-26T01:44:28.725162+00:00"
+        "fetched_at": "2026-08-26T01:45:58.934543+00:00"
       },
       {
         "id": "0ba60e3e33e2899e1082ead2",
@@ -5873,7 +5893,7 @@
         "source": "BBC",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:34:07+00:00",
-        "fetched_at": "2026-08-26T01:44:28.725348+00:00"
+        "fetched_at": "2026-08-26T01:45:58.934765+00:00"
       },
       {
         "id": "240f9d67a9649243f1879090",
@@ -5883,7 +5903,7 @@
         "source": "Broadcast Dialogue",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:31:27+00:00",
-        "fetched_at": "2026-08-26T01:44:27.961548+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120238+00:00"
       },
       {
         "id": "44315f02cbb47e331679e184",
@@ -5893,7 +5913,7 @@
         "source": "News18",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:28:41+00:00",
-        "fetched_at": "2026-08-26T01:44:26.929739+00:00"
+        "fetched_at": "2026-08-26T01:45:57.286781+00:00"
       },
       {
         "id": "18de7ebaf1974e0bead1ca07",
@@ -5903,7 +5923,7 @@
         "source": "The Macau Post Daily",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:18:48+00:00",
-        "fetched_at": "2026-08-26T01:44:28.727513+00:00"
+        "fetched_at": "2026-08-26T01:45:58.937219+00:00"
       },
       {
         "id": "66c180087ae71f44105dafc0",
@@ -5913,7 +5933,7 @@
         "source": "WTVC",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:13:39+00:00",
-        "fetched_at": "2026-08-26T01:44:29.600336+00:00"
+        "fetched_at": "2026-08-26T01:45:59.735210+00:00"
       },
       {
         "id": "438c4907f5c83603a1584958",
@@ -5923,7 +5943,7 @@
         "source": "CBS News",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:13:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.932693+00:00"
+        "fetched_at": "2026-08-26T01:45:57.289926+00:00"
       },
       {
         "id": "76ae57b55e2636600659c4cf",
@@ -5933,7 +5953,7 @@
         "source": "The Hindu",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:11:03+00:00",
-        "fetched_at": "2026-08-26T01:44:26.929981+00:00"
+        "fetched_at": "2026-08-26T01:45:57.287042+00:00"
       },
       {
         "id": "6d3f24b126f92af57af51c60",
@@ -5943,7 +5963,7 @@
         "source": "The Indian Express",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:08:55+00:00",
-        "fetched_at": "2026-08-26T01:44:26.112212+00:00"
+        "fetched_at": "2026-08-26T01:45:56.421387+00:00"
       },
       {
         "id": "19f71a65dff741cb8426031f",
@@ -5953,7 +5973,7 @@
         "source": "Journal-News.com",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:04:00+00:00",
-        "fetched_at": "2026-08-26T01:44:31.958493+00:00"
+        "fetched_at": "2026-08-26T01:46:02.182182+00:00"
       },
       {
         "id": "037277015325467e926c5274",
@@ -5963,7 +5983,7 @@
         "source": "Yahoo Lifestyle Australia",
         "category": "Lifestyle",
         "published_at": "2026-08-25T19:00:00+00:00",
-        "fetched_at": "2026-08-26T01:44:24.493818+00:00"
+        "fetched_at": "2026-08-26T01:45:54.605076+00:00"
       },
       {
         "id": "f31bf1193fceaffa8529c684",
@@ -5973,7 +5993,7 @@
         "source": "The Guardian",
         "category": "Lifestyle",
         "published_at": "2026-08-25T18:59:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.931422+00:00"
+        "fetched_at": "2026-08-26T01:45:57.288699+00:00"
       },
       {
         "id": "3f3bcc3665bf1f0b5d67334b",
@@ -5983,7 +6003,7 @@
         "source": "thecanadianpressnews.ca",
         "category": "Lifestyle",
         "published_at": "2026-08-25T18:58:06+00:00",
-        "fetched_at": "2026-08-26T01:44:27.962004+00:00"
+        "fetched_at": "2026-08-26T01:45:58.120748+00:00"
       },
       {
         "id": "69c2a2abb5af045c03e150db",
@@ -5993,27 +6013,7 @@
         "source": "Fibre2Fashion",
         "category": "Lifestyle",
         "published_at": "2026-08-25T18:53:30+00:00",
-        "fetched_at": "2026-08-26T01:44:29.597005+00:00"
-      },
-      {
-        "id": "8bc3441c39cbc85121d224b8",
-        "title": "Why letter grades could drop for many Arizona schools - KTAR News 92.3 FM",
-        "description": "Why letter grades could drop for many Arizona schools KTAR News 92.3 FM",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE94Tm1IaTR4WkZ3bGItTjQtN2RSZVlRbzJLeEtiVDNsdDJoT0p6V0NfM24wNnEzdkZNTnZvQ2NvUXNEc1RFcVcxVEZHS29YZ2hoaTBMVDNISmUxYzYxM0JPVVdsY3FnaFM3WTFyRkh1ZjdaNTRIUFE?oc=5",
-        "source": "KTAR News 92.3 FM",
-        "category": "Lifestyle",
-        "published_at": "2026-08-25T18:52:14+00:00",
-        "fetched_at": "2026-08-26T01:44:31.959067+00:00"
-      },
-      {
-        "id": "e1f96ab0dfda19796ad1c00f",
-        "title": "Food safety crackdown: Adulterated sweets destroyed, unit sealed - The Times of India",
-        "description": "Food safety crackdown: Adulterated sweets destroyed, unit sealed The Times of India",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbURRajF5WWRqcVZVSUpXenhKeU14SW1WbDNmdEcteHJqR2w3SEx2b0FlOVFiSWdETmZYOS1UMkdsQUpHTHhNM1RiOU1WVlg2NDZiQW50WkVVdTgxRnlIbEtTWHhwNXBhd0U3QkJOYWk2NDNpejlqZkJMaVdrb1plSUQ5R3FCRUhIajVNYXBkd0tIODlVRzNrS3VkYzNxbUx5b1BiWjR5MzlFTHd1djFuanJ5SWNzLUJwVHZiZkFjWVZMdmVoMUdjUXdsUmFpS2FLVkNaQtIB2gFBVV95cUxNdUF5TXU3ZEVBRUVCc1YwdmxtT28xY2JSTVlKS005cnZQWmJVUTVNMC1YS1VpZTVQUTgzdXhxTXJJdVVXU3hwcUREZ2tKQVRYV0pNX2VxT05WTlBxcjA5Z3VxYmlIUmhWZHBaVDk1TjJwbkRWYjlFaDl4ZXg0SzNtUHVjd3FtS3BTb1FZcXNNWTY1X1drQ3RSUlY3R1Ribks2RnJwYUxaUXVVSGVpcHBiMWlqYUYxVVhwUjZGTFQtX0lrQXRZVHdfRzZTMV9hV3NWRXo4YnJTaXlCQQ?oc=5",
-        "source": "The Times of India",
-        "category": "Lifestyle",
-        "published_at": "2026-08-25T18:39:00+00:00",
-        "fetched_at": "2026-08-26T01:44:26.930126+00:00"
+        "fetched_at": "2026-08-26T01:45:59.731393+00:00"
       }
     ],
     "Top Stories": [
