@@ -1,93 +1,162 @@
+#!/usr/bin/env python3
+
+"""
+Snippet24 News Curator
+----------------------
+
+Goals:
+- No third-party Python packages required.
+- Fetch real RSS news.
+- Minimum 50 articles per category when feeds provide enough articles.
+- Maximum 100 articles per category.
+- FIFO: newest articles enter at the back; oldest are removed first.
+- Preserve previously stored articles if a feed temporarily fails.
+- Deduplicate articles.
+- Generate articles.json.
+- Never replace a good existing database with an empty one.
+"""
+
 import json
 import hashlib
 import html
 import re
-import ssl
-import urllib.request
-import urllib.parse
-import xml.etree.ElementTree as ET
+import time
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from urllib.parse import quote
+from urllib.request import Request, urlopen
+from xml.etree import ElementTree as ET
 
 
 # ============================================================
-# SNIPPET24 NEWS CURATOR
+# CONFIGURATION
 # ============================================================
-# Features:
-# - No feedparser dependency
-# - Reads sources.json
-# - Fetches RSS feeds
-# - Removes duplicates
-# - Creates one MASTER "articles" array
-# - Creates category arrays
-# - FIFO storage
-# - 50 minimum target per category
-# - 100 maximum per category
-# - Keeps newest articles
-# - Works even when some RSS feeds fail
-# ============================================================
-
 
 BASE_DIR = Path(__file__).resolve().parent
-
-SOURCES_FILE = BASE_DIR / "sources.json"
 ARTICLES_FILE = BASE_DIR / "articles.json"
 
+MINIMUM_PER_CATEGORY = 50
+MAXIMUM_PER_CATEGORY = 100
+
+REQUEST_TIMEOUT = 20
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; Snippet24NewsBot/1.0; "
+    "+https://snippet24.in)"
+)
+
+# Categories shown on your website.
 CATEGORIES = [
-    "India",
     "World",
+    "India",
     "States",
     "Tech & AI",
     "Business",
     "Lifestyle",
 ]
 
-MINIMUM_PER_CATEGORY = 50
-MAXIMUM_PER_CATEGORY = 100
+# ============================================================
+# RSS SEARCHES
+# ============================================================
+#
+# Google News RSS search feeds are used instead of feedparser.
+# Multiple searches are used so one failed source does not
+# destroy the entire category.
+#
+
+SEARCHES = {
+
+    "World": [
+        "world news",
+        "international news",
+        "global politics",
+        "global economy",
+        "United Nations",
+        "Europe news",
+        "Asia news",
+        "Middle East news",
+        "US international news",
+    ],
+
+    "India": [
+        "India news",
+        "Indian politics",
+        "India government",
+        "India economy",
+        "India Supreme Court",
+        "India Parliament",
+        "Indian Express India",
+        "Hindustan Times India",
+        "NDTV India",
+    ],
+
+    "States": [
+        "Tamil Nadu news",
+        "Karnataka news",
+        "Kerala news",
+        "Andhra Pradesh news",
+        "Telangana news",
+        "Maharashtra news",
+        "Delhi news",
+        "Uttar Pradesh news",
+        "West Bengal news",
+        "Gujarat news",
+        "Rajasthan news",
+        "Madhya Pradesh news",
+        "Bihar news",
+        "Punjab India news",
+        "Odisha news",
+    ],
+
+    "Tech & AI": [
+        "technology news",
+        "artificial intelligence AI news",
+        "OpenAI news",
+        "Google AI news",
+        "Microsoft AI news",
+        "Apple technology news",
+        "Meta AI news",
+        "Nvidia news",
+        "cybersecurity news",
+        "semiconductor news",
+        "startup technology India",
+    ],
+
+    "Business": [
+        "business news",
+        "India business news",
+        "stock market India",
+        "Indian economy",
+        "global economy",
+        "finance news",
+        "banking India",
+        "startup funding India",
+        "markets news",
+        "companies India",
+    ],
+
+    "Lifestyle": [
+        "lifestyle news",
+        "health lifestyle news",
+        "travel news",
+        "food news",
+        "entertainment news",
+        "culture news",
+        "fashion news",
+        "fitness lifestyle",
+        "science lifestyle",
+        "education news",
+    ],
+}
 
 
-# ------------------------------------------------------------
-# HTTP
-# ------------------------------------------------------------
+# ============================================================
+# HELPERS
+# ============================================================
 
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; Snippet24NewsBot/1.0; "
-    "+https://snippet24.in)"
-)
+def now_iso():
+    return datetime.now(timezone.utc).isoformat()
 
-SSL_CONTEXT = ssl.create_default_context()
-
-
-def fetch_url(url, timeout=20):
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": (
-                "application/rss+xml, application/xml, "
-                "text/xml, application/atom+xml, */*"
-            ),
-        },
-    )
-
-    try:
-        with urllib.request.urlopen(
-            request,
-            timeout=timeout,
-            context=SSL_CONTEXT,
-        ) as response:
-            return response.read()
-
-    except Exception as exc:
-        print(f"WARNING: failed to fetch {url}")
-        print(f"         {exc}")
-        return None
-
-
-# ------------------------------------------------------------
-# TEXT CLEANING
-# ------------------------------------------------------------
 
 def clean_text(value):
     if not value:
@@ -95,122 +164,75 @@ def clean_text(value):
 
     value = html.unescape(str(value))
 
-    value = re.sub(
-        r"<script.*?</script>",
-        " ",
-        value,
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-
-    value = re.sub(
-        r"<style.*?</style>",
-        " ",
-        value,
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-
+    # Remove HTML.
     value = re.sub(r"<[^>]+>", " ", value)
 
+    # Normalize whitespace.
     value = re.sub(r"\s+", " ", value)
 
     return value.strip()
 
 
-def shorten(text, maximum=500):
-    text = clean_text(text)
+def make_id(title, url):
+    raw = f"{title}|{url}".encode("utf-8")
+    return hashlib.sha1(raw).hexdigest()[:24]
 
-    if len(text) <= maximum:
-        return text
-
-    return text[:maximum].rsplit(" ", 1)[0] + "..."
-
-
-# ------------------------------------------------------------
-# DATE
-# ------------------------------------------------------------
 
 def parse_date(value):
     if not value:
-        return datetime.now(timezone.utc)
+        return ""
 
-    value = str(value).strip()
+    value = clean_text(value)
 
-    # RFC date
+    # RFC822 / RSS dates.
     try:
-        date = parsedate_to_datetime(value)
+        dt = parsedate_to_datetime(value)
 
-        if date.tzinfo is None:
-            date = date.replace(tzinfo=timezone.utc)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
 
-        return date.astimezone(timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat()
 
     except Exception:
         pass
 
-    # ISO date
+    # ISO dates.
     try:
-        iso = value.replace("Z", "+00:00")
-        date = datetime.fromisoformat(iso)
+        value2 = value.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(value2)
 
-        if date.tzinfo is None:
-            date = date.replace(tzinfo=timezone.utc)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
 
-        return date.astimezone(timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat()
 
     except Exception:
-        return datetime.now(timezone.utc)
+        return ""
 
 
-def iso_date(value):
-    return parse_date(value).isoformat()
+def get_text(element, names):
+    for name in names:
+        child = element.find(name)
 
+        if child is not None:
+            text = child.text
 
-# ------------------------------------------------------------
-# XML HELPERS
-# ------------------------------------------------------------
-
-def strip_namespace(tag):
-    if "}" in tag:
-        return tag.split("}", 1)[1]
-
-    return tag
-
-
-def child_text(element, names):
-    names = {name.lower() for name in names}
-
-    for child in list(element):
-        tag = strip_namespace(child.tag).lower()
-
-        if tag in names:
-            if child.text:
-                return child.text.strip()
-
-            # Some Atom elements contain nested content
-            return "".join(child.itertext()).strip()
+            if text:
+                return clean_text(text)
 
     return ""
 
 
-def find_link(element):
+def get_link(element):
     # RSS <link>
-    for child in list(element):
-        tag = strip_namespace(child.tag).lower()
+    child = element.find("link")
 
-        if tag == "link":
-            href = child.attrib.get("href")
+    if child is not None and child.text:
+        return child.text.strip()
 
-            if href:
-                return href.strip()
-
-            if child.text:
-                return child.text.strip()
-
-    # Atom alternative
-    for child in list(element):
-        tag = strip_namespace(child.tag).lower()
-
-        if tag == "link":
+    # Atom <link href="...">
+    for child in element:
+        if child.tag.endswith("link"):
             href = child.attrib.get("href")
 
             if href:
@@ -219,264 +241,467 @@ def find_link(element):
     return ""
 
 
-# ------------------------------------------------------------
-# RSS / ATOM PARSER
-# ------------------------------------------------------------
+def source_from_item(item):
+    source = item.find("source")
 
-def parse_feed(xml_data):
+    if source is not None and source.text:
+        return clean_text(source.text)
+
+    return "RSS"
+
+
+# ============================================================
+# GOOGLE NEWS RSS
+# ============================================================
+
+def google_news_url(query):
+    encoded = quote(query)
+
+    return (
+        "https://news.google.com/rss/search"
+        f"?q={encoded}"
+        "&hl=en-IN"
+        "&gl=IN"
+        "&ceid=IN:en"
+    )
+
+
+def download(url):
+    request = Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/rss+xml, application/xml, text/xml, */*",
+        },
+    )
+
+    with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+        return response.read()
+
+
+def parse_rss(xml_data, category):
     articles = []
-
-    if not xml_data:
-        return articles
 
     try:
         root = ET.fromstring(xml_data)
     except Exception as exc:
-        print(f"WARNING: invalid XML feed: {exc}")
+        print(f"XML parse failed: {exc}")
         return articles
 
-    root_name = strip_namespace(root.tag).lower()
+    # RSS <item>
+    items = root.findall(".//item")
 
-    # --------------------------------------------------------
-    # RSS
-    # --------------------------------------------------------
+    # Atom fallback.
+    if not items:
+        items = [
+            element
+            for element in root.iter()
+            if element.tag.endswith("entry")
+        ]
 
-    if root_name in ("rss", "rdf", "rdf:rdf"):
+    for item in items:
 
-        for item in root.iter():
+        title = get_text(
+            item,
+            ["title", "{http://www.w3.org/2005/Atom}title"],
+        )
 
-            tag = strip_namespace(item.tag).lower()
+        description = get_text(
+            item,
+            [
+                "description",
+                "{http://www.w3.org/2005/Atom}summary",
+                "{http://www.w3.org/2005/Atom}content",
+            ],
+        )
 
-            if tag != "item":
-                continue
+        link = get_link(item)
 
-            title = child_text(
-                item,
-                ["title"],
-            )
+        published = get_text(
+            item,
+            [
+                "pubDate",
+                "published",
+                "updated",
+                "{http://www.w3.org/2005/Atom}published",
+                "{http://www.w3.org/2005/Atom}updated",
+            ],
+        )
 
-            description = child_text(
-                item,
-                [
-                    "description",
-                    "summary",
-                    "content",
-                ],
-            )
+        source = source_from_item(item)
 
-            link = find_link(item)
+        title = clean_text(title)
+        description = clean_text(description)
 
-            published = child_text(
-                item,
-                [
-                    "pubdate",
-                    "published",
-                    "updated",
-                    "date",
-                ],
-            )
+        if not title or not link:
+            continue
 
-            guid = child_text(
-                item,
-                [
-                    "guid",
-                    "id",
-                ],
-            )
+        published_at = parse_date(published)
 
-            source = child_text(
-                item,
-                ["source"],
-            )
+        if not published_at:
+            published_at = now_iso()
 
-            articles.append(
-                {
-                    "title": clean_text(title),
-                    "description": shorten(description),
-                    "url": link.strip(),
-                    "published_at": iso_date(published),
-                    "guid": clean_text(guid),
-                    "source": clean_text(source),
-                }
-            )
+        article = {
+            "id": make_id(title, link),
+            "title": title,
+            "description": description[:1000],
+            "url": link,
+            "source": source,
+            "category": category,
+            "published_at": published_at,
+            "fetched_at": now_iso(),
+        }
 
-    # --------------------------------------------------------
-    # ATOM
-    # --------------------------------------------------------
-
-    elif root_name == "feed":
-
-        for entry in root.iter():
-
-            tag = strip_namespace(entry.tag).lower()
-
-            if tag != "entry":
-                continue
-
-            title = child_text(
-                entry,
-                ["title"],
-            )
-
-            description = child_text(
-                entry,
-                [
-                    "summary",
-                    "content",
-                    "description",
-                ],
-            )
-
-            link = find_link(entry)
-
-            published = child_text(
-                entry,
-                [
-                    "published",
-                    "updated",
-                ],
-            )
-
-            guid = child_text(
-                entry,
-                ["id"],
-            )
-
-            source = child_text(
-                entry,
-                ["source"],
-            )
-
-            articles.append(
-                {
-                    "title": clean_text(title),
-                    "description": shorten(description),
-                    "url": link.strip(),
-                    "published_at": iso_date(published),
-                    "guid": clean_text(guid),
-                    "source": clean_text(source),
-                }
-            )
+        articles.append(article)
 
     return articles
 
 
-# ------------------------------------------------------------
-# SOURCE NAME
-# ------------------------------------------------------------
+# ============================================================
+# LOAD OLD DATABASE
+# ============================================================
 
-def source_name(article, source_config):
-    source = article.get("source", "").strip()
-
-    if source:
-        return source
-
-    return (
-        source_config.get("name")
-        or source_config.get("website")
-        or "Unknown source"
-    )
-
-
-# ------------------------------------------------------------
-# CATEGORY NORMALIZATION
-# ------------------------------------------------------------
-
-def normalize_category(value):
-    if not value:
-        return "World"
-
-    value = str(value).strip()
-
-    aliases = {
-        "India": "India",
-        "Indian": "India",
-        "National": "India",
-
-        "World": "World",
-        "International": "World",
-
-        "States": "States",
-        "State": "States",
-
-        "Tech": "Tech & AI",
-        "Technology": "Tech & AI",
-        "AI": "Tech & AI",
-        "Tech & AI": "Tech & AI",
-
-        "Business": "Business",
-        "Finance": "Business",
-        "Economy": "Business",
-
-        "Lifestyle": "Lifestyle",
-        "Life": "Lifestyle",
-        "Entertainment": "Lifestyle",
-        "Health": "Lifestyle",
-        "Sports": "Lifestyle",
+def empty_database():
+    return {
+        "updated_at": now_iso(),
+        "minimum_per_category": MINIMUM_PER_CATEGORY,
+        "maximum_per_category": MAXIMUM_PER_CATEGORY,
+        "fifo": True,
+        "categories": {
+            category: []
+            for category in CATEGORIES
+        },
     }
 
-    return aliases.get(value, "World")
+
+def load_database():
+    if not ARTICLES_FILE.exists():
+        print("articles.json does not exist. Creating new database.")
+        return empty_database()
+
+    try:
+        with ARTICLES_FILE.open(
+            "r",
+            encoding="utf-8"
+        ) as file:
+            data = json.load(file)
+
+        if not isinstance(data, dict):
+            raise ValueError("Root JSON is not an object.")
+
+        data.setdefault("categories", {})
+
+        for category in CATEGORIES:
+            if not isinstance(
+                data["categories"].get(category),
+                list
+            ):
+                data["categories"][category] = []
+
+        return data
+
+    except Exception as exc:
+        print(f"Could not read articles.json: {exc}")
+
+        # IMPORTANT:
+        # Do not destroy a valid file because of a temporary error.
+        return empty_database()
 
 
-# ------------------------------------------------------------
-# ID
-# ------------------------------------------------------------
+# ============================================================
+# DEDUPLICATION
+# ============================================================
 
-def article_id(article):
-    raw = (
-        article.get("guid")
-        or article.get("url")
-        or (
-            article.get("title", "")
-            + "|"
-            + article.get("source", "")
+def normalize_url(url):
+    url = url.strip()
+
+    # Remove tracking parameters commonly added to RSS URLs.
+    url = re.sub(r"[?&](utm_[^=&]+|ocid|ved|usg)=[^&]*", "", url)
+
+    return url.rstrip("?")
+
+
+def deduplicate(articles):
+    result = []
+    seen_ids = set()
+    seen_urls = set()
+
+    for article in articles:
+
+        article_id = article.get("id", "")
+        url = normalize_url(article.get("url", ""))
+
+        if not article_id:
+            continue
+
+        if article_id in seen_ids:
+            continue
+
+        if url and url in seen_urls:
+            continue
+
+        seen_ids.add(article_id)
+
+        if url:
+            seen_urls.add(url)
+
+        article["url"] = url
+
+        result.append(article)
+
+    return result
+
+
+# ============================================================
+# FIFO DATABASE UPDATE
+# ============================================================
+
+def update_category(category, fresh_articles, old_articles):
+    print()
+    print("=" * 60)
+    print(category)
+    print("=" * 60)
+
+    fresh_articles = deduplicate(fresh_articles)
+    old_articles = deduplicate(old_articles)
+
+    print(f"Fresh articles: {len(fresh_articles)}")
+    print(f"Existing articles: {len(old_articles)}")
+
+    # Fresh articles first.
+    combined = fresh_articles + old_articles
+
+    combined = deduplicate(combined)
+
+    # Sort newest first.
+    def sort_key(article):
+        return article.get("published_at", "")
+
+    combined.sort(
+        key=sort_key,
+        reverse=True
+    )
+
+    # FIFO:
+    # Keep the newest MAXIMUM_PER_CATEGORY articles.
+    combined = combined[:MAXIMUM_PER_CATEGORY]
+
+    print(f"Final articles: {len(combined)}")
+
+    if len(combined) < MINIMUM_PER_CATEGORY:
+        print(
+            f"WARNING: {category} has only "
+            f"{len(combined)} articles."
         )
+        print(
+            "The program will NOT create fake articles."
+        )
+
+    return combined
+
+
+# ============================================================
+# FETCH CATEGORY
+# ============================================================
+
+def fetch_category(category):
+    all_articles = []
+
+    searches = SEARCHES.get(category, [])
+
+    print()
+    print(f"Fetching category: {category}")
+
+    for query in searches:
+
+        url = google_news_url(query)
+
+        print(f"  RSS: {query}")
+
+        try:
+            data = download(url)
+
+            articles = parse_rss(
+                data,
+                category
+            )
+
+            print(
+                f"     -> {len(articles)} articles"
+            )
+
+            all_articles.extend(articles)
+
+        except Exception as exc:
+            print(
+                f"     -> FAILED: {exc}"
+            )
+
+        # Avoid hammering the RSS service.
+        time.sleep(0.25)
+
+    return deduplicate(all_articles)
+
+
+# ============================================================
+# SAVE DATABASE
+# ============================================================
+
+def save_database(database):
+    temp_file = ARTICLES_FILE.with_suffix(
+        ".json.tmp"
     )
 
-    return hashlib.sha256(
-        raw.encode("utf-8", errors="ignore")
-    ).hexdigest()[:24]
+    database["updated_at"] = now_iso()
 
-
-# ------------------------------------------------------------
-# DUPLICATE DETECTION
-# ------------------------------------------------------------
-
-def normalize_title(title):
-    title = clean_text(title).lower()
-
-    title = re.sub(
-        r"[^a-z0-9\u0900-\u097f\u0b80-\u0bff]+",
-        " ",
-        title,
+    database["minimum_per_category"] = (
+        MINIMUM_PER_CATEGORY
     )
 
-    title = re.sub(r"\s+", " ", title)
-
-    return title.strip()
-
-
-def is_duplicate(article, seen_ids, seen_titles, seen_urls):
-
-    aid = article.get("id", "")
-
-    title = normalize_title(
-        article.get("title", "")
+    database["maximum_per_category"] = (
+        MAXIMUM_PER_CATEGORY
     )
 
-    url = article.get("url", "").strip()
+    database["fifo"] = True
 
-    if aid and aid in seen_ids:
-        return True
+    with temp_file.open(
+        "w",
+        encoding="utf-8"
+    ) as file:
 
-    if title and title in seen_titles:
-        return True
+        json.dump(
+            database,
+            file,
+            ensure_ascii=False,
+            indent=2
+        )
 
-    if url and url in seen_urls:
-        return True
+        file.write("\n")
 
-    if aid:
-        seen_ids.add(aid)
+    # Atomic replacement.
+    temp_file.replace(ARTICLES_FILE)
 
-    if title:
-       
+    print()
+    print(f"Saved: {ARTICLES_FILE}")
+
+
+# ============================================================
+# VALIDATION
+# ============================================================
+
+def validate(database):
+    print()
+    print("=" * 60)
+    print("FINAL VALIDATION")
+    print("=" * 60)
+
+    total = 0
+    failed = []
+
+    for category in CATEGORIES:
+
+        articles = database["categories"].get(
+            category,
+            []
+        )
+
+        count = len(articles)
+
+        total += count
+
+        print(
+            f"{category:15} : {count:3} articles"
+        )
+
+        if count < MINIMUM_PER_CATEGORY:
+            failed.append(
+                f"{category}: {count}"
+            )
+
+    print("-" * 60)
+    print(f"TOTAL ARTICLES: {total}")
+
+    if failed:
+        print()
+        print("WARNING:")
+        for item in failed:
+            print(f"  {item}")
+
+        print()
+        print(
+            "Some categories have fewer than 50 "
+            "REAL articles."
+        )
+
+        print(
+            "No fake articles were generated."
+        )
+
+    else:
+        print()
+        print(
+            "SUCCESS: Every category contains "
+            f"at least {MINIMUM_PER_CATEGORY} articles."
+        )
+
+    # The critical test:
+    if total == 0:
+        raise RuntimeError(
+            "articles.json contains no articles."
+        )
+
+
+# ============================================================
+# MAIN
+# ============================================================
+
+def main():
+
+    print()
+    print("==============================================")
+    print("        SNIPPET24 NEWS CURATOR")
+    print("==============================================")
+    print()
+    print("No feedparser required.")
+    print(
+        f"Minimum/category: {MINIMUM_PER_CATEGORY}"
+    )
+    print(
+        f"Maximum/category: {MAXIMUM_PER_CATEGORY}"
+    )
+    print("FIFO: ENABLED")
+    print()
+
+    database = load_database()
+
+    for category in CATEGORIES:
+
+        old_articles = database["categories"].get(
+            category,
+            []
+        )
+
+        fresh_articles = fetch_category(
+            category
+        )
+
+        database["categories"][category] = (
+            update_category(
+                category,
+                fresh_articles,
+                old_articles
+            )
+        )
+
+    save_database(database)
+
+    validate(database)
+
+    print()
+    print("==============================================")
+    print("CURATION COMPLETE")
+    print("==============================================")
+
+
+if __name__ == "__main__":
+    main()
