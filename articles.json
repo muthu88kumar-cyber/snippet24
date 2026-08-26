@@ -1,15 +1,6 @@
 {
-  "articles": [
-    {
-      "id": "world-001",
-      "category": "World",
-      "headline": "Trump submits civil nuclear agreement with Saudi Arabia to Congress for review",
-      "summary": "The Trump administration has sent a proposed civil nuclear cooperation agreement with Saudi Arabia to Congress for review, beginning the formal process for lawmakers to examine the deal.",
-      "publisher": "Business Standard",
-      "published_at": "2026-08-26T08:07:00+05:30",
-      "url": "https://example.com/article",
-      "image_url": "",
-      "source_language": "en"
-    }
-  ]
+  "updated_at": null,
+  "total": 0,
+  "categories": {},
+  "articles": []
 }
