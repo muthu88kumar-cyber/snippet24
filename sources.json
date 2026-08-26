@@ -1,192 +1,111 @@
 {
-  "sources": [
-    {
-      "name": "Google News - World",
-      "feed_url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - India",
-      "feed_url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+  "version": 1,
+  "provider": "Google News RSS",
+  "language": "en-IN",
+  "country": "IN",
 
-    {
-      "name": "Google News - Technology",
-      "feed_url": "https://news.google.com/rss/search?q=technology&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - AI",
-      "feed_url": "https://news.google.com/rss/search?q=artificial%20intelligence%20AI&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Tech & AI",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+  "minimum_per_category": 50,
+  "maximum_per_category": 100,
 
-    {
-      "name": "Google News - Business",
-      "feed_url": "https://news.google.com/rss/search?q=business%20economy&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Business & Economy",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - India Business",
-      "feed_url": "https://news.google.com/rss/search?q=India%20business%20economy&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Business & Economy",
-      "region": "India",
-      "country": "India",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+  "fifo": true,
 
-    {
-      "name": "Google News - Lifestyle",
-      "feed_url": "https://news.google.com/rss/search?q=lifestyle%20health&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Lifestyle & Health",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+  "categories": {
+    "World": [
+      "world news",
+      "international news",
+      "global politics",
+      "world economy",
+      "United Nations news",
+      "US news",
+      "UK news",
+      "Europe news",
+      "Middle East news",
+      "Asia news"
+    ],
 
-    {
-      "name": "Google News - Entertainment",
-      "feed_url": "https://news.google.com/rss/search?q=entertainment%20movies%20music&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Entertainment & Living",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+    "India": [
+      "India news",
+      "Indian politics",
+      "India government",
+      "India Supreme Court",
+      "India economy",
+      "India business",
+      "India Parliament",
+      "Indian defence",
+      "India technology",
+      "India national news"
+    ],
 
-    {
-      "name": "Google News - Environment",
-      "feed_url": "https://news.google.com/rss/search?q=environment%20climate&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Earth & Environment",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+    "States": [
+      "Tamil Nadu news",
+      "Karnataka news",
+      "Kerala news",
+      "Maharashtra news",
+      "Delhi news",
+      "Andhra Pradesh news",
+      "Telangana news",
+      "West Bengal news",
+      "Gujarat news",
+      "Uttar Pradesh news",
+      "Rajasthan news",
+      "Madhya Pradesh news",
+      "Punjab news",
+      "Bihar news",
+      "Odisha news"
+    ],
 
-    {
-      "name": "Google News - Sports",
-      "feed_url": "https://news.google.com/rss/search?q=sports&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Sports & Cultural",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+    "Tech & AI": [
+      "technology news",
+      "artificial intelligence news",
+      "AI news",
+      "Google AI",
+      "Microsoft AI",
+      "OpenAI news",
+      "Apple technology",
+      "Meta AI",
+      "Amazon technology",
+      "cybersecurity news",
+      "semiconductor news",
+      "startup technology",
+      "robotics news",
+      "cloud computing news",
+      "software technology"
+    ],
 
-    {
-      "name": "Google News - Culture",
-      "feed_url": "https://news.google.com/rss/search?q=culture%20arts&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Sports & Cultural",
-      "region": "International",
-      "country": "World",
-      "state": "",
-      "language": "English",
-      "enabled": true
-    },
+    "Business": [
+      "India business news",
+      "Indian economy",
+      "stock market India",
+      "Sensex Nifty news",
+      "global markets",
+      "business news",
+      "finance news",
+      "banking news",
+      "RBI news",
+      "startup business",
+      "corporate India",
+      "companies India",
+      "IPO India",
+      "oil prices",
+      "gold prices"
+    ],
 
-    {
-      "name": "Google News - Tamil Nadu",
-      "feed_url": "https://news.google.com/rss/search?q=Tamil%20Nadu&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Tamil Nadu",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Kerala",
-      "feed_url": "https://news.google.com/rss/search?q=Kerala&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Kerala",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Karnataka",
-      "feed_url": "https://news.google.com/rss/search?q=Karnataka&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Karnataka",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Maharashtra",
-      "feed_url": "https://news.google.com/rss/search?q=Maharashtra&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Maharashtra",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Delhi",
-      "feed_url": "https://news.google.com/rss/search?q=Delhi&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Delhi",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Telangana",
-      "feed_url": "https://news.google.com/rss/search?q=Telangana&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Telangana",
-      "language": "English",
-      "enabled": true
-    },
-    {
-      "name": "Google News - Andhra Pradesh",
-      "feed_url": "https://news.google.com/rss/search?q=Andhra%20Pradesh&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "Indian & International",
-      "region": "India",
-      "country": "India",
-      "state": "Andhra Pradesh",
-      "language": "English",
-      "enabled": true
-    }
-  ]
+    "Lifestyle": [
+      "India lifestyle news",
+      "health lifestyle news",
+      "travel news India",
+      "food news India",
+      "entertainment news India",
+      "Bollywood news",
+      "sports lifestyle",
+      "fashion news India",
+      "education news India",
+      "culture news India",
+      "science news",
+      "environment news",
+      "automobile news India",
+      "family lifestyle",
+      "consumer news"
+    ]
+  }
 }
