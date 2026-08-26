@@ -3,10 +3,9 @@ import hashlib
 import html
 import re
 import time
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 from email.utils import parsedate_to_datetime
-from urllib.parse import quote_plus
 
 import feedparser
 import requests
@@ -21,20 +20,20 @@ MINIMUM_PER_CATEGORY = 50
 MAXIMUM_PER_CATEGORY = 100
 
 REQUEST_TIMEOUT = 20
-SLEEP_BETWEEN_REQUESTS = 0.25
 
-
-USER_AGENT = (
-    "Mozilla/5.0 "
-    "(compatible; Snippet24NewsBot/1.0; +https://snippet24.in)"
-)
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (compatible; Snippet24News/1.0; "
+        "+https://snippet24.in)"
+    )
+}
 
 
 # ---------------------------------------------------------
 # TIME
 # ---------------------------------------------------------
 
-def now_iso():
+def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
 
@@ -48,29 +47,22 @@ def clean_text(value):
 
     value = html.unescape(str(value))
 
+    # Remove HTML
     value = re.sub(r"<[^>]+>", " ", value)
 
+    # Remove excessive whitespace
     value = re.sub(r"\s+", " ", value)
 
     return value.strip()
 
 
-def clean_title(value):
-    value = clean_text(value)
+def shorten_text(text, limit=500):
+    text = clean_text(text)
 
-    # Google News sometimes adds " - Source"
-    # We keep the title clean but do not aggressively modify it.
-    return value
+    if len(text) <= limit:
+        return text
 
-
-# ---------------------------------------------------------
-# ID
-# ---------------------------------------------------------
-
-def make_id(title, url):
-    raw = f"{title}|{url}".encode("utf-8")
-
-    return hashlib.sha256(raw).hexdigest()[:24]
+    return text[:limit].rsplit(" ", 1)[0] + "..."
 
 
 # ---------------------------------------------------------
@@ -81,7 +73,7 @@ def parse_date(entry):
     candidates = [
         entry.get("published"),
         entry.get("updated"),
-        entry.get("created")
+        entry.get("created"),
     ]
 
     for value in candidates:
@@ -99,555 +91,401 @@ def parse_date(entry):
         except Exception:
             pass
 
-    return now_iso()
+    return utc_now()
 
 
 # ---------------------------------------------------------
-# GOOGLE NEWS RSS
+# ID
 # ---------------------------------------------------------
 
-def google_news_url(query):
-    encoded = quote_plus(query)
+def make_id(title, url):
+    raw = f"{title}|{url}".encode("utf-8")
 
-    return (
-        "https://news.google.com/rss/search?"
-        f"q={encoded}"
-        "&hl=en-IN"
-        "&gl=IN"
-        "&ceid=IN:en"
-    )
+    return hashlib.sha256(raw).hexdigest()[:24]
+
+
+# ---------------------------------------------------------
+# LOAD JSON
+# ---------------------------------------------------------
+
+def load_sources():
+    if not SOURCES_FILE.exists():
+        raise FileNotFoundError("sources.json not found")
+
+    with open(SOURCES_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_articles():
+    if not ARTICLES_FILE.exists():
+        return {
+            "version": 1,
+            "updated_at": utc_now(),
+            "minimum_per_category": MINIMUM_PER_CATEGORY,
+            "maximum_per_category": MAXIMUM_PER_CATEGORY,
+            "fifo": True,
+            "categories": {},
+        }
+
+    try:
+        with open(ARTICLES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+    except Exception:
+        print("WARNING: articles.json is invalid. Starting fresh.")
+
+        return {
+            "version": 1,
+            "updated_at": utc_now(),
+            "minimum_per_category": MINIMUM_PER_CATEGORY,
+            "maximum_per_category": MAXIMUM_PER_CATEGORY,
+            "fifo": True,
+            "categories": {},
+        }
+
+    # Expected format
+    if isinstance(data, dict) and isinstance(data.get("categories"), dict):
+        return data
+
+    # Safety for older format
+    if isinstance(data, dict):
+        return {
+            "version": 1,
+            "updated_at": utc_now(),
+            "minimum_per_category": MINIMUM_PER_CATEGORY,
+            "maximum_per_category": MAXIMUM_PER_CATEGORY,
+            "fifo": True,
+            "categories": data,
+        }
+
+    return {
+        "version": 1,
+        "updated_at": utc_now(),
+        "minimum_per_category": MINIMUM_PER_CATEGORY,
+        "maximum_per_category": MAXIMUM_PER_CATEGORY,
+        "fifo": True,
+        "categories": {},
+    }
 
 
 # ---------------------------------------------------------
 # RSS FETCH
 # ---------------------------------------------------------
 
-def fetch_feed(query):
-    url = google_news_url(query)
-
+def fetch_feed(url):
     try:
         response = requests.get(
             url,
-            headers={
-                "User-Agent": USER_AGENT
-            },
-            timeout=REQUEST_TIMEOUT
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT,
         )
 
         response.raise_for_status()
 
-        feed = feedparser.parse(response.content)
+        return feedparser.parse(response.content)
 
-        return feed.entries
+    except Exception as e:
+        print(f"RSS ERROR: {url}")
+        print(f"          {e}")
 
-    except Exception as error:
-        print(f"RSS ERROR: {query}")
-        print(error)
-
-        return []
-
-
-# ---------------------------------------------------------
-# SOURCE EXTRACTION
-# ---------------------------------------------------------
-
-def get_source(entry):
-    source = entry.get("source")
-
-    if isinstance(source, dict):
-        return clean_text(source.get("title", ""))
-
-    if source:
-        return clean_text(source)
-
-    # Google News sometimes includes source in title.
-    title = clean_title(entry.get("title", ""))
-
-    parts = title.split(" - ")
-
-    if len(parts) >= 2:
-        return parts[-1].strip()
-
-    return "Google News"
-
-
-# ---------------------------------------------------------
-# URL
-# ---------------------------------------------------------
-
-def get_url(entry):
-    url = entry.get("link")
-
-    if not url:
-        url = entry.get("id", "")
-
-    return str(url).strip()
-
-
-# ---------------------------------------------------------
-# ARTICLE CONVERSION
-# ---------------------------------------------------------
-
-def entry_to_article(entry, category, query):
-    title = clean_title(entry.get("title", ""))
-
-    url = get_url(entry)
-
-    if not title or not url:
         return None
 
-    source = get_source(entry)
 
-    published_at = parse_date(entry)
+# ---------------------------------------------------------
+# ENTRY
+# ---------------------------------------------------------
 
-    description = clean_text(
+def entry_to_article(entry, category, source_name):
+    title = clean_text(entry.get("title", ""))
+
+    if not title:
+        return None
+
+    url = (
+        entry.get("link")
+        or entry.get("url")
+        or ""
+    ).strip()
+
+    if not url:
+        return None
+
+    description = (
         entry.get("summary")
         or entry.get("description")
         or title
     )
 
-    # Keep descriptions short.
-    if len(description) > 500:
-        description = description[:497] + "..."
+    description = shorten_text(description)
 
-    article_id = make_id(title, url)
+    published_at = parse_date(entry)
 
     return {
-        "id": article_id,
+        "id": make_id(title, url),
         "title": title,
         "description": description,
         "url": url,
-        "source": source,
+        "source": source_name,
         "category": category,
-        "query": query,
         "published_at": published_at,
-        "fetched_at": now_iso()
+        "fetched_at": utc_now(),
     }
-
-
-# ---------------------------------------------------------
-# LOAD OLD ARTICLES
-# ---------------------------------------------------------
-
-def load_existing():
-    if not ARTICLES_FILE.exists():
-        return {
-            "version": 1,
-            "updated_at": now_iso(),
-            "minimum_per_category": MINIMUM_PER_CATEGORY,
-            "maximum_per_category": MAXIMUM_PER_CATEGORY,
-            "fifo": True,
-            "categories": {}
-        }
-
-    try:
-        with open(ARTICLES_FILE, "r", encoding="utf-8") as file:
-            data = json.load(file)
-
-        if not isinstance(data, dict):
-            raise ValueError("articles.json is not an object")
-
-        data.setdefault("categories", {})
-
-        return data
-
-    except Exception as error:
-        print("Could not read existing articles.json:")
-        print(error)
-
-        return {
-            "version": 1,
-            "updated_at": now_iso(),
-            "minimum_per_category": MINIMUM_PER_CATEGORY,
-            "maximum_per_category": MAXIMUM_PER_CATEGORY,
-            "fifo": True,
-            "categories": {}
-        }
-
-
-# ---------------------------------------------------------
-# DEDUPLICATION
-# ---------------------------------------------------------
-
-def deduplicate_articles(articles):
-    result = []
-
-    seen_ids = set()
-    seen_urls = set()
-
-    for article in articles:
-
-        article_id = article.get("id", "")
-        url = article.get("url", "")
-
-        if not article_id or not url:
-            continue
-
-        if article_id in seen_ids:
-            continue
-
-        if url in seen_urls:
-            continue
-
-        seen_ids.add(article_id)
-        seen_urls.add(url)
-
-        result.append(article)
-
-    return result
 
 
 # ---------------------------------------------------------
 # FETCH CATEGORY
 # ---------------------------------------------------------
 
-def fetch_category(category, queries):
-    collected = []
+def fetch_category(category, feed_list):
+    results = []
 
-    print()
-    print("=" * 60)
-    print(f"CATEGORY: {category}")
-    print("=" * 60)
+    seen_ids = set()
 
-    for query in queries:
+    for source in feed_list:
 
-        print(f"Fetching: {query}")
+        if isinstance(source, str):
+            feed_url = source
+            source_name = "Google News"
+        else:
+            feed_url = source.get("url", "")
+            source_name = source.get("name", "Google News")
 
-        entries = fetch_feed(query)
+        if not feed_url:
+            continue
 
-        print(f"  Found: {len(entries)}")
+        print(f"[{category}] Fetching: {source_name}")
+
+        feed = fetch_feed(feed_url)
+
+        if feed is None:
+            continue
+
+        entries = getattr(feed, "entries", [])
+
+        print(
+            f"[{category}] {source_name}: "
+            f"{len(entries)} entries"
+        )
 
         for entry in entries:
 
             article = entry_to_article(
                 entry,
                 category,
-                query
+                source_name,
             )
 
-            if article:
-                collected.append(article)
+            if not article:
+                continue
 
-        time.sleep(SLEEP_BETWEEN_REQUESTS)
+            if article["id"] in seen_ids:
+                continue
 
-    collected = deduplicate_articles(collected)
+            seen_ids.add(article["id"])
 
-    # Newest first.
-    collected.sort(
-        key=lambda item: item.get("published_at", ""),
-        reverse=True
-    )
+            results.append(article)
 
-    print(
-        f"{category}: {len(collected)} unique articles"
-    )
+        # Small pause between feeds
+        time.sleep(0.2)
 
-    return collected
+    return results
 
 
 # ---------------------------------------------------------
-# FIFO MERGE
+# SORT
 # ---------------------------------------------------------
 
-def merge_fifo(existing, fresh):
-    """
-    Keep old articles first and append new articles.
+def article_timestamp(article):
+    try:
+        return datetime.fromisoformat(
+            article["published_at"].replace("Z", "+00:00")
+        ).timestamp()
 
-    When more than MAXIMUM_PER_CATEGORY exists,
-    remove the oldest items from the beginning.
+    except Exception:
+        return 0
 
-    This provides a FIFO-style rolling buffer.
-    """
 
-    existing = deduplicate_articles(existing)
-    fresh = deduplicate_articles(fresh)
+def sort_articles(articles):
+    return sorted(
+        articles,
+        key=article_timestamp,
+        reverse=True,
+    )
 
+
+# ---------------------------------------------------------
+# MERGE + FIFO
+# ---------------------------------------------------------
+
+def merge_category(old_articles, new_articles):
+    combined = []
+
+    # Newest first
+    combined.extend(new_articles)
+
+    # Keep previous articles that were not fetched this time
     existing_ids = {
-        item.get("id")
-        for item in existing
+        article.get("id")
+        for article in new_articles
+        if article.get("id")
     }
 
-    existing_urls = {
-        item.get("url")
-        for item in existing
-    }
+    for article in old_articles:
+        article_id = article.get("id")
 
-    new_articles = []
+        if article_id and article_id not in existing_ids:
+            combined.append(article)
 
-    for article in fresh:
+    # Final deduplication
+    unique = {}
 
-        if article.get("id") in existing_ids:
+    for article in combined:
+        article_id = article.get("id")
+
+        if not article_id:
             continue
 
-        if article.get("url") in existing_urls:
-            continue
+        if article_id not in unique:
+            unique[article_id] = article
 
-        new_articles.append(article)
+    combined = list(unique.values())
 
-        existing_ids.add(article.get("id"))
-        existing_urls.add(article.get("url"))
-
-    combined = existing + new_articles
+    # Newest first
+    combined = sort_articles(combined)
 
     # FIFO:
-    # Oldest entries are removed when limit is exceeded.
-    if len(combined) > MAXIMUM_PER_CATEGORY:
-        combined = combined[-MAXIMUM_PER_CATEGORY:]
-
-    return combined
-
-
-# ---------------------------------------------------------
-# ENSURE MINIMUM
-# ---------------------------------------------------------
-
-def ensure_minimum(category, articles, queries):
-    """
-    Try to guarantee at least 50 articles.
-
-    Google News may return fewer articles for a query,
-    so all configured queries are used.
-    """
-
-    if len(articles) >= MINIMUM_PER_CATEGORY:
-        return articles
-
-    print(
-        f"{category}: only {len(articles)} articles. "
-        f"Trying additional collection..."
-    )
-
-    additional = []
-
-    for query in queries:
-
-        entries = fetch_feed(query)
-
-        for entry in entries:
-
-            article = entry_to_article(
-                entry,
-                category,
-                query
-            )
-
-            if article:
-                additional.append(article)
-
-        time.sleep(SLEEP_BETWEEN_REQUESTS)
-
-        current = deduplicate_articles(
-            articles + additional
-        )
-
-        if len(current) >= MINIMUM_PER_CATEGORY:
-            break
-
-    return deduplicate_articles(
-        articles + additional
-    )
-
-
-# ---------------------------------------------------------
-# BUILD DATABASE
-# ---------------------------------------------------------
-
-def build_database():
-
-    print()
-    print("==============================================")
-    print("        SNIPPET24 NEWS CURATOR")
-    print("==============================================")
-    print()
-
-    with open(
-        SOURCES_FILE,
-        "r",
-        encoding="utf-8"
-    ) as file:
-        config = json.load(file)
-
-    minimum = int(
-        config.get(
-            "minimum_per_category",
-            MINIMUM_PER_CATEGORY
-        )
-    )
-
-    maximum = int(
-        config.get(
-            "maximum_per_category",
-            MAXIMUM_PER_CATEGORY
-        )
-    )
-
-    global MINIMUM_PER_CATEGORY
-    global MAXIMUM_PER_CATEGORY
-
-    MINIMUM_PER_CATEGORY = minimum
-    MAXIMUM_PER_CATEGORY = maximum
-
-    source_categories = config.get(
-        "categories",
-        {}
-    )
-
-    existing_database = load_existing()
-
-    existing_categories = existing_database.get(
-        "categories",
-        {}
-    )
-
-    final_categories = {}
-
-    for category, queries in source_categories.items():
-
-        print()
-        print(f"PROCESSING {category}")
-
-        fresh = fetch_category(
-            category,
-            queries
-        )
-
-        old = existing_categories.get(
-            category,
-            []
-        )
-
-        # Existing + fresh using FIFO.
-        merged = merge_fifo(
-            old,
-            fresh
-        )
-
-        # If still below 50, make another attempt.
-        if len(merged) < minimum:
-
-            merged = ensure_minimum(
-                category,
-                merged,
-                queries
-            )
-
-            merged = merge_fifo(
-                [],
-                merged
-            )
-
-        # Maximum protection.
-        merged = merged[-maximum:]
-
-        final_categories[category] = merged
-
-        print(
-            f"{category}: FINAL = {len(merged)}"
-        )
-
-    # -----------------------------------------------------
-    # TOP STORIES
-    # -----------------------------------------------------
-
-    all_articles = []
-
-    for category, articles in final_categories.items():
-        all_articles.extend(articles)
-
-    all_articles = deduplicate_articles(
-        all_articles
-    )
-
-    all_articles.sort(
-        key=lambda item: item.get(
-            "published_at",
-            ""
-        ),
-        reverse=True
-    )
-
-    # Top Stories = newest 100.
-    top_stories = all_articles[:MAXIMUM_PER_CATEGORY]
-
-    final_categories["Top Stories"] = top_stories
-
-    # -----------------------------------------------------
-    # FINAL JSON
-    # -----------------------------------------------------
-
-    output = {
-        "version": 1,
-        "provider": config.get(
-            "provider",
-            "Google News RSS"
-        ),
-        "language": config.get(
-            "language",
-            "en-IN"
-        ),
-        "country": config.get(
-            "country",
-            "IN"
-        ),
-        "updated_at": now_iso(),
-        "minimum_per_category": minimum,
-        "maximum_per_category": maximum,
-        "fifo": True,
-        "categories": final_categories
-    }
-
-    with open(
-        ARTICLES_FILE,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            output,
-            file,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    # -----------------------------------------------------
-    # REPORT
-    # -----------------------------------------------------
-
-    print()
-    print("==============================================")
-    print("FINAL ARTICLE COUNTS")
-    print("==============================================")
-
-    total = 0
-
-    for category, articles in final_categories.items():
-
-        count = len(articles)
-
-        total += count
-
-        status = (
-            "OK"
-            if count >= minimum
-            else "WARNING"
-        )
-
-        print(
-            f"{category}: {count} [{status}]"
-        )
-
-    print()
-    print(f"TOTAL ARTICLES: {total}")
-    print()
-    print(
-        f"articles.json written to: {ARTICLES_FILE}"
-    )
-    print()
+    # keep only newest MAXIMUM_PER_CATEGORY articles
+    return combined[:MAXIMUM_PER_CATEGORY]
 
 
 # ---------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------
 
+def main():
+
+    print("========================================")
+    print("Snippet24 News Curator")
+    print("========================================")
+
+    sources = load_sources()
+    existing = load_articles()
+
+    categories_config = sources.get("categories", {})
+
+    if not categories_config:
+        raise RuntimeError(
+            "sources.json contains no categories"
+        )
+
+    old_categories = existing.get("categories", {})
+
+    final_categories = {}
+
+    total_articles = 0
+
+    for category, feeds in categories_config.items():
+
+        print()
+        print("----------------------------------------")
+        print(f"CATEGORY: {category}")
+        print("----------------------------------------")
+
+        if not isinstance(feeds, list):
+            print(
+                f"WARNING: {category} has no valid feed list"
+            )
+            feeds = []
+
+        new_articles = fetch_category(
+            category,
+            feeds,
+        )
+
+        old_articles = old_categories.get(
+            category,
+            [],
+        )
+
+        merged = merge_category(
+            old_articles,
+            new_articles,
+        )
+
+        final_categories[category] = merged
+
+        total_articles += len(merged)
+
+        print(
+            f"{category}: "
+            f"{len(new_articles)} new / "
+            f"{len(merged)} stored"
+        )
+
+        if len(merged) < MINIMUM_PER_CATEGORY:
+            print(
+                f"WARNING: {category} has only "
+                f"{len(merged)} articles. "
+                f"Target is {MINIMUM_PER_CATEGORY}."
+            )
+
+    # -----------------------------------------------------
+    # WRITE JSON
+    # -----------------------------------------------------
+
+    output = {
+        "version": 1,
+        "provider": "Google News RSS",
+        "language": "en-IN",
+        "country": "IN",
+        "minimum_per_category": MINIMUM_PER_CATEGORY,
+        "maximum_per_category": MAXIMUM_PER_CATEGORY,
+        "fifo": True,
+        "updated_at": utc_now(),
+        "categories": final_categories,
+    }
+
+    temporary_file = ARTICLES_FILE.with_suffix(
+        ".json.tmp"
+    )
+
+    with open(
+        temporary_file,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            output,
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
+
+    temporary_file.replace(ARTICLES_FILE)
+
+    # -----------------------------------------------------
+    # REPORT
+    # -----------------------------------------------------
+
+    print()
+    print("========================================")
+    print(f"TOTAL ARTICLES: {total_articles}")
+    print("========================================")
+
+    for category, articles in final_categories.items():
+        print(
+            f"{category}: {len(articles)}"
+        )
+
+    if total_articles == 0:
+        raise RuntimeError(
+            "No articles were fetched. "
+            "Check RSS sources/network."
+        )
+
+    print()
+    print("articles.json updated successfully.")
+
+
 if __name__ == "__main__":
-    build_database()
+    main()
