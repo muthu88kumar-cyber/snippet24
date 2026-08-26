@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T03:39:54.991029+00:00",
+  "updated_at": "2026-08-26T04:26:35.080056+00:00",
   "total": 100,
   "categories": {
     "World": 20,
@@ -12,6 +12,149 @@
   },
   "articles": [
     {
+      "id": "749732dc3b681a589bd9",
+      "category": "India",
+      "headline": "Villagers in Telangana wage a war to protect 75-year-old Peepal tree",
+      "summary": "“I got the platform demolished and constructed the compound wall around it, because the platform was attracting drunkards and vagabonds. Villagers who are protesting now had helped me construct the wall. Now, an issue is being made out of it purely due to personal rivalries,” says owner who applied for felling permission",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:16:18+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/villagers-in-telangana-wage-a-war-to-protect-75-year-old-peepal-tree/article71385040.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/ft8yy0/article71391407.ece/alternates/LANDSCAPE_1200/iStock-1056699694.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "8322af019ad9551b8e83",
+      "category": "World",
+      "headline": "Australia news live: WA premier’s ‘east coast clowns’ barb was unacceptable, Spender says; value of Japan’s melon gifts to PM revealed",
+      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:10:56+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/9e1cf7edca57e0d5876fa1b0afc9f6e1d0a87186/832_292_5665_4532/master/5665.jpg?width=140&quality=85&auto=format&fit=max&s=375014140a4419e46938fffc4a684c1e",
+      "image_type": "source"
+    },
+    {
+      "id": "a9ebdedce380bd3b9963",
+      "category": "India",
+      "headline": "H1N1 in India: A seasonal surge, not a new strain, says ICMR",
+      "summary": "Delhi has reported 1,777 H1N1 cases this year, while Karnataka had recorded 4,212 laboratory-confirmed influenza cases across 32 districts by August 22. Maharashtra, too, has reported a rise in H1N1 infections",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:09:56+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/health/h1n1-in-india-a-seasonal-surge-not-a-new-strain-says-icmr/article71391367.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/ucv8w/article71391397.ece/alternates/LANDSCAPE_1200/4col_Lead_StoryG1OGEOT2L.2.jpg.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "23037e1cbc6cd11d4a89",
+      "category": "World",
+      "headline": "Tributes pour in after country music legend Dolly Parton, 80, dies following ‘brief battle with cancer’ – latest updates",
+      "summary": "Reba McEntire, Lily Tomlin, Dionne Warwick, Kacey Musgraves, Donald Trump and others mourn star’s death Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our picture editors have collated Dolly Parton ’s life in pictures: In...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:01:04+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
+      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
+      "image_type": "source"
+    },
+    {
+      "id": "d2d31fc4825bb03cf450",
+      "category": "Entertainment",
+      "headline": "‘Heroes’ Stars Throw Reunion to ‘Celebrate the Life’ of Hayden Panettiere: ‘So Much Love, Gratitude and Warmth’",
+      "summary": "The cast of “Heroes” got together to celebrate the life of their co-star Hayden Panettiere, who died on Aug. 16 at 36 years old. “A ‘HEROES’ reunion to celebrate the life of HAYDEN was deeply emotional,” series star Jimmy Jean-Louis wrote on X, sharing photos of himself with his former castmates. “There was sadness in […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T04:01:01+00:00",
+      "source_url": "https://variety.com/2026/tv/news/heroes-cast-reunion-celebrate-life-of-hayden-panettiere-1236843535/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/TCDHERO_EC001.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "056190045eb6debd2f69",
+      "category": "World",
+      "headline": "Call to ban marmot hunting in France as campaigners say they are ‘killed for fun’",
+      "summary": "Protests and petitions planned amid growing concerns over impact of climate crisis on numbers of Alpine rodent Animal rights campaigners are gearing up for protests and petitions aimed at persuading the French government to ban the hunting of Alpine marmots. Open season on the rodents, members of the squirrel and groundhog family, begins in September, a...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:00:35+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/26/call-ban-marmot-hunting-france-climate-crisis",
+      "image_url": "https://i.guim.co.uk/img/media/43e737003f7e942a3ccf0eb5491403d27706aae9/1256_343_3349_2679/master/3349.jpg?width=140&quality=85&auto=format&fit=max&s=544d5f69312fa42f3642a92807e68531",
+      "image_type": "source"
+    },
+    {
+      "id": "72c64aff246fe89c26c0",
+      "category": "World",
+      "headline": "Man on trial for Daphne Caruana Galizia murder claims he was framed",
+      "summary": "Yorgen Fenech tells jury he had nothing to do with killing and alleges top adviser to Malta’s then PM was instigator A businessman on trial for the murder of the journalist Daphne Caruana Galizia has spoken about the charges for the first time in court since his arrest seven years ago, telling the jury he was framed by police and had nothing to do with...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:00:34+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/26/yorgen-fenech-trial-daphne-caruana-galizia-claims-framed",
+      "image_url": "https://i.guim.co.uk/img/media/b49f6bacf15503bab51f575e83720254653c040e/0_434_2463_1971/master/2463.jpg?width=140&quality=85&auto=format&fit=max&s=209d05b4c6c8c114362581cbca72e3fa",
+      "image_type": "source"
+    },
+    {
+      "id": "78a5203fbd81d962ff53",
+      "category": "Lifestyle",
+      "headline": "The row over Rutland: can England’s smallest county survive?",
+      "summary": "Its council is due to merge with Leicestershire’s in 2028, and some locals are incensed. Can the county hold on to its ceremonial status – and biggest selling point? Mysterious disappearances have been taking place lately in Rutland, an East Midlands pocket between Leicestershire, Lincolnshire and Northamptonshire that is often considered to be England’s...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T04:00:34+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/26/the-row-over-rutland-can-englands-smallest-county-survive",
+      "image_url": "https://i.guim.co.uk/img/media/fb59a4dbed40931b38b6ffcf99d6286f10f3030e/681_0_6830_5464/master/6830.jpg?width=140&quality=85&auto=format&fit=max&s=2179aea6c4a1037f893b005b6f8d6f93",
+      "image_type": "source"
+    },
+    {
+      "id": "7144afe552319e7e4143",
+      "category": "World",
+      "headline": "Iran faces strait of Hormuz paradox as strategic value of chokehold erodes",
+      "summary": "Internal calls to end war get louder as Gulf neighbours plan alternative pipelines to cut reliance on waterway Is the strait of Hormuz, recently cited by the office of the Iranian supreme leader as “the pillar of Iran’s new security order”, and as transformative as possessing a nuclear weapon, in reality becoming a fast-diminishing asset, leaving Iran...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:00:33+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/26/iran-faces-strait-of-hormuz-paradox-as-strategic-value-of-chokehold-erodes",
+      "image_url": "https://i.guim.co.uk/img/media/cecc0b2135602c76d6ff1050b553e25a90b8d3f1/771_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=54c7af4ca8927d29156852da1301608b",
+      "image_type": "source"
+    },
+    {
+      "id": "dc150f9022b3a8f746bb",
+      "category": "India",
+      "headline": "International community must work collectively to safeguard critical sea lanes: India tells UNSC",
+      "summary": "“Food insecurity remains one of the gravest humanitarian consequences of armed conflict. Today’s conflicts increasingly generate ripple effects far beyond the immediate theatre of hostilities,” says India’s Permanent Representative to the UN Ambassador",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T03:58:59+00:00",
+      "source_url": "https://www.thehindu.com/news/national/international-community-must-work-collectively-to-safeguard-critical-sea-lanes-india-tells-unsc/article71391331.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/1io1ot/article71391358.ece/alternates/LANDSCAPE_1200/20260310487L.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "4926d1a363703e165436",
+      "category": "Business",
+      "headline": "Sensex rises 300 points; Nifty above 24,350 as oil prices slide. What lies ahead?",
+      "summary": "On Wednesday, Indian stock markets rallied, buoyed by a decrease in oil prices and renewed optimism surrounding the reopening of the Strait of Hormuz, following a resumption of talks with Iran. Both the Sensex and Nifty indices showed positive momentum, with broader market metrics also trending upward, reflecting a hopeful sentiment among investors amid...",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T03:56:10+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-over-200-points-nifty-nears-24350-as-oil-prices-slide-what-lies-ahead/articleshow/133528847.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Sensex%20rises%20300%20points%3B%20Nifty%20above%2024%2C350%20as%20oil%20prices%20slide.%20What%20lies%20ahead%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=867450215",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f3c7aacdab70f8b75a06",
+      "category": "World",
+      "headline": "Antisemitism royal commission ends hearings but delays report to avoid ‘distraction’ from Bondi anniversary",
+      "summary": "Commissioner Virginia Bell resists push to extend antisemitism inquiry noting need for timely recommendations Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Commissioner Virginia Bell says she will delay – by four days – handing down her final report into antisemitism and social...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T03:55:27+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/antisemitism-royal-commission-ends-hearings-but-delays-report-to-avoid-distraction-from-bondi-anniversary-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/ae947d5f48470cb45ffff6dc2090fa82166d8be2/398_0_4160_3328/master/4160.jpg?width=140&quality=85&auto=format&fit=max&s=ea6bcc440cc642247413a720f2e79b96",
+      "image_type": "source"
+    },
+    {
+      "id": "24b6a4116509392159f3",
+      "category": "Business",
+      "headline": "Groww shares fall 3% after Rs 2,500 crore block deal; Ribbit likely seller",
+      "summary": "Billionbrains Garage Ventures, the parent company of Groww, will be in focus as early investor Ribbit Capital plans to sell a 1.6% stake through a block deal worth Rs 1,914 crore. The shares are being offered at Rs 195 apiece, a 4% discount to the previous close.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T03:35:17+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/groww-shares-in-focus-as-ribbit-likely-sells-stake-through-rs-1914-crore-block-deal/articleshow/133528618.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Groww%20shares%20fall%203%25%20after%20Rs%202%2C500%20crore%20block%20deal%3B%20Ribbit%20likely%20seller%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=381791654",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9d89c4726aa2ed694db1",
       "category": "India",
       "headline": "Six killed, 12 injured as speeding bus crashes into lorry in Telangana’s Suryapet",
@@ -23,17 +166,6 @@
       "image_type": "source"
     },
     {
-      "id": "a08c1f755217f4f23e6b",
-      "category": "World",
-      "headline": "Australia news live: Hundreds pay tribute to police killed by Dezi Freeman on one-year anniversary; value of Japan’s melon gifts to Albanese revealed",
-      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T03:32:27+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
-      "image_url": "https://i.guim.co.uk/img/media/ba5d86b424945866bdb58b36e4e357cc982f96f6/628_330_6349_5080/master/6349.jpg?width=140&quality=85&auto=format&fit=max&s=fc542274c359b7aaf0af2750b9cff64a",
-      "image_type": "source"
-    },
-    {
       "id": "6a69681ccc7240cf0346",
       "category": "World",
       "headline": "Fears for ‘gregarious’ local celebrity Sammy the elephant seal in Victorian bird flu hotspot",
@@ -42,6 +174,17 @@
       "published_at": "2026-08-26T03:31:54+00:00",
       "source_url": "https://www.theguardian.com/environment/2026/aug/26/sammy-elephant-seal-victoria-h5n1-bird-flu-hotspot",
       "image_url": "https://i.guim.co.uk/img/media/05ebf585f519f35661c068c72c735cdcf688c0e4/136_0_1333_1066/master/1333.jpg?width=140&quality=85&auto=format&fit=max&s=1f6fdb6e37ad9363da3b473f159f0def",
+      "image_type": "source"
+    },
+    {
+      "id": "0a7c9bda7f71e21ad175",
+      "category": "Lifestyle",
+      "headline": "How Arvind Limited is redefining the modern Indian man's wardrobe through innovation, customisation, and performance",
+      "summary": "From bringing in the denim revolution to modern day suiting, here is how Arvind Limited is redefining Indian men's wardrobe.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T03:30:43+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/how-arvind-limited-is-redefining-the-modern-indian-mans-wardrobe-through-innovation-customisation-and-performance-101785150045340.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/Arvind_Limited_1787634851068_1787634857042_d45f6fd2-ac8d-4641-92e7-22422753907a.png",
       "image_type": "source"
     },
     {
@@ -75,17 +218,6 @@
       "published_at": "2026-08-26T03:23:32+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/1-hour-workout-in-morning-does-not-offset-10-hours-of-sitting-heart-surgeon-explains-how-it-is-bad-for-your-health-101787711366552.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/sitting_1787713619055_1787713619217_51413a50-1168-4003-977d-43212f8ecb40.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "23037e1cbc6cd11d4a89",
-      "category": "World",
-      "headline": "Tributes pour in after country music legend Dolly Parton, 80, dies following ‘brief battle with cancer’ – latest updates",
-      "summary": "Reba McEntire, Lily Tomlin, Dionne Warwick, Kacey Musgraves, Donald Trump and others mourn star’s death Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our picture editors have collated Dolly Parton ’s life in pictures: In...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T03:19:54+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
-      "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
       "image_type": "source"
     },
     {
@@ -243,17 +375,6 @@
       "image_type": "source"
     },
     {
-      "id": "a56c0c80f48bd221147e",
-      "category": "Business",
-      "headline": "Oil Price Today (August 26): Crude oil tanks 6% in two days to hover near $85. What’s behind the decline?",
-      "summary": "Brent crude futures were down $2.35, or 2.65%, at $86 a barrel, while U.S. West Texas Intermediate crude futures fell $1.94, or 2.36%, to $80.42. Both benchmarks had declined more than 3% on Tuesday.",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T02:14:27+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-august-26-crude-oil-tanks-6-in-two-days-to-hover-near-85-whats-behind-the-decline/articleshow/133527538.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Oil%20Price%20Today%20%28August%2026%29%3A%20Crude%20oil%20tanks%206%25%20in%20two%20days%20to%20hover%20near%20%2485.%20What%E2%80%99s%20behind%20the%20decline%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=4060173276",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "f1994ee1baae10966076",
       "category": "India",
       "headline": "US Sanctions 4 India-Based Firms, 3 Indians To Punish Iran",
@@ -285,17 +406,6 @@
       "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates",
       "image_url": "https://i.guim.co.uk/img/media/520e2f2d26a6fbd0c991abe4e8ec356cb50122b9/570_0_6236_4990/master/6236.jpg?width=140&quality=85&auto=format&fit=max&s=573b1fa114716619807aa6b2db51e2f8",
       "image_type": "source"
-    },
-    {
-      "id": "57040ec815773bc21535",
-      "category": "Business",
-      "headline": "Hindustan Copper OFS opens for retail investors today. Should you apply in the metals major's offer?",
-      "summary": "The OFS opened for non-retail investors on August 4, and saw strong participation. It now opens for retail investors today. Investors can participate between 9.15 am and 3.30 pm using the separate OFS window on NSE and BSE. A minimum of 10% of the offer size has been reserved for retail investors.",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T01:56:51+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/hindustan-copper-ofs-opens-for-retail-investors-today-should-you-apply-in-the-metals-majors-offer/articleshow/133527323.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Hindustan%20Copper%20OFS%20opens%20for%20retail%20investors%20today.%20Should%20you%20apply%20in%20the%20metals%20major%27s%20offer%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3506405435",
-      "image_type": "ai_generated"
     },
     {
       "id": "c05cec337d859f69aa52",
@@ -394,17 +504,6 @@
       "published_at": "2026-08-26T01:25:56+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/rakhi-purnima-2026-date-timings-and-what-the-sacred-full-moon-means-for-spiritual-seekers-101787705768782.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/photo-1522030299830-16b8d3d049fe_1759663565783_1759663578066_1787706148468_bdea60e3-f8bb-45d0-bc40-49af16738789.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "97f11b542a35304e5471",
-      "category": "World",
-      "headline": "Productivity Commission says ‘line was crossed’ when WA premier labelled them ‘east coast clowns’ over GST",
-      "summary": "Commissioner Angela Jackson also said it was ‘disappointing’ that Anthony Albanese had ruled out changes to Western Australia’s GST arrangements Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The Productivity Commission has condemned attacks on its integrity as “unacceptable” after its...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T01:22:59+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/wa-gst-deal-productivity-commission-western-australia-premier-roger-cook",
-      "image_url": "https://i.guim.co.uk/img/media/8f1bac64cf0024319475de2fe23b287a3bcbccb5/490_0_4188_3350/master/4188.jpg?width=140&quality=85&auto=format&fit=max&s=11d61c525b7349c05c23a8f5b317ab65",
       "image_type": "source"
     },
     {
@@ -584,14 +683,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "5030a539a29d002ddf8a",
+      "id": "6673abdd0b71d9057bd8",
       "category": "Entertainment",
-      "headline": "’20/20′ Sets Dolly Parton Special Tribute: Where to Watch Online",
+      "headline": "‘20/20’ Sets Dolly Parton Special Tribute: Where to Watch Online",
       "summary": "Airing Aug. 25, the episode joins a growing list of dedicated primetime coverage from networks like CBS and CMT.",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-26T00:01:58+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/watch-dolly-parton-20-20-special-aug-25-2026-streaming-free-1236681447/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%80%9920/20%E2%80%B2%20Sets%20Dolly%20Parton%20Special%20Tribute%3A%20Where%20to%20Watch%20Online%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=847703938",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20%E2%80%9820/20%E2%80%99%20Sets%20Dolly%20Parton%20Special%20Tribute%3A%20Where%20to%20Watch%20Online%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3540117657",
       "image_type": "ai_generated"
     },
     {
@@ -614,17 +713,6 @@
       "published_at": "2026-08-26T00:00:00+00:00",
       "source_url": "https://variety.com/2026/tv/news/lee-jung-eun-kim-moo-yul-netflix-the-shooter-1236842363/",
       "image_url": "https://variety.com/wp-content/uploads/2026/08/The-Shooter-team.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "5339e95693479963171b",
-      "category": "Entertainment",
-      "headline": "Shin Mina, Ju Jihoon, Lee Jongsuk, Lee Seyoung’s ‘The Remarried Empress’ Sets November Disney+ Bow",
-      "summary": "Disney+ has set a November premiere date for “The Remarried Empress,” a 10-part Korean drama adapted from the Naver Webtoon series of the same name, which has drawn nearly three billion views to date. The show centers on Empress Navier and Emperor Sovieshu of the Eastern Kingdom, whose marriage unravels after Sovieshu falls for a […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://variety.com/2026/tv/news/the-remarried-empress-november-disney-1236842398/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/The-Remarries-Empress.jpg",
       "image_type": "source"
     },
     {
@@ -694,17 +782,6 @@
       "image_type": "source"
     },
     {
-      "id": "09b3a325af3b573da941",
-      "category": "India",
-      "headline": "Pune tribal students’ protest enters 13th day as talks with Tribal Minister yield no breakthrough, say students",
-      "summary": "Vijay Waghmare, a Secretary in the Tribal Department, said that the Ministry has issued a stay order on the major demand of the students, that is, regarding the Government Resolution (GR) issued on August 14, 2026",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-25T23:23:24+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/pune-tribal-students-protest-enters-13th-day-as-talks-with-tribal-minister-yield-no-breakthrough-say-students/article71387944.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Pune%20tribal%20students%E2%80%99%20protest%20enters%2013th%20day%20as%20talks%20with%20Tribal%20Minister%20yield%20no%20breakthrough%2C%20say%20students%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=4088750855",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "f8e60c6f15bdf30f67ef",
       "category": "Sports",
       "headline": "Hrgovic taunts starting to wind me up - Itauma",
@@ -771,17 +848,6 @@
       "image_type": "source"
     },
     {
-      "id": "6f3ed456969b5731565f",
-      "category": "India",
-      "headline": "Village in Raebareli tense after mud smeared on Ambedkar’s statue",
-      "summary": "The police assured the villagers of swift identification of the culprits and strict legal action; police have been deployed in the village as a precautionary measure, and the situation is under control",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-25T22:14:49+00:00",
-      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/village-in-raebareli-tense-after-mud-smeared-on-ambedkars-statue/article71389654.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Village%20in%20Raebareli%20tense%20after%20mud%20smeared%20on%20Ambedkar%E2%80%99s%20statue%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=200725886",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "ac9f8fe6ece7d0f39c26",
       "category": "Lifestyle",
       "headline": "What are the 7 chakras? What this ancient spiritual practice means and how people use it today",
@@ -790,17 +856,6 @@
       "published_at": "2026-08-25T22:14:41+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/what-are-the-7-chakras-what-this-ancient-spiritual-practice-means-and-how-people-use-it-today-101787695132248.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/pexels-photo-6931776_1781725163848_1781725175532_df2a171d-d9ac-4309-a664-f306f2386152_1787695449137_00ce1f0d-80b6-4f25-9c9a-08cde9b349c0.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "ddb54b5287f952267c93",
-      "category": "India",
-      "headline": "More than 9.3 lakh youth received government jobs in Uttar Pradesh in the last nine years, says CM Yogi",
-      "summary": "Yogi Adityanath says the U.P. government will provide government jobs to one lakh youth within six months",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-25T22:13:21+00:00",
-      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/more-than-93-lakh-youth-received-government-jobs-in-uttar-pradesh-in-the-last-nine-years-says-cm-yogi/article71389336.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/by7ae8/article71390538.ece/alternates/LANDSCAPE_1200/20260825269L.jpg",
       "image_type": "source"
     },
     {
@@ -1054,61 +1109,6 @@
       "published_at": "2026-08-25T19:15:22+00:00",
       "source_url": "https://www.theguardian.com/thefilter-us/2026/aug/25/best-dog-beds",
       "image_url": "https://i.guim.co.uk/img/media/01d695ae1c1dc7ef661c716ddcde72c1063457c6/303_0_2500_2000/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=08643bcdc4afbdd9c14103e2447bf5c3",
-      "image_type": "source"
-    },
-    {
-      "id": "80d7e397524e961cc3b5",
-      "category": "Technology",
-      "headline": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
-      "summary": "The company's new fundraising total now stands at $232 million.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-25T19:03:47+00:00",
-      "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Stability%20AI%2C%20maker%20of%20image%20generator%20Stable%20Diffusion%2C%20raises%20%2476%20million%20in%20fresh%20funding%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2743767969",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5884fc3d1c2c8c5d7bf2",
-      "category": "World",
-      "headline": "Taiwan charges nine people for smuggling ‘high-end’ AI servers to China",
-      "summary": "Among those charged are two Super Micro employees and one from Nvidia, marking another flashpoint in US-China AI rivalry Taiwanese prosecutors charged nine people Monday, including one from Nvidia and two from Super Micro, for illegally exporting “high-end AI servers” to mainland China, adding another wave of turbulence in the AI ​​rivalry between China...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-25T19:02:42+00:00",
-      "source_url": "https://www.theguardian.com/technology/2026/aug/25/taiwan-china-ai-smugglers",
-      "image_url": "https://i.guim.co.uk/img/media/0fbe91525cf1b46d937c6aa22ad80106e8a4af29/333_0_3333_2667/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=cd6df100b0777618fb9e7fa7dd744439",
-      "image_type": "source"
-    },
-    {
-      "id": "d39be0ab1e941a2a2b34",
-      "category": "Technology",
-      "headline": "Preserving glow-in-the-dark art and fashion for future generations",
-      "summary": "Understanding unique photochemistry of such materials will help in conservation, storage, and exhibition.",
-      "publisher": "Ars Technica",
-      "published_at": "2026-08-25T18:59:12+00:00",
-      "source_url": "https://arstechnica.com/science/2026/08/how-chemistry-can-keep-glow-in-the-dark-pigments-from-fading/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/glowindark3-1152x648.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "65fed0f53232be232690",
-      "category": "Technology",
-      "headline": "Dreame’s dream of a rocket-powered car is dead",
-      "summary": "Dreame, the Chinese vacuum company that aspires to be a global technology giant, is reportedly shutting down its automotive project after funding from the government dried up. According to CarNewsChina, the company's automotive division called \"Project Starry Sky\" once employed over 1,000 people, but now only a handful legal and HR staffers remain,...",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T18:52:53+00:00",
-      "source_url": "https://www.theverge.com/transportation/984485/dreame-rocket-car-shut-down",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/268500_Dreame_NEXT_2026_KMcClellan_0065.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "c0a8f59df5f3a19007c0",
-      "category": "Sports",
-      "headline": "Littler's Players Championship hopes dented",
-      "summary": "Luke Littler loses to Jermaine Wattimena in the quarter",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T18:33:00+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/darts/articles/c36ln69p1ldo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7f7f/live/64a45140-a0ae-11f1-a54e-272d756c341e.jpg",
       "image_type": "source"
     }
   ]
