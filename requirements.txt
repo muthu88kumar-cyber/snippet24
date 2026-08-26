@@ -1,4 +1,2 @@
-# Snippet24 curator intentionally uses
-# Python standard library only.
-#
-# No external packages required.
+feedparser==6.0.11
+requests==2.32.3
