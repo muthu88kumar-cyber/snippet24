@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T04:26:35.080056+00:00",
+  "updated_at": "2026-08-26T06:02:45.901551+00:00",
   "total": 100,
   "categories": {
     "World": 20,
@@ -12,36 +12,58 @@
   },
   "articles": [
     {
-      "id": "749732dc3b681a589bd9",
-      "category": "India",
-      "headline": "Villagers in Telangana wage a war to protect 75-year-old Peepal tree",
-      "summary": "“I got the platform demolished and constructed the compound wall around it, because the platform was attracting drunkards and vagabonds. Villagers who are protesting now had helped me construct the wall. Now, an issue is being made out of it purely due to personal rivalries,” says owner who applied for felling permission",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T04:16:18+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/villagers-in-telangana-wage-a-war-to-protect-75-year-old-peepal-tree/article71385040.ece",
-      "image_url": "https://th-i.thgim.com/public/news/national/ft8yy0/article71391407.ece/alternates/LANDSCAPE_1200/iStock-1056699694.jpg",
+      "id": "199b960ad770b12e3d45",
+      "category": "Lifestyle",
+      "headline": "How does Qatar Airways prepare 2 lakh fresh meals from scratch daily, serve it fresh 30,000 feet in air? Watch video",
+      "summary": "Qatar Airways' Doha catering facility processes 30 metric tons of fresh produce daily, utilising advanced machinery, alongside manual preparation.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T05:51:16+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/travel/how-does-qatar-airways-prepare-200000-fresh-meals-from-scratch-daily-serve-it-fresh-30000-feet-in-air-kitchen-video-101787719835833.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/qatar_airline_1787722577177_1787722577613_0f9a43f4-f748-4295-8f29-c590e859fdb8.jpg",
       "image_type": "source"
     },
     {
-      "id": "8322af019ad9551b8e83",
+      "id": "b786e69762c2f56ac806",
+      "category": "Entertainment",
+      "headline": "Amanda Kernell Is More Interested in ‘Liberation Than a Curse’ as Her Third Feature ‘Brace Your Heart’ Debuts Trailer (EXCLUSIVE)",
+      "summary": "In her upcoming third feature “Brace Your Heart,” Amanda Kernell follows a survivor, not a victim. “We’re all different, and some people who experience really difficult things can’t recover. But there are others who survive and find there’s light on the other side,” she told Variety. Kernell, known for “Sámi Blood” and “Charter,” is also behind […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-26T05:46:31+00:00",
+      "source_url": "https://variety.com/2026/film/global/amanda-kernell-brace-your-heart-1236842342/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/08/MixCollage-25-Aug-2026-02-37-PM-7754.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "82182ffaee36b9ab14c0",
+      "category": "Lifestyle",
+      "headline": "A moment that changed me: I sought out rejection. Instead, strangers met me with profound generosity",
+      "summary": "As I turned 21, fear was holding me back. So I decided to face it headfirst. It taught me that courage leads to connection – and people who owe you nothing can be astonishingly kind In May 2024, I decided to spend 30 days getting rejected on purpose. At first, it sounded ridiculous. After all, most people spend their lives actively trying to avoid...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T05:45:35+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/26/a-moment-that-changed-me-i-sought-out-rejection",
+      "image_url": "https://i.guim.co.uk/img/media/f3c6b8d5560f760b96eb0675f990f58b064a11e3/0_405_720_576/master/720.jpg?width=140&quality=85&auto=format&fit=max&s=2b08fd2a19e6f65aafb03604ea9914a4",
+      "image_type": "source"
+    },
+    {
+      "id": "663031777a8fd85e0cdf",
       "category": "World",
-      "headline": "Australia news live: WA premier’s ‘east coast clowns’ barb was unacceptable, Spender says; value of Japan’s melon gifts to PM revealed",
-      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T04:10:56+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
-      "image_url": "https://i.guim.co.uk/img/media/9e1cf7edca57e0d5876fa1b0afc9f6e1d0a87186/832_292_5665_4532/master/5665.jpg?width=140&quality=85&auto=format&fit=max&s=375014140a4419e46938fffc4a684c1e",
+      "headline": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
+      "summary": "It is believed to be one of the largest mass kidnappings in Haiti in recent years, and one gang leader is threatening to kill the hostages if authorities kill any gang members as they try to secure the community nestled in the hills above Port-au",
+      "publisher": "NPR World",
+      "published_at": "2026-08-26T05:45:34+00:00",
+      "source_url": "https://www.npr.org/2026/08/26/nx-s1-5944787/50-kidnapped-haiti-gang-attack-47-dead",
+      "image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6440x4293+0+0/resize/6440x4293!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb1%2F14%2Fb2e550804322968c74be9d57195b%2Fap26236711302607.jpg",
       "image_type": "source"
     },
     {
-      "id": "a9ebdedce380bd3b9963",
-      "category": "India",
-      "headline": "H1N1 in India: A seasonal surge, not a new strain, says ICMR",
-      "summary": "Delhi has reported 1,777 H1N1 cases this year, while Karnataka had recorded 4,212 laboratory-confirmed influenza cases across 32 districts by August 22. Maharashtra, too, has reported a rise in H1N1 infections",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T04:09:56+00:00",
-      "source_url": "https://www.thehindu.com/sci-tech/health/h1n1-in-india-a-seasonal-surge-not-a-new-strain-says-icmr/article71391367.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/ucv8w/article71391397.ece/alternates/LANDSCAPE_1200/4col_Lead_StoryG1OGEOT2L.2.jpg.jpg",
+      "id": "6b9a5deb16e15f5f98f7",
+      "category": "Sports",
+      "headline": "Is Joao Pedro ready to break Chelsea's so-called number nine curse?",
+      "summary": "Joao Pedro took just 31 seconds to score his opening goal of the season - will the new number nine reach the 20 he scored last season while wearing the number 20 shirt?",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T05:41:12+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cgk5ydy0vk4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/65d1/live/aebf6ed0-a082-11f1-a9bc-ad5fed338eb5.jpg",
       "image_type": "source"
     },
     {
@@ -50,10 +72,450 @@
       "headline": "Tributes pour in after country music legend Dolly Parton, 80, dies following ‘brief battle with cancer’ – latest updates",
       "summary": "Reba McEntire, Lily Tomlin, Dionne Warwick, Kacey Musgraves, Donald Trump and others mourn star’s death Dolly Parton dies aged 80 | Celebrity tributes | A life in pictures Parton’s peerless career turned country music cliches inside out Share your tributes and memories of Dolly Parton Our picture editors have collated Dolly Parton ’s life in pictures: In...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-26T04:01:04+00:00",
+      "published_at": "2026-08-26T05:38:34+00:00",
       "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/dolly-parton-dead-age-80-live",
       "image_url": "https://i.guim.co.uk/img/media/0e08b227a9ae9781b9d354c759cf93763c741f16/363_0_4105_3284/master/4105.jpg?width=140&quality=85&auto=format&fit=max&s=51fb110178055dbfa34d397d06af9ac7",
       "image_type": "source"
+    },
+    {
+      "id": "8ff3d081100a7d9d0d94",
+      "category": "India",
+      "headline": "NYC Mayor Mamdani opposes RSS chief Bhagwat's Madison Square event",
+      "summary": "Zohran Mamdani said the vision of India that his family taught him was that of \"a pluralistic society, of a secular republic that believed in the belonging of each and every person who was from India\"",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:35:12+00:00",
+      "source_url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/pllikx/article71390381.ece/alternates/LANDSCAPE_1200/2026-08-12T191157Z_893822250_RC25XMAFBBXC_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "c20637d7417c6a338fbf",
+      "category": "India",
+      "headline": "Kakinada Gateway Port set to be commissioned by early 2027",
+      "summary": "The first berth will be ready by early next year, as construction of the South and North Breakwater facilities has been completed; Railways has consented to a railway track connecting to the port, with an estimated cost of ₹400 crore",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:34:33+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/kakinada-gateway-port-set-to-be-commissioned-by-early-2027/article71389546.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/sh37ge/article71391532.ece/alternates/LANDSCAPE_1200/10237_25_8_2026_20_2_35_1_KGPL3.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "03a3ae0f2f5eab10eafa",
+      "category": "World",
+      "headline": "Australia news live: Chalmers hits back at WA premier’s ‘east coast clowns’ sledge; NSW police investigate alleged theft of 400,000 oysters",
+      "summary": "Follow updates live Get our breaking news email , free app or daily news podcast Angela Jackson, the commissioner of the Productivity Commission, said the body stands by the interim report into the GST, which found the deal with Western Australia to be a costly mistake that should be reversed. Jackson spoke to RN this morning after WA premier Roger Cook...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:32:56+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/26/national-cabinet-datacentres-cpi-inflation-data-politics-reactions-anthony-albansese-labor-angus-taylor-coalition-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/b849ebe6cd0edde35af18b1ab40f402228d3c1d3/581_468_3527_2822/master/3527.jpg?width=140&quality=85&auto=format&fit=max&s=f353ec1d773ed15782b351b5ef283877",
+      "image_type": "source"
+    },
+    {
+      "id": "cc1180e3de48436db0f1",
+      "category": "Lifestyle",
+      "headline": "6 last-minute, thoughtful Rakhi gifts for the brother who puts health and self-care first",
+      "summary": "Explore 6 thoughtful last-minute Rakhi gifts that promote health and wellness, perfect for the health",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T05:31:04+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/6-last-minute-thoughtful-rakhi-gifts-for-the-brother-who-puts-health-and-self-care-first-101787664969404.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/rakhi_1754546077724_1754546091755_1787665746029_2b9969a2-710f-4375-94c7-af1d365c087c.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "97ec12bc9be283964753",
+      "category": "India",
+      "headline": "User charges at Hyderabad airport cut by 30%; sets new tariff regime",
+      "summary": "AERA has introduced an incremental ARR approach for the tariff period. It is intended to prevent passengers from being charged upfront for large projects that are yet to become operational",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:27:38+00:00",
+      "source_url": "https://www.thehindu.com/news/national/user-charges-at-hyderabad-airport-cut-by-30-sets-new-tariff-regime/article71389398.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/ld38m2/article71389745.ece/alternates/LANDSCAPE_1200/3e6155e1-3b11-4587-b9d6-6a25dd6aa7db.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "db4458c3972b0860f791",
+      "category": "India",
+      "headline": "Labourer Killed After Under-Construction Flyover Collapses In J&K's Samba",
+      "summary": "Police have taken cognisance of the matter and started investigation.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T05:27:07+00:00",
+      "source_url": "https://www.ndtv.com/india-news/labourer-killed-after-under-construction-flyover-collapses-in-jammu-and-kashmirs-samba-11959943#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/l23q27bk_underconstruction-flyover-collapses-samba_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "5fef93ac830b902ce4df",
+      "category": "India",
+      "headline": "Gurugram waterlogging sparks outrage; Residents, Opposition question government and MP",
+      "summary": "Videos and photographs of school buses stranded near Subhash Chowk, with children reportedly stuck inside for hours, went viral on social media, triggering widespread anger among residents.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:22:16+00:00",
+      "source_url": "https://www.thehindu.com/news/national/haryana/gurugram-waterlogging-sparks-outrage-residents-opposition-question-government-and-mp/article71389768.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/1pmvkq/article71391540.ece/alternates/LANDSCAPE_1200/20260824503L.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "2cb3d47314206885c6a4",
+      "category": "India",
+      "headline": "Six militants involved in extortion, kidnapping arrested in Manipur",
+      "summary": "A total of 23 letterheads of UPPK were seized from the possession of the arrested militants, it said, adding that the insurgents confessed to their involvement in kidnapping, extortion and intimidation",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:21:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/manipur/six-militants-involved-in-extortion-kidnapping-arrested-in-manipur/article71391473.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/sgo8jk/article71391527.ece/alternates/LANDSCAPE_1200/iStock-1905024012%2012.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "3d825b1a8803d9b01ef9",
+      "category": "Sports",
+      "headline": "Flex your football brain with our daily quizzes",
+      "summary": "Test your ball knowledge with today's Who Am I?, Five in Five and Brainteaser.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T05:17:10+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cvgxxx4r7zxo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ada7/live/27df4c70-9658-11f1-b2ab-0dd01740f9f6.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "571d4f00482c367c3412",
+      "category": "Sports",
+      "headline": "Taekwondo, stats and £1m record - the rise of Arsenal striker Smith",
+      "summary": "Olivia Smith's career has been in the limelight since she was 15",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-26T05:16:06+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c8jdl0n0r7mo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6786/live/ae28a060-9fae-11f1-bff6-57f1422ebb0b.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "9787dceec6ef9cb4475e",
+      "category": "India",
+      "headline": "Rebel TMC MPs get notices from Lok Sabha Secretariat on disqualification pleas; asked to reply within 7 days",
+      "summary": "The development comes a day after the Supreme Court agreed to hear Abhishek Banerjee's plea seeking an expeditious decision on the disqualification petitions.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:08:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/rebel-tmc-mps-get-notices-from-lok-sabha-secretariat-on-disqualification-pleas-asked-to-reply-within-7-days/article71391461.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/icht0y/article71391507.ece/alternates/LANDSCAPE_1200/PTI06_14_2026_000531B.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "c6ad031a3f70aadfa0aa",
+      "category": "India",
+      "headline": "BA, BSc, BCom Degrees Have 'Weak Job Linkages': NITI Aayog Calls For Reforms",
+      "summary": "The NITI Aayog report also highlighted high levels of educated unemployment.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T05:08:46+00:00",
+      "source_url": "https://www.ndtv.com/education/ba-bsc-bcom-degrees-have-weak-job-linkages-niti-aayog-calls-for-reforms-11959906#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/h07s21ug_niti-aayog-_625x300_26_August_26.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "52c87985037d800f2e29",
+      "category": "India",
+      "headline": "Bournvita maker acts after notice as FSSAI steps up crackdown on misleading claims",
+      "summary": "The Bournvita issue had drawn scrutiny in 2023 over its sugar content and nutritional claims, particularly its marketing to children",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:07:29+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/health/bournvita-maker-acts-after-notice-as-fssai-steps-up-crackdown-on-misleading-claims/article71388314.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/earxat/article66780496.ece/alternates/LANDSCAPE_1200/ct10_bournvita_1.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "749732dc3b681a589bd9",
+      "category": "India",
+      "headline": "Villagers in Telangana wage a war to protect 75-year-old Peepal tree",
+      "summary": "“I got the platform demolished and constructed the compound wall around it, because the platform was attracting drunkards and vagabonds. Villagers who are protesting now had helped me construct the wall. Now, an issue is being made out of it purely due to personal rivalries,” says owner who applied for felling permission",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T05:06:23+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/villagers-in-telangana-wage-a-war-to-protect-75-year-old-peepal-tree/article71385040.ece",
+      "image_url": "https://th-i.thgim.com/public/news/national/6dsna8/article71391509.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-26%20at%208.59.13%20AM.jpeg",
+      "image_type": "source"
+    },
+    {
+      "id": "0aea60b65dc1b2314e35",
+      "category": "India",
+      "headline": "Jharkhand Teen Loses Hands While Making Reel Near Railway Track",
+      "summary": "The group was reportedly making reels on their mobile phones when Purnima was hit by the train",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T05:04:38+00:00",
+      "source_url": "https://www.ndtv.com/india-news/jharkhand-teen-loses-both-hands-while-making-reel-near-railway-track-11959850#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2024-07/i1p2dbko_train-generic_625x300_22_July_24.jpg?im=FaceCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "f54b61e45ed94a85844b",
+      "category": "World",
+      "headline": "Teenage girl allegedly raped in ‘heinous’ attack at Queensland residential care home",
+      "summary": "State’s child safety minister Amanda Camm confirms police are investigating alleged attack west of Brisbane A Queensland teenager has allegedly been raped in a state-funded residential care home in what has been described as a “heinous” act. A staff member is accused of assaulting the girl, who is understood to be intellectually impaired, at the home...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:03:51+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/teenage-girl-allegedly-raped-residential-resi-care-home-queensland-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/f565c2f1c1b3bdb0da1b16d346ee8da8ed93aa6e/126_0_3779_3024/master/3779.jpg?width=140&quality=85&auto=format&fit=max&s=f847b8b3d7c279ef32a3d1cc5ed6914f",
+      "image_type": "source"
+    },
+    {
+      "id": "c372a4814de8a9ba2362",
+      "category": "World",
+      "headline": "Two years in limbo: the residents still paying mortgages on flats destroyed in east London fire",
+      "summary": "Spectrum Building leaseholders awaiting payouts after freeholder, Arinium, went bankrupt shortly after 2024 blaze Sarah Williams vividly remembers the night in 2016 when she camped overnight in a car park to put down a deposit on a flat in the newly completed Spectrum Building in Dagenham, east London. “People started queuing for those flats 24 hours...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:00:36+00:00",
+      "source_url": "https://www.theguardian.com/society/2026/aug/26/east-london-spectrum-building-fire-cladding-residents-limbo",
+      "image_url": "https://i.guim.co.uk/img/media/bde2f669a9a4427005074bc6fd517399ce31c4c1/469_207_4380_3504/master/4380.jpg?width=140&quality=85&auto=format&fit=max&s=6944bc92f9ff61a79183af9a3825a70f",
+      "image_type": "source"
+    },
+    {
+      "id": "2e45ce2f2ed2623ff7f5",
+      "category": "World",
+      "headline": "Iran seeks to criminalise all contact with foreign media in latest ‘chilling’ crackdown",
+      "summary": "As photojournalist sentenced to 15 years, rights groups warn law would turn civic engagement into security crime Iran has taken the first step towards criminalising contact with foreign media, in a move human rights groups have said attempts to “sever the entire Iranian society from the rest of the world”. For journalists, researchers and even ordinary...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:00:35+00:00",
+      "source_url": "https://www.theguardian.com/global-development/2026/aug/26/iran-criminalises-contact-foreign-media-human-rights-crackdown",
+      "image_url": "https://i.guim.co.uk/img/media/cbb47ed3ed3d204b3517bb213722c9176f89f705/557_0_4680_3744/master/4680.jpg?width=140&quality=85&auto=format&fit=max&s=132054a6416467133ed5788d5fb4d215",
+      "image_type": "source"
+    },
+    {
+      "id": "1dc37e80cd034a11728f",
+      "category": "Lifestyle",
+      "headline": "A Tamil summer vegetarian feast: Cynthia Shanmugalingam’s cucumber yoghurt curry and gooseberry pickle",
+      "summary": "Serve this cold curry with a hot, fenugreek-flavoured preserve for a seasonal refresher This lovely summery “curry” is a cold, refreshing dish from Karnataka in India, and is eaten widely in Tamil Nadu, just 20 miles across the Palk Strait from my ancestral Tamil homeland in north and eastern Sri Lanka. Along with chefs Louis and Seb in our development...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T05:00:35+00:00",
+      "source_url": "https://www.theguardian.com/food/2026/aug/26/cucumber-yoghurt-curry-gooseberry-pickle-cynthia-shanmugalingam-sri-lankan-vegetarian-recipes-for-summer",
+      "image_url": "https://i.guim.co.uk/img/media/46c9a8e19eacd5928a4d8028c5000ff56f65924f/306_1828_4045_3235/master/4045.jpg?width=140&quality=85&auto=format&fit=max&s=604e22c033c6c6591755af6b53f07a05",
+      "image_type": "source"
+    },
+    {
+      "id": "cc79daede146468283e7",
+      "category": "World",
+      "headline": "National lottery faces questions over new boss’s record in gambling industry",
+      "summary": "MPs tell regulator they are ‘deeply concerned’ over interim CEO Phil Walker’s roles at William Hill and Game Nation The national lottery is facing questions over its new boss’s record in the gambling industry, including a lucrative role in the 24-hour slot machine sector singled out by the prime minister as a blight on British high streets. Allwyn UK,...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:00:34+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/26/national-lottery-faces-questions-over-new-bosss-record-in-gambling-industry",
+      "image_url": "https://i.guim.co.uk/img/media/5581db85380b65ac13484eadea0446b3d8abf008/0_0_4923_3939/master/4923.jpg?width=140&quality=85&auto=format&fit=max&s=93f64252d79e59ce6d6d36f611212291",
+      "image_type": "source"
+    },
+    {
+      "id": "0e8ba9a552b3549f6237",
+      "category": "World",
+      "headline": "Autism and ADHD care complaints more than triple in five years in England",
+      "summary": "NHS ombudsman warns of years-long waits and patients paying thousands to go private as demand for services soars Complaints about autism and attention deficit hyperactivity disorder services in England have more than tripled in five years, official figures show, with the NHS ombudsman warning of years-long waits and patients paying thousands of pounds...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T05:00:34+00:00",
+      "source_url": "https://www.theguardian.com/society/2026/aug/26/autism-adhd-care-complaints-england-triple-five-years",
+      "image_url": "https://i.guim.co.uk/img/media/1bac933be4f50d093ae21b22eac47d1aef623e78/414_0_4099_3280/master/4099.jpg?width=140&quality=85&auto=format&fit=max&s=9d9cd7e04e95524ed97132cc0798de50",
+      "image_type": "source"
+    },
+    {
+      "id": "6b00891c1fb3de1ea509",
+      "category": "India",
+      "headline": "Cab Drivers Challenge Maharashtra Marathi Mandate, Ask Court To Slam Brakes",
+      "summary": "Maharashtra has made working knowledge of Marathi must for drivers",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T04:54:28+00:00",
+      "source_url": "https://www.ndtv.com/india-news/cab-drivers-challenge-maharashtra-marathi-mandate-ask-court-to-slam-breaks-11959684#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/r2cq1scs_taxi_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "4692b0a6d19e42b42a14",
+      "category": "India",
+      "headline": "Man dies after village headman in Uttar Pradesh opens fire at his child's naming ceremony",
+      "summary": "The village headman, Sukhdev, arrived at the venue and began firing as he was not invited to the function",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:51:36+00:00",
+      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/man-dies-after-village-headman-in-uttar-pradesh-opens-fire-at-his-childs-naming-ceremony/article70096895.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/kefcin/article69046238.ece/alternates/LANDSCAPE_1200/CCI_UDHindu_KSL_UPR5UO7T7_R1559328378_6_85e9a16e-9612-476b-9ef3-3eead25572c4.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "786867f01280a30a6a6b",
+      "category": "India",
+      "headline": "Muthanga eviction was a bid to crush the Adivasi movement: Geethanandan",
+      "summary": "Muthanga eviction was a bid to crush the Adivasi movement: Geethanandan. The latest developments are being reported as more information becomes available.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:51:27+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/muthanga-eviction-was-a-bid-to-crush-the-adivasi-movement-geethanandan/article71388105.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/rysoz5/article71388595.ece/alternates/LANDSCAPE_1200/11073_25_8_2026_15_11_48_3_26TVKZ3_GEETHANANDAN.JPG",
+      "image_type": "source"
+    },
+    {
+      "id": "5b13d1d96d0a2d7f9398",
+      "category": "India",
+      "headline": "No one should engage in 'narrow politics': Mayawati on hijab row",
+      "summary": "The BSP is an Ambedkarite party that guarantees respect for all sections of society and the safety of their lives, property and religion, says BSP supremo Mayawati",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:50:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/uttar-pradesh/no-one-should-engage-in-narrow-politics-mayawati-on-hijab-row/article71391443.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/lf6vc9/article71391458.ece/alternates/LANDSCAPE_1200/PTI08_11_2026_000083B.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "b5c7f61f2694424b43fc",
+      "category": "World",
+      "headline": "Two Dan Sullivans to appear on Alaska’s US Senate ballot in November’s midterm elections",
+      "summary": "The incumbent senator Dan S Sullivan has condemned ex-school teacher Dan J Sullivan, claiming he is running at the behest of Democrats to confuse supporters Republican senator Dan S Sullivan will be joined on the November ballot in Alaska by a challenger with a nearly identical name from the same party, election officials confirmed on Tuesday, adding a...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:48:55+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/26/alaska-dan-sullivan-senate",
+      "image_url": "https://i.guim.co.uk/img/media/88e3fc7e92aa3d3c10e538940c2b62cd600844dd/0_0_1500_1200/master/1500.jpg?width=140&quality=85&auto=format&fit=max&s=96553a839e2b0e948a7b106e102878a2",
+      "image_type": "source"
+    },
+    {
+      "id": "bb7596337e3fa3e2c840",
+      "category": "India",
+      "headline": "Adani Energy Solutions Wins Rs 4,700 Crore Transmission Project In Maharashtra",
+      "summary": "Adani Energy Solutions wins Rs 4,700 crore Maharashtra project.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T04:45:35+00:00",
+      "source_url": "https://www.ndtv.com/india-news/adani-energy-solutions-wins-rs-4-700-crore-transmission-project-in-maharashtra-11959832#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-04/42gkaqjs_adani-energy-solutions_625x300_23_April_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "738febfc39fbbd65f430",
+      "category": "Lifestyle",
+      "headline": "You thought calcium was enough for strong bones? This surgeon says think again",
+      "summary": "Taking calcium for strong bones? Not enough, says surgeon Dr Doug Lucas – without protein, strength training, vitamins D, magnesium, you're still losing bone.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T04:45:19+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/you-thought-calcium-was-enough-for-strong-bones-this-surgeon-says-think-again-101787718143388.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/2148314518_1787718404850_1787718413719_1b919532-2b4b-4e17-b63f-00ffb0a25b33.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "87575ca766201b964caf",
+      "category": "Business",
+      "headline": "Buy, Sell or Hold: Morgan Stanley maintains overweight on Varun Beverages; Nuvama retains hold on Cyient",
+      "summary": "Morgan Stanley retained its Overweight rating on Varun Beverages with a Rs 557 target, while Nuvama maintained a Hold on Cyient and raised its target to Rs 1,050. Elara Securities retained its Buy rating on Nykaa and increased its target to Rs 475, citing premiumisation, stronger customer quality and growth in online beauty and personal care.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T04:41:01+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/buy-sell-or-hold-morgan-stanley-maintains-overweight-on-varun-beverages-nuvama-retains-hold-on-cyient/articleshow/133529809.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Buy%2C%20Sell%20or%20Hold%3A%20Morgan%20Stanley%20maintains%20overweight%20on%20Varun%20Beverages%3B%20Nuvama%20retains%20hold%20on%20Cyient%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2777195387",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1da60961e1fcf403a0ee",
+      "category": "India",
+      "headline": "Born After 7 Years, Sikkim's Red Panda Cubs Are Thriving, Can Be Adopted Now",
+      "summary": "After seven years without births, red panda cubs are thriving at Sikkim's Himalayan Zoological Park",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T04:39:30+00:00",
+      "source_url": "https://www.ndtv.com/india-news/born-after-7-years-sikkims-red-panda-cubs-are-thriving-can-be-adopted-now-11959361#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/3kcdlsk8_red-panda-sikkim_625x300_26_August_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "cc7b789411b0f4bf51ea",
+      "category": "Business",
+      "headline": "MTAR Tech shares rally 3%, extend gains for second session. What’s triggering the surge?",
+      "summary": "MTAR Technologies shares gained 3% after the company secured a Rs 127 crore order from Nuclear Power Corporation of India for coolant channel assemblies used in reactor refurbishment. The order takes its civil nuclear order book above Rs 775 crore, while the company expects 80% revenue growth in FY27 and sees further opportunities from reactor...",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T04:37:17+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-tech-shares-rally-3-extend-gains-for-second-session-whats-triggering-the-surge/articleshow/133529737.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20MTAR%20Tech%20shares%20rally%203%25%2C%20extend%20gains%20for%20second%20session.%20What%E2%80%99s%20triggering%20the%20surge%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1985769254",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5712e4c504209c9a64c4",
+      "category": "Entertainment",
+      "headline": "Haim Saban, Lawrence Bender and Teddy Schwarzman Among Industry Group Accusing Mark Ruffalo of “Antisemitism” in Attack on Paramount Leadership",
+      "summary": "The group, calling itself The Brigade, also includes Ram Bergman, Matti Leshem, Anthony Bregman, Micah Green and Lynn Harris.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-26T04:31:36+00:00",
+      "source_url": "https://www.hollywoodreporter.com/business/business-news/haim-saban-lawrence-bender-teddy-schwarzman-slam-mark-ruffalo-1236681689/",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Haim%20Saban%2C%20Lawrence%20Bender%20and%20Teddy%20Schwarzman%20Among%20Industry%20Group%20Accusing%20Mark%20Ruffalo%20of%20%E2%80%9CAntisemitism%E2%80%9D%20in%20Attack%20on%20Paramount%20Leadership%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1869597927",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16986074c83e7026b412",
+      "category": "India",
+      "headline": "Karnataka Minister B Nagendra Offers To Resign Over Corruption Allegations",
+      "summary": "Nagendra had quit the Cabinet in 2024, was re",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T04:31:35+00:00",
+      "source_url": "https://www.ndtv.com/india-news/karnataka-minister-b-nagendra-offers-to-resign-over-corruption-allegations-11959678#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2026-08/vspv39gk_nagendra_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "22284c8a8ca46d9efd9e",
+      "category": "Lifestyle",
+      "headline": "Here’s how to style a black saree like Kiara Advani for the ultimate dark romance look",
+      "summary": "Kiara Advani wore a pre-draped Manish Malhotra Italian velvet sari with a cathedral-inspired lace blouse, styled with emerald jewels by Lakshmi Lehr.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T04:30:44+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/heres-how-to-style-a-black-saree-like-kiara-advani-for-the-ultimate-dark-romance-look-101787647684049.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/25/1600x900/logo/advani_1787653019539_1787653027718_e2357cc4-9ff8-48e4-9e8b-81163c95c901.png",
+      "image_type": "source"
+    },
+    {
+      "id": "5a8d7156685d9458b7b1",
+      "category": "India",
+      "headline": "Irregularities Force MPSC To Cancel Drug Inspector Exam, Fresh Date Soon",
+      "summary": "A fresh exam will be held; previous applicants need not reapply or pay fees.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-26T04:27:29+00:00",
+      "source_url": "https://www.ndtv.com/education/mpsc-cancels-drug-inspector-recruitment-exam-over-irregularities-re-exam-soon-11959736#publisher=newsstand",
+      "image_url": "https://c.ndtvimg.com/2025-05/rd74ev3o_maharashtra-public-service-commission_625x300_19_May_25.jpeg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "image_type": "source"
+    },
+    {
+      "id": "0ddaf98c08b669fb20db",
+      "category": "India",
+      "headline": "Suvendu vows to keep Mamata off the streets, TMC chairperson says not taking political sanyas",
+      "summary": "Over the past few years, the politics in West Bengal has hinged on the electoral contest between Suvendu Adhikari and Mamata Banerjee",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T04:23:56+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/suvendu-vows-to-keep-mamata-off-the-streets-tmc-chairperson-says-not-taking-political-sanyas/article71389096.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/gi6haf/article71390543.ece/alternates/LANDSCAPE_1200/20260824352L.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "223a840d742d1b56638a",
+      "category": "World",
+      "headline": "Nine CEO sees ‘world of growth in publishing’ as network slashes costs",
+      "summary": "Matt Stanton says company has ‘good pipeline’ of AI deals ahead even as it aims to cut $160m in costs Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The head of Nine Entertainment sees a “world of growth in publishing” on the horizon backed by laws designed to force tech platforms into...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T04:18:16+00:00",
+      "source_url": "https://www.theguardian.com/media/2026/aug/26/nine-entertainment-ai-deals-network-slashes-costs",
+      "image_url": "https://i.guim.co.uk/img/media/2dbd704ccae84819fa14f48faa477d8aa4be5a12/498_0_5308_4247/master/5308.jpg?width=140&quality=85&auto=format&fit=max&s=187e1dddcc4ed0499d74c48b8a00b777",
+      "image_type": "source"
+    },
+    {
+      "id": "d718330908574e06c842",
+      "category": "Lifestyle",
+      "headline": "Onam greetings 2026: 60+ wishes, quotes, messages, images to share with loved ones on August 26",
+      "summary": "Onam 2026: Celebrate the spirit of the vibrant festival with the help of these heartfelt and sweet wishes, greetings, quotes and images.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T04:18:10+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/festivals/onam-greetings-2026-60-wishes-quotes-messages-images-to-share-with-loved-ones-on-august-26-101787715196923.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/onam_2024_festival_3_1726291217095_1787715473766_b7bc9e09-20c6-4625-8d16-a943f2fd8738.jpg",
+      "image_type": "source"
+    },
+    {
+      "id": "19dff8f15b600b393c9f",
+      "category": "Lifestyle",
+      "headline": "Eid Mubarak 2026: 100+ Eid-e-Milad-un-Nabi wishes, images and greetings to share with loved ones on Eid today",
+      "summary": "Eid Mubarak 2026: Celebrate the auspicious occasion of Eid-e-Milad-un-Nabi with these special wishes, messages, images, and more.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-26T04:13:12+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/festivals/eid-mubarak-2026-100-eid-e-milad-un-nabi-wishes-images-and-greetings-to-share-with-loved-ones-on-eid-holiday-today-101787715451975.html",
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/eid_mubarak_1787716889384_1787716889502_37553eef-af8c-4e7e-95af-07374fa8f2ae.png",
+      "image_type": "source"
+    },
+    {
+      "id": "cd5d24bc1fbe21bf9df2",
+      "category": "Business",
+      "headline": "Hy-Tech Engineers IPO Day 3: GMP at 57%, subscription reaches 19.33x. Should you subscribe?",
+      "summary": "The Hy-Tech Engineers IPO entered its third day of bidding on August 26, with the issue subscribed 19.33 times by the end of Day 2. Retail investors led the demand, while the IPO’s grey market premium of Rs 30 indicated a potential 57% listing premium. Anand Rathi Research has assigned a “Subscribe - Long Term” rating to the issue, citing the company’s...",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T04:05:11+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/hy-tech-engineers-ipo-day-3-gmp-at-57-subscription-reaches-19-33x-should-you-subscribe/articleshow/133529025.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Hy-Tech%20Engineers%20IPO%20Day%203%3A%20GMP%20at%2057%25%2C%20subscription%20reaches%2019.33x.%20Should%20you%20subscribe%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=3808289369",
+      "image_type": "ai_generated"
     },
     {
       "id": "d2d31fc4825bb03cf450",
@@ -111,25 +573,14 @@
       "image_type": "source"
     },
     {
-      "id": "dc150f9022b3a8f746bb",
-      "category": "India",
-      "headline": "International community must work collectively to safeguard critical sea lanes: India tells UNSC",
-      "summary": "“Food insecurity remains one of the gravest humanitarian consequences of armed conflict. Today’s conflicts increasingly generate ripple effects far beyond the immediate theatre of hostilities,” says India’s Permanent Representative to the UN Ambassador",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T03:58:59+00:00",
-      "source_url": "https://www.thehindu.com/news/national/international-community-must-work-collectively-to-safeguard-critical-sea-lanes-india-tells-unsc/article71391331.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/1io1ot/article71391358.ece/alternates/LANDSCAPE_1200/20260310487L.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "4926d1a363703e165436",
+      "id": "ea64754570ec355b80a6",
       "category": "Business",
-      "headline": "Sensex rises 300 points; Nifty above 24,350 as oil prices slide. What lies ahead?",
-      "summary": "On Wednesday, Indian stock markets rallied, buoyed by a decrease in oil prices and renewed optimism surrounding the reopening of the Strait of Hormuz, following a resumption of talks with Iran. Both the Sensex and Nifty indices showed positive momentum, with broader market metrics also trending upward, reflecting a hopeful sentiment among investors amid...",
+      "headline": "Over Rs 1 crore invested in mutual funds, NPS, PPF and FDs: Should this PSU banker increase equity exposure with 18 years to retirement?",
+      "summary": "A 42-year-old PSU bank chief manager, who recently welcomed twins, sought a review of his family’s financial portfolio. With around 18 years to retirement, the couple has investments across mutual funds, fixed deposits, NPS and PPF, along with home and car loans. The key priorities are building a retirement corpus, funding their children’s education and...",
       "publisher": "Economic Times",
-      "published_at": "2026-08-26T03:56:10+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-over-200-points-nifty-nears-24350-as-oil-prices-slide-what-lies-ahead/articleshow/133528847.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Sensex%20rises%20300%20points%3B%20Nifty%20above%2024%2C350%20as%20oil%20prices%20slide.%20What%20lies%20ahead%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=867450215",
+      "published_at": "2026-08-26T04:00:27+00:00",
+      "source_url": "https://economictimes.indiatimes.com/mf/analysis/over-rs-1-crore-invested-in-mutual-funds-nps-ppf-and-fds-should-this-psu-banker-increase-equity-exposure-with-18-years-to-retirement/articleshow/133528903.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Over%20Rs%201%20crore%20invested%20in%20mutual%20funds%2C%20NPS%2C%20PPF%20and%20FDs%3A%20Should%20this%20PSU%20banker%20increase%20equity%20exposure%20with%2018%20years%20to%20retirement%3F%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1729352783",
       "image_type": "ai_generated"
     },
     {
@@ -144,26 +595,15 @@
       "image_type": "source"
     },
     {
-      "id": "24b6a4116509392159f3",
+      "id": "f44b867b9655577e857d",
       "category": "Business",
-      "headline": "Groww shares fall 3% after Rs 2,500 crore block deal; Ribbit likely seller",
-      "summary": "Billionbrains Garage Ventures, the parent company of Groww, will be in focus as early investor Ribbit Capital plans to sell a 1.6% stake through a block deal worth Rs 1,914 crore. The shares are being offered at Rs 195 apiece, a 4% discount to the previous close.",
+      "headline": "Avaada Electro files updated draft papers with Sebi for Rs 7,600-cr IPO",
+      "summary": "Avaada Electro Ltd is making waves in the financial market by submitting updated draft papers for a massive Rs 7,600 crore initial public offering. This IPO features a fresh equity share issuance alongside an offer for sale. The proceeds aim to address loan repayments and support general corporate functions while facilitating the company's ambitious...",
       "publisher": "Economic Times",
-      "published_at": "2026-08-26T03:35:17+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/groww-shares-in-focus-as-ribbit-likely-sells-stake-through-rs-1914-crore-block-deal/articleshow/133528618.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Groww%20shares%20fall%203%25%20after%20Rs%202%2C500%20crore%20block%20deal%3B%20Ribbit%20likely%20seller%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=381791654",
+      "published_at": "2026-08-26T03:52:44+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/avaada-electro-files-updated-draft-papers-with-sebi-for-rs-7600-cr-ipo/articleshow/133528857.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Avaada%20Electro%20files%20updated%20draft%20papers%20with%20Sebi%20for%20Rs%207%2C600-cr%20IPO%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=300016928",
       "image_type": "ai_generated"
-    },
-    {
-      "id": "9d89c4726aa2ed694db1",
-      "category": "India",
-      "headline": "Six killed, 12 injured as speeding bus crashes into lorry in Telangana’s Suryapet",
-      "summary": "The bus was carrying 42 passengers who were travelling from Hyderabad to Eluru via Vijayawada when the accident took place at about 5 a.m.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T03:32:41+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/six-killed-12-injured-as-speeding-bus-crashes-into-lorry-in-telanganas-suryapet/article71391286.ece",
-      "image_url": "https://th-i.thgim.com/public/news/national/njdbrt/article71391301.ece/alternates/LANDSCAPE_1200/Accident%20stock.jpeg",
-      "image_type": "source"
     },
     {
       "id": "6a69681ccc7240cf0346",
@@ -188,17 +628,6 @@
       "image_type": "source"
     },
     {
-      "id": "d416a54f0e76d501e9a3",
-      "category": "World",
-      "headline": "Nine CEO confident new AI laws will deliver a ‘world of growth in publishing’ as network slashes costs",
-      "summary": "Matt Stanton says company has ‘good pipeline’ of AI deals ahead even as it aims to cut $160m in costs Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The head of Nine Entertainment sees a “world of growth in publishing” on the horizon backed by laws designed to force tech platforms into...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T03:30:15+00:00",
-      "source_url": "https://www.theguardian.com/media/2026/aug/26/nine-entertainment-ai-deals-network-slashes-costs",
-      "image_url": "https://i.guim.co.uk/img/media/2dbd704ccae84819fa14f48faa477d8aa4be5a12/498_0_5308_4247/master/5308.jpg?width=140&quality=85&auto=format&fit=max&s=187e1dddcc4ed0499d74c48b8a00b777",
-      "image_type": "source"
-    },
-    {
       "id": "a5164e01498279d5ca37",
       "category": "Technology",
       "headline": "India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call",
@@ -218,28 +647,6 @@
       "published_at": "2026-08-26T03:23:32+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/1-hour-workout-in-morning-does-not-offset-10-hours-of-sitting-heart-surgeon-explains-how-it-is-bad-for-your-health-101787711366552.html",
       "image_url": "https://www.hindustantimes.com/ht-img/img/2026/08/26/1600x900/logo/sitting_1787713619055_1787713619217_51413a50-1168-4003-977d-43212f8ecb40.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "07ff224147120b68775d",
-      "category": "India",
-      "headline": "IAMC and allied faith organisations protest against Mohan Bhagwat’s event at Madison Square Garden",
-      "summary": "Held under the banner “No Platform for Hate,” the protest brought together representatives of Muslim, Hindu, Sikh, Christian, Dalit and interfaith organisations",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T03:19:46+00:00",
-      "source_url": "https://www.thehindu.com/news/national/iamc-and-allied-faith-organisations-protest-against-mohan-bhagwats-event-at-madison-square-garden/article71390230.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/54oba8/article71390393.ece/alternates/LANDSCAPE_1200/20260825480L.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "4cfcc6140aa4689755e8",
-      "category": "India",
-      "headline": "Weather Saved Pak's Skardu Base During Op Sindoor, But Bholari Took the IAF's Direct Hit",
-      "summary": "The IAF had also been cleared to launch an attack on Skardu.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T03:01:24+00:00",
-      "source_url": "https://www.ndtv.com/india-news/operation-sindoor-india-pakistan-low-on-fuel-indian-drone-inadvertently-hit-paks-kirana-hills-nuke-facility-11957603#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/215guj9s_bholari_625x300_26_August_26.jpg?im=FaceCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -276,17 +683,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "790cbcf857aa615af3c0",
-      "category": "India",
-      "headline": "NEET PG 2026 Admit Card Out: Here's Direct Link To Download, Exam On August 30",
-      "summary": "NEET PG 2026: The exam will be held in a single shift from 9am to 12:30pm.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T02:56:55+00:00",
-      "source_url": "https://www.ndtv.com/education/neet-pg-2026-admit-card-out-heres-direct-link-to-download-paper-pattern-marking-scheme-11959425#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/8dbqjhac_neet-pg-2026-admit-card-out_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
       "id": "8bfa6f30c25fdb648d0b",
       "category": "Entertainment",
       "headline": "The Best Tinted Sunscreens to Achieve Off-Duty (UV-Protected) Beauty",
@@ -320,81 +716,15 @@
       "image_type": "source"
     },
     {
-      "id": "28102d16f68060c77b35",
-      "category": "India",
-      "headline": "Prarthana Theatre: where stars sparkled on screen and in the sky",
-      "summary": "Prarthana Theatre: where stars sparkled on screen and in the sky. The latest developments are being reported as more information becomes available.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T02:31:38+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/madras-day-2026-chennai-ecr-prarthana-theatre-where-stars-sparkled-on-screen-and-in-the-sky/article71384179.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/1950ou/article71389198.ece/alternates/LANDSCAPE_1200/Pongal_Film_2.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "91e3ef2ff821a7c325d1",
-      "category": "India",
-      "headline": "Gujarat Boy Murdered By Villager Amid Land Row, Witchcraft Claims",
-      "summary": "The victim, Kevalji Thakor, went missing on Sunday (Representational)",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T02:30:05+00:00",
-      "source_url": "https://www.ndtv.com/india-news/gujarat-boy-murdered-by-villager-amid-land-row-witchcraft-claims-11959323#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/enl21dec_boy-murdered_625x300_26_August_26.jpeg",
-      "image_type": "source"
-    },
-    {
-      "id": "16a13921ff542148c324",
-      "category": "India",
-      "headline": "When sea food edged out catch from river",
-      "summary": "When sea food edged out catch from river. The latest developments are being reported as more information becomes available.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T02:27:07+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/when-sea-food-edged-out-catch-from-river/article71385832.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/3lceev/article71389631.ece/alternates/LANDSCAPE_1200/DJI_20260621061005_0209_D.JPG",
-      "image_type": "source"
-    },
-    {
-      "id": "755117748240b0048e25",
-      "category": "India",
-      "headline": "Madras built the engine, Chennai is shifting gears",
-      "summary": "From a colonial trading centre to a manufacturing hub and now a diversified global business destination, the city has repeatedly reinvented itself. Chennai is now home to leading global firms, building on the foundation laid by Madras",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T02:22:20+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/madras-built-the-engine-chennai-is-shifting-gears/article71385941.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/ke3fr3/article71390364.ece/alternates/LANDSCAPE_1200/HG3_Nehru_Visit_at_Central_Polytechnic7.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "bde1b78b3d09b08da4f3",
-      "category": "India",
-      "headline": "Man Kills Two Sisters In Uttarakhand Days Before Raksha Bandhan",
-      "summary": "Both sisters died on the spot from their gunshot wounds, police said.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T02:19:49+00:00",
-      "source_url": "https://www.ndtv.com/india-news/man-kills-two-sisters-in-uttarakhand-days-before-raksha-bandhan-11959122#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/qbjahua8_murder_625x300_26_August_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "f1994ee1baae10966076",
-      "category": "India",
-      "headline": "US Sanctions 4 India-Based Firms, 3 Indians To Punish Iran",
-      "summary": "The companies were among 60 individuals, entities, and vessels penalised by US",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T02:06:56+00:00",
-      "source_url": "https://www.ndtv.com/world-news/us-sanctions-4-india-based-firms-3-indians-to-punish-iran-11959307#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/asr57agc_us-president-donald-trump-photographer-daniel-heuerbloomberg_625x300_22_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "f061c6edae15818cea98",
-      "category": "India",
-      "headline": "Gurugram Resident Spends 4 Hours For 8 km Trip Amid Heavy Rains: 'Still Have 2 km Left'",
-      "summary": "Severe waterlogging causes major traffic jams in Gurugram, leaving residents stranded for hours.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T02:02:04+00:00",
-      "source_url": "https://www.ndtv.com/india-news/gurugram-resident-spends-4-hours-for-8-km-trip-amid-heavy-rains-still-have-2-km-left-11954285#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/48bnbotk_as_625x300_25_August_26.jpeg",
-      "image_type": "source"
+      "id": "28988142e7fbc81a09c5",
+      "category": "Business",
+      "headline": "Gaja Alternative Asset shares list at 16% premium over IPO price on NSE, BSE",
+      "summary": "Gaja Alternative Asset Management shares made a strong debut on Wednesday, listing nearly 16% above the IPO price. The Rs 550-crore issue received robust demand during subscription, led by institutional and non-institutional investors, with the overall issue subscribed 31.33 times.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-26T02:07:29+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/gaja-alternative-asset-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/133527367.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Gaja%20Alternative%20Asset%20shares%20list%20at%2016%25%20premium%20over%20IPO%20price%20on%20NSE%2C%20BSE%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=260443265",
+      "image_type": "ai_generated"
     },
     {
       "id": "93b1b2bbf8ea9282c400",
@@ -405,28 +735,6 @@
       "published_at": "2026-08-26T01:59:47+00:00",
       "source_url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates",
       "image_url": "https://i.guim.co.uk/img/media/520e2f2d26a6fbd0c991abe4e8ec356cb50122b9/570_0_6236_4990/master/6236.jpg?width=140&quality=85&auto=format&fit=max&s=573b1fa114716619807aa6b2db51e2f8",
-      "image_type": "source"
-    },
-    {
-      "id": "c05cec337d859f69aa52",
-      "category": "India",
-      "headline": "Cost of being parentless: Odisha rights panel orders probe into wrong parents’ names in certificates",
-      "summary": "A parentless student finds difficulties in his academic journey and life as different imaginary parents’ names were recorded by child care institutes (orphanages). The mismatch deprives him of government assistance",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T01:54:48+00:00",
-      "source_url": "https://www.thehindu.com/news/national/odisha/cost-of-being-parentless-odisha-rights-panel-orders-probe-into-wrong-parents-names-in-certificates/article71389231.ece",
-      "image_url": "https://th-i.thgim.com/public/news/national/fj7h3b/article71391251.ece/alternates/LANDSCAPE_1200/iStock-1227303349.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "a79e4a56bbdf8e9cf3f7",
-      "category": "India",
-      "headline": "Uttar pradesh MBBS Interns Stipend Doubled: Rs 12,000 Raised To Rs 25,000 Per Month",
-      "summary": "UP Cabinet approves 25 lakh tablets for youth under Swami Vivekananda scheme",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T01:50:48+00:00",
-      "source_url": "https://www.ndtv.com/education/uttar-pradesh-mbbs-interns-stipend-doubled-rs-12-000-raised-to-rs-25-000-per-month-11959280#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2024-12/lcp5vrs_medical-education_625x300_31_December_24.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -449,28 +757,6 @@
       "published_at": "2026-08-26T01:46:25+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/26/typhoon-narra-floods-evacuations-china",
       "image_url": "https://i.guim.co.uk/img/media/ddc5b89ffe9742f50c75380c051ff9ac6d23aced/566_0_4398_3518/master/4398.jpg?width=140&quality=85&auto=format&fit=max&s=e5328c88f0ccc149f56fa79c6a4afaa7",
-      "image_type": "source"
-    },
-    {
-      "id": "f83c7cb508298de2bd7b",
-      "category": "World",
-      "headline": "Suburban Rail Loop: Victorian government secretly increased public transport fares to help pay for controversial SRL",
-      "summary": "Labor put ‘levy on all public transport fares in metropolitan Melbourne and regional Victoria’ since January 2025, auditor general says Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The Victorian government secretly increased public transport fares to raise money to help pay for the...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T01:43:13+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/2026/aug/26/victoria-suburban-rail-loop-srl-public-transport-fare-levy-increase",
-      "image_url": "https://i.guim.co.uk/img/media/6b34aa0ac2d64b241941b18011c541e72aaea8d5/309_0_5828_4663/master/5828.jpg?width=140&quality=85&auto=format&fit=max&s=f8fad53e9791ed5ab575dde4bf74986d",
-      "image_type": "source"
-    },
-    {
-      "id": "b735169059e07ac48bca",
-      "category": "India",
-      "headline": "Gujarat Forest Guard, Agent Trapped For Rs 100 Bribe At Surajbari Checkpost",
-      "summary": "ACB officials caught a forest guard and his private associate red",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T01:39:43+00:00",
-      "source_url": "https://www.ndtv.com/india-news/gujarat-forest-guard-agent-trapped-for-rs-100-bribe-at-surajbari-checkpost-11959260#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2026-08/q70adkec_gujarat-forest-guard-agent-caught-in-bribary_625x300_26_August_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
       "image_type": "source"
     },
     {
@@ -518,28 +804,6 @@
       "image_type": "source"
     },
     {
-      "id": "227d9e5474919975dfd6",
-      "category": "India",
-      "headline": "'No Compromise, No Alliance': Mayawati Says BSP Will Contest Alone In Punjab",
-      "summary": "Mayawati announced that the BSP will contest the Punjab elections alone on its own strength.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T01:07:17+00:00",
-      "source_url": "https://www.ndtv.com/india-news/mayawati-says-bsp-will-contest-alone-in-punjab-assembly-polls-11959208#publisher=newsstand",
-      "image_url": "https://c.ndtvimg.com/2025-09/h8qc6luc_bsp-supremo-mayawati_625x300_25_September_25.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "image_type": "source"
-    },
-    {
-      "id": "683c4c14fcb44716fae6",
-      "category": "Business",
-      "headline": "Axis Bank set to raise $700 million through ECB swap facility",
-      "summary": "Axis Bank is set to secure seven hundred million dollars through a dedicated external commercial borrowing facility. This loan features two tranches with tenures of three and five years. The arrangement is spearheaded by CTBC Bank from Taiwan and United Overseas Bank from Singapore, with significant contributions from the World Bank's IFC. Additional...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T01:03:39+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/axis-bank-set-to-raise-700-million-through-ecb-swap-facility/articleshow/133526983.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Axis%20Bank%20set%20to%20raise%20%24700%20million%20through%20ECB%20swap%20facility%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=855966279",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "9273ceb84c8bfcec0727",
       "category": "Entertainment",
       "headline": "‘Paranormal Activity’ Review: Spooky Franchise Gets a Hair-Raising Stage Experience",
@@ -562,17 +826,6 @@
       "image_type": "source"
     },
     {
-      "id": "6b2b619db3e52a6cd259",
-      "category": "India",
-      "headline": "UN committee calls for addressing ‘hate speech’ and ‘hate crimes’ in India",
-      "summary": "The committee calls on India to “urgently address discrimination, hate speech and hate crimes” and “ensure accountability” for these violations",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T00:44:08+00:00",
-      "source_url": "https://www.thehindu.com/news/national/un-committee-expresses-grave-concern-over-rights-violations-against-scs-sts-rohingya-refugees/article71388439.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/5mk01y/article71388656.ece/alternates/LANDSCAPE_1200/iStock-2186954083%201.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "c2a83f2866935b0be788",
       "category": "World",
       "headline": "From Hasan Piker to Jesse Watters, El-Sayed seeks to focus on affordability amid scrutiny from both sides",
@@ -582,17 +835,6 @@
       "source_url": "https://www.theguardian.com/us-news/2026/aug/25/abdul-el-sayed-criticism-affordability-message",
       "image_url": "https://i.guim.co.uk/img/media/1b7dfd5ffc5f751dfd85cb5204c68faffb11c75e/539_0_5388_4313/master/5388.jpg?width=140&quality=85&auto=format&fit=max&s=6816400cc392e995f49aa4773c606e91",
       "image_type": "source"
-    },
-    {
-      "id": "1c887777b1aa63cbc426",
-      "category": "Business",
-      "headline": "ESDS to expand data centre operations with Rs 720-cr IPO proceeds",
-      "summary": "ESDS Software Solution is embarking on a ₹720-crore IPO aimed at broadening its data center operations across India and Europe. This strategic move follows a notable partnership for AI cluster deployment powered by NVIDIA GPUs. The investment will not only bolster their infrastructure but also pave the way for new facilities in Kolkata and Sahibabad,...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T00:41:08+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/esds-to-expand-data-centre-operations-with-of-rs-720-cr-ipo-proceeds/articleshow/133526906.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20ESDS%20to%20expand%20data%20centre%20operations%20with%20Rs%20720-cr%20IPO%20proceeds%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2745299154",
-      "image_type": "ai_generated"
     },
     {
       "id": "841e886851130fae8104",
@@ -606,17 +848,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "c3cdd1161e1eb733a32e",
-      "category": "World",
-      "headline": "Billionaire investor says he used AI to write critique of former mentee Scott Bessent",
-      "summary": "Stanley Druckenmiller said he was ‘proud of using it’ as wider media grapples with parameters around AI use Stanley Druckenmiller, a billionaire investor, said he used artificial intelligence to pen his viral Wall Street Journal op-ed in which he sharply criticized the interference of Scott Bessent , the US treasury secretary, in the US bond market. Many...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T00:38:49+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/25/scott-bessent-stanley-druckenmiller-ai",
-      "image_url": "https://i.guim.co.uk/img/media/6b01fb3eb37cae07f49af38f9fecf97dd8606915/0_0_5270_4219/master/5270.jpg?width=140&quality=85&auto=format&fit=max&s=70d66ebd2b7e029a35d479b39a61fd3c",
-      "image_type": "source"
-    },
-    {
       "id": "cc945e31a81fd779bd0e",
       "category": "Entertainment",
       "headline": "Beyoncé Remembers Dolly Parton as “Bold and Brilliant” in Touching Tribute",
@@ -625,28 +856,6 @@
       "published_at": "2026-08-26T00:36:03+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/beyonce-remembers-dolly-parton-dead-tribute-1236681538/",
       "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Beyonc%C3%A9%20Remembers%20Dolly%20Parton%20as%20%E2%80%9CBold%20and%20Brilliant%E2%80%9D%20in%20Touching%20Tribute%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2434434998",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ffebf177517a736b6f19",
-      "category": "Business",
-      "headline": "Hindustan Copper OFS may not be a big draw for retail investors: Analysts",
-      "summary": "Analysts express caution regarding retail investor interest in Hindustan Copper's offer for sale. A nearly ten percent discount may not attract investors after recent metal stock rallies. The institutional portion saw strong demand, exceeding shares available on the first day. Current valuations and limited upside potential raise concerns for potential...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T00:28:50+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/hind-copper-may-not-be-a-big-draw-for-retail-investors/articleshow/133526868.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Hindustan%20Copper%20OFS%20may%20not%20be%20a%20big%20draw%20for%20retail%20investors%3A%20Analysts%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=874939496",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a57aba6cb61d07770ec8",
-      "category": "Business",
-      "headline": "Small and midcaps shine as blue-chip stocks struggle for momentum",
-      "summary": "Mid- and small-cap stocks have continued to defy index-level inertia amid a rush in primary-market listings. The average advance-to-decline (A/D) ratio - a widely watched indicator of overall market health - in August is up for the fifth consecutive month, its longest winning streak in more than two and a half years, pointing to significant investor...",
-      "publisher": "Economic Times",
-      "published_at": "2026-08-26T00:25:15+00:00",
-      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/small-and-midcaps-shine-as-blue-chip-stocks-struggle-for-momentum/articleshow/133526882.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Small%20and%20midcaps%20shine%20as%20blue-chip%20stocks%20struggle%20for%20momentum%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1530278798",
       "image_type": "ai_generated"
     },
     {
@@ -705,17 +914,6 @@
       "image_type": "source"
     },
     {
-      "id": "c906e83dabd95684a4ee",
-      "category": "Entertainment",
-      "headline": "Lee Jung-eun, Kim Moo-yul Board Netflix’s Action-Noir Series ‘The Shooter’",
-      "summary": "Netflix has confirmed production on “The Shooter” (working title), an action-noir series that pairs Lee Jung-eun with Kim Moo-yul, marking Lee’s first outing in an action role. Lee’s turn comes on the heels of “My Daughter Is a Zombie,” one of South Korea’s top-grossing films of 2025. Kim joins her fresh off “Teach You a […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source_url": "https://variety.com/2026/tv/news/lee-jung-eun-kim-moo-yul-netflix-the-shooter-1236842363/",
-      "image_url": "https://variety.com/wp-content/uploads/2026/08/The-Shooter-team.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "bf721b04f9f175945a9b",
       "category": "Entertainment",
       "headline": "‘The Dog Stars’ Review: Jacob Elordi and Margaret Qualley in Ridley Scott’s Subdued but Pleasingly Soulful Dystopian Western",
@@ -760,17 +958,6 @@
       "image_type": "source"
     },
     {
-      "id": "0ddaf98c08b669fb20db",
-      "category": "India",
-      "headline": "Suvendu vows to keep Mamata off the streets, TMC chairperson says not taking political sanyas",
-      "summary": "Over the past few years, the politics in West Bengal has hinged on the electoral contest between Suvendu Adhikari and Mamata Banerjee",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-25T23:26:51+00:00",
-      "source_url": "https://www.thehindu.com/news/national/west-bengal/suvendu-vows-to-keep-mamata-off-the-streets-tmc-chairperson-says-not-taking-political-sanyas/article71389096.ece",
-      "image_url": "https://th-i.thgim.com/public/incoming/gi6haf/article71390543.ece/alternates/LANDSCAPE_1200/20260824352L.jpg",
-      "image_type": "source"
-    },
-    {
       "id": "f0a4b68ee41b571921d9",
       "category": "Sports",
       "headline": "Alcaraz and Williams thrill in brief but bright US Open mixed doubles showing",
@@ -791,17 +978,6 @@
       "source_url": "https://www.bbc.co.uk/sport/boxing/articles/cly46v7zepgo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6096/live/6344a4f0-a0d4-11f1-879c-376a9fd2230d.jpg",
       "image_type": "source"
-    },
-    {
-      "id": "c91acf0baaa4d5207269",
-      "category": "Entertainment",
-      "headline": "Sabrina Carpenter Pays Tribute to Dolly Parton: “There Will Never Be Another You”",
-      "summary": "The \"Jolene\" singer collaborated with Carpenter on \"Please Please Please,\" as part of her deluxe 'Short n’ Sweet' album.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-25T22:53:48+00:00",
-      "source_url": "https://www.hollywoodreporter.com/music/music-news/sabrina-carpenter-dolly-parton-tribute-1236681452/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Sabrina%20Carpenter%20Pays%20Tribute%20to%20Dolly%20Parton%3A%20%E2%80%9CThere%20Will%20Never%20Be%20Another%20You%E2%80%9D%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=1352257849",
-      "image_type": "ai_generated"
     },
     {
       "id": "5985a2afdedc25bc131b",
@@ -933,182 +1109,6 @@
       "published_at": "2026-08-25T21:02:32+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/cn74yyepggmo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1513/live/66b43190-a0c6-11f1-aed2-8d6da8d75094.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "c1518f0428fa6b0e93a0",
-      "category": "Technology",
-      "headline": "World humanoid robot games show runners breaking records, bursting into flames",
-      "summary": "Record",
-      "publisher": "Ars Technica",
-      "published_at": "2026-08-25T20:59:03+00:00",
-      "source_url": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/World-Humanoid-Robot-Games-2026-1152x648.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "24aed2453c694b7dddd2",
-      "category": "World",
-      "headline": "FBI raided Spanish vacation rental of wealthy leftwing funder James ‘Fergie’ Chambers after his arrest",
-      "summary": "Lawyer Baltasar Garzón, representing Chambers, said case against his client is ‘very strange’ as US requests extradition FBI agents raided the Ibiza, Spain, vacation rental of 41-year-old James “Fergie” Chambers, a US citizen and wealthy donor to leftwing and humanitarian projects worldwide, in the days following his arrest last month, the Guardian has...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-25T20:57:28+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/25/fbi-raid-james-fergie-cox-vacation-rental",
-      "image_url": "https://i.guim.co.uk/img/media/4a5946271078ee87786e4a910228a6f380431cd4/468_0_4680_3744/master/4680.jpg?width=140&quality=85&auto=format&fit=max&s=55586e079477773a421976e25f0dc236",
-      "image_type": "source"
-    },
-    {
-      "id": "c430b0156202d67a3466",
-      "category": "Technology",
-      "headline": "X sends cease-and-desist to open source project Nitter over alleged scraping",
-      "summary": "X has sent cease-and-desist letters to Nitter, the open source project behind privacy-friendly X front ends, demanding its instances and code repository be taken down over alleged scraping.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-25T20:44:12+00:00",
-      "source_url": "https://techcrunch.com/2026/08/25/x-sends-cease-and-desist-to-open-source-project-nitter-over-alleged-scraping/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20X%20sends%20cease-and-desist%20to%20open%20source%20project%20Nitter%20over%20alleged%20scraping%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=312954879",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c7a1ed5a275650bced5f",
-      "category": "Technology",
-      "headline": "At just $8, you owe it to yourself to grab Inscryption",
-      "summary": "If you watched the Gamescom 2026 announcements, you might have caught a trailer for the bizarre, frenetic Pony Island 2: Panda Circus, a game from Daniel Mullins. In case you haven’t heard of him, get a crash course with a fantastic discount on Inscryption. Humble is currently selling Steam versions of the secret-packed deckbuilder for […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T20:38:37+00:00",
-      "source_url": "https://www.theverge.com/gadgets/984677/inscryption-humble-daniel-mullins-pony-island-deal-sale",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22976467/2021_10_27__7_.png",
-      "image_type": "source"
-    },
-    {
-      "id": "8f8a0b4ab906f476a859",
-      "category": "Technology",
-      "headline": "Gamescom Opening Night Live 2026: The biggest announcements and trailers",
-      "summary": "The Geoff Keighley-hosted Opening Night Live event at Gamescom just wrapped up. Arguably the biggest announcement was the closer: a remastered version of The Witcher 3: Wild Hunt from CD Projekt Red that’s launching in September. But the show also featured a bunch of trailers for others games, including Gears of War: E-Day, Capcom’s upcoming […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T20:34:22+00:00",
-      "source_url": "https://www.theverge.com/games/983891/gamescom-opening-night-live-2026-geoff-keighley",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/STKE009_Game_Awards_2025_B.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "913a45d6b2554bf50ad6",
-      "category": "World",
-      "headline": "Wife of US soldier deported after Trump rollback on military family protections",
-      "summary": "Cristy Maryori Villafranca-Trejo, deported to Honduras, is latest military spouse to face removal amid Trump 2.0 The wife of an active-duty US soldier was deported on Monday to her native Honduras , according to her family and the federal Department of Homeland Security (DHS). Cristy Maryori Villafranca-Trejo is at least the seventh spouse or parent of...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-25T20:23:55+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/25/soldier-wife-deported-honduras",
-      "image_url": "https://i.guim.co.uk/img/media/f434cb116b88c3dbf993df521abab27cfc2ba39a/544_0_5443_4355/master/5443.jpg?width=140&quality=85&auto=format&fit=max&s=ce23b18e7b6e91a8dfe1df9649d8ea4a",
-      "image_type": "source"
-    },
-    {
-      "id": "e40b1c974ac38b5eeb4f",
-      "category": "Sports",
-      "headline": "Villa make offer for Mateta - Wednesday's gossip",
-      "summary": "Aston Villa make a move for Jean-Philippe Mateta and Nicolas Jackson, Manchester United eye a promising defender, and Manchester City aren't ready to give up on signing Enzo Fernandez.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T20:12:19+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/ce8e0l7prg6o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6fa1/live/93399c20-a0bf-11f1-a291-b542ee92de7c.png",
-      "image_type": "source"
-    },
-    {
-      "id": "289b82c055d6eed968c7",
-      "category": "World",
-      "headline": "Labour MPs will push Burnham to back voting reform in first 100 days",
-      "summary": "Exclusive: Nearly 100 Labour MPs support commission on changing the system used for Westminster election Why do some Labour MPs want electoral reform and will it happen? Andy Burnham will face an immediate test of his backing for electoral reform in his first week in parliament as prime minister, with almost 100 Labour MPs supporting a bid for a new...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-25T20:00:23+00:00",
-      "source_url": "https://www.theguardian.com/politics/2026/aug/25/andy-burnham-electoral-reform-first-past-the-post",
-      "image_url": "https://i.guim.co.uk/img/media/80e056355060c3531b6c6cae545fea6893e9bc0d/619_0_6192_4953/master/6192.jpg?width=140&quality=85&auto=format&fit=max&s=a8e663caa6d3728f00bf2e2264d81841",
-      "image_type": "source"
-    },
-    {
-      "id": "b987742feaae874f71e1",
-      "category": "World",
-      "headline": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
-      "summary": "The latest escalation in an ongoing trade war between the US and Canada will see new levies on goods from steel to furniture, fresh tuna and makeup.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-25T19:50:57+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e708/live/0a3afb60-a0ad-11f1-a54e-272d756c341e.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "51ab9ff7823256de403c",
-      "category": "World",
-      "headline": "CIA chief travels to Moscow for unannounced talks, US media reports",
-      "summary": "Flight tracking data confirms an American military aircraft travelled to Russia from the US via Latvia on Tuesday.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-25T19:48:14+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/32e3/live/0854ea30-a095-11f1-91dc-4919512f173f.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "85e5956ae555a4b6688e",
-      "category": "Sports",
-      "headline": "Fernandes and Shaw win PFA player of the year awards",
-      "summary": "Manchester United captain Bruno Fernandes and Manchester City forward Khadija Shaw win the Professional Footballers' Associations men's and women's player of the year awards.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T19:47:35+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/ckgwj62e5yno?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dab7/live/d49e1ff0-a070-11f1-a9ee-9bb6b032b6a3.png",
-      "image_type": "source"
-    },
-    {
-      "id": "6bce464d355d749350bb",
-      "category": "Sports",
-      "headline": "PGA Tour play-off shake-up a 'big swing' - McIlroy",
-      "summary": "Back-to-back Masters champion Rory McIlroy believes the PGA Tour are giving fans what they want by changing their end-of-season play",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-25T19:47:13+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/golf/articles/cm2q4n5r98mo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9461/live/8fee2300-a0b1-11f1-8229-b91d73b62f74.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "b452d4004ceafafe44ad",
-      "category": "World",
-      "headline": "Mass arrests in global crackdown on West African cyber-crime networks",
-      "summary": "The operation included the arrest of 39 people in South Africa for romance and investment scams.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-25T19:30:37+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cq5xdnxppl4o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c04d/live/ffb85360-a0b9-11f1-b109-879e35c24276.jpg",
-      "image_type": "source"
-    },
-    {
-      "id": "0348f5bb4b19de8e046d",
-      "category": "Technology",
-      "headline": "Instagram’s ‘First Draft’ trims your Reels clips for you",
-      "summary": "Instagram is launching a new Reels-editing feature that automatically trims your video clips to focus on the highlights. The feature, called First Draft, is rolling out to Instagram's iPhone app and provides a \"starting point\" that you can build upon with other edits, according to an announcement on Tuesday. An example shared by Instagram shows […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-25T19:27:55+00:00",
-      "source_url": "https://www.theverge.com/tech/984463/instagram-first-draft-edit-reels",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/insta-first-draft.png",
-      "image_type": "source"
-    },
-    {
-      "id": "0acebb9d324e13eabb3a",
-      "category": "Technology",
-      "headline": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
-      "summary": "Instagram says the process can produce a first pass in under 10 seconds, potentially saving creators significant editing time while making video creation more approachable for people who don't have much experience with editing software.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-25T19:22:52+00:00",
-      "source_url": "https://techcrunch.com/2026/08/25/instagrams-first-draft-feature-aims-to-make-editing-reels-less-tedious/",
-      "image_url": "https://image.pollinations.ai/prompt/Editorial%20news%20illustration%2C%20realistic%20professional%20journalism%20style%2C%20visually%20representing%20this%20news%20story%3A%20Instagram%E2%80%99s%20%E2%80%98First%20Draft%E2%80%99%20feature%20aims%20to%20make%20editing%20Reels%20less%20tedious%2C%20no%20text%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark?width=1200&height=675&nologo=true&seed=2960249074",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a1e3b8697d9f7f841b09",
-      "category": "Lifestyle",
-      "headline": "My pup Koopa and I put 15 dog beds to the test – these are ones that survived",
-      "summary": "We tried models from Black Lab, K9 Ballistics, Orvis, Znooz and others to find beds that were long-lasting, washable, and most of all, comfortable The best dog harnesses and dog toys – pup-tested Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things While our four-legged best friends are often happy enough to sprawl on...",
-      "publisher": "Guardian Lifestyle",
-      "published_at": "2026-08-25T19:15:22+00:00",
-      "source_url": "https://www.theguardian.com/thefilter-us/2026/aug/25/best-dog-beds",
-      "image_url": "https://i.guim.co.uk/img/media/01d695ae1c1dc7ef661c716ddcde72c1063457c6/303_0_2500_2000/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=08643bcdc4afbdd9c14103e2447bf5c3",
       "image_type": "source"
     }
   ]
