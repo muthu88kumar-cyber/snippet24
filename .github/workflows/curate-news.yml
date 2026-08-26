@@ -10,7 +10,6 @@ permissions:
   contents: write
 
 jobs:
-
   update-news:
 
     runs-on: ubuntu-latest
@@ -18,12 +17,12 @@ jobs:
     steps:
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
@@ -31,104 +30,26 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run AI news curator
-        env:
-          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
-          POLLINATIONS_TEXT_MODEL: openai
-          POLLINATIONS_IMAGE_MODEL: zimage
         run: |
           python curator.py
 
       - name: Validate articles.json
         run: |
-          python - <<'PY'
-          import json
-          import sys
-
-          with open("articles.json", "r", encoding="utf-8") as f:
-              data = json.load(f)
-
-          required = [
-              "World",
-              "India",
-              "Business",
-              "Technology",
-              "Lifestyle"
-          ]
-
-          total = 0
-
-          for category in required:
-
-              articles = data.get(
-                  "categories",
-                  {}
-              ).get(
-                  category,
-                  []
-              )
-
-              count = len(articles)
-
-              print(
-                  f"{category}: {count}"
-              )
-
-              total += count
-
-              for article in articles[:5]:
-
-                  required_fields = [
-                      "headline",
-                      "summary",
-                      "publisher",
-                      "url",
-                      "published_at"
-                  ]
-
-                  missing = [
-                      field
-                      for field in required_fields
-                      if not article.get(field)
-                  ]
-
-                  if missing:
-                      print(
-                          "ERROR: missing fields:",
-                          missing
-                      )
-
-                      sys.exit(1)
-
-          print()
-          print(
-              f"TOTAL: {total}"
-          )
-
-          if total == 0:
-              print(
-                  "ERROR: World has only 0 articles"
-              )
-
-              sys.exit(1)
-
-          print(
-              "articles.json validation passed."
-          )
-          PY
+          python validate_articles.py
 
       - name: Configure Git
         run: |
-          git config user.name "Snippet24 Bot"
-          git config user.email "snippet24-bot@users.noreply.github.com"
+          git config user.name "Snippet24 News Bot"
+          git config user.email "actions@users.noreply.github.com"
 
       - name: Commit changes
         run: |
           git add articles.json
 
           if git diff --cached --quiet; then
-            echo "No article changes."
+            echo "No changes to commit."
           else
-            git commit -m "Update Snippet24 news"
+            git commit -m "Update news feed"
           fi
 
       - name: Push changes
