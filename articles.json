@@ -1,18 +1,62 @@
 {
-  "updated_at": "2026-08-26T16:15:47.556880+00:00",
+  "updated_at": "2026-08-26T16:22:15.588569+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 10,
-    "India": 49,
+    "World": 9,
+    "India": 51,
     "Business": 1,
-    "Technology & AI": 10,
+    "Technology & AI": 9,
     "Sports": 6,
     "Entertainment": 20,
     "Lifestyle": 4
   },
   "articles": [
+    {
+      "id": "912e442c55cad2e5a755",
+      "category": "Technology & AI",
+      "headline": "Apple announces September iPhone launch event",
+      "summary": "Apple's next launch event will take place on September 9th at 1PM ET. Invites to the event, which has a \"Surprise and shine\" tagline, were sent out on Wednesday. The event will take place at the Steve Jobs Theater in Apple Park, but there will also be a livestream on Apple's website. September's show could […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-26T16:20:36+00:00",
+      "source_url": "https://www.theverge.com/tech/983407/apple-iphone-launch-event-2026-date",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Apple%20announces%20September%20iPhone%20launch%20event.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1126011013",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7d33cbbbb30a072df12e",
+      "category": "India",
+      "headline": "Nepal flash floods LIVE: At least 95 dead, over 350 missing; India sends first tranche of relief materials",
+      "summary": "For assistance and information related to Indian nationals who have been affected by the flash floods in Nepal today, the following emergency numbers may be contacted: +977 985 131 6807, +977 970 910 7500, said a post by the Indian Embassy in Nepal",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T16:16:09+00:00",
+      "source_url": "https://www.thehindu.com/news/international/nepal-floods-live-updates-august-26-2026-several-missing-dead/article71392492.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20flash%20floods%20LIVE%3A%20At%20least%2095%20dead%2C%20over%20350%20missing%3B%20India%20sends%20first%20tranche%20of%20relief%20materials.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4130821621",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2301c8990614c7d7722f",
+      "category": "India",
+      "headline": "TG EAPCET 2026: Counselling schedule for B. Pharm and Pharm D courses",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T16:16:01+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/tg-eapcet-2026-counselling-schedule-for-b-pharm-and-pharm-d-courses/article71393479.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20TG%20EAPCET%202026%3A%20Counselling%20schedule%20for%20B.%20Pharm%20and%20Pharm%20D%20courses.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1811796562",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c5cfaaa147c56207a94d",
+      "category": "India",
+      "headline": "Congress asks President to dismiss Madhya Pradesh government for reportedly shielding Minister who made remarks against Colonel Qureshi",
+      "summary": "M.P. Minister Vijay Shah had implied that the Indian army officer was a “sister” of the Pahalgam terrorists; media reports claim M.P. Cabinet decided not to grant sanction for Mr. Shah’s prosecution",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T16:15:08+00:00",
+      "source_url": "https://www.thehindu.com/news/national/madhya-pradesh/congress-asks-president-to-dismiss-madhya-pradesh-government-for-reportedly-shielding-minister-who-made-remarks-against-colonel-qureshi/article71393039.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20asks%20President%20to%20dismiss%20Madhya%20Pradesh%20government%20for%20reportedly%20shielding%20Minister%20who%20made%20remarks%20against%20Colonel%20Qureshi.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3261222957",
+      "image_type": "ai_generated"
+    },
     {
       "id": "410f9e98afba250ef76d",
       "category": "Entertainment",
@@ -25,14 +69,36 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "912e442c55cad2e5a755",
-      "category": "Technology & AI",
-      "headline": "Apple announces September iPhone launch event",
-      "summary": "Apple's next launch event will take place on September 9th at 1PM ET. Invites to the event, which has a \"Surprise and shine\" tagline, were sent out on Wednesday. The event will take place at the Steve Jobs Theater in Apple Park, but there will also be a livestream. September's show could be a big […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-26T16:13:32+00:00",
-      "source_url": "https://www.theverge.com/tech/983407/apple-iphone-launch-event-2026-date",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Apple%20announces%20September%20iPhone%20launch%20event.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1126011013",
+      "id": "6e0217f131dd53c9bfd1",
+      "category": "World",
+      "headline": "Trump claims CIA director’s surprise visit to Russia is ‘semi-routine’ despite mounting speculation – live",
+      "summary": "Trump administration had not formally announced John Ratcliffe’s trip, but various outlets captured the flight tracking data of the US jet and the Kremlin confirmed the meeting Darline Graham wins Republican primary for US Senate Sign up for the US Breaking News email A US military strike on an alleged drug trafficking boat in the Caribbean on Tuesday killed four people, officials said. US Southern Command...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-26T16:14:19+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/26/darline-graham-lindsey-south-carolina-gop-post-office-voting-senate-midterms-donald-trump-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20claims%20CIA%20director%E2%80%99s%20surprise%20visit%20to%20Russia%20is%20%E2%80%98semi-routine%E2%80%99%20despite%20mounting%20speculation%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2135569315",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "31158bc2596b7ffc00a3",
+      "category": "India",
+      "headline": "Peripheral inflammation may drive brain damage in rare neurological disorder, finds NIMHANS study",
+      "summary": "Researchers identify link that could aid earlier diagnosis of Progressive Supranuclear Palsy",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T16:13:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/peripheral-inflammation-may-drive-brain-damage-in-rare-neurological-disorder-finds-nimhans-study/article71373744.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Peripheral%20inflammation%20may%20drive%20brain%20damage%20in%20rare%20neurological%20disorder%2C%20finds%20NIMHANS%20study.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=217853659",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a969b3b7c386b98045d5",
+      "category": "India",
+      "headline": "Watch: Nepal flash floods: at least 95 dead, over 100 Indians missing | Above the Fold | Aug 26, 2026",
+      "summary": "Massive flash floods in Nepal have killed at least 95 people and left over 400 people missing. Among the missing at over 100 Indians. Rescue operations are underway. In this episode, we get the latest update, from the ground, on the disaster.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-26T16:13:34+00:00",
+      "source_url": "https://www.thehindu.com/videos/watch-nepal-flash-floods-at-least-95-dead-over-100-indians-missing-above-the-fold-aug-26-2026/article71393761.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Watch%3A%20Nepal%20flash%20floods%3A%20at%20least%2095%20dead%2C%20over%20100%20Indians%20missing%20%7C%20Above%20the%20Fold%20%7C%20Aug%2026%2C%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1859368226",
       "image_type": "ai_generated"
     },
     {
@@ -77,17 +143,6 @@
       "published_at": "2026-08-26T16:09:03+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/derry-girls-creator-lisa-mcgee-jig-netflix-1236682007/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Derry%20Girls%E2%80%99%20Creator%20Lisa%20McGee%20Sets%20Mockumentary%20%E2%80%98Jig%E2%80%99%20at%20Netflix.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3817987884",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "26599c9af1aa08d2a493",
-      "category": "India",
-      "headline": "Nepal flash floods LIVE: At least 95 dead, over 350 missing; IAF to deploy two aircraft with relief materials",
-      "summary": "For assistance and information related to Indian nationals who have been affected by the flash floods in Nepal today, the following emergency numbers may be contacted: +977 985 131 6807, +977 970 910 7500, said a post by the Indian Embassy in Nepal",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T16:08:50+00:00",
-      "source_url": "https://www.thehindu.com/news/international/nepal-floods-live-updates-august-26-2026-several-missing-dead/article71392492.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20flash%20floods%20LIVE%3A%20At%20least%2095%20dead%2C%20over%20350%20missing%3B%20IAF%20to%20deploy%20two%20aircraft%20with%20relief%20materials.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679682038",
       "image_type": "ai_generated"
     },
     {
@@ -220,17 +275,6 @@
       "published_at": "2026-08-26T15:57:23+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-defends-changes-to-parks-bill/article71393451.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20D.K.%20Shivakumar%20defends%20changes%20to%20parks%20Bill.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=999141965",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "6e0217f131dd53c9bfd1",
-      "category": "World",
-      "headline": "Trump claims CIA director’s surprise visit to Russia is ‘semi-routine’ despite mounting speculation – live",
-      "summary": "Trump administration had not formally announced John Ratcliffe’s trip, but various outlets captured the flight tracking data of the US jet and the Kremlin confirmed the meeting Darline Graham wins Republican primary for US Senate Sign up for the US Breaking News email A US military strike on an alleged drug trafficking boat in the Caribbean on Tuesday killed four people, officials said. US Southern Command...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T15:57:15+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/26/darline-graham-lindsey-south-carolina-gop-post-office-voting-senate-midterms-donald-trump-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20claims%20CIA%20director%E2%80%99s%20surprise%20visit%20to%20Russia%20is%20%E2%80%98semi-routine%E2%80%99%20despite%20mounting%20speculation%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2135569315",
       "image_type": "ai_generated"
     },
     {
@@ -622,7 +666,7 @@
       "id": "72bc6e2632c098e95885",
       "category": "Entertainment",
       "headline": "Iowa and Montana Ask Supreme Court to Block ‘Politicized’ Paramount-Warner Bros. Antitrust Suit Filed by California and 11 Other States",
-      "summary": "Two Republican attorneys general are hoping the Supreme Court will step in to stop the antitrust lawsuit filed by 12 Democratic state AGs seeking to block Paramount’s takeover of Warner Bros. Discovery. Iowa Attorney General Brenna Bird and Montana AG Austin Knudsen filed a motion with the Supreme Court, naming California and the 11 other […]",
+      "summary": "In a long-shot move, two Republican attorneys general are hoping the Supreme Court will step in to stop the antitrust lawsuit filed by 12 Democratic state AGs seeking to block Paramount’s takeover of Warner Bros. Discovery. Iowa Attorney General Brenna Bird and Montana AG Austin Knudsen filed a motion with the Supreme Court, naming California […]",
       "publisher": "Variety",
       "published_at": "2026-08-26T15:27:22+00:00",
       "source_url": "https://variety.com/2026/film/news/iowa-montana-lawsuit-supreme-court-block-politicized-paramount-warner-bros-california-1236843929/",
@@ -1067,50 +1111,6 @@
       "published_at": "2026-08-26T14:45:29+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/tdps-bond-with-bcs-stronger-than-ever-before-asserts-rajya-sabha-member-vijay/article71392995.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20TDP%E2%80%99s%20bond%20with%20BCs%20stronger%20than%20ever%20before%2C%20asserts%20Rajya%20Sabha%20member%20Vijay.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3775055474",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7eb945b6ecaab3ae9901",
-      "category": "World",
-      "headline": "UK politics: Burnham announces plan for 10,000 work experience placements for young people – as it happened",
-      "summary": "Prime minister spoke to press while on visit to a Sainsbury’s supermarket in London this morning Over 40,000 more people died on the hottest days in England between 1988 and 2025 than would be expected, according to data published by the Office for National Statistics on Wednesday. The figures do not include this summer, when England has sweltered under a succession of heatwaves and is on track to record its...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-26T14:45:15+00:00",
-      "source_url": "https://www.theguardian.com/politics/live/2026/aug/26/andy-burnham-labour-neets-youth-unemployment-work-placements-ofgem-energy-bills-reform-jenrick-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20UK%20politics%3A%20Burnham%20announces%20plan%20for%2010%2C000%20work%20experience%20placements%20for%20young%20people%20%E2%80%93%20as%20it%20happened.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1389664421",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9a4329942ed33d4dd1e9",
-      "category": "India",
-      "headline": "Abhimanyu bids adieu to Dasara duties with ceremonial farewell",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-26T14:45:15+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/abhimanyu-bids-adieu-to-dasara-duties-with-ceremonial-farewell/article71393106.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Abhimanyu%20bids%20adieu%20to%20Dasara%20duties%20with%20ceremonial%20farewell.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=424787001",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "8ac22bfb19c4acf6ec48",
-      "category": "Technology & AI",
-      "headline": "Ring introduces a new encryption standard, makes it the default for cloud features",
-      "summary": "Ring says users can still opt for end-to",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-26T14:44:33+00:00",
-      "source_url": "https://techcrunch.com/2026/08/26/ring-introduces-a-new-encryption-standard-makes-it-the-default-for-cloud-features/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Ring%20introduces%20a%20new%20encryption%20standard%2C%20makes%20it%20the%20default%20for%20cloud%20features.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3255207006",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9c66e6b5f8ae312649a6",
-      "category": "India",
-      "headline": "Video: 2 Missing After Boat Carrying 21 Overturns In Bihar",
-      "summary": "Officials say the boat overturned after the river's current shifted suddenly.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-26T14:43:36+00:00",
-      "source_url": "https://www.ndtv.com/india-news/video-2-missing-after-boat-carrying-21-overturns-in-bihar-11962693#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Video%3A%202%20Missing%20After%20Boat%20Carrying%2021%20Overturns%20In%20Bihar.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4187232446",
       "image_type": "ai_generated"
     }
   ]
