@@ -1,583 +1,633 @@
 import json
-import os
 import re
-import time
+import html
 import hashlib
+import time
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
-import feedparser
 import requests
-from bs4 import BeautifulSoup
-from dateutil import parser as date_parser
+import xml.etree.ElementTree as ET
 
-
-# ============================================================
-# SNIPPET24 NEWS CURATOR
-# ============================================================
 
 OUTPUT_FILE = "articles.json"
 
-# Keep at least 50 when available.
-# 100 gives the website enough stories to work with.
-MAX_PER_CATEGORY = 100
-
-# FIFO:
-# newest stories are inserted first and oldest stories are
-# removed when the category exceeds MAX_PER_CATEGORY.
-FIFO_LIMIT = MAX_PER_CATEGORY
-
+TARGET_STORIES = 100
+MAX_PER_CATEGORY = 20
 REQUEST_TIMEOUT = 15
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (compatible; Snippet24NewsBot/1.0; "
-        "+https://snippet24.in)"
-    )
+    "User-Agent": "Snippet24-News/1.0 (+https://snippet24.in)"
 }
 
 
-# ============================================================
+# ---------------------------------------------------------
 # RSS SOURCES
-# ============================================================
+# ---------------------------------------------------------
 
 RSS_SOURCES = {
     "World": [
-        "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-        "https://www.theguardian.com/world/rss",
+        ("BBC News", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+        ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+        ("Guardian World", "https://www.theguardian.com/world/rss"),
     ],
 
     "India": [
-        "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml",
-        "https://www.thehindu.com/news/national/feeder/default.rss",
-        "https://indianexpress.com/section/india/feed/",
+        ("The Hindu", "https://www.thehindu.com/news/national/feeder/default.rss"),
+        ("Indian Express", "https://indianexpress.com/section/india/feed/"),
+        ("NDTV India", "https://feeds.feedburner.com/ndtvnews-india-news"),
     ],
 
     "Business": [
-        "https://feeds.bbci.co.uk/news/business/rss.xml",
-        "https://www.theguardian.com/business/rss",
-        "https://www.moneycontrol.com/rss/business.xml",
+        ("Moneycontrol", "https://www.moneycontrol.com/rss/business.xml"),
+        ("Business Standard", "https://www.business-standard.com/rss/home_page_top_stories.rss"),
+        ("Economic Times", "https://economictimes.indiatimes.com/rssfeedsdefault.cms"),
     ],
 
     "Technology": [
-        "https://feeds.bbci.co.uk/news/technology/rss.xml",
-        "https://www.theguardian.com/technology/rss",
-        "https://techcrunch.com/feed/",
-    ],
-
-    "Science": [
-        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
-        "https://www.theguardian.com/science/rss",
-        "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
-    ],
-
-    "Sports": [
-        "https://feeds.bbci.co.uk/sport/rss.xml",
-        "https://www.theguardian.com/sport/rss",
-        "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",
+        ("TechCrunch", "https://techcrunch.com/feed/"),
+        ("The Verge", "https://www.theverge.com/rss/index.xml"),
+        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
     ],
 
     "Lifestyle": [
-        "https://feeds.bbci.co.uk/news/lifestyle_and_human_interest/rss.xml",
-        "https://www.theguardian.com/lifeandstyle/rss",
-        "https://rss.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml",
+        ("Hindustan Times Lifestyle", "https://www.hindustantimes.com/feeds/rss/lifestyle/rssfeed.xml"),
+        ("Guardian Lifestyle", "https://www.theguardian.com/lifeandstyle/rss"),
     ],
+
+    "Sports": [
+        ("ESPN", "https://www.espn.com/espn/rss/news"),
+        ("BBC Sport", "https://feeds.bbci.co.uk/sport/rss.xml"),
+    ],
+
+    "Entertainment": [
+        ("Variety", "https://variety.com/feed/"),
+        ("Hollywood Reporter", "https://www.hollywoodreporter.com/feed/"),
+    ]
 }
 
 
-# ============================================================
+# ---------------------------------------------------------
 # HELPERS
-# ============================================================
+# ---------------------------------------------------------
 
 def clean_text(value):
     if not value:
         return ""
 
-    soup = BeautifulSoup(str(value), "html.parser")
-    text = soup.get_text(" ", strip=True)
+    value = html.unescape(str(value))
 
-    text = re.sub(r"\s+", " ", text)
-    text = text.replace("&nbsp;", " ")
+    value = re.sub(r"<[^>]+>", " ", value)
 
-    return text.strip()
+    value = value.replace("\xa0", " ")
+    value = value.replace("&nbsp;", " ")
+
+    value = re.sub(r"\s+", " ", value)
+
+    return value.strip()
 
 
-def normalize_title(title):
+def remove_publisher_from_title(title, publisher):
+    """
+    Removes common RSS title endings such as:
+
+    Story | Hindustan Times
+    Story - Hindustan Times
+    Story | Business Standard
+    """
+
+    if not title:
+        return ""
+
     title = clean_text(title)
 
-    # Remove common publisher suffixes.
-    title = re.sub(
-        r"\s*\|\s*(BBC|Hindustan Times|Firstpost|Reuters|CNN|"
-        r"The Guardian|Business Standard|The Hindu|Indian Express).*$",
-        "",
-        title,
-        flags=re.I,
+    publishers = [
+        publisher,
+        "Hindustan Times",
+        "Business Standard",
+        "Firstpost",
+        "Moneycontrol",
+        "News18",
+        "NDTV",
+        "The Hindu",
+        "Indian Express",
+        "BBC",
+        "BBC News",
+        "Reuters",
+        "CNN",
+        "CNBC",
+        "TechCrunch",
+        "The Verge",
+        "Variety",
+        "ESPN"
+    ]
+
+    for name in publishers:
+        if not name:
+            continue
+
+        pattern = r"\s*(?:\||-|\u2013|\u2014)\s*" + re.escape(name) + r"\s*$"
+        title = re.sub(pattern, "", title, flags=re.IGNORECASE)
+
+    return title.strip(" -|\u2013\u2014")
+
+
+def remove_title_repetition(summary, title):
+    if not summary:
+        return ""
+
+    summary = clean_text(summary)
+
+    if title:
+        summary = re.sub(
+            re.escape(title),
+            "",
+            summary,
+            flags=re.IGNORECASE
+        )
+
+    summary = re.sub(r"\s+", " ", summary).strip()
+
+    return summary
+
+
+def make_summary(title, description):
+    title = clean_text(title)
+    description = clean_text(description)
+
+    description = remove_title_repetition(description, title)
+
+    if description:
+        # Remove obvious publisher suffixes.
+        description = re.sub(
+            r"\s*(?:\||-|\u2013|\u2014)\s*[A-Za-z0-9 .&]+$",
+            "",
+            description
+        ).strip()
+
+        if len(description) > 360:
+            description = description[:357].rsplit(" ", 1)[0] + "..."
+
+        return description
+
+    # Fallback if RSS has no description.
+    return (
+        f"{title}. "
+        "The latest developments are being reported as more information "
+        "becomes available."
     )
 
-    title = re.sub(r"\s+-\s+(BBC|Reuters|CNN|The Guardian).*$", "", title)
 
-    return title.strip()
+def parse_date(value):
+    if not value:
+        return datetime.now(timezone.utc)
 
+    value = value.strip()
 
-def make_id(category, title, url):
-    raw = f"{category}|{title}|{url}"
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:20]
+    try:
+        return parsedate_to_datetime(value).astimezone(timezone.utc)
+    except Exception:
+        pass
 
-
-def parse_date(entry):
-    candidates = [
-        entry.get("published"),
-        entry.get("updated"),
-        entry.get("created"),
-    ]
-
-    for value in candidates:
-        if not value:
-            continue
-
-        try:
-            dt = date_parser.parse(value)
-
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-
-            return dt.astimezone(timezone.utc)
-
-        except Exception:
-            pass
-
-    return datetime.now(timezone.utc)
+    # ISO format fallback
+    try:
+        return datetime.fromisoformat(
+            value.replace("Z", "+00:00")
+        ).astimezone(timezone.utc)
+    except Exception:
+        return datetime.now(timezone.utc)
 
 
-def format_date(dt):
-    return dt.isoformat()
+def find_child_text(element, names):
+    names = {x.lower() for x in names}
 
+    for child in list(element):
+        tag = child.tag.split("}")[-1].lower()
 
-def publisher_from_entry(entry):
-    source = entry.get("source")
-
-    if isinstance(source, dict):
-        name = source.get("title")
-        if name:
-            return clean_text(name)
-
-    publisher = entry.get("publisher")
-
-    if publisher:
-        return clean_text(publisher)
-
-    return "Original publication"
-
-
-def extract_summary(entry, title):
-    possible = [
-        entry.get("summary"),
-        entry.get("description"),
-        entry.get("content", [{}])[0].get("value")
-        if entry.get("content")
-        else "",
-    ]
-
-    for value in possible:
-        text = clean_text(value)
-
-        if not text:
-            continue
-
-        # Avoid using a duplicated headline as the summary.
-        if text.lower().strip() == title.lower().strip():
-            continue
-
-        # Remove obvious HTML artifacts.
-        text = re.sub(r"\s+", " ", text).strip()
-
-        # Keep it short enough for the card.
-        if len(text) > 420:
-            text = text[:417].rsplit(" ", 1)[0] + "..."
-
-        return text
+        if tag in names:
+            return clean_text("".join(child.itertext()))
 
     return ""
 
 
-def create_fallback_summary(title, category):
-    """
-    We do NOT simply repeat the headline.
+def find_link(element):
+    # RSS <link>
+    for child in list(element):
+        tag = child.tag.split("}")[-1].lower()
 
-    If an RSS source doesn't provide a useful description,
-    create a short neutral explanation from the headline.
-    """
+        if tag == "link":
+            href = child.attrib.get("href")
 
-    title = title.strip()
+            if href:
+                return href.strip()
 
-    patterns = [
-        (
-            r"^(.*?)\s+says\s+(.*?)$",
-            lambda m: (
-                f"{m.group(2)} said {m.group(1).lower()} "
-                f"during the latest development, highlighting "
-                f"the key issues involved."
-            ),
-        ),
-        (
-            r"^(.*?)\s+to\s+(.*?)$",
-            lambda m: (
-                f"The latest development involves {m.group(1).lower()}, "
-                f"with the next step being {m.group(2).lower()}."
-            ),
-        ),
-    ]
+            text = clean_text("".join(child.itertext()))
 
-    for pattern, builder in patterns:
-        match = re.match(pattern, title, flags=re.I)
+            if text:
+                return text
 
-        if match:
-            return builder(match)
+    # Atom links
+    for child in list(element):
+        tag = child.tag.split("}")[-1].lower()
 
-    return (
-        f"The latest {category.lower()} development concerns "
-        f"{title.lower()}. The development is being reported as "
-        f"part of the latest updates in this area."
+        if tag == "link":
+            href = child.attrib.get("href")
+
+            if href:
+                return href.strip()
+
+    return ""
+
+
+def find_image(element, title):
+    # media:content / media:thumbnail
+    for child in element.iter():
+        tag = child.tag.split("}")[-1].lower()
+
+        if tag in ("content", "thumbnail"):
+            url = child.attrib.get("url")
+
+            if url:
+                return url
+
+    # enclosure
+    for child in element:
+        tag = child.tag.split("}")[-1].lower()
+
+        if tag == "enclosure":
+            url = child.attrib.get("url", "")
+            kind = child.attrib.get("type", "")
+
+            if url and ("image" in kind or not kind):
+                return url
+
+    # Look for image URLs in HTML description
+    raw = "".join(element.itertext())
+
+    match = re.search(
+        r'https?://[^"\'>\s]+?\.(?:jpg|jpeg|png|webp)',
+        raw,
+        flags=re.IGNORECASE
     )
 
+    if match:
+        return match.group(0)
 
-def create_ai_image_url(title, category):
+    return make_ai_image(title)
+
+
+def make_ai_image(title):
     """
-    Generates a relevant illustrative image using Pollinations.
+    Generates a deterministic AI-image URL.
 
-    The image is AI-generated and should NOT be presented as a
-    photograph of the actual event/person unless the prompt
-    explicitly supports that distinction.
+    Pollinations can generate an image from the headline.
+    If the image service is temporarily unavailable,
+    the article itself still works.
     """
 
     prompt = (
-        f"Editorial news illustration for a {category} news story. "
-        f"Subject: {title}. "
-        f"Professional modern newsroom visual, realistic but clearly "
-        f"illustrative, no text, no logos, no watermark, "
-        f"wide composition, suitable for a news website."
+        "Editorial news illustration, realistic professional journalism style, "
+        "visually representing this news story: "
+        + title
+        + ", no text, no words, no logos, no watermark"
     )
 
-    encoded = quote(prompt)
+    seed = int(
+        hashlib.md5(title.encode("utf-8")).hexdigest()[:8],
+        16
+    )
 
     return (
         "https://image.pollinations.ai/prompt/"
-        f"{encoded}"
-        "?width=1200&height=675&nologo=true"
+        + quote(prompt)
+        + f"?width=1200&height=675&nologo=true&seed={seed}"
     )
 
 
-def fetch_feed(url):
+def make_id(category, title, url):
+    raw = f"{category}|{title}|{url}"
+
+    return hashlib.sha256(
+        raw.encode("utf-8")
+    ).hexdigest()[:20]
+
+
+# ---------------------------------------------------------
+# RSS PARSER
+# ---------------------------------------------------------
+
+def parse_feed(xml_text, publisher, category):
+    articles = []
+
+    try:
+        root = ET.fromstring(xml_text)
+    except Exception as exc:
+        print(f"XML error from {publisher}: {exc}")
+        return articles
+
+    # RSS items
+    elements = []
+
+    for element in root.iter():
+        tag = element.tag.split("}")[-1].lower()
+
+        if tag in ("item", "entry"):
+            elements.append(element)
+
+    for item in elements:
+
+        title = find_child_text(
+            item,
+            ["title"]
+        )
+
+        if not title:
+            continue
+
+        title = remove_publisher_from_title(
+            title,
+            publisher
+        )
+
+        description = find_child_text(
+            item,
+            [
+                "description",
+                "summary",
+                "content",
+                "encoded"
+            ]
+        )
+
+        link = find_link(item)
+
+        published = find_child_text(
+            item,
+            [
+                "pubdate",
+                "published",
+                "updated",
+                "date",
+                "created"
+            ]
+        )
+
+        date_obj = parse_date(published)
+
+        summary = make_summary(
+            title,
+            description
+        )
+
+        image = find_image(
+            item,
+            title
+        )
+
+        article = {
+            "id": make_id(category, title, link),
+
+            "category": category,
+
+            "headline": title,
+
+            "summary": summary,
+
+            "publisher": publisher,
+
+            "published_at": date_obj.isoformat(),
+
+            "source_url": link,
+
+            "image_url": image,
+
+            "image_type": (
+                "source"
+                if image and "pollinations.ai" not in image
+                else "ai_generated"
+            )
+        }
+
+        if not article["source_url"]:
+            continue
+
+        articles.append(article)
+
+    return articles
+
+
+# ---------------------------------------------------------
+# FETCH RSS
+# ---------------------------------------------------------
+
+def fetch_source(publisher, url, category):
+
+    print(f"Fetching: {publisher}")
+    print(f"URL: {url}")
+
     try:
         response = requests.get(
             url,
             headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
+            timeout=REQUEST_TIMEOUT
         )
 
         response.raise_for_status()
 
-        feed = feedparser.parse(response.content)
+        articles = parse_feed(
+            response.text,
+            publisher,
+            category
+        )
 
-        if getattr(feed, "bozo", False) and not feed.entries:
-            return []
+        print(
+            f"  -> {len(articles)} stories"
+        )
 
-        return feed.entries
+        return articles
 
     except Exception as exc:
-        print(f"WARNING: RSS failed: {url}")
-        print(f"         {exc}")
+
+        print(
+            f"  -> FAILED: {publisher}: {exc}"
+        )
+
         return []
 
 
-# ============================================================
-# LOAD EXISTING DATA
-# ============================================================
+# ---------------------------------------------------------
+# DEDUPLICATION
+# ---------------------------------------------------------
 
-def load_articles():
-    if not os.path.exists(OUTPUT_FILE):
-        return {
-            "version": 1,
-            "generated_at": None,
-            "articles": [],
-        }
+def deduplicate(articles):
 
-    try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as file:
-            data = json.load(file)
+    unique = {}
 
-        # Support both old formats.
-        if isinstance(data, list):
-            articles = data
+    for article in articles:
 
-        elif isinstance(data, dict):
-            articles = data.get("articles", [])
+        title_key = re.sub(
+            r"[^a-z0-9]+",
+            " ",
+            article["headline"].lower()
+        ).strip()
 
-        else:
-            articles = []
-
-        if not isinstance(articles, list):
-            articles = []
-
-        return {
-            "version": 1,
-            "generated_at": data.get("generated_at")
-            if isinstance(data, dict)
-            else None,
-            "articles": articles,
-        }
-
-    except Exception as exc:
-        print(f"WARNING: Could not read {OUTPUT_FILE}: {exc}")
-
-        return {
-            "version": 1,
-            "generated_at": None,
-            "articles": [],
-        }
-
-
-# ============================================================
-# CURATION
-# ============================================================
-
-def curate_category(category, feeds):
-    collected = []
-
-    print(f"\n[{category}]")
-
-    for feed_url in feeds:
-        print(f"Fetching: {feed_url}")
-
-        entries = fetch_feed(feed_url)
-
-        print(f"  Found {len(entries)} entries")
-
-        for entry in entries:
-            title = normalize_title(entry.get("title"))
-
-            if not title:
-                continue
-
-            url = (
-                entry.get("link")
-                or entry.get("url")
-                or ""
-            ).strip()
-
-            if not url:
-                continue
-
-            published = parse_date(entry)
-
-            publisher = publisher_from_entry(entry)
-
-            summary = extract_summary(entry, title)
-
-            if not summary:
-                summary = create_fallback_summary(
-                    title,
-                    category,
-                )
-
-            article = {
-                "id": make_id(category, title, url),
-                "category": category,
-                "headline": title,
-                "summary": summary,
-                "publisher": publisher,
-                "published_at": format_date(published),
-                "url": url,
-
-                # AI generated eye-catcher.
-                "image_url": create_ai_image_url(
-                    title,
-                    category,
-                ),
-
-                "source_language": "en",
-
-                # Translation fields.
-                "translations": {
-                    "ta": None,
-                    "hi": None,
-                    "te": None,
-                    "ml": None,
-                    "kn": None,
-                    "bn": None,
-                    "mr": None,
-                },
-
-                "image_type": "ai_generated_illustration",
-            }
-
-            collected.append(article)
-
-    # Newest first.
-    collected.sort(
-        key=lambda item: item.get("published_at", ""),
-        reverse=True,
-    )
-
-    # Remove duplicate URLs/headlines.
-    unique = []
-    seen = set()
-
-    for article in collected:
-        key = (
-            article["url"].lower().strip()
-            or article["headline"].lower().strip()
-        )
-
-        if key in seen:
+        if not title_key:
             continue
 
-        seen.add(key)
-        unique.append(article)
+        unique[title_key] = article
 
-    # FIFO limit.
-    return unique[:FIFO_LIMIT]
+    return list(unique.values())
 
 
-def merge_categories(existing_articles, fresh_by_category):
-    """
-    Preserve old articles if RSS temporarily fails.
+# ---------------------------------------------------------
+# BUILD FEED
+# ---------------------------------------------------------
 
-    New stories replace/update matching IDs.
-    Old stories remain until the FIFO limit is reached.
-    """
-
-    by_id = {}
-
-    for article in existing_articles:
-        if not isinstance(article, dict):
-            continue
-
-        article_id = article.get("id")
-
-        if article_id:
-            by_id[article_id] = article
-
-    # Add/update fresh articles.
-    for category, fresh_articles in fresh_by_category.items():
-
-        for article in fresh_articles:
-            by_id[article["id"]] = article
-
-    # Group by category.
-    grouped = {}
-
-    for article in by_id.values():
-        category = article.get("category", "World")
-
-        grouped.setdefault(category, []).append(article)
-
-    final_articles = []
-
-    for category in RSS_SOURCES.keys():
-
-        items = grouped.get(category, [])
-
-        items.sort(
-            key=lambda item: item.get("published_at", ""),
-            reverse=True,
-        )
-
-        # FIFO per category.
-        items = items[:FIFO_LIMIT]
-
-        final_articles.extend(items)
-
-    return final_articles
-
-
-# ============================================================
-# MAIN
-# ============================================================
-
-def main():
+def build_feed():
 
     print("=" * 60)
-    print("SNIPPET24 AI NEWS CURATOR")
+    print("SNIPPET24 NEWS CURATOR")
     print("=" * 60)
 
-    existing = load_articles()
+    all_articles = []
 
-    fresh_by_category = {}
+    category_counts = {}
 
-    total_new = 0
+    for category, sources in RSS_SOURCES.items():
 
-    for category, feeds in RSS_SOURCES.items():
+        print()
+        print(f"### {category}")
 
-        articles = curate_category(
-            category,
-            feeds,
+        category_articles = []
+
+        for publisher, url in sources:
+
+            found = fetch_source(
+                publisher,
+                url,
+                category
+            )
+
+            category_articles.extend(found)
+
+            time.sleep(0.2)
+
+        category_articles = deduplicate(
+            category_articles
         )
 
-        fresh_by_category[category] = articles
-
-        total_new += len(articles)
-
-        print(
-            f"{category}: {len(articles)} usable stories"
+        category_articles.sort(
+            key=lambda x: x["published_at"],
+            reverse=True
         )
 
-    final_articles = merge_categories(
-        existing["articles"],
-        fresh_by_category,
+        category_articles = category_articles[
+            :MAX_PER_CATEGORY
+        ]
+
+        category_counts[category] = len(
+            category_articles
+        )
+
+        all_articles.extend(
+            category_articles
+        )
+
+    # Global deduplication
+    all_articles = deduplicate(
+        all_articles
     )
 
-    # Final newest-first order.
-    final_articles.sort(
-        key=lambda item: item.get("published_at", ""),
-        reverse=True,
+    # Newest first
+    all_articles.sort(
+        key=lambda x: x["published_at"],
+        reverse=True
+    )
+
+    # FIFO-style retention:
+    # newest TARGET_STORIES remain.
+    all_articles = all_articles[
+        :TARGET_STORIES
+    ]
+
+    # Final chronological order
+    all_articles.sort(
+        key=lambda x: x["published_at"],
+        reverse=True
     )
 
     output = {
-        "version": 1,
-        "generated_at": datetime.now(
+        "updated_at": datetime.now(
             timezone.utc
         ).isoformat(),
 
-        "article_count": len(final_articles),
+        "total": len(all_articles),
 
-        "categories": {
-            category: sum(
-                1
-                for article in final_articles
-                if article.get("category") == category
-            )
-            for category in RSS_SOURCES.keys()
-        },
+        "categories": category_counts,
 
-        "articles": final_articles,
+        "articles": all_articles
     }
 
     with open(
         OUTPUT_FILE,
         "w",
-        encoding="utf-8",
+        encoding="utf-8"
     ) as file:
 
         json.dump(
             output,
             file,
             ensure_ascii=False,
-            indent=2,
+            indent=2
         )
 
-    print("\n" + "=" * 60)
-    print("CURATION COMPLETE")
+    print()
+    print("=" * 60)
+    print(
+        f"TOTAL STORIES: {len(all_articles)}"
+    )
     print("=" * 60)
 
-    print(f"Total articles: {len(final_articles)}")
+    for category, count in category_counts.items():
 
-    for category, count in output["categories"].items():
-        print(f"{category}: {count}")
+        print(
+            f"{category}: {count}"
+        )
 
-    print(f"\nSaved: {OUTPUT_FILE}")
+    if len(all_articles) == 0:
+
+        print()
+        print(
+            "ERROR: No articles were collected."
+        )
+
+        return 1
+
+    if len(all_articles) < 50:
+
+        print()
+        print(
+            "WARNING: Fewer than 50 stories were collected."
+        )
+
+        print(
+            "The available RSS sources may have returned fewer "
+            "valid stories."
+        )
+
+    else:
+
+        print()
+        print(
+            "SUCCESS: News feed generated."
+        )
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+
+    raise SystemExit(
+        build_feed()
+    )
