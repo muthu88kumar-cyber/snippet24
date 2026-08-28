@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T21:52:32.051202+00:00",
+  "updated_at": "2026-08-28T22:04:19.755813+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
@@ -14,10 +14,54 @@
   },
   "articles": [
     {
+      "id": "d718d767731930e7e8e5",
+      "category": "Sports",
+      "headline": "Huddersfield upset Leigh with five-try win",
+      "summary": "Huddersfield Giants score five tries to upset in-form Leigh and keep the Leopards waiting to secure their place in the Super League play",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-28T22:00:52+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c4gq4ep3gg7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Huddersfield%20upset%20Leigh%20with%20five-try%20win.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=392095771",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "de0771950f5601c07b99",
+      "category": "Sports",
+      "headline": "Leeds go back top with thumping win at St Helens",
+      "summary": "Leeds Rhinos go back to the top of the Super League standings on points difference with a rare and comprehensive away win at St Helens.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-28T21:59:42+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c8r6dyk5g2eo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leeds%20go%20back%20top%20with%20thumping%20win%20at%20St%20Helens.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2529335408",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3ad3af95e164fd7a0a3b",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing people in Nepal rises to 1,924 – latest updates",
+      "summary": "Nepali disaster authority confirms jump of more than 400 in total of those unaccounted for, with 584 deaths confirmed in Nepal and five in Tibet Flood rescue efforts resume Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project swamped by Wednesday’s...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T21:53:43+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20in%20Nepal%20rises%20to%201%2C924%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2344129699",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "53db4777910a34b6684c",
+      "category": "World",
+      "headline": "Large fire near Wembley Stadium disrupts tube and rail services",
+      "summary": "About 125 firefighters tackle blaze at Neasden waste facility as nearby Amazon warehouse is evacuated A large fire has broken out at a waste facility close to Wembley Stadium in north-west London, disrupting tube and train lines in the area. Twenty fire engines and about 125 firefighters were sent to tackle the blaze at a mixed-waste facility on an industrial estate in Neasden, less than a mile from the venue....",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T21:47:05+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/large-fire-near-wembley-stadium-disrupts-tube-and-rail-services",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Large%20fire%20near%20Wembley%20Stadium%20disrupts%20tube%20and%20rail%20services.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2624736215",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a29b8d8d998db59a1dc5",
       "category": "World",
       "headline": "Trump arch will alter sightlines of many Washington DC landmarks, report says",
-      "summary": "National Park Service, which backs the 250ft arch, says it is likely to disrupt historical significance of dozens of sites A new National Park Service report backs Donald Trump ’s proposed arch, despite what it says are adverse effects to the sightlines of a host of landmarks in Washington, including the Washington Monument and the Lincoln and Jefferson memorials. The report released Friday says the 250ft-tall...",
+      "summary": "National Park Service, which backs the 250ft arch, says it is likely to disrupt historical significance of dozens of sites A new National Park Service report backs Donald Trump ’s proposed arch, despite what it says are adverse effects to the sightlines of a host of landmarks in Washington, including the Washington Monument and the Lincoln and Jefferson memorials. The report released on Friday says the 250ft-tall...",
       "publisher": "Guardian World",
       "published_at": "2026-08-28T21:36:28+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/28/trump-arch-sightlines-washington-dc",
@@ -25,25 +69,25 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "d718d767731930e7e8e5",
-      "category": "Sports",
-      "headline": "Huddersfield upset Leigh with five-try win",
-      "summary": "Huddersfield Giants score five tries to upset in-form Leigh and keep the Leopards waiting to secure their place in the Super League play",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T21:31:26+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c4gq4ep3gg7o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Huddersfield%20upset%20Leigh%20with%20five-try%20win.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=392095771",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2b89ac33dcc386e43a65",
+      "id": "66a164e117735a72363b",
       "category": "World",
-      "headline": "Volunteers rescue man stuck on 10,000-ft high ledge in Sierra Nevada range",
-      "summary": "Climber, stuck on 6-in ridge, had veered off treacherous path and ‘any fall would almost certainly be fatal’ An ill-fated move left a man stranded on a 6-in ledge over 10,000ft off the ground for hours in California’s Sierra Nevada mountain range, before a volunteer rescue team came to his aid. The climber, who has not been publicly identified, had been scaling the Mendenhall couloir, a gully on the face of...",
+      "headline": "Volunteers rescue man stuck on 10,000ft-high ledge in Sierra Nevada",
+      "summary": "Climber, stuck on 6in ridge, had veered off treacherous path and ‘any fall would almost certainly be fatal’ An ill-fated move left a man stranded on a 6in ledge over 10,000ft off the ground for hours in California’s Sierra Nevada mountain range, before a volunteer rescue team came to his aid. The climber, who has not been publicly identified, had been scaling the Mendenhall couloir, a gully on the face of Laurel...",
       "publisher": "Guardian World",
       "published_at": "2026-08-28T21:30:17+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/28/volunteers-rescue-man-cliff-sierra-nevada",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Volunteers%20rescue%20man%20stuck%20on%2010%2C000-ft%20high%20ledge%20in%20Sierra%20Nevada%20range.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1100198640",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Volunteers%20rescue%20man%20stuck%20on%2010%2C000ft-high%20ledge%20in%20Sierra%20Nevada.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=445788843",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6f3f505c44c2c587ce6a",
+      "category": "India",
+      "headline": "Ritabrata Banerjee-led TMC faction demands immediate students’ union polls in colleges",
+      "summary": "Ritabrata Banerjee alleged that the BJP government had nominated its MPs and MLAs to college governing bodies",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T21:30:11+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/ritabrata-banerjee-led-tmc-faction-demands-immediate-students-union-polls-in-colleges/article71401446.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ritabrata%20Banerjee-led%20TMC%20faction%20demands%20immediate%20students%E2%80%99%20union%20polls%20in%20colleges.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1762401127",
       "image_type": "ai_generated"
     },
     {
@@ -69,17 +113,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "3ad3af95e164fd7a0a3b",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing people in Nepal rises to 1,924 – latest updates",
-      "summary": "Nepali disaster authority confirms jump of more than 400 in total of those unaccounted for, with 584 deaths confirmed in Nepal and five in Tibet Flood rescue efforts resume Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project swamped by Wednesday’s...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T21:25:47+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20in%20Nepal%20rises%20to%201%2C924%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2344129699",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "70150379966701c4f08f",
       "category": "Entertainment",
       "headline": "Everything We Know About ‘Grand Theft Auto VI’",
@@ -88,17 +121,6 @@
       "published_at": "2026-08-28T21:24:13+00:00",
       "source_url": "https://variety.com/2026/gaming/news/gta-6-release-details-1236846230/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Everything%20We%20Know%20About%20%E2%80%98Grand%20Theft%20Auto%20VI%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1767792442",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "de0771950f5601c07b99",
-      "category": "Sports",
-      "headline": "Leeds go back top with thumping win at St Helens",
-      "summary": "Leeds Rhinos go back to the top of the Super League standings on points difference with a rare and comprehensive away win at St Helens.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T21:22:51+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c8r6dyk5g2eo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leeds%20go%20back%20top%20with%20thumping%20win%20at%20St%20Helens.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2529335408",
       "image_type": "ai_generated"
     },
     {
@@ -872,17 +894,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "53db4777910a34b6684c",
-      "category": "World",
-      "headline": "Large fire near Wembley Stadium disrupts tube and rail services",
-      "summary": "About 125 firefighters tackle blaze at Neasden waste facility as nearby Amazon warehouse is evacuated A large fire has broken out at a waste facility close to Wembley Stadium in north-west London, disrupting tube and train lines in the area. Twenty fire engines and about 125 firefighters were sent to tackle the blaze at a mixed-waste facility on an industrial estate in Neasden, just under a mile from the venue....",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T18:59:04+00:00",
-      "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/large-fire-near-wembley-stadium-disrupts-tube-and-rail-services",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Large%20fire%20near%20Wembley%20Stadium%20disrupts%20tube%20and%20rail%20services.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2624736215",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "93eb5c454c272bd24c61",
       "category": "India",
       "headline": "Singareni’s short-supply of quality, quantity coal forces Genco to seek 5 MT supply from CIL, MCL",
@@ -1100,17 +1111,6 @@
       "published_at": "2026-08-28T18:29:17+00:00",
       "source_url": "https://www.bbc.co.uk/sport/cricket/videos/cwyz10x20p3o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20England%20enjoy%20dominant%20day%20at%20Lord%27s%20to%20close%20in%20on%20series%20win.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4064659814",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "75b0ffb9b92c5e706465",
-      "category": "India",
-      "headline": "Lucky draw for flats in Indiramma Housing towers in four constituencies starts on Friday (August 28)",
-      "summary": "The draw of lots are spread over four days, from August 28 to 31, with the lottery in four constituencies each day",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T18:26:37+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/lucky-draw-for-flats-in-indiramma-housing-towers-in-four-constituencies-starts-on-friday-august-28/article71399340.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Lucky%20draw%20for%20flats%20in%20Indiramma%20Housing%20towers%20in%20four%20constituencies%20starts%20on%20Friday%20%28August%2028%29.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3137343560",
       "image_type": "ai_generated"
     }
   ]
