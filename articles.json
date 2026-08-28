@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T22:04:19.755813+00:00",
+  "updated_at": "2026-08-28T22:34:13.591033+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
@@ -7,12 +7,45 @@
     "World": 19,
     "India": 45,
     "Business": 0,
-    "Technology & AI": 3,
-    "Sports": 15,
-    "Entertainment": 15,
-    "Lifestyle": 3
+    "Technology & AI": 4,
+    "Sports": 14,
+    "Entertainment": 14,
+    "Lifestyle": 4
   },
   "articles": [
+    {
+      "id": "ce76025396f22627645f",
+      "category": "Lifestyle",
+      "headline": "Meditation isn't always about finding silence. Why spiritual experts are asking seekers to sit with the noise",
+      "summary": "Peace can be one part of meditation, but it may not be the whole point. Read to find what experts have to say.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-28T22:09:49+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/meditation-isnt-always-about-finding-silence-why-spiritual-experts-are-asking-seekers-to-sit-with-the-noise-101787952641932.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Meditation%20isn%27t%20always%20about%20finding%20silence.%20Why%20spiritual%20experts%20are%20asking%20seekers%20to%20sit%20with%20the%20noise.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4203294349",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0dd493b1e5a16032c2a2",
+      "category": "World",
+      "headline": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
+      "summary": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-28T22:05:41+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Footage%20of%20Tibet%20floods%20isn%27t%20being%20shown%20in%20China%20-%20and%20we%20know%20little%20about%20victims%20there.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3646295530",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4aa8fd13e583e2e498a7",
+      "category": "Technology & AI",
+      "headline": "Xbox CEO calls Project Helix a ‘family of devices’",
+      "summary": "According to Xbox CEO Asha Sharma, Project Helix, which she announced in March as a codename for Microsoft's \"next generation console\" - phrasing that seemingly implied a singular device - will actually be a \"family\" of devices.\" \"We've been hard at work on a great next generation and a great family of devices for Helix, […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T22:03:13+00:00",
+      "source_url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Xbox%20CEO%20calls%20Project%20Helix%20a%20%E2%80%98family%20of%20devices%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1714466477",
+      "image_type": "ai_generated"
+    },
     {
       "id": "d718d767731930e7e8e5",
       "category": "Sports",
@@ -22,6 +55,17 @@
       "published_at": "2026-08-28T22:00:52+00:00",
       "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c4gq4ep3gg7o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Huddersfield%20upset%20Leigh%20with%20five-try%20win.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=392095771",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f00a99bcf33274760536",
+      "category": "World",
+      "headline": "Police arrest seven more men in aftermath of deadly A66 crash",
+      "summary": "Cleveland police say a total of 24 people arrested in investigation after crash that killed two officers Seven more men have been arrested as part of an operation tackling alleged organised crime after the head-on crash on the A66 that resulted in seven deaths, Cleveland police have said. Officers said four men, aged 21, 25, 35 and 40, were being held on suspicion of criminal damage with intent to endanger life...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T22:00:46+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/police-arrest-seven-more-men-in-aftermath-of-deadly-a66-crash",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Police%20arrest%20seven%20more%20men%20in%20aftermath%20of%20deadly%20A66%20crash.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=393459790",
       "image_type": "ai_generated"
     },
     {
@@ -55,6 +99,17 @@
       "published_at": "2026-08-28T21:47:05+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/large-fire-near-wembley-stadium-disrupts-tube-and-rail-services",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Large%20fire%20near%20Wembley%20Stadium%20disrupts%20tube%20and%20rail%20services.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2624736215",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "89cd9613dce60f2f00aa",
+      "category": "India",
+      "headline": "22 minors molested in ashram shala, accused arrested",
+      "summary": "A helper at Temba ashram school in the Thane district’s Shahapur region was arrested for allegedly molesting 22 minor female students",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T21:40:25+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/22-minors-molested-in-ashram-shala-accused-arrested/article71401293.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2022%20minors%20molested%20in%20ashram%20shala%2C%20accused%20arrested.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1657046609",
       "image_type": "ai_generated"
     },
     {
@@ -388,14 +443,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "96b9ae4374852457df61",
+      "id": "2fb97430935410bb24f0",
       "category": "Entertainment",
-      "headline": "Dave Franco Says Raunchy ‘Idiots’ Scene Is “Craziest Thing” He’s Done on Camera",
+      "headline": "Dave Franco Says Raunchy ‘Idiots’ Scene Is “the Craziest Thing” He’s Done on Camera",
       "summary": "The star-producer talks bringing the project back from the dead, and how a key motel scene goes toe to toe with Jeff Daniels' famous ‘Dumb and Dumber' moment.",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-28T20:19:31+00:00",
       "source_url": "https://www.hollywoodreporter.com/movies/movie-features/dave-franco-raunchy-idiots-scene-1236684499/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Dave%20Franco%20Says%20Raunchy%20%E2%80%98Idiots%E2%80%99%20Scene%20Is%20%E2%80%9CCraziest%20Thing%E2%80%9D%20He%E2%80%99s%20Done%20on%20Camera.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3371947133",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Dave%20Franco%20Says%20Raunchy%20%E2%80%98Idiots%E2%80%99%20Scene%20Is%20%E2%80%9Cthe%20Craziest%20Thing%E2%80%9D%20He%E2%80%99s%20Done%20on%20Camera.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1682432399",
       "image_type": "ai_generated"
     },
     {
@@ -704,17 +759,6 @@
       "published_at": "2026-08-28T19:18:01+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/five-persons-injured-near-ambur/article71400463.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Five%20persons%20injured%20near%20Ambur.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1454736664",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f00a99bcf33274760536",
-      "category": "World",
-      "headline": "Police arrest seven more men in aftermath of deadly A66 crash",
-      "summary": "Cleveland police say a total of 24 people arrested in investigation after crash that killed two officers Seven more men have been arrested as part of an operation tackling alleged organised crime after the deadly head-on crash on the A66, Cleveland police have said. Officers said four men, aged 21, 25, 35 and 40, were being held on suspicion of criminal damage with intent to endanger life after a vehicle crashed...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T19:17:18+00:00",
-      "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/police-arrest-seven-more-men-in-aftermath-of-deadly-a66-crash",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Police%20arrest%20seven%20more%20men%20in%20aftermath%20of%20deadly%20A66%20crash.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=393459790",
       "image_type": "ai_generated"
     },
     {
@@ -1067,50 +1111,6 @@
       "published_at": "2026-08-28T18:34:09+00:00",
       "source_url": "https://www.ndtv.com/india-news/infosys-public-services-ceo-lax-gopisetty-missing-after-nepal-floods-11972859#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Infosys%20Public%20Services%20CEO%20Lax%20Gopisetty%20Missing%20After%20Nepal%20Floods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2919119789",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "498d85db29a6d79f9d7f",
-      "category": "World",
-      "headline": "‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return",
-      "summary": "Relatives ‘really worried, but hopeful’ as they wait anxiously for news in the aftermath of the flash flooding disaster Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The families of an Australian defence force member and two Sydney boys who went missing with their parents in Nepal remain hopeful they will be found safe. Dozens of Australians...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T18:32:57+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/28/family-missing-australians-nepal-tibet-flash-floods",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98So%20desperately%20loved%E2%80%99%3A%20ADF%20member%20among%20dozens%20of%20Australians%20missing%20in%20Nepal%20floods%20as%20families%20pray%20for%20safe%20return.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2234706685",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "31224318d2f96a0fa7bb",
-      "category": "India",
-      "headline": "CNG To Get Costlier By Rs 3.89, Says IGL. Price In Delhi Nears Rs 87/kg",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:32:10+00:00",
-      "source_url": "https://www.ndtv.com/india-news/cng-to-get-costlier-by-rs-3-89-says-indraprastha-gas-limited-11972787#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CNG%20To%20Get%20Costlier%20By%20Rs%203.89%2C%20Says%20IGL.%20Price%20In%20Delhi%20Nears%20Rs%2087%2Fkg.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2467872194",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2cafcf6e8d078b6afc35",
-      "category": "Entertainment",
-      "headline": "‘Coyote vs. Acme’ Finally Premieres, ‘Adults’ Returns and This Week’s Best Events",
-      "summary": "Inside this week's biggest Hollywood premieres, parties and openings.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T18:29:26+00:00",
-      "source_url": "https://www.hollywoodreporter.com/gallery/coyote-vs-acme-adults-red-carpet-events-1236679740/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Coyote%20vs.%20Acme%E2%80%99%20Finally%20Premieres%2C%20%E2%80%98Adults%E2%80%99%20Returns%20and%20This%20Week%E2%80%99s%20Best%20Events.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=940351353",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "4f96369f3eb68ab7ca40",
-      "category": "Sports",
-      "headline": "England enjoy dominant day at Lord's to close in on series win",
-      "summary": "England enjoy day of dominance with both bat and ball to put themselves in complete control of the second Test against Pakistan, closing day two on 81-3, giving the hosts a lead of 261 at Lord's.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T18:29:17+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/cricket/videos/cwyz10x20p3o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20England%20enjoy%20dominant%20day%20at%20Lord%27s%20to%20close%20in%20on%20series%20win.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4064659814",
       "image_type": "ai_generated"
     }
   ]
