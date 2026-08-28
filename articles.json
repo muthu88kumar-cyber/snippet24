@@ -1,18 +1,95 @@
 {
-  "updated_at": "2026-08-28T23:04:10.398753+00:00",
+  "updated_at": "2026-08-28T23:34:15.782372+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 20,
-    "India": 41,
+    "World": 21,
+    "India": 37,
     "Business": 0,
-    "Technology & AI": 6,
+    "Technology & AI": 10,
     "Sports": 15,
-    "Entertainment": 15,
+    "Entertainment": 14,
     "Lifestyle": 3
   },
   "articles": [
+    {
+      "id": "643ece525ad284f57864",
+      "category": "Technology & AI",
+      "headline": "Even the local pop-punk band is dissing Flock.",
+      "summary": "Some banter from the tiny show I'm at in rural upstate New York tonight (lightly condensed): \"Stick around for the other bands, tip your bartender, destroy Flock cameras.\" Read the full story at The Verge.",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T23:31:32+00:00",
+      "source_url": "https://www.theverge.com/policy/986385/even-the-local-pop-punk-band-is-dissing-flock",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Even%20the%20local%20pop-punk%20band%20is%20dissing%20Flock..%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2591260153",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T23:29:20+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "397fa5c4b1a82bad469a",
+      "category": "Technology & AI",
+      "headline": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
+      "summary": "Technical progress has encouraged a new batch of companies to jump in on the promise of profits from humanoid robots. And they're all Chinese automakers.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-28T23:24:27+00:00",
+      "source_url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Chinese%20automakers%20are%20following%20Tesla%E2%80%99s%20bet%20that%20robots%20are%20the%20next%20big%20profit%20machine.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=444304857",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5dd26bcdaa0864d007b5",
+      "category": "Sports",
+      "headline": "Hovland in tie for lead at Tour Championship",
+      "summary": "Norway's Viktor Hovland and American Ryan Gerard in tie for the lead at 10 under, heading into the weekend at the Tour Championship in Atlanta.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-28T23:09:36+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/golf/articles/c20lnlpx714o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hovland%20in%20tie%20for%20lead%20at%20Tour%20Championship.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2125579761",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4ef9872947c1efa23076",
+      "category": "World",
+      "headline": "Man, 41, dies after large sign falls at Christian festival in West Sussex",
+      "summary": "Six more people hospitalised after incident at Big Church festival near Steyning A 41-year-old man has died and at least six other people have been injured after a large sign fell at a Christian festival in West Sussex, police said. The man, from Eastbourne, East Sussex, was pronounced dead at the scene after the incident at the Big Church festival near Steyning on Friday afternoon. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T23:07:41+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/man-41-dies-after-large-sign-falls-at-christian-festival-in-west-sussex",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Man%2C%2041%2C%20dies%20after%20large%20sign%20falls%20at%20Christian%20festival%20in%20West%20Sussex.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1843952736",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a18e027bc1a2970cf6d9",
+      "category": "India",
+      "headline": "Gen Z vs the khap panchayats: Old rules, new rebels",
+      "summary": "Haryana’s khap panchayats have issued diktats against love marriages within a village cluster or clan, and live-in and same-sex relationships. If people do not abide by these, they will be barred from entering their villages, the khaps say. This has drawn strong opposition from Gen Z on social media. A section of the youth, both women and men, say the personal choices of consenting adults trump community custom....",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T23:05:20+00:00",
+      "source_url": "https://www.thehindu.com/news/national/haryana/gen-z-vs-haryana-khap-panchayats-old-rules-new-rebels/article71395638.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Gen%20Z%20vs%20the%20khap%20panchayats%3A%20Old%20rules%2C%20new%20rebels.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2630739303",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "537669bc8f163fdaf1c1",
+      "category": "Entertainment",
+      "headline": "‘Coyote vs. Acme’ Star Will Forte, Director Celebrate Film Finally Hitting Theaters After Being Shelved by Warner Bros.: “Proof Movies Don’t Just Go Away”",
+      "summary": "\"Persistence and resilience have truly won the day,\" filmmaker Dave Green wrote on social media Friday.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-28T23:04:21+00:00",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/coyote-vs-acme-will-forte-director-celebrate-release-1236684609/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Coyote%20vs.%20Acme%E2%80%99%20Star%20Will%20Forte%2C%20Director%20Celebrate%20Film%20Finally%20Hitting%20Theaters%20After%20Being%20Shelved%20by%20Warner%20Bros.%3A%20%E2%80%9CProof%20Movies%20Don%E2%80%99t%20Just%20Go%20Away%E2%80%9D.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3334597546",
+      "image_type": "ai_generated"
+    },
     {
       "id": "638bd9045cb6c2b9f4f1",
       "category": "Entertainment",
@@ -22,17 +99,6 @@
       "published_at": "2026-08-28T23:01:55+00:00",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/shelley-fabares-cause-of-death-1236684687/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shelley%20Fabares%E2%80%99%20Cause%20of%20Death%20Revealed.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3604538708",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T22:57:33+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
       "image_type": "ai_generated"
     },
     {
@@ -50,7 +116,7 @@
       "id": "f6a9051a885a5e4628c7",
       "category": "World",
       "headline": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
-      "summary": "The figure rose to 41 on Saturday morning, with four rapid response teams to arrive in Kathmandu The number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight",
+      "summary": "There are now 41 Australians missing, and four rapid response team members are expected to arrive in Kathmandu At least 93,000 ‘in great need’ after Nepal-Tibet flash floods How the deadly Nepal and Tibet flash flood unfolded – a visual guide Get our breaking news email , free app or daily news podcast The number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41,...",
       "publisher": "Guardian World",
       "published_at": "2026-08-28T22:53:57+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
@@ -132,6 +198,17 @@
       "published_at": "2026-08-28T22:29:37+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cjw5056v9v7o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20McInnes%20backs%20himself%20to%20deliver%20Rangers%20success.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3759259368",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "092681bcb2e23c8d7d6d",
+      "category": "Technology & AI",
+      "headline": "Court rules Kalshi sports bets aren't \"swaps,\" just gambling with a different name",
+      "summary": "Kalshi can't evade Nevada gambling laws by calling bets \"swaps,\" judges rule.",
+      "publisher": "Ars Technica",
+      "published_at": "2026-08-28T22:14:52+00:00",
+      "source_url": "https://arstechnica.com/tech-policy/2026/08/kalshi-cant-evade-nevada-gambling-laws-by-calling-bets-swaps-court-rules/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Court%20rules%20Kalshi%20sports%20bets%20aren%27t%20%22swaps%2C%22%20just%20gambling%20with%20a%20different%20name.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=484515684",
       "image_type": "ai_generated"
     },
     {
@@ -234,6 +311,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "a8da3cf516f92bb1335a",
+      "category": "Technology & AI",
+      "headline": "Cities terminate Flock contracts at record pace in August",
+      "summary": "Cancellations have accelerated.",
+      "publisher": "Ars Technica",
+      "published_at": "2026-08-28T21:33:54+00:00",
+      "source_url": "https://arstechnica.com/tech-policy/2026/08/cities-terminate-flock-contracts-at-record-pace-in-august/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Cities%20terminate%20Flock%20contracts%20at%20record%20pace%20in%20August.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=42437030",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "66a164e117735a72363b",
       "category": "World",
       "headline": "Volunteers rescue man stuck on 10,000ft-high ledge in Sierra Nevada",
@@ -308,6 +396,17 @@
       "published_at": "2026-08-28T21:17:54+00:00",
       "source_url": "https://www.bbc.co.uk/news/videos/cj64kgrpgjdo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%2097-year-old%20woman%20rescued%20after%20Nepali%20floods%20looked%20like%20%27a%20warrior%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1984339631",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f392bb032709ef9e5d82",
+      "category": "Technology & AI",
+      "headline": "\"RFK Jr. has lied to the Senate\": Lawmakers call for criminal probe, ouster",
+      "summary": "RFK Jr. went to Samoa to spread vaccine fears. The measles outbreak after killed 83.",
+      "publisher": "Ars Technica",
+      "published_at": "2026-08-28T21:17:38+00:00",
+      "source_url": "https://arstechnica.com/health/2026/08/rfk-jr-has-lied-to-the-senate-lawmakers-call-for-criminal-probe-ouster/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20%22RFK%20Jr.%20has%20lied%20to%20the%20Senate%22%3A%20Lawmakers%20call%20for%20criminal%20probe%2C%20ouster.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1485797494",
       "image_type": "ai_generated"
     },
     {
@@ -555,12 +654,12 @@
     {
       "id": "f59f9d0ecc6af893c680",
       "category": "Entertainment",
-      "headline": "Sorry, Haters, the Gwyneth Paltrow–Sam Altman Hamptons Dinner Party Is Apparently On Hold",
+      "headline": "Sorry, Haters, the Gwyneth Paltrow–Sam Altman Hamptons Dinner Party Is Apparently on Hold",
       "summary": "After a viral backlash to an invitation, Paltrow clapped back with an AI",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-28T20:19:12+00:00",
       "source_url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/gwyneth-paltrow-sam-altman-hamptons-dinner-party-postponed-1236684510/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sorry%2C%20Haters%2C%20the%20Gwyneth%20Paltrow%E2%80%93Sam%20Altman%20Hamptons%20Dinner%20Party%20Is%20Apparently%20On%20Hold.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2361556280",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sorry%2C%20Haters%2C%20the%20Gwyneth%20Paltrow%E2%80%93Sam%20Altman%20Hamptons%20Dinner%20Party%20Is%20Apparently%20on%20Hold.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=448296956",
       "image_type": "ai_generated"
     },
     {
@@ -1012,105 +1111,6 @@
       "published_at": "2026-08-28T19:02:51+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-chief-minister-dk-shivakumar-directs-officials-to-identify-five-cities-other-than-bengaluru-for-industrial-development/article71401370.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%20Chief%20Minister%20D.K.%20Shivakumar%20directs%20officials%20to%20identify%20five%20cities%20other%20than%20Bengaluru%20for%20industrial%20development.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1477284233",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b1081f5d7d903193ad46",
-      "category": "India",
-      "headline": "Nagendra challenges BJP to face him in ‘people’s court’",
-      "summary": "Claiming that he had been targeted by the ‘Manuvadi’ BJP, Nagendra appealed to the party to allow him to contest the Ballari Rural constituency again so that he could come clean politically",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:01:56+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka//article71400936.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nagendra%20challenges%20BJP%20to%20face%20him%20in%20%E2%80%98people%E2%80%99s%20court%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4275743334",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c2a2c0061a1a31a181f6",
-      "category": "Sports",
-      "headline": "Rangers to give Celtic 300 tickets for cup game",
-      "summary": "Rangers confirm they will provide Celtic with 300 tickets for the League Cup quarter",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T18:59:28+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/cvgyw4zyyp2o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Rangers%20to%20give%20Celtic%20300%20tickets%20for%20cup%20game.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2363707871",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "93eb5c454c272bd24c61",
-      "category": "India",
-      "headline": "Singareni’s short-supply of quality, quantity coal forces Genco to seek 5 MT supply from CIL, MCL",
-      "summary": "CMD of TG",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T18:58:41+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/singarenis-short-supply-of-quality-quantity-coal-forces-genco-to-seek-5-mt-supply-from-cil-mcl/article71401685.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Singareni%E2%80%99s%20short-supply%20of%20quality%2C%20quantity%20coal%20forces%20Genco%20to%20seek%205%20MT%20supply%20from%20CIL%2C%20MCL.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1640928238",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "60fb42758d53e4af5927",
-      "category": "India",
-      "headline": "Ankit Balyan Murder: Haryanvi Singer's Wife Threatens Self-Immolation In 4-Day Ultimatum To Cops",
-      "summary": "Seema also alleged that her husband had sought police security but was denied protection.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:54:05+00:00",
-      "source_url": "https://www.ndtv.com/india-news/ankit-balyan-murder-haryanvi-singers-wife-threatens-self-immolation-in-4-day-ultimatum-to-cops-11972884#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ankit%20Balyan%20Murder%3A%20Haryanvi%20Singer%27s%20Wife%20Threatens%20Self-Immolation%20In%204-Day%20Ultimatum%20To%20Cops.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=665953309",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "cb78e2cc31604d8e5779",
-      "category": "Technology & AI",
-      "headline": "Brave’s browser one-ups Chrome with its new support for email aliases",
-      "summary": "The feature, announced this week, allows Brave's users to sign up for websites and other online services without having to share their personal email addresses.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-28T18:50:00+00:00",
-      "source_url": "https://techcrunch.com/2026/08/28/braves-browser-one-ups-chrome-with-its-new-support-for-email-aliases/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Brave%E2%80%99s%20browser%20one-ups%20Chrome%20with%20its%20new%20support%20for%20email%20aliases.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=138109756",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "833aea00a7679ac18956",
-      "category": "Entertainment",
-      "headline": "How to Still Get Tickets to Harry Styles’ Sold-Out Madison Square Garden Residency",
-      "summary": "The 50-show Together, Together tour — supporting his fourth studio album 'Kiss All the Time. Disco, Occasionally.' — includes a 30",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T18:46:38+00:00",
-      "source_url": "https://www.hollywoodreporter.com/lifestyle/shopping/buy-harry-styles-tour-tickets-together-together-2026-deals-1236483025/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20How%20to%20Still%20Get%20Tickets%20to%20Harry%20Styles%E2%80%99%20Sold-Out%20Madison%20Square%20Garden%20Residency.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2054921571",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5a86d88792c13ee69fde",
-      "category": "India",
-      "headline": "US Trade Deal Takes Centre Stage At Shivraj Chouhan's Punjab Speech",
-      "summary": "Chouhan stressed that there was no final trade agreement with the US at present. (File)",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:45:24+00:00",
-      "source_url": "https://www.ndtv.com/india-news/us-trade-deal-takes-centre-stage-at-shivraj-chouhans-punjab-speech-11972883#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20US%20Trade%20Deal%20Takes%20Centre%20Stage%20At%20Shivraj%20Chouhan%27s%20Punjab%20Speech.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2810724277",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "95a2bfc3ea3cbf81147f",
-      "category": "India",
-      "headline": "\"Krishna Consciousness Can Make World Better\": Mohan Bhagwat At New York",
-      "summary": "Bhagwat's visit comes ahead of his scheduled address to the Indian community at Madison Square Garden.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:43:15+00:00",
-      "source_url": "https://www.ndtv.com/india-news/krishna-consciousness-can-make-world-better-mohan-bhagwat-at-new-york-11972878#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Krishna%20Consciousness%20Can%20Make%20World%20Better%22%3A%20Mohan%20Bhagwat%20At%20New%20York.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3980010651",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5c303057086e16702254",
-      "category": "Entertainment",
-      "headline": "‘Spider-Man: Brand New Day’ Still in More Theaters Than Any Other Movie 5 Weekends Later",
-      "summary": "Even with 'Coyote vs. Acme' and 'The Dog Stars' opening, exhibitors are still betting heaviest on Sony-Marvel's friendly neighborhood Spider",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T18:43:07+00:00",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-theaters-box-office-1236684381/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Spider-Man%3A%20Brand%20New%20Day%E2%80%99%20Still%20in%20More%20Theaters%20Than%20Any%20Other%20Movie%205%20Weekends%20Later.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1056204472",
       "image_type": "ai_generated"
     }
   ]
