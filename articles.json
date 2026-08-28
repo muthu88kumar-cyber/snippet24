@@ -1,18 +1,139 @@
 {
-  "updated_at": "2026-08-28T22:34:13.591033+00:00",
+  "updated_at": "2026-08-28T23:04:10.398753+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 19,
-    "India": 45,
+    "World": 20,
+    "India": 41,
     "Business": 0,
-    "Technology & AI": 4,
-    "Sports": 14,
-    "Entertainment": 14,
-    "Lifestyle": 4
+    "Technology & AI": 6,
+    "Sports": 15,
+    "Entertainment": 15,
+    "Lifestyle": 3
   },
   "articles": [
+    {
+      "id": "638bd9045cb6c2b9f4f1",
+      "category": "Entertainment",
+      "headline": "Shelley Fabares’ Cause of Death Revealed",
+      "summary": "The 'Coach' and 'Donna Reed Show' alum died Saturday at the age of 82.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-28T23:01:55+00:00",
+      "source_url": "https://www.hollywoodreporter.com/news/general-news/shelley-fabares-cause-of-death-1236684687/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shelley%20Fabares%E2%80%99%20Cause%20of%20Death%20Revealed.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3604538708",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T22:57:33+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2689b7a279c4a27fbb99",
+      "category": "Sports",
+      "headline": "A magician and a maverick - this could be Cherki's moment for Man City",
+      "summary": "After two goals and a swaggering display against Crystal Palace, Phil McNulty asks if this is Rayan Cherki's time to shine for Manchester City.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-28T22:56:42+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c24j5jnnr9eo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20A%20magician%20and%20a%20maverick%20-%20this%20could%20be%20Cherki%27s%20moment%20for%20Man%20City.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=917668354",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f6a9051a885a5e4628c7",
+      "category": "World",
+      "headline": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+      "summary": "The figure rose to 41 on Saturday morning, with four rapid response teams to arrive in Kathmandu The number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T22:53:57+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20Australians%20missing%20in%20Nepal%E2%80%99s%20deadly%20floods%20rises%20again%2C%20as%20Albanese%20deploys%20more%20personnel.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=628949033",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "743153c25cc6f002c806",
+      "category": "Entertainment",
+      "headline": "Olivia Rodrigo’s Daisy Chain Fields Raises $10 Million for Women-Focused Nonprofits",
+      "summary": "“Daisy Chain Fields was created to celebrate the power of what can happen when we come together to support one another,\" Rodrigo said.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-28T22:50:35+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-raises-10-million-1236684633/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Olivia%20Rodrigo%E2%80%99s%20Daisy%20Chain%20Fields%20Raises%20%2410%20Million%20for%20Women-Focused%20Nonprofits.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3134294478",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0df54cb13b61b8d4b5fb",
+      "category": "Technology & AI",
+      "headline": "Google further buries search results under AI mode",
+      "summary": "Google is now automatically expanding its AI search summaries at the top of the results page for some searches, as reported by Search Engine Roundtable. The change, when it kicks in, pushes the typical list of links from a search much farther down Google's results page; instead of seeing part of an AI Overview with […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T22:48:11+00:00",
+      "source_url": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Google%20further%20buries%20search%20results%20under%20AI%20mode.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2662269631",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0fc60ed0eb71e545c253",
+      "category": "Technology & AI",
+      "headline": "Is the best way to watch a movie on a pair of sunglasses?",
+      "summary": "Are XREAL's smart glasses the way of the future for home entertainment?",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-28T22:42:48+00:00",
+      "source_url": "https://techcrunch.com/2026/08/28/is-the-best-way-to-watch-a-movie-on-a-pair-of-sunglasses/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Is%20the%20best%20way%20to%20watch%20a%20movie%20on%20a%20pair%20of%20sunglasses%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3521908612",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "329c6f89d684ec02084f",
+      "category": "World",
+      "headline": "Los Angeles fire survivors face record wait for federal disaster aid under Trump",
+      "summary": "Nearly 600 days after the devastating 2025 fires, thousands of Los Angeles residents are still waiting for more than $15bn in federal funds to rebuild their communities As thousands of residents in Spokane, Washington, begin to grapple with a long recovery after a destructive set of blazes that consumed hundreds of homes in the state’s second most populated city this month, victims of the Los Angeles firestorm...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T22:39:26+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/28/los-angeles-wildfire-survivors-federal-aid",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Los%20Angeles%20fire%20survivors%20face%20record%20wait%20for%20federal%20disaster%20aid%20under%20Trump.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1541898307",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4aa8fd13e583e2e498a7",
+      "category": "Technology & AI",
+      "headline": "Xbox CEO calls Project Helix a ‘family of devices’",
+      "summary": "According to Xbox CEO Asha Sharma, Project Helix, which she announced in March as a codename for Microsoft's \"next generation console\" - phrasing that seemingly implied a singular device - will actually be a \"family\" of devices.\" \"We've been hard at work on a great next generation and a great family of devices for Helix, […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T22:39:11+00:00",
+      "source_url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Xbox%20CEO%20calls%20Project%20Helix%20a%20%E2%80%98family%20of%20devices%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1714466477",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b11e831f20b478fd46dd",
+      "category": "Entertainment",
+      "headline": "Gladys Knight Announces She’ll Partake in “Fewer Performances” Amid “Next Stage” of Career and Life",
+      "summary": "\"I’ll be spending more time on projects with my husband and visiting with my grandbabies and am looking forward to this new era,\" the singer wrote in an Instagram post.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-28T22:38:14+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/gladys-knight-fewer-performances-next-stage-career-1236684667/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Gladys%20Knight%20Announces%20She%E2%80%99ll%20Partake%20in%20%E2%80%9CFewer%20Performances%E2%80%9D%20Amid%20%E2%80%9CNext%20Stage%E2%80%9D%20of%20Career%20and%20Life.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=318880959",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "720168a06c51f9a9f3fa",
+      "category": "Sports",
+      "headline": "McInnes backs himself to deliver Rangers success",
+      "summary": "Manager Derek McInnes says Rangers are \"a long way away\" from what he wants but backs himself to deliver success at Ibrox.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-28T22:29:37+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cjw5056v9v7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20McInnes%20backs%20himself%20to%20deliver%20Rangers%20success.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3759259368",
+      "image_type": "ai_generated"
+    },
     {
       "id": "ce76025396f22627645f",
       "category": "Lifestyle",
@@ -33,17 +154,6 @@
       "published_at": "2026-08-28T22:05:41+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Footage%20of%20Tibet%20floods%20isn%27t%20being%20shown%20in%20China%20-%20and%20we%20know%20little%20about%20victims%20there.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3646295530",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "4aa8fd13e583e2e498a7",
-      "category": "Technology & AI",
-      "headline": "Xbox CEO calls Project Helix a ‘family of devices’",
-      "summary": "According to Xbox CEO Asha Sharma, Project Helix, which she announced in March as a codename for Microsoft's \"next generation console\" - phrasing that seemingly implied a singular device - will actually be a \"family\" of devices.\" \"We've been hard at work on a great next generation and a great family of devices for Helix, […]",
-      "publisher": "The Verge",
-      "published_at": "2026-08-28T22:03:13+00:00",
-      "source_url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Xbox%20CEO%20calls%20Project%20Helix%20a%20%E2%80%98family%20of%20devices%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1714466477",
       "image_type": "ai_generated"
     },
     {
@@ -94,7 +204,7 @@
       "id": "53db4777910a34b6684c",
       "category": "World",
       "headline": "Large fire near Wembley Stadium disrupts tube and rail services",
-      "summary": "About 125 firefighters tackle blaze at Neasden waste facility as nearby Amazon warehouse is evacuated A large fire has broken out at a waste facility close to Wembley Stadium in north-west London, disrupting tube and train lines in the area. Twenty fire engines and about 125 firefighters were sent to tackle the blaze at a mixed-waste facility on an industrial estate in Neasden, less than a mile from the venue....",
+      "summary": "About 125 firefighters tackle blaze at Neasden waste facility as nearby Amazon warehouse is evacuated A large fire broke out at a waste facility close to Wembley Stadium in north-west London, disrupting tube and train lines in the area. Twenty fire engines and about 125 firefighters were sent to tackle the blaze at a mixed-waste facility on an industrial estate in Neasden, less than a mile from the venue....",
       "publisher": "Guardian World",
       "published_at": "2026-08-28T21:47:05+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/28/large-fire-near-wembley-stadium-disrupts-tube-and-rail-services",
@@ -176,17 +286,6 @@
       "published_at": "2026-08-28T21:24:13+00:00",
       "source_url": "https://variety.com/2026/gaming/news/gta-6-release-details-1236846230/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Everything%20We%20Know%20About%20%E2%80%98Grand%20Theft%20Auto%20VI%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1767792442",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T21:22:22+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
       "image_type": "ai_generated"
     },
     {
@@ -1012,105 +1111,6 @@
       "published_at": "2026-08-28T18:43:07+00:00",
       "source_url": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-theaters-box-office-1236684381/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Spider-Man%3A%20Brand%20New%20Day%E2%80%99%20Still%20in%20More%20Theaters%20Than%20Any%20Other%20Movie%205%20Weekends%20Later.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1056204472",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "373dabfcdf331f75631c",
-      "category": "India",
-      "headline": "UGC-NET June 2026 Results Declared For 84 Subjects",
-      "summary": "The UGC-NET June 2026 examination was conducted from June 22 to 30, 2026, across 87 subjects.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:41:33+00:00",
-      "source_url": "https://www.ndtv.com/education/ugc-net-june-2026-results-declared-for-84-subjects-11972808#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UGC-NET%20June%202026%20Results%20Declared%20For%2084%20Subjects.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=665729791",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "17a3bf54fef9e6e6212e",
-      "category": "India",
-      "headline": "MBBS counselling: KNRUHS’s first-phase web options from today",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T18:41:25+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/mbbs-counselling-knruhss-first-phase-web-options-from-today/article71401903.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20MBBS%20counselling%3A%20KNRUHS%E2%80%99s%20first-phase%20web%20options%20from%20today.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1514511119",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0eb1134762f6ba388424",
-      "category": "Entertainment",
-      "headline": "Pokémon Stop-Motion Series Set at Disney+ as Part of Larger Distribution Deal",
-      "summary": "The streamer and cable channel Disney XD will also carry 'Pokemon the Series: The Beginning.'",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T18:40:58+00:00",
-      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/new-pokemon-animated-series-disney-plus-1236684445/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Pok%C3%A9mon%20Stop-Motion%20Series%20Set%20at%20Disney%2B%20as%20Part%20of%20Larger%20Distribution%20Deal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3424658685",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "85ac62ec93203a97a125",
-      "category": "India",
-      "headline": "Cipla Pune Unit's Drug Sale Licence Cancelled Over 'Irregularities'",
-      "summary": "Discrepancies were found between physical stock and computerised records.Representational",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:39:05+00:00",
-      "source_url": "https://www.ndtv.com/india-news/cipla-pune-units-drug-sale-licence-cancelled-over-irregularities-11972870#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Cipla%20Pune%20Unit%27s%20Drug%20Sale%20Licence%20Cancelled%20Over%20%27Irregularities%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=753527140",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0ca9007873209c639e4a",
-      "category": "World",
-      "headline": "Trump administration pushing to hand parcel of Yosemite land to private developer – report",
-      "summary": "Nevada-based Kingsbarn Realty Capital seeks to acquire land to construct private road to development outside park The Trump administration is reportedly pushing to give a parcel of land inside Yosemite, the country’s first national park and one of its most popular, to a Nevada -based private developer. Staff with the National Park Service have been exploring how the agency can give a quarter-mile parcel to a...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T18:38:45+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/28/yosemite-national-park-private-developer",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20administration%20pushing%20to%20hand%20parcel%20of%20Yosemite%20land%20to%20private%20developer%20%E2%80%93%20report.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=276954226",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3b8b2c895d2b8902e52d",
-      "category": "Sports",
-      "headline": "Celtic & Rangers to play Scottish Cup ties behind closed doors after fan disorder",
-      "summary": "Celtic and Rangers are ordered to play their next home Scottish Cup ties behind closed doors after fan disorder last season.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T18:36:00+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/c4gk206k95xo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Celtic%20%26%20Rangers%20to%20play%20Scottish%20Cup%20ties%20behind%20closed%20doors%20after%20fan%20disorder.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=367686227",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "493f9ef641a5ad40582e",
-      "category": "Entertainment",
-      "headline": "What’s New on Netflix in September 2026",
-      "summary": "Whether you’re looking to settle into September with cozy classics or start a new series, Netflix has a long list of titles joining or returning to the streamer this fall. The long-awaited “Earle Meets World” is available Sept. 4. Following Gen-Z’s ultimate It Girl, Alix Earle, the reality series shows a new side of her, […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-28T18:35:00+00:00",
-      "source_url": "https://variety.com/feature/whats-on-netflix-movies-shows-1203517873/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20What%E2%80%99s%20New%20on%20Netflix%20in%20September%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1523981442",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "fd63129894261f222305",
-      "category": "Lifestyle",
-      "headline": "Clive Parkinson obituary",
-      "summary": "My partner, Clive Parkinson, who has died aged 63, was reader in arts, health and social justice at Manchester Metropolitan University. Working across the NHS, higher education and the voluntary sector, Clive became one of the UK’s leading voices in arts and health. Born in Morecambe, Lancashire, Clive was the son of George, a lorry driver, and Betty (nee Thurlby), a shop worker; both helped nurture the...",
-      "publisher": "Guardian Lifestyle",
-      "published_at": "2026-08-28T18:34:46+00:00",
-      "source_url": "https://www.theguardian.com/education/2026/aug/28/clive-parkinson-obituary",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Clive%20Parkinson%20obituary.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3391727144",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "92022bdf85b31c79ba17",
-      "category": "India",
-      "headline": "Infosys Public Services CEO Lax Gopisetty Missing After Nepal Floods",
-      "summary": "At least 320 Indians remain missing.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T18:34:09+00:00",
-      "source_url": "https://www.ndtv.com/india-news/infosys-public-services-ceo-lax-gopisetty-missing-after-nepal-floods-11972859#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Infosys%20Public%20Services%20CEO%20Lax%20Gopisetty%20Missing%20After%20Nepal%20Floods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2919119789",
       "image_type": "ai_generated"
     }
   ]
