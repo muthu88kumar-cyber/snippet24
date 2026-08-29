@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T17:04:55.241151+00:00",
-  "total": 1267,
+  "updated_at": "2026-08-29T17:34:36.014771+00:00",
+  "total": 1282,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 102,
-    "India": 386,
-    "Business": 167,
+    "World": 105,
+    "India": 394,
+    "Business": 169,
     "Technology & AI": 95,
     "Sports": 87,
-    "Entertainment": 282,
-    "Lifestyle": 148
+    "Entertainment": 283,
+    "Lifestyle": 149
   },
   "articles": [
     {
@@ -22,6 +22,17 @@
       "published_at": "2026-08-28T13:05:20+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/bollywood/8-ott-releases-to-watch-this-weekend-pick-from-alpha-and-bandar-to-michael-and-dark-matter-where-to-watch-101787918606084.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%208%20OTT%20releases%20to%20watch%20this%20weekend%3A%20Pick%20from%20Alpha%20and%20Bandar%20to%20Michael%20and%20Dark%20Matter%3B%20where%20to%20watch.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4150790569",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4c3cfcc321d9dc7c2d5d",
+      "category": "India",
+      "headline": "Assam Professor, Husband Among Indians Missing In Flood-Hit Nepal",
+      "summary": "According to Choudhury, Ghosh works in Kolkata and regularly travels to Guwahati.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:59:19+00:00",
+      "source_url": "https://www.ndtv.com/india-news/assam-professor-husband-among-indians-missing-in-flood-hit-nepal-11975747#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Assam%20Professor%2C%20Husband%20Among%20Indians%20Missing%20In%20Flood-Hit%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=116757531",
       "image_type": "ai_generated"
     },
     {
@@ -605,6 +616,28 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b8123b7f6c9c9e6f1859",
+      "category": "India",
+      "headline": "Locations of two additional India-China border meeting points yet to be announced",
+      "summary": "According to an eight-point outcome document released by both countries on August 26 following the 25th round of talks between the Special Representatives (SRs) on the Boundary Question, India and China have also agreed to establish two additional meeting points to hold General-level or Senior Highest Military Commander",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:25:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/locations-of-two-additional-india-china-border-meeting-points-yet-to-be-announced/article71405590.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Locations%20of%20two%20additional%20India-China%20border%20meeting%20points%20yet%20to%20be%20announced.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=312930866",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "37d6780b970d8b687c03",
+      "category": "Business",
+      "headline": "Sashidhar Jagdishan to exit HDFC Bank in October 2026: 5 key events India's largest private bank saw in 2026",
+      "summary": "HDFC Bank Managing Director and CEO Sashidhar Jagdishan will leave the lender on October 26, 2026, after deciding against seeking another term at the helm",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T17:12:11+00:00",
+      "source_url": "https://www.livemint.com/companies/news/sashidhar-jagdishan-to-step-down-as-hdfc-bank-ceo-in-october-2026-5-key-events-leading-up-to-his-exit-11788020014970.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Sashidhar%20Jagdishan%20to%20exit%20HDFC%20Bank%20in%20October%202026%3A%205%20key%20events%20India%27s%20largest%20private%20bank%20saw%20in%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=74661295",
       "image_type": "ai_generated"
     },
     {
@@ -1213,6 +1246,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "f07fae18ac9d91a8d284",
+      "category": "India",
+      "headline": "Around 50 Karnataka tourists stranded in Nepal return home; 24 remain missing",
+      "summary": "The group included tourists from Haveri, Shivamogga and Bengaluru. They travelled from Gorakhpur in Uttar Pradesh and arrived at Kempegowda International Airport in Bengaluru on Saturday.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:19:15+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/28-from-karnataka-stranded-or-missing-in-nepal-tibet-amid-flash-flood/article71403924.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Around%2050%20Karnataka%20tourists%20stranded%20in%20Nepal%20return%20home%3B%2024%20remain%20missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1141549223",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "5a7aa272816b817bab27",
       "category": "India",
       "headline": "G. Vijaya Raghavan, P.P. Balan among four members appointed to Kerala State Planning Board",
@@ -1364,17 +1408,6 @@
       "published_at": "2026-08-29T13:33:13+00:00",
       "source_url": "https://www.koimoi.com/bollywood-news/daayra-is-meghna-gulzars-new-film-inspired-by-a-real-life-story-after-talvar-sam-bahadur/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Daayra%3A%20Is%20Meghna%20Gulzar%E2%80%99s%20New%20Film%20Inspired%20By%20A%20Real-Life%20Story%20After%20Talvar%20%26%20Sam%20Bahadur%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1053132489",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3fe1010d36e0e7689efb",
-      "category": "India",
-      "headline": "28 from Karnataka stranded or missing in Nepal, Tibet amid flash flood",
-      "summary": "Of the 28 people, 23 are from Bengaluru Urban, two from Mysuru and one each from Dharwad, Udupi and Vijayanagara districts, according to the latest information compiled by the SEOC as of 10 a.m.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:29:38+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/28-from-karnataka-stranded-or-missing-in-nepal-tibet-amid-flash-flood/article71403924.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2028%20from%20Karnataka%20stranded%20or%20missing%20in%20Nepal%2C%20Tibet%20amid%20flash%20flood.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3133088407",
       "image_type": "ai_generated"
     },
     {
@@ -1807,6 +1840,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "1f29b9117d3296e89893",
+      "category": "India",
+      "headline": "Kolkata Police file FIR against Mamata Banerjee for violating Calcutta High Court order",
+      "summary": "The court had ordered the event to be held from 12 p.m. to 3 p.m. The rally, however, went beyond 3 p.m., as the former Chief Minister could not finish her speech in time",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:20:02+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kolkata%20Police%20file%20FIR%20against%20Mamata%20Banerjee%20for%20violating%20Calcutta%20High%20Court%20order.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1852689803",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cbc8282b44ceac342e96",
+      "category": "India",
+      "headline": "National Sports Day celebrated across Telangana",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:08:05+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/national-sports-day-celebrated-across-telangana/article71404734.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20National%20Sports%20Day%20celebrated%20across%20Telangana.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3802474545",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "80130f18cf53a4418116",
       "category": "India",
       "headline": "Uttar Pradesh CM Adityanath slams opposition for dividing people in name of caste, region, language",
@@ -1848,6 +1903,17 @@
       "published_at": "2026-08-29T16:44:37+00:00",
       "source_url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-government-accepts-demands-of-tribal-students-appeals-them-to-call-off-hunger-strike/article71404503.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2017%20days%20after%20protest%2C%20Maharashtra%20Government%20accepts%20all%20the%20demands%20of%20tribal%20students.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1863000434",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bd29088b2fd19530a3f8",
+      "category": "India",
+      "headline": "Forensic Expert Team From Gujarat Leaves For Nepal To Identify Flood Victims",
+      "summary": "Nepal flash floods has killed hundreds, while thousands are missing.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T16:35:25+00:00",
+      "source_url": "https://www.ndtv.com/india-news/forensic-expert-team-from-gujarat-leaves-for-nepal-to-identify-flood-victims-11975845#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Forensic%20Expert%20Team%20From%20Gujarat%20Leaves%20For%20Nepal%20To%20Identify%20Flood%20Victims.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2161133820",
       "image_type": "ai_generated"
     },
     {
@@ -2266,17 +2332,6 @@
       "published_at": "2026-08-29T13:40:57+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/7-odisha-tourists-evacuated-after-nepal-floods-search-on-for-5-official-101788010857711.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%207%20Odisha%20tourists%20evacuated%20after%20Nepal%20floods%3B%20search%20on%20for%205%3A%20Official.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3103596678",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "cbc8282b44ceac342e96",
-      "category": "India",
-      "headline": "National Sports Day celebrated across Telangana",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:38:20+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/national-sports-day-celebrated-across-telangana/article71404734.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20National%20Sports%20Day%20celebrated%20across%20Telangana.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3802474545",
       "image_type": "ai_generated"
     },
     {
@@ -4172,6 +4227,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "b0f4b6721b50828681bf",
+      "category": "Business",
+      "headline": "'Physical safety of on-ground staff...': Why jewellery brand GIVA pulled Kriti Sanon Rakshabandhan ad, founder explains",
+      "summary": "GIVA founder Ishendra Agarwal said the brand pulled its Kriti Sanon Rakshabandhan ad after incidents around some stores raised safety concerns for employees. He said GIVA still stands by the campaign's message and intent.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T17:19:43+00:00",
+      "source_url": "https://www.livemint.com/companies/news/physical-safety-of-on-ground-staff-why-jewellery-brand-giva-pulled-kriti-sanon-rakshabandhan-ad-founder-explains-11788021748044.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20%27Physical%20safety%20of%20on-ground%20staff...%27%3A%20Why%20jewellery%20brand%20GIVA%20pulled%20Kriti%20Sanon%20Rakshabandhan%20ad%2C%20founder%20explains.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1067083005",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16b9ad998f84eec567aa",
+      "category": "India",
+      "headline": "A.P. Speaker calls for effective implementation of sports quota for athletes",
+      "summary": "Addressing the gathering at the Amaravati Championship 2026 conclusion, Chintakayala Ayyanna Patrudu says providing incentives and job opportunities to students who excel in sports would further boost interest in athletics",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:18:18+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-speaker-calls-for-effective-implementation-of-sports-quota-for-athletes/article71405187.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A.P.%20Speaker%20calls%20for%20effective%20implementation%20of%20sports%20quota%20for%20athletes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3153764834",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e1f8861923286f6ba6f0",
+      "category": "India",
+      "headline": "19 unauthorised constructions demolished on August 29 by Cyberabad civic body",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:17:51+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/19-unauthorised-constructions-demolished-on-august-29-by-cyberabad-civic-body/article71405750.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2019%20unauthorised%20constructions%20demolished%20on%20August%2029%20by%20Cyberabad%20civic%20body.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1687531354",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "d90573eeeb7367d4fde6",
       "category": "India",
       "headline": "District Collector given additional charge as MD of Kochi metro, with Loknath Behera’s term ending on August 30",
@@ -4381,6 +4469,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "17fe5dceb6108aeb6389",
+      "category": "India",
+      "headline": "Before The Nepal Flood, A Glacial Fall: Tracing The Trigger, And A 100-km Killer Run",
+      "summary": "Devighat, 55 km from the avalanche site in a straight line, 80 km along the river channel.IANS",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:53:39+00:00",
+      "source_url": "https://www.ndtv.com/india-news/before-the-deluge-a-glacial-fall-tracing-the-trigger-of-nepal-catastrophe-and-the-100-km-killer-run-11975599#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Before%20The%20Nepal%20Flood%2C%20A%20Glacial%20Fall%3A%20Tracing%20The%20Trigger%2C%20And%20A%20100-km%20Killer%20Run.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=330064389",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7574ccb9f46648247014",
+      "category": "India",
+      "headline": "12.8-Kg Drugs Seized From Car In Coimbatore. 100-Grams Bust Led Cops To It",
+      "summary": "The 12.8 kg of MDMA had been divided into packets.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:51:16+00:00",
+      "source_url": "https://www.ndtv.com/india-news/12-8-kg-drugs-seized-from-car-in-coimbatore-100-grams-bust-led-cops-to-it-11975726#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2012.8-Kg%20Drugs%20Seized%20From%20Car%20In%20Coimbatore.%20100-Grams%20Bust%20Led%20Cops%20To%20It.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2726427289",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "6033c26afb26267ad8e0",
       "category": "India",
       "headline": "Owaisi seeks to allay fears of electors who have received notices",
@@ -4579,6 +4689,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3b5a9bb9f9b21c17d3dd",
+      "category": "India",
+      "headline": "2 Myanmar Nationals Detained In Arunachal With Drugs Worth Rs 26 Lakh",
+      "summary": "The arrests come amid an intensified crackdown on narcotics trafficking in Arunachal Pradesh.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:20:53+00:00",
+      "source_url": "https://www.ndtv.com/india-news/2-myanmar-nationals-detained-in-arunachal-with-drugs-worth-rs-26-lakh-11975625#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%202%20Myanmar%20Nationals%20Detained%20In%20Arunachal%20With%20Drugs%20Worth%20Rs%2026%20Lakh.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1117955147",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "48137dc987765f7dcd56",
       "category": "India",
       "headline": "A section of traders at Palayam market agree to shift to Kalluthankadavu",
@@ -4587,6 +4708,17 @@
       "published_at": "2026-08-29T15:20:46+00:00",
       "source_url": "https://www.thehindu.com/news/national/kerala/a-section-of-traders-at-palayam-market-agree-to-shift-to-kalluthankadavu/article71405266.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A%20section%20of%20traders%20at%20Palayam%20market%20agree%20to%20shift%20to%20Kalluthankadavu.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3636374025",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "21538ec8e68c0a09d2ac",
+      "category": "India",
+      "headline": "HDFC CEO Sashidhar Jagdishan Not Seeking Extension, To Retire On October 26",
+      "summary": "Jagdishan has worked at HDFC Bank for over two decades and held crucial positions.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:19:04+00:00",
+      "source_url": "https://www.ndtv.com/india-news/hdfc-ceo-sashidhar-jagdishan-not-seeking-extension-to-retire-on-october-26-11975506#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20HDFC%20CEO%20Sashidhar%20Jagdishan%20Not%20Seeking%20Extension%2C%20To%20Retire%20On%20October%2026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1659550543",
       "image_type": "ai_generated"
     },
     {
@@ -4623,14 +4755,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "16b9ad998f84eec567aa",
+      "id": "dbc5a6eb958cc2cb7adf",
       "category": "India",
-      "headline": "A.P. Speaker calls for effective implementation of sports quota for athletes",
-      "summary": "Addressing the gathering at the Amaravati Championship 2026 conclusion, Chintakayala Ayyanna Patrudu says providing incentives and job opportunities to students who excel in sports would further boost interest in athletics",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T15:10:20+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-speaker-calls-for-effective-implementation-of-sports-quota-for-athletes/article71405187.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A.P.%20Speaker%20calls%20for%20effective%20implementation%20of%20sports%20quota%20for%20athletes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3153764834",
+      "headline": "Nurse Arrested In Rape And Death Of 14-Year-Old J&K Girl",
+      "summary": "Five accused, including a government teacher and his brother, had already been arrested earlier.Representational",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T15:10:24+00:00",
+      "source_url": "https://www.ndtv.com/india-news/nurse-arrested-in-rape-and-death-of-14-year-old-j-k-girl-11975589#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nurse%20Arrested%20In%20Rape%20And%20Death%20Of%2014-Year-Old%20J%26K%20Girl.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1779612703",
       "image_type": "ai_generated"
     },
     {
@@ -4708,17 +4840,6 @@
       "published_at": "2026-08-29T14:47:56+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/family-counselling-reunites-divorced-couple-in-sri-sathya-sai-district/article71404368.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Family%20counselling%20reunites%20divorced%20couple%20in%20Sri%20Sathya%20Sai%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2788836621",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "21538ec8e68c0a09d2ac",
-      "category": "India",
-      "headline": "HDFC CEO Sashidhar Jagdishan Not Seeking Extension, To Retire On October 26",
-      "summary": "Jagdishan has worked at HDFC Bank for over two decades and held crucial positions.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T14:45:51+00:00",
-      "source_url": "https://www.ndtv.com/india-news/hdfc-ceo-sashidhar-jagdishan-not-seeking-extension-to-retire-on-october-26-11975506#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20HDFC%20CEO%20Sashidhar%20Jagdishan%20Not%20Seeking%20Extension%2C%20To%20Retire%20On%20October%2026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1659550543",
       "image_type": "ai_generated"
     },
     {
@@ -5357,17 +5478,6 @@
       "published_at": "2026-08-29T12:31:21+00:00",
       "source_url": "https://www.thehindu.com/news/national/congress-kharge-uttarakhand-venue-purification-row-rahul-gandhi-fir-demand/article71403888.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Rahul%20Gandhi%20seeks%20FIR%20over%20%E2%80%98purification%E2%80%99%20ritual%20in%20Haldwani%20after%20Kharge%E2%80%99s%20address%2C%20calls%20it%20%E2%80%98untouchability%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3582059378",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "8135db5703e37f05dbe9",
-      "category": "India",
-      "headline": "FIR against Mamata Banerjee for ‘violation’ of Calcutta High Court order on Trinamool student wing foundation day event",
-      "summary": "The FIR was filed at the Hastings Police Station against former CM Mamata Banerjee as well as the organisers of the meeting of the TMCP, police said",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T12:24:07+00:00",
-      "source_url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FIR%20against%20Mamata%20Banerjee%20for%20%E2%80%98violation%E2%80%99%20of%20Calcutta%20High%20Court%20order%20on%20Trinamool%20student%20wing%20foundation%20day%20event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2888905311",
       "image_type": "ai_generated"
     },
     {
@@ -8916,7 +9026,7 @@
       "id": "d01c7841745d1c5e7ae9",
       "category": "Entertainment",
       "headline": "Anne Hathaway Joins Tom Cruise in ‘Days of Thunder’ Follow-Up; Paramount Sets Release Date (EXCLUSIVE)",
-      "summary": "Anne Hathaway will star opposite Tom Cruise in the next chapter of “Days of Thunder,” Variety has learned exclusively. Paramount Pictures has dated the feature film sequel for summer 2028, where Cruise and Hathaway will hit the road almost 40 years after the original Tony Scott film was released. Cruise released a promotional image on […]",
+      "summary": "Anne Hathaway will star opposite Tom Cruise in the next chapter of “Days of Thunder,” Variety has learned exclusively. Paramount Pictures has dated the feature film sequel for June 2, 2028, when Cruise and Hathaway will hit the road almost 40 years after the original Tony Scott film was released. The project will be shot […]",
       "publisher": "Variety",
       "published_at": "2026-08-29T16:58:07+00:00",
       "source_url": "https://variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347/",
@@ -9108,6 +9218,17 @@
       "published_at": "2026-01-22T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Railway%20secures%20%24100%20million%20to%20challenge%20AWS%20with%20AI-native%20cloud%20infrastructure.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3997345097",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d9335d603e1bfde2f932",
+      "category": "Entertainment",
+      "headline": "‘Days of Thunder’ Sequel: Anne Hathaway Joins Tom Cruise, Release Date Set at Paramount",
+      "summary": "The follow-up to the 1990 racing drama will be released in theaters on June 2, 2028.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T17:32:31+00:00",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Days%20of%20Thunder%E2%80%99%20Sequel%3A%20Anne%20Hathaway%20Joins%20Tom%20Cruise%2C%20Release%20Date%20Set%20at%20Paramount.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2566088741",
       "image_type": "ai_generated"
     },
     {
@@ -10376,14 +10497,69 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "900368e914d509f2f89b",
+      "id": "d0234c268edf33649677",
+      "category": "World",
+      "headline": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
+      "summary": "The self-styled provocateur had been detained by Immigration and Customs Enforcement (ICE).",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T17:25:01+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20deported%20from%20US%20to%20UK.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2836983327",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T17:16:08+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "384e46aba1a6be9aa0b7",
+      "category": "World",
+      "headline": "Far-right media provocateur Milo Yiannopoulos deported by ICE from US to UK",
+      "summary": "Ex-Breitbart editor has vocally supported immediate deportations for anyone who can’t prove US residency Far-right British media provocateur Milo Yiannopoulos has been deported from the US after being detained on Thursday by Immigration and Customs Enforcement (ICE) in New Orleans in connection with what the agency said was expired authorization to be in the country and a deportation order. Yiannopoulos’s...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T17:08:43+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/milo-yiannopoulos-deported-us-to-uk",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Far-right%20media%20provocateur%20Milo%20Yiannopoulos%20deported%20by%20ICE%20from%20US%20to%20UK.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1558728399",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5e7c0a299830aee775fe",
+      "category": "World",
+      "headline": "Daughter traces mother and aunt’s last known location in Nepal through TikTok video",
+      "summary": "Tulshi Patel says mother Hemangini Jitendra Patel and aunt Hema Sunil Amin were last seen at Friendship Bridge on Nepal-China border • Nepal-Tibet flash flood – latest updates The daughter of a woman missing in Nepal has told how she traced her mother’s location through a TikTok video posted hours before the devastating flash flood hit. The catastrophic flash floods that hit Nepal and Tibet on Wednesday ,...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T17:01:46+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/daughter-traces-mother-and-aunts-last-known-location-in-nepal-through-tiktok-video",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Daughter%20traces%20mother%20and%20aunt%E2%80%99s%20last%20known%20location%20in%20Nepal%20through%20TikTok%20video.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4234574926",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ab4f66fb91df0f4a532a",
+      "category": "Lifestyle",
+      "headline": "‘There is no break-in period’: running experts offer five tips to finding the perfect shoe",
+      "summary": "If you want to minimize foot pain and keep all your toenails, let this guidance carry you to the finish line I tested 15 pairs of women’s running shoes. These are the best in the US for roads and trails This story was originally published in the Filter US newsletter on buying fewer, better things. Sign up here to get early access to it Each week the Filter newsletter cuts through the noise to bring you smart,...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T17:00:32+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/27/best-running-shoes",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98There%20is%20no%20break-in%20period%E2%80%99%3A%20running%20experts%20offer%20five%20tips%20to%20finding%20the%20perfect%20shoe.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2653526356",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bb36445548442acaa261",
       "category": "Sports",
-      "headline": "'We've got to do more' - Lampard frustrated by Hull defeat",
+      "headline": "'We've got to do more' - Lampard frustrated by loss to Hull",
       "summary": "Coventry manager Frank Lampard believes his side controlled possession but were \"too slow\" with the ball as their first top-flight home game in 25 years ends in a 1",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T16:59:54+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/czjzdnj3l14o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27We%27ve%20got%20to%20do%20more%27%20-%20Lampard%20frustrated%20by%20Hull%20defeat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=417761300",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27We%27ve%20got%20to%20do%20more%27%20-%20Lampard%20frustrated%20by%20loss%20to%20Hull.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1331760033",
       "image_type": "ai_generated"
     },
     {
@@ -10428,17 +10604,6 @@
       "published_at": "2026-08-29T16:43:25+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0vmgxrgo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20agree%20%C2%A322m%20deal%20with%20Palace%20for%20Munoz.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1378375040",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T16:28:36+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
@@ -10508,14 +10673,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "1f4cb2c24717de1b9af9",
+      "id": "dc68bb52063682b81a28",
       "category": "Sports",
-      "headline": "A goal but only 13 touches - how does Iraola get best out of Isak?",
+      "headline": "'That trust isn't there' - how does Iraola get best out of Isak?",
       "summary": "Alexander Isak scored his first goal of the season in the 2-2 draw against Nottingham Forest - but how do Liverpool get the best out of him?",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T15:49:49+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cgjq65nvw38o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20A%20goal%20but%20only%2013%20touches%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1573554900",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%20trust%20isn%27t%20there%27%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4008090306",
       "image_type": "ai_generated"
     },
     {
@@ -11226,7 +11391,7 @@
       "id": "7e24bc77b4c44433cd3a",
       "category": "Lifestyle",
       "headline": "Flipping marvellous: Yotam Ottolenghi on the joy of simple breakfasts – plus six exclusive recipes",
-      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes – more than I would have ever...",
+      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T07:00:20+00:00",
       "source_url": "https://www.theguardian.com/food/2026/aug/29/yotam-ottolenghi-simple-breakfasts-recipes",
