@@ -1,18 +1,95 @@
 {
-  "updated_at": "2026-08-29T02:34:12.561424+00:00",
+  "updated_at": "2026-08-29T03:04:18.710593+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 27,
-    "India": 27,
+    "World": 26,
+    "India": 28,
     "Business": 0,
     "Technology & AI": 9,
-    "Sports": 11,
-    "Entertainment": 20,
+    "Sports": 10,
+    "Entertainment": 21,
     "Lifestyle": 6
   },
   "articles": [
+    {
+      "id": "5486a6e04bd9659da683",
+      "category": "India",
+      "headline": "Commuters embrace KBR one-way, wonder about the need for flyovers",
+      "summary": "Since the one-way was introduced, the commute has been hassle-free; before the one-way, it would take half an hour to cover the road from the Cancer Hospital to Road No.45; now it takes five minutes, said a regular commuter",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T02:56:48+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/commuters-embrace-kbr-one-way-wonder-about-the-need-for-flyovers/article71401925.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Commuters%20embrace%20KBR%20one-way%2C%20wonder%20about%20the%20need%20for%20flyovers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1800825375",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "738943c379e0351094d3",
+      "category": "India",
+      "headline": "Why the monsoon is one of the best times to explore India’s forests",
+      "summary": "At naturalist-led trails across Indian wildlife lodges, the monsoon is shifting attention away from the safari’s celebrity animals towards breeding frogs, nesting birds, fruiting fungi and the smaller lives that become visible after rain",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T02:51:53+00:00",
+      "source_url": "https://www.thehindu.com/life-and-style/travel/why-the-monsoon-is-one-of-the-best-times-to-explore-indias-forests/article71221275.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20the%20monsoon%20is%20one%20of%20the%20best%20times%20to%20explore%20India%E2%80%99s%20forests.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4045897116",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f38b0d2a7834e4e116ca",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
+      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T02:48:38+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "74f93c6c64c85dc95e15",
+      "category": "Entertainment",
+      "headline": "Naomi Osaka Debuts a Luxury Accessories Brand at Uncharted’s Fame to Fortune Summit in the Hamptons",
+      "summary": "Tennis champion Naomi Osaka has for years made the tennis court a runway, with her Nike outfits often paired with pieces made in collaboration with designers such as Hana Yagi and Robert Wun. Her next staple piece: one she’s designed herself. Such is the brand of luxury leather goods Osaka unveiled Friday at the Fame […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T02:44:49+00:00",
+      "source_url": "https://variety.com/2026/biz/news/naomi-osaka-luxury-brand-uncharted-fame-to-fortune-summit-1236846357/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Naomi%20Osaka%20Debuts%20a%20Luxury%20Accessories%20Brand%20at%20Uncharted%E2%80%99s%20Fame%20to%20Fortune%20Summit%20in%20the%20Hamptons.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3576400921",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "72725a52af9f42c5dd15",
+      "category": "World",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T02:42:27+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3431567011",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fb36d15ee026c321f948",
+      "category": "India",
+      "headline": "Class 9 Odisha Student Found Pregnant During Health Check Up, Tutor Arrested",
+      "summary": "Further investigation is underway, say officials. (Representational)",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T02:38:44+00:00",
+      "source_url": "https://www.ndtv.com/india-news/class-9-odisha-student-found-pregnant-during-health-check-up-tutor-arrested-11973379#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Class%209%20Odisha%20Student%20Found%20Pregnant%20During%20Health%20Check%20Up%2C%20Tutor%20Arrested.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2120068808",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a2da3beb0c4efe2fdf40",
+      "category": "India",
+      "headline": "3,400 SIR forms found at Navi Mumbai photocopy shop, 5 BLOs suspended; Sena (UBT)-BJP men clash",
+      "summary": "A BJP leader from Panvel said that the party workers had no connection with the matter.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T02:37:50+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/3400-sir-forms-found-at-navi-mumbai-photocopy-shop-5-blos-suspended-sena-ubt-bjp-men-clash/article71403368.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%2C400%20SIR%20forms%20found%20at%20Navi%20Mumbai%20photocopy%20shop%2C%205%20BLOs%20suspended%3B%20Sena%20%28UBT%29-BJP%20men%20clash.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1269630513",
+      "image_type": "ai_generated"
+    },
     {
       "id": "a1bd7452a659e18c188f",
       "category": "Entertainment",
@@ -44,17 +121,6 @@
       "published_at": "2026-08-29T02:07:55+00:00",
       "source_url": "https://www.npr.org/2026/08/28/nx-s1-5948229/trump-says-u-s-has-entered-deal-with-venezuela-to-take-control-of-65-billion-barrels-of-oil-reserves",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20U.S.%20has%20entered%20deal%20with%20Venezuela%20to%20take%20control%20of%2065%20billion%20barrels%20of%20oil%20reserves.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1481462839",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f38b0d2a7834e4e116ca",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
-      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T02:02:14+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
       "image_type": "ai_generated"
     },
     {
@@ -132,17 +198,6 @@
       "published_at": "2026-08-29T01:23:53+00:00",
       "source_url": "https://www.hollywoodreporter.com/business/business-news/california-budget-trailer-bill-hollywood-tax-credit-issue-1236678209/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Tries%20Offering%20Hollywood%20New%20Perks%20to%20Make%20Up%20for%20Catch%20in%20%24750%20Million%20Incentive%20Program.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1446230620",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c3eca489c31043ec5192",
-      "category": "World",
-      "headline": "Trump says US has 'historic' deal to control 65bn barrels of Venezuela's oil",
-      "summary": "Venezuelan interim President Delcy Rodriguez says the deal will help revive her country's economy.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-29T01:21:43+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20US%20has%20%27historic%27%20deal%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030477565",
       "image_type": "ai_generated"
     },
     {
@@ -1056,61 +1111,6 @@
       "published_at": "2026-08-28T19:58:35+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/watch-little-league-world-series-2026-baseball-stream-free-1236677338/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20How%20to%20Watch%202026%20Little%20League%20World%20Series%20Championship%20Weekend%20Live%20Online.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3201491148",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "98d948b3fb358f57fc39",
-      "category": "World",
-      "headline": "Greenland says findings on genocide allegation not final",
-      "summary": "Experts examined the use of forced contraception on the Inuit community during the 1960s and 70s.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T19:57:50+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/czxzv29p12lo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Greenland%20says%20findings%20on%20genocide%20allegation%20not%20final.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3439403244",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3627f1231e7f962e662c",
-      "category": "Sports",
-      "headline": "'I learned from Murray' - Boulter won't make wedding ring mistake",
-      "summary": "Andy Murray has long been a guiding figure for British tennis, but newly",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T19:55:25+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/c20v7y3vy2do?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27I%20learned%20from%20Murray%27%20-%20Boulter%20won%27t%20make%20wedding%20ring%20mistake.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2333066719",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0e085004e4d704397b5f",
-      "category": "India",
-      "headline": "57 lakh active workers await e-KYC under VB GRAM G",
-      "summary": "Centre had earlier assured that ‘existing e-KYC verified job cards will remain valid until issuance of the new Gramin Rozgar Guarantee Cards’; States repeatedly missed e",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:48:34+00:00",
-      "source_url": "https://www.thehindu.com/news/national/two-months-into-vb-g-ram-g-e-kyc-pending-for-57-lakh-active-workers/article71401092.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2057%20lakh%20active%20workers%20await%20e-KYC%20under%20VB%20GRAM%20G.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2867690444",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "04500d6a24318f30747a",
-      "category": "India",
-      "headline": "Chennai Corporation floated over 14,500 tenders last year, says Commissioner",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:47:11+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/chennai-corporation-floated-over-14500-tenders-last-year-says-commissioner/article71400962.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chennai%20Corporation%20floated%20over%2014%2C500%20tenders%20last%20year%2C%20says%20Commissioner.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=913007372",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5e452b8cfeadf6073e20",
-      "category": "India",
-      "headline": "Ethiraj College signs MoU with US-based public accounting for industry interaction",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:46:03+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/ethiraj-college-signs-mou-with-us-based-public-accounting-for-industry-interaction/article71401816.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ethiraj%20College%20signs%20MoU%20with%20US-based%20public%20accounting%20for%20industry%20interaction.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=726181522",
       "image_type": "ai_generated"
     }
   ]
