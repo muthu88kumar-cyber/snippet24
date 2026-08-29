@@ -12,30 +12,11 @@ import xml.etree.ElementTree as ET
 
 
 # ============================================================
-# SNIPPET24 NEWS CURATOR 4.0 — OFFICIAL / PUBLIC SOURCES ONLY
-# ============================================================
-#
-# Source policy:
-#   - No BBC
-#   - No CNN
-#   - No Reuters
-#   - No newspapers
-#   - No private news publishers
-#
-# Sources are official government agencies, intergovernmental
-# institutions, public institutions, or official sports bodies.
-#
-# IMPORTANT:
-# "Free RSS" does NOT automatically mean "copyright-free".
-# This curator keeps the original source URL and attribution,
-# rewrites the headline/summary instead of copying article text,
-# and does not use publisher photographs as the primary visual.
-#
-# This reduces copyright/licensing risk but cannot guarantee
-# that Snippet24 can never receive a legal complaint.
+# SNIPPET24 NEWS CURATOR 5.0
+# OFFICIAL / PUBLIC SOURCES ONLY
 # ============================================================
 
-CURATOR_VERSION = "4.0-official-public"
+CURATOR_VERSION = "5.0-official-public"
 
 OUTPUT_FILE = "articles.json"
 
@@ -47,12 +28,12 @@ REQUEST_DELAY = 0.30
 
 HEADERS = {
     "User-Agent": (
-        "Snippet24-News/3.0 "
+        "Snippet24-News/5.0 "
         "(+https://snippet24.in)"
     ),
     "Accept": (
         "application/rss+xml, application/atom+xml, "
-        "application/xml, text/xml, */*"
+        "application/xml, text/xml, text/html, */*"
     ),
 }
 
@@ -73,7 +54,16 @@ CATEGORY_ORDER = [
 
 
 # ============================================================
-# OFFICIAL / PUBLIC RSS SOURCES
+# OFFICIAL / PUBLIC SOURCES
+# ============================================================
+#
+# IMPORTANT:
+# A public RSS feed is not automatically copyright-free.
+# Snippet24 keeps the original source URL and attribution,
+# creates its own headline/summary treatment, and uses an
+# AI-generated visual rather than copying publisher photos.
+#
+# This reduces risk but cannot guarantee zero legal risk.
 # ============================================================
 
 RSS_SOURCES = {
@@ -167,16 +157,24 @@ RSS_SOURCES = {
             "FIFA",
             "https://www.fifa.com/api/v3/rss-feeds/news?language=en"
         ),
+        (
+            "International Olympic Committee",
+            "https://olympics.com/ioc/news/rss"
+        ),
     ],
 
     "Entertainment": [
+        (
+            "National Endowment for the Arts",
+            "https://www.arts.gov/news/feed"
+        ),
         (
             "National Endowment for the Humanities",
             "https://www.neh.gov/news/feed"
         ),
         (
-            "Library of Congress",
-            "https://www.loc.gov/rss/news.xml"
+            "Smithsonian",
+            "https://www.si.edu/rss"
         ),
     ],
 
@@ -190,38 +188,33 @@ RSS_SOURCES = {
             "https://news.un.org/feed/subscribe/en/news/all/rss.xml"
         ),
         (
-            "NASA JPL",
-            "https://www.jpl.nasa.gov/feeds/news/"
+            "NASA",
+            "https://www.nasa.gov/news-release/feed/"
         ),
     ],
 }
 
+
 # ============================================================
-# SOURCE TYPE
+# APPROVED PUBLISHERS
 # ============================================================
 
-def source_type(publisher):
-
-    official = {
-        "Press Information Bureau",
-        "United Nations",
-        "World Health Organization",
-        "European Commission",
-        "European Central Bank",
-        "International Monetary Fund",
-        "NASA",
-        "NASA JPL",
-        "NASA CNEOS",
-        "National Endowment for the Humanities",
-        "Library of Congress",
-        "FIFA",
-    }
-
-    return (
-        "official_public"
-        if publisher in official
-        else "unknown"
-    )
+APPROVED_PUBLISHERS = {
+    "Press Information Bureau",
+    "United Nations",
+    "World Health Organization",
+    "European Commission",
+    "European Central Bank",
+    "International Monetary Fund",
+    "NASA",
+    "NASA JPL",
+    "NASA CNEOS",
+    "FIFA",
+    "International Olympic Committee",
+    "National Endowment for the Arts",
+    "National Endowment for the Humanities",
+    "Smithsonian",
+}
 
 
 # ============================================================
@@ -229,7 +222,6 @@ def source_type(publisher):
 # ============================================================
 
 def clean_text(value):
-
     if not value:
         return ""
 
@@ -241,10 +233,7 @@ def clean_text(value):
         value
     )
 
-    value = value.replace(
-        "\xa0",
-        " "
-    )
+    value = value.replace("\xa0", " ")
 
     return re.sub(
         r"\s+",
@@ -254,13 +243,10 @@ def clean_text(value):
 
 
 def normalize_category(category):
-
     if not category:
         return "World"
 
-    value = clean_text(
-        category
-    ).lower()
+    value = clean_text(category).lower()
 
     if value in {
         "technology",
@@ -272,7 +258,6 @@ def normalize_category(category):
         return "Technology & AI"
 
     for known in CATEGORY_ORDER:
-
         if value == known.lower():
             return known
 
@@ -280,34 +265,28 @@ def normalize_category(category):
 
 
 def normalize_url(url):
-
     if not url:
         return ""
 
     url = str(url).strip()
 
     try:
-
         parsed = urlparse(url)
 
-        if parsed.scheme not in (
-            "http",
-            "https"
-        ):
+        if parsed.scheme not in ("http", "https"):
+            return ""
+
+        if not parsed.netloc:
             return ""
 
         return url
 
     except Exception:
-
         return ""
 
 
 def normalize_title(title):
-
-    title = clean_text(
-        title
-    ).lower()
+    title = clean_text(title).lower()
 
     title = re.sub(
         r"[^a-z0-9]+",
@@ -322,12 +301,7 @@ def normalize_title(title):
     ).strip()
 
 
-def make_id(
-    category,
-    title,
-    url
-):
-
+def make_id(category, title, url):
     raw = (
         f"{category}|"
         f"{normalize_title(title)}|"
@@ -339,18 +313,62 @@ def make_id(
     ).hexdigest()[:20]
 
 
+def article_timestamp(article):
+    value = article.get(
+        "published_at",
+        ""
+    )
+
+    try:
+        return datetime.fromisoformat(
+            value.replace("Z", "+00:00")
+        )
+
+    except Exception:
+        return datetime.min.replace(
+            tzinfo=timezone.utc
+        )
+
+
+# ============================================================
+# CATEGORY COUNTS
+# ============================================================
+
+def category_counts(articles):
+    counts = {
+        category: 0
+        for category in CATEGORY_ORDER
+    }
+
+    for article in articles:
+
+        category = normalize_category(
+            article.get("category")
+        )
+
+        if category in counts:
+            counts[category] += 1
+
+    return counts
+
+
+# ============================================================
+# SOURCE TYPE
+# ============================================================
+
+def source_type(publisher):
+    if publisher in APPROVED_PUBLISHERS:
+        return "official_public"
+
+    return "unknown"
+
+
 # ============================================================
 # TITLE CLEANING
 # ============================================================
 
-def remove_publisher_from_title(
-    title,
-    publisher
-):
-
-    title = clean_text(
-        title
-    )
+def remove_publisher_from_title(title, publisher):
+    title = clean_text(title)
 
     publishers = [
         publisher,
@@ -362,9 +380,13 @@ def remove_publisher_from_title(
         "European Central Bank",
         "International Monetary Fund",
         "NASA",
+        "NASA JPL",
+        "NASA CNEOS",
         "FIFA",
-        "Library of Congress",
+        "International Olympic Committee",
+        "National Endowment for the Arts",
         "National Endowment for the Humanities",
+        "Smithsonian",
     ]
 
     for name in publishers:
@@ -394,24 +416,15 @@ def remove_publisher_from_title(
 # SUMMARY
 # ============================================================
 
-def remove_title_repetition(
-    summary,
-    title
-):
-
-    summary = clean_text(
-        summary
-    )
+def remove_title_repetition(summary, title):
+    summary = clean_text(summary)
 
     if not summary:
         return ""
 
     if title:
-
         summary = re.sub(
-            re.escape(
-                clean_text(title)
-            ),
+            re.escape(clean_text(title)),
             "",
             summary,
             flags=re.IGNORECASE
@@ -424,14 +437,8 @@ def remove_title_repetition(
     ).strip()
 
 
-def make_summary(
-    title,
-    description
-):
-
-    description = clean_text(
-        description
-    )
+def make_summary(title, description):
+    description = clean_text(description)
 
     description = remove_title_repetition(
         description,
@@ -453,7 +460,6 @@ def make_summary(
     ).strip()
 
     if len(description) > 420:
-
         description = (
             description[:417]
             .rsplit(" ", 1)[0]
@@ -475,53 +481,37 @@ def make_summary(
 # ============================================================
 
 def parse_date(value):
-
     if not value:
+        return datetime.now(timezone.utc)
 
-        return datetime.now(
-            timezone.utc
-        )
-
-    value = value.strip()
+    value = clean_text(value)
 
     try:
-
         return parsedate_to_datetime(
             value
-        ).astimezone(
-            timezone.utc
-        )
+        ).astimezone(timezone.utc)
 
     except Exception:
         pass
 
     try:
-
         return datetime.fromisoformat(
-            value.replace(
-                "Z",
-                "+00:00"
-            )
-        ).astimezone(
-            timezone.utc
-        )
+            value.replace("Z", "+00:00")
+        ).astimezone(timezone.utc)
 
     except Exception:
-
-        return datetime.now(
-            timezone.utc
-        )
+        return datetime.now(timezone.utc)
 
 
 # ============================================================
 # XML HELPERS
 # ============================================================
 
-def find_child_text(
-    element,
-    names
-):
+def tag_name(element):
+    return element.tag.split("}")[-1].lower()
 
+
+def find_child_text(element, names):
     names = {
         name.lower()
         for name in names
@@ -529,11 +519,7 @@ def find_child_text(
 
     for child in list(element):
 
-        tag = child.tag.split(
-            "}"
-        )[-1].lower()
-
-        if tag in names:
+        if tag_name(child) in names:
 
             return clean_text(
                 "".join(
@@ -545,25 +531,17 @@ def find_child_text(
 
 
 def find_link(element):
+    links = []
 
     for child in list(element):
 
-        tag = child.tag.split(
-            "}"
-        )[-1].lower()
-
-        if tag != "link":
+        if tag_name(child) != "link":
             continue
 
-        href = child.attrib.get(
-            "href"
-        )
+        href = child.attrib.get("href")
 
         if href:
-
-            return normalize_url(
-                href
-            )
+            links.append(href)
 
         text = clean_text(
             "".join(
@@ -572,23 +550,22 @@ def find_link(element):
         )
 
         if text:
+            links.append(text)
 
-            return normalize_url(
-                text
-            )
+    for link in links:
+        normalized = normalize_url(link)
+
+        if normalized:
+            return normalized
 
     return ""
 
 
 # ============================================================
-# AI VISUAL
+# AI IMAGE
 # ============================================================
 
-def make_ai_image(
-    title,
-    category
-):
-
+def make_ai_image(title, category):
     prompt = (
         "Professional editorial news illustration "
         "for a modern digital news publication. "
@@ -606,19 +583,14 @@ def make_ai_image(
                 category
                 + "|"
                 + title
-            ).encode(
-                "utf-8"
-            )
+            ).encode("utf-8")
         ).hexdigest()[:8],
         16
     )
 
     return (
         "https://image.pollinations.ai/prompt/"
-        + quote(
-            prompt,
-            safe=""
-        )
+        + quote(prompt, safe="")
         + "?width=1200"
         + "&height=675"
         + "&nologo=true"
@@ -630,39 +602,24 @@ def make_ai_image(
 # RSS PARSER
 # ============================================================
 
-def parse_feed(
-    xml_text,
-    publisher,
-    category
-):
-
+def parse_feed(xml_text, publisher, category):
     articles = []
 
-    try:
+    if source_type(publisher) != "official_public":
+        return articles
 
-        root = ET.fromstring(
-            xml_text
-        )
+    try:
+        root = ET.fromstring(xml_text)
 
     except Exception as exc:
-
         print(
-            f"  XML ERROR: "
-            f"{publisher}: {exc}"
+            f"  XML ERROR: {publisher}: {exc}"
         )
-
         return articles
 
     for item in root.iter():
 
-        tag = item.tag.split(
-            "}"
-        )[-1].lower()
-
-        if tag not in (
-            "item",
-            "entry"
-        ):
+        if tag_name(item) not in ("item", "entry"):
             continue
 
         title = find_child_text(
@@ -687,13 +644,11 @@ def parse_feed(
                 "description",
                 "summary",
                 "content",
-                "encoded"
+                "encoded",
             ]
         )
 
-        link = find_link(
-            item
-        )
+        link = find_link(item)
 
         if not link:
             continue
@@ -705,70 +660,40 @@ def parse_feed(
                 "published",
                 "updated",
                 "date",
-                "created"
+                "created",
             ]
         )
 
-        date_obj = parse_date(
-            published
-        )
+        date_obj = parse_date(published)
 
-        normalized_category = (
-            normalize_category(
-                category
-            )
+        normalized_category = normalize_category(
+            category
         )
 
         article = {
-
             "id": make_id(
                 normalized_category,
                 title,
                 link
             ),
-
-            "category":
-                normalized_category,
-
-            "headline":
+            "category": normalized_category,
+            "headline": title,
+            "summary": make_summary(
                 title,
-
-            "summary":
-                make_summary(
-                    title,
-                    description
-                ),
-
-            "publisher":
-                clean_text(
-                    publisher
-                ),
-
-            "source_type":
-                source_type(
-                    publisher
-                ),
-
-            "published_at":
-                date_obj.isoformat(),
-
-            "source_url":
-                link,
-
-            "image_url":
-                make_ai_image(
-                    title,
-                    normalized_category
-                ),
-
-            "image_type":
-                "ai_generated"
-
+                description
+            ),
+            "publisher": publisher,
+            "source_type": "official_public",
+            "published_at": date_obj.isoformat(),
+            "source_url": link,
+            "image_url": make_ai_image(
+                title,
+                normalized_category
+            ),
+            "image_type": "ai_generated",
         }
 
-        articles.append(
-            article
-        )
+        articles.append(article)
 
     return articles
 
@@ -777,18 +702,17 @@ def parse_feed(
 # FETCH SOURCE
 # ============================================================
 
-def fetch_source(
-    publisher,
-    url,
-    category
-):
-
+def fetch_source(publisher, url, category):
     print()
-    print(
-        f"Fetching: "
-        f"{publisher}"
-    )
+    print(f"Fetching: {publisher}")
+    print(f"  URL: {url}")
 
+    if publisher not in APPROVED_PUBLISHERS:
+        print(
+            f"  -> BLOCKED: {publisher} "
+            f"is not on the official/public allow-list."
+        )
+        return []
 
     try:
 
@@ -807,8 +731,7 @@ def fetch_source(
         )
 
         print(
-            f"  -> "
-            f"{len(articles)} stories"
+            f"  -> {len(articles)} stories"
         )
 
         return articles
@@ -816,40 +739,17 @@ def fetch_source(
     except Exception as exc:
 
         print(
-            f"  -> FAILED: "
-            f"{publisher}: {exc}"
+            f"  -> FAILED: {publisher}: {exc}"
         )
 
         return []
 
 
 # ============================================================
-# LOAD EXISTING ARTICLES
+# LOAD PREVIOUS FEED
 # ============================================================
 
 def load_existing_articles():
-
-    # IMPORTANT:
-    # Never carry old private-publisher stories into the
-    # official/public-source edition. This prevents an old
-    # articles.json from keeping BBC, Reuters, newspaper,
-    # or other private-source stories alive.
-
-    allowed_publishers = {
-        "Press Information Bureau",
-        "United Nations",
-        "World Health Organization",
-        "European Commission",
-        "European Central Bank",
-        "International Monetary Fund",
-        "NASA",
-        "NASA JPL",
-        "NASA CNEOS",
-        "National Endowment for the Humanities",
-        "Library of Congress",
-        "FIFA",
-    }
-
     try:
 
         with open(
@@ -860,13 +760,16 @@ def load_existing_articles():
 
             data = json.load(file)
 
-        articles = data.get("articles", [])
+        articles = data.get(
+            "articles",
+            []
+        )
 
         if not isinstance(articles, list):
             return []
 
         valid = []
-        removed_private = 0
+        removed = 0
 
         for article in articles:
 
@@ -874,19 +777,30 @@ def load_existing_articles():
                 continue
 
             publisher = clean_text(
-                article.get("publisher", "")
+                article.get(
+                    "publisher",
+                    ""
+                )
             )
 
-            if publisher not in allowed_publishers:
-                removed_private += 1
+            # Critical safety rule:
+            # old private-source articles never return.
+            if publisher not in APPROVED_PUBLISHERS:
+                removed += 1
                 continue
 
             headline = clean_text(
-                article.get("headline")
+                article.get(
+                    "headline",
+                    ""
+                )
             )
 
             url = normalize_url(
-                article.get("source_url")
+                article.get(
+                    "source_url",
+                    ""
+                )
             )
 
             if not headline or not url:
@@ -903,12 +817,18 @@ def load_existing_articles():
                 article.get("summary", "")
             )
 
+            article["publisher"] = publisher
+            article["source_type"] = "official_public"
             article["source_url"] = url
 
-            if not article.get("image_url") or (
-                "pollinations.ai"
-                not in article.get("image_url", "")
-            ):
+            if not article.get("published_at"):
+                article["published_at"] = (
+                    datetime.now(
+                        timezone.utc
+                    ).isoformat()
+                )
+
+            if not article.get("image_url"):
                 article["image_url"] = make_ai_image(
                     headline,
                     article["category"]
@@ -916,33 +836,33 @@ def load_existing_articles():
 
             article["image_type"] = "ai_generated"
 
-            if not article.get("id"):
-                article["id"] = make_id(
-                    article["category"],
-                    headline,
-                    url
-                )
+            article["id"] = article.get(
+                "id"
+            ) or make_id(
+                article["category"],
+                headline,
+                url
+            )
 
             valid.append(article)
 
         print(
-            f"Old stories removed by official-source policy: "
-            f"{removed_private}"
+            f"Old private/non-approved stories removed: "
+            f"{removed}"
         )
 
         return valid
 
     except FileNotFoundError:
-
-        print("No previous articles.json found.")
+        print(
+            "No previous articles.json found."
+        )
         return []
 
     except Exception as exc:
-
         print(
             f"Could not read previous articles.json: {exc}"
         )
-
         return []
 
 
@@ -950,112 +870,99 @@ def load_existing_articles():
 # DEDUPLICATION
 # ============================================================
 
-def deduplicate(
-    articles
-):
-
+def deduplicate(articles):
     by_url = {}
 
     for article in articles:
 
-        if not isinstance(
-            article,
-            dict
-        ):
+        if not isinstance(article, dict):
             continue
 
-        title = clean_text(
-            article.get(
-                "headline"
-            )
-        )
+        try:
 
-        url = normalize_url(
-            article.get(
-                "source_url"
-            )
-        )
-
-        if not title or not url:
-            continue
-
-        key = url.lower()
-
-        if key not in by_url:
-
-            by_url[
-                key
-            ] = article
-
-        else:
-
-            old_date = by_url[
-                key
-            ].get(
-                "published_at",
-                ""
+            publisher = clean_text(
+                article.get(
+                    "publisher",
+                    ""
+                )
             )
 
-            new_date = article.get(
-                "published_at",
-                ""
+            if publisher not in APPROVED_PUBLISHERS:
+                continue
+
+            title = clean_text(
+                article.get(
+                    "headline",
+                    ""
+                )
             )
 
-            if new_date > old_date:
+            url = normalize_url(
+                article.get(
+                    "source_url",
+                    ""
+                )
+            )
 
-                by_url[
-                    key
-                ] = article
+            if not title or not url:
+                continue
+
+            key = url.lower().strip()
+
+            if key not in by_url:
+
+                by_url[key] = article
+
+            else:
+
+                if (
+                    article_timestamp(article)
+                    >
+                    article_timestamp(by_url[key])
+                ):
+                    by_url[key] = article
+
+        except Exception as exc:
+
+            print(
+                f"  Skipping invalid article: {exc}"
+            )
 
     by_title = {}
 
     for article in by_url.values():
 
-        key = normalize_title(
-            article.get(
-                "headline",
-                ""
+        try:
+
+            key = normalize_title(
+                article.get(
+                    "headline",
+                    ""
+                )
             )
-        )
 
-        if key and key not in by_title:
+            if not key:
+                continue
 
-            by_title[
-                key
-            ] = article
+            if key not in by_title:
+                by_title[key] = article
+
+            elif (
+                article_timestamp(article)
+                >
+                article_timestamp(by_title[key])
+            ):
+                by_title[key] = article
+
+        except Exception as exc:
+
+            print(
+                f"  Skipping title-check error: {exc}"
+            )
 
     return list(
         by_title.values()
     )
-
-
-# ============================================================
-# DATE SORT
-# ============================================================
-
-def article_timestamp(
-    article
-):
-
-    value = article.get(
-        "published_at",
-        ""
-    )
-
-    try:
-
-        return datetime.fromisoformat(
-            value.replace(
-                "Z",
-                "+00:00"
-            )
-        )
-
-    except Exception:
-
-        return datetime.min.replace(
-            tzinfo=timezone.utc
-        )
 
 
 # ============================================================
@@ -1064,21 +971,14 @@ def article_timestamp(
 
 def build_feed():
 
+    print("=" * 70)
     print(
-        "=" * 70
+        "SNIPPET24 NEWS CURATOR 5.0"
     )
-
-    print(
-        "SNIPPET24 CURATOR 3.0"
-    )
-
     print(
         "OFFICIAL / PUBLIC SOURCES ONLY"
     )
-
-    print(
-        "=" * 70
-    )
+    print("=" * 70)
 
     previous_articles = (
         load_existing_articles()
@@ -1095,18 +995,18 @@ def build_feed():
     successful_sources = 0
     failed_sources = 0
 
+    # --------------------------------------------------------
+    # FETCH
+    # --------------------------------------------------------
+
     for category in CATEGORY_ORDER:
 
         print()
-        print(
-            f"### {category}"
-        )
+        print(f"### {category}")
 
-        for publisher, url in (
-            RSS_SOURCES.get(
-                category,
-                []
-            )
+        for publisher, url in RSS_SOURCES.get(
+            category,
+            []
         ):
 
             found = fetch_source(
@@ -1116,15 +1016,9 @@ def build_feed():
             )
 
             if found:
-
                 successful_sources += 1
-
-                fresh_articles.extend(
-                    found
-                )
-
+                fresh_articles.extend(found)
             else:
-
                 failed_sources += 1
 
             time.sleep(
@@ -1137,6 +1031,10 @@ def build_feed():
         f"{len(fresh_articles)}"
     )
 
+    # --------------------------------------------------------
+    # COMBINE + CLEAN
+    # --------------------------------------------------------
+
     combined = (
         fresh_articles
         + previous_articles
@@ -1145,6 +1043,15 @@ def build_feed():
     combined = deduplicate(
         combined
     )
+
+    print(
+        f"After deduplication: "
+        f"{len(combined)}"
+    )
+
+    # --------------------------------------------------------
+    # NEWEST FIRST
+    # --------------------------------------------------------
 
     combined.sort(
         key=article_timestamp,
@@ -1155,27 +1062,30 @@ def build_feed():
         :TARGET_STORIES
     ]
 
-    counts = {
-        category: 0
-        for category in CATEGORY_ORDER
-    }
+    # --------------------------------------------------------
+    # FINAL SAFETY FILTER
+    # --------------------------------------------------------
 
-    for article in final_articles:
+    final_articles = [
+        article
+        for article in final_articles
+        if article.get("publisher")
+        in APPROVED_PUBLISHERS
+    ]
 
-        category = normalize_category(
-            article.get(
-                "category"
-            )
-        )
+    # --------------------------------------------------------
+    # CATEGORY COUNTS
+    # --------------------------------------------------------
 
-        if category in counts:
+    counts = category_counts(
+        final_articles
+    )
 
-            counts[
-                category
-            ] += 1
+    # --------------------------------------------------------
+    # OUTPUT
+    # --------------------------------------------------------
 
     output = {
-
         "curator_version":
             CURATOR_VERSION,
 
@@ -1197,47 +1107,19 @@ def build_feed():
             "official_public_sources_only",
 
         "copyright_note":
-            "Headlines and summaries are Snippet24 editorial rewrites. "
-            "Original source URLs and attribution are retained. "
-            "Source-specific terms still apply.",
+            (
+                "Headlines and summaries are Snippet24 "
+                "editorial rewrites. Original source URLs "
+                "and attribution are retained. Source-"
+                "specific terms still apply."
+            ),
 
         "categories":
             counts,
 
         "articles":
-            final_articles
-
+            final_articles,
     }
-
-    # Final safety check: every output story must come from
-    # the approved official/public publisher list.
-    approved = {
-        "Press Information Bureau",
-        "United Nations",
-        "World Health Organization",
-        "European Commission",
-        "European Central Bank",
-        "International Monetary Fund",
-        "NASA",
-        "NASA JPL",
-        "NASA CNEOS",
-        "National Endowment for the Humanities",
-        "Library of Congress",
-        "FIFA",
-    }
-
-    final_articles = [
-        article
-        for article in final_articles
-        if article.get("publisher") in approved
-    ]
-
-    # Recalculate totals after the safety filter.
-    counts = category_counts(final_articles)
-
-    output["total"] = len(final_articles)
-    output["categories"] = counts
-    output["articles"] = final_articles
 
     with open(
         OUTPUT_FILE,
@@ -1252,19 +1134,19 @@ def build_feed():
             indent=2
         )
 
+    # --------------------------------------------------------
+    # REPORT
+    # --------------------------------------------------------
+
     print()
-    print(
-        "=" * 70
-    )
+    print("=" * 70)
 
     print(
         f"TOTAL STORIES: "
         f"{len(final_articles)}"
     )
 
-    print(
-        "=" * 70
-    )
+    print("=" * 70)
 
     for category in CATEGORY_ORDER:
 
@@ -1284,35 +1166,32 @@ def build_feed():
         f"{failed_sources}"
     )
 
+    print()
+
     if len(final_articles) == 0:
 
-        print()
         print(
-            "ERROR: No official/public "
-            "stories were collected."
+            "ERROR: No official/public stories "
+            "are available."
         )
 
         return 1
 
     if len(final_articles) < MINIMUM_STORIES:
 
-        print()
         print(
-            "WARNING: Fewer than 50 "
-            "official/public stories are available."
+            "WARNING: Fewer than 50 official/public "
+            "stories are available."
         )
 
         print(
-            "The curator will NOT fabricate "
-            "stories just to reach 50."
+            "The curator will NOT fabricate stories."
         )
 
     else:
 
-        print()
         print(
-            "SUCCESS: Minimum 50-story "
-            "target reached."
+            "SUCCESS: Minimum 50-story target reached."
         )
 
     print()
@@ -1328,7 +1207,6 @@ def build_feed():
 # ============================================================
 
 if __name__ == "__main__":
-
     raise SystemExit(
         build_feed()
     )
