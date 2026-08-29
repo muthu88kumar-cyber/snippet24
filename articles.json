@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T20:04:34.123256+00:00",
-  "total": 1363,
+  "updated_at": "2026-08-29T20:34:22.432523+00:00",
+  "total": 1373,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 109,
-    "India": 436,
+    "World": 111,
+    "India": 437,
     "Business": 169,
     "Technology & AI": 100,
-    "Sports": 108,
-    "Entertainment": 292,
+    "Sports": 114,
+    "Entertainment": 293,
     "Lifestyle": 149
   },
   "articles": [
@@ -4455,6 +4455,17 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a624caffd56089a3a0f6",
+      "category": "India",
+      "headline": "AI in healthcare is here to stay, but doctors must remain the final decision-makers: experts",
+      "summary": "Dr. Jayanthi said AI has become an important part of healthcare and medical education, and doctors and institutions must adapt to the AI era.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T20:22:53+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/ai-in-healthcare-is-here-to-stay-but-doctors-must-remain-the-final-decision-makers-experts/article71404932.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AI%20in%20healthcare%20is%20here%20to%20stay%2C%20but%20doctors%20must%20remain%20the%20final%20decision-makers%3A%20experts.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1650579323",
       "image_type": "ai_generated"
     },
     {
@@ -9408,6 +9419,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "1c9127ac69e6b3f69d9a",
+      "category": "Entertainment",
+      "headline": "Shailene Woodley Recalls Her “Dream” Role as Mary Jane Being Cut From ‘The Amazing Spider-Man 2’",
+      "summary": "\"Spider-Man's my favorite superhero; Mary Jane was my favorite character growing up. So, when I got it, I was like, 'This is so exciting!'\" the actress said before adding that she and Andrew Garfield filmed three scenes together that didn't make it into the 2014 movie.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T20:23:17+00:00",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/shailene-woodley-recalls-mary-jane-cut-amazing-spider-man-2-1236684920/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shailene%20Woodley%20Recalls%20Her%20%E2%80%9CDream%E2%80%9D%20Role%20as%20Mary%20Jane%20Being%20Cut%20From%20%E2%80%98The%20Amazing%20Spider-Man%202%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2233938188",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c2620132e24a83dbcfa8",
       "category": "Entertainment",
       "headline": "Acclaimed, Controversial Play ‘Downstate’ Gets Broadway Marquee; Scott Rudin Reportedly Producing With Joe Mantello Directing",
@@ -11113,12 +11135,67 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ef7d5e01ae9dd6e8bbe8",
+      "category": "Sports",
+      "headline": "Man City open talks with Liverpool over Gakpo",
+      "summary": "Manchester City open talks with Liverpool about signing Netherlands winger Cody Gakpo.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T20:17:18+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0z4m2mpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Man%20City%20open%20talks%20with%20Liverpool%20over%20Gakpo.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1369466752",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "20614b3eacf7e805fd0f",
+      "category": "World",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T20:13:16+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fff7a7172197c50e128c",
+      "category": "Sports",
+      "headline": "Newcastle showed 'full commitment' in Spurs win - Jaissle",
+      "summary": "Newcastle manager Matthias Jaissle says their 2-0 away win is \"well deserved\" and praises his side's decision making to secure three points against Tottenham in the Premier League.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T20:02:44+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/c3d7x1n93j2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Newcastle%20showed%20%27full%20commitment%27%20in%20Spurs%20win%20-%20Jaissle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=948734837",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d27015c9febe76ad99b9",
+      "category": "World",
+      "headline": "August reveals Australians’ big appetite for weight-loss drugs, love for ‘dupe’ brands and an accelerating EV uptake",
+      "summary": "Reporting season shows how consumers are responding to cost of living pressures and how retailers are responding Get our breaking news email , free app or daily news podcast Australians are buying less pizza but more weight-loss drugs . They love “dupes” but don’t enjoy writing letters. Here are five key takeaways from the August reporting season that show what consumers are buying as cost of living pressures...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T20:00:38+00:00",
+      "source_url": "https://www.theguardian.com/business/2026/aug/30/australians-buying-less-pizza-more-weight-loss-drugs-consumer-report",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20August%20reveals%20Australians%E2%80%99%20big%20appetite%20for%20weight-loss%20drugs%2C%20love%20for%20%E2%80%98dupe%E2%80%99%20brands%20and%20an%20accelerating%20EV%20uptake.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4091987762",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "25ac1c6059efce97fbf5",
+      "category": "World",
+      "headline": "Tennessee governor says he backs airport name change to honor Dolly Parton",
+      "summary": "Bill Lee says he favors proposal to rename Nashville’s international airport after legendary country singer Bill Lee, the Tennessee governor, on Friday said he favored a proposal to rename Nashville’s international airport after legendary country singer Dolly Parton , who died three days earlier at age 80. In a statement , Lee said he and the managers of the airport in Tennessee’s capital city – where Parton...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T19:57:55+00:00",
+      "source_url": "https://www.theguardian.com/music/2026/aug/29/tennessee-dolly-parton-airport-name-change",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Tennessee%20governor%20says%20he%20backs%20airport%20name%20change%20to%20honor%20Dolly%20Parton.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2940046955",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7b87b8e93c0765b83f71",
       "category": "World",
       "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
       "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T19:54:24+00:00",
+      "published_at": "2026-08-29T19:57:36+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
@@ -11132,6 +11209,17 @@
       "published_at": "2026-08-29T19:52:38+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/29/jose-carlos-hoyoz-munoz-los-angeles-police-death",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20LAPD%20releases%20footage%20of%20death%20of%20man%20whom%20police%20handcuffed%20and%20beat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2303387407",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "052ed183eb59a58ef8f2",
+      "category": "Sports",
+      "headline": "Wakefield secure play-off place with win over York",
+      "summary": "Second-half tries by Jayden Myers, Max Jowitt and Lachlan Walmsley help Wakefield Trinity beat York Knights to move fourth in Super League.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:48:02+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/c8e3l16xexzo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Wakefield%20secure%20play-off%20place%20with%20win%20over%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2563897870",
       "image_type": "ai_generated"
     },
     {
@@ -11157,6 +11245,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "9a3c88d3dca1d3203ea8",
+      "category": "Sports",
+      "headline": "Are Charlton ready to challenge? - Sam Parkin's EFL takeaways",
+      "summary": "BBC Final Score pundit Sam Parkin looks at the weekend's talking points in the EFL, including a perfect start for Charlton Athletic.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:43:28+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c305n87mdjro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Are%20Charlton%20ready%20to%20challenge%3F%20-%20Sam%20Parkin%27s%20EFL%20takeaways.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3152553440",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ab8c2ed60144b5c9edcb",
       "category": "Sports",
       "headline": "In-form quartet all win away to snap at heels of leaders Coleraine",
@@ -11165,6 +11264,28 @@
       "published_at": "2026-08-29T19:41:04+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c8d3qg4g87qo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20In-form%20quartet%20all%20win%20away%20to%20snap%20at%20heels%20of%20leaders%20Coleraine.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=862346442",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9c65219215abd2ac1d6f",
+      "category": "Sports",
+      "headline": "Warrington retain top-two hopes with win at Hull FC",
+      "summary": "Warrington hold off a spirited late Hull FC fightback to secure their sixth successive win and keep a top",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:32:50+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rugby-league/articles/cly523m0eyyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Warrington%20retain%20top-two%20hopes%20with%20win%20at%20Hull%20FC.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3879475252",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e013c75179679e47dbcc",
+      "category": "Sports",
+      "headline": "Decision to curtail play at Lord's 'a joke' - Hussain",
+      "summary": "The decision to abandon play an hour early after a rain-hit third day of England’s second Test against Pakistan is criticised by former captain Nasser Hussain and fans.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:31:13+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/c1l6njn2vm8o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Decision%20to%20curtail%20play%20at%20Lord%27s%20%27a%20joke%27%20-%20Hussain.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3209663556",
       "image_type": "ai_generated"
     },
     {
@@ -11583,17 +11704,6 @@
       "published_at": "2026-08-29T15:49:49+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cgjq65nvw38o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%20trust%20isn%27t%20there%27%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4008090306",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "20614b3eacf7e805fd0f",
-      "category": "World",
-      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
-      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T15:27:56+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
       "image_type": "ai_generated"
     },
     {
