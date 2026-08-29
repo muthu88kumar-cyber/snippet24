@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T13:34:16.836501+00:00",
-  "total": 1091,
+  "updated_at": "2026-08-29T14:04:25.635147+00:00",
+  "total": 1121,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 93,
-    "India": 258,
+    "World": 96,
+    "India": 280,
     "Business": 165,
-    "Technology & AI": 91,
-    "Sports": 75,
-    "Entertainment": 265,
-    "Lifestyle": 144
+    "Technology & AI": 92,
+    "Sports": 76,
+    "Entertainment": 267,
+    "Lifestyle": 145
   },
   "articles": [
     {
@@ -553,14 +553,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "fa5efce75bd9b08be8d5",
+      "id": "b418f64a19335cc48068",
       "category": "India",
-      "headline": "PM’s SCO visit is loaded with expectations on BRICS Summit and UNSC election",
-      "summary": "PM Modi’s visit will focus on strengthening ties with Iran, Tajikistan, and other Central Asian countries; the agenda will include engagements aimed at the upcoming BRICS Summit in September, the two-year UN Security Council term of 2028-2029, and planning for the long-pending India-Central Asia Summit, which has not met since 2022",
+      "headline": "PM Modi’s SCO visit is loaded with expectations on BRICS Summit and UNSC election",
+      "summary": "PM’s visit will focus on strengthening ties with Iran, Tajikistan, and other Central Asian countries; the agenda will include engagements aimed at the upcoming BRICS Summit in September, the two-year UN Security Council term of 2028-2029, and planning for the long-pending India-Central Asia Summit, which has not met since 2022",
       "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:28:29+00:00",
+      "published_at": "2026-08-29T13:59:16+00:00",
       "source_url": "https://www.thehindu.com/news/national/pms-sco-visit-is-loaded-with-expectations-on-brics-summit-and-unsc-election/article71404574.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%E2%80%99s%20SCO%20visit%20is%20loaded%20with%20expectations%20on%20BRICS%20Summit%20and%20UNSC%20election.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2656651725",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%E2%80%99s%20SCO%20visit%20is%20loaded%20with%20expectations%20on%20BRICS%20Summit%20and%20UNSC%20election.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3976845841",
       "image_type": "ai_generated"
     },
     {
@@ -583,6 +583,17 @@
       "published_at": "2026-08-29T12:52:44+00:00",
       "source_url": "https://www.thehindu.com/news/national/justice-nagarathna-says-not-good-sign-if-bar-council-loses-respect-after-bci-nalsar-row/article71404571.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Days%20after%20BCI%E2%80%99s%20NALSAR%20about-turn%2C%20Justice%20Nagarathna%20says%20not%20good%20sign%20if%20Bar%20Council%20loses%20respect.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2192224688",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ddf62556d12c1ee0e7b2",
+      "category": "Business",
+      "headline": "HDFC Bank CEO Sashidhar Jagdishan to step down after term ends in October",
+      "summary": "HDFC Bank CEO Sashidhar Jagdishan leaves India's largest private lender amid a crisis, and nearly 30 years after he first joined the company as a manager.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T12:48:46+00:00",
+      "source_url": "https://www.livemint.com/companies/news/hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-after-term-ends-in-october-11788007166302.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20HDFC%20Bank%20CEO%20Sashidhar%20Jagdishan%20to%20step%20down%20after%20term%20ends%20in%20October.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2464983374",
       "image_type": "ai_generated"
     },
     {
@@ -1664,14 +1675,91 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "10459d67d6b1ef8078a0",
+      "category": "India",
+      "headline": "Circular on name change from ‘Kerala’ to ‘Keralam’ calls for avoiding needless financial burden to State govt.",
+      "summary": "Chief Secretary Bishwanath Sinha directs government departments and agencies to implement the State’s official name change on printed stationery, signages and boards in a phased manner",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:59:26+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/circular-on-name-change-from-kerala-to-keralam-calls-for-avoiding-needless-financial-burden-to-state-govt/article71404930.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Circular%20on%20name%20change%20from%20%E2%80%98Kerala%E2%80%99%20to%20%E2%80%98Keralam%E2%80%99%20calls%20for%20avoiding%20needless%20financial%20burden%20to%20State%20govt..%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1533806054",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "06471d3e3bfe7915f8d5",
+      "category": "India",
+      "headline": "Govt. to ensure equal priority for all medical systems: Kerala Health Minister",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:55:42+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/govt-to-ensure-equal-priority-for-all-medical-systems-kerala-health-minister/article71404781.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Govt.%20to%20ensure%20equal%20priority%20for%20all%20medical%20systems%3A%20Kerala%20Health%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2585980889",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c80741d87a661714f296",
+      "category": "India",
+      "headline": "Mysuru among five cities to be developed to ease pressure on Bengaluru: CM",
+      "summary": "Focus on jobs, education, healthcare and infrastructure; special development plan for Mysuru, says D.K Shivakumar",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:50:59+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/mysuru-among-five-cities-to-be-developed-to-ease-pressure-on-bengaluru-cm/article71404589.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Mysuru%20among%20five%20cities%20to%20be%20developed%20to%20ease%20pressure%20on%20Bengaluru%3A%20CM.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3842451544",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7f7b5fd9360613518d91",
+      "category": "India",
+      "headline": "Safety review committee to visit Mullaperiyar dam on September 1",
+      "summary": "Minister says Keralam has appointed a new legal team to handle Mullaperiyar",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:50:42+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/safety-review-committee-to-visit-mullaperiyar-dam-on-september-1/article71404658.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Safety%20review%20committee%20to%20visit%20Mullaperiyar%20dam%20on%20September%201.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1231213205",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "95d2b11aa03f334eda1d",
+      "category": "India",
+      "headline": "Bengaluru: Miraculous escape for bike rider after tipper runs over bike; truck driver arrested",
+      "summary": "Fortunately, the bike rider had fallen away from the motorcycle and escaped with only minor injuries.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:49:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/bengaluru-miraculous-escape-for-bike-rider-after-tipper-runs-over-bike-truck-driver-arrested/article71404272.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengaluru%3A%20Miraculous%20escape%20for%20bike%20rider%20after%20tipper%20runs%20over%20bike%3B%20truck%20driver%20arrested.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164681529",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b8c8f630dd3185349975",
       "category": "India",
       "headline": "Keralam tribal girl’s MBBS dream brought to fruition, courtesy a STEM education initiative",
       "summary": "Ashwathi Mol K.P. from the Malavedan community in Pathanamthitta was a beneficiary of ‘Collector’s Super 100’, a programme for marginalised girl children by the Thiruvananthapuram district administration",
       "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:31:16+00:00",
+      "published_at": "2026-08-29T13:45:11+00:00",
       "source_url": "https://www.thehindu.com/news/national/kerala/keralam-tribal-girls-mbbs-dream-brought-to-fruition-courtesy-a-stem-education-initiative/article71404647.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Keralam%20tribal%20girl%E2%80%99s%20MBBS%20dream%20brought%20to%20fruition%2C%20courtesy%20a%20STEM%20education%20initiative.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=661804420",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "96e5e0b21b55702271f0",
+      "category": "India",
+      "headline": "7 Odisha tourists evacuated after Nepal floods; search on for 5: Official",
+      "summary": "As the Trishuli River swelled and conditions deteriorated, Nepal police and local authorities evacuated the tourists from the temple",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T13:40:57+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/7-odisha-tourists-evacuated-after-nepal-floods-search-on-for-5-official-101788010857711.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%207%20Odisha%20tourists%20evacuated%20after%20Nepal%20floods%3B%20search%20on%20for%205%3A%20Official.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3103596678",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cbc8282b44ceac342e96",
+      "category": "India",
+      "headline": "National Sports Day celebrated across Telangana",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:38:20+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/national-sports-day-celebrated-across-telangana/article71404734.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20National%20Sports%20Day%20celebrated%20across%20Telangana.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3802474545",
       "image_type": "ai_generated"
     },
     {
@@ -1708,17 +1796,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "95d2b11aa03f334eda1d",
-      "category": "India",
-      "headline": "Bengaluru: Miraculous escape for bike rider after tipper runs over bike; truck driver arrested",
-      "summary": "Fortunately, the bike rider had fallen away from the motorcycle and escaped with only minor injuries.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:23:32+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/bengaluru-miraculous-escape-for-bike-rider-after-tipper-runs-over-bike-truck-driver-arrested/article71404272.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengaluru%3A%20Miraculous%20escape%20for%20bike%20rider%20after%20tipper%20runs%20over%20bike%3B%20truck%20driver%20arrested.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164681529",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "4733f2f96528c8ac8eb3",
       "category": "India",
       "headline": "Doctors’ body urges Telangana government to expedite DSH setup, clear pending promotions",
@@ -1752,6 +1829,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "9be4351e532888b95636",
+      "category": "India",
+      "headline": "Ayush PG Entrance Test 2026: Admit Cards Released For Re-Exam Of 49 Affected Candidates",
+      "summary": "AIAPGET 2026 Re-Exam: Candidates must report to the centre at the time specified on their admit cards.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:14:00+00:00",
+      "source_url": "https://www.ndtv.com/education/aiapget-2026-admit-cards-out-for-49-candidates-for-september-1-re-exam-11975150#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ayush%20PG%20Entrance%20Test%202026%3A%20Admit%20Cards%20Released%20For%20Re-Exam%20Of%2049%20Affected%20Candidates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4224976708",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "77b69fbd745c5039430b",
       "category": "India",
       "headline": "Bengaluru ATM attack case convict ‘murders’ wife in Madanapalle",
@@ -1763,14 +1851,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "83aee0026b43e38422ee",
+      "id": "580fee822804f272e7c1",
       "category": "Entertainment",
-      "headline": "Toxic worldwide box office collection day 3: Yash film crosses ₹221 crore, still trails behind Dhurandhar 2 and KGF 2",
+      "headline": "Toxic worldwide box office collection day 3: Yash film crosses ₹221 crore, still trails Dhurandhar 2 and KGF 2",
       "summary": "Toxic worldwide box office collection day 3: Geetu Mohandas directorial has managed to cross ₹220 crore mark worldwide within just three days of its release.",
       "publisher": "Hindustan Times Entertainment",
       "published_at": "2026-08-29T13:08:06+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/others/toxic-worldwide-box-office-collection-day-3-yash-film-crosses-221-crore-still-trails-behind-dhurandhar-2-and-kgf-2-101788007627153.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20worldwide%20box%20office%20collection%20day%203%3A%20Yash%20film%20crosses%20%E2%82%B9221%20crore%2C%20still%20trails%20behind%20Dhurandhar%202%20and%20KGF%202.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2758838169",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20worldwide%20box%20office%20collection%20day%203%3A%20Yash%20film%20crosses%20%E2%82%B9221%20crore%2C%20still%20trails%20Dhurandhar%202%20and%20KGF%202.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1625464654",
       "image_type": "ai_generated"
     },
     {
@@ -1782,17 +1870,6 @@
       "published_at": "2026-08-29T13:06:05+00:00",
       "source_url": "https://www.thehindu.com/news/national/maharashtra/marathi-rule-bombay-high-court-disposes-plea-by-cab-drivers-as-state-government-grants-one-year-time-to-learn-language/article71404268.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bombay%20HC%20disposes%20of%20PIL%20after%20Maharashtra%20gives%20drivers%20one%20year%20to%20learn%20Marathi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1764840248",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7f7b5fd9360613518d91",
-      "category": "India",
-      "headline": "Safety review committee to visit Mullaperiyar dam on September 1",
-      "summary": "Minister says Keralam has appointed a new legal team to handle Mullaperiyar",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:05:22+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/safety-review-committee-to-visit-mullaperiyar-dam-on-september-1/article71404658.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Safety%20review%20committee%20to%20visit%20Mullaperiyar%20dam%20on%20September%201.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1231213205",
       "image_type": "ai_generated"
     },
     {
@@ -1870,6 +1947,17 @@
       "published_at": "2026-08-29T12:39:08+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/do-you-really-need-a-protein-shake-after-a-workout-fitness-coach-explains-what-your-body-needs-101788003736867.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Do%20you%20really%20need%20a%20protein%20shake%20after%20a%20workout%3F%20Fitness%20coach%20explains%20what%20your%20body%20needs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1398756776",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b5c1eb5c05dfaf9b2fc7",
+      "category": "India",
+      "headline": "Assaulted, Tied To Tree, Burned: Punjab Influencer Dies After 2-Month Battle",
+      "summary": "Police are conducting raids to trace and arrest the two accused.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T12:34:17+00:00",
+      "source_url": "https://www.ndtv.com/india-news/manjeet-kaur-assaulted-tied-to-tree-burned-punjab-influencer-dies-after-2-month-battle-11975088#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Assaulted%2C%20Tied%20To%20Tree%2C%20Burned%3A%20Punjab%20Influencer%20Dies%20After%202-Month%20Battle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2092543610",
       "image_type": "ai_generated"
     },
     {
@@ -3600,6 +3688,149 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "f70f98c80fd3efbff139",
+      "category": "India",
+      "headline": "Seeking information is every citizen’s right; transparency in governance is prime objective of RTI Act, says Mahesh Walvekar",
+      "summary": "Noting that the Union government implemented the RTI Act on October 12, 2005, Walvekar highlighted that the primary goal of the Act is to bring transparency to government functioning",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:01:19+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/seeking-information-is-every-citizens-right-transparency-in-governance-is-prime-objective-of-rti-act-says-mahesh-walvekar/article71404544.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Seeking%20information%20is%20every%20citizen%E2%80%99s%20right%3B%20transparency%20in%20governance%20is%20prime%20objective%20of%20RTI%20Act%2C%20says%20Mahesh%20Walvekar.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1121793450",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2f83188e60f1f8f82fdc",
+      "category": "India",
+      "headline": "Sri Sathya Sai district prepares for Regional Partnership Summit 2026",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:59:36+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh//article71400226.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Sri%20Sathya%20Sai%20district%20prepares%20for%20Regional%20Partnership%20Summit%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3688807756",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "170bfdbe622879e8004f",
+      "category": "India",
+      "headline": "NHAI begins work to remove temporary bunds along Cooum",
+      "summary": "Around 250 temporary structures were made to facilitate the movement of persons and heavy machinery around the pillars",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:58:37+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/nhai-begins-work-to-remove-temporary-bunds-along-cooum/article71404380.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20NHAI%20begins%20work%20to%20remove%20temporary%20bunds%20along%20Cooum.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2921671747",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1a62c58cd56b098cb02d",
+      "category": "India",
+      "headline": "Union ministers Chirag Paswan, Jitan Ram Manjhi clash over quotas, demand each other's resignation",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T13:51:18+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/union-ministers-chirag-paswan-jitan-ram-manjhi-clash-over-quotas-demand-each-others-resignation/articleshow/133613275.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Union%20ministers%20Chirag%20Paswan%2C%20Jitan%20Ram%20Manjhi%20clash%20over%20quotas%2C%20demand%20each%20other%27s%20resignation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1840276074",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d0127d212db0d8edfd37",
+      "category": "India",
+      "headline": "Kurnool Joint Collector warns traders against overpricing essential commodities",
+      "summary": "Convening a meeting, Noorul Qamar reviews wholesale and retail prices of key commodities, directs officials to intensify market surveillance to keep prices in check",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:47:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/kurnool-joint-collector-warns-traders-against-overpricing-essential-commodities/article71404807.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kurnool%20Joint%20Collector%20warns%20traders%20against%20overpricing%20essential%20commodities.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2053254715",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0ea388d2cfd78282bbb6",
+      "category": "India",
+      "headline": "101 taluks declared drought-hit, more may be added: Parameshwara",
+      "summary": "MYSURU",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:46:55+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/101-taluks-declared-drought-hit-more-may-be-added-parameshwara/article71404394.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20101%20taluks%20declared%20drought-hit%2C%20more%20may%20be%20added%3A%20Parameshwara.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=508512803",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "99282442d1ef253f40c3",
+      "category": "India",
+      "headline": "BRS to highlight Govt. failures with protests across State from Sept.2 to 8: KTR",
+      "summary": "BRS works president says they have planned protest programmes as Revanth Reddy govt. completes 1,000 days in office on Sept. 2",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:46:12+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/brs-to-highlight-govt-failures-with-protests-across-state-from-sept2-to-8-ktr/article71400507.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BRS%20to%20highlight%20Govt.%20failures%20with%20protests%20across%20State%20from%20Sept.2%20to%208%3A%20KTR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1875121357",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "432c9b24e349fb8f3dd6",
+      "category": "India",
+      "headline": "\"Substandard\": Everest, Laljee Godhoo Banned From Selling Hing Powder",
+      "summary": "he samples of raw hing were found to be sub",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:46:10+00:00",
+      "source_url": "https://www.ndtv.com/india-news/substandard-everest-laljee-godhoo-banned-from-selling-hing-powder-11975319#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Substandard%22%3A%20Everest%2C%20Laljee%20Godhoo%20Banned%20From%20Selling%20Hing%20Powder.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4290073240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8e05979e5ddc2c5a75de",
+      "category": "India",
+      "headline": "Samay Raina's New 'Latent' Row Involves Banter On Kashmiri Roots",
+      "summary": "Kashmiri Pandit activists have taken offence over Samay Raina's jokes, calling the exchange unfortunate.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:42:18+00:00",
+      "source_url": "https://www.ndtv.com/india-news/samay-rainas-new-latent-row-involves-banter-on-kashmiri-roots-11975138#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Samay%20Raina%27s%20New%20%27Latent%27%20Row%20Involves%20Banter%20On%20Kashmiri%20Roots.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1351811255",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fec5fc8e92224b4976c8",
+      "category": "India",
+      "headline": "Farmer leader urges State government to increase police patrolling, beat in rural areas to prevent crimes",
+      "summary": "​Referring to a recent incident in Hokrani village where a Dalit woman was gang-raped and murdered, the farmer leader called the event a direct challenge to the efficiency of the State Home Department",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:40:35+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/farmer-leader-urges-state-government-to-increase-police-patrolling-beat-in-rural-areas-to-prevent-crimes/article71404507.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Farmer%20leader%20urges%20State%20government%20to%20increase%20police%20patrolling%2C%20beat%20in%20rural%20areas%20to%20prevent%20crimes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1636893701",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0e05275902dbd74f2c18",
+      "category": "India",
+      "headline": "Only 55 properties left to be acquired on Old City metro stretch, says HMR",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:36:14+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/only-55-properties-left-to-be-acquired-on-old-city-metro-stretch-says-hmr/article71404302.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Only%2055%20properties%20left%20to%20be%20acquired%20on%20Old%20City%20metro%20stretch%2C%20says%20HMR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=298266666",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b333e8f3edea78098571",
+      "category": "India",
+      "headline": "Police arrest two youth for ‘sexually assaulting’ woman",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T13:33:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/police-arrest-two-youth-for-sexually-assaulting-woman/article71404774.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Police%20arrest%20two%20youth%20for%20%E2%80%98sexually%20assaulting%E2%80%99%20woman.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2303503708",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e9469b39599d586223f9",
+      "category": "India",
+      "headline": "Nepal Flash Flood LIVE Updates: Damage May Cost Up To $5 Billion To Rebuild, Says Minister",
+      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:32:15+00:00",
+      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Damage%20May%20Cost%20Up%20To%20%245%20Billion%20To%20Rebuild%2C%20Says%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3243269175",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9fc42c9889cbd3514777",
       "category": "India",
       "headline": "Scrap collectors by day, burglars by night: six-member gang busted in Anantapur",
@@ -3677,14 +3908,47 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "bcddad66b0ad541a0117",
+      "id": "16da4c706df932e04c82",
       "category": "India",
-      "headline": "FSSAI cracks whip on Everest Food's hing powder sales halted after samples found ‘sub-standard’",
+      "headline": "BJP Turns Up Meme Heat On Congress, Deploys Satire In Social Media Battle",
+      "summary": "BJP accounts have been dishing out memes to counter the Congress' narrative.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:23:01+00:00",
+      "source_url": "https://www.ndtv.com/india-news/bjp-turns-up-meme-heat-on-congress-deploys-satire-in-social-media-battle-11974725#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20Turns%20Up%20Meme%20Heat%20On%20Congress%2C%20Deploys%20Satire%20In%20Social%20Media%20Battle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276391113",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8aebdb5632df14250914",
+      "category": "Entertainment",
+      "headline": "Samay Raina calls Archana Puran Singh's sons and husband Parmeet Sethi 'useless'; internet finds it 'disrespectful'",
+      "summary": "Samay Raina's mocking remarks about Archana Puran Singh's laughter and family sparked online backlash, as viewers labelled his comments as disrespectful.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T13:22:57+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/samay-raina-mocks-archana-puran-singh-and-family-internet-calls-it-disrespectful-india-got-latent-parmeet-sethi-101788005158510.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Samay%20Raina%20calls%20Archana%20Puran%20Singh%27s%20sons%20and%20husband%20Parmeet%20Sethi%20%27useless%27%3B%20internet%20finds%20it%20%27disrespectful%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2321654983",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "86eb4c0c7b03b4da382c",
+      "category": "India",
+      "headline": "FSSAI cracks whip on Everest Food, hing powder sales halted after samples found ‘sub-standard’",
       "summary": "The FSSAI also pointed out the non-declaration of salt content exceeding 5% and non",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T13:20:50+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/fssai-cracks-whip-on-everest-foods-hing-powder-sales-halted-after-samples-found-substandard-101788005629339.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20cracks%20whip%20on%20Everest%20Food%27s%20hing%20powder%20sales%20halted%20after%20samples%20found%20%E2%80%98sub-standard%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2863400150",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20cracks%20whip%20on%20Everest%20Food%2C%20hing%20powder%20sales%20halted%20after%20samples%20found%20%E2%80%98sub-standard%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1953553373",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e5e4ff7534e6258dd1fb",
+      "category": "India",
+      "headline": "FMGE Eligibility Certificate 2026: NMC Opens Online Application From Sept 1, Check Details",
+      "summary": "NMC opens FMGE Eligibility Certificate applications from September 1; check important guidelines.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:18:58+00:00",
+      "source_url": "https://www.ndtv.com/education/fmge-eligibility-certificate-2026-nmc-opens-online-application-from-sept-1-check-details-11975223#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FMGE%20Eligibility%20Certificate%202026%3A%20NMC%20Opens%20Online%20Application%20From%20Sept%201%2C%20Check%20Details.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3649338603",
       "image_type": "ai_generated"
     },
     {
@@ -3696,6 +3960,28 @@
       "published_at": "2026-08-29T13:14:59+00:00",
       "source_url": "https://www.thehindu.com/news/national/kerala/kakkadampoyil-eyes-tourism-boom-with-master-plan-travel-mart/article71404388.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kakkadampoyil%20eyes%20tourism%20boom%20with%20master%20plan%2C%20travel%20mart.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2273558504",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8b396e74853d3e572dc2",
+      "category": "India",
+      "headline": "1 Dead, 5 Injured As Armed Naga Groups Clash In Remote Manipur Forest",
+      "summary": "The confrontation comes against the backdrop of a longstanding rivalry.Representational Image",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:12:01+00:00",
+      "source_url": "https://www.ndtv.com/india-news/1-dead-5-injured-as-armed-naga-groups-clash-in-remote-manipur-forest-11975207#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%201%20Dead%2C%205%20Injured%20As%20Armed%20Naga%20Groups%20Clash%20In%20Remote%20Manipur%20Forest.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3152082899",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cf5c2157ba075cc7d352",
+      "category": "India",
+      "headline": "CSIR NET June 2026 Result Declared: Check Scorecard Direct Link Here",
+      "summary": "NTA declares CSIR UGC NET June 2026 scores; candidates can check scorecards online.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:09:21+00:00",
+      "source_url": "https://www.ndtv.com/education/csir-net-june-2026-result-declared-check-scorecard-direct-link-here-11975159#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CSIR%20NET%20June%202026%20Result%20Declared%3A%20Check%20Scorecard%20Direct%20Link%20Here.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1182328933",
       "image_type": "ai_generated"
     },
     {
@@ -3762,17 +4048,6 @@
       "published_at": "2026-08-29T12:50:43+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/family-counselling-reunites-divorced-couple-in-sri-sathya-sai-district/article71404368.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Family%20counselling%20reunites%20divorced%20couple%20in%20Sri%20Sathya%20Sai%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2788836621",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b91c4eac05bc3124f6b1",
-      "category": "Business",
-      "headline": "HDFC Bank CEO Sashidhar Jagdishan to retire on October 26, will not seek reappointment",
-      "summary": "HDFC Bank's CEO Sashidhar Jagdishan will not seek reappointment when his term concludes at the end of October.",
-      "publisher": "Mint Business",
-      "published_at": "2026-08-29T12:48:46+00:00",
-      "source_url": "https://www.livemint.com/companies/news/hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-after-term-ends-in-october-11788007166302.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20HDFC%20Bank%20CEO%20Sashidhar%20Jagdishan%20to%20retire%20on%20October%2026%2C%20will%20not%20seek%20reappointment.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4010327725",
       "image_type": "ai_generated"
     },
     {
@@ -3938,17 +4213,6 @@
       "published_at": "2026-08-29T11:09:59+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/bjp-uttarakhand-rahul-gandhi-claim-congress-president-mallikarjun-kharge-haldwani-purification-shuddhikaran-ritual-101787998063747.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Congress%20misleading%20Dalit%20community%27%3A%20BJP%20rejects%20Rahul%27s%20claim%20of%20Kharge%27s%20insult%20in%20Haldwani%20purification%20ritual.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3450168703",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "16da4c706df932e04c82",
-      "category": "India",
-      "headline": "BJP Turns Up Meme Heat On Congress, Deploys Satire In Social Media Battle",
-      "summary": "BJP accounts have been dishing out memes to counter the Congress' narrative.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T11:05:21+00:00",
-      "source_url": "https://www.ndtv.com/india-news/bjp-turns-up-meme-heat-on-congress-deploys-satire-in-social-media-battle-11974725#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20Turns%20Up%20Meme%20Heat%20On%20Congress%2C%20Deploys%20Satire%20In%20Social%20Media%20Battle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276391113",
       "image_type": "ai_generated"
     },
     {
@@ -4301,17 +4565,6 @@
       "published_at": "2026-08-29T08:54:44+00:00",
       "source_url": "https://www.koimoi.com/box-office/irumudi-worldwide-box-office-day-8-needs-only-11-32-crore-more-to-achieve-a-major-milestone-for-ravi-teja/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Irumudi%20Worldwide%20Box%20Office%20Day%208%3A%20Needs%20Only%2011.32%20Crore%20More%20To%20Achieve%20A%20Major%20Milestone%20For%20Ravi%20Teja.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1186714815",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "e9469b39599d586223f9",
-      "category": "India",
-      "headline": "Nepal Flash Flood LIVE Updates: Damage May Cost Up To $5 Billion To Rebuild, Says Minister",
-      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T08:51:36+00:00",
-      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Damage%20May%20Cost%20Up%20To%20%245%20Billion%20To%20Rebuild%2C%20Says%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3243269175",
       "image_type": "ai_generated"
     },
     {
@@ -7263,6 +7516,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c2cc9549dc09cf1337b8",
+      "category": "Entertainment",
+      "headline": "‘Paranormal Activity’ Broadway Review: Stage Adaptation Of Film Franchise Is A Frightfully Good Time",
+      "summary": "There are plenty of laughs in Paranormal Activity, a play that just might be Broadway’s scariest horror story ever, but they’re not the lighthearted jolly chuckles of, say, Titanique or the gut-bucket guffaws of Oh, Mary! No, the laughs in Levi Holloway’s chiller are more along the lines of those recalled from sharing a movie […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T14:00:00+00:00",
+      "source_url": "https://deadline.com/2026/08/paranormal-activity-broadway-review-1237061077/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Paranormal%20Activity%E2%80%99%20Broadway%20Review%3A%20Stage%20Adaptation%20Of%20Film%20Franchise%20Is%20A%20Frightfully%20Good%20Time.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3341864216",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "537669bc8f163fdaf1c1",
       "category": "Entertainment",
       "headline": "‘Coyote vs. Acme’ Star Will Forte, Director Celebrate Film Finally Hitting Theaters After Being Shelved by Warner Bros.: “Proof Movies Don’t Just Go Away”",
@@ -7546,6 +7810,17 @@
       "published_at": "2026-01-22T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Railway%20secures%20%24100%20million%20to%20challenge%20AWS%20with%20AI-native%20cloud%20infrastructure.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3997345097",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c246f034325b71f68cb4",
+      "category": "Technology & AI",
+      "headline": "The Theragun Sense makes everyday recovery surprisingly easy",
+      "summary": "As my 20s are set to come to an end later this year, I’ve officially reached the age where sleeping in the wrong position or stretching just a little too far can cause aches and pains. I’ve always been somewhat skeptical of massage guns, mostly because I’ve tried a few off-brand ones and just assumed […]",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T14:00:00+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/the-theragun-sense-makes-everyday-recovery-surprisingly-easy/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20The%20Theragun%20Sense%20makes%20everyday%20recovery%20surprisingly%20easy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3097031621",
       "image_type": "ai_generated"
     },
     {
@@ -8737,6 +9012,72 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "193e896a07539f29d96d",
+      "category": "World",
+      "headline": "Royal Navy spent three days tracking Russian vessels in UK waters",
+      "summary": "Three vessels and a helicopter deployed to monitor four ships travelling through the North Sea to the Channel The Royal Navy spent three days tracking Russian vessels as they passed through UK waters, it has emerged. The “intense” 72-hour operation took place last week, with radars used to monitor four ships that made their way from the North Sea through to the Channel. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T13:56:06+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/royal-navy-tracking-russian-vessels-uk-waters-channel-north-sea",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Royal%20Navy%20spent%20three%20days%20tracking%20Russian%20vessels%20in%20UK%20waters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1972633384",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "10a51a3113cd39137117",
+      "category": "World",
+      "headline": "Deadly strike on Kyiv warehouse prompts evacuations",
+      "summary": "Ukraine correspondent Dan Johnson reports from Kyiv after the deadly strike, which authorities said killed more than 30 people.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T13:55:55+00:00",
+      "source_url": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Deadly%20strike%20on%20Kyiv%20warehouse%20prompts%20evacuations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=847257534",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d44c64d44fb414bf6d3d",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
+      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises above 650, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T13:55:34+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "013800094c874a61c225",
+      "category": "Sports",
+      "headline": "'That's a stinker' - Gay trapped lbw by 'unplayable' Abbas delivery",
+      "summary": "After a lengthy rain delay that sees play halted for over three hours, England batter Emilio Gay is dimissed almost instantly after being trapped lbw by an \"unplayable\" ball from Pakistan bowler Muhammad Abbas on day three of their second Test at Lord's.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T13:44:21+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/videos/c14d0j85nkpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%27s%20a%20stinker%27%20-%20Gay%20trapped%20lbw%20by%20%27unplayable%27%20Abbas%20delivery.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3532384486",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "aea3c0115788d76ba667",
+      "category": "World",
+      "headline": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
+      "summary": "Attack on depot owned by Ukraine military causes detonations and huge fire, damaging residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in the Bucha...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T13:34:02+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Russian%20drone%20strike%20on%20Kyiv%20warehouse%20storing%20weapons%20kills%20at%20least%2037.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4211156941",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "80a84b6bfa8f386a6662",
+      "category": "World",
+      "headline": "Ex-White House teleprompter operator fined $172,000 for Trump speech bets",
+      "summary": "Commodity Futures Trading Commission said Gabriel Perez wagered on Kalshi about words president used in speeches A White House teleprompter operator who left his post amid accusations that he used inside knowledge to make bets on Donald Trump ’s speeches on an online prediction market has been fined $172,000, according to federal regulators. Gabriel Perez exploited “material, nonpublic information” that he...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T13:33:29+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/former-white-house-teleprompter-operator-fined-kalshi",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Ex-White%20House%20teleprompter%20operator%20fined%20%24172%2C000%20for%20Trump%20speech%20bets.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=833347144",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "101cdda6fe5108b1f968",
       "category": "Entertainment",
       "headline": "TCU vs. UNC: Where to Watch the 2026 College Football Season Opener Online",
@@ -8770,14 +9111,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "fdeaa834a38febf57132",
-      "category": "World",
-      "headline": "Russian strike on warehouse near Kyiv kills at least 37",
-      "summary": "Attack on business apparently storing ‘explosive objects’ sparks huge fire, damaging residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in the Bucha...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T13:18:35+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Russian%20strike%20on%20warehouse%20near%20Kyiv%20kills%20at%20least%2037.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=778250808",
+      "id": "9e767b72bf6c0c576fa9",
+      "category": "Lifestyle",
+      "headline": "Should you eat more soluble or insoluble fibre to ease constipation? Gastroenterologist explains the role of each",
+      "summary": "While doctors encourage adding more fibre in your daily diet, each variety plays a different role in the body. Dr Salhab explains the varied functions.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T13:22:39+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/should-you-eat-more-soluble-or-insoluble-fibre-to-ease-constipation-gastroenterologist-explains-the-role-of-each-101788008293633.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Should%20you%20eat%20more%20soluble%20or%20insoluble%20fibre%20to%20ease%20constipation%3F%20Gastroenterologist%20explains%20the%20role%20of%20each.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1821633693",
       "image_type": "ai_generated"
     },
     {
@@ -8866,17 +9207,6 @@
       "published_at": "2026-08-29T12:41:06+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cy0znn7lg51o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20to%20bid%20%C2%A340m%20for%20Everton%20teenager%20Armstrong.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3316478475",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d44c64d44fb414bf6d3d",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
-      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises above 650, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T12:29:55+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
       "image_type": "ai_generated"
     },
     {
@@ -11369,7 +11699,7 @@
       "id": "9d6a768f28a31de79386",
       "category": "Lifestyle",
       "headline": "Are you washing your clothes wrong? 9 laundry mistakes that can fade, stretch, and damage them",
-      "summary": "Your washing habits may be damaging your clothes! Check out this 9-step",
+      "summary": "Your washing habits may be damaging your clothes! Check out this 9",
       "publisher": "Hindustan Times Lifestyle",
       "published_at": "2026-08-27T13:28:00+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/fashion/are-you-washing-your-clothes-wrong-9-laundry-mistakes-that-can-fade-stretch-and-damage-them-101787825994085.html",
