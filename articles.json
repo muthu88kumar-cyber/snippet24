@@ -1,18 +1,40 @@
 {
-  "updated_at": "2026-08-29T01:34:14.698610+00:00",
+  "updated_at": "2026-08-29T02:04:21.083315+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 28,
+    "World": 27,
     "India": 29,
     "Business": 0,
     "Technology & AI": 9,
     "Sports": 11,
-    "Entertainment": 18,
+    "Entertainment": 19,
     "Lifestyle": 5
   },
   "articles": [
+    {
+      "id": "9582191159b9bb80719f",
+      "category": "Entertainment",
+      "headline": "Sara Bareilles Sings About Loss — and It’s Our Gain — in the Beautifully Bittersweet ‘Good Grief’: Album Review",
+      "summary": "Well, just how good can grief be? That’s a question raised by Sara Bareilles’ “Good Grief,” which, true to its promissory title, deals primarily with loss and death and the kind of tough stuff that folks in a marketing meeting might suggest slightly downplaying when one is releasing one’s first studio album in seven years. […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T01:46:46+00:00",
+      "source_url": "https://variety.com/2026/music/album-reviews/sara-bareilles-album-review-good-grief-1236846038/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sara%20Bareilles%20Sings%20About%20Loss%20%E2%80%94%20and%20It%E2%80%99s%20Our%20Gain%20%E2%80%94%20in%20the%20Beautifully%20Bittersweet%20%E2%80%98Good%20Grief%E2%80%99%3A%20Album%20Review.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2942721930",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T01:45:57+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
     {
       "id": "f48779c88f95bbbc41c0",
       "category": "India",
@@ -61,7 +83,7 @@
       "id": "c3eca489c31043ec5192",
       "category": "World",
       "headline": "Trump says US has 'historic' deal to control 65bn barrels of Venezuela's oil",
-      "summary": "Venezuela's interim president, Delcy Rodriguez, hailed the deal as significant to her country's revival.",
+      "summary": "Venezuelan interim President Delcy Rodriguez says the deal will help revive her country's economy.",
       "publisher": "BBC News",
       "published_at": "2026-08-29T01:21:43+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
@@ -88,17 +110,6 @@
       "published_at": "2026-08-29T01:15:46+00:00",
       "source_url": "https://www.ndtv.com/india-news/sir-to-begin-in-tripuras-west-district-on-september-5-11973224#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20SIR%20To%20Begin%20In%20Tripura%27s%20West%20District%20On%20September%205.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=8266143",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T01:15:02+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
       "image_type": "ai_generated"
     },
     {
@@ -839,6 +850,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "e933818fac536cf19e83",
+      "category": "India",
+      "headline": "Wider camera surveillance network on cards in Keralam’s Kozhikode to check traffic rule violations and reckless dumping of waste",
+      "summary": "At least 100 cameras with automatic number plate recognition to target traffic violations; preparations are on to cover 150 problem spots to curb reckless waste dumping",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T20:37:26+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/wider-camera-surveillance-network-on-cards-in-keralams-kozhikode-to-check-traffic-rule-violations-and-reckless-dumping-of-waste/article71400148.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Wider%20camera%20surveillance%20network%20on%20cards%20in%20Keralam%E2%80%99s%20Kozhikode%20to%20check%20traffic%20rule%20violations%20and%20reckless%20dumping%20of%20waste.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=113462880",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a0c553b2d573ba0ce6b2",
       "category": "Sports",
       "headline": "Greaves loses thriller to Cross on European debut",
@@ -1089,28 +1111,6 @@
       "published_at": "2026-08-28T19:41:12+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/india-germany-eye-deeper-msme-ties/article71401067.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20India-Germany%20eye%20deeper%20MSME%20ties.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3136564946",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5e0d75f2f88e1476f261",
-      "category": "India",
-      "headline": "Delhi couple held for nexus with ISI espionage network",
-      "summary": "The 25-year-old husband and 21-year-old wife were allegedly tasked with providing logistical support to the network in Delhi, recruiting more individuals for espionage and carrying out field operations",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:40:54+00:00",
-      "source_url": "https://www.thehindu.com/news/national/delhi-couple-helped-isi-backed-network-get-indian-sim-cards-say-police/article71399732.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%20couple%20held%20for%20nexus%20with%20ISI%20espionage%20network.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3556874395",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "83d9ee91ecdc006dc309",
-      "category": "World",
-      "headline": "Norway mourns King Harald as Haakon VIII ascends throne",
-      "summary": "Mourners gather outside the palace as royals, politicians and citizens remember a beloved king, whose son has adopted the family motto \"all for norway\".",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T19:40:45+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm2rzxrdr71o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Norway%20mourns%20King%20Harald%20as%20Haakon%20VIII%20ascends%20throne.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1854610136",
       "image_type": "ai_generated"
     }
   ]
