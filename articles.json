@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:04:37.150236+00:00",
-  "total": 979,
+  "updated_at": "2026-08-29T11:05:39.819346+00:00",
+  "total": 981,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
@@ -10,7 +10,7 @@
     "Technology & AI": 87,
     "Sports": 73,
     "Entertainment": 235,
-    "Lifestyle": 141
+    "Lifestyle": 143
   },
   "articles": [
     {
@@ -7296,6 +7296,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "cc32b3e872c09c7fd571",
+      "category": "Lifestyle",
+      "headline": "Planning to freeze your eggs? Here’s what a fertility specialist says about long-term side effects",
+      "summary": "Considering egg freezing? A fertility specialist explains whether the procedure has any known long-term side effects, risks, or impact on future health.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-27T10:53:27+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/planning-to-freeze-your-eggs-here-is-what-a-fertility-specialist-says-about-longterm-side-effects-101787824203050.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Planning%20to%20freeze%20your%20eggs%3F%20Here%E2%80%99s%20what%20a%20fertility%20specialist%20says%20about%20long-term%20side%20effects.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2829357649",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "4f74a8797b73e2d1d66b",
       "category": "Technology & AI",
       "headline": "Orchestration is the new challenge for CX in the age of AI agents",
@@ -9650,17 +9661,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "cafcdf675295a4a08da0",
-      "category": "World",
-      "headline": "A melting glacier contributed to the deadly Nepal floods. We can expect more like this",
-      "summary": "As the climate continues to warm, scientists warn that the frequency of disasters like the floods in Nepal will increase.",
-      "publisher": "NPR World",
-      "published_at": "2026-08-28T09:00:00+00:00",
-      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5945799/nepal-floods-climate-change-himalayas",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20A%20melting%20glacier%20contributed%20to%20the%20deadly%20Nepal%20floods.%20We%20can%20expect%20more%20like%20this.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1782896200",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "6b5258bb78c96f87ed9b",
       "category": "World",
       "headline": "U.S. says pipelines will make Strait of Hormuz irrelevant. Energy experts disagree",
@@ -9669,6 +9669,17 @@
       "published_at": "2026-08-28T09:00:00+00:00",
       "source_url": "https://www.npr.org/2026/08/28/g-s1-140309/us-iran-middle-east-oil-pipelines-hormuz",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20U.S.%20says%20pipelines%20will%20make%20Strait%20of%20Hormuz%20irrelevant.%20Energy%20experts%20disagree.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3202098122",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cafcdf675295a4a08da0",
+      "category": "World",
+      "headline": "A melting glacier contributed to the deadly Nepal floods. We can expect more like this",
+      "summary": "As the climate continues to warm, scientists warn that the frequency of disasters like the floods in Nepal will increase.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-28T09:00:00+00:00",
+      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5945799/nepal-floods-climate-change-himalayas",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20A%20melting%20glacier%20contributed%20to%20the%20deadly%20Nepal%20floods.%20We%20can%20expect%20more%20like%20this.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1782896200",
       "image_type": "ai_generated"
     },
     {
@@ -10230,6 +10241,17 @@
       "published_at": "2026-08-27T11:23:20+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/pet/are-you-walking-your-dog-correctly-vet-shares-5-common-mistakes-that-may-harm-them-101787827307988.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20you%20walking%20your%20dog%20correctly%3F%20Vet%20shares%205%20common%20mistakes%20that%20may%20harm%20them.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=554113339",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3b876d21d7d953d01ee1",
+      "category": "Lifestyle",
+      "headline": "Why are more children struggling with sleep? Dr Manish Mannan shares 5 bedtime habits parents should change",
+      "summary": "Bedtime habits play a major role in making falling asleep easier or difficult; Dr Manish Mannan shares what helps.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-27T10:52:57+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/why-are-more-children-struggling-with-sleep-dr-manish-mannan-shares-5-bedtime-habits-parents-should-change-101787826750186.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Why%20are%20more%20children%20struggling%20with%20sleep%3F%20Dr%20Manish%20Mannan%20shares%205%20bedtime%20habits%20parents%20should%20change.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=847011595",
       "image_type": "ai_generated"
     },
     {
