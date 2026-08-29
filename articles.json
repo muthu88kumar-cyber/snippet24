@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T03:04:18.710593+00:00",
+  "updated_at": "2026-08-29T03:34:18.438665+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
@@ -9,10 +9,32 @@
     "Business": 0,
     "Technology & AI": 9,
     "Sports": 10,
-    "Entertainment": 21,
-    "Lifestyle": 6
+    "Entertainment": 20,
+    "Lifestyle": 7
   },
   "articles": [
+    {
+      "id": "79aceb63f5af0d076977",
+      "category": "Lifestyle",
+      "headline": "Are eggs bad for your heart? Hyderabad doctor shares what '28 years of data across 185 countries' says",
+      "summary": "Don't fear the egg: neurologist Dr Sudhir Kumar says 28 years of data show eggs aren't bad for your heart and may even protect it.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T03:10:06+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/are-eggs-bad-for-your-heart-hyderabad-doctor-shares-what-28-years-of-data-across-185-countries-says-101787972082538.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20eggs%20bad%20for%20your%20heart%3F%20Hyderabad%20doctor%20shares%20what%20%2728%20years%20of%20data%20across%20185%20countries%27%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4194958856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f38b0d2a7834e4e116ca",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
+      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T03:04:15+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
+      "image_type": "ai_generated"
+    },
     {
       "id": "5486a6e04bd9659da683",
       "category": "India",
@@ -33,17 +55,6 @@
       "published_at": "2026-08-29T02:51:53+00:00",
       "source_url": "https://www.thehindu.com/life-and-style/travel/why-the-monsoon-is-one-of-the-best-times-to-explore-indias-forests/article71221275.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20the%20monsoon%20is%20one%20of%20the%20best%20times%20to%20explore%20India%E2%80%99s%20forests.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4045897116",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f38b0d2a7834e4e116ca",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
-      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T02:48:38+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
       "image_type": "ai_generated"
     },
     {
@@ -1100,17 +1111,6 @@
       "published_at": "2026-08-28T20:02:41+00:00",
       "source_url": "https://www.thehindu.com/education/high-powered-task-force-looking-into-nta-reforms-invites-stakeholder-suggestions/article71401674.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20High-powered%20task%20force%20looking%20into%20NTA%20reforms%20invites%20stakeholder%20suggestions.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4219262358",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "314bf78f1e21bb1f2171",
-      "category": "Entertainment",
-      "headline": "How to Watch 2026 Little League World Series Championship Weekend Live Online",
-      "summary": "Four of 20 teams remain — two from the U.S. and two international — as we head into the final stage of the annual 12",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T19:58:35+00:00",
-      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/watch-little-league-world-series-2026-baseball-stream-free-1236677338/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20How%20to%20Watch%202026%20Little%20League%20World%20Series%20Championship%20Weekend%20Live%20Online.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3201491148",
       "image_type": "ai_generated"
     }
   ]
