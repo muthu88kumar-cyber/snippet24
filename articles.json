@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T19:34:34.305357+00:00",
-  "total": 1347,
+  "updated_at": "2026-08-29T20:04:34.123256+00:00",
+  "total": 1363,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 107,
-    "India": 427,
+    "World": 109,
+    "India": 436,
     "Business": 169,
-    "Technology & AI": 99,
-    "Sports": 106,
-    "Entertainment": 290,
+    "Technology & AI": 100,
+    "Sports": 108,
+    "Entertainment": 292,
     "Lifestyle": 149
   },
   "articles": [
@@ -132,6 +132,17 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "76fb708da91fa69b2dbf",
+      "category": "India",
+      "headline": "Judiciary proactively responded to emerging fraudulent schemes like digital arrest: CJI",
+      "summary": "This exemplifies a broader pattern: an Indian Judiciary that proactively responds to emerging fraudulent schemes, rather than waiting for Parliament to address them, says Chief Justice of India Surya Kant",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:40:33+00:00",
+      "source_url": "https://www.thehindu.com/news/national/judiciary-proactively-responded-to-emerging-fraudulent-schemes-like-digital-arrest-cji/article71405958.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Judiciary%20proactively%20responded%20to%20emerging%20fraudulent%20schemes%20like%20digital%20arrest%3A%20CJI.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2958916422",
       "image_type": "ai_generated"
     },
     {
@@ -1389,6 +1400,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c7e3d3636f32b3a1be8c",
+      "category": "Entertainment",
+      "headline": "Tom Cruise announces a follow-up film to 'Days of Thunder' to hit theaters in 2028",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T19:29:04+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/hollywood/tom-cruise-announces-a-follow-up-film-to-days-of-thunder-to-hit-theaters-in-2028-101788031744915.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tom%20Cruise%20announces%20a%20follow-up%20film%20to%20%27Days%20of%20Thunder%27%20to%20hit%20theaters%20in%202028.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1040496811",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "46b77ab7988d89429d21",
       "category": "Entertainment",
       "headline": "Avengers: Endgame Encore North America Box Office: Here’s How Much It Must Earn To Cross $900M Milestone Domestically",
@@ -1873,6 +1895,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "06e716d5ec31da8b3e98",
+      "category": "India",
+      "headline": "Doctors to be recruited to CCRC on priority basis: Keralam fisheries Minister",
+      "summary": "A recruitment board has been constituted, and the required staff will be recruited soon so that the facility gets fully operational: Abdul Gafoor",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:40:11+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/doctors-to-be-recruited-to-ccrc-on-priority-basis-keralam-fisheries-minister/article71405307.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Doctors%20to%20be%20recruited%20to%20CCRC%20on%20priority%20basis%3A%20Keralam%20fisheries%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3302486609",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b28f750b17f2007dffc4",
+      "category": "India",
+      "headline": "Wayalaying of Keralam CM: K.V. Thomas flays action against Cong. leader",
+      "summary": "Former Congress leader draws parallel with K. Karunakaran’s handling of a similar incident involving Congress workers",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:38:51+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/wayalaying-of-keralam-cm-kv-thomas-flays-action-against-cong-leader/article71405196.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Wayalaying%20of%20Keralam%20CM%3A%20K.V.%20Thomas%20flays%20action%20against%20Cong.%20leader.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=903709875",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "351858bd10b744c88190",
       "category": "India",
       "headline": "Hyderabad hospital performs 400 kidney transplants",
@@ -1881,6 +1925,28 @@
       "published_at": "2026-08-29T19:17:46+00:00",
       "source_url": "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-hospital-performs-400-kidney-transplants/article71405294.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Hyderabad%20hospital%20performs%20400%20kidney%20transplants.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1470888309",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1b2e80b108f320789794",
+      "category": "India",
+      "headline": "Abhishek Banerjee Summoned By Kolkata Police Over Illegal Billboards Row",
+      "summary": "Two FIRs were filed against Abhishek Banerjee.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T19:05:01+00:00",
+      "source_url": "https://www.ndtv.com/india-news/abhishek-banerjee-summoned-by-kolkata-police-over-illegal-billboards-row-11976220#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Abhishek%20Banerjee%20Summoned%20By%20Kolkata%20Police%20Over%20Illegal%20Billboards%20Row.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3685080112",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3b762663c51098a5b4a1",
+      "category": "India",
+      "headline": "Delhi Man Dies Of Electrocution, Government Says No Fault In Streetlight Pole",
+      "summary": "Sandeep worked in medical nursing care in Surajmal Vihar.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T18:50:31+00:00",
+      "source_url": "https://www.ndtv.com/india-news/delhi-man-dies-of-electrocution-government-says-no-fault-in-streetlight-pole-11976210#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%20Man%20Dies%20Of%20Electrocution%2C%20Government%20Says%20No%20Fault%20In%20Streetlight%20Pole.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2148027322",
       "image_type": "ai_generated"
     },
     {
@@ -4392,6 +4458,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4806c6b9479b19ec3cd4",
+      "category": "India",
+      "headline": "If Hindus think Muslims have no place, they cease to be Hindu: Mohan Bhagwat in New York",
+      "summary": "In a notable address in New York City, RSS chief Mohan Bhagwat stated that true Hindutva does not exclude Muslims from Bharat, asserting that any Hindu who believes otherwise ceases to be a Hindu",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:58:26+00:00",
+      "source_url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20If%20Hindus%20think%20Muslims%20have%20no%20place%2C%20they%20cease%20to%20be%20Hindu%3A%20Mohan%20Bhagwat%20in%20New%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2210942808",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "85aa51e7aab7e2542ad6",
+      "category": "India",
+      "headline": "External intelligence agency and Intelligence Bureau form the first arm of offence and defence, says former RAW chief",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:57:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/intelligence-bureau-and-external-intelligence-agency-is-the-first-arm-of-defence-and-offence-says-former-raw-chief/article71405652.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20External%20intelligence%20agency%20and%20Intelligence%20Bureau%20form%20the%20first%20arm%20of%20offence%20and%20defence%2C%20says%20former%20RAW%20chief.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=881644789",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "773852333e771971bd0e",
+      "category": "India",
+      "headline": "22nd convocation held at NIT-C",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:41:30+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/22nd-convocation-held-at-nit-c/article71405141.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2022nd%20convocation%20held%20at%20NIT-C.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2888866017",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "18dcd5814cb4df0e2b9c",
+      "category": "India",
+      "headline": "British Far-Right Commentator Deported After Immigration Agents Arrest Him",
+      "summary": "Yiannopoulos was a vocal supporter of Donald Trump.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T19:20:42+00:00",
+      "source_url": "https://www.ndtv.com/india-news/british-far-right-commentator-deported-after-immigration-agents-arrest-him-11976251#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20British%20Far-Right%20Commentator%20Deported%20After%20Immigration%20Agents%20Arrest%20Him.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1258795001",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "92f181faa52642fd2dfb",
       "category": "India",
       "headline": "Mirwaiz backs NC MP, demand for J&K statehood, Article 370",
@@ -4436,14 +4546,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "924843b6c10ff71f6d53",
+      "id": "e9469b39599d586223f9",
       "category": "India",
-      "headline": "Judiciary proactively responded to emerging fraudulent schemes like digital arrest: CJI",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "Hindustan Times India",
-      "published_at": "2026-08-29T18:47:33+00:00",
-      "source_url": "https://www.hindustantimes.com/india-news/judiciary-proactively-responded-to-emerging-fraudulent-schemes-like-digital-arrest-cji-101788029254086.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Judiciary%20proactively%20responded%20to%20emerging%20fraudulent%20schemes%20like%20digital%20arrest%3A%20CJI.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2958916422",
+      "headline": "Nepal Flash Flood LIVE Updates: Damage May Cost Up To $5 Billion To Rebuild, Says Minister",
+      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T18:47:13+00:00",
+      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Damage%20May%20Cost%20Up%20To%20%245%20Billion%20To%20Rebuild%2C%20Says%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3243269175",
       "image_type": "ai_generated"
     },
     {
@@ -4532,6 +4642,17 @@
       "published_at": "2026-08-29T18:08:54+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/two-men-from-ap-held-for-taking-photographs-inside-arunachaleswarar-temple/article71404599.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20men%20from%20A.P.%20held%20for%20taking%20photographs%20inside%20Arunachaleswarar%20temple.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3570205025",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "517dd646b6e195103106",
+      "category": "India",
+      "headline": "The Bhotekoshi flood | A Himalayan tragedy",
+      "summary": "Scientists investigate how a high-altitude rock-and-ice avalanche may have triggered one of Nepal’s most devastating floods; while experts have not directly attributed this event to climate change, they note that rising temperatures are warming the Himalayas and accelerating glacier melt",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:04:29+00:00",
+      "source_url": "https://www.thehindu.com/news/national/the-bhotekoshi-flood-a-himalayan-tragedy/article71405842.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20The%20Bhotekoshi%20flood%20%7C%20A%20Himalayan%20tragedy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1053456283",
       "image_type": "ai_generated"
     },
     {
@@ -5643,17 +5764,6 @@
       "published_at": "2026-08-29T13:33:43+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/police-arrest-two-youth-for-sexually-assaulting-woman/article71404774.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Police%20arrest%20two%20youth%20for%20%E2%80%98sexually%20assaulting%E2%80%99%20woman.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2303503708",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "e9469b39599d586223f9",
-      "category": "India",
-      "headline": "Nepal Flash Flood LIVE Updates: Damage May Cost Up To $5 Billion To Rebuild, Says Minister",
-      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T13:32:15+00:00",
-      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Damage%20May%20Cost%20Up%20To%20%245%20Billion%20To%20Rebuild%2C%20Says%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3243269175",
       "image_type": "ai_generated"
     },
     {
@@ -9650,6 +9760,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "089f7c536f5e73ca3b8e",
+      "category": "Technology & AI",
+      "headline": "Alt-right troll Milo Yiannopoulos has been deported",
+      "summary": "Alt-right troll Milo Yiannopoulos was arrested by ICE on Thursday, and today the Department of Homeland Security confirmed to Reuters and the Washington Post that he had been deported to the UK. Yiannopoulos came to the US legally in 2019, but overstayed his visa. After he failed to appear in court for an immigration hearing, […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-29T19:49:59+00:00",
+      "source_url": "https://www.theverge.com/policy/986456/milo-yiannopoulos-deported-ice",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Alt-right%20troll%20Milo%20Yiannopoulos%20has%20been%20deported.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1155237254",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "df1228ee4a5a9d427fa8",
+      "category": "Entertainment",
+      "headline": "Venice Film Festival Jury Press Conference ‘Probably Not’ Happening Due to Scheduling, Will Replace Event With Welcome Cocktails for Journalists",
+      "summary": "The Venice Film Festival is weighing scrapping its traditional opening jury press conference on the Lido. The festival, which kicks off Sept. 2 with the world premiere of Danny Boyle’s “Ink,” told Variety that the presser will “probably not” take place, citing a scheduling conflict, and said a welcome cocktail hour with the press will […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T19:48:58+00:00",
+      "source_url": "https://variety.com/2026/film/global/venice-film-festival-jury-press-conference-canceled-1236846620/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Venice%20Film%20Festival%20Jury%20Press%20Conference%20%E2%80%98Probably%20Not%E2%80%99%20Happening%20Due%20to%20Scheduling%2C%20Will%20Replace%20Event%20With%20Welcome%20Cocktails%20for%20Journalists.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=708744967",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "490c326326e4725c6ff8",
       "category": "Sports",
       "headline": "Pogacar requires surgery after Vuelta crash",
@@ -10981,6 +11113,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T19:54:24+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8fdcd41aa87ff9e974b2",
+      "category": "World",
+      "headline": "LAPD releases footage of death of man whom police handcuffed and beat",
+      "summary": "Jose Carlos Hoyoz-Munoz was arrested after a family altercation and restrained for ‘combative’ behavior A cadre of Los Angeles police officers beat and restrained a handcuffed man in July, minutes before he was found dead in a jail cell, according to newly released body-cam footage . On 15 July, Jose Carlos Hoyoz-Munoz, 58, was found unconscious in his cell at the Van Nuys regional jail. At the time, the LAPD...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T19:52:38+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/jose-carlos-hoyoz-munoz-los-angeles-police-death",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20LAPD%20releases%20footage%20of%20death%20of%20man%20whom%20police%20handcuffed%20and%20beat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2303387407",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "84bd2439f3b7d02426a6",
+      "category": "World",
+      "headline": "Former Ecuadorian president imprisoned for corruption",
+      "summary": "Lenín Moreno denies taking bribes from a Chinese firm to secure a contract to build a hydroelectric plant.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T19:44:54+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvgym9rz07zo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Former%20Ecuadorian%20president%20imprisoned%20for%20corruption.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3185386820",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a2af938db5979adc2166",
+      "category": "Sports",
+      "headline": "Spurs 'didn't deserve' loss to Newcastle - De Zerbi",
+      "summary": "Tottenham manager Roberto de Zerbi describes his side's 2-0 defeat by Newcastle United as an \"unfair result\", with Spurs rooted to the bottom of the Premier League table.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:44:47+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/c0e3wpp1dj7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Spurs%20%27didn%27t%20deserve%27%20loss%20to%20Newcastle%20-%20De%20Zerbi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2440908891",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ab8c2ed60144b5c9edcb",
+      "category": "Sports",
+      "headline": "In-form quartet all win away to snap at heels of leaders Coleraine",
+      "summary": "BBC Sport NI explores the main talking point of the weekend from within the Irish Premiership.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:41:04+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c8d3qg4g87qo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20In-form%20quartet%20all%20win%20away%20to%20snap%20at%20heels%20of%20leaders%20Coleraine.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=862346442",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c3ea0a77bf57f8cd74e5",
       "category": "Sports",
       "headline": "O'Neill would rather Celtic had no fans at Ibrox than 300",
@@ -11000,17 +11187,6 @@
       "published_at": "2026-08-29T19:27:16+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/c1kxe87ye7ro?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Jaissle%20claims%20first%20Premier%20League%20win%20at%20lacklustre%20Spurs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1727062175",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T19:15:49+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
