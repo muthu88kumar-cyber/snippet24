@@ -1,18 +1,139 @@
 {
-  "updated_at": "2026-08-29T03:34:18.438665+00:00",
+  "updated_at": "2026-08-29T04:04:27.459758+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
     "World": 26,
-    "India": 28,
+    "India": 30,
     "Business": 0,
-    "Technology & AI": 9,
-    "Sports": 10,
+    "Technology & AI": 8,
+    "Sports": 9,
     "Entertainment": 20,
     "Lifestyle": 7
   },
   "articles": [
+    {
+      "id": "3a5dced8987849b05a37",
+      "category": "World",
+      "headline": "‘The butcher may be gone, but to many he is a hero’: victims condemn glorification of Mladić",
+      "summary": "Architect of Srebrenica genocide is dead but those scarred by his atrocities say his ideology is still shockingly pervasive To most of the world, he was and will always be the “Butcher of Bosnia”, a grim epithet but one that still fails to fully convey the evil and horror inflicted on its people by Gen Ratko Mladić, who died in prison on Thursday . As commander of the Bosnian Serb forces, Mladić was responsible...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T04:00:17+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/bosnia-reaction-death-ratko-mladic",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98The%20butcher%20may%20be%20gone%2C%20but%20to%20many%20he%20is%20a%20hero%E2%80%99%3A%20victims%20condemn%20glorification%20of%20Mladi%C4%87.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2899713866",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b1081f5d7d903193ad46",
+      "category": "India",
+      "headline": "Nagendra challenges BJP to face him in ‘people’s court’",
+      "summary": "Claiming that he had been targeted by the ‘Manuvadi’ BJP, Nagendra appealed to the party to allow him to contest the Ballari Rural constituency again so that he could come clean politically",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T04:00:17+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka//article71400936.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nagendra%20challenges%20BJP%20to%20face%20him%20in%20%E2%80%98people%E2%80%99s%20court%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4275743334",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1ad7e1b200acead9b66a",
+      "category": "India",
+      "headline": "Sandhya Devanathan exits Meta after a decade; to join OpenAI as VP South East Asia, Australia",
+      "summary": "Sandhya Devanathan, is leaving the social media giant and is all set to join OpenAI as Vice President for South East Asia and Australia",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T03:58:06+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/technology/sandhya-devanathan-exits-meta-after-a-decade-to-join-openai-as-vp-south-east-asia-australia/article71403430.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Sandhya%20Devanathan%20exits%20Meta%20after%20a%20decade%3B%20to%20join%20OpenAI%20as%20VP%20South%20East%20Asia%2C%20Australia.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2063273107",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0dd493b1e5a16032c2a2",
+      "category": "World",
+      "headline": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
+      "summary": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T03:54:11+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Footage%20of%20Tibet%20floods%20isn%27t%20being%20shown%20in%20China%20-%20and%20we%20know%20little%20about%20victims%20there.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3646295530",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bebd34ce0e12310408cb",
+      "category": "Entertainment",
+      "headline": "Jackie Glass, ‘Swift Justice’ Host, Dies at 70",
+      "summary": "Glass was the judge who sentenced O.J. Simpson to 33 years in prison for armed",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T03:52:59+00:00",
+      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/jackie-glass-dead-swift-justice-host-oj-simpson-1236684783/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jackie%20Glass%2C%20%E2%80%98Swift%20Justice%E2%80%99%20Host%2C%20Dies%20at%2070.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=869352943",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "054cbfbb04b58801d0fb",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; Nepal asks for specialised and technical help – latest updates",
+      "summary": "Chinese rescue team reaches all-but-obliterated Gyirong border crossing complex to find ‘nothing but ruins’ ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T03:49:58+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20Nepal%20asks%20for%20specialised%20and%20technical%20help%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1294001676",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "26789953d8d191a3981c",
+      "category": "India",
+      "headline": "Congress alleges Penguin India succumbed to ‘pressure’ to demand changes in Sonia memoir",
+      "summary": "Congress leader Ashok Gehlot claims Penguin India sought to remove sections critical of the PM, the RSS, and China’s “occupation“ of Indian land; says Penguin Worldwide was willing to publish the book unchanged for global audience",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T03:49:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/congress-alleges-penguin-india-succumbed-to-pressure-to-demand-changes-in-sonia-memoir/article71400938.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20alleges%20Penguin%20India%20succumbed%20to%20%E2%80%98pressure%E2%80%99%20to%20demand%20changes%20in%20Sonia%20memoir.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2507779685",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5a5341cda7cf9074e4f8",
+      "category": "Entertainment",
+      "headline": "Milo Yiannopoulos in ICE Custody After Feud-Fueled Tip-Off",
+      "summary": "Laura Loomer, whom the far-right provocateur waged a vicious campaign against last year, says she reported the political operative's immigration status",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T03:44:05+00:00",
+      "source_url": "https://www.hollywoodreporter.com/news/general-news/milo-yiannopoulos-ice-custody-tip-off-1236684770/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Milo%20Yiannopoulos%20in%20ICE%20Custody%20After%20Feud-Fueled%20Tip-Off.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2966659357",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2cab213d291041754ae2",
+      "category": "India",
+      "headline": "High-powered task force looking into NTA reforms invites stakeholder suggestions",
+      "summary": "The Nandan Nilekani-led task force set up by PM Narendra Modi requested stakeholders to submit their suggestions by Sept. 13; submissions can be made in English, Hindi or regional languages by phone, mail, WhatsApp or website",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T03:41:37+00:00",
+      "source_url": "https://www.thehindu.com/education/high-powered-task-force-looking-into-nta-reforms-invites-stakeholder-suggestions/article71401674.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20High-powered%20task%20force%20looking%20into%20NTA%20reforms%20invites%20stakeholder%20suggestions.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4219262358",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cf8f2d4e7c3e0227d3ca",
+      "category": "India",
+      "headline": "CPI-CPI(M) tussle over Deputy Opposition Leader post in Keralam is a mutiny against Pinarayi Vijayan",
+      "summary": "The issue is not so much about the ‘nominal’ post as it is about the clamour for collective leadership; in other words, it is a mutiny against the Leader of the Opposition, whose absolute authority has been resented by the CPI over the last decade and a half",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T03:35:00+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/cpi-cpim-tussle-over-deputy-opposition-leader-post-in-keralam-is-a-mutiny-against-pinarayi-vijayan/article71401405.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CPI-CPI%28M%29%20tussle%20over%20Deputy%20Opposition%20Leader%20post%20in%20Keralam%20is%20a%20mutiny%20against%20Pinarayi%20Vijayan.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1537549215",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0e085004e4d704397b5f",
+      "category": "India",
+      "headline": "57 lakh active workers await e-KYC under VB GRAM G",
+      "summary": "Centre had earlier assured that ‘existing e-KYC verified job cards will remain valid until issuance of the new Gramin Rozgar Guarantee Cards’; States repeatedly missed e",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T03:30:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/two-months-into-vb-g-ram-g-e-kyc-pending-for-57-lakh-active-workers/article71401092.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2057%20lakh%20active%20workers%20await%20e-KYC%20under%20VB%20GRAM%20G.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2867690444",
+      "image_type": "ai_generated"
+    },
     {
       "id": "79aceb63f5af0d076977",
       "category": "Lifestyle",
@@ -22,17 +143,6 @@
       "published_at": "2026-08-29T03:10:06+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/are-eggs-bad-for-your-heart-hyderabad-doctor-shares-what-28-years-of-data-across-185-countries-says-101787972082538.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20eggs%20bad%20for%20your%20heart%3F%20Hyderabad%20doctor%20shares%20what%20%2728%20years%20of%20data%20across%20185%20countries%27%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4194958856",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f38b0d2a7834e4e116ca",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
-      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T03:04:15+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
       "image_type": "ai_generated"
     },
     {
@@ -641,17 +751,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "0dd493b1e5a16032c2a2",
-      "category": "World",
-      "headline": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
-      "summary": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T22:05:41+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Footage%20of%20Tibet%20floods%20isn%27t%20being%20shown%20in%20China%20-%20and%20we%20know%20little%20about%20victims%20there.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3646295530",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "d718d767731930e7e8e5",
       "category": "Sports",
       "headline": "Huddersfield upset Leigh with five-try win",
@@ -1012,105 +1111,6 @@
       "published_at": "2026-08-28T20:24:15+00:00",
       "source_url": "https://www.thehindu.com/news/national/telangana/aimim-expels-mlc-mirza-rahmat-baig-from-party/article71402186.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AIMIM%20expels%20MLC%20Mirza%20Rahmat%20Baig%20from%20party.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1701205616",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "606d4bace20278f79fda",
-      "category": "Technology & AI",
-      "headline": "Neocloud Lambda secures $1B in debt to buy more chips",
-      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-28T20:24:11+00:00",
-      "source_url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Neocloud%20Lambda%20secures%20%241B%20in%20debt%20to%20buy%20more%20chips.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2595916428",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "83fa6fa1412fda84c13e",
-      "category": "World",
-      "headline": "What we know about deadly Nepal-Tibet floods",
-      "summary": "Hundreds have died and thousands are missing after Wednesday's flooding and landslides on the border of Nepal and Tibet.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T20:23:28+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cd948kn02e5o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20What%20we%20know%20about%20deadly%20Nepal-Tibet%20floods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2725516449",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2fb97430935410bb24f0",
-      "category": "Entertainment",
-      "headline": "Dave Franco Says Raunchy ‘Idiots’ Scene Is “the Craziest Thing” He’s Done on Camera",
-      "summary": "The star-producer talks bringing the project back from the dead, and how a key motel scene goes toe to toe with Jeff Daniels' famous ‘Dumb and Dumber' moment.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T20:19:31+00:00",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-features/dave-franco-raunchy-idiots-scene-1236684499/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Dave%20Franco%20Says%20Raunchy%20%E2%80%98Idiots%E2%80%99%20Scene%20Is%20%E2%80%9Cthe%20Craziest%20Thing%E2%80%9D%20He%E2%80%99s%20Done%20on%20Camera.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1682432399",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f59f9d0ecc6af893c680",
-      "category": "Entertainment",
-      "headline": "Sorry, Haters, the Gwyneth Paltrow–Sam Altman Hamptons Dinner Party Is Apparently on Hold",
-      "summary": "After a viral backlash to an invitation, Paltrow clapped back with an AI",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T20:19:12+00:00",
-      "source_url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/gwyneth-paltrow-sam-altman-hamptons-dinner-party-postponed-1236684510/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sorry%2C%20Haters%2C%20the%20Gwyneth%20Paltrow%E2%80%93Sam%20Altman%20Hamptons%20Dinner%20Party%20Is%20Apparently%20on%20Hold.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=448296956",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "fd5c476ff4bbea49af89",
-      "category": "Sports",
-      "headline": "Injury uncertainty led to 'intrusive thoughts' for Alcaraz",
-      "summary": "Seven",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T20:16:44+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/c3rexy3jllyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Injury%20uncertainty%20led%20to%20%27intrusive%20thoughts%27%20for%20Alcaraz.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1352786707",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b9ded519d8f8d188f298",
-      "category": "India",
-      "headline": "West Bengal CM flays ‘Azadi’ slogans at Jadavpur",
-      "summary": "Suvendu Adhikari visited Jadavpur for a public recital of national song Vande Mataram, which saw thousands of people joining the Chief Minister",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:16:18+00:00",
-      "source_url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-flays-azadi-slogans-at-jadavpur/article71401699.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20West%20Bengal%20CM%20flays%20%E2%80%98Azadi%E2%80%99%20slogans%20at%20Jadavpur.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=315109576",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "1440a7665dca235c893e",
-      "category": "India",
-      "headline": "‘City of ponds’: residents of Bihar’s Darbhanga town wade into legal battle to save water bodies",
-      "summary": "Members of a citizen group have petitioned the Supreme Court seeking restoration and reclamation instead of beautification of the ponds",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:10:50+00:00",
-      "source_url": "https://www.thehindu.com/news/national/bihar/city-of-ponds-residents-of-bihars-darbhanga-town-wade-into-legal-battle-to-save-water-bodies/article71402242.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98City%20of%20ponds%E2%80%99%3A%20residents%20of%20Bihar%E2%80%99s%20Darbhanga%20town%20wade%20into%20legal%20battle%20to%20save%20water%20bodies.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1880337886",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9d790509e54a9f9f16d3",
-      "category": "India",
-      "headline": "‘Not taken into confidence’: Shiv Sena upset over Maharashtra CM’s ‘unilateral decision’ to relax Marathi rule for autorickshaw, taxi drivers",
-      "summary": "Shiv Sena leader and Transport Minister Pratap Sarnaik had announced a drive to ensure that commercial autorickshaw and taxi drivers in the State speak ‘functional Marathi’",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:05:08+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/not-taken-into-confidence-sena-upset-over-cms-unilateral-decision-to-relax-marathi-rule-for-autorickshaw-taxi-drivers/article71401390.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Not%20taken%20into%20confidence%E2%80%99%3A%20Shiv%20Sena%20upset%20over%20Maharashtra%20CM%E2%80%99s%20%E2%80%98unilateral%20decision%E2%80%99%20to%20relax%20Marathi%20rule%20for%20autorickshaw%2C%20taxi%20drivers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2421160673",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2cab213d291041754ae2",
-      "category": "India",
-      "headline": "High-powered task force looking into NTA reforms invites stakeholder suggestions",
-      "summary": "The Nandan Nilekani-led task force set up by PM Narendra Modi requested stakeholders to submit their suggestions by Sept. 13; submissions can be made in English, Hindi or regional languages by phone, mail, WhatsApp or website",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:02:41+00:00",
-      "source_url": "https://www.thehindu.com/education/high-powered-task-force-looking-into-nta-reforms-invites-stakeholder-suggestions/article71401674.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20High-powered%20task%20force%20looking%20into%20NTA%20reforms%20invites%20stakeholder%20suggestions.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4219262358",
       "image_type": "ai_generated"
     }
   ]
