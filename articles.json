@@ -1,18 +1,161 @@
 {
-  "updated_at": "2026-08-29T01:05:09.917808+00:00",
+  "updated_at": "2026-08-29T01:34:14.698610+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 27,
+    "World": 28,
     "India": 29,
     "Business": 0,
-    "Technology & AI": 10,
-    "Sports": 12,
-    "Entertainment": 17,
+    "Technology & AI": 9,
+    "Sports": 11,
+    "Entertainment": 18,
     "Lifestyle": 5
   },
   "articles": [
+    {
+      "id": "f48779c88f95bbbc41c0",
+      "category": "India",
+      "headline": "Flash floods in Nepal: No contact still with 320 Indians; 400 stranded",
+      "summary": "21 pilgrims from Tamil Nadu return safely; India sends third flight to Kathmandu with relief materials and a 11",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T01:28:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/many-indians-are-missing-after-nepal-flash-floods/article71400459.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Flash%20floods%20in%20Nepal%3A%20No%20contact%20still%20with%20320%20Indians%3B%20400%20stranded.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3532023783",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bd04c6f1242c71342c66",
+      "category": "India",
+      "headline": "FM Sitharaman lands in U.S. for six-day visit for G-20 talks and meeting with business leaders",
+      "summary": "Ms. Sitharaman is on a nine-day joint visit to Canada and U.S., which is scheduled to end on September 2",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T01:27:20+00:00",
+      "source_url": "https://www.thehindu.com/news/national/fm-sitharaman-lands-in-us-for-six-day-visit-for-g-20-talks-and-meeting-with-business-leaders/article71403322.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FM%20Sitharaman%20lands%20in%20U.S.%20for%20six-day%20visit%20for%20G-20%20talks%20and%20meeting%20with%20business%20leaders.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=238424146",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6670ed9443fb6fba3344",
+      "category": "India",
+      "headline": "3 Days On, 77 Isha Foundation Pilgrims Still Missing After Nepal Floods",
+      "summary": "\"There are 77 families waiting desperately for the answers\", a member of Isha Foundation said.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T01:24:12+00:00",
+      "source_url": "https://www.ndtv.com/india-news/no-update-on-group-of-77-pilgrims-of-isha-foundation-missing-in-tibet-11972992#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%20Days%20On%2C%2077%20Isha%20Foundation%20Pilgrims%20Still%20Missing%20After%20Nepal%20Floods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2816830687",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "62ed862f54829b43a0a9",
+      "category": "Entertainment",
+      "headline": "California Tries Offering Hollywood New Perks to Make Up for Catch In $750 Million Incentive Program",
+      "summary": "The legislation introduced Friday proposes to exempt indie productions from business tax credit caps and allow productions to monetize their refunds faster.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T01:23:53+00:00",
+      "source_url": "https://www.hollywoodreporter.com/business/business-news/california-budget-trailer-bill-hollywood-tax-credit-issue-1236678209/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Tries%20Offering%20Hollywood%20New%20Perks%20to%20Make%20Up%20for%20Catch%20In%20%24750%20Million%20Incentive%20Program.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=153826293",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c3eca489c31043ec5192",
+      "category": "World",
+      "headline": "Trump says US has 'historic' deal to control 65bn barrels of Venezuela's oil",
+      "summary": "Venezuela's interim president, Delcy Rodriguez, hailed the deal as significant to her country's revival.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T01:21:43+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20US%20has%20%27historic%27%20deal%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030477565",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "729d0b5c6814f37d404b",
+      "category": "India",
+      "headline": "Telangana Foods turns into role model for country in Take Home Ration models",
+      "summary": "The facility supplies food to children through Anganwadi centres in all districts of Telangana and neighbouring Andhra Pradesh and its major ready-to-eat products include Balamrutham, Balamrutham Plus and snack food, besides hot food products such as Kichidi Mix and Upma Mix",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T01:16:21+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/telangana-foods-turns-into-role-model-for-country-in-take-home-ration-models/article71400492.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Telangana%20Foods%20turns%20into%20role%20model%20for%20country%20in%20Take%20Home%20Ration%20models.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2087046811",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d16ae6ef9c28d6892bfb",
+      "category": "India",
+      "headline": "SIR To Begin In Tripura's West District On September 5",
+      "summary": "The Special Intensive Revision (SIR) will commence on September 5 in Tripura's West District.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T01:15:46+00:00",
+      "source_url": "https://www.ndtv.com/india-news/sir-to-begin-in-tripuras-west-district-on-september-5-11973224#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20SIR%20To%20Begin%20In%20Tripura%27s%20West%20District%20On%20September%205.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=8266143",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T01:15:02+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "844b2d01fb479c44dead",
+      "category": "India",
+      "headline": "When the mantra of Vande Mataram lit the fire of freedom in Nizam’s territory",
+      "summary": "Scores of students sang Vande Mataram, terming it as a mantra, however, the Nizam’s Government saw it as a song fueling patriotism rather than its religious message",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T01:14:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/when-the-mantra-of-vande-mataram-litthe-fire-of-freedom-in-nizams-territory/article71400414.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20When%20the%20mantra%20of%20Vande%20Mataram%20lit%20the%20fire%20of%20freedom%20in%20Nizam%E2%80%99s%20territory.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3252676541",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "29a83df8758091e629af",
+      "category": "World",
+      "headline": "Somali piracy surges as the impact of the US-Iran war ripples outwards",
+      "summary": "Two ships were seized within four days last week raising to at least 13 the number attacked since January.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T01:14:13+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Somali%20piracy%20surges%20as%20the%20impact%20of%20the%20US-Iran%20war%20ripples%20outwards.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2608054699",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "21f55621b46ec784a04e",
+      "category": "India",
+      "headline": "CNG Gets Costlier By Rs 3.89. New Price In Delhi Nears Rs 87 Per Kg",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T01:13:25+00:00",
+      "source_url": "https://www.ndtv.com/india-news/cng-to-get-costlier-by-rs-3-89-says-indraprastha-gas-limited-11972787#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CNG%20Gets%20Costlier%20By%20Rs%203.89.%20New%20Price%20In%20Delhi%20Nears%20Rs%2087%20Per%20Kg.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=835415137",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a416779e77a890f7d3b0",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing people rises to 2,478 – latest updates",
+      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T01:02:54+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20rises%20to%202%2C478%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1424723063",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8c9d668786131d1fb7e6",
+      "category": "World",
+      "headline": "Close race as Iceland votes on whether to restart talks on joining EU",
+      "summary": "Turbulent international affairs have brought the vote forward, but the campaign has focused more on Iceland's vital fishing industry.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:56:19+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cn45vdxyvvlo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Close%20race%20as%20Iceland%20votes%20on%20whether%20to%20restart%20talks%20on%20joining%20EU.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=206347945",
+      "image_type": "ai_generated"
+    },
     {
       "id": "0e59b996673ee74b87f6",
       "category": "World",
@@ -44,28 +187,6 @@
       "published_at": "2026-08-29T00:42:48+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/jelly-roll-clarifies-political-views-after-grammys-1236684749/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jelly%20Roll%20Clarifies%20Political%20Views%2C%20Regrets%20Not%20Taking%20%E2%80%9COpportunity%20to%20Speak%20Up%E2%80%9D%20at%20Grammys.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=90917385",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a416779e77a890f7d3b0",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing people rises to 2,478 – latest updates",
-      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T00:40:07+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20rises%20to%202%2C478%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1424723063",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T00:36:39+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
       "image_type": "ai_generated"
     },
     {
@@ -110,17 +231,6 @@
       "published_at": "2026-08-29T00:30:03+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/art-culture/quote-of-the-day-by-michael-jackson-to-me-nothing-is-more-important-than-making-people-happy-giving-them-101787931617214.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Quote%20of%20the%20day%20by%20Michael%20Jackson%3A%20%E2%80%98To%20me%2C%20nothing%20is%20more%20important%20than%20making%20people%20happy%2C%20giving%20them%E2%80%A6%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3753804303",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c3eca489c31043ec5192",
-      "category": "World",
-      "headline": "Trump says US has 'historic' deal to control 65bn barrels of Venezuela's oil",
-      "summary": "The agreement would grant the US majority control of over 65 billion barrels of proven Venezuelan oil reserves, Trump said.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-29T00:25:07+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20US%20has%20%27historic%27%20deal%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030477565",
       "image_type": "ai_generated"
     },
     {
@@ -762,17 +872,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "67e7ecebc858fe7749b0",
-      "category": "India",
-      "headline": "No Update On Group Of 77 Pilgrims Of Isha Foundation Missing In Tibet",
-      "summary": "\"There are 77 families waiting desperately for the answers\", a member of Isha Foundation said.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T20:26:27+00:00",
-      "source_url": "https://www.ndtv.com/india-news/no-update-on-group-of-77-pilgrims-of-isha-foundation-missing-in-tibet-11972992#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20Update%20On%20Group%20Of%2077%20Pilgrims%20Of%20Isha%20Foundation%20Missing%20In%20Tibet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2044802902",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "7d03cad3c61ddc774cb2",
       "category": "India",
       "headline": "AIMIM expels MLC Mirza Rahmat Baig from party",
@@ -1012,105 +1111,6 @@
       "published_at": "2026-08-28T19:40:45+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cm2rzxrdr71o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Norway%20mourns%20King%20Harald%20as%20Haakon%20VIII%20ascends%20throne.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1854610136",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ae7ff766f9c9ba6bdc0d",
-      "category": "India",
-      "headline": "Himanta Sarma Says 6 Youths From Assam Missing In Nepal's Devastating Flood",
-      "summary": "Himanta Biswa Sarma on Friday informed that six youths from Assam reportedly missing in Nepal floods.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T19:40:23+00:00",
-      "source_url": "https://www.ndtv.com/india-news/himanta-sarma-says-6-youths-from-assam-missing-in-nepals-devastating-flood-11972952#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Himanta%20Sarma%20Says%206%20Youths%20From%20Assam%20Missing%20In%20Nepal%27s%20Devastating%20Flood.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1314884530",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "691ebba253e1fbc082a5",
-      "category": "India",
-      "headline": "T.N. govt. orders DFR for Water Metro link",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:39:58+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-orders-dfr-for-water-metro-link/article71401386.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20T.N.%20govt.%20orders%20DFR%20for%20Water%20Metro%20link.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1732314237",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f9d9171e2c7351f4b2a7",
-      "category": "India",
-      "headline": "Chennai Corporation Council meeting | Unlikely allies as parties unite against State govt. over lack of ward funds",
-      "summary": "Ward 141 councillor A. Raja Anbazhagan said councillors should consider resigning before the next Council meeting if the ward development funds were not released",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:38:58+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-corporation-council-meeting-unlikely-allies-as-parties-unite-against-state-govt-over-lack-of-ward-funds/article71399515.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chennai%20Corporation%20Council%20meeting%20%7C%20Unlikely%20allies%20as%20parties%20unite%20against%20State%20govt.%20over%20lack%20of%20ward%20funds.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=304833390",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "992bb91aa49a05861493",
-      "category": "India",
-      "headline": "Centre eases norms for defence exports, licences",
-      "summary": "Exporters can self-generate a one-time authorisation for multiple consignments without seeking separate approval for each batch; licence validity increased to two years",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:38:36+00:00",
-      "source_url": "https://www.thehindu.com/news/national/ministry-eases-norms-for-defence-exports-licences/article71401191.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Centre%20eases%20norms%20for%20defence%20exports%2C%20licences.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4082189398",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ac317d1b89cc462a39e3",
-      "category": "Sports",
-      "headline": "Sarfaraz denies knowing about Pakistan threat to end tour",
-      "summary": "Head coach Sarfaraz Ahmed says he and his players did not know about a Pakistan Cricket Board threat to the England and Wales Cricket Board over a Sky interview with the sons of Imran Khan.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T19:38:35+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/c17j0y17epdo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Sarfaraz%20denies%20knowing%20about%20Pakistan%20threat%20to%20end%20tour.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=245203761",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "26789953d8d191a3981c",
-      "category": "India",
-      "headline": "Congress alleges Penguin India succumbed to ‘pressure’ to demand changes in Sonia memoir",
-      "summary": "Congress leader Ashok Gehlot claims Penguin India sought to remove sections critical of the PM, the RSS, and China’s “occupation“ of Indian land; says Penguin Worldwide was willing to publish the book unchanged for global audience",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:37:28+00:00",
-      "source_url": "https://www.thehindu.com/news/national/congress-alleges-penguin-india-succumbed-to-pressure-to-demand-changes-in-sonia-memoir/article71400938.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20alleges%20Penguin%20India%20succumbed%20to%20%E2%80%98pressure%E2%80%99%20to%20demand%20changes%20in%20Sonia%20memoir.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2507779685",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7be15e0fb558ad573c79",
-      "category": "World",
-      "headline": "After 6 months of war, Iran's battered regime remains entrenched",
-      "summary": "Instead of collapsing, the Iranian regime has dug in its heels and taken an even harder line.",
-      "publisher": "NPR World",
-      "published_at": "2026-08-28T19:35:24+00:00",
-      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20After%206%20months%20of%20war%2C%20Iran%27s%20battered%20regime%20remains%20entrenched.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2704334283",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "6bcb587943bca504157f",
-      "category": "India",
-      "headline": "NH completes land acquisition for ₹1,047-crore Vellore Town Bypass Road",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:32:52+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/nh-completes-land-acquisition-for-1047-crore-vellore-town-bypass-road/article71396552.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20NH%20completes%20land%20acquisition%20for%20%E2%82%B91%2C047-crore%20Vellore%20Town%20Bypass%20Road.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3631714368",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "13c8196a2b33b130c53d",
-      "category": "Technology & AI",
-      "headline": "An Anthropic researcher just gave us a peek at self-improving AI",
-      "summary": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-28T19:30:38+00:00",
-      "source_url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20An%20Anthropic%20researcher%20just%20gave%20us%20a%20peek%20at%20self-improving%20AI.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2032652192",
       "image_type": "ai_generated"
     }
   ]
