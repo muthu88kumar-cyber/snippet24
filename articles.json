@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T11:22:46.671761+00:00",
-  "total": 975,
+  "updated_at": "2026-08-29T11:28:53.976018+00:00",
+  "total": 984,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 86,
-    "India": 198,
+    "India": 205,
     "Business": 159,
     "Technology & AI": 87,
-    "Sports": 71,
+    "Sports": 72,
     "Entertainment": 234,
-    "Lifestyle": 140
+    "Lifestyle": 141
   },
   "articles": [
     {
@@ -1356,6 +1356,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "0974ecc64cd699d4bc67",
+      "category": "India",
+      "headline": "Want To Study At A Top Australian University? Here's What Mumbai Campus Offers",
+      "summary": "The University of Western Australia ranked 77th in the QS World University Rankings 2027.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T11:05:10+00:00",
+      "source_url": "https://www.ndtv.com/education/university-of-western-australia-gets-final-approval-from-ugc-for-mumbai-campus-know-what-campus-offers-11974775#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Want%20To%20Study%20At%20A%20Top%20Australian%20University%3F%20Here%27s%20What%20Mumbai%20Campus%20Offers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1959336713",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "402ae9e8e659758c0ede",
       "category": "Entertainment",
       "headline": "King 100: How Much Does Nagarjuna’s 100th Film Need To Become The Biggest Opening Of His Career?",
@@ -1408,6 +1419,17 @@
       "published_at": "2026-08-29T10:43:24+00:00",
       "source_url": "https://www.koimoi.com/box-office/toxic-worldwide-box-office-day-3/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20Worldwide%20Box%20Office%20Day%203%3A%20Enters%20Top%205%20Highest-Grossing%20Kannada%20Films%20Ever%2C%20Next%20Target%20Is%20KGF%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2586041112",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d7d8e42e8c2d367eaa4b",
+      "category": "India",
+      "headline": "NEET PG 2026 Exam Tomorrow: Check Important Exam Day Guidelines Here",
+      "summary": "NEET PG 2026 exam is scheduled for August 30; check key instructions before reaching the exam centre.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T10:31:41+00:00",
+      "source_url": "https://www.ndtv.com/education/neet-pg-2026-exam-tomorrow-check-important-exam-day-guidelines-here-11974657#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20NEET%20PG%202026%20Exam%20Tomorrow%3A%20Check%20Important%20Exam%20Day%20Guidelines%20Here.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=770790486",
       "image_type": "ai_generated"
     },
     {
@@ -1964,7 +1986,7 @@
       "id": "4bf7021eef4d00ac3d79",
       "category": "India",
       "headline": "28-Year-Old Man Electrocuted After Falling Into Collapsed Delhi Road",
-      "summary": "The man fell into a nearly three-foot",
+      "summary": "The man fell into a nearly three",
       "publisher": "NDTV India",
       "published_at": "2026-08-29T05:32:56+00:00",
       "source_url": "https://www.ndtv.com/india-news/28-year-old-man-electrocuted-after-falling-into-collapsed-delhi-road-11973815#publisher=newsstand",
@@ -2918,6 +2940,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3f70668582a4428ab979",
+      "category": "India",
+      "headline": "Evening Newswrap: Nepal’s flood damage nears 10% of economy; drunk man rapes mother in UP's Hathras & more",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T11:25:09+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/evening-newswrap-nepals-flood-damage-nears-10-of-economy-drunk-man-rapes-mother-in-ups-hathras-more/articleshow/133610009.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Evening%20Newswrap%3A%20Nepal%E2%80%99s%20flood%20damage%20nears%2010%25%20of%20economy%3B%20drunk%20man%20rapes%20mother%20in%20UP%27s%20Hathras%20%26%20more.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1314677423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16da4c706df932e04c82",
+      "category": "India",
+      "headline": "BJP Turns Up Meme Heat On Congress, Deploys Satire In Social Media Battle",
+      "summary": "BJP accounts have been dishing out memes to counter the Congress' narrative.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T11:05:21+00:00",
+      "source_url": "https://www.ndtv.com/india-news/bjp-turns-up-meme-heat-on-congress-deploys-satire-in-social-media-battle-11974725#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20Turns%20Up%20Meme%20Heat%20On%20Congress%2C%20Deploys%20Satire%20In%20Social%20Media%20Battle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276391113",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ef5ad1cd5daa7e6b4b8a",
+      "category": "India",
+      "headline": "Case Against Mamata Banerjee Over Court Order Violation On Student Body Meet",
+      "summary": "The case was registered after examining the conditions imposed by the court .",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T11:01:19+00:00",
+      "source_url": "https://www.ndtv.com/india-news/case-against-mamata-banerjee-over-court-order-violation-on-student-body-meet-11974782#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Case%20Against%20Mamata%20Banerjee%20Over%20Court%20Order%20Violation%20On%20Student%20Body%20Meet.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4072528416",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fb9bc4f5d4454590348b",
+      "category": "India",
+      "headline": "\"These People Will Kill Me\": Woman, Child Die After Delivery, Video Surfaces",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T11:01:17+00:00",
+      "source_url": "https://www.ndtv.com/india-news/these-people-will-kill-me-woman-child-die-after-delivery-video-surfaces-11974781#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22These%20People%20Will%20Kill%20Me%22%3A%20Woman%2C%20Child%20Die%20After%20Delivery%2C%20Video%20Surfaces.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2773170461",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b3fed641ba0df3911cd0",
       "category": "Entertainment",
       "headline": "Once More Box Office Collection Day 1: Arjun Das’s Romance Drama Opens 64% Lower Than Con City",
@@ -2926,6 +2992,17 @@
       "published_at": "2026-08-29T10:52:29+00:00",
       "source_url": "https://www.koimoi.com/box-office/once-more-box-office-collection-day-1-arjun-dass-romance-drama-opens-64-lower-than-con-city/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Once%20More%20Box%20Office%20Collection%20Day%201%3A%20Arjun%20Das%E2%80%99s%20Romance%20Drama%20Opens%2064%25%20Lower%20Than%20Con%20City.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1405699700",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a57d5bd6d971a2cb487a",
+      "category": "India",
+      "headline": "Nihang Singh Shot Dead At Amritsar Gurdwara Fair, Suspects On The Run",
+      "summary": "His body was later recovered from an isolated area.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T10:49:42+00:00",
+      "source_url": "https://www.ndtv.com/india-news/nihang-singh-shot-dead-at-amritsar-gurdwara-fair-suspects-on-the-run-11974742#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nihang%20Singh%20Shot%20Dead%20At%20Amritsar%20Gurdwara%20Fair%2C%20Suspects%20On%20The%20Run.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1143118807",
       "image_type": "ai_generated"
     },
     {
@@ -7659,6 +7736,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "27aa0b6f5dbf2a8b560f",
+      "category": "Sports",
+      "headline": "Pritchard retains rowing world title in Amsterdam",
+      "summary": "Welsh Para-rower Ben Pritchard retains his PR1 men's single sculls world title at the World Rowing Championships in Amsterdam.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T11:24:15+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rowing/articles/clyj44wy8d6o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Pritchard%20retains%20rowing%20world%20title%20in%20Amsterdam.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=62011869",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "96a4c25f95654d30b098",
       "category": "Sports",
       "headline": "Cannabis smell at US Open is distracting - Boulter",
@@ -7667,6 +7755,28 @@
       "published_at": "2026-08-29T11:07:31+00:00",
       "source_url": "https://www.bbc.co.uk/sport/tennis/articles/c74exxnd7r3o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Cannabis%20smell%20at%20US%20Open%20is%20distracting%20-%20Boulter.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1510001385",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "03b1af2062ee7cad8f18",
+      "category": "World",
+      "headline": "Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead",
+      "summary": "Nepal and China continue arduous search and rescue operations in flood-hit Himalayas Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates A Chinese rescue team has reached the all-but-obliterated Gyirong border crossing complex for the first time and found “nothing but ruins” as Nepal and China continue their arduous rescue operations in the flood-hit Himalayas. Surveillance...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T11:07:28+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Chinese%20rescuers%20find%20%E2%80%98nothing%20but%20ruins%E2%80%99%20at%20border%20crossing%20as%20Nepal%20seeks%20help%20to%20ID%20and%20store%20the%20dead.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3629332303",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ea45744bc83d25e75209",
+      "category": "Lifestyle",
+      "headline": "Everyday explained: Why are school buses always painted yellow?",
+      "summary": "Ever wondered why school buses are almost always yellow? The iconic colour isn’t just a design choice, it was selected decades ago for visibility and safety.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T11:01:48+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/art-culture/everyday-explained-why-are-school-buses-always-painted-yellow-101787998471540.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Everyday%20explained%3A%20Why%20are%20school%20buses%20always%20painted%20yellow%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=832347743",
       "image_type": "ai_generated"
     },
     {
@@ -7788,17 +7898,6 @@
       "published_at": "2026-08-29T10:00:23+00:00",
       "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/trace-meek-best-phone-picture-dog-hat-tattoo",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98The%20angle%20of%20the%20dog%2C%20the%20hat%20and%20the%20tattoo%20on%20her%20foot%20all%20come%20together%E2%80%99%3A%20Trace%20Meek%E2%80%99s%20best%20phone%20picture.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2558654553",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "03b1af2062ee7cad8f18",
-      "category": "World",
-      "headline": "Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead",
-      "summary": "Nepal and China continue arduous search and rescue operations in flood-hit Himalayas Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates A Chinese rescue team has reached the all-but-obliterated Gyirong border crossing complex for the first time and found “nothing but ruins” as Nepal and China continue their arduous rescue operations in the flood-hit Himalayas. Surveillance...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T10:00:12+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Chinese%20rescuers%20find%20%E2%80%98nothing%20but%20ruins%E2%80%99%20at%20border%20crossing%20as%20Nepal%20seeks%20help%20to%20ID%20and%20store%20the%20dead.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3629332303",
       "image_type": "ai_generated"
     },
     {
@@ -8220,14 +8319,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "589350d9c6334dd30f5e",
+      "id": "7088c832cd2b68846336",
       "category": "World",
-      "headline": "Hilarity, unease and relief: games show China is not over the finish line in humanoid robot race",
-      "summary": "World Humanoid Robot Games showcased leaps Beijing has made in the tech, but also highlighted limitations as US rivals prepare their own launches With exploding pelvises, enough comic pratfalls for a Buster Keaton show reel and the odd moment of ruthless violence, the World Humanoid Robot Games in Beijing gripped the world this week with an unsettling mixture of hilarity, trepidation and relief. The five-day...",
+      "headline": "Faster, higher, funnier: what we learned from China’s robot games",
+      "summary": "Five-day showcase reveals leaps Beijing has made in humanoid tech, but also its limitations as US rivals come up from the rear With exploding pelvises, enough comic pratfalls for a Buster Keaton show reel and the odd moment of ruthless violence, the World Humanoid Robot Games in Beijing gripped the world this week with an unsettling mixture of hilarity, trepidation and relief. The five-day showcase staked out...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T05:00:19+00:00",
       "source_url": "https://www.theguardian.com/news/ng-interactive/2026/aug/29/hilarity-unease-and-relief-games-show-china-is-not-over-the-finish-line-in-humanoid-robot-race",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Hilarity%2C%20unease%20and%20relief%3A%20games%20show%20China%20is%20not%20over%20the%20finish%20line%20in%20humanoid%20robot%20race.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=9379345",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Faster%2C%20higher%2C%20funnier%3A%20what%20we%20learned%20from%20China%E2%80%99s%20robot%20games.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3332524162",
       "image_type": "ai_generated"
     },
     {
