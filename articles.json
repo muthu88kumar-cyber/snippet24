@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T11:28:53.976018+00:00",
-  "total": 984,
+  "updated_at": "2026-08-29T11:34:35.089561+00:00",
+  "total": 989,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 86,
-    "India": 205,
+    "India": 208,
     "Business": 159,
     "Technology & AI": 87,
-    "Sports": 72,
-    "Entertainment": 234,
+    "Sports": 73,
+    "Entertainment": 235,
     "Lifestyle": 141
   },
   "articles": [
@@ -1015,6 +1015,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "852fdebd9f4c579c8c29",
+      "category": "India",
+      "headline": "Sugar price surge: Karnataka farmers seek nod for jaggery units to produce ethanol",
+      "summary": "The Centre has rejected suggestions that the rise in sugar prices is due to diversion of sugarcane for ethanol production",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:24:51+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/sugar-price-surge-karnataka-farmers-seek-nod-for-jaggery-units-to-produce-ethanol/article71392853.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Sugar%20price%20surge%3A%20Karnataka%20farmers%20seek%20nod%20for%20jaggery%20units%20to%20produce%20ethanol.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1676620020",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "402a32f192ea1d0491bd",
       "category": "Entertainment",
       "headline": "Bail Teaser Review: Shiva Rajkumar Promises Humor And Intensity In Right Proportions In Cop-Versus-Conflict Drama",
@@ -1334,6 +1345,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c91636adef8192da4b43",
+      "category": "Entertainment",
+      "headline": "Toxic Hindi Box Office Day 3: Becomes 8th Highest-Grossing Film Of 2026, 100 Crore Club Loading!",
+      "summary": "Yash's Toxic has witnessed another drop at the Hindi box office on day 3. Check out the latest collection! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:33:30+00:00",
+      "source_url": "https://www.koimoi.com/box-office/toxic-hindi-box-office-day-3-becomes-8th-highest-grossing-film-of-2026-100-crore-club-loading/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20Hindi%20Box%20Office%20Day%203%3A%20Becomes%208th%20Highest-Grossing%20Film%20Of%202026%2C%20100%20Crore%20Club%20Loading%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2390784130",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "763fc7fea88230887a51",
+      "category": "India",
+      "headline": "Man killed in wild gaur attack at Vilangad in Keralam",
+      "summary": "He was attacked while attempting to drive the animal away from an agricultural field along with the Forest Department officials",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:26:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/man-killed-in-wild-gaur-attack-at-vilangad-in-keralam/article71404370.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Man%20killed%20in%20wild%20gaur%20attack%20at%20Vilangad%20in%20Keralam.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3881640015",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "762078eb641fc6813a88",
       "category": "India",
       "headline": "No scaling down Dasara festivities despite drought, says Karnataka Chief Minister D.K. Shivakumar",
@@ -1386,6 +1419,17 @@
       "published_at": "2026-08-29T11:02:05+00:00",
       "source_url": "https://www.koimoi.com/box-office/irumudi-box-office-day-9-bms-sales-ravi-tejas-film-roars-selling-267-tickets-every-single-minute-on-2nd-saturday/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Irumudi%20Box%20Office%20Day%209%20BMS%20Sales%3A%20Ravi%20Teja%E2%80%99s%20Film%20Roars%20Selling%20267%20Tickets%20Every%20Single%20Minute%20On%202nd%20Saturday%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2646078654",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "17a7555e59ebfe90eaec",
+      "category": "India",
+      "headline": "Bengal couple escapes as bus turns back near Kerung just before Nepal floods hit",
+      "summary": "Anukul Poddar, his wife Reba from Bengal were an hour from Nepal’s Kerung immigration centre when their driver turned back, minutes before the area was washed away.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T11:00:55+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/bengal-couple-escapes-as-bus-turns-back-near-kerung-just-before-nepal-floods-hit-101788001255789.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengal%20couple%20escapes%20as%20bus%20turns%20back%20near%20Kerung%20just%20before%20Nepal%20floods%20hit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2915687617",
       "image_type": "ai_generated"
     },
     {
@@ -2951,6 +2995,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "6bb5dd3ac5a75d468c0a",
+      "category": "India",
+      "headline": "For vultures near Dehradun, 2.4 km separates survival from electrocution",
+      "summary": "A decade-old study, published in a journal recently, indicates that the relocation of a livestock carcass dump away from power lines at Sudhauwala has been effective in reducing vulture mortality",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:18:55+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/energy-and-environment/for-vultures-near-dehradun-24-km-separates-survival-from-electrocution/article71403683.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20For%20vultures%20near%20Dehradun%2C%202.4%20km%20separates%20survival%20from%20electrocution.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2830553585",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8135db5703e37f05dbe9",
+      "category": "India",
+      "headline": "FIR against Mamata Banerjee for ‘violation’ of Calcutta High Court order on Trinamool student wing foundation day event",
+      "summary": "The FIR was filed at the Hastings Police Station against former CM Mamata Banerjee as well as the organisers of the meeting of the TMCP, police said",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:11:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FIR%20against%20Mamata%20Banerjee%20for%20%E2%80%98violation%E2%80%99%20of%20Calcutta%20High%20Court%20order%20on%20Trinamool%20student%20wing%20foundation%20day%20event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2888905311",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "16da4c706df932e04c82",
       "category": "India",
       "headline": "BJP Turns Up Meme Heat On Congress, Deploys Satire In Social Media Battle",
@@ -3168,28 +3234,6 @@
       "published_at": "2026-08-29T09:53:50+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/shehzad-poonawalla-backs-samay-raina-latest-indias-got-latent-episode-after-viral-moment-fadnavis-maharashtra-bjp-101787994471662.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Surprisingly%20sensitive%20heart%E2%80%99%3A%20Shehzad%20Poonawalla%20backs%20comedian%20Samay%20Raina%20after%20viral%20Latent%20moment.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4166133052",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "6bb5dd3ac5a75d468c0a",
-      "category": "India",
-      "headline": "For vultures near Dehradun, 2.4 km separates survival from electrocution",
-      "summary": "A decade-old study, published in a journal recently, indicates that the relocation of a livestock carcass dump from near power lines at Sudhauwala has been effective",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T09:50:36+00:00",
-      "source_url": "https://www.thehindu.com/sci-tech/energy-and-environment/for-vultures-near-dehradun-24-km-separates-survival-from-electrocution/article71403683.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20For%20vultures%20near%20Dehradun%2C%202.4%20km%20separates%20survival%20from%20electrocution.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2830553585",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "8135db5703e37f05dbe9",
-      "category": "India",
-      "headline": "FIR against Mamata Banerjee for ‘violation’ of Calcutta High Court order on Trinamool student wing foundation day event",
-      "summary": "The FIR was filed at the Hastings Police Station against former CM Mamata Banerjee as well as the organisers of the meeting of the TMCP, police said",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T09:48:49+00:00",
-      "source_url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FIR%20against%20Mamata%20Banerjee%20for%20%E2%80%98violation%E2%80%99%20of%20Calcutta%20High%20Court%20order%20on%20Trinamool%20student%20wing%20foundation%20day%20event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2888905311",
       "image_type": "ai_generated"
     },
     {
@@ -7736,6 +7780,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d44c64d44fb414bf6d3d",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
+      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises to 626, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T11:30:04+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a7e0a4201ffba4c495a2",
+      "category": "Sports",
+      "headline": "Forest to bid £40m for Everton teenager Armstrong",
+      "summary": "Nottingham Forest launch an ambitious bid to sign Everton's teenage midfielder Harrison Armstrong.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T11:28:34+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cy0znn7lg51o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20to%20bid%20%C2%A340m%20for%20Everton%20teenager%20Armstrong.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3316478475",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "27aa0b6f5dbf2a8b560f",
       "category": "Sports",
       "headline": "Pritchard retains rowing world title in Amsterdam",
@@ -7821,17 +7887,6 @@
       "published_at": "2026-08-29T10:55:35+00:00",
       "source_url": "https://www.bbc.co.uk/sport/rugby-union/articles/clyk7jy2lxeo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Small%20steps%27%20for%20Schmidt%20at%20Ulster%20-%20Best.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2017544495",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d44c64d44fb414bf6d3d",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
-      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises to 626, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T10:41:25+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
       "image_type": "ai_generated"
     },
     {
@@ -9716,17 +9771,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "cafcdf675295a4a08da0",
-      "category": "World",
-      "headline": "A melting glacier contributed to the deadly Nepal floods. We can expect more like this",
-      "summary": "As the climate continues to warm, scientists warn that the frequency of disasters like the floods in Nepal will increase.",
-      "publisher": "NPR World",
-      "published_at": "2026-08-28T09:00:00+00:00",
-      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5945799/nepal-floods-climate-change-himalayas",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20A%20melting%20glacier%20contributed%20to%20the%20deadly%20Nepal%20floods.%20We%20can%20expect%20more%20like%20this.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1782896200",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "6b5258bb78c96f87ed9b",
       "category": "World",
       "headline": "U.S. says pipelines will make Strait of Hormuz irrelevant. Energy experts disagree",
@@ -9735,6 +9779,17 @@
       "published_at": "2026-08-28T09:00:00+00:00",
       "source_url": "https://www.npr.org/2026/08/28/g-s1-140309/us-iran-middle-east-oil-pipelines-hormuz",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20U.S.%20says%20pipelines%20will%20make%20Strait%20of%20Hormuz%20irrelevant.%20Energy%20experts%20disagree.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3202098122",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cafcdf675295a4a08da0",
+      "category": "World",
+      "headline": "A melting glacier contributed to the deadly Nepal floods. We can expect more like this",
+      "summary": "As the climate continues to warm, scientists warn that the frequency of disasters like the floods in Nepal will increase.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-28T09:00:00+00:00",
+      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5945799/nepal-floods-climate-change-himalayas",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20A%20melting%20glacier%20contributed%20to%20the%20deadly%20Nepal%20floods.%20We%20can%20expect%20more%20like%20this.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1782896200",
       "image_type": "ai_generated"
     },
     {
