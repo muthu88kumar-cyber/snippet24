@@ -10,307 +10,1303 @@ from urllib.parse import quote, urlparse
 import requests
 import xml.etree.ElementTree as ET
 
+
+# ============================================================
+# SNIPPET24 NEWS CURATOR — OFFICIAL / PUBLIC SOURCES EDITION
+# ============================================================
+#
+# Source policy:
+#   - No BBC
+#   - No CNN
+#   - No Reuters
+#   - No newspapers
+#   - No private news publishers
+#
+# Sources are official government agencies, intergovernmental
+# institutions, public institutions, or official sports bodies.
+#
+# IMPORTANT:
+# "Free RSS" does NOT automatically mean "copyright-free".
+# This curator keeps the original source URL and attribution,
+# rewrites the headline/summary instead of copying article text,
+# and does not use publisher photographs as the primary visual.
+#
+# This reduces copyright/licensing risk but cannot guarantee
+# that Snippet24 can never receive a legal complaint.
+# ============================================================
+
 OUTPUT_FILE = "articles.json"
+
 TARGET_STORIES = 100
 MINIMUM_STORIES = 50
-REQUEST_TIMEOUT = 15
-REQUEST_DELAY = 0.25
+
+REQUEST_TIMEOUT = 20
+REQUEST_DELAY = 0.30
 
 HEADERS = {
-    "User-Agent": "Snippet24-News/2.0 (+https://snippet24.in)"
+    "User-Agent": (
+        "Snippet24-News/3.0 "
+        "(+https://snippet24.in)"
+    ),
+    "Accept": (
+        "application/rss+xml, application/atom+xml, "
+        "application/xml, text/xml, */*"
+    ),
 }
+
+
+# ============================================================
+# CATEGORIES
+# ============================================================
 
 CATEGORY_ORDER = [
-    "World", "India", "Business", "Technology & AI",
-    "Sports", "Entertainment", "Lifestyle"
+    "World",
+    "India",
+    "Business",
+    "Technology & AI",
+    "Sports",
+    "Entertainment",
+    "Lifestyle",
 ]
 
+
+# ============================================================
+# OFFICIAL / PUBLIC RSS SOURCES
+# ============================================================
+
 RSS_SOURCES = {
+
     "World": [
-        ("BBC News", "https://feeds.bbci.co.uk/news/world/rss.xml"),
-        ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
-        ("Guardian World", "https://www.theguardian.com/world/rss"),
+        (
+            "United Nations",
+            "https://news.un.org/feed/subscribe/en/news/all/rss.xml"
+        ),
+        (
+            "European Commission",
+            "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
+        ),
+        (
+            "World Health Organization",
+            "https://www.who.int/rss-feeds/news-english.xml"
+        ),
     ],
+
     "India": [
-        ("The Hindu", "https://www.thehindu.com/news/national/feeder/default.rss"),
-        ("Indian Express", "https://indianexpress.com/section/india/feed/"),
-        ("NDTV India", "https://feeds.feedburner.com/ndtvnews-india-news"),
+        (
+            "Press Information Bureau",
+            "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1"
+        ),
     ],
+
     "Business": [
-        ("Moneycontrol", "https://www.moneycontrol.com/rss/business.xml"),
-        ("Business Standard", "https://www.business-standard.com/rss/home_page_top_stories.rss"),
-        ("Economic Times", "https://economictimes.indiatimes.com/rssfeedsdefault.cms"),
+        (
+            "European Central Bank",
+            "https://www.ecb.europa.eu/rss/press.html"
+        ),
+        (
+            "International Monetary Fund",
+            "https://www.imf.org/en/News/RSS"
+        ),
+        (
+            "European Commission",
+            "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
+        ),
+        (
+            "Press Information Bureau",
+            "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1"
+        ),
     ],
+
     "Technology & AI": [
-        ("TechCrunch", "https://techcrunch.com/feed/"),
-        ("The Verge", "https://www.theverge.com/rss/index.xml"),
-        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+        (
+            "NASA",
+            "https://www.nasa.gov/rss-feeds/"
+        ),
+        (
+            "European Commission",
+            "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
+        ),
+        (
+            "Press Information Bureau",
+            "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1"
+        ),
     ],
-    "Lifestyle": [
-        ("Hindustan Times Lifestyle", "https://www.hindustantimes.com/feeds/rss/lifestyle/rssfeed.xml"),
-        ("Guardian Lifestyle", "https://www.theguardian.com/lifeandstyle/rss"),
-    ],
+
     "Sports": [
-        ("ESPN", "https://www.espn.com/espn/rss/news"),
-        ("BBC Sport", "https://feeds.bbci.co.uk/sport/rss.xml"),
+        (
+            "FIFA",
+            "https://www.fifa.com/api/v3/rss-feeds/news?language=en"
+        ),
     ],
+
     "Entertainment": [
-        ("Variety", "https://variety.com/feed/"),
-        ("Hollywood Reporter", "https://www.hollywoodreporter.com/feed/"),
+        (
+            "National Endowment for the Humanities",
+            "https://www.neh.gov/news/feed"
+        ),
+        (
+            "Library of Congress",
+            "https://www.loc.gov/rss/news.xml"
+        ),
+    ],
+
+    "Lifestyle": [
+        (
+            "World Health Organization",
+            "https://www.who.int/rss-feeds/news-english.xml"
+        ),
+        (
+            "United Nations",
+            "https://news.un.org/feed/subscribe/en/news/all/rss.xml"
+        ),
+        (
+            "NASA",
+            "https://www.nasa.gov/rss-feeds/"
+        ),
+        (
+            "Press Information Bureau",
+            "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1"
+        ),
     ],
 }
 
+
+# ============================================================
+# SOURCE TYPE
+# ============================================================
+
+def source_type(publisher):
+
+    official = {
+        "Press Information Bureau",
+        "United Nations",
+        "World Health Organization",
+        "European Commission",
+        "European Central Bank",
+        "International Monetary Fund",
+        "NASA",
+        "National Endowment for the Humanities",
+        "Library of Congress",
+        "FIFA",
+    }
+
+    return (
+        "official_public"
+        if publisher in official
+        else "unknown"
+    )
+
+
+# ============================================================
+# BASIC HELPERS
+# ============================================================
+
 def clean_text(value):
+
     if not value:
         return ""
+
     value = html.unescape(str(value))
-    value = re.sub(r"<[^>]+>", " ", value)
-    return re.sub(r"\s+", " ", value.replace("\xa0", " ")).strip()
+
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = value.replace(
+        "\xa0",
+        " "
+    )
+
+    return re.sub(
+        r"\s+",
+        " ",
+        value
+    ).strip()
+
 
 def normalize_category(category):
-    value = clean_text(category).lower()
-    if value in {"technology", "tech", "technology & ai", "ai", "artificial intelligence"}:
+
+    if not category:
+        return "World"
+
+    value = clean_text(
+        category
+    ).lower()
+
+    if value in {
+        "technology",
+        "tech",
+        "technology & ai",
+        "ai",
+        "artificial intelligence",
+    }:
         return "Technology & AI"
+
     for known in CATEGORY_ORDER:
+
         if value == known.lower():
             return known
+
     return "World"
 
+
 def normalize_url(url):
+
     if not url:
         return ""
+
+    url = str(url).strip()
+
     try:
-        parsed = urlparse(url.strip())
-        return url.strip() if parsed.scheme in ("http", "https") else ""
+
+        parsed = urlparse(url)
+
+        if parsed.scheme not in (
+            "http",
+            "https"
+        ):
+            return ""
+
+        return url
+
     except Exception:
+
         return ""
 
+
 def normalize_title(title):
-    title = clean_text(title).lower()
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", title)).strip()
 
-def make_id(category, title, url):
-    raw = f"{category}|{normalize_title(title)}|{url}"
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:20]
+    title = clean_text(
+        title
+    ).lower()
 
-def remove_publisher_from_title(title, publisher):
-    title = clean_text(title)
+    title = re.sub(
+        r"[^a-z0-9]+",
+        " ",
+        title
+    )
+
+    return re.sub(
+        r"\s+",
+        " ",
+        title
+    ).strip()
+
+
+def make_id(
+    category,
+    title,
+    url
+):
+
+    raw = (
+        f"{category}|"
+        f"{normalize_title(title)}|"
+        f"{url}"
+    )
+
+    return hashlib.sha256(
+        raw.encode("utf-8")
+    ).hexdigest()[:20]
+
+
+# ============================================================
+# TITLE CLEANING
+# ============================================================
+
+def remove_publisher_from_title(
+    title,
+    publisher
+):
+
+    title = clean_text(
+        title
+    )
+
     publishers = [
-        publisher, "Hindustan Times", "Business Standard", "Firstpost",
-        "Moneycontrol", "News18", "NDTV", "The Hindu", "Indian Express",
-        "BBC", "BBC News", "Reuters", "CNN", "CNBC", "TechCrunch",
-        "The Verge", "Variety", "ESPN", "Hollywood Reporter"
+        publisher,
+        "Government of India",
+        "Press Information Bureau",
+        "United Nations",
+        "World Health Organization",
+        "European Commission",
+        "European Central Bank",
+        "International Monetary Fund",
+        "NASA",
+        "FIFA",
+        "Library of Congress",
+        "National Endowment for the Humanities",
     ]
-    for name in publishers:
-        if name:
-            title = re.sub(
-                r"\s*(?:\||-|\u2013|\u2014)\s*" + re.escape(name) + r"\s*$",
-                "", title, flags=re.IGNORECASE
-            )
-    return title.strip(" -|\u2013\u2014")
 
-def make_summary(title, description):
-    summary = clean_text(description)
+    for name in publishers:
+
+        if not name:
+            continue
+
+        pattern = (
+            r"\s*(?:\||-|\u2013|\u2014)\s*"
+            + re.escape(name)
+            + r"\s*$"
+        )
+
+        title = re.sub(
+            pattern,
+            "",
+            title,
+            flags=re.IGNORECASE
+        )
+
+    return title.strip(
+        " -|\u2013\u2014"
+    )
+
+
+# ============================================================
+# SUMMARY
+# ============================================================
+
+def remove_title_repetition(
+    summary,
+    title
+):
+
+    summary = clean_text(
+        summary
+    )
+
+    if not summary:
+        return ""
+
     if title:
-        summary = re.sub(re.escape(clean_text(title)), "", summary, flags=re.IGNORECASE)
-    summary = re.sub(
-        r"^(read more|latest updates|follow live|breaking news)\s*[:\-]?\s*",
-        "", summary, flags=re.IGNORECASE
+
+        summary = re.sub(
+            re.escape(
+                clean_text(title)
+            ),
+            "",
+            summary,
+            flags=re.IGNORECASE
+        )
+
+    return re.sub(
+        r"\s+",
+        " ",
+        summary
+    ).strip()
+
+
+def make_summary(
+    title,
+    description
+):
+
+    description = clean_text(
+        description
     )
-    summary = re.sub(r"\s+", " ", summary).strip()
-    if len(summary) > 420:
-        summary = summary[:417].rsplit(" ", 1)[0] + "..."
-    return summary or (
-        "The latest developments are being reported by the original publisher. "
-        "Read the original report for the full details."
+
+    description = remove_title_repetition(
+        description,
+        title
     )
+
+    description = re.sub(
+        r"^(read more|latest updates|"
+        r"follow live|breaking news)\s*[:\-]?\s*",
+        "",
+        description,
+        flags=re.IGNORECASE
+    )
+
+    description = re.sub(
+        r"\s+",
+        " ",
+        description
+    ).strip()
+
+    if len(description) > 420:
+
+        description = (
+            description[:417]
+            .rsplit(" ", 1)[0]
+            + "..."
+        )
+
+    if description:
+        return description
+
+    return (
+        "The latest update has been published "
+        "by the official source. Read the original "
+        "source for the full details."
+    )
+
+
+# ============================================================
+# DATE
+# ============================================================
 
 def parse_date(value):
+
     if not value:
-        return datetime.now(timezone.utc)
+
+        return datetime.now(
+            timezone.utc
+        )
+
+    value = value.strip()
+
     try:
-        return parsedate_to_datetime(value.strip()).astimezone(timezone.utc)
+
+        return parsedate_to_datetime(
+            value
+        ).astimezone(
+            timezone.utc
+        )
+
     except Exception:
         pass
-    try:
-        return datetime.fromisoformat(value.strip().replace("Z", "+00:00")).astimezone(timezone.utc)
-    except Exception:
-        return datetime.now(timezone.utc)
 
-def child_text(element, names):
-    names = {n.lower() for n in names}
+    try:
+
+        return datetime.fromisoformat(
+            value.replace(
+                "Z",
+                "+00:00"
+            )
+        ).astimezone(
+            timezone.utc
+        )
+
+    except Exception:
+
+        return datetime.now(
+            timezone.utc
+        )
+
+
+# ============================================================
+# XML HELPERS
+# ============================================================
+
+def find_child_text(
+    element,
+    names
+):
+
+    names = {
+        name.lower()
+        for name in names
+    }
+
     for child in list(element):
-        if child.tag.split("}")[-1].lower() in names:
-            return clean_text("".join(child.itertext()))
+
+        tag = child.tag.split(
+            "}"
+        )[-1].lower()
+
+        if tag in names:
+
+            return clean_text(
+                "".join(
+                    child.itertext()
+                )
+            )
+
     return ""
+
 
 def find_link(element):
+
     for child in list(element):
-        if child.tag.split("}")[-1].lower() != "link":
+
+        tag = child.tag.split(
+            "}"
+        )[-1].lower()
+
+        if tag != "link":
             continue
-        href = child.attrib.get("href")
+
+        href = child.attrib.get(
+            "href"
+        )
+
         if href:
-            return normalize_url(href)
-        text = clean_text("".join(child.itertext()))
+
+            return normalize_url(
+                href
+            )
+
+        text = clean_text(
+            "".join(
+                child.itertext()
+            )
+        )
+
         if text:
-            return normalize_url(text)
+
+            return normalize_url(
+                text
+            )
+
     return ""
 
-def make_ai_image(title, category):
+
+# ============================================================
+# AI VISUAL
+# ============================================================
+
+def make_ai_image(
+    title,
+    category
+):
+
     prompt = (
-        "Professional editorial news illustration for a modern digital news publication. "
-        f"Category: {category}. Story: {title}. "
-        "Create a realistic, relevant, tasteful journalistic visual. "
-        "No text, no letters, no words, no logos, no watermark."
-    )
-    seed = int(hashlib.md5((category + "|" + title).encode()).hexdigest()[:8], 16)
-    return (
-        "https://image.pollinations.ai/prompt/" + quote(prompt, safe="") +
-        f"?width=1200&height=675&nologo=true&seed={seed}"
+        "Professional editorial news illustration "
+        "for a modern digital news publication. "
+        f"Category: {category}. "
+        f"Story: {title}. "
+        "Create a realistic, relevant, tasteful "
+        "journalistic visual. "
+        "No text, no letters, no words, "
+        "no logos, no watermark, no fake newspaper."
     )
 
-def parse_feed(xml_text, publisher, category):
+    seed = int(
+        hashlib.md5(
+            (
+                category
+                + "|"
+                + title
+            ).encode(
+                "utf-8"
+            )
+        ).hexdigest()[:8],
+        16
+    )
+
+    return (
+        "https://image.pollinations.ai/prompt/"
+        + quote(
+            prompt,
+            safe=""
+        )
+        + "?width=1200"
+        + "&height=675"
+        + "&nologo=true"
+        + f"&seed={seed}"
+    )
+
+
+# ============================================================
+# RSS PARSER
+# ============================================================
+
+def parse_feed(
+    xml_text,
+    publisher,
+    category
+):
+
     articles = []
+
     try:
-        root = ET.fromstring(xml_text)
+
+        root = ET.fromstring(
+            xml_text
+        )
+
     except Exception as exc:
-        print(f"XML error from {publisher}: {exc}")
+
+        print(
+            f"  XML ERROR: "
+            f"{publisher}: {exc}"
+        )
+
         return articles
 
     for item in root.iter():
-        if item.tag.split("}")[-1].lower() not in ("item", "entry"):
+
+        tag = item.tag.split(
+            "}"
+        )[-1].lower()
+
+        if tag not in (
+            "item",
+            "entry"
+        ):
             continue
 
-        title = child_text(item, ["title"])
+        title = find_child_text(
+            item,
+            ["title"]
+        )
+
         if not title:
             continue
 
-        title = remove_publisher_from_title(title, publisher)
+        title = remove_publisher_from_title(
+            title,
+            publisher
+        )
+
         if len(title) < 8:
             continue
 
-        description = child_text(item, ["description", "summary", "content", "encoded"])
-        link = find_link(item)
+        description = find_child_text(
+            item,
+            [
+                "description",
+                "summary",
+                "content",
+                "encoded"
+            ]
+        )
+
+        link = find_link(
+            item
+        )
+
         if not link:
             continue
 
-        published = child_text(item, ["pubdate", "published", "updated", "date", "created"])
-        cat = normalize_category(category)
+        published = find_child_text(
+            item,
+            [
+                "pubdate",
+                "published",
+                "updated",
+                "date",
+                "created"
+            ]
+        )
 
-        articles.append({
-            "id": make_id(cat, title, link),
-            "category": cat,
-            "headline": title,
-            "summary": make_summary(title, description),
-            "publisher": clean_text(publisher),
-            "published_at": parse_date(published).isoformat(),
-            "source_url": link,
-            "image_url": make_ai_image(title, cat),
-            "image_type": "ai_generated"
-        })
+        date_obj = parse_date(
+            published
+        )
+
+        normalized_category = (
+            normalize_category(
+                category
+            )
+        )
+
+        article = {
+
+            "id": make_id(
+                normalized_category,
+                title,
+                link
+            ),
+
+            "category":
+                normalized_category,
+
+            "headline":
+                title,
+
+            "summary":
+                make_summary(
+                    title,
+                    description
+                ),
+
+            "publisher":
+                clean_text(
+                    publisher
+                ),
+
+            "source_type":
+                source_type(
+                    publisher
+                ),
+
+            "published_at":
+                date_obj.isoformat(),
+
+            "source_url":
+                link,
+
+            "image_url":
+                make_ai_image(
+                    title,
+                    normalized_category
+                ),
+
+            "image_type":
+                "ai_generated"
+
+        }
+
+        articles.append(
+            article
+        )
+
     return articles
 
-def fetch_source(publisher, url, category):
-    print(f"Fetching: {publisher}")
+
+# ============================================================
+# FETCH SOURCE
+# ============================================================
+
+def fetch_source(
+    publisher,
+    url,
+    category
+):
+
+    print()
+    print(
+        f"Fetching: "
+        f"{publisher}"
+    )
+
+
     try:
-        response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT
+        )
+
         response.raise_for_status()
-        articles = parse_feed(response.text, publisher, category)
-        print(f"  -> {len(articles)} stories")
+
+        articles = parse_feed(
+            response.text,
+            publisher,
+            category
+        )
+
+        print(
+            f"  -> "
+            f"{len(articles)} stories"
+        )
+
         return articles
+
     except Exception as exc:
-        print(f"  -> FAILED: {publisher}: {exc}")
+
+        print(
+            f"  -> FAILED: "
+            f"{publisher}: {exc}"
+        )
+
         return []
+
+
+# ============================================================
+# LOAD EXISTING ARTICLES
+# ============================================================
 
 def load_existing_articles():
+
     try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        articles = data.get("articles", [])
-        return [a for a in articles if isinstance(a, dict) and
-                clean_text(a.get("headline")) and normalize_url(a.get("source_url"))]
+
+        with open(
+            OUTPUT_FILE,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            data = json.load(
+                file
+            )
+
+        articles = data.get(
+            "articles",
+            []
+        )
+
+        if not isinstance(
+            articles,
+            list
+        ):
+            return []
+
+        valid = []
+
+        for article in articles:
+
+            if not isinstance(
+                article,
+                dict
+            ):
+                continue
+
+            headline = clean_text(
+                article.get(
+                    "headline"
+                )
+            )
+
+            url = normalize_url(
+                article.get(
+                    "source_url"
+                )
+            )
+
+            if not headline or not url:
+                continue
+
+            article[
+                "headline"
+            ] = headline
+
+            article[
+                "source_url"
+            ] = url
+
+            article[
+                "category"
+            ] = normalize_category(
+                article.get(
+                    "category"
+                )
+            )
+
+            article[
+                "summary"
+            ] = make_summary(
+                headline,
+                article.get(
+                    "summary",
+                    ""
+                )
+            )
+
+            # Do not allow old private-source
+            # articles to remain in the new feed.
+            publisher = clean_text(
+                article.get(
+                    "publisher"
+                )
+            )
+
+            if article.get(
+                "source_type"
+            ) != "official_public":
+
+                if publisher not in {
+                    "Press Information Bureau",
+                    "United Nations",
+                    "World Health Organization",
+                    "European Commission",
+                    "European Central Bank",
+                    "International Monetary Fund",
+                    "NASA",
+                    "National Endowment for the Humanities",
+                    "Library of Congress",
+                    "FIFA",
+                }:
+                    continue
+
+            if not article.get(
+                "id"
+            ):
+
+                article[
+                    "id"
+                ] = make_id(
+                    article[
+                        "category"
+                    ],
+                    headline,
+                    url
+                )
+
+            if not article.get(
+                "image_url"
+            ):
+
+                article[
+                    "image_url"
+                ] = make_ai_image(
+                    headline,
+                    article[
+                        "category"
+                    ]
+                )
+
+                article[
+                    "image_type"
+                ] = "ai_generated"
+
+            valid.append(
+                article
+            )
+
+        return valid
+
     except FileNotFoundError:
-        return []
-    except Exception as exc:
-        print(f"Could not read previous articles.json: {exc}")
+
+        print(
+            "No previous articles.json found."
+        )
+
         return []
 
-def deduplicate(articles):
+    except Exception as exc:
+
+        print(
+            f"Could not read previous "
+            f"articles.json: {exc}"
+        )
+
+        return []
+
+
+# ============================================================
+# DEDUPLICATION
+# ============================================================
+
+def deduplicate(
+    articles
+):
+
     by_url = {}
+
     for article in articles:
-        title = clean_text(article.get("headline"))
-        url = normalize_url(article.get("source_url"))
+
+        if not isinstance(
+            article,
+            dict
+        ):
+            continue
+
+        title = clean_text(
+            article.get(
+                "headline"
+            )
+        )
+
+        url = normalize_url(
+            article.get(
+                "source_url"
+            )
+        )
+
         if not title or not url:
             continue
+
         key = url.lower()
-        if key not in by_url or article.get("published_at", "") > by_url[key].get("published_at", ""):
-            by_url[key] = article
+
+        if key not in by_url:
+
+            by_url[
+                key
+            ] = article
+
+        else:
+
+            old_date = by_url[
+                key
+            ].get(
+                "published_at",
+                ""
+            )
+
+            new_date = article.get(
+                "published_at",
+                ""
+            )
+
+            if new_date > old_date:
+
+                by_url[
+                    key
+                ] = article
 
     by_title = {}
-    for article in by_url.values():
-        key = normalize_title(article.get("headline", ""))
-        if key and key not in by_title:
-            by_title[key] = article
-    return list(by_title.values())
 
-def timestamp(article):
+    for article in by_url.values():
+
+        key = normalize_title(
+            article.get(
+                "headline",
+                ""
+            )
+        )
+
+        if key and key not in by_title:
+
+            by_title[
+                key
+            ] = article
+
+    return list(
+        by_title.values()
+    )
+
+
+# ============================================================
+# DATE SORT
+# ============================================================
+
+def article_timestamp(
+    article
+):
+
+    value = article.get(
+        "published_at",
+        ""
+    )
+
     try:
-        return datetime.fromisoformat(article.get("published_at", "").replace("Z", "+00:00"))
+
+        return datetime.fromisoformat(
+            value.replace(
+                "Z",
+                "+00:00"
+            )
+        )
+
     except Exception:
-        return datetime.min.replace(tzinfo=timezone.utc)
+
+        return datetime.min.replace(
+            tzinfo=timezone.utc
+        )
+
+
+# ============================================================
+# BUILD FEED
+# ============================================================
 
 def build_feed():
-    print("=" * 65)
-    print("SNIPPET24 NEWS CURATOR")
-    print("=" * 65)
 
-    previous = load_existing_articles()
-    fresh = []
-    success = failed = 0
+    print(
+        "=" * 70
+    )
+
+    print(
+        "SNIPPET24 CURATOR 3.0"
+    )
+
+    print(
+        "OFFICIAL / PUBLIC SOURCES ONLY"
+    )
+
+    print(
+        "=" * 70
+    )
+
+    previous_articles = (
+        load_existing_articles()
+    )
+
+    print()
+    print(
+        f"Previous eligible stories: "
+        f"{len(previous_articles)}"
+    )
+
+    fresh_articles = []
+
+    successful_sources = 0
+    failed_sources = 0
 
     for category in CATEGORY_ORDER:
-        print(f"\n### {category}")
-        for publisher, url in RSS_SOURCES.get(category, []):
-            found = fetch_source(publisher, url, category)
+
+        print()
+        print(
+            f"### {category}"
+        )
+
+        for publisher, url in (
+            RSS_SOURCES.get(
+                category,
+                []
+            )
+        ):
+
+            found = fetch_source(
+                publisher,
+                url,
+                category
+            )
+
             if found:
-                success += 1
-                fresh.extend(found)
+
+                successful_sources += 1
+
+                fresh_articles.extend(
+                    found
+                )
+
             else:
-                failed += 1
-            time.sleep(REQUEST_DELAY)
 
-    combined = deduplicate(fresh + previous)
-    combined.sort(key=timestamp, reverse=True)
-    final = combined[:TARGET_STORIES]
+                failed_sources += 1
 
-    counts = {c: 0 for c in CATEGORY_ORDER}
-    for article in final:
-        cat = normalize_category(article.get("category"))
-        if cat in counts:
-            counts[cat] += 1
+            time.sleep(
+                REQUEST_DELAY
+            )
 
-    output = {
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "total": len(final),
-        "minimum_target": MINIMUM_STORIES,
-        "maximum_target": TARGET_STORIES,
-        "categories": counts,
-        "articles": final
+    print()
+    print(
+        f"Fresh stories collected: "
+        f"{len(fresh_articles)}"
+    )
+
+    combined = (
+        fresh_articles
+        + previous_articles
+    )
+
+    combined = deduplicate(
+        combined
+    )
+
+    combined.sort(
+        key=article_timestamp,
+        reverse=True
+    )
+
+    final_articles = combined[
+        :TARGET_STORIES
+    ]
+
+    counts = {
+        category: 0
+        for category in CATEGORY_ORDER
     }
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    for article in final_articles:
 
-    print(f"\nTOTAL STORIES: {len(final)}")
-    print(f"Successful sources: {success}")
-    print(f"Failed/empty sources: {failed}")
+        category = normalize_category(
+            article.get(
+                "category"
+            )
+        )
 
-    if len(final) < MINIMUM_STORIES:
-        print("WARNING: Fewer than 50 usable stories are available.")
+        if category in counts:
+
+            counts[
+                category
+            ] += 1
+
+    output = {
+
+        "updated_at":
+            datetime.now(
+                timezone.utc
+            ).isoformat(),
+
+        "total":
+            len(final_articles),
+
+        "minimum_target":
+            MINIMUM_STORIES,
+
+        "maximum_target":
+            TARGET_STORIES,
+
+        "source_policy":
+            "official_public_sources_only",
+
+        "copyright_note":
+            "Headlines and summaries are Snippet24 editorial rewrites. "
+            "Original source URLs and attribution are retained. "
+            "Source-specific terms still apply.",
+
+        "categories":
+            counts,
+
+        "articles":
+            final_articles
+
+    }
+
+    with open(
+        OUTPUT_FILE,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            output,
+            file,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print()
+    print(
+        "=" * 70
+    )
+
+    print(
+        f"TOTAL STORIES: "
+        f"{len(final_articles)}"
+    )
+
+    print(
+        "=" * 70
+    )
+
+    for category in CATEGORY_ORDER:
+
+        print(
+            f"{category}: "
+            f"{counts.get(category, 0)}"
+        )
+
+    print()
+    print(
+        f"Successful sources: "
+        f"{successful_sources}"
+    )
+
+    print(
+        f"Failed/empty sources: "
+        f"{failed_sources}"
+    )
+
+    if len(final_articles) == 0:
+
+        print()
+        print(
+            "ERROR: No official/public "
+            "stories were collected."
+        )
+
+        return 1
+
+    if len(final_articles) < MINIMUM_STORIES:
+
+        print()
+        print(
+            "WARNING: Fewer than 50 "
+            "official/public stories are available."
+        )
+
+        print(
+            "The curator will NOT fabricate "
+            "stories just to reach 50."
+        )
+
     else:
-        print("SUCCESS: Minimum 50-story target reached.")
 
-    return 0 if final else 1
+        print()
+        print(
+            "SUCCESS: Minimum 50-story "
+            "target reached."
+        )
+
+    print()
+    print(
+        "SUCCESS: articles.json updated."
+    )
+
+    return 0
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 if __name__ == "__main__":
-    raise SystemExit(build_feed())
+
+    raise SystemExit(
+        build_feed()
+    )
