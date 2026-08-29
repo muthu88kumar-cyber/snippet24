@@ -1,34 +1,89 @@
 {
-  "updated_at": "2026-08-29T00:04:27.270807+00:00",
+  "updated_at": "2026-08-29T00:34:22.921926+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 22,
-    "India": 33,
+    "World": 25,
+    "India": 32,
     "Business": 0,
     "Technology & AI": 10,
-    "Sports": 15,
+    "Sports": 13,
     "Entertainment": 16,
     "Lifestyle": 4
   },
   "articles": [
+    {
+      "id": "7e150587e1b8e20cc895",
+      "category": "Entertainment",
+      "headline": "California Lawmakers Settle on Partial Film Carveout From Tax Credit Cap",
+      "summary": "California lawmakers have agreed on a partial carveout for the film and TV industry from a state cap on tax credits. The bill, AB 186, was unveiled on Friday evening. It addresses concerns raised in June by the Motion Picture Association and a coalition of entertainment unions, who argued that the cap threatened to undermine […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T00:32:51+00:00",
+      "source_url": "https://variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Lawmakers%20Settle%20on%20Partial%20Film%20Carveout%20From%20Tax%20Credit%20Cap.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=487463428",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "199df6ea35449403f992",
+      "category": "World",
+      "headline": "US and Venezuela reach 'historic' oil deal, Trump says",
+      "summary": "The agreement would grant the US majority control of over 65 billion barrels of proven Venezuelan oil reserves, Trump said.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:25:07+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20US%20and%20Venezuela%20reach%20%27historic%27%20oil%20deal%2C%20Trump%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3304354523",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cebfa5380499bffa39d6",
+      "category": "World",
+      "headline": "What tariffs will really cost Canadians and Americans",
+      "summary": "Households and businesses have become used to tariffs impacting the cost of living for more than year now, so what will change now?",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:15:19+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20What%20tariffs%20will%20really%20cost%20Canadians%20and%20Americans.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2556361857",
+      "image_type": "ai_generated"
+    },
     {
       "id": "858336a86e4d930186ae",
       "category": "World",
       "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
       "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-28T23:55:40+00:00",
+      "published_at": "2026-08-29T00:09:17+00:00",
       "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d731ebcf5cd051bb54b1",
+      "category": "Lifestyle",
+      "headline": "Can yoga actually make you more spiritual? Why one 10-year practitioner is questioning the connection",
+      "summary": "One Reddit user recently raised that question after about 10 years of practising yoga. Here's all you need to know.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T00:05:38+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/can-yoga-actually-make-you-more-spiritual-why-one-10-year-practitioner-is-questioning-the-connection-101787961146044.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Can%20yoga%20actually%20make%20you%20more%20spiritual%3F%20Why%20one%2010-year%20practitioner%20is%20questioning%20the%20connection.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=466227449",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ac8a0e992e4797e94a73",
+      "category": "World",
+      "headline": "Canada poaches dozens of top US researchers for its universities",
+      "summary": "Lured by millions of new research funding from the Carney government, 48 US researchers in fields like climate and medicine will soon be moving north.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-28T23:47:38+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c209gd5jnq1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Canada%20poaches%20dozens%20of%20top%20US%20researchers%20for%20its%20universities.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3124394014",
       "image_type": "ai_generated"
     },
     {
       "id": "8ff1d957f8160429ac36",
       "category": "World",
       "headline": "Controversial plans for a Daniel Andrews sculpture officially scrapped by Victorian government",
-      "summary": "The $134,000 cost of the statue of the former Victorian premier has been heavily criticised by the Liberal opposition Get our breaking news email , free app or daily news podcast The Carroll government in Victoria has cancelled controversial plans for a statue of former Labor premier Daniel Andrews. Work began in May on the statue commemorating the former premier’s more than 3000 days in office, as part of a 1999...",
+      "summary": "The $134,000 cost of the statue of the former Victorian premier has been heavily criticised by the Liberal opposition Get our breaking news email , free app or daily news podcast The Carroll government in Victoria has cancelled controversial plans for a statue of former Labor premier Daniel Andrews. Work began in May on the statue commemorating the former premier’s more than 3,000 days in office, as part of a...",
       "publisher": "Guardian World",
       "published_at": "2026-08-28T23:47:37+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/29/controversial-plans-for-a-daniel-andrews-sculpture-officially-scrapped-by-victorian-government",
@@ -850,6 +905,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5e805538bdfaed8adc41",
+      "category": "India",
+      "headline": "PMCs come under scanner over quality of civic works in Chennai Corporation",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T19:43:59+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/pmcs-come-under-scanner-over-quality-of-civic-works-in-chennai-corporation/article71401006.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PMCs%20come%20under%20scanner%20over%20quality%20of%20civic%20works%20in%20Chennai%20Corporation.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3829976057",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "8e913f1e7aecb626bcbf",
       "category": "India",
       "headline": "Dalit man transporting cattle forced to eat cattle dung by ‘cow vigilantes’ in Maharashtra; no arrest made yet",
@@ -858,6 +924,17 @@
       "published_at": "2026-08-28T19:42:06+00:00",
       "source_url": "https://www.thehindu.com/news/national/maharashtra/six-cow-vigilantes-in-maharashtra-accused-of-assaulting-a-dalit-man/article71399255.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Dalit%20man%20transporting%20cattle%20forced%20to%20eat%20cattle%20dung%20by%20%E2%80%98cow%20vigilantes%E2%80%99%20in%20Maharashtra%3B%20no%20arrest%20made%20yet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3487184732",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a5100c5fc9ef4f309e9a",
+      "category": "India",
+      "headline": "India-Germany eye deeper MSME ties",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T19:41:12+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/india-germany-eye-deeper-msme-ties/article71401067.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20India-Germany%20eye%20deeper%20MSME%20ties.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3136564946",
       "image_type": "ai_generated"
     },
     {
@@ -905,6 +982,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "f9d9171e2c7351f4b2a7",
+      "category": "India",
+      "headline": "Chennai Corporation Council meeting | Unlikely allies as parties unite against State govt. over lack of ward funds",
+      "summary": "Ward 141 councillor A. Raja Anbazhagan said councillors should consider resigning before the next Council meeting if the ward development funds were not released",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T19:38:58+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-corporation-council-meeting-unlikely-allies-as-parties-unite-against-state-govt-over-lack-of-ward-funds/article71399515.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chennai%20Corporation%20Council%20meeting%20%7C%20Unlikely%20allies%20as%20parties%20unite%20against%20State%20govt.%20over%20lack%20of%20ward%20funds.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=304833390",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "992bb91aa49a05861493",
       "category": "India",
       "headline": "Centre eases norms for defence exports, licences",
@@ -949,6 +1037,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "6bcb587943bca504157f",
+      "category": "India",
+      "headline": "NH completes land acquisition for ₹1,047-crore Vellore Town Bypass Road",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T19:32:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/nh-completes-land-acquisition-for-1047-crore-vellore-town-bypass-road/article71396552.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20NH%20completes%20land%20acquisition%20for%20%E2%82%B91%2C047-crore%20Vellore%20Town%20Bypass%20Road.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3631714368",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "13c8196a2b33b130c53d",
       "category": "Technology & AI",
       "headline": "An Anthropic researcher just gave us a peek at self-improving AI",
@@ -982,6 +1081,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3e87c13b0c500ffd8431",
+      "category": "India",
+      "headline": "Change in design of flyover on Anna Salai made due to lack of alignment with metro stations",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-28T19:23:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/change-in-design-of-flyover-on-anna-salai-made-due-to-lack-of-alignment-with-metro-stations/article71402002.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Change%20in%20design%20of%20flyover%20on%20Anna%20Salai%20made%20due%20to%20lack%20of%20alignment%20with%20metro%20stations.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1667391278",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9368f9d06cc24da3bf25",
       "category": "Sports",
       "headline": "How will Scottish clubs respond to Euro disappointments?",
@@ -1001,116 +1111,6 @@
       "published_at": "2026-08-28T19:20:54+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/shiksha-schools-hold-annual-sports-meet/article71400454.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Shiksha%20schools%20hold%20annual%20sports%20meet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1337245003",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5fcfd530d861802efd81",
-      "category": "India",
-      "headline": "Five persons injured near Ambur",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:18:01+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/five-persons-injured-near-ambur/article71400463.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Five%20persons%20injured%20near%20Ambur.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1454736664",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "40a7d12e6f5b87f1e761",
-      "category": "India",
-      "headline": "VIT signs MoU with Columbia University on dual degree programme",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:17:17+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/vit-signs-mou-with-columbia-university-on-dual-degree-programme/article71400438.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20VIT%20signs%20MoU%20with%20Columbia%20University%20on%20dual%20degree%20programme.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1097044257",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c06b5e5fd0db70c8ce6d",
-      "category": "India",
-      "headline": "Medical college hostel canteens under food safety scanner",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:16:12+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/medical-college-hostel-canteens-under-food-safety-scanner/article71401972.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Medical%20college%20hostel%20canteens%20under%20food%20safety%20scanner.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1912069123",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "bbde48551d02098e55b9",
-      "category": "Lifestyle",
-      "headline": "I tested 18 tools for removing cat hair. These are the 9 best to keep your home fur-free",
-      "summary": "I put a bevy of hair removal solutions to the test and found the best options for keeping your home fur-free ‘Can’t imagine a cat not having this toy’: Your indoor cat is bored. Here’s how to fix it Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things When I first adopted my three cats Frankie, Joy and Olive, I was prepared for playtime, cuddles and upgrading my phone storage to...",
-      "publisher": "Guardian Lifestyle",
-      "published_at": "2026-08-28T19:15:06+00:00",
-      "source_url": "https://www.theguardian.com/thefilter-us/2026/aug/28/best-pet-hair-removal-tools",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20I%20tested%2018%20tools%20for%20removing%20cat%20hair.%20These%20are%20the%209%20best%20to%20keep%20your%20home%20fur-free.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2383924956",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0050e2d65ecb73f91960",
-      "category": "Sports",
-      "headline": "What will Jackson bring to Villa with Watkins set for exit?",
-      "summary": "BBC Sport examines what new striker Nicolas Jackson will bring to Aston Villa, with Ollie Watkins looking set to join Al",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T19:14:48+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/czjz9j3r8p8o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20What%20will%20Jackson%20bring%20to%20Villa%20with%20Watkins%20set%20for%20exit%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=347490764",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "02c9b44eae1ffa966e30",
-      "category": "India",
-      "headline": "Will call for bandh in Bengaluru: Private transport operators",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:13:30+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/will-call-for-bandh-in-bengaluru-private-transport-operators/article71401535.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20call%20for%20bandh%20in%20Bengaluru%3A%20Private%20transport%20operators.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3368014968",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "4c6482ca51b552bf602e",
-      "category": "India",
-      "headline": "In cases where parties know the truth, ‘judge is on trial’: Supreme Court",
-      "summary": "Court orders the parties to pay ₹5 lakh each in costs for wasting judicial time for 11 years with a 'manufactured controversy' while genuine litigants waited in queue",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:11:19+00:00",
-      "source_url": "https://www.thehindu.com/news/national/in-cases-where-parties-know-the-truth-judge-is-on-trial-supreme-court/article71401570.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20In%20cases%20where%20parties%20know%20the%20truth%2C%20%E2%80%98judge%20is%20on%20trial%E2%80%99%3A%20Supreme%20Court.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4158132140",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ecb554395c71a1b6f601",
-      "category": "Sports",
-      "headline": "How England are building an attack to trouble Australia",
-      "summary": "Former England captain Michael Vaughan predicts England's new pace quartet will trouble Australia - so what is making them effective against Pakistan?",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T19:11:13+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/cvgy0zdex14o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20How%20England%20are%20building%20an%20attack%20to%20trouble%20Australia.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2625545663",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "833c36679b9e1917262e",
-      "category": "India",
-      "headline": "‘Peptide Party’ in Bengaluru cancelled after FSDA seeks regulatory details",
-      "summary": "The development followed a notice issued by the FSDA on Thursday after it took note of social media publicity for the proposed event",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:07:41+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/peptide-party-in-bengaluru-cancelled-after-fsda-seeks-regulatory-details/article71401727.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Peptide%20Party%E2%80%99%20in%20Bengaluru%20cancelled%20after%20FSDA%20seeks%20regulatory%20details.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2160874559",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9f995f8db2c7bff60552",
-      "category": "Entertainment",
-      "headline": "‘Adults’ Star Amita Rao Is Not Issa, But She Sure Loves Playing Her",
-      "summary": "The breakout star of FX's Gen Z comedy is ready to dig into season two, especially the internet's favorite love triangle: \"What was always been interesting to me was the tension between Issa and Anton as best friends.\"",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T19:07:24+00:00",
-      "source_url": "https://www.hollywoodreporter.com/tv/tv-features/adults-star-amita-rao-next-big-thing-interview-1236683336/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Adults%E2%80%99%20Star%20Amita%20Rao%20Is%20Not%20Issa%2C%20But%20She%20Sure%20Loves%20Playing%20Her.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=219239901",
       "image_type": "ai_generated"
     }
   ]
