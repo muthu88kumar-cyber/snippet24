@@ -6,6 +6,7 @@ import time
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote, urlparse
+import os
 
 import requests
 import xml.etree.ElementTree as ET
@@ -16,6 +17,8 @@ import xml.etree.ElementTree as ET
 # ============================================================
 
 OUTPUT_FILE = "articles.json"
+IMAGES_DIR = "images"
+POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY", "").strip()
 
 TARGET_STORIES = 100
 MINIMUM_STORIES = 50
@@ -364,8 +367,8 @@ def find_image_from_feed(element):
     return ""
 
 
-def make_ai_image(title, category):
-    prompt = (
+def make_ai_prompt(title, category):
+    return (
         "Professional editorial news illustration for a modern "
         "digital news publication. "
         f"Category: {category}. Story: {title}. "
@@ -374,20 +377,87 @@ def make_ai_image(title, category):
         "no fake newspaper."
     )
 
-    seed = int(
-        hashlib.md5(
-            (category + "|" + title).encode("utf-8")
-        ).hexdigest()[:8],
-        16,
+
+def make_ai_image_url(title, category):
+    """
+    Current Pollinations image endpoint.
+    A server-side API key is used by the curator only; it is never
+    written into articles.json or exposed to the website.
+    """
+    prompt = make_ai_prompt(title, category)
+    return (
+        "https://gen.pollinations.ai/image/"
+        + quote(prompt, safe="")
+        + "?model=flux"
+        + "&width=1200"
+        + "&height=675"
     )
 
-    return (
-        "https://image.pollinations.ai/prompt/"
-        + quote(prompt, safe="")
-        + "?width=1200&height=675"
-        + "&nologo=true"
-        + f"&seed={seed}"
-    )
+
+def local_image_path(article_id):
+    return os.path.join(IMAGES_DIR, f"{article_id}.jpg")
+
+
+def local_image_url(article_id):
+    # GitHub Pages serves this relative path directly.
+    return f"images/{article_id}.jpg"
+
+
+def generate_and_save_ai_image(article_id, title, category):
+    """
+    Generate the image during the curator run and save the actual JPEG
+    into the repository. The website then loads a stable local file
+    instead of calling the AI service from every visitor's browser.
+    """
+    os.makedirs(IMAGES_DIR, exist_ok=True)
+
+    path = local_image_path(article_id)
+
+    # Keep an already-generated image.
+    if os.path.exists(path) and os.path.getsize(path) > 10_000:
+        return local_image_url(article_id)
+
+    if not POLLINATIONS_API_KEY:
+        print(
+            "  -> AI IMAGE SKIPPED: POLLINATIONS_API_KEY GitHub secret "
+            "is not configured."
+        )
+        return ""
+
+    try:
+        response = requests.get(
+            make_ai_image_url(title, category),
+            headers={
+                "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
+                "Accept": "image/jpeg,image/png,image/*",
+            },
+            timeout=90,
+        )
+        response.raise_for_status()
+
+        content_type = response.headers.get("content-type", "").lower()
+        if "image" not in content_type:
+            print(
+                f"  -> AI IMAGE FAILED: unexpected content type "
+                f"{content_type}"
+            )
+            return ""
+
+        data = response.content
+
+        if len(data) < 10_000:
+            print("  -> AI IMAGE FAILED: image response is too small.")
+            return ""
+
+        with open(path, "wb") as image_file:
+            image_file.write(data)
+
+        print(f"  -> AI IMAGE SAVED: {path}")
+        return local_image_url(article_id)
+
+    except Exception as exc:
+        print(f"  -> AI IMAGE FAILED: {exc}")
+        return ""
 
 # ============================================================
 # RSS PARSER
@@ -441,12 +511,20 @@ def parse_feed(xml_text, publisher, category):
 
         summary = make_summary(title, description)
 
+        article_id = make_id(
+            normalized_category,
+            title,
+            link
+        )
+
+        image_url = generate_and_save_ai_image(
+            article_id,
+            title,
+            normalized_category,
+        )
+
         article = {
-            "id": make_id(
-                normalized_category,
-                title,
-                link
-            ),
+            "id": article_id,
             "category": normalized_category,
             "headline": title,
             "summary": summary,
@@ -454,11 +532,8 @@ def parse_feed(xml_text, publisher, category):
             "source_type": "official_institutional",
             "published_at": date_obj.isoformat(),
             "source_url": link,
-            "image_url": make_ai_image(
-                title,
-                normalized_category
-            ),
-            "image_type": "ai_generated",
+            "image_url": image_url,
+            "image_type": "ai_generated_local",
         }
 
         articles.append(article)
@@ -533,14 +608,27 @@ def load_existing_articles():
             )
             article["source_url"] = url
 
-            # v6 keeps all visuals as Snippet24-generated visuals.
-            if not article.get("image_url"):
-                article["image_url"] = make_ai_image(
-                    headline,
-                    article["category"]
-                )
+            # Convert old remote Pollinations URLs to stable local images.
+            article_id = article.get("id") or make_id(
+                article["category"],
+                headline,
+                url
+            )
+            article["id"] = article_id
 
-            article["image_type"] = "ai_generated"
+            existing_local = local_image_path(article_id)
+
+            if os.path.exists(existing_local) and os.path.getsize(existing_local) > 10_000:
+                article["image_url"] = local_image_url(article_id)
+                article["image_type"] = "ai_generated_local"
+            else:
+                image_url = generate_and_save_ai_image(
+                    article_id,
+                    headline,
+                    article["category"],
+                )
+                article["image_url"] = image_url
+                article["image_type"] = "ai_generated_local"
 
             if not article.get("id"):
                 article["id"] = make_id(
@@ -733,8 +821,8 @@ def category_counts(articles):
 
 def build_feed():
     print("=" * 65)
-    print("SNIPPET24 NEWS CURATOR v6")
-    print("BALANCED OFFICIAL/PUBLIC SOURCE MODE")
+    print("SNIPPET24 NEWS CURATOR v8")
+    print("OFFICIAL/PUBLIC SOURCES + LOCAL AI IMAGES")
     print("=" * 65)
 
     previous_articles = load_existing_articles()
@@ -786,12 +874,13 @@ def build_feed():
     counts = category_counts(final_articles)
 
     output = {
-        "curator_version": "7.0-official-only",
+        "curator_version": "8.0-official-only-local-ai-images",
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(final_articles),
         "minimum_target": MINIMUM_STORIES,
         "maximum_target": TARGET_STORIES,
         "source_policy": "official_government_intergovernmental_and_institutional_sources_only",
+        "image_policy": "ai_images_generated_during_curator_run_and_saved_locally",
         "copyright_note": (
             "Snippet24 publishes its own headlines and summaries and "
             "credits the original publisher with a source link. "
