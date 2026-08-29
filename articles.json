@@ -1,20 +1,53 @@
 {
-  "curator_version": "8.0-official-only-local-ai-images",
-  "updated_at": "2026-08-29T06:24:07.359521+00:00",
-  "total": 69,
-  "minimum_target": 50,
-  "maximum_target": 100,
+  "curator_version": "13.0-unlimited-category-coverage",
+  "updated_at": "2026-08-29T06:54:49.753418+00:00",
+  "total": 205,
+  "minimum_target": 100,
+  "maximum_target": 0,
+  "unlimited_collection": true,
+  "category_limits": false,
   "source_policy": "official_government_intergovernmental_and_institutional_sources_only",
   "image_policy": "ai_images_generated_during_curator_run_and_saved_locally",
-  "copyright_note": "Snippet24 publishes its own headlines and summaries and credits the original publisher with a source link. This is not a guarantee of legal immunity.",
+  "copyright_note": "Snippet24 publishes its own editorial headlines and summaries and credits the original publisher with a source link. Source-specific terms still apply. This is not a guarantee of legal immunity.",
+  "category_rules": {
+    "Business": [
+      "MSME",
+      "State MSME",
+      "District Industries Centres",
+      "Skill Development",
+      "FSSAI",
+      "Promotion Councils",
+      "Export Promotion Councils",
+      "BIS"
+    ],
+    "Entertainment": [
+      "Bollywood",
+      "Hollywood",
+      "Kollywood",
+      "Tollywood",
+      "Mollywood",
+      "Sandalwood",
+      "Pollywood",
+      "Other major regional film industries",
+      "International film industries",
+      "YouTube",
+      "Creator platforms",
+      "Content creators",
+      "Influencers",
+      "Podcasters",
+      "Local stage shows",
+      "Theatre",
+      "Live performances"
+    ]
+  },
   "categories": {
-    "World": 18,
+    "World": 59,
     "India": 0,
-    "Business": 14,
-    "Technology & AI": 14,
-    "Sports": 14,
+    "Business": 42,
+    "Technology & AI": 75,
+    "Sports": 25,
     "Entertainment": 0,
-    "Lifestyle": 9
+    "Lifestyle": 4
   },
   "articles": [
     {
@@ -27,7 +60,7 @@
       "published_at": "2026-08-28T22:21:31+00:00",
       "source_url": "https://www.nasa.gov/image-article/nasas-artemis-ii-crew-receives-congressional-space-medal-of-honor/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "4877a12187a76501c650",
@@ -39,7 +72,7 @@
       "published_at": "2026-08-28T20:30:52+00:00",
       "source_url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-awards-first-prize-in-phase-2-of-agencys-lunarecycle-challenge/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "29cab43c4a98d4d24654",
@@ -51,7 +84,7 @@
       "published_at": "2026-08-28T17:37:01+00:00",
       "source_url": "https://www.nasa.gov/news-release/president-honors-nasas-artemis-ii-crew-with-highest-us-space-award/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "b6550a65836194ea54ef",
@@ -63,7 +96,7 @@
       "published_at": "2026-08-28T17:33:00+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-79-sec-proposes-amendments-exchange-act-rule-3a12-8-add-european-union-debt-obligations",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "a1228d3ce68a2691f883",
@@ -75,31 +108,19 @@
       "published_at": "2026-08-28T17:21:04+00:00",
       "source_url": "https://www.nasa.gov/news-release/president-trump-signs-executive-order-to-create-us-space-academy/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "265f5d4b89c0649105d8",
       "category": "Business",
       "headline": "Isabel Schnabel: Central banks on-chain",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-28T16:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
-    },
-    {
-      "id": "e1cc4147566d6632bf10",
-      "category": "Technology & AI",
-      "headline": "Improving the CERN Meyrin site: ongoing works and how to get around",
-      "summary": "As many members of the CERN community return from the summer break, a number of infrastructure projects are under way across the sites. While these works may temporarily affect traffic, parking and access, they form part of a broader effort to develop and improve CERN’s campuses. The projects highlighted below are among the major infrastructure works currently […]",
-      "publisher": "CERN",
-      "source_type": "official_institutional",
-      "published_at": "2026-08-28T15:31:05+00:00",
-      "source_url": "https://home.cern/improving-the-cern-meyrin-site-ongoing-works-and-how-to-get-around/",
-      "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "85449326d8ae697cef7f",
@@ -111,7 +132,7 @@
       "published_at": "2026-08-28T13:10:00+00:00",
       "source_url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_24-28_August_2026",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "1522a8fbedf684f16849",
@@ -123,7 +144,7 @@
       "published_at": "2026-08-28T12:20:00+00:00",
       "source_url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Ariane_6_launch_with_MTG-I2_highlights",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "01fe570cce4aeb3ee30c",
@@ -135,7 +156,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168229",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "75cda9285e5ea42a7888",
@@ -147,7 +168,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168227",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "a9402e0de6802d7ffa1a",
@@ -159,7 +180,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168222",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "7d9e26a8adb866158408",
@@ -171,7 +192,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168226",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "c01378348f0148809ac7",
@@ -183,7 +204,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168224",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "7a6b84a25cda5dc5f55f",
@@ -195,7 +216,7 @@
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168221",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "18f98a63466858aab592",
@@ -207,7 +228,7 @@
       "published_at": "2026-08-28T09:03:00+00:00",
       "source_url": "https://www.esa.int/Space_Safety/Space_Debris/Observing_Samba_and_Tango_s_reentries",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "b23779c0ee829e45b654",
@@ -219,7 +240,7 @@
       "published_at": "2026-08-28T04:05:00+00:00",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-august-28-the-sky-turns-above-paranal/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "5ac178e677ace5e77d4e",
@@ -231,7 +252,7 @@
       "published_at": "2026-08-28T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/the-forested-floodplains-of-congaree-national-park/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "1d7cbd1476b9977d80dd",
@@ -243,7 +264,7 @@
       "published_at": "2026-08-27T21:30:00+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-78-sec-38-entities-feigned-legitimacy-us-advisers-through-false-filings-lure-retail-investors",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "d1770f20207731b39add",
@@ -255,7 +276,7 @@
       "published_at": "2026-08-27T20:48:00+00:00",
       "source_url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/MTG-I2_completes_Europe_s_latest_weather_trio",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "eb117c4ced5ee22b58ff",
@@ -267,7 +288,7 @@
       "published_at": "2026-08-27T18:42:38+00:00",
       "source_url": "https://www.nasa.gov/news-release/nasa-invites-media-to-turkey-artemis-accords-signing-ceremony/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "bff7c7e40f4ea3fc7f65",
@@ -279,7 +300,7 @@
       "published_at": "2026-08-27T18:02:54+00:00",
       "source_url": "https://www.nasa.gov/image-article/civil-servants-sworn-in-at-nasa-ames/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "310cf97b53b0fce52c79",
@@ -291,7 +312,7 @@
       "published_at": "2026-08-27T17:47:11+00:00",
       "source_url": "https://science.nasa.gov/missions/roman-space-telescope/9-things-to-know-about-nasas-nancy-grace-roman-space-telescope/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "7ec96bbb9399487ae727",
@@ -303,7 +324,7 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168220",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "d7f78c5005036c311576",
@@ -315,7 +336,7 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168219",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "5352c02dc5132b2686d7",
@@ -327,7 +348,7 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168217",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "7e84028bd5796ab2f343",
@@ -339,7 +360,7 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168215",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "2e8cb73fa40ffd2dc251",
@@ -351,7 +372,7 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168214",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "769160235b3d67fb1e86",
@@ -363,19 +384,55 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168213",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "b6e317fab8462961b133",
       "category": "Business",
       "headline": "Meeting of 22-23 July 2026",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-27T11:30:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b927554b53c32d5ee32d",
+      "category": "Technology & AI",
+      "headline": "Expedition Sound podcast series",
+      "summary": "Expedition Sound is a podcast series by the European Space Agency (ESA) in which you’re invited to explore the Universe through your ears. Guided by sonifications – the translation of data into sound – host Zsófi Szalavári travels from our Sun out into the depths of space to uncover what the space telescopes of ESA’s science missions teach us about the Universe.",
+      "publisher": "European Space Agency",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-27T07:30:00+00:00",
+      "source_url": "https://www.esa.int/Science_Exploration/Space_Science/Expedition_Sound_podcast_series",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ef64ffe18b53668c99e7",
+      "category": "Technology & AI",
+      "headline": "First contracts kick off European Launcher Challenge",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Space Agency",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-27T07:17:00+00:00",
+      "source_url": "https://www.esa.int/Enabling_Support/Space_Transportation/First_contracts_kick_off_European_Launcher_Challenge",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "47a03bd2c1c4067604d0",
+      "category": "Technology & AI",
+      "headline": "Watch live: BepiColombo begins its arrival at Mercury",
+      "summary": "After eight years, the ESA/JAXA BepiColombo mission is about to enter its Mercury Arrival Phase. On 3 September 2026, ESA’s Mercury Transfer Module (MTM) will separate from BepiColombo’s two science orbiters – the first major step in one of the most operationally challenging planetary arrival sequences ever attempted by ESA. The European Space Agency (ESA) will livestream the critical milestone from 13:45 CEST....",
+      "publisher": "European Space Agency",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-27T05:17:00+00:00",
+      "source_url": "https://www.esa.int/Enabling_Support/Operations/Watch_live_BepiColombo_begins_its_arrival_at_Mercury",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "b3b4747b2f796e7cd96b",
@@ -387,11 +444,11 @@
       "published_at": "2026-08-27T04:00:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/rare-widespread-snow-in-the-atacama-desert/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "6f714867fa7deec3902b",
-      "category": "Lifestyle",
+      "id": "0b07703a70a6e5906d18",
+      "category": "Technology & AI",
       "headline": "Building Foresight for Earth Science, featuring Lindsey Jacobson",
       "summary": "NASA’s Earth-observing satellite missions track dozens of features of a changing planet — aerosols, sea levels, land cover, cloud cover — over years and decades. Sustaining that record for the scientific and operational communities who depend on it requires more than engineering talent. It requires planning for an uncertain future: anticipating where a mission delay […]",
       "publisher": "NASA Earth",
@@ -399,7 +456,7 @@
       "published_at": "2026-08-26T19:14:15+00:00",
       "source_url": "https://www.nasa.gov/earth/earth-visualization-mapping/building-foresight-for-earth-science-featuring-lindsey-jacobson/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "79422abaf3fdb8349810",
@@ -411,7 +468,7 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168212",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "da0ccf095bdd9cf73d51",
@@ -423,7 +480,7 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168211",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "f75ad1c91be00208f23f",
@@ -435,7 +492,7 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168210",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "bba6a5ba0c53646d2e53",
@@ -447,7 +504,7 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168208",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "084330a12b7f29a32d38",
@@ -459,11 +516,11 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168207",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "b4af2fe6d3ecf10d79bc",
-      "category": "World",
+      "id": "97c340c35a1fd3098966",
+      "category": "Business",
       "headline": "Security Council LIVE: Rising tensions in Gaza, West Bank",
       "summary": "Amid illegal Israeli settlement surges, continued attacks in Gaza and the West Bank alongside tensions throughout Occupied Palestinian Territory, the Security Council discussed the latest developments on Wednesday, with the UN Special Envoy stressing that “human dignity must be at the centre of all efforts” to overcome the current fragile ceasefire and continued suffering. UN News app users can follow here.",
       "publisher": "United Nations",
@@ -471,19 +528,19 @@
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168204",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "6891a5e98425f6339f2d",
       "category": "Business",
       "headline": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-26T10:15:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260826~3641116314.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "f396654bac52967aacc9",
@@ -495,7 +552,91 @@
       "published_at": "2026-08-26T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "38c5f2d46e1e7ed4da7d",
+      "category": "World",
+      "headline": "Haiti ramps up the fight against gangs in the capital, but violence spreads elsewhere",
+      "summary": "The killings in Kenscoff began late Sunday, when armed men descended on the farming community in the hills overlooking Haiti’s capital, setting homes ablaze and attacking residents. By Monday, bodies lay in the streets and survivors were searching for missing relatives.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168203",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e659c24fb5914599dfbc",
+      "category": "World",
+      "headline": "One million children in Afghanistan face deadly malnutrition",
+      "summary": "Some 3.7 million children in Afghanistan are suffering from wasting, one of the most dangerous forms of malnutrition, with around one million currently battling the most severe, life-threatening form of the condition.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168202",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b54e5bb66839c4a6525b",
+      "category": "World",
+      "headline": "As wars spread, the global food system unravels",
+      "summary": "A family with four children abandoned its farm in Somalia after armed groups arrived and demanded payments for the right to continue cultivating the land. They walked roughly 100 kilometers to a displacement camp. One of the children died along the way.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168201",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "a1baa36344b6a30705da",
+      "category": "World",
+      "headline": "Rohingyas in Myanmar suffering ‘heartbreaking’ misery and cruelty",
+      "summary": "Members of the minority ethnic Rohingya Muslim group in Myanmar are “suffering, misery, and cruelty on multiple levels and across the country that is heartbreaking,” according to the UN High Commissioner for Human Rights.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168200",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6798f9c678b3e6b74f05",
+      "category": "World",
+      "headline": "Land degradation is costing far more than restoring: UN deputy chief",
+      "summary": "Countries are spending too little to restore degraded land even as the economic cost of doing nothing climbs towards $1 trillion a year, UN Deputy Secretary-General Amina Mohammed warned at a major UN land conference in Mongolia.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168198",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "acc4dab84fc509f88596",
+      "category": "World",
+      "headline": "Japan’s ‘2050 Weather Forecast’ highlights extreme heat in the future",
+      "summary": "As extreme heat becomes an increasingly visible reality across Japan, meteorologists, scientists, businesses and professional footballers are joining forces to encourage stronger climate action and raise awareness of the risks posed by global warming.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168197",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b078139a4111063bc453",
+      "category": "World",
+      "headline": "UN chief, Red Cross renew call for rules on lethal autonomous weapons",
+      "summary": "Amid unconfirmed reports that fully autonomous and AI-guided drones are now being used on the battlefield, UN chief António Guterres and the President of the Red Cross on Tuesday renewed their urgent call for stricter global controls, before it is too late.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-25T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168196",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "9fc527e024defd7fffe4",
@@ -507,11 +648,11 @@
       "published_at": "2026-08-25T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/michigans-les-cheneaux-islands/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "39e80a01a16e15c599dc",
-      "category": "Lifestyle",
+      "id": "091fffc307f1b9c19d49",
+      "category": "Technology & AI",
       "headline": "Starstruck: NASA Research Shows How Sun’s Ancient History Shaped Earth",
       "summary": "At the center of our solar system, the Sun influences every planet that orbits it. In two recent NASA-funded studies, scientists uncovered how ancient events in the Sun’s history may have helped create Earth’s unique climate and driven previously unexplained climatic shifts. In new research, scientists at NASA’s SHIELD (Solar Wind with Hydrogen Ion charge Exchange and Large-Scale Dynamics) center — one of […]",
       "publisher": "NASA Earth",
@@ -519,23 +660,95 @@
       "published_at": "2026-08-24T17:53:57+00:00",
       "source_url": "https://science.nasa.gov/solar-system/starstruck-nasa-research-shows-how-suns-ancient-history-shaped-earth/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "c57c09385cad40e5b523",
+      "category": "World",
+      "headline": "Can restoring land create jobs? These young entrepreneurs are proving it",
+      "summary": "From Ecuador to Bangladesh, a new generation of entrepreneurs is turning land restoration into economic opportunity. Whether repurposing agricultural waste, building greenhouses or deploying AI-powered sensors, they are showing, with support from a United Nations-backed initiative, that restoring land can also generate income and improve livelihoods.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168194",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e00570c8d9524bb94ac1",
+      "category": "World",
+      "headline": "100 days of Ebola and the race to stop the spread",
+      "summary": "A hundred days after the Bundibugyo Ebola outbreak was declared, the Democratic Republic of the Congo (DRC) is facing an epidemic of an unprecedented scale and efforts must grow to contain the spread in the eastern region and across borders, UN agencies warned on Monday.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168195",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "5d7739a2f9d714bbb0f3",
+      "category": "World",
+      "headline": "Gaza: Children still at risk despite drop in acute hunger",
+      "summary": "Among tent cities pitched on the rubble of destroyed homes in Gaza, children are, by one measure, finally getting enough to eat. By another, however, many of them may never fully recover, according to a new study by the UN Children’s Fund (UNICEF) released on Monday.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168193",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "cbc97be7d2956a130314",
+      "category": "World",
+      "headline": "Two UN peacekeepers killed in South Sudan ambush",
+      "summary": "Two UN peacekeepers have been killed and a total of seven people injured after unidentified gunmen ambushed a patrol in South Sudan’s eastern Jonglei state on Monday.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168192",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "576221318333d7df58ad",
+      "category": "World",
+      "headline": "Security Council LIVE: Civilian suffering grows in Russia-Ukraine war",
+      "summary": "As spiralling drone and missile attacks on civilians in the ongoing Russia-Ukraine war continue, top UN officials told the Security Council on Monday that every diplomatic effort must work towards a full, immediate and unconditional ceasefire. UN News app users can follow our live coverage here.",
+      "publisher": "United Nations",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168191",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "332c6da3039da96f0a00",
+      "category": "Technology & AI",
+      "headline": "NIST Researchers Supersize Quantum Technology to Help Detect Faint Photons",
+      "summary": "Our everyday life is flooded with photons, the quantum building blocks of light. For cutting-edge technology, from quantum computing to deep-tissue imaging, detecting every single photon counts. “Photons carry information,” said Kristen Parzuchowski",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-24T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/08/nist-researchers-supersize-quantum-technology-help-detect-faint-photons",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "5a40c3316a84dbf18a22",
       "category": "Business",
       "headline": "Piero Cipollone: Interview with ilsussidiario.net",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-24T06:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "06d4d44ce1536cf4c868",
-      "category": "Lifestyle",
+      "id": "62796cd476c5b2abfde2",
+      "category": "Technology & AI",
       "headline": "What Lake Bonneville Left Behind",
       "summary": "The drying of the massive lake exposed playas that became the setting for feats of engineering and technological ingenuity, as well as epic tales of exploration and desperation.",
       "publisher": "NASA Earth",
@@ -543,19 +756,31 @@
       "published_at": "2026-08-24T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/what-lake-bonneville-left-behind/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "92ac9bfb5e52fb86928a",
+      "category": "Technology & AI",
+      "headline": "Week in images: 17-21 August 2026",
+      "summary": "Discover our week through the lens",
+      "publisher": "European Space Agency",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-21T13:10:00+00:00",
+      "source_url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_17-21_August_2026",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "9d2e5a562ca2c2f26412",
       "category": "Business",
       "headline": "ECB Consumer Expectations Survey results – July 2026",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-21T08:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "6998400d17e1165bb0d0",
@@ -567,11 +792,11 @@
       "published_at": "2026-08-21T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/europes-scorching-summer/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "65889413b897383f0819",
-      "category": "Lifestyle",
+      "id": "71306b967674099ee8ba",
+      "category": "Technology & AI",
       "headline": "SmallSat 2026",
       "summary": "Join NASA in the Exhibit Hall (Booth # 635, 835, 641, and 940) for Storytelling by NASA experts. Full Agenda below. MONDAY, AUGUST 24, 9:00 – 10:00 AM WelcomeJose NunezBryceTech’s Smallsats by the Numbers: 2026Fletcher FranklinSupply Chain ObservationsBruce YostTechnology Shortfall Rudy de RoseeSPARCS Camera and Early Science ObservationsKaitlyn AshcroftJPL: SkyfallTim CanhamSWIFT LINK ReboostBo NaaszFlight […]",
       "publisher": "NASA Earth",
@@ -579,11 +804,23 @@
       "published_at": "2026-08-20T20:05:41+00:00",
       "source_url": "https://science.nasa.gov/earth/smallsat-2026/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "a3f66586544a3b354f0b",
-      "category": "Lifestyle",
+      "id": "ee812b5a991945d60845",
+      "category": "Technology & AI",
+      "headline": "Testing the waters: A day at the nation’s largest oil spill simulation tank",
+      "summary": "Located at Naval Weapons Station Earle Waterfront in Leonardo, New Jersey, the National Oil Spill Response Research and Renewable Energy Test Facility (Ohmsett) features a massive 2.6-million-gallon outdoor saltwater tank that serves as the nation’s testing ground for evaluating full-scale oil spill response equipment and marine technologies under realistic ocean conditions. (Image credit: Bureau of Safety and...",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-20T18:21:38+00:00",
+      "source_url": "https://www.noaa.gov/stories/testing-waters-day-at-nations-largest-oil-spill-simulation-tank-ext-0",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "51ffee35c090a305907b",
+      "category": "Technology & AI",
       "headline": "NASA Data Feeds River Forecasts as Snow Drought Effects Linger",
       "summary": "NASA Earth science data is supporting machine-learning forecasts that inform decisions about water, power, and public safety in Washington state.",
       "publisher": "NASA Earth",
@@ -591,19 +828,67 @@
       "published_at": "2026-08-20T14:12:09+00:00",
       "source_url": "https://science.nasa.gov/centers-and-facilities/goddard/nasa-river-forecasts-snow-drought/",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6394becf08611b3ac40a",
+      "category": "Technology & AI",
+      "headline": "NOAA to rebuild historic science lab in Beaufort, North Carolina",
+      "summary": "New North Carolina facility will continue to provide world-class NOAA science nationwide August 27, 2026 NOAA's Beaufort Laboratory moved to its current location on Pivers Island, North Carolina, in 1902. This aerial image of the laboratory complex was taken in 2014. (Image credit: NOAA's Beaufort Lab in 2014) Download Image Today, NOAA announced plans to fund the reconstruction of a new laboratory in Beaufort,...",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-19T19:23:54+00:00",
+      "source_url": "https://www.noaa.gov/news-release/noaa-to-rebuild-historic-science-lab-in-beaufort-north-carolina",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "2a68aa6339df30c07444",
+      "category": "Technology & AI",
+      "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+      "summary": "August 27, 2026 An array of observational equipment used by NOAA. The National Mesonet Program includes devices such as radars, weather balloons, ground-based temperature sensors, and ocean buoys. (Image credit: NOAA) Download Image NOAA’s National Weather Service will expand the National Mesonet Program offsite link — an observational weather “network of networks” that delivers critical information required for...",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-19T19:20:15+00:00",
+      "source_url": "https://www.noaa.gov/news-release/noaa-boosts-weather-data-collection-capabilities-with-new-mesonet-contract",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "38244a0e6a915a04b9ed",
+      "category": "Technology & AI",
+      "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
+      "summary": "Bluefin tuna. (Image credit: NOAA) Download Image August 19, 2026 Fisheries 0 Off",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-19T18:01:28+00:00",
+      "source_url": "https://www.noaa.gov/stories/american-tuna-gets-boost-increased-bluefin-tuna-quotas-mean-more-opportunities-for-us-fishermen-ext",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "eb29c05c8080395c1e42",
+      "category": "Technology & AI",
+      "headline": "NOAA Fisheries Tech Week: Launching into the future with advanced technologies",
+      "summary": "NOAA Fisheries Technology Week splash page. (Image credit: NOAA Fisheries) Download Image August 19, 2026 Fisheries Information Technology 0 Off",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-19T17:37:50+00:00",
+      "source_url": "https://www.noaa.gov/stories/technology-week-ext",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "e6e6e987ae089fb25d66",
       "category": "Business",
       "headline": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-19T07:10:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "de4f5cbd84a6609392cb",
@@ -615,7 +900,7 @@
       "published_at": "2026-08-18T19:55:10+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "39907d56465278f3fcd9",
@@ -627,19 +912,19 @@
       "published_at": "2026-08-18T17:15:48+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "db46030949df7edd331a",
       "category": "Business",
       "headline": "Philip R. Lane: The rise in defence spending and the euro area economy",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-17T09:30:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260817~1f9f7149c9.en.pdf",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "ea584a1d498878088520",
@@ -651,7 +936,7 @@
       "published_at": "2026-08-14T20:16:34+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-75-sec-charges-boiler-room-operator-three-entities-defrauding-retail-investors-74-million-pre-ipo",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "d88488c130030567e57f",
@@ -663,23 +948,959 @@
       "published_at": "2026-08-13T20:32:19+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-74-sec-charges-toms-river-trio-connection-alleged-47-million-fraud-targeting-orthodox-jewish",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "491cedb8e117c1eab84b",
+      "category": "Business",
+      "headline": "NOAA Announces 2026 Small Business of the Year Award Recipient",
+      "summary": "August 13, 2026 NOAA has named Industrial Economics, Inc. (IEc) as its Small Business of the Year, honoring the firm for exceptional performance, technical innovation, and outstanding environmental stewardship in executing a complex marine restoration project. Faced with challenging environmental conditions and significant logistical delays, IEc leveraged cutting-edge technical and process innovations to safely...",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-13T14:32:03+00:00",
+      "source_url": "https://www.noaa.gov/acquisition-grants/small-business/news/noaa-announces-2026-small-business-of-year-award-recipient-0",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "a4b9f7f09c14083b1b50",
+      "category": "Technology & AI",
+      "headline": "NIST National Construction Safety Team Advisory Committee Meeting Scheduled for Sept. 23 and 24, 2026",
+      "summary": "Anyone wishing to attend the virtual meeting must register by 5 p.m. EDT on Wednesday, Sept. 16.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-13T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/08/nist-national-construction-safety-team-advisory-committee-meeting-scheduled",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "da5f780a7c231fa53431",
       "category": "Business",
       "headline": "Cash remains most widely accepted payment method in euro area",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
       "publisher": "European Central Bank",
       "source_type": "official_institutional",
       "published_at": "2026-08-13T09:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260813~389729d6a9.en.html",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "a4bf0e507348cf9de143",
-      "category": "Sports",
+      "id": "df8944bf57285f3ba165",
+      "category": "Technology & AI",
+      "headline": "Madeline Yarkin",
+      "summary": "Animal Science California Polytechnic State University-San Luis Obispo Hollings Scholarship 2026",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-11T17:05:13+00:00",
+      "source_url": "https://www.noaa.gov/hollings-scholarship/our-people/madeline-yarkin",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6122ba542466860e0736",
+      "category": "Technology & AI",
+      "headline": "David Winchester",
+      "summary": "Mechanical Engineering Morehouse College Hollings Scholarship 2026",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-11T17:05:13+00:00",
+      "source_url": "https://www.noaa.gov/hollings-scholarship/our-people/david-winchester",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "57a538e3fc8139ff9dd6",
+      "category": "Technology & AI",
+      "headline": "Amberlyn Wilson",
+      "summary": "Marine Biology Nova Southeastern University Hollings Scholarship 2026",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-11T17:05:13+00:00",
+      "source_url": "https://www.noaa.gov/hollings-scholarship/our-people/amberlyn-wilson",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ac26d99fe22edd6ebd78",
+      "category": "World",
+      "headline": "Rohan Warrier",
+      "summary": "Economics University of Maryland College Park Hollings Scholarship 2026",
+      "publisher": "NOAA",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-11T17:05:13+00:00",
+      "source_url": "https://www.noaa.gov/hollings-scholarship/our-people/rohan-warrier",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e9b12cba2297233349db",
+      "category": "Business",
+      "headline": "ECB and Frankfurt Radio Symphony invite the public to Europa Open Air concert on 20 August 2026",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-11T08:30:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260811~47cd3ee040.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "744688af3117241f3e92",
+      "category": "Business",
+      "headline": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
+      "summary": "The Securities and Exchange Commission today charged New York-based investment adviser Adit Ventures Management LLC, its CEO Eric Munson, and three affiliated general partners, Adit Ventures LLC; Adit Ventures II LLC; and Adit Ventures III LLC (the…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-10T18:00:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-73-sec-charges-private-fund-adviser-adit-ventures-management-its-ceo-affiliated-general-partners",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "1e0468d4beb6a5a61fe2",
+      "category": "Business",
+      "headline": "ECB publishes consolidated banking data for end-March 2026",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-07T08:00:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260807~58eb5109ce.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "cef8b3ec36035dbf7f87",
+      "category": "Technology & AI",
+      "headline": "NIST Researchers Correct Common Error Confounding Nanotech Measurements",
+      "summary": "The scientists offer a practical solution that relies on accounting for measurement errors before testing materials or developing products.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-06T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/08/nist-researchers-correct-common-error-confounding-nanotech-measurements",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "0b2688ef0c914b977c45",
+      "category": "Business",
+      "headline": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
+      "summary": "The Securities and Exchange Commission today announced it is establishing a new specialized unit within the Division of Enforcement to provide the dedicated expertise, focus, and capacity to pursue accounting and financial reporting fraud cases as well…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-05T18:30:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-72-sec-establishes-financial-reporting-accounting-unit-enforcement-division",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "233034fc84ca4b55aba9",
+      "category": "World",
+      "headline": "‘Spooky’ Particles Transit DC Suburbs, a Step Toward a Quantum Network",
+      "summary": "The achievement shows that fragile quantum entanglement can survive even in tough, real-world conditions.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-05T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/08/spooky-particles-transit-dc-suburbs-step-toward-quantum-network",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3d4caac370b62509493c",
+      "category": "Technology & AI",
+      "headline": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
+      "summary": "NIST will execute two of its efforts through its Centers for AI in Manufacturing and Critical Infrastructure.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-04T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "0f9749e3931ef842f078",
+      "category": "Business",
+      "headline": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "summary": "The Securities and Exchange Commission announced that the Small Business Capital Formation Advisory Committee meeting held on July 21, 2026, will reconvene August 6, 2026, at 1 p.m. ET, virtually, on SEC.gov. The committee will…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-30T13:53:38+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-71-sec-announces-continuation-small-business-advisory-committee-meeting",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "d53c5a3601e6d636e937",
+      "category": "Business",
+      "headline": "Digital euro app to incorporate highest accessibility standards",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-30T08:00:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "353f9d5724b2bc0bcf76",
+      "category": "Business",
+      "headline": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-29T08:00:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "33137171471ab518d54b",
+      "category": "Business",
+      "headline": "Small Business Forum’s Report to Congress Highlights Recommendations to Improve Capital-Raising Policy",
+      "summary": "The Securities and Exchange Commission released a report to Congress today highlighting policy recommendations from the SEC’s 45th Annual Government-Business Forum on Small Business Capital Formation. The report provides a summary of the forum…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-27T19:59:17+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-70-small-business-forums-report-congress-highlights-recommendations-improve-capital-raising-policy",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "f0f94c1049c902e45e0d",
+      "category": "Business",
+      "headline": "Philip R. Lane: Outlook for the euro area economy",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-24T15:30:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260724~d484b483b9.en.pdf",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "723a761772ddbee50319",
+      "category": "Business",
+      "headline": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-24T13:00:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "90fc8b5cfd5128bb9dfd",
+      "category": "Business",
+      "headline": "ECB to extend use of climate factors in Eurosystem collateral framework to non-financial corporate credit claims",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "European Central Bank",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-24T10:00:00+00:00",
+      "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_4~f082ce289d.en.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6182882a69badd1aaadf",
+      "category": "Business",
+      "headline": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "summary": "The Securities and Exchange Commission announced today that it will host a roundtable on Sept. 17, 2026, to discuss moving towards 24-hour trading in the U.S. equity markets, including preparations to support overnight trading, operations and resiliency…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-23T15:04:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-69-sec-announces-roundtable-preparations-24-hour-trading",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ad9ac369de910372c428",
+      "category": "Business",
+      "headline": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
+      "summary": "The Securities and Exchange Commission today announced that Sam Waldon, Principal Deputy Director of the Division of Enforcement, will depart the agency on July 31, 2026, after more than 14 years at the SEC. He will be succeeded as Principal Deputy…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-22T13:45:25+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-68-sec-announces-departure-principal-deputy-director-enforcement-sam-waldon",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b38dd4246d6509b620b0",
+      "category": "Technology & AI",
+      "headline": "NIST Announces Funding Opportunity for 14 MEP Centers to Advance Small and Medium-Sized U.S. Manufacturers",
+      "summary": "NIST MEP will host an informational webinar on Tuesday, July 28, 2026, at 1 p.m. ET to provide general information about this opportunity and guidance on preparing applications.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-22T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/07/nist-announces-funding-opportunity-14-mep-centers-advance-small-and-medium",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "0f2d6b6cc55d78e22a56",
+      "category": "Business",
+      "headline": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors",
+      "summary": "The Securities and Exchange Commission today proposed Regulation E-Delivery, a new rule that would expand the ability of issuers, broker-dealers, investment advisers, and others to use electronic delivery to satisfy information delivery requirements…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-16T12:57:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "615db2c98049685d61cb",
+      "category": "Technology & AI",
+      "headline": "NASA Study Finds Near-Earth Asteroid Is Actually Comet",
+      "summary": "New research led by scientists at NASAâs Jet Propulsion Laboratory in Southern California has revealed the identity of a puzzling near-Earth object by precisely tracking its motion through space and using powerful observatories that image faint celestial objects.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-16T07:00:00+00:00",
+      "source_url": "https://www.nasa.gov/solar-system/comets/nasa-study-finds-near-earth-asteroid-is-actually-comet/",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "2cc0088d7bdfdb46cc7a",
+      "category": "World",
+      "headline": "NIST Receives New Patent for Microbe-Killing Water Heater",
+      "summary": "Warm water in household pipes can be a breeding ground for harmful bacteria.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-14T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/07/nist-receives-new-patent-microbe-killing-water-heater",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "1aaf89b66dbad52d8d85",
+      "category": "Business",
+      "headline": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
+      "summary": "The Securities and Exchange Commission’s Office of Municipal Securities today announced it has updated its Registration of Municipal Advisors FAQs webpage to offer more clarity on municipal advisor registration and recordkeeping requirements. The…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-10T16:00:32+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "12ad0af00dacc5e25636",
+      "category": "Technology & AI",
+      "headline": "New Fabric Test Material Could Help Strengthen Domestic Supply Chain for Textiles and Clothing",
+      "summary": "Researchers estimate that 56% of textiles can be recycled or recovered, but most don’t make it back into the domestic supply chain.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-09T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/07/new-fabric-test-material-could-help-strengthen-domestic-supply-chain",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3095c5da7d9898176d88",
+      "category": "Business",
+      "headline": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
+      "summary": "The Securities and Exchange Commission’s Office of the Advocate for Small Business Capital Formation and the Division of Corporation Finance will co-host a livestreamed discussion on Monday, July 13, 2026, at 2 p.m. to re-examine…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-08T17:54:26+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "df3be0627adc8c300581",
+      "category": "Business",
+      "headline": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
+      "summary": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, July 21, 2026 at 10 a.m. to explore ways to modernize public market access and encourage IPOs…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-08T13:01:01+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-64-sec-small-business-advisory-committee-explore-modernizing-market-access",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "67cb22d7ea72d02455d0",
+      "category": "Business",
+      "headline": "SEC Forms New Retail Fraud Working Group",
+      "summary": "The Securities and Exchange Commission today announced the creation of the Retail Fraud Working Group designed to strengthen the Division of Enforcement’s efforts to identify and combat fraud targeting everyday investors.The Retail Fraud Working Group…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-07T14:39:57+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "31bea19aacf9c872a019",
+      "category": "Business",
+      "headline": "SEC Names Paul Knight as Chief Operating Officer",
+      "summary": "The Securities and Exchange Commission today announced that Paul Knight has been named as the agency’s Chief Operating Officer (COO).As COO, Mr. Knight will oversee the SEC's operational and administrative functions, including the agency's Office of…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-06T19:10:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-62-sec-names-paul-knight-chief-operating-officer",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3c9f98bfa4a9fdc75bbe",
+      "category": "Technology & AI",
+      "headline": "Arvind Raman Confirmed as the 18th NIST Director",
+      "summary": "Raman comes to NIST from Purdue University, where he was the dean of engineering.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-06T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/07/arvind-raman-confirmed-18th-nist-director",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "0ea85b205853279e6828",
+      "category": "Business",
+      "headline": "SEC Publishes Updated Market Statistics, Highlighting Increase in IPOs and Proceeds Raised",
+      "summary": "The Securities and Exchange Commission’s Division of Economic and Risk Analysis (DERA) published updated statistics and data visualizations covering key segments of the U.S. capital markets, including three new asset-backed securities (ABS) issuance data…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-07-01T12:47:58+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-61-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e35f73a57e1ff46ef4cf",
+      "category": "Business",
+      "headline": "SEC Seeks Public Comment on Novel Exchange-Traded Funds",
+      "summary": "The Securities and Exchange Commission today issued a request for public comment on exchange-traded funds (ETFs) seeking to invest in innovative asset classes or engage in novel investment strategies. The request focuses on ways to facilitate innovation…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-30T14:15:05+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-60-sec-seeks-public-comment-novel-exchange-traded-funds",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "2aa683043716cd529d44",
+      "category": "Technology & AI",
+      "headline": "NIST Launches Center to Drive the Manufacture of Quantum Technologies",
+      "summary": "NIST has announced an agreement with SRI International to establish the Quantum Manufacturing Engineering Center (QMEC).",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-29T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/nist-launches-center-drive-manufacture-quantum-technologies",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "8060fba66955bfe51868",
+      "category": "Business",
+      "headline": "SEC, CFTC Seek Public Comment on the Harmonization of Portfolio Margining Frameworks",
+      "summary": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential approaches to further harmonize regulatory frameworks applicable to portfolio margining across securities,…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-26T12:58:32+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-59-sec-cftc-seek-public-comment-harmonization-portfolio-margining-frameworks",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "395e3a4db1c5e95b7f90",
+      "category": "Business",
+      "headline": "SEC Appoints Kathleen Hutchinson as Director of Office of International Affairs",
+      "summary": "The Securities and Exchange Commission has appointed Kathleen M. Hutchinson as Director of the agency’s Office of International Affairs (OIA). OIA advises the Commission on international policy matters, coordinates with foreign authorities across the…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-24T18:32:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-58-sec-appoints-kathleen-hutchinson-director-office-international-affairs",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ef1b7d071de5f5da5e7e",
+      "category": "Technology & AI",
+      "headline": "NIST Releases Technical Findings on What Caused the 2021 Partial Collapse of Champlain Towers South",
+      "summary": "In an investigation that began just days after the tragedy, the team examined two dozen possible scenarios for where and why the collapse started.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-22T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/nist-releases-technical-findings-what-caused-2021-partial-collapse",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "5fd30f735e06dfc4099b",
+      "category": "Business",
+      "headline": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
+      "summary": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to further update, clarify, and harmonize certain derivatives product definitions and…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-18T18:42:47+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "899a1750fe0f9978aaab",
+      "category": "Business",
+      "headline": "SEC, CFTC Seek Public Input on Data Reporting Frameworks for Security-Based Swap and Swap Markets",
+      "summary": "The Securities and Exchange Commission and Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to harmonize, modernize, and streamline data reporting requirements in their regulation of the…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-18T18:17:55+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-56-sec-cftc-seek-public-input-data-reporting-frameworks-security-based-swap-swap-markets",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4013f61577d2204d7cb1",
+      "category": "Business",
+      "headline": "SEC Appoints John Moses as Director of the Office of Investor Education and Assistance",
+      "summary": "The Securities and Exchange Commission has appointed John Moses as Director of the agency’s Office of Investor Education and Assistance, which provides services and resources to help investors build their financial futures and protect against investment…",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-12T16:30:00+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4faeecd6cf3163f44bff",
+      "category": "Technology & AI",
+      "headline": "NIST Expands Its Library of ‘Chemical Fingerprints’ to Identify Unknown Substances",
+      "summary": "Researchers and manufacturers rely on the library to identify unknown compounds in food, drugs, cosmetics, the environment, body fluids, forensic evidence and even space rocks.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-09T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/nist-expands-its-library-chemical-fingerprints-identify-unknown-substances",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "afd39a8b00675260b3aa",
+      "category": "World",
+      "headline": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
+      "summary": "The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-09T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4a4e389e09cdd4221dd1",
+      "category": "Technology & AI",
+      "headline": "New AI Model Shows How to Evacuate for Fires One Safe Step at a Time",
+      "summary": "A NIST-led team has created a new AI model that can identify safe evacuation routes in a single-story floor plan during a fire, with a multilevel version in the works.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-04T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/new-ai-model-shows-how-evacuate-fires-one-safe-step-time",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "a0eeaf92065ff674980d",
+      "category": "Technology & AI",
+      "headline": "NIST Researchers Discover a New Way to Whisk Alloys Together With Lasers",
+      "summary": "NIST also improved how X-rays are used to study the atomic structure of metals in real time during 3D printing, allowing researchers to observe how materials change under extreme conditions.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-06-04T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/06/nist-researchers-discover-new-way-whisk-alloys-together-lasers",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "10759e2a2f92f9a738b1",
+      "category": "Technology & AI",
+      "headline": "NIST Expands AI Consortium’s Scope, Calls for New Members",
+      "summary": "The consortium will focus on AI innovation and adoption, with six task groups concentrating on different aspects of AI measurement science and evaluation.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-05-29T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "a23eea26a0218e1c3c0e",
+      "category": "Technology & AI",
+      "headline": "Shooting for the Moon: Ultrastable Lasers in Dark Craters Could Enable Lunar Navigation, Precision Timekeeping, New Science",
+      "summary": "Lunar craters in permanent shadow could be ideal locations for building the most stable optical lasers ever made.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-05-18T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/05/shooting-moon-ultrastable-lasers-dark-craters-could-enable-lunar-navigation",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "75905fa2ec02cef5d3c1",
+      "category": "Technology & AI",
+      "headline": "Wear and Tear Changes Measurable PFAS Levels in Firefighter Hoods, Gloves and Wildland Gear",
+      "summary": "In the fourth of an ongoing series of reports, NIST shows that wear and tear increased the levels of PFAS found in hoods and gloves.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-05-13T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/05/wear-and-tear-changes-measurable-pfas-levels-firefighter-hoods-gloves-and",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "5d23f2170c0e621f554a",
+      "category": "Technology & AI",
+      "headline": "NIST Weighs In on the Mystery of the Gravitational Constant",
+      "summary": "A NIST researcher has unveiled the results of a 10-year quest to measure the constant.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-04-16T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/04/nist-weighs-mystery-gravitational-constant",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "640aa938dd6ddbd413e8",
+      "category": "Technology & AI",
+      "headline": "Any Color You Like: NIST Scientists Create ‘Any Wavelength’ Lasers in Tiny Circuits for Light",
+      "summary": "NIST scientists and collaborators have pioneered a way to make integrated circuits for light by depositing complex patterns of specialized materials onto silicon wafers.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-04-15T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "2f7363fb3252c142fa0f",
+      "category": "Technology & AI",
+      "headline": "NIST Researchers Develop Photonic Chip Packaging That Can Withstand Extreme Environments",
+      "summary": "The advance could allow these technologies to operate in deep-space probes, inside nuclear reactors, in ultrahigh vacuum systems, and at temperatures both near absolute zero and in scorchingly hot industrial settings.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-03-30T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/03/nist-researchers-develop-photonic-chip-packaging-can-withstand-extreme",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b7e79d2dc14e9d723e66",
+      "category": "Technology & AI",
+      "headline": "NIST Helps Fingerprint Examiners With New Data and Software Release",
+      "summary": "The new tools are an annotated collection of 10,000 fingerprints and a software program that can sort fingerprints according to their quality.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-03-23T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/03/nist-helps-fingerprint-examiners-new-data-and-software-release",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "1a9675511a397f0e895b",
+      "category": "Technology & AI",
+      "headline": "NIST Submits Annual Report to Congress Summarizing FY 2025 Progress on National Construction Safety Team Investigations",
+      "summary": "The report includes an overview of work completed on the Champlain Towers South investigation.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-03-19T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/03/nist-submits-annual-report-congress-summarizing-fy-2025-progress-national",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "d394c1ddc26212090037",
+      "category": "Technology & AI",
+      "headline": "NASAâs DART Mission Changed Orbit of Asteroid Didymos Around Sun",
+      "summary": "The DART impact not only altered Dimorphosâ orbit around Didymos but also produced a measurable shift in the entire binary systemâs orbit around the Sun.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2026-03-06T08:00:00+00:00",
+      "source_url": "https://www.jpl.nasa.gov/news/nasas-dart-mission-changed-orbit-of-asteroid-didymos-around-sun/",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "0d1b393ec8c2705fdb0b",
+      "category": "Technology & AI",
+      "headline": "New NASA Asteroid Observations Eliminate Chance of 2032 Lunar Impact",
+      "summary": "Observations from NASA's James Webb Space Telescope observations on Feb. 18 and 26, 2026, refine near-Earth asteroid 2024 YR4's orbit and rule out a chance of lunar impact on Dec. 22, 2032.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2026-03-05T08:00:00+00:00",
+      "source_url": "https://science.nasa.gov/blogs/planetary-defense/2026/03/05/new-nasa-asteroid-observations-eliminate-chance-of-2032-lunar-impact/",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6a71e97f73712adcb8d9",
+      "category": "Technology & AI",
+      "headline": "2 Health Care Organizations Will Receive 2025 Baldrige National Quality Awards",
+      "summary": "The award highlights organizations that focus on resilience.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-02-19T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/2-health-care-organizations-will-receive-2025-baldrige-national-quality",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e81cc2f9b7c003194bca",
+      "category": "Technology & AI",
+      "headline": "Announcing the \"AI Agent Standards Initiative\" for Interoperable and Secure Innovation",
+      "summary": "The Initiative will ensure that the next generation of AI is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-02-17T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6217f7af43e3800458c9",
+      "category": "Technology & AI",
+      "headline": "NIST Releases New Forensic Genetic Reference Material to Help Crime Laboratories Analyze Challenging Cases",
+      "summary": "The reference material is the first to include mixtures of high-quality and degraded DNA from different individuals.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-02-17T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/nist-releases-new-forensic-genetic-reference-material-help-crime",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "1e852821e73b52b8b7ce",
+      "category": "Technology & AI",
+      "headline": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
+      "summary": "NIST is allocating funding to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-02-10T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "cb7a562705fcde5a9f43",
+      "category": "Technology & AI",
+      "headline": "Space: The Final Frontier for Standards",
+      "summary": "Seven NIST reference materials, including house dust and freeze-dried human liver tissue, have been flown to the International Space Station.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-02-09T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/space-final-frontier-standards",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3e27b365c3763e8012d2",
+      "category": "Technology & AI",
+      "headline": "CAISI Issues Request for Information About Securing AI Agent Systems",
+      "summary": "The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2026-01-12T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "c2d6c71f26b405ffc09d",
+      "category": "Technology & AI",
+      "headline": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
+      "summary": "NIST has expanded its collaboration with the nonprofit MITRE Corporation as part of its efforts to ensure U.S. leadership in artificial intelligence.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-22T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/nist-launches-centers-ai-manufacturing-and-critical-infrastructure",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e8ed1ab34caf326b0563",
+      "category": "Technology & AI",
+      "headline": "NIST Physicists Bring Unruly Molecules to the Quantum Party",
+      "summary": "Molecules can serve as versatile building blocks for quantum technologies, but they are much harder to control than atoms.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-18T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/nist-physicists-bring-unruly-molecules-quantum-party",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "47114efb66849aaa42dc",
+      "category": "Technology & AI",
+      "headline": "Securing Smart Speakers for Home Health Care: NIST Offers New Guidelines",
+      "summary": "Cybersecurity and privacy risks can threaten patient confidentiality.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-17T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/securing-smart-speakers-home-health-care-nist-offers-new-guidelines",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "37f7351ad353b038489b",
+      "category": "Technology & AI",
+      "headline": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
+      "summary": "New guidelines can help an organization determine ways to incorporate AI into its operations while mitigating cybersecurity risks.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-16T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/draft-nist-guidelines-rethink-cybersecurity-ai-era",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "c08f7036b61123421fbb",
+      "category": "World",
+      "headline": "Department of Commerce Announces Transition of Baldrige Performance Excellence Program",
+      "summary": "Beginning with the 2026 award cycle, the Alliance for Performance Excellence and the Baldrige Foundation will take on most operations for the program.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-11T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/department-commerce-announces-transition-baldrige-performance-excellence",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "02e4bf22d517c31b82ea",
+      "category": "Technology & AI",
+      "headline": "What Time Is It on Mars? NIST Physicists Have the Answer.",
+      "summary": "This calculation is necessary for future space navigation and communication networks.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-12-01T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/12/what-time-it-mars-nist-physicists-have-answer",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "58860ed74737b7a25bb9",
+      "category": "Technology & AI",
+      "headline": "Building a Sustainable Metals Infrastructure: NIST Report Highlights Key Strategies",
+      "summary": "Making metals processing more sustainable and resilient will support U.S industrial innovation and competitiveness.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-11-20T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/11/building-sustainable-metals-infrastructure-nist-report-highlights-key",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "80cb984ab83f003ce1d9",
+      "category": "Technology & AI",
+      "headline": "CAISI Evaluation of DeepSeek AI Models Finds Shortcomings and Risks",
+      "summary": "The Center for AI Standards and Innovation at NIST evaluated several leading models from DeepSeek, an AI company based in the People’s Republic of China.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-09-30T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "5f6302be0b25e8197dd0",
+      "category": "Technology & AI",
+      "headline": "NIST Engineers Design 5 New Ways to Connect Concrete Pieces for More Resilient Buildings",
+      "summary": "One of the biggest challenges with precast concrete is connecting the concrete pieces at a job site.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-09-29T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/09/nist-engineers-design-5-new-ways-connect-concrete-pieces-more-resilient",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4a743bd311526ac35cca",
+      "category": "Technology & AI",
+      "headline": "NIST Issues Broad Agency Announcement for Proposals to Advance Microelectronics Technologies",
+      "summary": "The CHIPS for America funding opportunity will support critical research, prototyping and commercial solutions that advance microelectronics technology in the United States.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-09-24T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/09/nist-issues-broad-agency-announcement-proposals-advance-microelectronics",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6f28b2313a596e18e662",
+      "category": "Technology & AI",
+      "headline": "NIST Awards More Than $3 Million to Support Cybersecurity Workforce Development Across 13 States",
+      "summary": "There are currently more than 514,000 cybersecurity job openings in the U.S.",
+      "publisher": "NIST",
+      "source_type": "official_institutional",
+      "published_at": "2025-09-17T12:00:00+00:00",
+      "source_url": "https://www.nist.gov/news-events/news/2025/09/nist-awards-more-3-million-support-cybersecurity-workforce-development",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "bd7fd4bc9ab94b9c3542",
+      "category": "Technology & AI",
+      "headline": "NASA Discovers Interstellar Comet Moving Through Solar System",
+      "summary": "On July 1, the NASA-funded ATLAS (Asteroid Terrestrial-impact Last Alert System) survey telescope in Rio Hurtado, Chile, first reported observations of a comet that originated from interstellar space.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2025-07-02T07:00:00+00:00",
+      "source_url": "https://science.nasa.gov/blogs/planetary-defense/2025/07/02/nasa-discovers-interstellar-comet-moving-through-solar-system/",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "46e9d903d7dbc42e4524",
+      "category": "Technology & AI",
+      "headline": "Latest Calculations Conclude Asteroid 2024 YR4 Now Poses No Significant Threat to Earth in 2032 and Beyond",
+      "summary": "NASA has significantly lowered the risk of near-Earth asteroid 2024 YR4 as an impact threat to Earth for the foreseeable future.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2025-02-24T08:00:00+00:00",
+      "source_url": "https://science.nasa.gov/blogs/planetary-defense/2025/02/24/latest-calculations-conclude-asteroid-2024-yr4-now-poses-no-significant-threat-to-earth-in-2032-and-beyond/",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "10c77786f29de6f34042",
+      "category": "Technology & AI",
+      "headline": "Asteroid 2024 YR4 reaches level 3 on the Torino Scale",
+      "summary": "NASA analysis of a near-Earth asteroid, designated 2024 YR4, indicates it has a small chance of impacting Earth on Dec. 22, 2032.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2025-01-31T08:00:00+00:00",
+      "source_url": "https://cneos.jpl.nasa.gov/news/news210.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "56f7c60f09e9633c4c0e",
+      "category": "Technology & AI",
+      "headline": "NASA Study: Asteroidâs Orbit, Shape Changed After DART Impact",
+      "summary": "After NASAâs historic Double Asteroid Redirection Test, a JPL-led study has shown that the shape of asteroid Dimorphos has changed and its orbit has shrunk.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2024-03-19T07:00:00+00:00",
+      "source_url": "https://www.jpl.nasa.gov/news/nasa-study-asteroids-orbit-shape-changed-after-dart-impact",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3934ffbf1eb7f3a7c6a5",
+      "category": "Technology & AI",
+      "headline": "NASA System Predicts Impact of a Very Small Asteroid Over Germany",
+      "summary": "The Scout impact assessment system calculated where and when the asteroid 2024 BX1 would impact Earthâs atmosphere, providing a useful demonstration of planetary defense capability.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "2024-01-24T08:00:00+00:00",
+      "source_url": "https://www.jpl.nasa.gov/news/nasa-system-predicts-impact-of-a-very-small-asteroid-over-germany",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "8a09cce335c66d3a44d8",
+      "category": "World",
       "headline": "Tokyo to host 2025 World Athletics Championships",
       "summary": "The World Athletics Council has selected Tokyo, Japan, to host the 2025 World Athletics Championships.",
       "publisher": "World Athletics",
@@ -687,11 +1908,11 @@
       "published_at": "2022-07-14T23:36:00+00:00",
       "source_url": "https://worldathletics.org/news/news/tokyo-host-2025-world-athletics-championships",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "1a26322430e9c36e0f76",
-      "category": "Sports",
+      "id": "b8c72da13e627a446df8",
+      "category": "World",
       "headline": "World Mountain and Trail Running Championships 2023 awarded to Innsbruck and Stubai",
       "summary": "It is expected that up to 1400 athletes from over 60 nations will compete in the heart of the Alps.",
       "publisher": "World Athletics",
@@ -699,11 +1920,11 @@
       "published_at": "2022-05-06T22:12:00+00:00",
       "source_url": "https://worldathletics.org/news/news/world-mountain-and-trail-running-championship",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "d4518f4ce5350501031d",
-      "category": "Sports",
+      "id": "66ece5939bf431fa6990",
+      "category": "World",
       "headline": "Pre-qualification for hosting 2024 World Athletics Relays launches",
       "summary": "World Athletics has launched the pre-qualification for hosting the World Athletics Relays 2024.",
       "publisher": "World Athletics",
@@ -711,11 +1932,11 @@
       "published_at": "2022-03-10T13:54:00+00:00",
       "source_url": "https://worldathletics.org/news/news/pre-qualification-for-hosting-2024-world-athl",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "52ae7be969fd7f68e828",
-      "category": "Sports",
+      "id": "a8c6a074855403a170e9",
+      "category": "World",
       "headline": "Pre-qualification for 2024 and 2026 World Athletics Race Walking Team Championships launches",
       "summary": "World Athletics has launched the pre-qualification for the next two editions of the World Athletics Race Walking Team Championships, taking place in 2024 and 2026.",
       "publisher": "World Athletics",
@@ -723,11 +1944,11 @@
       "published_at": "2022-01-31T18:25:00+00:00",
       "source_url": "https://worldathletics.org/news/news/pre-qualification-2024-2026-world-athletics-r",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "cce4f74d11ac1ac0be57",
-      "category": "Sports",
+      "id": "162cc6c3f6cf660cf4cf",
+      "category": "World",
       "headline": "Watch 'RUN - The Athlete Refugee Team Story'",
       "summary": "'RUN - The Athlete Refugee Team Story', shares the incredible and inspirational story of the Athlete Refugee Team (ART), from its formal beginnings in early 2017 through the outbreak of the Covid-19 pandemic last year that halted, albeit temporarily, their seemingly impossible journey towards the Tokyo Olympic Games.",
       "publisher": "World Athletics",
@@ -735,7 +1956,7 @@
       "published_at": "2021-06-20T08:36:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/documentary-film-run-the-athlete-refugee-team",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "7ad20d65fa31f2c6592c",
@@ -747,7 +1968,7 @@
       "published_at": "2021-06-18T10:01:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/tadesse-abraham-world-refugee-day",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "5513a8698096213715d4",
@@ -759,11 +1980,11 @@
       "published_at": "2021-06-17T09:56:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-gabriyesos-tokyo",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "a11e1fc7a93cfeb23ded",
-      "category": "Sports",
+      "id": "b3601282ed938a5acd23",
+      "category": "World",
       "headline": "First wave of champion athletes confirmed for Monaco",
       "summary": "World champions Karsten Warholm, Yulimar Rojas, Tajay Gayle, Anzhelika Sidorova and Kelsey-Lee Barber are among the first stars confirmed for the Meeting Herculis EBS – part of the Wanda Diamond League – in Monaco on 9 July.",
       "publisher": "World Athletics",
@@ -771,7 +1992,7 @@
       "published_at": "2021-06-16T18:08:00+00:00",
       "source_url": "https://worldathletics.org/news/news/monaco-herculis-2021-warholm-rojas-gayle",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "947fc1fdca6b204a2940",
@@ -783,7 +2004,7 @@
       "published_at": "2021-06-16T09:21:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-lokonyen-tokyo",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "4c2f782b1efc60275284",
@@ -795,7 +2016,7 @@
       "published_at": "2021-06-15T21:05:00+00:00",
       "source_url": "https://worldathletics.org/news/report/kladno-kladenske-memorialy-belo-roos-pipi",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "16695f9afbfff7ca7487",
@@ -807,7 +2028,7 @@
       "published_at": "2021-06-15T11:00:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/dorian-keletela-sprinter-olympic-refugee-team",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "2562607f44b8efd57767",
@@ -819,7 +2040,7 @@
       "published_at": "2021-06-14T10:21:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-lohalith-tokyo",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
       "id": "ac4a5c75e33871134db5",
@@ -831,11 +2052,11 @@
       "published_at": "2021-06-13T22:11:00+00:00",
       "source_url": "https://worldathletics.org/news/report/arona-zheng-ninali-jiri-sykora",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
     },
     {
-      "id": "94f3af8a767bb0373946",
-      "category": "Sports",
+      "id": "aa0f80a76c6de1a22cdd",
+      "category": "World",
       "headline": "Roos breaks Swedish record in Sollentuna, Debjani breaks Belgian record in Geneva",
       "summary": "European indoor silver medallist Fanny Roos extended her own Swedish record to 19.33m at the Folksam Grand Prix – a World Athletics Continental Tour Bronze meeting – in Sollentuna on Sunday (13).",
       "publisher": "World Athletics",
@@ -843,7 +2064,451 @@
       "published_at": "2021-06-13T08:14:00+00:00",
       "source_url": "https://worldathletics.org/news/report/atleticageneve-2021-magi-debjani",
       "image_url": "",
-      "image_type": "ai_generated_local"
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "161fda491071f6df4927",
+      "category": "World",
+      "headline": "Hassan turns attention to the mile in Gateshead",
+      "summary": "Sifan Hassan will test her speed once again when she races the mile at the Muller British Grand Prix – a Wanda Diamond League meeting – at Gateshead International Stadium on 13 July.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-12T12:58:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/british-grand-prix-gateshead-hassan",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "abde39f6cc71190eb8d9",
+      "category": "World",
+      "headline": "Top head-to-heads set for Stockholm",
+      "summary": "Dina Asher-Smith and Sha'Carri Richardson will meet in the 200m, while a 400m hurdles field featuring Dalilah Muhammad and Femke Bol has been announced for the Bauhaus-Galan, a Wanda Diamond League meeting, in Stockholm on 4 July.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-11T20:50:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/stockholm-2021-asher-smith-richardson-muhamma",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "195d1926fb50def9d081",
+      "category": "Sports",
+      "headline": "Tokyo marks the target for athletes in Arona",
+      "summary": "Athletes will have Olympic qualification in mind when they head to the Meeting Internacional Arona in Tenerife on 12-13 June.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-11T14:36:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/meeting-internacional-arona-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "7b567355d2629e326a4c",
+      "category": "Sports",
+      "headline": "Ingebrigtsen beats top 5000m field to show superb form in Florence",
+      "summary": "In what may be the most impressive victory of his short but brilliant career, 20-year-old Jakob Ingebrigtsen upset an exceptional 5000m field, including both the world champion and world record-holder, at the Wanda Diamond League meeting in Florence on Thursday (10).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-10T21:39:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/florence-2021-ingebrigtsen-hassan",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "aeec1d3502167df145a3",
+      "category": "World",
+      "headline": "Kipruto, Reekie and Kipsang lead meeting record rampage in Marseille",
+      "summary": "Middle-distance runners Abel Kipsang, Jemma Reekie and Collins Kipruto were among the athletes to break a meeting record at the Meeting de Marseille – a World Athletics Continental Tour Bronze competition – in the south of France on Wednesday (9).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-09T20:32:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/meeting-marseille-kipsang-reekie-kipruto",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "aecebd26a7a8e9de657e",
+      "category": "Sports",
+      "headline": "How to follow and watch the Wanda Diamond League meeting in Florence",
+      "summary": "The 2021 Wanda Diamond League continues on Thursday (10), with Florence welcoming many of the world’s best athletes for the Golden Gala Pietro Mennea.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-09T16:31:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/how-to-follow-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "a549832aeae98028c159",
+      "category": "World",
+      "headline": "Global stars feeling inspired to perform in Florence",
+      "summary": "There was inspiration aplenty to be found in the venue for today’s Wanda Diamond League press conference, the splendidly decorated main salon of the Palazzo Vecchio in Florence, with its soaring painted ceiling and marble statues.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-09T13:32:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/florence-diamond-league-cheptegei-hassan-ashe",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b0d0391ceb2bc73c91dd",
+      "category": "World",
+      "headline": "Krukowski and Nowicki secure Polish throws double in Turku",
+      "summary": "In a country that loves its throwing, Marcin Krukowski and Wojciech Nowicki put on an exhibition for local fans on the second evening of the Paavo Nurmi Games – a World Athletics Continental Tour Gold meeting – in Turku, Finland, on Tuesday (8).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-08T20:10:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/paavo-nurmi-games-turku-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ab819ae2ee64e3103482",
+      "category": "World",
+      "headline": "Refugee Olympic Team announced",
+      "summary": "Seven refugee athletes will compete in athletics at the Tokyo 2020 Olympic Games, part of a squad of 29 announced today (8) by the International Olympic Committee.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-08T13:35:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/refugee-olympic-team-tokyo",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "c9dd01e0a1421ae07204",
+      "category": "Sports",
+      "headline": "World record-breakers Hassan and Cheptegei lead distance showcase in Florence",
+      "summary": "Fresh from her heroics at the FBK Games in Hengelo, world record-breaker Sifan Hassan will again take centre stage at the Golden Gala Pietro Mennea, a Wanda Diamond League meeting, in Florence on Thursday (10).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-08T12:54:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/florence-diamond-league-2021-hassan-cheptegei",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "53ba7db405029f01b9c4",
+      "category": "Sports",
+      "headline": "How to follow and watch the World Athletics Continental Tour Gold meeting in Turku",
+      "summary": "The 2021 World Athletics Continental Tour Gold series continues on Monday (7) and Tuesday (8) with the Paavo Nurmi Games in Turku, Finland.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-07T10:00:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/2021-how-to-follow",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "3991362699c04a26f38a",
+      "category": "Sports",
+      "headline": "Spotakova secures 10th Odlozil Memorial victory in Prague",
+      "summary": "Two decades after she made her first appearance at the meeting, world record-holder Barbora Spotakova notched up her 10th javelin victory at the Odlozil Memorial, winning with 60.21m at the World Athletics Continental Tour Bronze meeting in Prague on Monday (7).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-07T09:00:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/odlozil-memorial-prague-2021-spotakova",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6554dc92ea7d025129fd",
+      "category": "Sports",
+      "headline": "Hassan smashes world 10,000m record with 29:06.82 in Hengelo",
+      "summary": "Sifan Hassan continued to make history by smashing the world 10,000m record with a time of 29:06.82 at the FBK Games.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-06T14:02:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/fbk-games-hengelo-world-record-hassan",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "47f142091dd42a8c2a23",
+      "category": "Sports",
+      "headline": "Wlodarczyk and Fajdek to tune up for Tokyo in Turku",
+      "summary": "All eyes will be on the hammer throw circle in Turku, Finland, this week as two titans of the event – Anita Wlodarczyk and Pawel Fajdek – fine-tune their Olympic preparations at the Paavo Nurmi Games, a World Athletics Continental Tour Gold meeting.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-06T08:07:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/paavo-nurmi-games-turku-wlodarczyk-fajdek",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "c300bfda18755bb7139b",
+      "category": "World",
+      "headline": "Bromell speeds to 9.77 100m in Miramar, McLaughlin runs 52.83 in Nashville",
+      "summary": "The USA’s Trayvon Bromell stormed to seventh on the world 100m all-time list on Saturday (5) by running a world-leading 9.77 (1.5m/s) at the NACAC New Life Invitational – a World Athletics Continental Tour Silver meeting – in Miramar, Florida.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-05T23:01:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/new-life-invitational-miramar-bromell",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "df1a08f3b4fa36216ad6",
+      "category": "World",
+      "headline": "Garcia and Arenas win in La Coruna",
+      "summary": "Spain's European bronze medallist Diego Garcia and Colombia's world fifth-placer Sandra Lorena Arenas were successful at the Gran Premio Cantones de La Coruna ­– the Spanish leg of this year’s World Athletics Challenge - Race Walking – on Saturday (5) over a flat and fast 1km circuit at sea level.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-05T20:08:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/la-coruna-2021-garcia-arenas",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "ca5079250f6634f5142e",
+      "category": "World",
+      "headline": "Hassan eyes world record, Duplantis ready to soar in Hengelo",
+      "summary": "The 40th edition of the FBK Games – a World Athletics Continental Tour Gold meeting – in Hengelo looks set to be celebrated with fireworks on the track and field on Sunday (6), with talk of world and meeting records at the pre-event press conferences.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-05T10:13:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/fbk-games-hengelo-2021-hassan-duplantis",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "2fa972b5a04a9937f3b8",
+      "category": "Sports",
+      "headline": "Thompson-Herah, Bromell and Muhammad headline New Life Invitational",
+      "summary": "Jamaica's double Olympic sprint champion Elaine Thompson-Herah is among the large field of world-class athletes listed for action at the inaugural North American, Central American and Caribbean Athletics Association (NACAC) New Life Invitational on Saturday (5).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-04T13:14:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/new-life-invitational-thompson-herah-bromell",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b31e67d8d86b29896dda",
+      "category": "World",
+      "headline": "Global champions and world record-holders ready to clash in Hengelo",
+      "summary": "Five world champions, four Olympic gold medallists and two world record-holders are set to compete at the FBK Games – a World Athletics Continental Tour Gold meeting – in Hengelo on Sunday (6).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-04T11:45:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/fbk-games-hengelo-duplantis-hassan-asher-smit",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "cbb3ee1a41d87e5da622",
+      "category": "Sports",
+      "headline": "Dongmo throws 19.75m in Huelva, Bradshaw vaults 4.82m",
+      "summary": "Portugal’s Auriol Dongmo provided the main highlight at the 16th Meeting Iberoamericano, a World Athletics Continental Tour Bronze meeting, thanks to a 19.75m shot put throw on Thursday (3).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-03T20:54:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/meeting-iberoamericano-huelva-dongmo-bradshaw",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "97c82defbcd83e480856",
+      "category": "World",
+      "headline": "Race Walking Challenge gets under way in La Coruna",
+      "summary": "After last year’s cancellation because of the Covid-19 pandemic, Gran Premio Cantones de La Coruna ¬– the Spanish leg of this year’s World Athletics Challenge - Race Walking – returns on Saturday (5) to confirm that the event is arguably one of the key 20km competitions of the season.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-03T08:11:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/race-walking-challenge-la-coruna-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e79aec3192035ba62bab",
+      "category": "World",
+      "headline": "Okagbare sets Slovak all-comers’ record with 10.98 in Samorin",
+      "summary": "Nigeria’s Blessing Okagbare produced the first sub-11-second 100m run on Slovak soil when winning at the P-T-S Meeting – a World Athletics Continental Tour Silver competition – in Samorin on Wednesday (2).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-02T19:47:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/pts-samorin-okagbare",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "835b03c35f6036c6f199",
+      "category": "World",
+      "headline": "Knighton breaks Bolt’s world U18 200m best with 20.11 in Jacksonville",
+      "summary": "After a string of 200m victories and some swift – albeit wind-assisted – times over 100m in the past two months, 17-year-old Erriyon Knighton finally entered the record books with his 20.11 200m win at the Duval County Challenge, a World Athletics Continental Tour Bronze meeting, in Jacksonville on Monday (31).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-06-01T09:22:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/erriyon-knighton-world-u18-best-200m",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "b2116265f22b0a2d32b1",
+      "category": "World",
+      "headline": "Warner makes history in Götzis with sixth victory and 8995 score",
+      "summary": "Damian Warner had gone into the Hypo Meeting aiming to become the event’s first six-time winner but he ended up making history in other ways at the World Athletics Challenge – Combined Events meeting in Götzis on Sunday (30).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-30T20:54:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/hypo-meeting-gotzis-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "04331daaff191b9ae2e8",
+      "category": "World",
+      "headline": "Rionoripo and Kipruto victorious in Prague",
+      "summary": "Kenya’s Purity Rionoripo and Benson Kipruto were first past the post at the inaugural edition of The Battle of the Teams in Prague on Sunday (30), winning the World Athletics Label Road Race in 2:20:14 and 2:10:16 respectively.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-30T11:01:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/battle-teams-prague-2021-rionoripo-kipruto",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "9f372cfcc50c16aa540a",
+      "category": "Sports",
+      "headline": "Brume and Malone break records in Chula Vista",
+      "summary": "Nigeria’s Ese Brume and USA’s Maggie Malone made history at the Chula Vista Field Festival, setting area and national records respectively at the World Athletics Continental Tour Bronze meeting on Saturday (29).",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-30T00:01:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/chula-vista-field-festival-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "12857bf310b8ea0e8dfa",
+      "category": "Sports",
+      "headline": "Asher-Smith returns as Diamond League goes back to Gateshead",
+      "summary": "World 200m champion Dina Asher-Smith will fine-tune her preparations for the Olympic Games when she races in Gateshead on 13 July, following confirmation that the Wanda Diamond League series will be returning to the North East of England for the Muller British Grand Prix.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-29T12:18:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/asher-smith-diamond-league-gateshead-july-202",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "afc12078efdde6919fae",
+      "category": "Sports",
+      "headline": "Tamberi, Rojas and Bedrani set for Monaco",
+      "summary": "The Meeting Herculis EBS will welcome some of the world’s best athletes to Monaco just two weeks out from the Olympic Games in Tokyo and among those competing at the Louis II Stadium on 9 July will be Gianmarco Tamberi, Yulimar Rojas and Djilali Bedrani.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-29T10:05:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/tamberi-rojas-bedrani-monaco-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4f8bcbcad5226ea2a75c",
+      "category": "Sports",
+      "headline": "World leads and meeting records are set as season heats up in Doha",
+      "summary": "The Olympic season really started to warm up in Doha on Friday (28) as a series of world-leading performances and meeting record were achieved at the Wanda Diamond League event in Qatar’s capital.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-28T20:19:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/world-leads-meeting-records-doha-2021",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "591cace48ccf2a780917",
+      "category": "Sports",
+      "headline": "Barshim, Benjamin and Fraser-Pryce talk legacy as they take steps towards Tokyo in Doha",
+      "summary": "While the Wanda Diamond League meeting in Doha on Friday (28) is an important step for many athletes on the road to the Olympic Games in Tokyo, for Mutaz Barshim it also represents a key milestone in his career.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-27T20:11:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/doha-diamond-league-barshim-benjamin-fraser-p",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "4f6df39d3ea058928327",
+      "category": "World",
+      "headline": "Warner targets win No.6 in Götzis",
+      "summary": "Canada’s multiple global medallist Damian Warner will aim to become the Hypo Meeting’s first six-time winner when he competes at the World Athletics Challenge – Combined Events meeting in Götzis, Austria, on 29-30 May.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-27T13:03:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/gotzis-hypo-meeting-2021-warner",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e9a2c01df20f5b716d28",
+      "category": "World",
+      "headline": "Rojas ready to fly again in Doha",
+      "summary": "Thirty-two athletes who earned medals at the World Athletics Championships Doha 2019 – including 12 champions – will return to the Qatari capital on Friday (28) for the second Wanda Diamond League meeting of 2021.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-26T14:11:00+00:00",
+      "source_url": "https://worldathletics.org/news/preview/doha-diamond-league-rojas-norman-richardson",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e97481671df79e192db3",
+      "category": "World",
+      "headline": "Wlodarczyk among global medallists set for Szekesfehervar",
+      "summary": "Five-time winner Anita Wlodarczyk will return to the Istvan Gyulai Memorial, a World Athletics Continental Tour Gold meeting, in Szekesfehervar on 6 July.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-25T17:30:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/wlodarczyk-global-medallists-szekesfehervar",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "6fddd11a7c81ef9e4185",
+      "category": "Sports",
+      "headline": "Hassan and Kipyegon in Florence 1500m, Barshim and Stefanidi ready to soar",
+      "summary": "Double world champion Sifan Hassan and Olympic gold medallist Faith Kipyegon will go head-to-head over 1500m at the Golden Gala Pietro Mennea, a Wanda Diamond League meeting, on 10 June.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-25T12:51:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/golden-gala-florence-hassan-kipyegon",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "e40c30c0acbb56fa46d4",
+      "category": "Sports",
+      "headline": "How the world's best vaulters have got each other covered",
+      "summary": "If there is an image to epitomise the camaraderie within the pole vault, the photograph of Mondo Duplantis holding an umbrella over Sam Kendricks to protect him from the Gateshead elements would be it.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-24T15:49:00+00:00",
+      "source_url": "https://worldathletics.org/news/news/gateshead-pole-vault-kendricks-duplantis",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "d6d77dab3c734802eed1",
+      "category": "Sports",
+      "headline": "Hurdle stars Holloway and Harrison lead record blitz in Boston",
+      "summary": "Meeting records fell in all four hurdles races at the adidas Boost Boston Games – part of the World Athletics Continental Tour Gold series – with world record-holders Grant Holloway and Kendra Harrison among the winners.",
+      "publisher": "World Athletics",
+      "source_type": "official_institutional",
+      "published_at": "2021-05-23T22:38:00+00:00",
+      "source_url": "https://worldathletics.org/news/report/adidas-boost-boston-games-harrison-holloway-s",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
+    },
+    {
+      "id": "d877890a1eae95dbdae7",
+      "category": "Technology & AI",
+      "headline": "SpaceDev Places JPL On Contract To Support NEAP Mission Planning",
+      "summary": "The latest update has been published by the original source. Read the original report for the full details.",
+      "publisher": "NASA CNEOS",
+      "source_type": "official_institutional",
+      "published_at": "1998-12-15T08:00:00+00:00",
+      "source_url": "https://cneos.jpl.nasa.gov/news/news001.html",
+      "image_url": "",
+      "image_type": "ai_generation_failed"
     }
   ]
 }
