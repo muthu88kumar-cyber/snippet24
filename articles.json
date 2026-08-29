@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T16:04:33.832084+00:00",
-  "total": 1226,
+  "updated_at": "2026-08-29T16:34:35.223501+00:00",
+  "total": 1248,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 102,
-    "India": 359,
+    "India": 374,
     "Business": 166,
-    "Technology & AI": 93,
+    "Technology & AI": 95,
     "Sports": 85,
-    "Entertainment": 274,
-    "Lifestyle": 147
+    "Entertainment": 278,
+    "Lifestyle": 148
   },
   "articles": [
     {
@@ -132,6 +132,28 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "72b43ee0b2edfe7f73e0",
+      "category": "Entertainment",
+      "headline": "Tom & Cherry Box Office Day 1: Siddharth Randeria’s Comedy Drama Makes Biggest Gujarati Opening Of 2026!",
+      "summary": "Siddharth Randeria and Dhanya Doshi led Tom & Cherry has made a notable mark at the Indian box office on day 1. Check out latest collection! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T16:29:47+00:00",
+      "source_url": "https://www.koimoi.com/box-office/tom-cherry-box-office-day-1-siddharth-randerias-comedy-drama-makes-biggest-gujarati-opening-of-2026/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tom%20%26%20Cherry%20Box%20Office%20Day%201%3A%20Siddharth%20Randeria%E2%80%99s%20Comedy%20Drama%20Makes%20Biggest%20Gujarati%20Opening%20Of%202026%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=144015716",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "54297f29c0966ac26600",
+      "category": "India",
+      "headline": "Weak job market and paper leaks are breaking the promise of first Prime Minister, says Member of Parliament",
+      "summary": "For generations, Indian families have been taught a simple formula for mobility. Study hard, get educated, get a degree, get a job, build a better life. It’s one of the most powerful social contracts in modern India, says Raya Sabha MP",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:12:54+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/weak-job-market-and-paper-leaks-are-breaking-the-promise-of-first-prime-minister-says-member-of-parliament/article71405528.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Weak%20job%20market%20and%20paper%20leaks%20are%20breaking%20the%20promise%20of%20first%20Prime%20Minister%2C%20says%20Member%20of%20Parliament.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1769562618",
       "image_type": "ai_generated"
     },
     {
@@ -465,6 +487,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "622afb9bc92c29b530dd",
+      "category": "Entertainment",
+      "headline": "Spider-Man: Brand New Day India Box Office: Tom Holland Starrer Completes 1 Month In Theaters – Here’s The Total Collection!",
+      "summary": "Tom Holland's Spider-Man: Brand New Day is inches away from the 500 crore club in India. Check out the latest box office update! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T16:27:21+00:00",
+      "source_url": "https://www.koimoi.com/box-office/spider-man-brand-new-day-india-box-office-tom-holland-starrer-completes-1-month-in-theaters-heres-the-total-collection/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Spider-Man%3A%20Brand%20New%20Day%20India%20Box%20Office%3A%20Tom%20Holland%20Starrer%20Completes%201%20Month%20In%20Theaters%20%E2%80%93%20Here%E2%80%99s%20The%20Total%20Collection%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1447471778",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "23a158d3bc3768c38437",
       "category": "India",
       "headline": "Penguin drops Sonia Gandhi memoir; Congress alleges publisher caved to the Centre",
@@ -561,6 +594,28 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "602dc15aa6f33f9a0cda",
+      "category": "India",
+      "headline": "Nepal seeks to import power earlier from India after flood devastation, asks for approvals",
+      "summary": "While the Himalayan country usually imports electricity from India during the winter months, it has now asked that the required approvals for sending power be processed in September itself",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:24:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/nepal-seeks-to-import-power-from-india-after-flood-devastation-asks-for-early-approvals/article71405229.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20seeks%20to%20import%20power%20earlier%20from%20India%20after%20flood%20devastation%2C%20asks%20for%20approvals.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1253854033",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "eb999aabd3f3de0917f6",
+      "category": "India",
+      "headline": "Irreverent Gen Z a sure sign of democratic progress, says Justice Muralidhar",
+      "summary": "In his address at the D.S. Borker Memorial Lecture on ‘My Vision of India 2047’, the former High Court judge said the judiciary of 2047 would be better served if ‘today’s judges act swiftly on complaints of grave State excesses’",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:24:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/irreverent-gen-z-a-sure-sign-of-democratic-progress-says-justice-muralidhar/article71405385.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Irreverent%20Gen%20Z%20a%20sure%20sign%20of%20democratic%20progress%2C%20says%20Justice%20Muralidhar.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=670755563",
       "image_type": "ai_generated"
     },
     {
@@ -1422,17 +1477,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "91fadedc05ad440c7040",
-      "category": "India",
-      "headline": "Mobile phones, cash seized from prison cell of mastermind of American Centre attack in Kolkata",
-      "summary": "Aftab Ahmed Ansari, convicted in the American Centre attack case, is serving a life term",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T10:19:45+00:00",
-      "source_url": "https://www.thehindu.com/news/national/west-bengal/mobile-phones-cash-seized-from-prison-cell-of-mastermind-of-american-centre-attack-in-kolkata/article71404016.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Mobile%20phones%2C%20cash%20seized%20from%20prison%20cell%20of%20mastermind%20of%20American%20Centre%20attack%20in%20Kolkata.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3894657820",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "c63ce586fce77618fe38",
       "category": "Entertainment",
       "headline": "Emraan Hashmi tests positive for swine flu as Awarapan 2 continues its successful run in cinemas",
@@ -1705,6 +1749,50 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "94661ceaf05cee1a3922",
+      "category": "India",
+      "headline": "Smartphones, cash seized from American Centre attack mastermind’s cell",
+      "summary": "Aftab Ahmed Ansari was a key member of the Dubai-based Asif Reza Commando Force, a wing of the Pakistan-based terrorist group Harkat-ul-Jehad-i",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:26:07+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/mobile-phones-cash-seized-from-prison-cell-of-mastermind-of-american-centre-attack-in-kolkata/article71404016.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Smartphones%2C%20cash%20seized%20from%20American%20Centre%20attack%20mastermind%E2%80%99s%20cell.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3407420693",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d7c1a4c05811362a4152",
+      "category": "Entertainment",
+      "headline": "Awarapan 2 Worldwide Box Office Day 15: Beats Don 2 & 3 Others, Enters Top 100 Bollywood Grossers Of All Time!",
+      "summary": "Emraan Hashmi's Awarapan 2 crosses the 210 crore mark at the worldwide box office. Check out the total collection in 15 days. The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T16:23:19+00:00",
+      "source_url": "https://www.koimoi.com/box-office/awarapan-2-worldwide-box-office-day-15-beats-don-2-3-others-enters-top-100-bollywood-grossers-of-all-time/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Awarapan%202%20Worldwide%20Box%20Office%20Day%2015%3A%20Beats%20Don%202%20%26%203%20Others%2C%20Enters%20Top%20100%20Bollywood%20Grossers%20Of%20All%20Time%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=865642693",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "da3239474caf2ab766af",
+      "category": "India",
+      "headline": "Bengaluru: Directorate of Medical Education team inspects ‘missing’ physiotherapy and nursing colleges",
+      "summary": "However, in its clarification, the RGUHS said that the university has been consistently undertaking necessary verification and communication of institutional details as part of its efforts to maintain accurate and reliable information relating to its affiliated institutions",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:18:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/bengaluru-directorate-of-medical-education-team-inspects-missing-physiotherapy-and-nursing-colleges/article71405255.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengaluru%3A%20Directorate%20of%20Medical%20Education%20team%20inspects%20%E2%80%98missing%E2%80%99%20physiotherapy%20and%20nursing%20colleges.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1530054684",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5a494a73bc24a4e319a3",
+      "category": "India",
+      "headline": "Hyderabad property market remains strong: CREDAI",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:08:58+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-property-market-remains-strong-credai/article71405455.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Hyderabad%20property%20market%20remains%20strong%3A%20CREDAI.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2958831091",
       "image_type": "ai_generated"
     },
     {
@@ -3996,6 +4084,127 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "fe4c0d6e95e02397ce86",
+      "category": "India",
+      "headline": "'Congress has become issue-less, pushing forward unnecessary issues': CM Dhami amid Uttarakhand purification row",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T16:28:52+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/congress-has-become-issue-less-pushing-forward-unnecessary-issues-cm-dhami-amid-uttarakhand-purification-row/articleshow/133615683.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Congress%20has%20become%20issue-less%2C%20pushing%20forward%20unnecessary%20issues%27%3A%20CM%20Dhami%20amid%20Uttarakhand%20purification%20row.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=417217335",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e9c643ae9cdacd5fb0a1",
+      "category": "India",
+      "headline": "Nepal flood miracle: Mother reunites with 8-year-old who climbed trees to survive",
+      "summary": "After a devastating glacier collapse and avalanche in Nepal, a mother believed she had lost her two sons forever. But against all odds, her 8-year-old son survived alone in the forest before being rescued and airlifted to safety, leading to an emotional reunion that has touched hearts across the country.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:26:12+00:00",
+      "source_url": "https://www.thehindu.com/videos/nepal-flood-miracle-mother-reunites-with-8-year-old-who-climbed-trees-to-survive/article71405649.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20flood%20miracle%3A%20Mother%20reunites%20with%208-year-old%20who%20climbed%20trees%20to%20survive.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2541006723",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "764912edc7f5ade2a038",
+      "category": "India",
+      "headline": "No one calls UP 'Bimaru' state anymore: CM Yogi inaugurates Rs 305 cr projects in Deoria, says mafia crushed; encephalitis eradicated",
+      "summary": "Addressing a programme in Deoria, where he inaugurated and laid the foundation stones for 80 development projects worth ₹305 crore, Adityanath said encephalitis was not merely a disease but reflected what he described as the \"sick mindset\" of previous Samajwadi Party and Congress governments.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T16:25:30+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/no-one-calls-up-bimaru-state-anymore-cm-yogi-inaugurates-rs-305-cr-projects-in-deoria-says-mafia-crushed-encephalitis-eradicated/articleshow/133615693.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20one%20calls%20UP%20%27Bimaru%27%20state%20anymore%3A%20CM%20Yogi%20inaugurates%20Rs%20305%20cr%20projects%20in%20Deoria%2C%20says%20mafia%20crushed%3B%20encephalitis%20eradicated.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2109609386",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "aec1a7a4c54711a2d855",
+      "category": "India",
+      "headline": "Voice of Kolleru formed to protect rights of Kolleru-area residents",
+      "summary": "Society to study wetland boundary demarcation and seek support of public representatives; locals oppose treating 1.61 lakh acres around Kolleru as wetlands",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:20:27+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/voice-of-kolleru-formed-to-protect-rights-of-kolleru-area-residents/article71405092.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Voice%20of%20Kolleru%20formed%20to%20protect%20rights%20of%20Kolleru-area%20residents.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1367257217",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d90573eeeb7367d4fde6",
+      "category": "India",
+      "headline": "District Collector given additional charge as MD of Kochi metro, with Loknath Behera’s term ending on August 30",
+      "summary": "A new MD is awaited at a time when the metro’s ₹1,957-crore Kakkanad extension is due for commissioning in a year, after which KMRL is expected to shift focus to the third phase",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:18:50+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/district-collector-given-additional-charge-as-md-of-kochi-metro-with-loknath-beheras-term-ending-on-august-30/article71405323.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20District%20Collector%20given%20additional%20charge%20as%20MD%20of%20Kochi%20metro%2C%20with%20Loknath%20Behera%E2%80%99s%20term%20ending%20on%20August%2030.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1064318444",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "82bef158cf49a19f436b",
+      "category": "India",
+      "headline": "No material price impact on CBG with revised offtake framework, ensures plants operate sustainably: Govt.",
+      "summary": "The Union Petroleum Ministry stated that the government funded support would translate to only a 28% increase in price of CBG offtake.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:18:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/no-material-price-impact-on-cbg-with-revised-offtake-framework-ensures-plants-operate-sustainably-govt/article71405589.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20material%20price%20impact%20on%20CBG%20with%20revised%20offtake%20framework%2C%20ensures%20plants%20operate%20sustainably%3A%20Govt..%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=307833589",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7a7ec8ea03010ce52c6c",
+      "category": "India",
+      "headline": "Pushkar ghat works begin in Bhadrachalam ahead of 2027 Godavari Pushkarams",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:18:05+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/pushkar-ghat-works-begin-in-bhadrachalam-ahead-of-2027-godavari-pushkarams/article71405439.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Pushkar%20ghat%20works%20begin%20in%20Bhadrachalam%20ahead%20of%202027%20Godavari%20Pushkarams.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4159248807",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c310d0759aa66d458895",
+      "category": "India",
+      "headline": "Congress govt. did not even spare the differently-abled from its betrayal, alleges Harish Rao",
+      "summary": "The BRS leader says the govt. has failed to keep any of the pre",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:08:51+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/congress-govt-did-not-even-spare-the-differently-abled-from-its-betrayal-alleges-harish-rao/article71404596.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20govt.%20did%20not%20even%20spare%20the%20differently-abled%20from%20its%20betrayal%2C%20alleges%20Harish%20Rao.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2272665202",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "59050e20047562e3c824",
+      "category": "India",
+      "headline": "Peechi Dam in Thrissur to open four spillway shutters on August 31",
+      "summary": "District Collector has warned residents along the Manali and Karuvannur rivers to remain vigilant as the water level in the rivers could rise by up to 30 cm from the present level following the release of water from the dam",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:08:24+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/peechi-dam-in-thrissur-to-open-four-spillway-shutters-on-august-31/article71405487.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Peechi%20Dam%20in%20Thrissur%20to%20open%20four%20spillway%20shutters%20on%20August%2031.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=232510036",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "700fad174b73bc726d9c",
+      "category": "India",
+      "headline": "Tahsildars and sub-registrars should be more humane: Ponguleti",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:03:56+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/tahsildars-and-sub-registrars-should-be-more-humane-ponguleti/article71405292.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Tahsildars%20and%20sub-registrars%20should%20be%20more%20humane%3A%20Ponguleti.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1159404790",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3d4ce0fcac1a301e7575",
+      "category": "India",
+      "headline": "RSS chief Mohan Bhagwat's New York event: Where and when to watch live",
+      "summary": "The invite-based event will have more than 5,000 attendees, according to the programme's website that describes the event as ‘a one-of-a-kind celebration.'",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T16:01:14+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/rss-chief-mohan-bhagwat-new-york-event-where-and-when-to-watch-live-universal-oneness-celebrations-zohran-mamdani-hindu-101788017649039.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20RSS%20chief%20Mohan%20Bhagwat%27s%20New%20York%20event%3A%20Where%20and%20when%20to%20watch%20live.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4184488462",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b777e71df3dc51759155",
       "category": "India",
       "headline": "Two killed, SI injured in Suryapet over dispute involving tree",
@@ -4411,17 +4620,6 @@
       "published_at": "2026-08-29T14:39:37+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/cii-yi-amaravati-chapter-sets-record-with-113109-bamboo-seed-balls-in-a-day/article71404984.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CII%20Yi%20Amaravati%20Chapter%20sets%20record%20with%201%2C13%2C109%20bamboo%20seed%20balls%20in%20a%20day.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2681443076",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "aec1a7a4c54711a2d855",
-      "category": "India",
-      "headline": "Voice of Kolleru formed to protect rights of Kolleru-area residents",
-      "summary": "Society to study wetland boundary demarcation and seek support of public representatives; locals oppose treating 1.61 lakh acres around Kolleru as wetlands",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T14:31:48+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/voice-of-kolleru-formed-to-protect-rights-of-kolleru-area-residents/article71405092.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Voice%20of%20Kolleru%20formed%20to%20protect%20rights%20of%20Kolleru-area%20residents.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1367257217",
       "image_type": "ai_generated"
     },
     {
@@ -8748,10 +8946,32 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d747fc9830e7077a437a",
+      "category": "Entertainment",
+      "headline": "Box Office: ‘The Dog Stars’ Struggles With Just $3 Million on Friday; ‘Spider-Man: Brand New Day’ to Win Weekend Again",
+      "summary": "20th Century’s “The Dog Stars” and Keylight Pictures’ “Coyote vs. Acme” both debuted in theaters on Friday, but Sony and Marvel’s “Spider-Man: Brand New Day” will once again win the weekend. “Coyote vs. Acme” fared best of the two major newcomers, landing in second place with an estimated $5.2 million domestically on Friday from 3,575 […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T16:20:00+00:00",
+      "source_url": "https://variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20%E2%80%98The%20Dog%20Stars%E2%80%99%20Struggles%20With%20Just%20%243%20Million%20on%20Friday%3B%20%E2%80%98Spider-Man%3A%20Brand%20New%20Day%E2%80%99%20to%20Win%20Weekend%20Again.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2478466661",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "493568728e80a4ff0507",
+      "category": "Sports",
+      "headline": "The tiny town aiming to defy odds in Bundesliga debut",
+      "summary": "Elversberg has no train station and a population of just 13,000, but its football team have enjoyed a meteoric rise from the regional German leagues to the Bundesliga.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T16:14:34+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c70d4n1d0r9o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20The%20tiny%20town%20aiming%20to%20defy%20odds%20in%20Bundesliga%20debut.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2212473642",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ad460641be3afbae75be",
       "category": "Entertainment",
       "headline": "‘Spider-Man’ Nearing $900M; ‘Coyote Vs. Acme’ Solid $14M Debut & ‘A’ CinemaScore, ‘Dog Stars’ Going To The Dogs – Box Office Update",
-      "summary": "SATURDAY AM WRITETHRU after Friday afternoon post: Refresh for chart and more It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment theatrical release of the abandoned Warner Bros’ Looney Tunes title, Coyote Vs. Acme, which is eyeing third […]",
+      "summary": "SATURDAY AM WRITETHRU after Friday afternoon post: It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment’s release of the abandoned Warner Bros Looney Tunes title, Coyote Vs. Acme, which is eyeing third place now with $14M. Coyote vs. […]",
       "publisher": "Deadline",
       "published_at": "2026-08-29T15:46:00+00:00",
       "source_url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
@@ -8847,6 +9067,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "a5f21988427df12d040b",
+      "category": "Lifestyle",
+      "headline": "‘I wanted to find the slowest fashion imaginable’: the woman growing her own dress",
+      "summary": "Looking for an alternative to fast fashion, Eve Ogden Schaub decided to create a garment from homegrown flax From crop tops to shorts and brightly patterned dresses, many of today’s clothes are the result of fast fashion. But one woman is taking a radical approach to challenging this trend by growing her own dress. Eve Ogden Schaub is in the midst of a project to create a linen garment made from flax she is...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T11:00:26+00:00",
+      "source_url": "https://www.theguardian.com/fashion/2026/aug/29/slow-fashion-why-one-woman-growing-her-own-dress",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98I%20wanted%20to%20find%20the%20slowest%20fashion%20imaginable%E2%80%99%3A%20the%20woman%20growing%20her%20own%20dress.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3354013847",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "732dfef7fb426f828d7c",
       "category": "Lifestyle",
       "headline": "Sugar prices have risen to ₹70 per kg: Dietician Payal Dutt shares 5 sugar alternatives that are cheaper and healthier",
@@ -8891,25 +9122,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "493568728e80a4ff0507",
-      "category": "Sports",
-      "headline": "The tiny town aiming to defy odds in Bundesliga debut",
-      "summary": "Elversberg has no train station and a population of just 13,000, but its football team have enjoyed a meteoric rise from the regional German leagues to the Bundesliga.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T06:55:10+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/c70d4n1d0r9o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20The%20tiny%20town%20aiming%20to%20defy%20odds%20in%20Bundesliga%20debut.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2212473642",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f63611c9a63fe702f363",
+      "id": "d14497a43692e9668cdc",
       "category": "Entertainment",
-      "headline": "Bill Maher’s Dolly Parton Tribute Strikes a Sour Note With Fans",
+      "headline": "Bill Maher Pays Tribute to Dolly Parton With Nipple Joke",
       "summary": "Another tribute, like Maher's, that drew negative attention was that of Ricky Schroder, who portrayed Parton's father in two biopic movies based on her childhood.",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-29T05:33:39+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/bill-maher-dolly-parton-death-tribute-1236684800/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%E2%80%99s%20Dolly%20Parton%20Tribute%20Strikes%20a%20Sour%20Note%20With%20Fans.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3354154423",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%20Pays%20Tribute%20to%20Dolly%20Parton%20With%20Nipple%20Joke.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=905842812",
       "image_type": "ai_generated"
     },
     {
@@ -9996,9 +10216,64 @@
       "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
       "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T15:54:57+00:00",
+      "published_at": "2026-08-29T16:28:36+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "29a78a11305cecdb55b1",
+      "category": "World",
+      "headline": "James Cleverly resigns from shadow cabinet to run for mayor of London",
+      "summary": "Shadow minister for housing, communities and local government to resign with immediate effect James Cleverly has resigned from the shadow cabinet to run for mayor of London. The Tory heavyweight, who was once home and foreign secretary and is shadow minister for housing, communities and local government, told the Sunday Times he will resign with immediate effect. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T16:24:45+00:00",
+      "source_url": "https://www.theguardian.com/politics/2026/aug/29/james-cleverly-resigns-conservative-shadow-cabinet-london-mayor",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20James%20Cleverly%20resigns%20from%20shadow%20cabinet%20to%20run%20for%20mayor%20of%20London.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2995450076",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "72725a52af9f42c5dd15",
+      "category": "World",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T16:15:56+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e51a6be849760a65f0eb",
+      "category": "Technology & AI",
+      "headline": "Hollywood celebs are getting into microdrama apps",
+      "summary": "Several Hollywood celebs are ditching the massive eight-figure checks and exotic movie sets for a rising format: microdramas.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T16:10:00+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/hollywood-celebs-are-getting-into-microdrama-apps/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Hollywood%20celebs%20are%20getting%20into%20microdrama%20apps.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1261873336",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b33355e8637ad7ae3144",
+      "category": "World",
+      "headline": "Artemis II astronauts receive nation's highest space honor for their successful moonshot",
+      "summary": "Reid Wiseman, Victor Glover, Christina Koch and Jeremy Hansen received the Congressional Space Medal of Honor The Artemis II astronauts who flew around the moon in April received the US’s highest space honor on Friday. Donald Trump presented the Congressional Space Medal of Honor to the three Americans and one Canadian whose lunar flyby for the US space agency Nasa set a new distance record for humanity. Continue...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T16:03:37+00:00",
+      "source_url": "https://www.theguardian.com/science/2026/aug/29/artemis-ii-astronauts-congressional-space-medal-of-honor",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Artemis%20II%20astronauts%20receive%20nation%27s%20highest%20space%20honor%20for%20their%20successful%20moonshot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3595504648",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d79da0cd36948138b88d",
+      "category": "Technology & AI",
+      "headline": "Distraction-free writing gadget BYOK is adding custom extensions",
+      "summary": "BYOK is a no-frills, single-purpose gadget that 90 percent of people will find absolutely frivolous. But for those who spend a significant chunk of their lives putting words to virtual paper, there is an obvious allure. Personally, I think it's at its best when you just stick to the bare minimum, focusing on pure text […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-29T16:01:13+00:00",
+      "source_url": "https://www.theverge.com/gadgets/986427/distraction-free-writing-gadget-byok-scripts-extensions",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Distraction-free%20writing%20gadget%20BYOK%20is%20adding%20custom%20extensions.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1138349122",
       "image_type": "ai_generated"
     },
     {
@@ -10043,28 +10318,6 @@
       "published_at": "2026-08-29T15:27:56+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "29a78a11305cecdb55b1",
-      "category": "World",
-      "headline": "James Cleverly resigns from shadow cabinet to run for mayor of London",
-      "summary": "Shadow minister for housing, communities and local government to resign with immediate effect James Cleverly has resigned from the shadow cabinet to run for mayor of London. The Tory heavyweight, who was once home and foreign secretary and is shadow minister for housing, communities and local government, told the Sunday Times he will resign with immediate effect. Continue reading...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T15:25:34+00:00",
-      "source_url": "https://www.theguardian.com/politics/2026/aug/29/james-cleverly-resigns-conservative-shadow-cabinet-london-mayor",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20James%20Cleverly%20resigns%20from%20shadow%20cabinet%20to%20run%20for%20mayor%20of%20London.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2995450076",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "72725a52af9f42c5dd15",
-      "category": "World",
-      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
-      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T15:13:42+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
       "image_type": "ai_generated"
     },
     {
@@ -10453,17 +10706,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f9229ba2509826601b97",
-      "category": "World",
-      "headline": "‘I wanted to find the slowest fashion imaginable’: the woman growing her own dress",
-      "summary": "Looking for an alternative to fast fashion, Eve Ogden Schaub decided to create a garment from homegrown flax From crop tops to shorts and brightly patterned dresses, many of today’s clothes are the result of fast fashion. But one woman is taking a radical approach to challenging this trend by growing her own dress. Eve Ogden Schaub is in the midst of a project to create a linen garment made from flax she is...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T11:00:26+00:00",
-      "source_url": "https://www.theguardian.com/fashion/2026/aug/29/slow-fashion-why-one-woman-growing-her-own-dress",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98I%20wanted%20to%20find%20the%20slowest%20fashion%20imaginable%E2%80%99%3A%20the%20woman%20growing%20her%20own%20dress.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3582086074",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "59639de88a0a923c564a",
       "category": "Lifestyle",
       "headline": "The showgirl sisterhood: five former variety stars look back at their wild careers – in pictures",
@@ -10830,7 +11072,7 @@
       "id": "15b1f5c102ab725a3a62",
       "category": "Sports",
       "headline": "Trippier praises Miley's 'big presence' as Newcastle face Tonali reunion",
-      "summary": "Newcastle midfielder Lewis Miley is backed to \"go as far as he wants\" as the 20-year-old prepares to face former team",
+      "summary": "Newcastle midfielder Lewis Miley is backed to \"go as far as he wants\" as the 20-year",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T06:11:10+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c07ler0rxlro?at_medium=RSS&at_campaign=rss",
@@ -11256,14 +11498,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "6f89f2cea01dc5631e28",
+      "id": "96f23ba8f20052c99197",
       "category": "World",
-      "headline": "How 'Book Queen' Dolly Parton inspired millions of children with gift of reading",
+      "headline": "Dolly Parton's dad couldn't read - it inspired her to send books to millions of children",
       "summary": "Families across the globe share how free books from Parton's Imagination Library helped their children.",
       "publisher": "BBC World",
       "published_at": "2026-08-29T00:35:04+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cpwlrrzp8eeo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20How%20%27Book%20Queen%27%20Dolly%20Parton%20inspired%20millions%20of%20children%20with%20gift%20of%20reading.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=284982042",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Dolly%20Parton%27s%20dad%20couldn%27t%20read%20-%20it%20inspired%20her%20to%20send%20books%20to%20millions%20of%20children.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3064035225",
       "image_type": "ai_generated"
     },
     {
