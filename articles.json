@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T12:34:41.629323+00:00",
-  "total": 1036,
+  "updated_at": "2026-08-29T13:04:37.258182+00:00",
+  "total": 1059,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 90,
-    "India": 231,
-    "Business": 162,
-    "Technology & AI": 89,
+    "World": 92,
+    "India": 237,
+    "Business": 163,
+    "Technology & AI": 91,
     "Sports": 73,
-    "Entertainment": 249,
-    "Lifestyle": 142
+    "Entertainment": 259,
+    "Lifestyle": 144
   },
   "articles": [
     {
@@ -542,14 +542,25 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "b6406db1295df7cb8fd5",
+      "id": "653df043276c9a10ee23",
       "category": "India",
-      "headline": "From caste & salary to ‘vibe check’: How India’s marriage biodata is evolving",
+      "headline": "Days after BCI’s NALSAR about-turn, Justice Nagarathna says not good sign if Bar Council loses respect",
+      "summary": "Justice Nagarathna’s words gain importance following pushback from the legal fraternity over an aborted attempt by the Bar Council of India (BCI) to restrict the 2026 graduating batch of NALSAR from professional enrolment",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T12:52:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/justice-nagarathna-says-not-good-sign-if-bar-council-loses-respect-after-bci-nalsar-row/article71404571.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Days%20after%20BCI%E2%80%99s%20NALSAR%20about-turn%2C%20Justice%20Nagarathna%20says%20not%20good%20sign%20if%20Bar%20Council%20loses%20respect.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2192224688",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9250457e75401ea20fb4",
+      "category": "India",
+      "headline": "From 'khana bana leti ho' to 'will our lives fit together?' How India's marriage biodata is evolving",
       "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
       "publisher": "Times of India",
       "published_at": "2026-08-29T12:29:58+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/from-caste-salary-to-vibe-check-how-indias-marriage-biodata-is-evolving/articleshow/133609339.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20From%20caste%20%26%20salary%20to%20%E2%80%98vibe%20check%E2%80%99%3A%20How%20India%E2%80%99s%20marriage%20biodata%20is%20evolving.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1764303071",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20From%20%27khana%20bana%20leti%20ho%27%20to%20%27will%20our%20lives%20fit%20together%3F%27%20How%20India%27s%20marriage%20biodata%20is%20evolving.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1322416935",
       "image_type": "ai_generated"
     },
     {
@@ -1147,6 +1158,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "1cbba6a281a7a2946ecf",
+      "category": "Entertainment",
+      "headline": "Sandalwood (Kannada) Box Office Collection & Verdicts 2026",
+      "summary": "Check out the box office verdicts and collection of Kannada (Sandalwood) films released in 2025! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:44:51+00:00",
+      "source_url": "https://www.koimoi.com/box-office/hits-flops/sandalwood-kannada-box-office-collection-verdicts/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sandalwood%20%28Kannada%29%20Box%20Office%20Collection%20%26%20Verdicts%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=649310444",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4f1fcdaa257281b19de3",
+      "category": "Entertainment",
+      "headline": "Kollywood (Tamil) Box Office Collection & Verdicts 2026",
+      "summary": "Check out the box office verdicts and collection of Tamil (Kollywood) films released in 2025! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:43:41+00:00",
+      "source_url": "https://www.koimoi.com/box-office/hits-flops/kollywood-tamil-box-office-collection-verdicts/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Kollywood%20%28Tamil%29%20Box%20Office%20Collection%20%26%20Verdicts%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1780801469",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3d8831616fd1a5c8c576",
+      "category": "Entertainment",
+      "headline": "Mollywood (Malayalam) Box Office Collection & Verdicts 2026",
+      "summary": "Check out the box office verdicts and collection of Mollywood films released in 2025! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:40:55+00:00",
+      "source_url": "https://www.koimoi.com/box-office/hits-flops/mollywood-malayalam-box-office-collection-verdicts/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Mollywood%20%28Malayalam%29%20Box%20Office%20Collection%20%26%20Verdicts%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=440363152",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2c5f99c65dbcf07775c9",
+      "category": "Entertainment",
+      "headline": "Tollywood (Telugu) Box Office Collection & Verdicts 2026",
+      "summary": "Check out the box office verdicts and collection of Tollywood (Telugu) films released in 2026! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:38:08+00:00",
+      "source_url": "https://www.koimoi.com/box-office/hits-flops/tollywood-telugu-box-office-collection-verdicts/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tollywood%20%28Telugu%29%20Box%20Office%20Collection%20%26%20Verdicts%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1756406175",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "3f3617cf778b4686dd12",
       "category": "Business",
       "headline": "Subhash Chandra 'may borrow ₹2-4 crore from family' for investment in start-ups; he owes creditors crores of rupees",
@@ -1543,6 +1598,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "6368a2b215bdf20acf6d",
+      "category": "Entertainment",
+      "headline": "Forgotten Island North America Box Office: New DreamWorks Animation Could Beat Abominable’s Opening, Eyes A Strong Domestic Debut",
+      "summary": "Forgotten Island is an upcoming original animation by DreamWorks and Universal. It is gearing up for its release, which is scheduled to clash with Avengers: Endgame Encore. Despite that, it is eyeing a strong debut at the North American box office, according to early estimates. Keep scrolling for the numbers. Joel Crawford and Januel Mercado […] The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:48:28+00:00",
+      "source_url": "https://www.koimoi.com/box-office/forgotten-island-north-america-box-office-new-dreamworks-animation-could-beat-abominables-opening-eyes-a-strong-domestic-debut/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Forgotten%20Island%20North%20America%20Box%20Office%3A%20New%20DreamWorks%20Animation%20Could%20Beat%20Abominable%E2%80%99s%20Opening%2C%20Eyes%20A%20Strong%20Domestic%20Debut.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3908121281",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fa1065a91f2fb1a93513",
+      "category": "Entertainment",
+      "headline": "Punjabi Box Office Collection & Verdicts 2026",
+      "summary": "Explore the box office collections and verdicts of all Punjabi films released in 2026. Updated daily and weekly with trends & analysis. The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:45:49+00:00",
+      "source_url": "https://www.koimoi.com/box-office/hits-flops/punjabi-box-office-collection-verdicts/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Punjabi%20Box%20Office%20Collection%20%26%20Verdicts%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3581833452",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "df6b9be398df3d9860b9",
+      "category": "India",
+      "headline": "Smart phones, Wi-Fi routers, cash seized from cell of Aftab Ansari, mastermind of 2002 American Centre-attack: Official",
+      "summary": "CM Suvendu Adhikari in May said that mobile phones, including smartphones, were being extensively used inside Presidency Correctional Home",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T12:43:56+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/smart-phones-wi-fi-routers-cash-seized-from-cell-of-aftab-ansari-mastermind-of-2002-american-centreattack-101788007436779.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Smart%20phones%2C%20Wi-Fi%20routers%2C%20cash%20seized%20from%20cell%20of%20Aftab%20Ansari%2C%20mastermind%20of%202002%20American%20Centre-attack%3A%20Official.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1104113578",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "eda56b5648ac81d44a91",
+      "category": "Lifestyle",
+      "headline": "Do you really need a protein shake after a workout? Fitness coach explains what your body needs",
+      "summary": "You don’t necessarily need a protein shake after gym. A fitness coach shares simple Indian meals that can support post",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T12:39:08+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/do-you-really-need-a-protein-shake-after-a-workout-fitness-coach-explains-what-your-body-needs-101788003736867.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Do%20you%20really%20need%20a%20protein%20shake%20after%20a%20workout%3F%20Fitness%20coach%20explains%20what%20your%20body%20needs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1398756776",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ccf1360f1e2dc953490e",
+      "category": "India",
+      "headline": "Five out of 16 people from Assam caught in the Nepal disaster safe",
+      "summary": "Among the missing are a retired Gauhati University professor, her husband, and a doctor at Nalbari Medical College and Hospital",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T12:31:55+00:00",
+      "source_url": "https://www.thehindu.com/news/national/assam/five-out-of-16-people-from-assam-caught-in-the-nepal-disaster-are-safe/article71404455.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Five%20out%20of%2016%20people%20from%20Assam%20caught%20in%20the%20Nepal%20disaster%20safe.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=495198011",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "da40071b464c0ae0e0ad",
       "category": "India",
       "headline": "IIT Delhi Student Death: External Panel Begins Probe, Aid For Family Approved",
@@ -1573,6 +1683,17 @@
       "published_at": "2026-08-29T12:21:03+00:00",
       "source_url": "https://www.koimoi.com/box-office/toxic-box-office-day-4-bms-sales-yash-hits-another-record-surpassing-every-single-kannada-film-in-history-except-one/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20Box%20Office%20Day%204%20BMS%20Sales%3A%20Yash%20Hits%20Another%20Record%20Surpassing%20Every%20Single%20Kannada%20Film%20In%20History%20Except%20One%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2616634559",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b125ae12ca70ca682cda",
+      "category": "India",
+      "headline": "BJP president Nitin Nabin pulls up 3 Delhi MPs for condoling Sajjan Kumar’s death",
+      "summary": "Sajjan Kumar died on August 20 in prison; he was serving two concurrent life sentences for the murders of Sikhs during the 1984 riots.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T12:17:56+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/bjp-prez-pulls-up-lawmakers-for-condoling-sajjan-kumar-s-death-101788005877086.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20president%20Nitin%20Nabin%20pulls%20up%203%20Delhi%20MPs%20for%20condoling%20Sajjan%20Kumar%E2%80%99s%20death.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=456392407",
       "image_type": "ai_generated"
     },
     {
@@ -3281,6 +3402,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "9f6b6874fe506327c01c",
+      "category": "Entertainment",
+      "headline": "Box Office: Wamiqa Gabbi Goes Past The 450 Crore Mark In 2026, Powered By 250 Crore & 100 Crore Grossers",
+      "summary": "Wamiqa Gabbi is having an impressive run at the worldwide box office in 2026, with Bhooth Bangla and DC becoming big successes The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:52:22+00:00",
+      "source_url": "https://www.koimoi.com/box-office/box-office-wamiqa-gabbi-goes-past-the-450-crore-mark-in-2026-powered-by-250-crore-100-crore-grossers/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20Wamiqa%20Gabbi%20Goes%20Past%20The%20450%20Crore%20Mark%20In%202026%2C%20Powered%20By%20250%20Crore%20%26%20100%20Crore%20Grossers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3742723024",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c488b9ae8de730f4ba33",
+      "category": "India",
+      "headline": "Family counselling reunites divorced couple in Sri Sathya Sai district",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T12:50:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/family-counselling-reunites-divorced-couple-in-sri-sathya-sai-district/article71404368.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Family%20counselling%20reunites%20divorced%20couple%20in%20Sri%20Sathya%20Sai%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2788836621",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b91c4eac05bc3124f6b1",
+      "category": "Business",
+      "headline": "HDFC Bank CEO Sashidhar Jagdishan to retire on October 26, will not seek reappointment",
+      "summary": "HDFC Bank's CEO Sashidhar Jagdishan will not seek reappointment when his term concludes at the end of October.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T12:48:46+00:00",
+      "source_url": "https://www.livemint.com/companies/news/hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-after-term-ends-in-october-11788007166302.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20HDFC%20Bank%20CEO%20Sashidhar%20Jagdishan%20to%20retire%20on%20October%2026%2C%20will%20not%20seek%20reappointment.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4010327725",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7cb9fd740af7d03db793",
+      "category": "India",
+      "headline": "Cabinet reshuffle, discipline, freedom for Revanth can get Congress a second term: Gutha Sukhender Reddy",
+      "summary": "Gutha Sukhender Reddy cautioned that failure to act against leaders who cross the party line could prove detrimental to the Congress",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T12:45:41+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/cabinet-reshuffle-discipline-freedom-for-revanth-can-get-congress-a-second-term-gutha-sukhender-reddy/article71404446.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Cabinet%20reshuffle%2C%20discipline%2C%20freedom%20for%20Revanth%20can%20get%20Congress%20a%20second%20term%3A%20Gutha%20Sukhender%20Reddy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1470947943",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e6173cd3822805f32f25",
+      "category": "India",
+      "headline": "Rahul Gandhi seeks FIR over ‘purification’ ritual in Haldwani after Kharge’s address, calls it ‘untouchability’",
+      "summary": "The Congress leader sidesteps questions on the controversy over Sonia Gandhi’s memoir as a ‘digression strategy’",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T12:31:21+00:00",
+      "source_url": "https://www.thehindu.com/news/national/congress-kharge-uttarakhand-venue-purification-row-rahul-gandhi-fir-demand/article71403888.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Rahul%20Gandhi%20seeks%20FIR%20over%20%E2%80%98purification%E2%80%99%20ritual%20in%20Haldwani%20after%20Kharge%E2%80%99s%20address%2C%20calls%20it%20%E2%80%98untouchability%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3582059378",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "8135db5703e37f05dbe9",
       "category": "India",
       "headline": "FIR against Mamata Banerjee for ‘violation’ of Calcutta High Court order on Trinamool student wing foundation day event",
@@ -3894,17 +4070,6 @@
       "published_at": "2026-08-29T08:33:33+00:00",
       "source_url": "https://www.ndtv.com/entertainment/race-4-finds-its-new-lead-aamir-khan-reportedly-likes-the-script-11974128#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Aamir%20Khan%20To%20Replace%20Saif%20Ali%20Khan%20In%20Race%204%3F%20What%20We%20Know.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=811355712",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "62a4c47eaf38dcaf7d02",
-      "category": "India",
-      "headline": "PM Modi must order filing of FIR, we demand justice: Rahul Gandhi on Kharge’s rally venue ‘purification’ in Uttarakhand",
-      "summary": "The LoP in Lok Sabha said the incident in Haldwani “shows the BJP-RSS’ mindset”",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T08:30:55+00:00",
-      "source_url": "https://www.thehindu.com/news/national/congress-kharge-uttarakhand-venue-purification-row-rahul-gandhi-fir-demand/article71403888.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20must%20order%20filing%20of%20FIR%2C%20we%20demand%20justice%3A%20Rahul%20Gandhi%20on%20Kharge%E2%80%99s%20rally%20venue%20%E2%80%98purification%E2%80%99%20in%20Uttarakhand.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=604886335",
       "image_type": "ai_generated"
     },
     {
@@ -7076,6 +7241,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "bea407a99b8a361a2a6a",
+      "category": "Lifestyle",
+      "headline": "‘It gives Shein’: how did polyester become the world’s most-hated material?",
+      "summary": "Due to its ubiquity in fast fashion, gen Z are pushing back against the synthetic material and using it as an insult In 2015, Kate Moss called an easyJet pilot a “basic bitch” and a catchy new insult meaning obvious and uncool hit the mainstream . Had it happened in 2026, Moss might have used the word “polyester”, reportedly gen Z’s new favorite diss, levied at cheap-looking videos on TikTok, and sometimes at...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T13:00:27+00:00",
+      "source_url": "https://www.theguardian.com/fashion/2026/aug/29/polyester-material-shein-fast-fashion",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98It%20gives%20Shein%E2%80%99%3A%20how%20did%20polyester%20become%20the%20world%E2%80%99s%20most-hated%20material%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1499346419",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0092d81fd4e6934088fb",
+      "category": "Technology & AI",
+      "headline": "Nvidia’s AI advantage is moving beyond the GPU",
+      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T13:00:00+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Nvidia%E2%80%99s%20AI%20advantage%20is%20moving%20beyond%20the%20GPU.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=54439466",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3a6e06650d079d531a2c",
+      "category": "Entertainment",
+      "headline": "Alex Winter Bringing Arthur Miller’s ‘Incident At Vichy’ Revival To Off Broadway Next Year",
+      "summary": "EXCLUSIVE: Alex Winter, who costarred with his old Bill & Ted partner Keanu Reeves last year in the Broadway revival of Waiting For Godot, will return to the New York stage next year in a Small Boat Productions Off Broadway revival of Arthur Miller’s 1964 play Incident at Vichy. Winter will both star in and […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T13:00:00+00:00",
+      "source_url": "https://deadline.com/2026/08/alex-winter-incident-at-vichy-off-broadway-1237061879/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Alex%20Winter%20Bringing%20Arthur%20Miller%E2%80%99s%20%E2%80%98Incident%20At%20Vichy%E2%80%99%20Revival%20To%20Off%20Broadway%20Next%20Year.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=986161636",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "5a6513703afd1b1d37c6",
       "category": "Lifestyle",
       "headline": "Rising H1N1 cases in Delhi: Radiologist Dr Bimalpreet Mohan warns pregnant women are at higher risk of swine flu",
@@ -8231,23 +8429,78 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "07c108eaf97521b890ca",
+      "id": "20614b3eacf7e805fd0f",
       "category": "World",
-      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv warehouse",
-      "summary": "An investigation has been launched into the storage of weapons in the deopt near a residential area.",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
       "publisher": "BBC World",
-      "published_at": "2026-08-29T12:22:53+00:00",
+      "published_at": "2026-08-29T12:55:39+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20warehouse.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1485416536",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6c3fadfde849c92c26f3",
+      "category": "World",
+      "headline": "Fourth time lucky as Chris Cantrill’s spoof whodunnit wins Edinburgh comedy award 2026",
+      "summary": "Nominated in three previous years, the rambunctious standup – one half of The Delightful Sausage – wins the prize for his show Rewilding while Marty Gleeson is named best newcomer The annual Edinburgh comedy award has been won by the standup Chris Cantrill, two years after his comedy partner Amy Gledhill – in the raucous northern double act The Delightful Sausage – won the same prize. Cantrill, 42 and from...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T12:50:21+00:00",
+      "source_url": "https://www.theguardian.com/stage/2026/aug/29/chris-cantrill-edinburgh-comedy-award-2026",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Fourth%20time%20lucky%20as%20Chris%20Cantrill%E2%80%99s%20spoof%20whodunnit%20wins%20Edinburgh%20comedy%20award%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1484135502",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a4863144d40fc6c0ddf7",
+      "category": "Entertainment",
+      "headline": "Amid Growing Galliano Backlash, Met Gala Mulls Date Change – Report",
+      "summary": "Amid growing backlash over the Met Gala’s choice to honor designer John Galliano at the big event next May, Met trustees and board members are “mulling” whether to reschedule the fundraiser away from the previously announced May 3 date to avoid coinciding with the Holocaust and Heroism Remembrance Day. The possibility of postponing the gala […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T12:49:49+00:00",
+      "source_url": "https://deadline.com/2026/08/galliano-met-gala-possible-date-change-1237062587/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Amid%20Growing%20Galliano%20Backlash%2C%20Met%20Gala%20Mulls%20Date%20Change%20%E2%80%93%20Report.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=42213558",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "055c78a66ec33d1253c3",
+      "category": "Entertainment",
+      "headline": "Here’s How to Watch the 2026-2027 NCAA College Football Season Live Online",
+      "summary": "The new season is finally here! The 2026-2027 NCAA College Football season officially kicks off with its first big weekend of games starting on Saturday, Aug. 23. Starting on Saturday, Aug. 29, The first game of the season is North Carolina Tar Heels vs. TCU Horned Frogs at Aviva Stadium in Dublin, Ireland, with a […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T12:45:16+00:00",
+      "source_url": "https://variety.com/2026/shopping/news/how-to-watch-college-football-season-online-free-1235703850/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Here%E2%80%99s%20How%20to%20Watch%20the%202026-2027%20NCAA%20College%20Football%20Season%20Live%20Online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1779417740",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dd2d5f2766f9dedfe99b",
+      "category": "World",
+      "headline": "Sarah Ferguson to return to UK after relocating amid Epstein revelations",
+      "summary": "Former Duchess of York moved to Swiss chalet during fallout over her friendship with convicted child sex offender Sarah Ferguson is set to return to the UK after relocating to a Swiss chalet amid the fallout over her and ex-husband Andrew Mountbatten-Windsor’s friendship with convicted child sex offender Jeffrey Epstein, according to reports. The scandal over the pair’s relationship with Epstein saw them both...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T12:42:46+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/sarah-ferguson-relocation-uk-jeffrey-epstein",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Sarah%20Ferguson%20to%20return%20to%20UK%20after%20relocating%20amid%20Epstein%20revelations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1520797617",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a7e0a4201ffba4c495a2",
+      "category": "Sports",
+      "headline": "Forest to bid £40m for Everton teenager Armstrong",
+      "summary": "Nottingham Forest launch an ambitious bid to sign Everton's teenage midfielder Harrison Armstrong.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T12:41:06+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cy0znn7lg51o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20to%20bid%20%C2%A340m%20for%20Everton%20teenager%20Armstrong.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3316478475",
       "image_type": "ai_generated"
     },
     {
       "id": "d44c64d44fb414bf6d3d",
       "category": "World",
       "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
-      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises to 626, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
+      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises above 650, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T12:04:06+00:00",
+      "published_at": "2026-08-29T12:29:55+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
       "image_type": "ai_generated"
@@ -8294,17 +8547,6 @@
       "published_at": "2026-08-29T12:00:00+00:00",
       "source_url": "https://variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Chantelle%20Cameron%20vs.%20Mikaela%20Mayer%20Livestream%3A%20Here%E2%80%99s%20Where%20to%20Watch%20the%20Unification%20Title%20Bout%20Online%20for%20Free.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4071863117",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a7e0a4201ffba4c495a2",
-      "category": "Sports",
-      "headline": "Forest to bid £40m for Everton teenager Armstrong",
-      "summary": "Nottingham Forest launch an ambitious bid to sign Everton's teenage midfielder Harrison Armstrong.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T11:43:43+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/cy0znn7lg51o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20to%20bid%20%C2%A340m%20for%20Everton%20teenager%20Armstrong.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3316478475",
       "image_type": "ai_generated"
     },
     {
@@ -8759,17 +9001,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "a5ed738f1125444be07c",
-      "category": "World",
-      "headline": "Households could save up to £173 a year by switching to fixed energy deal",
-      "summary": "Moving tariffs will cushion the blow from the October price cap rise and the increase widely predicted for January With higher energy bills looming and warnings of worse to come in the new year, many households could save up to £173 a year by switching to a fixed deal. Millions of households in Great Britain will face the highest energy charges in three years after it was announced that the government’s price cap...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T06:00:21+00:00",
-      "source_url": "https://www.theguardian.com/money/2026/aug/29/households-could-save-up-to-173-a-year-by-switching-to-fixed-energy-deal",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Households%20could%20save%20up%20to%20%C2%A3173%20a%20year%20by%20switching%20to%20fixed%20energy%20deal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1904499534",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "2ba5fb17ae02a78d20dd",
       "category": "Lifestyle",
       "headline": "What links Corinne Bailey Rae and Keir Starmer? The Saturday quiz",
@@ -8781,10 +9012,21 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "a5ed738f1125444be07c",
+      "category": "World",
+      "headline": "Households could save up to £173 a year by switching to fixed energy deal",
+      "summary": "Moving tariffs will cushion the blow from the October price cap rise and the increase widely predicted for January With higher energy bills looming and warnings of worse to come in the new year, many households could save up to £173 a year by switching to a fixed deal. Millions of households in Great Britain will face the highest energy charges in three years after it was announced that the government’s price cap...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T06:00:21+00:00",
+      "source_url": "https://www.theguardian.com/money/2026/aug/29/households-could-save-up-to-173-a-year-by-switching-to-fixed-energy-deal",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Households%20could%20save%20up%20to%20%C2%A3173%20a%20year%20by%20switching%20to%20fixed%20energy%20deal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1904499534",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "fbeb67a33826c9ae44a0",
       "category": "World",
       "headline": "Sharp rise in incidents of AI escaping users’ control, research finds",
-      "summary": "Exclusive: Number of times AI lies, ignores instructions and pursues goals in harmful ways almost doubles in July Incidents of AIs escaping users’ control to lie, ignore instructions and pursue goals in harmful ways have hit a new high, according to research that also suggests the severity of deception and misalignment is worsening. Analysis of real-world loss of control incidents involving AI models flagged by...",
+      "summary": "Exclusive: Number of times AI lies, ignores instructions and pursues goals in harmful ways almost doubles in July Incidents of AIs escaping users’ control to lie, ignore instructions and pursue goals in harmful ways have hit a new high, according to research that also suggests the severity of deception and misalignment is worsening. Analysis of real",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T06:00:20+00:00",
       "source_url": "https://www.theguardian.com/technology/2026/aug/29/sharp-rise-in-incidents-of-ai-escaping-users-control-research-finds",
@@ -9834,6 +10076,17 @@
       "published_at": "2026-08-28T15:37:50+00:00",
       "source_url": "https://www.bbc.co.uk/sport/cricket/videos/cwyz1jkpn3no?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Brilliant%20bowling%20-%20relentless%20Robinson%20stars%20with%20the%20ball.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=544407005",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8a5e541ad575e78b6f10",
+      "category": "Technology & AI",
+      "headline": "The Galaxy Z Flip 8 is at its best when there’s friction",
+      "summary": "What do you want from a flip phone when it's closed? A simple interface, perhaps notifications and a widget or two, for handling the basics? Or a fully fledged Android experience shrunk down for the Flip form factor? For years, Samsung has insisted on the former, even as some fans - and Razr rival Motorola […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T15:26:51+00:00",
+      "source_url": "https://www.theverge.com/tech/986033/samsung-galaxy-z-flip-8-review",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20The%20Galaxy%20Z%20Flip%208%20is%20at%20its%20best%20when%20there%E2%80%99s%20friction.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1255730668",
       "image_type": "ai_generated"
     },
     {
