@@ -379,11 +379,6 @@ def make_ai_prompt(title, category):
 
 
 def make_ai_image_url(title, category):
-    """
-    Current Pollinations image endpoint.
-    A server-side API key is used by the curator only; it is never
-    written into articles.json or exposed to the website.
-    """
     prompt = make_ai_prompt(title, category)
     return (
         "https://gen.pollinations.ai/image/"
@@ -391,6 +386,7 @@ def make_ai_image_url(title, category):
         + "?model=flux"
         + "&width=1200"
         + "&height=675"
+        + "&nologo=true"
     )
 
 
@@ -399,65 +395,96 @@ def local_image_path(article_id):
 
 
 def local_image_url(article_id):
-    # GitHub Pages serves this relative path directly.
     return f"images/{article_id}.jpg"
+
+
+def is_valid_image_bytes(data, content_type=""):
+    if not data or len(data) < 10_000:
+        return False
+
+    content_type = (content_type or "").lower()
+
+    # JPEG, PNG, WEBP and GIF signatures.
+    signatures = (
+        data[:3] == b"\\xff\\xd8\\xff",
+        data[:8] == b"\\x89PNG\\r\\n\\x1a\\n",
+        data[:4] == b"RIFF" and data[8:12] == b"WEBP",
+        data[:6] in (b"GIF87a", b"GIF89a"),
+    )
+
+    return "image/" in content_type or any(signatures)
 
 
 def generate_and_save_ai_image(article_id, title, category):
     """
-    Generate the image during the curator run and save the actual JPEG
-    into the repository. The website then loads a stable local file
-    instead of calling the AI service from every visitor's browser.
+    Generate an AI image during the GitHub Actions curator run and
+    save the actual image into /images. The public website then loads
+    the stable local file and does NOT call Pollinations from visitors'
+    browsers.
+
+    IMPORTANT:
+    POLLINATIONS_API_KEY must be configured as a GitHub Actions secret.
+    Never put the key in this Python file, articles.json, index.html,
+    or a public URL.
     """
     os.makedirs(IMAGES_DIR, exist_ok=True)
 
     path = local_image_path(article_id)
 
-    # Keep an already-generated image.
+    # Reuse a valid image already committed to the repository.
     if os.path.exists(path) and os.path.getsize(path) > 10_000:
         return local_image_url(article_id)
 
     if not POLLINATIONS_API_KEY:
         print(
-            "  -> AI IMAGE SKIPPED: POLLINATIONS_API_KEY GitHub secret "
-            "is not configured."
+            "  -> AI IMAGE FAILED: POLLINATIONS_API_KEY is not configured."
         )
         return ""
 
-    try:
-        response = requests.get(
-            make_ai_image_url(title, category),
-            headers={
-                "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
-                "Accept": "image/jpeg,image/png,image/*",
-            },
-            timeout=90,
-        )
-        response.raise_for_status()
+    image_url = make_ai_image_url(title, category)
 
-        content_type = response.headers.get("content-type", "").lower()
-        if "image" not in content_type:
-            print(
-                f"  -> AI IMAGE FAILED: unexpected content type "
-                f"{content_type}"
+    last_error = ""
+
+    for attempt in range(1, 4):
+        try:
+            print(f"  -> AI IMAGE: generating (attempt {attempt}/3)")
+
+            response = requests.get(
+                image_url,
+                headers={
+                    "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
+                    "Accept": "image/jpeg,image/png,image/webp,image/*",
+                },
+                timeout=120,
             )
-            return ""
 
-        data = response.content
+            response.raise_for_status()
 
-        if len(data) < 10_000:
-            print("  -> AI IMAGE FAILED: image response is too small.")
-            return ""
+            data = response.content
+            content_type = response.headers.get("content-type", "")
 
-        with open(path, "wb") as image_file:
-            image_file.write(data)
+            if not is_valid_image_bytes(data, content_type):
+                last_error = (
+                    f"invalid image response "
+                    f"(content-type={content_type}, bytes={len(data)})"
+                )
+                print(f"  -> AI IMAGE RETRY: {last_error}")
+                time.sleep(2 * attempt)
+                continue
 
-        print(f"  -> AI IMAGE SAVED: {path}")
-        return local_image_url(article_id)
+            with open(path, "wb") as image_file:
+                image_file.write(data)
 
-    except Exception as exc:
-        print(f"  -> AI IMAGE FAILED: {exc}")
-        return ""
+            print(f"  -> AI IMAGE SAVED: {path}")
+            return local_image_url(article_id)
+
+        except Exception as exc:
+            last_error = str(exc)
+            print(f"  -> AI IMAGE RETRY: {last_error}")
+            time.sleep(2 * attempt)
+
+    print(f"  -> AI IMAGE FAILED AFTER 3 ATTEMPTS: {last_error}")
+    return ""
 
 # ============================================================
 # RSS PARSER
@@ -533,7 +560,7 @@ def parse_feed(xml_text, publisher, category):
             "published_at": date_obj.isoformat(),
             "source_url": link,
             "image_url": image_url,
-            "image_type": "ai_generated_local",
+            "image_type": "ai_generated_local" if image_url else "ai_generation_failed",
         }
 
         articles.append(article)
@@ -821,7 +848,7 @@ def category_counts(articles):
 
 def build_feed():
     print("=" * 65)
-    print("SNIPPET24 NEWS CURATOR v8")
+    print("SNIPPET24 NEWS CURATOR v9")
     print("OFFICIAL/PUBLIC SOURCES + LOCAL AI IMAGES")
     print("=" * 65)
 
@@ -874,7 +901,7 @@ def build_feed():
     counts = category_counts(final_articles)
 
     output = {
-        "curator_version": "8.0-official-only-local-ai-images",
+        "curator_version": "9.0-official-only-local-ai-images",
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(final_articles),
         "minimum_target": MINIMUM_STORIES,
@@ -889,6 +916,19 @@ def build_feed():
         "categories": counts,
         "articles": final_articles,
     }
+
+    image_count = sum(
+        1 for article in final_articles
+        if article.get("image_url")
+    )
+
+    print(f"AI images available locally: {image_count}/{len(final_articles)}")
+
+    if image_count == 0:
+        print()
+        print("ERROR: No local AI images were generated.")
+        print("Check the GitHub Actions secret: POLLINATIONS_API_KEY")
+        return 1
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
         json.dump(
