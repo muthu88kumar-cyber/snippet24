@@ -1,6 +1,6 @@
 {
   "curator_version": "7.0-official-only",
-  "updated_at": "2026-08-29T06:10:13.562568+00:00",
+  "updated_at": "2026-08-29T06:12:46.729985+00:00",
   "total": 69,
   "minimum_target": 50,
   "maximum_target": 100,
@@ -86,18 +86,6 @@
       "published_at": "2026-08-28T16:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Isabel%20Schnabel%3A%20Central%20banks%20on-chain.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3909113224",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "e1cc4147566d6632bf10",
-      "category": "Technology & AI",
-      "headline": "Improving the CERN Meyrin site: ongoing works and how to get around",
-      "summary": "As many members of the CERN community return from the summer break, a number of infrastructure projects are under way across the sites. While these works may temporarily affect traffic, parking and access, they form part of a broader effort to develop and improve CERN’s campuses. The projects highlighted below are among the major infrastructure works currently […]",
-      "publisher": "CERN",
-      "source_type": "official_institutional",
-      "published_at": "2026-08-28T15:31:05+00:00",
-      "source_url": "https://home.cern/improving-the-cern-meyrin-site-ongoing-works-and-how-to-get-around/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Improving%20the%20CERN%20Meyrin%20site%3A%20ongoing%20works%20and%20how%20to%20get%20around.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1165832493",
       "image_type": "ai_generated"
     },
     {
@@ -362,6 +350,18 @@
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168213",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Shock%20and%20devastation%20remain%2C%20a%20day%20after%20Himalayan%20flood%20disaster.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=147258185",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7ea1944c8451d7248774",
+      "category": "Technology & AI",
+      "headline": "ATLAS and CMS narrow in on double-Higgs production",
+      "summary": "Finding one Higgs boson was hard enough, but physicists at the Large Hadron Collider (LHC) are hunting for something even more elusive: pairs of Higgs bosons. At the recent International Conference on High Energy Physics 2026, the ATLAS and CMS Collaborations presented new constraints on the double-Higgs production rate, providing insight into how the Higgs […]",
+      "publisher": "CERN",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-27T11:40:06+00:00",
+      "source_url": "https://home.cern/atlas-and-cms-narrow-in-on-double-higgs-production/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20ATLAS%20and%20CMS%20narrow%20in%20on%20double-Higgs%20production.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3870903069",
       "image_type": "ai_generated"
     },
     {
