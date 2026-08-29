@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-29T05:04:35.099833+00:00",
-  "total": 100,
+  "updated_at": "2026-08-29T05:12:36.693443+00:00",
+  "total": 96,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 22,
-    "India": 36,
+    "World": 20,
+    "India": 20,
     "Business": 9,
     "Technology & AI": 6,
     "Sports": 3,
     "Entertainment": 18,
-    "Lifestyle": 6
+    "Lifestyle": 20
   },
+  "source_policy": "Official and public sources first. Secondary sources may be enabled only where appropriate.",
   "articles": [
     {
       "id": "bb55bce31fe9c2d265e3",
@@ -22,18 +23,20 @@
       "published_at": "2026-08-29T05:00:19+00:00",
       "source_url": "https://www.theguardian.com/business/2026/aug/29/european-gas-stores-lowest-13-years-eu-price",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98Winter%20panic%E2%80%99%3A%20EU%20gas%20stores%20at%20their%20lowest%20level%20in%2013%20years.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3761299569",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "589350d9c6334dd30f5e",
       "category": "World",
       "headline": "Hilarity, unease and relief: games show China is not over the finish line in humanoid robot race",
-      "summary": "World Humanoid Robot Games showcased leaps Beijing has made in the tech, but also highlighted limitations as US rivals prepare their own launches With exploding pelvises, enough comic pratfalls for a Buster Keaton show reel and the odd moment of ruthless violence, the World Humanoid Robot Games in Beijing gripped the world this week with an unsettling mixture of hilarity, trepidation and relief. The five-day...",
+      "summary": "World Humanoid Robot Games showcased leaps Beijing has made in the tech, but also highlighted limitations as US rivals prepare their own launches With exploding pelvises, enough comic pratfalls for a Buster Keaton show reel and the odd moment of ruthless violence, the World Humanoid Robot Games in Beijing gripped the world this week with an unsettling mixture of hilarity, trepidation and relief. The five",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T05:00:19+00:00",
       "source_url": "https://www.theguardian.com/news/ng-interactive/2026/aug/29/hilarity-unease-and-relief-games-show-china-is-not-over-the-finish-line-in-humanoid-robot-race",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Hilarity%2C%20unease%20and%20relief%3A%20games%20show%20China%20is%20not%20over%20the%20finish%20line%20in%20humanoid%20robot%20race.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=9379345",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "6f3ea34bebb227101f0a",
@@ -44,7 +47,8 @@
       "published_at": "2026-08-29T05:00:18+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/ireland-will-be-united-says-gordon-brown",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Ireland%20will%20be%20united%2C%20says%20Gordon%20Brown.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=117679255",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "daa7391c0a98d2617f49",
@@ -55,7 +59,8 @@
       "published_at": "2026-08-29T04:51:05+00:00",
       "source_url": "https://www.thehindu.com/news/national/looking-to-advance-indias-vision-for-region-free-from-terror-says-pm-modi-as-he-embarks-on-visit-to-uzbekistan-kyrgyzstan/article71403493.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Looking%20to%20advance%20India%E2%80%99s%20vision%20for%20region%20free%20from%20terror%2C%20says%20PM%20Modi%20as%20he%20embarks%20on%20visit%20to%20Uzbekistan%2C%20Kyrgyzstan.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3953026463",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "51e0dd388cfa4084e4c2",
@@ -66,7 +71,8 @@
       "published_at": "2026-08-29T04:50:49+00:00",
       "source_url": "https://www.thehindu.com/news/national/kerala/congress-leader-chenthi-anil-arrested-for-waylaying-keralam-cm-satheesan-to-be-suspended-from-party/article71403520.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20leader%20Chenthi%20Anil%20arrested%20for%20waylaying%20Keralam%20CM%20Satheesan%3B%20to%20be%20suspended%20from%20party.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3546723242",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "c7cb3aaad20fde1df1d5",
@@ -77,7 +83,8 @@
       "published_at": "2026-08-29T04:48:50+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-farmers-caught-between-climate-uncertainty-and-financial-risk/article71397772.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Andhra%20Pradesh%20farmers%20caught%20between%20climate%20uncertainty%20and%20financial%20risk.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3890617082",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "ce92fa5eab85c43da730",
@@ -88,7 +95,8 @@
       "published_at": "2026-08-29T04:42:20+00:00",
       "source_url": "https://www.thehindu.com/news/cities/bangalore/tilted-apartment-wing-developer-begins-demolition-49-flats-to-be-rebuild/article71401184.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Tilted%20apartment%3A%20Developer%20begins%20demolition%2C%2049%20flats%20to%20be%20rebuilt%20in%20Bengaluru%20suburb.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2394191284",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "d0ef18ff01e5fb55bb6a",
@@ -99,18 +107,20 @@
       "published_at": "2026-08-29T04:41:27+00:00",
       "source_url": "https://www.thehindu.com/news/national/cisf-signs-mou-to-enhance-counter-drone-skills-of-security-personnel/article71402256.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CISF%20signs%20MoU%20to%20enhance%20counter-drone%20skills%20of%20security%20personnel.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1202638846",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "463bffe6b69d8fbfa7e7",
       "category": "Lifestyle",
       "headline": "60 stairs in 60 seconds? Cardiologist says these 3 simple tests can tell you how fit your heart is in under a minute",
-      "summary": "Delhi cardiologist Dr Naveen Bhamri shares three one-minute tests you can do to check your heart fitness",
+      "summary": "Delhi cardiologist Dr Naveen Bhamri shares three one",
       "publisher": "Hindustan Times Lifestyle",
       "published_at": "2026-08-29T04:40:21+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/60-stairs-in-60-seconds-cardiologist-says-these-3-simple-tests-can-tell-you-how-fit-your-heart-is-in-under-a-minute-101787975529932.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%2060%20stairs%20in%2060%20seconds%3F%20Cardiologist%20says%20these%203%20simple%20tests%20can%20tell%20you%20how%20fit%20your%20heart%20is%20in%20under%20a%20minute.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2842998212",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "2497ed57059c301b46d9",
@@ -121,7 +131,8 @@
       "published_at": "2026-08-29T04:39:54+00:00",
       "source_url": "https://variety.com/2026/film/news/shailene-woodley-amazing-spider-man-2-mary-jane-cut-a-year-after-filming-1236846453/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shailene%20Woodley%20Was%20Crushed%20When%20She%20Found%20Out%20Her%20Scenes%20in%20%E2%80%98Amazing%20Spider-Man%202%E2%80%99%20Were%20Cut%3A%20The%20Role%20of%20Mary%20Jane%20Was%20%E2%80%98My%20Dream%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=464156452",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "9f7eda90893d5468aa8b",
@@ -132,7 +143,8 @@
       "published_at": "2026-08-29T04:37:25+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/special-sir-camps-to-be-held-on-aug-29-30-and-sept-19-and-20-to-help-voters-verify-names-file-claims-objections/article71400258.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Special%20SIR%20camps%20to%20be%20held%20on%20August%2029%2C%2030%20and%20September%2019%2C%2020%20to%20help%20voters%20verify%20names%2C%20file%20claims%2C%20objections.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1398940271",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "cf8f2d4e7c3e0227d3ca",
@@ -143,7 +155,8 @@
       "published_at": "2026-08-29T04:33:46+00:00",
       "source_url": "https://www.thehindu.com/news/national/kerala/cpi-cpim-tussle-over-deputy-opposition-leader-post-in-keralam-is-a-mutiny-against-pinarayi-vijayan/article71401405.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CPI-CPI%28M%29%20tussle%20over%20Deputy%20Opposition%20Leader%20post%20in%20Keralam%20is%20a%20mutiny%20against%20Pinarayi%20Vijayan.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1537549215",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "9aa04a44e7049c7775a3",
@@ -154,7 +167,8 @@
       "published_at": "2026-08-29T04:30:27+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cm2r9n2mrp8o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Forget%20Starbucks%20coffee%20-%20Gen%20Z%20like%20their%20drinks%20ice%20cold.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1590803775",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "3bf390be210eda444dc7",
@@ -165,7 +179,8 @@
       "published_at": "2026-08-29T04:30:00+00:00",
       "source_url": "https://variety.com/2026/film/news/kartik-aaryan-captain-india-september-london-shoot-1236846198/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Kartik%20Aaryan%E2%80%99s%20%E2%80%98Captain%20India%E2%80%99%20Sets%20September%20London%20Shoot%20%28EXCLUSIVE%29.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3853509575",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "b9ded519d8f8d188f298",
@@ -176,7 +191,8 @@
       "published_at": "2026-08-29T04:29:16+00:00",
       "source_url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-flays-azadi-slogans-at-jadavpur/article71401699.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20West%20Bengal%20CM%20flays%20%E2%80%98Azadi%E2%80%99%20slogans%20at%20Jadavpur.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=315109576",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "3ba56a0e5c67cae41c96",
@@ -187,7 +203,8 @@
       "published_at": "2026-08-29T04:21:39+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/investors-heartened-by-warsh-inflation-talk-still-uncertain-about-fed-action/articleshow/133603732.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Investors%20heartened%20by%20Warsh%20inflation%20talk%2C%20still%20uncertain%20about%20Fed%20action.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1055899231",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "69ffe5c35a97ba666127",
@@ -198,7 +215,8 @@
       "published_at": "2026-08-29T04:20:49+00:00",
       "source_url": "https://www.thehindu.com/education/ugc-net-results-announced-for-84-subjects-over-4000-qualify-for-jrf/article71403460.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UGC-NET%20results%20announced%20for%2084%20subjects%3B%20over%204%2C000%20qualify%20for%20JRF.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030032273",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "9f3fea5938905d4d1ea1",
@@ -209,7 +227,8 @@
       "published_at": "2026-08-29T04:17:45+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/wall-steet-week-ahead-jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally/articleshow/133603682.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Wall%20Steet%20Week%20Ahead%3A%20Jobs%20report%2C%20Broadcom%20results%20pose%20next%20hurdles%20for%20stock%20market%20rally.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2412024842",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "3f514822455777c8f4d4",
@@ -220,7 +239,8 @@
       "published_at": "2026-08-29T04:14:54+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-drops-3-as-feds-warsh-comments-lift-rate-hike-bets/articleshow/133603651.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Gold%20drops%203%25%20as%20Fed%27s%20Warsh%20comments%20lift%20rate%20hike%20bets.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2358798772",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "fe67ca2e96e9b0316817",
@@ -231,7 +251,8 @@
       "published_at": "2026-08-29T04:13:11+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-settles-lower-on-clues-about-fed-policy-rumors-of-hormuz-deal/articleshow/133603629.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Oil%20settles%20lower%20on%20clues%20about%20Fed%20policy%2C%20rumors%20of%20Hormuz%20deal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1303633379",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "cf8beedd483195557faf",
@@ -242,7 +263,8 @@
       "published_at": "2026-08-29T04:12:18+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-festival-staff-photos-1236684785/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Olivia%20Rodrigo%E2%80%99s%20Inaugural%20Daisy%20Chain%20Fields%20Will%20Be%20a%20Showing%20of%20Unity%20%E2%80%94%20Even%20for%20Photographers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1239920002",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "341dff63119df95d31ee",
@@ -253,7 +275,8 @@
       "published_at": "2026-08-29T04:11:13+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-european-shares-rise-as-french-stocks-rebound-markets-digest-warsh-speech/articleshow/133603603.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Global%20Markets%20%7C%20European%20shares%20rise%20as%20French%20stocks%20rebound%3B%20markets%20digest%20Warsh%20speech.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=963418929",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "02c9b44eae1ffa966e30",
@@ -264,7 +287,8 @@
       "published_at": "2026-08-29T04:07:47+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/will-call-for-bandh-in-bengaluru-private-transport-operators/article71401535.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20call%20for%20bandh%20in%20Bengaluru%3A%20Private%20transport%20operators.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3368014968",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "83a32c7307010192bb88",
@@ -275,7 +299,8 @@
       "published_at": "2026-08-29T04:07:46+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-leads-d-street-bound-fpi-play-in-focus/articleshow/133603509.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Tech%20leads%20D-Street%20bound%2C%20FPI%20play%20in%20focus.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2746310977",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "d436a0a8813bea3b9a2c",
@@ -286,7 +311,8 @@
       "published_at": "2026-08-29T04:01:54+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/bonds/rbi-plans-buyback-of-rs-30000-crore-gsecs/articleshow/133603407.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20RBI%20plans%20buyback%20of%20Rs%2030%2C000%20crore%20GSecs.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2020268874",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "3a5dced8987849b05a37",
@@ -297,7 +323,8 @@
       "published_at": "2026-08-29T04:00:17+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/29/bosnia-reaction-death-ratko-mladic",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98The%20butcher%20may%20be%20gone%2C%20but%20to%20many%20he%20is%20a%20hero%E2%80%99%3A%20victims%20condemn%20glorification%20of%20Mladi%C4%87.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2899713866",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "b1081f5d7d903193ad46",
@@ -308,7 +335,8 @@
       "published_at": "2026-08-29T04:00:17+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka//article71400936.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nagendra%20challenges%20BJP%20to%20face%20him%20in%20%E2%80%98people%E2%80%99s%20court%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4275743334",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "bb0853cd02f208b24607",
@@ -319,7 +347,8 @@
       "published_at": "2026-08-29T03:58:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-platform-gets-sebis-nod-for-rs-37000-crore-ipo/articleshow/133603362.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Jio%20Platform%20gets%20Sebi%27s%20nod%20for%20Rs%2037%2C000%20crore%20IPO.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=124713066",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "1ad7e1b200acead9b66a",
@@ -330,7 +359,8 @@
       "published_at": "2026-08-29T03:58:06+00:00",
       "source_url": "https://www.thehindu.com/sci-tech/technology/sandhya-devanathan-exits-meta-after-a-decade-to-join-openai-as-vp-south-east-asia-australia/article71403430.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Sandhya%20Devanathan%20exits%20Meta%20after%20a%20decade%3B%20to%20join%20OpenAI%20as%20VP%20South%20East%20Asia%2C%20Australia.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2063273107",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "7ac742329cdecb42afa7",
@@ -341,7 +371,8 @@
       "published_at": "2026-08-29T03:57:16+00:00",
       "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Deaths%20Rise%20To%20616%2C%20Nearly%202%2C500%20Still%20Missing%20As%20Rescue%20Ops%20Enter%20Day%204.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2840223285",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "b026450155f994f84961",
@@ -352,7 +383,8 @@
       "published_at": "2026-08-29T03:56:34+00:00",
       "source_url": "https://www.ndtv.com/india-news/video-fda-officer-cornered-forced-to-eat-expired-biscuits-over-bribery-allegations-in-maharashtra-chhatrapati-sambhajinagar-11973520#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Food%20Body%20Officer%20Cornered%2C%20Forced%20To%20Eat%20Expired%20Biscuits%20Over%20Bribery%20Allegations%20In%20Maharashtra.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2723068383",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "486505976745a6981291",
@@ -363,7 +395,8 @@
       "published_at": "2026-08-29T03:56:17+00:00",
       "source_url": "https://www.ndtv.com/india-news/looking-to-advance-indias-vision-for-region-free-from-terror-pm-modi-11973560#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Looking%20To%20Advance%20India%27s%20Vision%20For%20Region%20Free%20From%20Terror%27%3A%20PM%20Modi.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=718706884",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0dd493b1e5a16032c2a2",
@@ -374,7 +407,8 @@
       "published_at": "2026-08-29T03:54:11+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Footage%20of%20Tibet%20floods%20isn%27t%20being%20shown%20in%20China%20-%20and%20we%20know%20little%20about%20victims%20there.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3646295530",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "bebd34ce0e12310408cb",
@@ -385,7 +419,8 @@
       "published_at": "2026-08-29T03:52:59+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/jackie-glass-dead-swift-justice-host-oj-simpson-1236684783/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jackie%20Glass%2C%20%E2%80%98Swift%20Justice%E2%80%99%20Host%2C%20Dies%20at%2070.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=869352943",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "6714857fcdfcad4a80fd",
@@ -396,7 +431,8 @@
       "published_at": "2026-08-29T03:51:57+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/nearly-half-of-bse-200-stocks-fail-to-deliver-returns-in-2026-whats-dragging-them-down/articleshow/133603293.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Nearly%20half%20of%20BSE%20200%20stocks%20fail%20to%20deliver%20returns%20in%202026.%20What%E2%80%99s%20dragging%20them%20down%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=798714794",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "44d2442b454c3777ab21",
@@ -407,7 +443,8 @@
       "published_at": "2026-08-29T03:49:58+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Search%20continues%20as%20number%20missing%20in%20Nepal-Tibet%20floods%20rises%20to%202%2C478%20%E2%80%93%20as%20it%20happened.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1508478541",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "26789953d8d191a3981c",
@@ -418,7 +455,8 @@
       "published_at": "2026-08-29T03:49:44+00:00",
       "source_url": "https://www.thehindu.com/news/national/congress-alleges-penguin-india-succumbed-to-pressure-to-demand-changes-in-sonia-memoir/article71400938.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20alleges%20Penguin%20India%20succumbed%20to%20%E2%80%98pressure%E2%80%99%20to%20demand%20changes%20in%20Sonia%20memoir.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2507779685",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "5a5341cda7cf9074e4f8",
@@ -429,7 +467,8 @@
       "published_at": "2026-08-29T03:44:05+00:00",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/milo-yiannopoulos-ice-custody-tip-off-1236684770/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Milo%20Yiannopoulos%20in%20ICE%20Custody%20After%20Feud-Fueled%20Tip-Off.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2966659357",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "80a97c6c2d4970c5abec",
@@ -440,7 +479,8 @@
       "published_at": "2026-08-29T03:43:21+00:00",
       "source_url": "https://www.ndtv.com/india-news/indore-security-guard-crushed-to-death-by-suv-after-spat-with-driver-2-arrested-11973434#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Indore%20Security%20Guard%20Crushed%20To%20Death%20By%20SUV%20After%20Spat%20With%20Driver%2C%202%20Arrested.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1788443025",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "2cab213d291041754ae2",
@@ -451,7 +491,8 @@
       "published_at": "2026-08-29T03:41:37+00:00",
       "source_url": "https://www.thehindu.com/education/high-powered-task-force-looking-into-nta-reforms-invites-stakeholder-suggestions/article71401674.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20High-powered%20task%20force%20looking%20into%20NTA%20reforms%20invites%20stakeholder%20suggestions.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4219262358",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0e085004e4d704397b5f",
@@ -462,7 +503,8 @@
       "published_at": "2026-08-29T03:30:40+00:00",
       "source_url": "https://www.thehindu.com/news/national/two-months-into-vb-g-ram-g-e-kyc-pending-for-57-lakh-active-workers/article71401092.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2057%20lakh%20active%20workers%20await%20e-KYC%20under%20VB%20GRAM%20G.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2867690444",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0d15d8f3e41627e6982f",
@@ -473,7 +515,8 @@
       "published_at": "2026-08-29T03:26:32+00:00",
       "source_url": "https://www.ndtv.com/india-news/miraculous-escape-21-tamil-nadu-pilgrims-return-from-nepal-recount-horror-11973447#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Miraculous%20Escape%22%3A%2021%20Tamil%20Nadu%20Pilgrims%20Return%20From%20Nepal%2C%20Recount%20Horror.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2866607019",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "79aceb63f5af0d076977",
@@ -484,62 +527,8 @@
       "published_at": "2026-08-29T03:10:06+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/are-eggs-bad-for-your-heart-hyderabad-doctor-shares-what-28-years-of-data-across-185-countries-says-101787972082538.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20eggs%20bad%20for%20your%20heart%3F%20Hyderabad%20doctor%20shares%20what%20%2728%20years%20of%20data%20across%20185%20countries%27%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4194958856",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "55d0e37274281c439a8f",
-      "category": "India",
-      "headline": "UGC NET June 2026 Result For 84 Subjects Out; Check Subject And Category-Wise Cut-Off Marks",
-      "summary": "UGC NET June 2026 Result Out: A total of 4,241Candidates qualified for JRF and assistant professor posts.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T03:00:37+00:00",
-      "source_url": "https://www.ndtv.com/education/ugc-net-june-2026-result-out-heres-direct-link-to-check-result-for-84-subjects-check-subject-and-category-wise-cut-off-marks-11973412#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UGC%20NET%20June%202026%20Result%20For%2084%20Subjects%20Out%3B%20Check%20Subject%20And%20Category-Wise%20Cut-Off%20Marks.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1354420827",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9adb358122dc07fdfa2e",
-      "category": "India",
-      "headline": "\"Not Legal\": Thane Court On CBI Arrest Of IRS Officer, 2 Others In Bribery Case",
-      "summary": "The court also rejected the CBI's request for their custodial interrogation",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T02:57:56+00:00",
-      "source_url": "https://www.ndtv.com/india-news/not-legal-thane-court-on-cbi-arrest-of-irs-officer-2-others-in-bribery-case-11973421#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Not%20Legal%22%3A%20Thane%20Court%20On%20CBI%20Arrest%20Of%20IRS%20Officer%2C%202%20Others%20In%20Bribery%20Case.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2889127290",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5486a6e04bd9659da683",
-      "category": "India",
-      "headline": "Commuters embrace KBR one-way, wonder about the need for flyovers",
-      "summary": "Since the one-way was introduced, the commute has been hassle-free; before the one-way, it would take half an hour to cover the road from the Cancer Hospital to Road No.45; now it takes five minutes, said a regular commuter",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T02:56:48+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/commuters-embrace-kbr-one-way-wonder-about-the-need-for-flyovers/article71401925.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Commuters%20embrace%20KBR%20one-way%2C%20wonder%20about%20the%20need%20for%20flyovers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1800825375",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "738943c379e0351094d3",
-      "category": "India",
-      "headline": "Why the monsoon is one of the best times to explore India’s forests",
-      "summary": "At naturalist-led trails across Indian wildlife lodges, the monsoon is shifting attention away from the safari’s celebrity animals towards breeding frogs, nesting birds, fruiting fungi and the smaller lives that become visible after rain",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T02:51:53+00:00",
-      "source_url": "https://www.thehindu.com/life-and-style/travel/why-the-monsoon-is-one-of-the-best-times-to-explore-indias-forests/article71221275.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20the%20monsoon%20is%20one%20of%20the%20best%20times%20to%20explore%20India%E2%80%99s%20forests.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4045897116",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2d3dcc65295bee78d44b",
-      "category": "India",
-      "headline": "Student Union Polls To Be Held Soon Across West Bengal: Suvendu Adhikari",
-      "summary": "Opposition parties have repeatedly called for holding student union polls in colleges",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T02:50:11+00:00",
-      "source_url": "https://www.ndtv.com/india-news/student-union-polls-to-be-held-soon-across-west-bengal-suvendu-adhikari-11973408#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Student%20Union%20Polls%20To%20Be%20Held%20Soon%20Across%20West%20Bengal%3A%20Suvendu%20Adhikari.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2420390811",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "74f93c6c64c85dc95e15",
@@ -550,7 +539,8 @@
       "published_at": "2026-08-29T02:44:49+00:00",
       "source_url": "https://variety.com/2026/biz/news/naomi-osaka-luxury-brand-uncharted-fame-to-fortune-summit-1236846357/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Naomi%20Osaka%20Debuts%20a%20Luxury%20Accessories%20Brand%20at%20Uncharted%E2%80%99s%20Fame%20to%20Fortune%20Summit%20in%20the%20Hamptons.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3576400921",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "72725a52af9f42c5dd15",
@@ -561,29 +551,8 @@
       "published_at": "2026-08-29T02:42:27+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3431567011",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "fb36d15ee026c321f948",
-      "category": "India",
-      "headline": "Class 9 Odisha Student Found Pregnant During Health Check Up, Tutor Arrested",
-      "summary": "Further investigation is underway, say officials. (Representational)",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T02:38:44+00:00",
-      "source_url": "https://www.ndtv.com/india-news/class-9-odisha-student-found-pregnant-during-health-check-up-tutor-arrested-11973379#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Class%209%20Odisha%20Student%20Found%20Pregnant%20During%20Health%20Check%20Up%2C%20Tutor%20Arrested.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2120068808",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a2da3beb0c4efe2fdf40",
-      "category": "India",
-      "headline": "3,400 SIR forms found at Navi Mumbai photocopy shop, 5 BLOs suspended; Sena (UBT)-BJP men clash",
-      "summary": "A BJP leader from Panvel said that the party workers had no connection with the matter.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T02:37:50+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/3400-sir-forms-found-at-navi-mumbai-photocopy-shop-5-blos-suspended-sena-ubt-bjp-men-clash/article71403368.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%2C400%20SIR%20forms%20found%20at%20Navi%20Mumbai%20photocopy%20shop%2C%205%20BLOs%20suspended%3B%20Sena%20%28UBT%29-BJP%20men%20clash.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1269630513",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "a1bd7452a659e18c188f",
@@ -594,7 +563,8 @@
       "published_at": "2026-08-29T02:28:12+00:00",
       "source_url": "https://variety.com/2026/tv/news/bill-maher-lamest-dolly-parton-tribute-real-time-hbo-1236846445/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%20Delivers%20Lamest%20Dolly%20Parton%20Tribute%20Yet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3712545817",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "fa9c0b01c2c8aede190b",
@@ -605,7 +575,8 @@
       "published_at": "2026-08-29T02:11:13+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/fashion/veteran-actor-dimple-kapadia-dil-chahta-hai-reunion-steals-the-show-what-is-her-secret-onion-juice-oil-blend-recipe-101787968133691.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Veteran%20actor%20Dimple%20Kapadia%27s%20bouncy%20hair%20at%20Dil%20Chahta%20Hai%20reunion%20steals%20the%20show%3A%20Know%20her%20secret%2C%20from%20onion%20juice%E2%80%A6.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1411689524",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "bfa86031fb9497dea19b",
@@ -616,7 +587,8 @@
       "published_at": "2026-08-29T02:07:55+00:00",
       "source_url": "https://www.npr.org/2026/08/28/nx-s1-5948229/trump-says-u-s-has-entered-deal-with-venezuela-to-take-control-of-65-billion-barrels-of-oil-reserves",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20U.S.%20has%20entered%20deal%20with%20Venezuela%20to%20take%20control%20of%2065%20billion%20barrels%20of%20oil%20reserves.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1481462839",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "16913de5a7d06d44315c",
@@ -627,7 +599,8 @@
       "published_at": "2026-08-29T01:56:21+00:00",
       "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20as%20it%20happened.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=208032020",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "9582191159b9bb80719f",
@@ -638,51 +611,8 @@
       "published_at": "2026-08-29T01:46:46+00:00",
       "source_url": "https://variety.com/2026/music/album-reviews/sara-bareilles-album-review-good-grief-1236846038/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Sara%20Bareilles%20Sings%20About%20Loss%20%E2%80%94%20and%20It%E2%80%99s%20Our%20Gain%20%E2%80%94%20in%20the%20Beautifully%20Bittersweet%20%E2%80%98Good%20Grief%E2%80%99%3A%20Album%20Review.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2942721930",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f1adae78d92f45eb5d94",
-      "category": "India",
-      "headline": "Onam: The many ways Keralam celebrates",
-      "summary": "Beyond the popular Onam narrative, featuring the Mahabali, pookkalam and sadya, the festival is celebrated in uniquely diverse ways across Keralam",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T01:37:08+00:00",
-      "source_url": "https://www.thehindu.com/society/history-and-culture/onam-the-many-ways-keralam-celebrates/article71387449.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Onam%3A%20The%20many%20ways%20Keralam%20celebrates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1898198772",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f48779c88f95bbbc41c0",
-      "category": "India",
-      "headline": "Flash floods in Nepal: No contact still with 320 Indians; 400 stranded",
-      "summary": "21 pilgrims from Tamil Nadu return safely; India sends third flight to Kathmandu with relief materials and a 11",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T01:28:43+00:00",
-      "source_url": "https://www.thehindu.com/news/national/many-indians-are-missing-after-nepal-flash-floods/article71400459.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Flash%20floods%20in%20Nepal%3A%20No%20contact%20still%20with%20320%20Indians%3B%20400%20stranded.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3532023783",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "bd04c6f1242c71342c66",
-      "category": "India",
-      "headline": "FM Sitharaman lands in U.S. for six-day visit for G-20 talks and meeting with business leaders",
-      "summary": "Ms. Sitharaman is on a nine-day joint visit to Canada and U.S., which is scheduled to end on September 2",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T01:27:20+00:00",
-      "source_url": "https://www.thehindu.com/news/national/fm-sitharaman-lands-in-us-for-six-day-visit-for-g-20-talks-and-meeting-with-business-leaders/article71403322.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FM%20Sitharaman%20lands%20in%20U.S.%20for%20six-day%20visit%20for%20G-20%20talks%20and%20meeting%20with%20business%20leaders.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=238424146",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "6670ed9443fb6fba3344",
-      "category": "India",
-      "headline": "3 Days On, 77 Isha Foundation Pilgrims Still Missing After Nepal Floods",
-      "summary": "\"There are 77 families waiting desperately for the answers\", a member of Isha Foundation said.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T01:24:12+00:00",
-      "source_url": "https://www.ndtv.com/india-news/no-update-on-group-of-77-pilgrims-of-isha-foundation-missing-in-tibet-11972992#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%20Days%20On%2C%2077%20Isha%20Foundation%20Pilgrims%20Still%20Missing%20After%20Nepal%20Floods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2816830687",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "62ed862f54829b43a0a9",
@@ -693,40 +623,8 @@
       "published_at": "2026-08-29T01:23:53+00:00",
       "source_url": "https://www.hollywoodreporter.com/business/business-news/california-budget-trailer-bill-hollywood-tax-credit-issue-1236678209/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Tries%20Offering%20Hollywood%20New%20Perks%20to%20Make%20Up%20for%20Catch%20in%20%24750%20Million%20Incentive%20Program.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1446230620",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "729d0b5c6814f37d404b",
-      "category": "India",
-      "headline": "Telangana Foods turns into role model for country in Take Home Ration models",
-      "summary": "The facility supplies food to children through Anganwadi centres in all districts of Telangana and neighbouring Andhra Pradesh and its major ready-to-eat products include Balamrutham, Balamrutham Plus and snack food, besides hot food products such as Kichidi Mix and Upma Mix",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T01:16:21+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/telangana-foods-turns-into-role-model-for-country-in-take-home-ration-models/article71400492.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Telangana%20Foods%20turns%20into%20role%20model%20for%20country%20in%20Take%20Home%20Ration%20models.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2087046811",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d16ae6ef9c28d6892bfb",
-      "category": "India",
-      "headline": "SIR To Begin In Tripura's West District On September 5",
-      "summary": "The Special Intensive Revision (SIR) will commence on September 5 in Tripura's West District.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T01:15:46+00:00",
-      "source_url": "https://www.ndtv.com/india-news/sir-to-begin-in-tripuras-west-district-on-september-5-11973224#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20SIR%20To%20Begin%20In%20Tripura%27s%20West%20District%20On%20September%205.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=8266143",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "844b2d01fb479c44dead",
-      "category": "India",
-      "headline": "When the mantra of Vande Mataram lit the fire of freedom in Nizam’s territory",
-      "summary": "Scores of students sang Vande Mataram, terming it as a mantra, however, the Nizam’s Government saw it as a song fueling patriotism rather than its religious message",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T01:14:52+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/when-the-mantra-of-vande-mataram-litthe-fire-of-freedom-in-nizams-territory/article71400414.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20When%20the%20mantra%20of%20Vande%20Mataram%20lit%20the%20fire%20of%20freedom%20in%20Nizam%E2%80%99s%20territory.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3252676541",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "29a83df8758091e629af",
@@ -737,18 +635,8 @@
       "published_at": "2026-08-29T01:14:13+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Somali%20piracy%20surges%20as%20the%20impact%20of%20the%20US-Iran%20war%20ripples%20outwards.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2608054699",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "21f55621b46ec784a04e",
-      "category": "India",
-      "headline": "CNG Gets Costlier By Rs 3.89. New Price In Delhi Nears Rs 87 Per Kg",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T01:13:25+00:00",
-      "source_url": "https://www.ndtv.com/india-news/cng-to-get-costlier-by-rs-3-89-says-indraprastha-gas-limited-11972787#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CNG%20Gets%20Costlier%20By%20Rs%203.89.%20New%20Price%20In%20Delhi%20Nears%20Rs%2087%20Per%20Kg.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=835415137",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "8c9d668786131d1fb7e6",
@@ -759,7 +647,8 @@
       "published_at": "2026-08-29T00:56:19+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cn45vdxyvvlo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Close%20race%20as%20Iceland%20votes%20on%20whether%20to%20restart%20talks%20on%20joining%20EU.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=206347945",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0e59b996673ee74b87f6",
@@ -770,7 +659,8 @@
       "published_at": "2026-08-29T00:46:02+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20detained%20by%20ICE.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3792654929",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "d69e781632a7a3e3d7a9",
@@ -781,7 +671,8 @@
       "published_at": "2026-08-29T00:43:17+00:00",
       "source_url": "https://variety.com/2026/music/news/zak-starkey-the-who-reconcile-rehearsal-1236846409/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Zak%20Starkey%20and%20the%20Who%20Have%20Kissed%20and%20Made%20Up%2C%20as%20Rehearsal%20Reunion%20Is%20Revealed.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1368836838",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "6a2dffdbc2a9b1a97857",
@@ -792,7 +683,8 @@
       "published_at": "2026-08-29T00:42:48+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/jelly-roll-clarifies-political-views-after-grammys-1236684749/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jelly%20Roll%20Clarifies%20Political%20Views%2C%20Regrets%20Not%20Taking%20%E2%80%9COpportunity%20to%20Speak%20Up%E2%80%9D%20at%20Grammys.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=90917385",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "6f89f2cea01dc5631e28",
@@ -803,7 +695,8 @@
       "published_at": "2026-08-29T00:35:04+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cpwlrrzp8eeo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20How%20%27Book%20Queen%27%20Dolly%20Parton%20inspired%20millions%20of%20children%20with%20gift%20of%20reading.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=284982042",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "7e150587e1b8e20cc895",
@@ -814,18 +707,20 @@
       "published_at": "2026-08-29T00:32:51+00:00",
       "source_url": "https://variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Lawmakers%20Settle%20on%20Partial%20Film%20Carveout%20From%20Tax%20Credit%20Cap.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=487463428",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "3fdd3ef301c9086ac59a",
       "category": "World",
       "headline": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
-      "summary": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time",
+      "summary": "A woman who rented out homes to two al",
       "publisher": "BBC News",
       "published_at": "2026-08-29T00:32:17+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Landlady%20to%209%2F11%20hijackers%20reveals%20their%20links%20to%20alleged%20Saudi%20spy.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=569579862",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "bb71bd974d87ebd239c3",
@@ -836,7 +731,8 @@
       "published_at": "2026-08-29T00:30:03+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/art-culture/quote-of-the-day-by-michael-jackson-to-me-nothing-is-more-important-than-making-people-happy-giving-them-101787931617214.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Quote%20of%20the%20day%20by%20Michael%20Jackson%3A%20%E2%80%98To%20me%2C%20nothing%20is%20more%20important%20than%20making%20people%20happy%2C%20giving%20them%E2%80%A6%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3753804303",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "cebfa5380499bffa39d6",
@@ -847,7 +743,8 @@
       "published_at": "2026-08-29T00:15:19+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20What%20tariffs%20will%20really%20cost%20Canadians%20and%20Americans.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2556361857",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "d731ebcf5cd051bb54b1",
@@ -858,7 +755,8 @@
       "published_at": "2026-08-29T00:05:38+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/can-yoga-actually-make-you-more-spiritual-why-one-10-year-practitioner-is-questioning-the-connection-101787961146044.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Can%20yoga%20actually%20make%20you%20more%20spiritual%3F%20Why%20one%2010-year%20practitioner%20is%20questioning%20the%20connection.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=466227449",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "ac8a0e992e4797e94a73",
@@ -869,7 +767,8 @@
       "published_at": "2026-08-28T23:47:38+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c209gd5jnq1o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Canada%20poaches%20dozens%20of%20top%20US%20researchers%20for%20its%20universities.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3124394014",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "8ff1d957f8160429ac36",
@@ -880,7 +779,8 @@
       "published_at": "2026-08-28T23:47:37+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/29/controversial-plans-for-a-daniel-andrews-sculpture-officially-scrapped-by-victorian-government",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Controversial%20plans%20for%20a%20Daniel%20Andrews%20sculpture%20officially%20scrapped%20by%20Victorian%20government.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3220664821",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "1faaa645d90ff05c1587",
@@ -891,7 +791,8 @@
       "published_at": "2026-08-28T23:36:56+00:00",
       "source_url": "https://variety.com/2026/music/news/nashville-airport-could-be-renamed-for-dolly-parton-1236846385/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Nashville%20Airport%20Could%20Be%20Renamed%20for%20Dolly%20Parton%2C%20Tennessee%20Governor%20Announces.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1820809539",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "00a170fbccc699401453",
@@ -902,7 +803,8 @@
       "published_at": "2026-08-28T23:34:36+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/28/trump-venezuela-oil-agreement",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20announces%20new%20US%20oil%20agreement%20with%20Venezuela.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3492549409",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "643ece525ad284f57864",
@@ -913,7 +815,8 @@
       "published_at": "2026-08-28T23:31:32+00:00",
       "source_url": "https://www.theverge.com/policy/986385/even-the-local-pop-punk-band-is-dissing-flock",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Even%20the%20local%20pop-punk%20band%20is%20dissing%20Flock..%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2591260153",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "397fa5c4b1a82bad469a",
@@ -924,7 +827,8 @@
       "published_at": "2026-08-28T23:24:27+00:00",
       "source_url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Chinese%20automakers%20are%20following%20Tesla%E2%80%99s%20bet%20that%20robots%20are%20the%20next%20big%20profit%20machine.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=444304857",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "71dfe9b9d05e89a5020f",
@@ -935,7 +839,8 @@
       "published_at": "2026-08-28T23:21:06+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/what-is-somatic-movement-why-slow-mindful-exercise-is-gaining-attention-among-spiritual-seekers-101787957837358.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20What%20is%20somatic%20movement%3F%20Why%20slow%2C%20mindful%20exercise%20is%20gaining%20attention%20among%20spiritual%20seekers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3742024391",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "621473a5359131ff9264",
@@ -946,7 +851,8 @@
       "published_at": "2026-08-28T23:20:00+00:00",
       "source_url": "https://variety.com/feature/whats-on-disney-plus-new-shows-movies-1203517920/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20What%E2%80%99s%20Coming%20to%20Disney%2B%20in%20September%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=846332948",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "5dd26bcdaa0864d007b5",
@@ -957,7 +863,8 @@
       "published_at": "2026-08-28T23:09:36+00:00",
       "source_url": "https://www.bbc.co.uk/sport/golf/articles/c20lnlpx714o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hovland%20in%20tie%20for%20lead%20at%20Tour%20Championship.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2125579761",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "4ef9872947c1efa23076",
@@ -968,18 +875,8 @@
       "published_at": "2026-08-28T23:07:41+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/man-41-dies-after-large-sign-falls-at-christian-festival-in-west-sussex",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Man%2C%2041%2C%20dies%20after%20large%20sign%20falls%20at%20Christian%20festival%20in%20West%20Sussex.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1843952736",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a18e027bc1a2970cf6d9",
-      "category": "India",
-      "headline": "Gen Z vs the khap panchayats: Old rules, new rebels",
-      "summary": "Haryana’s khap panchayats have issued diktats against love marriages within a village cluster or clan, and live-in and same-sex relationships. If people do not abide by these, they will be barred from entering their villages, the khaps say. This has drawn strong opposition from Gen Z on social media. A section of the youth, both women and men, say the personal choices of consenting adults trump community custom....",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T23:05:20+00:00",
-      "source_url": "https://www.thehindu.com/news/national/haryana/gen-z-vs-haryana-khap-panchayats-old-rules-new-rebels/article71395638.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Gen%20Z%20vs%20the%20khap%20panchayats%3A%20Old%20rules%2C%20new%20rebels.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2630739303",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "537669bc8f163fdaf1c1",
@@ -990,7 +887,8 @@
       "published_at": "2026-08-28T23:04:21+00:00",
       "source_url": "https://www.hollywoodreporter.com/movies/movie-news/coyote-vs-acme-will-forte-director-celebrate-release-1236684609/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Coyote%20vs.%20Acme%E2%80%99%20Star%20Will%20Forte%2C%20Director%20Celebrate%20Film%20Finally%20Hitting%20Theaters%20After%20Being%20Shelved%20by%20Warner%20Bros.%3A%20%E2%80%9CProof%20Movies%20Don%E2%80%99t%20Just%20Go%20Away%E2%80%9D.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3334597546",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "638bd9045cb6c2b9f4f1",
@@ -1001,7 +899,8 @@
       "published_at": "2026-08-28T23:01:55+00:00",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/shelley-fabares-cause-of-death-1236684687/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shelley%20Fabares%E2%80%99%20Cause%20of%20Death%20Revealed.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3604538708",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "2689b7a279c4a27fbb99",
@@ -1012,18 +911,8 @@
       "published_at": "2026-08-28T22:56:42+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c24j5jnnr9eo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20A%20magician%20and%20a%20maverick%20-%20this%20could%20be%20Cherki%27s%20moment%20for%20Man%20City.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=917668354",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f6a9051a885a5e4628c7",
-      "category": "World",
-      "headline": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
-      "summary": "There are now 41 Australians missing, and four rapid response team members are expected to arrive in Kathmandu At least 93,000 ‘in great need’ after Nepal-Tibet flash floods How the deadly Nepal and Tibet flash flood unfolded – a visual guide Get our breaking news email , free app or daily news podcast The number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41,...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T22:53:57+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20Australians%20missing%20in%20Nepal%E2%80%99s%20deadly%20floods%20rises%20again%2C%20as%20Albanese%20deploys%20more%20personnel.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=628949033",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "743153c25cc6f002c806",
@@ -1034,7 +923,8 @@
       "published_at": "2026-08-28T22:50:35+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-raises-10-million-1236684633/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Olivia%20Rodrigo%E2%80%99s%20Daisy%20Chain%20Fields%20Raises%20%2410%20Million%20for%20Women-Focused%20Nonprofits.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3134294478",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0df54cb13b61b8d4b5fb",
@@ -1045,7 +935,8 @@
       "published_at": "2026-08-28T22:48:11+00:00",
       "source_url": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Google%20further%20buries%20search%20results%20under%20AI%20mode.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2662269631",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "0fc60ed0eb71e545c253",
@@ -1056,18 +947,8 @@
       "published_at": "2026-08-28T22:42:48+00:00",
       "source_url": "https://techcrunch.com/2026/08/28/is-the-best-way-to-watch-a-movie-on-a-pair-of-sunglasses/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Is%20the%20best%20way%20to%20watch%20a%20movie%20on%20a%20pair%20of%20sunglasses%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3521908612",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "329c6f89d684ec02084f",
-      "category": "World",
-      "headline": "Los Angeles fire survivors face record wait for federal disaster aid under Trump",
-      "summary": "Nearly 600 days after the devastating 2025 fires, thousands of Los Angeles residents are still waiting for more than $15bn in federal funds to rebuild their communities As thousands of residents in Spokane, Washington, begin to grapple with a long recovery after a destructive set of blazes that consumed hundreds of homes in the state’s second most populated city this month, victims of the Los Angeles firestorm...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T22:39:26+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/28/los-angeles-wildfire-survivors-federal-aid",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Los%20Angeles%20fire%20survivors%20face%20record%20wait%20for%20federal%20disaster%20aid%20under%20Trump.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1541898307",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "4aa8fd13e583e2e498a7",
@@ -1078,7 +959,8 @@
       "published_at": "2026-08-28T22:39:11+00:00",
       "source_url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Xbox%20CEO%20calls%20Project%20Helix%20a%20%E2%80%98family%20of%20devices%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1714466477",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "b11e831f20b478fd46dd",
@@ -1089,7 +971,8 @@
       "published_at": "2026-08-28T22:38:14+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/gladys-knight-fewer-performances-next-stage-career-1236684667/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Gladys%20Knight%20Announces%20She%E2%80%99ll%20Partake%20in%20%E2%80%9CFewer%20Performances%E2%80%9D%20Amid%20%E2%80%9CNext%20Stage%E2%80%9D%20of%20Career%20and%20Life.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=318880959",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "720168a06c51f9a9f3fa",
@@ -1100,7 +983,8 @@
       "published_at": "2026-08-28T22:29:37+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cjw5056v9v7o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20McInnes%20backs%20himself%20to%20deliver%20Rangers%20success.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3759259368",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
     },
     {
       "id": "092681bcb2e23c8d7d6d",
@@ -1111,7 +995,176 @@
       "published_at": "2026-08-28T22:14:52+00:00",
       "source_url": "https://arstechnica.com/tech-policy/2026/08/kalshi-cant-evade-nevada-gambling-laws-by-calling-bets-swaps-court-rules/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Court%20rules%20Kalshi%20sports%20bets%20aren%27t%20%22swaps%2C%22%20just%20gambling%20with%20a%20different%20name.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=484515684",
-      "image_type": "ai_generated"
+      "image_type": "ai_generated",
+      "source_type": "existing_source"
+    },
+    {
+      "id": "5de83d356de62246f6f0",
+      "category": "Lifestyle",
+      "headline": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
+      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
+      "publisher": "World Health Organization",
+      "published_at": "2026-02-25T18:06:55+00:00",
+      "source_url": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%20Director-General%20visits%20Jordan%20to%20recognize%20strong%20collaboration%20on%20health%20system%20delivery%2C%20emergency%20relief%20and%20advancing%20mental%20health.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2568827506",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "2f92662cc30d3df7a86a",
+      "category": "Lifestyle",
+      "headline": "WHO statement on notification of withdrawal of the United States",
+      "summary": "WHO regrets the United States’ notification of withdrawal from WHO",
+      "publisher": "World Health Organization",
+      "published_at": "2026-01-24T20:09:49+00:00",
+      "source_url": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%20statement%20on%20notification%20of%20withdrawal%20of%20the%20United%20States.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=872024407",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "31b2167f22fbb33b4aca",
+      "category": "Lifestyle",
+      "headline": "Paying tribute to David Nabarro",
+      "summary": "Tribute to Dr David Nabarro",
+      "publisher": "World Health Organization",
+      "published_at": "2025-07-30T08:56:15+00:00",
+      "source_url": "https://www.who.int/news/item/30-07-2025-paying-tribute-to-david-nabarro",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Paying%20tribute%20to%20David%20Nabarro.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4019096452",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "9dd791651786e11992c2",
+      "category": "Lifestyle",
+      "headline": "Timor-Leste certified malaria-free by WHO",
+      "summary": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. “WHO congratulates the people and government of Timor-Leste on this significant milestone,” said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. “Timor-Leste’s success...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-07-23T10:07:41+00:00",
+      "source_url": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Timor-Leste%20certified%20malaria-free%20by%20WHO.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=123023956",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "b390c94c24581e04f6f6",
+      "category": "Lifestyle",
+      "headline": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
+      "summary": "The World Health Organization (WHO) and the African Union (AU) Commission renewed their longstanding strategic partnership today with the signing of an updated Memorandum of Understanding (MoU) on the sidelines of the 78th World Health Assembly in Geneva. This renewed agreement reaffirms the joint commitment to advancing health security, universal health coverage, and sustainable development across the African...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-05-24T17:47:21+00:00",
+      "source_url": "https://www.who.int/news/item/24-05-2025-world-health-organization-and-african-union-renew-strategic-partnership-to-drive-impact-and-strengthen-health-systems-in-africa",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20African%20Union%20and%20World%20Health%20Organization%20renew%20strategic%20partnership%20to%20drive%20impact%20and%20strengthen%20health%20systems%20in%20Africa.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2992016190",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "25f753bca14d5d5af77d",
+      "category": "Lifestyle",
+      "headline": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
+      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO’s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-05-19T11:53:23+00:00",
+      "source_url": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%E2%80%99s%20strategic%20engagement%20with%20philanthropies%3A%20advancing%20global%20health%20and%20resilient%20health%20systems.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=607222829",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "f27e44a5cc8cd2275cf0",
+      "category": "Lifestyle",
+      "headline": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
+      "summary": "On the occasion of the World Health Day 2025 dedicated to the theme of Healthier beginnings, hopeful futures, over 100 global WHO offices have organized wide-ranging public advocacy actions in collaboration with Member States, communities, health workers, partner and donor agencies and civil society organizations.",
+      "publisher": "World Health Organization",
+      "published_at": "2025-04-10T15:02:54+00:00",
+      "source_url": "https://www.who.int/news/item/10-04-2025-worldwide-rally-for-maternal-and-newborn-health-marks-world-health-day-2025",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Worldwide%20rally%20for%20maternal%20and%20newborn%20health%20marks%20World%20Health%20Day%202025.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=190986015",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "685c4a82d89446f685e5",
+      "category": "Lifestyle",
+      "headline": "Strengthening public health across Lebanon with EIB Global",
+      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-04-01T11:55:48+00:00",
+      "source_url": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Strengthening%20public%20health%20across%20Lebanon%20with%20EIB%20Global.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=82081037",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "46cb8bbcdcb3cf6294cd",
+      "category": "Lifestyle",
+      "headline": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
+      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-03-11T08:49:23+00:00",
+      "source_url": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Frank%2C%20in-depth%20discussion%20as%20Belgium%20and%20WHO%20map%20ahead%20priorities%20for%20collaboration.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2015517155",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "9ae88e090a1421f3d94d",
+      "category": "Lifestyle",
+      "headline": "WHO and Switzerland cement cooperation until 2028",
+      "summary": "WHO and Switzerland have announced the renewal of their cooperation strategy for the period 2024-2028. In 2013, Switzerland became the first high-income country in the WHO European Region to pilot a cooperation strategy with WHO (hereafter referred to as the WHO-Switzerland Cooperation Strategy). In 2022, WHO and Switzerland jointly decided to update and renew this cooperation strategy, which was done on 4 March...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-03-07T12:38:51+00:00",
+      "source_url": "https://www.who.int/news/item/07-03-2025-who-and-switzerland-cement-cooperation-until-2028",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%20and%20Switzerland%20cement%20cooperation%20until%202028.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3658841184",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "5878bb0ab7ea0a297705",
+      "category": "Lifestyle",
+      "headline": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also...",
+      "publisher": "World Health Organization",
+      "published_at": "2025-03-06T12:48:53+00:00",
+      "source_url": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%20and%20the%20Kingdom%20of%20Saudi%20Arabia%20sign%20agreements%20in%20support%20of%20health%20priorities.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1394238793",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "d730e73f4f90cd0f1b93",
+      "category": "Lifestyle",
+      "headline": "WHO comments on United States’ announcement of intent to withdraw",
+      "summary": "The World Health Organization regrets the announcement that the United States of America intends to withdraw from the organization.",
+      "publisher": "World Health Organization",
+      "published_at": "2025-01-21T10:04:49+00:00",
+      "source_url": "https://www.who.int/news/item/21-01-2025-who-comments-on-united-states--announcement-of-intent-to-withdraw",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20WHO%20comments%20on%20United%20States%E2%80%99%20announcement%20of%20intent%20to%20withdraw.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1098751101",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "ab2cb555fec2ba5e6f9e",
+      "category": "Lifestyle",
+      "headline": "Luxembourg and WHO sign two strategic agreements",
+      "summary": "A Strategic Partnership Framework (SPF) with the Ministry of Development Cooperation and Humanitarian Affairs and multiyear agreement with the Ministry of Health and Social Safety was signed on 20 December 2024. By signing two new partnership agreements, Luxembourg reaffirmed its continued support for WHO to fulfill a shared mission to promote, provide and protect health.",
+      "publisher": "World Health Organization",
+      "published_at": "2024-12-23T16:44:44+00:00",
+      "source_url": "https://www.who.int/news/item/23-12-2024-luxembourg-and-who-sign-two-strategic-agreements",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Luxembourg%20and%20WHO%20sign%20two%20strategic%20agreements.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2937250085",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
+    },
+    {
+      "id": "e81cc70f8fdfba7337ee",
+      "category": "Lifestyle",
+      "headline": "G20 health ministers rally support for WHO’s Investment Round",
+      "summary": "Ministers of Health expressed their support for WHO's Investment Round during a G20 meeting chaired by Brazil held today in Rio de Janeiro.",
+      "publisher": "World Health Organization",
+      "published_at": "2024-10-31T18:48:12+00:00",
+      "source_url": "https://www.who.int/news/item/01-11-2024-g20-health-ministers-rally-support-for-who-s-investment-round",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20G20%20health%20ministers%20rally%20support%20for%20WHO%E2%80%99s%20Investment%20Round.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=171849967",
+      "image_type": "ai_generated",
+      "source_type": "official_or_public"
     }
   ]
 }
