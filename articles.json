@@ -1,10 +1,11 @@
 {
-  "curator_version": "7.0-official-only",
-  "updated_at": "2026-08-29T06:12:46.729985+00:00",
+  "curator_version": "8.0-official-only-local-ai-images",
+  "updated_at": "2026-08-29T06:24:07.359521+00:00",
   "total": 69,
   "minimum_target": 50,
   "maximum_target": 100,
   "source_policy": "official_government_intergovernmental_and_institutional_sources_only",
+  "image_policy": "ai_images_generated_during_curator_run_and_saved_locally",
   "copyright_note": "Snippet24 publishes its own headlines and summaries and credits the original publisher with a source link. This is not a guarantee of legal immunity.",
   "categories": {
     "World": 18,
@@ -25,8 +26,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T22:21:31+00:00",
       "source_url": "https://www.nasa.gov/image-article/nasas-artemis-ii-crew-receives-congressional-space-medal-of-honor/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20NASA%E2%80%99s%20Artemis%20II%20Crew%20Receives%20Congressional%20Space%20Medal%20of%20Honor.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4282099436",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "4877a12187a76501c650",
@@ -37,8 +38,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T20:30:52+00:00",
       "source_url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-awards-first-prize-in-phase-2-of-agencys-lunarecycle-challenge/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20NASA%20Awards%20First%20Prize%20in%20Phase%202%20of%20Agency%E2%80%99s%20LunaRecycle%20Challenge.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=577693377",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "29cab43c4a98d4d24654",
@@ -49,8 +50,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T17:37:01+00:00",
       "source_url": "https://www.nasa.gov/news-release/president-honors-nasas-artemis-ii-crew-with-highest-us-space-award/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20President%20Honors%20NASA%E2%80%99s%20Artemis%20II%20Crew%20with%20Highest%20US%20Space%20Award.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2268602956",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "b6550a65836194ea54ef",
@@ -61,8 +62,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T17:33:00+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-79-sec-proposes-amendments-exchange-act-rule-3a12-8-add-european-union-debt-obligations",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%20Proposes%20Amendments%20to%20Exchange%20Act%20Rule%203a12-8%20to%20Add%20European%20Union%20Debt%20Obligations.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=268018676",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "a1228d3ce68a2691f883",
@@ -73,8 +74,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T17:21:04+00:00",
       "source_url": "https://www.nasa.gov/news-release/president-trump-signs-executive-order-to-create-us-space-academy/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20President%20Trump%20Signs%20Executive%20Order%20to%20Create%20US%20Space%20Academy.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=765737010",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "265f5d4b89c0649105d8",
@@ -85,8 +86,20 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T16:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Isabel%20Schnabel%3A%20Central%20banks%20on-chain.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3909113224",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
+    },
+    {
+      "id": "e1cc4147566d6632bf10",
+      "category": "Technology & AI",
+      "headline": "Improving the CERN Meyrin site: ongoing works and how to get around",
+      "summary": "As many members of the CERN community return from the summer break, a number of infrastructure projects are under way across the sites. While these works may temporarily affect traffic, parking and access, they form part of a broader effort to develop and improve CERN’s campuses. The projects highlighted below are among the major infrastructure works currently […]",
+      "publisher": "CERN",
+      "source_type": "official_institutional",
+      "published_at": "2026-08-28T15:31:05+00:00",
+      "source_url": "https://home.cern/improving-the-cern-meyrin-site-ongoing-works-and-how-to-get-around/",
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "85449326d8ae697cef7f",
@@ -97,8 +110,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T13:10:00+00:00",
       "source_url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_24-28_August_2026",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Week%20in%20images%3A%2024-28%20August%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3123803716",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "1522a8fbedf684f16849",
@@ -109,8 +122,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:20:00+00:00",
       "source_url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Ariane_6_launch_with_MTG-I2_highlights",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Ariane%206%20launch%20with%20MTG-I2%20%E2%80%93%20highlights.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=248119532",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "01fe570cce4aeb3ee30c",
@@ -121,8 +134,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168229",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Four%20children%20killed%20as%20separate%20attacks%20in%20Gaza%20destroy%20aid%20supplies.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2882507882",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "75cda9285e5ea42a7888",
@@ -133,8 +146,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168227",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20As%20the%20Himalayas%20melt%2C%20deadly%20floods%20become%20the%20new%20normal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1978746314",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "a9402e0de6802d7ffa1a",
@@ -145,8 +158,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168222",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Security%20Council%20LIVE%3A%20Deadly%20gang%20attacks%20spike%20in%20Haiti.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2898940320",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "7d9e26a8adb866158408",
@@ -157,8 +170,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168226",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20WHO%20reports%20more%20than%203%2C200%20attacks%20on%20Ukraine%E2%80%99s%20healthcare%20system%20since%20full-scale%20invasion.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1917006733",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "c01378348f0148809ac7",
@@ -169,8 +182,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168224",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Risks%20of%20child%20recruitment%20by%20armed%20groups%20rise%20in%20post-quake%20Colombia.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1191333685",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "7a6b84a25cda5dc5f55f",
@@ -181,8 +194,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168221",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20%E2%80%98Immense%20impact%E2%80%99%20of%20Nepal%20flood%20disaster%20highlighted%20as%20casualties%20mount.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4103563618",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "18f98a63466858aab592",
@@ -193,8 +206,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T09:03:00+00:00",
       "source_url": "https://www.esa.int/Space_Safety/Space_Debris/Observing_Samba_and_Tango_s_reentries",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Observing%20Samba%20and%20Tango%E2%80%99s%20reentries.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2905143671",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "b23779c0ee829e45b654",
@@ -205,8 +218,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T04:05:00+00:00",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-august-28-the-sky-turns-above-paranal/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20APOD%3A%202026%20August%2028%20%E2%80%93%20The%20Sky%20Turns%20Above%20Paranal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2714592960",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "5ac178e677ace5e77d4e",
@@ -217,8 +230,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-28T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/the-forested-floodplains-of-congaree-national-park/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20The%20Forested%20Floodplains%20of%20Congaree%20National%20Park.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4288040407",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "1d7cbd1476b9977d80dd",
@@ -229,8 +242,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T21:30:00+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-78-sec-38-entities-feigned-legitimacy-us-advisers-through-false-filings-lure-retail-investors",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%3A%2038%20Entities%20Feigned%20Legitimacy%20as%20U.S.%20Advisers%20Through%20False%20Filings%20to%20Lure%20Retail%20Investors.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3396538635",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "d1770f20207731b39add",
@@ -241,8 +254,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T20:48:00+00:00",
       "source_url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/MTG-I2_completes_Europe_s_latest_weather_trio",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20MTG-I2%20completes%20Europe%E2%80%99s%20latest%20weather%20trio.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1784774620",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "eb117c4ced5ee22b58ff",
@@ -253,8 +266,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T18:42:38+00:00",
       "source_url": "https://www.nasa.gov/news-release/nasa-invites-media-to-turkey-artemis-accords-signing-ceremony/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20NASA%20Invites%20Media%20to%20Turkey%20Artemis%20Accords%20Signing%20Ceremony.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=354354539",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "bff7c7e40f4ea3fc7f65",
@@ -265,8 +278,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T18:02:54+00:00",
       "source_url": "https://www.nasa.gov/image-article/civil-servants-sworn-in-at-nasa-ames/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Civil%20Servants%20Sworn%20in%20at%20NASA%20Ames.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4021716031",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "310cf97b53b0fce52c79",
@@ -277,8 +290,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T17:47:11+00:00",
       "source_url": "https://science.nasa.gov/missions/roman-space-telescope/9-things-to-know-about-nasas-nancy-grace-roman-space-telescope/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%209%20Things%20to%20Know%20About%20NASA%E2%80%99s%20Nancy%20Grace%20Roman%20Space%20Telescope.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1964260614",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "7ec96bbb9399487ae727",
@@ -289,8 +302,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168220",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Aid%20reaches%20hundreds%20of%20thousands%20in%20Gaza%20amid%20severe%20food%20insecurity.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=869710010",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "d7f78c5005036c311576",
@@ -301,8 +314,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168219",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20After%20Israeli%20seizure%20of%20Kalandia%20training%20centre%2C%20UNRWA%20warns%20of%20impact%20on%20youth.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3283201842",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "5352c02dc5132b2686d7",
@@ -313,8 +326,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168217",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20UN%20chief%20condemns%20%E2%80%98indifference%E2%80%99%20as%20Ebola%20cases%20mount%20in%20DR%20Congo.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=714452021",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "7e84028bd5796ab2f343",
@@ -325,8 +338,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168215",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Lebanon%3A%20Civilian%20risks%20grow%20as%20military%20activity%20continues%2C%20UN%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3306313266",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "2e8cb73fa40ffd2dc251",
@@ -337,8 +350,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168214",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Security%20Council%20LIVE%3A%20Tracking%20Syria%E2%80%99s%20transition.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2137714071",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "769160235b3d67fb1e86",
@@ -349,20 +362,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168213",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Shock%20and%20devastation%20remain%2C%20a%20day%20after%20Himalayan%20flood%20disaster.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=147258185",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7ea1944c8451d7248774",
-      "category": "Technology & AI",
-      "headline": "ATLAS and CMS narrow in on double-Higgs production",
-      "summary": "Finding one Higgs boson was hard enough, but physicists at the Large Hadron Collider (LHC) are hunting for something even more elusive: pairs of Higgs bosons. At the recent International Conference on High Energy Physics 2026, the ATLAS and CMS Collaborations presented new constraints on the double-Higgs production rate, providing insight into how the Higgs […]",
-      "publisher": "CERN",
-      "source_type": "official_institutional",
-      "published_at": "2026-08-27T11:40:06+00:00",
-      "source_url": "https://home.cern/atlas-and-cms-narrow-in-on-double-higgs-production/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20ATLAS%20and%20CMS%20narrow%20in%20on%20double-Higgs%20production.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3870903069",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "b6e317fab8462961b133",
@@ -373,8 +374,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T11:30:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Meeting%20of%2022-23%20July%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=914350511",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "b3b4747b2f796e7cd96b",
@@ -385,8 +386,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-27T04:00:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/rare-widespread-snow-in-the-atacama-desert/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Rare%2C%20Widespread%20Snow%20in%20the%20Atacama%20Desert.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3693332748",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "6f714867fa7deec3902b",
@@ -397,8 +398,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T19:14:15+00:00",
       "source_url": "https://www.nasa.gov/earth/earth-visualization-mapping/building-foresight-for-earth-science-featuring-lindsey-jacobson/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Building%20Foresight%20for%20Earth%20Science%2C%20featuring%20Lindsey%20Jacobson.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=676273014",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "79422abaf3fdb8349810",
@@ -409,8 +410,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168212",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Land%20models%20sprout%20as%20degradation%20threatens%20billions%20of%20livelihoods.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=171906511",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "da0ccf095bdd9cf73d51",
@@ -421,8 +422,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168211",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Red%20Sea%20nations%20step%20up%20maritime%20cooperation%20as%20regional%20threats%20grow.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3122693639",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "f75ad1c91be00208f23f",
@@ -433,8 +434,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168210",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Explainer%3A%20UN%20peace%20operations%20work%20to%20create%2C%20preserve%20peace.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=783839088",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "bba6a5ba0c53646d2e53",
@@ -445,8 +446,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168208",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Deadly%20floods%20cause%20widespread%20destruction%20in%20China%2C%20Nepal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1567576131",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "084330a12b7f29a32d38",
@@ -457,8 +458,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168207",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20More%20health%20workers%2C%20stronger%20systems%3A%20Africa%E2%80%99s%20new%20ambitious%20goal.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2927847436",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "b4af2fe6d3ecf10d79bc",
@@ -469,8 +470,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T12:00:00+00:00",
       "source_url": "https://news.un.org/feed/view/en/story/2026/08/1168204",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Security%20Council%20LIVE%3A%20Rising%20tensions%20in%20Gaza%2C%20West%20Bank.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=84523869",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "6891a5e98425f6339f2d",
@@ -481,8 +482,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T10:15:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260826~3641116314.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Piero%20Cipollone%3A%20From%20vision%20to%20delivery%3A%20building%20Europe%E2%80%99s%20tokenised%20financial%20market.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2036553993",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "f396654bac52967aacc9",
@@ -493,8 +494,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-26T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20A%20Changing%20World%20for%20Emperor%20Penguins.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=455212673",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "9fc527e024defd7fffe4",
@@ -505,8 +506,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-25T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/michigans-les-cheneaux-islands/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Michigan%E2%80%99s%20Les%20Cheneaux%20Islands.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3112463955",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "39e80a01a16e15c599dc",
@@ -517,8 +518,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-24T17:53:57+00:00",
       "source_url": "https://science.nasa.gov/solar-system/starstruck-nasa-research-shows-how-suns-ancient-history-shaped-earth/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Starstruck%3A%20NASA%20Research%20Shows%20How%20Sun%E2%80%99s%20Ancient%20History%20Shaped%20Earth.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3130391354",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "5a40c3316a84dbf18a22",
@@ -529,8 +530,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-24T06:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Piero%20Cipollone%3A%20Interview%20with%20ilsussidiario.net.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=587973005",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "06d4d44ce1536cf4c868",
@@ -541,8 +542,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-24T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/earth-observatory/what-lake-bonneville-left-behind/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20What%20Lake%20Bonneville%20Left%20Behind.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3615875806",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "9d2e5a562ca2c2f26412",
@@ -553,8 +554,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-21T08:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20ECB%20Consumer%20Expectations%20Survey%20results%20%E2%80%93%20July%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3280382424",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "6998400d17e1165bb0d0",
@@ -565,8 +566,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-21T04:01:00+00:00",
       "source_url": "https://science.nasa.gov/earth/europes-scorching-summer/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Europe%E2%80%99s%20Scorching%20Summer.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=685911650",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "65889413b897383f0819",
@@ -577,8 +578,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-20T20:05:41+00:00",
       "source_url": "https://science.nasa.gov/earth/smallsat-2026/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20SmallSat%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=813192647",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "a3f66586544a3b354f0b",
@@ -589,8 +590,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-20T14:12:09+00:00",
       "source_url": "https://science.nasa.gov/centers-and-facilities/goddard/nasa-river-forecasts-snow-drought/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20NASA%20Data%20Feeds%20River%20Forecasts%20as%20Snow%20Drought%20Effects%20Linger.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=592949965",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "e6e6e987ae089fb25d66",
@@ -601,8 +602,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-19T07:10:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Christine%20Lagarde%3A%20Panel%20remarks%20about%20the%20European%20economy%20during%20a%20discussion%20on%20the%20global%20economic%20outlook%20at%20the%20World%20Economic%20Forum.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3641013119",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "de4f5cbd84a6609392cb",
@@ -613,8 +614,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-18T19:55:10+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%20Charges%20Former%20Executives%20With%20Fraud%20in%20Connection%20With%20%241.9%20Billion%20Collapse%20of%20Subprime%20Auto%20Lender%20Tricolor.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2436425973",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "39907d56465278f3fcd9",
@@ -625,8 +626,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-18T17:15:48+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%20Proposes%20New%20Regulation%20Crypto%20Assets.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=488111172",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "db46030949df7edd331a",
@@ -637,8 +638,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-17T09:30:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260817~1f9f7149c9.en.pdf",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Philip%20R.%20Lane%3A%20The%20rise%20in%20defence%20spending%20and%20the%20euro%20area%20economy.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=24925407",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "ea584a1d498878088520",
@@ -649,8 +650,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-14T20:16:34+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-75-sec-charges-boiler-room-operator-three-entities-defrauding-retail-investors-74-million-pre-ipo",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%20Charges%20Boiler%20Room%20Operator%20and%20Three%20Entities%20with%20Defrauding%20Retail%20Investors%20in%20%2474%20Million%20Pre-IPO%20Investment%20Scam.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2375252077",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "d88488c130030567e57f",
@@ -661,8 +662,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-13T20:32:19+00:00",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2026-74-sec-charges-toms-river-trio-connection-alleged-47-million-fraud-targeting-orthodox-jewish",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20SEC%20Charges%20Toms%20River%20Trio%20in%20Connection%20with%20Alleged%20%2447%20Million%20Fraud%20Targeting%20Orthodox%20Jewish%20Communities.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2064798453",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "da5f780a7c231fa53431",
@@ -673,8 +674,8 @@
       "source_type": "official_institutional",
       "published_at": "2026-08-13T09:00:00+00:00",
       "source_url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260813~389729d6a9.en.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Cash%20remains%20most%20widely%20accepted%20payment%20method%20in%20euro%20area.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1020649298",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "a4bf0e507348cf9de143",
@@ -685,8 +686,8 @@
       "source_type": "official_institutional",
       "published_at": "2022-07-14T23:36:00+00:00",
       "source_url": "https://worldathletics.org/news/news/tokyo-host-2025-world-athletics-championships",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Tokyo%20to%20host%202025%20World%20Athletics%20Championships.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3900399112",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "1a26322430e9c36e0f76",
@@ -697,8 +698,8 @@
       "source_type": "official_institutional",
       "published_at": "2022-05-06T22:12:00+00:00",
       "source_url": "https://worldathletics.org/news/news/world-mountain-and-trail-running-championship",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20World%20Mountain%20and%20Trail%20Running%20Championships%202023%20awarded%20to%20Innsbruck%20and%20Stubai.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=693642736",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "d4518f4ce5350501031d",
@@ -709,8 +710,8 @@
       "source_type": "official_institutional",
       "published_at": "2022-03-10T13:54:00+00:00",
       "source_url": "https://worldathletics.org/news/news/pre-qualification-for-hosting-2024-world-athl",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Pre-qualification%20for%20hosting%202024%20World%20Athletics%20Relays%20launches.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1602570552",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "52ae7be969fd7f68e828",
@@ -721,8 +722,8 @@
       "source_type": "official_institutional",
       "published_at": "2022-01-31T18:25:00+00:00",
       "source_url": "https://worldathletics.org/news/news/pre-qualification-2024-2026-world-athletics-r",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Pre-qualification%20for%202024%20and%202026%20World%20Athletics%20Race%20Walking%20Team%20Championships%20launches.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1701892869",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "cce4f74d11ac1ac0be57",
@@ -733,8 +734,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-20T08:36:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/documentary-film-run-the-athlete-refugee-team",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Watch%20%27RUN%20-%20The%20Athlete%20Refugee%20Team%20Story%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4038050172",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "7ad20d65fa31f2c6592c",
@@ -745,8 +746,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-18T10:01:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/tadesse-abraham-world-refugee-day",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Abraham%20%E2%80%93%20from%20refugee%20to%20Olympic%20rings.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=814299063",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "5513a8698096213715d4",
@@ -757,8 +758,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-17T09:56:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-gabriyesos-tokyo",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Ready%20to%20make%20history%2C%20Gabriyesos%20looks%20to%20send%20global%20message%20of%20hope.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3748565025",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "a11e1fc7a93cfeb23ded",
@@ -769,8 +770,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-16T18:08:00+00:00",
       "source_url": "https://worldathletics.org/news/news/monaco-herculis-2021-warholm-rojas-gayle",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20First%20wave%20of%20champion%20athletes%20confirmed%20for%20Monaco.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3252337319",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "947fc1fdca6b204a2940",
@@ -781,8 +782,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-16T09:21:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-lokonyen-tokyo",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Lokonyen%3A%20%22We%20can%20give%20hope%20to%20other%20refugees%22.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1603088814",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "4c2f782b1efc60275284",
@@ -793,8 +794,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-15T21:05:00+00:00",
       "source_url": "https://worldathletics.org/news/report/kladno-kladenske-memorialy-belo-roos-pipi",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Belo%2C%20Roos%20and%20Pipi%20take%20down%20meeting%20records%20in%20Kladno.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1893250338",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "16695f9afbfff7ca7487",
@@ -805,8 +806,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-15T11:00:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/dorian-keletela-sprinter-olympic-refugee-team",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Tokyo%20selection%20is%20dream%20come%20true%20for%20Refugee%20Olympic%20Team%20member%20Keletela.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2323282212",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "2562607f44b8efd57767",
@@ -817,8 +818,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-14T10:21:00+00:00",
       "source_url": "https://worldathletics.org/news/feature/refugee-olympic-team-lohalith-tokyo",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Family%20and%20opportunity%20inspires%20Lohalith%20ahead%20of%20second%20Olympic%20appearance.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3605095871",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "ac4a5c75e33871134db5",
@@ -829,8 +830,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-13T22:11:00+00:00",
       "source_url": "https://worldathletics.org/news/report/arona-zheng-ninali-jiri-sykora",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Zheng%20and%20Sykora%20take%20the%20spoils%20in%20Arona.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3995315234",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     },
     {
       "id": "94f3af8a767bb0373946",
@@ -841,8 +842,8 @@
       "source_type": "official_institutional",
       "published_at": "2021-06-13T08:14:00+00:00",
       "source_url": "https://worldathletics.org/news/report/atleticageneve-2021-magi-debjani",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Roos%20breaks%20Swedish%20record%20in%20Sollentuna%2C%20Debjani%20breaks%20Belgian%20record%20in%20Geneva.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3775063111",
-      "image_type": "ai_generated"
+      "image_url": "",
+      "image_type": "ai_generated_local"
     }
   ]
 }
