@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T18:04:46.806754+00:00",
-  "total": 1300,
+  "updated_at": "2026-08-29T18:34:39.493935+00:00",
+  "total": 1316,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 105,
-    "India": 402,
+    "World": 106,
+    "India": 409,
     "Business": 169,
-    "Technology & AI": 97,
-    "Sports": 92,
-    "Entertainment": 286,
+    "Technology & AI": 98,
+    "Sports": 98,
+    "Entertainment": 287,
     "Lifestyle": 149
   },
   "articles": [
@@ -140,7 +140,7 @@
       "headline": "Nepal flash flood: India sends tunnel rescue team to Nepal",
       "summary": "The MEA says at least 287 Indians remain missing as on Saturday, August 29, and in addition, 128 persons of Indian origin are also missing following the disaster",
       "publisher": "The Hindu",
-      "published_at": "2026-08-29T17:02:52+00:00",
+      "published_at": "2026-08-29T18:03:17+00:00",
       "source_url": "https://www.thehindu.com/news/national/nepal-flash-flood-india-sends-tunnel-rescue-team-to-nepal/article71405468.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20flash%20flood%3A%20India%20sends%20tunnel%20rescue%20team%20to%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3566721977",
       "image_type": "ai_generated"
@@ -1848,6 +1848,17 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e25fb9bea256af9a08d7",
+      "category": "India",
+      "headline": "Centre finalising Art 371 framework for Ladakh, says Rijiju",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T18:09:54+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/centre-finalising-art-371-framework-for-ladakh-says-rijiju/articleshow/133617650.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Centre%20finalising%20Art%20371%20framework%20for%20Ladakh%2C%20says%20Rijiju.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4006144277",
       "image_type": "ai_generated"
     },
     {
@@ -4260,6 +4271,72 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5e000a7a9646cd8d2249",
+      "category": "India",
+      "headline": "Nainar Nagenthran accuses TVK-led government of bringing ‘religious politics’ into Assembly",
+      "summary": "He says the Speaker’s constitutional position required him to remain above caste and religious considerations",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:26:00+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-accuses-tvk-led-government-of-bringing-religious-politics-into-assembly/article71404973.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nainar%20Nagenthran%20accuses%20TVK-led%20government%20of%20bringing%20%E2%80%98religious%20politics%E2%80%99%20into%20Assembly.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2958965887",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3ddbcd42d7739ff73e51",
+      "category": "India",
+      "headline": "No place in Hindu thought for excluding Muslims: Bhagwat in New York",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T18:20:52+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20place%20in%20Hindu%20thought%20for%20excluding%20Muslims%3A%20Bhagwat%20in%20New%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4201703071",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4dd4164b61d97256033b",
+      "category": "India",
+      "headline": "Belagavi, Hubballi-Dharwad police commissioners transferred",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:18:19+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/belagavi-hubballi-dharwad-police-commissioners-transferred/article71405218.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Belagavi%2C%20Hubballi-Dharwad%20police%20commissioners%20transferred.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1893774286",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "961532693c81b0ec6bb1",
+      "category": "India",
+      "headline": "No material to prove Thaman was paid ₹10 lakh to compose TVK song, Vijay tells Madras High Court",
+      "summary": "Makes the submission in an application filed for rejecting the election petition challenging his victory from Perambur constituency",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:15:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/no-material-to-prove-thaman-was-paid-10-lakh-to-compose-tvk-song-vijay-tells-madras-high-court/article71404263.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20material%20to%20prove%20Thaman%20was%20paid%20%E2%82%B910%20lakh%20to%20compose%20TVK%20song%2C%20Vijay%20tells%20Madras%20High%20Court.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3149399921",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "27891aa40f4480b382ef",
+      "category": "India",
+      "headline": "‘Hindu who wants no Muslims in Bharat is not a Hindu’: RSS chief Mohan Bhagwat",
+      "summary": "The RSS leader arrived in the US on Tuesday as part of the organisation’s centenary",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T18:15:45+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/mohan-bhagwat-iskcon-new-york-news-event-madison-square-garden-us-visit-speech-101788026977855.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Hindu%20who%20wants%20no%20Muslims%20in%20Bharat%20is%20not%20a%20Hindu%E2%80%99%3A%20RSS%20chief%20Mohan%20Bhagwat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=320987634",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "230970ef5e090d4bb99d",
+      "category": "India",
+      "headline": "Two men from A.P. held for taking photographs inside Arunachaleswarar temple",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:08:54+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/two-men-from-ap-held-for-taking-photographs-inside-arunachaleswarar-temple/article71404599.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20men%20from%20A.P.%20held%20for%20taking%20photographs%20inside%20Arunachaleswarar%20temple.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3570205025",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7dac1ee7030921dff92e",
       "category": "India",
       "headline": "Goods engine derails near Arakkonam railway station",
@@ -5448,14 +5525,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "86eb4c0c7b03b4da382c",
+      "id": "b43bc3d46d3833a513c9",
       "category": "India",
-      "headline": "FSSAI cracks whip on Everest Food, hing powder sales halted after samples found ‘sub-standard’",
+      "headline": "Everest banned from selling hing powder, food regulator finds product ‘sub-standard’",
       "summary": "The FSSAI also pointed out the non-declaration of salt content exceeding 5% and non",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T13:20:50+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/fssai-cracks-whip-on-everest-foods-hing-powder-sales-halted-after-samples-found-substandard-101788005629339.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20cracks%20whip%20on%20Everest%20Food%2C%20hing%20powder%20sales%20halted%20after%20samples%20found%20%E2%80%98sub-standard%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1953553373",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Everest%20banned%20from%20selling%20hing%20powder%2C%20food%20regulator%20finds%20product%20%E2%80%98sub-standard%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2158394466",
       "image_type": "ai_generated"
     },
     {
@@ -9342,6 +9419,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "f118fefe373c66e421c3",
+      "category": "Technology & AI",
+      "headline": "Sony Music and Warner Chappell are suing Anthropic",
+      "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, the […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-29T18:20:15+00:00",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Sony%20Music%20and%20Warner%20Chappell%20are%20suing%20Anthropic.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2424292399",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c2cce136a52f6e187957",
+      "category": "Entertainment",
+      "headline": "Ray Winstone Told Off a Director Who Was ‘Groping’ His Female Co-Star During Filming: ‘Don’t You Dare Do That’",
+      "summary": "Ray Winstone recently recalled to The Times of London that he once told off an unnamed director after he saw them “groping” his female co-star. “I had this director once,” Winstone said. “I was in a scene where I had to pick up this girl, and the director wanted to show me what to do. […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T18:14:22+00:00",
+      "source_url": "https://variety.com/2026/tv/news/ray-winstone-told-off-director-groping-female-co-star-1236846594/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Ray%20Winstone%20Told%20Off%20a%20Director%20Who%20Was%20%E2%80%98Groping%E2%80%99%20His%20Female%20Co-Star%20During%20Filming%3A%20%E2%80%98Don%E2%80%99t%20You%20Dare%20Do%20That%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1542513226",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b7e8fc5dd534222b9819",
       "category": "Entertainment",
       "headline": "Venice Film Festival Scraps Jury Press Conference",
@@ -10629,6 +10728,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "0d6ce3b7bdfd84996213",
+      "category": "Sports",
+      "headline": "Watch Sportscene highlights of Saturday's Premiership action",
+      "summary": "Steven Thompson looks back at the afternoon's fixtures in the Scottish Premiership.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:15:08+00:00",
+      "source_url": "https://www.bbc.co.uk/iplayer/live/bbcscotland?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Watch%20Sportscene%20highlights%20of%20Saturday%27s%20Premiership%20action.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=821670535",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "e5220ca8749d12689858",
       "category": "Sports",
       "headline": "Today at the Test - England v Pakistan highlights",
@@ -10637,6 +10747,83 @@
       "published_at": "2026-08-29T19:00:00+00:00",
       "source_url": "https://www.bbc.co.uk/iplayer/live/bbcfour?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Today%20at%20the%20Test%20-%20England%20v%20Pakistan%20highlights.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=928435731",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c03d1e89ae263288ea31",
+      "category": "World",
+      "headline": "Australia usually hosts the world's biggest cuttlefish mating event - not this year",
+      "summary": "According to official figures only 1,811 cuttlefish turned up to mate this year, down 97% on last year.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T18:30:32+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c75gyw0nkzno?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20usually%20hosts%20the%20world%27s%20biggest%20cuttlefish%20mating%20event%20-%20not%20this%20year.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2241420803",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1b86040ca90eb72ec7d7",
+      "category": "Sports",
+      "headline": "Tonali struggles but Gonzalez impresses - player ratings for Tottenham v Newcastle",
+      "summary": "How Tottenham Hotspur and Newcastle United's players rated following Saturday's 2",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:26:50+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c93e8qv2qq0o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Tonali%20struggles%20but%20Gonzalez%20impresses%20-%20player%20ratings%20for%20Tottenham%20v%20Newcastle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4054398494",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T18:15:43+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bc8ac93b397bfbae6c67",
+      "category": "Sports",
+      "headline": "Maguire fires superb 63 as Alexander lead cut at Irish Open",
+      "summary": "Ireland's Leona Maguire fires a superb nine-under-par 63 at the Women's Irish Open at the K Club in County Kildare as Casandra Alexander leads by three going into Sunday's final round.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:15:19+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/golf/articles/cq63297y624o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Maguire%20fires%20superb%2063%20as%20Alexander%20lead%20cut%20at%20Irish%20Open.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=160421790",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d5306cdbeb34fd367409",
+      "category": "Sports",
+      "headline": "Lawrence helps England build big lead on rain-affected day at Lord's",
+      "summary": "Dan Lawrence hits an unbeaten half-century as England close on 177-7 in their second innings on day three of the second Test at Lord's, with the hosts leading by 357 and seemingly closing in on a series victory, with a match to spare.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:11:05+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/videos/c8r6jel75llo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Lawrence%20helps%20England%20build%20big%20lead%20on%20rain-affected%20day%20at%20Lord%27s.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3744357350",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2465041e35ed10788e3e",
+      "category": "Sports",
+      "headline": "South Africa hold off All Blacks fightback to level series",
+      "summary": "World champions South Africa deliver a powerful first-half performance as they edge past New Zealand and level 'Rugby's Greatest Rivalry' series at 1",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:08:14+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/rugby-union/articles/c1mvred1l7do?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20South%20Africa%20hold%20off%20All%20Blacks%20fightback%20to%20level%20series.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2024512813",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5e4f034088a8ba8dd358",
+      "category": "Sports",
+      "headline": "'Not bad for the worst team in Premier League history' - Hull's perfect start",
+      "summary": "Hull striker Oli McBurnie has a playful dig at his team's critics after beating Coventry to win their opening two Premier League games.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:03:52+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c7v4ezerjrgo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Not%20bad%20for%20the%20worst%20team%20in%20Premier%20League%20history%27%20-%20Hull%27s%20perfect%20start.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3331111515",
       "image_type": "ai_generated"
     },
     {
@@ -10670,17 +10857,6 @@
       "published_at": "2026-08-29T17:55:13+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cq5xl2vy20eo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Barry-Murphy%20optimistic%20over%20more%20Cardiff%20signings.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3881178617",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T17:55:01+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
@@ -11094,7 +11270,7 @@
       "id": "80a84b6bfa8f386a6662",
       "category": "World",
       "headline": "Ex-White House teleprompter operator fined $172,000 for Trump speech bets",
-      "summary": "Commodity Futures Trading Commission said Gabriel Perez wagered on Kalshi about words president used in speeches A White House teleprompter operator who left his post amid accusations that he used inside knowledge to make bets on Donald Trump ’s speeches on an online prediction market has been fined $172,000, according to federal regulators. Gabriel Perez exploited “material, nonpublic information” that he...",
+      "summary": "Commodity Futures Trading Commission said Gabriel Perez wagered on Kalshi about words president used in speeches A White House teleprompter operator who left his post amid accusations that he used inside knowledge to make bets on Donald Trump ’s speeches on an online prediction market has been fined $172,000, according to federal regulators. Gabriel Perez illicitly exploited “material, nonpublic information” that...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T13:33:29+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/29/former-white-house-teleprompter-operator-fined-kalshi",
