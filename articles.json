@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-29T22:04:48.788037+00:00",
-  "total": 1402,
+  "updated_at": "2026-08-29T22:34:25.667130+00:00",
+  "total": 1408,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 114,
-    "India": 445,
+    "World": 115,
+    "India": 448,
     "Business": 169,
     "Technology & AI": 101,
-    "Sports": 123,
+    "Sports": 125,
     "Entertainment": 301,
     "Lifestyle": 149
   },
@@ -674,6 +674,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3b5aab599327eb9b2e7d",
+      "category": "India",
+      "headline": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
+      "summary": "RSS chief Mohan Bhagwat at an event in New York on Saturday, August 29.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T21:40:15+00:00",
+      "source_url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Unity%20And%20Diversity%20In%20India%27s%20DNA%22%3A%20RSS%20Chief%20Mohan%20Bhagwat%20At%20New%20York%20Event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1788354832",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a21402d2292ce8458bd7",
       "category": "India",
       "headline": "FSSAI bans Everest, LG from selling hing",
@@ -682,17 +693,6 @@
       "published_at": "2026-08-29T21:21:07+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/fssai-bans-everest-lg-from-selling-hing/articleshow/133619574.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20bans%20Everest%2C%20LG%20from%20selling%20hing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2650555614",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3b5aab599327eb9b2e7d",
-      "category": "India",
-      "headline": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
-      "summary": "RSS chief Mohan Bhagwat at an event in New York on Saturday, August 29.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T21:10:32+00:00",
-      "source_url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Unity%20And%20Diversity%20In%20India%27s%20DNA%22%3A%20RSS%20Chief%20Mohan%20Bhagwat%20At%20New%20York%20Event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1788354832",
       "image_type": "ai_generated"
     },
     {
@@ -1958,6 +1958,17 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f61004185dea0d3d74c4",
+      "category": "India",
+      "headline": "BJP-SAD alliance revival gains ground ahead of Punjab polls",
+      "summary": "The BJP and Shiromani Akali Dal may revive their alliance for upcoming Punjab assembly elections. Both parties acknowledge this partnership as their strongest option despite seat-sharing disagreements. Talks have intensified since Prime Minister Narendra Modi met SAD chief Sukhbir Singh Badal recently. The BJP seeks a larger seat share and greater government role, reflecting its increased vote share.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T22:06:52+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/bjp-sad-alliance-revival-gains-ground-ahead-of-punjab-polls/articleshow/133619695.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP-SAD%20alliance%20revival%20gains%20ground%20ahead%20of%20Punjab%20polls.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=829138255",
       "image_type": "ai_generated"
     },
     {
@@ -4524,6 +4535,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "01f51de8cc02f6bbbaaa",
+      "category": "India",
+      "headline": "'Slippages reveal design flaw on Kanpur-Lucknow e-way'",
+      "summary": "Slippages on the Kanpur-Lucknow Expressway suggest design issues, not construction defects. Affected stretches will require rebuilding from the ground up, officials stated. A preliminary investigation identified weak, plastic soil as a primary cause. Poor drainage also contributed to the expressway's structural problems. The government awaits a final report on the detailed investigation.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T22:20:12+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/slippages-reveal-design-flaw-on-kanpur-lucknow-e-way/articleshow/133621424.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Slippages%20reveal%20design%20flaw%20on%20Kanpur-Lucknow%20e-way%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1553056127",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "dcba8ebd4a13a9fed886",
       "category": "Entertainment",
       "headline": "Was Mica Miller harassed by husband JP Miller? Her 911 calls reveal repeated pleas for help",
@@ -4532,6 +4554,17 @@
       "published_at": "2026-08-29T21:44:56+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/others/was-mica-miller-harassed-by-husband-jp-miller-her-911-calls-reveal-repeated-pleas-for-help-death-of-the-pastor-s-wife-101788030360311.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Was%20Mica%20Miller%20harassed%20by%20husband%20JP%20Miller%3F%20Her%20911%20calls%20reveal%20repeated%20pleas%20for%20help.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1905740081",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "465bc38e4caac78375fc",
+      "category": "India",
+      "headline": "RSS Chief Mohan Bhagwat's Keynote Speech In New York: Top Quotes",
+      "summary": "Mohan Bhagwat in Madison Square Garden.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T21:39:37+00:00",
+      "source_url": "https://www.ndtv.com/india-news/rss-chief-mohan-bhagwats-keynote-speech-in-new-york-top-quotes-11976379#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20RSS%20Chief%20Mohan%20Bhagwat%27s%20Keynote%20Speech%20In%20New%20York%3A%20Top%20Quotes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1957744349",
       "image_type": "ai_generated"
     },
     {
@@ -11300,6 +11333,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "b61bc04cf9c930f58b82",
+      "category": "World",
+      "headline": "One Nation claims victory on Secret Harbour byelection in Western Australia",
+      "summary": "One Nation candidate Luke Herdegen secures 57% of the vote after preferences as party’s WA leader says result will send shock waves across the country One Nation has claimed victory in the Secret Harbour state byelection in Western Australia With 74.5% of the vote counted, One Nation’s Luke Herdegen leads Labor’s Georgia Tree 57",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T22:29:43+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/30/one-nation-claims-victory-on-secret-harbour-byelection-in-western-australia",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20One%20Nation%20claims%20victory%20on%20Secret%20Harbour%20byelection%20in%20Western%20Australia.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4246661694",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T22:27:09+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fa9f54f70f755b93b4a2",
+      "category": "Sports",
+      "headline": "Hull agree deal with Frankfurt for winger Bahoya",
+      "summary": "Hull City agree a deal with Eintracht Frankfurt to sign winger Jean",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T22:24:56+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cdj4g2zrdpjo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hull%20agree%20deal%20with%20Frankfurt%20for%20winger%20Bahoya.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=785406797",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6ce8874e26ccdf7e26a0",
+      "category": "Sports",
+      "headline": "Cacace to face Ball in Belfast world title defence",
+      "summary": "Anthony Cacace will make the first defence of his WBA super",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T22:09:09+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/cn45x7535nlo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Cacace%20to%20face%20Ball%20in%20Belfast%20world%20title%20defence.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=279415114",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "0089ee6ec21ca636197f",
       "category": "Sports",
       "headline": "Wardley-Dubois rematch set for 17 October in London",
@@ -11330,17 +11407,6 @@
       "published_at": "2026-08-29T21:49:05+00:00",
       "source_url": "https://www.bbc.co.uk/sport/tennis/articles/cnvl3m06j6po?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20GB%27s%20Fery%20beaten%20in%20his%20first%20ATP%20Tour%20final.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1918315688",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T21:46:50+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
@@ -11985,7 +12051,7 @@
       "id": "b33355e8637ad7ae3144",
       "category": "World",
       "headline": "Artemis II astronauts receive nation's highest space honor for their successful moonshot",
-      "summary": "Reid Wiseman, Victor Glover, Christina Koch and Jeremy Hansen received the Congressional Space Medal of Honor The Artemis II astronauts who flew around the moon in April received the US’s highest space honor on Friday. Donald Trump presented the Congressional Space Medal of Honor to the three Americans and one Canadian whose lunar flyby for the US space agency Nasa set a new distance record for humanity. Continue...",
+      "summary": "Reid Wiseman, Victor Glover, Christina Koch and Jeremy Hansen receive Congressional Space Medal of Honor The Artemis II astronauts who flew around the moon in April received the US’s highest space honor on Friday. Donald Trump presented the Congressional Space Medal of Honor to the three Americans and one Canadian whose lunar flyby for the US space agency Nasa set a new distance record for humanity. Continue...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T16:03:37+00:00",
       "source_url": "https://www.theguardian.com/science/2026/aug/29/artemis-ii-astronauts-congressional-space-medal-of-honor",
@@ -12125,14 +12191,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "5116fb36d338b81ac6ed",
+      "id": "3fb64e4d341362afc66f",
       "category": "World",
-      "headline": "FBI no longer treating applicants’ experience with sex workers as automatic bar against hiring",
-      "summary": "Bureau will still dismiss those engaged with sex workers within past 10 years, three or more times overall, or while in public safety capacity The FBI is dropping a categorical hiring ban on applicants who have had sexual encounters with sex workers and will instead consider in a more holistic manner at least some candidates who have engaged in the practice in the past, according to people familiar with the...",
+      "headline": "FBI no longer banning all applicants who have had sexual encounters with sex workers",
+      "summary": "Bureau to still dismiss those with encounters within past 10 years, three or more times or while in public safety capacity The FBI is dropping a categorical hiring ban on applicants who have had sexual encounters with sex workers and will instead consider in a more holistic manner at least some candidates who have engaged in the practice in the past, according to people familiar with the matter. The move away...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T14:17:26+00:00",
       "source_url": "https://www.theguardian.com/us-news/2026/aug/29/fbi-apllicants-sex-workers",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20FBI%20no%20longer%20treating%20applicants%E2%80%99%20experience%20with%20sex%20workers%20as%20automatic%20bar%20against%20hiring.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4128043690",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20FBI%20no%20longer%20banning%20all%20applicants%20who%20have%20had%20sexual%20encounters%20with%20sex%20workers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2456512482",
       "image_type": "ai_generated"
     },
     {
