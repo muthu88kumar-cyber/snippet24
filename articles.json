@@ -1,18 +1,62 @@
 {
-  "updated_at": "2026-08-28T23:34:15.782372+00:00",
+  "updated_at": "2026-08-29T00:04:27.270807+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 21,
-    "India": 37,
+    "World": 22,
+    "India": 33,
     "Business": 0,
     "Technology & AI": 10,
     "Sports": 15,
-    "Entertainment": 14,
-    "Lifestyle": 3
+    "Entertainment": 16,
+    "Lifestyle": 4
   },
   "articles": [
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T23:55:40+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8ff1d957f8160429ac36",
+      "category": "World",
+      "headline": "Controversial plans for a Daniel Andrews sculpture officially scrapped by Victorian government",
+      "summary": "The $134,000 cost of the statue of the former Victorian premier has been heavily criticised by the Liberal opposition Get our breaking news email , free app or daily news podcast The Carroll government in Victoria has cancelled controversial plans for a statue of former Labor premier Daniel Andrews. Work began in May on the statue commemorating the former premier’s more than 3000 days in office, as part of a 1999...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T23:47:37+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/29/controversial-plans-for-a-daniel-andrews-sculpture-officially-scrapped-by-victorian-government",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Controversial%20plans%20for%20a%20Daniel%20Andrews%20sculpture%20officially%20scrapped%20by%20Victorian%20government.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3220664821",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1faaa645d90ff05c1587",
+      "category": "Entertainment",
+      "headline": "Nashville Airport Could Be Renamed for Dolly Parton, Tennessee Governor Announces",
+      "summary": "Country music icon, actress and philanthropist Dolly Parton dedicated her life to giving back to her home state of Tennessee, and now, three days after her death, her state is ready to give back to her, renewing an earlier proposal to rename the Nashville International Airport in her honor. Tennessee Gov. Bill Lee and the […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-28T23:36:56+00:00",
+      "source_url": "https://variety.com/2026/music/news/nashville-airport-could-be-renamed-for-dolly-parton-1236846385/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Nashville%20Airport%20Could%20Be%20Renamed%20for%20Dolly%20Parton%2C%20Tennessee%20Governor%20Announces.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1820809539",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "00a170fbccc699401453",
+      "category": "World",
+      "headline": "Trump announces new US oil agreement with Venezuela",
+      "summary": "US president says US will have ‘majority’ control of 65bn barrels of proven oil reserves Donald Trump announced Friday a new US oil agreement with Venezuela’s interim president Delcy Rodríguez, saying the US will have “majority” control of 65bn barrels of proven oil reserves. The terms of the agreement remain to be seen, but the US president said on his social-media platform that it had been brokered “through a...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-28T23:34:36+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/28/trump-venezuela-oil-agreement",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20announces%20new%20US%20oil%20agreement%20with%20Venezuela.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3492549409",
+      "image_type": "ai_generated"
+    },
     {
       "id": "643ece525ad284f57864",
       "category": "Technology & AI",
@@ -25,17 +69,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T23:29:20+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "397fa5c4b1a82bad469a",
       "category": "Technology & AI",
       "headline": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
@@ -44,6 +77,28 @@
       "published_at": "2026-08-28T23:24:27+00:00",
       "source_url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Chinese%20automakers%20are%20following%20Tesla%E2%80%99s%20bet%20that%20robots%20are%20the%20next%20big%20profit%20machine.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=444304857",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "71dfe9b9d05e89a5020f",
+      "category": "Lifestyle",
+      "headline": "What is somatic movement? Why slow, mindful exercise is gaining attention among spiritual seekers",
+      "summary": "This article will unveil how somantic movement may go beyond exercise according to Harvard Health.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-28T23:21:06+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/what-is-somatic-movement-why-slow-mindful-exercise-is-gaining-attention-among-spiritual-seekers-101787957837358.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20What%20is%20somatic%20movement%3F%20Why%20slow%2C%20mindful%20exercise%20is%20gaining%20attention%20among%20spiritual%20seekers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3742024391",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "621473a5359131ff9264",
+      "category": "Entertainment",
+      "headline": "What’s Coming to Disney+ in September 2026",
+      "summary": "It’s officially fall at Disney+, which is entering the month of September with a lineup of beloved spooky classics and all things football. “Coraline,” “ParaNorman” and “Jennifer’s Body” are among the titles kicking off the fall season on the streaming platform and Hulu, which will also see the season premieres of familiar favorites like “Chad […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-28T23:20:00+00:00",
+      "source_url": "https://variety.com/feature/whats-on-disney-plus-new-shows-movies-1203517920/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20What%E2%80%99s%20Coming%20to%20Disney%2B%20in%20September%202026.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=846332948",
       "image_type": "ai_generated"
     },
     {
@@ -1056,61 +1111,6 @@
       "published_at": "2026-08-28T19:07:24+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-features/adults-star-amita-rao-next-big-thing-interview-1236683336/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Adults%E2%80%99%20Star%20Amita%20Rao%20Is%20Not%20Issa%2C%20But%20She%20Sure%20Loves%20Playing%20Her.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=219239901",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d4d23f61d50512e05ae9",
-      "category": "India",
-      "headline": "Bengaluru court sentences eight persons to life imprisonment in 2017 murder case",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:06:38+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/bangalore/bengaluru-court-sentences-eight-persons-to-life-imprisonment-in-2017-murder-case/article71401667.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengaluru%20court%20sentences%20eight%20persons%20to%20life%20imprisonment%20in%202017%20murder%20case.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1614562541",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "acd8955f4c52cb09c76d",
-      "category": "India",
-      "headline": "Tilted apartment wing: Developer begins demolition, 49 flats to be rebuilt",
-      "summary": "A source in the GBA’s town planning section confirmed to The Hindu that the external agency that had given the soil investigation report had discrepancies, which led to the tilt",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:05:41+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/bangalore/tilted-apartment-wing-developer-begins-demolition-49-flats-to-be-rebuild/article71401184.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Tilted%20apartment%20wing%3A%20Developer%20begins%20demolition%2C%2049%20flats%20to%20be%20rebuilt.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2258748439",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "bc484d33abcfa52cc8c6",
-      "category": "World",
-      "headline": "Russia ramps up rhetoric but wants to avoid war with Nato, Western officials say",
-      "summary": "But they say Moscow will likely continue its \"hybrid activity\" against Nato members, short of direct military action.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T19:05:23+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cz0zm2j7ld1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Russia%20ramps%20up%20rhetoric%20but%20wants%20to%20avoid%20war%20with%20Nato%2C%20Western%20officials%20say.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1344767643",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "820126bde60186e27898",
-      "category": "India",
-      "headline": "Nagendra’s resignation comes as a morale booster for Karnataka BJP as it tastes first ‘political victory’ against new regime",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:04:34+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/resignation-comes-as-morale-booster-for-bjp-as-it-tastes-first-political-victory-against-new-regime/article71401804.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nagendra%E2%80%99s%20resignation%20comes%20as%20a%20morale%20booster%20for%20Karnataka%20BJP%20as%20it%20tastes%20first%20%E2%80%98political%20victory%E2%80%99%20against%20new%20regime.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=10339125",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "dcd6aeae7a98f173564a",
-      "category": "India",
-      "headline": "Karnataka Chief Minister D.K. Shivakumar directs officials to identify five cities other than Bengaluru for industrial development",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:02:51+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-chief-minister-dk-shivakumar-directs-officials-to-identify-five-cities-other-than-bengaluru-for-industrial-development/article71401370.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%20Chief%20Minister%20D.K.%20Shivakumar%20directs%20officials%20to%20identify%20five%20cities%20other%20than%20Bengaluru%20for%20industrial%20development.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1477284233",
       "image_type": "ai_generated"
     }
   ]
