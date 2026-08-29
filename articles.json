@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T20:34:22.432523+00:00",
-  "total": 1373,
+  "updated_at": "2026-08-29T21:04:25.652648+00:00",
+  "total": 1378,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 111,
-    "India": 437,
+    "India": 438,
     "Business": 169,
     "Technology & AI": 100,
-    "Sports": 114,
-    "Entertainment": 293,
+    "Sports": 115,
+    "Entertainment": 296,
     "Lifestyle": 149
   },
   "articles": [
@@ -4455,6 +4455,17 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f833ca93c97720469ec1",
+      "category": "India",
+      "headline": "Will work with SCO to free region from terror: PM ahead of summit",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T20:57:56+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20work%20with%20SCO%20to%20free%20region%20from%20terror%3A%20PM%20ahead%20of%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=219442571",
       "image_type": "ai_generated"
     },
     {
@@ -9782,6 +9793,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "1514d5b02695ff1e1d7b",
+      "category": "Entertainment",
+      "headline": "Owner Of ‘Heated Rivalry’ Cottage Did “Soul Searching” Before Agreeing To Season 2: “I’m A Private Guy”",
+      "summary": "After introducing the hottest piece of property in Canada, Heated Rivalry fans can expect a return to the cottage in Season 2. Michael Kutryk, the Toronto doctor who owns the Muskoka home that served as Shane’s (Hudson Williams) cottage in the Season 1 finale “The Cottage”, recalled that the show had a “very small budget” […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T20:53:57+00:00",
+      "source_url": "https://deadline.com/2026/08/owner-heated-rivalry-cottage-soul-searching-season-2-1237062692/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Owner%20Of%20%E2%80%98Heated%20Rivalry%E2%80%99%20Cottage%20Did%20%E2%80%9CSoul%20Searching%E2%80%9D%20Before%20Agreeing%20To%20Season%202%3A%20%E2%80%9CI%E2%80%99m%20A%20Private%20Guy%E2%80%9D.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3049062592",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "089f7c536f5e73ca3b8e",
       "category": "Technology & AI",
       "headline": "Alt-right troll Milo Yiannopoulos has been deported",
@@ -11135,10 +11157,43 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "f47170720e14a9e0db63",
+      "category": "Entertainment",
+      "headline": "Final Emmy Predictions in 116 Categories: HBO Max Poised to Dominate With ‘The Pitt’ as ‘Widow’s Bay’ and ‘Hacks’ Chase Opposite All-Time Records",
+      "summary": "Variety Awards Circuit section is the home for all awards news and related content throughout the year, featuring the following: the official predictions for the upcoming Oscars, Emmys, Grammys and Tony Awards ceremonies, curated by Variety chief awards editor Clayton Davis. The prediction pages reflect the current standings in the race and do not reflect personal preferences for any individual […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T20:55:00+00:00",
+      "source_url": "https://variety.com/lists/2026-emmys-predictions/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Final%20Emmy%20Predictions%20in%20116%20Categories%3A%20HBO%20Max%20Poised%20to%20Dominate%20With%20%E2%80%98The%20Pitt%E2%80%99%20as%20%E2%80%98Widow%E2%80%99s%20Bay%E2%80%99%20and%20%E2%80%98Hacks%E2%80%99%20Chase%20Opposite%20All-Time%20Records.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2122334629",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3513ad81e93369c3648e",
+      "category": "Entertainment",
+      "headline": "Chris Hansen Says Robert Pattinson’s ‘Primetime’ Performance Is ‘Overly Dramatic,’ But His Wife and Kids Think It’s a ‘Pretty Good Imitation’",
+      "summary": "Chris Hansen recently gave his reaction to Robert Pattinson’s impression of him in the upcoming A24 drama-thriller “Primetime,” which chronicles Hansen’s stint as host of Dateline NBC’s “To Catch a Predator.” “I mean, obviously he has practiced imitating me, and while I think it’s overly dramatic, I think there is a pretty good imitation there […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T20:45:05+00:00",
+      "source_url": "https://variety.com/2026/film/news/chris-hansen-robert-pattinson-primetime-overly-dramatic-1236846693/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Chris%20Hansen%20Says%20Robert%20Pattinson%E2%80%99s%20%E2%80%98Primetime%E2%80%99%20Performance%20Is%20%E2%80%98Overly%20Dramatic%2C%E2%80%99%20But%20His%20Wife%20and%20Kids%20Think%20It%E2%80%99s%20a%20%E2%80%98Pretty%20Good%20Imitation%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1470219521",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9ff69d70d3a885f71107",
+      "category": "Sports",
+      "headline": "Penge tied for lead in rain-delayed British Masters",
+      "summary": "England's Marco Penge and New Zealand's Daniel Hillier jointly lead after play is suspended during round three at a weather",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T20:43:49+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/golf/articles/cdj4gx2nv7xo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Penge%20tied%20for%20lead%20in%20rain-delayed%20British%20Masters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1814401522",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ef7d5e01ae9dd6e8bbe8",
       "category": "Sports",
       "headline": "Man City open talks with Liverpool over Gakpo",
-      "summary": "Manchester City open talks with Liverpool about signing Netherlands winger Cody Gakpo.",
+      "summary": "The Netherlands forward has also attracted interest from Tottenham, but sources indicate Manchester City is his preferred destination if he leaves Anfield.",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T20:17:18+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0z4m2mpo?at_medium=RSS&at_campaign=rss",
