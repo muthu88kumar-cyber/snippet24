@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T21:34:31.040099+00:00",
-  "total": 1391,
+  "updated_at": "2026-08-29T22:04:48.788037+00:00",
+  "total": 1402,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 113,
-    "India": 444,
+    "World": 114,
+    "India": 445,
     "Business": 169,
     "Technology & AI": 101,
-    "Sports": 119,
-    "Entertainment": 296,
+    "Sports": 123,
+    "Entertainment": 301,
     "Lifestyle": 149
   },
   "articles": [
@@ -4521,6 +4521,39 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dcba8ebd4a13a9fed886",
+      "category": "Entertainment",
+      "headline": "Was Mica Miller harassed by husband JP Miller? Her 911 calls reveal repeated pleas for help",
+      "summary": "Police reports reveal Mica Miller called 911 fourteen times before her death, raising questions about alleged harassment by husband JP Miller.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T21:44:56+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/others/was-mica-miller-harassed-by-husband-jp-miller-her-911-calls-reveal-repeated-pleas-for-help-death-of-the-pastor-s-wife-101788030360311.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Was%20Mica%20Miller%20harassed%20by%20husband%20JP%20Miller%3F%20Her%20911%20calls%20reveal%20repeated%20pleas%20for%20help.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1905740081",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "90bde4b8039ab55db8fe",
+      "category": "India",
+      "headline": "Congress & BJP clash over Haldwani ‘purification’ row, Rahul seeks FIR",
+      "summary": "BJP and Congress clashed over allegations of rally venue purification. Rahul Gandhi demanded an FIR, linking it to untouchability practices. BJP rebutted charges, showing organizers' videos and questioning the delay. Organizers stated a hawan followed cleaning for Ramlila, denying BJP links. Both parties exchanged accusations regarding caste divisions and past incidents.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T21:38:41+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/congress-bjp-clash-over-haldwani-purification-row-rahul-seeks-fir/articleshow/133619674.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20%26%20BJP%20clash%20over%20Haldwani%20%E2%80%98purification%E2%80%99%20row%2C%20Rahul%20seeks%20FIR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=272202309",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c0c1747343ba6ae17351",
+      "category": "Entertainment",
+      "headline": "What happened to Simon Cowell? AGT judge steps away temporarily; Kenan Thompson to fill in",
+      "summary": "Simon Cowell is taking a break from AGT for back surgery, six years after a bike accident left him with a broken back.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T21:19:56+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/hollywood/what-happened-to-simon-cowell-agt-judge-steps-away-temporarily-kenan-thompson-to-fill-in-101788035079261.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20What%20happened%20to%20Simon%20Cowell%3F%20AGT%20judge%20steps%20away%20temporarily%3B%20Kenan%20Thompson%20to%20fill%20in.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4224557417",
       "image_type": "ai_generated"
     },
     {
@@ -9496,6 +9529,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "0fea6cf2c7a7f61160ab",
+      "category": "Entertainment",
+      "headline": "‘Ali G: Who Iz I?’ Sparks Calls For Theater Boycott, Trailer Slammed Over Racist Stereotypes",
+      "summary": "Sacha Baron Cohen’s attempt to brush off an old character with Ali G: Who Iz I? is not going over without controversy. Following the release of the trailer for the Amazon MGM Studios sequel, an email campaign began on watchdog site NewsCord, sending more than 40,000 emails urging theaters to “leave the film off its […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T21:45:48+00:00",
+      "source_url": "https://deadline.com/2026/08/ali-g-who-iz-i-trailer-theater-boycott-racist-caricature-1237062699/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Ali%20G%3A%20Who%20Iz%20I%3F%E2%80%99%20Sparks%20Calls%20For%20Theater%20Boycott%2C%20Trailer%20Slammed%20Over%20Racist%20Stereotypes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1354736485",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "1c9127ac69e6b3f69d9a",
       "category": "Entertainment",
       "headline": "Shailene Woodley Recalls Her “Dream” Role as Mary Jane Being Cut From ‘The Amazing Spider-Man 2’",
@@ -9625,6 +9669,17 @@
       "published_at": "2026-01-19T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Claude%20Code%20costs%20up%20to%20%24200%20a%20month.%20Goose%20does%20the%20same%20thing%20for%20free..%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3234247586",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "92820c9984915678e610",
+      "category": "Entertainment",
+      "headline": "‘Borges and Me’ Review: Gentle, Nostalgic Literary Road Movie Is More Perky Than Poetic",
+      "summary": "American author Jay Parini’s 2020 memoir “Borges and Me: An Encounter” read as a charming extension of an anecdote any writer would dine out on for the rest of their life: the tale of how Parini, as a college student in the 1970s, was somehow partnered on a winding road trip through the Scottish Highlands […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T21:36:42+00:00",
+      "source_url": "https://variety.com/2026/film/news/borges-and-me-review-1236843724/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Borges%20and%20Me%E2%80%99%20Review%3A%20Gentle%2C%20Nostalgic%20Literary%20Road%20Movie%20Is%20More%20Perky%20Than%20Poetic.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3325374643",
       "image_type": "ai_generated"
     },
     {
@@ -11245,6 +11300,83 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "0089ee6ec21ca636197f",
+      "category": "Sports",
+      "headline": "Wardley-Dubois rematch set for 17 October in London",
+      "summary": "Daniel Dubois will defend his WBO heavyweight world title against the man he dethroned Fabio Wardley in a rematch on 17 October in London.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:56:21+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c5y3dlk0jkpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Wardley-Dubois%20rematch%20set%20for%2017%20October%20in%20London.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1397589026",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bd775bc760fd6e49ccbe",
+      "category": "World",
+      "headline": "Palestinian woman and NBC News team reportedly attacked in West Bank",
+      "summary": "Matt Bradley and crew assaulted while interviewing woman who said settlers had driven family out of home A Palestinian woman and an NBC News team are reported to have been attacked and injured by masked Israeli settlers in the Israeli-occupied West Bank on Saturday, amid worsening confrontations in the area. Benjamin Netanyahu said he condemned the violence committed “by a handful of rioters”. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T21:55:08+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Palestinian%20woman%20and%20NBC%20News%20team%20reportedly%20attacked%20in%20West%20Bank.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1461158347",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "017b7ad3a6efcb6e008d",
+      "category": "Sports",
+      "headline": "GB's Fery beaten in his first ATP Tour final",
+      "summary": "Arthur Fery misses out on his first ATP Tour title with a straight-set defeat by Ignacio Buse in the final of the Winston",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:49:05+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/cnvl3m06j6po?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20GB%27s%20Fery%20beaten%20in%20his%20first%20ATP%20Tour%20final.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1918315688",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T21:46:50+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6735e92af34a57499791",
+      "category": "Entertainment",
+      "headline": "Heidi Montag Recalls Dolly Parton Defending Her Amid Plastic Surgery Criticism",
+      "summary": "\"When I was at one of the hardest and most criticized moment of my life after my plastic surgery, Dolly was one of the only people in the industry who didn't take the opportunity to drag me down,\" 'The Hills' shared on X.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T21:46:33+00:00",
+      "source_url": "https://www.hollywoodreporter.com/news/general-news/heidi-montag-recalls-dolly-parton-defending-her-amid-plastic-surgery-criticism-1236684965/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Heidi%20Montag%20Recalls%20Dolly%20Parton%20Defending%20Her%20Amid%20Plastic%20Surgery%20Criticism.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3098744131",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "155283166b21f84b5952",
+      "category": "Sports",
+      "headline": "Humphries suffers early Hungarian Darts Trophy exit",
+      "summary": "Top seed Luke Humphries suffers shock 6",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:41:08+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/darts/articles/cwyzd117xv4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Humphries%20suffers%20early%20Hungarian%20Darts%20Trophy%20exit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1326177584",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "49e318be46963aa7c2f2",
+      "category": "Sports",
+      "headline": "Newcastle show there's plenty of life after Tonali",
+      "summary": "Newcastle United sold Sandro Tonali to Tottenham Hotspur, but the club look to have reinvested the money wisely following United's 2",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:28:16+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c14d0elejzdo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Newcastle%20show%20there%27s%20plenty%20of%20life%20after%20Tonali.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2321195621",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9b714b1a999b5f28a7e6",
       "category": "Sports",
       "headline": "Napoli interested in Woltemade loan - Sunday's gossip",
@@ -11297,17 +11429,6 @@
       "published_at": "2026-08-29T21:14:09+00:00",
       "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948040/rescuers-race-to-find-thousands-missing-after-deadly-himalayan-floods",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Rescuers%20race%20to%20find%20thousands%20missing%20after%20deadly%20Himalayan%20floods.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1927277025",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T21:06:02+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
