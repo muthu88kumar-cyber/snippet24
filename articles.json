@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T15:04:38.936564+00:00",
-  "total": 1168,
+  "updated_at": "2026-08-29T15:34:30.319984+00:00",
+  "total": 1200,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 99,
-    "India": 313,
+    "World": 101,
+    "India": 339,
     "Business": 166,
     "Technology & AI": 93,
-    "Sports": 80,
-    "Entertainment": 271,
+    "Sports": 83,
+    "Entertainment": 272,
     "Lifestyle": 146
   },
   "articles": [
@@ -1202,6 +1202,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "8b0871a58359653c747f",
+      "category": "India",
+      "headline": "Proposed medical college in Uttara Kannada, road in Bengaluru will be named after Hegde, says Karnataka Chief Minister",
+      "summary": "Chief Minister D.K. Shivakumar announced that the proposed medical college in Uttara Kannada, the home district of former Chief Minister Ramakrishna Hegde, and a major road in Shivaram Karanth Layout in Bengaluru will be named after the veteran leader",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:05:44+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/proposed-medical-college-in-uttara-kannada-road-in-bengaluru-will-be-named-after-hegde-says-karnataka-chief-minister/article71405188.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Proposed%20medical%20college%20in%20Uttara%20Kannada%2C%20road%20in%20Bengaluru%20will%20be%20named%20after%20Hegde%2C%20says%20Karnataka%20Chief%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3276283602",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "511f61b3d06f65eba52e",
       "category": "Entertainment",
       "headline": "Daayra: Is Meghna Gulzar’s New Film Inspired By A Real-Life Story After Talvar & Sam Bahadur?",
@@ -1661,6 +1672,116 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e0e2ac92ce59cb7aab4a",
+      "category": "India",
+      "headline": "Delhi's August sees above-normal rain, warm nights and three-year-high AQI",
+      "summary": "The capital also recorded its wettest first week of August in 15 years, receiving 127 mm of rainfall during the first seven days of the month.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T15:23:41+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/delhis-august-sees-above-normal-rain-warm-nights-and-three-year-high-aqi-101788016017733.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%27s%20August%20sees%20above-normal%20rain%2C%20warm%20nights%20and%20three-year-high%20AQI.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4251625576",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7ba1f30bdcd6591ac7ab",
+      "category": "India",
+      "headline": "Telangana to evaluate request from spacetech firms for Space City: IT Minister",
+      "summary": "Telangana has set its sights on space technology as a fourth pillar of its economic growth story, Mr. Sridhar Babu said",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:23:29+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/telangana-to-evaluate-request-from-spacetech-firms-for-space-city-it-minister/article71405291.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Telangana%20to%20evaluate%20request%20from%20spacetech%20firms%20for%20Space%20City%3A%20IT%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3732482850",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9e53ec6cf9377f278cd7",
+      "category": "India",
+      "headline": "Odisha govt. agrees to procure paddy from A.P. farmers in State",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:20:20+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/odisha-govt-agrees-to-procure-paddy-from-ap-farmers-in-state/article71404308.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Odisha%20govt.%20agrees%20to%20procure%20paddy%20from%20A.P.%20farmers%20in%20State.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=168529267",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "78d5d7e9e5fe387ba08c",
+      "category": "India",
+      "headline": "Gut microbiome lab launched at Hyderabad hospital to advance research into IBD",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:13:13+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/gut-microbiome-lab-launched-at-hyderabad-hospital-to-advance-research-into-ibd/article71405243.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Gut%20microbiome%20lab%20launched%20at%20Hyderabad%20hospital%20to%20advance%20research%20into%20IBD.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1086178326",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9a7a7152f465d70bb80f",
+      "category": "India",
+      "headline": "Hoysala personnel save Bengaluru man’s life after he gets chest pain on road",
+      "summary": "On assessing his condition, the personnel performed CPR (Cardiopulmonary Resuscitation) without delay.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:10:38+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/hoysala-personnel-save-bengaluru-mans-life-after-he-gets-chest-pain-on-road/article71404923.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Hoysala%20personnel%20save%20Bengaluru%20man%E2%80%99s%20life%20after%20he%20gets%20chest%20pain%20on%20road.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3737377754",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8c776af67f856a45789c",
+      "category": "India",
+      "headline": "TG SAFE flags expired food, spoiled vegetables, pest infestation at Hyderabad restaurants",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:09:47+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/tg-safe-flags-expired-food-spoiled-vegetables-pest-infestation-at-hyderabad-restaurants/article71405219.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20TG%20SAFE%20flags%20expired%20food%2C%20spoiled%20vegetables%2C%20pest%20infestation%20at%20Hyderabad%20restaurants.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3170475877",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "54596fd0d4adb1fea71f",
+      "category": "India",
+      "headline": "Fire guts TV repair shop in Keralam’s Perumbavoor",
+      "summary": "Fire at TV repair shop marks third such incident in Ernakulam’s suburbs in a week",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:08:36+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/fire-guts-tv-repair-shop-in-keralams-perumbavoor/article71404949.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Fire%20guts%20TV%20repair%20shop%20in%20Keralam%E2%80%99s%20Perumbavoor.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3552820269",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ee882fddb2b5eeec1979",
+      "category": "India",
+      "headline": "Kerala Cong (Joseph) opposes proposal for new Muvattupuzha district",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:07:00+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/kerala-cong-joseph-opposes-proposal-for-new-muvattupuzha-district/article71405199.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kerala%20Cong%20%28Joseph%29%20opposes%20proposal%20for%20new%20Muvattupuzha%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3572223373",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7c9b3bcbe5519d6860b7",
+      "category": "India",
+      "headline": "'We do not want to burden people': Auto, taxi unions oppose CNG hike in Delhi",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T15:05:49+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/we-do-not-want-to-burden-people-auto-taxi-unions-oppose-cng-hike-in-delhi/articleshow/133614604.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27We%20do%20not%20want%20to%20burden%20people%27%3A%20Auto%2C%20taxi%20unions%20oppose%20CNG%20hike%20in%20Delhi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=496004400",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0e5a69d2f355e81da113",
+      "category": "India",
+      "headline": "Keralam’s Thrissur goes wild as ‘tigers’ take the streets for Pulikkali",
+      "summary": "Rain clouds gathered overhead, but nothing could dampen the spirit as Pulikkali brought the curtains down on Thrissur’s Onam celebrations",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:03:54+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/keralams-thrissur-goes-wild-as-tigers-take-the-streets-for-pulikkali/article71405070.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Keralam%E2%80%99s%20Thrissur%20goes%20wild%20as%20%E2%80%98tigers%E2%80%99%20take%20the%20streets%20for%20Pulikkali.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=702815057",
       "image_type": "ai_generated"
     },
     {
@@ -3152,7 +3273,7 @@
       "id": "7f922c41bb36f7c8371a",
       "category": "India",
       "headline": "Assam Police constable dies by suicide at Guwahati quarters, probe on: Police",
-      "summary": "A 47-year",
+      "summary": "A 47",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-28T10:12:38+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/assam-police-constable-dies-by-suicide-at-guwahati-quarters-probe-on-police-101787911958675.html",
@@ -3754,6 +3875,193 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ffeb2f506f52be2d29af",
+      "category": "India",
+      "headline": "CPI(M) protests over exclusion of Kalaburagi from drought-hit list",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:30:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/cpim-protests-over-exclusion-of-kalaburagi-from-drought-hit-list/article71405183.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CPI%28M%29%20protests%20over%20exclusion%20of%20Kalaburagi%20from%20drought-hit%20list.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1536665771",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c3cec88e13ae932e686d",
+      "category": "India",
+      "headline": "Onam week celebrations closes on August 30; VP to flag off closing day procession",
+      "summary": "The procession will pass through the heart of the city covering Vellayambalam, Museum, Palayam and Statue before concluding at East Fort",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:27:55+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/onam-week-celebrations-closes-on-august-30-vp-to-flag-off-closing-day-procession/article71405204.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Onam%20week%20celebrations%20closes%20on%20August%2030%3B%20VP%20to%20flag%20off%20closing%20day%20procession.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4086609989",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a527d24ad836312dcbdd",
+      "category": "India",
+      "headline": "Over 3,600 students receive degrees at third convocation of Mohan Babu University",
+      "summary": "Pro",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:27:18+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/over-3600-students-receive-degrees-at-third-convocation-of-mohan-babu-university/article71405265.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Over%203%2C600%20students%20receive%20degrees%20at%20third%20convocation%20of%20Mohan%20Babu%20University.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=419589949",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1253054eec2c30e606df",
+      "category": "India",
+      "headline": "Entry of off-road vehicles, tourists without prior permission banned at Chokramudy revenue land",
+      "summary": "Following the opening of the hills to visitors by the Forest department, a large number of off",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:26:16+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/entry-of-off-road-vehicles-tourists-without-prior-permission-banned-at-chokramudy-revenue-land/article71405253.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Entry%20of%20off-road%20vehicles%2C%20tourists%20without%20prior%20permission%20banned%20at%20Chokramudy%20revenue%20land.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1963693968",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b5229480e9632554bfb6",
+      "category": "India",
+      "headline": "A.P. GREEN chairman urges people to plant trees, enhance green cover",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:23:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-green-chairman-urges-people-to-plant-trees-enhance-green-cover/article71404845.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A.P.%20GREEN%20chairman%20urges%20people%20to%20plant%20trees%2C%20enhance%20green%20cover.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2024890597",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4f30440074b054d2bc77",
+      "category": "India",
+      "headline": "Speculation, demand for answers and a meme-fest post AIMIM leader Baig’s expulsion",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:21:24+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/speculation-demand-for-answers-and-a-meme-fest-post-aimim-leader-baigs-expulsion/article71404654.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Speculation%2C%20demand%20for%20answers%20and%20a%20meme-fest%20post%20AIMIM%20leader%20Baig%E2%80%99s%20expulsion.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2445918645",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5486a6e04bd9659da683",
+      "category": "India",
+      "headline": "Commuters embrace KBR one-way, wonder about the need for flyovers",
+      "summary": "Since the one-way was introduced, the commute has been hassle-free; before the one-way, it would take half an hour to cover the road from the Cancer Hospital to Road No.45; now it takes five minutes, said a regular commuter",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:21:04+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/commuters-embrace-kbr-one-way-wonder-about-the-need-for-flyovers/article71401925.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Commuters%20embrace%20KBR%20one-way%2C%20wonder%20about%20the%20need%20for%20flyovers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1800825375",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b73f09f8313bc120c2ef",
+      "category": "India",
+      "headline": "CRDA allocates 7.97 acres to Sancta Maria International School in Amaravati",
+      "summary": "The land has been allotted at Thulluru village on freehold basis, with each acre priced at ₹50 lakh",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:21:02+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/crda-allocates-797-acres-to-sancta-maria-international-school-in-amaravati/article71405212.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CRDA%20allocates%207.97%20acres%20to%20Sancta%20Maria%20International%20School%20in%20Amaravati.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1110351788",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "11416c9b3124901ef8a0",
+      "category": "India",
+      "headline": "PM Modi begins Central Asia visit with two-day offcial visit to Tashkent before SCO summit",
+      "summary": "From Tashkent, Mr. Modi will travel to Bishkek to participate in the 26th SCO Summit",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:20:58+00:00",
+      "source_url": "https://www.thehindu.com/news/national/looking-to-advance-indias-vision-for-region-free-from-terror-says-pm-modi-as-he-embarks-on-visit-to-uzbekistan-kyrgyzstan/article71403493.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20begins%20Central%20Asia%20visit%20with%20two-day%20offcial%20visit%20to%20Tashkent%20before%20SCO%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2135641011",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "48137dc987765f7dcd56",
+      "category": "India",
+      "headline": "A section of traders at Palayam market agree to shift to Kalluthankadavu",
+      "summary": "Only a small number of wholesale merchants attend meeting; traders raise concerns over location of shops allotted to them",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:20:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/a-section-of-traders-at-palayam-market-agree-to-shift-to-kalluthankadavu/article71405266.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A%20section%20of%20traders%20at%20Palayam%20market%20agree%20to%20shift%20to%20Kalluthankadavu.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3636374025",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dbc18ddcdadfd5b62d50",
+      "category": "India",
+      "headline": "56 students of private college hostel taken ill in East Godavari",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:17:08+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/56-students-of-private-college-hostel-taken-ill-in-east-godavari/article71405268.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2056%20students%20of%20private%20college%20hostel%20taken%20ill%20in%20East%20Godavari.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4190065241",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3c032cfc1ee3a448574e",
+      "category": "India",
+      "headline": "KBN University hosts Continuing Medical Education programme",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:14:34+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/kbn-university-hosts-continuing-medical-education-programme/article71405174.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20KBN%20University%20hosts%20Continuing%20Medical%20Education%20programme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2247465411",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c31a9c6a3eb3fca689c8",
+      "category": "Entertainment",
+      "headline": "Ram Kapoor says Shreya Kalra ‘needs to grow up’ as he addresses Lock Upp kiss row: ‘Not a single woman ever complained’",
+      "summary": "Ram Kapoor addresses the Shreya Kalra kiss incident from Lock Upp Season 2, clarifying that Shreya did not intend to imply any wrongdoing.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T15:13:54+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/ram-kapoor-says-shreya-kalra-needs-to-grow-up-as-he-addresses-kiss-row-lock-upp-2-101788015534274.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Ram%20Kapoor%20says%20Shreya%20Kalra%20%E2%80%98needs%20to%20grow%20up%E2%80%99%20as%20he%20addresses%20Lock%20Upp%20kiss%20row%3A%20%E2%80%98Not%20a%20single%20woman%20ever%20complained%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=976164966",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16b9ad998f84eec567aa",
+      "category": "India",
+      "headline": "A.P. Speaker calls for effective implementation of sports quota for athletes",
+      "summary": "Addressing the gathering at the Amaravati Championship 2026 conclusion, Chintakayala Ayyanna Patrudu says providing incentives and job opportunities to students who excel in sports would further boost interest in athletics",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:10:20+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-speaker-calls-for-effective-implementation-of-sports-quota-for-athletes/article71405187.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A.P.%20Speaker%20calls%20for%20effective%20implementation%20of%20sports%20quota%20for%20athletes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3153764834",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "59a40812c37c42fa7e4e",
+      "category": "India",
+      "headline": "Government planning IT park for Belagavi, says Satish Jarkiholi",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:08:28+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/government-planning-it-park-for-belagavi-says-satish-jarkiholi/article71404882.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Government%20planning%20IT%20park%20for%20Belagavi%2C%20says%20Satish%20Jarkiholi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3637881016",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "162a49ae0f0a1adba74d",
+      "category": "India",
+      "headline": "Pattadar passbooks only solution to land problems: govt.",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:06:28+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/pattadar-passbooks-only-solution-to-land-problems-govt/article71405058.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Pattadar%20passbooks%20only%20solution%20to%20land%20problems%3A%20govt..%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2433074240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6fe7010b3e08a7b3fca3",
+      "category": "India",
+      "headline": "‘No threat to UP from Nepal floods’: State Jal Shakti minister says authorities remain on alert",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T15:06:20+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/no-threat-to-up-from-nepal-floods-state-jal-shakti-minister-says-authorities-remain-on-alert/articleshow/133614028.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98No%20threat%20to%20UP%20from%20Nepal%20floods%E2%80%99%3A%20State%20Jal%20Shakti%20minister%20says%20authorities%20remain%20on%20alert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2233509472",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "da3b39ba4d4da7dfda4a",
       "category": "India",
       "headline": "CM inaugurates 111th Jayanti celebrations of Rajendra Swami",
@@ -3883,17 +4191,6 @@
       "published_at": "2026-08-29T14:30:02+00:00",
       "source_url": "https://www.thehindu.com/news/national/telangana/three-year-free-training-programme-for-law-graduates/article71405116.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Three-year%20free%20training%20programme%20for%20Law%20graduates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1615033485",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "11416c9b3124901ef8a0",
-      "category": "India",
-      "headline": "PM Modi begins Central Asia visit with two-day offcial visit to Tashkent before SCO summit",
-      "summary": "From Tashkent, Mr. Modi will travel to Bishkek to participate in the 26th SCO Summit",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T14:29:39+00:00",
-      "source_url": "https://www.thehindu.com/news/national/looking-to-advance-indias-vision-for-region-free-from-terror-says-pm-modi-as-he-embarks-on-visit-to-uzbekistan-kyrgyzstan/article71403493.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20begins%20Central%20Asia%20visit%20with%20two-day%20offcial%20visit%20to%20Tashkent%20before%20SCO%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2135641011",
       "image_type": "ai_generated"
     },
     {
@@ -8220,6 +8517,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5fda8e9947eee687d440",
+      "category": "Sports",
+      "headline": "Football fans pay tribute to crash death officers",
+      "summary": "PC Matthew Blades and PC Tom Clough died in a head",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T13:02:27+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5y5727d02xo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Football%20fans%20pay%20tribute%20to%20crash%20death%20officers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4185358805",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "bea407a99b8a361a2a6a",
       "category": "Lifestyle",
       "headline": "‘It gives Shein’: how did polyester become the world’s most-hated material?",
@@ -8319,14 +8627,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f94e62095db4917f715b",
+      "id": "f63611c9a63fe702f363",
       "category": "Entertainment",
-      "headline": "Bill Maher Gives Unsavory Dolly Parton Tribute While Criticizing Media Coverage of Her Death",
+      "headline": "Bill Maher’s Dolly Parton Tribute Strikes a Sour Note With Fans",
       "summary": "Another tribute, like Maher's, that drew negative attention was that of Ricky Schroder, who portrayed Parton's father in two biopic movies based on her childhood.",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-29T05:33:39+00:00",
       "source_url": "https://www.hollywoodreporter.com/tv/tv-news/bill-maher-dolly-parton-death-tribute-1236684800/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%20Gives%20Unsavory%20Dolly%20Parton%20Tribute%20While%20Criticizing%20Media%20Coverage%20of%20Her%20Death.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=569401785",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%E2%80%99s%20Dolly%20Parton%20Tribute%20Strikes%20a%20Sour%20Note%20With%20Fans.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3354154423",
       "image_type": "ai_generated"
     },
     {
@@ -9408,6 +9716,94 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d10ba098ab4d325d2922",
+      "category": "Sports",
+      "headline": "Leader Pogacar abandons Vuelta after crash",
+      "summary": "Race leader Tadej Pogacar pulls out of the Vuelta a Espana after crashing during stage eight of the three",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T15:30:35+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cycling/articles/c0qx0ndg373o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leader%20Pogacar%20abandons%20Vuelta%20after%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3367867576",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "20614b3eacf7e805fd0f",
+      "category": "World",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T15:27:56+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "29a78a11305cecdb55b1",
+      "category": "World",
+      "headline": "James Cleverly resigns from shadow cabinet to run for mayor of London",
+      "summary": "Shadow minister for housing, communities and local government to resign with immediate effect James Cleverly has resigned from the shadow cabinet to run for mayor of London. The Tory heavyweight, who was once home and foreign secretary and is shadow minister for housing, communities and local government, told the Sunday Times he will resign with immediate effect. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T15:25:34+00:00",
+      "source_url": "https://www.theguardian.com/politics/2026/aug/29/james-cleverly-resigns-conservative-shadow-cabinet-london-mayor",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20James%20Cleverly%20resigns%20from%20shadow%20cabinet%20to%20run%20for%20mayor%20of%20London.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2995450076",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "72725a52af9f42c5dd15",
+      "category": "World",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T15:13:42+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "feed665711db3943c08a",
+      "category": "World",
+      "headline": "Michigan Senate candidate Mike Rogers says he saw Bin Laden’s body with his ‘own eyes’. He did not",
+      "summary": "Ex-House intel committee chair, now running against Abdul El-Sayed, instead saw photo of Osama bin Laden’s body In a recent fundraising email, the Republican candidate for Michigan ’s open US Senate seat, former congressman Mike Rogers, appeared to mislead supporters about his past by suggesting that he had played an active role in the killing of Osama bin Laden , the leader of al-Qaida who was shot and killed in...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T15:07:53+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/michigan-senate-candidate-mike-rogers-osama-bin-laden",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Michigan%20Senate%20candidate%20Mike%20Rogers%20says%20he%20saw%20Bin%20Laden%E2%80%99s%20body%20with%20his%20%E2%80%98own%20eyes%E2%80%99.%20He%20did%20not.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3570777880",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "193e896a07539f29d96d",
+      "category": "World",
+      "headline": "Royal Navy spent three days tracking Russian vessels in UK waters",
+      "summary": "Three vessels and a helicopter deployed to monitor four ships travelling through the North Sea to the Channel The Royal Navy spent three days tracking Russian vessels as they passed through UK waters, it has emerged. The “intense” 72-hour operation took place last week, with radars used to monitor four ships that made their way from the North Sea through to the Channel. Continue reading...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T15:06:07+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/royal-navy-tracking-russian-vessels-uk-waters-channel-north-sea",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Royal%20Navy%20spent%20three%20days%20tracking%20Russian%20vessels%20in%20UK%20waters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1972633384",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ac828e6322d5d4472496",
+      "category": "Sports",
+      "headline": "Forest in advanced talks to sign Munoz from Palace",
+      "summary": "Nottingham Forest are in advanced talks over a deal worth up to £25m to sign Crystal Palace defender Daniel Munoz.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T15:03:58+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0vmgxrgo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20in%20advanced%20talks%20to%20sign%20Munoz%20from%20Palace.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1686163904",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fa0c25eeb6dc8b7788be",
+      "category": "World",
+      "headline": "Number of missing in Nepal and Tibet rises to nearly 3,000 as operations continue",
+      "summary": "Nepal requests foreign ⁠help in identification and storing of bodies, DNA testing and rescuing people from tunnels Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates The number of people killed in the floods in Nepal has risen to at least 675, the country’s disaster authority has said. Seven have also been confirmed dead in Tibet by Chinese state media, taking the total killed...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T15:00:37+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20missing%20in%20Nepal%20and%20Tibet%20rises%20to%20nearly%203%2C000%20as%20operations%20continue.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1391407254",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "469e9abb34297cdca95c",
       "category": "Entertainment",
       "headline": "Here’s How to Watch Moses Itauma vs. Filip Hrgovic Boxing Pay-Per-View Live Online",
@@ -9419,17 +9815,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "fa0c25eeb6dc8b7788be",
-      "category": "World",
-      "headline": "Number of missing in Nepal and Tibet rises to nearly 3,000 as operations continue",
-      "summary": "Nepal requests foreign ⁠help in identification and storing of bodies, DNA testing and rescuing people from tunnels Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates The number of people killed in the floods in Nepal has risen to at least 675, the country’s disaster authority has said. Seven have also been confirmed dead in Tibet by Chinese state media, taking the total killed...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T14:59:40+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20missing%20in%20Nepal%20and%20Tibet%20rises%20to%20nearly%203%2C000%20as%20operations%20continue.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1391407254",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "102dc236d63bac0c3634",
       "category": "Sports",
       "headline": "Swansea can still improve after unbeaten start - Matos",
@@ -9438,17 +9823,6 @@
       "published_at": "2026-08-29T14:47:02+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c2l8djxy54ro?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Swansea%20can%20still%20improve%20after%20unbeaten%20start%20-%20Matos.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2418419888",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "20614b3eacf7e805fd0f",
-      "category": "World",
-      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
-      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T14:43:04+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
       "image_type": "ai_generated"
     },
     {
@@ -9493,17 +9867,6 @@
       "published_at": "2026-08-29T14:22:19+00:00",
       "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948209/photos-see-the-aftermath-of-deadly-flash-floods-in-nepal",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Photos%3A%20See%20the%20aftermath%20of%20deadly%20flash%20floods%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2510621885",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "72725a52af9f42c5dd15",
-      "category": "World",
-      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
-      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T14:18:11+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
       "image_type": "ai_generated"
     },
     {
@@ -9570,17 +9933,6 @@
       "published_at": "2026-08-29T14:01:46+00:00",
       "source_url": "https://www.bbc.co.uk/sport/boxing/videos/c8d3j6y758go?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27I%20still%20go%20Nando%27s%27%20-%20Itauma%20on%20fame%2C%20books%20%26%20The%20Odyssey.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2692544599",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "193e896a07539f29d96d",
-      "category": "World",
-      "headline": "Royal Navy spent three days tracking Russian vessels in UK waters",
-      "summary": "Three vessels and a helicopter deployed to monitor four ships travelling through the North Sea to the Channel The Royal Navy spent three days tracking Russian vessels as they passed through UK waters, it has emerged. The “intense” 72-hour operation took place last week, with radars used to monitor four ships that made their way from the North Sea through to the Channel. Continue reading...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T13:56:06+00:00",
-      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/royal-navy-tracking-russian-vessels-uk-waters-channel-north-sea",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Royal%20Navy%20spent%20three%20days%20tracking%20Russian%20vessels%20in%20UK%20waters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1972633384",
       "image_type": "ai_generated"
     },
     {
