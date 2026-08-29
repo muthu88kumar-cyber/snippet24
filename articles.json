@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T18:34:39.493935+00:00",
-  "total": 1316,
+  "updated_at": "2026-08-29T19:04:39.861359+00:00",
+  "total": 1330,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 106,
-    "India": 409,
+    "India": 418,
     "Business": 169,
-    "Technology & AI": 98,
-    "Sports": 98,
-    "Entertainment": 287,
+    "Technology & AI": 99,
+    "Sports": 100,
+    "Entertainment": 289,
     "Lifestyle": 149
   },
   "articles": [
@@ -1851,6 +1851,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c54a9f4f82c0c2f7a84a",
+      "category": "India",
+      "headline": "At 387, city turns up the spirit at The Hindu’s Made of Chennai festival",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:46:31+00:00",
+      "source_url": "https://www.thehindu.com/news/national/at-387-city-turns-up-the-spirit-at-the-hindus-made-of-chennai-festival/article71405778.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20At%20387%2C%20city%20turns%20up%20the%20spirit%20at%20The%20Hindu%E2%80%99s%20Made%20of%20Chennai%20festival.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1105788370",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a622e027fb60a05c6576",
+      "category": "Entertainment",
+      "headline": "Who is Suzie Skinner? 5 things to know about JP Miller's new wife as Netflix revisits Mica’s death",
+      "summary": "Suzie Skinner married pastor JP Miller in June 2025, over a year after his estranged wife Mica's death. Here is everything we know about her.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T18:32:27+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/others/suzie-skinner-5-things-to-know-about-jp-miller-s-new-wife-as-netflix-death-of-the-pastor-s-wife-revisits-mica-s-death-101788023553274.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Who%20is%20Suzie%20Skinner%3F%205%20things%20to%20know%20about%20JP%20Miller%27s%20new%20wife%20as%20Netflix%20revisits%20Mica%E2%80%99s%20death.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2530461921",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "65b340e94c1479d3c969",
+      "category": "India",
+      "headline": "Congress Councillor Murdered In Punjab. Attackers Chased His Bike, Opened Fire",
+      "summary": "Gurpreet Gopi was with another man on a motorcycle when the attackers came in a car.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T18:19:19+00:00",
+      "source_url": "https://www.ndtv.com/india-news/congress-councillor-gurpreet-singh-gopi-shot-dead-in-punjab-after-being-chased-election-dispute-suspected-behind-attack-11976132#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20Councillor%20Murdered%20In%20Punjab.%20Attackers%20Chased%20His%20Bike%2C%20Opened%20Fire.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2344483620",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "e25fb9bea256af9a08d7",
       "category": "India",
       "headline": "Centre finalising Art 371 framework for Ladakh, says Rijiju",
@@ -1859,6 +1892,39 @@
       "published_at": "2026-08-29T18:09:54+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/centre-finalising-art-371-framework-for-ladakh-says-rijiju/articleshow/133617650.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Centre%20finalising%20Art%20371%20framework%20for%20Ladakh%2C%20says%20Rijiju.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4006144277",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ff65cf21bce52177a43c",
+      "category": "India",
+      "headline": "Delhi Government Deploys Top Officers To Probe 139 Waterlogging Hotspots",
+      "summary": "Commuters waded through waist",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T18:09:04+00:00",
+      "source_url": "https://www.ndtv.com/india-news/delhi-government-deploys-top-officers-to-probe-139-waterlogging-hotspots-11976119#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%20Government%20Deploys%20Top%20Officers%20To%20Probe%20139%20Waterlogging%20Hotspots.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2105523157",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c76750643652ce78a045",
+      "category": "India",
+      "headline": "Maharashtra government in touch with 338 of the 404 stranded in Nepal",
+      "summary": "45 tourists who had travelled with an Ahilyanagar",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:02:14+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-government-in-touch-with-338-of-the-404-stranded-in-nepal/article71405763.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Maharashtra%20government%20in%20touch%20with%20338%20of%20the%20404%20stranded%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4140247024",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "10ed14caf86979b4544f",
+      "category": "India",
+      "headline": "3 Teens Drown In Assam's Jorhat During Birthday Celebration",
+      "summary": "(Representational Image)",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T17:57:28+00:00",
+      "source_url": "https://www.ndtv.com/india-news/3-teens-drown-in-assams-jorhat-during-birthday-celebration-11976096#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%20Teens%20Drown%20In%20Assam%27s%20Jorhat%20During%20Birthday%20Celebration.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4023529653",
       "image_type": "ai_generated"
     },
     {
@@ -1881,6 +1947,17 @@
       "published_at": "2026-08-29T17:36:50+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/jk-leaders-react-to-samay-rainas-kashmiri-bihari-row-valley-incomplete-without-kashmiri-pandits-101788021649683.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20J%26K%20leaders%20react%20to%20Samay%20Raina%27s%20Kashmiri-Bihari%20row%3A%20%27Valley%20incomplete%20without%20Kashmiri%20pandits%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1223984938",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9b13df29a281cec5f218",
+      "category": "India",
+      "headline": "Congress Targets AAP At Amritsar's Baba Bakala Event Skipped By Key Leaders",
+      "summary": "The conference largely focused on attacking the Aam Aadmi Party government in Punjab.Image posted on X by @CHARANJITCHANNI",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T17:31:57+00:00",
+      "source_url": "https://www.ndtv.com/india-news/congress-targets-aap-at-amritsars-baba-bakala-event-skipped-by-key-leaders-11976024#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20Targets%20AAP%20At%20Amritsar%27s%20Baba%20Bakala%20Event%20Skipped%20By%20Key%20Leaders.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1661167297",
       "image_type": "ai_generated"
     },
     {
@@ -4271,6 +4348,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4007a0c5e37f218d3bba",
+      "category": "India",
+      "headline": "Two youth held for chain snatching in Vellore",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:37:50+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/two-youth-held-for-chain-snatching-in-vellore/article71404597.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20youth%20held%20for%20chain%20snatching%20in%20Vellore.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1824909629",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c2e46cfe7badfa3652db",
+      "category": "Entertainment",
+      "headline": "Will Nashville airport be renamed after Dolly Parton? Tennessee plans to honor music icon",
+      "summary": "Tennessee plans to rename Nashville International Airport after Dolly Parton, just days after the country music icon’s death.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T18:33:53+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/music/will-nashville-airport-be-renamed-after-dolly-parton-tennessee-plans-to-honor-music-icon-101788027246100.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Will%20Nashville%20airport%20be%20renamed%20after%20Dolly%20Parton%3F%20Tennessee%20plans%20to%20honor%20music%20icon.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1497284051",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "5e000a7a9646cd8d2249",
       "category": "India",
       "headline": "Nainar Nagenthran accuses TVK-led government of bringing ‘religious politics’ into Assembly",
@@ -4337,6 +4436,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "eae323793d2e6941e066",
+      "category": "India",
+      "headline": "\"Any Hindu Who Thinks...\": RSS Chief Mohan Bhagwat On 'What About Muslims' Question In US",
+      "summary": "Mohan Bhagwat during an event in New York on Saturday, August 29.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T17:59:52+00:00",
+      "source_url": "https://www.ndtv.com/india-news/rss-chief-mohan-bhagwat-was-asked-what-about-us-muslims-his-reply-11976081#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Any%20Hindu%20Who%20Thinks...%22%3A%20RSS%20Chief%20Mohan%20Bhagwat%20On%20%27What%20About%20Muslims%27%20Question%20In%20US.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1071881325",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7dac1ee7030921dff92e",
       "category": "India",
       "headline": "Goods engine derails near Arakkonam railway station",
@@ -4356,6 +4466,17 @@
       "published_at": "2026-08-29T17:52:58+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/alagappa-manonmaniam-sundaranar-varsities-get-vice-chancellors-in-charge/article71405660.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Alagappa%2C%20Manonmaniam%20Sundaranar%20varsities%20get%20Vice-Chancellors%20in-charge.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1007609257",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9fa55273c0e3d9a1048e",
+      "category": "India",
+      "headline": "Before The Nepal Flood, A Glacial Fall: Tracing The Trigger, And A 100-km Killer Surge",
+      "summary": "Devighat, 55 km from the avalanche site in a straight line, 80 km along the river channel.IANS",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T17:52:49+00:00",
+      "source_url": "https://www.ndtv.com/india-news/before-the-deluge-a-glacial-fall-tracing-the-trigger-of-nepal-catastrophe-and-the-100-km-killer-run-11975599#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Before%20The%20Nepal%20Flood%2C%20A%20Glacial%20Fall%3A%20Tracing%20The%20Trigger%2C%20And%20A%20100-km%20Killer%20Surge.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4088164695",
       "image_type": "ai_generated"
     },
     {
@@ -4411,6 +4532,17 @@
       "published_at": "2026-08-29T17:18:18+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-speaker-calls-for-effective-implementation-of-sports-quota-for-athletes/article71405187.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20A.P.%20Speaker%20calls%20for%20effective%20implementation%20of%20sports%20quota%20for%20athletes.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3153764834",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0035fca169d40924d28c",
+      "category": "India",
+      "headline": "\"Matter Of Concern\": Chirag Paswan On M Kharge Rally \"Purification\" Row, Takes Dig At Rahul Gandhi",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T17:17:59+00:00",
+      "source_url": "https://www.ndtv.com/india-news/those-expressing-concern-today-are-very-people-who-ruled-for-years-chirag-paswan-hits-back-at-rahul-gandhi-on-discrimination-against-dalits-remarks-11974576#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Matter%20Of%20Concern%22%3A%20Chirag%20Paswan%20On%20M%20Kharge%20Rally%20%22Purification%22%20Row%2C%20Takes%20Dig%20At%20Rahul%20Gandhi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2984340340",
       "image_type": "ai_generated"
     },
     {
@@ -4631,17 +4763,6 @@
       "published_at": "2026-08-29T15:55:52+00:00",
       "source_url": "https://www.thehindu.com/news/international/nepal-floods-bodies-buried-in-slush-families-refusing-food-khalsa-aid-volunteers-witness-devastation/article71405347.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20floods%3A%20%E2%80%98Bodies%20buried%20in%20slush%2C%20families%20refusing%20food%E2%80%99%2C%20Khalsa%20Aid%20volunteers%20witness%20devastation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2780007004",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "17fe5dceb6108aeb6389",
-      "category": "India",
-      "headline": "Before The Nepal Flood, A Glacial Fall: Tracing The Trigger, And A 100-km Killer Run",
-      "summary": "Devighat, 55 km from the avalanche site in a straight line, 80 km along the river channel.IANS",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T15:53:39+00:00",
-      "source_url": "https://www.ndtv.com/india-news/before-the-deluge-a-glacial-fall-tracing-the-trigger-of-nepal-catastrophe-and-the-100-km-killer-run-11975599#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Before%20The%20Nepal%20Flood%2C%20A%20Glacial%20Fall%3A%20Tracing%20The%20Trigger%2C%20And%20A%20100-km%20Killer%20Run.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=330064389",
       "image_type": "ai_generated"
     },
     {
@@ -9419,6 +9540,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "29922029ad58583bbb3c",
+      "category": "Technology & AI",
+      "headline": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T18:41:59+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Sony%20Music%2C%20Warner%20sue%20Anthropic%2C%20alleging%20a%20%E2%80%9Cbrazen%20campaign%E2%80%9D%20of%20intellectual%20property%20theft.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=696135432",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "f118fefe373c66e421c3",
       "category": "Technology & AI",
       "headline": "Sony Music and Warner Chappell are suing Anthropic",
@@ -10750,6 +10882,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T18:50:17+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c03d1e89ae263288ea31",
       "category": "World",
       "headline": "Australia usually hosts the world's biggest cuttlefish mating event - not this year",
@@ -10772,14 +10915,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T18:15:43+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "id": "74b3b500cbd2ac3138a3",
+      "category": "Sports",
+      "headline": "Vaughan backs Lawrence for extended run in England team",
+      "summary": "Former captain Michael Vaughan backs batter Dan Lawrence for a run in England's Test side. How would you solve impending selection headache?",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:21:55+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/cgrvw52zdrpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Vaughan%20backs%20Lawrence%20for%20extended%20run%20in%20England%20team.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=742627624",
       "image_type": "ai_generated"
     },
     {
@@ -10824,6 +10967,17 @@
       "published_at": "2026-08-29T18:03:52+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c7v4ezerjrgo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Not%20bad%20for%20the%20worst%20team%20in%20Premier%20League%20history%27%20-%20Hull%27s%20perfect%20start.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3331111515",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "73ceade359d8480b30d6",
+      "category": "Sports",
+      "headline": "Durham taken to final day despite needing only four runs to win",
+      "summary": "Division Two leaders Durham will need four runs on the final day to beat Gloucestershire.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:01:38+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/c2l8dnpx9zqo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Durham%20taken%20to%20final%20day%20despite%20needing%20only%20four%20runs%20to%20win.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1872955462",
       "image_type": "ai_generated"
     },
     {
@@ -10951,7 +11105,7 @@
       "id": "3dd62bd3bd89589955c6",
       "category": "Entertainment",
       "headline": "Anne Hathaway Joins Tom Cruise In ‘Days Of Thunder 2’ At Paramount",
-      "summary": "Paramount Pictures is really revving its engines on the upcoming Days of Thunder 2 starring Tom Cruise as Anne Hathaway is set to join Cruise in the sequel. Cruise announced the news on his social platforms featuring a picture of the two A-listers leaning against a Nascar race car in Daytona. The picture also announced […]",
+      "summary": "Paramount Pictures is really revving its engines on the upcoming Days of Thunder 2 starring Tom Cruise, with Anne Hathaway now set to join Cruise in the sequel. Cruise revealed the news Saturday on his social platforms featuring a picture of the two A-listers leaning against a NASCAR race car in Daytona. The post also […]",
       "publisher": "Deadline",
       "published_at": "2026-08-29T16:59:44+00:00",
       "source_url": "https://deadline.com/2026/08/anne-hathaway-tom-cruise-days-of-thunder-2-1237062516/",
