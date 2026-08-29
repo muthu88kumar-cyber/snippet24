@@ -1,18 +1,84 @@
 {
-  "updated_at": "2026-08-29T00:34:22.921926+00:00",
+  "updated_at": "2026-08-29T01:05:09.917808+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 25,
-    "India": 32,
+    "World": 27,
+    "India": 29,
     "Business": 0,
     "Technology & AI": 10,
-    "Sports": 13,
-    "Entertainment": 16,
-    "Lifestyle": 4
+    "Sports": 12,
+    "Entertainment": 17,
+    "Lifestyle": 5
   },
   "articles": [
+    {
+      "id": "0e59b996673ee74b87f6",
+      "category": "World",
+      "headline": "Right-wing commentator Milo Yiannopoulos detained by ICE",
+      "summary": "The British citizen, who lives and works in the US, has supported Trump and ICE agents in the past.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:46:02+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20detained%20by%20ICE.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3792654929",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d69e781632a7a3e3d7a9",
+      "category": "Entertainment",
+      "headline": "Zak Starkey and the Who Have Kissed and Made Up, as Rehearsal Reunion Is Revealed",
+      "summary": "Apparently the deep and much-talked-about rift between the Who and former (and future?) drummer Zak Starkey was not quite a hell-freezes-over situation after all. Starkey, who was famously revealed to have been unceremoniously handed his walking orders in April 2025, is now back with Roger Daltrey and Pete Townshend … or at least he has […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T00:43:17+00:00",
+      "source_url": "https://variety.com/2026/music/news/zak-starkey-the-who-reconcile-rehearsal-1236846409/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Zak%20Starkey%20and%20the%20Who%20Have%20Kissed%20and%20Made%20Up%2C%20as%20Rehearsal%20Reunion%20Is%20Revealed.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1368836838",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6a2dffdbc2a9b1a97857",
+      "category": "Entertainment",
+      "headline": "Jelly Roll Clarifies Political Views, Regrets Not Taking “Opportunity to Speak Up” at Grammys",
+      "summary": "The singer-songwriter opened up about his beliefs during his final night guest hosting 'Jimmy Kimmel Live!' after a Trump joke he made earlier in the week sparked backlash from conservatives.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T00:42:48+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/jelly-roll-clarifies-political-views-after-grammys-1236684749/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jelly%20Roll%20Clarifies%20Political%20Views%2C%20Regrets%20Not%20Taking%20%E2%80%9COpportunity%20to%20Speak%20Up%E2%80%9D%20at%20Grammys.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=90917385",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a416779e77a890f7d3b0",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing people rises to 2,478 – latest updates",
+      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T00:40:07+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20rises%20to%202%2C478%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1424723063",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "858336a86e4d930186ae",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
+      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T00:36:39+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6f89f2cea01dc5631e28",
+      "category": "World",
+      "headline": "How 'Book Queen' Dolly Parton inspired millions of children with gift of reading",
+      "summary": "Families across the globe share how free books from Parton's Imagination Library helped their children.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:35:04+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cpwlrrzp8eeo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20How%20%27Book%20Queen%27%20Dolly%20Parton%20inspired%20millions%20of%20children%20with%20gift%20of%20reading.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=284982042",
+      "image_type": "ai_generated"
+    },
     {
       "id": "7e150587e1b8e20cc895",
       "category": "Entertainment",
@@ -25,14 +91,36 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "199df6ea35449403f992",
+      "id": "3fdd3ef301c9086ac59a",
       "category": "World",
-      "headline": "US and Venezuela reach 'historic' oil deal, Trump says",
+      "headline": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
+      "summary": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T00:32:17+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Landlady%20to%209%2F11%20hijackers%20reveals%20their%20links%20to%20alleged%20Saudi%20spy.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=569579862",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bb71bd974d87ebd239c3",
+      "category": "Lifestyle",
+      "headline": "Quote of the day by Michael Jackson: ‘To me, nothing is more important than making people happy, giving them…'",
+      "summary": "Michael Jackson's quote reminds us that bringing joy to people can be a worthy purpose in life, and how genuine the legend was about his work.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T00:30:03+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/art-culture/quote-of-the-day-by-michael-jackson-to-me-nothing-is-more-important-than-making-people-happy-giving-them-101787931617214.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Quote%20of%20the%20day%20by%20Michael%20Jackson%3A%20%E2%80%98To%20me%2C%20nothing%20is%20more%20important%20than%20making%20people%20happy%2C%20giving%20them%E2%80%A6%27.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3753804303",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c3eca489c31043ec5192",
+      "category": "World",
+      "headline": "Trump says US has 'historic' deal to control 65bn barrels of Venezuela's oil",
       "summary": "The agreement would grant the US majority control of over 65 billion barrels of proven Venezuelan oil reserves, Trump said.",
       "publisher": "BBC News",
       "published_at": "2026-08-29T00:25:07+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20US%20and%20Venezuela%20reach%20%27historic%27%20oil%20deal%2C%20Trump%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3304354523",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20US%20has%20%27historic%27%20deal%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030477565",
       "image_type": "ai_generated"
     },
     {
@@ -44,17 +132,6 @@
       "published_at": "2026-08-29T00:15:19+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20What%20tariffs%20will%20really%20cost%20Canadians%20and%20Americans.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2556361857",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T00:09:17+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
       "image_type": "ai_generated"
     },
     {
@@ -72,7 +149,7 @@
       "id": "ac8a0e992e4797e94a73",
       "category": "World",
       "headline": "Canada poaches dozens of top US researchers for its universities",
-      "summary": "Lured by millions of new research funding from the Carney government, 48 US researchers in fields like climate and medicine will soon be moving north.",
+      "summary": "Researchers in fields like climate and medicine are being lured north by new research funding.",
       "publisher": "BBC News",
       "published_at": "2026-08-28T23:47:38+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c209gd5jnq1o?at_medium=RSS&at_campaign=rss",
@@ -377,17 +454,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "3ad3af95e164fd7a0a3b",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing people in Nepal rises to 1,924 – latest updates",
-      "summary": "Nepali disaster authority confirms jump of more than 400 in total of those unaccounted for, with 584 deaths confirmed in Nepal and five in Tibet Flood rescue efforts resume Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project swamped by Wednesday’s...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T21:53:43+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20in%20Nepal%20rises%20to%201%2C924%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2344129699",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "53db4777910a34b6684c",
       "category": "World",
       "headline": "Large fire near Wembley Stadium disrupts tube and rail services",
@@ -583,17 +649,6 @@
       "published_at": "2026-08-28T21:04:30+00:00",
       "source_url": "https://www.theguardian.com/thefilter-us/2026/aug/28/best-labor-day-sales-deals",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20I%20dug%20through%20hundreds%20of%20Labor%20Day%20sales%20to%20find%20real%20deals%20on%20high-quality%20products%20that%20last.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2122986324",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0e59b996673ee74b87f6",
-      "category": "World",
-      "headline": "Right-wing commentator Milo Yiannopoulos detained by ICE",
-      "summary": "The British citizen, who lives and works in the US, has supported Trump and ICE agents in the past.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T21:01:39+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20detained%20by%20ICE.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3792654929",
       "image_type": "ai_generated"
     },
     {
@@ -1056,61 +1111,6 @@
       "published_at": "2026-08-28T19:30:38+00:00",
       "source_url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20An%20Anthropic%20researcher%20just%20gave%20us%20a%20peek%20at%20self-improving%20AI.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2032652192",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5a1af8c42120d623babf",
-      "category": "India",
-      "headline": "Vellore International School U-15 inter-school football tournament to begin on August 31",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:28:25+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/vellore-international-school-u-15-inter-school-football-tournament-to-begin-on-august-31/article71401654.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Vellore%20International%20School%20U-15%20inter-school%20football%20tournament%20to%20begin%20on%20August%2031.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3374169776",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b5793788a11e359b9e2a",
-      "category": "Entertainment",
-      "headline": "Top Toronto Fest Party Host Expects More Studio Bashes, Tighter Budgets: “No One Is Throwing Money Around”",
-      "summary": "For TIFF's 51st edition, Charles Khabouth predicts his downtown restaurants and nightclubs will have more talent dinners and premiere parties than last year, even as major studios and streamers reduce overall spending.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T19:27:24+00:00",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/top-toronto-party-host-studio-bashes-1236684498/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Top%20Toronto%20Fest%20Party%20Host%20Expects%20More%20Studio%20Bashes%2C%20Tighter%20Budgets%3A%20%E2%80%9CNo%20One%20Is%20Throwing%20Money%20Around%E2%80%9D.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=819620792",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3e87c13b0c500ffd8431",
-      "category": "India",
-      "headline": "Change in design of flyover on Anna Salai made due to lack of alignment with metro stations",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:23:44+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/change-in-design-of-flyover-on-anna-salai-made-due-to-lack-of-alignment-with-metro-stations/article71402002.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Change%20in%20design%20of%20flyover%20on%20Anna%20Salai%20made%20due%20to%20lack%20of%20alignment%20with%20metro%20stations.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1667391278",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9368f9d06cc24da3bf25",
-      "category": "Sports",
-      "headline": "How will Scottish clubs respond to Euro disappointments?",
-      "summary": "Read the best storylines before this weekend's full card of Scottish Premiership fixtures.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T19:21:38+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/cddv0564vy7o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20How%20will%20Scottish%20clubs%20respond%20to%20Euro%20disappointments%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3423502154",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7425524c7582726d0bc5",
-      "category": "India",
-      "headline": "Shiksha schools hold annual sports meet",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:20:54+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/shiksha-schools-hold-annual-sports-meet/article71400454.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Shiksha%20schools%20hold%20annual%20sports%20meet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1337245003",
       "image_type": "ai_generated"
     }
   ]
