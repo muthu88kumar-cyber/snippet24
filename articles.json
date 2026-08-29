@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-29T21:04:25.652648+00:00",
-  "total": 1378,
+  "updated_at": "2026-08-29T21:34:31.040099+00:00",
+  "total": 1391,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 111,
-    "India": 438,
+    "World": 113,
+    "India": 444,
     "Business": 169,
-    "Technology & AI": 100,
-    "Sports": 115,
+    "Technology & AI": 101,
+    "Sports": 119,
     "Entertainment": 296,
     "Lifestyle": 149
   },
@@ -55,6 +55,17 @@
       "published_at": "2026-08-29T11:46:37+00:00",
       "source_url": "https://www.koimoi.com/box-office/profitable-films/most-profitable-bollywood-films-of-2026-at-the-indian-box-office/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Most%20Profitable%20Bollywood%20Films%20Of%202026%20At%20The%20Indian%20Box%20Office.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=28111635",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6d61eb116340abcc65b7",
+      "category": "India",
+      "headline": "Missing Assam Man Detained In Bangladesh For Illegal Entry, Smuggling Drugs",
+      "summary": "BGB claimed that the Indian man was smuggling drugs and arms into Bangladesh.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T19:58:05+00:00",
+      "source_url": "https://www.ndtv.com/india-news/missing-assam-man-detained-in-bangladesh-for-illegal-entry-smuggling-drugs-11976296#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Missing%20Assam%20Man%20Detained%20In%20Bangladesh%20For%20Illegal%20Entry%2C%20Smuggling%20Drugs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1768623782",
       "image_type": "ai_generated"
     },
     {
@@ -509,6 +520,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ab588f730fb7a56e106a",
+      "category": "India",
+      "headline": "August rainfall fails to reduce India's monsoon deficit",
+      "summary": "India's cumulative monsoon rainfall deficit remains despite August's better-than-expected rains. This deficit has caused a significant acreage gap in kharif crop sowing. Paddy and maize acreage have both reported notable declines compared to last year. Erratic rainfall distribution prevented increased acreage for most kharif crops. Several states, including Bihar and Andhra Pradesh, face substantial rainfall...",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T21:27:29+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/august-rainfall-fails-to-reduce-indias-monsoon-deficit/articleshow/133619584.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20August%20rainfall%20fails%20to%20reduce%20India%27s%20monsoon%20deficit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=590024067",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e0e42af7ff00881f8200",
+      "category": "India",
+      "headline": "Man on Phuket-B’luru flight tries to hide drugs in overhead panel, held",
+      "summary": "A passenger flying from Phuket to Bengaluru allegedly tried to hide narcotics. He attempted to conceal thirteen packets of contraband substance in an overhead panel. The passenger then discarded some of the substance into the lavatory bin. Upon landing in Bangalore, customs officials arrested the individual at the aerobridge. Air India Express is cooperating with authorities in the ongoing investigation.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T21:15:39+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/man-on-phuket-bluru-flight-tries-to-hide-drugs-in-overhead-panel-held/articleshow/133619567.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Man%20on%20Phuket-B%E2%80%99luru%20flight%20tries%20to%20hide%20drugs%20in%20overhead%20panel%2C%20held.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3941903225",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "99ba94cec40b44907d8d",
       "category": "Entertainment",
       "headline": "Toxic Box Office Collection Day 1: Yash Film Hits Century In India, Falls Short Of KGF 2 Opening",
@@ -638,6 +671,28 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a21402d2292ce8458bd7",
+      "category": "India",
+      "headline": "FSSAI bans Everest, LG from selling hing",
+      "summary": "The Food Safety and Standards Authority of India has issued prohibition orders against two spice companies. Everest Food Products and Laljee Godhoo and Company faced these orders for non-compliance issues. Samples of compounded asafoetida and hing powder did not meet alcohol",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T21:21:07+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/fssai-bans-everest-lg-from-selling-hing/articleshow/133619574.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20bans%20Everest%2C%20LG%20from%20selling%20hing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2650555614",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3b5aab599327eb9b2e7d",
+      "category": "India",
+      "headline": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
+      "summary": "RSS chief Mohan Bhagwat at an event in New York on Saturday, August 29.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T21:10:32+00:00",
+      "source_url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Unity%20And%20Diversity%20In%20India%27s%20DNA%22%3A%20RSS%20Chief%20Mohan%20Bhagwat%20At%20New%20York%20Event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1788354832",
       "image_type": "ai_generated"
     },
     {
@@ -1397,6 +1452,17 @@
       "published_at": "2026-08-27T07:50:38+00:00",
       "source_url": "https://www.ndtv.com/entertainment/alpha-ott-release-alia-bhatt-sharvaris-spy-thriller-heads-to-netflix-on-raksha-bandhan-11965532#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Alpha%20OTT%20Release%3A%20Alia%20Bhatt%2C%20Sharvari%27s%20Spy%20Thriller%20Heads%20To%20Netflix%20On%20Raksha%20Bandhan.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1605014832",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "db38054760b92b1ad468",
+      "category": "India",
+      "headline": "BJP president pulls up 3 Delhi MPs for visiting Sajjan Kumar’s house",
+      "summary": "Nitin Nabin, the BJP president, took disciplinary action against three Delhi MPs who visited the recently deceased Sajjan Kumar's home. Kumar, notorious for his conviction in the anti-Sikh riots, passed away at the age of eighty. This controversial visit comes at a crucial time for the party as they prepare for the Punjab assembly elections.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T21:11:06+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/bjp-president-pulls-up-3-delhi-mps-for-visiting-sajjan-kumars-house/articleshow/133619553.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20president%20pulls%20up%203%20Delhi%20MPs%20for%20visiting%20Sajjan%20Kumar%E2%80%99s%20house.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3952462203",
       "image_type": "ai_generated"
     },
     {
@@ -9793,6 +9859,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ccdf60b4f0a36bea09e5",
+      "category": "Technology & AI",
+      "headline": "Vicariously hike the Appalachian in the gorgeous A Trail Tale",
+      "summary": "I used to be an avid hiker and would try to go backpacking a few times a year. I always dreamed of thru-hiking the Appalachian Trail, but life kind of got in the way. (Turns out jobs, wives, and children aren't thrilled with the idea of you disappearing for three months.) But I've been longing […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-29T20:59:26+00:00",
+      "source_url": "https://www.theverge.com/entertainment/986461/hike-appalachian-trail-pixel-art-a-trail-tale",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Vicariously%20hike%20the%20Appalachian%20in%20the%20gorgeous%20A%20Trail%20Tale.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=295643383",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "1514d5b02695ff1e1d7b",
       "category": "Entertainment",
       "headline": "Owner Of ‘Heated Rivalry’ Cottage Did “Soul Searching” Before Agreeing To Season 2: “I’m A Private Guy”",
@@ -11157,6 +11234,83 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5137e2104e84f0e602a3",
+      "category": "Sports",
+      "headline": "Watch Match of the Day",
+      "summary": "Highlights from four Premier League matches, including Liverpool v Nottingham Forest.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T22:35:30+00:00",
+      "source_url": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Watch%20Match%20of%20the%20Day.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1644506151",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9b714b1a999b5f28a7e6",
+      "category": "Sports",
+      "headline": "Napoli interested in Woltemade loan - Sunday's gossip",
+      "summary": "Napoli show interest in Newcastle forward Nick Woltemade, Manchester City winger Jack Grealish is wanted by Sunderland and Arsenal explore a move for Lille forward Matias Fernandez",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:19:11+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/ckg8x1wwgn8o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Napoli%20interested%20in%20Woltemade%20loan%20-%20Sunday%27s%20gossip.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1153030093",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6f0d2c498787147575dc",
+      "category": "Sports",
+      "headline": "£300m spent, bottom of the table... but Spurs boss De Zerbi 'not angry'",
+      "summary": "Having spent more than £300m in the summer, Tottenham find themselves bottom of the Premier League, without a point or a goal, but boss Roberto de Zerbi remains optimistic.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:15:46+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/clyqn158n5jo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%C2%A3300m%20spent%2C%20bottom%20of%20the%20table...%20but%20Spurs%20boss%20De%20Zerbi%20%27not%20angry%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2623304465",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "189fe303d81f876643d5",
+      "category": "Sports",
+      "headline": "Dubois beats Moore to keep Baumgardner in picture",
+      "summary": "Caroline Dubois coasts to victory over Amelia Moore in Birmingham to defend her WBC and WBO lightweight titles and stay on course for a blockbuster meeting with Alycia Baumgardner.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T21:14:34+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c07lnmv755go?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Dubois%20beats%20Moore%20to%20keep%20Baumgardner%20in%20picture.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1161850574",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a4665ceeb3ac816204cb",
+      "category": "World",
+      "headline": "Getting help to Nepal's flood survivors is proving difficult",
+      "summary": "Blocked roads and monsoon weather are complicating efforts to get food, shelter and emergency hygeine to survivors of Nepal's catastrophic floods. World Vision's Dhruba Gurmachhan explains what survivors need the most.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-29T21:14:10+00:00",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948125/getting-help-to-nepals-flood-survivors-is-proving-difficult",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Getting%20help%20to%20Nepal%27s%20flood%20survivors%20is%20proving%20difficult.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3071939963",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "14bab997bb11aac4c6c1",
+      "category": "World",
+      "headline": "Rescuers race to find thousands missing after deadly Himalayan floods",
+      "summary": "Rescue crews are struggling through blocked roads, high mountain canyons and dangerous terrain as they search for thousands of people missing in Nepal and Tibet.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-29T21:14:09+00:00",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948040/rescuers-race-to-find-thousands-missing-after-deadly-himalayan-floods",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Rescuers%20race%20to%20find%20thousands%20missing%20after%20deadly%20Himalayan%20floods.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1927277025",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T21:06:02+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "f47170720e14a9e0db63",
       "category": "Entertainment",
       "headline": "Final Emmy Predictions in 116 Categories: HBO Max Poised to Dominate With ‘The Pitt’ as ‘Widow’s Bay’ and ‘Hacks’ Chase Opposite All-Time Records",
@@ -11242,17 +11396,6 @@
       "published_at": "2026-08-29T19:57:55+00:00",
       "source_url": "https://www.theguardian.com/music/2026/aug/29/tennessee-dolly-parton-airport-name-change",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Tennessee%20governor%20says%20he%20backs%20airport%20name%20change%20to%20honor%20Dolly%20Parton.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2940046955",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T19:57:36+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
