@@ -1,18 +1,73 @@
 {
-  "updated_at": "2026-08-29T02:04:21.083315+00:00",
+  "updated_at": "2026-08-29T02:34:12.561424+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
     "World": 27,
-    "India": 29,
+    "India": 27,
     "Business": 0,
     "Technology & AI": 9,
     "Sports": 11,
-    "Entertainment": 19,
-    "Lifestyle": 5
+    "Entertainment": 20,
+    "Lifestyle": 6
   },
   "articles": [
+    {
+      "id": "a1bd7452a659e18c188f",
+      "category": "Entertainment",
+      "headline": "Bill Maher Delivers Lamest Dolly Parton Tribute Yet",
+      "summary": "Last week, Bill Maher dedicated his long-running HBO show “Real Time” to defending Trump “human printer” Natalie Harp — after admitting he was too afraid to mock her oddly close relationship with President Trump because Laura Loomer sued him for ridiculing theirs (the lawsuit was tossed) — and getting chummy with Hunter Biden during his […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T02:28:12+00:00",
+      "source_url": "https://variety.com/2026/tv/news/bill-maher-lamest-dolly-parton-tribute-real-time-hbo-1236846445/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bill%20Maher%20Delivers%20Lamest%20Dolly%20Parton%20Tribute%20Yet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3712545817",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fa9c0b01c2c8aede190b",
+      "category": "Lifestyle",
+      "headline": "Veteran actor Dimple Kapadia's bouncy hair at Dil Chahta Hai reunion steals the show: Know her secret, from onion juice…",
+      "summary": "Dimple Kapadia proves glam only gets better with time at Dil Chahta Hai reunion. Her secret to voluminous hair? Onion juice, oiling and lots of protein.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T02:11:13+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/veteran-actor-dimple-kapadia-dil-chahta-hai-reunion-steals-the-show-what-is-her-secret-onion-juice-oil-blend-recipe-101787968133691.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Veteran%20actor%20Dimple%20Kapadia%27s%20bouncy%20hair%20at%20Dil%20Chahta%20Hai%20reunion%20steals%20the%20show%3A%20Know%20her%20secret%2C%20from%20onion%20juice%E2%80%A6.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1411689524",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bfa86031fb9497dea19b",
+      "category": "World",
+      "headline": "Trump says U.S. has entered deal with Venezuela to take control of 65 billion barrels of oil reserves",
+      "summary": "President Trump says his administration has entered a sweeping agreement with Venezuela that could give the U.S. access to vast amounts of the South American country's untapped oil reserves, at cost.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-29T02:07:55+00:00",
+      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5948229/trump-says-u-s-has-entered-deal-with-venezuela-to-take-control-of-65-billion-barrels-of-oil-reserves",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20says%20U.S.%20has%20entered%20deal%20with%20Venezuela%20to%20take%20control%20of%2065%20billion%20barrels%20of%20oil%20reserves.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1481462839",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f38b0d2a7834e4e116ca",
+      "category": "World",
+      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; bodies recovered down rivers in India – latest updates",
+      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T02:02:14+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20bodies%20recovered%20down%20rivers%20in%20India%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2027299546",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16913de5a7d06d44315c",
+      "category": "World",
+      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – as it happened",
+      "summary": "This live blog is now closed. Trump arch will alter sightlines of many Washington DC landmarks, report says Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy symposium. As my colleagues note, Warsh is...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T01:56:21+00:00",
+      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20as%20it%20happened.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=208032020",
+      "image_type": "ai_generated"
+    },
     {
       "id": "9582191159b9bb80719f",
       "category": "Entertainment",
@@ -25,14 +80,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "858336a86e4d930186ae",
-      "category": "World",
-      "headline": "National Park Service supports Trump’s arch even though it would have ‘adverse effects’ on other DC monuments, report says – live",
-      "summary": "The 133-page report released Friday says the memorial arch is likely to disrupt the historical significance of dozens of sites around US capital Sign up for the US Breaking News email A reminder that we are covering the latest out of Jackson Hole, Wyoming, where Kevin Warsh – the new chair of the Federal Reserve – will deliver his first speech as the head of the US central bank at the annual economic policy...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T01:45:57+00:00",
-      "source_url": "https://www.theguardian.com/us-news/live/2026/aug/28/donald-trump-mail-voting-tariffs-canada-space-nasa-march-on-washington-latest-news-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20National%20Park%20Service%20supports%20Trump%E2%80%99s%20arch%20even%20though%20it%20would%20have%20%E2%80%98adverse%20effects%E2%80%99%20on%20other%20DC%20monuments%2C%20report%20says%20%E2%80%93%20live.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1679571954",
+      "id": "f1adae78d92f45eb5d94",
+      "category": "India",
+      "headline": "Onam: The many ways Keralam celebrates",
+      "summary": "Beyond the popular Onam narrative, featuring the Mahabali, pookkalam and sadya, the festival is celebrated in uniquely diverse ways across Keralam",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T01:37:08+00:00",
+      "source_url": "https://www.thehindu.com/society/history-and-culture/onam-the-many-ways-keralam-celebrates/article71387449.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Onam%3A%20The%20many%20ways%20Keralam%20celebrates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1898198772",
       "image_type": "ai_generated"
     },
     {
@@ -71,12 +126,12 @@
     {
       "id": "62ed862f54829b43a0a9",
       "category": "Entertainment",
-      "headline": "California Tries Offering Hollywood New Perks to Make Up for Catch In $750 Million Incentive Program",
+      "headline": "California Tries Offering Hollywood New Perks to Make Up for Catch in $750 Million Incentive Program",
       "summary": "The legislation introduced Friday proposes to exempt indie productions from business tax credit caps and allow productions to monetize their refunds faster.",
       "publisher": "Hollywood Reporter",
       "published_at": "2026-08-29T01:23:53+00:00",
       "source_url": "https://www.hollywoodreporter.com/business/business-news/california-budget-trailer-bill-hollywood-tax-credit-issue-1236678209/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Tries%20Offering%20Hollywood%20New%20Perks%20to%20Make%20Up%20for%20Catch%20In%20%24750%20Million%20Incentive%20Program.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=153826293",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20California%20Tries%20Offering%20Hollywood%20New%20Perks%20to%20Make%20Up%20for%20Catch%20in%20%24750%20Million%20Incentive%20Program.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1446230620",
       "image_type": "ai_generated"
     },
     {
@@ -143,17 +198,6 @@
       "published_at": "2026-08-29T01:13:25+00:00",
       "source_url": "https://www.ndtv.com/india-news/cng-to-get-costlier-by-rs-3-89-says-indraprastha-gas-limited-11972787#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CNG%20Gets%20Costlier%20By%20Rs%203.89.%20New%20Price%20In%20Delhi%20Nears%20Rs%2087%20Per%20Kg.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=835415137",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a416779e77a890f7d3b0",
-      "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing people rises to 2,478 – latest updates",
-      "summary": "Nepal reverses earlier decision and says foreign teams will be allowed to help with rescue efforts ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T01:02:54+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20people%20rises%20to%202%2C478%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1424723063",
       "image_type": "ai_generated"
     },
     {
@@ -1067,50 +1111,6 @@
       "published_at": "2026-08-28T19:46:03+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/ethiraj-college-signs-mou-with-us-based-public-accounting-for-industry-interaction/article71401816.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ethiraj%20College%20signs%20MoU%20with%20US-based%20public%20accounting%20for%20industry%20interaction.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=726181522",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ed42324dc8adc1cba6d0",
-      "category": "World",
-      "headline": "US plans to cut off military aid to key Middle East ally, BBC told",
-      "summary": "Iraqi Kurdistan fears the Trump administration's plan will make the region more vulnerable to further attacks from Iran.",
-      "publisher": "BBC News",
-      "published_at": "2026-08-28T19:45:39+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cn74m8e5rleo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20US%20plans%20to%20cut%20off%20military%20aid%20to%20key%20Middle%20East%20ally%2C%20BBC%20told.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3238904494",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5e805538bdfaed8adc41",
-      "category": "India",
-      "headline": "PMCs come under scanner over quality of civic works in Chennai Corporation",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:43:59+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/pmcs-come-under-scanner-over-quality-of-civic-works-in-chennai-corporation/article71401006.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PMCs%20come%20under%20scanner%20over%20quality%20of%20civic%20works%20in%20Chennai%20Corporation.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3829976057",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "8e913f1e7aecb626bcbf",
-      "category": "India",
-      "headline": "Dalit man transporting cattle forced to eat cattle dung by ‘cow vigilantes’ in Maharashtra; no arrest made yet",
-      "summary": "A case was registered against the six on August 27 after a video purportedly showing the incident went viral; one of the accused recorded the incident and threatened the victim with serious consequences if they approached the police",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:42:06+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/six-cow-vigilantes-in-maharashtra-accused-of-assaulting-a-dalit-man/article71399255.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Dalit%20man%20transporting%20cattle%20forced%20to%20eat%20cattle%20dung%20by%20%E2%80%98cow%20vigilantes%E2%80%99%20in%20Maharashtra%3B%20no%20arrest%20made%20yet.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3487184732",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a5100c5fc9ef4f309e9a",
-      "category": "India",
-      "headline": "India-Germany eye deeper MSME ties",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T19:41:12+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/india-germany-eye-deeper-msme-ties/article71401067.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20India-Germany%20eye%20deeper%20MSME%20ties.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3136564946",
       "image_type": "ai_generated"
     }
   ]
