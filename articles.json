@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T17:34:36.014771+00:00",
-  "total": 1282,
+  "updated_at": "2026-08-29T18:04:46.806754+00:00",
+  "total": 1300,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 105,
-    "India": 394,
+    "India": 402,
     "Business": 169,
-    "Technology & AI": 95,
-    "Sports": 87,
-    "Entertainment": 283,
+    "Technology & AI": 97,
+    "Sports": 92,
+    "Entertainment": 286,
     "Lifestyle": 149
   },
   "articles": [
@@ -616,6 +616,17 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5657581813c8a85d05ee",
+      "category": "India",
+      "headline": "'If any Hindu thinks there should be no Muslims in India, he's not Hindu': RSS' Mohan Bhagwat in US",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T17:30:03+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/if-any-hindu-thinks-there-should-be-no-muslims-in-india-hes-not-hindu-rss-mohan-bhagwat-in-us/articleshow/133616471.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27If%20any%20Hindu%20thinks%20there%20should%20be%20no%20Muslims%20in%20India%2C%20he%27s%20not%20Hindu%27%3A%20RSS%27%20Mohan%20Bhagwat%20in%20US.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3585504914",
       "image_type": "ai_generated"
     },
     {
@@ -1837,6 +1848,28 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "df5672278044930538a8",
+      "category": "India",
+      "headline": "‘Trying to reach a safe location’: Missing UK couple's last message from flood-hit Nepal",
+      "summary": "The UK-based couple with Kolkata roots were in Nepal for Kailash yatra when the floods struck, leaving them out of contact with their family.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T17:38:18+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/trying-to-reach-a-safe-location-missing-uk-couples-last-message-from-flood-hit-nepal-101788022561311.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Trying%20to%20reach%20a%20safe%20location%E2%80%99%3A%20Missing%20UK%20couple%27s%20last%20message%20from%20flood-hit%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=929377943",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d4166c2c14b0d0980287",
+      "category": "India",
+      "headline": "J&K leaders react to Samay Raina's Kashmiri-Bihari row: 'Valley incomplete without Kashmiri pandits'",
+      "summary": "A Shiv Sena leader said ‘humour should be taken as humor’, while a BJP MLA slammed Raina, saying Kashmiri Pandits cannot be treated as subjects of ridicule.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T17:36:50+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/jk-leaders-react-to-samay-rainas-kashmiri-bihari-row-valley-incomplete-without-kashmiri-pandits-101788021649683.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20J%26K%20leaders%20react%20to%20Samay%20Raina%27s%20Kashmiri-Bihari%20row%3A%20%27Valley%20incomplete%20without%20Kashmiri%20pandits%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1223984938",
       "image_type": "ai_generated"
     },
     {
@@ -4224,6 +4257,61 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7dac1ee7030921dff92e",
+      "category": "India",
+      "headline": "Goods engine derails near Arakkonam railway station",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:57:26+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/goods-engine-derails-near-arakkonam-railway-station/article71405036.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Goods%20engine%20derails%20near%20Arakkonam%20railway%20station.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1290033852",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e230bdb26fb2ccc7a53d",
+      "category": "India",
+      "headline": "Alagappa, Manonmaniam Sundaranar varsities get Vice-Chancellors in-charge",
+      "summary": "Appointments have been made after the tenure of V-Cs of the varsities ended earlier this month; if found to be efficient, the arrangement will be extended to other State universities, says Higher Education Minister",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:52:58+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/alagappa-manonmaniam-sundaranar-varsities-get-vice-chancellors-in-charge/article71405660.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Alagappa%2C%20Manonmaniam%20Sundaranar%20varsities%20get%20Vice-Chancellors%20in-charge.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1007609257",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "150633feabcc854e5d1a",
+      "category": "India",
+      "headline": "‘In the age of scrolling, journalism must adapt to shorter formats without losing its core values’",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:39:09+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/in-the-age-of-scrolling-journalism-must-adapt-to-shorter-formats-without-losing-its-core-values/article71405429.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98In%20the%20age%20of%20scrolling%2C%20journalism%20must%20adapt%20to%20shorter%20formats%20without%20losing%20its%20core%20values%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2675607524",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3e1b2aacb2bc9e920b2d",
+      "category": "India",
+      "headline": "Court grants bail to Priyank Kharge, Nalapad in RSS defamation case",
+      "summary": "The 42nd Special Court for Elected Representatives granted bail to Priyank Kharge and Mohammed Nalapad, directing them to execute a personal bond of ₹1 lakh each with cash security of ₹10,000 each in a defamation case",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:38:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/court-grants-bail-to-priyank-kharge-nalapad-in-rss-defamation-case/article71405400.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Court%20grants%20bail%20to%20Priyank%20Kharge%2C%20Nalapad%20in%20RSS%20defamation%20case.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2221120697",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d63c3fb32884f3c33bff",
+      "category": "India",
+      "headline": "Cardiac care must become integral to long-term HIV treatment, say experts",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:31:22+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/cardiac-care-must-become-integral-to-long-term-hiv-treatment-say-experts/article71405801.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Cardiac%20care%20must%20become%20integral%20to%20long-term%20HIV%20treatment%2C%20say%20experts.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4162116904",
       "image_type": "ai_generated"
     },
     {
@@ -9023,6 +9111,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "336e98389360de8e87e2",
+      "category": "Technology & AI",
+      "headline": "At TechBBQ, Europe’s AI conversations kept coming back to: Who’s actually in control?",
+      "summary": "Investors, founders, and operators from across Europe arrived for the annual Nordic TechBBQ conference to talk about how humans can have agency over AI.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T17:51:10+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/at-techbbq-europes-ai-conversations-kept-coming-back-to-whos-actually-in-control/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20At%20TechBBQ%2C%20Europe%E2%80%99s%20AI%20conversations%20kept%20coming%20back%20to%3A%20Who%E2%80%99s%20actually%20in%20control%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=664855858",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5ac91e5175ace2936b29",
+      "category": "Entertainment",
+      "headline": "‘New Girl’ Reunion Is Not Happening: ‘There Are No Scripts,’ Says Creator Liz Meriwether",
+      "summary": "“New Girl” isn’t coming back anytime soon. Despite recent claims by Max Greenfield, who played Schmidt on the hit Fox sitcom, that he has read “amazing” scripts for a reunion, show creator Liz Meriwether insists, “There are no scripts.” I caught up with Meriwether at the Season 1 finale screening of her latest hit series […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T17:45:10+00:00",
+      "source_url": "https://variety.com/2026/tv/columns/new-girl-reunion-not-happening-no-scripts-liz-meriwether-britney-spears-1236846563/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98New%20Girl%E2%80%99%20Reunion%20Is%20Not%20Happening%3A%20%E2%80%98There%20Are%20No%20Scripts%2C%E2%80%99%20Says%20Creator%20Liz%20Meriwether.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4174931793",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f4dd2070407b41e4a25c",
+      "category": "Technology & AI",
+      "headline": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+      "summary": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared datasets (not walled-off ones) are what will actually let AI transform medicine.",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T17:36:47+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20%E2%80%9CWe%E2%80%99re%20not%20doing%2030%20bets%20a%20year%E2%80%9D%3A%20Vijay%20Pande%20on%20betting%20small%20after%20running%20%244%20billion%20at%20a16z.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=431950922",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "d01c7841745d1c5e7ae9",
       "category": "Entertainment",
       "headline": "Anne Hathaway Joins Tom Cruise in ‘Days of Thunder’ Follow-Up; Paramount Sets Release Date (EXCLUSIVE)",
@@ -9218,6 +9339,17 @@
       "published_at": "2026-01-22T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Railway%20secures%20%24100%20million%20to%20challenge%20AWS%20with%20AI-native%20cloud%20infrastructure.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3997345097",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b7e8fc5dd534222b9819",
+      "category": "Entertainment",
+      "headline": "Venice Film Festival Scraps Jury Press Conference",
+      "summary": "The Venice Film Festival has taken the unusual step of scrapping its main jury press conference this year, we can reveal. The festival, which gets underway next week, hasn’t made a public statement to confirm the break from protocol but confirmed the move to us after multiple requests to know if it was going ahead. […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T18:02:03+00:00",
+      "source_url": "https://deadline.com/2026/08/venice-film-festival-scraps-jury-press-conference-1237062641/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Venice%20Film%20Festival%20Scraps%20Jury%20Press%20Conference.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3024333301",
       "image_type": "ai_generated"
     },
     {
@@ -10497,14 +10629,47 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "d0234c268edf33649677",
-      "category": "World",
-      "headline": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
-      "summary": "The self-styled provocateur had been detained by Immigration and Customs Enforcement (ICE).",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T17:25:01+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20deported%20from%20US%20to%20UK.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2836983327",
+      "id": "e5220ca8749d12689858",
+      "category": "Sports",
+      "headline": "Today at the Test - England v Pakistan highlights",
+      "summary": "Day 3 highlights from the second Test match between England and Pakistan at Lord's.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:00:00+00:00",
+      "source_url": "https://www.bbc.co.uk/iplayer/live/bbcfour?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Today%20at%20the%20Test%20-%20England%20v%20Pakistan%20highlights.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=928435731",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e6803e65da951711c220",
+      "category": "Sports",
+      "headline": "Henshaw wins world gold 11 days after being in hospital",
+      "summary": "Britain's Charlotte Henshaw has won her 12th Para-canoe World Championship title",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T17:59:16+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/canoeing/articles/cgrvw27ll12o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Henshaw%20wins%20world%20gold%2011%20days%20after%20being%20in%20hospital.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1215186042",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "94fa1a60e29cf178fb6c",
+      "category": "Entertainment",
+      "headline": "Met Gala Organizers Reportedly Mulling Date Change Amid John Galliano Backlash",
+      "summary": "The event is currently scheduled for May 3, but growing concern over Galliano's past remarks has overseers considering a change.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T17:56:01+00:00",
+      "source_url": "https://www.hollywoodreporter.com/lifestyle/style/met-gala-date-change-john-galliano-backlash-1236684868/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Met%20Gala%20Organizers%20Reportedly%20Mulling%20Date%20Change%20Amid%20John%20Galliano%20Backlash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1154904392",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2192f1930d84beddeb70",
+      "category": "Sports",
+      "headline": "Barry-Murphy optimistic over more Cardiff signings",
+      "summary": "Brian Barry-Murphy is optimistic Cardiff City will make further additions to their squad before Tuesday's transfer deadline.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T17:55:13+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cq5xl2vy20eo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Barry-Murphy%20optimistic%20over%20more%20Cardiff%20signings.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3881178617",
       "image_type": "ai_generated"
     },
     {
@@ -10513,9 +10678,53 @@
       "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
       "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T17:16:08+00:00",
+      "published_at": "2026-08-29T17:55:01+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d0234c268edf33649677",
+      "category": "World",
+      "headline": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
+      "summary": "The self-styled provocateur had been detained by Immigration and Customs Enforcement (ICE).",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T17:52:42+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20deported%20from%20US%20to%20UK.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2836983327",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d10ba098ab4d325d2922",
+      "category": "Sports",
+      "headline": "Leader Pogacar abandons Vuelta after crash",
+      "summary": "Race leader Tadej Pogacar pulls out of the Vuelta a Espana after crashing during stage eight of the three",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T17:51:37+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cycling/articles/c0qx0ndg373o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leader%20Pogacar%20abandons%20Vuelta%20after%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3367867576",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "82a34d0e650082bf4693",
+      "category": "Sports",
+      "headline": "Lawrence impresses as weather delays England",
+      "summary": "Dan Lawrence impresses in devilishly difficult batting conditions to advance England’s push for a series win over Pakistan on a weather",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T17:43:39+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/c62k3j64x59o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Lawrence%20impresses%20as%20weather%20delays%20England.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4211804971",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "398ccdca220b7290691b",
+      "category": "Sports",
+      "headline": "'A gritty innings' - Lawrence digs in to help England build big lead",
+      "summary": "Despite an innings heavily disrupted by the weather, Dan Lawrence digs in to finish unbeaten on 50 off 66 balls, as England closed on 177-7 on day three of the second Test against Pakistan, giving them a lead of 357.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T17:08:45+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cricket/videos/cx2zy71qvnjo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27A%20gritty%20innings%27%20-%20Lawrence%20digs%20in%20to%20help%20England%20build%20big%20lead.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1695129592",
       "image_type": "ai_generated"
     },
     {
@@ -10681,17 +10890,6 @@
       "published_at": "2026-08-29T15:49:49+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cgjq65nvw38o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%20trust%20isn%27t%20there%27%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4008090306",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d10ba098ab4d325d2922",
-      "category": "Sports",
-      "headline": "Leader Pogacar abandons Vuelta after crash",
-      "summary": "Race leader Tadej Pogacar pulls out of the Vuelta a Espana after crashing during stage eight of the three",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T15:30:35+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/cycling/articles/c0qx0ndg373o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leader%20Pogacar%20abandons%20Vuelta%20after%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3367867576",
       "image_type": "ai_generated"
     },
     {
