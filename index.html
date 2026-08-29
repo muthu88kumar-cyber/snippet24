@@ -6,1830 +6,1760 @@
 
 <title>Snippet24 — Fast News. Real Impact.</title>
 
-<meta
-  name="description"
-  content="Snippet24 — fast, concise news with original publication credits."
->
+<meta name="description"
+      content="Snippet24 — fast, concise news with original publication credits.">
 
 <style>
-* {
-  box-sizing: border-box;
+*{
+    box-sizing:border-box;
 }
 
-:root {
-  --bg: #07090d;
-  --card: #11151d;
-  --card2: #151a23;
-  --border: #29313d;
-  --text: #f5f7fa;
-  --muted: #929aa7;
-  --muted2: #68717e;
-  --red: #ff1717;
-  --red2: #ff3b3b;
-  --max: 1180px;
+:root{
+    --bg:#fbfcff;
+    --surface:#ffffff;
+    --text:#172033;
+    --muted:#697386;
+    --border:#e8eaf0;
+
+    --world:#3b82f6;
+    --india:#f97316;
+    --business:#16a34a;
+    --tech:#8b5cf6;
+    --sports:#06b6d4;
+    --entertainment:#ec4899;
+    --lifestyle:#eab308;
+
+    --max:1180px;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-  margin: 0;
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(255, 23, 23, 0.08),
-      transparent 32%
-    ),
-    var(--bg);
-  color: var(--text);
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+body{
+    margin:0;
+    background:
+        radial-gradient(
+            circle at 5% 0%,
+            #eef5ff,
+            transparent 30%
+        ),
+        var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
 }
 
-button,
-select {
-  font: inherit;
+a{
+    color:inherit;
 }
 
-a {
-  color: inherit;
+.wrap{
+    max-width:var(--max);
+    margin:auto;
+    padding:0 22px;
 }
 
-/* =========================
+/* =========================================================
    HEADER
-========================= */
+========================================================= */
 
-header {
-  max-width: var(--max);
-  margin: auto;
-  padding: 30px 22px 12px;
+header{
+    padding:30px 0 10px;
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+.brand{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
-.logo {
-  font-size: 48px;
-  line-height: 0.95;
-  font-weight: 950;
-  letter-spacing: -4px;
+.logo{
+    font-size:48px;
+    line-height:1;
+    font-weight:950;
+    letter-spacing:-4px;
 }
 
-.logo span {
-  display: inline-block;
-  background: var(--red);
-  color: white;
-  padding: 5px 12px 7px;
-  border-radius: 14px;
-  letter-spacing: -2px;
+.logo span{
+    display:inline-block;
+
+    padding:
+        5px 12px
+        7px;
+
+    border:
+        4px solid
+        #ec4899;
+
+    border-radius:15px;
+
+    letter-spacing:-2px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f97316,
+            #ec4899
+        );
+
+    color:#fff;
 }
 
-.tagline {
-  margin-top: 12px;
-  color: #858d9a;
-  letter-spacing: 5px;
-  font-size: 12px;
-  font-weight: 800;
+.tagline{
+    margin-top:9px;
+
+    color:#7b8495;
+
+    letter-spacing:4px;
+
+    font-size:11px;
+
+    font-weight:850;
 }
 
-.local-time {
-  text-align: right;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
+.clock{
+    text-align:right;
+    color:var(--muted);
+    font-size:12px;
 }
 
-.local-time strong {
-  color: white;
-  display: block;
-  font-size: 16px;
+.clock strong{
+    display:block;
+
+    color:var(--navy);
+
+    font-size:15px;
 }
 
-.controls {
-  margin-top: 18px;
-  display: flex;
-  justify-content: flex-end;
+.controls{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:16px;
 }
 
-select {
-  appearance: none;
-  background: var(--card2);
-  color: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 12px 38px 12px 15px;
-  cursor: pointer;
+select{
+    border:
+        1px solid
+        var(--border);
+
+    background:#fff;
+
+    border-radius:13px;
+
+    padding:
+        11px 34px
+        11px 13px;
+
+    color:var(--text);
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* =========================================================
+   CATEGORY NAV
+========================================================= */
 
-nav {
-  max-width: var(--max);
-  margin: 22px auto 0;
-  padding: 0 22px;
+nav{
+    display:flex;
 
-  display: flex;
-  gap: 8px;
+    gap:9px;
 
-  overflow-x: auto;
-  overflow-y: hidden;
+    overflow-x:auto;
 
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+    scrollbar-width:none;
 
-  white-space: nowrap;
+    padding:
+        12px 0
+        4px;
 }
 
-nav::-webkit-scrollbar {
-  display: none;
+nav::-webkit-scrollbar{
+    display:none;
 }
 
-nav button {
-  flex: 0 0 auto;
+.nav-btn{
+    flex:0 0 auto;
 
-  border: 0;
-  background: transparent;
-  color: #9ca4b0;
+    border:
+        1px solid
+        transparent;
 
-  padding: 11px 18px;
-  border-radius: 16px;
+    background:#fff;
 
-  font-size: 14px;
-  font-weight: 750;
+    color:var(--muted);
 
-  white-space: nowrap;
-  cursor: pointer;
+    border-radius:15px;
+
+    padding:
+        10px 14px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.2s;
 }
 
-nav button:hover {
-  color: white;
+.nav-btn:hover{
+    border-color:var(--border);
+    color:var(--text);
+    transform:translateY(-1px);
 }
 
-nav button.active {
-  background: var(--red);
-  color: white;
+.nav-btn.active{
+    color:#fff;
 }
 
+.nav-icon{
+    width:23px;
+    height:23px;
 
-/* MOBILE CATEGORY SCROLL */
+    display:inline-flex;
 
-@media (max-width: 760px) {
-  nav {
-    width: 100%;
-    max-width: none;
+    align-items:center;
+    justify-content:center;
 
-    margin-top: 20px;
-    padding-left: 22px;
-    padding-right: 22px;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 6px;
-
-    white-space: nowrap;
-
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-x: contain;
-
-    scrollbar-width: none;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav button {
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
+    font-size:18px;
 }
 
-/* =========================
+/* =========================================================
    MAIN
-========================= */
+========================================================= */
 
-main {
-  max-width: var(--max);
-  margin: auto;
-  padding: 22px 22px 80px;
+main{
+    padding:
+        24px 0
+        70px;
 }
 
-/* =========================
-   INTRO
-========================= */
-
-.intro {
-  padding: 18px 0 25px;
+.intro{
+    padding:
+        10px 0
+        28px;
 }
 
-.intro h1 {
-  margin: 0;
-  font-size: clamp(30px, 5vw, 48px);
-  line-height: 1.05;
-  letter-spacing: -2px;
+.intro h1{
+    font-size:
+        clamp(
+            34px,
+            5vw,
+            58px
+        );
+
+    letter-spacing:-3px;
+
+    margin:0;
+
+    line-height:1.03;
 }
 
-.intro p {
-  max-width: 700px;
-  margin: 12px 0 0;
-  color: var(--muted);
-  line-height: 1.65;
-  font-size: 16px;
+.intro p{
+    max-width:700px;
+
+    color:var(--muted);
+
+    line-height:1.7;
+
+    font-size:16px;
+
+    margin:
+        13px 0 0;
 }
 
-.section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  margin: 18px 0 12px;
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:
+        8px 0
+        14px;
 }
 
-.section-heading h2 {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: 0.3px;
+.section-head h2{
+    margin:0;
+
+    font-size:20px;
 }
 
-.section-heading h2::before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 18px;
-  background: var(--red);
-  border-radius: 4px;
-  margin-right: 9px;
-  vertical-align: -2px;
+.section-head h2:before{
+    content:"";
+
+    display:inline-block;
+
+    width:5px;
+
+    height:21px;
+
+    background:
+        #ec4899;
+
+    border-radius:5px;
+
+    margin-right:9px;
+
+    vertical-align:-3px;
 }
 
-.count {
-  color: var(--muted2);
-  font-size: 13px;
+.count{
+    color:#929aaa;
+    font-size:12px;
 }
 
-/* =========================
-   FEATURED STORY
-========================= */
+/* =========================================================
+   FEATURED
+========================================================= */
 
-.featured {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
+.featured{
+    display:grid;
 
-  min-height: 390px;
+    grid-template-columns:
+        1.15fr
+        1fr;
 
-  background: linear-gradient(
-    135deg,
-    #151a22,
-    #0d1117
-  );
+    background:
+        var(--surface);
 
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  overflow: hidden;
+    border:
+        1px solid
+        var(--border);
 
-  margin-bottom: 30px;
+    border-radius:26px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 12px 35px
+        rgba(
+            30,
+            41,
+            59,
+            .06
+        );
+
+    margin-bottom:22px;
 }
 
-.featured-image {
-  min-height: 390px;
-  position: relative;
-  background: #0c1016;
+.featured-image{
+    min-height:360px;
+
+    background:#edf1f7;
+
+    position:relative;
 }
 
-.featured-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.featured-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
 }
 
-.image-label {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+.badge{
+    position:absolute;
 
-  background: rgba(0, 0, 0, 0.78);
-  color: white;
+    top:15px;
+    left:15px;
 
-  padding: 7px 10px;
-  border-radius: 8px;
+    background:
+        rgba(
+            23,
+            32,
+            51,
+            .86
+        );
 
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.8px;
+    color:#fff;
+
+    border-radius:10px;
+
+    padding:
+        7px 10px;
+
+    font-size:10px;
+
+    font-weight:900;
+
+    letter-spacing:.8px;
 }
 
-.featured-content {
-  padding: 34px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.featured-content{
+    padding:34px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
 }
 
-.category {
-  color: var(--red2);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.category{
+    font-size:11px;
+
+    font-weight:950;
+
+    letter-spacing:1.3px;
+
+    text-transform:uppercase;
 }
 
-.featured h2 {
-  margin: 12px 0 14px;
+.featured h2{
+    font-size:
+        clamp(
+            28px,
+            4vw,
+            44px
+        );
 
-  font-size: clamp(28px, 4vw, 43px);
-  line-height: 1.08;
+    line-height:1.08;
 
-  letter-spacing: -1.5px;
+    letter-spacing:-1.7px;
+
+    margin:
+        10px 0
+        14px;
 }
 
-.featured-summary {
-  color: #aab1bc;
-  font-size: 16px;
-  line-height: 1.65;
+.summary{
+    color:var(--muted);
+
+    line-height:1.65;
+
+    font-size:15px;
 }
 
-.meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 18px;
+.meta{
+    display:flex;
 
-  margin-top: 22px;
+    flex-wrap:wrap;
 
-  color: var(--muted2);
-  font-size: 12px;
+    gap:
+        8px 16px;
+
+    color:#929aaa;
+
+    font-size:11px;
+
+    margin-top:17px;
 }
 
-.read-original {
-  display: inline-block;
-  margin-top: 22px;
+.original{
+    margin-top:18px;
 
-  color: #ff4b4b;
-  text-decoration: none;
+    color:#172033;
 
-  font-weight: 850;
-  font-size: 14px;
+    text-decoration:none;
+
+    font-weight:900;
+
+    font-size:13px;
 }
 
-.read-original:hover {
-  color: white;
-}
-
-/* =========================
+/* =========================================================
    STORY LIST
-========================= */
+========================================================= */
 
-.story-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.story-list{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
 }
 
-.story {
-  display: grid;
-  grid-template-columns: 250px 1fr;
+.story{
+    display:grid;
 
-  min-height: 170px;
+    grid-template-columns:
+        230px
+        1fr;
 
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
+    background:#fff;
 
-  overflow: hidden;
+    border:
+        1px solid
+        var(--border);
 
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
+    border-radius:19px;
+
+    overflow:hidden;
+
+    transition:.2s;
 }
 
-.story:hover {
-  transform: translateY(-2px);
-  border-color: #3b4655;
+.story:hover{
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            30,
+            41,
+            59,
+            .06
+        );
 }
 
-.story-image {
-  position: relative;
-  min-height: 170px;
-  background: #0b0e13;
+.story-image{
+    background:#edf1f7;
+
+    min-height:155px;
 }
 
-.story-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.story-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
 }
 
-.story-content {
-  padding: 22px 24px;
+.story-content{
+    padding:
+        20px 22px;
 }
 
-.story h3 {
-  margin: 7px 0 8px;
+.story h3{
+    margin:
+        7px 0
+        8px;
 
-  font-size: 21px;
-  line-height: 1.25;
+    font-size:20px;
+
+    line-height:1.25;
 }
 
-.story-summary {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.55;
+.story-summary{
+    color:var(--muted);
 
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    font-size:14px;
+
+    line-height:1.55;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:3;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
 }
 
-.story-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+.story-bottom{
+    display:flex;
 
-  margin-top: 13px;
+    justify-content:space-between;
+
+    gap:12px;
+
+    align-items:center;
+
+    margin-top:12px;
 }
 
-.story-meta {
-  color: var(--muted2);
-  font-size: 11px;
+.story-meta{
+    color:#929aaa;
+
+    font-size:10px;
 }
 
-.story-link {
-  color: var(--red2);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 850;
-  white-space: nowrap;
+.story-link{
+    color:#172033;
+
+    text-decoration:none;
+
+    font-weight:900;
+
+    font-size:11px;
+
+    white-space:nowrap;
 }
 
-/* =========================
-   SUBMISSION AREA
-========================= */
+/* =========================================================
+   SUBMISSION
+========================================================= */
 
-.submit-box {
-  margin-top: 42px;
+.submit{
+    margin-top:35px;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 23, 23, 0.09),
-      rgba(255, 255, 255, 0.02)
-    );
+    padding:26px;
 
-  border: 1px solid #353d49;
-  border-radius: 22px;
+    border-radius:23px;
 
-  padding: 28px;
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #f7f9ff
+        );
 }
 
-.submit-box h2 {
-  margin: 0 0 9px;
-  font-size: 25px;
+.submit h2{
+    margin:
+        0 0 8px;
 }
 
-.submit-box p {
-  margin: 0;
+.submit p{
+    color:var(--muted);
 
-  max-width: 760px;
+    line-height:1.65;
 
-  color: var(--muted);
-  line-height: 1.65;
-  font-size: 15px;
+    margin:7px 0;
 }
 
-.submit-note {
-  margin-top: 17px;
-
-  padding: 14px 16px;
-
-  border-radius: 12px;
-  background: rgba(255,255,255,0.035);
-
-  color: #b8bec7;
-  font-size: 13px;
-  line-height: 1.6;
+.note{
+    font-size:12px;
 }
 
-.submit-button {
-  margin-top: 18px;
-
-  border: 1px solid #4a5360;
-  background: #1a2029;
-  color: #777f8b;
-
-  padding: 12px 17px;
-  border-radius: 12px;
-
-  font-weight: 750;
-  cursor: not-allowed;
-}
-
-/* =========================
+/* =========================================================
    STATES
-========================= */
+========================================================= */
 
-.loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--muted);
+.loading,
+.empty,
+.error{
+    text-align:center;
+
+    padding:55px 20px;
+
+    color:var(--muted);
+
+    background:#fff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:18px;
 }
 
-.error {
-  text-align: center;
-  padding: 60px 20px;
-  color: #ff6666;
+.error{
+    color:#dc2626;
 }
 
-.empty {
-  text-align: center;
-  padding: 50px 20px;
-  color: var(--muted);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-}
-
-/* =========================
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
-@media (max-width: 760px) {
+@media(max-width:760px){
 
-  header {
-    padding-top: 22px;
-  }
+    .clock{
+        display:none;
+    }
 
-  .topbar {
-    align-items: flex-start;
-  }
+    .logo{
+        font-size:39px;
+    }
 
-  .logo {
-    font-size: 39px;
-  }
+    .tagline{
+        font-size:9px;
+        letter-spacing:3px;
+    }
 
-  .tagline {
-    font-size: 9px;
-    letter-spacing: 3.5px;
-  }
+    .featured{
+        grid-template-columns:1fr;
+    }
 
-  .local-time {
-    font-size: 11px;
-  }
+    .featured-image{
+        min-height:235px;
+        max-height:275px;
+    }
 
-  .local-time strong {
-    font-size: 13px;
-  }
+    .featured-content{
+        padding:24px;
+    }
 
-  .featured {
-    grid-template-columns: 1fr;
-  }
+    .featured h2{
+        font-size:30px;
+    }
 
-  .featured-image {
-    min-height: 230px;
-    max-height: 270px;
-  }
+    .story{
+        grid-template-columns:
+            125px
+            1fr;
+    }
 
-  .featured-content {
-    padding: 24px;
-  }
+    .story-image{
+        min-height:145px;
+    }
 
-  .featured h2 {
-    font-size: 29px;
-  }
+    .story-content{
+        padding:15px;
+    }
 
-  .story {
-    grid-template-columns: 125px 1fr;
-  }
+    .story h3{
+        font-size:17px;
+    }
 
-  .story-image {
-    min-height: 150px;
-  }
+    .story-summary{
+        font-size:12px;
 
-  .story-content {
-    padding: 15px;
-  }
+        -webkit-line-clamp:2;
+    }
 
-  .story h3 {
-    font-size: 17px;
-  }
-
-  .story-summary {
-    -webkit-line-clamp: 2;
-    font-size: 13px;
-  }
-
-  .story-bottom {
-    align-items: flex-end;
-  }
-
-  .story-meta {
-    font-size: 10px;
-  }
-
-  .story-link {
-    font-size: 11px;
-  }
+    .story-link{
+        display:none;
+    }
 }
 
-@media (max-width: 480px) {
+@media(max-width:460px){
 
-  .local-time {
-    display: none;
-  }
+    .wrap{
+        padding:
+            0 16px;
+    }
 
-  .story {
-    grid-template-columns: 105px 1fr;
-  }
+    .logo{
+        font-size:35px;
+    }
 
-  .story-image {
-    min-height: 145px;
-  }
+    .story{
+        grid-template-columns:
+            105px
+            1fr;
+    }
 
-  .story-content {
-    padding: 13px;
-  }
+    .story-image{
+        min-height:140px;
+    }
 
-  .story h3 {
-    font-size: 15px;
-  }
+    .story h3{
+        font-size:15px;
+    }
 
-  .story-summary {
-    font-size: 12px;
-  }
-
-  .story-link {
-    display: none;
-  }
+    .story-content{
+        padding:12px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<header class="wrap">
 
-  <div class="topbar">
+<div class="brand">
 
-    <div>
-      <div class="logo">
+<div>
+    <div class="logo">
         snippet <span>24</span>
-      </div>
+    </div>
 
-      <div class="tagline">
+    <div class="tagline">
         FAST NEWS. REAL IMPACT.
-      </div>
     </div>
+</div>
 
-    <div class="local-time">
-      <strong id="localTime">--:--</strong>
-      <span id="localDate">Loading local date...</span>
-    </div>
+<div class="clock">
 
-  </div>
+<strong id="localTime">
+    --:--
+</strong>
 
-  <div class="controls">
-    <select id="languageSelect" aria-label="Language">
+<span id="localDate">
+    Loading…
+</span>
 
-      <option value="en">English</option>
-      <option value="ta">தமிழ்</option>
-      <option value="hi">हिन्दी</option>
-      <option value="te">తెలుగు</option>
-      <option value="kn">ಕನ್ನಡ</option>
-      <option value="ml">മലയാളം</option>
-      <option value="bn">বাংলা</option>
-      <option value="mr">मराठी</option>
+</div>
 
-    </select>
-  </div>
+</div>
 
-</header>
+<div class="controls">
+
+<select
+    id="languageSelect"
+    aria-label="Language">
+
+<option value="en">
+    English
+</option>
+
+<option value="ta">
+    தமிழ்
+</option>
+
+<option value="hi">
+    हिन्दी
+</option>
+
+<option value="te">
+    తెలుగు
+</option>
+
+<option value="kn">
+    ಕನ್ನಡ
+</option>
+
+<option value="ml">
+    മലയാളം
+</option>
+
+<option value="bn">
+    বাংলা
+</option>
+
+<option value="mr">
+    मराठी
+</option>
+
+</select>
+
+</div>
 
 <nav id="categoryNav"></nav>
 
-<main>
-
-  <section class="intro">
-
-    <h1 id="introTitle">
-      Know more. Read less.
-    </h1>
-
-    <p id="introText">
-      Short, original explanations of important stories,
-      with the original publication always credited.
-    </p>
-
-  </section>
+</header>
 
 
-  <div class="section-heading">
+<main class="wrap">
 
-    <h2 id="sectionTitle">
-      Latest Stories
-    </h2>
+<section class="intro">
 
-    <div
-      id="storyCount"
-      class="count"
-    ></div>
+<h1 id="introTitle">
+    Know more. Read less.
+</h1>
 
-  </div>
+<p id="introText">
+    Short, original explanations of important stories,
+    with the original publication always credited.
+</p>
+
+</section>
 
 
-  <section
+<div class="section-head">
+
+<h2 id="sectionTitle">
+    Latest Stories
+</h2>
+
+<div
+    id="storyCount"
+    class="count">
+</div>
+
+</div>
+
+
+<section
     id="featured"
     class="featured"
-    style="display:none;"
-  ></section>
+    style="display:none">
+</section>
 
 
-  <section
+<section
     id="storyList"
-    class="story-list"
-  >
-    <div class="loading">
-      Loading news...
-    </div>
-  </section>
+    class="story-list">
+
+<div class="loading">
+    Loading news…
+</div>
+
+</section>
 
 
-  <section class="submit-box">
+<section class="submit">
 
-    <h2>
-      Submit local news
-    </h2>
+<h2>
+    Submit local news
+</h2>
 
-    <p>
-      Have a genuine local story, public-interest report,
-      photograph, or original article? Snippet24 plans to
-      accept public submissions after a secure moderation
-      system is in place.
-    </p>
+<p>
+    Have a genuine local story, public-interest report,
+    photograph, or original article?
+    Snippet24 plans to accept public submissions
+    after secure moderation is connected.
+</p>
 
-    <div class="submit-note">
-      <strong>Important:</strong>
-      Public submissions are not published automatically.
-      Every submission must undergo identity, copyright,
-      authenticity, safety, defamation, privacy and
-      applicable legal review before publication.
-      Uploads are currently disabled until the moderation
-      backend is connected.
-    </div>
+<p class="note">
 
-    <button
-      class="submit-button"
-      type="button"
-      disabled
-    >
-      Submissions opening soon
-    </button>
+<strong>Important:</strong>
 
-  </section>
+submissions are not published automatically and
+must undergo identity, copyright, authenticity,
+safety, privacy and applicable legal review.
+
+</p>
+
+</section>
 
 </main>
 
 
 <script>
 
-/* =========================================
-   SNIPPET24 FRONTEND
-========================================= */
+const CATEGORIES = [
 
-const CATEGORY_ORDER = [
-  "World",
-  "India",
-  "Business",
-  "Technology & AI",
-  "Sports",
-  "Entertainment",
-  "Lifestyle"
+    "World",
+    "India",
+    "Business",
+    "Technology & AI",
+    "Sports",
+    "Entertainment",
+    "Lifestyle"
+
 ];
 
 
-/*
-   Your current articles.json uses:
-   headline
-   summary
-   publisher
-   published_at
-   source_url
-   image_url
-   image_type
+const ICONS = {
 
-   This frontend also accepts the older:
-   title
-   source
-   url
-*/
-
-const CATEGORY_MAP = {
-  "Technology & AI": [
-    "Technology & AI",
-    "Technology",
-    "Tech",
-    "AI"
-  ]
-};
-
-
-const UI_TRANSLATIONS = {
-
-  en: {
-    introTitle: "Know more. Read less.",
-    introText:
-      "Short, original explanations of important stories, with the original publication always credited.",
-    latest: "Latest Stories",
-    available: "stories available",
-    original: "Read original →"
-  },
-
-  ta: {
-    introTitle:
-      "அதிகம் தெரிந்து கொள்ளுங்கள். குறைவாகப் படியுங்கள்.",
-    introText:
-      "முக்கிய செய்திகளின் சுருக்கமான விளக்கங்கள். அசல் வெளியீட்டிற்கு எப்போதும் உரிய கிரெடிட் வழங்கப்படும்.",
-    latest: "சமீபத்திய செய்திகள்",
-    available: "செய்திகள் உள்ளன",
-    original: "அசல் செய்தியைப் படிக்க →"
-  },
-
-  hi: {
-    introTitle:
-      "ज्यादा जानें। कम पढ़ें।",
-    introText:
-      "महत्वपूर्ण खबरों की संक्षिप्त और मौलिक व्याख्याएं, जिसमें मूल प्रकाशन को हमेशा श्रेय दिया जाता है।",
-    latest: "ताज़ा खबरें",
-    available: "खबरें उपलब्ध हैं",
-    original: "मूल खबर पढ़ें →"
-  },
-
-  te: {
-    introTitle:
-      "ఎక్కువ తెలుసుకోండి. తక్కువ చదవండి.",
-    introText:
-      "ముఖ్యమైన వార్తల సంక్షిప్త మరియు స్వతంత్ర వివరణలు. అసలు ప్రచురణకు ఎల్లప్పుడూ క్రెడిట్ ఇవ్వబడుతుంది.",
-    latest: "తాజా వార్తలు",
-    available: "వార్తలు అందుబాటులో ఉన్నాయి",
-    original: "అసలు వార్త చదవండి →"
-  },
-
-  kn: {
-    introTitle:
-      "ಹೆಚ್ಚು ತಿಳಿಯಿರಿ. ಕಡಿಮೆ ಓದಿ.",
-    introText:
-      "ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ ಮತ್ತು ಸ್ವತಂತ್ರ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಯಾವಾಗಲೂ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
-    latest: "ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು",
-    available: "ಸುದ್ದಿಗಳು ಲಭ್ಯವಿವೆ",
-    original: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →"
-  },
-
-  ml: {
-    introTitle:
-      "കൂടുതൽ അറിയൂ. കുറച്ച് വായിക്കൂ.",
-    introText:
-      "പ്രധാന വാർത്തകളുടെ ചുരുക്കവും സ്വതന്ത്രവുമായ വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് എല്ലായ്പ്പോഴും ക്രെഡിറ്റ് നൽകുന്നു.",
-    latest: "ഏറ്റവും പുതിയ വാർത്തകൾ",
-    available: "വാർത്തകൾ ലഭ്യമാണ്",
-    original: "യഥാർത്ഥ വാർത്ത വായിക്കുക →"
-  },
-
-  bn: {
-    introTitle:
-      "বেশি জানুন। কম পড়ুন।",
-    introText:
-      "গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ও মৌলিক ব্যাখ্যা, যেখানে মূল প্রকাশনাকে সবসময় কৃতিত্ব দেওয়া হয়।",
-    latest: "সর্বশেষ খবর",
-    available: "টি খবর পাওয়া যাচ্ছে",
-    original: "মূল খবর পড়ুন →"
-  },
-
-  mr: {
-    introTitle:
-      "जास्त जाणून घ्या. कमी वाचा.",
-    introText:
-      "महत्त्वाच्या बातम्यांचे संक्षिप्त आणि स्वतंत्र स्पष्टीकरण. मूळ प्रकाशनाला नेहमी श्रेय दिले जाते.",
-    latest: "ताज्या बातम्या",
-    available: "बातम्या उपलब्ध आहेत",
-    original: "मूळ बातमी वाचा →"
-  }
+    "World":"◌",
+    "India":"⌂",
+    "Business":"◒",
+    "Technology & AI":"⌁",
+    "Sports":"◇",
+    "Entertainment":"✦",
+    "Lifestyle":"○"
 
 };
 
 
-let allArticles = [];
+const COLORS = {
 
-let currentCategory = "World";
+    "World":"#3b82f6",
+    "India":"#f97316",
+    "Business":"#16a34a",
+    "Technology & AI":"#8b5cf6",
+    "Sports":"#06b6d4",
+    "Entertainment":"#ec4899",
+    "Lifestyle":"#eab308"
 
-let currentLanguage = "en";
+};
 
 
-/* =========================================
-   SECURITY
-========================================= */
+const UI = {
 
-function escapeHTML(value) {
+en:{
+    title:"Know more. Read less.",
+    text:"Short, original explanations of important stories, with the original publication always credited.",
+    latest:"Latest Stories",
+    available:"stories available",
+    original:"Read original →"
+},
 
-  const div =
-    document.createElement("div");
+ta:{
+    title:"அதிகம் தெரிந்து கொள்ளுங்கள். குறைவாகப் படியுங்கள்.",
+    text:"முக்கிய செய்திகளின் சுருக்கமான விளக்கங்கள். அசல் வெளியீட்டிற்கு எப்போதும் கிரெடிட் வழங்கப்படும்.",
+    latest:"சமீபத்திய செய்திகள்",
+    available:"செய்திகள் உள்ளன",
+    original:"அசல் செய்தியைப் படிக்க →"
+},
 
-  div.textContent =
-    value == null ? "" : String(value);
+hi:{
+    title:"ज्यादा जानें। कम पढ़ें।",
+    text:"महत्वपूर्ण खबरों की संक्षिप्त और मौलिक व्याख्याएं, जिसमें मूल प्रकाशन को हमेशा श्रेय दिया जाता है।",
+    latest:"ताज़ा खबरें",
+    available:"खबरें उपलब्ध हैं",
+    original:"मूल खबर पढ़ें →"
+},
 
-  return div.innerHTML;
+te:{
+    title:"ఎక్కువ తెలుసుకోండి. తక్కువ చదవండి.",
+    text:"ముఖ్యమైన వార్తల సంక్షిప్త మరియు స్వతంత్ర వివరణలు. అసలు ప్రచురణకు క్రెడిట్ ఇవ్వబడుతుంది.",
+    latest:"తాజా వార్తలు",
+    available:"వార్తలు అందుబాటులో ఉన్నాయి",
+    original:"అసలు వార్త చదవండి →"
+},
+
+kn:{
+    title:"ಹೆಚ್ಚು ತಿಳಿಯಿರಿ. ಕಡಿಮೆ ಓದಿ.",
+    text:"ಪ್ರಮುಖ ಸುದ್ದಿಗಳ ಸಂಕ್ಷಿಪ್ತ ಮತ್ತು ಸ್ವತಂತ್ರ ವಿವರಣೆಗಳು. ಮೂಲ ಪ್ರಕಟಣೆಗೆ ಕ್ರೆಡಿಟ್ ನೀಡಲಾಗುತ್ತದೆ.",
+    latest:"ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು",
+    available:"ಸುದ್ದಿಗಳು ಲಭ್ಯವಿವೆ",
+    original:"ಮೂಲ ಸುದ್ದಿ ಓದಿ →"
+},
+
+ml:{
+    title:"കൂടുതൽ അറിയൂ. കുറച്ച് വായിക്കൂ.",
+    text:"പ്രധാന വാർത്തകളുടെ ചുരുക്കവും സ്വതന്ത്രവുമായ വിശദീകരണങ്ങൾ. യഥാർത്ഥ പ്രസിദ്ധീകരണത്തിന് ക്രെഡിറ്റ് നൽകുന്നു.",
+    latest:"ഏറ്റവും പുതിയ വാർത്തകൾ",
+    available:"വാർത്തകൾ ലഭ്യമാണ്",
+    original:"യഥാർത്ഥ വാർത്ത വായിക്കുക →"
+},
+
+bn:{
+    title:"বেশি জানুন। কম পড়ুন।",
+    text:"গুরুত্বপূর্ণ খবরের সংক্ষিপ্ত ও মৌলিক ব্যাখ্যা, যেখানে মূল প্রকাশনাকে কৃতিত্ব দেওয়া হয়।",
+    latest:"সর্বশেষ খবর",
+    available:"টি খবর পাওয়া যাচ্ছে",
+    original:"মূল খবর পড়ুন →"
+},
+
+mr:{
+    title:"जास्त जाणून घ्या. कमी वाचा.",
+    text:"महत्त्वाच्या बातम्यांचे संक्षिप्त आणि स्वतंत्र स्पष्टीकरण. मूळ प्रकाशनाला श्रेय दिले जाते.",
+    latest:"ताज्या बातम्या",
+    available:"बातम्या उपलब्ध आहेत",
+    original:"मूळ बातमी वाचा →"
+}
+
+};
+
+
+let articles = [];
+
+let category = "World";
+
+let lang = "en";
+
+let renderSeq = 0;
+
+
+/* =========================================================
+   HELPERS
+========================================================= */
+
+function esc(value){
+
+    const div =
+        document.createElement("div");
+
+    div.textContent =
+        value ?? "";
+
+    return div.innerHTML;
 }
 
 
-function safeURL(value) {
+function safeUrl(value){
 
-  try {
+    try{
 
-    const url =
-      new URL(value);
+        const url =
+            new URL(value);
 
-    if (
-      url.protocol === "http:" ||
-      url.protocol === "https:"
-    ) {
-      return url.href;
+        if(
+            url.protocol !== "http:" &&
+            url.protocol !== "https:"
+        ){
+
+            return "#";
+        }
+
+        return url.href;
+
+    }catch{
+
+        return "#";
+
     }
 
-  } catch (error) {}
-
-  return "#";
 }
 
 
-/* =========================================
-   ARTICLE NORMALIZATION
-========================================= */
+function imageUrl(article){
 
-function normalizeArticle(article) {
-
-  return {
-
-    id:
-      article.id ||
-      article.source_url ||
-      article.url ||
-      Math.random().toString(36),
-
-    category:
-      article.category ||
-      "World",
-
-    headline:
-      article.headline ||
-      article.title ||
-      "Untitled story",
-
-    summary:
-      article.summary ||
-      "",
-
-    publisher:
-      article.publisher ||
-      article.source ||
-      "Original publication",
-
-    published_at:
-      article.published_at ||
-      article.date ||
-      "",
-
-    source_url:
-      article.source_url ||
-      article.url ||
-      "#",
-
-    image_url:
-      article.image_url ||
-      article.image ||
-      "",
-
-    image_type:
-      article.image_type ||
-      "source"
-
-  };
-
+    return article.image_url || "";
 }
 
 
-/* =========================================
-   CATEGORY
-========================================= */
+function formatDate(value){
 
-function articleBelongsToCategory(
-  article,
-  category
-) {
+    const date =
+        new Date(value);
 
-  if (category === "Technology & AI") {
+    if(
+        Number.isNaN(
+            date.getTime()
+        )
+    ){
 
-    return CATEGORY_MAP[
-      "Technology & AI"
-    ].includes(article.category);
+        return value || "";
 
-  }
+    }
 
-  return article.category === category;
-
-}
-
-
-function getCategoryArticles(category) {
-
-  return allArticles.filter(
-    article =>
-      articleBelongsToCategory(
-        article,
-        category
-      )
-  );
-
-}
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
-
-function createCategoryButtons() {
-
-  const nav =
-    document.getElementById(
-      "categoryNav"
+    return date.toLocaleString(
+        undefined,
+        {
+            day:"2-digit",
+            month:"short",
+            year:"numeric",
+            hour:"2-digit",
+            minute:"2-digit"
+        }
     );
 
-  nav.innerHTML = "";
+}
 
-  CATEGORY_ORDER.forEach(
-    category => {
 
-      const button =
-        document.createElement("button");
+/* =========================================================
+   CATEGORY NAV
+========================================================= */
 
-      button.textContent =
-        category;
+function buildNav(){
 
-      if (
-        category ===
-        currentCategory
-      ) {
-
-        button.classList.add(
-          "active"
+    const nav =
+        document.getElementById(
+            "categoryNav"
         );
 
-      }
+    nav.innerHTML = "";
 
-      button.addEventListener(
-        "click",
-        () => {
+    CATEGORIES.forEach(
+        currentCategory => {
 
-          currentCategory =
-            category;
+            const button =
+                document.createElement(
+                    "button"
+                );
 
-          createCategoryButtons();
+            button.className =
+                "nav-btn" +
+                (
+                    currentCategory === category
+                    ? " active"
+                    : ""
+                );
 
-          render();
+            button.style.setProperty(
+                "--cat",
+                COLORS[currentCategory]
+            );
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+            if(
+                currentCategory === category
+            ){
+
+                button.style.background =
+                    COLORS[currentCategory];
+
+            }
+
+            button.innerHTML = `
+
+                <span class="nav-icon">
+                    ${ICONS[currentCategory]}
+                </span>
+
+                <span>
+                    ${currentCategory}
+                </span>
+
+            `;
+
+            button.onclick = () => {
+
+                category =
+                    currentCategory;
+
+                buildNav();
+
+                render();
+
+            };
+
+            nav.appendChild(button);
 
         }
-      );
+    );
 
-      nav.appendChild(button);
+}
+
+
+/* =========================================================
+   OPTIONAL TRANSLATION
+========================================================= */
+
+async function translateText(text){
+
+    if(
+        !text ||
+        lang === "en"
+    ){
+
+        return text || "";
 
     }
-  );
+
+    const cacheKey =
+        "s24:" +
+        lang +
+        ":" +
+        text;
+
+    try{
+
+        const cached =
+            localStorage.getItem(
+                cacheKey
+            );
+
+        if(cached){
+
+            return cached;
+
+        }
+
+    }catch{}
+
+
+    try{
+
+        const url =
+            "https://translate.googleapis.com/" +
+            "translate_a/single" +
+            "?client=gtx" +
+            "&sl=en" +
+            "&tl=" +
+            encodeURIComponent(lang) +
+            "&dt=t" +
+            "&q=" +
+            encodeURIComponent(text);
+
+
+        const response =
+            await fetch(url);
+
+
+        const data =
+            await response.json();
+
+
+        const output =
+            data?.[0]
+                ?.map(
+                    item => item?.[0] || ""
+                )
+                .join("")
+            || text;
+
+
+        try{
+
+            localStorage.setItem(
+                cacheKey,
+                output
+            );
+
+        }catch{}
+
+
+        return output;
+
+    }catch{
+
+        return text;
+
+    }
 
 }
 
 
-/* =========================================
-   LOCAL TIME
-========================================= */
+/* =========================================================
+   RENDER
+========================================================= */
 
-function updateLocalTime() {
+async function render(){
 
-  const now =
-    new Date();
+    const sequence =
+        ++renderSeq;
 
-  const time =
-    now.toLocaleTimeString(
-      undefined,
-      {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit"
-      }
-    );
 
-  const date =
-    now.toLocaleDateString(
-      undefined,
-      {
-        weekday: "short",
-        day: "2-digit",
-        month: "short",
-        year: "numeric"
-      }
-    );
+    const ui =
+        UI[lang] || UI.en;
 
-  const timezone =
-    Intl.DateTimeFormat()
-      .resolvedOptions()
-      .timeZone;
 
-  document.getElementById(
-    "localTime"
-  ).textContent =
-    time;
+    document.getElementById(
+        "introTitle"
+    ).textContent =
+        ui.title;
 
-  document.getElementById(
-    "localDate"
-  ).textContent =
-    `${date} • ${timezone}`;
+
+    document.getElementById(
+        "introText"
+    ).textContent =
+        ui.text;
+
+
+    document.getElementById(
+        "sectionTitle"
+    ).textContent =
+        ui.latest;
+
+
+    let list =
+        articles
+            .filter(
+                article =>
+                    article &&
+                    article.category === category
+            )
+            .sort(
+                (a,b) =>
+                    new Date(b.published_at) -
+                    new Date(a.published_at)
+            );
+
+
+    document.getElementById(
+        "storyCount"
+    ).textContent =
+        `${list.length} ${ui.available}`;
+
+
+    const featured =
+        document.getElementById(
+            "featured"
+        );
+
+
+    const storyList =
+        document.getElementById(
+            "storyList"
+        );
+
+
+    if(!list.length){
+
+        featured.style.display =
+            "none";
+
+        storyList.innerHTML =
+            '<div class="empty">' +
+            'No stories are available in this category right now.' +
+            '</div>';
+
+        return;
+
+    }
+
+
+    const visible =
+        await Promise.all(
+
+            list.map(
+                async article => ({
+
+                    ...article,
+
+                    headline:
+                        await translateText(
+                            article.headline
+                        ),
+
+                    summary:
+                        await translateText(
+                            article.summary
+                        )
+
+                })
+            )
+
+        );
+
+
+    if(
+        sequence !== renderSeq
+    ){
+
+        return;
+
+    }
+
+
+    const first =
+        visible[0];
+
+
+    featured.style.display =
+        "grid";
+
+
+    const firstImage =
+        imageUrl(first);
+
+
+    featured.innerHTML = `
+
+        <div class="featured-image">
+
+            ${
+                firstImage
+
+                ?
+
+                `
+                <img
+                    src="${esc(firstImage)}"
+                    alt="${esc(first.headline)}"
+                    onerror="
+                        this.parentElement.innerHTML =
+                        '<div class=empty>Image unavailable</div>'
+                    "
+                >
+                `
+
+                :
+
+                ""
+            }
+
+            <div class="badge">
+                ${
+                    first.image_type === "ai_generated"
+                    ? "AI VISUAL"
+                    : "STORY IMAGE"
+                }
+            </div>
+
+        </div>
+
+
+        <div class="featured-content">
+
+            <div
+                class="category"
+                style="
+                    color:${COLORS[category]}
+                "
+            >
+                ${esc(first.category)}
+            </div>
+
+
+            <h2>
+                ${esc(first.headline)}
+            </h2>
+
+
+            <div class="summary">
+                ${esc(first.summary)}
+            </div>
+
+
+            <div class="meta">
+
+                <span>
+                    ${esc(first.publisher)}
+                </span>
+
+                <span>
+                    ${esc(
+                        formatDate(
+                            first.published_at
+                        )
+                    )}
+                </span>
+
+            </div>
+
+
+            <a
+                class="original"
+                href="${esc(
+                    safeUrl(
+                        first.source_url
+                    )
+                )}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ${ui.original}
+            </a>
+
+        </div>
+
+    `;
+
+
+    storyList.innerHTML = "";
+
+
+    visible
+        .slice(1)
+        .forEach(
+            article => {
+
+                const card =
+                    document.createElement(
+                        "article"
+                    );
+
+                card.className =
+                    "story";
+
+
+                const image =
+                    imageUrl(article);
+
+
+                card.innerHTML = `
+
+                    <div class="story-image">
+
+                        ${
+                            image
+
+                            ?
+
+                            `
+                            <img
+                                src="${esc(image)}"
+                                alt="${esc(article.headline)}"
+                                loading="lazy"
+                                onerror="
+                                    this.style.display='none'
+                                "
+                            >
+                            `
+
+                            :
+
+                            ""
+                        }
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <div
+                            class="category"
+                            style="
+                                color:${COLORS[category]}
+                            "
+                        >
+                            ${esc(article.category)}
+                        </div>
+
+
+                        <h3>
+                            ${esc(article.headline)}
+                        </h3>
+
+
+                        <div class="story-summary">
+                            ${esc(article.summary)}
+                        </div>
+
+
+                        <div class="story-bottom">
+
+                            <div class="story-meta">
+
+                                ${esc(article.publisher)}
+
+                                ${
+                                    article.published_at
+                                    ? " • " +
+                                      esc(
+                                        formatDate(
+                                            article.published_at
+                                        )
+                                      )
+                                    : ""
+                                }
+
+                            </div>
+
+
+                            <a
+                                class="story-link"
+                                href="${esc(
+                                    safeUrl(
+                                        article.source_url
+                                    )
+                                )}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ${ui.original}
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                storyList.appendChild(
+                    card
+                );
+
+            }
+        );
 
 }
 
 
-updateLocalTime();
+/* =========================================================
+   CLOCK
+========================================================= */
+
+function updateClock(){
+
+    const now =
+        new Date();
+
+
+    document.getElementById(
+        "localTime"
+    ).textContent =
+        now.toLocaleTimeString(
+            undefined,
+            {
+                hour:"2-digit",
+                minute:"2-digit",
+                second:"2-digit"
+            }
+        );
+
+
+    document.getElementById(
+        "localDate"
+    ).textContent =
+        now.toLocaleDateString(
+            undefined,
+            {
+                weekday:"short",
+                day:"2-digit",
+                month:"short",
+                year:"numeric"
+            }
+        )
+        +
+        " • "
+        +
+        Intl.DateTimeFormat()
+            .resolvedOptions()
+            .timeZone;
+
+}
+
+
+/* =========================================================
+   LOAD ARTICLES
+========================================================= */
+
+async function loadArticles(){
+
+    try{
+
+        const response =
+            await fetch(
+                "articles.json?t=" +
+                Date.now(),
+                {
+                    cache:"no-store"
+                }
+            );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "articles.json unavailable"
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        articles =
+            Array.isArray(
+                data.articles
+            )
+
+            ?
+
+            data.articles.filter(
+                article =>
+                    article &&
+                    article.headline &&
+                    article.source_url
+            )
+
+            :
+
+            [];
+
+
+        buildNav();
+
+        await render();
+
+    }catch(error){
+
+        console.error(error);
+
+
+        document.getElementById(
+            "storyList"
+        ).innerHTML =
+
+            '<div class="error">' +
+            'Unable to load the news feed. ' +
+            'Please try again shortly.' +
+            '</div>';
+
+    }
+
+}
+
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+document
+    .getElementById(
+        "languageSelect"
+    )
+    .addEventListener(
+        "change",
+        event => {
+
+            lang =
+                event.target.value;
+
+            render();
+
+        }
+    );
+
+
+updateClock();
 
 setInterval(
-  updateLocalTime,
-  1000
+    updateClock,
+    1000
 );
 
 
-/* =========================================
-   DATE FORMAT
-========================================= */
-
-function formatDate(dateString) {
-
-  if (!dateString) {
-    return "";
-  }
-
-  const date =
-    new Date(dateString);
-
-  if (
-    Number.isNaN(
-      date.getTime()
-    )
-  ) {
-
-    return "";
-
-  }
-
-  return date.toLocaleString(
-    undefined,
-    {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
-    }
-  );
-
-}
-
-
-/* =========================================
-   IMAGE FALLBACK
-========================================= */
-
-function imageForArticle(article) {
-
-  if (
-    article.image_url &&
-    article.image_url.startsWith(
-      "http"
-    )
-  ) {
-
-    return article.image_url;
-
-  }
-
-  /*
-     Fallback visual.
-
-     The curator should eventually provide
-     the AI-generated image_url.
-  */
-
-  const prompt =
-    encodeURIComponent(
-      article.headline
-    );
-
-  return (
-    "https://image.pollinations.ai/" +
-    "prompt/" +
-    prompt +
-    "?width=900&height=600&nologo=true"
-  );
-
-}
-
-
-/* =========================================
-   TRANSLATION
-========================================= */
-
-async function translateText(
-  text,
-  target
-) {
-
-  if (
-    !text ||
-    target === "en"
-  ) {
-
-    return text;
-
-  }
-
-  try {
-
-    const url =
-      "https://translate.googleapis.com/" +
-      "translate_a/single" +
-      "?client=gtx" +
-      "&sl=en" +
-      "&tl=" +
-      encodeURIComponent(target) +
-      "&dt=t" +
-      "&q=" +
-      encodeURIComponent(text);
-
-    const response =
-      await fetch(url);
-
-    if (!response.ok) {
-      return text;
-    }
-
-    const data =
-      await response.json();
-
-    if (
-      !data ||
-      !data[0]
-    ) {
-
-      return text;
-
-    }
-
-    return data[0]
-      .map(
-        part => part[0]
-      )
-      .join("");
-
-  } catch {
-
-    return text;
-
-  }
-
-}
-
-
-async function translateArticle(
-  article
-) {
-
-  if (
-    currentLanguage === "en"
-  ) {
-
-    return article;
-
-  }
-
-  const [
-    headline,
-    summary
-  ] = await Promise.all([
-
-    translateText(
-      article.headline,
-      currentLanguage
-    ),
-
-    translateText(
-      article.summary,
-      currentLanguage
-    )
-
-  ]);
-
-  return {
-
-    ...article,
-
-    headline,
-    summary
-
-  };
-
-}
-
-
-/* =========================================
-   FEATURED STORY
-========================================= */
-
-function renderFeatured(
-  article,
-  ui
-) {
-
-  const container =
-    document.getElementById(
-      "featured"
-    );
-
-  if (!article) {
-
-    container.style.display =
-      "none";
-
-    return;
-
-  }
-
-  container.style.display =
-    "grid";
-
-  const image =
-    imageForArticle(article);
-
-  const imageType =
-    article.image_type ===
-    "ai_generated"
-      ? "AI VISUAL"
-      : "STORY IMAGE";
-
-  container.innerHTML = `
-
-    <div class="featured-image">
-
-      <img
-        src="${escapeHTML(image)}"
-        alt="${escapeHTML(article.headline)}"
-        loading="eager"
-        onerror="this.src='https://placehold.co/900x600/11151d/ffffff?text=Snippet24'"
-      >
-
-      <div class="image-label">
-        ${imageType}
-      </div>
-
-    </div>
-
-
-    <div class="featured-content">
-
-      <div class="category">
-        ${escapeHTML(article.category)}
-      </div>
-
-      <h2>
-        ${escapeHTML(article.headline)}
-      </h2>
-
-      <div class="featured-summary">
-        ${escapeHTML(article.summary)}
-      </div>
-
-      <div class="meta">
-
-        <span>
-          ${escapeHTML(article.publisher)}
-        </span>
-
-        <span>
-          ${escapeHTML(
-            formatDate(
-              article.published_at
-            )
-          )}
-        </span>
-
-      </div>
-
-      <a
-        class="read-original"
-        href="${escapeHTML(
-          safeURL(
-            article.source_url
-          )
-        )}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ${ui.original}
-      </a>
-
-    </div>
-
-  `;
-
-}
-
-
-/* =========================================
-   STORY CARD
-========================================= */
-
-function createStoryCard(
-  article,
-  ui
-) {
-
-  const card =
-    document.createElement(
-      "article"
-    );
-
-  card.className =
-    "story";
-
-  const image =
-    imageForArticle(article);
-
-  card.innerHTML = `
-
-    <div class="story-image">
-
-      <img
-        src="${escapeHTML(image)}"
-        alt="${escapeHTML(article.headline)}"
-        loading="lazy"
-        onerror="this.src='https://placehold.co/600x400/11151d/ffffff?text=Snippet24'"
-      >
-
-    </div>
-
-
-    <div class="story-content">
-
-      <div class="category">
-        ${escapeHTML(article.category)}
-      </div>
-
-      <h3>
-        ${escapeHTML(article.headline)}
-      </h3>
-
-      <div class="story-summary">
-        ${escapeHTML(article.summary)}
-      </div>
-
-      <div class="story-bottom">
-
-        <div class="story-meta">
-          ${escapeHTML(article.publisher)}
-          ${article.published_at ? " • " : ""}
-          ${escapeHTML(
-            formatDate(
-              article.published_at
-            )
-          )}
-        </div>
-
-        <a
-          class="story-link"
-          href="${escapeHTML(
-            safeURL(
-              article.source_url
-            )
-          )}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ${ui.original}
-        </a>
-
-      </div>
-
-    </div>
-
-  `;
-
-  return card;
-
-}
-
-
-/* =========================================
-   RENDER
-========================================= */
-
-async function render() {
-
-  const ui =
-    UI_TRANSLATIONS[
-      currentLanguage
-    ] ||
-    UI_TRANSLATIONS.en;
-
-
-  document.getElementById(
-    "introTitle"
-  ).textContent =
-    ui.introTitle;
-
-
-  document.getElementById(
-    "introText"
-  ).textContent =
-    ui.introText;
-
-
-  document.getElementById(
-    "sectionTitle"
-  ).textContent =
-    ui.latest;
-
-
-  let articles =
-    getCategoryArticles(
-      currentCategory
-    );
-
-
-  articles =
-    articles.sort(
-      (
-        a,
-        b
-      ) =>
-        new Date(
-          b.published_at
-        ) -
-        new Date(
-          a.published_at
-        )
-    );
-
-
-  document.getElementById(
-    "storyCount"
-  ).textContent =
-    `${articles.length} ${ui.available}`;
-
-
-  const featured =
-    document.getElementById(
-      "featured"
-    );
-
-  const list =
-    document.getElementById(
-      "storyList"
-    );
-
-
-  if (!articles.length) {
-
-    featured.style.display =
-      "none";
-
-    list.innerHTML = `
-      <div class="empty">
-        No stories are available in
-        this category right now.
-      </div>
-    `;
-
-    return;
-
-  }
-
-
-  /*
-     Translate only the stories that
-     are actually being displayed.
-  */
-
-  const visibleArticles =
-    await Promise.all(
-      articles.map(
-        article =>
-          translateArticle(
-            article
-          )
-      )
-    );
-
-
-  renderFeatured(
-    visibleArticles[0],
-    ui
-  );
-
-
-  list.innerHTML = "";
-
-
-  visibleArticles
-    .slice(1)
-    .forEach(
-      article => {
-
-        list.appendChild(
-          createStoryCard(
-            article,
-            ui
-          )
-        );
-
-      }
-    );
-
-}
-
-
-/* =========================================
-   LOAD ARTICLES.JSON
-========================================= */
-
-async function loadNews() {
-
-  const list =
-    document.getElementById(
-      "storyList"
-    );
-
-  try {
-
-    const response =
-      await fetch(
-        "articles.json?t=" +
-        Date.now()
-      );
-
-
-    if (!response.ok) {
-
-      throw new Error(
-        "Unable to load articles.json"
-      );
-
-    }
-
-
-    const data =
-      await response.json();
-
-
-    /*
-       Current articles.json:
-
-       {
-         "total": 100,
-         "articles": [...]
-       }
-    */
-
-    if (
-      !data ||
-      !Array.isArray(
-        data.articles
-      )
-    ) {
-
-      throw new Error(
-        "articles.json does not contain an articles array"
-      );
-
-    }
-
-
-    allArticles =
-      data.articles
-        .map(
-          normalizeArticle
-        )
-        .filter(
-          article =>
-            article.headline &&
-            article.source_url
-        );
-
-
-    createCategoryButtons();
-
-    await render();
-
-
-  } catch (error) {
-
-    console.error(
-      "Snippet24 error:",
-      error
-    );
-
-
-    list.innerHTML = `
-      <div class="error">
-        Unable to load the news feed.
-        Please try again shortly.
-      </div>
-    `;
-
-  }
-
-}
-
-
-/* =========================================
-   LANGUAGE
-========================================= */
-
-document
-  .getElementById(
-    "languageSelect"
-  )
-  .addEventListener(
-    "change",
-    async event => {
-
-      currentLanguage =
-        event.target.value;
-
-      await render();
-
-    }
-  );
-
-
-/* =========================================
-   START
-========================================= */
-
-loadNews();
-
-</script>
-<script>
-async function loadArticles() {
-  try {
-    const response = await fetch("articles.json");
-
-    if (!response.ok) {
-      throw new Error("Could not load articles.json");
-    }
-
-    const data = await response.json();
-
-    console.log("Articles loaded:", data.articles.length);
-
-    window.snippet24Articles = data.articles;
-
-    const count = document.querySelector(".story-count");
-
-    if (count) {
-      count.textContent = `${data.articles.length} stories available`;
-    }
-
-  } catch (error) {
-    console.error("Error loading articles:", error);
-  }
-}
-
 loadArticles();
+
 </script>
 
 </body>
