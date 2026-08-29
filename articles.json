@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T14:34:28.933648+00:00",
-  "total": 1152,
+  "updated_at": "2026-08-29T15:04:38.936564+00:00",
+  "total": 1168,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 99,
-    "India": 301,
+    "India": 313,
     "Business": 166,
-    "Technology & AI": 92,
-    "Sports": 79,
-    "Entertainment": 269,
+    "Technology & AI": 93,
+    "Sports": 80,
+    "Entertainment": 271,
     "Lifestyle": 146
   },
   "articles": [
@@ -1664,6 +1664,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7c53294806769006d206",
+      "category": "India",
+      "headline": "Karnataka Minister Priyank Kharge hits back at Union Minister Kumaraswamy over KPSC ‘irregularities’",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:45:09+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-minister-priyank-kharge-hits-back-at-union-minister-kumaraswamy-over-kpsc-irregularities/article71404633.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%20Minister%20Priyank%20Kharge%20hits%20back%20at%20Union%20Minister%20Kumaraswamy%20over%20KPSC%20%E2%80%98irregularities%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=131667078",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ccd4aa7ee5c140c08391",
+      "category": "India",
+      "headline": "Six out of 16 people from Assam caught in the Nepal disaster safe",
+      "summary": "Among the missing are a retired Gauhati University professor, her husband, and a doctor at Nalbari Medical College and Hospital",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:45:01+00:00",
+      "source_url": "https://www.thehindu.com/news/national/assam/five-out-of-16-people-from-assam-caught-in-the-nepal-disaster-are-safe/article71404455.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Six%20out%20of%2016%20people%20from%20Assam%20caught%20in%20the%20Nepal%20disaster%20safe.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1139243854",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e580247fc093f9a37adf",
+      "category": "India",
+      "headline": "Lorry driver escapes with injuries after boulders fall at quarry in Keralam’s Thiruvananthapuram",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:43:51+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/lorry-driver-seriously-injured-after-boulders-fall-at-quarry-in-keralams-thiruvananthapuram/article71403750.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Lorry%20driver%20escapes%20with%20injuries%20after%20boulders%20fall%20at%20quarry%20in%20Keralam%E2%80%99s%20Thiruvananthapuram.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1768543960",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8f191093815d125e5b66",
+      "category": "India",
+      "headline": "Nagendra’s exit revives lobbying for Cabinet berth in Karnataka Congress",
+      "summary": "Vacancy created by the exit of Nagendra is likely to be filled by a woman legislator. Sandur MLA E. Annapurna Tukaram is seen as a strong contender, as she belongs to the same district and the Scheduled Tribe community as Nagendra",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:37:21+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/nagendras-exit-revives-lobbying-for-cabinet-berth-in-karnataka-congress/article71404825.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nagendra%E2%80%99s%20exit%20revives%20lobbying%20for%20Cabinet%20berth%20in%20Karnataka%20Congress.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=502835619",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "525a017061c8aa8ac2fe",
       "category": "India",
       "headline": "24 X 7 specialty services: Keralam government-KGMOA to hold discussions",
@@ -2002,17 +2046,6 @@
       "published_at": "2026-08-29T12:34:17+00:00",
       "source_url": "https://www.ndtv.com/india-news/manjeet-kaur-assaulted-tied-to-tree-burned-punjab-influencer-dies-after-2-month-battle-11975088#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Assaulted%2C%20Tied%20To%20Tree%2C%20Burned%3A%20Punjab%20Influencer%20Dies%20After%202-Month%20Battle.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2092543610",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ccf1360f1e2dc953490e",
-      "category": "India",
-      "headline": "Five out of 16 people from Assam caught in the Nepal disaster safe",
-      "summary": "Among the missing are a retired Gauhati University professor, her husband, and a doctor at Nalbari Medical College and Hospital",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T12:31:55+00:00",
-      "source_url": "https://www.thehindu.com/news/national/assam/five-out-of-16-people-from-assam-caught-in-the-nepal-disaster-are-safe/article71404455.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Five%20out%20of%2016%20people%20from%20Assam%20caught%20in%20the%20Nepal%20disaster%20safe.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=495198011",
       "image_type": "ai_generated"
     },
     {
@@ -2662,17 +2695,6 @@
       "published_at": "2026-08-29T06:43:46+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-kiara-advani-getting-trolled-for-intimate-toxic-scenes-with-yash-did-she-sign-up-for-mother-teresa-roles-11973999#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Swastika%20Mukherjee%20On%20Kiara%20Advani%20Getting%20Trolled%20For%20Intimate%20Toxic%20Scenes%20With%20Yash%3A%20%27Did%20She%20Sign%20Up%20For%20Mother%20Teresa%20Roles%3F%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1383814775",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f2e7dd451edc32031221",
-      "category": "India",
-      "headline": "Lorry driver seriously injured after boulders fall at quarry in Keralam’s Thiruvananthapuram",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T06:32:24+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/lorry-driver-seriously-injured-after-boulders-fall-at-quarry-in-keralams-thiruvananthapuram/article71403750.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Lorry%20driver%20seriously%20injured%20after%20boulders%20fall%20at%20quarry%20in%20Keralam%E2%80%99s%20Thiruvananthapuram.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1641693927",
       "image_type": "ai_generated"
     },
     {
@@ -3732,6 +3754,116 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "da3b39ba4d4da7dfda4a",
+      "category": "India",
+      "headline": "CM inaugurates 111th Jayanti celebrations of Rajendra Swami",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:53:22+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/cm-inaugurates-111th-jayanti-celebrations-of-rajendra-swami/article71405153.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CM%20inaugurates%20111th%20Jayanti%20celebrations%20of%20Rajendra%20Swami.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3003386206",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2cf6d3ea22ab9880c044",
+      "category": "India",
+      "headline": "Kakkadampoyil eyes tourism boom with master plan, travel mart",
+      "summary": "The plan under discussion with the State government will seek to integrate infrastructure development, tourism promotion, environmental conservation and local economic development under a common framework approved by the Tourism department",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:50:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/kakkadampoyil-eyes-tourism-boom-with-master-plan-travel-mart/article71404388.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kakkadampoyil%20eyes%20tourism%20boom%20with%20master%20plan%2C%20travel%20mart.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2273558504",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5245b52d771f04039303",
+      "category": "India",
+      "headline": "2 Arrested, 2 Minors Detained In Arunachal Gang-Rape Case",
+      "summary": "During the operation, one Child in Conflict with Law (CCL) was detained.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T14:50:00+00:00",
+      "source_url": "https://www.ndtv.com/india-news/2-arrested-2-minors-detained-in-arunachal-gang-rape-case-11975528#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%202%20Arrested%2C%202%20Minors%20Detained%20In%20Arunachal%20Gang-Rape%20Case.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2053784042",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c488b9ae8de730f4ba33",
+      "category": "India",
+      "headline": "Family counselling reunites divorced couple in Sri Sathya Sai district",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:47:56+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/family-counselling-reunites-divorced-couple-in-sri-sathya-sai-district/article71404368.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Family%20counselling%20reunites%20divorced%20couple%20in%20Sri%20Sathya%20Sai%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2788836621",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "21538ec8e68c0a09d2ac",
+      "category": "India",
+      "headline": "HDFC CEO Sashidhar Jagdishan Not Seeking Extension, To Retire On October 26",
+      "summary": "Jagdishan has worked at HDFC Bank for over two decades and held crucial positions.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T14:45:51+00:00",
+      "source_url": "https://www.ndtv.com/india-news/hdfc-ceo-sashidhar-jagdishan-not-seeking-extension-to-retire-on-october-26-11975506#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20HDFC%20CEO%20Sashidhar%20Jagdishan%20Not%20Seeking%20Extension%2C%20To%20Retire%20On%20October%2026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1659550543",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f959ddcf46ef3b91486b",
+      "category": "India",
+      "headline": "Congress retains power in Kalaburagi City Corporation",
+      "summary": "Interestingly, both the Mayor and Deputy Mayor posts are held by the councillors from wards falling under the Kalaburagi North Assembly constituency",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:44:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/congress-retains-power-in-kalaburagi-city-corporation/article71404966.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20retains%20power%20in%20Kalaburagi%20City%20Corporation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1751393668",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1a866d4d4db1ecd98dfd",
+      "category": "India",
+      "headline": "Dharashiv MP pushes for crop loss survey and compensation for farmers in Marathwada region",
+      "summary": "The Marathwada region has faced a rainfall deficit since June 1. The region has so far received 381 mm (77%) average rainfall in all eight districts against the expected 498.8 mm.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:44:14+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/dharashiv-mp-pushes-for-crop-loss-survey-and-compensation-for-farmers-in-marathwada-region/article71403808.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Dharashiv%20MP%20pushes%20for%20crop%20loss%20survey%20and%20compensation%20for%20farmers%20in%20Marathwada%20region.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3222642287",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a93a6686d8eb7706dd5e",
+      "category": "India",
+      "headline": "Revenue Minister Satya Prasad wonders if JAC leader Venkateswarlu is pursuing a political agenda",
+      "summary": "The JAC leader is provoking employees and damaging the relationship between the government and its workforce, the Minister alleges, while maintaining that the NDA government is fully committed to resolving the issues despite financial constraints",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:42:55+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/revenue-minister-satya-prasad-wonders-if-jac-leader-venkateswarlu-is-pursuing-a-political-agenda/article71404786.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revenue%20Minister%20Satya%20Prasad%20wonders%20if%20JAC%20leader%20Venkateswarlu%20is%20pursuing%20a%20political%20agenda.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4002496815",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0a5704730892d48fac4e",
+      "category": "India",
+      "headline": "Delegation seeks direct flights from Hubballi to Ahmedabad, Jodhpur, and Varanasi",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:39:48+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/delegation-seeks-direct-flights-from-hubballi-to-ahmedabad-jodhpur-and-varanasi/article71404434.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delegation%20seeks%20direct%20flights%20from%20Hubballi%20to%20Ahmedabad%2C%20Jodhpur%2C%20and%20Varanasi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=908988478",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1d3bdf1d6cc009d7a387",
+      "category": "India",
+      "headline": "CII Yi Amaravati Chapter sets record with 1,13,109 bamboo seed balls in a day",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T14:39:37+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/cii-yi-amaravati-chapter-sets-record-with-113109-bamboo-seed-balls-in-a-day/article71404984.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CII%20Yi%20Amaravati%20Chapter%20sets%20record%20with%201%2C13%2C109%20bamboo%20seed%20balls%20in%20a%20day.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2681443076",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "aec1a7a4c54711a2d855",
       "category": "India",
       "headline": "Voice of Kolleru formed to protect rights of Kolleru-area residents",
@@ -3798,6 +3930,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "cc0f05572ff1e21df903",
+      "category": "India",
+      "headline": "'New ways to create conflict': BJP hits back at Rahul Gandhi as 'suddhikaran' row intensifies",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T14:25:19+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/new-ways-to-create-conflict-bjp-hits-back-at-rahul-gandhi-as-suddhikaran-row-intensifies/articleshow/133614035.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27New%20ways%20to%20create%20conflict%27%3A%20BJP%20hits%20back%20at%20Rahul%20Gandhi%20as%20%27suddhikaran%27%20row%20intensifies.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=175094330",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "3fa8b3b74e9b872d5c3c",
       "category": "India",
       "headline": "NLUD students back NLSIU peers’ right to convocation",
@@ -3806,6 +3949,17 @@
       "published_at": "2026-08-29T14:24:36+00:00",
       "source_url": "https://www.thehindu.com/news/national/nlud-students-back-nlsiu-peers-right-to-convocation/article71404813.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20NLUD%20students%20back%20NLSIU%20peers%E2%80%99%20right%20to%20convocation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=178733149",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "16a312efd17690fb8971",
+      "category": "Entertainment",
+      "headline": "Subhash Ghai rejected Aishwarya Rai for Taal, Mani Ratnam's Iruvar changed his mind: ‘She belongs to cosmetic world’",
+      "summary": "Subhash Ghai reflects on Aishwarya Rai's casting in Taal, revealing he initially doubted her due to her beauty pageant background.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T14:23:06+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/subhash-ghai-rejected-aishwarya-rai-for-taal-mani-ratnams-iruvar-changed-his-mind-101788012677192.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Subhash%20Ghai%20rejected%20Aishwarya%20Rai%20for%20Taal%2C%20Mani%20Ratnam%27s%20Iruvar%20changed%20his%20mind%3A%20%E2%80%98She%20belongs%20to%20cosmetic%20world%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2920108290",
       "image_type": "ai_generated"
     },
     {
@@ -3985,6 +4139,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3503e33cab39bdf2896c",
+      "category": "India",
+      "headline": "IISER Seat Allotment Result 2026 Round 6 Out: Know How To Download",
+      "summary": "IISER Round 6 seat allotment result 2026 released; check allotment status and fee deadline.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:54:14+00:00",
+      "source_url": "https://www.ndtv.com/education/iiser-seat-allotment-result-2026-round-6-out-know-how-to-download-11975305#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20IISER%20Seat%20Allotment%20Result%202026%20Round%206%20Out%3A%20Know%20How%20To%20Download.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3999224976",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8e05979e5ddc2c5a75de",
+      "category": "India",
+      "headline": "Samay Raina's New 'Latent' Row Involves Banter On Kashmiri Roots",
+      "summary": "Kashmiri Pandit activists have taken offence over Samay Raina's jokes, calling the exchange unfortunate.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:52:00+00:00",
+      "source_url": "https://www.ndtv.com/india-news/samay-rainas-new-latent-row-involves-banter-on-kashmiri-roots-11975138#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Samay%20Raina%27s%20New%20%27Latent%27%20Row%20Involves%20Banter%20On%20Kashmiri%20Roots.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1351811255",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "1a62c58cd56b098cb02d",
       "category": "India",
       "headline": "Union ministers Chirag Paswan, Jitan Ram Manjhi clash over quotas, demand each other's resignation",
@@ -3993,6 +4169,17 @@
       "published_at": "2026-08-29T13:51:18+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/union-ministers-chirag-paswan-jitan-ram-manjhi-clash-over-quotas-demand-each-others-resignation/articleshow/133613275.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Union%20ministers%20Chirag%20Paswan%2C%20Jitan%20Ram%20Manjhi%20clash%20over%20quotas%2C%20demand%20each%20other%27s%20resignation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1840276074",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "34835224b43fbd21951f",
+      "category": "India",
+      "headline": "\"Sub-Standard\": Everest, Laljee Godhoo Banned From Selling Hing Powder",
+      "summary": "he samples of raw hing were found to be sub",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T13:49:41+00:00",
+      "source_url": "https://www.ndtv.com/india-news/substandard-everest-laljee-godhoo-banned-from-selling-hing-powder-11975319#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Sub-Standard%22%3A%20Everest%2C%20Laljee%20Godhoo%20Banned%20From%20Selling%20Hing%20Powder.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1568584425",
       "image_type": "ai_generated"
     },
     {
@@ -4026,28 +4213,6 @@
       "published_at": "2026-08-29T13:46:12+00:00",
       "source_url": "https://www.thehindu.com/news/national/telangana/brs-to-highlight-govt-failures-with-protests-across-state-from-sept2-to-8-ktr/article71400507.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BRS%20to%20highlight%20Govt.%20failures%20with%20protests%20across%20State%20from%20Sept.2%20to%208%3A%20KTR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1875121357",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "432c9b24e349fb8f3dd6",
-      "category": "India",
-      "headline": "\"Substandard\": Everest, Laljee Godhoo Banned From Selling Hing Powder",
-      "summary": "he samples of raw hing were found to be sub",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T13:46:10+00:00",
-      "source_url": "https://www.ndtv.com/india-news/substandard-everest-laljee-godhoo-banned-from-selling-hing-powder-11975319#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Substandard%22%3A%20Everest%2C%20Laljee%20Godhoo%20Banned%20From%20Selling%20Hing%20Powder.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4290073240",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "8e05979e5ddc2c5a75de",
-      "category": "India",
-      "headline": "Samay Raina's New 'Latent' Row Involves Banter On Kashmiri Roots",
-      "summary": "Kashmiri Pandit activists have taken offence over Samay Raina's jokes, calling the exchange unfortunate.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T13:42:18+00:00",
-      "source_url": "https://www.ndtv.com/india-news/samay-rainas-new-latent-row-involves-banter-on-kashmiri-roots-11975138#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Samay%20Raina%27s%20New%20%27Latent%27%20Row%20Involves%20Banter%20On%20Kashmiri%20Roots.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1351811255",
       "image_type": "ai_generated"
     },
     {
@@ -4205,17 +4370,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "2cf6d3ea22ab9880c044",
-      "category": "India",
-      "headline": "Kakkadampoyil eyes tourism boom with master plan, travel mart",
-      "summary": "The plan under discussion with the State government will seek to integrate infrastructure development, tourism promotion, environmental conservation and local economic development under a common framework approved by the Tourism department",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:14:59+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/kakkadampoyil-eyes-tourism-boom-with-master-plan-travel-mart/article71404388.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kakkadampoyil%20eyes%20tourism%20boom%20with%20master%20plan%2C%20travel%20mart.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2273558504",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "8b396e74853d3e572dc2",
       "category": "India",
       "headline": "1 Dead, 5 Injured As Armed Naga Groups Clash In Remote Manipur Forest",
@@ -4290,17 +4444,6 @@
       "published_at": "2026-08-29T12:52:22+00:00",
       "source_url": "https://www.koimoi.com/box-office/box-office-wamiqa-gabbi-goes-past-the-450-crore-mark-in-2026-powered-by-250-crore-100-crore-grossers/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20Wamiqa%20Gabbi%20Goes%20Past%20The%20450%20Crore%20Mark%20In%202026%2C%20Powered%20By%20250%20Crore%20%26%20100%20Crore%20Grossers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3742723024",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "c488b9ae8de730f4ba33",
-      "category": "India",
-      "headline": "Family counselling reunites divorced couple in Sri Sathya Sai district",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T12:50:43+00:00",
-      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/family-counselling-reunites-divorced-couple-in-sri-sathya-sai-district/article71404368.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Family%20counselling%20reunites%20divorced%20couple%20in%20Sri%20Sathya%20Sai%20district.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2788836621",
       "image_type": "ai_generated"
     },
     {
@@ -9265,14 +9408,69 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "d44c64d44fb414bf6d3d",
+      "id": "469e9abb34297cdca95c",
+      "category": "Entertainment",
+      "headline": "Here’s How to Watch Moses Itauma vs. Filip Hrgovic Boxing Pay-Per-View Live Online",
+      "summary": "The best boxers in the world travel to London this weekend, where English fighter Moses Itauma (14-0-0) takes on Albanian Filip Hrgovic (20-2-0) in the heavyweight title main event on Saturday, Aug. 29. For Queensberry Promotions, the Itauma vs. Hrgovic pay-per-view event takes place at The O2 Arena in London, England. Coverage and prelims begin […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T15:00:00+00:00",
+      "source_url": "https://variety.com/2026/shopping/news/how-to-watch-moses-vs-hrgovic-boxing-ppv-live-online-1236845973/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Here%E2%80%99s%20How%20to%20Watch%20Moses%20Itauma%20vs.%20Filip%20Hrgovic%20Boxing%20Pay-Per-View%20Live%20Online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2405275733",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fa0c25eeb6dc8b7788be",
       "category": "World",
-      "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
-      "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises above 650, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
+      "headline": "Number of missing in Nepal and Tibet rises to nearly 3,000 as operations continue",
+      "summary": "Nepal requests foreign ⁠help in identification and storing of bodies, DNA testing and rescuing people from tunnels Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates The number of people killed in the floods in Nepal has risen to at least 675, the country’s disaster authority has said. Seven have also been confirmed dead in Tibet by Chinese state media, taking the total killed...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T14:59:40+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20missing%20in%20Nepal%20and%20Tibet%20rises%20to%20nearly%203%2C000%20as%20operations%20continue.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1391407254",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "102dc236d63bac0c3634",
+      "category": "Sports",
+      "headline": "Swansea can still improve after unbeaten start - Matos",
+      "summary": "Swansea head coach Vitor Matos is \"really pleased\" with their unbeaten start to the Championship season, but insists they can still improve.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T14:47:02+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c2l8djxy54ro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Swansea%20can%20still%20improve%20after%20unbeaten%20start%20-%20Matos.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2418419888",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "20614b3eacf7e805fd0f",
+      "category": "World",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T14:43:04+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dd2d5f2766f9dedfe99b",
+      "category": "World",
+      "headline": "Sarah Ferguson to return to UK after relocating amid Epstein revelations",
+      "summary": "Former Duchess of York moved to Swiss chalet during fallout over her friendship with convicted child sex offender Sarah Ferguson will return to the UK after relocating to a Swiss chalet amid the fallout over the friendship between her and her ex-husband, Andrew Mountbatten-Windsor, and the convicted child sex offender Jeffrey Epstein, according to reports. The pair were stripped of their royal titles in October...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T14:32:34+00:00",
+      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/sarah-ferguson-relocation-uk-jeffrey-epstein",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Sarah%20Ferguson%20to%20return%20to%20UK%20after%20relocating%20amid%20Epstein%20revelations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1520797617",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T14:27:21+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
@@ -9344,23 +9542,12 @@
     {
       "id": "021cdaf4adf3b1e97e0c",
       "category": "Sports",
-      "headline": "'Proud but disappointed' - Glasner's mixed emotions after Liverpool draw",
+      "headline": "'Proud' but 'disappointed' - Glasner's mixed emotions after Liverpool draw",
       "summary": "Nottingham Forest manager Oliver Glasner says he was \"proud\" of his side's performance at Anfield as they draw 2-2 with Liverpool in the Premier League, and believes they could have won.",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T14:15:12+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/c8xkj45r2jno?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Proud%20but%20disappointed%27%20-%20Glasner%27s%20mixed%20emotions%20after%20Liverpool%20draw.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=717528129",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "03b1af2062ee7cad8f18",
-      "category": "World",
-      "headline": "Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead",
-      "summary": "Nepal and China continue arduous search and rescue operations in flood-hit Himalayas Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates The number of people killed in the floods in Nepal has risen to at least 675, the country’s disaster authority has said. Seven have also been confirmed dead in Tibet by Chinese state media, taking the total killed when a glacial collapse...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T14:13:12+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Chinese%20rescuers%20find%20%E2%80%98nothing%20but%20ruins%E2%80%99%20at%20border%20crossing%20as%20Nepal%20seeks%20help%20to%20ID%20and%20store%20the%20dead.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3629332303",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Proud%27%20but%20%27disappointed%27%20-%20Glasner%27s%20mixed%20emotions%20after%20Liverpool%20draw.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2977802269",
       "image_type": "ai_generated"
     },
     {
@@ -9485,17 +9672,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "20614b3eacf7e805fd0f",
-      "category": "World",
-      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
-      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T12:55:39+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20weapons%20depot.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1601821240",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "6fa0f67e509a30b7e741",
       "category": "Sports",
       "headline": "Three-week international break a concern - Mourinho",
@@ -9537,17 +9713,6 @@
       "published_at": "2026-08-29T12:45:16+00:00",
       "source_url": "https://variety.com/2026/shopping/news/how-to-watch-college-football-season-online-free-1235703850/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Here%E2%80%99s%20How%20to%20Watch%20the%202026-2027%20NCAA%20College%20Football%20Season%20Live%20Online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1779417740",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "dd2d5f2766f9dedfe99b",
-      "category": "World",
-      "headline": "Sarah Ferguson to return to UK after relocating amid Epstein revelations",
-      "summary": "Former Duchess of York moved to Swiss chalet during fallout over her friendship with convicted child sex offender Sarah Ferguson will return to the UK after relocating to a Swiss chalet amid the fallout over the friendship between her and her ex-husband, Andrew Mountbatten-Windsor, and the convicted child sex offender Jeffrey Epstein, according to reports. The pair were stripped of their royal titles in October...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T12:42:46+00:00",
-      "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/sarah-ferguson-relocation-uk-jeffrey-epstein",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Sarah%20Ferguson%20to%20return%20to%20UK%20after%20relocating%20amid%20Epstein%20revelations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1520797617",
       "image_type": "ai_generated"
     },
     {
@@ -9727,14 +9892,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "fdf2bb09bc219f886203",
+      "id": "ee73af1e0bb2a6a27ee9",
       "category": "World",
-      "headline": "They laid down arms. Now ex-guerrillas in Colombia fear fate under new hardline president",
-      "summary": "‘Total peace’ plan of previous government led only 99 of Colombia’s 30,000 armed combatants to disarm, but new president Abelardo De la Espriella opposes peace agreements In mid-June, 99 guerrilla fighters were flown by helicopter to a small settlement in a rural area of southern Colombia where they lined up and, one by one, handed their weapons to government officials: rifles, pistols, machine guns and grenade...",
+      "headline": "Was it a mistake for 99 Colombian guerrillas to lay down their arms?",
+      "summary": "Fighters in legal limbo after accepting ‘total peace’ plan of Petro government just days before hardliner Abelardo De la Espriella took over In mid-June, 99 guerrilla fighters were flown by helicopter to a small settlement in a rural area of southern Colombia where they lined up and, one by one, handed their weapons to government officials: rifles, pistols, machine guns and grenade launchers. They also stripped...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T10:00:24+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/29/former-guerrillas-colombia-fate-new-president",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20They%20laid%20down%20arms.%20Now%20ex-guerrillas%20in%20Colombia%20fear%20fate%20under%20new%20hardline%20president.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2472545956",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Was%20it%20a%20mistake%20for%2099%20Colombian%20guerrillas%20to%20lay%20down%20their%20arms%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1378418375",
       "image_type": "ai_generated"
     },
     {
@@ -12386,6 +12551,17 @@
       "published_at": "2026-08-22T08:00:58+00:00",
       "source_url": "https://www.theguardian.com/technology/2026/aug/22/meta-trial-children-privacy",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Hook%2C%20hold%2C%20harvest%20and%20hide%3A%20Meta%E2%80%99s%20alleged%20strategy%20laid%20out%20in%20first%20week%20of%20landmark%20trial.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4140348722",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3fdda0e4071ab615d5b1",
+      "category": "Technology & AI",
+      "headline": "Welcome to Night Vale cocreator Joseph Fink learned storytelling from Grim Fandango",
+      "summary": "Joseph Fink is the cocreator and cowriter of Welcome to Night Vale, arguably the most important fiction podcast ever. He's also the creator of the noir podcast Unlicensed and Alice Isn't Dead, which takes some of the conspiratorial cosmic horror of Night Vale and turns it into fodder for a more serious series about relationships, […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-21T20:44:50+00:00",
+      "source_url": "https://www.theverge.com/entertainment/983448/welcome-to-night-vale-cocreator-joseph-fink-learned-storytelling-from-grim-fandango",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Welcome%20to%20Night%20Vale%20cocreator%20Joseph%20Fink%20learned%20storytelling%20from%20Grim%20Fandango.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=127313769",
       "image_type": "ai_generated"
     },
     {
