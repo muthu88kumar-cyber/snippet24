@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T16:34:35.223501+00:00",
-  "total": 1248,
+  "updated_at": "2026-08-29T17:04:55.241151+00:00",
+  "total": 1267,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 102,
-    "India": 374,
-    "Business": 166,
+    "India": 386,
+    "Business": 167,
     "Technology & AI": 95,
-    "Sports": 85,
-    "Entertainment": 278,
+    "Sports": 87,
+    "Entertainment": 282,
     "Lifestyle": 148
   },
   "articles": [
@@ -80,17 +80,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "7a32a75b66311168874d",
-      "category": "India",
-      "headline": "Delhi court takes cognisance of NIA chargesheet in Red Fort blast case",
-      "summary": "All 10 accused, including main accused Dr. Umer Un Nabi (deceased), were linked to Ansar Ghazwat-ul-Hind (AGuH), an offshoot of the Al-Qaeda in the Indian Subcontinent (AQIS), the chargesheet had said",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T09:35:21+00:00",
-      "source_url": "https://www.thehindu.com/news/national/delhi-court-takes-cognisance-of-nia-chargesheet-in-red-fort-blast-case/article71403911.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%20court%20takes%20cognisance%20of%20NIA%20chargesheet%20in%20Red%20Fort%20blast%20case.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3026651960",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "496480e8ec5e3e44234a",
       "category": "Entertainment",
       "headline": "Toxic Box Office Collection Day 3: Becomes 5th Kannada Film To Reach 150 Crore Net",
@@ -132,6 +121,28 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8e54abbb9730f1f1a5e1",
+      "category": "India",
+      "headline": "Nepal flash flood: India sends tunnel rescue team to Nepal",
+      "summary": "The MEA says at least 287 Indians remain missing as on Saturday, August 29, and in addition, 128 persons of Indian origin are also missing following the disaster",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:02:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/nepal-flash-flood-india-sends-tunnel-rescue-team-to-nepal/article71405468.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20flash%20flood%3A%20India%20sends%20tunnel%20rescue%20team%20to%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3566721977",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "26dbbd04ef9828d9a5f6",
+      "category": "India",
+      "headline": "Why a UN committee asked India to act against hate speech and hate crimes | Explained",
+      "summary": "The UN Committee on the Elimination of Racial Discrimination (UNCERD) has raised concerns over hate speech, hate crimes, citizenship policies, and the treatment of minorities in India. The committee made several recommendations, while the Indian government rejected what it called “sweeping generalisations” in the findings.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:34:00+00:00",
+      "source_url": "https://www.thehindu.com/videos/why-a-un-committee-asked-india-to-act-against-hate-speech-and-hate-crimes-explained/article71405681.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20a%20UN%20committee%20asked%20India%20to%20act%20against%20hate%20speech%20and%20hate%20crimes%20%7C%20Explained.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2237910129",
       "image_type": "ai_generated"
     },
     {
@@ -594,6 +605,17 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "31b970b52b3e918d82b7",
+      "category": "India",
+      "headline": "Fish workers plan protest to demand land rights, reservation",
+      "summary": "The Union government must withdraw the ‘blue economy policy’ as it subjugates the sea and the coast to multinational companies, leaders of the All India Fish Workers Federation say",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:58:46+00:00",
+      "source_url": "https://www.thehindu.com/news/national/fish-workers-plan-protest-to-demand-land-rights-reservation/article71405427.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Fish%20workers%20plan%20protest%20to%20demand%20land%20rights%2C%20reservation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2589644685",
       "image_type": "ai_generated"
     },
     {
@@ -1290,6 +1312,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "46b77ab7988d89429d21",
+      "category": "Entertainment",
+      "headline": "Avengers: Endgame Encore North America Box Office: Here’s How Much It Must Earn To Cross $900M Milestone Domestically",
+      "summary": "Avengers: Endgame Encore is eyeing a major milestone at the North American box office as the MCU’s biggest film gears up for a re-release. It remains one of the highest-grossing movies ever at the domestic box office. This re-release will serve as the biggest opportunity for it to achieve a rare feat in North America. […] The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T16:50:20+00:00",
+      "source_url": "https://www.koimoi.com/box-office/avengers-endgame-encore-north-america-box-office-heres-how-much-it-must-earn-to-cross-900m-milestone-domestically/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Avengers%3A%20Endgame%20Encore%20North%20America%20Box%20Office%3A%20Here%E2%80%99s%20How%20Much%20It%20Must%20Earn%20To%20Cross%20%24900M%20Milestone%20Domestically.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1513704743",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0571fc55c1e8a28895e1",
+      "category": "India",
+      "headline": "Why Maharashtra wants to regulate coaching centres | Explained",
+      "summary": "Maharashtra’s proposed Private Coaching Centres Bill, 2026 seeks to regulate coaching institutes with new rules on admissions, fees, safety standards and student welfare. From banning school-coaching tie-ups to restricting enrolment of children below 13, here’s everything you need to know about the proposed law and its impact on students, parents and coaching centres.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:32:23+00:00",
+      "source_url": "https://www.thehindu.com/videos/why-maharashtra-wants-to-regulate-coaching-centres-explained/article71405676.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20Maharashtra%20wants%20to%20regulate%20coaching%20centres%20%7C%20Explained.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3822905195",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a842ba5db06a10609a60",
+      "category": "India",
+      "headline": "Mamata Banerjee booked: FIR filed over TMCP event in Kolkata",
+      "summary": "Kolkata Police have registered an FIR against former West Bengal Chief Minister Mamata Banerjee and organisers of the TMCP foundation day programme, alleging violations of conditions imposed by the Calcutta High Court. The case has sparked a fresh political controversy in the state.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:31:50+00:00",
+      "source_url": "https://www.thehindu.com/videos/mamata-banerjee-booked-fir-filed-over-tmcp-event-in-kolkata/article71405663.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Mamata%20Banerjee%20booked%3A%20FIR%20filed%20over%20TMCP%20event%20in%20Kolkata.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3880691751",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "8b0871a58359653c747f",
       "category": "India",
       "headline": "Proposed medical college in Uttara Kannada, road in Bengaluru will be named after Hegde, says Karnataka Chief Minister",
@@ -1378,14 +1433,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "3f3617cf778b4686dd12",
+      "id": "ce7d5765a95d3288f141",
       "category": "Business",
-      "headline": "Subhash Chandra 'may borrow ₹2-4 crore from family' for investment in start-ups; he owes creditors crores of rupees",
+      "headline": "Subhash Chandra eyes next investment: May borrow ₹2-4 crore from family to ‘work with friends in Switzerland’",
       "summary": "Chandra plan's next investment: Subhash Chandra says he plans to work with investment friends in Switzerland and may borrow ₹2-4 crore from family to invest in startups, days after NCLT approved his ₹6.5-crore repayment plan against ₹22,006 crore in claims.",
       "publisher": "Mint Business",
       "published_at": "2026-08-29T12:11:32+00:00",
       "source_url": "https://www.livemint.com/companies/people/subhash-chandra-may-borrow-rs-2-4-crore-from-family-for-investment-in-start-ups-he-owes-creditors-crores-of-rupees-11788003494643.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Subhash%20Chandra%20%27may%20borrow%20%E2%82%B92-4%20crore%20from%20family%27%20for%20investment%20in%20start-ups%3B%20he%20owes%20creditors%20crores%20of%20rupees.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3441806349",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Subhash%20Chandra%20eyes%20next%20investment%3A%20May%20borrow%20%E2%82%B92-4%20crore%20from%20family%20to%20%E2%80%98work%20with%20friends%20in%20Switzerland%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=265951494",
       "image_type": "ai_generated"
     },
     {
@@ -1749,6 +1804,50 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "80130f18cf53a4418116",
+      "category": "India",
+      "headline": "Uttar Pradesh CM Adityanath slams opposition for dividing people in name of caste, region, language",
+      "summary": "Adityanath said over the past decade or so, his government eliminated the mafia.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T17:00:46+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/uttar-pradesh-cm-yogi-adityanath-slams-opposition-for-dividing-people-in-name-of-caste-region-language-101788022483531.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Uttar%20Pradesh%20CM%20Adityanath%20slams%20opposition%20for%20dividing%20people%20in%20name%20of%20caste%2C%20region%2C%20language.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1425046582",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "18f9b490c2c96d3c4b34",
+      "category": "India",
+      "headline": "Chirag Paswan hits back at Rahul Gandhi’s caste discrimination remarks",
+      "summary": "Chirag Paswan also demanded the resignation of Hindustani Awam Morcha (Secular) leader, Santosh Kumar Suman from the Bihar Cabinet after the party, an NDA ally, sought a review of the reservation policy and sub",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:46:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/bihar/chirag-paswan-hits-back-at-rahul-gandhis-caste-discrimination-remarks/article71404753.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chirag%20Paswan%20hits%20back%20at%20Rahul%20Gandhi%E2%80%99s%20caste%20discrimination%20remarks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2131807922",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1129d3e3086ac0603553",
+      "category": "India",
+      "headline": "Nepal floods: 16 more reach Keralam, safety of 45 confirmed",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:46:27+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/nepal-floods-16-more-reach-keralam-safety-of-45-confirmed/article71405657.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20floods%3A%2016%20more%20reach%20Keralam%2C%20safety%20of%2045%20confirmed.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2068668800",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7167c2853a366e214ef6",
+      "category": "India",
+      "headline": "17 days after protest, Maharashtra Government accepts all the demands of tribal students",
+      "summary": "Protesters thank Rahul Gandhi among other leaders, say this is the first time their issues were heard at the national level",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:44:37+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-government-accepts-demands-of-tribal-students-appeals-them-to-call-off-hunger-strike/article71404503.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2017%20days%20after%20protest%2C%20Maharashtra%20Government%20accepts%20all%20the%20demands%20of%20tribal%20students.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1863000434",
       "image_type": "ai_generated"
     },
     {
@@ -2288,17 +2387,6 @@
       "published_at": "2026-08-29T13:06:05+00:00",
       "source_url": "https://www.thehindu.com/news/national/maharashtra/marathi-rule-bombay-high-court-disposes-plea-by-cab-drivers-as-state-government-grants-one-year-time-to-learn-language/article71404268.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bombay%20HC%20disposes%20of%20PIL%20after%20Maharashtra%20gives%20drivers%20one%20year%20to%20learn%20Marathi.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1764840248",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ad8831313e5e0453ef53",
-      "category": "India",
-      "headline": "Maharashtra Government accepts demands of tribal students, appeals them to call off hunger strike",
-      "summary": "The demands concerned the recruitment of Scheduled Tribes candidates in government service and the improvement in conditions at residential schools for tribal children",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:04:01+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-government-accepts-demands-of-tribal-students-appeals-them-to-call-off-hunger-strike/article71404503.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Maharashtra%20Government%20accepts%20demands%20of%20tribal%20students%2C%20appeals%20them%20to%20call%20off%20hunger%20strike.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3978599415",
       "image_type": "ai_generated"
     },
     {
@@ -4084,6 +4172,83 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d90573eeeb7367d4fde6",
+      "category": "India",
+      "headline": "District Collector given additional charge as MD of Kochi metro, with Loknath Behera’s term ending on August 30",
+      "summary": "A new MD is awaited at a time when the metro’s ₹1,957-crore Kakkanad extension is due for commissioning in a year, after which KMRL is expected to shift focus to the third phase",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T17:01:08+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/district-collector-given-additional-charge-as-md-of-kochi-metro-with-loknath-beheras-term-ending-on-august-30/article71405323.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20District%20Collector%20given%20additional%20charge%20as%20MD%20of%20Kochi%20metro%2C%20with%20Loknath%20Behera%E2%80%99s%20term%20ending%20on%20August%2030.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1064318444",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "816407a14cb81736b649",
+      "category": "India",
+      "headline": "BJP says 'no caste angle' in Haldwani incident, accuses Rahul Gandhi of playing divisive politics",
+      "summary": "The attack came after Rahul Gandhi targeted the party and the RSS, alleging that a “purification” ceremony was organised at a rally venue addressed by Mallikarjun Kharge in Haldwani",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:42:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/uttarakhand/bjp-says-no-caste-angle-in-haldwani-incident-accuses-rahul-gandhi-of-playing-divisive-politics/article71405561.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20says%20%27no%20caste%20angle%27%20in%20Haldwani%20incident%2C%20accuses%20Rahul%20Gandhi%20of%20playing%20divisive%20politics.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=194058286",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "75c6e2c7610bfa48c2d5",
+      "category": "India",
+      "headline": "‘They will kill me’: Woman, newborn die after delivery in MP's Rewa; video shows she was screaming for help",
+      "summary": "Nursing staff were seen trying to restrain and pacify her, while one staff member was heard asking, “Have you gone mad?” Kalpana died shortly afterward.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T16:42:08+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/mp-rewa-woman-dies-they-will-kill-me-newborn-after-delivery-video-shows-her-screaming-for-help-in-hospital-101788020433710.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98They%20will%20kill%20me%E2%80%99%3A%20Woman%2C%20newborn%20die%20after%20delivery%20in%20MP%27s%20Rewa%3B%20video%20shows%20she%20was%20screaming%20for%20help.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1420701419",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9f5ef3796135f1a08303",
+      "category": "India",
+      "headline": "Special court takes cognisance of NIA chargesheet in 2025 Red Fort blast case",
+      "summary": "It is alleged that the accused had links to Ansar Ghazwat-ul-Hind, an organisation the NIA has described as an offshoot of Al",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:42:02+00:00",
+      "source_url": "https://www.thehindu.com/news/national/delhi-court-takes-cognisance-of-nia-chargesheet-in-red-fort-blast-case/article71403911.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Special%20court%20takes%20cognisance%20of%20NIA%20chargesheet%20in%202025%20Red%20Fort%20blast%20case.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2738606545",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1d66b904018f109caf28",
+      "category": "Business",
+      "headline": "Google, Amazon, OpenAI are making AI chips — so why isn’t Nvidia losing sleep?",
+      "summary": "As of today, Nvidia seems to be getting stronger rather than weaker. And that is because AI demand is growing even faster than the shift towards custom chips.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T16:39:57+00:00",
+      "source_url": "https://www.livemint.com/companies/news/google-amazon-openai-are-making-ai-chips-so-why-isn-t-nvidia-losing-sleep-11788012174932.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Google%2C%20Amazon%2C%20OpenAI%20are%20making%20AI%20chips%20%E2%80%94%20so%20why%20isn%E2%80%99t%20Nvidia%20losing%20sleep%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=152613414",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "567bdb81262805d4b246",
+      "category": "India",
+      "headline": "Infosys Public Services CEO ‘unreachable’ as hundreds go missing after Nepal floods",
+      "summary": "Infosys in a statement on Friday said the chief executive officer of its subsidiary had been in Nepal at the time of the disaster and was unreachable.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T16:34:48+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/infosys-public-services-ceo-lax-gopisetty-unreachable-as-hundreds-go-missing-after-nepal-flash-floods-101788018246617.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Infosys%20Public%20Services%20CEO%20%E2%80%98unreachable%E2%80%99%20as%20hundreds%20go%20missing%20after%20Nepal%20floods.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1353711556",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b54ddab36e44da6038f0",
+      "category": "India",
+      "headline": "‘Not one complaint’: Tharoor praises govt’s Nepal flood rescue efforts in letter to EAM",
+      "summary": "The toll from flash floods in central Nepal rose to 669 on Saturday, with more bodies being recovered, even as more than 2,000 people are still missing.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T16:32:51+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/not-one-complaint-shashi-tharoor-praises-govt-s-nepal-flood-rescue-efforts-in-letter-to-eam-101788014434209.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Not%20one%20complaint%E2%80%99%3A%20Tharoor%20praises%20govt%E2%80%99s%20Nepal%20flood%20rescue%20efforts%20in%20letter%20to%20EAM.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2436587355",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "fe4c0d6e95e02397ce86",
       "category": "India",
       "headline": "'Congress has become issue-less, pushing forward unnecessary issues': CM Dhami amid Uttarakhand purification row",
@@ -4125,17 +4290,6 @@
       "published_at": "2026-08-29T16:20:27+00:00",
       "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/voice-of-kolleru-formed-to-protect-rights-of-kolleru-area-residents/article71405092.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Voice%20of%20Kolleru%20formed%20to%20protect%20rights%20of%20Kolleru-area%20residents.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1367257217",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d90573eeeb7367d4fde6",
-      "category": "India",
-      "headline": "District Collector given additional charge as MD of Kochi metro, with Loknath Behera’s term ending on August 30",
-      "summary": "A new MD is awaited at a time when the metro’s ₹1,957-crore Kakkanad extension is due for commissioning in a year, after which KMRL is expected to shift focus to the third phase",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T16:18:50+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/district-collector-given-additional-charge-as-md-of-kochi-metro-with-loknath-beheras-term-ending-on-august-30/article71405323.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20District%20Collector%20given%20additional%20charge%20as%20MD%20of%20Kochi%20metro%2C%20with%20Loknath%20Behera%E2%80%99s%20term%20ending%20on%20August%2030.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1064318444",
       "image_type": "ai_generated"
     },
     {
@@ -8759,6 +8913,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d01c7841745d1c5e7ae9",
+      "category": "Entertainment",
+      "headline": "Anne Hathaway Joins Tom Cruise in ‘Days of Thunder’ Follow-Up; Paramount Sets Release Date (EXCLUSIVE)",
+      "summary": "Anne Hathaway will star opposite Tom Cruise in the next chapter of “Days of Thunder,” Variety has learned exclusively. Paramount Pictures has dated the feature film sequel for summer 2028, where Cruise and Hathaway will hit the road almost 40 years after the original Tony Scott film was released. Cruise released a promotional image on […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T16:58:07+00:00",
+      "source_url": "https://variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Anne%20Hathaway%20Joins%20Tom%20Cruise%20in%20%E2%80%98Days%20of%20Thunder%E2%80%99%20Follow-Up%3B%20Paramount%20Sets%20Release%20Date%20%28EXCLUSIVE%29.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=419157113",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "463bffe6b69d8fbfa7e7",
       "category": "Lifestyle",
       "headline": "60 stairs in 60 seconds? Cardiologist says these 3 simple tests can tell you how fit your heart is in under a minute",
@@ -10211,6 +10376,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "900368e914d509f2f89b",
+      "category": "Sports",
+      "headline": "'We've got to do more' - Lampard frustrated by Hull defeat",
+      "summary": "Coventry manager Frank Lampard believes his side controlled possession but were \"too slow\" with the ball as their first top-flight home game in 25 years ends in a 1",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T16:59:54+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/czjzdnj3l14o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27We%27ve%20got%20to%20do%20more%27%20-%20Lampard%20frustrated%20by%20Hull%20defeat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=417761300",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3dd62bd3bd89589955c6",
+      "category": "Entertainment",
+      "headline": "Anne Hathaway Joins Tom Cruise In ‘Days Of Thunder 2’ At Paramount",
+      "summary": "Paramount Pictures is really revving its engines on the upcoming Days of Thunder 2 starring Tom Cruise as Anne Hathaway is set to join Cruise in the sequel. Cruise announced the news on his social platforms featuring a picture of the two A-listers leaning against a Nascar race car in Daytona. The picture also announced […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T16:59:44+00:00",
+      "source_url": "https://deadline.com/2026/08/anne-hathaway-tom-cruise-days-of-thunder-2-1237062516/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Anne%20Hathaway%20Joins%20Tom%20Cruise%20In%20%E2%80%98Days%20Of%20Thunder%202%E2%80%99%20At%20Paramount.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3137825807",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "366c7189964ca5393b2c",
+      "category": "Entertainment",
+      "headline": "Liza Minnelli Pays Tribute To Friend Dolly Parton: “When I Was In Trouble? Dolly Knew It.”",
+      "summary": "Liza Minnelli has added herself to the fans and friends paying tribute to the late Dolly Parton, posting an emotional message on Instagram saying this week’s news was “devastating.” Beginning the message with her signature “Hey Kids,” Minnelli notes that she and the country music icon once shared an agent, Sam Haskell. “Sam brought Dolly […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T16:54:24+00:00",
+      "source_url": "https://deadline.com/2026/08/liza-minnelli-dolly-parton-1237062623/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Liza%20Minnelli%20Pays%20Tribute%20To%20Friend%20Dolly%20Parton%3A%20%E2%80%9CWhen%20I%20Was%20In%20Trouble%3F%20Dolly%20Knew%20It.%E2%80%9D.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2949361877",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "679c97bcf3bb0ae95153",
+      "category": "Sports",
+      "headline": "Moyes 'disappointed' with Everton performance",
+      "summary": "Everton manager David Moyes praises his side's second-half resilience after James Tarkowski's injury-time equaliser rescues a point for The Toffees away to Bournemouth. Moyes admitted that it looked like his team \"were never going to score\" before the 91st minute breakthrough cancels out Alex Scott's first",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T16:51:56+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/cy0znyel8d2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Moyes%20%27disappointed%27%20with%20Everton%20performance.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3919773753",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f0319cdda95833454b61",
+      "category": "Sports",
+      "headline": "Forest agree £22m deal with Palace for Munoz",
+      "summary": "Nottingham Forest agree a deal worth a minimum of £22m to sign Daniel Munoz from Crystal Palace.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T16:43:25+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0vmgxrgo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20agree%20%C2%A322m%20deal%20with%20Palace%20for%20Munoz.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1378375040",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7b87b8e93c0765b83f71",
       "category": "World",
       "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
@@ -10288,14 +10508,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "dc68bb52063682b81a28",
+      "id": "1f4cb2c24717de1b9af9",
       "category": "Sports",
-      "headline": "'That trust isn't there' - how does Iraola get best out of Isak?",
+      "headline": "A goal but only 13 touches - how does Iraola get best out of Isak?",
       "summary": "Alexander Isak scored his first goal of the season in the 2-2 draw against Nottingham Forest - but how do Liverpool get the best out of him?",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T15:49:49+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cgjq65nvw38o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%20trust%20isn%27t%20there%27%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4008090306",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20A%20goal%20but%20only%2013%20touches%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1573554900",
       "image_type": "ai_generated"
     },
     {
@@ -10340,17 +10560,6 @@
       "published_at": "2026-08-29T15:06:07+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/royal-navy-tracking-russian-vessels-uk-waters-channel-north-sea",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Royal%20Navy%20spent%20three%20days%20tracking%20Russian%20vessels%20in%20UK%20waters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1972633384",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "ac828e6322d5d4472496",
-      "category": "Sports",
-      "headline": "Forest in advanced talks to sign Munoz from Palace",
-      "summary": "Nottingham Forest are in advanced talks over a deal worth up to £25m to sign Crystal Palace defender Daniel Munoz.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T15:03:58+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/c39m0vmgxrgo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20in%20advanced%20talks%20to%20sign%20Munoz%20from%20Palace.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1686163904",
       "image_type": "ai_generated"
     },
     {
@@ -11072,7 +11281,7 @@
       "id": "15b1f5c102ab725a3a62",
       "category": "Sports",
       "headline": "Trippier praises Miley's 'big presence' as Newcastle face Tonali reunion",
-      "summary": "Newcastle midfielder Lewis Miley is backed to \"go as far as he wants\" as the 20-year",
+      "summary": "Newcastle midfielder Lewis Miley is backed to \"go as far as he wants\" as the 20",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T06:11:10+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c07ler0rxlro?at_medium=RSS&at_campaign=rss",
