@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T11:34:35.089561+00:00",
-  "total": 989,
+  "updated_at": "2026-08-29T12:05:15.115771+00:00",
+  "total": 1018,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 86,
-    "India": 208,
-    "Business": 159,
-    "Technology & AI": 87,
+    "World": 90,
+    "India": 222,
+    "Business": 160,
+    "Technology & AI": 89,
     "Sports": 73,
-    "Entertainment": 235,
+    "Entertainment": 243,
     "Lifestyle": 141
   },
   "articles": [
@@ -22,6 +22,39 @@
       "published_at": "2026-08-28T13:05:20+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/bollywood/8-ott-releases-to-watch-this-weekend-pick-from-alpha-and-bandar-to-michael-and-dark-matter-where-to-watch-101787918606084.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%208%20OTT%20releases%20to%20watch%20this%20weekend%3A%20Pick%20from%20Alpha%20and%20Bandar%20to%20Michael%20and%20Dark%20Matter%3B%20where%20to%20watch.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4150790569",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a2a7cd1e6685aa2e7128",
+      "category": "Entertainment",
+      "headline": "Top 10 Highest-Grossing Bollywood Films Of 2026 At The Indian Box Office",
+      "summary": "Take a look at the list of highest-grossing Bollywood/Hindi films of 2026 at the box office! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:00:51+00:00",
+      "source_url": "https://www.koimoi.com/box-office/highest-grossers/top-10-highest-grossing-bollywood-films-of-2026-at-the-indian-box-office/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Top%2010%20Highest-Grossing%20Bollywood%20Films%20Of%202026%20At%20The%20Indian%20Box%20Office.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3087085560",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "41e8c32dddc4e875bd84",
+      "category": "Entertainment",
+      "headline": "Most Profitable Bollywood Films Of 2026 At The Indian Box Office",
+      "summary": "Take a look at the most profitable Bollywood/Hindi films at the Indian box office in 2026! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:46:37+00:00",
+      "source_url": "https://www.koimoi.com/box-office/profitable-films/most-profitable-bollywood-films-of-2026-at-the-indian-box-office/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Most%20Profitable%20Bollywood%20Films%20Of%202026%20At%20The%20Indian%20Box%20Office.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=28111635",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "32b7583087ca94ce0158",
+      "category": "Entertainment",
+      "headline": "Top 100 Highest-Grossing Hindi Films At The Indian Box Office (Since 2008)",
+      "summary": "You’re here because you love the box office. Let’s make it worthwhile. Take a look at the list of the top 100 highest-grossing Hindi films since 2008! Last Updated: August 29, 2026 The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T12:02:02+00:00",
+      "source_url": "https://www.koimoi.com/box-office/all-time-grossers/koimoi-top-100-highest-bollywood-box-office-grossers/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Top%20100%20Highest-Grossing%20Hindi%20Films%20At%20The%20Indian%20Box%20Office%20%28Since%202008%29.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1518067875",
       "image_type": "ai_generated"
     },
     {
@@ -99,6 +132,28 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c97b5a1180c3e1b04fba",
+      "category": "Entertainment",
+      "headline": "Haiwaan Box Office: Needs To Score 68.96 Crore To Help Akshay Kumar Reach A Major Post-COVID Milestone In India",
+      "summary": "After the success of Welcome To The Jungle, Akshay Kumar is ready to conquer the Indian box office yet again with Haiwaan. The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:52:10+00:00",
+      "source_url": "https://www.koimoi.com/box-office/haiwaan-box-office-needs-to-score-68-96-crore-to-help-akshay-kumar-reach-a-major-post-covid-milestone-in-india/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Haiwaan%20Box%20Office%3A%20Needs%20To%20Score%2068.96%20Crore%20To%20Help%20Akshay%20Kumar%20Reach%20A%20Major%20Post-COVID%20Milestone%20In%20India.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2768089985",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0656e8556fb6a99f26de",
+      "category": "Entertainment",
+      "headline": "Box Office: With Ramayana’s Opening In India, Ranbir Kapoor Is All Set To Overtake Aamir Khan In Star Ranking",
+      "summary": "Ramayana is likely to register a mind-blowing start at the Indian box office, leading to a surge in Koimoi's Star Ranking for Ranbir Kapoor. The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:41:50+00:00",
+      "source_url": "https://www.koimoi.com/box-office/box-office-with-ramayanas-opening-in-india-ranbir-kapoor-is-all-set-to-overtake-aamir-khan-in-star-ranking/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20With%20Ramayana%E2%80%99s%20Opening%20In%20India%2C%20Ranbir%20Kapoor%20Is%20All%20Set%20To%20Overtake%20Aamir%20Khan%20In%20Star%20Ranking.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1375958753",
       "image_type": "ai_generated"
     },
     {
@@ -399,6 +454,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7dc12e841ea7572d65cb",
+      "category": "India",
+      "headline": "‘Honour’ killing: Tamil Nadu to set up safe houses in districts to provide shelter to vulnerable, affected couples",
+      "summary": "Making the announcement in the Assembly on Friday last, Minister for Social Justice Vanni Arasu said the decision was in line with the judgment of the Supreme Court in the Shakti Vahini vs. Union of India case and followed representations from survivors of ‘honour’ killings and activists",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:30:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/honour-killing-tamil-nadu-to-set-up-safe-houses-in-districts-to-provide-shelter-to-vulnerable-affected-couples/article71404215.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Honour%E2%80%99%20killing%3A%20Tamil%20Nadu%20to%20set%20up%20safe%20houses%20in%20districts%20to%20provide%20shelter%20to%20vulnerable%2C%20affected%20couples.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1550713838",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "4e183fa7b5dfe856db8d",
       "category": "India",
       "headline": "SFI Keralam unit calls Kanthapuram Samastha circular ‘anti-women’",
@@ -451,6 +517,17 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e7898873cd8e13c22e5e",
+      "category": "India",
+      "headline": "There is no challenge for BJP: Ram Madhav on the party’s next big goal | The Hindu Mind",
+      "summary": "Ram Madhav, BJP National Vice President and former General Secretary, speaks on the BJP’s growth over the last 12 years, the party’s future electoral ambitions, RSS at 100, Jammu & Kashmir statehood, Gen Z protests, social media politics, India’s neighbourhood policy, and the Ayodhya trust controversy. In this wide-ranging conversation, he shares his views on the BJP’s challenges, ideology, governance, and...",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:55:05+00:00",
+      "source_url": "https://www.thehindu.com/videos/there-is-no-challenge-for-bjp-ram-madhav-on-the-partys-next-big-goal-the-hindu-mind/article71401150.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20There%20is%20no%20challenge%20for%20BJP%3A%20Ram%20Madhav%20on%20the%20party%E2%80%99s%20next%20big%20goal%20%7C%20The%20Hindu%20Mind.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=136054735",
       "image_type": "ai_generated"
     },
     {
@@ -927,17 +1004,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f268fb05535651141303",
-      "category": "India",
-      "headline": "Assam youth suspected in woman’s murder in Tamil Nadu arrested in Manipur",
-      "summary": "He was arrested in connection with the murder of a 38-year-old woman in Guduvanchery, whose decomposed and dismembered body parts were found stuffed inside a trolley bag aboard the Chennai",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T09:15:56+00:00",
-      "source_url": "https://www.thehindu.com/news/cities/chennai/assam-youth-suspected-in-womans-murder-in-tamil-nadu-arrested-in-manipur/article71403873.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Assam%20youth%20suspected%20in%20woman%E2%80%99s%20murder%20in%20Tamil%20Nadu%20arrested%20in%20Manipur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3015764248",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "6a2541848daa599812d5",
       "category": "Entertainment",
       "headline": "The Odyssey Worldwide Box Office: Christopher Nolan’s Epic Earns $830M+ In Profit Over Break-Even",
@@ -1015,6 +1081,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3fe1010d36e0e7689efb",
+      "category": "India",
+      "headline": "28 from Karnataka stranded or missing in Nepal, Tibet amid flash flood",
+      "summary": "Of the 28 people, 23 are from Bengaluru Urban, two from Mysuru and one each from Dharwad, Udupi and Vijayanagara districts, according to the latest information compiled by the SEOC as of 10 a.m.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:59:45+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/28-from-karnataka-stranded-or-missing-in-nepal-tibet-amid-flash-flood/article71403924.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2028%20from%20Karnataka%20stranded%20or%20missing%20in%20Nepal%2C%20Tibet%20amid%20flash%20flood.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3133088407",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0aa3902e9e61d36f6ba4",
+      "category": "India",
+      "headline": "Couple suspected in woman’s murder in Tamil Nadu arrested in Manipur",
+      "summary": "The couple was arrested in connection with the murder of a 38-year-old woman in Guduvanchery, whose decomposed and dismembered body parts were found stuffed inside a trolley bag aboard the Chennai",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:49:12+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/assam-youth-suspected-in-womans-murder-in-tamil-nadu-arrested-in-manipur/article71403873.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Couple%20suspected%20in%20woman%E2%80%99s%20murder%20in%20Tamil%20Nadu%20arrested%20in%20Manipur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2669580733",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "94f12dbc3751d0e6bc1b",
+      "category": "Entertainment",
+      "headline": "Highest-Grossing Bollywood Films At The Worldwide Box Office (Above 200 Crores)",
+      "summary": "Check out the entire list of highest-grossing Bollywood/Hindi films at the worldwide box office (200 crores or more)! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:45:26+00:00",
+      "source_url": "https://www.koimoi.com/box-office/bollywoods-top-worldwide-grossers/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Highest-Grossing%20Bollywood%20Films%20At%20The%20Worldwide%20Box%20Office%20%28Above%20200%20Crores%29.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1235408171",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "aeb432a73d291980cf96",
+      "category": "Entertainment",
+      "headline": "Box Office: Zendaya Needs Less Than $200M To Reach A Major Global Milestone In 2026",
+      "summary": "Zendaya is having one of the best years of her career, and she is likely to end it as the top-grossing actress of 2026. Three films have already been released, and two of them are massive blockbusters. She has yet another tentpole release this year, Dune 3. However, even without it, she is expected to […] The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T11:43:22+00:00",
+      "source_url": "https://www.koimoi.com/box-office/box-office-zendaya-needs-less-than-200m-to-reach-a-major-global-milestone-in-2026/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20Zendaya%20Needs%20Less%20Than%20%24200M%20To%20Reach%20A%20Major%20Global%20Milestone%20In%202026.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1077732664",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "272d1826db567188ee78",
+      "category": "India",
+      "headline": "Rajeev Singh Thakur tipped to be new Chief Secretary of strife-torn Manipur",
+      "summary": "The Centre on August 29 approved his inter-cadre deputation from Rajasthan to the Manipur cadre up to June 30, 2029, the date of his superannuation, says an order issued by the Personnel Ministry",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:40:00+00:00",
+      "source_url": "https://www.thehindu.com/news/national/manipur/rajeev-singh-thakur-tipped-to-be-new-chief-secretary-of-strife-torn-manipur/article71404420.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Rajeev%20Singh%20Thakur%20tipped%20to%20be%20new%20Chief%20Secretary%20of%20strife-torn%20Manipur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1554344826",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "852fdebd9f4c579c8c29",
       "category": "India",
       "headline": "Sugar price surge: Karnataka farmers seek nod for jaggery units to produce ethanol",
@@ -1056,17 +1177,6 @@
       "published_at": "2026-08-29T10:19:45+00:00",
       "source_url": "https://www.thehindu.com/news/national/west-bengal/mobile-phones-cash-seized-from-prison-cell-of-mastermind-of-american-centre-attack-in-kolkata/article71404016.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Mobile%20phones%2C%20cash%20seized%20from%20prison%20cell%20of%20mastermind%20of%20American%20Centre%20attack%20in%20Kolkata.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3894657820",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3fe1010d36e0e7689efb",
-      "category": "India",
-      "headline": "28 from Karnataka stranded or missing in Nepal, Tibet amid flash flood",
-      "summary": "Of the 28 people, 23 are from Bengaluru Urban, two from Mysuru and one each from Dharwad, Udupi and Vijayanagara districts, according to the latest information compiled by the SEOC as of 10 a.m.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T10:09:33+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/28-from-karnataka-stranded-or-missing-in-nepal-tibet-amid-flash-flood/article71403924.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2028%20from%20Karnataka%20stranded%20or%20missing%20in%20Nepal%2C%20Tibet%20amid%20flash%20flood.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3133088407",
       "image_type": "ai_generated"
     },
     {
@@ -1345,6 +1455,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4d2b732fe1bf10780562",
+      "category": "India",
+      "headline": "Telangana employees’ joint action committee announces agitation from September 1 for PRC, DA, OPS",
+      "summary": "The JAC demanded that the State government immediately scrap the Contributory Pension Scheme and restore the Old Pension Scheme for employees.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:56:32+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/telangana-employees-joint-action-committee-announces-agitation-from-september-1-for-prc-da-ops/article71404304.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Telangana%20employees%E2%80%99%20joint%20action%20committee%20announces%20agitation%20from%20September%201%20for%20PRC%2C%20DA%2C%20OPS.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2787397510",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d9cb4efd5724d3860d6a",
+      "category": "India",
+      "headline": "HR&CE Department requests devotees to assist in identification of Agamic temples in Tamil Nadu",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:53:17+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/hrampce-department-requests-devotees-to-assist-in-identification-of-agamic-temples-in-tamil-nadu/article71397618.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20HR%26CE%20Department%20requests%20devotees%20to%20assist%20in%20identification%20of%20Agamic%20temples%20in%20Tamil%20Nadu.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1275150734",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "763fc7fea88230887a51",
+      "category": "India",
+      "headline": "Man killed in wild gaur attack at Vilangad in Keralam",
+      "summary": "He was attacked while attempting to drive the animal away from an agricultural field along with the Forest Department officials",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:39:10+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/man-killed-in-wild-gaur-attack-at-vilangad-in-keralam/article71404370.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Man%20killed%20in%20wild%20gaur%20attack%20at%20Vilangad%20in%20Keralam.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3881640015",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a23a1f1ed1b8600d793e",
+      "category": "India",
+      "headline": "Colleges ‘missing’ when students go for enrolment in professional courses in Karnataka",
+      "summary": "When students paid the fee to the Karnataka Examinations Authority, downloaded the seat confirmation slip, and went to the colleges to enrol, they found that there was no college at the given address",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:39:07+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/students-find-colleges-missing-when-they-go-for-enrolment-in-professional-courses/article71401009.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Colleges%20%E2%80%98missing%E2%80%99%20when%20students%20go%20for%20enrolment%20in%20professional%20courses%20in%20Karnataka.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=421152333",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "30a24c011e34264bca1e",
+      "category": "India",
+      "headline": "Bhim Army activists clash with police in Patna during protest over job exam irregularities",
+      "summary": "Activists of the Bhim Army took out a march from the Gandhi Maidan to press for several demands, including a judicial inquiry into the 70th BPSC examination, and the implementation of a policy for 85% reservation of State candidates in Bihar government recruitments.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:36:48+00:00",
+      "source_url": "https://www.thehindu.com/news/national/bihar/bhim-army-activists-clash-with-police-in-patna-during-protest-over-job-exam-irregularities/article71404317.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bhim%20Army%20activists%20clash%20with%20police%20in%20Patna%20during%20protest%20over%20job%20exam%20irregularities.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=289666510",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c91636adef8192da4b43",
       "category": "Entertainment",
       "headline": "Toxic Hindi Box Office Day 3: Becomes 8th Highest-Grossing Film Of 2026, 100 Crore Club Loading!",
@@ -1356,14 +1521,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "763fc7fea88230887a51",
+      "id": "8f5f7ebe9c6390fece9d",
       "category": "India",
-      "headline": "Man killed in wild gaur attack at Vilangad in Keralam",
-      "summary": "He was attacked while attempting to drive the animal away from an agricultural field along with the Forest Department officials",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T11:26:44+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/man-killed-in-wild-gaur-attack-at-vilangad-in-keralam/article71404370.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Man%20killed%20in%20wild%20gaur%20attack%20at%20Vilangad%20in%20Keralam.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3881640015",
+      "headline": "Assam fisherman found in Bangladesh, BGB alleges drug, arms smuggling",
+      "summary": "The man, identified as Balai Namasudra, is a resident of Gobindapur village in Sribhumi district, which is located outside the border fencing",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T11:21:55+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/assam-fisherman-found-in-bangladesh-bgb-alleges-drug-arms-smuggling-101788002515879.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Assam%20fisherman%20found%20in%20Bangladesh%2C%20BGB%20alleges%20drug%2C%20arms%20smuggling.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2688125672",
       "image_type": "ai_generated"
     },
     {
@@ -1375,17 +1540,6 @@
       "published_at": "2026-08-29T11:07:05+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/no-scaling-down-dasara-festivities-despite-drought-says-karnataka-chief-minister-dk-shivakumar/article71404274.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20No%20scaling%20down%20Dasara%20festivities%20despite%20drought%2C%20says%20Karnataka%20Chief%20Minister%20D.K.%20Shivakumar.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2068323645",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "30a24c011e34264bca1e",
-      "category": "India",
-      "headline": "Bhim Army activists clash with police in Patna during protest over job exam irregularities",
-      "summary": "Activists of the Bhim Army took out a march from the Gandhi Maidan to press for several demands, including a judicial inquiry into the 70th BPSC examination, and the implementation of a policy for 85% reservation of State candidates in Bihar government recruitments.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T11:05:21+00:00",
-      "source_url": "https://www.thehindu.com/news/national/bihar/bhim-army-activists-clash-with-police-in-patna-during-protest-over-job-exam-irregularities/article71404317.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bhim%20Army%20activists%20clash%20with%20police%20in%20Patna%20during%20protest%20over%20job%20exam%20irregularities.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=289666510",
       "image_type": "ai_generated"
     },
     {
@@ -1422,14 +1576,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "17a7555e59ebfe90eaec",
+      "id": "68d250f8aaa046e77324",
       "category": "India",
-      "headline": "Bengal couple escapes as bus turns back near Kerung just before Nepal floods hit",
-      "summary": "Anukul Poddar, his wife Reba from Bengal were an hour from Nepal’s Kerung immigration centre when their driver turned back, minutes before the area was washed away.",
+      "headline": "‘Driver didn’t waste time’: Bengal couple escapes as bus turns back near Kerung just before Nepal floods hit",
+      "summary": "Anukul Poddar, his wife Reba from Bengal were an hour from Nepal’s Kerung immigration centre when their driver turned back, minutes before area was washed away.",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T11:00:55+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/bengal-couple-escapes-as-bus-turns-back-near-kerung-just-before-nepal-floods-hit-101788001255789.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bengal%20couple%20escapes%20as%20bus%20turns%20back%20near%20Kerung%20just%20before%20Nepal%20floods%20hit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2915687617",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Driver%20didn%E2%80%99t%20waste%20time%E2%80%99%3A%20Bengal%20couple%20escapes%20as%20bus%20turns%20back%20near%20Kerung%20just%20before%20Nepal%20floods%20hit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4059161346",
       "image_type": "ai_generated"
     },
     {
@@ -1441,17 +1595,6 @@
       "published_at": "2026-08-29T10:45:24+00:00",
       "source_url": "https://www.hindustantimes.com/htcity/cinema/revealed-heres-why-akshaye-khanna-was-missing-at-the-dil-chahta-hai-reunion-aamir-khan-saif-ali-khan-101787999010202.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Revealed%3A%20Here%27s%20why%20Akshaye%20Khanna%20was%20missing%20at%20the%20Dil%20Chahta%20Hai%20reunion.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=792585610",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a23a1f1ed1b8600d793e",
-      "category": "India",
-      "headline": "Colleges ‘missing’ when students go for enrolment in professional courses in Karnataka",
-      "summary": "When students paid the fee to the Karnataka Examinations Authority, downloaded the seat confirmation slip, and went to the colleges to enrol, they found that there was no college at the given address",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T10:43:55+00:00",
-      "source_url": "https://www.thehindu.com/news/national/karnataka/students-find-colleges-missing-when-they-go-for-enrolment-in-professional-courses/article71401009.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Colleges%20%E2%80%98missing%E2%80%99%20when%20students%20go%20for%20enrolment%20in%20professional%20courses%20in%20Karnataka.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=421152333",
       "image_type": "ai_generated"
     },
     {
@@ -2984,6 +3127,94 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "35fc11dde4ecf5dd9ad7",
+      "category": "India",
+      "headline": "FSSAI’s proposed warning labels could let unhealthy foods escape scrutiny, says expert",
+      "summary": "Under the proposal to have red hexagonal warning labels on packaged foods, areas requiring scrutiny include the nutrient threshold, the timeline of the second phase, the definition of HFSS (foods high in fat, sugar, salt), the use of ‘added’ nutrients, the size of the warning label, and exemptions",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:57:49+00:00",
+      "source_url": "https://www.thehindu.com/sci-tech/health/fssais-proposed-warning-labels-could-let-unhealthy-foods-escape-scrutiny-says-expert/article71404065.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%E2%80%99s%20proposed%20warning%20labels%20could%20let%20unhealthy%20foods%20escape%20scrutiny%2C%20says%20expert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1066841909",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2cf6d3ea22ab9880c044",
+      "category": "India",
+      "headline": "Kakkadampoyil eyes tourism boom with master plan, travel mart",
+      "summary": "The plan under discussion with the State government will seek to integrate infrastructure development, tourism promotion, environmental conservation and local economic development under a common framework approved by the Tourism department",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:57:02+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/kakkadampoyil-eyes-tourism-boom-with-master-plan-travel-mart/article71404388.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kakkadampoyil%20eyes%20tourism%20boom%20with%20master%20plan%2C%20travel%20mart.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2273558504",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bf9a550ae443487fe620",
+      "category": "India",
+      "headline": "‘Do ministers feed their own children expired food?’ Abhijeet Dipke during ‘School Thik Karo’ campaign",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T11:52:06+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/do-ministers-feed-their-own-children-expired-food-abhijeet-dipke-during-school-thik-karo-campaign/articleshow/133611127.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98Do%20ministers%20feed%20their%20own%20children%20expired%20food%3F%E2%80%99%20Abhijeet%20Dipke%20during%20%E2%80%98School%20Thik%20Karo%E2%80%99%20campaign.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3698670204",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1b8708c010c5fdb72c38",
+      "category": "India",
+      "headline": "'Now you are going overboard': After Bombay high court rap, FDA withdraws order cancelling license of Cipla Pharma",
+      "summary": "The FDA said it would withdraw the license cancellation order forthwith and issue a fresh show cause notice to Cipla Pharma.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T11:43:20+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/now-you-are-going-overboard-after-bombay-high-court-rap-fda-withdraws-order-cancelling-license-of-cipla-pharma-101788001180131.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Now%20you%20are%20going%20overboard%27%3A%20After%20Bombay%20high%20court%20rap%2C%20FDA%20withdraws%20order%20cancelling%20license%20of%20Cipla%20Pharma.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3697211323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6d0fb9fc6d90492344ee",
+      "category": "India",
+      "headline": "Jharkhand health department sounds alert after 8 persons tested positive for swine flu",
+      "summary": "In an advisory issued to all civil surgeons, medical colleges and district surveillance officials, the department asked them to remain vigilant, screen suspected cases and keep isolation wards ready at hospitals",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:41:13+00:00",
+      "source_url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-health-department-sounds-alert-after-several-persons-tested-positive-for-swine-flu/article71404412.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Jharkhand%20health%20department%20sounds%20alert%20after%208%20persons%20tested%20positive%20for%20swine%20flu.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=383554766",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "936daf5c7bec44e8a7a2",
+      "category": "India",
+      "headline": "Revanth Reddy seeks four-week extension for electoral roll revision",
+      "summary": "In a letter addressed to Chief Election Commissioner Gyanesh Kumar on August 29, he said the revision had reached a critical stage, with nearly one-third of the State’s electorate potentially required to establish their eligibility afresh.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T11:39:54+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/revanth-reddy-seeks-four-week-extension-for-electoral-roll-revision/article71404270.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revanth%20Reddy%20seeks%20four-week%20extension%20for%20electoral%20roll%20revision.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1592026283",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a88f56fde1b069edaeb7",
+      "category": "Business",
+      "headline": "OpenAI ends Cursor deal: Is Elon Musk responsible for Sam Altman's company cutting off AI models? What we know",
+      "summary": "OpenAI announced plans to stop providing AI models to Cursor, a coding tool owned by Elon Musk’s SpaceX. This development escalates the rivalry between OpenAI CEO Sam Altman and Elon Musk, stemming from a long-standing dispute linked to Musk's $150 billion lawsuit against OpenAI.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-29T11:39:46+00:00",
+      "source_url": "https://www.livemint.com/companies/news/openai-ends-cursor-deal-is-elon-musk-responsible-for-sam-altmans-company-cutting-off-ai-models-what-we-know-11787999816381.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20OpenAI%20ends%20Cursor%20deal%3A%20Is%20Elon%20Musk%20responsible%20for%20Sam%20Altman%27s%20company%20cutting%20off%20AI%20models%3F%20What%20we%20know.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1932562572",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5a4c69578b8814702237",
+      "category": "India",
+      "headline": "BJP chief Nitin Nabin expresses displeasure over 3 party MPs visiting Sajjan Kumar residence",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T11:32:03+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/bjp-chief-nitin-nabin-expresses-displeasure-over-3-party-mps-visiting-sajjan-kumar-residence/articleshow/133610769.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20chief%20Nitin%20Nabin%20expresses%20displeasure%20over%203%20party%20MPs%20visiting%20Sajjan%20Kumar%20residence.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2592664290",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "3f70668582a4428ab979",
       "category": "India",
       "headline": "Evening Newswrap: Nepal’s flood damage nears 10% of economy; drunk man rapes mother in UP's Hathras & more",
@@ -3014,6 +3245,17 @@
       "published_at": "2026-08-29T11:11:52+00:00",
       "source_url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FIR%20against%20Mamata%20Banerjee%20for%20%E2%80%98violation%E2%80%99%20of%20Calcutta%20High%20Court%20order%20on%20Trinamool%20student%20wing%20foundation%20day%20event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2888905311",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fce38b90065db0476206",
+      "category": "India",
+      "headline": "'Congress misleading Dalit community': BJP rejects Rahul's claim of Kharge's insult in Haldwani purification ritual",
+      "summary": "Uttarakhand minister Khajan Das said BJP had no connection with the incident and accused the Congress of “attempting to mislead” the Dalit community.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T11:09:59+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/bjp-uttarakhand-rahul-gandhi-claim-congress-president-mallikarjun-kharge-haldwani-purification-shuddhikaran-ritual-101787998063747.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Congress%20misleading%20Dalit%20community%27%3A%20BJP%20rejects%20Rahul%27s%20claim%20of%20Kharge%27s%20insult%20in%20Haldwani%20purification%20ritual.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3450168703",
       "image_type": "ai_generated"
     },
     {
@@ -6372,6 +6614,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ed5b4203b0e1dd193230",
+      "category": "Technology & AI",
+      "headline": "Musicians-turned-detectives are hunting for AI grifters",
+      "summary": "As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology […]",
+      "publisher": "The Verge",
+      "published_at": "2026-08-28T19:10:32+00:00",
+      "source_url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Musicians-turned-detectives%20are%20hunting%20for%20AI%20grifters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=757106736",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "6fff7be556306eed2ca0",
       "category": "Technology & AI",
       "headline": "As electric two-wheelers gain a foothold, Belgian startup Any bets on cargo space",
@@ -7780,12 +8033,67 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "22a6529620fd854cd85a",
+      "category": "World",
+      "headline": "US officials urge swimmers to be cautious amid surge in drowning deaths",
+      "summary": "Recent deadly water-related incidents amid heatwave leads National Park Service to issue water-safety reminders As a heatwave continues to bake the western and central US, officials are urging swimmers to be cautious when seeking respite from the summer heat, especially amid a score of recent deadly water-related incidents. Each year, from April to September, drowning deaths rise nationwide, according to 2018",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T12:00:28+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/us-swimmers-drowning-deaths-heatwave",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20US%20officials%20urge%20swimmers%20to%20be%20cautious%20amid%20surge%20in%20drowning%20deaths.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3439943537",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "62a1dd241d8bcdcf1f24",
+      "category": "World",
+      "headline": "Laurie Anderson’s next manuscript to be locked away for 88 years in Future Library",
+      "summary": "Grammy award-winning American artist selected as 13th person to submit written work to Oslo-based project The next manuscript by the American artist Laurie Anderson will remain unseen for 88 years, as she becomes the 13th figure to contribute to the Future Library project. Anderson joins Margaret Atwood, Han Kang, Ocean Vuong and other prominent authors who have written secret manuscripts, which have been locked...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T12:00:26+00:00",
+      "source_url": "https://www.theguardian.com/books/2026/aug/29/laurie-anderson-manuscript-88-years-future-library-oslo",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Laurie%20Anderson%E2%80%99s%20next%20manuscript%20to%20be%20locked%20away%20for%2088%20years%20in%20Future%20Library.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3711089208",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "69a7cb785481c34ffb3f",
+      "category": "Entertainment",
+      "headline": "Chantelle Cameron vs. Mikaela Mayer Livestream: Here’s Where to Watch the Unification Title Bout Online for Free",
+      "summary": "The best boxers in the world travel to England for the Most Valuable Promotions Women (MVPW) boxing event. For the main event, English Chantelle Cameron (22-1-0) takes on American boxer Mikaela Mayer (22-2-0). The unification title bout is scheduled for 10 rounds. Cameron’s WBO belt, as well as Mayer’s WBA and WBC champion titles are […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T12:00:00+00:00",
+      "source_url": "https://variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Chantelle%20Cameron%20vs.%20Mikaela%20Mayer%20Livestream%3A%20Here%E2%80%99s%20Where%20to%20Watch%20the%20Unification%20Title%20Bout%20Online%20for%20Free.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4071863117",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fdeaa834a38febf57132",
+      "category": "World",
+      "headline": "Russian strike on warehouse near Kyiv kills at least 37",
+      "summary": "Attack on business apparently storing ‘explosive objects’ sparks huge fire, damaging residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs which appears to have been storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T11:59:48+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Russian%20strike%20on%20warehouse%20near%20Kyiv%20kills%20at%20least%2037.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=778250808",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "07c108eaf97521b890ca",
+      "category": "World",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv warehouse",
+      "summary": "An investigation has been launched into whether ammunition was being stored at the site.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T11:53:37+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2037%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20warehouse.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1485416536",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "d44c64d44fb414bf6d3d",
       "category": "World",
       "headline": "Nepal-Tibet floods: number of missing climbs to nearly 3,000 as search for survivors enters fourth day – latest updates",
       "summary": "Nepali minister says cost of rebuilding likely to be billions of dollars as death toll rises to 626, with seven confirmed dead in Tibet ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people run their...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T11:30:04+00:00",
+      "published_at": "2026-08-29T11:46:13+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20number%20of%20missing%20climbs%20to%20nearly%203%2C000%20as%20search%20for%20survivors%20enters%20fourth%20day%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1489803529",
       "image_type": "ai_generated"
@@ -7796,9 +8104,20 @@
       "headline": "Forest to bid £40m for Everton teenager Armstrong",
       "summary": "Nottingham Forest launch an ambitious bid to sign Everton's teenage midfielder Harrison Armstrong.",
       "publisher": "BBC Sport",
-      "published_at": "2026-08-29T11:28:34+00:00",
+      "published_at": "2026-08-29T11:43:43+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/cy0znn7lg51o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Forest%20to%20bid%20%C2%A340m%20for%20Everton%20teenager%20Armstrong.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3316478475",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2936bc98a9f6646477f7",
+      "category": "World",
+      "headline": "Srebrenica survivor Ahmed Hrustanovic reflects on Ratko Mladic's death",
+      "summary": "Ahmed Hrustanovic reflects on Ratko Mladic's death with NPR's Scott Simon. All of Hrustanovic's adult male relatives died in the Srebrenica Massacre engineered by Mladic.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-29T11:40:57+00:00",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5947879/srebrenica-survivor-ahmed-hrustanovic-reflects-on-ratko-mladics-death",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Srebrenica%20survivor%20Ahmed%20Hrustanovic%20reflects%20on%20Ratko%20Mladic%27s%20death.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=143952360",
       "image_type": "ai_generated"
     },
     {
@@ -7890,14 +8209,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "6dab97e1e28f5a6ca5cd",
-      "category": "World",
-      "headline": "At least 27 dead and hundreds evacuated after strike on Kyiv warehouse",
-      "summary": "The attack sparked a series of explosions, prompting an investigation into whether ammunition was being stored on site.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T10:28:41+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20At%20least%2027%20dead%20and%20hundreds%20evacuated%20after%20strike%20on%20Kyiv%20warehouse.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2530942319",
+      "id": "551d8e178709526312a0",
+      "category": "Technology & AI",
+      "headline": "I asked 100 companies for my data. Some deleted it instead.",
+      "summary": "Testing 100 companies found privacy requests often led to confusion and dead ends.",
+      "publisher": "Ars Technica",
+      "published_at": "2026-08-29T10:50:31+00:00",
+      "source_url": "https://arstechnica.com/tech-policy/2026/08/i-asked-100-companies-for-my-data-some-deleted-it-instead/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20I%20asked%20100%20companies%20for%20my%20data.%20Some%20deleted%20it%20instead..%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1662981408",
       "image_type": "ai_generated"
     },
     {
