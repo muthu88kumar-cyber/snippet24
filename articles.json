@@ -1,18 +1,106 @@
 {
-  "updated_at": "2026-08-29T04:04:27.459758+00:00",
+  "updated_at": "2026-08-29T04:34:32.006290+00:00",
   "total": 100,
   "minimum_target": 50,
   "maximum_target": 100,
   "categories": {
-    "World": 26,
-    "India": 30,
-    "Business": 0,
+    "World": 25,
+    "India": 32,
+    "Business": 4,
     "Technology & AI": 8,
-    "Sports": 9,
-    "Entertainment": 20,
-    "Lifestyle": 7
+    "Sports": 6,
+    "Entertainment": 19,
+    "Lifestyle": 6
   },
   "articles": [
+    {
+      "id": "9aa04a44e7049c7775a3",
+      "category": "World",
+      "headline": "Forget Starbucks coffee - Gen Z like their drinks ice cold",
+      "summary": "Young consumers are choosing cold, customisable drinks and coffee chains are racing to catch up.",
+      "publisher": "BBC News",
+      "published_at": "2026-08-29T04:30:27+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm2r9n2mrp8o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Forget%20Starbucks%20coffee%20-%20Gen%20Z%20like%20their%20drinks%20ice%20cold.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1590803775",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3bf390be210eda444dc7",
+      "category": "Entertainment",
+      "headline": "Kartik Aaryan’s ‘Captain India’ Sets September London Shoot (EXCLUSIVE)",
+      "summary": "“Captain India,” starring Kartik Aaryan, commences principal photography in London this September, with the shoot expected to wrap by the end of October. The film is directed by Shimit Amin, known for “Chak De! India,” a title that has continued to resonate with audiences years after its 2007 release. “Captain India” is produced by T-Series’ […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-29T04:30:00+00:00",
+      "source_url": "https://variety.com/2026/film/news/kartik-aaryan-captain-india-september-london-shoot-1236846198/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Kartik%20Aaryan%E2%80%99s%20%E2%80%98Captain%20India%E2%80%99%20Sets%20September%20London%20Shoot%20%28EXCLUSIVE%29.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3853509575",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "69ffe5c35a97ba666127",
+      "category": "India",
+      "headline": "UGC-NET results announced for 84 subjects; over 4,000 qualify for JRF",
+      "summary": "The testing agency had also issued a special notice concerning the Sociology, Commerce and English papers after an expert committee found factual, typographical, translation and language",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T04:20:49+00:00",
+      "source_url": "https://www.thehindu.com/education/ugc-net-results-announced-for-84-subjects-over-4000-qualify-for-jrf/article71403460.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UGC-NET%20results%20announced%20for%2084%20subjects%3B%20over%204%2C000%20qualify%20for%20JRF.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2030032273",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cf8beedd483195557faf",
+      "category": "Entertainment",
+      "headline": "Olivia Rodrigo’s Inaugural Daisy Chain Fields Will Be a Showing of Unity — Even for Photographers",
+      "summary": "THR hears the female forward music festival is expected to be shot largely by female photographers.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T04:12:18+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-festival-staff-photos-1236684785/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Olivia%20Rodrigo%E2%80%99s%20Inaugural%20Daisy%20Chain%20Fields%20Will%20Be%20a%20Showing%20of%20Unity%20%E2%80%94%20Even%20for%20Photographers.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1239920002",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "daa7391c0a98d2617f49",
+      "category": "India",
+      "headline": "Looking to advance India’s vision for region free from terror, says PM Modi as he embarks on visit to Uzbekistan, Kyrgyzstan",
+      "summary": "From Tashkent, Mr. Modi will travel to Bishkek to participate in the 26th SCO Summit",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T04:09:07+00:00",
+      "source_url": "https://www.thehindu.com/news/national/looking-to-advance-indias-vision-for-region-free-from-terror-says-pm-modi-as-he-embarks-on-visit-to-uzbekistan-kyrgyzstan/article71403493.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Looking%20to%20advance%20India%E2%80%99s%20vision%20for%20region%20free%20from%20terror%2C%20says%20PM%20Modi%20as%20he%20embarks%20on%20visit%20to%20Uzbekistan%2C%20Kyrgyzstan.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3953026463",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "02c9b44eae1ffa966e30",
+      "category": "India",
+      "headline": "Will call for bandh in Bengaluru: Private transport operators",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T04:07:47+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/will-call-for-bandh-in-bengaluru-private-transport-operators/article71401535.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20call%20for%20bandh%20in%20Bengaluru%3A%20Private%20transport%20operators.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3368014968",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "83a32c7307010192bb88",
+      "category": "Business",
+      "headline": "Tech leads D-Street bound, FPI play in focus",
+      "summary": "On Friday, Indian equities bounced back, driven predominantly by a surge in technology stocks. Investors showed renewed interest in undervalued IT shares, aided by a decline in crude oil prices. After a prolonged period of selling, foreign investors reversed their trend, becoming net buyers in July and August. Broader market indices also benefited from this trend, as mid and small",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-29T04:07:46+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-leads-d-street-bound-fpi-play-in-focus/articleshow/133603509.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Tech%20leads%20D-Street%20bound%2C%20FPI%20play%20in%20focus.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2746310977",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d436a0a8813bea3b9a2c",
+      "category": "Business",
+      "headline": "RBI plans buyback of Rs 30,000 crore GSecs",
+      "summary": "The Reserve Bank of India has announced a buyback of government securities amounting to Rs 30,000 crore, targeting those set to mature in the fiscal year 2027. This strategic decision aims to alleviate the impending redemption pressure, as over Rs 6 lakh crore in securities are approaching maturity. The buyback is scheduled for September 3.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-29T04:01:54+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/bonds/rbi-plans-buyback-of-rs-30000-crore-gsecs/articleshow/133603407.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20RBI%20plans%20buyback%20of%20Rs%2030%2C000%20crore%20GSecs.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2020268874",
+      "image_type": "ai_generated"
+    },
     {
       "id": "3a5dced8987849b05a37",
       "category": "World",
@@ -36,6 +124,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "bb0853cd02f208b24607",
+      "category": "Business",
+      "headline": "Jio Platform gets Sebi's nod for Rs 37,000 crore IPO",
+      "summary": "Jio Platforms has gained Sebi's green light for its anticipated initial public offering, which is projected to garner between $3.5 and $4 billion. This marks Reliance Industries' first IPO in almost 20 years. The firm intends to issue new equity shares, albeit only representing a minor equity stake. A portion of the raised funds will help in offsetting loans for Reliance Jio Infocomm.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-29T03:58:10+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-platform-gets-sebis-nod-for-rs-37000-crore-ipo/articleshow/133603362.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Jio%20Platform%20gets%20Sebi%27s%20nod%20for%20Rs%2037%2C000%20crore%20IPO.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=124713066",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "1ad7e1b200acead9b66a",
       "category": "India",
       "headline": "Sandhya Devanathan exits Meta after a decade; to join OpenAI as VP South East Asia, Australia",
@@ -44,6 +143,39 @@
       "published_at": "2026-08-29T03:58:06+00:00",
       "source_url": "https://www.thehindu.com/sci-tech/technology/sandhya-devanathan-exits-meta-after-a-decade-to-join-openai-as-vp-south-east-asia-australia/article71403430.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Sandhya%20Devanathan%20exits%20Meta%20after%20a%20decade%3B%20to%20join%20OpenAI%20as%20VP%20South%20East%20Asia%2C%20Australia.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2063273107",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7ac742329cdecb42afa7",
+      "category": "India",
+      "headline": "Nepal Flash Flood LIVE Updates: Deaths Rise To 616, Nearly 2,500 Still Missing As Rescue Ops Enter Day 4",
+      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:57:16+00:00",
+      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Deaths%20Rise%20To%20616%2C%20Nearly%202%2C500%20Still%20Missing%20As%20Rescue%20Ops%20Enter%20Day%204.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2840223285",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b026450155f994f84961",
+      "category": "India",
+      "headline": "Food Body Officer Cornered, Forced To Eat Expired Biscuits Over Bribery Allegations In Maharashtra",
+      "summary": "The crowd accused the officer of trying to settle the matter after allegedly accepting a bribe",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:56:34+00:00",
+      "source_url": "https://www.ndtv.com/india-news/video-fda-officer-cornered-forced-to-eat-expired-biscuits-over-bribery-allegations-in-maharashtra-chhatrapati-sambhajinagar-11973520#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Food%20Body%20Officer%20Cornered%2C%20Forced%20To%20Eat%20Expired%20Biscuits%20Over%20Bribery%20Allegations%20In%20Maharashtra.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2723068383",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "486505976745a6981291",
+      "category": "India",
+      "headline": "'Looking To Advance India's Vision For Region Free From Terror': PM Modi",
+      "summary": "In his departure statement, PM Modi said the trip will advance the shared pursuit of peace",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:56:17+00:00",
+      "source_url": "https://www.ndtv.com/india-news/looking-to-advance-indias-vision-for-region-free-from-terror-pm-modi-11973560#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27Looking%20To%20Advance%20India%27s%20Vision%20For%20Region%20Free%20From%20Terror%27%3A%20PM%20Modi.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=718706884",
       "image_type": "ai_generated"
     },
     {
@@ -69,14 +201,25 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "054cbfbb04b58801d0fb",
+      "id": "6714857fcdfcad4a80fd",
+      "category": "Business",
+      "headline": "Nearly half of BSE 200 stocks fail to deliver returns in 2026. What’s dragging them down?",
+      "summary": "This year, numerous firms across various sectors are grappling with a lack of returns, a stark contrast to the previous years' performances. Key industries such as automobiles, FMCG, and IT are showing marked declines. Interestingly, capital goods stocks have demonstrated resilience, fueled by increased infrastructure spending. This downturn in the market parallels a slowdown in systematic investment plan inflows.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-29T03:51:57+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/nearly-half-of-bse-200-stocks-fail-to-deliver-returns-in-2026-whats-dragging-them-down/articleshow/133603293.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Nearly%20half%20of%20BSE%20200%20stocks%20fail%20to%20deliver%20returns%20in%202026.%20What%E2%80%99s%20dragging%20them%20down%3F.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=798714794",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "44d2442b454c3777ab21",
       "category": "World",
-      "headline": "Nepal-Tibet flash flood: number of missing rises to 2,478; Nepal asks for specialised and technical help – latest updates",
-      "summary": "Chinese rescue team reaches all-but-obliterated Gyirong border crossing complex to find ‘nothing but ruins’ ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower...",
+      "headline": "Search continues as number missing in Nepal-Tibet floods rises to 2,478 – as it happened",
+      "summary": "This live blog is now closed ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Visual guide: how the deadly flooding unfolded Tell us: have you been affected by the flash floods? More now on the Nepali army’s rescue operation to save about 100 people trapped in a tunnel at a hydropower project swamped by Wednesday’s flooding . “Two helicopters have been dispatched...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T03:49:58+00:00",
       "source_url": "https://www.theguardian.com/world/live/2026/aug/28/nepal-tibet-flash-floods-hundreds-dead-missing-day-three-live-updates",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20flash%20flood%3A%20number%20of%20missing%20rises%20to%202%2C478%3B%20Nepal%20asks%20for%20specialised%20and%20technical%20help%20%E2%80%93%20latest%20updates.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1294001676",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Search%20continues%20as%20number%20missing%20in%20Nepal-Tibet%20floods%20rises%20to%202%2C478%20%E2%80%93%20as%20it%20happened.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1508478541",
       "image_type": "ai_generated"
     },
     {
@@ -99,6 +242,17 @@
       "published_at": "2026-08-29T03:44:05+00:00",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/milo-yiannopoulos-ice-custody-tip-off-1236684770/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Milo%20Yiannopoulos%20in%20ICE%20Custody%20After%20Feud-Fueled%20Tip-Off.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2966659357",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "80a97c6c2d4970c5abec",
+      "category": "India",
+      "headline": "Indore Security Guard Crushed To Death By SUV After Spat With Driver, 2 Arrested",
+      "summary": "Further investigation is underway, say officials. (Representational)",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:43:21+00:00",
+      "source_url": "https://www.ndtv.com/india-news/indore-security-guard-crushed-to-death-by-suv-after-spat-with-driver-2-arrested-11973434#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Indore%20Security%20Guard%20Crushed%20To%20Death%20By%20SUV%20After%20Spat%20With%20Driver%2C%202%20Arrested.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1788443025",
       "image_type": "ai_generated"
     },
     {
@@ -135,6 +289,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "0d15d8f3e41627e6982f",
+      "category": "India",
+      "headline": "\"Miraculous Escape\": 21 Tamil Nadu Pilgrims Return From Nepal, Recount Horror",
+      "summary": "140 people from the state have been rescued and are safe in Nepal",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:26:32+00:00",
+      "source_url": "https://www.ndtv.com/india-news/miraculous-escape-21-tamil-nadu-pilgrims-return-from-nepal-recount-horror-11973447#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Miraculous%20Escape%22%3A%2021%20Tamil%20Nadu%20Pilgrims%20Return%20From%20Nepal%2C%20Recount%20Horror.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2866607019",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "79aceb63f5af0d076977",
       "category": "Lifestyle",
       "headline": "Are eggs bad for your heart? Hyderabad doctor shares what '28 years of data across 185 countries' says",
@@ -143,6 +308,28 @@
       "published_at": "2026-08-29T03:10:06+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/are-eggs-bad-for-your-heart-hyderabad-doctor-shares-what-28-years-of-data-across-185-countries-says-101787972082538.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20eggs%20bad%20for%20your%20heart%3F%20Hyderabad%20doctor%20shares%20what%20%2728%20years%20of%20data%20across%20185%20countries%27%20says.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4194958856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "55d0e37274281c439a8f",
+      "category": "India",
+      "headline": "UGC NET June 2026 Result For 84 Subjects Out; Check Subject And Category-Wise Cut-Off Marks",
+      "summary": "UGC NET June 2026 Result Out: A total of 4,241Candidates qualified for JRF and assistant professor posts.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T03:00:37+00:00",
+      "source_url": "https://www.ndtv.com/education/ugc-net-june-2026-result-out-heres-direct-link-to-check-result-for-84-subjects-check-subject-and-category-wise-cut-off-marks-11973412#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UGC%20NET%20June%202026%20Result%20For%2084%20Subjects%20Out%3B%20Check%20Subject%20And%20Category-Wise%20Cut-Off%20Marks.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1354420827",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9adb358122dc07fdfa2e",
+      "category": "India",
+      "headline": "\"Not Legal\": Thane Court On CBI Arrest Of IRS Officer, 2 Others In Bribery Case",
+      "summary": "The court also rejected the CBI's request for their custodial interrogation",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T02:57:56+00:00",
+      "source_url": "https://www.ndtv.com/india-news/not-legal-thane-court-on-cbi-arrest-of-irs-officer-2-others-in-bribery-case-11973421#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Not%20Legal%22%3A%20Thane%20Court%20On%20CBI%20Arrest%20Of%20IRS%20Officer%2C%202%20Others%20In%20Bribery%20Case.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2889127290",
       "image_type": "ai_generated"
     },
     {
@@ -165,6 +352,17 @@
       "published_at": "2026-08-29T02:51:53+00:00",
       "source_url": "https://www.thehindu.com/life-and-style/travel/why-the-monsoon-is-one-of-the-best-times-to-explore-indias-forests/article71221275.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Why%20the%20monsoon%20is%20one%20of%20the%20best%20times%20to%20explore%20India%E2%80%99s%20forests.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4045897116",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2d3dcc65295bee78d44b",
+      "category": "India",
+      "headline": "Student Union Polls To Be Held Soon Across West Bengal: Suvendu Adhikari",
+      "summary": "Opposition parties have repeatedly called for holding student union polls in colleges",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-29T02:50:11+00:00",
+      "source_url": "https://www.ndtv.com/india-news/student-union-polls-to-be-held-soon-across-west-bengal-suvendu-adhikari-11973408#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Student%20Union%20Polls%20To%20Be%20Held%20Soon%20Across%20West%20Bengal%3A%20Suvendu%20Adhikari.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2420390811",
       "image_type": "ai_generated"
     },
     {
@@ -913,204 +1111,6 @@
       "published_at": "2026-08-28T21:17:38+00:00",
       "source_url": "https://arstechnica.com/health/2026/08/rfk-jr-has-lied-to-the-senate-lawmakers-call-for-criminal-probe-ouster/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20%22RFK%20Jr.%20has%20lied%20to%20the%20Senate%22%3A%20Lawmakers%20call%20for%20criminal%20probe%2C%20ouster.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1485797494",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "04f545e79897054d940e",
-      "category": "World",
-      "headline": "What makes the Nepal's geography so uniquely prone to disasters",
-      "summary": "The deadly flooding that struck Nepal this week is not the first disaster that people in the region have endured. The country's unique geography makes it especially prone to natural disasters.",
-      "publisher": "NPR World",
-      "published_at": "2026-08-28T21:14:40+00:00",
-      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5947180/what-makes-the-nepals-geography-so-uniquely-prone-to-disasters",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20What%20makes%20the%20Nepal%27s%20geography%20so%20uniquely%20prone%20to%20disasters.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=408074829",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "06edf64016aa30d64612",
-      "category": "World",
-      "headline": "Milo Yiannopoulos, a far-right political commentator, detained by ICE",
-      "summary": "A former editor of Breitbart News, Yiannopoulos has also served as an intern for Marjorie Taylor Greene Milo Yiannopoulos, a far-right British political commentator, was detained by Immigration and Customs Enforcement in Louisiana, according to the Department of Homeland Security (DHS). In a statement on Friday, a DHS spokesperson said that Yiannopoulos was arrested on Thursday at the Louis Armstrong New Orleans...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-28T21:13:39+00:00",
-      "source_url": "https://www.theguardian.com/us-news/2026/aug/28/milo-yiannopoulos-detained-ice",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Milo%20Yiannopoulos%2C%20a%20far-right%20political%20commentator%2C%20detained%20by%20ICE.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1345996246",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "4ab0eef761f3288f5adb",
-      "category": "Entertainment",
-      "headline": "LISTEN: Holywater Tech Chief Bogdan Nesvit on the Explosive Growth of Microdramas: ‘Studios and Creators are Knocking on Our Doors’",
-      "summary": "On today’s episode of Variety‘s “Strictly Business,” Bogdan Nesvit, co-CEO and co-founder of Holywater Tech, details the explosive growth of the company’s My Drama and My Muse apps, and he details what he sees as the key to making vertical media more mainstream. “Studios and creators are knocking on our doors right now,” Nesvit says. […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-28T21:11:20+00:00",
-      "source_url": "https://variety.com/2026/tv/news/holywater-tech-bogdan-nesvit-microdrama-my-drama-my-muse-1236846046/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20LISTEN%3A%20Holywater%20Tech%20Chief%20Bogdan%20Nesvit%20on%20the%20Explosive%20Growth%20of%20Microdramas%3A%20%E2%80%98Studios%20and%20Creators%20are%20Knocking%20on%20Our%20Doors%E2%80%99.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=239787840",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5d0539156abc2eaa6de4",
-      "category": "India",
-      "headline": "Bihar government to replace ‘fail’ with ‘eligible for skills’ in Class 10, 12 marksheets",
-      "summary": "An exam score alone is not an indicator of a child’s overall talent or future potential, says State Education Minister; Bihar has recently been witness to several student agitations over alleged irregularities in examinations",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T21:09:04+00:00",
-      "source_url": "https://www.thehindu.com/news/national/bihar/bihar-government-to-replace-fail-with-eligible-for-skills-in-class-10-12-marksheets/article71400456.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bihar%20government%20to%20replace%20%E2%80%98fail%E2%80%99%20with%20%E2%80%98eligible%20for%20skills%E2%80%99%20in%20Class%2010%2C%2012%20marksheets.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2347453830",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "1a88eb309f5149b31da8",
-      "category": "Entertainment",
-      "headline": "All 30 Ridley Scott Movies, Ranked From Worst to Best",
-      "summary": "Historical epics, dystopian futures, crime thrillers, a few androids and so many Russell Crowe accents. Travel from the distant past to the 'Alien' future as we rank the legendary director’s films.",
-      "publisher": "Hollywood Reporter",
-      "published_at": "2026-08-28T21:08:35+00:00",
-      "source_url": "https://www.hollywoodreporter.com/lists/ridley-scott-movies-ranked-worst-best/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20All%2030%20Ridley%20Scott%20Movies%2C%20Ranked%20From%20Worst%20to%20Best.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=4227757638",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "e69a4aa1a1cfa46ce114",
-      "category": "Lifestyle",
-      "headline": "I dug through hundreds of Labor Day sales to find real deals on high-quality products that last",
-      "summary": "Cut through the noise with our round up of worthy Labor Day deals at brands including Caraway, Kiehl’s, Monos and Sony College grads share the room essentials that weathered the dorm Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things Labor Day offers one last hurrah for summer, a chance to reset for fall, and if you’re shopping, some choice end-of-season discounts. No matter...",
-      "publisher": "Guardian Lifestyle",
-      "published_at": "2026-08-28T21:04:30+00:00",
-      "source_url": "https://www.theguardian.com/thefilter-us/2026/aug/28/best-labor-day-sales-deals",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20I%20dug%20through%20hundreds%20of%20Labor%20Day%20sales%20to%20find%20real%20deals%20on%20high-quality%20products%20that%20last.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2122986324",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "152c8c352acac327bf83",
-      "category": "Sports",
-      "headline": "Cherki genius and Wharton excels - Palace v Man City player ratings",
-      "summary": "How Crystal Palace and Manchester City's players rated following their Premier League match.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T21:01:24+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/c1j4ryr777yo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Cherki%20genius%20and%20Wharton%20excels%20-%20Palace%20v%20Man%20City%20player%20ratings.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2716987190",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d0ef18ff01e5fb55bb6a",
-      "category": "India",
-      "headline": "CISF signs MoU to enhance counter-drone skills of security personnel",
-      "summary": "The paramilitary force guards 370 units across the country, including those in the highly sensitive sectors such as aviation, nuclear power, space and oil refineries, among others, and it has been designated as the nodal agency to handle aerial threats at these installations",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:56:00+00:00",
-      "source_url": "https://www.thehindu.com/news/national/cisf-signs-mou-to-enhance-counter-drone-skills-of-security-personnel/article71402256.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CISF%20signs%20MoU%20to%20enhance%20counter-drone%20skills%20of%20security%20personnel.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1202638846",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "869df2141c2c936f0490",
-      "category": "Entertainment",
-      "headline": "Gladys Knight Cuts Back on Performing as She Transitions to ‘Next Stage’ of Career and Life",
-      "summary": "After three quarters of a century under the spotlight, Gladys Knight is ready to take things a little slower. Knight announced on Instagram on Thursday that she will be performing less, and will focus on other areas. The official statement reads: “After much soul searching I’ve decided that I will be easing into fewer performances […]",
-      "publisher": "Variety",
-      "published_at": "2026-08-28T20:52:59+00:00",
-      "source_url": "https://variety.com/2026/music/news/gladys-knight-steps-back-performing-1236846273/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Gladys%20Knight%20Cuts%20Back%20on%20Performing%20as%20She%20Transitions%20to%20%E2%80%98Next%20Stage%E2%80%99%20of%20Career%20and%20Life.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1592135313",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "f620e412db1db214c05f",
-      "category": "Sports",
-      "headline": "Arsenal & Barca monitor Rashford - Saturday's gossip",
-      "summary": "Arsenal monitor Marcus Rashford, Chelsea eye Monaco's Lamine Camara and Valencia push for Liverpool midfielder Harvey Elliott, plus more.",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T20:48:59+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/football/articles/cp8416ll9yvo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Arsenal%20%26%20Barca%20monitor%20Rashford%20-%20Saturday%27s%20gossip.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2997925726",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "25d420cd647783849613",
-      "category": "India",
-      "headline": "Literature is more powerful than history: Su. Venkatesan",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:45:35+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/literature-is-more-powerful-than-history-su-venkatesan/article71401629.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Literature%20is%20more%20powerful%20than%20history%3A%20Su.%20Venkatesan.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1011340347",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "9fd9314a8c9f33c1718b",
-      "category": "India",
-      "headline": "Spider-Man, Motu-Patlu, And A Greek Drama: BJP Casts Insta Meme Net For Gen-Z Attention",
-      "summary": "Snippets from the BJP's Instagram handle show a range of references deployed for a youth outreach.",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-28T20:43:16+00:00",
-      "source_url": "https://www.ndtv.com/india-news/spider-man-motu-patlu-and-a-greek-drama-bjp-casts-instagram-meme-net-for-gen-z-outreach-11972779#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Spider-Man%2C%20Motu-Patlu%2C%20And%20A%20Greek%20Drama%3A%20BJP%20Casts%20Insta%20Meme%20Net%20For%20Gen-Z%20Attention.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1148495773",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "0f01a67f5196cc081e64",
-      "category": "India",
-      "headline": "UoM Senate meeting postponed, teachers express displeasure",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:37:47+00:00",
-      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/uom-senate-meeting-postponed-teachers-express-displeasure/article71401670.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20UoM%20Senate%20meeting%20postponed%2C%20teachers%20express%20displeasure.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=2400033538",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "e933818fac536cf19e83",
-      "category": "India",
-      "headline": "Wider camera surveillance network on cards in Keralam’s Kozhikode to check traffic rule violations and reckless dumping of waste",
-      "summary": "At least 100 cameras with automatic number plate recognition to target traffic violations; preparations are on to cover 150 problem spots to curb reckless waste dumping",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:37:26+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/wider-camera-surveillance-network-on-cards-in-keralams-kozhikode-to-check-traffic-rule-violations-and-reckless-dumping-of-waste/article71400148.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Wider%20camera%20surveillance%20network%20on%20cards%20in%20Keralam%E2%80%99s%20Kozhikode%20to%20check%20traffic%20rule%20violations%20and%20reckless%20dumping%20of%20waste.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=113462880",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a0c553b2d573ba0ce6b2",
-      "category": "Sports",
-      "headline": "Greaves loses thriller to Cross on European debut",
-      "summary": "Beau Greaves narrowly loses 6",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-28T20:35:22+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/darts/articles/czjz78lwjzzo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Greaves%20loses%20thriller%20to%20Cross%20on%20European%20debut.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=290121434",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2d56f79a9318093e8ae2",
-      "category": "India",
-      "headline": "FSSAI proposes front-of-pack red pictorial warnings for foods high in fat, sugar, salt",
-      "summary": "‘The proposal is intended to provide a simple, prominent and easily comprehensible warning to consumers regarding food products which are high in specified nutrients of concern, says FSSAI affidavit filed in the Supreme Court",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:34:33+00:00",
-      "source_url": "https://www.thehindu.com/sci-tech/health/fssai-proposes-front-of-pack-red-pictorial-warnings-for-foods-high-in-fat-sugar-salt/article71402049.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20FSSAI%20proposes%20front-of-pack%20red%20pictorial%20warnings%20for%20foods%20high%20in%20fat%2C%20sugar%2C%20salt.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3701827868",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "a4b988e3c06de73ffa60",
-      "category": "India",
-      "headline": "₹1.50-crore project to redevelop Vyttila Junction in Keralam’s Kochi nearing completion",
-      "summary": "The widened and redeveloped portions beneath the Vyttila flyover being opened to traffic in a phased manner; a dedicated bus bay to park four buses at a time to be readied on the south",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:33:59+00:00",
-      "source_url": "https://www.thehindu.com/news/national/kerala/150-crore-project-to-redevelop-vyttila-junction-nearing-completion/article71401052.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%82%B91.50-crore%20project%20to%20redevelop%20Vyttila%20Junction%20in%20Keralam%E2%80%99s%20Kochi%20nearing%20completion.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=3783829628",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7d03cad3c61ddc774cb2",
-      "category": "India",
-      "headline": "AIMIM expels MLC Mirza Rahmat Baig from party",
-      "summary": "The party's social media handles, including X, posted the sudden development",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-28T20:24:15+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/aimim-expels-mlc-mirza-rahmat-baig-from-party/article71402186.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AIMIM%20expels%20MLC%20Mirza%20Rahmat%20Baig%20from%20party.%20Create%20a%20realistic%2C%20relevant%2C%20tasteful%20journalistic%20visual.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark%2C%20no%20fake%20newspaper.?width=1200&height=675&nologo=true&seed=1701205616",
       "image_type": "ai_generated"
     }
   ]
