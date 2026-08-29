@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T19:04:39.861359+00:00",
-  "total": 1330,
+  "updated_at": "2026-08-29T19:34:34.305357+00:00",
+  "total": 1347,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 106,
-    "India": 418,
+    "World": 107,
+    "India": 427,
     "Business": 169,
     "Technology & AI": 99,
-    "Sports": 100,
-    "Entertainment": 289,
+    "Sports": 106,
+    "Entertainment": 290,
     "Lifestyle": 149
   },
   "articles": [
@@ -132,6 +132,17 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7922671abee2d4b7b40a",
+      "category": "India",
+      "headline": "Indian Standard Time to become mandatory for all entities from March 2027",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T19:02:32+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/indian-standard-time-to-become-mandatory-for-all-entities-from-march-2027/articleshow/133618687.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Indian%20Standard%20Time%20to%20become%20mandatory%20for%20all%20entities%20from%20March%202027.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1424791942",
       "image_type": "ai_generated"
     },
     {
@@ -616,6 +627,17 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d67c89d685a10dfd4e41",
+      "category": "India",
+      "headline": "Can an accused be denied a copy of the FIR? | Explained",
+      "summary": "A three-judge Bench headed by Chief Justice of India (CJI) Surya Kant directed the Ghaziabad Police Commissioner to provide him with the FIR and CCTV footage and to file a compliance report by September 7. It also protected him from arrest and allowed him to approach the jurisdictional High Court for further relief.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:15:57+00:00",
+      "source_url": "https://www.thehindu.com/news/national/can-an-accused-be-denied-a-copy-of-the-fir-explained/article71405905.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Can%20an%20accused%20be%20denied%20a%20copy%20of%20the%20FIR%3F%20%7C%20Explained.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3157807259",
       "image_type": "ai_generated"
     },
     {
@@ -1262,7 +1284,7 @@
       "headline": "Around 50 Karnataka tourists stranded in Nepal return home; 24 remain missing",
       "summary": "The group included tourists from Haveri, Shivamogga and Bengaluru. They travelled from Gorakhpur in Uttar Pradesh and arrived at Kempegowda International Airport in Bengaluru on Saturday.",
       "publisher": "The Hindu",
-      "published_at": "2026-08-29T17:19:15+00:00",
+      "published_at": "2026-08-29T19:11:18+00:00",
       "source_url": "https://www.thehindu.com/news/national/karnataka/28-from-karnataka-stranded-or-missing-in-nepal-tibet-amid-flash-flood/article71403924.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Around%2050%20Karnataka%20tourists%20stranded%20in%20Nepal%20return%20home%3B%2024%20remain%20missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1141549223",
       "image_type": "ai_generated"
@@ -1851,6 +1873,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "351858bd10b744c88190",
+      "category": "India",
+      "headline": "Hyderabad hospital performs 400 kidney transplants",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:17:46+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-hospital-performs-400-kidney-transplants/article71405294.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Hyderabad%20hospital%20performs%20400%20kidney%20transplants.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1470888309",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c54a9f4f82c0c2f7a84a",
       "category": "India",
       "headline": "At 387, city turns up the spirit at The Hindu’s Made of Chennai festival",
@@ -1881,6 +1914,17 @@
       "published_at": "2026-08-29T18:19:19+00:00",
       "source_url": "https://www.ndtv.com/india-news/congress-councillor-gurpreet-singh-gopi-shot-dead-in-punjab-after-being-chased-election-dispute-suspected-behind-attack-11976132#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Congress%20Councillor%20Murdered%20In%20Punjab.%20Attackers%20Chased%20His%20Bike%2C%20Opened%20Fire.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2344483620",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d905e954b13815e52845",
+      "category": "India",
+      "headline": "Centre finalising Article 371 framework for Ladakh, says Rijiju",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T18:09:54+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/centre-finalising-article-371-framework-for-ladakh-says-rijiju/articleshow/133617650.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Centre%20finalising%20Article%20371%20framework%20for%20Ladakh%2C%20says%20Rijiju.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=163743663",
       "image_type": "ai_generated"
     },
     {
@@ -4345,6 +4389,61 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "92f181faa52642fd2dfb",
+      "category": "India",
+      "headline": "Mirwaiz backs NC MP, demand for J&K statehood, Article 370",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T19:14:25+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/mirwaiz-backs-nc-mp-demand-for-jk-statehood-article-370/articleshow/133619034.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Mirwaiz%20backs%20NC%20MP%2C%20demand%20for%20J%26K%20statehood%2C%20Article%20370.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3817267586",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "152867d4d060c128fcd6",
+      "category": "India",
+      "headline": "Postcard collection with artist Pavithra Srinivasan’s illustrations released",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T19:11:35+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/postcard-collection-with-artist-pavithra-srinivasans-illustrations-released/article71405061.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Postcard%20collection%20with%20artist%20Pavithra%20Srinivasan%E2%80%99s%20illustrations%20released.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=383005299",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d3ae68912e75c244f2ed",
+      "category": "India",
+      "headline": "Adityanath directs swift disposal of revenue cases, orders high festival alert",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T19:03:44+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/adityanath-directs-swift-disposal-of-revenue-cases-orders-high-festival-alert-101788030224878.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Adityanath%20directs%20swift%20disposal%20of%20revenue%20cases%2C%20orders%20high%20festival%20alert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1591198624",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dc7760f663bf6f4c7e2d",
+      "category": "India",
+      "headline": "Pak drones, armed men spur searches in Poonch, Rajouri",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T18:50:33+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/pak-drones-armed-men-spur-searches-in-poonch-rajouri/articleshow/133618484.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Pak%20drones%2C%20armed%20men%20spur%20searches%20in%20Poonch%2C%20Rajouri.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1814007832",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "924843b6c10ff71f6d53",
+      "category": "India",
+      "headline": "Judiciary proactively responded to emerging fraudulent schemes like digital arrest: CJI",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T18:47:33+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/judiciary-proactively-responded-to-emerging-fraudulent-schemes-like-digital-arrest-cji-101788029254086.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Judiciary%20proactively%20responded%20to%20emerging%20fraudulent%20schemes%20like%20digital%20arrest%3A%20CJI.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2958916422",
       "image_type": "ai_generated"
     },
     {
@@ -9199,6 +9298,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c2620132e24a83dbcfa8",
+      "category": "Entertainment",
+      "headline": "Acclaimed, Controversial Play ‘Downstate’ Gets Broadway Marquee; Scott Rudin Reportedly Producing With Joe Mantello Directing",
+      "summary": "The marquee at Broadway’s Booth Theatre appears to confirm the rumors: Bruce Norris’ acclaimed and controversial play Downstate will take up residence at the venue in an upcoming production directed by Joe Mantello. The news was first reported by the Chicago Tribune – the play premiered in 2018 at Chicago’s Steppenwolf Theatre Company – with […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T19:12:06+00:00",
+      "source_url": "https://deadline.com/2026/08/downstate-broadway-scott-rudin-joe-mantello-1237062672/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Acclaimed%2C%20Controversial%20Play%20%E2%80%98Downstate%E2%80%99%20Gets%20Broadway%20Marquee%3B%20Scott%20Rudin%20Reportedly%20Producing%20With%20Joe%20Mantello%20Directing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2069701836",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "c2cc9549dc09cf1337b8",
       "category": "Entertainment",
       "headline": "‘Paranormal Activity’ Broadway Review: Stage Adaptation Of Film Franchise Is A Frightfully Good Time",
@@ -9537,6 +9647,17 @@
       "published_at": "2026-01-22T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Railway%20secures%20%24100%20million%20to%20challenge%20AWS%20with%20AI-native%20cloud%20infrastructure.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3997345097",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "490c326326e4725c6ff8",
+      "category": "Sports",
+      "headline": "Pogacar requires surgery after Vuelta crash",
+      "summary": "Tadej Pogacar needs surgery on a broken collarbone after sustaining multiple injuries in the crash that led to him abandoning the Vuelta a Espana.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:19:14+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/cycling/articles/c0qx0ndg373o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Pogacar%20requires%20surgery%20after%20Vuelta%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3312685612",
       "image_type": "ai_generated"
     },
     {
@@ -10860,6 +10981,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "c3ea0a77bf57f8cd74e5",
+      "category": "Sports",
+      "headline": "O'Neill would rather Celtic had no fans at Ibrox than 300",
+      "summary": "Martin O'Neill says Celtic \"might as well not get any\" tickets after Rangers offered 300 for the sides' League Cup quarter",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:29:12+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cwyz4jxg3g4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20O%27Neill%20would%20rather%20Celtic%20had%20no%20fans%20at%20Ibrox%20than%20300.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2633826400",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cccb75f8a504881b8de9",
+      "category": "Sports",
+      "headline": "Jaissle claims first Premier League win at lacklustre Spurs",
+      "summary": "Second-half goals from Anthony Elanga and Yoanne Wissa give manager Matthias Jaissle his first Premier League victory, as Newcastle United win 2",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:27:16+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/c1kxe87ye7ro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Jaissle%20claims%20first%20Premier%20League%20win%20at%20lacklustre%20Spurs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1727062175",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T19:15:49+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "0d6ce3b7bdfd84996213",
       "category": "Sports",
       "headline": "Watch Sportscene highlights of Saturday's Premiership action",
@@ -10868,6 +11022,50 @@
       "published_at": "2026-08-29T19:15:08+00:00",
       "source_url": "https://www.bbc.co.uk/iplayer/live/bbcscotland?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Watch%20Sportscene%20highlights%20of%20Saturday%27s%20Premiership%20action.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=821670535",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0334c250535ff34c1698",
+      "category": "Sports",
+      "headline": "Iraola awaits first win as Liverpool rescue late draw against Forest",
+      "summary": "Liverpool come from behind twice to rescue a 2-2 draw against Nottingham Forest at Anfield, leaving new manager Andoni Iraola in search of his first Premier League win with the club.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:12:20+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/cx2zw96094xo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Iraola%20awaits%20first%20win%20as%20Liverpool%20rescue%20late%20draw%20against%20Forest.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4004191903",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b902b549f9499cae22f5",
+      "category": "Sports",
+      "headline": "Hull continue perfect start with away win at Coventry",
+      "summary": "Substitute Liam Millar's late goal helps Hull secure a 1-0 away victory against Coventry City and continues their perfect start to life back in the Premier League, with two wins from two matches.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:12:12+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/c5yjd20g6rpo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hull%20continue%20perfect%20start%20with%20away%20win%20at%20Coventry.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=680447361",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "11446c2b33734984cff5",
+      "category": "Sports",
+      "headline": "Tarkowski strikes late to rescue point for Everton at Bournemouth",
+      "summary": "Everton captain James Tarkowski strikes in the 91st minute to rescue a point, as Bournemouth settle for a 1",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T19:12:07+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/c70lenegd1qo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Tarkowski%20strikes%20late%20to%20rescue%20point%20for%20Everton%20at%20Bournemouth.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1302602280",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "66f30988ac370371295b",
+      "category": "World",
+      "headline": "Norway's new king remembers 'my dear father' in first speech",
+      "summary": "Haakon VIII pays emotional tribute to his late father, Harald V, before outlining how he wishes to reign.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-29T19:06:28+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvgy79wmv4jo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Norway%27s%20new%20king%20remembers%20%27my%20dear%20father%27%20in%20first%20speech.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1110184705",
       "image_type": "ai_generated"
     },
     {
@@ -10882,14 +11080,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T18:50:17+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "id": "4615a2d7f21e5f85c55e",
+      "category": "Sports",
+      "headline": "'Supporters aren't always wrong' - Moyes on Everton fans' anger",
+      "summary": "David Moyes says \"supporters aren't always wrong\" after Everton fans voice their opposition to the potential sale of teenage midfielder Harrison Armstrong during the 1",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T18:59:28+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cy7zk5vprplo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Supporters%20aren%27t%20always%20wrong%27%20-%20Moyes%20on%20Everton%20fans%27%20anger.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=484119779",
       "image_type": "ai_generated"
     },
     {
@@ -11022,17 +11220,6 @@
       "published_at": "2026-08-29T17:52:42+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Right-wing%20commentator%20Milo%20Yiannopoulos%20deported%20from%20US%20to%20UK.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2836983327",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d10ba098ab4d325d2922",
-      "category": "Sports",
-      "headline": "Leader Pogacar abandons Vuelta after crash",
-      "summary": "Race leader Tadej Pogacar pulls out of the Vuelta a Espana after crashing during stage eight of the three",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T17:51:37+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/cycling/articles/c0qx0ndg373o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Leader%20Pogacar%20abandons%20Vuelta%20after%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3367867576",
       "image_type": "ai_generated"
     },
     {
