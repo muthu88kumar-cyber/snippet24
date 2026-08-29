@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 
 # ============================================================
 # SNIPPET24 NEWS CURATOR
+# Government / Official Source First
 # ============================================================
 
 OUTPUT_FILE = "articles.json"
@@ -23,11 +24,11 @@ MINIMUM_STORIES = 50
 MAX_PER_CATEGORY = 20
 
 REQUEST_TIMEOUT = 15
-REQUEST_DELAY = 0.25
+REQUEST_DELAY = 0.5
 
 HEADERS = {
     "User-Agent": (
-        "Snippet24-News/2.0 "
+        "Snippet24-News/3.0 "
         "(+https://snippet24.in)"
     )
 }
@@ -49,103 +50,79 @@ CATEGORY_ORDER = [
 
 
 # ============================================================
-# RSS SOURCES
+# OFFICIAL / PUBLIC RSS SOURCES
+#
+# IMPORTANT:
+# These are intended to be the preferred source layer.
+# We keep the publisher/source name and original URL.
 # ============================================================
 
 RSS_SOURCES = {
 
-    "World": [
+    "India": [
         (
-            "BBC News",
-            "https://feeds.bbci.co.uk/news/world/rss.xml"
-        ),
-        (
-            "NPR World",
-            "https://feeds.npr.org/1004/rss.xml"
-        ),
-        (
-            "Guardian World",
-            "https://www.theguardian.com/world/rss"
+            "Press Information Bureau",
+            "https://www.pib.gov.in/RssMain.aspx"
         ),
     ],
 
-    "India": [
+    "World": [
         (
-            "The Hindu",
-            "https://www.thehindu.com/news/national/feeder/default.rss"
-        ),
-        (
-            "Indian Express",
-            "https://indianexpress.com/section/india/feed/"
-        ),
-        (
-            "NDTV India",
-            "https://feeds.feedburner.com/ndtvnews-india-news"
+            "United Nations",
+            "https://news.un.org/feed/subscribe/en/news/topic/world/feed/rss.xml"
         ),
     ],
 
     "Business": [
         (
-            "Moneycontrol",
-            "https://www.moneycontrol.com/rss/business.xml"
-        ),
-        (
-            "Business Standard",
-            "https://www.business-standard.com/rss/home_page_top_stories.rss"
-        ),
-        (
-            "Economic Times",
-            "https://economictimes.indiatimes.com/rssfeedsdefault.cms"
+            "Reserve Bank of India",
+            "https://www.rbi.org.in/Scripts/Rss.aspx"
         ),
     ],
 
     "Technology & AI": [
         (
-            "TechCrunch",
-            "https://techcrunch.com/feed/"
-        ),
-        (
-            "The Verge",
-            "https://www.theverge.com/rss/index.xml"
-        ),
-        (
-            "Ars Technica",
-            "https://feeds.arstechnica.com/arstechnica/index"
-        ),
-    ],
-
-    "Lifestyle": [
-        (
-            "Hindustan Times Lifestyle",
-            "https://www.hindustantimes.com/feeds/rss/lifestyle/rssfeed.xml"
-        ),
-        (
-            "Guardian Lifestyle",
-            "https://www.theguardian.com/lifeandstyle/rss"
+            "ISRO",
+            "https://www.isro.gov.in/media_isro_rss.html"
         ),
     ],
 
     "Sports": [
-        (
-            "ESPN",
-            "https://www.espn.com/espn/rss/news"
-        ),
-        (
-            "BBC Sport",
-            "https://feeds.bbci.co.uk/sport/rss.xml"
-        ),
+        # Official sports sources can be added here.
     ],
 
     "Entertainment": [
+        # Official/public sources can be added here.
+    ],
+
+    "Lifestyle": [
         (
-            "Variety",
-            "https://variety.com/feed/"
-        ),
-        (
-            "Hollywood Reporter",
-            "https://www.hollywoodreporter.com/feed/"
+            "World Health Organization",
+            "https://www.who.int/rss-feeds/news-english.xml"
         ),
     ],
+}
+
+
+# ============================================================
+# OPTIONAL SECONDARY SOURCES
+#
+# These are NOT preferred over official sources.
+# They can be enabled later when a category does not have
+# sufficient official/public information.
+#
+# Currently disabled intentionally.
+# ============================================================
+
+SECONDARY_RSS_SOURCES = {
+
+    "World": [],
+    "India": [],
+    "Business": [],
+    "Technology & AI": [],
+    "Sports": [],
+    "Entertainment": [],
+    "Lifestyle": [],
 }
 
 
@@ -154,10 +131,13 @@ RSS_SOURCES = {
 # ============================================================
 
 def clean_text(value):
+
     if not value:
         return ""
 
-    value = html.unescape(str(value))
+    value = html.unescape(
+        str(value)
+    )
 
     value = re.sub(
         r"<[^>]+>",
@@ -167,11 +147,6 @@ def clean_text(value):
 
     value = value.replace(
         "\xa0",
-        " "
-    )
-
-    value = value.replace(
-        "&nbsp;",
         " "
     )
 
@@ -185,10 +160,13 @@ def clean_text(value):
 
 
 def normalize_category(category):
+
     if not category:
         return "World"
 
-    value = clean_text(category).lower()
+    value = clean_text(
+        category
+    ).lower()
 
     if value in {
         "technology",
@@ -200,6 +178,7 @@ def normalize_category(category):
         return "Technology & AI"
 
     for known in CATEGORY_ORDER:
+
         if value == known.lower():
             return known
 
@@ -207,13 +186,19 @@ def normalize_category(category):
 
 
 def normalize_url(url):
+
     if not url:
         return ""
 
-    url = url.strip()
+    url = clean_text(
+        url
+    ).strip()
 
     try:
-        parsed = urlparse(url)
+
+        parsed = urlparse(
+            url
+        )
 
         if parsed.scheme not in (
             "http",
@@ -224,13 +209,15 @@ def normalize_url(url):
         return url
 
     except Exception:
+
         return ""
 
 
 def normalize_title(title):
-    title = clean_text(title)
 
-    title = title.lower()
+    title = clean_text(
+        title
+    ).lower()
 
     title = re.sub(
         r"[^a-z0-9]+",
@@ -245,7 +232,12 @@ def normalize_title(title):
     ).strip()
 
 
-def make_id(category, title, url):
+def make_id(
+    category,
+    title,
+    url
+):
+
     raw = (
         f"{category}|"
         f"{normalize_title(title)}|"
@@ -266,31 +258,34 @@ def remove_publisher_from_title(
     publisher
 ):
 
-    title = clean_text(title)
+    title = clean_text(
+        title
+    )
 
     if not title:
         return ""
 
     publishers = [
         publisher,
-        "Hindustan Times",
-        "Business Standard",
-        "Firstpost",
-        "Moneycontrol",
-        "News18",
+        "Press Information Bureau",
+        "Government of India",
+        "Government of Nepal",
+        "United Nations",
+        "WHO",
+        "World Health Organization",
+        "Reserve Bank of India",
+        "RBI",
+        "ISRO",
+        "NASA",
+        "Reuters",
+        "BBC",
+        "BBC News",
+        "CNN",
         "NDTV",
         "The Hindu",
         "Indian Express",
-        "BBC",
-        "BBC News",
-        "Reuters",
-        "CNN",
-        "CNBC",
         "TechCrunch",
         "The Verge",
-        "Variety",
-        "ESPN",
-        "Hollywood Reporter",
     ]
 
     for name in publishers:
@@ -325,7 +320,9 @@ def remove_title_repetition(
     title
 ):
 
-    summary = clean_text(summary)
+    summary = clean_text(
+        summary
+    )
 
     if not summary:
         return ""
@@ -351,7 +348,9 @@ def make_summary(
     description
 ):
 
-    title = clean_text(title)
+    title = clean_text(
+        title
+    )
 
     description = clean_text(
         description
@@ -362,8 +361,6 @@ def make_summary(
         title
     )
 
-    # Remove common RSS noise.
-
     description = re.sub(
         r"^(read more|latest updates|"
         r"follow live|breaking news)\s*[:\-]?\s*",
@@ -372,8 +369,6 @@ def make_summary(
         flags=re.IGNORECASE
     )
 
-    # Remove repeated source endings.
-
     description = re.sub(
         r"\s*(?:\||-|\u2013|\u2014)\s*"
         r"[A-Za-z0-9 .&]+$",
@@ -381,15 +376,11 @@ def make_summary(
         description
     ).strip()
 
-    # Remove excessive whitespace.
-
     description = re.sub(
         r"\s+",
         " ",
         description
     ).strip()
-
-    # Keep summaries compact.
 
     if len(description) > 420:
 
@@ -402,13 +393,10 @@ def make_summary(
     if description:
         return description
 
-    # Do not invent facts.
-
     return (
-        "The latest developments are being "
-        "reported by the original publisher. "
-        "Read the original report for the "
-        "full details."
+        "The latest information has been "
+        "reported by the original source. "
+        "Read the original report for full details."
     )
 
 
@@ -419,11 +407,14 @@ def make_summary(
 def parse_date(value):
 
     if not value:
+
         return datetime.now(
             timezone.utc
         )
 
-    value = value.strip()
+    value = clean_text(
+        value
+    ).strip()
 
     try:
 
@@ -487,8 +478,6 @@ def find_child_text(
 
 def find_link(element):
 
-    # RSS / Atom links.
-
     for child in list(element):
 
         tag = child.tag.split(
@@ -503,6 +492,7 @@ def find_link(element):
         )
 
         if href:
+
             return normalize_url(
                 href
             )
@@ -514,6 +504,7 @@ def find_link(element):
         )
 
         if text:
+
             return normalize_url(
                 text
             )
@@ -521,88 +512,8 @@ def find_link(element):
     return ""
 
 
-def find_image_from_feed(
-    element
-):
-
-    # media:content
-    # media:thumbnail
-
-    for child in element.iter():
-
-        tag = child.tag.split(
-            "}"
-        )[-1].lower()
-
-        if tag in (
-            "content",
-            "thumbnail"
-        ):
-
-            url = child.attrib.get(
-                "url"
-            )
-
-            if url:
-                return normalize_url(
-                    url
-                )
-
-    # enclosure
-
-    for child in list(element):
-
-        tag = child.tag.split(
-            "}"
-        )[-1].lower()
-
-        if tag != "enclosure":
-            continue
-
-        url = child.attrib.get(
-            "url",
-            ""
-        )
-
-        kind = child.attrib.get(
-            "type",
-            ""
-        ).lower()
-
-        if url and (
-            "image" in kind
-            or not kind
-        ):
-
-            return normalize_url(
-                url
-            )
-
-    # Search raw HTML for image URL.
-
-    raw = "".join(
-        element.itertext()
-    )
-
-    match = re.search(
-        r'https?://[^"\'>\s]+?'
-        r'\.(?:jpg|jpeg|png|webp)'
-        r'(?:\?[^"\'>\s]*)?',
-        raw,
-        flags=re.IGNORECASE
-    )
-
-    if match:
-
-        return normalize_url(
-            match.group(0)
-        )
-
-    return ""
-
-
 # ============================================================
-# AI IMAGE URL
+# IMAGE
 # ============================================================
 
 def make_ai_image(
@@ -618,7 +529,8 @@ def make_ai_image(
         "Create a realistic, relevant, tasteful "
         "journalistic visual. "
         "No text, no letters, no words, "
-        "no logos, no watermark, no fake newspaper."
+        "no logos, no watermark, "
+        "no fake newspaper."
     )
 
     seed = int(
@@ -750,13 +662,6 @@ def parse_feed(
             description
         )
 
-        # IMPORTANT:
-        # Snippet24 creates an original
-        # editorial visual for every article.
-        #
-        # We do not use publisher images
-        # as the primary visual.
-
         image = make_ai_image(
             title,
             normalized_category
@@ -764,11 +669,12 @@ def parse_feed(
 
         article = {
 
-            "id": make_id(
-                normalized_category,
-                title,
-                link
-            ),
+            "id":
+                make_id(
+                    normalized_category,
+                    title,
+                    link
+                ),
 
             "category":
                 normalized_category,
@@ -794,7 +700,10 @@ def parse_feed(
                 image,
 
             "image_type":
-                "ai_generated"
+                "ai_generated",
+
+            "source_type":
+                "official_or_public",
 
         }
 
@@ -818,6 +727,10 @@ def fetch_source(
     print()
     print(
         f"Fetching: {publisher}"
+    )
+
+    print(
+        f"URL: {url}"
     )
 
     try:
@@ -934,16 +847,8 @@ def load_existing_articles():
                 "source_url"
             ] = url
 
-            # If old article has no AI
-            # image, create one.
-
-            image = article.get(
+            if not article.get(
                 "image_url"
-            )
-
-            if not image or (
-                "pollinations.ai"
-                not in image
             ):
 
                 article[
@@ -955,15 +860,21 @@ def load_existing_articles():
                     ]
                 )
 
-                article[
-                    "image_type"
-                ] = "ai_generated"
-
-            else:
+            if not article.get(
+                "image_type"
+            ):
 
                 article[
                     "image_type"
                 ] = "ai_generated"
+
+            if not article.get(
+                "source_type"
+            ):
+
+                article[
+                    "source_type"
+                ] = "existing_source"
 
             if not article.get(
                 "id"
@@ -1036,23 +947,13 @@ def deduplicate(
         if not title or not url:
             continue
 
-        title_key = normalize_title(
-            title
-        )
-
-        url_key = url.lower()
-
-        # URL is the strongest duplicate key.
-
-        key = url_key
+        key = url.lower()
 
         if key not in unique:
 
             unique[key] = article
 
         else:
-
-            # Prefer newer item.
 
             old_date = unique[
                 key
@@ -1071,8 +972,6 @@ def deduplicate(
                 unique[
                     key
                 ] = article
-
-    # Second title-level deduplication.
 
     title_unique = {}
 
@@ -1129,6 +1028,56 @@ def article_timestamp(
 
 
 # ============================================================
+# CATEGORY LIMIT
+# ============================================================
+
+def apply_category_limit(
+    articles
+):
+
+    grouped = {
+        category: []
+        for category in CATEGORY_ORDER
+    }
+
+    for article in articles:
+
+        category = normalize_category(
+            article.get(
+                "category"
+            )
+        )
+
+        if category not in grouped:
+            continue
+
+        if len(
+            grouped[category]
+        ) < MAX_PER_CATEGORY:
+
+            grouped[
+                category
+            ].append(
+                article
+            )
+
+    result = []
+
+    for category in CATEGORY_ORDER:
+
+        result.extend(
+            grouped[category]
+        )
+
+    result.sort(
+        key=article_timestamp,
+        reverse=True
+    )
+
+    return result
+
+
+# ============================================================
 # FIFO
 # ============================================================
 
@@ -1145,7 +1094,9 @@ def apply_fifo(
         reverse=True
     )
 
-    # Keep the newest TARGET_STORIES.
+    articles = apply_category_limit(
+        articles
+    )
 
     return articles[
         :TARGET_STORIES
@@ -1189,15 +1140,19 @@ def category_counts(
 def build_feed():
 
     print(
-        "=" * 65
+        "=" * 70
     )
 
     print(
-        "SNIPPET24 NEWS CURATOR 2.0"
+        "SNIPPET24 NEWS CURATOR 3.0"
     )
 
     print(
-        "=" * 65
+        "OFFICIAL / PUBLIC SOURCE FIRST"
+    )
+
+    print(
+        "=" * 70
     )
 
     previous_articles = (
@@ -1216,8 +1171,17 @@ def build_feed():
     failed_sources = 0
 
     # --------------------------------------------------------
-    # FETCH ALL CURRENT SOURCES
+    # OFFICIAL / PUBLIC SOURCES
     # --------------------------------------------------------
+
+    print()
+    print(
+        "PRIMARY SOURCE LAYER"
+    )
+
+    print(
+        "-" * 70
+    )
 
     for category in CATEGORY_ORDER:
 
@@ -1225,6 +1189,10 @@ def build_feed():
             category,
             []
         )
+
+        if not sources:
+
+            continue
 
         print()
         print(
@@ -1254,6 +1222,58 @@ def build_feed():
             time.sleep(
                 REQUEST_DELAY
             )
+
+    # --------------------------------------------------------
+    # SECONDARY SOURCES
+    #
+    # Disabled by default.
+    # --------------------------------------------------------
+
+    secondary_enabled = False
+
+    if secondary_enabled:
+
+        print()
+        print(
+            "SECONDARY SOURCE LAYER"
+        )
+
+        print(
+            "-" * 70
+        )
+
+        for category in CATEGORY_ORDER:
+
+            sources = (
+                SECONDARY_RSS_SOURCES.get(
+                    category,
+                    []
+                )
+            )
+
+            for publisher, url in sources:
+
+                found = fetch_source(
+                    publisher,
+                    url,
+                    category
+                )
+
+                if found:
+
+                    successful_sources += 1
+
+                    fresh_articles.extend(
+                        found
+                    )
+
+                else:
+
+                    failed_sources += 1
+
+                time.sleep(
+                    REQUEST_DELAY
+                )
 
     print()
     print(
@@ -1305,7 +1325,7 @@ def build_feed():
     )
 
     print(
-        f"After FIFO: "
+        f"After FIFO/category limits: "
         f"{len(final_articles)}"
     )
 
@@ -1340,6 +1360,11 @@ def build_feed():
         "categories":
             counts,
 
+        "source_policy":
+            "Official and public sources first. "
+            "Secondary sources may be enabled "
+            "only where appropriate.",
+
         "articles":
             final_articles
 
@@ -1364,7 +1389,7 @@ def build_feed():
 
     print()
     print(
-        "=" * 65
+        "=" * 70
     )
 
     print(
@@ -1373,7 +1398,7 @@ def build_feed():
     )
 
     print(
-        "=" * 65
+        "=" * 70
     )
 
     for category in CATEGORY_ORDER:
@@ -1407,9 +1432,8 @@ def build_feed():
         )
 
         print(
-            "The previous articles.json "
-            "has not been intentionally "
-            "deleted by the curator."
+            "The existing articles.json "
+            "was not intentionally deleted."
         )
 
         return 1
@@ -1424,10 +1448,9 @@ def build_feed():
         )
 
         print(
-            "This is not a fabricated feed. "
-            "The curator keeps only genuine "
-            "stories supplied by the sources "
-            "or previously retained stories."
+            "Only genuine stories from the "
+            "configured sources or retained "
+            "previous stories are used."
         )
 
     else:
