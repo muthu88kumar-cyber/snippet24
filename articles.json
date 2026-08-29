@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-29T15:34:30.319984+00:00",
-  "total": 1200,
+  "updated_at": "2026-08-29T16:04:33.832084+00:00",
+  "total": 1226,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 101,
-    "India": 339,
+    "World": 102,
+    "India": 359,
     "Business": 166,
     "Technology & AI": 93,
-    "Sports": 83,
-    "Entertainment": 272,
-    "Lifestyle": 146
+    "Sports": 85,
+    "Entertainment": 274,
+    "Lifestyle": 147
   },
   "articles": [
     {
@@ -465,6 +465,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "23a158d3bc3768c38437",
+      "category": "India",
+      "headline": "Penguin drops Sonia Gandhi memoir; Congress alleges publisher caved to the Centre",
+      "summary": "Sonia Gandhi’s memoir Belonging has been dropped by Penguin India just two months before its scheduled release. While the publisher says it remained willing to publish the book, Congress has alleged that it caved to pressure from the BJP over sections on Narendra Modi, the RSS and India",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:00:29+00:00",
+      "source_url": "https://www.thehindu.com/videos/penguin-drops-sonia-gandhi-memoir-congress-alleges-publisher-caved-to-the-centre/article71405576.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Penguin%20drops%20Sonia%20Gandhi%20memoir%3B%20Congress%20alleges%20publisher%20caved%20to%20the%20Centre.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=496942061",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7dc12e841ea7572d65cb",
       "category": "India",
       "headline": "‘Honour’ killing: Tamil Nadu to set up safe houses in districts to provide shelter to vulnerable, affected couples",
@@ -550,6 +561,17 @@
       "published_at": "2026-05-17T05:45:08+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-pull-out-rs-27000-cr-in-may-2026-outflows-hit-rs-2-2-lakh-cr-mark/articleshow/131149440.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20FPIs%20pull%20out%20Rs%2027%2C000%20cr%20in%20May%3B%202026%20outflows%20hit%20Rs%202.2%20lakh%20cr-mark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=104571503",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9b7348366af46b5f083f",
+      "category": "India",
+      "headline": "Nepal seeks to import power from India after flood devastation, asks for early approvals",
+      "summary": "While the Himalayan country usually imports electricity from India during the winter months, it has now asked that the required approvals for sending power be processed in September itself",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:48:30+00:00",
+      "source_url": "https://www.thehindu.com/business/nepal-seeks-to-import-power-from-india-after-flood-devastation-asks-for-early-approvals/article71405229.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20seeks%20to%20import%20power%20from%20India%20after%20flood%20devastation%2C%20asks%20for%20early%20approvals.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1258879585",
       "image_type": "ai_generated"
     },
     {
@@ -1114,6 +1136,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5a7aa272816b817bab27",
+      "category": "India",
+      "headline": "G. Vijaya Raghavan, P.P. Balan among four members appointed to Kerala State Planning Board",
+      "summary": "The other two members are environmentalist Sridhar Radhakrishnan and New Delhi",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:58:58+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/g-vijaya-raghavan-pp-balan-among-four-members-appointed-to-kerala-state-planning-board/article71405529.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20G.%20Vijaya%20Raghavan%2C%20P.P.%20Balan%20among%20four%20members%20appointed%20to%20Kerala%20State%20Planning%20Board.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4112274103",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "0186d892c5d7c707172c",
       "category": "India",
       "headline": "BJP chief Nitin Nabin holds meeting on youth outreach, Assembly poll preparations",
@@ -1672,6 +1705,94 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7f9eb42e114d48c5ed85",
+      "category": "India",
+      "headline": "Telangana to extend support to Telugu language preservation in Mauritius: Bhatti",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T16:00:53+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/telangana-to-extend-support-to-telugu-language-preservation-in-mauritius-bhatti/article71405335.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Telangana%20to%20extend%20support%20to%20Telugu%20language%20preservation%20in%20Mauritius%3A%20Bhatti.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2970115069",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5f3070cc1e474b2bdae8",
+      "category": "India",
+      "headline": "Will send team to Nepal if MEA gives permission: West Bengal CM",
+      "summary": "The State Government manages to contact two of the 39 people from West Bengal missing in Nepal flash floods",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:57:32+00:00",
+      "source_url": "https://www.thehindu.com/news/national/west-bengal/will-send-team-to-nepal-if-mea-gives-permission-west-bengal-cm/article71404657.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20send%20team%20to%20Nepal%20if%20MEA%20gives%20permission%3A%20West%20Bengal%20CM.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=24544439",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3164b9fe686ec3c22dca",
+      "category": "India",
+      "headline": "Karnataka: Medical college hospital gets ₹5.5 crore ICMR grant for rare skin disorder research",
+      "summary": "The ₹5,50,08,874 grant, awarded for four years, will support the ADAPT-EB project",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:55:30+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-medical-college-hospital-gets-55-crore-icmr-grant-for-rare-skin-disorder-research/article71404696.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%3A%20Medical%20college%20hospital%20gets%20%E2%82%B95.5%20crore%20ICMR%20grant%20for%20rare%20skin%20disorder%20research.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1221828714",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f9d9171e2c7351f4b2a7",
+      "category": "India",
+      "headline": "Chennai Corporation Council meeting | Unlikely allies as parties unite against State govt. over lack of ward funds",
+      "summary": "Ward 141 councillor A. Raja Anbazhagan said councillors should consider resigning before the next Council meeting if the ward development funds were not released",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:53:24+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-corporation-council-meeting-unlikely-allies-as-parties-unite-against-state-govt-over-lack-of-ward-funds/article71399515.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chennai%20Corporation%20Council%20meeting%20%7C%20Unlikely%20allies%20as%20parties%20unite%20against%20State%20govt.%20over%20lack%20of%20ward%20funds.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=304833390",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5d0539156abc2eaa6de4",
+      "category": "India",
+      "headline": "Bihar government to replace ‘fail’ with ‘eligible for skills’ in Class 10, 12 marksheets",
+      "summary": "An exam score alone is not an indicator of a child’s overall talent or future potential, says State Education Minister; Bihar has recently been witness to several student agitations over alleged irregularities in examinations",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:52:52+00:00",
+      "source_url": "https://www.thehindu.com/news/national/bihar/bihar-government-to-replace-fail-with-eligible-for-skills-in-class-10-12-marksheets/article71400456.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Bihar%20government%20to%20replace%20%E2%80%98fail%E2%80%99%20with%20%E2%80%98eligible%20for%20skills%E2%80%99%20in%20Class%2010%2C%2012%20marksheets.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2347453830",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1aba2515fc359859c895",
+      "category": "India",
+      "headline": "Centre agrees to alienate 3.34 acres of AIIMS-Mangalagiri land for road project in Amaravati",
+      "summary": "In lieu of it, the Ministry of Health asks officials to expedite the process of handing over 10 acres of alternative land to the medical institution",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:45:30+00:00",
+      "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/centre-agrees-to-alienate-334-acres-of-aiims-mangalagiri-land-for-road-project-in-amaravati/article71405148.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Centre%20agrees%20to%20alienate%203.34%20acres%20of%20AIIMS-Mangalagiri%20land%20for%20road%20project%20in%20Amaravati.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1386533460",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "104c55daa16f48652c91",
+      "category": "India",
+      "headline": "Karnataka HC pulls up DCP (Whitefield) for illegal arrest, detention; directs DG&IGP to caution police across ranks against such acts",
+      "summary": "Justice M. Nagaprasanna issued the directions on a petition filed by Mohan Gowda of Hindu Rashtra Samanvaya Samithi.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:43:56+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-hc-pulls-up-dcp-whitefield-for-illegal-arrest-detention-directs-dgigp-to-caution-police-across-ranks-against-such-acts/article71404682.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%20HC%20pulls%20up%20DCP%20%28Whitefield%29%20for%20illegal%20arrest%2C%20detention%3B%20directs%20DG%26IGP%20to%20caution%20police%20across%20ranks%20against%20such%20acts.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3011027753",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "92d05fd11828592dd514",
+      "category": "India",
+      "headline": "Pinarayi accuses Kunhikrishnan of joining hands with CPI(M)’s rivals to defeat party in Payyanur",
+      "summary": "Leader of the Opposition says the party’s defeat in the constituency in the Assembly election could not be explained merely by factors within Keralam, as the CPI(M) and the LDF traditionally enjoyed strong support there",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:35:16+00:00",
+      "source_url": "https://www.thehindu.com/news/national/kerala/pinarayi-accuses-kunhikrishnan-of-joining-hands-with-cpims-rivals-to-defeat-party-in-payyanur/article71405398.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Pinarayi%20accuses%20Kunhikrishnan%20of%20joining%20hands%20with%20CPI%28M%29%E2%80%99s%20rivals%20to%20defeat%20party%20in%20Payyanur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3839035997",
       "image_type": "ai_generated"
     },
     {
@@ -3875,6 +3996,127 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "b777e71df3dc51759155",
+      "category": "India",
+      "headline": "Two killed, SI injured in Suryapet over dispute involving tree",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:58:59+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/two-killed-si-injured-in-suryapet-over-dispute-involving-tree/article71404219.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20killed%2C%20SI%20injured%20in%20Suryapet%20over%20dispute%20involving%20tree.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=525336303",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "670eb05482f4ee96d34d",
+      "category": "India",
+      "headline": "Nepal floods: ‘Bodies buried in slush, families refusing food’, Khalsa Aid volunteers witness devastation",
+      "summary": "From mud-swallowed homes and makeshift mortuaries to grieving families waiting for news, volunteers describe the devastation in Nuwakot, Rasuwa and Dhading as they provide food, clothes and medical aid.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:55:52+00:00",
+      "source_url": "https://www.thehindu.com/news/international/nepal-floods-bodies-buried-in-slush-families-refusing-food-khalsa-aid-volunteers-witness-devastation/article71405347.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20floods%3A%20%E2%80%98Bodies%20buried%20in%20slush%2C%20families%20refusing%20food%E2%80%99%2C%20Khalsa%20Aid%20volunteers%20witness%20devastation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2780007004",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6033c26afb26267ad8e0",
+      "category": "India",
+      "headline": "Owaisi seeks to allay fears of electors who have received notices",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:48:19+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/owaisi-seeks-to-allay-fears-of-electors-who-have-received-notices/article71405296.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Owaisi%20seeks%20to%20allay%20fears%20of%20electors%20who%20have%20received%20notices.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3898864171",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fc5e00a06120d76fcfde",
+      "category": "India",
+      "headline": "TGSRTC driver suffers ‘heart attack’ while at wheel, halts bus safely, averting tragedy",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:46:37+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/tgsrtc-driver-suffers-heart-attack-while-at-wheel-halts-bus-safely-averting-tragedy/article71405154.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20TGSRTC%20driver%20suffers%20%E2%80%98heart%20attack%E2%80%99%20while%20at%20wheel%2C%20halts%20bus%20safely%2C%20averting%20tragedy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2834107830",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7e2231f0d8a235957d69",
+      "category": "Entertainment",
+      "headline": "Kriti Sanon ad row: Brand founder says ad was pulled after incidents created ‘unsafe environment’ for on-ground staff",
+      "summary": "Jewellery brand founder explained the withdrawal of the ad featuring Kriti Sanon due to backlash.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T15:45:34+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/kriti-sanon-ad-row-brand-founder-says-ad-was-pulled-after-incidents-created-unsafe-environment-for-on-ground-staff-101788017586893.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Kriti%20Sanon%20ad%20row%3A%20Brand%20founder%20says%20ad%20was%20pulled%20after%20incidents%20created%20%E2%80%98unsafe%20environment%E2%80%99%20for%20on-ground%20staff.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=404387487",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "adeb8fdb532082f13497",
+      "category": "India",
+      "headline": "Kalaburagi likely to figure in second list of drought-hit taluks, says Ajay Singh",
+      "summary": "‘This is only the first list, and it is not final. We are hopeful that Kalaburagi will be included in the second list’",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:43:51+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/kalaburagi-likely-to-figure-in-second-list-of-drought-hit-taluks-says-ajay-singh/article71405302.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Kalaburagi%20likely%20to%20figure%20in%20second%20list%20of%20drought-hit%20taluks%2C%20says%20Ajay%20Singh.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1487333846",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c499260cd1abba71fef3",
+      "category": "India",
+      "headline": "Include Dharwad in drought-hit list: JD(S)",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:42:22+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/includedharwadindrought-hitlist-jds/article71405387.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Include%20Dharwad%20in%20drought-hit%20list%3A%20JD%28S%29.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1777537157",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "86b920158811250ba118",
+      "category": "India",
+      "headline": "Revive dedicated minor irrigation system with modern technology: Farmers’ Commission",
+      "summary": "The Commission recommended the establishment of command",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:37:48+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/revive-dedicated-minor-irrigation-system-with-modern-technology-farmers-commission/article71405404.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revive%20dedicated%20minor%20irrigation%20system%20with%20modern%20technology%3A%20Farmers%E2%80%99%20Commission.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3052952948",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5b9baca2a4aba5f1e11f",
+      "category": "India",
+      "headline": "Poll schedule for Tripura village committee elections to be announced",
+      "summary": "Elections will be held at 587 village committees; draft electoral rolls for the village committees were recently published by the State Election Commission",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:37:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tripura/poll-schedule-for-tripura-village-committee-elections-to-be-announced/article71405144.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Poll%20schedule%20for%20Tripura%20village%20committee%20elections%20to%20be%20announced.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=40614578",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "690c9c2db5f47de0cc67",
+      "category": "India",
+      "headline": "EAPCET 2026 counselling for Bi.PC students from September 12",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:33:18+00:00",
+      "source_url": "https://www.thehindu.com/news/national/telangana/eapcet-2026-counselling-for-bipc-students-from-september-12/article71405348.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20EAPCET%202026%20counselling%20for%20Bi.PC%20students%20from%20September%2012.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1679476738",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d4dc27ed53adace3d088",
+      "category": "India",
+      "headline": "One crore teak saplings to be planted every year, announces CM",
+      "summary": "Farmers to get 70% of returns, government 30%; initiative aimed at creating long-term green wealth, says D.K Shivakumar",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T15:33:03+00:00",
+      "source_url": "https://www.thehindu.com/news/national/karnataka/one-crore-teak-saplings-to-be-planted-every-year-announces-cm/article71405304.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20One%20crore%20teak%20saplings%20to%20be%20planted%20every%20year%2C%20announces%20CM.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=578148297",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ffeb2f506f52be2d29af",
       "category": "India",
       "headline": "CPI(M) protests over exclusion of Kalaburagi from drought-hit list",
@@ -4315,17 +4557,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "b777e71df3dc51759155",
-      "category": "India",
-      "headline": "Two killed, SI injured in Suryapet over dispute involving tree",
-      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T14:12:48+00:00",
-      "source_url": "https://www.thehindu.com/news/national/telangana/two-killed-si-injured-in-suryapet-over-dispute-involving-tree/article71404219.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20killed%2C%20SI%20injured%20in%20Suryapet%20over%20dispute%20involving%20tree.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=525336303",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "05da273815390616d869",
       "category": "India",
       "headline": "‘BJP ideology’ root cause of Kharge ‘shuddhikaran’ row, alleges Congress MP Shashi Tharoor",
@@ -4384,7 +4615,7 @@
       "id": "1e452765232e012a05ba",
       "category": "India",
       "headline": "PM Modi lands in Uzbekistan on two-nation visit, President Shavkat Mirziyoyev receives him",
-      "summary": "PM Modi landed in Uzbekistan's capital, Tashkent on Saturday.",
+      "summary": "PM Narendra Modi thanked Uzbek President Shavkat Mirziyoyev on social media for the “special gesture” of welcoming him at the airport",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T14:03:30+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
@@ -4510,6 +4741,17 @@
       "published_at": "2026-08-29T13:46:12+00:00",
       "source_url": "https://www.thehindu.com/news/national/telangana/brs-to-highlight-govt-failures-with-protests-across-state-from-sept2-to-8-ktr/article71400507.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BRS%20to%20highlight%20Govt.%20failures%20with%20protests%20across%20State%20from%20Sept.2%20to%208%3A%20KTR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1875121357",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "aa2e221af86af0e24be0",
+      "category": "Entertainment",
+      "headline": "Ram Kapoor On Drinking, Depression And Quitting Bade Acche Lagte Hai, Admits Letting Down Ekta Kapoor",
+      "summary": "Bade Acche Lagte Hai was led by Ram Kapoor and Sakshi Tanwar.",
+      "publisher": "NDTV Entertainment",
+      "published_at": "2026-08-29T13:41:41+00:00",
+      "source_url": "https://www.ndtv.com/entertainment/ram-kapoor-on-drinking-depression-and-quitting-bade-acche-lagte-hai-admits-letting-down-ekta-kapoor-11975304#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Ram%20Kapoor%20On%20Drinking%2C%20Depression%20And%20Quitting%20Bade%20Acche%20Lagte%20Hai%2C%20Admits%20Letting%20Down%20Ekta%20Kapoor.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2156316726",
       "image_type": "ai_generated"
     },
     {
@@ -8506,14 +8748,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "c246f034325b71f68cb4",
-      "category": "Technology & AI",
-      "headline": "The Theragun Sense makes everyday recovery surprisingly easy",
-      "summary": "As my 20s are set to come to an end later this year, I’ve officially reached the age where sleeping in the wrong position or stretching just a little too far can cause aches and pains. I’ve always been somewhat skeptical of massage guns, mostly because I’ve tried a few off-brand ones and just assumed […]",
-      "publisher": "TechCrunch",
-      "published_at": "2026-08-29T14:00:00+00:00",
-      "source_url": "https://techcrunch.com/2026/08/29/the-theragun-sense-makes-everyday-recovery-surprisingly-easy/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20The%20Theragun%20Sense%20makes%20everyday%20recovery%20surprisingly%20easy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3097031621",
+      "id": "ad460641be3afbae75be",
+      "category": "Entertainment",
+      "headline": "‘Spider-Man’ Nearing $900M; ‘Coyote Vs. Acme’ Solid $14M Debut & ‘A’ CinemaScore, ‘Dog Stars’ Going To The Dogs – Box Office Update",
+      "summary": "SATURDAY AM WRITETHRU after Friday afternoon post: Refresh for chart and more It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment theatrical release of the abandoned Warner Bros’ Looney Tunes title, Coyote Vs. Acme, which is eyeing third […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T15:46:00+00:00",
+      "source_url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Spider-Man%E2%80%99%20Nearing%20%24900M%3B%20%E2%80%98Coyote%20Vs.%20Acme%E2%80%99%20Solid%20%2414M%20Debut%20%26%20%E2%80%98A%E2%80%99%20CinemaScore%2C%20%E2%80%98Dog%20Stars%E2%80%99%20Going%20To%20The%20Dogs%20%E2%80%93%20Box%20Office%20Update.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=498791677",
       "image_type": "ai_generated"
     },
     {
@@ -8522,9 +8764,42 @@
       "headline": "Football fans pay tribute to crash death officers",
       "summary": "PC Matthew Blades and PC Tom Clough died in a head",
       "publisher": "BBC Sport",
-      "published_at": "2026-08-29T13:02:27+00:00",
+      "published_at": "2026-08-29T15:43:43+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c5y5727d02xo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Football%20fans%20pay%20tribute%20to%20crash%20death%20officers.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4185358805",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1cc1230ecf0dd9f49334",
+      "category": "Lifestyle",
+      "headline": "Nutritionist reveals how a 38-year-old homemaker tackled persistent bloating without eliminating dairy or wheat",
+      "summary": "Still bloated despite cutting dairy and wheat? Celebrity nutritionist Shweta Shah shares the simple lifestyle changes that helped a 38-year",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-29T15:37:35+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/nutritionist-reveals-how-a-38-year-old-homemaker-tackled-persistent-bloating-without-eliminating-dairy-or-wheat-101788013431470.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Nutritionist%20reveals%20how%20a%2038-year-old%20homemaker%20tackled%20persistent%20bloating%20without%20eliminating%20dairy%20or%20wheat.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3780244868",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b49d6a413bc1ff217219",
+      "category": "Sports",
+      "headline": "Iraola angry as official's board delays subs before goal",
+      "summary": "Liverpool boss Andoni Iraola says he was angry about being prevented from making a triple substitution sooner during his side's draw against Nottingham Forest.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T15:27:43+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cd795e9ejgzo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Iraola%20angry%20as%20official%27s%20board%20delays%20subs%20before%20goal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3375987101",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c246f034325b71f68cb4",
+      "category": "Technology & AI",
+      "headline": "The Theragun Sense makes everyday recovery surprisingly easy",
+      "summary": "As my 20s are set to come to an end later this year, I’ve officially reached the age where sleeping in the wrong position or stretching just a little too far can cause aches and pains. I’ve always been somewhat skeptical of massage guns, mostly because I’ve tried a few off-brand ones and just assumed […]",
+      "publisher": "TechCrunch",
+      "published_at": "2026-08-29T14:00:00+00:00",
+      "source_url": "https://techcrunch.com/2026/08/29/the-theragun-sense-makes-everyday-recovery-surprisingly-easy/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20The%20Theragun%20Sense%20makes%20everyday%20recovery%20surprisingly%20easy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3097031621",
       "image_type": "ai_generated"
     },
     {
@@ -9716,6 +9991,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7b87b8e93c0765b83f71",
+      "category": "World",
+      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T15:54:57+00:00",
+      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "160ce69192bb6c90890f",
+      "category": "World",
+      "headline": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
+      "summary": "The deadly strike comes amid 72 hours of near constant drone strikes across Ukraine, severely disrupting daily life.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-29T15:54:40+00:00",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Russian%20strike%20near%20Kyiv%20kills%2037%2C%20in%20one%20of%20the%20year%27s%20deadliest%20attacks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2019329021",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dc68bb52063682b81a28",
+      "category": "Sports",
+      "headline": "'That trust isn't there' - how does Iraola get best out of Isak?",
+      "summary": "Alexander Isak scored his first goal of the season in the 2-2 draw against Nottingham Forest - but how do Liverpool get the best out of him?",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T15:49:49+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/cgjq65nvw38o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27That%20trust%20isn%27t%20there%27%20-%20how%20does%20Iraola%20get%20best%20out%20of%20Isak%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4008090306",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "d10ba098ab4d325d2922",
       "category": "Sports",
       "headline": "Leader Pogacar abandons Vuelta after crash",
@@ -9834,17 +10142,6 @@
       "published_at": "2026-08-29T14:32:34+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/sarah-ferguson-relocation-uk-jeffrey-epstein",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Sarah%20Ferguson%20to%20return%20to%20UK%20after%20relocating%20amid%20Epstein%20revelations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1520797617",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7b87b8e93c0765b83f71",
-      "category": "World",
-      "headline": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
-      "summary": "Nepali government says India and China are sending expert tunnel rescue teams, as minister estimates cost of rebuilding could be billions of dollars ‘The flood took everything I have’: survivors grieve for relatives and homes swept away in Nepal Chinese rescuers find ‘nothing but ruins’ at border crossing as Nepal seeks help to ID and store the dead Outside the army camp in the Nuwakot district of Nepal, people...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T14:27:21+00:00",
-      "source_url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Nepal-Tibet%20floods%3A%20Nepal%20calls%20for%20technical%20support%20for%20rescue%20efforts%20as%20number%20of%20missing%20rises%20to%20nearly%203%2C000%20%E2%80%93%20latest%20updates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4145133423",
       "image_type": "ai_generated"
     },
     {
@@ -10005,7 +10302,7 @@
       "id": "53eb1b55a49c078b12bd",
       "category": "World",
       "headline": "Cells for arrested offenders may run out without early prison release, says Labour",
-      "summary": "Bridget Phillipson says government would not have to consider releasing prisoners early if Tories had created more capacity Cells to hold newly arrested people could run out without the early prison release scheme, a government minister has said. Bridget Phillipson defended the plan to address the prison capacity crisis in England and Wales by releasing thousands of prisoners early, which has been criticised by...",
+      "summary": "Bridget Phillipson says government would not have to consider releasing prisoners early if Tories had created more capacity Cells to hold newly arrested people could run out without the early prison release scheme, a minister has said. Bridget Phillipson defended the plan to address the prison capacity crisis in England and Wales by releasing thousands of prisoners early, which has been criticised by domestic...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T13:25:12+00:00",
       "source_url": "https://www.theguardian.com/society/2026/aug/29/cells-for-arrested-offenders-may-run-out-without-early-prison-release-says-labour",
@@ -10654,7 +10951,7 @@
       "id": "dfecd57f1d26a910e8c5",
       "category": "Sports",
       "headline": "Lampard 'somewhere in the middle' of Mourinho and Ancelotti",
-      "summary": "Eight years into his own managerial career, Coventry City boss Frank Lampard cites Jose Mourinho and Carli Ancelotti as the main influences on his style.",
+      "summary": "Eight years into his own managerial career, Coventry City boss Frank Lampard cites Jose Mourinho and Carlo Ancelotti as the main influences on his style.",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T05:12:27+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/articles/c87v04d59n3o?at_medium=RSS&at_campaign=rss",
@@ -11066,17 +11363,6 @@
       "published_at": "2026-08-28T23:09:36+00:00",
       "source_url": "https://www.bbc.co.uk/sport/golf/articles/c20lnlpx714o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hovland%20in%20tie%20for%20lead%20at%20Tour%20Championship.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2125579761",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "51ca96a757a6ab9aa40a",
-      "category": "Entertainment",
-      "headline": "‘Spider-Man’ Still Swinging To No. 1; ‘Coyote Vs. Acme’ $12M-$14M Debut, ‘Dog Stars’ Going To The Dogs – Box Office Update",
-      "summary": "FRIDAY PM: It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment theatrical release of the abandoned Warner Bros’ Looney Tunes title, Coyote Vs. Acme, which is eyeing third place with $12M-$14M. That’s a record domestic start for indie […]",
-      "publisher": "Deadline",
-      "published_at": "2026-08-28T23:04:00+00:00",
-      "source_url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20%E2%80%98Spider-Man%E2%80%99%20Still%20Swinging%20To%20No.%201%3B%20%E2%80%98Coyote%20Vs.%20Acme%E2%80%99%20%2412M-%2414M%20Debut%2C%20%E2%80%98Dog%20Stars%E2%80%99%20Going%20To%20The%20Dogs%20%E2%80%93%20Box%20Office%20Update.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3784551015",
       "image_type": "ai_generated"
     },
     {
