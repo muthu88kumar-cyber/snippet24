@@ -58,64 +58,103 @@ CATEGORY_ORDER = [
 # ============================================================
 
 RSS_SOURCES = {
+    # Government / intergovernmental / official institutional sources only.
+    # Commercial news publishers are intentionally excluded.
     "World": [
         ("United Nations", "https://news.un.org/feed/subscribe/en/news/all/rss.xml"),
-        ("WHO", "https://www.who.int/feeds/entity/news/en/rss.xml"),
-        ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
-        ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+        ("World Health Organization", "https://www.who.int/feeds/entity/news/en/rss.xml"),
+        ("UNICEF", "https://www.unicef.org/press-releases/rss.xml"),
+        ("UNHCR", "https://www.unhcr.org/rss/news.xml"),
+        ("UNESCO", "https://www.unesco.org/en/rss.xml"),
+        ("World Meteorological Organization", "https://public.wmo.int/en/rss.xml"),
+        ("FAO", "https://www.fao.org/feeds/fao-news/en"),
     ],
 
     "India": [
-        ("PIB India", "https://pib.gov.in/RssMain.aspx"),
+        ("Press Information Bureau", "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1"),
+        ("Press Information Bureau - Features", "https://pib.gov.in/RssMain.aspx?ModId=18&Lang=1&Regid=1"),
         ("ISRO", "https://www.isro.gov.in/media_isro/rss.xml"),
-        ("India.gov.in", "https://www.india.gov.in/rss"),
-        ("The Hindu India", "https://www.thehindu.com/news/national/feeder/default.rss"),
-        ("Indian Express India", "https://indianexpress.com/section/india/feed/"),
+        ("Income Tax Department", "https://wmstatic-prd.incometaxindia.gov.in/en/press-release-rss-feed/-/asset_publisher/ovrx/rss"),
+        ("Reserve Bank of India", "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=RSS"),
+        ("Ministry of External Affairs", "https://www.mea.gov.in/rss.htm"),
     ],
 
     "Business": [
         ("Reserve Bank of India", "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=RSS"),
         ("European Central Bank", "https://www.ecb.europa.eu/rss/press.html"),
-        ("IMF", "https://www.imf.org/en/News/RSS"),
+        ("International Monetary Fund", "https://www.imf.org/en/News/RSS"),
         ("World Bank", "https://www.worldbank.org/en/news/all?format=rss"),
-        ("Business Standard", "https://www.business-standard.com/rss/home_page_top_stories.rss"),
+        ("World Trade Organization", "https://www.wto.org/english/news_e/news_e.xml"),
+        ("OECD", "https://www.oecd.org/newsroom/rss.xml"),
+        ("U.S. Securities and Exchange Commission", "https://www.sec.gov/news/pressreleases.rss"),
     ],
 
     "Technology & AI": [
         ("NASA", "https://www.nasa.gov/feed/"),
         ("NASA JPL", "https://www.jpl.nasa.gov/feeds/news/"),
+        ("NASA CNEOS", "https://cneos.jpl.nasa.gov/feed/news.xml"),
         ("European Space Agency", "https://www.esa.int/rssfeed/Our_Activities"),
         ("CERN", "https://home.cern/rss"),
-        ("TechCrunch", "https://techcrunch.com/feed/"),
-        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+        ("National Science Foundation", "https://www.nsf.gov/rss/rss.php"),
+        ("NIST", "https://www.nist.gov/news-events/news/rss.xml"),
+        ("NOAA", "https://www.noaa.gov/rss.xml"),
     ],
 
     "Sports": [
+        # Official sports governing bodies / Olympic institutions.
         ("FIFA", "https://inside.fifa.com/rss"),
-        ("Olympics", "https://olympics.com/en/news/rss"),
         ("International Olympic Committee", "https://olympics.com/ioc/rss"),
-        ("BBC Sport", "https://feeds.bbci.co.uk/sport/rss.xml"),
-        ("ESPN", "https://www.espn.com/espn/rss/news"),
+        ("Olympics", "https://olympics.com/en/news/rss"),
+        ("International Cricket Council", "https://www.icc-cricket.com/rss"),
+        ("World Athletics", "https://worldathletics.org/rss"),
     ],
 
     "Entertainment": [
-        ("Academy Awards", "https://www.oscars.org/rss/news.xml"),
+        # Official cultural institutions rather than commercial entertainment media.
+        ("Academy of Motion Picture Arts and Sciences", "https://www.oscars.org/rss/news.xml"),
         ("National Endowment for the Arts", "https://www.arts.gov/rss/news.xml"),
         ("Library of Congress", "https://www.loc.gov/rss/"),
         ("Smithsonian", "https://www.si.edu/rss"),
-        ("Variety", "https://variety.com/feed/"),
-        ("Hollywood Reporter", "https://www.hollywoodreporter.com/feed/"),
+        ("National Gallery of Art", "https://www.nga.gov/rss.xml"),
+        ("Kennedy Center", "https://www.kennedy-center.org/rss/"),
     ],
 
     "Lifestyle": [
-        ("WHO", "https://www.who.int/feeds/entity/news/en/rss.xml"),
-        ("UN News", "https://news.un.org/feed/subscribe/en/news/all/rss.xml"),
+        ("World Health Organization", "https://www.who.int/feeds/entity/news/en/rss.xml"),
         ("UNICEF", "https://www.unicef.org/press-releases/rss.xml"),
+        ("FAO", "https://www.fao.org/feeds/fao-news/en"),
+        ("Centers for Disease Control and Prevention", "https://tools.cdc.gov/api/v2/resources/media/403372.rss"),
+        ("National Institutes of Health", "https://www.nih.gov/news-events/news-releases/feed"),
         ("NASA Earth", "https://www.nasa.gov/earth/feed/"),
         ("Smithsonian", "https://www.si.edu/rss"),
-        ("Guardian Life & Style", "https://www.theguardian.com/lifeandstyle/rss"),
+        ("Library of Congress", "https://www.loc.gov/rss/"),
     ],
 }
+
+# Only retain stories whose original source URL belongs to an approved
+# government, intergovernmental, or official institutional domain.
+# This also cleans old articles.json entries from previously used
+# commercial/private publishers.
+APPROVED_SOURCE_DOMAINS = {
+    "pib.gov.in", "isro.gov.in", "incometaxindia.gov.in", "rbi.org.in", "mea.gov.in",
+    "un.org", "news.un.org", "who.int", "unicef.org", "unhcr.org", "unesco.org",
+    "wmo.int", "fao.org", "imf.org", "worldbank.org", "wto.org", "oecd.org",
+    "ecb.europa.eu", "sec.gov", "nasa.gov", "jpl.nasa.gov", "esa.int", "cern.ch",
+    "nsf.gov", "nist.gov", "noaa.gov", "fifa.com", "olympics.com", "icc-cricket.com",
+    "worldathletics.org", "oscars.org", "arts.gov", "loc.gov", "si.edu", "nga.gov",
+    "kennedy-center.org", "cdc.gov", "nih.gov",
+}
+
+
+def is_approved_source_url(url):
+    """Return True only for approved official/public institutional domains."""
+    try:
+        host = urlparse(url).netloc.lower().split(":")[0]
+        return any(host == domain or host.endswith("." + domain)
+                   for domain in APPROVED_SOURCE_DOMAINS)
+    except Exception:
+        return False
+
 
 # ============================================================
 # HELPERS
@@ -412,7 +451,7 @@ def parse_feed(xml_text, publisher, category):
             "headline": title,
             "summary": summary,
             "publisher": clean_text(publisher),
-            "source_type": "official_public",
+            "source_type": "official_institutional",
             "published_at": date_obj.isoformat(),
             "source_url": link,
             "image_url": make_ai_image(
@@ -478,6 +517,10 @@ def load_existing_articles():
             url = normalize_url(article.get("source_url"))
 
             if not headline or not url:
+                continue
+
+            # Remove legacy articles from commercial/private publishers.
+            if not is_approved_source_url(url):
                 continue
 
             article["category"] = normalize_category(
@@ -743,12 +786,12 @@ def build_feed():
     counts = category_counts(final_articles)
 
     output = {
-        "curator_version": "6.0-balanced-public",
+        "curator_version": "7.0-official-only",
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(final_articles),
         "minimum_target": MINIMUM_STORIES,
         "maximum_target": TARGET_STORIES,
-        "source_policy": "official_public_sources_with_established_public_RSS_fallbacks",
+        "source_policy": "official_government_intergovernmental_and_institutional_sources_only",
         "copyright_note": (
             "Snippet24 publishes its own headlines and summaries and "
             "credits the original publisher with a source link. "
