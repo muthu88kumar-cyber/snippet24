@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T23:04:34.700187+00:00",
-  "total": 1419,
+  "updated_at": "2026-08-29T23:34:32.501308+00:00",
+  "total": 1421,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 116,
-    "India": 449,
+    "India": 450,
     "Business": 169,
     "Technology & AI": 101,
     "Sports": 130,
-    "Entertainment": 304,
+    "Entertainment": 305,
     "Lifestyle": 150
   },
   "articles": [
@@ -66,6 +66,17 @@
       "published_at": "2026-08-29T19:58:05+00:00",
       "source_url": "https://www.ndtv.com/india-news/missing-assam-man-detained-in-bangladesh-for-illegal-entry-smuggling-drugs-11976296#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Missing%20Assam%20Man%20Detained%20In%20Bangladesh%20For%20Illegal%20Entry%2C%20Smuggling%20Drugs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1768623782",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "90f84534fc9646535a2d",
+      "category": "Entertainment",
+      "headline": "Box Office: Toxic Star Yash To Become The Only Indian Actor To Deliver 3-Consecutive 100 Crore Openers Post-COVID!",
+      "summary": "Toxic star Yash has become the only Indian actor to deliver two consecutive 100-crore openers at the box office post-COVID, wait make that 3! The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-29T13:50:00+00:00",
+      "source_url": "https://www.koimoi.com/box-office/box-office-toxic-star-yash-to-become-the-only-indian-actor-to-deliver-3-consecutive-100-crore-openers-post-covid/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Box%20Office%3A%20Toxic%20Star%20Yash%20To%20Become%20The%20Only%20Indian%20Actor%20To%20Deliver%203-Consecutive%20100%20Crore%20Openers%20Post-COVID%21.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=70339821",
       "image_type": "ai_generated"
     },
     {
@@ -4554,6 +4565,17 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "288cb408ab4ea85be41e",
+      "category": "India",
+      "headline": "'RSS vision is to see the world as one': Sangh chief Mohan Bhagwat at New York event",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-29T23:19:46+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/rss-vision-is-to-see-the-world-as-one-sangh-chief-mohan-bhagwat-at-new-york-event/articleshow/133621631.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27RSS%20vision%20is%20to%20see%20the%20world%20as%20one%27%3A%20Sangh%20chief%20Mohan%20Bhagwat%20at%20New%20York%20event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4080935867",
       "image_type": "ai_generated"
     },
     {
@@ -11344,25 +11366,25 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "105036c6986181de57b1",
+      "category": "World",
+      "headline": "News live: missing Australian woman found safe in Nepal flooding",
+      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Cara Severino speaks after being found safe Cara Severino has paid tribute to the people in Nepal who helped her reach safety during “devastating” floods after she was found safe. I’m so grateful for the crew we formed on that first day when we entered the national park on the tractor....",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T23:21:45+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20missing%20Australian%20woman%20found%20safe%20in%20Nepal%20flooding.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1723435287",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b6b2e15ff6007d364d05",
       "category": "Sports",
       "headline": "Itauma punches himself out against Hrgovic in world-title fight",
       "summary": "Filip Hrgovic shatters Moses Itauma's world-title dream as the Briton appears to punch himself out in an extraordinary heavyweight world",
       "publisher": "BBC Sport",
-      "published_at": "2026-08-29T23:04:00+00:00",
+      "published_at": "2026-08-29T23:16:03+00:00",
       "source_url": "https://www.bbc.co.uk/sport/boxing/articles/cpd0n46we13o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Itauma%20punches%20himself%20out%20against%20Hrgovic%20in%20world-title%20fight.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=853628852",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "105036c6986181de57b1",
-      "category": "World",
-      "headline": "News live: missing Australian woman found safe in Nepal flooding",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live An Australian woman, Cara Severino , who was unaccounted for in the Nepal flooding, has been safely located, Penny Wong’s office confirmed overnight. One Nation has claimed victory in the Secret Harbour byelection in Western Australia. Continue reading...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T23:00:23+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20missing%20Australian%20woman%20found%20safe%20in%20Nepal%20flooding.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1723435287",
       "image_type": "ai_generated"
     },
     {
@@ -11380,7 +11402,7 @@
       "id": "12be00e9acaf946206a1",
       "category": "Sports",
       "headline": "'Confidence' and 'desire' - why Bournemouth's Scott is in demand",
-      "summary": "BBC Sport pundit Ashley Williams analyses Alex Scott's \"impressive\" display, as the midfielder scored Bournemouth's only goal in their 1",
+      "summary": "BBC Sport pundit Ashley Williams analyses Alex Scott's \"impressive\" display, after the midfielder scored Bournemouth's only goal in their 1",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T22:53:17+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/c4gj2ze0eyxo?at_medium=RSS&at_campaign=rss",
