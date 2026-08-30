@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T01:04:37.927908+00:00",
-  "total": 1433,
+  "updated_at": "2026-08-30T01:34:52.943422+00:00",
+  "total": 1436,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 119,
-    "India": 454,
+    "India": 456,
     "Business": 170,
     "Technology & AI": 101,
     "Sports": 131,
     "Entertainment": 308,
-    "Lifestyle": 150
+    "Lifestyle": 151
   },
   "articles": [
     {
@@ -22,6 +22,17 @@
       "published_at": "2026-08-28T13:05:20+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/bollywood/8-ott-releases-to-watch-this-weekend-pick-from-alpha-and-bandar-to-michael-and-dark-matter-where-to-watch-101787918606084.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%208%20OTT%20releases%20to%20watch%20this%20weekend%3A%20Pick%20from%20Alpha%20and%20Bandar%20to%20Michael%20and%20Dark%20Matter%3B%20where%20to%20watch.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4150790569",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3942ca291973ae51cf5e",
+      "category": "India",
+      "headline": "Nepal Flash Flood LIVE Updates: 275 Indians Still Missing, New Delhi Sends 4th Aid Flight",
+      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T00:59:47+00:00",
+      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20275%20Indians%20Still%20Missing%2C%20New%20Delhi%20Sends%204th%20Aid%20Flight.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4256771364",
       "image_type": "ai_generated"
     },
     {
@@ -1991,6 +2002,28 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "53536b6b00cefa3a3f1a",
+      "category": "India",
+      "headline": "Delhi man kills schizophrenic son, lured him to shipping container on pretext of doctor visit",
+      "summary": "Police said the accused first smashed the victim’s head with a stone and then strangled him.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T01:13:01+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/delhi-man-kills-schizophrenic-son-lured-him-to-shipping-container-on-pretext-of-doctor-visit-101788051905942.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Delhi%20man%20kills%20schizophrenic%20son%2C%20lured%20him%20to%20shipping%20container%20on%20pretext%20of%20doctor%20visit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1683150613",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "185b84c65c8e4d8cc1aa",
+      "category": "India",
+      "headline": "The scrapping of Parandur airport project: a compilation",
+      "summary": "This is a compilation of The Hindu’s coverage on the dropping of Parandur airport project by the TVK-led Tamil Nadu government in August 2026 citing farmers’ opposition and ecological concerns after the site was finalised during the DMK regime in 2022.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T00:18:53+00:00",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/the-scrapping-of-parandur-airport-project-by-tvk-led-tamil-nadu-government-a-compilation/article71395589.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20The%20scrapping%20of%20Parandur%20airport%20project%3A%20a%20compilation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=8865391",
       "image_type": "ai_generated"
     },
     {
@@ -4777,17 +4810,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "e9469b39599d586223f9",
-      "category": "India",
-      "headline": "Nepal Flash Flood LIVE Updates: Damage May Cost Up To $5 Billion To Rebuild, Says Minister",
-      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-29T18:47:13+00:00",
-      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20Damage%20May%20Cost%20Up%20To%20%245%20Billion%20To%20Rebuild%2C%20Says%20Minister.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3243269175",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "fc6568e78ca470202d52",
       "category": "India",
       "headline": "Manoj Jarange Patil begins indefinite hunger strike for Maratha reservation",
@@ -7021,14 +7043,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "c24560ceb6c474ed2fdc",
+      "id": "ecd34d24ebdfc5e1651f",
       "category": "India",
-      "headline": "Rahul Gandhi asks PM Modi to order FIR under SC/ST Act over ‘purification’ after Kharge’s rally",
+      "headline": "Rahul Gandhi calls on PM Modi to order FIR under SC/ST Act over ‘purification’ after Kharge’s rally in Uttarakhand",
       "summary": "Two days after Mallikarjun Kharge addressed a Congress rally in Haldwani, members of the Shri Ram Sena reportedly conducted a “shuddhikaran” havan at the venue.",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T07:27:21+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/rahul-gandhi-demands-fir-under-sc-st-act-over-purification-ritual-after-kharge-s-haldwani-speech-pm-modi-delhi-101787988264436.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Rahul%20Gandhi%20asks%20PM%20Modi%20to%20order%20FIR%20under%20SC%2FST%20Act%20over%20%E2%80%98purification%E2%80%99%20after%20Kharge%E2%80%99s%20rally.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=226394200",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Rahul%20Gandhi%20calls%20on%20PM%20Modi%20to%20order%20FIR%20under%20SC%2FST%20Act%20over%20%E2%80%98purification%E2%80%99%20after%20Kharge%E2%80%99s%20rally%20in%20Uttarakhand.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3234840070",
       "image_type": "ai_generated"
     },
     {
@@ -11446,11 +11468,33 @@
       "id": "2c92e12b5b8cea0d1abb",
       "category": "World",
       "headline": "News live: limits on smartglasses being considered, Plibersek says; missing Australian woman located safely in Nepal",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate is claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as...",
+      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T00:51:23+00:00",
+      "published_at": "2026-08-30T01:26:22+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20limits%20on%20smartglasses%20being%20considered%2C%20Plibersek%20says%3B%20missing%20Australian%20woman%20located%20safely%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4038879064",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2f6111f56a4ae9939e88",
+      "category": "World",
+      "headline": "Number of missing in Nepal and Tibet rises to 3,000 as bad weather hampers search",
+      "summary": "Nepal requests foreign ⁠help in identification and storing of bodies, DNA testing and rescuing people from tunnels Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates Poor weather temporarily hampered aerial rescue operations in Nepal on Saturday as the search for thousands of missing people in areas devastated by catastrophic flash floods along the border with China continued....",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T01:25:41+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20missing%20in%20Nepal%20and%20Tibet%20rises%20to%203%2C000%20as%20bad%20weather%20hampers%20search.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2980436009",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3b12c73af27f02eb4630",
+      "category": "Lifestyle",
+      "headline": "Sadhguru on Buddha and Shiva: Are there different paths to spiritual transformation?",
+      "summary": "A recent video on the Isha Foundation website, Sadhguru explains the paths linked with Shiva and Gautama Buddha.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T01:02:13+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/spiritual/sadhguru-on-buddha-and-shiva-are-there-different-paths-to-spiritual-transformation-101788050882456.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Sadhguru%20on%20Buddha%20and%20Shiva%3A%20Are%20there%20different%20paths%20to%20spiritual%20transformation%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2281175256",
       "image_type": "ai_generated"
     },
     {
@@ -12386,17 +12430,6 @@
       "published_at": "2026-08-29T15:06:07+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/royal-navy-tracking-russian-vessels-uk-waters-channel-north-sea",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Royal%20Navy%20spent%20three%20days%20tracking%20Russian%20vessels%20in%20UK%20waters.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1972633384",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "fa0c25eeb6dc8b7788be",
-      "category": "World",
-      "headline": "Number of missing in Nepal and Tibet rises to nearly 3,000 as operations continue",
-      "summary": "Nepal requests foreign ⁠help in identification and storing of bodies, DNA testing and rescuing people from tunnels Visual guide: how the deadly flooding unfolded Nepal-Tibet flash flood – latest updates The number of people killed in the floods in Nepal has risen to at least 675, the country’s disaster authority has said. Seven have also been confirmed dead in Tibet by Chinese state media, taking the total killed...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T15:00:37+00:00",
-      "source_url": "https://www.theguardian.com/world/2026/aug/29/nepal-tibet-chinese-rescue-team-finds-nothing-but-ruins-after-reaching-border-crossing-hit-by-deadly-flood",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Number%20of%20missing%20in%20Nepal%20and%20Tibet%20rises%20to%20nearly%203%2C000%20as%20operations%20continue.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1391407254",
       "image_type": "ai_generated"
     },
     {
