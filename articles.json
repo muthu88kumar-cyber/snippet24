@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-29T23:34:32.501308+00:00",
-  "total": 1421,
+  "updated_at": "2026-08-30T00:05:29.060972+00:00",
+  "total": 1429,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 116,
-    "India": 450,
+    "World": 117,
+    "India": 453,
     "Business": 169,
     "Technology & AI": 101,
-    "Sports": 130,
-    "Entertainment": 305,
+    "Sports": 131,
+    "Entertainment": 308,
     "Lifestyle": 150
   },
   "articles": [
@@ -1474,6 +1474,17 @@
       "published_at": "2026-08-27T07:50:38+00:00",
       "source_url": "https://www.ndtv.com/entertainment/alpha-ott-release-alia-bhatt-sharvaris-spy-thriller-heads-to-netflix-on-raksha-bandhan-11965532#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Alpha%20OTT%20Release%3A%20Alia%20Bhatt%2C%20Sharvari%27s%20Spy%20Thriller%20Heads%20To%20Netflix%20On%20Raksha%20Bandhan.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1605014832",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8d8cda81b5b999312caa",
+      "category": "India",
+      "headline": "Chennai’s second airport: grounded until take-off",
+      "summary": "With the Parandur airport now a closed chapter, Tamil Nadu has to press ahead with another alternative, viable site for Chennai’s second airport. This report takes a look at the options ahead of the State and the processes involved in establishing a new airport. Cheyyur in Chengalpattu district and Gummidipoondi in Tiruvallur district are the top contenders for Chennai’s second airport",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T23:54:16+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-second-airport-grounded-until-take-off/article71405336.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chennai%E2%80%99s%20second%20airport%3A%20grounded%20until%20take-off.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=106342451",
       "image_type": "ai_generated"
     },
     {
@@ -4568,6 +4579,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4f6cd02b4d8a0fa74511",
+      "category": "Entertainment",
+      "headline": "Is JP Miller still preaching? What happened to Solid Rock Church after Mica Miller’s death?",
+      "summary": "Solid Rock Church closed after Mica Miller’s death, but JP Miller continues preaching to a smaller congregation around Myrtle Beach.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-29T23:27:21+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/others/is-jp-miller-still-preaching-what-happened-to-solid-rock-church-after-mica-miller-s-passing-death-of-the-pastor-s-wife-101788044412238.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Is%20JP%20Miller%20still%20preaching%3F%20What%20happened%20to%20Solid%20Rock%20Church%20after%20Mica%20Miller%E2%80%99s%20death%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1548184845",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "288cb408ab4ea85be41e",
       "category": "India",
       "headline": "'RSS vision is to see the world as one': Sangh chief Mohan Bhagwat at New York event",
@@ -4755,6 +4777,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "5d59f023fde948a433e7",
+      "category": "India",
+      "headline": "New court complex to replace British-era Judicial Magistrate Court",
+      "summary": "Vaniyambadi has three lower courts that are located in different areas in the town. Each court, on an average, is located at least 1.5 km away from the other court",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:39:26+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/new-court-complex-to-replace-british-era-judicial-magistrate-court/article71404586.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20New%20court%20complex%20to%20replace%20British-era%20Judicial%20Magistrate%20Court.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2960614666",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "4007a0c5e37f218d3bba",
       "category": "India",
       "headline": "Two youth held for chain snatching in Vellore",
@@ -4774,6 +4807,17 @@
       "published_at": "2026-08-29T18:33:53+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/music/will-nashville-airport-be-renamed-after-dolly-parton-tennessee-plans-to-honor-music-icon-101788027246100.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Will%20Nashville%20airport%20be%20renamed%20after%20Dolly%20Parton%3F%20Tennessee%20plans%20to%20honor%20music%20icon.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1497284051",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1287fec094774989e3d0",
+      "category": "India",
+      "headline": "State Highways requests NHAI to construct vehicular underpass to access VIT High Road",
+      "summary": "Access to new VIT Road still remains a challenge for motorists",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-29T18:32:12+00:00",
+      "source_url": "https://www.thehindu.com/news/national/tamil-nadu/state-highways-requests-nhai-to-construct-vehicular-underpass-to-access-vit-high-road/article71404577.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20State%20Highways%20requests%20NHAI%20to%20construct%20vehicular%20underpass%20to%20access%20VIT%20High%20Road.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4268500910",
       "image_type": "ai_generated"
     },
     {
@@ -9991,6 +10035,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "759c0bf76d917602fa6e",
+      "category": "Entertainment",
+      "headline": "Where to Watch the 2026 College Football Season Online",
+      "summary": "A full breakdown of the networks and streaming services broadcasting NCAA football.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-29T23:47:01+00:00",
+      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-college-football-streams-2026-ncaa-free-live-1236684734/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Where%20to%20Watch%20the%202026%20College%20Football%20Season%20Online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2327772424",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ccdf60b4f0a36bea09e5",
       "category": "Technology & AI",
       "headline": "Vicariously hike the Appalachian in the gorgeous A Trail Tale",
@@ -11369,11 +11424,44 @@
       "id": "105036c6986181de57b1",
       "category": "World",
       "headline": "News live: missing Australian woman found safe in Nepal flooding",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Cara Severino speaks after being found safe Cara Severino has paid tribute to the people in Nepal who helped her reach safety during “devastating” floods after she was found safe. I’m so grateful for the crew we formed on that first day when we entered the national park on the tractor....",
+      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Smartglasses could face government regulation, says Plibersek Tanya Plibersek says the government is reviewing the import of smartglasses, dubbed by some as “pervert glasses”. I think it is really concerning when tech companies just, come up with these products and release them without...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T23:21:45+00:00",
+      "published_at": "2026-08-29T23:55:41+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20missing%20Australian%20woman%20found%20safe%20in%20Nepal%20flooding.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1723435287",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b53d428358a8176c90b8",
+      "category": "Entertainment",
+      "headline": "Tom Hardy’s Debut Rap Album Features Busta Rhymes, Method Man & A Bane Cameo",
+      "summary": "After years of sharing his talent on the big screen as Tom Hardy, Frankie Pulitzer has officially arrived to drop some bangers. On Friday, the Oscar nominee’s rap persona released his 15-track debut album Czarface Meets Frankie Pulitzer, made in collaboration with his hip-hop collective Czarface, and featuring appearances from Busta Rhymes, Method Man and […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-29T23:51:46+00:00",
+      "source_url": "https://deadline.com/2026/08/tom-hardy-debut-rap-album-busta-rhymes-method-man-bane-1237062711/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tom%20Hardy%E2%80%99s%20Debut%20Rap%20Album%20Features%20Busta%20Rhymes%2C%20Method%20Man%20%26%20A%20Bane%20Cameo.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2265286090",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "192e87a073fdc55b11dc",
+      "category": "World",
+      "headline": "Fire in California’s Big Sur region doubles in size overnight, forcing evacuations",
+      "summary": "Plaskett fire has swept through more than 5,900 acres in Monterey county and remains un-contained, says Cal Fire A fire in California’s Big Sur region doubled in size overnight, forcing the evacuation of nearby residents, in a coastal region where firefighters have battled another blaze for weeks. The Plaskett fire, which sparked on Tuesday, had swept through more than 5,900 acres (2,400 hectares) in Monterey...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-29T23:51:26+00:00",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/29/californias-wildfire-big-sur",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Fire%20in%20California%E2%80%99s%20Big%20Sur%20region%20doubles%20in%20size%20overnight%2C%20forcing%20evacuations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=896476404",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1df18fb068510b168124",
+      "category": "Sports",
+      "headline": "Hovland leads Tour Championship as Scheffler and McIlroy impress",
+      "summary": "Norway's Viktor Hovland will head into the final round of the Tour Championship in Atlanta on Sunday with a one",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T23:43:57+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/golf/articles/ckgx9y2dr1no?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Hovland%20leads%20Tour%20Championship%20as%20Scheffler%20and%20McIlroy%20impress.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=629911268",
       "image_type": "ai_generated"
     },
     {
@@ -11468,7 +11556,7 @@
       "id": "7349a93373e3022d4ce9",
       "category": "World",
       "headline": "One Nation claims victory in Secret Harbour byelection in Western Australia",
-      "summary": "One Nation candidate Luke Herdegen secures 57% of the vote after preferences as party’s WA leader says result will send shock waves across the country One Nation has claimed victory in the Secret Harbour state byelection in Western Australia With 74.5% of the vote counted, One Nation’s Luke Herdegen leads Labor’s Georgia Tree 57",
+      "summary": "One Nation candidate Luke Herdegen secures 57% of the vote after preferences as party’s WA leader says result will send shock waves across the country Barnaby Joyce has declared “politics has changed” after One Nation claimed victory in the Secret Harbour state byelection in Western Australia. The One Nation MP celebrated the win on Sunday, and said the results showed his party could convert high polling to on...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T22:29:43+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/30/one-nation-claims-victory-on-secret-harbour-byelection-in-western-australia",
