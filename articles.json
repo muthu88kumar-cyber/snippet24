@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-30T02:04:35.641262+00:00",
-  "total": 1441,
+  "updated_at": "2026-08-30T02:34:43.389911+00:00",
+  "total": 1444,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 121,
-    "India": 457,
+    "India": 458,
     "Business": 170,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 309,
+    "Entertainment": 311,
     "Lifestyle": 152
   },
   "articles": [
@@ -718,14 +718,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f833ca93c97720469ec1",
+      "id": "4456d84cc9eb0b009b1c",
       "category": "India",
-      "headline": "Will work with SCO to free region from terror: PM ahead of summit",
+      "headline": "Will work with SCO to free region from terror: PM Modi ahead of summit",
       "summary": "On his diplomatic mission to Uzbekistan and Kyrgyzstan, Prime Minister Modi aims to bolster India's regional aspirations and forge stronger ties. At the SCO summit, he will advocate for collective efforts against terrorism and initiate dialogue on trade and strategic collaboration. This trip underscores India’s dedication to nurturing historical connections and fostering prosperity for all involved nations.",
       "publisher": "Times of India",
       "published_at": "2026-08-29T20:57:56+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20work%20with%20SCO%20to%20free%20region%20from%20terror%3A%20PM%20ahead%20of%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=219442571",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20work%20with%20SCO%20to%20free%20region%20from%20terror%3A%20PM%20Modi%20ahead%20of%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2497533734",
       "image_type": "ai_generated"
     },
     {
@@ -4623,6 +4623,39 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "a3a175149440c4042ae2",
+      "category": "India",
+      "headline": "'If any Hindu thinks there should be no Muslim in Bharat, he will not remain Hindu': RSS chief Mohan Bhagwat in New York",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-30T02:17:55+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/if-any-hindu-thinks-there-should-be-no-muslim-in-bharat-he-will-not-remain-hindu-rss-chief-mohan-bhagwat-in-new-york/articleshow/133622040.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%27If%20any%20Hindu%20thinks%20there%20should%20be%20no%20Muslim%20in%20Bharat%2C%20he%20will%20not%20remain%20Hindu%27%3A%20RSS%20chief%20Mohan%20Bhagwat%20in%20New%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2439560277",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d17850d654ffcc7368d8",
+      "category": "Entertainment",
+      "headline": "The Early Spring review: Jing Boran and Sun Qian turn a risky and complicated office romance into addictive television",
+      "summary": "The Early Spring review: This C-drama aired on August 26 and within ten episodes, it has taken the internet by storm with its mature workplace storytelling.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-30T01:55:54+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/web-series/the-early-spring-review-jing-boran-sun-qian-turn-a-risky-and-complicated-office-romance-into-addictive-chinese-drama-101787998952678.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20The%20Early%20Spring%20review%3A%20Jing%20Boran%20and%20Sun%20Qian%20turn%20a%20risky%20and%20complicated%20office%20romance%20into%20addictive%20television.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3291444438",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4d233002f8dd8a60e013",
+      "category": "Entertainment",
+      "headline": "Subhash Ghai recalls ‘hatha paai’ with Salman Khan before Yuvvraaj, says he abused him: ‘Salim Khan said apologise’",
+      "summary": "Before working on Yuvvraaj, Salman Khan and Subhash Ghai had a confrontation that escalated to a physical altercation, prompting Salim Khan to mediate.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-30T01:55:19+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/subhash-ghai-recalls-hatha-paai-with-salman-khan-before-yuvvraaj-says-he-abused-him-salim-khan-101788009791105.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Subhash%20Ghai%20recalls%20%E2%80%98hatha%20paai%E2%80%99%20with%20Salman%20Khan%20before%20Yuvvraaj%2C%20says%20he%20abused%20him%3A%20%E2%80%98Salim%20Khan%20said%20apologise%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=18435215",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a51b28f126929b4371c7",
       "category": "India",
       "headline": "Just Like That: 50 years on, why Mukesh’s voice still still resonates today",
@@ -5888,14 +5921,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "1e452765232e012a05ba",
+      "id": "94127bb53c09edd316f3",
       "category": "India",
-      "headline": "PM Modi lands in Uzbekistan on two-nation visit, President Shavkat Mirziyoyev receives him",
+      "headline": "PM Modi lands in Uzbekistan on two-nation visit, SCO summit; President Shavkat Mirziyoyev receives him",
       "summary": "PM Narendra Modi thanked Uzbek President Shavkat Mirziyoyev on social media for the “special gesture” of welcoming him at the airport",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T14:03:30+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20lands%20in%20Uzbekistan%20on%20two-nation%20visit%2C%20President%20Shavkat%20Mirziyoyev%20receives%20him.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2135302769",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20lands%20in%20Uzbekistan%20on%20two-nation%20visit%2C%20SCO%20summit%3B%20President%20Shavkat%20Mirziyoyev%20receives%20him.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4168859965",
       "image_type": "ai_generated"
     },
     {
@@ -11492,7 +11525,7 @@
       "headline": "Australia news live: cabinet never discussed cutting refugee intake, Plibersek says; 13-year-old dies from head injuries after Queensland e-scooter crash",
       "summary": "Boy sustained serious head injuries in single-vehicle crash on Wednesday. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as the Palm scheme, and...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T01:56:11+00:00",
+      "published_at": "2026-08-30T02:28:15+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20cabinet%20never%20discussed%20cutting%20refugee%20intake%2C%20Plibersek%20says%3B%2013-year-old%20dies%20from%20head%20injuries%20after%20Queensland%20e-scooter%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1649850947",
       "image_type": "ai_generated"
