@@ -4,1072 +4,1129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Snippet24 — Fast News. Real Impact.</title>
+<title>Snippet24 – Fast News. Real Impact.</title>
 
 <meta name="description"
-      content="Snippet24 — Fast News. Real Impact. News, intelligence and stories that matter.">
+      content="Snippet24 – Fast News. Real Impact. Latest news, business, science, society, technology and more.">
 
+<!-- GOOGLE FONT -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap"
       rel="stylesheet">
 
 <style>
 
-:root {
-    --navy: #071d3a;
-    --navy2: #0b2548;
-    --red: #e5232f;
-    --yellow: #ffc400;
-    --yellow-dark: #f2b900;
-    --white: #ffffff;
-    --bg: #f5f7fa;
-    --text: #102746;
-    --muted: #65748a;
-    --line: #e2e7ee;
-    --card: #ffffff;
-    --shadow: 0 8px 25px rgba(7,29,58,.07);
-    --radius: 16px;
+:root{
+    --navy:#061B41;
+    --navy2:#0A2454;
+    --red:#E3262E;
+    --yellow:#FFC400;
+    --white:#ffffff;
+    --background:#F4F7FB;
+    --text:#071D41;
+    --muted:#667085;
+    --border:#E1E7F0;
+    --card:#ffffff;
 }
 
-* {
-    box-sizing: border-box;
+/* RESET */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Inter", Arial, sans-serif;
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:"Inter",Arial,sans-serif;
+    line-height:1.5;
 }
 
-button,
-input {
-    font-family: inherit;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/* =========================================================
+/* =========================================
    HEADER
-========================================================= */
+========================================= */
 
-.site-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--line);
+.top-header{
+    background:#fff;
+    border-bottom:1px solid var(--border);
 }
 
-.header-inner {
-    max-width: 1320px;
-    margin: auto;
-    min-height: 105px;
-    padding: 16px 22px;
-    display: grid;
-    grid-template-columns: 260px 1fr 310px;
-    gap: 28px;
-    align-items: center;
-}
+.header-inner{
+    max-width:1040px;
+    margin:auto;
+    min-height:105px;
 
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
 
 /* LOGO */
 
-.brand {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+.logo-area{
+    min-width:230px;
 }
 
-.logo-row {
-    display: flex;
-    align-items: center;
-    line-height: .85;
+.logo{
+    display:flex;
+    align-items:flex-end;
+    gap:7px;
+    position:relative;
+    width:max-content;
 }
 
-.logo-snippet {
-    position: relative;
-    font-size: 48px;
-    font-weight: 800;
-    letter-spacing: -4px;
-    color: var(--navy);
+.logo-snippet{
+    font-family:"Montserrat",Arial,sans-serif;
+    font-size:42px;
+    line-height:.9;
+    font-weight:900;
+    letter-spacing:-3px;
+    color:var(--navy);
+    position:relative;
 }
 
-.logo-snippet .logo-dot {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--red);
-    top: -12px;
-    left: 58px;
+.logo-snippet::after{
+    content:"";
+    position:absolute;
+    width:7px;
+    height:7px;
+    background:var(--red);
+    border-radius:50%;
+    top:-11px;
+    left:64px;
 }
 
-.logo-24 {
-    margin-left: 9px;
-    background: var(--yellow);
-    color: white;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 1;
-    padding: 8px 10px 9px;
-    border-radius: 12px;
+/* 24 */
+
+.logo-24{
+    background:var(--yellow);
+    color:white;
+    font-family:"Montserrat",Arial,sans-serif;
+    font-size:37px;
+    font-weight:900;
+    line-height:1;
+    padding:7px 9px 8px;
+    border-radius:11px;
+    letter-spacing:-2px;
 }
 
-.slogan {
-    margin-top: 9px;
-    color: var(--navy);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    white-space: nowrap;
+/* SLOGAN */
+
+.slogan{
+    margin-top:9px;
+    font-family:"Montserrat",Arial,sans-serif;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:4px;
+    color:var(--navy);
+    white-space:nowrap;
 }
 
-.slogan-dot {
-    color: var(--red);
-    margin: 0 7px;
-    font-size: 13px;
+.slogan .dot{
+    color:var(--red);
+    font-size:15px;
+    margin:0 8px;
 }
-
 
 /* SEARCH */
 
-.search-wrap {
-    display: flex;
-    justify-content: center;
+.search-box{
+    flex:1;
+    height:43px;
+
+    border:1px solid #D8DFEA;
+    border-radius:24px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+    background:#fff;
 }
 
-.search-box {
-    width: min(100%, 560px);
-    height: 44px;
-    background: white;
-    border: 1px solid #dce3ec;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    padding: 0 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.02);
+.search-icon{
+    margin-right:10px;
+    font-size:15px;
 }
 
-.search-box span {
-    color: var(--navy);
-    margin-right: 10px;
+.search-box input{
+    width:100%;
+    border:0;
+    outline:none;
+    font-size:13px;
+    font-family:inherit;
+    color:var(--text);
 }
 
-.search-box input {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    font-size: 14px;
-    color: var(--text);
+/* RIGHT HEADER */
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
-
-/* LOCATION / WEATHER / CLOCK */
-
-.header-info {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.weather-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:150px;
 }
 
-.info-button {
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 8px 4px;
-    color: var(--text);
+.weather-icon{
+    font-size:27px;
 }
 
-.weather-icon {
-    font-size: 27px;
+.weather-info{
+    line-height:1.2;
 }
 
-.weather-main {
-    text-align: left;
-    min-width: 105px;
+.temperature{
+    font-weight:800;
+    font-size:14px;
 }
 
-.temperature {
-    font-size: 16px;
-    font-weight: 800;
+.city{
+    font-size:10px;
+    color:var(--muted);
+    margin-top:3px;
 }
 
-.city-name {
-    margin-top: 4px;
-    color: var(--muted);
-    font-size: 11px;
-    white-space: nowrap;
+.time-box{
+    border-left:1px solid var(--border);
+    padding-left:16px;
+    min-width:110px;
 }
 
-.clock-area {
-    border-left: 1px solid var(--line);
-    padding-left: 16px;
-    min-width: 105px;
+.time{
+    font-size:13px;
+    font-weight:800;
 }
 
-.current-time {
-    font-weight: 800;
-    font-size: 14px;
+.date{
+    font-size:10px;
+    color:var(--muted);
+    margin-top:3px;
 }
 
-.current-date {
-    color: var(--muted);
-    font-size: 10px;
-    margin-top: 4px;
+/* =========================================
+   CATEGORY NAVIGATION
+========================================= */
+
+.category-nav{
+    background:#fff;
+    border-bottom:1px solid var(--border);
 }
 
+.category-inner{
+    max-width:1040px;
+    margin:auto;
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+    min-height:48px;
 
-.main-nav {
-    background: white;
-    border-top: 1px solid var(--line);
+    display:flex;
+    align-items:center;
+    gap:27px;
+
+    overflow-x:auto;
+    scrollbar-width:none;
 }
 
-.nav-inner {
-    max-width: 1320px;
-    margin: auto;
-    padding: 0 22px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    overflow-x: auto;
+.category-inner::-webkit-scrollbar{
+    display:none;
 }
 
-.nav-inner::-webkit-scrollbar {
-    height: 0;
+.category-link{
+    white-space:nowrap;
+    font-size:11px;
+    font-weight:700;
+    color:var(--navy);
+
+    padding:14px 0;
+
+    position:relative;
 }
 
-.nav-link {
-    flex: 0 0 auto;
-    padding: 14px 13px;
-    font-size: 12px;
-    font-weight: 700;
-    white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: .2s;
+.category-link:hover{
+    color:var(--red);
 }
 
-.nav-link:hover {
-    color: var(--red);
+.category-link.active{
+    color:var(--red);
 }
 
-.nav-link.active {
-    color: var(--red);
-    border-bottom-color: var(--red);
+.category-link.active::after{
+    content:"";
+    position:absolute;
+    height:3px;
+    background:var(--red);
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius:3px;
 }
 
-.nav-icon {
-    margin-right: 5px;
-}
-
-
-/* =========================================================
+/* =========================================
    LIVE WIRE
-========================================================= */
+========================================= */
 
-.live-wire {
-    background: var(--navy);
-    color: white;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+.live-wire{
+    height:34px;
+    background:var(--navy);
+    color:white;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+    white-space:nowrap;
 }
 
-.live-inner {
-    max-width: 1320px;
-    margin: auto;
-    width: 100%;
-    padding: 0 22px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
+.live-label{
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+
+    margin-left:max(calc((100% - 1040px)/2),20px);
+    margin-right:18px;
+
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:1px;
+
+    color:var(--yellow);
+
+    position:relative;
+    z-index:5;
+
+    background:var(--navy);
+    padding-right:15px;
 }
 
-.live-label {
-    color: var(--yellow);
-    font-weight: 800;
-    white-space: nowrap;
+.live-dot{
+    width:7px;
+    height:7px;
+    background:var(--red);
+    border-radius:50%;
+    margin-right:8px;
+
+    box-shadow:0 0 0 3px rgba(227,38,46,.15);
 }
 
-.live-dot {
-    width: 7px;
-    height: 7px;
-    background: var(--red);
-    border-radius: 50%;
-    flex: 0 0 auto;
+.ticker-window{
+    overflow:hidden;
+    flex:1;
 }
 
+.ticker-track{
+    display:inline-flex;
+    align-items:center;
+    gap:55px;
 
-/* =========================================================
+    white-space:nowrap;
+
+    animation:walkingNews 32s linear infinite;
+}
+
+.ticker-item{
+    font-size:11px;
+    font-weight:500;
+}
+
+.ticker-item::before{
+    content:"•";
+    color:var(--red);
+    font-size:18px;
+    margin-right:10px;
+    vertical-align:-2px;
+}
+
+@keyframes walkingNews{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+.live-wire:hover .ticker-track{
+    animation-play-state:paused;
+}
+
+/* =========================================
+   LANGUAGE BAR
+========================================= */
+
+.language-bar{
+    background:#fff;
+    border-bottom:1px solid var(--border);
+}
+
+.language-inner{
+    max-width:1040px;
+    margin:auto;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    min-height:42px;
+    gap:8px;
+}
+
+.language-label{
+    font-size:11px;
+    font-weight:700;
+    color:var(--muted);
+    margin-right:5px;
+}
+
+.language-button{
+    border:1px solid #D9E0EA;
+    background:white;
+
+    border-radius:15px;
+
+    padding:5px 10px;
+
+    font-family:inherit;
+    font-size:10px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    color:var(--navy);
+}
+
+.language-button:hover{
+    border-color:var(--red);
+    color:var(--red);
+}
+
+.language-button.active{
+    background:var(--red);
+    color:white;
+    border-color:var(--red);
+}
+
+/* Hide Google default widget */
+
+#google_translate_element{
+    display:none;
+}
+
+.goog-te-banner-frame{
+    display:none !important;
+}
+
+body{
+    top:0 !important;
+}
+
+.goog-te-gadget{
+    display:none !important;
+}
+
+/* =========================================
    MAIN
-========================================================= */
+========================================= */
 
-.container {
-    max-width: 1320px;
-    margin: auto;
-    padding: 38px 22px 70px;
+main{
+    max-width:1040px;
+    margin:0 auto;
+    padding:34px 0 70px;
 }
 
-.section-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
+/* SECTION HEADER */
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:17px;
 }
 
-.section-title {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--navy);
-    letter-spacing: .3px;
+.section-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-family:"Montserrat",Arial,sans-serif;
+
+    font-size:14px;
+    font-weight:900;
+
+    letter-spacing:.5px;
 }
 
-.section-title .red-bar {
-    width: 4px;
-    height: 18px;
-    border-radius: 4px;
-    background: var(--red);
+.section-title::before{
+    content:"";
+    width:4px;
+    height:19px;
+    background:var(--red);
+    border-radius:4px;
 }
 
-.section-title .red-dot {
-    width: 6px;
-    height: 6px;
-    background: var(--red);
-    border-radius: 50%;
+.story-count{
+    color:#7A879A;
+    font-size:10px;
 }
 
-.story-count {
-    font-size: 11px;
-    color: var(--muted);
+/* =========================================
+   FEATURED STORY
+========================================= */
+
+.featured{
+    display:grid;
+    grid-template-columns:1.35fr .9fr;
+    gap:20px;
+    margin-bottom:20px;
 }
 
+.feature-image{
+    height:280px;
+    background:#E8EDF5;
+    border-radius:14px;
+    overflow:hidden;
 
-/* =========================================================
-   FEATURE
-========================================================= */
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-.feature {
-    display: grid;
-    grid-template-columns: 1.25fr .75fr;
-    gap: 20px;
-    margin-bottom: 20px;
+    color:#8995A8;
+    font-size:12px;
 }
 
-.feature-image {
-    min-height: 280px;
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: #e7edf5;
-    position: relative;
+.feature-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.feature-image img {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    display: block;
+.feature-content{
+    padding:10px 0;
 }
 
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #8290a3;
-    background: linear-gradient(135deg,#e7edf5,#dde5ef);
-    font-size: 13px;
+.story-category{
+    color:var(--red);
+    font-size:9px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    margin-bottom:12px;
 }
 
-.feature-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 12px 4px;
+.story-category::after{
+    content:"•";
+    color:var(--red);
+    font-size:16px;
+    line-height:1;
 }
 
-.category {
-    color: var(--red);
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.feature-title{
+    font-family:"Montserrat",Arial,sans-serif;
+    font-size:28px;
+    line-height:1.1;
+    font-weight:900;
+
+    color:var(--navy);
+
+    margin-bottom:13px;
 }
 
-.category::before {
-    content: "•";
-    margin-right: 7px;
-    color: var(--red);
+.feature-description{
+    font-size:12px;
+    line-height:1.65;
+    color:#63738B;
+    margin-bottom:14px;
 }
 
-.feature-title {
-    font-family: "Merriweather", Georgia, serif;
-    font-size: 29px;
-    line-height: 1.23;
-    color: var(--navy);
-    margin: 0 0 13px;
+.story-source{
+    font-size:10px;
+    color:#7B8798;
+    margin-bottom:12px;
 }
 
-.feature-summary {
-    color: #5f7189;
-    font-size: 13px;
-    line-height: 1.7;
-    margin-bottom: 14px;
+.read-more{
+    color:var(--red);
+    font-size:10px;
+    font-weight:900;
 }
 
-.story-source {
-    color: var(--muted);
-    font-size: 10px;
-    margin-bottom: 14px;
-}
-
-.read-link {
-    color: var(--red);
-    font-size: 12px;
-    font-weight: 800;
-}
-
-
-/* =========================================================
+/* =========================================
    STORY GRID
-========================================================= */
+========================================= */
 
-.story-grid {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 14px;
-    margin-bottom: 38px;
+.story-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
 }
 
-.story-card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(7,29,58,.03);
-    transition: transform .2s, box-shadow .2s;
+.story-card{
+    background:var(--card);
+    border:1px solid var(--border);
+
+    border-radius:13px;
+
+    overflow:hidden;
+
+    transition:.2s ease;
 }
 
-.story-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+.story-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(6,27,65,.08);
 }
 
-.story-image {
-    height: 145px;
-    background: #e6ecf4;
+.card-image{
+    height:130px;
+    background:#E8EDF5;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#8C98A9;
+    font-size:10px;
 }
 
-.story-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.story-image.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8795a8;
-    font-size: 11px;
+.card-content{
+    padding:12px;
 }
 
-.story-body {
-    padding: 14px;
+.card-category{
+    color:var(--red);
+    font-size:8px;
+    font-weight:900;
+    text-transform:uppercase;
+
+    display:flex;
+    align-items:center;
+    gap:5px;
+
+    margin-bottom:7px;
 }
 
-.story-category {
-    color: var(--red);
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: 800;
-    margin-bottom: 7px;
+.card-category::after{
+    content:"•";
+    color:var(--red);
+    font-size:13px;
 }
 
-.story-title {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.35;
-    font-weight: 800;
-    margin: 0 0 9px;
-    color: var(--navy);
+.card-title{
+    font-family:"Montserrat",Arial,sans-serif;
+
+    font-size:13px;
+    line-height:1.25;
+
+    font-weight:800;
+
+    color:var(--navy);
+
+    margin-bottom:8px;
 }
 
-.story-meta {
-    color: #8490a0;
-    font-size: 10px;
+.card-source{
+    color:#8190A4;
+    font-size:9px;
 }
 
-
-/* =========================================================
+/* =========================================
    CATEGORY SECTIONS
-========================================================= */
+========================================= */
 
-.category-section {
-    margin-top: 38px;
+.category-section{
+    margin-top:38px;
 }
 
-.category-section .story-grid {
-    margin-bottom: 0;
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
 }
 
+/* =========================================
+   NO NEWS
+========================================= */
 
-/* =========================================================
-   PANCHANG MODAL
-========================================================= */
-
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(4,17,36,.65);
-    backdrop-filter: blur(4px);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    padding: 20px;
+.no-news{
+    text-align:center;
+    padding:40px;
+    color:#7B8798;
 }
 
-.modal-backdrop.show {
-    display: flex;
-}
+/* =========================================
+   MOBILE
+========================================= */
 
-.panchang-modal {
-    background: white;
-    width: min(900px,100%);
-    max-height: 90vh;
-    overflow-y: auto;
-    border-radius: 20px;
-    box-shadow: 0 30px 80px rgba(0,0,0,.25);
-}
+@media(max-width:900px){
 
-.modal-header {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background: white;
-    border-bottom: 1px solid var(--line);
-    padding: 20px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.modal-title {
-    margin: 0;
-    color: var(--navy);
-    font-family: "Merriweather", Georgia, serif;
-    font-size: 22px;
-}
-
-.modal-subtitle {
-    margin-top: 6px;
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.close-modal {
-    width: 34px;
-    height: 34px;
-    border: 0;
-    border-radius: 50%;
-    background: #f1f4f8;
-    cursor: pointer;
-    font-size: 20px;
-    color: var(--navy);
-}
-
-.panchang-body {
-    padding: 24px;
-}
-
-.panchang-location {
-    background: #f7f9fb;
-    border: 1px solid var(--line);
-    border-radius: 13px;
-    padding: 15px;
-    margin-bottom: 18px;
-}
-
-.panchang-location strong {
-    color: var(--navy);
-}
-
-.panchang-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 12px;
-}
-
-.panchang-item {
-    border: 1px solid var(--line);
-    border-radius: 13px;
-    padding: 15px;
-    background: white;
-}
-
-.panchang-label {
-    color: var(--red);
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.panchang-value {
-    color: var(--navy);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.panchang-extra {
-    margin-top: 20px;
-}
-
-.panchang-extra h3 {
-    color: var(--navy);
-    font-size: 15px;
-}
-
-.panchang-loading {
-    padding: 30px;
-    text-align: center;
-    color: var(--muted);
-}
-
-.panchang-error {
-    padding: 20px;
-    border-radius: 12px;
-    background: #fff4f4;
-    color: #b51c27;
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    background: var(--navy);
-    color: white;
-    margin-top: 60px;
-}
-
-.footer-inner {
-    max-width: 1320px;
-    margin: auto;
-    padding: 30px 22px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.footer-brand {
-    font-weight: 800;
-}
-
-.footer-text {
-    color: #aebbd0;
-    font-size: 11px;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media(max-width:1000px) {
-
-    .header-inner {
-        grid-template-columns: 220px 1fr;
+    .header-inner{
+        padding:15px 20px;
+        flex-wrap:wrap;
+        gap:15px;
     }
 
-    .header-info {
-        grid-column: 1/-1;
-        justify-content: flex-start;
+    .logo-area{
+        min-width:auto;
     }
 
-    .story-grid {
-        grid-template-columns: repeat(2,1fr);
+    .header-right{
+        margin-left:auto;
     }
 
-    .feature {
-        grid-template-columns: 1fr;
+    .search-box{
+        order:3;
+        flex-basis:100%;
     }
 
-    .panchang-grid {
-        grid-template-columns: repeat(2,1fr);
+    .category-inner{
+        padding:0 20px;
     }
+
+    .language-inner{
+        padding:0 20px;
+        justify-content:flex-start;
+        overflow-x:auto;
+    }
+
+    main{
+        padding:28px 20px 60px;
+    }
+
+    .featured{
+        grid-template-columns:1fr;
+    }
+
+    .story-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
+@media(max-width:600px){
 
-@media(max-width:650px) {
-
-    .header-inner {
-        grid-template-columns: 1fr;
-        gap: 14px;
+    .logo-snippet{
+        font-size:34px;
     }
 
-    .search-wrap {
-        justify-content: stretch;
+    .logo-24{
+        font-size:30px;
     }
 
-    .search-box {
-        width: 100%;
+    .slogan{
+        font-size:8px;
+        letter-spacing:3px;
     }
 
-    .header-info {
-        justify-content: flex-start;
+    .weather-box{
+        min-width:auto;
     }
 
-    .logo-snippet {
-        font-size: 40px;
+    .weather-info{
+        display:none;
     }
 
-    .logo-24 {
-        font-size: 34px;
+    .time-box{
+        display:none;
     }
 
-    .slogan {
-        font-size: 9px;
-        letter-spacing: 3px;
+    .feature-image{
+        height:220px;
     }
 
-    .feature-title {
-        font-size: 23px;
+    .feature-title{
+        font-size:24px;
     }
 
-    .story-grid {
-        grid-template-columns: 1fr;
+    .story-grid{
+        grid-template-columns:1fr;
     }
 
-    .panchang-grid {
-        grid-template-columns: 1fr;
+    .category-grid{
+        grid-template-columns:1fr;
     }
 
-    .container {
-        padding: 28px 15px 50px;
-    }
-
-    .live-inner {
-        padding: 0 15px;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-    }
 }
 
 </style>
-</head>
 
+<!-- GOOGLE TRANSLATE -->
+<script type="text/javascript">
+
+function googleTranslateElementInit(){
+
+    new google.translate.TranslateElement({
+        pageLanguage:'en',
+        includedLanguages:'en,ta,te,kn,ml,hi',
+        autoDisplay:false
+    },'google_translate_element');
+
+}
+
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
 
 <body>
 
-
-<!-- =====================================================
+<!-- =========================================
      HEADER
-====================================================== -->
+========================================= -->
 
-<header class="site-header">
+<header class="top-header">
 
-    <div class="header-inner">
+<div class="header-inner">
 
-        <!-- LOGO -->
-        <a class="brand" href="./">
+    <!-- LOGO -->
 
-            <div class="logo-row">
+    <div class="logo-area">
 
-                <div class="logo-snippet">
-                    snippet
-                    <span class="logo-dot"></span>
-                </div>
+        <div class="logo">
 
-                <div class="logo-24">
-                    24
-                </div>
-
+            <div class="logo-snippet">
+                snippet
             </div>
 
-            <div class="slogan">
-                FAST NEWS
-                <span class="slogan-dot">•</span>
-                REAL IMPACT
-                <span class="slogan-dot">•</span>
-            </div>
-
-        </a>
-
-
-        <!-- SEARCH -->
-        <div class="search-wrap">
-
-            <div class="search-box">
-
-                <span>⌕</span>
-
-                <input
-                    id="searchInput"
-                    type="search"
-                    placeholder="Search stories, topics, people..."
-                    autocomplete="off"
-                >
-
+            <div class="logo-24">
+                24
             </div>
 
         </div>
 
-
-        <!-- WEATHER / DATE / TIME -->
-        <div class="header-info">
-
-            <button
-                class="info-button"
-                id="openPanchang"
-                title="Open Hindu Calendar / Panchang"
-            >
-
-                <span
-                    class="weather-icon"
-                    id="weatherIcon"
-                >
-                    ☀️
-                </span>
-
-                <span class="weather-main">
-
-                    <span
-                        class="temperature"
-                        id="temperature"
-                    >
-                        --°C
-                    </span>
-
-                    <span
-                        class="city-name"
-                        id="cityName"
-                    >
-                        Detecting location...
-                    </span>
-
-                </span>
-
-                <span class="clock-area">
-
-                    <span
-                        class="current-time"
-                        id="currentTime"
-                    >
-                        --:--
-                    </span>
-
-                    <span
-                        class="current-date"
-                        id="currentDate"
-                    >
-                        --
-                    </span>
-
-                </span>
-
-            </button>
-
+        <div class="slogan">
+            FAST NEWS
+            <span class="dot">•</span>
+            REAL IMPACT
+            <span class="dot">•</span>
         </div>
 
     </div>
 
 
-    <!-- NAVIGATION -->
+    <!-- SEARCH -->
 
-    <nav class="main-nav">
+    <div class="search-box">
 
-        <div class="nav-inner">
+        <span class="search-icon">⌕</span>
 
-            <a class="nav-link active" href="#home">
-                <span class="nav-icon">⌂</span>
-                Home
-            </a>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search stories, topics, people..."
+            onkeyup="searchStories()"
+        >
 
-            <a class="nav-link" href="#india">
-                <span class="nav-icon">▣</span>
-                In India
-            </a>
+    </div>
 
-            <a class="nav-link" href="#security">
-                <span class="nav-icon">◆</span>
-                Security & Peace
-            </a>
 
-            <a class="nav-link" href="#law">
-                <span class="nav-icon">§</span>
-                Law Around Us
-            </a>
+    <!-- WEATHER -->
 
-            <a class="nav-link" href="#science">
-                <span class="nav-icon">◇</span>
-                Science & Development
-            </a>
+    <div class="header-right">
 
-            <a class="nav-link" href="#business">
-                <span class="nav-icon">₹</span>
-                Business & Economy
-            </a>
+        <div class="weather-box">
 
-            <a class="nav-link" href="#society">
-                <span class="nav-icon">♟</span>
-                Society & Culture
-            </a>
+            <div class="weather-icon" id="weatherIcon">
+                ☀️
+            </div>
 
-            <a class="nav-link" href="#environment">
-                <span class="nav-icon">♧</span>
-                Human & Environment
-            </a>
+            <div class="weather-info">
 
-            <a class="nav-link" href="#tech">
-                <span class="nav-icon">◉</span>
-                Tech & AI
-            </a>
+                <div class="temperature" id="temperature">
+                    --°C
+                </div>
 
-            <a class="nav-link" href="#goodreads">
-                <span class="nav-icon">G</span>
-                Good Reads
-            </a>
+                <div class="city" id="cityName">
+                    Detecting city...
+                </div>
+
+            </div>
 
         </div>
 
-    </nav>
+
+        <div class="time-box">
+
+            <div class="time" id="currentTime">
+                --:-- --
+            </div>
+
+            <div class="date" id="currentDate">
+                ---
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </header>
 
 
-<!-- =====================================================
+<!-- =========================================
+     CATEGORY NAVIGATION
+========================================= -->
+
+<nav class="category-nav">
+
+<div class="category-inner">
+
+    <a href="#" class="category-link active">
+        ⌂ Home
+    </a>
+
+    <a href="#india" class="category-link">
+        ▣ In India
+    </a>
+
+    <a href="#security" class="category-link">
+        ◆ Security & Peace
+    </a>
+
+    <a href="#law" class="category-link">
+        § Law Around Us
+    </a>
+
+    <a href="#science" class="category-link">
+        ◇ Science & Development
+    </a>
+
+    <a href="#business" class="category-link">
+        ₹ Business & Economy
+    </a>
+
+    <a href="#society" class="category-link">
+        ♟ Society & Culture
+    </a>
+
+    <a href="#environment" class="category-link">
+        ♧ Human & Environment
+    </a>
+
+    <a href="#technology" class="category-link">
+        ◉ Tech & AI
+    </a>
+
+    <a href="#global" class="category-link">
+        ✦ Global
+    </a>
+
+</div>
+
+</nav>
+
+
+<!-- =========================================
      LIVE WIRE
-====================================================== -->
+========================================= -->
 
 <div class="live-wire">
 
-    <div class="live-inner">
+    <div class="live-label">
 
         <span class="live-dot"></span>
 
-        <span class="live-label">
-            LIVE WIRE
-        </span>
+        LIVE WIRE
 
-        <span id="liveHeadline">
-            Latest developments, breaking news and stories that matter
-        </span>
+    </div>
+
+
+    <div class="ticker-window">
+
+        <div class="ticker-track" id="tickerTrack">
+
+            <span class="ticker-item">
+                Latest developments, breaking news and stories that matter
+            </span>
+
+            <span class="ticker-item">
+                India and world news updated throughout the day
+            </span>
+
+            <span class="ticker-item">
+                Business, technology, science and society
+            </span>
+
+            <span class="ticker-item">
+                Fast News. Real Impact.
+            </span>
+
+            <!-- DUPLICATE FOR CONTINUOUS WALKING -->
+
+            <span class="ticker-item">
+                Latest developments, breaking news and stories that matter
+            </span>
+
+            <span class="ticker-item">
+                India and world news updated throughout the day
+            </span>
+
+            <span class="ticker-item">
+                Business, technology, science and society
+            </span>
+
+            <span class="ticker-item">
+                Fast News. Real Impact.
+            </span>
+
+        </div>
 
     </div>
 
 </div>
 
 
-<!-- =====================================================
+<!-- =========================================
+     LANGUAGE FILTER
+========================================= -->
+
+<div class="language-bar">
+
+<div class="language-inner">
+
+    <span class="language-label">
+        🌐 Language:
+    </span>
+
+    <button
+        class="language-button active"
+        onclick="changeLanguage('en',this)">
+        English
+    </button>
+
+    <button
+        class="language-button"
+        onclick="changeLanguage('ta',this)">
+        தமிழ்
+    </button>
+
+    <button
+        class="language-button"
+        onclick="changeLanguage('te',this)">
+        తెలుగు
+    </button>
+
+    <button
+        class="language-button"
+        onclick="changeLanguage('kn',this)">
+        ಕನ್ನಡ
+    </button>
+
+    <button
+        class="language-button"
+        onclick="changeLanguage('ml',this)">
+        മലയാളം
+    </button>
+
+    <button
+        class="language-button"
+        onclick="changeLanguage('hi',this)">
+        हिन्दी
+    </button>
+
+</div>
+
+</div>
+
+
+<!-- GOOGLE TRANSLATE HIDDEN -->
+
+<div id="google_translate_element"></div>
+
+
+<!-- =========================================
      MAIN CONTENT
-====================================================== -->
+========================================= -->
 
-<main class="container" id="home">
+<main>
 
+    <div class="section-header">
 
-    <!-- LATEST -->
-
-    <div class="section-head">
-
-        <div class="section-title">
-
-            <span class="red-bar"></span>
-
-            <span class="red-dot"></span>
-
+        <h1 class="section-title">
             LATEST STORIES
+        </h1>
 
-        </div>
-
-        <div
+        <span
             class="story-count"
-            id="storyCount"
-        >
-            Loading...
-        </div>
+            id="storyCount">
+            Loading stories...
+        </span>
 
     </div>
 
 
-    <!-- FEATURE -->
+    <!-- FEATURED STORY -->
 
-    <section class="feature">
+    <section class="featured" id="featuredStory">
 
-        <div
-            class="feature-image"
-            id="featureImage"
-        >
-            <div class="image-placeholder">
-                Loading story...
-            </div>
+        <div class="feature-image" id="featureImage">
+            Loading image...
         </div>
-
 
         <div class="feature-content">
 
             <div
-                class="category"
-                id="featureCategory"
-            >
+                class="story-category"
+                id="featureCategory">
                 FEATURED
             </div>
 
-            <h1
+            <h2
                 class="feature-title"
-                id="featureTitle"
-            >
-                Stories that matter, explained clearly and quickly
-            </h1>
+                id="featureTitle">
+                Loading latest story...
+            </h2>
 
-            <div
-                class="feature-summary"
-                id="featureSummary"
-            >
-                Discover the latest developments across India,
-                business, science, technology, society and the
-                world around you.
-            </div>
+            <p
+                class="feature-description"
+                id="featureDescription">
+                Loading the latest developments...
+            </p>
 
             <div
                 class="story-source"
-                id="featureSource"
-            >
+                id="featureSource">
                 Snippet24
             </div>
 
             <a
-                class="read-link"
-                id="featureLink"
                 href="#"
-            >
+                class="read-more"
+                id="featureLink">
                 Read Original →
             </a>
 
@@ -1078,605 +1135,488 @@ footer {
     </section>
 
 
-    <!-- TOP STORIES -->
+    <!-- STORY GRID -->
 
-    <section>
+    <section
+        class="story-grid"
+        id="storyGrid">
 
-        <div
-            class="story-grid"
-            id="topStories"
-        >
+        <div class="no-news">
+            Loading latest stories...
         </div>
 
     </section>
 
 
-    <!-- =================================================
-         CATEGORY SECTIONS
-    ================================================== -->
+    <!-- CATEGORY SECTIONS -->
 
     <section
         class="category-section"
-        id="india"
-    >
+        id="india">
 
-        <div class="section-head">
+        <div class="section-header">
 
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
+            <h2 class="section-title">
                 IN INDIA
-
-            </div>
+            </h2>
 
         </div>
 
         <div
-            class="story-grid"
-            id="indiaStories"
-        ></div>
+            class="category-grid"
+            id="indiaGrid">
+        </div>
 
     </section>
 
 
     <section
         class="category-section"
-        id="security"
-    >
+        id="business">
 
-        <div class="section-head">
+        <div class="section-header">
 
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                SECURITY & PEACE
-
-            </div>
-
-        </div>
-
-        <div
-            class="story-grid"
-            id="securityStories"
-        ></div>
-
-    </section>
-
-
-    <section
-        class="category-section"
-        id="law"
-    >
-
-        <div class="section-head">
-
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                LAW AROUND US
-
-            </div>
-
-        </div>
-
-        <div
-            class="story-grid"
-            id="lawStories"
-        ></div>
-
-    </section>
-
-
-    <section
-        class="category-section"
-        id="science"
-    >
-
-        <div class="section-head">
-
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                SCIENCE & DEVELOPMENT
-
-            </div>
-
-        </div>
-
-        <div
-            class="story-grid"
-            id="scienceStories"
-        ></div>
-
-    </section>
-
-
-    <section
-        class="category-section"
-        id="business"
-    >
-
-        <div class="section-head">
-
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
+            <h2 class="section-title">
                 BUSINESS & ECONOMY
-
-            </div>
+            </h2>
 
         </div>
 
         <div
-            class="story-grid"
-            id="businessStories"
-        ></div>
+            class="category-grid"
+            id="businessGrid">
+        </div>
 
     </section>
 
 
     <section
         class="category-section"
-        id="society"
-    >
+        id="technology">
 
-        <div class="section-head">
+        <div class="section-header">
 
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                SOCIETY & CULTURE
-
-            </div>
-
-        </div>
-
-        <div
-            class="story-grid"
-            id="societyStories"
-        ></div>
-
-    </section>
-
-
-    <section
-        class="category-section"
-        id="environment"
-    >
-
-        <div class="section-head">
-
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                HUMAN & ENVIRONMENT
-
-            </div>
-
-        </div>
-
-        <div
-            class="story-grid"
-            id="environmentStories"
-        ></div>
-
-    </section>
-
-
-    <section
-        class="category-section"
-        id="tech"
-    >
-
-        <div class="section-head">
-
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
+            <h2 class="section-title">
                 TECH & AI
-
-            </div>
+            </h2>
 
         </div>
 
         <div
-            class="story-grid"
-            id="techStories"
-        ></div>
+            class="category-grid"
+            id="technologyGrid">
+        </div>
 
     </section>
 
 
     <section
         class="category-section"
-        id="goodreads"
-    >
+        id="science">
 
-        <div class="section-head">
+        <div class="section-header">
 
-            <div class="section-title">
-
-                <span class="red-bar"></span>
-                <span class="red-dot"></span>
-
-                GOOD READS
-
-            </div>
+            <h2 class="section-title">
+                SCIENCE & DEVELOPMENT
+            </h2>
 
         </div>
 
         <div
-            class="story-grid"
-            id="goodreadsStories"
-        ></div>
+            class="category-grid"
+            id="scienceGrid">
+        </div>
+
+    </section>
+
+
+    <section
+        class="category-section"
+        id="society">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                SOCIETY & CULTURE
+            </h2>
+
+        </div>
+
+        <div
+            class="category-grid"
+            id="societyGrid">
+        </div>
+
+    </section>
+
+
+    <section
+        class="category-section"
+        id="security">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                SECURITY & PEACE
+            </h2>
+
+        </div>
+
+        <div
+            class="category-grid"
+            id="securityGrid">
+        </div>
+
+    </section>
+
+
+    <section
+        class="category-section"
+        id="law">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                LAW AROUND US
+            </h2>
+
+        </div>
+
+        <div
+            class="category-grid"
+            id="lawGrid">
+        </div>
+
+    </section>
+
+
+    <section
+        class="category-section"
+        id="environment">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                HUMAN & ENVIRONMENT
+            </h2>
+
+        </div>
+
+        <div
+            class="category-grid"
+            id="environmentGrid">
+        </div>
+
+    </section>
+
+
+    <section
+        class="category-section"
+        id="global">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                GLOBAL
+            </h2>
+
+        </div>
+
+        <div
+            class="category-grid"
+            id="globalGrid">
+        </div>
 
     </section>
 
 </main>
 
 
-<!-- =====================================================
-     PANCHANG MODAL
-====================================================== -->
-
-<div
-    class="modal-backdrop"
-    id="panchangModal"
->
-
-    <div class="panchang-modal">
-
-        <div class="modal-header">
-
-            <div>
-
-                <h2 class="modal-title">
-                    Hindu Calendar & Panchang
-                </h2>
-
-                <div
-                    class="modal-subtitle"
-                    id="panchangDate"
-                >
-                    Loading...
-                </div>
-
-            </div>
-
-            <button
-                class="close-modal"
-                id="closePanchang"
-            >
-                ×
-            </button>
-
-        </div>
-
-
-        <div class="panchang-body">
-
-            <div
-                class="panchang-location"
-                id="panchangLocation"
-            >
-                Detecting location...
-            </div>
-
-
-            <div
-                id="panchangContent"
-            >
-
-                <div class="panchang-loading">
-                    Loading today's Hindu calendar...
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer>
-
-    <div class="footer-inner">
-
-        <div class="footer-brand">
-            snippet24
-        </div>
-
-        <div class="footer-text">
-            FAST NEWS • REAL IMPACT
-        </div>
-
-        <div class="footer-text">
-            © 2026 Snippet24
-        </div>
-
-    </div>
-
-</footer>
-
-
 <script>
 
-/* =========================================================
+/* =========================================
    GLOBAL DATA
-========================================================= */
+========================================= */
 
-let articles = [];
-
-let userLocation = {
-    city: "India",
-    state: "",
-    country: "India",
-    lat: 13.0827,
-    lon: 80.2707
-};
+let allStories = [];
 
 
-/* =========================================================
-   CATEGORY MAPPING
-========================================================= */
+/* =========================================
+   LOAD NEWS FROM articles.json
+========================================= */
 
-const categoryMap = {
+async function loadStories(){
 
-    india: [
-        "india",
-        "in india",
-        "national"
-    ],
+    try{
 
-    security: [
-        "security",
-        "security & peace",
-        "peace",
-        "defence",
-        "crime"
-    ],
+        const response = await fetch(
+            "articles.json?cache=" + Date.now()
+        );
 
-    law: [
-        "law",
-        "law around us",
-        "legal",
-        "court"
-    ],
+        if(!response.ok){
+            throw new Error("Unable to load articles.json");
+        }
 
-    science: [
-        "science",
-        "science & development",
-        "development",
-        "space"
-    ],
+        const data = await response.json();
 
-    business: [
-        "business",
-        "business & economy",
-        "economy",
-        "finance",
-        "markets"
-    ],
+        if(Array.isArray(data)){
+            allStories = data;
+        }
+        else if(Array.isArray(data.articles)){
+            allStories = data.articles;
+        }
+        else{
+            allStories = [];
+        }
 
-    society: [
-        "society",
-        "society & culture",
-        "culture",
-        "community"
-    ],
+        renderStories(allStories);
 
-    environment: [
-        "environment",
-        "human & environment",
-        "climate",
-        "nature"
-    ],
+    }
+    catch(error){
 
-    tech: [
-        "tech",
-        "technology",
-        "tech & ai",
-        "ai",
-        "artificial intelligence"
-    ],
+        console.error(error);
 
-    goodreads: [
-        "good reads",
-        "goodreads",
-        "opinion",
-        "features",
-        "explainer"
-    ]
+        document.getElementById("storyGrid").innerHTML =
+            '<div class="no-news">Unable to load latest stories.</div>';
 
-};
+    }
+
+}
 
 
-/* =========================================================
-   HELPERS
-========================================================= */
+/* =========================================
+   GET VALUE FROM DIFFERENT JSON FORMATS
+========================================= */
 
-function firstValue(obj, keys, fallback = "") {
+function getValue(story, names){
 
-    for (const key of keys) {
+    for(const name of names){
 
-        if (
-            obj &&
-            obj[key] !== undefined &&
-            obj[key] !== null &&
-            String(obj[key]).trim() !== ""
-        ) {
+        if(
+            story[name] !== undefined &&
+            story[name] !== null &&
+            story[name] !== ""
+        ){
 
-            return obj[key];
+            return story[name];
 
         }
 
     }
 
-    return fallback;
+    return "";
 
 }
 
 
-function normaliseArticle(item) {
+/* =========================================
+   IMAGE
+========================================= */
 
-    const title = firstValue(
-        item,
-        ["title", "headline", "name"],
-        "Untitled story"
-    );
+function getImage(story){
 
-    const summary = firstValue(
-        item,
-        [
-            "summary",
-            "description",
-            "excerpt",
-            "content",
-            "snippet"
-        ],
-        ""
-    );
-
-    const image = firstValue(
-        item,
+    return getValue(
+        story,
         [
             "image",
             "image_url",
             "imageUrl",
             "thumbnail",
-            "thumbnail_url",
             "urlToImage"
-        ],
-        ""
+        ]
     );
-
-    const source = firstValue(
-        item,
-        [
-            "source",
-            "source_name",
-            "publisher",
-            "author"
-        ],
-        "Snippet24"
-    );
-
-    const link = firstValue(
-        item,
-        [
-            "url",
-            "link",
-            "source_url",
-            "original_url"
-        ],
-        ""
-    );
-
-    const category = firstValue(
-        item,
-        [
-            "category",
-            "section",
-            "topic",
-            "section_name"
-        ],
-        "India"
-    );
-
-    return {
-        title,
-        summary,
-        image,
-        source,
-        link,
-        category
-    };
 
 }
 
 
-/* =========================================================
-   IMAGE
-========================================================= */
+/* =========================================
+   TITLE
+========================================= */
 
-function imageHTML(article, large = false) {
+function getTitle(story){
 
-    if (article.image) {
+    return getValue(
+        story,
+        [
+            "title",
+            "headline",
+            "name"
+        ]
+    ) || "Latest news update";
 
-        return `
-            <img
-                src="${escapeHTML(article.image)}"
-                alt="${escapeHTML(article.title)}"
-                loading="lazy"
-                onerror="this.parentElement.innerHTML='<div class=&quot;image-placeholder&quot;>Image unavailable</div>'"
-            >
-        `;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+function getDescription(story){
+
+    return getValue(
+        story,
+        [
+            "description",
+            "summary",
+            "excerpt",
+            "content"
+        ]
+    );
+
+}
+
+
+/* =========================================
+   SOURCE
+========================================= */
+
+function getSource(story){
+
+    if(typeof story.source === "object" && story.source){
+        return story.source.name || "Snippet24";
+    }
+
+    return getValue(
+        story,
+        [
+            "source",
+            "publisher",
+            "author"
+        ]
+    ) || "Snippet24";
+
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+function getLink(story){
+
+    return getValue(
+        story,
+        [
+            "url",
+            "link",
+            "article_url"
+        ]
+    ) || "#";
+
+}
+
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+function getCategory(story){
+
+    return getValue(
+        story,
+        [
+            "category",
+            "section",
+            "topic"
+        ]
+    ) || "NEWS";
+
+}
+
+
+/* =========================================
+   IMAGE HTML
+========================================= */
+
+function imageHTML(story){
+
+    const image = getImage(story);
+
+    if(!image){
+
+        return "Image unavailable";
 
     }
 
     return `
-        <div class="image-placeholder">
-            Image unavailable
-        </div>
+        <img
+            src="${escapeHTML(image)}"
+            alt="${escapeHTML(getTitle(story))}"
+            loading="lazy"
+            onerror="this.parentElement.innerHTML='Image unavailable';"
+        >
     `;
 
 }
 
 
-/* =========================================================
-   STORY CARD
-========================================================= */
+/* =========================================
+   FEATURE STORY
+========================================= */
 
-function storyCard(article) {
+function renderFeatured(story){
+
+    if(!story) return;
+
+    document.getElementById("featureImage").innerHTML =
+        imageHTML(story);
+
+    document.getElementById("featureCategory").textContent =
+        getCategory(story);
+
+    document.getElementById("featureTitle").textContent =
+        getTitle(story);
+
+    document.getElementById("featureDescription").textContent =
+        getDescription(story);
+
+    document.getElementById("featureSource").textContent =
+        getSource(story);
+
+    document.getElementById("featureLink").href =
+        getLink(story);
+
+}
+
+
+/* =========================================
+   STORY CARD
+========================================= */
+
+function createCard(story){
 
     return `
+
         <article class="story-card">
 
-            <a
-                href="${article.link ? escapeHTML(article.link) : '#'}"
-                ${article.link ? 'target="_blank" rel="noopener"' : ''}
-            >
+            <a href="${escapeHTML(getLink(story))}"
+               target="_blank"
+               rel="noopener">
 
-                <div class="story-image">
+                <div class="card-image">
 
-                    ${imageHTML(article)}
+                    ${imageHTML(story)}
 
                 </div>
 
-                <div class="story-body">
+                <div class="card-content">
 
-                    <div class="story-category">
-                        ${escapeHTML(article.category)}
+                    <div class="card-category">
+
+                        ${escapeHTML(getCategory(story))}
+
                     </div>
 
-                    <h3 class="story-title">
-                        ${escapeHTML(article.title)}
+                    <h3 class="card-title">
+
+                        ${escapeHTML(getTitle(story))}
+
                     </h3>
 
-                    <div class="story-meta">
-                        ${escapeHTML(article.source)}
+                    <div class="card-source">
+
+                        ${escapeHTML(getSource(story))}
+
                     </div>
 
                 </div>
@@ -1684,457 +1624,274 @@ function storyCard(article) {
             </a>
 
         </article>
+
     `;
 
 }
 
 
-/* =========================================================
-   FEATURE
-========================================================= */
+/* =========================================
+   RENDER STORIES
+========================================= */
 
-function renderFeature(article) {
-
-    if (!article) return;
-
-    const featureImage =
-        document.getElementById("featureImage");
-
-    featureImage.innerHTML = imageHTML(article, true);
-
-    document.getElementById("featureCategory").textContent =
-        article.category || "FEATURED";
-
-    document.getElementById("featureTitle").textContent =
-        article.title;
-
-    document.getElementById("featureSummary").textContent =
-        article.summary ||
-        "Latest developments and stories that matter.";
-
-    document.getElementById("featureSource").textContent =
-        article.source;
-
-    const link =
-        document.getElementById("featureLink");
-
-    if (article.link) {
-
-        link.href = article.link;
-        link.target = "_blank";
-        link.rel = "noopener";
-
-    }
-
-}
-
-
-/* =========================================================
-   CATEGORY MATCH
-========================================================= */
-
-function categoryMatches(article, wanted) {
-
-    const value =
-        String(article.category || "").toLowerCase().trim();
-
-    return categoryMap[wanted].some(
-        item => value.includes(item)
-    );
-
-}
-
-
-/* =========================================================
-   RENDER
-========================================================= */
-
-function renderPage() {
-
-    if (!articles.length) return;
+function renderStories(stories){
 
     document.getElementById("storyCount").textContent =
-        `${articles.length} stories`;
+        stories.length + " stories";
 
-    renderFeature(articles[0]);
 
+    if(stories.length === 0){
 
-    const topStories =
-        document.getElementById("topStories");
-
-    topStories.innerHTML =
-        articles
-            .slice(1,5)
-            .map(storyCard)
-            .join("");
-
-
-    const sectionIds = [
-        "india",
-        "security",
-        "law",
-        "science",
-        "business",
-        "society",
-        "environment",
-        "tech",
-        "goodreads"
-    ];
-
-
-    sectionIds.forEach(section => {
-
-        const container =
-            document.getElementById(
-                section + "Stories"
-            );
-
-        const filtered =
-            articles
-                .filter(a => categoryMatches(a, section))
-                .slice(0,4);
-
-        if (filtered.length) {
-
-            container.innerHTML =
-                filtered.map(storyCard).join("");
-
-        } else {
-
-            container.innerHTML = `
-                <div style="
-                    grid-column:1/-1;
-                    padding:25px;
-                    background:white;
-                    border:1px solid var(--line);
-                    border-radius:14px;
-                    color:#7b8798;
-                    font-size:13px;
-                ">
-                    More stories coming soon.
-                </div>
-            `;
-
-        }
-
-    });
-
-
-    if (articles[0]) {
-
-        document.getElementById("liveHeadline").textContent =
-            articles[0].title;
-
-    }
-
-}
-
-
-/* =========================================================
-   LOAD ARTICLES
-========================================================= */
-
-async function loadArticles() {
-
-    try {
-
-        const response =
-            await fetch("articles.json", {
-                cache: "no-store"
-            });
-
-        if (!response.ok) {
-            throw new Error("articles.json unavailable");
-        }
-
-        const data = await response.json();
-
-        let list = [];
-
-        if (Array.isArray(data)) {
-
-            list = data;
-
-        } else if (Array.isArray(data.articles)) {
-
-            list = data.articles;
-
-        } else if (Array.isArray(data.items)) {
-
-            list = data.items;
-
-        } else {
-
-            list = Object.values(data)
-                .filter(x => typeof x === "object");
-
-        }
-
-        articles =
-            list
-                .map(normaliseArticle)
-                .filter(a => a.title);
-
-        renderPage();
-
-    } catch (error) {
-
-        console.error(error);
-
-        articles = [
-
-            {
-                title:
-                    "Stories that matter, explained clearly and quickly",
-                summary:
-                    "Discover the latest developments across India, business, science, technology, society and the world around you.",
-                image: "",
-                source: "Snippet24",
-                link: "",
-                category: "India"
-            },
-
-            {
-                title:
-                    "Important developments from across India",
-                summary: "",
-                image: "",
-                source: "Snippet24",
-                link: "",
-                category: "India"
-            },
-
-            {
-                title:
-                    "Business and economy stories to know today",
-                summary: "",
-                image: "",
-                source: "Snippet24",
-                link: "",
-                category: "Business & Economy"
-            },
-
-            {
-                title:
-                    "Technology and AI developments changing our lives",
-                summary: "",
-                image: "",
-                source: "Snippet24",
-                link: "",
-                category: "Tech & AI"
-            },
-
-            {
-                title:
-                    "People, communities and stories from everyday life",
-                summary: "",
-                image: "",
-                source: "Snippet24",
-                link: "",
-                category: "Society & Culture"
-            }
-
-        ];
-
-        renderPage();
-
-    }
-
-}
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-document
-    .getElementById("searchInput")
-    .addEventListener("input", function() {
-
-        const query =
-            this.value.toLowerCase().trim();
-
-        if (!query) {
-
-            renderPage();
-            return;
-
-        }
-
-        const results =
-            articles.filter(article =>
-                `${article.title}
-                 ${article.summary}
-                 ${article.category}
-                 ${article.source}`
-                    .toLowerCase()
-                    .includes(query)
-            );
-
-        document.getElementById("storyCount").textContent =
-            `${results.length} results`;
-
-        document.getElementById("topStories").innerHTML =
-            results
-                .slice(0,12)
-                .map(storyCard)
-                .join("");
-
-        window.scrollTo({
-            top: 230,
-            behavior: "smooth"
-        });
-
-    });
-
-
-/* =========================================================
-   DATE / TIME
-========================================================= */
-
-function updateClock() {
-
-    const now = new Date();
-
-    document.getElementById("currentTime").textContent =
-        now.toLocaleTimeString(
-            "en-IN",
-            {
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true
-            }
-        );
-
-    document.getElementById("currentDate").textContent =
-        now.toLocaleDateString(
-            "en-IN",
-            {
-                weekday: "short",
-                day: "2-digit",
-                month: "short",
-                year: "numeric"
-            }
-        );
-
-}
-
-updateClock();
-
-setInterval(updateClock, 1000);
-
-
-/* =========================================================
-   LOCATION
-========================================================= */
-
-async function detectLocation() {
-
-    if (!navigator.geolocation) {
-
-        loadWeather(
-            userLocation.lat,
-            userLocation.lon
-        );
+        document.getElementById("storyGrid").innerHTML =
+            '<div class="no-news">No stories available.</div>';
 
         return;
 
     }
 
-    navigator.geolocation.getCurrentPosition(
 
-        async position => {
+    /* FEATURED */
 
-            userLocation.lat =
-                position.coords.latitude;
+    renderFeatured(stories[0]);
 
-            userLocation.lon =
-                position.coords.longitude;
 
-            await reverseGeocode();
+    /* MAIN GRID */
 
-            loadWeather(
-                userLocation.lat,
-                userLocation.lon
-            );
+    const gridStories = stories.slice(1,5);
 
-        },
+    document.getElementById("storyGrid").innerHTML =
+        gridStories.map(createCard).join("");
 
-        () => {
 
-            /*
-             Chennai fallback
-            */
+    /* CATEGORY GRIDS */
 
-            userLocation = {
-                city: "Chennai",
-                state: "Tamil Nadu",
-                country: "India",
-                lat: 13.0827,
-                lon: 80.2707
-            };
+    renderCategory(
+        stories,
+        "india",
+        ["india","in india","national"]
+    );
 
-            loadWeather(
-                userLocation.lat,
-                userLocation.lon
-            );
+    renderCategory(
+        stories,
+        "business",
+        ["business","business & economy","economy","finance"]
+    );
 
-        },
+    renderCategory(
+        stories,
+        "technology",
+        ["technology","tech","tech & ai","ai"]
+    );
 
-        {
-            enableHighAccuracy: false,
-            timeout: 8000,
-            maximumAge: 600000
-        }
+    renderCategory(
+        stories,
+        "science",
+        ["science","science & development"]
+    );
 
+    renderCategory(
+        stories,
+        "society",
+        ["society","society & culture","culture"]
+    );
+
+    renderCategory(
+        stories,
+        "security",
+        ["security","security & peace"]
+    );
+
+    renderCategory(
+        stories,
+        "law",
+        ["law","law around us"]
+    );
+
+    renderCategory(
+        stories,
+        "environment",
+        ["environment","human & environment"]
+    );
+
+    renderCategory(
+        stories,
+        "global",
+        ["global","world","international"]
     );
 
 }
 
 
-/* =========================================================
-   REVERSE GEOCODING
-========================================================= */
+/* =========================================
+   CATEGORY
+========================================= */
 
-async function reverseGeocode() {
+function renderCategory(
+    stories,
+    section,
+    names
+){
 
-    try {
+    const element =
+        document.getElementById(section + "Grid");
 
-        const url =
-            `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${userLocation.lat}&lon=${userLocation.lon}`;
+    if(!element) return;
 
-        const response =
-            await fetch(url, {
-                headers: {
-                    "Accept": "application/json"
-                }
-            });
 
-        const data =
-            await response.json();
+    const filtered = stories.filter(story => {
 
-        const address =
-            data.address || {};
+        const category =
+            getCategory(story)
+            .toLowerCase()
+            .trim();
 
-        userLocation.city =
-            address.city ||
-            address.town ||
-            address.municipality ||
-            address.village ||
-            address.suburb ||
-            "Your City";
+        return names.some(name =>
+            category.includes(name)
+        );
 
-        userLocation.state =
-            address.state || "";
+    });
 
-        userLocation.country =
-            address.country || "India";
 
-    } catch (error) {
+    if(filtered.length === 0){
 
-        console.warn(
-            "Location lookup failed",
-            error
+        element.innerHTML =
+            '<div class="no-news">No stories available.</div>';
+
+        return;
+
+    }
+
+
+    element.innerHTML =
+        filtered
+            .slice(0,6)
+            .map(createCard)
+            .join("");
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+function searchStories(){
+
+    const query =
+        document
+            .getElementById("searchInput")
+            .value
+            .toLowerCase()
+            .trim();
+
+
+    if(!query){
+
+        renderStories(allStories);
+
+        return;
+
+    }
+
+
+    const filtered =
+        allStories.filter(story => {
+
+            const text = (
+
+                getTitle(story) +
+                " " +
+                getDescription(story) +
+                " " +
+                getCategory(story) +
+                " " +
+                getSource(story)
+
+            ).toLowerCase();
+
+            return text.includes(query);
+
+        });
+
+
+    renderStories(filtered);
+
+}
+
+
+/* =========================================
+   ESCAPE HTML
+========================================= */
+
+function escapeHTML(value){
+
+    if(value === undefined || value === null){
+        return "";
+    }
+
+    return String(value)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================
+   LANGUAGE TRANSLATION
+========================================= */
+
+function changeLanguage(language,button){
+
+    /* BUTTON */
+
+    document
+        .querySelectorAll(".language-button")
+        .forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+    button.classList.add("active");
+
+
+    /* ENGLISH */
+
+    if(language === "en"){
+
+        const select =
+            document.querySelector(".goog-te-combo");
+
+        if(select){
+
+            select.value = "en";
+
+            select.dispatchEvent(
+                new Event("change")
+            );
+
+        }
+
+        return;
+
+    }
+
+
+    /* OTHER LANGUAGES */
+
+    const select =
+        document.querySelector(".goog-te-combo");
+
+
+    if(select){
+
+        select.value = language;
+
+        select.dispatchEvent(
+            new Event("change")
         );
 
     }
@@ -2142,407 +1899,304 @@ async function reverseGeocode() {
 }
 
 
-/* =========================================================
+/* =========================================
    WEATHER
-========================================================= */
+========================================= */
 
-async function loadWeather(lat, lon) {
+async function loadWeather(){
 
-    try {
+    try{
 
-        const url =
-            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&timezone=auto`;
+        if(!navigator.geolocation){
+
+            loadDefaultWeather();
+
+            return;
+
+        }
+
+
+        navigator.geolocation.getCurrentPosition(
+
+            async position => {
+
+                const lat =
+                    position.coords.latitude;
+
+                const lon =
+                    position.coords.longitude;
+
+
+                await getWeather(lat,lon);
+
+            },
+
+            async () => {
+
+                loadDefaultWeather();
+
+            },
+
+            {
+                enableHighAccuracy:true,
+                timeout:10000,
+                maximumAge:300000
+            }
+
+        );
+
+    }
+    catch(error){
+
+        loadDefaultWeather();
+
+    }
+
+}
+
+
+/* =========================================
+   WEATHER API
+========================================= */
+
+async function getWeather(lat,lon){
+
+    try{
+
+        const weatherURL =
+            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code,is_day&timezone=auto`;
+
 
         const response =
-            await fetch(url);
+            await fetch(weatherURL);
+
 
         const data =
             await response.json();
+
 
         const temperature =
             Math.round(
                 data.current.temperature_2m
             );
 
-        document.getElementById("temperature").textContent =
-            `${temperature}°C`;
 
-        document.getElementById("weatherIcon").textContent =
+        document.getElementById(
+            "temperature"
+        ).textContent =
+            temperature + "°C";
+
+
+        document.getElementById(
+            "weatherIcon"
+        ).textContent =
             weatherEmoji(
                 data.current.weather_code
             );
 
-        document.getElementById("cityName").textContent =
-            `${userLocation.city}${userLocation.state ? ", " + userLocation.state : ""}`;
 
-    } catch (error) {
+        /* CITY */
 
-        document.getElementById("temperature")
-            .textContent = "--°C";
+        try{
 
-        document.getElementById("cityName")
-            .textContent = userLocation.city;
+            const geoResponse =
+                await fetch(
+                    `https://geocoding-api.open-meteo.com/v1/search?name=Chennai&count=1&language=en&format=json`
+                );
+
+            /* Reverse city lookup through Nominatim */
+
+            const reverse =
+                await fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&zoom=10`
+                );
+
+
+            const geo =
+                await reverse.json();
+
+
+            const address =
+                geo.address || {};
+
+
+            const city =
+                address.city ||
+                address.town ||
+                address.village ||
+                address.municipality ||
+                address.county ||
+                "Your City";
+
+
+            const state =
+                address.state || "";
+
+
+            const country =
+                address.country || "";
+
+
+            let locationText =
+                city;
+
+
+            if(state){
+                locationText += ", " + state;
+            }
+
+
+            if(country){
+                locationText += ", " + country;
+            }
+
+
+            document.getElementById(
+                "cityName"
+            ).textContent =
+                locationText;
+
+        }
+        catch(error){
+
+            document.getElementById(
+                "cityName"
+            ).textContent =
+                "Local weather";
+
+        }
+
+    }
+    catch(error){
+
+        loadDefaultWeather();
 
     }
 
 }
 
 
-function weatherEmoji(code) {
+/* =========================================
+   DEFAULT WEATHER
+========================================= */
 
-    if (code === 0) return "☀️";
+async function loadDefaultWeather(){
 
-    if ([1,2].includes(code)) return "🌤️";
+    try{
 
-    if (code === 3) return "☁️";
+        await getWeather(
+            13.0827,
+            80.2707
+        );
 
-    if ([45,48].includes(code)) return "🌫️";
+    }
+    catch(error){
 
-    if ([51,53,55,56,57].includes(code)) return "🌦️";
+        document.getElementById(
+            "temperature"
+        ).textContent = "--°C";
 
-    if ([61,63,65,66,67].includes(code)) return "🌧️";
+        document.getElementById(
+            "cityName"
+        ).textContent = "Chennai, India";
 
-    if ([71,73,75,77].includes(code)) return "🌨️";
+    }
 
-    if ([80,81,82].includes(code)) return "🌦️";
+}
 
-    if ([95,96,99].includes(code)) return "⛈️";
+
+/* =========================================
+   WEATHER ICON
+========================================= */
+
+function weatherEmoji(code){
+
+    if(code === 0){
+        return "☀️";
+    }
+
+    if(code <= 3){
+        return "🌤️";
+    }
+
+    if(code <= 48){
+        return "🌫️";
+    }
+
+    if(code <= 67){
+        return "🌧️";
+    }
+
+    if(code <= 77){
+        return "❄️";
+    }
+
+    if(code <= 82){
+        return "🌦️";
+    }
+
+    if(code <= 99){
+        return "⛈️";
+    }
 
     return "🌤️";
 
 }
 
 
-/* =========================================================
-   PANCHANG
-========================================================= */
+/* =========================================
+   CLOCK
+========================================= */
 
-const modal =
-    document.getElementById("panchangModal");
+function updateClock(){
 
-document
-    .getElementById("openPanchang")
-    .addEventListener("click", openPanchang);
-
-
-document
-    .getElementById("closePanchang")
-    .addEventListener("click", closePanchang);
-
-
-modal.addEventListener("click", function(event) {
-
-    if (event.target === modal) {
-        closePanchang();
-    }
-
-});
-
-
-document.addEventListener("keydown", function(event) {
-
-    if (
-        event.key === "Escape" &&
-        modal.classList.contains("show")
-    ) {
-        closePanchang();
-    }
-
-});
-
-
-function openPanchang() {
-
-    modal.classList.add("show");
-
-    loadPanchang();
-
-}
-
-
-function closePanchang() {
-
-    modal.classList.remove("show");
-
-}
-
-
-/* =========================================================
-   PANCHANG API
-========================================================= */
-
-async function loadPanchang() {
-
-    const content =
-        document.getElementById("panchangContent");
-
-    const locationBox =
-        document.getElementById("panchangLocation");
-
-    const dateBox =
-        document.getElementById("panchangDate");
-
-
-    const today =
+    const now =
         new Date();
 
-    const date =
-        today.toISOString().slice(0,10);
 
-
-    dateBox.textContent =
-        today.toLocaleDateString(
-            "en-IN",
+    document.getElementById(
+        "currentTime"
+    ).textContent =
+        now.toLocaleTimeString(
+            [],
             {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                year: "numeric"
+                hour:"2-digit",
+                minute:"2-digit"
             }
         );
 
 
-    locationBox.innerHTML = `
-        <strong>${escapeHTML(userLocation.city)}</strong>
-        ${userLocation.state
-            ? ", " + escapeHTML(userLocation.state)
-            : ""}
-        · India
-        <br>
-        <small>
-            Location:
-            ${Number(userLocation.lat).toFixed(4)},
-            ${Number(userLocation.lon).toFixed(4)}
-        </small>
-    `;
-
-
-    content.innerHTML = `
-        <div class="panchang-loading">
-            Loading Panchang for ${escapeHTML(userLocation.city)}...
-        </div>
-    `;
-
-
-    /*
-       API Mitra provides a simple city/date Panchang endpoint.
-
-       For production use, we recommend moving the API request
-       to your Python backend so your site can support every
-       town/city and cache the result.
-    */
-
-    const city =
-        encodeURIComponent(
-            String(userLocation.city || "chennai")
-                .toLowerCase()
-                .replace(/\s+/g,"")
+    document.getElementById(
+        "currentDate"
+    ).textContent =
+        now.toLocaleDateString(
+            "en-IN",
+            {
+                weekday:"short",
+                day:"2-digit",
+                month:"short",
+                year:"numeric"
+            }
         );
 
-
-    try {
-
-        const apiUrl =
-            `https://api.apimitra.in/panchang?city=${city}&date=${date}`;
-
-
-        const response =
-            await fetch(apiUrl);
-
-
-        if (!response.ok) {
-            throw new Error("Panchang API failed");
-        }
-
-
-        const data =
-            await response.json();
-
-
-        if (
-            data &&
-            (
-                data.status === "ok" ||
-                data.tithi ||
-                data.nakshatra
-            )
-        ) {
-
-            renderPanchang(data);
-
-        } else {
-
-            throw new Error(
-                "No Panchang data returned"
-            );
-
-        }
-
-    } catch (error) {
-
-        console.error(error);
-
-        content.innerHTML = `
-
-            <div class="panchang-error">
-
-                <strong>
-                    Panchang data could not be loaded for this town.
-                </strong>
-
-                <br><br>
-
-                The location was detected as
-                <strong>${escapeHTML(userLocation.city)}</strong>.
-
-                <br><br>
-
-                Your production version should connect this
-                section to a full Panchang service so that
-                Tithi, Nakshatra, Yoga, Karana, sunrise,
-                sunset and local timings are calculated for
-                the exact location.
-
-            </div>
-
-        `;
-
-    }
-
 }
 
 
-/* =========================================================
-   RENDER PANCHANG
-========================================================= */
+updateClock();
 
-function renderPanchang(data) {
-
-    const content =
-        document.getElementById("panchangContent");
+setInterval(
+    updateClock,
+    1000
+);
 
 
-    const items = [
-
-        ["Vara / Day", data.weekday || "--"],
-
-        ["Tithi", data.tithi || "--"],
-
-        ["Paksha", data.paksha || "--"],
-
-        ["Nakshatra", data.nakshatra || "--"],
-
-        ["Yoga", data.yoga || "--"],
-
-        ["Karana", data.karana || "--"],
-
-        ["Sunrise", data.sunrise || "--"],
-
-        ["Sunset", data.sunset || "--"]
-
-    ];
-
-
-    let html = `
-        <div class="panchang-grid">
-    `;
-
-
-    items.forEach(item => {
-
-        html += `
-
-            <div class="panchang-item">
-
-                <div class="panchang-label">
-                    ${escapeHTML(item[0])}
-                </div>
-
-                <div class="panchang-value">
-                    ${escapeHTML(item[1])}
-                </div>
-
-            </div>
-
-        `;
-
-    });
-
-
-    html += `
-        </div>
-    `;
-
-
-    html += `
-
-        <div class="panchang-extra">
-
-            <h3>
-                Hindu Calendar Details
-            </h3>
-
-            <div class="panchang-grid">
-
-                <div class="panchang-item">
-
-                    <div class="panchang-label">
-                        Location
-                    </div>
-
-                    <div class="panchang-value">
-                        ${escapeHTML(userLocation.city)}
-                    </div>
-
-                </div>
-
-                <div class="panchang-item">
-
-                    <div class="panchang-label">
-                        Time Zone
-                    </div>
-
-                    <div class="panchang-value">
-                        Asia/Kolkata · IST
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    `;
-
-
-    content.innerHTML = html;
-
-}
-
-
-/* =========================================================
-   ESCAPE HTML
-========================================================= */
-
-function escapeHTML(value) {
-
-    return String(value ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-
-}
-
-
-/* =========================================================
+/* =========================================
    START
-========================================================= */
+========================================= */
 
-loadArticles();
+loadStories();
 
-detectLocation();
+loadWeather();
 
 </script>
 
