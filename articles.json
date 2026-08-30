@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T01:34:52.943422+00:00",
-  "total": 1436,
+  "updated_at": "2026-08-30T02:04:35.641262+00:00",
+  "total": 1441,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 119,
-    "India": 456,
+    "World": 121,
+    "India": 457,
     "Business": 170,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 308,
-    "Lifestyle": 151
+    "Entertainment": 309,
+    "Lifestyle": 152
   },
   "articles": [
     {
@@ -2189,6 +2189,17 @@
       "published_at": "2026-08-29T17:57:28+00:00",
       "source_url": "https://www.ndtv.com/india-news/3-teens-drown-in-assams-jorhat-during-birthday-celebration-11976096#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%203%20Teens%20Drown%20In%20Assam%27s%20Jorhat%20During%20Birthday%20Celebration.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4023529653",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f944df0c4e7b360fd836",
+      "category": "India",
+      "headline": "Amended fire rules notified, with broader safety checklist",
+      "summary": "Delhi notifies Fire Service Amendment Rules 2026, replacing inspections with auditor",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-29T17:52:56+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/amended-fire-rules-notified-with-broader-safety-checklist-101788025976958.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Amended%20fire%20rules%20notified%2C%20with%20broader%20safety%20checklist.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3551532737",
       "image_type": "ai_generated"
     },
     {
@@ -10079,6 +10090,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "45b1e3e4574c15bcd77a",
+      "category": "Entertainment",
+      "headline": "Harry Styles Shouts-Out Ex Taylor Swift’s Wedding During Madison Square Garden Show",
+      "summary": "On the opening night of his 30-concert residency at Madison Square Garden, pop superstar Harry Styles paid tribute to the late, great Dolly Parton. And at the tail end of Saturday night’s show, he shouted-out his ex-girlfriend Taylor Swift’s wedding to Travis Kelce. “We’re at Madison Square Garden, home of the world champion New York […]",
+      "publisher": "Variety",
+      "published_at": "2026-08-30T01:52:12+00:00",
+      "source_url": "https://variety.com/2026/music/news/harry-styles-shout-out-taylor-swift-wedding-travis-kelce-madison-square-garden-show-1236846748/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Harry%20Styles%20Shouts-Out%20Ex%20Taylor%20Swift%E2%80%99s%20Wedding%20During%20Madison%20Square%20Garden%20Show.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=924783823",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "759c0bf76d917602fa6e",
       "category": "Entertainment",
       "headline": "Where to Watch the 2026 College Football Season Online",
@@ -11465,14 +11487,47 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "2c92e12b5b8cea0d1abb",
+      "id": "f52fa72d310538979260",
       "category": "World",
-      "headline": "News live: limits on smartglasses being considered, Plibersek says; missing Australian woman located safely in Nepal",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as...",
+      "headline": "Australia news live: cabinet never discussed cutting refugee intake, Plibersek says; 13-year-old dies from head injuries after Queensland e-scooter crash",
+      "summary": "Boy sustained serious head injuries in single-vehicle crash on Wednesday. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as the Palm scheme, and...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T01:26:22+00:00",
+      "published_at": "2026-08-30T01:56:11+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20limits%20on%20smartglasses%20being%20considered%2C%20Plibersek%20says%3B%20missing%20Australian%20woman%20located%20safely%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4038879064",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20cabinet%20never%20discussed%20cutting%20refugee%20intake%2C%20Plibersek%20says%3B%2013-year-old%20dies%20from%20head%20injuries%20after%20Queensland%20e-scooter%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1649850947",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "3c270fb51c21e0917541",
+      "category": "World",
+      "headline": "Australia could make social media algorithms optional and follow UK ban on pornography depicting strangulation",
+      "summary": "Social services minister says social media was playing a role in the increase of sexual violence among teenagers Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast The Australian government is considering allowing users to opt in or opt out of social media algorithms, and is looking at a recent UK ban on depictions of strangulation and suffocation...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T01:49:30+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/30/australia-could-make-social-media-algorithms-optional-and-follow-uk-ban-on-pornography-depicting-strangulation",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20could%20make%20social%20media%20algorithms%20optional%20and%20follow%20UK%20ban%20on%20pornography%20depicting%20strangulation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3692660140",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "790d61c4e28e6527d2ea",
+      "category": "World",
+      "headline": "Icelanders vote on whether they want to join the EU",
+      "summary": "The final vote is expected to be extremely close, with ballot counting continuing through the night.",
+      "publisher": "NPR World",
+      "published_at": "2026-08-30T01:47:44+00:00",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948759/iceland-european-union-referendum-vote",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Icelanders%20vote%20on%20whether%20they%20want%20to%20join%20the%20EU.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2318014087",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7fa50f05c082da55a15a",
+      "category": "Lifestyle",
+      "headline": "Quote of the day by Cameron Diaz: 'I feel very grateful that I get to turn another year older, because not everybody…'",
+      "summary": "On embracing ageing and the wisdom that comes with it, revisit Cameron Diaz’s inspiring words on growing older and making the most of every year.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T01:30:00+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/art-culture/quote-of-the-day-by-cameron-diaz-i-feel-very-grateful-that-i-get-to-turn-another-year-older-because-not-everybody-does-101788010255633.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Quote%20of%20the%20day%20by%20Cameron%20Diaz%3A%20%27I%20feel%20very%20grateful%20that%20I%20get%20to%20turn%20another%20year%20older%2C%20because%20not%20everybody%E2%80%A6%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3119370485",
       "image_type": "ai_generated"
     },
     {
@@ -13118,7 +13173,7 @@
       "id": "7fd549cc1c43eb04380a",
       "category": "World",
       "headline": "Statins can safely cut risk of heart attacks or strokes in healthy people aged over 70, world-first clinical trial shows",
-      "summary": "Australian-led trial finds low risk of side effects from common cholesterol-lowering medication for otherwise healthy older people Taking a common cholesterol-lowering medication can reduce the risk of a heart attack or stroke for people aged over 70, with a low risk of serious side effects, a world-first clinical trial led by Australian researchers has found. Statins are already commonly prescribed to people...",
+      "summary": "Australian-led trial finds low risk of side effects from common cholesterol-lowering medication for otherwise healthy older people Taking a common cholesterol-lowering medication can reduce the risk of a heart attack or stroke for people aged over 70, with a low risk of serious side effects, a world",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T06:25:19+00:00",
       "source_url": "https://www.theguardian.com/australia-news/2026/aug/29/statins-reduce-risk-heart-attack-stroke-over-70s-clinical-trial",
