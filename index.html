@@ -10,7 +10,7 @@
 <style>
 :root{
   --navy:#071b3a;
-  --navy2:#102a52;
+  --navy-light:#102a52;
   --yellow:#f7c600;
   --red:#df252b;
   --green:#176b4d;
@@ -19,6 +19,7 @@
   --text:#101d32;
   --muted:#68758a;
   --border:#e4e9f0;
+  --soft:#eef2f7;
   --shadow:0 8px 28px rgba(7,27,58,.08);
 }
 
@@ -37,7 +38,9 @@ body{
   color:var(--text);
 }
 
-/* ================= HEADER ================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
 .header{
   background:#fff;
@@ -48,59 +51,83 @@ body{
 }
 
 .header-inner{
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
-  padding:18px 22px;
+  padding:18px 24px;
   display:flex;
   align-items:center;
-  gap:28px;
+  gap:30px;
 }
 
-/* LOGO */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo{
-  min-width:230px;
+  min-width:270px;
   text-decoration:none;
   color:var(--navy);
+  display:block;
 }
 
 .logo-main{
   display:flex;
   align-items:center;
-  line-height:.85;
+  line-height:.9;
   font-size:52px;
   font-weight:900;
   letter-spacing:-4px;
 }
 
+/*
+   The red dot belongs to the "i".
+*/
 .logo-snippet{
   position:relative;
+  display:inline-block;
 }
 
-.logo-snippet .red-dot{
+.logo-i{
+  position:relative;
+  display:inline-block;
+}
+
+/*
+   Hide the normal i dot and create our own red dot.
+   This makes the red dot clearly part of the i.
+*/
+.logo-i::before{
+  content:"";
   position:absolute;
-  width:9px;
-  height:9px;
+  width:10px;
+  height:10px;
   background:var(--red);
   border-radius:50%;
-  top:-10px;
-  left:49px;
+  top:-11px;
+  left:50%;
+  transform:translateX(-50%);
 }
 
 .logo-24{
-  margin-left:8px;
+  margin-left:20px;
   background:var(--yellow);
   color:#fff;
-  border-radius:16px;
-  padding:9px 12px 7px;
+  border-radius:17px;
+  padding:10px 15px 9px;
   font-size:48px;
+  font-weight:900;
   letter-spacing:-4px;
   line-height:.82;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:82px;
+  height:64px;
 }
 
 .slogan{
-  margin-top:12px;
-  margin-left:8px;
+  margin-top:13px;
+  margin-left:6px;
   font-size:12px;
   font-weight:800;
   letter-spacing:4px;
@@ -110,9 +137,13 @@ body{
 
 .slogan span{
   color:var(--red);
+  font-size:14px;
+  margin:0 4px;
 }
 
-/* SEARCH */
+/* =========================================================
+   SEARCH
+========================================================= */
 
 .search{
   flex:1;
@@ -123,11 +154,18 @@ body{
   align-items:center;
   padding:0 18px;
   background:#fff;
+  transition:.2s;
+}
+
+.search:focus-within{
+  border-color:var(--navy);
+  box-shadow:0 0 0 3px rgba(7,27,58,.06);
 }
 
 .search-icon{
-  font-size:18px;
+  font-size:13px;
   margin-right:10px;
+  color:var(--navy);
 }
 
 .search input{
@@ -135,14 +173,22 @@ body{
   outline:0;
   width:100%;
   font-size:15px;
+  color:var(--text);
+  background:transparent;
 }
 
-/* WEATHER / TIME */
+.search input::placeholder{
+  color:#8290a4;
+}
+
+/* =========================================================
+   WEATHER / TIME
+========================================================= */
 
 .header-info{
   display:flex;
   align-items:center;
-  gap:22px;
+  gap:20px;
   white-space:nowrap;
 }
 
@@ -157,12 +203,19 @@ body{
   font-size:25px;
 }
 
+.weather small{
+  color:var(--muted);
+  font-size:10px;
+}
+
 .time{
   font-weight:800;
   font-size:14px;
 }
 
-/* ================= NAVIGATION ================= */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .nav{
   background:#fff;
@@ -170,11 +223,11 @@ body{
 }
 
 .nav-inner{
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
-  padding:8px 18px;
+  padding:7px 20px;
   display:flex;
-  gap:6px;
+  gap:5px;
   overflow-x:auto;
   scrollbar-width:none;
 }
@@ -188,12 +241,13 @@ body{
   border:0;
   background:transparent;
   color:var(--navy);
-  padding:11px 15px;
-  border-radius:10px;
+  padding:11px 14px;
+  border-radius:9px;
   cursor:pointer;
-  font-size:13px;
+  font-size:12px;
   font-weight:700;
   transition:.2s;
+  white-space:nowrap;
 }
 
 .nav-item:hover,
@@ -212,7 +266,9 @@ body{
   color:#fff;
 }
 
-/* ================= LIVE BAR ================= */
+/* =========================================================
+   LIVE WIRE
+========================================================= */
 
 .livebar{
   background:var(--navy);
@@ -220,13 +276,22 @@ body{
 }
 
 .live-inner{
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
-  padding:9px 22px;
+  padding:9px 24px;
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;
   overflow:hidden;
+}
+
+.live-dot{
+  flex:0 0 auto;
+  width:8px;
+  height:8px;
+  background:var(--red);
+  border-radius:50%;
+  animation:pulse 1.3s infinite;
 }
 
 .live-label{
@@ -237,14 +302,6 @@ body{
   letter-spacing:1px;
 }
 
-.live-dot{
-  width:8px;
-  height:8px;
-  background:var(--red);
-  border-radius:50%;
-  animation:pulse 1.3s infinite;
-}
-
 .live-text{
   white-space:nowrap;
   overflow:hidden;
@@ -253,15 +310,19 @@ body{
 }
 
 @keyframes pulse{
-  50%{opacity:.35}
+  50%{
+    opacity:.35;
+  }
 }
 
-/* ================= MAIN ================= */
+/* =========================================================
+   MAIN
+========================================================= */
 
 .container{
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
-  padding:28px 22px 70px;
+  padding:30px 24px 70px;
 }
 
 .section-title{
@@ -282,30 +343,34 @@ body{
   background:var(--red);
 }
 
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
   display:grid;
   grid-template-columns:1.45fr 1fr;
-  gap:22px;
+  gap:25px;
 }
 
 .hero-image{
-  min-height:340px;
+  min-height:350px;
   border-radius:18px;
-  background:
-    linear-gradient(135deg,#e9eef5,#d9e1ec);
+  background:linear-gradient(135deg,#e9eef5,#d9e1ec);
   display:flex;
   align-items:center;
   justify-content:center;
   color:#7d8a9e;
   overflow:hidden;
+  position:relative;
 }
 
 .hero-image img{
   width:100%;
   height:100%;
+  min-height:350px;
   object-fit:cover;
+  display:block;
 }
 
 .hero-content{
@@ -323,7 +388,7 @@ body{
 }
 
 .hero h1{
-  font-size:34px;
+  font-size:36px;
   line-height:1.08;
   margin:15px 0;
   letter-spacing:-1px;
@@ -341,12 +406,14 @@ body{
   margin-top:20px;
 }
 
-/* ================= STORY GRID ================= */
+/* =========================================================
+   STORY GRID
+========================================================= */
 
 .story-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:14px;
+  gap:15px;
 }
 
 .story{
@@ -364,19 +431,21 @@ body{
 }
 
 .story-img{
-  height:135px;
+  height:145px;
   background:#e8edf4;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#8290a4;
   overflow:hidden;
+  font-size:12px;
 }
 
 .story-img img{
   width:100%;
   height:100%;
   object-fit:cover;
+  display:block;
 }
 
 .story-body{
@@ -400,10 +469,12 @@ body{
   margin-top:8px;
 }
 
-/* ================= CATEGORY BLOCKS ================= */
+/* =========================================================
+   CATEGORY SECTIONS
+========================================================= */
 
 .category-block{
-  margin-top:38px;
+  margin-top:42px;
 }
 
 .category-head{
@@ -434,7 +505,9 @@ body{
   gap:16px;
 }
 
-/* ================= GOOD READ ================= */
+/* =========================================================
+   GOOD READS
+========================================================= */
 
 .good-read{
   background:var(--navy);
@@ -456,10 +529,12 @@ body{
   color:var(--text);
 }
 
-/* ================= EMPTY / LOADING ================= */
+/* =========================================================
+   LOADING / ERROR
+========================================================= */
 
 .loading{
-  padding:50px;
+  padding:60px 20px;
   text-align:center;
   color:var(--muted);
 }
@@ -468,11 +543,13 @@ body{
   background:#fff1f1;
   color:#a71920;
   border:1px solid #ffd0d0;
-  padding:15px;
+  padding:18px;
   border-radius:10px;
 }
 
-/* ================= FOOTER ================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
   background:var(--navy);
@@ -481,9 +558,9 @@ footer{
 }
 
 .footer-inner{
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
-  padding:35px 22px;
+  padding:35px 24px;
   display:flex;
   justify-content:space-between;
   gap:25px;
@@ -504,9 +581,11 @@ footer{
   line-height:1.6;
 }
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
   .header-inner{
     flex-wrap:wrap;
@@ -515,23 +594,6 @@ footer{
 
   .logo{
     min-width:auto;
-  }
-
-  .logo-main{
-    font-size:40px;
-  }
-
-  .logo-24{
-    font-size:36px;
-  }
-
-  .slogan{
-    font-size:9px;
-    letter-spacing:2px;
-  }
-
-  .header-info{
-    margin-left:auto;
   }
 
   .search{
@@ -552,29 +614,62 @@ footer{
   }
 }
 
-@media(max-width:600px){
-
-  .container{
-    padding:20px 14px 50px;
-  }
+@media(max-width:700px){
 
   .header-inner{
     padding:14px;
   }
 
-  .weather{
-    display:none;
+  .logo-main{
+    font-size:40px;
+    letter-spacing:-3px;
   }
 
+  .logo-24{
+    margin-left:12px;
+    min-width:62px;
+    height:49px;
+    padding:8px 10px;
+    font-size:36px;
+    border-radius:13px;
+  }
+
+  .logo-i::before{
+    width:8px;
+    height:8px;
+    top:-8px;
+  }
+
+  .slogan{
+    font-size:9px;
+    letter-spacing:2px;
+    margin-top:10px;
+  }
+
+  .slogan span{
+    font-size:10px;
+    margin:0 2px;
+  }
+
+  .header-info{
+    margin-left:auto;
+  }
+
+  .weather,
   .time{
     display:none;
   }
 
-  .hero h1{
-    font-size:27px;
+  .container{
+    padding:20px 14px 50px;
   }
 
-  .hero-image{
+  .hero h1{
+    font-size:28px;
+  }
+
+  .hero-image,
+  .hero-image img{
     min-height:230px;
   }
 
@@ -585,10 +680,42 @@ footer{
 
   .nav-item{
     padding:10px 12px;
+    font-size:11px;
   }
 
   .footer-inner{
     flex-direction:column;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media(max-width:430px){
+
+  .logo-main{
+    font-size:34px;
+  }
+
+  .logo-24{
+    min-width:54px;
+    height:43px;
+    font-size:31px;
+    margin-left:9px;
+  }
+
+  .slogan{
+    font-size:7px;
+    letter-spacing:1.8px;
+  }
+
+  .search{
+    height:44px;
+  }
+
+  .hero h1{
+    font-size:25px;
   }
 }
 </style>
@@ -596,19 +723,23 @@ footer{
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- =======================================================
+     HEADER
+======================================================= -->
 
 <header class="header">
 
   <div class="header-inner">
 
-    <a class="logo" href="#" onclick="showHome();return false;">
+    <a class="logo"
+       href="#"
+       onclick="showHome();return false;"
+       aria-label="Snippet24 Home">
 
       <div class="logo-main">
 
         <span class="logo-snippet">
-          snippet
-          <span class="red-dot"></span>
+          sn<span class="logo-i">i</span>ppet
         </span>
 
         <span class="logo-24">24</span>
@@ -616,29 +747,44 @@ footer{
       </div>
 
       <div class="slogan">
-        FAST NEWS <span>•</span> REAL IMPACT <span>•</span>
+        FAST NEWS
+        <span>•</span>
+        REAL IMPACT
+        <span>•</span>
       </div>
 
     </a>
 
+
+    <!-- SEARCH -->
+
     <div class="search">
+
       <span class="search-icon">●</span>
+
       <input
         id="searchInput"
         type="search"
         placeholder="Search stories, topics, people..."
         oninput="searchStories(this.value)"
       >
+
     </div>
+
+
+    <!-- WEATHER / TIME -->
 
     <div class="header-info">
 
       <div class="weather">
+
         <span class="weather-icon">☀️</span>
+
         <div>
           <strong>28°C</strong><br>
           <small>Chennai, India</small>
         </div>
+
       </div>
 
       <div class="time" id="clock">
@@ -651,47 +797,72 @@ footer{
 
 </header>
 
-<!-- ================= SMART NAV ================= -->
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
 
 <nav class="nav">
 
   <div class="nav-inner">
 
-    <button class="nav-item home active" onclick="showHome()">⌂ Home</button>
+    <button
+      class="nav-item home active"
+      onclick="showHome()">
+      ⌂ Home
+    </button>
 
-    <button class="nav-item" onclick="filterCategory('In India')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('In India')">
       🇮🇳 In India
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Security and Peace')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Security and Peace')">
       🛡 Security & Peace
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Law Around Us')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Law Around Us')">
       ⚖ Law Around Us
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Science and Development')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Science and Development')">
       🔬 Science & Development
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Business and Economy')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Business and Economy')">
       ₹ Business & Economy
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Society and Culture')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Society and Culture')">
       👥 Society & Culture
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Human and Environment')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Human and Environment')">
       🌱 Human & Environment
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Tech and AI')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Tech and AI')">
       ◉ Tech & AI
     </button>
 
-    <button class="nav-item" onclick="filterCategory('Good Reads')">
+    <button
+      class="nav-item"
+      onclick="filterCategory('Good Reads')">
       ✦ Good Reads
     </button>
 
@@ -699,7 +870,10 @@ footer{
 
 </nav>
 
-<!-- ================= LIVE ================= -->
+
+<!-- =======================================================
+     LIVE WIRE
+======================================================= -->
 
 <div class="livebar">
 
@@ -707,9 +881,13 @@ footer{
 
     <span class="live-dot"></span>
 
-    <span class="live-label">LIVE WIRE</span>
+    <span class="live-label">
+      LIVE WIRE
+    </span>
 
-    <span class="live-text" id="liveText">
+    <span
+      class="live-text"
+      id="liveText">
       Latest news and important developments from India and around the world
     </span>
 
@@ -717,7 +895,10 @@ footer{
 
 </div>
 
-<!-- ================= MAIN ================= -->
+
+<!-- =======================================================
+     MAIN
+======================================================= -->
 
 <main class="container">
 
@@ -731,7 +912,10 @@ footer{
 
 </main>
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
 
 <footer>
 
@@ -750,12 +934,14 @@ footer{
     </div>
 
     <div class="footer-text">
-      © 2026 Snippet24. News, ideas and stories that matter.
+      © 2026 Snippet24.
+      News, ideas and stories that matter.
     </div>
 
   </div>
 
 </footer>
+
 
 <script>
 
@@ -766,17 +952,33 @@ footer{
 let articles = [];
 let filteredArticles = [];
 
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
 const categories = [
+
   "In India",
+
   "Security and Peace",
+
   "Law Around Us",
+
   "Science and Development",
+
   "Business and Economy",
+
   "Society and Culture",
+
   "Human and Environment",
+
   "Tech and AI",
+
   "Good Reads"
+
 ];
+
 
 /* =========================================================
    LOAD ARTICLES.JSON
@@ -786,49 +988,84 @@ async function loadArticles(){
 
   try{
 
-    const response = await fetch("articles.json");
+    const response =
+      await fetch("articles.json");
 
     if(!response.ok){
-      throw new Error("Unable to load articles.json");
+
+      throw new Error(
+        "Unable to load articles.json"
+      );
+
     }
 
-    const data = await response.json();
+    const data =
+      await response.json();
+
 
     if(Array.isArray(data)){
+
       articles = data;
+
     }
+
     else if(Array.isArray(data.articles)){
+
       articles = data.articles;
+
     }
+
     else if(Array.isArray(data.items)){
+
       articles = data.items;
+
     }
+
     else{
+
       articles = [];
+
     }
+
 
     filteredArticles = articles;
 
     renderHome();
 
+    updateLiveWire();
+
   }
+
   catch(error){
 
     console.error(error);
 
     document.getElementById("app").innerHTML = `
+
       <div class="error">
-        <strong>News could not be loaded.</strong><br><br>
-        Please check that <b>articles.json</b> is present in the same GitHub folder as index.html.
+
+        <strong>
+          News could not be loaded.
+        </strong>
+
+        <br><br>
+
+        Please check that
+        <b>articles.json</b>
+        is present in the same GitHub folder
+        as index.html.
+
       </div>
+
     `;
 
   }
 
 }
 
+
 /* =========================================================
-   GET ARTICLE VALUES
+   GET TITLE
 ========================================================= */
 
 function getTitle(article){
@@ -840,6 +1077,11 @@ function getTitle(article){
 
 }
 
+
+/* =========================================================
+   GET DESCRIPTION
+========================================================= */
+
 function getDescription(article){
 
   return article.description ||
@@ -849,6 +1091,11 @@ function getDescription(article){
          "";
 
 }
+
+
+/* =========================================================
+   GET IMAGE
+========================================================= */
 
 function getImage(article){
 
@@ -861,6 +1108,11 @@ function getImage(article){
 
 }
 
+
+/* =========================================================
+   GET CATEGORY
+========================================================= */
+
 function getCategory(article){
 
   return article.category ||
@@ -869,6 +1121,11 @@ function getCategory(article){
          "In India";
 
 }
+
+
+/* =========================================================
+   GET SOURCE
+========================================================= */
 
 function getSource(article){
 
@@ -879,6 +1136,11 @@ function getSource(article){
 
 }
 
+
+/* =========================================================
+   GET TIME
+========================================================= */
+
 function getTime(article){
 
   return article.time ||
@@ -888,34 +1150,21 @@ function getTime(article){
 
 }
 
+
 /* =========================================================
-   IMAGE
+   NORMALISE
 ========================================================= */
 
-function imageHTML(article,className){
+function normalise(value){
 
-  const image = getImage(article);
-
-  if(!image){
-    return `
-      <div class="${className}">
-        Image unavailable
-      </div>
-    `;
-  }
-
-  return `
-    <div class="${className}">
-      <img
-        src="${escapeHTML(image)}"
-        alt=""
-        loading="lazy"
-        onerror="this.parentElement.innerHTML='Image unavailable'"
-      >
-    </div>
-  `;
+  return String(value || "")
+    .toLowerCase()
+    .replace(/&/g,"and")
+    .replace(/[^a-z0-9]+/g," ")
+    .trim();
 
 }
+
 
 /* =========================================================
    ESCAPE HTML
@@ -932,6 +1181,46 @@ function escapeHTML(value){
 
 }
 
+
+/* =========================================================
+   IMAGE HTML
+========================================================= */
+
+function imageHTML(article,className){
+
+  const image = getImage(article);
+
+  if(!image){
+
+    return `
+
+      <div class="${className}">
+        Image unavailable
+      </div>
+
+    `;
+
+  }
+
+
+  return `
+
+    <div class="${className}">
+
+      <img
+        src="${escapeHTML(image)}"
+        alt=""
+        loading="lazy"
+        onerror="this.parentElement.innerHTML='Image unavailable'"
+      >
+
+    </div>
+
+  `;
+
+}
+
+
 /* =========================================================
    STORY CARD
 ========================================================= */
@@ -939,6 +1228,7 @@ function escapeHTML(value){
 function storyCard(article){
 
   return `
+
     <article class="story">
 
       ${imageHTML(article,"story-img")}
@@ -954,31 +1244,56 @@ function storyCard(article){
         </h3>
 
         <div class="meta">
+
           ${escapeHTML(getTime(article))}
-          ${getTime(article) ? " • " : ""}
+
+          ${
+            getTime(article)
+              ? " • "
+              : ""
+          }
+
           ${escapeHTML(getSource(article))}
+
         </div>
 
       </div>
 
     </article>
+
   `;
 
 }
 
+
 /* =========================================================
-   HOME
+   SHOW HOME
 ========================================================= */
 
 function showHome(){
 
-  document.querySelectorAll(".nav-item")
-    .forEach(x => x.classList.remove("active"));
+  document
+    .querySelectorAll(".nav-item")
+    .forEach(item =>
+      item.classList.remove("active")
+    );
 
-  document.querySelector(".nav-item.home")
-    .classList.add("active");
 
-  document.getElementById("searchInput").value="";
+  const home =
+    document.querySelector(".nav-item.home");
+
+  if(home){
+    home.classList.add("active");
+  }
+
+
+  const search =
+    document.getElementById("searchInput");
+
+  if(search){
+    search.value = "";
+  }
+
 
   filteredArticles = articles;
 
@@ -991,8 +1306,9 @@ function showHome(){
 
 }
 
+
 /* =========================================================
-   HOME RENDER
+   RENDER HOME
 ========================================================= */
 
 function renderHome(){
@@ -1000,18 +1316,31 @@ function renderHome(){
   if(!articles.length){
 
     document.getElementById("app").innerHTML = `
+
       <div class="loading">
         No stories available.
       </div>
+
     `;
 
     return;
 
   }
 
-  const hero = articles[0];
 
-  const secondary = articles.slice(1,5);
+  const data =
+    filteredArticles.length
+      ? filteredArticles
+      : articles;
+
+
+  const hero =
+    data[0];
+
+
+  const secondary =
+    data.slice(1,5);
+
 
   let html = `
 
@@ -1019,9 +1348,11 @@ function renderHome(){
       Latest Stories
     </div>
 
+
     <section class="hero">
 
       ${imageHTML(hero,"hero-image")}
+
 
       <div class="hero-content">
 
@@ -1029,41 +1360,75 @@ function renderHome(){
           ${escapeHTML(getCategory(hero))}
         </span>
 
+
         <h1>
           ${escapeHTML(getTitle(hero))}
         </h1>
 
+
         <p>
-          ${escapeHTML(getDescription(hero)).substring(0,280)}
+          ${escapeHTML(
+            getDescription(hero)
+          ).substring(0,280)}
         </p>
 
+
         <div class="meta">
+
           ${escapeHTML(getTime(hero))}
-          ${getTime(hero) ? " • " : ""}
+
+          ${
+            getTime(hero)
+              ? " • "
+              : ""
+          }
+
           ${escapeHTML(getSource(hero))}
+
         </div>
 
       </div>
 
     </section>
 
+
     <div style="height:18px"></div>
+
 
     <section class="story-grid">
 
-      ${secondary.map(storyCard).join("")}
+      ${
+        secondary
+          .map(storyCard)
+          .join("")
+      }
 
     </section>
 
   `;
 
+
+  /*
+     Category sections
+  */
+
   categories.forEach(category => {
 
-    const items = articles
-      .filter(a => normalise(getCategory(a)) === normalise(category))
-      .slice(0,6);
+    const items =
+      articles
+        .filter(article =>
+          normalise(
+            getCategory(article)
+          ) ===
+          normalise(category)
+        )
+        .slice(0,6);
 
-    if(!items.length) return;
+
+    if(!items.length){
+      return;
+    }
+
 
     html += `
 
@@ -1075,15 +1440,21 @@ function renderHome(){
             ${escapeHTML(category)}
           </h2>
 
-          <button onclick="filterCategory('${escapeHTML(category)}')">
+          <button
+            onclick="filterCategory('${escapeHTML(category)}')">
             View all →
           </button>
 
         </div>
 
+
         <div class="category-grid">
 
-          ${items.map(storyCard).join("")}
+          ${
+            items
+              .map(storyCard)
+              .join("")
+          }
 
         </div>
 
@@ -1093,33 +1464,147 @@ function renderHome(){
 
   });
 
-  document.getElementById("app").innerHTML = html;
+
+  /*
+     Good Reads section
+  */
+
+  const goodReads =
+    articles
+      .filter(article =>
+        normalise(
+          getCategory(article)
+        ) === normalise("Good Reads")
+      )
+      .slice(0,3);
+
+
+  if(goodReads.length){
+
+    html += `
+
+      <section class="good-read">
+
+        <div class="section-title">
+          Good Reads
+        </div>
+
+
+        <div class="category-grid">
+
+          ${
+            goodReads
+              .map(storyCard)
+              .join("")
+          }
+
+        </div>
+
+      </section>
+
+    `;
+
+  }
+
+
+  document.getElementById("app").innerHTML =
+    html;
 
 }
+
 
 /* =========================================================
-   CATEGORY FILTER
+   FILTER CATEGORY
 ========================================================= */
-
-function normalise(value){
-
-  return String(value || "")
-    .toLowerCase()
-    .replace(/&/g,"and")
-    .replace(/[^a-z0-9]/g,"");
-
-}
 
 function filterCategory(category){
 
-  document.querySelectorAll(".nav-item")
-    .forEach(x => x.classList.remove("active"));
+  document
+    .querySelectorAll(".nav-item")
+    .forEach(item =>
+      item.classList.remove("active")
+    );
 
-  filteredArticles = articles.filter(article =>
-    normalise(getCategory(article)) === normalise(category)
-  );
+
+  const buttons =
+    document.querySelectorAll(".nav-item");
+
+
+  buttons.forEach(button => {
+
+    if(
+      normalise(button.textContent)
+        .includes(
+          normalise(category)
+            .split(" ")[0]
+        )
+    ){
+
+      button.classList.add("active");
+
+    }
+
+  });
+
+
+  filteredArticles =
+    articles.filter(article =>
+      normalise(
+        getCategory(article)
+      ) ===
+      normalise(category)
+    );
+
+
+  /*
+     If exact category isn't found,
+     try partial matching.
+  */
 
   if(!filteredArticles.length){
+
+    filteredArticles =
+      articles.filter(article =>
+        normalise(
+          getCategory(article)
+        ).includes(
+          normalise(category)
+        )
+      );
+
+  }
+
+
+  const search =
+    document.getElementById("searchInput");
+
+  if(search){
+    search.value="";
+  }
+
+
+  renderFilteredCategory(category);
+
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+/* =========================================================
+   RENDER CATEGORY
+========================================================= */
+
+function renderFilteredCategory(category){
+
+  const data =
+    filteredArticles;
+
+
+  if(!data.length){
 
     document.getElementById("app").innerHTML = `
 
@@ -1137,26 +1622,32 @@ function filterCategory(category){
 
   }
 
-  document.getElementById("app").innerHTML = `
+
+  let html = `
 
     <div class="section-title">
       ${escapeHTML(category)}
     </div>
 
-    <div class="category-grid">
 
-      ${filteredArticles.map(storyCard).join("")}
+    <section class="story-grid">
 
-    </div>
+      ${
+        data
+          .map(storyCard)
+          .join("")
+      }
+
+    </section>
 
   `;
 
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
-  });
+
+  document.getElementById("app").innerHTML =
+    html;
 
 }
+
 
 /* =========================================================
    SEARCH
@@ -1164,71 +1655,103 @@ function filterCategory(category){
 
 function searchStories(query){
 
-  query = query.trim().toLowerCase();
+  const value =
+    normalise(query);
 
-  if(!query){
+
+  if(!value){
+
+    filteredArticles = articles;
 
     renderHome();
+
     return;
 
   }
 
-  const results = articles.filter(article => {
 
-    const text = [
+  filteredArticles =
+    articles.filter(article => {
 
-      getTitle(article),
-      getDescription(article),
-      getCategory(article),
-      getSource(article)
+      const title =
+        normalise(getTitle(article));
 
-    ].join(" ").toLowerCase();
+      const description =
+        normalise(
+          getDescription(article)
+        );
 
-    return text.includes(query);
+      const category =
+        normalise(
+          getCategory(article)
+        );
 
-  });
+      const source =
+        normalise(
+          getSource(article)
+        );
+
+
+      return (
+
+        title.includes(value) ||
+
+        description.includes(value) ||
+
+        category.includes(value) ||
+
+        source.includes(value)
+
+      );
+
+    });
+
+
+  if(!filteredArticles.length){
+
+    document.getElementById("app").innerHTML = `
+
+      <div class="section-title">
+        Search Results
+      </div>
+
+      <div class="loading">
+
+        No stories found for
+        <strong>
+          "${escapeHTML(query)}"
+        </strong>.
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
 
   document.getElementById("app").innerHTML = `
 
     <div class="section-title">
-      Search results
+      Search Results
     </div>
 
-    ${
-      results.length
-      ?
-      `<div class="category-grid">
-        ${results.map(storyCard).join("")}
-      </div>`
-      :
-      `<div class="loading">
-        No stories found for "<strong>${escapeHTML(query)}</strong>"
-      </div>`
-    }
+
+    <section class="story-grid">
+
+      ${
+        filteredArticles
+          .map(storyCard)
+          .join("")
+      }
+
+    </section>
 
   `;
 
 }
 
-/* =========================================================
-   CLOCK
-========================================================= */
-
-function updateClock(){
-
-  const now = new Date();
-
-  document.getElementById("clock").textContent =
-    now.toLocaleTimeString("en-IN",{
-      hour:"numeric",
-      minute:"2-digit"
-    });
-
-}
-
-updateClock();
-
-setInterval(updateClock,30000);
 
 /* =========================================================
    LIVE WIRE
@@ -1236,17 +1759,100 @@ setInterval(updateClock,30000);
 
 function updateLiveWire(){
 
-  if(!articles.length) return;
+  const liveText =
+    document.getElementById("liveText");
 
-  const index =
-    Math.floor(Date.now()/5000) % articles.length;
 
-  document.getElementById("liveText").textContent =
-    getTitle(articles[index]);
+  if(
+    !liveText ||
+    !articles.length
+  ){
+
+    return;
+
+  }
+
+
+  const headlines =
+    articles
+      .slice(0,10)
+      .map(article =>
+        getTitle(article)
+      )
+      .filter(Boolean);
+
+
+  if(!headlines.length){
+    return;
+  }
+
+
+  let index = 0;
+
+
+  function rotateHeadline(){
+
+    liveText.textContent =
+      headlines[index];
+
+
+    index =
+      (index + 1) %
+      headlines.length;
+
+  }
+
+
+  rotateHeadline();
+
+
+  setInterval(
+    rotateHeadline,
+    5000
+  );
 
 }
 
-setInterval(updateLiveWire,5000);
+
+/* =========================================================
+   CLOCK
+========================================================= */
+
+function updateClock(){
+
+  const clock =
+    document.getElementById("clock");
+
+
+  if(!clock){
+    return;
+  }
+
+
+  const now =
+    new Date();
+
+
+  clock.textContent =
+    now.toLocaleTimeString(
+      "en-IN",
+      {
+        hour:"numeric",
+        minute:"2-digit"
+      }
+    );
+
+}
+
+
+setInterval(
+  updateClock,
+  1000
+);
+
+
+updateClock();
+
 
 /* =========================================================
    START
