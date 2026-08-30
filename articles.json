@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T04:56:28.847989+00:00",
-  "total": 1521,
+  "updated_at": "2026-08-30T05:01:49.637237+00:00",
+  "total": 1524,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 123,
-    "India": 482,
+    "India": 483,
     "Business": 172,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 319,
-    "Lifestyle": 193
+    "Entertainment": 320,
+    "Lifestyle": 194
   },
   "articles": [
     {
@@ -751,6 +751,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "d67c89d685a10dfd4e41",
+      "category": "India",
+      "headline": "Can an accused be denied a copy of the FIR? | Explained",
+      "summary": "A three-judge Bench headed by Chief Justice of India (CJI) Surya Kant directed the Ghaziabad Police Commissioner to provide him with the FIR and CCTV footage and to file a compliance report by September 7. It also protected him from arrest and allowed him to approach the jurisdictional High Court for further relief.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T04:38:40+00:00",
+      "source_url": "https://www.thehindu.com/news/national/can-an-accused-be-denied-a-copy-of-the-fir-explained/article71405905.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Can%20an%20accused%20be%20denied%20a%20copy%20of%20the%20FIR%3F%20%7C%20Explained.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3157807259",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "3b7ac6b287d04ceddccd",
       "category": "India",
       "headline": "HT Morning Brief Aug 30: PM Modi in Uzbekistan, Mohan Bhagwat stresses unity in diversity",
@@ -803,17 +814,6 @@
       "published_at": "2026-08-29T20:57:56+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Will%20work%20with%20SCO%20to%20free%20region%20from%20terror%3A%20PM%20Modi%20ahead%20of%20summit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2497533734",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "d67c89d685a10dfd4e41",
-      "category": "India",
-      "headline": "Can an accused be denied a copy of the FIR? | Explained",
-      "summary": "A three-judge Bench headed by Chief Justice of India (CJI) Surya Kant directed the Ghaziabad Police Commissioner to provide him with the FIR and CCTV footage and to file a compliance report by September 7. It also protected him from arrest and allowed him to approach the jurisdictional High Court for further relief.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T18:15:57+00:00",
-      "source_url": "https://www.thehindu.com/news/national/can-an-accused-be-denied-a-copy-of-the-fir-explained/article71405905.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Can%20an%20accused%20be%20denied%20a%20copy%20of%20the%20FIR%3F%20%7C%20Explained.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3157807259",
       "image_type": "ai_generated"
     },
     {
@@ -2082,6 +2082,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "a720984c5e095dd46eb6",
+      "category": "Entertainment",
+      "headline": "Bethlehem Kudumba Unit Worldwide Box Office Collection Day 9: Beats Sarvam Maya To Become Nivin Pauly’s Highest Grossing Film",
+      "summary": "Nivin Pauly’s latest film Bethlehem Kudumba Unit has surpassed the lifetime collection of Sarvam Maya. The post appeared first on Koimoi .",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-30T05:01:20+00:00",
+      "source_url": "https://www.koimoi.com/box-office/bethlehem-kudumba-unit-worldwide-box-office-collection-day-9-beats-sarvam-maya-to-become-nivin-paulys-highest-grossing-film/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Bethlehem%20Kudumba%20Unit%20Worldwide%20Box%20Office%20Collection%20Day%209%3A%20Beats%20Sarvam%20Maya%20To%20Become%20Nivin%20Pauly%E2%80%99s%20Highest%20Grossing%20Film.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3047025770",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "baedbebf40d1caf003fd",
+      "category": "India",
+      "headline": "Watch: Parandur airport scrapped: What do the youth say? | The Hindu Ground Report",
+      "summary": "Following Chief Minister C. Joseph Vijay’s announcement to officially drop the proposed greenfield airport at Parandur, social media and political corridors have been consumed by debates over Chennai’s aviation capacity, economic growth, and ecological preservation. This ground report focuses on the voices living with the immediate consequences: the local youth across Parandur’s affected belt, whose lives and...",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T04:51:26+00:00",
+      "source_url": "https://www.thehindu.com/videos/watch-parandur-airport-scrapped-what-do-the-youth-say-the-hindu-ground-report/article71407036.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Watch%3A%20Parandur%20airport%20scrapped%3A%20What%20do%20the%20youth%20say%3F%20%7C%20The%20Hindu%20Ground%20Report.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1197597369",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b5922a7787ea753907d4",
       "category": "Entertainment",
       "headline": "Tim McGraw health update: Country star brushes off onstage fall during Cincinnati concert",
@@ -2090,6 +2112,17 @@
       "published_at": "2026-08-30T04:38:47+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/music/tim-mcgraw-health-update-country-star-brushes-off-onstage-fall-during-cincinnati-concert-101788055316043.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tim%20McGraw%20health%20update%3A%20Country%20star%20brushes%20off%20onstage%20fall%20during%20Cincinnati%20concert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=857344272",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "35b1d0b92d9563ee8175",
+      "category": "Lifestyle",
+      "headline": "'4 feet 11 inch Indian mom in NYC' gets honest about her fitness mindset shift that changed everything: 'I stopped...'",
+      "summary": "This Indian mom from New York stopped chasing hard workouts and found something better",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T04:37:00+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/4-feet-11-inch-indian-mom-in-nyc-gets-honest-about-her-fitness-mindset-shift-that-changed-everything-i-stopped-measuring-101788063113850.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%274%20feet%2011%20inch%20Indian%20mom%20in%20NYC%27%20gets%20honest%20about%20her%20fitness%20mindset%20shift%20that%20changed%20everything%3A%20%27I%20stopped...%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3270605008",
       "image_type": "ai_generated"
     },
     {
@@ -4832,6 +4865,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "517dd646b6e195103106",
+      "category": "India",
+      "headline": "The Bhotekoshi flood | A Himalayan tragedy",
+      "summary": "Scientists investigate how a high-altitude rock-and-ice avalanche may have triggered one of Nepal’s most devastating floods; while experts have not directly attributed this event to climate change, they note that rising temperatures are warming the Himalayas and accelerating glacier melt",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T04:16:06+00:00",
+      "source_url": "https://www.thehindu.com/news/national/the-bhotekoshi-flood-a-himalayan-tragedy/article71405842.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20The%20Bhotekoshi%20flood%20%7C%20A%20Himalayan%20tragedy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1053456283",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "72f5c9c92445c7c62957",
       "category": "India",
       "headline": "30-year-old man arrested for allegedly raping 11-year-old relative in Haryana's Palwal",
@@ -5291,17 +5335,6 @@
       "published_at": "2026-08-29T18:08:54+00:00",
       "source_url": "https://www.thehindu.com/news/national/tamil-nadu/two-men-from-ap-held-for-taking-photographs-inside-arunachaleswarar-temple/article71404599.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Two%20men%20from%20A.P.%20held%20for%20taking%20photographs%20inside%20Arunachaleswarar%20temple.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3570205025",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "517dd646b6e195103106",
-      "category": "India",
-      "headline": "The Bhotekoshi flood | A Himalayan tragedy",
-      "summary": "Scientists investigate how a high-altitude rock-and-ice avalanche may have triggered one of Nepal’s most devastating floods; while experts have not directly attributed this event to climate change, they note that rising temperatures are warming the Himalayas and accelerating glacier melt",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T18:04:29+00:00",
-      "source_url": "https://www.thehindu.com/news/national/the-bhotekoshi-flood-a-himalayan-tragedy/article71405842.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20The%20Bhotekoshi%20flood%20%7C%20A%20Himalayan%20tragedy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1053456283",
       "image_type": "ai_generated"
     },
     {
