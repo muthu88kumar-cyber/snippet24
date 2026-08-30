@@ -6,20 +6,32 @@
 
 <title>Snippet24 — Fast News. Real Impact.</title>
 
+<meta
+  name="description"
+  content="Snippet24 — concise AI-assisted news from approved public sources."
+>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@400;500;600;700;800;900&family=Noto+Sans+Telugu:wght@400;500;600;700;800;900&family=Noto+Sans+Kannada:wght@400;500;600;700;800;900&family=Noto+Sans+Malayalam:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+>
+
 <style>
+
 :root{
-  --navy:#09233F;
-  --navy2:#12365C;
-  --red:#E51F2A;
-  --yellow:#F8C400;
-  --white:#FFFFFF;
-  --bg:#F5F7FA;
-  --text:#10233F;
-  --muted:#68778D;
-  --line:#E1E7EF;
-  --soft:#EAF0F7;
-  --green:#17804A;
-  --shadow:0 8px 28px rgba(9,35,63,.08);
+  --navy:#071b3a;
+  --navy2:#0d2b55;
+  --red:#df252b;
+  --yellow:#f7c600;
+  --bg:#f4f7fb;
+  --white:#ffffff;
+  --text:#0c1c35;
+  --muted:#6c7890;
+  --border:#e1e7ef;
+  --shadow:0 10px 30px rgba(7,27,58,.08);
 }
 
 *{
@@ -34,12 +46,7 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  font-family:
-    Inter,
-    "Noto Sans",
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family:Inter,Arial,sans-serif;
 }
 
 button,
@@ -47,104 +54,106 @@ input{
   font:inherit;
 }
 
-button{
-  cursor:pointer;
-}
-
 a{
   color:inherit;
-  text-decoration:none;
 }
+
 
 /* =========================================================
    HEADER
 ========================================================= */
 
-.site-header{
+.top-header{
   background:#fff;
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--border);
 }
 
-.header-main{
-  max-width:1500px;
-  min-height:100px;
+.header-inner{
+  max-width:1200px;
   margin:auto;
-  padding:16px 28px;
+  padding:16px 20px 13px;
   display:grid;
-  grid-template-columns:300px minmax(300px,1fr) auto;
-  gap:32px;
+  grid-template-columns:235px 1fr auto;
   align-items:center;
+  gap:28px;
 }
+
 
 /* =========================================================
    SNIPPET24 LOGO
-   IMPORTANT:
-   Keep the original logo.
-   Only the dot over "i" is red.
+   KEEP THIS DESIGN
+   ONLY THE "i" DOT IS RED
 ========================================================= */
 
-.brand{
-  display:block;
-  width:max-content;
+.logo-wrap{
+  min-width:0;
 }
 
 .logo{
   display:flex;
-  align-items:center;
-  height:48px;
-  color:var(--navy);
-  font-size:43px;
-  line-height:1;
-  font-weight:800;
-  letter-spacing:-2.7px;
-}
-
-.logo-snippet{
-  position:relative;
-  display:inline-block;
-  color:var(--navy);
-}
-
-/* ONLY THIS DOT IS RED */
-.logo-i-dot{
-  position:absolute;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--red);
-  top:-5px;
-  left:calc(100% - 38px);
-  pointer-events:none;
-}
-
-.logo-24{
-  margin-left:10px;
-  padding:7px 13px 8px;
-  border-radius:10px;
-  background:var(--yellow);
-  color:#fff;
-  font-size:34px;
-  font-weight:900;
-  letter-spacing:-2px;
-  line-height:1;
-}
-
-.slogan{
-  margin-top:8px;
-  padding-left:4px;
-  color:var(--navy);
-  font-size:10px;
-  line-height:1;
-  letter-spacing:4px;
-  font-weight:900;
+  align-items:flex-start;
+  gap:8px;
   white-space:nowrap;
 }
 
-.slogan .dot{
-  color:var(--red);
-  margin:0 4px;
-  font-size:13px;
+.logo-word{
+  display:flex;
+  align-items:flex-start;
+  color:var(--navy);
+  font-size:50px;
+  line-height:.78;
+  font-weight:900;
+  letter-spacing:.8px;
 }
+
+.logo-letter{
+  display:inline-block;
+  position:relative;
+}
+
+.logo-i::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:var(--red);
+  border-radius:50%;
+  top:-10px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.logo-24{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:58px;
+  height:52px;
+  padding:5px 10px;
+  background:var(--yellow);
+  color:#fff;
+  border-radius:13px;
+  font-size:45px;
+  line-height:.8;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.slogan{
+  margin-top:14px;
+  font-size:10px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:4px;
+  color:var(--navy);
+  white-space:nowrap;
+}
+
+.slogan .red-dot{
+  color:var(--red);
+  padding:0 7px;
+}
+
 
 /* =========================================================
    SEARCH
@@ -154,922 +163,1082 @@ a{
   height:46px;
   display:flex;
   align-items:center;
-  gap:10px;
   padding:0 17px;
-  background:#FAFBFD;
-  border:1px solid var(--line);
-  border-radius:25px;
-}
-
-.search-box:focus-within{
+  border:1px solid var(--border);
+  border-radius:26px;
   background:#fff;
-  border-color:#AEBBCD;
-  box-shadow:0 0 0 4px rgba(9,35,63,.05);
 }
 
 .search-icon{
-  color:var(--muted);
-  font-size:17px;
+  margin-right:9px;
+  color:var(--navy);
 }
 
 .search-box input{
   width:100%;
   border:0;
   outline:0;
-  background:transparent;
   color:var(--text);
+  background:transparent;
   font-size:13px;
 }
 
+
 /* =========================================================
-   HEADER RIGHT
+   WEATHER / TIME
 ========================================================= */
 
 .header-right{
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:18px;
+  white-space:nowrap;
 }
 
 .weather-box{
-  min-width:145px;
-  padding-right:18px;
-  border-right:1px solid var(--line);
-}
-
-.weather-main{
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:9px;
+  cursor:pointer;
 }
 
 .weather-icon{
-  font-size:24px;
+  font-size:27px;
 }
 
-.weather-temp{
-  color:var(--navy);
+.temperature{
   font-size:14px;
   font-weight:900;
 }
 
-.weather-location{
-  margin-top:3px;
-  color:var(--muted);
+.city{
   font-size:9px;
+  color:var(--muted);
+  margin-top:2px;
+  max-width:180px;
 }
 
-.clock-box{
-  min-width:120px;
+.time-box{
+  padding-left:17px;
+  border-left:1px solid var(--border);
+  cursor:pointer;
 }
 
-.clock-time{
-  color:var(--navy);
-  font-size:13px;
+.time{
+  font-size:14px;
   font-weight:900;
 }
 
-.clock-date{
-  margin-top:3px;
-  color:var(--muted);
+.date{
   font-size:9px;
+  color:var(--muted);
+  margin-top:3px;
 }
 
-.live-status{
-  display:flex;
-  align-items:center;
-  gap:7px;
-  color:var(--red);
-  font-size:10px;
-  font-weight:900;
-}
-
-.live-dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--red);
-  animation:pulse 1.4s infinite;
-}
-
-@keyframes pulse{
-  0%,100%{
-    opacity:1;
-  }
-  50%{
-    opacity:.35;
-  }
-}
 
 /* =========================================================
-   CATEGORY BAR
+   CATEGORY NAVIGATION
 ========================================================= */
 
-.category-bar{
+.category-nav{
   background:#fff;
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--border);
 }
 
-.category-scroll{
-  max-width:1500px;
+.category-inner{
+  max-width:1200px;
   margin:auto;
-  padding:0 20px;
   display:flex;
+  gap:3px;
+  padding:7px 18px;
   overflow-x:auto;
   scrollbar-width:none;
 }
 
-.category-scroll::-webkit-scrollbar{
+.category-inner::-webkit-scrollbar{
   display:none;
 }
 
-.category-btn{
-  position:relative;
-  flex:none;
-  min-height:55px;
-  padding:0 14px;
-  border:0;
-  background:transparent;
-  color:#53647A;
-  display:flex;
-  align-items:center;
-  gap:7px;
+.category-link{
+  flex:0 0 auto;
+  padding:9px 11px;
+  border-radius:8px;
+  text-decoration:none;
+  color:var(--navy);
   font-size:11px;
-  font-weight:850;
-  white-space:nowrap;
+  font-weight:800;
+  transition:.2s;
 }
 
-.category-btn:hover{
-  color:var(--navy);
+.category-link:hover{
+  background:#eef2f7;
 }
 
-.category-btn.active{
+.category-link.active{
   color:var(--red);
+  border-bottom:3px solid var(--red);
 }
 
-.category-btn.active:after{
-  content:"";
-  position:absolute;
-  left:12px;
-  right:12px;
-  bottom:0;
-  height:3px;
-  border-radius:4px 4px 0 0;
-  background:var(--red);
-}
-
-.cat-icon{
-  font-size:15px;
-  color:var(--navy);
-}
 
 /* =========================================================
    LIVE WIRE
 ========================================================= */
 
-.ticker{
-  background:var(--navy);
-  color:#fff;
-  overflow:hidden;
-}
-
-.ticker-inner{
-  max-width:1500px;
-  height:40px;
-  margin:auto;
+.live-wire{
+  height:37px;
   display:flex;
   align-items:center;
-  padding:0 28px;
   overflow:hidden;
+  background:var(--navy);
+  color:#fff;
 }
 
-.ticker-label{
-  flex:none;
+.live-label{
+  flex:0 0 auto;
   display:flex;
   align-items:center;
   gap:7px;
-  margin-right:20px;
-  color:var(--yellow);
-  font-size:10px;
-  font-weight:950;
+
+  padding-left:max(
+    18px,
+    calc((100vw - 1200px)/2)
+  );
+
+  padding-right:20px;
+
+  background:var(--navy);
+  z-index:5;
+
+  font-size:11px;
+  font-weight:900;
   letter-spacing:1px;
+  color:var(--yellow);
 }
 
-.ticker-label .red-dot{
+.live-dot{
   width:7px;
   height:7px;
   border-radius:50%;
   background:var(--red);
+  animation:pulse 1.1s infinite;
+}
+
+@keyframes pulse{
+
+  0%,
+  100%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:.3;
+  }
+
 }
 
 .ticker-window{
-  overflow:hidden;
   flex:1;
+  overflow:hidden;
 }
 
 .ticker-track{
-  display:inline-flex;
+  display:flex;
   width:max-content;
-  animation:tickerWalk 55s linear infinite;
+  animation:walkingNews 55s linear infinite;
 }
 
-.ticker-track:hover{
+.ticker-window:hover .ticker-track{
   animation-play-state:paused;
 }
 
 .ticker-item{
-  display:flex;
+  display:inline-flex;
   align-items:center;
-  gap:12px;
-  margin-right:55px;
   white-space:nowrap;
-  color:#E1E9F2;
+  margin-right:70px;
   font-size:11px;
+  font-weight:700;
 }
 
-.ticker-item .ticker-category{
-  color:var(--yellow);
-  font-weight:900;
-}
-
-.ticker-item .ticker-separator{
+.ticker-item::before{
+  content:"•";
   color:var(--red);
+  margin-right:12px;
 }
 
-@keyframes tickerWalk{
-  0%{
-    transform:translateX(100%);
+@keyframes walkingNews{
+
+  from{
+    transform:translateX(0);
   }
-  100%{
-    transform:translateX(-100%);
+
+  to{
+    transform:translateX(-50%);
   }
+
 }
+
 
 /* =========================================================
    LANGUAGE FILTER
+   IMPORTANT:
+   NO GOOGLE TRANSLATE
 ========================================================= */
 
 .language-bar{
   background:#fff;
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--border);
 }
 
 .language-inner{
-  max-width:1500px;
+  max-width:1200px;
   margin:auto;
-  padding:9px 28px;
+  padding:8px 20px;
+
   display:flex;
   justify-content:flex-end;
   align-items:center;
   gap:7px;
+
+  overflow-x:auto;
 }
 
 .language-label{
-  margin-right:4px;
-  color:var(--muted);
   font-size:10px;
+  color:var(--muted);
+  font-weight:700;
 }
 
-.language-btn{
-  border:1px solid var(--line);
+.language-button{
+  border:1px solid var(--border);
   background:#fff;
   color:var(--navy);
-  border-radius:999px;
+  border-radius:18px;
   padding:6px 12px;
-  font-size:10px;
-  font-weight:850;
+
+  cursor:pointer;
+
+  font-size:11px;
+  font-weight:800;
 }
 
-.language-btn:hover{
-  border-color:#AAB8CA;
+.language-button:hover{
+  border-color:var(--red);
+  color:var(--red);
 }
 
-.language-btn.active{
+.language-button.active{
   background:var(--red);
   border-color:var(--red);
   color:#fff;
 }
 
+
 /* =========================================================
    MAIN
 ========================================================= */
 
-.page{
-  max-width:1500px;
+main{
+  max-width:1200px;
   margin:auto;
-  padding:32px 28px 80px;
+  padding:26px 20px 70px;
 }
 
-.section-head{
+.section-header{
   display:flex;
-  align-items:end;
   justify-content:space-between;
-  margin-bottom:16px;
+  align-items:center;
+  margin:22px 0 17px;
 }
 
-.section-head h1,
-.section-head h2{
+.section-title{
+  position:relative;
   margin:0;
-  color:var(--navy);
+  padding-left:14px;
+
+  font-size:16px;
+  line-height:1.2;
   font-weight:900;
-  letter-spacing:-.5px;
+
+  text-transform:uppercase;
+  letter-spacing:.6px;
 }
 
-.section-head h1{
-  font-size:22px;
-}
-
-.section-head h2{
-  font-size:19px;
-}
-
-.section-head h2:before,
-.section-head h1:before{
+.section-title::before{
   content:"";
-  display:inline-block;
+
+  position:absolute;
+
+  left:0;
+  top:50%;
+
+  transform:translateY(-50%);
+
   width:4px;
   height:20px;
-  margin-right:9px;
-  vertical-align:-3px;
-  border-radius:4px;
-  background:var(--red);
-}
 
-.section-description{
-  margin:6px 0 0;
-  color:var(--muted);
-  font-size:11px;
+  border-radius:5px;
+
+  background:var(--red);
 }
 
 .story-count{
-  color:#8B98A9;
   font-size:10px;
+  color:var(--muted);
 }
+
 
 /* =========================================================
-   HERO
+   FEATURED STORY
 ========================================================= */
 
-.hero-layout{
+.featured{
   display:grid;
-  grid-template-columns:minmax(0,1.6fr) minmax(320px,.8fr);
-  gap:20px;
+  grid-template-columns:1.45fr 1fr;
+  gap:22px;
+  margin-bottom:18px;
 }
 
-.hero{
-  position:relative;
-  min-height:450px;
+.feature-image{
+  height:350px;
+
+  border-radius:17px;
+
   overflow:hidden;
-  border-radius:20px;
-  background:#DDE5EF;
-  box-shadow:var(--shadow);
-}
 
-.hero-image,
-.hero-placeholder{
-  width:100%;
-  height:450px;
-  object-fit:cover;
-  display:block;
-}
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-.hero-placeholder{
-  display:grid;
-  place-items:center;
-  color:#7B8A9D;
+  background:
+    linear-gradient(
+      135deg,
+      #e8eef6,
+      #dce5f0
+    );
+
+  color:#7e8ba0;
+
   font-size:11px;
-  font-weight:800;
 }
 
-.hero:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    180deg,
-    rgba(0,0,0,0) 25%,
-    rgba(0,0,0,.88) 100%
-  );
+.feature-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.hero-content{
-  position:absolute;
-  z-index:2;
-  left:27px;
-  right:27px;
-  bottom:25px;
-  color:#fff;
+.feature-content{
+  padding:15px 0;
 }
 
 .story-category{
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
   color:var(--red);
-  font-size:9px;
-  font-weight:950;
+
+  font-size:10px;
+  font-weight:900;
+
   text-transform:uppercase;
 }
 
-.story-category .category-dot{
-  width:5px;
-  height:5px;
-  border-radius:50%;
-  background:var(--red);
+.feature-title{
+  margin:14px 0 12px;
+
+  font-size:34px;
+  line-height:1.08;
+  font-weight:900;
+
+  letter-spacing:-1px;
 }
 
-.hero .story-category{
-  color:#fff;
-}
-
-.hero .story-category .category-dot{
-  background:var(--red);
-}
-
-.hero h2{
-  max-width:900px;
-  margin:9px 0 10px;
-  color:#fff;
-  font-size:clamp(28px,3vw,43px);
-  line-height:1.05;
-  letter-spacing:-1.4px;
-}
-
-.hero-summary{
-  max-width:800px;
+.feature-snippet{
   margin:0 0 12px;
-  color:#E3EAF2;
-  font-size:12px;
+
+  font-size:13px;
   line-height:1.55;
+
+  font-weight:700;
 }
 
-.three-lines{
-  max-width:780px;
-  margin:10px 0;
-  color:#F1F5F9;
-  font-size:11px;
-  line-height:1.55;
-}
-
-.three-lines div{
+.feature-snippet div{
   margin:2px 0;
 }
 
-.meta{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:7px;
-  color:#D8E1EB;
-  font-size:9px;
+.feature-description{
+  color:var(--muted);
+
+  font-size:13px;
+  line-height:1.6;
+
+  margin:0 0 14px;
 }
 
-.read-original{
-  margin-left:auto;
-  padding:7px 12px;
-  border:1px solid rgba(255,255,255,.4);
-  border-radius:999px;
-  font-weight:900;
+.story-source{
+  font-size:10px;
+  color:var(--muted);
+
+  margin-bottom:12px;
 }
 
-.read-original:hover{
-  background:#fff;
-  color:var(--navy);
-}
-
-/* =========================================================
-   TRENDING
-========================================================= */
-
-.trending{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-}
-
-.trending-head{
-  padding:17px 18px;
-  border-bottom:1px solid var(--line);
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.trending-head strong{
-  color:var(--navy);
-  font-size:14px;
-}
-
-.trending-head span{
+.read-more{
   color:var(--red);
-  font-size:9px;
+
+  text-decoration:none;
+
+  font-size:11px;
   font-weight:900;
 }
 
-.trending-list{
-  padding:0 18px;
-}
-
-.trending-item{
-  display:grid;
-  grid-template-columns:4px 1fr;
-  gap:11px;
-  padding:14px 0;
-  border-bottom:1px solid #EDF1F5;
-}
-
-.trending-item:last-child{
-  border-bottom:0;
-}
-
-.trending-line{
-  border-radius:5px;
-  background:var(--yellow);
-}
-
-.trending-title{
-  margin:4px 0;
-  color:var(--navy);
-  font-size:12px;
-  line-height:1.4;
-  font-weight:850;
-}
-
-.trending-meta{
-  color:#8793A5;
-  font-size:9px;
-}
 
 /* =========================================================
    STORY CARDS
 ========================================================= */
 
-.section{
-  margin-top:38px;
-}
-
-.cards{
+.story-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:16px;
+  gap:14px;
 }
 
-.card{
+.story-card{
   background:#fff;
-  border:1px solid var(--line);
-  border-radius:16px;
+
+  border:1px solid var(--border);
+
+  border-radius:15px;
+
   overflow:hidden;
-  transition:.2s ease;
+
+  transition:.2s;
 }
 
-.card:hover{
+.story-card:hover{
   transform:translateY(-3px);
   box-shadow:var(--shadow);
 }
 
-.card-image,
-.card-placeholder{
-  width:100%;
-  height:170px;
-  object-fit:cover;
-  display:block;
+.story-card a{
+  text-decoration:none;
 }
 
-.card-placeholder{
-  display:grid;
-  place-items:center;
-  background:#E8EEF5;
-  color:#8491A3;
+.card-image{
+  height:145px;
+
+  background:#e8edf4;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
+
+  color:#8290a4;
+
   font-size:10px;
 }
 
-.card-body{
-  padding:12px;
+.card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:13px;
+}
+
+.card-category{
+  color:var(--red);
+
+  font-size:9px;
+  font-weight:900;
+
+  text-transform:uppercase;
 }
 
 .card-title{
-  margin:7px 0 8px;
-  color:var(--navy);
-  font-size:13px;
-  line-height:1.4;
-  font-weight:900;
+  margin:7px 0;
+
+  font-size:14px;
+  line-height:1.25;
+
+  font-weight:800;
 }
 
-.card-summary{
-  margin:0 0 9px;
-  color:#65758A;
-  font-size:10px;
-  line-height:1.5;
-}
+.card-snippet{
+  color:#34445e;
 
-.card-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  color:#8995A6;
-  font-size:9px;
-}
-
-/* =========================================================
-   AI SUMMARY BOX
-========================================================= */
-
-.ai-summary{
-  margin-top:10px;
-  padding:10px;
-  border-left:3px solid var(--red);
-  background:#F8FAFC;
-  border-radius:5px;
-}
-
-.ai-summary-title{
-  margin-bottom:5px;
-  color:var(--red);
-  font-size:8px;
-  font-weight:950;
-  text-transform:uppercase;
-  letter-spacing:.6px;
-}
-
-.ai-summary-line{
-  color:#506176;
-  font-size:9px;
+  font-size:11px;
   line-height:1.45;
+
+  margin-top:7px;
+}
+
+.card-snippet div{
   margin:2px 0;
 }
 
-/* =========================================================
-   FOOTNOTES
-========================================================= */
+.card-source{
+  font-size:9px;
+  color:var(--muted);
 
-.legal-notes{
-  margin-top:45px;
-  padding:22px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:16px;
+  margin-top:9px;
 }
 
-.legal-notes h3{
+
+/* =========================================================
+   CATEGORY SECTIONS
+========================================================= */
+
+.category-section{
+  margin-top:42px;
+}
+
+.category-grid{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:15px;
+}
+
+.no-news{
+  padding:35px;
+
+  text-align:center;
+
+  background:#fff;
+
+  border:1px solid var(--border);
+
+  border-radius:12px;
+
+  color:var(--muted);
+
+  grid-column:1/-1;
+}
+
+
+/* =========================================================
+   LEGAL FOOTNOTES
+========================================================= */
+
+.legal-section{
+  margin-top:55px;
+
+  background:#fff;
+
+  border:1px solid var(--border);
+
+  border-radius:15px;
+
+  padding:20px;
+}
+
+.legal-section h2{
   margin:0 0 12px;
-  color:var(--navy);
+
   font-size:15px;
 }
 
-.legal-notes ol{
-  margin:0;
-  padding-left:18px;
+.legal-note{
+  padding:10px 0;
+
+  border-top:1px solid var(--border);
+
+  font-size:10px;
+  line-height:1.6;
+
+  color:var(--muted);
 }
 
-.legal-notes li{
-  margin:6px 0;
-  color:#66768A;
-  font-size:9px;
-  line-height:1.5;
+.legal-note strong{
+  color:var(--navy);
 }
+
 
 /* =========================================================
    FOOTER
 ========================================================= */
 
-.footer{
-  max-width:1500px;
-  margin:auto;
-  padding:25px 28px 50px;
-  border-top:1px solid var(--line);
-  color:#8995A7;
-  font-size:9px;
+footer{
+  background:var(--navy);
+
+  color:#fff;
+
+  margin-top:30px;
 }
 
+.footer-inner{
+  max-width:1200px;
+
+  margin:auto;
+
+  padding:30px 20px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+.footer-logo{
+  font-size:25px;
+
+  font-weight:900;
+
+  letter-spacing:.6px;
+}
+
+.footer-logo span{
+  color:var(--yellow);
+}
+
+.footer-text{
+  font-size:10px;
+
+  line-height:1.6;
+
+  color:#b9c4d4;
+}
+
+
 /* =========================================================
-   MOBILE
+   CALENDAR / PANCHANG
 ========================================================= */
 
-@media(max-width:1180px){
+.calendar-overlay{
+  position:fixed;
 
-  .header-main{
-    grid-template-columns:260px 1fr;
+  inset:0;
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:rgba(3,13,29,.62);
+
+  z-index:5000;
+
+  padding:20px;
+}
+
+.calendar-overlay.show{
+  display:flex;
+}
+
+.calendar-box{
+  width:min(620px,100%);
+
+  max-height:90vh;
+
+  overflow:auto;
+
+  background:#fff;
+
+  border-radius:18px;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.25);
+}
+
+.calendar-head{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:18px 20px;
+
+  background:var(--navy);
+
+  color:#fff;
+}
+
+.calendar-head h2{
+  margin:0;
+
+  font-size:18px;
+}
+
+.calendar-close{
+  border:0;
+
+  background:transparent;
+
+  color:#fff;
+
+  font-size:26px;
+
+  cursor:pointer;
+}
+
+.calendar-body{
+  padding:20px;
+}
+
+.calendar-grid{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:10px;
+}
+
+.calendar-row{
+  padding:11px 12px;
+
+  border:1px solid var(--border);
+
+  border-radius:10px;
+}
+
+.calendar-row strong{
+  display:block;
+
+  font-size:9px;
+
+  color:var(--muted);
+
+  text-transform:uppercase;
+
+  margin-bottom:4px;
+}
+
+.calendar-row span{
+  font-size:12px;
+
+  font-weight:800;
+}
+
+.calendar-full{
+  margin-top:12px;
+
+  padding:12px;
+
+  border:1px solid var(--border);
+
+  border-radius:10px;
+}
+
+.calendar-full strong{
+  font-size:10px;
+}
+
+.calendar-note{
+  margin-top:15px;
+
+  font-size:9px;
+
+  color:var(--muted);
+
+  line-height:1.55;
+}
+
+.panchang-attribution{
+  margin-top:12px;
+
+  font-size:9px;
+
+  color:var(--muted);
+}
+
+.panchang-attribution a{
+  color:var(--red);
+}
+
+
+/* =========================================================
+   LANGUAGE-SPECIFIC FONTS
+========================================================= */
+
+body.lang-ta{
+  font-family:
+    "Noto Sans Tamil",
+    Inter,
+    Arial,
+    sans-serif;
+}
+
+body.lang-te{
+  font-family:
+    "Noto Sans Telugu",
+    Inter,
+    Arial,
+    sans-serif;
+}
+
+body.lang-kn{
+  font-family:
+    "Noto Sans Kannada",
+    Inter,
+    Arial,
+    sans-serif;
+}
+
+body.lang-ml{
+  font-family:
+    "Noto Sans Malayalam",
+    Inter,
+    Arial,
+    sans-serif;
+}
+
+body.lang-hi{
+  font-family:
+    "Noto Sans Devanagari",
+    Inter,
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+  .header-inner{
+    grid-template-columns:210px 1fr;
+
+    gap:18px;
   }
 
   .header-right{
-    display:none;
+    grid-column:1/-1;
+
+    justify-content:flex-end;
   }
 
-  .hero-layout{
+  .featured{
     grid-template-columns:1fr;
   }
 
-  .cards{
-    grid-template-columns:repeat(3,1fr);
-  }
 }
+
 
 @media(max-width:760px){
 
-  .header-main{
-    display:flex;
-    padding:10px 14px;
-    min-height:75px;
-  }
-
-  .logo{
-    font-size:31px;
-    height:36px;
-    letter-spacing:-2px;
-  }
-
-  .logo-24{
-    margin-left:6px;
-    padding:6px 9px;
-    font-size:25px;
-    border-radius:8px;
-  }
-
-  .logo-i-dot{
-    width:6px;
-    height:6px;
-    top:-3px;
-    left:calc(100% - 28px);
-  }
-
-  .slogan{
-    font-size:7px;
-    letter-spacing:2.5px;
-    margin-top:5px;
-  }
-
-  .search-box{
-    width:42px;
-    height:40px;
-    margin-left:auto;
-    padding:0 11px;
-  }
-
-  .search-box input{
-    display:none;
-  }
-
-  .category-btn{
-    min-height:48px;
-    padding:0 10px;
-    font-size:9px;
-  }
-
-  .language-inner{
-    justify-content:flex-start;
-    overflow-x:auto;
-    padding:8px 12px;
-  }
-
-  .ticker-inner{
-    padding:0 12px;
-  }
-
-  .page{
-    padding:22px 12px 70px;
-  }
-
-  .hero{
-    min-height:390px;
-  }
-
-  .hero-image,
-  .hero-placeholder{
-    height:390px;
-  }
-
-  .hero-content{
-    left:18px;
-    right:18px;
-    bottom:18px;
-  }
-
-  .hero h2{
-    font-size:27px;
-  }
-
-  .hero-summary{
-    font-size:10px;
-  }
-
-  .read-original{
-    margin-left:0;
-  }
-
-  .cards{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
-
-  .card-image,
-  .card-placeholder{
-    height:130px;
-  }
-
-  .card-body{
-    padding:9px;
-  }
-
-  .card-title{
-    font-size:11px;
-  }
-
-  .card-summary{
-    font-size:9px;
-  }
-}
-
-@media(max-width:450px){
-
-  .cards{
+  .header-inner{
     grid-template-columns:1fr;
   }
 
-  .hero h2{
-    font-size:24px;
+  .logo-wrap{
+    justify-self:center;
   }
+
+  .header-right{
+    justify-content:center;
+  }
+
+  .story-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .category-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .feature-title{
+    font-size:27px;
+  }
+
 }
+
+
+@media(max-width:520px){
+
+  .logo-word{
+    font-size:42px;
+  }
+
+  .logo-24{
+    height:45px;
+
+    min-width:51px;
+
+    font-size:39px;
+  }
+
+  .slogan{
+    font-size:8px;
+
+    letter-spacing:3px;
+  }
+
+  .story-grid,
+  .category-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature-image{
+    height:260px;
+  }
+
+  .calendar-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+  }
+
+}
+
 </style>
 </head>
 
+
 <body>
+
 
 <!-- =========================================================
      HEADER
 ========================================================= -->
 
-<header class="site-header">
+<header class="top-header">
 
-  <div class="header-main">
+  <div class="header-inner">
 
-    <a class="brand" href="#" onclick="selectCategory('HOME');return false;">
 
-      <div class="logo">
+    <!-- SNIPPET24 LOGO -->
 
-        <span class="logo-snippet">
-          snippet
+    <div class="logo-wrap">
 
-          <!-- ONLY THIS DOT IS RED -->
-          <span class="logo-i-dot"></span>
+      <div
+        class="logo"
+        aria-label="Snippet24"
+      >
+
+        <div
+          class="logo-word"
+          aria-hidden="true"
+        >
+
+          <span class="logo-letter">s</span>
+
+          <span class="logo-letter">n</span>
+
+          <span class="logo-letter logo-i">i</span>
+
+          <span class="logo-letter">p</span>
+
+          <span class="logo-letter">p</span>
+
+          <span class="logo-letter">e</span>
+
+          <span class="logo-letter">t</span>
+
+        </div>
+
+
+        <span class="logo-24">
+          24
         </span>
 
-        <span class="logo-24">24</span>
-
       </div>
+
 
       <div class="slogan">
+
         FAST NEWS
-        <span class="dot">•</span>
+
+        <span class="red-dot">•</span>
+
         REAL IMPACT
-        <span class="dot">•</span>
+
+        <span class="red-dot">•</span>
+
       </div>
 
-    </a>
+    </div>
 
-    <label class="search-box">
 
-      <span class="search-icon">⌕</span>
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <span class="search-icon">
+        ⌕
+      </span>
 
       <input
         id="searchInput"
         type="search"
         placeholder="Search stories, topics, people..."
+        oninput="searchStories()"
       >
 
-    </label>
+    </div>
+
+
+    <!-- WEATHER / TIME -->
 
     <div class="header-right">
 
-      <div class="weather-box">
 
-        <div class="weather-main">
-          <span class="weather-icon" id="weatherIcon">☀️</span>
-          <span class="weather-temp" id="weatherTemp">--°C</span>
+      <div
+        class="weather-box"
+        onclick="openCalendar()"
+        title="Open Hindu calendar and Panchang"
+      >
+
+        <div
+          class="weather-icon"
+          id="weatherIcon"
+        >
+          ☀️
         </div>
 
-        <div class="weather-location" id="weatherLocation">
-          Loading location...
+
+        <div>
+
+          <div
+            class="temperature"
+            id="temperature"
+          >
+            --°C
+          </div>
+
+
+          <div
+            class="city"
+            id="cityName"
+          >
+            Your city
+          </div>
+
         </div>
 
       </div>
 
-      <div class="clock-box">
 
-        <div class="clock-time" id="clockTime">
-          --:-- --
+      <div
+        class="time-box"
+        onclick="openCalendar()"
+        title="Open Hindu calendar and Panchang"
+      >
+
+        <div
+          class="time"
+          id="currentTime"
+        >
+          --:--
         </div>
 
-        <div class="clock-date" id="clockDate">
-          -- --- ----
+
+        <div
+          class="date"
+          id="currentDate"
+        >
+          --
         </div>
 
-      </div>
-
-      <div class="live-status">
-        <span class="live-dot"></span>
-        LIVE
       </div>
 
     </div>
@@ -1078,111 +1247,158 @@ a{
 
 </header>
 
+
+
 <!-- =========================================================
-     CATEGORIES
+     CATEGORY NAVIGATION
 ========================================================= -->
 
-<nav class="category-bar">
+<nav class="category-nav">
 
-  <div class="category-scroll" id="categoryNav">
+  <div class="category-inner">
 
-    <button class="category-btn active" data-cat="HOME">
-      <span class="cat-icon">⌂</span>
-      Home
-    </button>
 
-    <button class="category-btn" data-cat="GLOBAL">
-      <span class="cat-icon">🌐</span>
-      Global
-    </button>
+    <a
+      class="category-link active"
+      href="#"
+      onclick="goHome();return false;"
+    >
+      ⌂ Home
+    </a>
 
-    <button class="category-btn" data-cat="IN INDIA">
-      <span class="cat-icon">▣</span>
-      In India
-    </button>
 
-    <button class="category-btn" data-cat="SECURITY & PEACE">
-      <span class="cat-icon">◆</span>
-      Security & Peace
-    </button>
+    <a
+      class="category-link"
+      href="#global"
+      onclick="filterCategory('Global');return false;"
+    >
+      🌐 Global
+    </a>
 
-    <button class="category-btn" data-cat="LAW AROUND US">
-      <span class="cat-icon">§</span>
-      Law Around Us
-    </button>
 
-    <button class="category-btn" data-cat="SCIENCE & DEVELOPMENT">
-      <span class="cat-icon">◇</span>
-      Science & Development
-    </button>
+    <a
+      class="category-link"
+      href="#india"
+      onclick="filterCategory('In India');return false;"
+    >
+      ▣ In India
+    </a>
 
-    <button class="category-btn" data-cat="BUSINESS & ECONOMY">
-      <span class="cat-icon">₹</span>
-      Business & Economy
-    </button>
 
-    <button class="category-btn" data-cat="SOCIETY & CULTURE">
-      <span class="cat-icon">♟</span>
-      Society & Culture
-    </button>
+    <a
+      class="category-link"
+      href="#security"
+      onclick="filterCategory('Security & Peace');return false;"
+    >
+      ◆ Security & Peace
+    </a>
 
-    <button class="category-btn" data-cat="HUMAN & ENVIRONMENT">
-      <span class="cat-icon">♧</span>
-      Human & Environment
-    </button>
 
-    <button class="category-btn" data-cat="TECH & AI">
-      <span class="cat-icon">⌘</span>
-      Tech & AI
-    </button>
+    <a
+      class="category-link"
+      href="#law"
+      onclick="filterCategory('Law Around Us');return false;"
+    >
+      § Law Around Us
+    </a>
 
-    <button class="category-btn" data-cat="SPORTS">
-      <span class="cat-icon">⚽</span>
-      Sports
-    </button>
 
-    <button class="category-btn" data-cat="ENTERTAINMENT">
-      <span class="cat-icon">◆</span>
-      Entertainment
-    </button>
+    <a
+      class="category-link"
+      href="#science"
+      onclick="filterCategory('Science & Development');return false;"
+    >
+      ◇ Science & Development
+    </a>
 
-    <button class="category-btn" data-cat="LIFESTYLE">
-      <span class="cat-icon">✦</span>
-      Lifestyle
-    </button>
+
+    <a
+      class="category-link"
+      href="#business"
+      onclick="filterCategory('Business & Economy');return false;"
+    >
+      ₹ Business & Economy
+    </a>
+
+
+    <a
+      class="category-link"
+      href="#society"
+      onclick="filterCategory('Society & Culture');return false;"
+    >
+      ♟ Society & Culture
+    </a>
+
+
+    <a
+      class="category-link"
+      href="#environment"
+      onclick="filterCategory('Human & Environment');return false;"
+    >
+      ♧ Human & Environment
+    </a>
+
+
+    <a
+      class="category-link"
+      href="#technology"
+      onclick="filterCategory('Tech & AI');return false;"
+    >
+      ⌘ Tech & AI
+    </a>
+
+
+    <a
+      class="category-link"
+      href="#sports"
+      onclick="filterCategory('Sports');return false;"
+    >
+      ⚽ Sports
+    </a>
+
 
   </div>
 
 </nav>
 
+
+
 <!-- =========================================================
      LIVE WIRE
 ========================================================= -->
 
-<div class="ticker">
+<section
+  class="live-wire"
+  aria-label="Live Wire"
+>
 
-  <div class="ticker-inner">
+  <div class="live-label">
 
-    <div class="ticker-label">
-      <span class="red-dot"></span>
-      LIVE WIRE
-    </div>
+    <span class="live-dot"></span>
 
-    <div class="ticker-window">
-      <div class="ticker-track" id="tickerTrack">
-        Loading live updates...
-      </div>
-    </div>
+    LIVE WIRE
 
   </div>
 
-</div>
+
+  <div class="ticker-window">
+
+    <div
+      class="ticker-track"
+      id="tickerTrack"
+    ></div>
+
+  </div>
+
+</section>
+
+
 
 <!-- =========================================================
-     LANGUAGE FILTER
+     LANGUAGE SELECTOR
 ========================================================= -->
 
-<div class="language-bar">
+<section class="language-bar">
 
   <div class="language-inner">
 
@@ -1190,1091 +1406,1318 @@ a{
       🌐 Language:
     </span>
 
+
     <button
-      class="language-btn active"
+      class="language-button active"
       data-lang="en"
+      onclick="changeLanguage('en',this)"
     >
       English
     </button>
 
+
     <button
-      class="language-btn"
+      class="language-button"
       data-lang="ta"
+      onclick="changeLanguage('ta',this)"
     >
       தமிழ்
     </button>
 
+
     <button
-      class="language-btn"
+      class="language-button"
       data-lang="te"
+      onclick="changeLanguage('te',this)"
     >
       తెలుగు
     </button>
 
+
     <button
-      class="language-btn"
+      class="language-button"
       data-lang="kn"
+      onclick="changeLanguage('kn',this)"
     >
       ಕನ್ನಡ
     </button>
 
+
     <button
-      class="language-btn"
+      class="language-button"
       data-lang="ml"
+      onclick="changeLanguage('ml',this)"
     >
       മലയാളം
     </button>
 
+
     <button
-      class="language-btn"
+      class="language-button"
       data-lang="hi"
+      onclick="changeLanguage('hi',this)"
     >
       हिन्दी
     </button>
 
   </div>
 
-</div>
+</section>
+
+
 
 <!-- =========================================================
-     MAIN
+     MAIN CONTENT
 ========================================================= -->
 
-<main class="page">
+<main>
 
-  <div class="section-head">
 
-    <div>
+  <!-- LATEST STORIES -->
 
-      <h1 id="sectionTitle">
-        Latest Stories
-      </h1>
+  <div class="section-header">
 
-      <p
-        class="section-description"
-        id="sectionDescription"
-      >
-        Fast updates, AI-rephrased snippets and useful context.
-      </p>
+    <h1 class="section-title">
+      Latest Stories
+    </h1>
 
-    </div>
 
-    <div
+    <span
       class="story-count"
       id="storyCount"
     >
-      Loading...
-    </div>
+      Loading stories...
+    </span>
 
   </div>
 
-  <!-- HERO -->
 
-  <section class="hero-layout">
 
-    <div id="hero"></div>
+  <!-- FEATURED -->
 
-    <aside class="trending">
+  <section class="featured">
 
-      <div class="trending-head">
 
-        <strong>
-          🔥 Trending Now
-        </strong>
+    <div
+      class="feature-image"
+      id="featureImage"
+    >
+      Loading image...
+    </div>
 
-        <span>
-          ● LIVE
-        </span>
 
-      </div>
+    <div class="feature-content">
+
 
       <div
-        class="trending-list"
-        id="trendingList"
+        class="story-category"
+        id="featureCategory"
+      >
+        FEATURED
+      </div>
+
+
+      <h2
+        class="feature-title"
+        id="featureTitle"
+      >
+        Loading latest story...
+      </h2>
+
+
+      <div
+        class="feature-snippet"
+        id="featureSnippet"
       ></div>
 
-    </aside>
+
+      <p
+        class="feature-description"
+        id="featureDescription"
+      >
+        Loading the latest developments...
+      </p>
+
+
+      <div
+        class="story-source"
+        id="featureSource"
+      >
+        Snippet24
+      </div>
+
+
+      <a
+        class="read-more"
+        id="featureLink"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read Original →
+      </a>
+
+
+    </div>
 
   </section>
 
-  <!-- =======================================================
-       ALL CATEGORIES ON SAME PAGE
-  ======================================================== -->
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>In India</h2>
-        <p class="section-description">
-          National and local developments across India.
-        </p>
-      </div>
+  <!-- TOP STORY CARDS -->
+
+  <section
+    class="story-grid"
+    id="storyGrid"
+  >
+
+    <div class="no-news">
+      Loading latest stories...
     </div>
 
+  </section>
+
+
+
+  <!-- INDIA -->
+
+  <section
+    class="category-section"
+    id="india"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        In India
+      </h2>
+
+    </div>
+
+
     <div
-      class="cards"
-      id="indiaCards"
+      class="category-grid"
+      id="indiaGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Security & Peace</h2>
-        <p class="section-description">
-          Security, defence, conflict and public safety.
-        </p>
-      </div>
+
+  <!-- BUSINESS -->
+
+  <section
+    class="category-section"
+    id="business"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Business & Economy
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="securityCards"
+      class="category-grid"
+      id="businessGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Law Around Us</h2>
-        <p class="section-description">
-          Courts, legal developments, rights and public-interest law.
-        </p>
-      </div>
+
+  <!-- TECHNOLOGY -->
+
+  <section
+    class="category-section"
+    id="technology"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Tech & AI
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="lawCards"
+      class="category-grid"
+      id="technologyGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Science & Development</h2>
-        <p class="section-description">
-          Science, research, infrastructure and development.
-        </p>
-      </div>
+
+  <!-- SCIENCE -->
+
+  <section
+    class="category-section"
+    id="science"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Science & Development
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="scienceCards"
+      class="category-grid"
+      id="scienceGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Business & Economy</h2>
-        <p class="section-description">
-          Markets, companies, jobs, finance and the economy.
-        </p>
-      </div>
+
+  <!-- SOCIETY -->
+
+  <section
+    class="category-section"
+    id="society"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Society & Culture
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="businessCards"
+      class="category-grid"
+      id="societyGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Society & Culture</h2>
-        <p class="section-description">
-          People, communities, culture and society.
-        </p>
-      </div>
+
+  <!-- SECURITY -->
+
+  <section
+    class="category-section"
+    id="security"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Security & Peace
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="societyCards"
+      class="category-grid"
+      id="securityGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Human & Environment</h2>
-        <p class="section-description">
-          Climate, environment, nature and human-interest stories.
-        </p>
-      </div>
+
+  <!-- LAW -->
+
+  <section
+    class="category-section"
+    id="law"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Law Around Us
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="environmentCards"
+      class="category-grid"
+      id="lawGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Tech & AI</h2>
-        <p class="section-description">
-          Technology, artificial intelligence and digital developments.
-        </p>
-      </div>
+
+  <!-- ENVIRONMENT -->
+
+  <section
+    class="category-section"
+    id="environment"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Human & Environment
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="techCards"
+      class="category-grid"
+      id="environmentGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Sports</h2>
-        <p class="section-description">
-          Indian and international sports updates.
-        </p>
-      </div>
+
+  <!-- GLOBAL -->
+
+  <section
+    class="category-section"
+    id="global"
+  >
+
+    <div class="section-header">
+
+      <h2 class="section-title">
+        Global
+      </h2>
+
     </div>
 
+
     <div
-      class="cards"
-      id="sportsCards"
+      class="category-grid"
+      id="globalGrid"
     ></div>
 
   </section>
 
-  <section class="section">
 
-    <div class="section-head">
-      <div>
-        <h2>Entertainment</h2>
-        <p class="section-description">
-          Cinema, streaming, television and creators.
-        </p>
-      </div>
-    </div>
-
-    <div
-      class="cards"
-      id="entertainmentCards"
-    ></div>
-
-  </section>
-
-  <section class="section">
-
-    <div class="section-head">
-      <div>
-        <h2>Lifestyle</h2>
-        <p class="section-description">
-          Food, travel, wellness, culture and everyday life.
-        </p>
-      </div>
-    </div>
-
-    <div
-      class="cards"
-      id="lifestyleCards"
-    ></div>
-
-  </section>
 
   <!-- =======================================================
        LEGAL FOOTNOTES
   ======================================================== -->
 
-  <section class="legal-notes">
+  <section class="legal-section">
 
-    <h3>
-      Snippet24 Editorial & Legal Notes
-    </h3>
+    <h2>
+      Editorial & Legal Footnotes
+    </h2>
 
-    <ol>
 
-      <li>
-        Snippet24 provides short AI-rephrased news summaries
-        and links users to the original publisher for the
-        complete report.
-      </li>
+    <div class="legal-note">
 
-      <li>
-        Headlines, facts and source attribution should remain
-        distinguishable from Snippet24's original editorial
-        wording.
-      </li>
+      <strong>
+        AI-assisted editing:
+      </strong>
 
-      <li>
-        Copyright ownership remains with the respective
-        original publisher and rights holder.
-      </li>
+      Snippet24 uses AI to condense and rephrase supplied
+      source material. The original source remains the authority
+      for the complete report.
 
-      <li>
-        AI-generated summaries should not reproduce substantial
-        portions of copyrighted articles.
-      </li>
+    </div>
 
-      <li>
-        Legal, court and regulatory stories should be presented
-        as reported developments and should not be represented
-        as legal advice.
-      </li>
 
-      <li>
-        Technology and AI coverage should distinguish reported
-        facts from commentary, forecasts and AI-generated
-        interpretation.
-      </li>
+    <div class="legal-note">
 
-      <li>
-        Where a story concerns allegations, arrests, investigations
-        or disputes, Snippet24 should avoid presenting allegations
-        as established facts.
-      </li>
+      <strong>
+        Copyright:
+      </strong>
 
-      <li>
-        Users should follow the original source link for the
-        complete article, video, broadcast or official document.
-      </li>
+      Third-party text, photographs, video, audio, logos and
+      trademarks remain the property of their respective owners.
+      Snippet24 does not claim ownership of third-party material.
 
-    </ol>
+    </div>
+
+
+    <div class="legal-note">
+
+      <strong>
+        Media law:
+      </strong>
+
+      Attribution is retained and readers are directed to the
+      original source. Publication of third-party material should
+      be reviewed for applicable Indian copyright, privacy,
+      defamation and media-law requirements.
+
+    </div>
+
+
+    <div class="legal-note">
+
+      <strong>
+        Technology & AI law:
+      </strong>
+
+      AI assistance does not guarantee factual accuracy or legal
+      compliance. Human editorial review is required for sensitive
+      allegations, legal matters and regulated subjects.
+
+    </div>
+
+
+    <div class="legal-note">
+
+      <strong>
+        Editorial standard:
+      </strong>
+
+      Claims and allegations are attributed to the identified
+      source or authority and are not presented as independently
+      verified facts.
+
+    </div>
 
   </section>
 
+
 </main>
 
-<footer class="footer">
 
-  Snippet24 — Fast News. Real Impact.
-  &nbsp; • &nbsp;
-  Original sources credited.
-  &nbsp; • &nbsp;
-  AI-rephrased summaries.
-  &nbsp; • &nbsp;
-  Full reports remain with original publishers.
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  <div class="footer-inner">
+
+
+    <div>
+
+      <div class="footer-logo">
+
+        snippet
+
+        <span>
+          24
+        </span>
+
+      </div>
+
+
+      <div class="footer-text">
+
+        FAST NEWS • REAL IMPACT
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-text">
+
+      © 2026 Snippet24.
+      Concise news from approved public sources.
+
+    </div>
+
+
+  </div>
 
 </footer>
 
+
+
+<!-- =========================================================
+     HINDU CALENDAR / PANCHANG
+========================================================= -->
+
+<div
+  class="calendar-overlay"
+  id="calendarOverlay"
+  onclick="closeCalendar(event)"
+>
+
+
+  <div
+    class="calendar-box"
+    onclick="event.stopPropagation()"
+  >
+
+
+    <div class="calendar-head">
+
+      <h2>
+        Hindu Calendar & Panchang
+      </h2>
+
+
+      <button
+        class="calendar-close"
+        onclick="closeCalendar()"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="calendar-body">
+
+
+      <div class="calendar-grid">
+
+
+        <div class="calendar-row">
+
+          <strong>
+            Date
+          </strong>
+
+          <span id="calendarDate">
+            --
+          </span>
+
+        </div>
+
+
+        <div class="calendar-row">
+
+          <strong>
+            Day
+          </strong>
+
+          <span id="calendarDay">
+            --
+          </span>
+
+        </div>
+
+
+        <div class="calendar-row">
+
+          <strong>
+            Location
+          </strong>
+
+          <span id="calendarLocation">
+            --
+          </span>
+
+        </div>
+
+
+        <div class="calendar-row">
+
+          <strong>
+            Local Time
+          </strong>
+
+          <span id="calendarTime">
+            --
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="calendar-full">
+
+        <strong>
+          Panchang
+        </strong>
+
+
+        <div
+          id="panchangDetails"
+          style="
+            margin-top:8px;
+            font-size:12px;
+            line-height:1.7
+          "
+        >
+
+          Loading location-specific Panchang...
+
+        </div>
+
+      </div>
+
+
+      <div class="calendar-note">
+
+        Panchang values are location-specific.
+        Snippet24 uses the visitor's browser location when
+        permission is granted. If location is denied, Chennai
+        is used as the default. Festival and Panchang traditions
+        can vary by region.
+
+      </div>
+
+
+      <div class="panchang-attribution">
+
+        Panchang data by
+
+        <a
+          href="https://nityapanchangam.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nitya Panchangam
+        </a>
+
+        (CC-BY attribution required).
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
 <script>
 
-/* =========================================================
-   STATE
-========================================================= */
+"use strict";
 
-let articles = [];
-let activeCategory = "HOME";
-let activeLanguage = "en";
 
 /* =========================================================
-   CATEGORY INFORMATION
+   GLOBAL STATE
 ========================================================= */
 
-const CATEGORY_INFO = {
+let allStories = [];
 
-  HOME:{
-    title:"Latest Stories",
-    description:
-      "Fast updates, AI-rephrased snippets and useful context."
-  },
+let selectedLanguage = "en";
 
-  GLOBAL:{
-    title:"Global",
-    description:
-      "International news and developments outside India."
-  },
+let selectedCategory = "";
 
-  "IN INDIA":{
-    title:"In India",
-    description:
-      "National and local developments across India."
-  },
 
-  "SECURITY & PEACE":{
-    title:"Security & Peace",
-    description:
-      "Security, defence, conflict and public safety."
-  },
+let locationState = {
 
-  "LAW AROUND US":{
-    title:"Law Around Us",
-    description:
-      "Courts, legal developments, rights and public-interest law."
-  },
+  lat:13.0827,
 
-  "SCIENCE & DEVELOPMENT":{
-    title:"Science & Development",
-    description:
-      "Science, research, infrastructure and development."
-  },
+  lon:80.2707,
 
-  "BUSINESS & ECONOMY":{
-    title:"Business & Economy",
-    description:
-      "Markets, companies, jobs, finance and the economy."
-  },
-
-  "SOCIETY & CULTURE":{
-    title:"Society & Culture",
-    description:
-      "People, communities, culture and society."
-  },
-
-  "HUMAN & ENVIRONMENT":{
-    title:"Human & Environment",
-    description:
-      "Climate, environment, nature and human-interest stories."
-  },
-
-  "TECH & AI":{
-    title:"Tech & AI",
-    description:
-      "Technology, artificial intelligence and digital developments."
-  },
-
-  SPORTS:{
-    title:"Sports",
-    description:
-      "Indian and international sports updates."
-  },
-
-  ENTERTAINMENT:{
-    title:"Entertainment",
-    description:
-      "Cinema, streaming, television and creators."
-  },
-
-  LIFESTYLE:{
-    title:"Lifestyle",
-    description:
-      "Food, travel, wellness, culture and everyday life."
-  }
+  name:"Chennai, Tamil Nadu, India"
 
 };
 
-const $ = id => document.getElementById(id);
+
 
 /* =========================================================
-   SECURITY
+   LANGUAGE NAMES
+========================================================= */
+
+const languageNames = {
+
+  en:"English",
+
+  ta:"Tamil",
+
+  te:"Telugu",
+
+  kn:"Kannada",
+
+  ml:"Malayalam",
+
+  hi:"Hindi"
+
+};
+
+
+
+/* =========================================================
+   CATEGORY MAP
+========================================================= */
+
+const categorySections = {
+
+  india:[
+    "In India"
+  ],
+
+  business:[
+    "Business & Economy"
+  ],
+
+  technology:[
+    "Tech & AI"
+  ],
+
+  science:[
+    "Science & Development"
+  ],
+
+  society:[
+    "Society & Culture"
+  ],
+
+  security:[
+    "Security & Peace"
+  ],
+
+  law:[
+    "Law Around Us"
+  ],
+
+  environment:[
+    "Human & Environment"
+  ],
+
+  global:[
+    "Global"
+  ]
+
+};
+
+
+
+/* =========================================================
+   ESCAPE HTML
 ========================================================= */
 
 function escapeHTML(value){
 
   return String(value ?? "")
-    .replaceAll("&","&amp;")
-    .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;")
-    .replaceAll('"',"&quot;")
-    .replaceAll("'","&#039;");
+
+    .replace(/&/g,"&amp;")
+
+    .replace(/</g,"&lt;")
+
+    .replace(/>/g,"&gt;")
+
+    .replace(/"/g,"&quot;")
+
+    .replace(/'/g,"&#039;");
 
 }
 
-function safeURL(value){
 
-  try{
-
-    const u =
-      new URL(
-        value || "#",
-        window.location.href
-      );
-
-    if(
-      ["http:","https:"]
-      .includes(u.protocol)
-    ){
-      return u.href;
-    }
-
-    return "#";
-
-  }catch{
-
-    return "#";
-
-  }
-
-}
 
 /* =========================================================
-   DATE / TIME
-========================================================= */
-
-function getTime(value){
-
-  if(!value) return "";
-
-  const d = new Date(value);
-
-  if(Number.isNaN(d.getTime()))
-    return "";
-
-  return d.toLocaleTimeString(
-    "en-IN",
-    {
-      hour:"numeric",
-      minute:"2-digit",
-      hour12:true
-    }
-  );
-
-}
-
-function getDate(value){
-
-  if(!value) return "";
-
-  const d = new Date(value);
-
-  if(Number.isNaN(d.getTime()))
-    return "";
-
-  return d.toLocaleDateString(
-    "en-IN",
-    {
-      day:"2-digit",
-      month:"short",
-      year:"numeric"
-    }
-  );
-
-}
-
-/* =========================================================
-   CATEGORY NORMALIZATION
-========================================================= */
-
-function getCategory(article){
-
-  return String(
-    article.category || ""
-  )
-  .trim()
-  .toUpperCase();
-
-}
-
-function categoryMatch(article,wanted){
-
-  const c = getCategory(article);
-
-  if(wanted === "GLOBAL"){
-
-    return [
-      "GLOBAL",
-      "WORLD",
-      "INTERNATIONAL"
-    ].includes(c);
-
-  }
-
-  if(wanted === "IN INDIA"){
-
-    return [
-      "INDIA",
-      "IN INDIA",
-      "NATIONAL"
-    ].includes(c);
-
-  }
-
-  if(wanted === "SECURITY & PEACE"){
-
-    return [
-      "SECURITY",
-      "SECURITY & PEACE",
-      "DEFENCE",
-      "DEFENSE",
-      "PEACE"
-    ].includes(c);
-
-  }
-
-  if(wanted === "LAW AROUND US"){
-
-    return [
-      "LAW",
-      "LEGAL",
-      "LAW AROUND US",
-      "COURTS"
-    ].includes(c);
-
-  }
-
-  if(wanted === "SCIENCE & DEVELOPMENT"){
-
-    return [
-      "SCIENCE",
-      "SCIENCE & DEVELOPMENT",
-      "DEVELOPMENT",
-      "RESEARCH"
-    ].includes(c);
-
-  }
-
-  if(wanted === "BUSINESS & ECONOMY"){
-
-    return [
-      "BUSINESS",
-      "BUSINESS & ECONOMY",
-      "ECONOMY",
-      "MONEY",
-      "FINANCE",
-      "MARKETS"
-    ].includes(c);
-
-  }
-
-  if(wanted === "SOCIETY & CULTURE"){
-
-    return [
-      "SOCIETY",
-      "SOCIETY & CULTURE",
-      "CULTURE"
-    ].includes(c);
-
-  }
-
-  if(wanted === "HUMAN & ENVIRONMENT"){
-
-    return [
-      "HUMAN",
-      "HUMAN & ENVIRONMENT",
-      "ENVIRONMENT",
-      "CLIMATE",
-      "NATURE"
-    ].includes(c);
-
-  }
-
-  if(wanted === "TECH & AI"){
-
-    return [
-      "TECH",
-      "TECH & AI",
-      "TECHNOLOGY",
-      "AI",
-      "ARTIFICIAL INTELLIGENCE"
-    ].includes(c);
-
-  }
-
-  if(wanted === "SPORTS"){
-
-    return [
-      "SPORTS",
-      "SPORT"
-    ].includes(c);
-
-  }
-
-  if(wanted === "ENTERTAINMENT"){
-
-    return [
-      "ENTERTAINMENT"
-    ].includes(c);
-
-  }
-
-  if(wanted === "LIFESTYLE"){
-
-    return [
-      "LIFESTYLE"
-    ].includes(c);
-
-  }
-
-  return c === wanted;
-
-}
-
-/* =========================================================
-   LANGUAGE
+   TRANSLATION SYSTEM
 ========================================================= */
 
 /*
    IMPORTANT:
-   Python creates translated fields such as:
 
-   headline_ta
-   summary_ta
-   snippet_ta
+   English:
+      story.headline
+      story.snippet_lines
+      story.summary
 
-   headline_hi
-   summary_hi
-   snippet_hi
+   Other languages:
+      story.translations.ta
+      story.translations.te
+      story.translations.kn
+      story.translations.ml
+      story.translations.hi
 
-   etc.
+   We DO NOT fall back to English.
 
-   The browser NEVER mixes languages.
-   When Hindi is selected, only Hindi fields are displayed.
+   Therefore selecting Hindi will never show:
+      Hindi + English mixed together.
+
+   If Hindi translation does not exist yet,
+   the story is hidden until curator.py provides it.
 */
 
-function localized(article,field){
 
-  if(activeLanguage === "en"){
+function getTranslation(story){
 
-    return article[field] ||
-           "";
+  if(selectedLanguage === "en"){
+
+    return {
+
+      headline:
+        story.headline ||
+        "Latest news update",
+
+      snippet_lines:
+        Array.isArray(story.snippet_lines)
+          ? story.snippet_lines
+          : [],
+
+      summary:
+        story.summary || ""
+
+    };
 
   }
 
-  const translated =
-    article[
-      `${field}_${activeLanguage}`
-    ];
 
-  return translated ||
-         article[field] ||
-         "";
+  const translated =
+    story.translations &&
+    story.translations[selectedLanguage];
+
+
+  if(
+
+    !translated ||
+
+    !translated.headline ||
+
+    !Array.isArray(translated.snippet_lines) ||
+
+    translated.snippet_lines.length !== 3
+
+  ){
+
+    return null;
+
+  }
+
+
+  return {
+
+    headline:
+      translated.headline,
+
+    snippet_lines:
+      translated.snippet_lines,
+
+    summary:
+      translated.summary || ""
+
+  };
 
 }
+
+
+
+/* =========================================================
+   GET TITLE
+========================================================= */
+
+function getTitle(story){
+
+  const translation =
+    getTranslation(story);
+
+
+  if(translation){
+
+    return translation.headline;
+
+  }
+
+
+  return (
+    "[" +
+    languageNames[selectedLanguage] +
+    " translation pending]"
+  );
+
+}
+
+
+
+/* =========================================================
+   GET SNIPPET
+========================================================= */
+
+function getSnippetLines(story){
+
+  const translation =
+    getTranslation(story);
+
+
+  return translation
+    ? translation.snippet_lines
+    : [];
+
+}
+
+
+
+/* =========================================================
+   GET SUMMARY
+========================================================= */
+
+function getSummary(story){
+
+  const translation =
+    getTranslation(story);
+
+
+  return translation
+    ? translation.summary
+    : "";
+
+}
+
+
+
+/* =========================================================
+   SOURCE
+========================================================= */
+
+function getSource(story){
+
+  return (
+
+    story.publisher ||
+
+    story.source_label ||
+
+    "Verified Source"
+
+  );
+
+}
+
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+function getCategory(story){
+
+  return (
+
+    story.category ||
+
+    "In India"
+
+  );
+
+}
+
+
+
+/* =========================================================
+   ORIGINAL LINK
+========================================================= */
+
+function getLink(story){
+
+  return (
+
+    story.original_source_url ||
+
+    story.source_url ||
+
+    "#"
+
+  );
+
+}
+
+
 
 /* =========================================================
    IMAGE
 ========================================================= */
 
-function imageHTML(article,className){
+function getImage(story){
 
-  const src =
-    article.image_url ||
-    article.local_image ||
-    article.image ||
-    "";
+  return story.image_url || "";
 
-  if(!src){
+}
 
-    return `
-      <div class="${className} card-placeholder">
-        Image unavailable
-      </div>
-    `;
+
+
+/* =========================================================
+   IMAGE HTML
+========================================================= */
+
+function imageHTML(story){
+
+  const image =
+    getImage(story);
+
+
+  if(!image){
+
+    return "Image unavailable";
 
   }
 
+
   return `
+
     <img
-      class="${className}"
-      src="${escapeHTML(src)}"
+
+      src="${escapeHTML(image)}"
+
       alt=""
+
       loading="lazy"
-      onerror="this.outerHTML='<div class=&quot;${className} card-placeholder&quot;>Image unavailable</div>'"
+
+      referrerpolicy="no-referrer"
+
+      onerror="
+        this.parentElement.textContent='Image unavailable';
+      "
+
     >
+
   `;
 
 }
 
+
+
 /* =========================================================
-   THREE LINE SNIPPET
+   STORY VISIBILITY
 ========================================================= */
 
-function snippetHTML(article){
+function storyIsVisible(story){
 
-  const snippet =
-    localized(
-      article,
-      "snippet"
-    );
+  /*
+     Language filter
+  */
 
-  if(!snippet){
+  if(
 
-    return "";
+    selectedLanguage !== "en" &&
+
+    !getTranslation(story)
+
+  ){
+
+    return false;
 
   }
 
-  const lines =
-    String(snippet)
-      .split("\n")
-      .map(x => x.trim())
-      .filter(Boolean)
-      .slice(0,3);
 
-  return `
-    <div class="three-lines">
-      ${
-        lines
-          .map(
-            line =>
-              `<div>${escapeHTML(line)}</div>`
-          )
-          .join("")
-      }
-    </div>
-  `;
+  /*
+     Category filter
+  */
+
+  if(
+
+    selectedCategory &&
+
+    getCategory(story) !== selectedCategory
+
+  ){
+
+    return false;
+
+  }
+
+
+  return true;
 
 }
 
+
+
 /* =========================================================
-   HERO
+   SNIPPET RENDER
 ========================================================= */
 
-function renderHero(list){
+function renderSnippetLines(
+  container,
+  lines,
+  className
+){
 
-  const target = $("hero");
-
-  if(!list.length){
-
-    target.innerHTML = `
-      <div class="hero">
-        <div class="hero-placeholder">
-          No stories available.
-        </div>
-      </div>
-    `;
+  if(!container){
 
     return;
 
   }
 
-  const a = list[0];
 
-  target.innerHTML = `
+  container.innerHTML =
 
-    <article class="hero">
+    (lines || [])
 
-      ${imageHTML(a,"hero-image")}
+      .slice(0,3)
 
-      <div class="hero-content">
+      .map(
 
-        <div class="story-category">
-          <span class="category-dot"></span>
-          ${escapeHTML(
-            localized(a,"category") ||
-            a.category ||
-            "NEWS"
-          )}
-        </div>
+        line => `
 
-        <h2>
-          ${escapeHTML(
-            localized(a,"headline") ||
-            "Latest news"
-          )}
-        </h2>
+          <div class="${className}">
 
-        ${snippetHTML(a)}
-
-        <div class="hero-summary">
-          ${escapeHTML(
-            localized(a,"summary") ||
-            ""
-          )}
-        </div>
-
-        <div class="meta">
-
-          <span>
-            ${escapeHTML(
-              getDate(a.published_at)
-            )}
-          </span>
-
-          <span>•</span>
-
-          <span>
-            ${escapeHTML(
-              getTime(a.published_at)
-            )}
-          </span>
-
-          <span>•</span>
-
-          <strong>
-            ${escapeHTML(
-              a.location ||
-              "India"
-            )}
-          </strong>
-
-          <span>•</span>
-
-          <strong>
-            ${escapeHTML(
-              a.publisher ||
-              ""
-            )}
-          </strong>
-
-          <a
-            class="read-original"
-            href="${safeURL(a.source_url)}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read Original →
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-  `;
-
-}
-
-/* =========================================================
-   TRENDING
-========================================================= */
-
-function renderTrending(list){
-
-  const target =
-    $("trendingList");
-
-  const items =
-    list.slice(1,6);
-
-  if(!items.length){
-
-    target.innerHTML = `
-      <div style="
-        padding:20px;
-        color:#718096;
-        font-size:11px;
-      ">
-        No trending stories.
-      </div>
-    `;
-
-    return;
-
-  }
-
-  target.innerHTML =
-    items
-      .map(a => `
-
-        <article class="trending-item">
-
-          <div class="trending-line"></div>
-
-          <div>
-
-            <div class="story-category">
-              <span class="category-dot"></span>
-              ${escapeHTML(
-                a.category ||
-                "NEWS"
-              )}
-            </div>
-
-            <div class="trending-title">
-              ${escapeHTML(
-                localized(a,"headline")
-              )}
-            </div>
-
-            <div class="trending-meta">
-
-              ${escapeHTML(
-                getTime(
-                  a.published_at
-                )
-              )}
-
-              &nbsp; • &nbsp;
-
-              ${escapeHTML(
-                a.publisher || ""
-              )}
-
-            </div>
+            ${escapeHTML(line)}
 
           </div>
 
-        </article>
+        `
 
-      `)
+      )
+
       .join("");
 
 }
 
+
+
 /* =========================================================
-   CARD
+   FEATURED STORY
 ========================================================= */
 
-function cardHTML(a){
+function renderFeatured(story){
+
+  if(!story){
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "featureImage"
+  ).innerHTML =
+    imageHTML(story);
+
+
+  document.getElementById(
+    "featureCategory"
+  ).textContent =
+    getCategory(story);
+
+
+  document.getElementById(
+    "featureTitle"
+  ).textContent =
+    getTitle(story);
+
+
+  document.getElementById(
+    "featureDescription"
+  ).textContent =
+    getSummary(story);
+
+
+  document.getElementById(
+    "featureSource"
+  ).textContent =
+
+    `${getSource(story)} • ${story.source_label || ""}`;
+
+
+  document.getElementById(
+    "featureLink"
+  ).href =
+    getLink(story);
+
+
+  renderSnippetLines(
+
+    document.getElementById(
+      "featureSnippet"
+    ),
+
+    getSnippetLines(story),
+
+    ""
+
+  );
+
+}
+
+
+
+/* =========================================================
+   CREATE CARD
+========================================================= */
+
+function createCard(story){
+
+  const lines =
+    getSnippetLines(story);
+
 
   return `
 
-    <article class="card">
+    <article class="story-card">
 
-      ${imageHTML(a,"card-image")}
+      <a
 
-      <div class="card-body">
+        href="${escapeHTML(getLink(story))}"
 
-        <div class="story-category">
+        target="_blank"
 
-          <span class="category-dot"></span>
+        rel="noopener noreferrer"
 
-          ${escapeHTML(
-            a.category ||
-            "NEWS"
-          )}
+      >
+
+
+        <div class="card-image">
+
+          ${imageHTML(story)}
 
         </div>
 
-        <div class="card-title">
-          ${escapeHTML(
-            localized(
-              a,
-              "headline"
-            )
-          )}
-        </div>
 
-        ${snippetHTML(a)}
+        <div class="card-content">
 
-        <p class="card-summary">
-          ${escapeHTML(
-            localized(
-              a,
-              "summary"
-            )
-          )}
-        </p>
 
-        <div class="card-meta">
+          <div class="card-category">
 
-          <span>
             ${escapeHTML(
-              getTime(
-                a.published_at
-              )
+              getCategory(story)
             )}
-          </span>
 
-          <span>•</span>
+          </div>
 
-          <span>
+
+          <h3 class="card-title">
+
             ${escapeHTML(
-              a.publisher || ""
+              getTitle(story)
             )}
-          </span>
+
+          </h3>
+
+
+          <div class="card-snippet">
+
+            ${
+
+              lines
+
+                .slice(0,3)
+
+                .map(
+
+                  line => `
+
+                    <div>
+
+                      • ${escapeHTML(line)}
+
+                    </div>
+
+                  `
+
+                )
+
+                .join("")
+
+            }
+
+          </div>
+
+
+          <div class="card-source">
+
+            ${escapeHTML(
+              getSource(story)
+            )}
+
+          </div>
+
 
         </div>
 
-      </div>
+      </a>
 
     </article>
 
@@ -2282,451 +2725,700 @@ function cardHTML(a){
 
 }
 
-function renderCards(id,list){
 
-  const target = $(id);
-
-  if(!target)
-    return;
-
-  target.innerHTML =
-    list.length
-      ? list.map(cardHTML).join("")
-      : `
-        <div style="
-          grid-column:1/-1;
-          padding:20px;
-          background:#fff;
-          border:1px solid var(--line);
-          border-radius:14px;
-          color:#7A8799;
-          font-size:11px;
-        ">
-          No stories available.
-        </div>
-      `;
-
-}
 
 /* =========================================================
-   CATEGORY SECTIONS
+   CATEGORY RENDER
 ========================================================= */
 
-function renderCategorySections(){
+function renderCategory(
+  stories,
+  elementId,
+  names
+){
 
-  renderCards(
-    "indiaCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "IN INDIA"
-          )
-      )
-      .slice(0,4)
-  );
+  const element =
+    document.getElementById(elementId);
 
-  renderCards(
-    "securityCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "SECURITY & PEACE"
-          )
-      )
-      .slice(0,4)
-  );
 
-  renderCards(
-    "lawCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "LAW AROUND US"
-          )
-      )
-      .slice(0,4)
-  );
+  if(!element){
 
-  renderCards(
-    "scienceCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "SCIENCE & DEVELOPMENT"
-          )
-      )
-      .slice(0,4)
-  );
+    return;
 
-  renderCards(
-    "businessCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "BUSINESS & ECONOMY"
-          )
-      )
-      .slice(0,4)
-  );
+  }
 
-  renderCards(
-    "societyCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "SOCIETY & CULTURE"
-          )
-      )
-      .slice(0,4)
-  );
 
-  renderCards(
-    "environmentCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "HUMAN & ENVIRONMENT"
-          )
-      )
-      .slice(0,4)
-  );
+  const filtered =
+    stories.filter(
 
-  renderCards(
-    "techCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "TECH & AI"
-          )
-      )
-      .slice(0,4)
-  );
+      story =>
+        names.includes(
+          getCategory(story)
+        )
 
-  renderCards(
-    "sportsCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "SPORTS"
-          )
-      )
-      .slice(0,4)
-  );
+    );
 
-  renderCards(
-    "entertainmentCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "ENTERTAINMENT"
-          )
-      )
-      .slice(0,4)
-  );
 
-  renderCards(
-    "lifestyleCards",
-    articles
-      .filter(
-        a =>
-          categoryMatch(
-            a,
-            "LIFESTYLE"
-          )
-      )
-      .slice(0,4)
-  );
+  if(!filtered.length){
+
+    element.innerHTML = `
+
+      <div class="no-news">
+
+        No stories available in
+
+        ${escapeHTML(
+          languageNames[selectedLanguage]
+        )}.
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  element.innerHTML =
+
+    filtered
+
+      .slice(0,6)
+
+      .map(createCard)
+
+      .join("");
 
 }
+
+
+
+/* =========================================================
+   RENDER ALL STORIES
+========================================================= */
+
+function renderStories(stories){
+
+  const visible =
+    stories.filter(storyIsVisible);
+
+
+  document.getElementById(
+    "storyCount"
+  ).textContent =
+
+    `${visible.length} stories`;
+
+
+  if(!visible.length){
+
+    document.getElementById(
+      "storyGrid"
+    ).innerHTML = `
+
+      <div class="no-news">
+
+        No translated stories are currently
+        available for
+
+        ${escapeHTML(
+          languageNames[selectedLanguage]
+        )}.
+
+        The next curator update will add them.
+
+      </div>
+
+    `;
+
+
+    document.getElementById(
+      "featureTitle"
+    ).textContent =
+      "Translation pending";
+
+
+    document.getElementById(
+      "featureSnippet"
+    ).innerHTML = "";
+
+
+    document.getElementById(
+      "featureDescription"
+    ).textContent = "";
+
+
+    document.getElementById(
+      "featureSource"
+    ).textContent = "";
+
+
+    document.getElementById(
+      "featureLink"
+    ).href = "#";
+
+  }
+
+  else{
+
+    renderFeatured(
+      visible[0]
+    );
+
+
+    document.getElementById(
+      "storyGrid"
+    ).innerHTML =
+
+      visible
+
+        .slice(1,5)
+
+        .map(createCard)
+
+        .join("");
+
+  }
+
+
+  renderCategory(
+    stories,
+    "indiaGrid",
+    categorySections.india
+  );
+
+
+  renderCategory(
+    stories,
+    "businessGrid",
+    categorySections.business
+  );
+
+
+  renderCategory(
+    stories,
+    "technologyGrid",
+    categorySections.technology
+  );
+
+
+  renderCategory(
+    stories,
+    "scienceGrid",
+    categorySections.science
+  );
+
+
+  renderCategory(
+    stories,
+    "societyGrid",
+    categorySections.society
+  );
+
+
+  renderCategory(
+    stories,
+    "securityGrid",
+    categorySections.security
+  );
+
+
+  renderCategory(
+    stories,
+    "lawGrid",
+    categorySections.law
+  );
+
+
+  renderCategory(
+    stories,
+    "environmentGrid",
+    categorySections.environment
+  );
+
+
+  renderCategory(
+    stories,
+    "globalGrid",
+    categorySections.global
+  );
+
+
+  updateLiveWire(visible);
+
+}
+
+
 
 /* =========================================================
    LIVE WIRE
 ========================================================= */
 
-function renderTicker(list){
+function updateLiveWire(stories){
 
-  const target =
-    $("tickerTrack");
+  const ticker =
+    document.getElementById(
+      "tickerTrack"
+    );
 
-  if(!list.length){
 
-    target.innerHTML =
-      "<span class='ticker-item'>No live updates.</span>";
+  if(!stories.length){
+
+    ticker.innerHTML = `
+
+      <span class="ticker-item">
+
+        No live updates available
+
+      </span>
+
+    `;
 
     return;
 
   }
 
+
   const items =
-    list
-      .slice(0,15)
-      .map(a => `
 
-        <span class="ticker-item">
+    stories
 
-          <span class="ticker-category">
+      .slice(0,20)
+
+      .map(
+
+        story => `
+
+          <span class="ticker-item">
+
             ${escapeHTML(
-              a.category ||
-              "NEWS"
+              getTitle(story)
             )}
+
           </span>
 
-          <span class="ticker-separator">
-            ●
-          </span>
+        `
 
-          <span>
-            ${escapeHTML(
-              localized(
-                a,
-                "headline"
-              )
-            )}
-          </span>
+      )
 
-        </span>
-
-      `)
       .join("");
 
-  target.innerHTML =
+
+  /*
+     Duplicate list so the ticker
+     continuously walks.
+  */
+
+  ticker.innerHTML =
     items + items;
 
 }
 
+
+
 /* =========================================================
-   ACTIVE ARTICLES
+   ACTIVE CATEGORY
 ========================================================= */
 
-function getActiveArticles(){
+function setActiveCategory(category){
 
-  if(
-    activeCategory === "HOME"
-  ){
+  document
+    .querySelectorAll(".category-link")
+    .forEach(
 
-    return [...articles];
+      link =>
+        link.classList.remove(
+          "active"
+        )
+
+    );
+
+
+  if(!category){
+
+    const first =
+      document.querySelector(
+        ".category-link"
+      );
+
+
+    if(first){
+
+      first.classList.add(
+        "active"
+      );
+
+    }
+
+
+    return;
 
   }
 
-  return articles.filter(
-    a =>
-      categoryMatch(
-        a,
-        activeCategory
+
+  const match =
+
+    [
+      ...document.querySelectorAll(
+        ".category-link"
       )
+    ]
+
+      .find(
+
+        link =>
+
+          link.textContent
+            .toLowerCase()
+            .includes(
+
+              category
+                .toLowerCase()
+                .replace(
+                  " & ",
+                  " "
+                )
+
+            )
+
+      );
+
+
+  if(match){
+
+    match.classList.add(
+      "active"
+    );
+
+  }
+
+}
+
+
+
+/* =========================================================
+   CATEGORY FILTER
+========================================================= */
+
+function filterCategory(category){
+
+  selectedCategory =
+    category || "";
+
+
+  setActiveCategory(
+    selectedCategory
+  );
+
+
+  if(selectedCategory){
+
+    const target =
+
+      Object.entries(
+        categorySections
+      )
+
+        .find(
+
+          ([,names]) =>
+            names.includes(
+              selectedCategory
+            )
+
+        );
+
+
+    if(target){
+
+      const element =
+        document.getElementById(
+          target[0]
+        );
+
+
+      if(element){
+
+        element.scrollIntoView({
+
+          behavior:"smooth",
+
+          block:"start"
+
+        });
+
+      }
+
+    }
+
+  }
+
+
+  renderStories(
+    allStories
   );
 
 }
 
-/* =========================================================
-   MAIN RENDER
-========================================================= */
 
-function render(){
-
-  const list =
-    getActiveArticles();
-
-  const info =
-    CATEGORY_INFO[
-      activeCategory
-    ] ||
-    CATEGORY_INFO.HOME;
-
-  $("sectionTitle")
-    .textContent =
-      info.title;
-
-  $("sectionDescription")
-    .textContent =
-      info.description;
-
-  $("storyCount")
-    .textContent =
-      `${list.length} stories`;
-
-  renderHero(list);
-
-  renderTrending(list);
-
-  renderTicker(list);
-
-  renderCategorySections();
-
-}
 
 /* =========================================================
-   CATEGORY BUTTONS
+   HOME
 ========================================================= */
 
-document
-  .querySelectorAll(
-    ".category-btn"
-  )
-  .forEach(btn => {
+function goHome(){
 
-    btn.addEventListener(
-      "click",
-      () => {
+  selectedCategory = "";
 
-        selectCategory(
-          btn.dataset.cat
-        );
 
-      }
-    );
+  setActiveCategory("");
 
-  });
 
-function selectCategory(category){
+  document.getElementById(
+    "searchInput"
+  ).value = "";
 
-  activeCategory =
-    category;
 
-  document
-    .querySelectorAll(
-      ".category-btn"
-    )
-    .forEach(btn => {
+  renderStories(
+    allStories
+  );
 
-      btn.classList.toggle(
-        "active",
-        btn.dataset.cat === category
-      );
-
-    });
-
-  render();
 
   window.scrollTo({
+
     top:0,
+
     behavior:"smooth"
+
   });
 
 }
 
-/* =========================================================
-   LANGUAGE BUTTONS
-========================================================= */
 
-document
-  .querySelectorAll(
-    ".language-btn"
-  )
-  .forEach(btn => {
-
-    btn.addEventListener(
-      "click",
-      () => {
-
-        activeLanguage =
-          btn.dataset.lang;
-
-        document
-          .querySelectorAll(
-            ".language-btn"
-          )
-          .forEach(
-            b =>
-              b.classList.toggle(
-                "active",
-                b.dataset.lang ===
-                activeLanguage
-              )
-          );
-
-        render();
-
-      }
-    );
-
-  });
 
 /* =========================================================
    SEARCH
 ========================================================= */
 
-$("searchInput")
-  .addEventListener(
-    "input",
-    event => {
+function searchStories(){
 
-      const query =
-        event.target.value
-          .trim()
+  const query =
+
+    document
+
+      .getElementById(
+        "searchInput"
+      )
+
+      .value
+
+      .toLowerCase()
+
+      .trim();
+
+
+  if(!query){
+
+    renderStories(
+      allStories
+    );
+
+    return;
+
+  }
+
+
+  const filtered =
+
+    allStories.filter(
+
+      story => {
+
+        if(
+          !storyIsVisible(story)
+        ){
+
+          return false;
+
+        }
+
+
+        const text = [
+
+          getTitle(story),
+
+          getSummary(story),
+
+          getCategory(story),
+
+          getSource(story),
+
+          ...getSnippetLines(
+            story
+          )
+
+        ]
+
+          .join(" ")
+
           .toLowerCase();
 
-      if(!query){
 
-        render();
-        return;
+        return text.includes(
+          query
+        );
 
       }
 
-      const results =
-        getActiveArticles()
-          .filter(article => {
+    );
 
-            const text = [
 
-              article.headline,
-              article.summary,
-              article.snippet,
-              article.category,
-              article.publisher,
-              article.location
+  renderStories(
+    filtered
+  );
 
-            ]
-            .filter(Boolean)
-            .join(" ")
-            .toLowerCase();
+}
 
-            return text.includes(
-              query
-            );
 
-          });
 
-      $("sectionTitle")
-        .textContent =
-          "Search Results";
+/* =========================================================
+   LANGUAGE CHANGE
+========================================================= */
 
-      $("sectionDescription")
-        .textContent =
-          `Stories matching "${event.target.value}"`;
+function changeLanguage(
+  language,
+  button
+){
 
-      $("storyCount")
-        .textContent =
-          `${results.length} results`;
+  selectedLanguage =
+    language;
 
-      renderHero(results);
 
-      renderTrending(results);
+  /*
+     Change ONLY the news language.
 
-      renderTicker(results);
+     Do NOT change:
+       - logo
+       - logo 24
+       - navigation
+       - weather
+       - time
+       - buttons
+       - images
+       - legal footer
+  */
+
+  document.body.className =
+    language === "en"
+      ? ""
+      : `lang-${language}`;
+
+
+  document
+    .querySelectorAll(
+      ".language-button"
+    )
+    .forEach(
+
+      btn =>
+        btn.classList.remove(
+          "active"
+        )
+
+    );
+
+
+  button.classList.add(
+    "active"
+  );
+
+
+  renderStories(
+    allStories
+  );
+
+}
+
+
+
+/* =========================================================
+   LOAD ARTICLES.JSON
+========================================================= */
+
+async function loadStories(){
+
+  try{
+
+    const response =
+
+      await fetch(
+        `articles.json?cache=${Date.now()}`,
+        {
+          cache:"no-store"
+        }
+      );
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "articles.json unavailable"
+      );
 
     }
-  );
+
+
+    const data =
+      await response.json();
+
+
+    allStories =
+
+      Array.isArray(data)
+
+        ? data
+
+        : Array.isArray(
+            data.articles
+          )
+
+          ? data.articles
+
+          : [];
+
+
+    renderStories(
+      allStories
+    );
+
+
+  }
+
+  catch(error){
+
+    console.error(
+      error
+    );
+
+
+    document.getElementById(
+      "storyGrid"
+    ).innerHTML = `
+
+      <div class="no-news">
+
+        Unable to load latest stories.
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
 
 /* =========================================================
    CLOCK
@@ -2737,227 +3429,628 @@ function updateClock(){
   const now =
     new Date();
 
-  $("clockTime")
-    .textContent =
-      now.toLocaleTimeString(
-        "en-IN",
-        {
-          hour:"numeric",
-          minute:"2-digit",
-          hour12:true
-        }
-      );
 
-  $("clockDate")
-    .textContent =
-      now.toLocaleDateString(
-        "en-IN",
-        {
-          day:"2-digit",
-          month:"short",
-          year:"numeric"
-        }
-      );
+  document.getElementById(
+    "currentTime"
+  ).textContent =
+
+    now.toLocaleTimeString(
+      "en-IN",
+      {
+        hour:"2-digit",
+        minute:"2-digit"
+      }
+    );
+
+
+  document.getElementById(
+    "currentDate"
+  ).textContent =
+
+    now.toLocaleDateString(
+      "en-IN",
+      {
+        weekday:"short",
+        day:"2-digit",
+        month:"short",
+        year:"numeric"
+      }
+    );
 
 }
 
-updateClock();
 
-setInterval(
-  updateClock,
-  30000
-);
 
 /* =========================================================
-   LOCATION + WEATHER
+   WEATHER ICON
 ========================================================= */
 
-async function loadWeather(){
+function weatherEmoji(code){
+
+  if(code === 0)
+    return "☀️";
+
+
+  if(code <= 3)
+    return "🌤️";
+
+
+  if(code <= 48)
+    return "🌫️";
+
+
+  if(code <= 67)
+    return "🌧️";
+
+
+  if(code <= 77)
+    return "❄️";
+
+
+  if(code <= 82)
+    return "🌦️";
+
+
+  if(code <= 99)
+    return "⛈️";
+
+
+  return "🌤️";
+
+}
+
+
+
+/* =========================================================
+   WEATHER
+========================================================= */
+
+async function getWeather(
+  lat,
+  lon
+){
 
   try{
 
-    /*
-      Weather is loaded from Open-Meteo.
-      Browser location is requested only for weather.
-      If location is unavailable, Chennai is used.
-    */
+    const url =
 
-    let latitude = 13.0827;
-    let longitude = 80.2707;
-    let locationName = "Chennai, Tamil Nadu, India";
-
-    if(
-      navigator.geolocation
-    ){
-
-      try{
-
-        const position =
-          await new Promise(
-            (resolve,reject) => {
-
-              navigator
-                .geolocation
-                .getCurrentPosition(
-                  resolve,
-                  reject,
-                  {
-                    timeout:4000,
-                    maximumAge:600000
-                  }
-                );
-
-            }
-          );
-
-        latitude =
-          position.coords.latitude;
-
-        longitude =
-          position.coords.longitude;
-
-        locationName =
-          "Your city";
-
-      }catch{
-
-        /* Chennai fallback */
-
-      }
-
-    }
-
-    const weatherURL =
       `https://api.open-meteo.com/v1/forecast` +
-      `?latitude=${latitude}` +
-      `&longitude=${longitude}` +
-      `&current=temperature_2m,weather_code`;
+
+      `?latitude=${lat}` +
+
+      `&longitude=${lon}` +
+
+      `&current=temperature_2m,weather_code` +
+
+      `&timezone=auto`;
+
 
     const response =
-      await fetch(
-        weatherURL,
-        {
-          cache:"no-store"
-        }
-      );
+      await fetch(url);
 
-    if(!response.ok)
-      throw new Error(
-        "Weather request failed"
-      );
 
     const data =
       await response.json();
 
-    const temp =
-      Math.round(
-        data.current
-          .temperature_2m
+
+    document.getElementById(
+      "temperature"
+    ).textContent =
+
+      `${Math.round(
+        data.current.temperature_2m
+      )}°C`;
+
+
+    document.getElementById(
+      "weatherIcon"
+    ).textContent =
+
+      weatherEmoji(
+        data.current.weather_code
       );
 
-    $("weatherTemp")
-      .textContent =
-        `${temp}°C`;
 
-    $("weatherLocation")
-      .textContent =
-        locationName;
+    /*
+       Reverse geocoding
+    */
 
-  }catch(error){
+    try{
 
-    $("weatherTemp")
-      .textContent =
-        "--°C";
+      const geoResponse =
 
-    $("weatherLocation")
-      .textContent =
-        "Weather unavailable";
+        await fetch(
+
+          `https://nominatim.openstreetmap.org/reverse` +
+
+          `?lat=${lat}` +
+
+          `&lon=${lon}` +
+
+          `&format=json` +
+
+          `&zoom=10`
+
+        );
+
+
+      const geo =
+        await geoResponse.json();
+
+
+      const a =
+        geo.address || {};
+
+
+      const city =
+
+        a.city ||
+
+        a.town ||
+
+        a.village ||
+
+        a.municipality ||
+
+        a.county ||
+
+        "Your city";
+
+
+      const state =
+        a.state || "";
+
+
+      const country =
+        a.country || "";
+
+
+      locationState.name =
+
+        [
+          city,
+          state,
+          country
+        ]
+
+          .filter(Boolean)
+
+          .join(", ");
+
+
+      document.getElementById(
+        "cityName"
+      ).textContent =
+
+        locationState.name;
+
+    }
+
+    catch{
+
+      document.getElementById(
+        "cityName"
+      ).textContent =
+        "Local weather";
+
+    }
+
+  }
+
+  catch{
+
+    document.getElementById(
+      "temperature"
+    ).textContent =
+      "--°C";
+
+
+    document.getElementById(
+      "weatherIcon"
+    ).textContent =
+      "☀️";
+
+  }
+
+}
+
+
+
+/* =========================================================
+   LOAD WEATHER
+========================================================= */
+
+function loadWeather(){
+
+  if(!navigator.geolocation){
+
+    getWeather(
+      locationState.lat,
+      locationState.lon
+    );
+
+    return;
+
+  }
+
+
+  navigator.geolocation.getCurrentPosition(
+
+    position => {
+
+      locationState.lat =
+        position.coords.latitude;
+
+
+      locationState.lon =
+        position.coords.longitude;
+
+
+      getWeather(
+
+        locationState.lat,
+
+        locationState.lon
+
+      );
+
+    },
+
+
+    () => {
+
+      getWeather(
+
+        locationState.lat,
+
+        locationState.lon
+
+      );
+
+    },
+
+
+    {
+
+      enableHighAccuracy:false,
+
+      timeout:10000,
+
+      maximumAge:300000
+
+    }
+
+  );
+
+}
+
+
+
+/* =========================================================
+   HINDU PANCHANG
+========================================================= */
+
+async function loadPanchang(){
+
+  const target =
+
+    document.getElementById(
+      "panchangDetails"
+    );
+
+
+  target.textContent =
+    "Loading location-specific Panchang...";
+
+
+  try{
+
+    const now =
+      new Date();
+
+
+    const date = [
+
+      now.getFullYear(),
+
+      String(
+        now.getMonth()+1
+      ).padStart(2,"0"),
+
+      String(
+        now.getDate()
+      ).padStart(2,"0")
+
+    ].join("-");
+
+
+    const url =
+
+      `https://nityapanchangam.com/api/panchangam.php` +
+
+      `?date=${encodeURIComponent(date)}` +
+
+      `&lat=${encodeURIComponent(
+        locationState.lat
+      )}` +
+
+      `&lng=${encodeURIComponent(
+        locationState.lon
+      )}`;
+
+
+    const response =
+      await fetch(url);
+
+
+    const data =
+      await response.json();
+
+
+    const tithi =
+
+      data?.tithi?.name ||
+      "--";
+
+
+    const nakshatra =
+
+      data?.nakshatra?.name ||
+      "--";
+
+
+    const yoga =
+
+      data?.yoga?.name ||
+      "--";
+
+
+    const karana =
+
+      data?.karana?.name ||
+      "--";
+
+
+    const sunrise =
+      data?.sunrise ||
+      "--";
+
+
+    const sunset =
+      data?.sunset ||
+      "--";
+
+
+    target.innerHTML = `
+
+      <div>
+
+        <strong>
+          Tithi:
+        </strong>
+
+        ${escapeHTML(tithi)}
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Nakshatra:
+        </strong>
+
+        ${escapeHTML(nakshatra)}
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Yoga:
+        </strong>
+
+        ${escapeHTML(yoga)}
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Karana:
+        </strong>
+
+        ${escapeHTML(karana)}
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Sunrise:
+        </strong>
+
+        ${escapeHTML(sunrise)}
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Sunset:
+        </strong>
+
+        ${escapeHTML(sunset)}
+
+      </div>
+
+    `;
+
+  }
+
+  catch(error){
 
     console.error(
-      "Weather:",
       error
     );
 
+
+    target.textContent =
+
+      "Panchang service is temporarily unavailable. " +
+
+      "Date, time and location remain available above.";
+
   }
 
 }
+
+
+
+/* =========================================================
+   OPEN CALENDAR
+========================================================= */
+
+function openCalendar(){
+
+  const now =
+    new Date();
+
+
+  document.getElementById(
+    "calendarDate"
+  ).textContent =
+
+    now.toLocaleDateString(
+      "en-IN",
+      {
+        day:"2-digit",
+        month:"long",
+        year:"numeric"
+      }
+    );
+
+
+  document.getElementById(
+    "calendarDay"
+  ).textContent =
+
+    now.toLocaleDateString(
+      "en-IN",
+      {
+        weekday:"long"
+      }
+    );
+
+
+  document.getElementById(
+    "calendarLocation"
+  ).textContent =
+
+    locationState.name;
+
+
+  document.getElementById(
+    "calendarTime"
+  ).textContent =
+
+    now.toLocaleTimeString(
+      "en-IN",
+      {
+        hour:"2-digit",
+        minute:"2-digit",
+        second:"2-digit"
+      }
+    );
+
+
+  document
+    .getElementById(
+      "calendarOverlay"
+    )
+    .classList.add(
+      "show"
+    );
+
+
+  loadPanchang();
+
+}
+
+
+
+/* =========================================================
+   CLOSE CALENDAR
+========================================================= */
+
+function closeCalendar(event){
+
+  if(
+
+    event &&
+
+    event.target !==
+      document.getElementById(
+        "calendarOverlay"
+      )
+
+  ){
+
+    return;
+
+  }
+
+
+  document
+    .getElementById(
+      "calendarOverlay"
+    )
+    .classList.remove(
+      "show"
+    );
+
+}
+
+
+
+/* =========================================================
+   START
+========================================================= */
+
+updateClock();
+
+
+setInterval(
+  updateClock,
+  1000
+);
+
+
+loadStories();
+
 
 loadWeather();
 
-/* =========================================================
-   LOAD ARTICLES
-========================================================= */
 
-async function loadArticles(){
 
-  try{
+/*
+   Refresh articles.json every 5 minutes.
 
-    const response =
-      await fetch(
-        "articles.json",
-        {
-          cache:"no-store"
-        }
-      );
+   The logo and page interface do not change.
+   Only the news data is refreshed.
+*/
 
-    if(!response.ok){
-
-      throw new Error(
-        "articles.json not found"
-      );
-
-    }
-
-    const data =
-      await response.json();
-
-    articles =
-      Array.isArray(data)
-        ? data
-        : (
-            Array.isArray(
-              data.articles
-            )
-            ? data.articles
-            : []
-          );
-
-    render();
-
-  }catch(error){
-
-    $("storyCount")
-      .textContent =
-        "News unavailable";
-
-    $("hero").innerHTML = `
-      <div class="hero">
-        <div class="hero-placeholder">
-          Could not load articles.json
-        </div>
-      </div>
-    `;
-
-    $("trendingList").innerHTML = `
-      <div style="
-        padding:20px;
-        color:#718096;
-        font-size:11px;
-      ">
-        Check that articles.json is
-        present in the same folder.
-      </div>
-    `;
-
-    console.error(error);
-
-  }
-
-}
-
-loadArticles();
+setInterval(
+  loadStories,
+  5 * 60 * 1000
+);
 
 </script>
+
 
 </body>
 </html>
