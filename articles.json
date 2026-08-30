@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T04:04:23.946005+00:00",
-  "total": 1502,
+  "updated_at": "2026-08-30T04:35:19.697263+00:00",
+  "total": 1516,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 122,
-    "India": 470,
-    "Business": 171,
+    "World": 123,
+    "India": 479,
+    "Business": 172,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 316,
-    "Lifestyle": 191
+    "Entertainment": 318,
+    "Lifestyle": 192
   },
   "articles": [
     {
@@ -22,17 +22,6 @@
       "published_at": "2026-08-28T13:05:20+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/bollywood/8-ott-releases-to-watch-this-weekend-pick-from-alpha-and-bandar-to-michael-and-dark-matter-where-to-watch-101787918606084.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%208%20OTT%20releases%20to%20watch%20this%20weekend%3A%20Pick%20from%20Alpha%20and%20Bandar%20to%20Michael%20and%20Dark%20Matter%3B%20where%20to%20watch.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4150790569",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "3942ca291973ae51cf5e",
-      "category": "India",
-      "headline": "Nepal Flash Flood LIVE Updates: 275 Indians Still Missing, New Delhi Sends 4th Aid Flight",
-      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
-      "publisher": "NDTV India",
-      "published_at": "2026-08-30T01:17:23+00:00",
-      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20275%20Indians%20Still%20Missing%2C%20New%20Delhi%20Sends%204th%20Aid%20Flight.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4256771364",
       "image_type": "ai_generated"
     },
     {
@@ -165,6 +154,28 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "97626d861ba7fedffb21",
+      "category": "India",
+      "headline": "Nepal Flash Flood LIVE Updates: 734 Bodies Recovered, 275 Indians Among Nearly 2,500 Still Missing",
+      "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T04:18:36+00:00",
+      "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20734%20Bodies%20Recovered%2C%20275%20Indians%20Among%20Nearly%202%2C500%20Still%20Missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=841442222",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1633e65e394cd375e01f",
+      "category": "Business",
+      "headline": "GDP data, crude prices among 7 factors likely to steer D-Street this week",
+      "summary": "Indian equities are likely to take cues from a slew of domestic and global factors this week, including India’s first-quarter GDP data, US jobs numbers, crude oil prices, institutional flows and global technology sentiment. Analysts expect the Nifty to remain in consolidation, with the technical setup balanced as investors track key resistance and support levels.",
+      "publisher": "Economic Times",
+      "published_at": "2026-08-30T04:00:43+00:00",
+      "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/gdp-data-crude-prices-among-7-factors-likely-to-steer-d-street-this-week/articleshow/133622736.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20GDP%20data%2C%20crude%20prices%20among%207%20factors%20likely%20to%20steer%20D-Street%20this%20week.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1585253872",
       "image_type": "ai_generated"
     },
     {
@@ -740,6 +751,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "3b7ac6b287d04ceddccd",
+      "category": "India",
+      "headline": "HT Morning Brief Aug 30: PM Modi in Uzbekistan, Mohan Bhagwat stresses unity in diversity",
+      "summary": "Here's your 5-minute sprint through today's biggest stories: politics, India, world, entertainment and sports.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T03:46:57+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/ht-morning-brief-august-30-pm-modi-in-uzbekistan-mohan-bhagwat-on-unity-punjab-influencer-kriti-sanon-ad-ipl-top-news-101788059045476.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20HT%20Morning%20Brief%20Aug%2030%3A%20PM%20Modi%20in%20Uzbekistan%2C%20Mohan%20Bhagwat%20stresses%20unity%20in%20diversity.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2625632586",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b418f64a19335cc48068",
+      "category": "India",
+      "headline": "PM Modi’s SCO visit is loaded with expectations on BRICS Summit and UNSC election",
+      "summary": "PM’s visit will focus on strengthening ties with Iran, Tajikistan, and other Central Asian countries; the agenda will include engagements aimed at the upcoming BRICS Summit in September, the two-year UN Security Council term of 2028-2029, and planning for the long-pending India-Central Asia Summit, which has not met since 2022",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T02:34:08+00:00",
+      "source_url": "https://www.thehindu.com/news/national/pms-sco-visit-is-loaded-with-expectations-on-brics-summit-and-unsc-election/article71404574.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%E2%80%99s%20SCO%20visit%20is%20loaded%20with%20expectations%20on%20BRICS%20Summit%20and%20UNSC%20election.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3976845841",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "3b5aab599327eb9b2e7d",
       "category": "India",
       "headline": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
@@ -858,17 +891,6 @@
       "published_at": "2026-08-29T15:48:30+00:00",
       "source_url": "https://www.thehindu.com/business/nepal-seeks-to-import-power-from-india-after-flood-devastation-asks-for-early-approvals/article71405229.ece",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20seeks%20to%20import%20power%20from%20India%20after%20flood%20devastation%2C%20asks%20for%20early%20approvals.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1258879585",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "b418f64a19335cc48068",
-      "category": "India",
-      "headline": "PM Modi’s SCO visit is loaded with expectations on BRICS Summit and UNSC election",
-      "summary": "PM’s visit will focus on strengthening ties with Iran, Tajikistan, and other Central Asian countries; the agenda will include engagements aimed at the upcoming BRICS Summit in September, the two-year UN Security Council term of 2028-2029, and planning for the long-pending India-Central Asia Summit, which has not met since 2022",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T13:59:16+00:00",
-      "source_url": "https://www.thehindu.com/news/national/pms-sco-visit-is-loaded-with-expectations-on-brics-summit-and-unsc-election/article71404574.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%E2%80%99s%20SCO%20visit%20is%20loaded%20with%20expectations%20on%20BRICS%20Summit%20and%20UNSC%20election.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3976845841",
       "image_type": "ai_generated"
     },
     {
@@ -1532,6 +1554,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "47fb780f430771009cb9",
+      "category": "Entertainment",
+      "headline": "Rishab Shetty defends fellow Kannadiga Yash's Toxic amid scathing reactions: ‘Maybe the plot is not on usual track…’",
+      "summary": "Fellow actors Kiccha Sudeep and Rishab Shetty commend Yash's bravery in taking risks, despite the film's struggling box office success.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-30T03:57:39+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/others/rishab-shetty-defends-fellow-kannadiga-yashs-toxic-maybe-the-plot-is-not-on-usual-track-101788060441029.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Rishab%20Shetty%20defends%20fellow%20Kannadiga%20Yash%27s%20Toxic%20amid%20scathing%20reactions%3A%20%E2%80%98Maybe%20the%20plot%20is%20not%20on%20usual%20track%E2%80%A6%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3370771469",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "8d8cda81b5b999312caa",
       "category": "India",
       "headline": "Chennai’s second airport: grounded until take-off",
@@ -2049,6 +2082,61 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "6c5cd5ab1e569692ec8a",
+      "category": "India",
+      "headline": "Punjab AAP activist Gurpreet Singh Gopi shot dead near Ferozpur; cops suspect old dispute, elections as motive",
+      "summary": "Ferozepur senior superintendent of police said Gopi and his associate were travelling on a bike when the attackers, in a car, chased them and opened fire.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T04:01:37+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/punjab-aap-activist-gurpreet-singh-gopi-shot-dead-near-ferozpur-cops-suspect-old-dispute-elections-as-motive-101788062091320.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Punjab%20AAP%20activist%20Gurpreet%20Singh%20Gopi%20shot%20dead%20near%20Ferozpur%3B%20cops%20suspect%20old%20dispute%2C%20elections%20as%20motive.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1074838518",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7445fa7455e5439fe110",
+      "category": "India",
+      "headline": "AAP leader Gurpreet Gopi shot dead in Punjab’s Ferozepur",
+      "summary": "The four car-borne assailants got down from their vehicle in the main bazaar of Mamdot in Ferozepur on Saturday (August 29) evening and opened fire towards the car in which the 45-year",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T04:00:24+00:00",
+      "source_url": "https://www.thehindu.com/news/national/punjab/aap-leader-gurpreet-gopi-shot-dead-in-punjabs-ferozepur/article71406995.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AAP%20leader%20Gurpreet%20Gopi%20shot%20dead%20in%20Punjab%E2%80%99s%20Ferozepur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276543950",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "34f4c501245a7bb2f85d",
+      "category": "India",
+      "headline": "ICAR AIEEA Postgraduate, AICE Fellowship For PhD Admission Results 2026 Out",
+      "summary": "The exam was conducted on July 4, 2026, across 162 examination centres located in 115 cities.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T03:20:27+00:00",
+      "source_url": "https://www.ndtv.com/education/icar-aieea-postgraduate-aice-fellowship-for-phd-admission-results-2026-out-11976799#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20ICAR%20AIEEA%20Postgraduate%2C%20AICE%20Fellowship%20For%20PhD%20Admission%20Results%202026%20Out.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2296888541",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "99e78d3bd3a82ab079f0",
+      "category": "India",
+      "headline": "Gas Leak On Mumbai-Nagpur Expressway Triggers Traffic Diversion",
+      "summary": "Senior officials from the district administration and police are monitoring the situation",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T02:51:35+00:00",
+      "source_url": "https://www.ndtv.com/india-news/gas-leak-on-mumbai-nagpur-expressway-samruddhi-expressway-triggers-traffic-diversion-11976733#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Gas%20Leak%20On%20Mumbai-Nagpur%20Expressway%20Triggers%20Traffic%20Diversion.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=452558916",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "18f9b490c2c96d3c4b34",
+      "category": "India",
+      "headline": "Chirag Paswan hits back at Rahul Gandhi’s caste discrimination remarks",
+      "summary": "Chirag Paswan also demanded the resignation of Hindustani Awam Morcha (Secular) leader, Santosh Kumar Suman from the Bihar Cabinet after the party, an NDA ally, sought a review of the reservation policy and sub",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T02:48:07+00:00",
+      "source_url": "https://www.thehindu.com/news/national/bihar/chirag-paswan-hits-back-at-rahul-gandhis-caste-discrimination-remarks/article71404753.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chirag%20Paswan%20hits%20back%20at%20Rahul%20Gandhi%E2%80%99s%20caste%20discrimination%20remarks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2131807922",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b93d1c4551ed86dd4f0d",
       "category": "India",
       "headline": "Revanth Reddy urges ECI to extend Telangana SIR deadline by four weeks",
@@ -2354,17 +2442,6 @@
       "published_at": "2026-08-29T17:00:46+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/uttar-pradesh-cm-yogi-adityanath-slams-opposition-for-dividing-people-in-name-of-caste-region-language-101788022483531.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Uttar%20Pradesh%20CM%20Adityanath%20slams%20opposition%20for%20dividing%20people%20in%20name%20of%20caste%2C%20region%2C%20language.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1425046582",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "18f9b490c2c96d3c4b34",
-      "category": "India",
-      "headline": "Chirag Paswan hits back at Rahul Gandhi’s caste discrimination remarks",
-      "summary": "Chirag Paswan also demanded the resignation of Hindustani Awam Morcha (Secular) leader, Santosh Kumar Suman from the Bihar Cabinet after the party, an NDA ally, sought a review of the reservation policy and sub",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T16:46:43+00:00",
-      "source_url": "https://www.thehindu.com/news/national/bihar/chirag-paswan-hits-back-at-rahul-gandhis-caste-discrimination-remarks/article71404753.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Chirag%20Paswan%20hits%20back%20at%20Rahul%20Gandhi%E2%80%99s%20caste%20discrimination%20remarks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2131807922",
       "image_type": "ai_generated"
     },
     {
@@ -4711,6 +4788,50 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "72f5c9c92445c7c62957",
+      "category": "India",
+      "headline": "30-year-old man arrested for allegedly raping 11-year-old relative in Haryana's Palwal",
+      "summary": "The 11-year-old girl went to her father’s room at the mosque to retrieve a mobile phone charger when the suspect allegedly locked her inside and assaulted her.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T04:05:42+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/30-year-old-man-arrested-for-allegedly-raping-11-year-old-girl-in-haryanas-palwal-101788061192195.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%2030-year-old%20man%20arrested%20for%20allegedly%20raping%2011-year-old%20relative%20in%20Haryana%27s%20Palwal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2433738564",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "590a7410301044cf228e",
+      "category": "India",
+      "headline": "Ministers Chirag Paswan, Jitan Manjhi Clash Over Quota, Demand Resignations",
+      "summary": "Manjhi has viewed Paswans' opposition to Dalit welfare as an attempt to maintain Dusadh dominance",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T04:04:24+00:00",
+      "source_url": "https://www.ndtv.com/india-news/ministers-chirag-paswan-jitan-manjhi-clash-over-quota-demand-resignations-11976886#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Ministers%20Chirag%20Paswan%2C%20Jitan%20Manjhi%20Clash%20Over%20Quota%2C%20Demand%20Resignations.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2335161096",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7173e9a371b7770d426a",
+      "category": "India",
+      "headline": "\"Do You Feel You Are A Lord?\" High Court Pulls Up Tukaram Mundhe's Food Safety Body",
+      "summary": "FDA said it would withdraw its order suspending the operations of five restaurants at MCA",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T03:50:08+00:00",
+      "source_url": "https://www.ndtv.com/india-news/tukaram-mundhe-bombay-high-court-pulls-up-maharashtra-food-and-drugs-administration-fda-cipla-pharma-mumbai-cricket-association-11976851#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Do%20You%20Feel%20You%20Are%20A%20Lord%3F%22%20High%20Court%20Pulls%20Up%20Tukaram%20Mundhe%27s%20Food%20Safety%20Body.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2525092411",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a72fe04ce514a3e682a7",
+      "category": "India",
+      "headline": "CTET SEP 2026: Extended Application Deadline Ends On September 1, Direct Link To Apply",
+      "summary": "CTET September 2026: Application window closes on September 1.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T03:41:45+00:00",
+      "source_url": "https://www.ndtv.com/education/ctet-2026-application-window-reopens-know-when-the-exam-will-be-held-11956490#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20CTET%20SEP%202026%3A%20Extended%20Application%20Deadline%20Ends%20On%20September%201%2C%20Direct%20Link%20To%20Apply.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3902300783",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ff7dc5908be72fb6c852",
       "category": "India",
       "headline": "Book Box: The book my brother will actually read",
@@ -4719,6 +4840,17 @@
       "published_at": "2026-08-30T03:34:07+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/book-box-the-book-my-brother-will-actually-read-101788060848039.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Book%20Box%3A%20The%20book%20my%20brother%20will%20actually%20read.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3934485272",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4806c6b9479b19ec3cd4",
+      "category": "India",
+      "headline": "If Hindus think Muslims have no place, they cease to be Hindu: Mohan Bhagwat in New York",
+      "summary": "In a notable address in New York City, RSS chief Mohan Bhagwat stated that true Hindutva does not exclude Muslims from Bharat, asserting that any Hindu who believes otherwise ceases to be a Hindu",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T03:09:55+00:00",
+      "source_url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20If%20Hindus%20think%20Muslims%20have%20no%20place%2C%20they%20cease%20to%20be%20Hindu%3A%20Mohan%20Bhagwat%20in%20New%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2210942808",
       "image_type": "ai_generated"
     },
     {
@@ -4807,6 +4939,17 @@
       "published_at": "2026-08-30T01:55:19+00:00",
       "source_url": "https://www.hindustantimes.com/entertainment/bollywood/subhash-ghai-recalls-hatha-paai-with-salman-khan-before-yuvvraaj-says-he-abused-him-salim-khan-101788009791105.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Subhash%20Ghai%20recalls%20%E2%80%98hatha%20paai%E2%80%99%20with%20Salman%20Khan%20before%20Yuvvraaj%2C%20says%20he%20abused%20him%3A%20%E2%80%98Salim%20Khan%20said%20apologise%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=18435215",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "fc6568e78ca470202d52",
+      "category": "India",
+      "headline": "Manoj Jarange Patil begins indefinite hunger strike for Maratha reservation",
+      "summary": "Addressing media at the protest site, Jarange Patil said the government should not resort to delaying tactics.",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T01:43:35+00:00",
+      "source_url": "https://www.thehindu.com/news/national/maharashtra/manoj-jarange-patil-begins-indefinite-hunger-strike-for-maratha-reservation/article71405493.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Manoj%20Jarange%20Patil%20begins%20indefinite%20hunger%20strike%20for%20Maratha%20reservation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3056593992",
       "image_type": "ai_generated"
     },
     {
@@ -4920,17 +5063,6 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "4806c6b9479b19ec3cd4",
-      "category": "India",
-      "headline": "If Hindus think Muslims have no place, they cease to be Hindu: Mohan Bhagwat in New York",
-      "summary": "In a notable address in New York City, RSS chief Mohan Bhagwat stated that true Hindutva does not exclude Muslims from Bharat, asserting that any Hindu who believes otherwise ceases to be a Hindu",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T19:58:26+00:00",
-      "source_url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20If%20Hindus%20think%20Muslims%20have%20no%20place%2C%20they%20cease%20to%20be%20Hindu%3A%20Mohan%20Bhagwat%20in%20New%20York.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2210942808",
-      "image_type": "ai_generated"
-    },
-    {
       "id": "85aa51e7aab7e2542ad6",
       "category": "India",
       "headline": "External intelligence agency and Intelligence Bureau form the first arm of offence and defence, says former RAW chief",
@@ -5005,17 +5137,6 @@
       "published_at": "2026-08-29T18:50:33+00:00",
       "source_url": "https://timesofindia.indiatimes.com/india/pak-drones-armed-men-spur-searches-in-poonch-rajouri/articleshow/133618484.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Pak%20drones%2C%20armed%20men%20spur%20searches%20in%20Poonch%2C%20Rajouri.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1814007832",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "fc6568e78ca470202d52",
-      "category": "India",
-      "headline": "Manoj Jarange Patil begins indefinite hunger strike for Maratha reservation",
-      "summary": "Addressing media at the protest site, Jarange Patil said the government should not resort to delaying tactics.",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-29T18:40:57+00:00",
-      "source_url": "https://www.thehindu.com/news/national/maharashtra/manoj-jarange-patil-begins-indefinite-hunger-strike-for-maratha-reservation/article71405493.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Manoj%20Jarange%20Patil%20begins%20indefinite%20hunger%20strike%20for%20Maratha%20reservation.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3056593992",
       "image_type": "ai_generated"
     },
     {
@@ -10321,6 +10442,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "8cd3fdee2f461c1e32fb",
+      "category": "Lifestyle",
+      "headline": "Make your bed – and be ruthless: 14 expert rules for a clean, healthy, happy home",
+      "summary": "Is your place crying out for some TLC? Housekeepers reveal how to keep it looking its best – and when it’s OK to let standards slip Life is busy and there is only so much time to spend cleaning and tidying. What are the non-negotiables of a well-managed home? Here, housekeepers share their tips and hacks for making a chaotic house feel more orderly. Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-30T04:00:47+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/30/make-your-bed-and-be-ruthless-14-expert-rules-for-a-clean-healthy-happy-home",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Make%20your%20bed%20%E2%80%93%20and%20be%20ruthless%3A%2014%20expert%20rules%20for%20a%20clean%2C%20healthy%2C%20happy%20home.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2180721855",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "70f853963b94aa5c4bcc",
       "category": "Entertainment",
       "headline": "Harry Styles Jokes About Taylor Swift’s Wedding During Madison Square Garden Concert",
@@ -11861,6 +11993,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7406782258af32f57ee4",
+      "category": "Entertainment",
+      "headline": "Melinda French Gates Doubles Olivia Rodrigo’s Daisy Chain Fields Donation Sum Bringing Total to $20 Million",
+      "summary": "The philanthropist matched the $10 million that Rodrigo announced the festival had raised in support of women",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-30T04:12:53+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-20m-melinda-gates-1236685002/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Melinda%20French%20Gates%20Doubles%20Olivia%20Rodrigo%E2%80%99s%20Daisy%20Chain%20Fields%20Donation%20Sum%20Bringing%20Total%20to%20%2420%20Million.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1558764308",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "022d2fe0810633fd330d",
+      "category": "World",
+      "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
+      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T04:10:22+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "72725a52af9f42c5dd15",
       "category": "World",
       "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
@@ -11872,6 +12026,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "e7538f23129bbc6981c7",
+      "category": "World",
+      "headline": "Giorgia on their minds: Farage and Badenoch scrap to be mates with Meloni",
+      "summary": "Tories accuse Reform of ‘peddling conspiracy theories’ as row erupts in wake of Conservative leader’s trip to Rome Nigel Farage and Kemi Badenoch have spent years trading barbs and fighting for the rightwing vote. But now the party leaders find themselves in a much more bizarre struggle – for the affections of the rightwing Italian prime minister, Giorgia Meloni. The row began on Monday when the Times published...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T04:00:45+00:00",
+      "source_url": "https://www.theguardian.com/politics/2026/aug/30/giorgia-meloni-farage-badenoch-row",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Giorgia%20on%20their%20minds%3A%20Farage%20and%20Badenoch%20scrap%20to%20be%20mates%20with%20Meloni.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=977303499",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9083d90799f9a3ec9551",
       "category": "World",
       "headline": "Iceland EU referendum on a knife edge as counting continues",
@@ -11880,17 +12045,6 @@
       "published_at": "2026-08-30T03:57:01+00:00",
       "source_url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Iceland%20EU%20referendum%20on%20a%20knife%20edge%20as%20counting%20continues.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1769953623",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "022d2fe0810633fd330d",
-      "category": "World",
-      "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
-      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-30T03:46:09+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
       "image_type": "ai_generated"
     },
     {
@@ -13580,7 +13734,7 @@
       "id": "7e24bc77b4c44433cd3a",
       "category": "Lifestyle",
       "headline": "Flipping marvellous: Yotam Ottolenghi on the joy of simple breakfasts – plus six exclusive recipes",
-      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes",
+      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes – more than I would have ever...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T07:00:20+00:00",
       "source_url": "https://www.theguardian.com/food/2026/aug/29/yotam-ottolenghi-simple-breakfasts-recipes",
@@ -15890,7 +16044,7 @@
       "id": "11998f7d14cc1e7b1837",
       "category": "Lifestyle",
       "headline": "Architourism in France: the retro futurist seaside town near Montpellier that’s out of this world",
-      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu",
+      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T06:00:06+00:00",
       "source_url": "https://www.theguardian.com/travel/2026/aug/27/architourism-france-retro-futurist-la-grande-motte-seaside-town-near-montpellier",
