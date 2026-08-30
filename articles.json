@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-30T00:05:29.060972+00:00",
-  "total": 1429,
+  "updated_at": "2026-08-30T00:34:59.628565+00:00",
+  "total": 1431,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 117,
+    "World": 119,
     "India": 453,
     "Business": 169,
     "Technology & AI": 101,
@@ -11421,14 +11421,47 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "105036c6986181de57b1",
+      "id": "2df2386560ee860522d3",
       "category": "World",
-      "headline": "News live: missing Australian woman found safe in Nepal flooding",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Smartglasses could face government regulation, says Plibersek Tanya Plibersek says the government is reviewing the import of smartglasses, dubbed by some as “pervert glasses”. I think it is really concerning when tech companies just, come up with these products and release them without...",
+      "headline": "Families balance hope and despair in race to find survivors in Nepal as 41 Australians still missing",
+      "summary": "The walls of a teaching hospital are filled with pictures of unidentified victims as authorities collect DNA samples and plan burials before morgues fill up Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Some of them are young, some old; most of them appear to be men. Some of them could be sleeping, except for the mud that covers their bodies....",
       "publisher": "Guardian World",
-      "published_at": "2026-08-29T23:55:41+00:00",
+      "published_at": "2026-08-30T00:27:59+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/30/families-balance-hope-and-despair-in-race-to-find-survivors-in-nepal-as-australians-still-missing",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Families%20balance%20hope%20and%20despair%20in%20race%20to%20find%20survivors%20in%20Nepal%20as%2041%20Australians%20still%20missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1865174625",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2c92e12b5b8cea0d1abb",
+      "category": "World",
+      "headline": "News live: limits on smartglasses being considered, Plibersek says; missing Australian woman located safely in Nepal",
+      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Plibersek says One Nation byelection win ‘on state issues’ Tanya Plibersek has downplayed One Nation’s victory in the Secret Harbour state byelection in Western Australia as a local vote fought on state issues. Oh, this is a state election run on state issues, and I think they’re the...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T00:25:33+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20missing%20Australian%20woman%20found%20safe%20in%20Nepal%20flooding.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1723435287",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20limits%20on%20smartglasses%20being%20considered%2C%20Plibersek%20says%3B%20missing%20Australian%20woman%20located%20safely%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4038879064",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "004ec42e5edb8f29c353",
+      "category": "World",
+      "headline": "Canada installs large Lake Ontario sign in latest jab at US",
+      "summary": "Ontario Premier Doug Ford unveiled a billboard on Canada's shoreline with the message: \"Lake Ontario. Now and Always.\"",
+      "publisher": "BBC World",
+      "published_at": "2026-08-30T00:17:25+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Canada%20installs%20large%20Lake%20Ontario%20sign%20in%20latest%20jab%20at%20US.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2922134721",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "7349a93373e3022d4ce9",
+      "category": "World",
+      "headline": "One Nation claims victory in Secret Harbour byelection in Western Australia",
+      "summary": "One Nation candidate Luke Herdegen secures 57% of the vote after preferences as Barnaby Joyce says ‘politics has changed’ Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Barnaby Joyce has declared “politics has changed” after One Nation claimed victory in the Secret Harbour state byelection in Western Australia. The One Nation MP celebrated the...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T00:00:28+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/2026/aug/30/one-nation-claims-victory-on-secret-harbour-byelection-in-western-australia",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20One%20Nation%20claims%20victory%20in%20Secret%20Harbour%20byelection%20in%20Western%20Australia.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1244768754",
       "image_type": "ai_generated"
     },
     {
@@ -11550,17 +11583,6 @@
       "published_at": "2026-08-29T22:30:33+00:00",
       "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c4gq47745peo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Cameron%20beats%20Mayer%20to%20become%20unified%20light-middleweight%20champion.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2680461665",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7349a93373e3022d4ce9",
-      "category": "World",
-      "headline": "One Nation claims victory in Secret Harbour byelection in Western Australia",
-      "summary": "One Nation candidate Luke Herdegen secures 57% of the vote after preferences as party’s WA leader says result will send shock waves across the country Barnaby Joyce has declared “politics has changed” after One Nation claimed victory in the Secret Harbour state byelection in Western Australia. The One Nation MP celebrated the win on Sunday, and said the results showed his party could convert high polling to on...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-29T22:29:43+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/2026/aug/30/one-nation-claims-victory-on-secret-harbour-byelection-in-western-australia",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20One%20Nation%20claims%20victory%20in%20Secret%20Harbour%20byelection%20in%20Western%20Australia.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1244768754",
       "image_type": "ai_generated"
     },
     {
@@ -11809,7 +11831,7 @@
       "id": "d27015c9febe76ad99b9",
       "category": "World",
       "headline": "August reveals Australians’ big appetite for weight-loss drugs, love for ‘dupe’ brands and an accelerating EV uptake",
-      "summary": "Reporting season shows how consumers are responding to cost of living pressures and how retailers are responding Get our breaking news email , free app or daily news podcast Australians are buying less pizza but more weight-loss drugs . They love “dupes” but don’t enjoy writing letters. Here are five key takeaways from the August reporting season that show what consumers are buying as cost of living pressures...",
+      "summary": "Reporting season shows how consumers are responding to cost of living pressures and how retailers are responding Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Australians are buying less pizza but more weight-loss drugs . They love “dupes” but don’t enjoy writing letters. Here are five key takeaways from the August reporting season that show...",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T20:00:38+00:00",
       "source_url": "https://www.theguardian.com/business/2026/aug/30/australians-buying-less-pizza-more-weight-loss-drugs-consumer-report",
@@ -13173,7 +13195,7 @@
       "id": "6c9a1e1c4989845912da",
       "category": "World",
       "headline": "Plug-in solar panels could save households up to $370 a year – if Australia made them legal as in the UK",
-      "summary": "A plug-in solar kit that costs about $1,000 ‘pays for itself in three years’, one expert says Get our breaking news email , free app or daily news podcast Millions of Australians could be saving up to $370 a year on energy bills and doing their bit for the climate crisis if Labor followed the UK’s lead in legalising plug-in solar panels, an advocacy group has said. Plug-in solar refers to small standalone solar...",
+      "summary": "A plug-in solar kit that costs about $1,000 ‘pays for itself in three years’, one expert says Get our breaking news email , free app or daily news podcast Millions of Australians could be saving up to $370 a year on energy bills and doing their bit for the climate crisis if Labor followed the UK’s lead in legalising plug-in solar panels, an advocacy group has said. Plug",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T05:13:27+00:00",
       "source_url": "https://www.theguardian.com/environment/2026/aug/29/plug-in-solar-panels-could-save-households-370-a-year-and-experts-say-australia-should-copy-the-uk-in-legalising-them",
