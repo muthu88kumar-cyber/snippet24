@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T02:34:43.389911+00:00",
-  "total": 1444,
+  "updated_at": "2026-08-30T03:04:46.688512+00:00",
+  "total": 1491,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 121,
-    "India": 458,
-    "Business": 170,
+    "India": 465,
+    "Business": 171,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 311,
-    "Lifestyle": 152
+    "Entertainment": 313,
+    "Lifestyle": 189
   },
   "articles": [
     {
@@ -30,7 +30,7 @@
       "headline": "Nepal Flash Flood LIVE Updates: 275 Indians Still Missing, New Delhi Sends 4th Aid Flight",
       "summary": "Nepal Flash Flood LIVE Updates: A glacier collapse led to a sudden massive flood in the Bhote Koshi River",
       "publisher": "NDTV India",
-      "published_at": "2026-08-30T00:59:47+00:00",
+      "published_at": "2026-08-30T01:17:23+00:00",
       "source_url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Nepal%20Flash%20Flood%20LIVE%20Updates%3A%20275%20Indians%20Still%20Missing%2C%20New%20Delhi%20Sends%204th%20Aid%20Flight.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4256771364",
       "image_type": "ai_generated"
@@ -165,6 +165,17 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c7013b43cf69f64ba9c4",
+      "category": "India",
+      "headline": "Cert-In asks teen researcher to hold off public vulnerability disclosures",
+      "summary": "The Indian Computer Emergency Response Team (Cert-In), the government’s cybersecurity nodal agency, has asked a 19-year-old security researcher to hold off on publicising vulnerabilities while they are being fixed",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:40:30+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/certin-asks-teen-researcher-to-hold-off-public-vulnerability-disclosures-101788028620326.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Cert-In%20asks%20teen%20researcher%20to%20hold%20off%20public%20vulnerability%20disclosures.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1385846653",
       "image_type": "ai_generated"
     },
     {
@@ -701,7 +712,7 @@
       "headline": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
       "summary": "RSS chief Mohan Bhagwat at an event in New York on Saturday, August 29.",
       "publisher": "NDTV India",
-      "published_at": "2026-08-29T21:40:15+00:00",
+      "published_at": "2026-08-30T01:43:43+00:00",
       "source_url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%22Unity%20And%20Diversity%20In%20India%27s%20DNA%22%3A%20RSS%20Chief%20Mohan%20Bhagwat%20At%20New%20York%20Event.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1788354832",
       "image_type": "ai_generated"
@@ -2002,6 +2013,39 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2e72c514226fe94009f2",
+      "category": "India",
+      "headline": "BJP prez pulls up lawmakers for condoling Sajjan Kumar’s death",
+      "summary": "Bharatiya Janata Party (BJP) president Nitin Nabin on Saturday pulled up three lawmakers from Delhi who went to meet the family of former Congress leader and anti-Sikh riots convict Sajjan Kumar after his death, people aware of the developments said",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:43:00+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/bjp-prez-pulls-up-lawmakers-for-condoling-sajjan-kumar-s-death-101788029102660.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20prez%20pulls%20up%20lawmakers%20for%20condoling%20Sajjan%20Kumar%E2%80%99s%20death.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=470346850",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f0144b8baf46183e710c",
+      "category": "India",
+      "headline": "AAP Leader Murdered In Punjab. Attackers Chased His Bike, Opened Fire",
+      "summary": "Gurpreet Gopi was with another man on a motorcycle when the attackers came in a car.",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T02:33:24+00:00",
+      "source_url": "https://www.ndtv.com/india-news/aap-leader-gurpreet-singh-gopi-shot-dead-in-punjab-after-being-chased-election-dispute-suspected-behind-attack-11976132#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AAP%20Leader%20Murdered%20In%20Punjab.%20Attackers%20Chased%20His%20Bike%2C%20Opened%20Fire.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1686759053",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8fa058ab5093f23a4eac",
+      "category": "India",
+      "headline": "High-level review meet held over proposed 'ARISE' project for coastal projection and climate resilience in Odisha",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-30T02:17:55+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/high-level-review-meet-held-over-proposed-arise-project-for-coastal-projection-and-climate-resilience-in-odisha/articleshow/133622040.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20High-level%20review%20meet%20held%20over%20proposed%20%27ARISE%27%20project%20for%20coastal%20projection%20and%20climate%20resilience%20in%20Odisha.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4220140924",
       "image_type": "ai_generated"
     },
     {
@@ -4620,6 +4664,50 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "cfbc6f1145936fee39a8",
+      "category": "Business",
+      "headline": "Setback for Anthropic? Sony, Warner Chappell file lawsuit against AI firm, accusing it of intellectual property theft",
+      "summary": "Several major music publishers, including Sony Music and Warner Chappell, have sued Anthropic, accusing the AI company of illegally using copyrighted songs to train Claude. They allege Anthropic pirated works on a massive scale and are seeking damages of up to $150,000 per composition.",
+      "publisher": "Mint Business",
+      "published_at": "2026-08-30T03:01:41+00:00",
+      "source_url": "https://www.livemint.com/companies/news/setback-for-anthropic-sony-warner-chappell-file-lawsuit-against-ai-firm-accusing-it-of-intellectual-property-theft-11788058021889.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Setback%20for%20Anthropic%3F%20Sony%2C%20Warner%20Chappell%20file%20lawsuit%20against%20AI%20firm%2C%20accusing%20it%20of%20intellectual%20property%20theft.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=295887386",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "68b75b60123b2ae834d0",
+      "category": "India",
+      "headline": "SC refuses to roll back directions on illegal forest land diversion",
+      "summary": "The Supreme Court has refused to roll back its decision directing states and Union territories to constitute a special investigation team (SIT) to restore forest land illegally diverted to private entities and recover costs in cases where recovery of land is not feasible",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:44:20+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/sc-refuses-to-roll-back-directions-on-illegal-forest-land-diversion-101788029461131.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20SC%20refuses%20to%20roll%20back%20directions%20on%20illegal%20forest%20land%20diversion.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=403089868",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1f5b6b8a9707036a3650",
+      "category": "India",
+      "headline": "AIAPGET 2026 Re-Exam: Admit Card Out For 49 Candidates",
+      "summary": "The AIAPGET 2026 re",
+      "publisher": "NDTV India",
+      "published_at": "2026-08-30T02:43:01+00:00",
+      "source_url": "https://www.ndtv.com/education/aiapget-2026-re-exam-admit-card-out-for-49-candidates-11976719#publisher=newsstand",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AIAPGET%202026%20Re-Exam%3A%20Admit%20Card%20Out%20For%2049%20Candidates.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3656329943",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9d0ee740a6c86352d07a",
+      "category": "India",
+      "headline": "PM Modi received by Uzbek President Mirziyoyev in Tashkent, leaders share car ride",
+      "summary": "The latest developments are being reported by the original publisher. Read the original report for the full details.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-30T02:38:16+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/pm-modi-received-by-uzbek-president-mirziyoyev-in-tashkent-leaders-share-ride/articleshow/133621979.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20received%20by%20Uzbek%20President%20Mirziyoyev%20in%20Tashkent%2C%20leaders%20share%20car%20ride.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4161913975",
       "image_type": "ai_generated"
     },
     {
@@ -9705,6 +9793,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4eb235c2db399c203158",
+      "category": "Lifestyle",
+      "headline": "Experience: I brought a bear back to life",
+      "summary": "I was in India, performing dentistry on my first animal patient, and it was supposed to be a straightforward operation I’ve been a dentist for 40 years. I spend most of my time treating patients at my surgery in Chichester, West Sussex. When I studied to become a dentist in the 1980s, I didn’t think I’d be getting my hands anywhere near the teeth of any exotic animals. Twenty years later, in 2000, that changed. A...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T04:00:50+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/28/experience-i-brought-a-bear-back-to-life",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Experience%3A%20I%20brought%20a%20bear%20back%20to%20life.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=173921068",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "5caa12ea54356e25debb",
       "category": "Lifestyle",
       "headline": "Guess who’s powering India’s café business? Women, women women",
@@ -10060,7 +10159,7 @@
       "id": "c5ef97e8ce5f4329258d",
       "category": "Lifestyle",
       "headline": "How do you define good health – and achieve it – in a broken US medical system?",
-      "summary": "In a new book, Dr Lucy McBride aims to help us navigate US healthcare – and tread carefully in the wellness industry Most of us want to be healthy, but it’s easier said than done. In the US, people are caught between a broken medical system and a well-resourced wellness industry. The failings of the former – cost barriers, rushed appointments, impersonal attention – push them towards the snake-oil solutions of...",
+      "summary": "In a new book, Dr Lucy McBride aims to help us navigate US healthcare – and tread carefully in the wellness industry Most of us want to be healthy, but it’s easier said than done. In the US, people are caught between a broken medical system and a well-resourced wellness industry. The failings of the former – cost barriers, rushed appointments, impersonal attention – push them towards the snake",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T16:00:32+00:00",
       "source_url": "https://www.theguardian.com/wellness/2026/aug/27/us-healthcare-system-good-health-wellness-industry",
@@ -10076,6 +10175,17 @@
       "published_at": "2026-08-26T09:00:00+00:00",
       "source_url": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20AI%20models%20flub%20these%20intelligence%20tests.%20Can%20you%20fare%20any%20better%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3822766833",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "98602438358a2c4b00cd",
+      "category": "Lifestyle",
+      "headline": "Share a tip on your most memorable food and drink discoveries in Europe",
+      "summary": "From farmers’ markets to food festivals celebrating local produce, tell us about your favourite foodie experiences in Europe – the best tip wins £200 towards a Coolstays break Tasting the food and drink specialities of a particular region is one of the great joys of travelling. Whether it was discovering the perfect pastry in Scandinavia, sipping a memorable glass of wine on a vineyard tour in France, or enjoying...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-24T12:23:58+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/24/share-a-tip-on-your-most-memorable-food-and-drink-discoveries-in-europe",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Share%20a%20tip%20on%20your%20most%20memorable%20food%20and%20drink%20discoveries%20in%20Europe.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2083147728",
       "image_type": "ai_generated"
     },
     {
@@ -10120,6 +10230,17 @@
       "published_at": "2026-01-22T14:00:00+00:00",
       "source_url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%20Railway%20secures%20%24100%20million%20to%20challenge%20AWS%20with%20AI-native%20cloud%20infrastructure.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3997345097",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "70f853963b94aa5c4bcc",
+      "category": "Entertainment",
+      "headline": "Harry Styles Jokes About Taylor Swift’s Wedding During Madison Square Garden Concert",
+      "summary": "“We’re at Madison Square Garden, home of the world champion New York Knicks! And they also do weddings,\" the Grammy winner said during his Aug. 29 show.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-30T02:49:00+00:00",
+      "source_url": "https://www.hollywoodreporter.com/music/music-news/harry-styles-taylor-swift-wedding-madison-square-garden-1236685019/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Harry%20Styles%20Jokes%20About%20Taylor%20Swift%E2%80%99s%20Wedding%20During%20Madison%20Square%20Garden%20Concert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=735886446",
       "image_type": "ai_generated"
     },
     {
@@ -10431,6 +10552,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "6ce03d9bb19e79e5a0ae",
+      "category": "Lifestyle",
+      "headline": "A slow travel success story in Slovenia’s secret valley",
+      "summary": "Tourism is only just taking hold in Vipava, but the locals are determined to do it right, by putting community first and preserving what makes it special The drive to Pedrovo is vertiginous, and each hairpin bend has me sending a silent prayer that we won’t meet a tractor coming the other way. When we near it, we abandon the car and continue on foot to the hamlet, a scattering of red-roofed, whitewashed houses...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T06:00:21+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/29/slow-travel-success-story-slovenia-vipava-valley",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20A%20slow%20travel%20success%20story%20in%20Slovenia%E2%80%99s%20secret%20valley.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4135359377",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "d14497a43692e9668cdc",
       "category": "Entertainment",
       "headline": "Bill Maher Pays Tribute to Dolly Parton With Nipple Joke",
@@ -10494,6 +10626,17 @@
       "published_at": "2026-08-29T05:13:17+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/c3r02929wllo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Let%27s%20be%20brave%20about%20being%20in%20Premier%20League%20-%20Coventry%27s%20Lampard.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=829877624",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "53fca3b9ca415295c0fb",
+      "category": "Lifestyle",
+      "headline": "Blind date: ‘She’s one of the easiest people to talk to that I’ve ever met’",
+      "summary": "Mike, 37, a scientific editor, meets Caterina, 35, a teacher What were you hoping for? Good company, nice food and an interesting evening with someone new. I got everything I hoped for. Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T05:00:20+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/blind-date-mike-caterina",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Blind%20date%3A%20%E2%80%98She%E2%80%99s%20one%20of%20the%20easiest%20people%20to%20talk%20to%20that%20I%E2%80%99ve%20ever%20met%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1172766927",
       "image_type": "ai_generated"
     },
     {
@@ -10750,6 +10893,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "668c8d23158f2ac01b68",
+      "category": "Lifestyle",
+      "headline": "From sustainable sponges to seriously comfy walking boots: the best August bank holiday deals on the products we love",
+      "summary": "We’ve rounded up genuinely good offers on Filter-recommended and tested products across home, beauty, travel and more • Don’t get the Filter delivered to your inbox? Sign up here August bank holiday is summer’s Boxing Day: the fun’s over, you’ve got no money left, and it’s probably raining. (As someone whose birthday falls at the fuzzy end of August, I can confirm that it always, always rains.) And, just as on...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T14:42:59+00:00",
+      "source_url": "https://www.theguardian.com/thefilter/2026/aug/28/best-august-bank-holiday-deals-filter-uk-tested-products",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20From%20sustainable%20sponges%20to%20seriously%20comfy%20walking%20boots%3A%20the%20best%20August%20bank%20holiday%20deals%20on%20the%20products%20we%20love.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1684798263",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "cda05c17e6989fcdea71",
       "category": "Technology & AI",
       "headline": "Apple TV is raising its subscription prices again",
@@ -10846,6 +11000,28 @@
       "published_at": "2026-08-28T10:30:25+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/health/worried-about-bones-joints-weakening-with-age-orthopaedician-dr-akhil-kulshreshtha-shares-5-tips-to-keep-them-healthy-101787910319826.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Worried%20about%20bones%2C%20joints%20weakening%20with%20age%3F%20Orthopaedician%20Dr%20Akhil%20Kulshreshtha%20shares%205%20tips%20to%20keep%20them%20healthy.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1770151999",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "48a574f8eadd85b44712",
+      "category": "Lifestyle",
+      "headline": "‘Lapped by the turquoise, crystal seas’: readers’ favourite unsung European islands",
+      "summary": "From secluded coves in Ireland to an evening passeggiata on Italy’s Aeolian islands, readers share their discoveries • Tell us about your most memorable food and drink discoveries in Europe Giant griffon vultures glided parallel with my bus as it reached the highest point of Cres , the least populated of the four main islands in the Kvarner Gulf at the very north of the Croatian Adriatic. Covered in scrubby...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T09:27:31+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/28/readers-favourite-unsung-european-islands-holidays",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98Lapped%20by%20the%20turquoise%2C%20crystal%20seas%E2%80%99%3A%20readers%E2%80%99%20favourite%20unsung%20European%20islands.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=838308467",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f6b1a584bcfa9fa57d25",
+      "category": "Lifestyle",
+      "headline": "From skipping ropes to Swiss balls: personal trainers on the best home gym kit",
+      "summary": "Exercise mats that don’t slip, easy-grip kettlebells and floor sliders … fitness experts share their best buys for staying active at home • The best massage guns – tested You don’t have to spend a fortune on gym membership, or need loads of space, to get into shape. From the best basics to larger equipment for more complex workouts, here’s the home workout kit loved by fitness professionals, along with equipment...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T09:00:53+00:00",
+      "source_url": "https://www.theguardian.com/thefilter/2026/aug/28/best-home-gym-equipment-experts-tested-uk",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20From%20skipping%20ropes%20to%20Swiss%20balls%3A%20personal%20trainers%20on%20the%20best%20home%20gym%20kit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1331935394",
       "image_type": "ai_generated"
     },
     {
@@ -11124,6 +11300,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "ea9f44c8dabfa2ac26a9",
+      "category": "Lifestyle",
+      "headline": "Bots and bargains: Zara owner launches cut-price Lefties in UK to rival Primark",
+      "summary": "First robot-assisted outlet opens in Liverpool to take on Shein and supermarkets in clothing, shoes and homewares Business live – latest updates The owner of Zara is taking on Primark, Shein and the supermarkets with the launch of its cut-price chain Lefties in Britain, backed by an army of robots. The Spanish fashion brand opened its first UK store in Liverpool on Thursday, a few weeks after quietly launching...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T14:00:25+00:00",
+      "source_url": "https://www.theguardian.com/business/2026/aug/27/zara-cut-price-lefties-uk-rival-primark",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Bots%20and%20bargains%3A%20Zara%20owner%20launches%20cut-price%20Lefties%20in%20UK%20to%20rival%20Primark.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3873120104",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ee89facd500dd33c430d",
       "category": "Technology & AI",
       "headline": "When agents act on their own, governance has to live in the data layer",
@@ -11143,6 +11330,17 @@
       "published_at": "2026-08-27T11:15:48+00:00",
       "source_url": "https://www.bbc.co.uk/sport/cricket/videos/c98018v6r72o?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Vaughan%20criticises%20England%27s%20%27excuses%27%20after%20Carse%20incident.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4159597235",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "d8f4aef8ef32d4dfacea",
+      "category": "Lifestyle",
+      "headline": "You be the judge: should my partner stop eating off other people’s plates?",
+      "summary": "Helen says grabbing friends’ leftovers is a no-no. Bill thinks wasting food is wrong. You decide who should eat their words • Find out how to get a disagreement settled or become a juror I know Bill hates waste, but pouncing on people’s leftovers is embarrassing, unhygienic and rude Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T07:00:09+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/27/you-be-the-judge-partner-eating-off-other-peoples-plates",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20You%20be%20the%20judge%3A%20should%20my%20partner%20stop%20eating%20off%20other%20people%E2%80%99s%20plates%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1764421209",
       "image_type": "ai_generated"
     },
     {
@@ -11190,6 +11388,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7d6853fb9ff268d6af81",
+      "category": "Lifestyle",
+      "headline": "Walking on the edge: a three-day hike along Cumbria’s rugged, overlooked coast",
+      "summary": "In the shadow of the crowded Lake District, this quiet coast path offers great views, breathtaking nature and a striking new hotel on the historic waterfront What’s the edgiest region in the UK? I don’t mean in the sense of sketchy or fashionable, but where on the map of these four nations feels most at the margins of everywhere else? For my money, the north Cumbrian coast is a strong contender. Hemmed in by the...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T06:00:35+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/26/three-day-walk-along-the-rugged-cumbria-coast",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Walking%20on%20the%20edge%3A%20a%20three-day%20hike%20along%20Cumbria%E2%80%99s%20rugged%2C%20overlooked%20coast.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2612437648",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "5e18cdbc8101ff269d17",
       "category": "Technology & AI",
       "headline": "5 ways to upgrade your home decor with Google Search",
@@ -11198,6 +11407,39 @@
       "published_at": "2026-08-25T16:00:00+00:00",
       "source_url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Technology%20%26%20AI.%20Story%3A%205%20ways%20to%20upgrade%20your%20home%20decor%20with%20Google%20Search.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1968622939",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "90a3d6a9197e02b3e294",
+      "category": "Lifestyle",
+      "headline": "Boat trips, swimming and seafood: 10 of the UK’s best harbour towns and villages",
+      "summary": "From smoked kippers in Northumberland to dolphin spotting in Dorset and a palm-fringed village on a sea loch in the Scottish Highlands The historic harbour is the hub of this working East Neuk fishing port, home to a fleet of about 30 small trawlers and creel boats. Their catches are sold at the covered market on the quay each weekday morning, and served at the harbourside Dory Bistro and Chip Ahoy at the...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-25T06:00:50+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/25/10-best-uk-harbour-towns-villages-boat-trips",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Boat%20trips%2C%20swimming%20and%20seafood%3A%2010%20of%20the%20UK%E2%80%99s%20best%20harbour%20towns%20and%20villages.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1550152338",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "e9eb34cd468ddfe80e2f",
+      "category": "Lifestyle",
+      "headline": "‘It’s absolutely criminal’: US tipping culture has reached the UK – and is causing chaos",
+      "summary": "Service charges used to be a matter of choice, but now consumers feel obliged to pay them for even a cup of coffee. How do we navigate this minefield and who is really profiting? In a London pub, Greg Double was brutally confronted with the reality of Britain’s evolving tipping culture. “I was annoyed about the pint being eight quid, but then when you put service on top, it’s absolutely criminal,” he says. In the...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-24T09:00:29+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/24/us-tipping-culture-uk-service-charges",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98It%E2%80%99s%20absolutely%20criminal%E2%80%99%3A%20US%20tipping%20culture%20has%20reached%20the%20UK%20%E2%80%93%20and%20is%20causing%20chaos.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3928033214",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "48b96669e20dcf623583",
+      "category": "Lifestyle",
+      "headline": "‘Everything you’d want from Italy, all in one place’: Brescia, Lombardy’s hidden gem",
+      "summary": "The city’s rich history and culture have so far flown under the radar, but its fiercely proud inhabitants are determined to change that We have hardly begun walking before I spot the side alley, curving away from the main road in a patchwork of sunlit yellow walls, shuttered windows and shadowy archways. “What’s up there?” Elena, my guide to the city, pulls a wry smile. “That is Carmine. As a kid, I was warned...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-24T06:00:55+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/24/brescia-lombardy-hidden-gem-italy",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98Everything%20you%E2%80%99d%20want%20from%20Italy%2C%20all%20in%20one%20place%E2%80%99%3A%20Brescia%2C%20Lombardy%E2%80%99s%20hidden%20gem.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3064300249",
       "image_type": "ai_generated"
     },
     {
@@ -11248,7 +11490,7 @@
       "id": "1ad83934827e3d480776",
       "category": "Lifestyle",
       "headline": "Hogging weights, loud grunting and sweaty benches: 11 gym dos and don’ts from fitness experts",
-      "summary": "Here’s what professionals have to say about good workout etiquette, from using equipment to being on your phone I like to think of myself as a fairly laid-back person. Other people’s behavior is not my business. There is one notable exception: my gym nemesis. He brings his computer to the gym and takes work conference calls at full volume. He has four to six pairs of dumbbells around him at all times – then...",
+      "summary": "Here’s what professionals have to say about good workout etiquette, from using equipment to being on your phone I like to think of myself as a fairly laid-back person. Other people’s behavior is not my business. There is one notable exception: my gym nemesis. He brings his computer to the gym and takes work conference calls at full volume. He has four to six pairs of dumbbells around him at all times",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-19T14:00:13+00:00",
       "source_url": "https://www.theguardian.com/wellness/2026/aug/19/fitness-experts-gym-workout-etiquette",
@@ -11498,6 +11740,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "e429414cb32379fd84d0",
+      "category": "Lifestyle",
+      "headline": "Be an ambassador for the ocean – why the Great Barrier Reef’s future depends on responsible tourists",
+      "summary": "Tropical North Queensland is home to two extraordinary ecosystems side by side. Expect unbelievable wildernesses, ancient cultures and the privilege of realising your visit is protecting their future. Here’s everything you need to know Covering an area of about 350,000 sq km along Australia’s Queensland coastline , the Great Barrier Reef is the world’s largest coral reef system and living structure – so vast that...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-06-05T15:27:48+00:00",
+      "source_url": "https://www.theguardian.com/discover-tropical-north-queensland/2026/jun/05/how-tourists-can-help-protect-the-great-barrier-reef",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Be%20an%20ambassador%20for%20the%20ocean%20%E2%80%93%20why%20the%20Great%20Barrier%20Reef%E2%80%99s%20future%20depends%20on%20responsible%20tourists.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3032436712",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "b130cfad62104f1de291",
       "category": "Lifestyle",
       "headline": "I tested 26 packing cubes on 14 trips – here are best ones in the US to travel smarter",
@@ -11520,14 +11773,25 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f52fa72d310538979260",
+      "id": "022d2fe0810633fd330d",
       "category": "World",
-      "headline": "Australia news live: cabinet never discussed cutting refugee intake, Plibersek says; 13-year-old dies from head injuries after Queensland e-scooter crash",
-      "summary": "Boy sustained serious head injuries in single-vehicle crash on Wednesday. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as the Palm scheme, and...",
+      "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
+      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T02:28:15+00:00",
+      "published_at": "2026-08-30T02:51:29+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20cabinet%20never%20discussed%20cutting%20refugee%20intake%2C%20Plibersek%20says%3B%2013-year-old%20dies%20from%20head%20injuries%20after%20Queensland%20e-scooter%20crash.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1649850947",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1e8c3c1716c95b3434bb",
+      "category": "Entertainment",
+      "headline": "Jelly Roll Slams Politicians On Both Sides For “Sh*t Job,” Addresses 2024 Trump Photo: “A Handshake Is Not An Endorsement”",
+      "summary": "After Jelly Roll avoided discussing his politics at the Grammy Awards in February, he peeled off the band-aid this week with a heartfelt speech. During his final night as Jimmy Kimmel Live! guest host on Friday, the 3x Grammy winner opened up about watching “people decide who I am, what I am, what I believe, […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-30T02:47:35+00:00",
+      "source_url": "https://deadline.com/2026/08/jelly-roll-slams-politicians-sht-job-2024-trump-photo-1237062738/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Jelly%20Roll%20Slams%20Politicians%20On%20Both%20Sides%20For%20%E2%80%9CSh%2At%20Job%2C%E2%80%9D%20Addresses%202024%20Trump%20Photo%3A%20%E2%80%9CA%20Handshake%20Is%20Not%20An%20Endorsement%E2%80%9D.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3869988580",
       "image_type": "ai_generated"
     },
     {
@@ -11990,6 +12254,17 @@
       "published_at": "2026-08-29T20:00:38+00:00",
       "source_url": "https://www.theguardian.com/business/2026/aug/30/australians-buying-less-pizza-more-weight-loss-drugs-consumer-report",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20August%20reveals%20Australians%E2%80%99%20big%20appetite%20for%20weight-loss%20drugs%2C%20love%20for%20%E2%80%98dupe%E2%80%99%20brands%20and%20an%20accelerating%20EV%20uptake.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4091987762",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "979e46e98625c53f3ecb",
+      "category": "Lifestyle",
+      "headline": "The moment I knew: I’d never had romantic feelings for a man – then he touched my hand and it felt electric",
+      "summary": "As a widower and a newly single father of three, Jim Rogers was struggling. Then on a poolside holiday, he sat next to Tyler – and his life changed Find more stories from the moment I knew series In the mid 90s, I was in the prime of my life. I was in my early thirties, married to my soulmate, Lorna, with three kids under three. We’d emigrated from our small town in Worcestershire in the UK to Perth, and life was...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T20:00:37+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/30/the-moment-i-knew-id-never-had-romantic-feelings-for-a-man-then-he-touched-my-hand-and-it-felt-electric",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20The%20moment%20I%20knew%3A%20I%E2%80%99d%20never%20had%20romantic%20feelings%20for%20a%20man%20%E2%80%93%20then%20he%20touched%20my%20hand%20and%20it%20felt%20electric.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3892717105",
       "image_type": "ai_generated"
     },
     {
@@ -12785,6 +13060,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "73921c6419f42be2a2db",
+      "category": "Lifestyle",
+      "headline": "‘Simple, creamy and crunchy’: the best (and worst) supermarket coleslaw, tasted and rated",
+      "summary": "Too cloying, too sweet or just right? Our tester works through the shop shelves to find the best slaw for your next barbecue, picnic or packed lunch • The best supermarket veggie burgers I find shop-bought coleslaw hard to stomach because it’s sharp, gloopy and often made with copious amounts of poor-quality mayonnaise and spirit vinegar. Pungent ingredients, such as cabbage and onion, are better eaten fresh,...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T12:00:28+00:00",
+      "source_url": "https://www.theguardian.com/thefilter/2026/aug/29/best-worst-supermarket-coleslaw-tasted-rated",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98Simple%2C%20creamy%20and%20crunchy%E2%80%99%3A%20the%20best%20%28and%20worst%29%20supermarket%20coleslaw%2C%20tasted%20and%20rated.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3465188677",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "22a6529620fd854cd85a",
       "category": "World",
       "headline": "US officials urge swimmers to be cautious amid surge in drowning deaths",
@@ -12865,7 +13151,7 @@
       "id": "59639de88a0a923c564a",
       "category": "Lifestyle",
       "headline": "The showgirl sisterhood: five former variety stars look back at their wild careers – in pictures",
-      "summary": "The ‘Golden girls of Eastbourne’ first crossed paths more than 50 years ago. They recall flammable feather head-dresses, wardrobe malfunctions and topping the bill over the Beatles I hear the Golden Girls of Eastbourne before I see them – hooting laughter leaking out of a house in the East Sussex seaside town. Inside, I find five energetic women in their 80s and 90s, sitting in a knick-knack-filled living room...",
+      "summary": "The ‘Golden girls of Eastbourne’ first crossed paths more than 50 years ago. They recall flammable feather head-dresses, wardrobe malfunctions and topping the bill over the Beatles I hear the Golden Girls of Eastbourne before I see them – hooting laughter leaking out of a house in the East Sussex seaside town. Inside, I find five energetic women in their 80s and 90s, sitting in a knick-knack",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T11:00:26+00:00",
       "source_url": "https://www.theguardian.com/stage/ng-interactive/2026/aug/29/showgirls-variety-stars-recall-days-on-stage-in-pictures",
@@ -13173,7 +13459,7 @@
       "id": "7e24bc77b4c44433cd3a",
       "category": "Lifestyle",
       "headline": "Flipping marvellous: Yotam Ottolenghi on the joy of simple breakfasts – plus six exclusive recipes",
-      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes",
+      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes – more than I would have ever...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T07:00:20+00:00",
       "source_url": "https://www.theguardian.com/food/2026/aug/29/yotam-ottolenghi-simple-breakfasts-recipes",
@@ -13398,6 +13684,17 @@
       "published_at": "2026-08-29T05:00:18+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/ireland-will-be-united-says-gordon-brown",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Ireland%20will%20be%20united%2C%20says%20Gordon%20Brown.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=117679255",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "933ed334dfd3e3e0acfa",
+      "category": "Lifestyle",
+      "headline": "Tim Dowling: my TV contract has run out – and so has my patience",
+      "summary": "I need to buy a smart television big enough to read ransom notes – and I’m taking no prisoners Fourteen years ago, I received a text from my eldest son claiming he’d just found the TV face down on the sitting room floor, destroyed. I didn’t entirely buy his theory about the dogs being responsible – I discovered a football lying suspiciously near the crime scene – but it was a problem I needed to solve before my...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-29T05:00:17+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/tim-dowling-tv-contract-run-out-so-has-patience",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Tim%20Dowling%3A%20my%20TV%20contract%20has%20run%20out%20%E2%80%93%20and%20so%20has%20my%20patience.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2898632630",
       "image_type": "ai_generated"
     },
     {
@@ -13772,6 +14069,61 @@
       "published_at": "2026-08-28T23:01:55+00:00",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/shelley-fabares-cause-of-death-1236684687/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Shelley%20Fabares%E2%80%99%20Cause%20of%20Death%20Revealed.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3604538708",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "dff3043d455559af7f95",
+      "category": "Lifestyle",
+      "headline": "Sudoku 7,435 expert",
+      "summary": "Click here to access the print version. Fill the grid so that every row, every column and every 3x3 box contains the numbers 1 to 9. Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T23:00:12+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/sudoku-7435-expert",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Sudoku%207%2C435%20expert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4110695145",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "663556eeb92e6350017e",
+      "category": "Lifestyle",
+      "headline": "Killer sudoku 1,037",
+      "summary": "Click here to access the print version. Normal sudoku rules apply, except the numbers in the cells contained within dotted lines add up to the figures in the corner. No number can be repeated within each shape formed by dotted lines. Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T23:00:12+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/killer-sudoku-1037",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Killer%20sudoku%201%2C037.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3504609275",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "bd24ea511cc7486c2bd3",
+      "category": "Lifestyle",
+      "headline": "Guardian cryptic crossword bank holiday special",
+      "summary": "Click here to access the print version Click here to access the solution Sixteen clues consist of anagrams of thematic material, always presented in the same order. Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T23:00:11+00:00",
+      "source_url": "https://www.theguardian.com/crosswords/2026/aug/29/guardian-cryptic-crossword-bank-holiday-special",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Guardian%20cryptic%20crossword%20bank%20holiday%20special.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4057491973",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "f51ac2e3d3de5e329707",
+      "category": "Lifestyle",
+      "headline": "Quick crossword No 17,571",
+      "summary": "Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T23:00:11+00:00",
+      "source_url": "https://www.theguardian.com/crosswords/quick/17571",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Quick%20crossword%20No%2017%2C571.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3497529766",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "2052ca8a2d4e230381bc",
+      "category": "Lifestyle",
+      "headline": "Prize crossword No 30,098",
+      "summary": "Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-28T23:00:10+00:00",
+      "source_url": "https://www.theguardian.com/crosswords/prize/30098",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Prize%20crossword%20No%2030%2C098.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1411593527",
       "image_type": "ai_generated"
     },
     {
@@ -15293,6 +15645,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "cd7f41862079cc68185b",
+      "category": "Lifestyle",
+      "headline": "Honey, I shrunk the wine: why miniature bottles are big again",
+      "summary": "Whether they’re consumed as a considered glass for one or something to sip on a short trip, miniature wine bottles are back with a bang In the 1920s, the London wine merchant Berry Bros & Rudd was asked to create a wine cellar for a doll’s house , commissioned by Queen Mary, to showcase the best of British craftsmanship. Designed by Edwin Lutyens, it had running water, electricity, a library of tiny books and,...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T12:00:14+00:00",
+      "source_url": "https://www.theguardian.com/food/2026/aug/27/honey-i-shrunk-the-wine-miniature-bottles",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Honey%2C%20I%20shrunk%20the%20wine%3A%20why%20miniature%20bottles%20are%20big%20again.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=639163452",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "ae43e8214dca3d08f5e3",
       "category": "Lifestyle",
       "headline": "What is the treatment for postpartum psychosis, the condition central to the Lindsay Clancy trial?",
@@ -15334,6 +15697,17 @@
       "published_at": "2026-08-27T11:23:20+00:00",
       "source_url": "https://www.hindustantimes.com/lifestyle/pet/are-you-walking-your-dog-correctly-vet-shares-5-common-mistakes-that-may-harm-them-101787827307988.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Are%20you%20walking%20your%20dog%20correctly%3F%20Vet%20shares%205%20common%20mistakes%20that%20may%20harm%20them.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=554113339",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "02fbe9353c0a5fa41c82",
+      "category": "Lifestyle",
+      "headline": "High in cocoa, high on nostalgia: the chocolate I love most now",
+      "summary": "Including, to my surprise, a 100% cacao bar … Although I’m un peu fatiguée of chocolates in bonbon shape with coloured cocoa-butter splashes atop, I appreciate this is the way many chocolates truffles are made. Overcoming that prejudice, I tucked into a box of Scoff chocolates. They were beautifully fresh tasting – they are made in batches throughout the year and the latest batch has just been let loose. I liked...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T11:00:12+00:00",
+      "source_url": "https://www.theguardian.com/food/2026/aug/27/high-cocoa-high-nostalgia-chocolate-i-love-most-annalisa-barbieri",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20High%20in%20cocoa%2C%20high%20on%20nostalgia%3A%20the%20chocolate%20I%20love%20most%20now.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=115581692",
       "image_type": "ai_generated"
     },
     {
@@ -15392,6 +15766,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "11998f7d14cc1e7b1837",
+      "category": "Lifestyle",
+      "headline": "Architourism in France: the retro futurist seaside town near Montpellier that’s out of this world",
+      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu – although I love both – but somewhere created specifically between the mid...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T06:00:06+00:00",
+      "source_url": "https://www.theguardian.com/travel/2026/aug/27/architourism-france-retro-futurist-la-grande-motte-seaside-town-near-montpellier",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Architourism%20in%20France%3A%20the%20retro%20futurist%20seaside%20town%20near%20Montpellier%20that%E2%80%99s%20out%20of%20this%20world.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4167837741",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4ecb95a19f2a38c16297",
+      "category": "Lifestyle",
+      "headline": "Yayoi Kusama – a life in pictures",
+      "summary": "The Japanese avant-garde artist, who was known for her giant polka dot artworks and mirrored infinity room installations, has died aged 97 Yayoi Kusama, Japanese artist who became a global superstar, dies aged 97 Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-27T03:59:27+00:00",
+      "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/aug/27/yayoi-kusama-gallery-life-in-pictures",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Yayoi%20Kusama%20%E2%80%93%20a%20life%20in%20pictures.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4273719004",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "e55c3ee4d9a12167e438",
       "category": "World",
       "headline": "Trump downplays Moscow visit by CIA director as ‘semi-routine’",
@@ -15411,6 +15807,17 @@
       "published_at": "2026-08-26T15:09:58+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/26/south-african-police-arrest-two-thai-men-smuggling-parrot-eggs",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20South%20African%20police%20arrest%20two%20Thai%20men%20for%20allegedly%20smuggling%20parrot%20eggs.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4114724339",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6ed2b1dddf2fec2863d4",
+      "category": "Lifestyle",
+      "headline": "The best mattresses in the UK: sleep better with our 18 rigorously tested picks",
+      "summary": "From luxury Simba and Otty mattresses to brilliant budget buys, here’s what we recommend – and the best deals to shop over bank holiday weekend • The best mattresses for back pain • The best mattresses for side sleepers • The best mattress toppers, tested A good mattress improves your sleep, say mattress makers – and they would, wouldn’t they? But they’re right. The older I get, the more I know it. When I was 20,...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-26T11:11:12+00:00",
+      "source_url": "https://www.theguardian.com/thefilter/2025/feb/06/best-mattress",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20The%20best%20mattresses%20in%20the%20UK%3A%20sleep%20better%20with%20our%2018%20rigorously%20tested%20picks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=556768916",
       "image_type": "ai_generated"
     },
     {
@@ -15535,6 +15942,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "39b072b74f531d0e7676",
+      "category": "Lifestyle",
+      "headline": "Lloyds Bank is holding on to our urgently needed £5,500",
+      "summary": "We want our balance back, but we can’t access the money to pay for essential repairs and settle an electricity bill Last November, Lloyds Bank informed me, in my role as treasurer of my parish church, that the church account was to be closed and that I should open a new business account instead. This can only be done online, but a fault with their system prevented me – and local branch staff – from doing so. At...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-25T06:00:50+00:00",
+      "source_url": "https://www.theguardian.com/money/2026/aug/25/lloyds-bank-holding-on-to-funds-balance-account",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Lloyds%20Bank%20is%20holding%20on%20to%20our%20urgently%20needed%20%C2%A35%2C500.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1627063158",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6fa4d952b21db4dc55e2",
+      "category": "Lifestyle",
+      "headline": "Freddie Mercury’s ‘splendid things’ to go on display at V&A",
+      "summary": "Eight costumes spanning Queen frontman’s career will feature in a free trail developed with his former fiancee Eight famous costumes worn by Freddie Mercury, including the outfit featured on the cover of Queen’s debut album and the catsuit from the video for Bohemian Rhapsody, are to go on display at the V&A in London this autumn to mark what would have been the singer’s 80th birthday. Freddie Mercury | Splendid...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-25T04:00:49+00:00",
+      "source_url": "https://www.theguardian.com/music/2026/aug/25/freddie-mercury-splendid-things-costumes-victoria-albert-museum-queen-v-and-a",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Freddie%20Mercury%E2%80%99s%20%E2%80%98splendid%20things%E2%80%99%20to%20go%20on%20display%20at%20V%26A.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2706285248",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "9e5eb6722e0c1036d631",
       "category": "Lifestyle",
       "headline": "‘It looked stunning on Joanna Lumley!’ 10 writers on their biggest hair disaster",
@@ -15557,10 +15986,21 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "4c2644f684bcc7520ed8",
+      "category": "Lifestyle",
+      "headline": "How can I convince NHS pensions that I am not dead?",
+      "summary": "It has not paid me for months and I am in severe financial distress, and apart from my husband while I try to sort it out I stopped receiving my NHS pension in May and, when I rang to ask why, I was informed that I was deceased. I have repeatedly called to no avail and my emails have received auto",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-24T06:00:54+00:00",
+      "source_url": "https://www.theguardian.com/money/2026/aug/24/nhs-pensions-not-dead",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20How%20can%20I%20convince%20NHS%20pensions%20that%20I%20am%20not%20dead%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=108166233",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "289368ff7aaa90ae6dd7",
       "category": "Lifestyle",
       "headline": "‘When I make a sale, I’ll sing a high note’: a day in the life of an opera singing car salesman",
-      "summary": "Andrew Hiers is trying to start his own opera company. Until then, he’s serenading the parking lot Andrew Hiers, 38, is an opera singer – a bass-baritone – and a car salesman in Cocoa, Florida. You might think these professions have nothing to do with each other, but his librettos about cars or to customers have gone viral – all part of a larger plan to bring opera to the local community. What time did you wake...",
+      "summary": "Andrew Hiers is trying to start his own opera company. Until then, he’s serenading the parking lot Andrew Hiers, 38, is an opera singer – a bass-baritone – and a car salesman in Cocoa, Florida. You might think these professions have nothing to do with each other, but his librettos about cars or to customers have gone viral",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-23T16:00:36+00:00",
       "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/23/andrew-hiers-opera-singer-car-salesman",
@@ -15568,10 +16008,32 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "94ee8aa6b4753a691a5e",
+      "category": "Lifestyle",
+      "headline": "This is how we do it: ‘Since having cancer, I’m more open – before I was straight, now I’m queer’",
+      "summary": "Following the all-clear, Kevin and Jade found a new openness in discussing sex and intimacy – and also a shared desire for exploring polyamory • How do you do it? Share the story of your sex life, anonymously Since the all clear, my relationship with my sexuality has shifted a lot Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-23T10:00:29+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/23/this-is-how-we-do-it-since-having-cancer-im-more-open-before-i-was-straight-now-im-queer",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20This%20is%20how%20we%20do%20it%3A%20%E2%80%98Since%20having%20cancer%2C%20I%E2%80%99m%20more%20open%20%E2%80%93%20before%20I%20was%20straight%2C%20now%20I%E2%80%99m%20queer%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2895086467",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b98ba40d94cdcbde8455",
+      "category": "Lifestyle",
+      "headline": "A childhood sexual abuse allegation has rocked our family – what can we do about it? | Ask Annalisa Barbieri",
+      "summary": "Make the victim feel safe and able to talk at their own pace, and consider any danger the perpetrator currently presents to younger members of the family A young adult woman in our family has recently shared that her older male cousin once touched her inappropriately when she was aged six and he was aged 12. This happened 18 years ago. Then a second incident allegedly occurred eight years later. She shared the...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-23T05:00:23+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/23/achildhood-sexual-abuse-allegation-has-rocked-our-family",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20A%20childhood%20sexual%20abuse%20allegation%20has%20rocked%20our%20family%20%E2%80%93%20what%20can%20we%20do%20about%20it%3F%20%7C%20Ask%20Annalisa%20Barbieri.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=470468884",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a7aaf76c9c8eb663cbe0",
       "category": "Lifestyle",
       "headline": "Diamonds for sale: lab-grown gem auctions are all over TikTok right now, but some aren’t happy about it",
-      "summary": "Streamed auctions offer a cheap way to buy the precious gems, but experts warn that quality is not guaranteed The first time Andrea Greenhill came across a livestream auction for lab-grown diamonds while scrolling on TikTok, she was stunned. While the diamond engagement ring her husband proposed with years ago had cost thousands of dollars, these loose lab-grown diamonds were selling in seconds at a fraction of...",
+      "summary": "Streamed auctions offer a cheap way to buy the precious gems, but experts warn that quality is not guaranteed The first time Andrea Greenhill came across a livestream auction for lab-grown diamonds while scrolling on TikTok, she was stunned. While the diamond engagement ring her husband proposed with years ago had cost thousands of dollars, these loose lab",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-22T12:00:02+00:00",
       "source_url": "https://www.theguardian.com/technology/2026/aug/22/tiktok-auctions-lab-grown-diamonds",
@@ -15678,6 +16140,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "b854f23d9bf395faa357",
+      "category": "Lifestyle",
+      "headline": "‘Why do you never buy a round?!’ 20 mortifying money conversations with friends – and how to handle them",
+      "summary": "Whether it’s paying for dinner, going on holiday or sharing a taxi, friendships can be fraught with financial frustrations, which are very rarely aired. Here’s how to break the taboo Summer is the season of socialising, from alfresco drinks to weddings to group holidays. It can get expensive – and suddenly you start noticing those friends who don’t pay their way. Or the ones who splash the cash and make you feel...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-19T04:00:05+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/19/why-do-you-never-buy-a-round-20-mortifying-money-conversations-with-friends-and-how-to-handle-them",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98Why%20do%20you%20never%20buy%20a%20round%3F%21%E2%80%99%2020%20mortifying%20money%20conversations%20with%20friends%20%E2%80%93%20and%20how%20to%20handle%20them.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1322184288",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "85b8d552a3eca43b9342",
       "category": "Lifestyle",
       "headline": "I’m 50 years old. Why do I still struggle with the need to be liked?",
@@ -15697,6 +16170,28 @@
       "published_at": "2026-08-17T16:00:02+00:00",
       "source_url": "https://www.theguardian.com/wellness/2026/aug/17/content-creators-finanaces-debt",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Would%20you%20tell%20strangers%20how%20much%20debt%20you%20have%3F%20The%20people%20sharing%20how%20much%20money%20they%20owe%20online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3966850075",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "06a6f3f00c99720d67e3",
+      "category": "Lifestyle",
+      "headline": "Did you solve it? A new goat for puzzledom’s GOAT",
+      "summary": "The solution to today’s puzzle Earlier today I set you a new twist on the Monty Hall problem, which is (according to AI) the most discussed recreational maths puzzle in history. The standard Monty Hall problem is as follows: Continue reading...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-17T16:00:01+00:00",
+      "source_url": "https://www.theguardian.com/science/2026/aug/17/did-you-solve-it-a-new-goat-for-puzzledoms-goat",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Did%20you%20solve%20it%3F%20A%20new%20goat%20for%20puzzledom%E2%80%99s%20GOAT.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2284256514",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "24e7b868c9b322d9ad13",
+      "category": "Lifestyle",
+      "headline": "British Gas paid me £38,000 by mistake, and I can’t give it back",
+      "summary": "It said that was what I was due after I submitted a claim for £300 for energy exported through my solar panels British Gas paid me more than £38,000 by mistake, then had no idea how to reclaim it. I receive quarterly feed-in tariff (Fit) payments for energy exported by my solar panels. In May, I submitted a claim for £300, based on my meter reading, and I received an email stating that I was due £38,611.59....",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-17T06:00:48+00:00",
+      "source_url": "https://www.theguardian.com/money/2026/aug/17/british-gas-mistake-energy-solar-panels",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20British%20Gas%20paid%20me%20%C2%A338%2C000%20by%20mistake%2C%20and%20I%20can%E2%80%99t%20give%20it%20back.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4279969697",
       "image_type": "ai_generated"
     },
     {
@@ -15766,6 +16261,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "14db1957bb08b3daae4d",
+      "category": "Lifestyle",
+      "headline": "Crossword editor’s desk: what would be the point of an AI puzzle?",
+      "summary": "Some reassurance that our puzzles are created by flesh-and-blood setters – and your clues for the name of Brockwell’s dog The world of crosswords is generally a happy and sensible place. The human mind being what it is, though, we are not immune to entertaining ideas that are less than true. Our equivalent of the conspiracy theory that humankind is being controlled by 5G phone masts is that puzzles are appearing...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-03T11:56:10+00:00",
+      "source_url": "https://www.theguardian.com/crosswords/crossword-blog/2026/aug/03/crossword-editors-desk-what-would-be-the-point-of-an-ai-puzzle",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Crossword%20editor%E2%80%99s%20desk%3A%20what%20would%20be%20the%20point%20of%20an%20AI%20puzzle%3F.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1262164384",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "8bad87ed870a358cb2d6",
       "category": "Lifestyle",
       "headline": "Your worst fears about cultural collapse might be true – here’s what you can do about it",
@@ -15785,6 +16291,17 @@
       "published_at": "2026-07-22T06:00:07+00:00",
       "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/jul/22/story-of-a-premature-birth-in-pictures-joao-linneu",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20%E2%80%98I%20was%20full%20of%20fears%E2%80%99%3A%20the%20story%20of%20a%20premature%20birth%20%E2%80%93%20in%20pictures.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2657912878",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "c939a681ea5dfa5b78a1",
+      "category": "Lifestyle",
+      "headline": "The best LED face masks in the UK, tested: 12 light therapy devices that are worth the hype",
+      "summary": "They claim to fix fine lines, blemishes, and redness – but which stand up to scrutiny? After consulting dermatologists and putting them to the test, we have crowned a brand new number one • The best anti-ageing creams, serums and treatments LED face masks are booming in popularity – despite being one of the most expensive at-home beauty products to hit the market. They claim to either reduce the appearance of...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-07-21T09:00:08+00:00",
+      "source_url": "https://www.theguardian.com/thefilter/2025/sep/19/best-led-red-light-therapy-face-masks",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20The%20best%20LED%20face%20masks%20in%20the%20UK%2C%20tested%3A%2012%20light%20therapy%20devices%20that%20are%20worth%20the%20hype.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=876903809",
       "image_type": "ai_generated"
     },
     {
