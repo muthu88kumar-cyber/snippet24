@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T04:35:19.697263+00:00",
-  "total": 1516,
+  "updated_at": "2026-08-30T04:56:28.847989+00:00",
+  "total": 1521,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 123,
-    "India": 479,
+    "India": 482,
     "Business": 172,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 318,
-    "Lifestyle": 192
+    "Entertainment": 319,
+    "Lifestyle": 193
   },
   "articles": [
     {
@@ -2082,14 +2082,47 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "6c5cd5ab1e569692ec8a",
+      "id": "b5922a7787ea753907d4",
+      "category": "Entertainment",
+      "headline": "Tim McGraw health update: Country star brushes off onstage fall during Cincinnati concert",
+      "summary": "Tim McGraw stumbled while performing I Like It, I Love It on his Pawn Shop Guitar Tour in Cincinnati.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-30T04:38:47+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/music/tim-mcgraw-health-update-country-star-brushes-off-onstage-fall-during-cincinnati-concert-101788055316043.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Tim%20McGraw%20health%20update%3A%20Country%20star%20brushes%20off%20onstage%20fall%20during%20Cincinnati%20concert.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=857344272",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "88116e4c8262cf9e35bc",
       "category": "India",
-      "headline": "Punjab AAP activist Gurpreet Singh Gopi shot dead near Ferozpur; cops suspect old dispute, elections as motive",
+      "headline": "PM Modi Uzbekistan Visit LIVE: PM Modi in Tashkent today, to hold bilateral talks with Uzbek President",
+      "summary": "PM Modi Uzbekistan Visit LIVE: Apart from bilateral meetings, PM Modi is also expected to visit the Shastri Memorial in Tashkent and the Mahatma Gandhi Centre at the Tashkent State University of Oriental Studies.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T04:25:01+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/pm-modi-uzbekistan-visit-live-updates-tashkent-shavkat-mirziyoyev-sco-summit-trade-defence-energy-agenda-latest-updates-101788056460800.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20Uzbekistan%20Visit%20LIVE%3A%20PM%20Modi%20in%20Tashkent%20today%2C%20to%20hold%20bilateral%20talks%20with%20Uzbek%20President.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=995772756",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ed892373bd9f34782daa",
+      "category": "India",
+      "headline": "Karnataka CID arrests IAS officer Gangwar in KPSC exam irregularities case",
+      "summary": "The Karnataka CID arrested IAS officer Gyanendra Kumar Gangwar in a probe into alleged KPSC exam irregularities, including OMR manipulation and marks tampering.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T04:19:09+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/karnataka-cid-arrests-ias-officer-gangwar-in-kpsc-exam-irregularities-case-101788063549880.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Karnataka%20CID%20arrests%20IAS%20officer%20Gangwar%20in%20KPSC%20exam%20irregularities%20case.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2138797765",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5afdb1bb74a6c47d5efa",
+      "category": "India",
+      "headline": "Punjab AAP activist Gurpreet Singh Gopi shot dead near Ferozepur; cops suspect old dispute, elections as motive",
       "summary": "Ferozepur senior superintendent of police said Gopi and his associate were travelling on a bike when the attackers, in a car, chased them and opened fire.",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-30T04:01:37+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/punjab-aap-activist-gurpreet-singh-gopi-shot-dead-near-ferozpur-cops-suspect-old-dispute-elections-as-motive-101788062091320.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Punjab%20AAP%20activist%20Gurpreet%20Singh%20Gopi%20shot%20dead%20near%20Ferozpur%3B%20cops%20suspect%20old%20dispute%2C%20elections%20as%20motive.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1074838518",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Punjab%20AAP%20activist%20Gurpreet%20Singh%20Gopi%20shot%20dead%20near%20Ferozepur%3B%20cops%20suspect%20old%20dispute%2C%20elections%20as%20motive.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1826950985",
       "image_type": "ai_generated"
     },
     {
@@ -4785,6 +4818,17 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a1740a42006924f5a252",
+      "category": "India",
+      "headline": "Greater Noida rape-murder main accused shot dead in police encounter while recreating crime scene",
+      "summary": "The accused told police he had hidden the weapon in bushes near a police outpost, but allegedly opened fire at the police with concealed pistol when taken there",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T04:22:26+00:00",
+      "source_url": "https://www.hindustantimes.com/cities/noida-news/greater-noida-rape-murder-main-accused-shot-dead-in-police-encounter-while-recreating-crime-scene-101788062421518.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Greater%20Noida%20rape-murder%20main%20accused%20shot%20dead%20in%20police%20encounter%20while%20recreating%20crime%20scene.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=580561534",
       "image_type": "ai_generated"
     },
     {
@@ -10464,14 +10508,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "45b1e3e4574c15bcd77a",
+      "id": "0991f47f92cb1f113852",
       "category": "Entertainment",
-      "headline": "Harry Styles Shouts-Out Ex Taylor Swift’s Wedding During Madison Square Garden Show",
-      "summary": "On the opening night of his 30-concert residency at Madison Square Garden, pop superstar Harry Styles paid tribute to the late, great Dolly Parton. And at the tail end of Saturday night’s show, he shouted-out his ex-girlfriend Taylor Swift’s wedding to Travis Kelce. “We’re at Madison Square Garden, home of the world champion New York […]",
+      "headline": "Harry Styles Pokes Fun at Ex Taylor Swift’s Wedding During Madison Square Garden Show",
+      "summary": "On the opening night of his 30-concert residency at Madison Square Garden, pop superstar Harry Styles paid tribute to the late, great Dolly Parton. And at the tail end of Saturday night’s show, he shouted out his ex-girlfriend Taylor Swift’s wedding to Travis Kelce. “We’re at Madison Square Garden, home of the world champion New […]",
       "publisher": "Variety",
       "published_at": "2026-08-30T01:52:12+00:00",
       "source_url": "https://variety.com/2026/music/news/harry-styles-shout-out-taylor-swift-wedding-travis-kelce-madison-square-garden-show-1236846748/",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Harry%20Styles%20Shouts-Out%20Ex%20Taylor%20Swift%E2%80%99s%20Wedding%20During%20Madison%20Square%20Garden%20Show.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=924783823",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Harry%20Styles%20Pokes%20Fun%20at%20Ex%20Taylor%20Swift%E2%80%99s%20Wedding%20During%20Madison%20Square%20Garden%20Show.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2289228060",
       "image_type": "ai_generated"
     },
     {
@@ -11993,6 +12037,28 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "022d2fe0810633fd330d",
+      "category": "World",
+      "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
+      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T04:42:18+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "580a4d596acf408a586f",
+      "category": "Lifestyle",
+      "headline": "I tried and tested 5 deodorants for long-lasting freshness; Only 2 passed my test",
+      "summary": "When it comes to long-lasting freshness, deodorants always have my back. So, I tried 5 deodorants for lasting freshness, and these 2 have passed my test.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T04:30:54+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/i-tried-and-tested-5-deodorants-for-long-lasting-freshness-only-2-passed-my-test-101787804826076.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20I%20tried%20and%20tested%205%20deodorants%20for%20long-lasting%20freshness%3B%20Only%202%20passed%20my%20test.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=163053619",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "7406782258af32f57ee4",
       "category": "Entertainment",
       "headline": "Melinda French Gates Doubles Olivia Rodrigo’s Daisy Chain Fields Donation Sum Bringing Total to $20 Million",
@@ -12001,17 +12067,6 @@
       "published_at": "2026-08-30T04:12:53+00:00",
       "source_url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-20m-melinda-gates-1236685002/",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Melinda%20French%20Gates%20Doubles%20Olivia%20Rodrigo%E2%80%99s%20Daisy%20Chain%20Fields%20Donation%20Sum%20Bringing%20Total%20to%20%2420%20Million.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1558764308",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "022d2fe0810633fd330d",
-      "category": "World",
-      "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
-      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-30T04:10:22+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
       "image_type": "ai_generated"
     },
     {
@@ -16044,7 +16099,7 @@
       "id": "11998f7d14cc1e7b1837",
       "category": "Lifestyle",
       "headline": "Architourism in France: the retro futurist seaside town near Montpellier that’s out of this world",
-      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th",
+      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T06:00:06+00:00",
       "source_url": "https://www.theguardian.com/travel/2026/aug/27/architourism-france-retro-futurist-la-grande-motte-seaside-town-near-montpellier",
