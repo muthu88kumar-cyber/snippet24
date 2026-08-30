@@ -1,9 +1,18 @@
 {
-  "updated_at": "2026-08-30T06:05:07.278086+00:00",
+  "site": "Snippet24",
+  "site_url": "https://snippet24.in",
+  "updated_at": "2026-08-30T06:10:40.965144+00:00",
   "total": 1563,
-  "editor": "Snippet24 AI Editorial",
-  "source_policy": "Government, public-service broadcasters, official TV and verified official YouTube channels",
-  "ai_model": null,
+  "editorial_engine": "Snippet24 AI Editorial",
+  "source_policy": "Government, public-service, official TV and verified official YouTube sources.",
+  "ai_policy": "AI-assisted rewriting is used for concise summaries. Original sources are retained.",
+  "copyright_policy": "Third-party source material is attributed and linked. Full article reproduction is not performed by the curator.",
+  "legal_notice": "Information published by Snippet24 is provided for general news and informational purposes and does not constitute legal, financial, medical, tax, investment or other professional advice.",
+  "editorial_notice": "Snippet24 aims to provide concise, factual and responsible news summaries. Claims, allegations and unverified information should not be presented as established facts.",
+  "copyright_notice": "Third-party content, trademarks, photographs, videos, audio and other copyrighted material remain the property of their respective owners. Snippet24 does not claim ownership of third-party material.",
+  "ai_disclosure": "This article has been condensed and rephrased using an AI-assisted editorial process based on the identified source. Readers should consult the original source for the complete report.",
+  "grievance": true,
+  "corrections": true,
   "categories": {
     "In India": 1536,
     "Security & Peace": 1,
@@ -20,8 +29,8 @@
     "OFFICIAL_YOUTUBE": 28,
     "UNKNOWN": 1535
   },
-  "successful_sources": 2,
-  "failed_sources": 7,
+  "successful_sources": 0,
+  "failed_sources": 1,
   "articles": [
     {
       "id": "73a60f60d4e5bd7417dd",
@@ -41,26 +50,6 @@
       "published_at": "2026-08-28T13:30:34+00:00",
       "source_url": "https://www.youtube.com/shorts/qI4K2J5uWFw",
       "image_url": "https://www.youtube.com/v/qI4K2J5uWFw?version=3",
-      "image_type": "source"
-    },
-    {
-      "id": "2af4fef219eccce7a3c1",
-      "category": "Security & Peace",
-      "headline": "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National",
-      "snippet": "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National\nThe source has provided additional information about the development.\nRead the original report for the complete details.",
-      "snippet_lines": [
-        "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National",
-        "The source has provided additional information about the development.",
-        "Read the original report for the complete details."
-      ],
-      "summary": "The original source has published the latest update. Read the original report for complete details.",
-      "publisher": "Doordarshan National",
-      "source_type": "OFFICIAL_YOUTUBE",
-      "importance": "MEDIUM",
-      "ai_rewritten": false,
-      "published_at": "2026-08-29T08:30:32+00:00",
-      "source_url": "https://www.youtube.com/shorts/n_vVPiP7CTM",
-      "image_url": "https://www.youtube.com/v/n_vVPiP7CTM?version=3",
       "image_type": "source"
     },
     {
@@ -441,6 +430,26 @@
       "published_at": "2026-08-29T08:43:04+00:00",
       "source_url": "https://www.youtube.com/shorts/K5IrVubkvec",
       "image_url": "https://www.youtube.com/v/K5IrVubkvec?version=3",
+      "image_type": "source"
+    },
+    {
+      "id": "2af4fef219eccce7a3c1",
+      "category": "Security & Peace",
+      "headline": "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National",
+      "snippet": "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National\nThe source has provided additional information about the development.\nRead the original report for the complete details.",
+      "snippet_lines": [
+        "Chorr Police | इंस्पेक्टर लवली की माँ का बैग चुराकर एंथनी फँस गया मुसीबत में | DD National",
+        "The source has provided additional information about the development.",
+        "Read the original report for the complete details."
+      ],
+      "summary": "The original source has published the latest update. Read the original report for complete details.",
+      "publisher": "Doordarshan National",
+      "source_type": "OFFICIAL_YOUTUBE",
+      "importance": "MEDIUM",
+      "ai_rewritten": false,
+      "published_at": "2026-08-29T08:30:32+00:00",
+      "source_url": "https://www.youtube.com/shorts/n_vVPiP7CTM",
+      "image_url": "https://www.youtube.com/v/n_vVPiP7CTM?version=3",
       "image_type": "source"
     },
     {
