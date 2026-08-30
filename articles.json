@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-30T03:34:35.938753+00:00",
-  "total": 1498,
+  "updated_at": "2026-08-30T04:04:23.946005+00:00",
+  "total": 1502,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 121,
-    "India": 469,
+    "World": 122,
+    "India": 470,
     "Business": 171,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 314,
+    "Entertainment": 316,
     "Lifestyle": 191
   },
   "articles": [
@@ -165,6 +165,17 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "56c99199b231f97699f4",
+      "category": "Entertainment",
+      "headline": "The Academy posts scene from Yeh Jawani Hai Deewani, desi fans of Deepika Padukone say ‘they know ball’",
+      "summary": "The Academy of Motion Picture Arts and Sciences shared a scene from Yeh Jawani Hai Deewani, starring Deepika Padukone and Ranbir Kapoor, delighting Indian fans.",
+      "publisher": "Hindustan Times Entertainment",
+      "published_at": "2026-08-30T03:25:28+00:00",
+      "source_url": "https://www.hindustantimes.com/entertainment/bollywood/the-academy-posts-scene-from-yeh-jawani-hai-deewani-desi-fans-of-deepika-padukone-say-they-know-ball-101788059234897.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20The%20Academy%20posts%20scene%20from%20Yeh%20Jawani%20Hai%20Deewani%2C%20desi%20fans%20of%20Deepika%20Padukone%20say%20%E2%80%98they%20know%20ball%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=403570578",
       "image_type": "ai_generated"
     },
     {
@@ -616,17 +627,6 @@
       "published_at": "2026-08-02T19:13:27+00:00",
       "source_url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-special-windows-seen-big-enough-to-bring-in-100b/articleshow/132813309.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20RBI%20special%20windows%20seen%20big%20enough%20to%20bring%20in%20%24100B.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1578929096",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "5ebf1669ff81b1e7bfd6",
-      "category": "India",
-      "headline": "Revanth seeks 4-week extension of T’gana SIR",
-      "summary": "Telangana chief minister A Revanth Reddy on Saturday urged the Election Commission of India (ECI) to extend the schedule for the Special Intensive Revision (SIR) of electoral rolls in the state by four weeks, in the wake of concern over possible deletion of a large number of voters during the verification",
-      "publisher": "Hindustan Times India",
-      "published_at": "2026-08-30T02:46:10+00:00",
-      "source_url": "https://www.hindustantimes.com/india-news/revanth-seeks-4-week-extension-of-t-gana-sir-101788029880830.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revanth%20seeks%204-week%20extension%20of%20T%E2%80%99gana%20SIR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=14578172",
       "image_type": "ai_generated"
     },
     {
@@ -2046,6 +2046,17 @@
       "published_at": "2026-08-27T10:07:50+00:00",
       "source_url": "https://www.ndtv.com/entertainment/swastika-mukherjee-on-gandhari-played-mothers-in-all-shapes-thank-god-not-one-here-11966210#publisher=newsstand",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Actor%20Swastika%20Mukherjee%20On%20Gandhari%3A%20%27Played%20Mothers%20In%20All%20Shapes%2C%20Thank%20God%20Not%20One%20Here%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1698811778",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "b93d1c4551ed86dd4f0d",
+      "category": "India",
+      "headline": "Revanth Reddy urges ECI to extend Telangana SIR deadline by four weeks",
+      "summary": "Reddy asked the ECI to allow three to four weeks for voters to respond to notices, instead of one week; open helpdesks, particularly in urban districts.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:46:10+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/revanth-seeks-4-week-extension-of-t-gana-sir-101788029880830.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revanth%20Reddy%20urges%20ECI%20to%20extend%20Telangana%20SIR%20deadline%20by%20four%20weeks.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=223439051",
       "image_type": "ai_generated"
     },
     {
@@ -4697,6 +4708,17 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "ff7dc5908be72fb6c852",
+      "category": "India",
+      "headline": "Book Box: The book my brother will actually read",
+      "summary": "An editor finds it challenging to choose a book for her brother, ultimately settling on \"Streetwise\" due to its relevance to his investing career.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T03:34:07+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/book-box-the-book-my-brother-will-actually-read-101788060848039.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Book%20Box%3A%20The%20book%20my%20brother%20will%20actually%20read.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3934485272",
       "image_type": "ai_generated"
     },
     {
@@ -11839,14 +11861,47 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "72725a52af9f42c5dd15",
+      "category": "World",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-30T04:01:02+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "9083d90799f9a3ec9551",
+      "category": "World",
+      "headline": "Iceland EU referendum on a knife edge as counting continues",
+      "summary": "A vote on whether to resume membership talks with the European Union is too close to call.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-30T03:57:01+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Iceland%20EU%20referendum%20on%20a%20knife%20edge%20as%20counting%20continues.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1769953623",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "022d2fe0810633fd330d",
       "category": "World",
       "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
-      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things...",
+      "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T03:22:26+00:00",
+      "published_at": "2026-08-30T03:46:09+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "1411c3b3a6bc218ffe16",
+      "category": "Entertainment",
+      "headline": "Where to Watch the 2026 U.S. Open Tennis Tournament Online",
+      "summary": "The main singles draws begin Sunday. Aug. 30.",
+      "publisher": "Hollywood Reporter",
+      "published_at": "2026-08-30T03:40:18+00:00",
+      "source_url": "https://www.hollywoodreporter.com/tv/tv-news/where-to-watch-us-open-tennis-2026-streaming-free-schedule-1236685010/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Where%20to%20Watch%20the%202026%20U.S.%20Open%20Tennis%20Tournament%20Online.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1606004566",
       "image_type": "ai_generated"
     },
     {
@@ -11963,7 +12018,7 @@
       "id": "b53d428358a8176c90b8",
       "category": "Entertainment",
       "headline": "Tom Hardy’s Debut Rap Album Features Busta Rhymes, Method Man & A Bane Cameo",
-      "summary": "After years of sharing his talent on the big screen as Tom Hardy, Frankie Pulitzer has officially arrived to drop some bangers. On Friday, the Oscar nominee’s rap persona released his 15-track debut album Czarface Meets Frankie Pulitzer, made in collaboration with his hip-hop collective Czarface, and featuring appearances from Busta Rhymes, Method Man and […]",
+      "summary": "After years of sharing his talent on the big screen as Tom Hardy, Frankie Pulitzer has officially arrived to drop some bangers. On Friday, the Oscar nominee’s rap persona released his 15-track debut album Czarface Meets Frankie Pulitzer, made in collaboration with hip-hop collective Czarface, and featuring appearances from Busta Rhymes, Method Man and EL-P, […]",
       "publisher": "Deadline",
       "published_at": "2026-08-29T23:51:46+00:00",
       "source_url": "https://deadline.com/2026/08/tom-hardy-debut-rap-album-busta-rhymes-method-man-bane-1237062711/",
@@ -12023,17 +12078,6 @@
       "published_at": "2026-08-29T22:53:17+00:00",
       "source_url": "https://www.bbc.co.uk/sport/football/videos/c4gj2ze0eyxo?at_medium=RSS&at_campaign=rss",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Confidence%27%20and%20%27desire%27%20-%20why%20Bournemouth%27s%20Scott%20is%20in%20demand.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=743107507",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "72725a52af9f42c5dd15",
-      "category": "World",
-      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
-      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
-      "publisher": "BBC World",
-      "published_at": "2026-08-29T22:40:51+00:00",
-      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Trump%20hails%20%27historic%27%20deal%20for%20US%20to%20control%2065bn%20barrels%20of%20Venezuela%27s%20oil.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3431567011",
       "image_type": "ai_generated"
     },
     {
@@ -13767,7 +13811,7 @@
       "id": "933ed334dfd3e3e0acfa",
       "category": "Lifestyle",
       "headline": "Tim Dowling: my TV contract has run out – and so has my patience",
-      "summary": "I need to buy a smart television big enough to read ransom notes – and I’m taking no prisoners Fourteen years ago, I received a text from my eldest son claiming he’d just found the TV face down on the sitting room floor, destroyed. I didn’t entirely buy his theory about the dogs being responsible – I discovered a football lying suspiciously near the crime scene",
+      "summary": "I need to buy a smart television big enough to read ransom notes – and I’m taking no prisoners Fourteen years ago, I received a text from my eldest son claiming he’d just found the TV face down on the sitting room floor, destroyed. I didn’t entirely buy his theory about the dogs being responsible",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T05:00:17+00:00",
       "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/tim-dowling-tv-contract-run-out-so-has-patience",
@@ -15846,7 +15890,7 @@
       "id": "11998f7d14cc1e7b1837",
       "category": "Lifestyle",
       "headline": "Architourism in France: the retro futurist seaside town near Montpellier that’s out of this world",
-      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu – although I love both",
+      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T06:00:06+00:00",
       "source_url": "https://www.theguardian.com/travel/2026/aug/27/architourism-france-retro-futurist-la-grande-motte-seaside-town-near-montpellier",
@@ -16022,7 +16066,7 @@
       "id": "39b072b74f531d0e7676",
       "category": "Lifestyle",
       "headline": "Lloyds Bank is holding on to our urgently needed £5,500",
-      "summary": "We want our balance back, but we can’t access the money to pay for essential repairs and settle an electricity bill Last November, Lloyds Bank informed me, in my role as treasurer of my parish church, that the church account was to be closed and that I should open a new business account instead. This can only be done online, but a fault with their system prevented me – and local branch staff",
+      "summary": "We want our balance back, but we can’t access the money to pay for essential repairs and settle an electricity bill Last November, Lloyds Bank informed me, in my role as treasurer of my parish church, that the church account was to be closed and that I should open a new business account instead. This can only be done online, but a fault with their system prevented me",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-25T06:00:50+00:00",
       "source_url": "https://www.theguardian.com/money/2026/aug/25/lloyds-bank-holding-on-to-funds-balance-account",
@@ -16374,7 +16418,7 @@
       "id": "c939a681ea5dfa5b78a1",
       "category": "Lifestyle",
       "headline": "The best LED face masks in the UK, tested: 12 light therapy devices that are worth the hype",
-      "summary": "They claim to fix fine lines, blemishes, and redness – but which stand up to scrutiny? After consulting dermatologists and putting them to the test, we have crowned a brand new number one • The best anti-ageing creams, serums and treatments LED face masks are booming in popularity – despite being one of the most expensive at",
+      "summary": "They claim to fix fine lines, blemishes, and redness – but which stand up to scrutiny? After consulting dermatologists and putting them to the test, we have crowned a brand new number one • The best anti-ageing creams, serums and treatments LED face masks are booming in popularity",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-07-21T09:00:08+00:00",
       "source_url": "https://www.theguardian.com/thefilter/2025/sep/19/best-led-red-light-therapy-face-masks",
