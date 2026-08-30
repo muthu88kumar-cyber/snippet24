@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-30T00:34:59.628565+00:00",
-  "total": 1431,
+  "updated_at": "2026-08-30T01:04:37.927908+00:00",
+  "total": 1433,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 119,
-    "India": 453,
-    "Business": 169,
+    "India": 454,
+    "Business": 170,
     "Technology & AI": 101,
     "Sports": 131,
     "Entertainment": 308,
@@ -4576,6 +4576,28 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a51b28f126929b4371c7",
+      "category": "India",
+      "headline": "Just Like That: 50 years on, why Mukesh’s voice still still resonates today",
+      "summary": "Fifty years after his death, legendary singer Mukesh’s soulful voice, timeless songs and emotional depth continue to resonate with generations of listeners.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T00:30:30+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/just-like-that-50-years-on-why-mukesh-s-voice-still-still-resonates-today-101787909878106.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Just%20Like%20That%3A%2050%20years%20on%2C%20why%20Mukesh%E2%80%99s%20voice%20still%20still%20resonates%20today.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3685069861",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "26e1028efb5ca58d6c4d",
+      "category": "Business",
+      "headline": "Social media influencers don entrepreneurial hat; launch VC-backed consumer brands",
+      "summary": "The rise of social media influencers has given birth to a new wave of consumer brands, garnering tremendous venture capital interest.",
+      "publisher": "Economic Times Industry",
+      "published_at": "2026-08-30T00:30:00+00:00",
+      "source_url": "https://economictimes.indiatimes.com/tech/funding/social-media-influencers-don-entrepreneurial-hat-launch-vc-backed-consumer-brands/articleshow/133616136.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Social%20media%20influencers%20don%20entrepreneurial%20hat%3B%20launch%20VC-backed%20consumer%20brands.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1308322945",
       "image_type": "ai_generated"
     },
     {
@@ -11421,6 +11443,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "2c92e12b5b8cea0d1abb",
+      "category": "World",
+      "headline": "News live: limits on smartglasses being considered, Plibersek says; missing Australian woman located safely in Nepal",
+      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate is claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things such as...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T00:51:23+00:00",
+      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20limits%20on%20smartglasses%20being%20considered%2C%20Plibersek%20says%3B%20missing%20Australian%20woman%20located%20safely%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4038879064",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "2df2386560ee860522d3",
       "category": "World",
       "headline": "Families balance hope and despair in race to find survivors in Nepal as 41 Australians still missing",
@@ -11429,17 +11462,6 @@
       "published_at": "2026-08-30T00:27:59+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/30/families-balance-hope-and-despair-in-race-to-find-survivors-in-nepal-as-australians-still-missing",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Families%20balance%20hope%20and%20despair%20in%20race%20to%20find%20survivors%20in%20Nepal%20as%2041%20Australians%20still%20missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1865174625",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "2c92e12b5b8cea0d1abb",
-      "category": "World",
-      "headline": "News live: limits on smartglasses being considered, Plibersek says; missing Australian woman located safely in Nepal",
-      "summary": "‘My heart goes out to all the Nepalese families who are grieving loved ones,’ Cara Severino says. Follow latest updates live Plibersek says One Nation byelection win ‘on state issues’ Tanya Plibersek has downplayed One Nation’s victory in the Secret Harbour state byelection in Western Australia as a local vote fought on state issues. Oh, this is a state election run on state issues, and I think they’re the...",
-      "publisher": "Guardian World",
-      "published_at": "2026-08-30T00:25:33+00:00",
-      "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20News%20live%3A%20limits%20on%20smartglasses%20being%20considered%2C%20Plibersek%20says%3B%20missing%20Australian%20woman%20located%20safely%20in%20Nepal.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4038879064",
       "image_type": "ai_generated"
     },
     {
@@ -11578,7 +11600,7 @@
       "id": "58d5b597fb5376e01fac",
       "category": "Sports",
       "headline": "Cameron beats Mayer to become unified light-middleweight champion",
-      "summary": "Chantelle Cameron produced one of the finest displays of her career to beat Mikaela Mayer and add the WBA and WBC light middleweight titles to her WBO belt.",
+      "summary": "Chantelle Cameron produced one of the finest displays of her career to beat Mikaela Mayer and add the WBA and WBC light",
       "publisher": "BBC Sport",
       "published_at": "2026-08-29T22:30:33+00:00",
       "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c4gq47745peo?at_medium=RSS&at_campaign=rss",
