@@ -2,1700 +2,592 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Snippet24 — Fast News. Real Impact.</title>
-
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f3f6fa;
-        color: #071d3a;
-    }
-
-    button,
-    input {
-        font: inherit;
-    }
-
-    button {
-        cursor: pointer;
-    }
-
-    /* ================= HEADER ================= */
-
-    .top-header {
-        background: white;
-        border-bottom: 1px solid #dce3ec;
-    }
-
-    .header-inner {
-        max-width: 1000px;
-        margin: auto;
-        min-height: 110px;
-        display: flex;
-        align-items: center;
-        gap: 22px;
-        padding: 15px 0;
-    }
-
-    .brand-area {
-        min-width: 210px;
-    }
-
-    .logo {
-        font-size: 43px;
-        font-weight: 900;
-        letter-spacing: -2px;
-        color: #09234a;
-        line-height: 1;
-    }
-
-    .logo span {
-        display: inline-block;
-        background: #ffc400;
-        color: white;
-        border-radius: 8px;
-        padding: 4px 8px;
-        margin-left: 4px;
-        letter-spacing: -3px;
-    }
-
-    .tagline {
-        font-size: 9px;
-        font-weight: 800;
-        letter-spacing: 5px;
-        color: #0a2448;
-        margin-top: 10px;
-    }
-
-    /* ================= SEARCH ================= */
-
-    .search-box {
-        flex: 1;
-        position: relative;
-    }
-
-    .search-box input {
-        width: 100%;
-        height: 43px;
-        border: 1px solid #d6dfeb;
-        border-radius: 24px;
-        padding: 0 20px 0 40px;
-        outline: none;
-        color: #142d4d;
-    }
-
-    .search-box input:focus {
-        border-color: #ef3340;
-    }
-
-    .search-icon {
-        position: absolute;
-        left: 16px;
-        top: 12px;
-        color: #4f6987;
-    }
-
-    /* ================= WEATHER ================= */
-
-    .utility-area {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-    }
-
-    .weather {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border-right: 1px solid #dce3ec;
-        padding-right: 18px;
-        cursor: pointer;
-    }
-
-    .weather-icon {
-        font-size: 27px;
-    }
-
-    .weather-temp {
-        font-size: 14px;
-        font-weight: 800;
-    }
-
-    .weather-location {
-        font-size: 9px;
-        color: #718096;
-        margin-top: 2px;
-    }
-
-    .date-time {
-        font-size: 13px;
-        font-weight: 800;
-    }
-
-    .date-small {
-        font-size: 9px;
-        color: #718096;
-        margin-top: 3px;
-    }
-
-    .calendar-btn {
-        width: 35px;
-        height: 35px;
-        border: 1px solid #dce3ec;
-        border-radius: 50%;
-        background: white;
-        font-size: 17px;
-    }
-
-    .calendar-btn:hover,
-    .weather:hover {
-        opacity: .75;
-    }
-
-    /* ================= NAVIGATION ================= */
-
-    .main-nav {
-        background: white;
-        border-top: 1px solid #edf1f5;
-        border-bottom: 1px solid #dce3ec;
-    }
-
-    .nav-inner {
-        max-width: 1000px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        height: 43px;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .nav-inner a {
-        text-decoration: none;
-        color: #071d3a;
-        font-size: 11px;
-        font-weight: 800;
-        padding: 14px 0 11px;
-    }
-
-    .nav-inner a:hover,
-    .nav-inner a.active {
-        color: #ef3340;
-        border-bottom: 3px solid #ef3340;
-    }
-
-    /* ================= LIVE WIRE ================= */
-
-    .live-wire {
-        height: 33px;
-        background: #061a39;
-        color: white;
-        overflow: hidden;
-    }
-
-    .live-inner {
-        max-width: 1000px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .live-label {
-        flex: 0 0 auto;
-        color: #ffd000;
-        font-size: 10px;
-        font-weight: 900;
-        margin-right: 22px;
-    }
-
-    .live-label::before {
-        content: "";
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        background: #ef3340;
-        border-radius: 50%;
-        margin-right: 7px;
-    }
-
-    .ticker {
-        white-space: nowrap;
-        animation: tickerMove 28s linear infinite;
-        font-size: 10px;
-        font-weight: 700;
-    }
-
-    @keyframes tickerMove {
-        from {
-            transform: translateX(100%);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
-    }
-
-    /* ================= LANGUAGE BAR ================= */
-
-    .language-bar {
-        background: white;
-        border-bottom: 1px solid #dce3ec;
-    }
-
-    .language-inner {
-        max-width: 1000px;
-        margin: auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 7px;
-        min-height: 48px;
-    }
-
-    .language-label {
-        font-size: 10px;
-        color: #63758b;
-        margin-right: 3px;
-    }
-
-    .language-btn {
-        border: 1px solid #dce3ec;
-        background: white;
-        border-radius: 18px;
-        padding: 7px 13px;
-        font-size: 12px;
-        color: #09234a;
-        transition: .2s;
-    }
-
-    .language-btn:hover {
-        border-color: #ef3340;
-    }
-
-    .language-btn.active {
-        background: #ef3340;
-        color: white;
-        border-color: #ef3340;
-        font-weight: 800;
-    }
-
-    /* ================= MAIN ================= */
-
-    main {
-        max-width: 1000px;
-        margin: auto;
-        padding: 38px 0 70px;
-    }
-
-    .section-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 16px;
-    }
-
-    .section-title h2 {
-        font-size: 14px;
-        letter-spacing: .5px;
-        border-left: 4px solid #ef3340;
-        padding-left: 8px;
-    }
-
-    .story-count {
-        font-size: 10px;
-        color: #718096;
-    }
-
-    /* ================= FEATURED ================= */
-
-    .featured {
-        display: grid;
-        grid-template-columns: 1.4fr .85fr;
-        gap: 20px;
-        margin-bottom: 28px;
-    }
-
-    .featured-image {
-        min-height: 300px;
-        background: #e4ebf4;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #8a9bb0;
-        font-size: 11px;
-    }
-
-    .featured-content {
-        padding: 15px 0;
-    }
-
-    .category {
-        color: #ef3340;
-        font-size: 9px;
-        font-weight: 900;
-        text-transform: uppercase;
-        margin-bottom: 8px;
-    }
-
-    .featured-title {
-        font-size: 30px;
-        line-height: 1.05;
-        margin-bottom: 13px;
-    }
-
-    .featured-summary {
-        font-size: 12px;
-        line-height: 1.6;
-        margin-bottom: 14px;
-    }
-
-    .source {
-        color: #718096;
-        font-size: 10px;
-        margin-bottom: 12px;
-    }
-
-    .read-more {
-        color: #ef3340;
-        text-decoration: none;
-        font-size: 10px;
-        font-weight: 900;
-    }
-
-    /* ================= STORY GRID ================= */
-
-    .story-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-    }
-
-    .story-card {
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #e0e6ee;
-        transition: transform .2s, box-shadow .2s;
-    }
-
-    .story-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 7px 20px rgba(0,0,0,.08);
-    }
-
-    .story-image {
-        height: 125px;
-        background: #e4ebf4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #8a9bb0;
-        font-size: 10px;
-    }
-
-    .story-content {
-        padding: 12px;
-    }
-
-    .story-title {
-        font-size: 14px;
-        line-height: 1.25;
-        margin-bottom: 8px;
-    }
-
-    .story-summary {
-        color: #687b92;
-        font-size: 10px;
-        line-height: 1.4;
-    }
-
-    /* ================= MODAL ================= */
-
-    .modal {
-        position: fixed;
-        inset: 0;
-        background: rgba(4, 18, 40, .65);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        padding: 20px;
-    }
-
-    .modal.show {
-        display: flex;
-    }
-
-    .modal-box {
-        background: white;
-        width: 540px;
-        max-width: 100%;
-        border-radius: 18px;
-        overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0,0,0,.25);
-    }
-
-    .modal-header {
-        background: #071d3a;
-        color: white;
-        padding: 17px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .modal-header h3 {
-        font-size: 17px;
-    }
-
-    .close-btn {
-        background: transparent;
-        color: white;
-        border: 0;
-        font-size: 25px;
-    }
-
-    .modal-body {
-        padding: 20px;
-    }
-
-    .info-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-
-    .info-box {
-        border: 1px solid #dce3ec;
-        border-radius: 10px;
-        padding: 14px;
-    }
-
-    .info-label {
-        color: #75879c;
-        font-size: 9px;
-        text-transform: uppercase;
-        margin-bottom: 7px;
-        font-weight: 800;
-    }
-
-    .info-value {
-        font-size: 12px;
-        font-weight: 800;
-    }
-
-    .panchang {
-        margin-top: 12px;
-        border: 1px solid #dce3ec;
-        border-radius: 10px;
-        padding: 15px;
-        line-height: 1.9;
-        font-size: 12px;
-    }
-
-    .modal-note {
-        color: #718096;
-        font-size: 9px;
-        line-height: 1.5;
-        margin-top: 12px;
-    }
-
-    /* ================= SEARCH ================= */
-
-    .search-results {
-        margin-top: 15px;
-        display: none;
-    }
-
-    .search-results.show {
-        display: block;
-    }
-
-    .search-result {
-        background: white;
-        border: 1px solid #e0e6ee;
-        padding: 13px;
-        border-radius: 10px;
-        margin-bottom: 8px;
-    }
-
-    /* ================= RESPONSIVE ================= */
-
-    @media(max-width: 1050px) {
-
-        .header-inner,
-        .nav-inner,
-        .language-inner,
-        main,
-        .live-inner {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    @media(max-width: 800px) {
-
-        .header-inner {
-            flex-wrap: wrap;
-        }
-
-        .brand-area {
-            width: 100%;
-        }
-
-        .search-box {
-            order: 3;
-            flex-basis: 100%;
-        }
-
-        .utility-area {
-            margin-left: auto;
-        }
-
-        .featured {
-            grid-template-columns: 1fr;
-        }
-
-        .story-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .language-inner {
-            justify-content: flex-start;
-            overflow-x: auto;
-        }
-    }
-
-    @media(max-width: 520px) {
-
-        .logo {
-            font-size: 35px;
-        }
-
-        .tagline {
-            font-size: 7px;
-        }
-
-        .utility-area {
-            gap: 8px;
-        }
-
-        .weather {
-            display: none;
-        }
-
-        .date-time {
-            display: none;
-        }
-
-        main {
-            padding-top: 25px;
-        }
-
-        .featured-title {
-            font-size: 25px;
-        }
-
-        .story-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .story-image {
-            height: 180px;
-        }
-
-        .info-grid {
-            grid-template-columns: 1fr;
-        }
-    }
+:root{
+  --navy:#09213f;--yellow:#f7c600;--red:#e9273f;
+  --bg:#f4f7fb;--white:#fff;--text:#142238;--muted:#6e7c91;
+  --line:#dfe6ef;--shadow:0 8px 28px rgba(9,33,63,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+font-family:Inter,Arial,Helvetica,sans-serif}
+button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}
+
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.header-main{max-width:1400px;margin:auto;padding:15px 24px;
+display:grid;grid-template-columns:300px minmax(280px,1fr) auto;gap:28px;align-items:center}
+.brand{display:block;width:max-content}
+.logo{display:flex;align-items:center;height:45px;color:var(--navy);
+font-size:43px;font-weight:850;letter-spacing:-3px;line-height:1}
+.logo-snippet{position:relative}.logo-i-dot{position:absolute;width:7px;height:7px;
+border-radius:50%;background:var(--red);top:-1px;left:43px}
+.logo-24{margin-left:8px;padding:7px 12px 8px;border-radius:10px;background:var(--yellow);
+color:#fff;font-size:34px;font-weight:900;letter-spacing:-2px}
+.slogan{margin-top:6px;font-size:9px;letter-spacing:3px;font-weight:900}
+.slogan b{color:var(--red)}
+.search-box{height:45px;display:flex;align-items:center;gap:10px;padding:0 16px;
+background:#f8fafc;border:1px solid var(--line);border-radius:24px}
+.search-box:focus-within{background:#fff;border-color:#9eb0c5;box-shadow:0 0 0 4px rgba(9,33,63,.05)}
+.search-box input{width:100%;border:0;outline:0;background:transparent;font-size:13px}
+.header-right{display:flex;align-items:center;gap:18px}.live{font-size:10px;font-weight:900}
+.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px}
+.info{font-size:9px;color:var(--muted)}.info strong{display:block;color:var(--navy);font-size:12px}
+.avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+background:var(--navy);color:#fff;font-size:9px;font-weight:900}
+
+.ticker{background:var(--navy);color:#fff;overflow:hidden}
+.ticker-inner{max-width:1400px;margin:auto;height:38px;padding:0 24px;display:flex;align-items:center}
+.ticker-label{flex:none;background:var(--red);padding:5px 9px;border-radius:4px;
+font-size:9px;font-weight:900;letter-spacing:1px;margin-right:15px}
+.ticker-track{overflow:hidden;white-space:nowrap;font-size:10px;color:#e4ebf4}
+.ticker-track span{display:inline-block;margin-right:45px}.ticker-track b{color:#fff}
+
+.category-bar{background:#fff;border-bottom:1px solid var(--line)}
+.category-scroll{max-width:1400px;margin:auto;padding:0 18px;display:flex;
+overflow-x:auto;scrollbar-width:none}.category-scroll::-webkit-scrollbar{display:none}
+.category-btn{position:relative;flex:none;min-height:58px;padding:0 14px;border:0;
+background:transparent;color:#526177;display:flex;align-items:center;gap:7px;
+font-size:11px;font-weight:850;white-space:nowrap}
+.category-btn.active{color:var(--navy)}
+.category-btn.active:after{content:"";position:absolute;left:10px;right:10px;bottom:0;
+height:3px;border-radius:4px;background:var(--red)}
+
+.language-bar{background:#fff;border-bottom:1px solid var(--line)}
+.language-inner{max-width:1400px;margin:auto;min-height:48px;padding:7px 24px;
+display:flex;justify-content:flex-end;align-items:center;gap:7px}
+.language-label{font-size:10px;color:var(--muted);margin-right:4px}
+.language-btn{border:1px solid var(--line);background:#fff;border-radius:18px;
+padding:7px 12px;font-size:11px;font-weight:800}.language-btn.active{background:var(--red);color:#fff;border-color:var(--red)}
+
+.page{max-width:1400px;margin:auto;padding:30px 24px 65px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:15px}
+.section-head h1,.section-head h2{margin:0;color:var(--navy);letter-spacing:-.6px}
+.section-head h1{font-size:23px}.section-head h2{font-size:19px}
+.section-head p{margin:5px 0 0;color:var(--muted);font-size:11px}
+.count{font-size:10px;color:#8793a6}
+
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(330px,.75fr);gap:20px}
+.hero{position:relative;min-height:455px;border-radius:22px;overflow:hidden;background:#dce5ef;box-shadow:var(--shadow)}
+.hero-image,.hero-placeholder{width:100%;height:455px;object-fit:cover;display:block}
+.hero-placeholder{display:grid;place-items:center;color:#7c8b9f;font-size:11px;font-weight:800}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 22%,rgba(5,18,34,.92))}
+.hero-content{position:absolute;z-index:2;left:28px;right:28px;bottom:25px;color:#fff}
+.badge{display:inline-flex;padding:5px 9px;border-radius:999px;background:#eef1ff;
+color:#4e35bb;font-size:8px;font-weight:900}.hero .badge{background:rgba(255,255,255,.14);color:#fff}
+.hero h2{max-width:900px;margin:9px 0;font-size:clamp(28px,3.2vw,45px);line-height:1.05;letter-spacing:-1.8px}
+.hero-summary{max-width:800px;margin:0 0 10px;color:#e2e8f0;font-size:12px;line-height:1.5}
+.snippet-lines{margin:8px 0 12px;padding:0;list-style:none;max-width:820px}
+.snippet-lines li{font-size:10px;line-height:1.45;color:#e8edf5;margin:3px 0}
+.snippet-lines li:before{content:"•";margin-right:7px;color:var(--yellow)}
+.meta{display:flex;align-items:center;flex-wrap:wrap;gap:7px;color:#d6deea;font-size:9px}
+.original{margin-left:auto;padding:7px 11px;border:1px solid rgba(255,255,255,.35);
+border-radius:999px;font-weight:900}.original:hover{background:#fff;color:var(--navy)}
+
+.trending{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.trend-head{padding:17px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.trend-head strong{font-size:14px}.trend-head span{color:var(--red);font-size:9px;font-weight:900}
+.trend-list{padding:0 18px}.trend-item{display:grid;grid-template-columns:4px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid #edf1f5}
+.trend-line{border-radius:5px;background:var(--red)}.trend-tag{font-size:8px;color:var(--red);font-weight:900;text-transform:uppercase}
+.trend-title{margin:4px 0;font-size:12px;line-height:1.4;font-weight:850}.trend-meta{font-size:9px;color:#8793a5}
+
+.quick{margin-top:18px;display:flex;gap:8px;overflow:auto;scrollbar-width:none}.quick::-webkit-scrollbar{display:none}
+.quick-label{flex:none;font-size:10px;font-weight:900;align-self:center}
+.quick button{flex:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:10px;font-weight:800}
+
+.section{margin-top:36px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 2px 8px rgba(9,33,63,.03);transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-image,.card-placeholder{width:100%;height:170px;object-fit:cover;display:block}
+.card-placeholder{display:grid;place-items:center;background:#e7edf5;color:#7f8da0;font-size:10px;font-weight:800}
+.card-body{padding:12px}.card-title{margin:7px 0 8px;color:var(--navy);font-size:13px;line-height:1.4;font-weight:900}
+.card-summary{margin:0 0 8px;color:#5f6d81;font-size:10px;line-height:1.45}
+.card-snippets{margin:0 0 9px;padding-left:15px;color:#718096;font-size:9px;line-height:1.45}
+.card-snippets li{margin:2px 0}.card-meta{display:flex;flex-wrap:wrap;gap:6px;color:#8490a2;font-size:9px}
+
+.citizen{margin-top:38px;padding:25px 28px;border-radius:21px;background:var(--navy);color:#fff;
+display:flex;align-items:center;justify-content:space-between;gap:20px}
+.citizen h2{margin:0 0 5px;font-size:19px}.citizen p{margin:0;color:#d9e2ec;font-size:11px}
+.citizen button{border:0;border-radius:999px;padding:11px 18px;background:var(--yellow);color:var(--navy);font-size:11px;font-weight:900}
+
+.footer{background:#071a31;color:#b9c7d8;margin-top:0}
+.footer-inner{max-width:1400px;margin:auto;padding:30px 24px 25px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.footer h3{margin:0 0 10px;color:#fff;font-size:12px}.footer p,.footer li{font-size:9px;line-height:1.7;color:#aebed0}
+.footer ul{list-style:none;padding:0;margin:0}.footer a:hover{color:#fff}
+.footer-bottom{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);
+display:flex;justify-content:space-between;gap:15px;font-size:9px;color:#91a5bc}
+
+.mobile-nav{display:none}
+
+@media(max-width:1100px){
+.header-main{grid-template-columns:240px 1fr}.header-right{display:none}
+.hero-layout{grid-template-columns:1fr}.cards{grid-template-columns:repeat(3,1fr)}
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+.header-main{display:flex;padding:10px 14px}.logo{font-size:29px;height:36px}.logo-24{font-size:24px;padding:6px 9px}
+.logo-i-dot{width:6px;height:6px;left:29px}.slogan{font-size:7px;letter-spacing:2px}
+.search-box{width:42px;height:40px;margin-left:auto;padding:0 11px}.search-box input{display:none}
+.ticker-inner{padding:0 14px}.category-scroll{padding:0 7px}.category-btn{min-height:52px;padding:0 10px;font-size:10px}
+.language-inner{justify-content:flex-start;overflow:auto;padding:6px 14px}.language-btn{flex:none}
+.page{padding:20px 14px 85px}.section-head h1{font-size:20px}.section-head h2{font-size:17px}
+.hero{min-height:410px}.hero-image,.hero-placeholder{height:410px}.hero-content{left:18px;right:18px;bottom:18px}
+.hero h2{font-size:27px}.hero-summary{font-size:10px}.snippet-lines li{font-size:9px}.original{margin-left:0;margin-top:5px}
+.cards{grid-template-columns:repeat(2,1fr);gap:10px}.card-image,.card-placeholder{height:125px}.card-body{padding:9px}
+.card-title{font-size:11px}.card-summary{font-size:9px}.card-snippets{font-size:8px}
+.citizen{flex-direction:column;align-items:flex-start}
+.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}
+.mobile-nav{position:fixed;display:grid;z-index:300;left:0;right:0;bottom:0;height:62px;
+grid-template-columns:repeat(4,1fr);background:rgba(255,255,255,.98);border-top:1px solid var(--line)}
+.mobile-nav button{border:0;background:transparent;color:#68768a;font-size:9px;font-weight:850}
+.mobile-nav button.active{color:var(--red)}
+}
 </style>
 </head>
 
 <body>
+<header class="site-header">
+  <div class="header-main">
+    <a href="#" class="brand" onclick="selectCategory('HOME');return false;">
+      <div class="logo">
+        <span class="logo-snippet">snippet<span class="logo-i-dot"></span></span>
+        <span class="logo-24">24</span>
+      </div>
+      <div class="slogan">FAST NEWS <span>•</span> <b>REAL IMPACT</b> <span>•</span></div>
+    </a>
 
-<!-- ================= HEADER ================= -->
+    <label class="search-box">
+      <span>⌕</span>
+      <input id="searchInput" type="search" placeholder="Search stories, topics, people...">
+    </label>
 
-<header class="top-header">
-
-    <div class="header-inner">
-
-        <div class="brand-area">
-            <div class="logo">
-                snippet<span>24</span>
-            </div>
-
-            <div class="tagline">
-                FAST NEWS &nbsp; • &nbsp; REAL IMPACT
-            </div>
-        </div>
-
-        <div class="search-box">
-            <span class="search-icon">⌕</span>
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search stories, topics, people..."
-                oninput="searchStories()"
-            >
-        </div>
-
-        <div class="utility-area">
-
-            <div
-                class="weather"
-                onclick="openWeather()"
-                title="View weather"
-            >
-                <div class="weather-icon">☀️</div>
-
-                <div>
-                    <div class="weather-temp">
-                        <span id="temperature">36°C</span>
-                    </div>
-
-                    <div class="weather-location">
-                        Gudiyatham, Tamil Nadu, India
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="date-time" id="currentTime">
-                    12:39 pm
-                </div>
-
-                <div class="date-small" id="currentDate">
-                    Sun, 30 Aug, 2026
-                </div>
-            </div>
-
-            <button
-                class="calendar-btn"
-                onclick="openCalendar()"
-                title="Hindu Calendar & Panchang"
-            >
-                📅
-            </button>
-
-        </div>
-
+    <div class="header-right">
+      <div class="live"><span class="live-dot"></span>LIVE</div>
+      <div class="info"><strong>☀ 36°C</strong>Chennai, India</div>
+      <div class="info" id="clock"><strong>--:--</strong>-- -- ----</div>
+      <div class="avatar">S24</div>
     </div>
-
+  </div>
 </header>
 
-<!-- ================= NAV ================= -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <div class="ticker-label">⚡ LIVE WIRE</div>
+    <div class="ticker-track" id="ticker">Loading latest headlines...</div>
+  </div>
+</div>
 
-<nav class="main-nav">
-
-    <div class="nav-inner">
-
-        <a href="#" class="active">⌂ Home</a>
-        <a href="#">🌐 Global</a>
-        <a href="#">▣ In India</a>
-        <a href="#">◆ Security & Peace</a>
-        <a href="#">§ Law Around Us</a>
-        <a href="#">◇ Science & Development</a>
-        <a href="#">₹ Business & Economy</a>
-        <a href="#">♟ Society & Culture</a>
-        <a href="#">♧ Human & Environment</a>
-        <a href="#">⌘ Tech & AI</a>
-
-    </div>
-
+<nav class="category-bar">
+  <div class="category-scroll" id="categoryNav">
+    <button class="category-btn active" data-cat="HOME">⌂ Home</button>
+    <button class="category-btn" data-cat="IN INDIA">✦ In India</button>
+    <button class="category-btn" data-cat="SECURITY & PEACE">♢ Security &amp; Peace</button>
+    <button class="category-btn" data-cat="LAW AROUND US">§ Law Around Us</button>
+    <button class="category-btn" data-cat="SCIENCE & DEVELOPMENT">⚗ Science &amp; Development</button>
+    <button class="category-btn" data-cat="BUSINESS & ECONOMY">↗ Business &amp; Economy</button>
+    <button class="category-btn" data-cat="SOCIETY & CULTURE">◉ Society &amp; Culture</button>
+    <button class="category-btn" data-cat="HUMAN & ENVIRONMENT">♧ Human &amp; Environment</button>
+    <button class="category-btn" data-cat="TECH & AI">⌘ Tech &amp; AI</button>
+    <button class="category-btn" data-cat="GOOD READS">▤ Good Reads</button>
+  </div>
 </nav>
 
-<!-- ================= LIVE WIRE ================= -->
-
-<div class="live-wire">
-
-    <div class="live-inner">
-
-        <div class="live-label">
-            LIVE WIRE
-        </div>
-
-        <div class="ticker" id="ticker">
-            CWC successfully dispatches 2nd 'Union Express' of season |
-            National Sports Day being observed today |
-            Latest developments from India and around the world
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= LANGUAGE ================= -->
-
 <div class="language-bar">
-
-    <div class="language-inner">
-
-        <span class="language-label">
-            🌐 Language:
-        </span>
-
-        <button
-            class="language-btn active"
-            data-lang="en"
-            onclick="changeLanguage('en')"
-        >
-            English
-        </button>
-
-        <button
-            class="language-btn"
-            data-lang="ta"
-            onclick="changeLanguage('ta')"
-        >
-            தமிழ்
-        </button>
-
-        <button
-            class="language-btn"
-            data-lang="te"
-            onclick="changeLanguage('te')"
-        >
-            తెలుగు
-        </button>
-
-        <button
-            class="language-btn"
-            data-lang="kn"
-            onclick="changeLanguage('kn')"
-        >
-            ಕನ್ನಡ
-        </button>
-
-        <button
-            class="language-btn"
-            data-lang="ml"
-            onclick="changeLanguage('ml')"
-        >
-            മലയാളം
-        </button>
-
-        <button
-            class="language-btn"
-            data-lang="hi"
-            onclick="changeLanguage('hi')"
-        >
-            हिन्दी
-        </button>
-
-    </div>
-
+  <div class="language-inner">
+    <span class="language-label">🌐 Language:</span>
+    <button class="language-btn active" data-lang="en">English</button>
+    <button class="language-btn" data-lang="ta">தமிழ்</button>
+    <button class="language-btn" data-lang="te">తెలుగు</button>
+    <button class="language-btn" data-lang="kn">ಕನ್ನಡ</button>
+    <button class="language-btn" data-lang="ml">മലയാളം</button>
+    <button class="language-btn" data-lang="hi">हिन्दी</button>
+  </div>
 </div>
 
-<!-- ================= MAIN ================= -->
-
-<main>
-
-    <div class="section-title">
-
-        <h2 id="latestTitle">
-            LATEST STORIES
-        </h2>
-
-        <span
-            class="story-count"
-            id="storyCount"
-        >
-            48 stories
-        </span>
-
+<main class="page">
+  <div class="section-head">
+    <div>
+      <h1 id="sectionTitle">What Everyone Is Reading</h1>
+      <p id="sectionDescription">Fast updates, useful context and stories worth your time.</p>
     </div>
+    <div class="count" id="count">Loading...</div>
+  </div>
 
+  <section class="hero-layout">
+    <div id="hero"></div>
+    <aside class="trending">
+      <div class="trend-head"><strong>🔥 Trending Now</strong><span>● LIVE</span></div>
+      <div class="trend-list" id="trendList"></div>
+    </aside>
+  </section>
 
-    <!-- FEATURED STORY -->
+  <div class="quick">
+    <span class="quick-label">Quick Access →</span>
+    <button data-cat="IN INDIA">India</button>
+    <button data-cat="SECURITY & PEACE">Security</button>
+    <button data-cat="LAW AROUND US">Law</button>
+    <button data-cat="BUSINESS & ECONOMY">Money</button>
+    <button data-cat="TECH & AI">Tech &amp; AI</button>
+    <button data-cat="GOOD READS">Good Reads</button>
+  </div>
 
-    <section class="featured">
+  <section class="section">
+    <div class="section-head"><div><h2>★ Editor's Choice</h2><p>Stories selected for interest and impact.</p></div></div>
+    <div class="cards" id="editorCards"></div>
+  </section>
 
-        <div class="featured-image">
-            Image unavailable
-        </div>
+  <section class="section">
+    <div class="section-head"><div><h2>✦ In India</h2><p>National developments that matter.</p></div></div>
+    <div class="cards" id="indiaCards"></div>
+  </section>
 
-        <div class="featured-content">
+  <section class="section">
+    <div class="section-head"><div><h2>♢ Security &amp; Peace</h2><p>Security, public safety, conflict and peace.</p></div></div>
+    <div class="cards" id="securityCards"></div>
+  </section>
 
-            <div
-                class="category"
-                id="featuredCategory"
-            >
-                IN INDIA
-            </div>
+  <section class="section">
+    <div class="section-head"><div><h2>§ Law Around Us</h2><p>Law, rights, courts and issues affecting everyday life.</p></div></div>
+    <div class="cards" id="lawCards"></div>
+  </section>
 
-            <h1
-                class="featured-title"
-                id="featuredTitle"
-            >
-                News Policy for Broadcast Media
-            </h1>
+  <section class="section">
+    <div class="section-head"><div><h2>⚗ Science &amp; Development</h2><p>Research, innovation, infrastructure and progress.</p></div></div>
+    <div class="cards" id="scienceCards"></div>
+  </section>
 
-            <p
-                class="featured-summary"
-                id="featuredSummary"
-            >
-                The source has provided information about the
-                reported development. Readers can consult the
-                original source for complete details.
-            </p>
+  <section class="section">
+    <div class="section-head"><div><h2>↗ Business &amp; Economy</h2><p>Markets, companies, jobs, money and the economy.</p></div></div>
+    <div class="cards" id="businessCards"></div>
+  </section>
 
-            <div
-                class="source"
-                id="featuredSource"
-            >
-                Akashvani • Public Broadcaster
-            </div>
+  <section class="section">
+    <div class="section-head"><div><h2>◉ Society &amp; Culture</h2><p>People, communities, culture and changing society.</p></div></div>
+    <div class="cards" id="societyCards"></div>
+  </section>
 
-            <a
-                href="#"
-                class="read-more"
-                id="readOriginal"
-            >
-                Read Original →
-            </a>
+  <section class="section">
+    <div class="section-head"><div><h2>♧ Human &amp; Environment</h2><p>Human stories, climate, nature and our planet.</p></div></div>
+    <div class="cards" id="environmentCards"></div>
+  </section>
 
-        </div>
+  <section class="section">
+    <div class="section-head"><div><h2>⌘ Tech &amp; AI</h2><p>Technology and artificial intelligence shaping tomorrow.</p></div></div>
+    <div class="cards" id="techCards"></div>
+  </section>
 
-    </section>
+  <section class="section">
+    <div class="section-head"><div><h2>▤ Good Reads</h2><p>Interesting stories, people, ideas and perspectives.</p></div></div>
+    <div class="cards" id="goodReadsCards"></div>
+  </section>
 
-
-    <!-- SEARCH RESULTS -->
-
-    <div
-        class="search-results"
-        id="searchResults"
-    ></div>
-
-
-    <!-- STORIES -->
-
-    <section class="story-grid" id="storyGrid"></section>
-
+  <section class="citizen">
+    <div>
+      <h2>Your City. Your Story.</h2>
+      <p>Have a local story, community update or important alert? Share it with Snippet24.</p>
+    </div>
+    <button onclick="publishStory()">Publish / Submit ↗</button>
+  </section>
 </main>
 
-
-<!-- ================= WEATHER MODAL ================= -->
-
-<div
-    class="modal"
-    id="weatherModal"
-    onclick="closeModalOutside(event, 'weatherModal')"
->
-
-    <div class="modal-box">
-
-        <div class="modal-header">
-
-            <h3 id="weatherTitle">
-                Weather
-            </h3>
-
-            <button
-                class="close-btn"
-                onclick="closeWeather()"
-            >
-                ×
-            </button>
-
-        </div>
-
-        <div class="modal-body">
-
-            <div class="info-grid">
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Location
-                    </div>
-
-                    <div class="info-value">
-                        Gudiyatham, Tamil Nadu
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Temperature
-                    </div>
-
-                    <div class="info-value">
-                        36°C
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Condition
-                    </div>
-
-                    <div class="info-value">
-                        Partly Cloudy
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Humidity
-                    </div>
-
-                    <div class="info-value">
-                        62%
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h3>Snippet24</h3>
+        <p>Fast News. Real Impact.</p>
+        <p>AI-assisted editorial summaries with original-source attribution.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#" onclick="selectCategory('HOME');return false;">Home</a></li>
+          <li><a href="#" onclick="selectCategory('IN INDIA');return false;">In India</a></li>
+          <li><a href="#" onclick="selectCategory('BUSINESS & ECONOMY');return false;">Business &amp; Economy</a></li>
+          <li><a href="#" onclick="selectCategory('TECH & AI');return false;">Tech &amp; AI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reader Information</h3>
+        <ul>
+          <li>Original sources credited</li>
+          <li>AI-assisted content disclosed</li>
+          <li>Corrections welcome</li>
+          <li>Grievance channel available</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Editorial Policy</a></li>
+          <li><a href="#">Copyright Notice</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
     </div>
-
-</div>
-
-
-<!-- ================= CALENDAR MODAL ================= -->
-
-<div
-    class="modal"
-    id="calendarModal"
-    onclick="closeModalOutside(event, 'calendarModal')"
->
-
-    <div class="modal-box">
-
-        <div class="modal-header">
-
-            <h3>
-                Hindu Calendar & Panchang
-            </h3>
-
-            <button
-                class="close-btn"
-                onclick="closeCalendar()"
-            >
-                ×
-            </button>
-
-        </div>
-
-        <div class="modal-body">
-
-            <div class="info-grid">
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Date
-                    </div>
-
-                    <div
-                        class="info-value"
-                        id="pDate"
-                    >
-                        30 August 2026
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Day
-                    </div>
-
-                    <div
-                        class="info-value"
-                        id="pDay"
-                    >
-                        Sunday
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Location
-                    </div>
-
-                    <div class="info-value">
-                        Gudiyatham, Tamil Nadu
-                    </div>
-
-                </div>
-
-                <div class="info-box">
-
-                    <div class="info-label">
-                        Local Time
-                    </div>
-
-                    <div
-                        class="info-value"
-                        id="pTime"
-                    >
-                        12:39 PM
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="panchang">
-
-                <strong>Panchang</strong>
-
-                <br>
-
-                Tithi:
-                <span id="pTithi">
-                    Tritiya (Krishna)
-                </span>
-
-                <br>
-
-                Nakshatra:
-                <span id="pNakshatra">
-                    Uttara Bhadrapada
-                </span>
-
-                <br>
-
-                Yoga:
-                <span id="pYoga">
-                    Shoola
-                </span>
-
-                <br>
-
-                Karana:
-                <span id="pKarana">
-                    Garaja
-                </span>
-
-                <br>
-
-                Sunrise:
-                <span>
-                    06:02 AM
-                </span>
-
-                <br>
-
-                Sunset:
-                <span>
-                    06:28 PM
-                </span>
-
-            </div>
-
-            <div class="modal-note">
-                Panchang values are location-specific.
-                Select your location to receive local
-                calendar information.
-            </div>
-
-        </div>
-
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Snippet24. All rights reserved.</span>
+      <span>Fast News • Real Impact • Original sources credited</span>
     </div>
+  </div>
+</footer>
 
-</div>
-
+<nav class="mobile-nav">
+  <button class="active" onclick="selectCategory('HOME')">⌂<br>Home</button>
+  <button onclick="selectCategory('IN INDIA')">✦<br>India</button>
+  <button onclick="selectCategory('BUSINESS & ECONOMY')">↗<br>Money</button>
+  <button onclick="document.getElementById('categoryNav').scrollIntoView({behavior:'smooth'})">☰<br>Categories</button>
+</nav>
 
 <script>
+let articles=[];
+let activeCategory="HOME";
+let selectedLanguage="en";
 
-/* =========================================================
-   LANGUAGE DATA
-========================================================= */
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;")
+  .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
 
-const translations = {
-
-    en: {
-        latest: "LATEST STORIES",
-        count: "48 stories",
-        featuredCategory: "IN INDIA",
-        featuredTitle: "News Policy for Broadcast Media",
-        featuredSummary:
-            "The source has provided information about the reported development. Readers can consult the original source for complete details.",
-        source: "Akashvani • Public Broadcaster",
-        read: "Read Original →",
-        search: "Search stories, topics, people...",
-        weather: "Weather",
-        stories: [
-            {
-                category: "IN INDIA",
-                title: "Telangana CM urges ECI to extend deadline for voters to file objections",
-                summary: "Latest political and electoral developments from India."
-            },
-            {
-                category: "IN INDIA",
-                title: "Telangana Deputy CM directs officials to explore joint venture",
-                summary: "Officials discuss new opportunities and development projects."
-            },
-            {
-                category: "IN INDIA",
-                title: "CWC successfully dispatches 2nd Union Express of season",
-                summary: "Important national logistics and transport update."
-            },
-            {
-                category: "SOCIETY & CULTURE",
-                title: "National Sports Day being observed today",
-                summary: "India marks National Sports Day with programmes across the country."
-            }
-        ]
-    },
-
-
-    ta: {
-        latest: "சமீபத்திய செய்திகள்",
-        count: "48 செய்திகள்",
-        featuredCategory: "இந்தியா",
-        featuredTitle: "ஒளிபரப்பு ஊடகங்களுக்கான செய்திக் கொள்கை",
-        featuredSummary:
-            "தெரிவிக்கப்பட்ட நிகழ்வு தொடர்பான தகவல்களை ஆதாரம் வழங்கியுள்ளது. முழுமையான தகவல்களுக்கு அசல் செய்தியைப் பார்க்கலாம்.",
-        source: "ஆகாஷ்வாணி • பொது ஒலிபரப்பாளர்",
-        read: "அசல் செய்தியைப் பார்க்க →",
-        search: "செய்திகள், தலைப்புகள், நபர்களைத் தேடுங்கள்...",
-        weather: "வானிலை",
-        stories: [
-            {
-                category: "இந்தியா",
-                title: "வாக்காளர் எதிர்ப்புகளை பதிவு செய்ய காலக்கெடுவை நீட்டிக்க தெலங்கானா முதல்வர் கோரிக்கை",
-                summary: "இந்தியாவின் சமீபத்திய அரசியல் மற்றும் தேர்தல் செய்திகள்."
-            },
-            {
-                category: "இந்தியா",
-                title: "கூட்டு முயற்சிகளை ஆய்வு செய்ய அதிகாரிகளுக்கு தெலங்கானா துணை முதல்வர் உத்தரவு",
-                summary: "புதிய வளர்ச்சி திட்டங்கள் குறித்து அதிகாரிகள் ஆலோசனை."
-            },
-            {
-                category: "இந்தியா",
-                title: "இந்த பருவத்தின் இரண்டாவது யூனியன் எக்ஸ்பிரஸ் ரயிலை CWC அனுப்பியது",
-                summary: "தேசிய போக்குவரத்து தொடர்பான முக்கிய செய்தி."
-            },
-            {
-                category: "சமூகம் & கலாச்சாரம்",
-                title: "தேசிய விளையாட்டு தினம் இன்று அனுசரிப்பு",
-                summary: "நாடு முழுவதும் பல்வேறு நிகழ்ச்சிகளுடன் தேசிய விளையாட்டு தினம்."
-            }
-        ]
-    },
-
-
-    te: {
-        latest: "తాజా వార్తలు",
-        count: "48 వార్తలు",
-        featuredCategory: "భారతదేశం",
-        featuredTitle: "ప్రసార మాధ్యమాల కోసం వార్తా విధానం",
-        featuredSummary:
-            "నివేదించబడిన పరిణామానికి సంబంధించిన సమాచారాన్ని మూలం అందించింది. పూర్తి వివరాల కోసం అసలు వార్తను చూడండి.",
-        source: "ఆకాశవాణి • ప్రజా ప్రసార సంస్థ",
-        read: "అసలు వార్త చదవండి →",
-        search: "వార్తలు, అంశాలు, వ్యక్తులను వెతకండి...",
-        weather: "వాతావరణం",
-        stories: [
-            {
-                category: "భారతదేశం",
-                title: "ఓటర్ల అభ్యంతరాల నమోదుకు గడువు పొడిగించాలని తెలంగాణ సీఎం విజ్ఞప్తి",
-                summary: "భారతదేశంలోని తాజా రాజకీయ మరియు ఎన్నికల పరిణామాలు."
-            },
-            {
-                category: "భారతదేశం",
-                title: "జాయింట్ వెంచర్ అవకాశాలను పరిశీలించాలని అధికారులకు తెలంగాణ డిప్యూటీ సీఎం ఆదేశం",
-                summary: "కొత్త అభివృద్ధి ప్రాజెక్టులపై అధికారులు చర్చించారు."
-            },
-            {
-                category: "భారతదేశం",
-                title: "సీజన్‌లో రెండో యూనియన్ ఎక్స్‌ప్రెస్‌ను CWC పంపించింది",
-                summary: "జాతీయ రవాణాకు సంబంధించిన ముఖ్యమైన సమాచారం."
-            },
-            {
-                category: "సమాజం & సంస్కృతి",
-                title: "నేడు జాతీయ క్రీడా దినోత్సవం",
-                summary: "దేశవ్యాప్తంగా జాతీయ క్రీడా దినోత్సవ కార్యక్రమాలు జరుగుతున్నాయి."
-            }
-        ]
-    },
-
-
-    kn: {
-        latest: "ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು",
-        count: "48 ಸುದ್ದಿಗಳು",
-        featuredCategory: "ಭಾರತ",
-        featuredTitle: "ಪ್ರಸಾರ ಮಾಧ್ಯಮಗಳಿಗಾಗಿ ಸುದ್ದಿ ನೀತಿ",
-        featuredSummary:
-            "ವರದಿಯಾದ ಬೆಳವಣಿಗೆಯ ಕುರಿತು ಮೂಲವು ಮಾಹಿತಿ ನೀಡಿದೆ. ಸಂಪೂರ್ಣ ವಿವರಗಳಿಗಾಗಿ ಮೂಲ ಸುದ್ದಿಯನ್ನು ನೋಡಿ.",
-        source: "ಆಕಾಶವಾಣಿ • ಸಾರ್ವಜನಿಕ ಪ್ರಸಾರಕ",
-        read: "ಮೂಲ ಸುದ್ದಿ ಓದಿ →",
-        search: "ಸುದ್ದಿ, ವಿಷಯಗಳು, ವ್ಯಕ್ತಿಗಳನ್ನು ಹುಡುಕಿ...",
-        weather: "ಹವಾಮಾನ",
-        stories: [
-            {
-                category: "ಭಾರತ",
-                title: "ಮತದಾರರ ಆಕ್ಷೇಪಣೆ ಸಲ್ಲಿಕೆ ಗಡುವು ವಿಸ್ತರಿಸಲು ತೆಲಂಗಾಣ ಸಿಎಂ ಮನವಿ",
-                summary: "ಭಾರತದ ಇತ್ತೀಚಿನ ರಾಜಕೀಯ ಮತ್ತು ಚುನಾವಣಾ ಬೆಳವಣಿಗೆಗಳು."
-            },
-            {
-                category: "ಭಾರತ",
-                title: "ಜಂಟಿ ಉದ್ಯಮ ಅವಕಾಶಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಅಧಿಕಾರಿಗಳಿಗೆ ಡಿಸಿಎಂ ಸೂಚನೆ",
-                summary: "ಹೊಸ ಅಭಿವೃದ್ಧಿ ಯೋಜನೆಗಳ ಕುರಿತು ಅಧಿಕಾರಿಗಳು ಚರ್ಚಿಸಿದರು."
-            },
-            {
-                category: "ಭಾರತ",
-                title: "ಋತುವಿನ ಎರಡನೇ ಯೂನಿಯನ್ ಎಕ್ಸ್‌ಪ್ರೆಸ್ ಅನ್ನು CWC ಕಳುಹಿಸಿದೆ",
-                summary: "ರಾಷ್ಟ್ರೀಯ ಸಾರಿಗೆಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಮುಖ ಮಾಹಿತಿ."
-            },
-            {
-                category: "ಸಮಾಜ ಮತ್ತು ಸಂಸ್ಕೃತಿ",
-                title: "ಇಂದು ರಾಷ್ಟ್ರೀಯ ಕ್ರೀಡಾ ದಿನಾಚರಣೆ",
-                summary: "ದೇಶಾದ್ಯಂತ ರಾಷ್ಟ್ರೀಯ ಕ್ರೀಡಾ ದಿನವನ್ನು ಆಚರಿಸಲಾಗುತ್ತಿದೆ."
-            }
-        ]
-    },
-
-
-    ml: {
-        latest: "ഏറ്റവും പുതിയ വാർത്തകൾ",
-        count: "48 വാർത്തകൾ",
-        featuredCategory: "ഇന്ത്യ",
-        featuredTitle: "പ്രക്ഷേപണ മാധ്യമങ്ങൾക്കായുള്ള വാർത്താ നയം",
-        featuredSummary:
-            "റിപ്പോർട്ട് ചെയ്ത സംഭവവികാസത്തെക്കുറിച്ചുള്ള വിവരങ്ങൾ ഉറവിടം നൽകിയിട്ടുണ്ട്. കൂടുതൽ വിവരങ്ങൾക്ക് യഥാർത്ഥ വാർത്ത കാണുക.",
-        source: "ആകാശവാണി • പൊതു പ്രക്ഷേപകൻ",
-        read: "യഥാർത്ഥ വാർത്ത വായിക്കുക →",
-        search: "വാർത്തകൾ, വിഷയങ്ങൾ, ആളുകൾ എന്നിവ തിരയുക...",
-        weather: "കാലാവസ്ഥ",
-        stories: [
-            {
-                category: "ഇന്ത്യ",
-                title: "വോട്ടർമാരുടെ എതിർപ്പുകൾ സമർപ്പിക്കുന്നതിനുള്ള സമയപരിധി നീട്ടണമെന്ന് തെലങ്കാന മുഖ്യമന്ത്രി",
-                summary: "ഇന്ത്യയിലെ ഏറ്റവും പുതിയ രാഷ്ട്രീയ, തിരഞ്ഞെടുപ്പ് വാർത്തകൾ."
-            },
-            {
-                category: "ഇന്ത്യ",
-                title: "ജോയിന്റ് വെഞ്ചർ സാധ്യതകൾ പരിശോധിക്കാൻ ഉദ്യോഗസ്ഥർക്ക് നിർദ്ദേശം",
-                summary: "പുതിയ വികസന പദ്ധതികളെക്കുറിച്ച് ഉദ്യോഗസ്ഥർ ചർച്ച നടത്തി."
-            },
-            {
-                category: "ഇന്ത്യ",
-                title: "ഈ സീസണിലെ രണ്ടാമത്തെ യൂണിയൻ എക്സ്പ്രസ് CWC അയച്ചു",
-                summary: "ദേശീയ ഗതാഗതവുമായി ബന്ധപ്പെട്ട പ്രധാന വിവരം."
-            },
-            {
-                category: "സമൂഹവും സംസ്കാരവും",
-                title: "ഇന്ന് ദേശീയ കായിക ദിനം ആചരിക്കുന്നു",
-                summary: "രാജ്യത്തുടനീളം ദേശീയ കായിക ദിന പരിപാടികൾ നടക്കുന്നു."
-            }
-        ]
-    },
-
-
-    hi: {
-        latest: "नवीनतम समाचार",
-        count: "48 समाचार",
-        featuredCategory: "भारत में",
-        featuredTitle: "प्रसारण मीडिया के लिए समाचार नीति",
-        featuredSummary:
-            "स्रोत ने रिपोर्ट किए गए घटनाक्रम के बारे में जानकारी प्रदान की है। पूरी जानकारी के लिए मूल समाचार देखें।",
-        source: "आकाशवाणी • सार्वजनिक प्रसारक",
-        read: "मूल समाचार पढ़ें →",
-        search: "समाचार, विषय और लोगों को खोजें...",
-        weather: "मौसम",
-        stories: [
-            {
-                category: "भारत",
-                title: "तेलंगाना सीएम ने मतदाताओं को आपत्तियां दर्ज कराने की समयसीमा बढ़ाने का आग्रह किया",
-                summary: "भारत की नवीनतम राजनीतिक और चुनावी घटनाएं।"
-            },
-            {
-                category: "भारत",
-                title: "तेलंगाना डिप्टी सीएम ने अधिकारियों को संयुक्त उद्यम की संभावनाएं तलाशने के निर्देश दिए",
-                summary: "नई विकास परियोजनाओं को लेकर अधिकारियों ने चर्चा की।"
-            },
-            {
-                category: "भारत",
-                title: "CWC ने इस सीजन की दूसरी यूनियन एक्सप्रेस रवाना की",
-                summary: "राष्ट्रीय परिवहन से जुड़ी महत्वपूर्ण जानकारी।"
-            },
-            {
-                category: "समाज और संस्कृति",
-                title: "आज राष्ट्रीय खेल दिवस मनाया जा रहा है",
-                summary: "देशभर में राष्ट्रीय खेल दिवस के कार्यक्रम आयोजित किए जा रहे हैं।"
-            }
-        ]
-    }
-
+const FALLBACK_IMAGES={
+  "IN INDIA":"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
+  "SECURITY & PEACE":"https://images.unsplash.com/photo-1580130732478-4e339fb6836f?auto=format&fit=crop&w=1200&q=80",
+  "LAW AROUND US":"https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+  "SCIENCE & DEVELOPMENT":"https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+  "BUSINESS & ECONOMY":"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+  "SOCIETY & CULTURE":"https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80",
+  "HUMAN & ENVIRONMENT":"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+  "TECH & AI":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+  "GOOD READS":"https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80",
+  "DEFAULT":"https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80"
 };
 
+const CATEGORY_INFO={
+ "HOME":["What Everyone Is Reading","Fast updates, useful context and stories worth your time."],
+ "IN INDIA":["In India","National developments that matter."],
+ "SECURITY & PEACE":["Security & Peace","Security, public safety, conflict and peace."],
+ "LAW AROUND US":["Law Around Us","Law, rights, courts and issues affecting everyday life."],
+ "SCIENCE & DEVELOPMENT":["Science & Development","Research, innovation, infrastructure and progress."],
+ "BUSINESS & ECONOMY":["Business & Economy","Markets, companies, jobs, money and the economy."],
+ "SOCIETY & CULTURE":["Society & Culture","People, communities, culture and changing society."],
+ "HUMAN & ENVIRONMENT":["Human & Environment","Human stories, climate, nature and our planet."],
+ "TECH & AI":["Tech & AI","Technology and artificial intelligence shaping tomorrow."],
+ "GOOD READS":["Good Reads","Interesting stories, people, ideas and perspectives."]
+};
 
-/* =========================================================
-   CURRENT LANGUAGE
-========================================================= */
+function cat(a){return String(a?.category||"").trim().toUpperCase()}
 
-let currentLanguage = "en";
-
-
-/* =========================================================
-   CHANGE LANGUAGE
-========================================================= */
-
-function changeLanguage(language) {
-
-    if (!translations[language]) {
-        return;
-    }
-
-    currentLanguage = language;
-
-    const data = translations[language];
-
-    /*
-       IMPORTANT:
-       We only change language content here.
-       Weather and Calendar are completely independent.
-    */
-
-    document.documentElement.lang = language;
-
-    document.getElementById("latestTitle").textContent =
-        data.latest;
-
-    document.getElementById("storyCount").textContent =
-        data.count;
-
-    document.getElementById("featuredCategory").textContent =
-        data.featuredCategory;
-
-    document.getElementById("featuredTitle").textContent =
-        data.featuredTitle;
-
-    document.getElementById("featuredSummary").textContent =
-        data.featuredSummary;
-
-    document.getElementById("featuredSource").textContent =
-        data.source;
-
-    document.getElementById("readOriginal").textContent =
-        data.read;
-
-    document.getElementById("searchInput").placeholder =
-        data.search;
-
-    document.getElementById("weatherTitle").textContent =
-        data.weather;
-
-
-    /* Update active language */
-
-    document.querySelectorAll(".language-btn").forEach(button => {
-
-        button.classList.remove("active");
-
-        if (button.dataset.lang === language) {
-            button.classList.add("active");
-        }
-
-    });
-
-
-    /* Render translated stories */
-
-    renderStories(data.stories);
+function categoryMatch(a,wanted){
+ const c=cat(a);
+ const groups={
+  "IN INDIA":["INDIA","IN INDIA","NATIONAL"],
+  "SECURITY & PEACE":["SECURITY","SECURITY & PEACE","DEFENCE","DEFENSE","PEACE"],
+  "LAW AROUND US":["LAW","LAW AROUND US","COURTS","LEGAL"],
+  "SCIENCE & DEVELOPMENT":["SCIENCE","SCIENCE & DEVELOPMENT","DEVELOPMENT","RESEARCH"],
+  "BUSINESS & ECONOMY":["BUSINESS","BUSINESS & ECONOMY","ECONOMY","MONEY","FINANCE","MARKETS"],
+  "SOCIETY & CULTURE":["SOCIETY","SOCIETY & CULTURE","CULTURE"],
+  "HUMAN & ENVIRONMENT":["HUMAN","HUMAN & ENVIRONMENT","ENVIRONMENT","CLIMATE","NATURE"],
+  "TECH & AI":["TECH","TECH & AI","TECHNOLOGY","AI","ARTIFICIAL INTELLIGENCE"],
+  "GOOD READS":["GOOD READS","GOOD READ","FEATURE","FEATURES","OPINION","LIFESTYLE"]
+ };
+ return wanted==="HOME" ? true : (groups[wanted]||[wanted]).includes(c);
 }
 
-
-/* =========================================================
-   RENDER STORIES
-========================================================= */
-
-function renderStories(stories) {
-
-    const grid = document.getElementById("storyGrid");
-
-    grid.innerHTML = "";
-
-    stories.forEach(story => {
-
-        const card = document.createElement("article");
-
-        card.className = "story-card";
-
-        card.innerHTML = `
-            <div class="story-image">
-                Image unavailable
-            </div>
-
-            <div class="story-content">
-
-                <div class="category">
-                    ${escapeHTML(story.category)}
-                </div>
-
-                <h3 class="story-title">
-                    ${escapeHTML(story.title)}
-                </h3>
-
-                <p class="story-summary">
-                    ${escapeHTML(story.summary)}
-                </p>
-
-            </div>
-        `;
-
-        grid.appendChild(card);
-
-    });
+function activeList(){
+ return activeCategory==="HOME" ? [...articles] : articles.filter(a=>categoryMatch(a,activeCategory));
 }
 
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-function searchStories() {
-
-    const value =
-        document
-        .getElementById("searchInput")
-        .value
-        .trim()
-        .toLowerCase();
-
-    const results =
-        document.getElementById("searchResults");
-
-    if (!value) {
-
-        results.classList.remove("show");
-        results.innerHTML = "";
-
-        return;
-    }
-
-    const stories =
-        translations[currentLanguage].stories;
-
-    const matched =
-        stories.filter(story =>
-            story.title.toLowerCase().includes(value) ||
-            story.summary.toLowerCase().includes(value) ||
-            story.category.toLowerCase().includes(value)
-        );
-
-    results.classList.add("show");
-
-    if (!matched.length) {
-
-        results.innerHTML = `
-            <div class="search-result">
-                No stories found.
-            </div>
-        `;
-
-        return;
-    }
-
-    results.innerHTML =
-        matched.map(story => `
-            <div class="search-result">
-
-                <div class="category">
-                    ${escapeHTML(story.category)}
-                </div>
-
-                <strong>
-                    ${escapeHTML(story.title)}
-                </strong>
-
-                <p style="margin-top:6px;color:#718096;font-size:11px;">
-                    ${escapeHTML(story.summary)}
-                </p>
-
-            </div>
-        `).join("");
+function time(v){
+ if(!v)return"";
+ const d=new Date(v); if(Number.isNaN(d.getTime()))return"";
+ return d.toLocaleTimeString("en-IN",{hour:"numeric",minute:"2-digit",hour12:true});
 }
 
-
-/* =========================================================
-   WEATHER
-========================================================= */
-
-function openWeather() {
-
-    document
-        .getElementById("weatherModal")
-        .classList.add("show");
-
+function safeURL(v){
+ try{
+  const u=new URL(v||"#",location.href);
+  return ["http:","https:"].includes(u.protocol)?u.href:"#";
+ }catch{return"#"}
 }
 
-function closeWeather() {
-
-    document
-        .getElementById("weatherModal")
-        .classList.remove("show");
-
+function currentText(a,field){
+ if(selectedLanguage==="en")return a?.[field]||"";
+ const t=a?.translations?.[selectedLanguage];
+ if(!t)return a?.[field]||"";
+ return t[field]||a?.[field]||"";
 }
 
-
-/* =========================================================
-   CALENDAR
-========================================================= */
-
-function openCalendar() {
-
-    updateClock();
-
-    document
-        .getElementById("calendarModal")
-        .classList.add("show");
-
+function snippetArray(a){
+ const v=currentText(a,"snippet_lines");
+ if(Array.isArray(v))return v.filter(Boolean).slice(0,3);
+ const s=currentText(a,"snippet");
+ if(s)return String(s).split(/\n|•/).map(x=>x.trim()).filter(Boolean).slice(0,3);
+ return [];
 }
 
-function closeCalendar() {
-
-    document
-        .getElementById("calendarModal")
-        .classList.remove("show");
-
+function imageSrc(a){
+ return a?.image_url || a?.local_image || a?.image || a?.media?.image_url ||
+        a?.media?.thumbnail || FALLBACK_IMAGES[cat(a)] || FALLBACK_IMAGES.DEFAULT;
 }
 
-
-/* =========================================================
-   CLOSE MODAL BY CLICKING OUTSIDE
-========================================================= */
-
-function closeModalOutside(event, modalId) {
-
-    if (event.target.id === modalId) {
-
-        document
-            .getElementById(modalId)
-            .classList.remove("show");
-
-    }
-
+function imageHTML(a,cls){
+ const src=imageSrc(a);
+ return `<img class="${cls}" src="${esc(src)}" alt="" loading="lazy"
+ onerror="this.onerror=null;this.src='${FALLBACK_IMAGES.DEFAULT}'">`;
 }
 
-
-/* =========================================================
-   CLOCK
-========================================================= */
-
-function updateClock() {
-
-    const now = new Date();
-
-    const time =
-        now.toLocaleTimeString(
-            "en-IN",
-            {
-                hour: "numeric",
-                minute: "2-digit"
-            }
-        );
-
-    const date =
-        now.toLocaleDateString(
-            "en-IN",
-            {
-                weekday: "short",
-                day: "2-digit",
-                month: "short",
-                year: "numeric"
-            }
-        );
-
-    document.getElementById("currentTime").textContent =
-        time;
-
-    document.getElementById("currentDate").textContent =
-        date;
-
-    document.getElementById("pTime").textContent =
-        time;
-
-    document.getElementById("pDate").textContent =
-        now.toLocaleDateString(
-            "en-IN",
-            {
-                day: "2-digit",
-                month: "long",
-                year: "numeric"
-            }
-        );
-
-    document.getElementById("pDay").textContent =
-        now.toLocaleDateString(
-            "en-IN",
-            {
-                weekday: "long"
-            }
-        );
+function snippetHTML(a,hero=false){
+ const lines=snippetArray(a);
+ if(!lines.length)return"";
+ return `<ul class="snippet-lines">${lines.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
 }
 
-
-/* =========================================================
-   ESCAPE HTML
-========================================================= */
-
-function escapeHTML(value) {
-
-    return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-
+function renderHero(list){
+ if(!list.length){
+  $("hero").innerHTML='<div class="hero"><div class="hero-placeholder">No stories available for this section.</div></div>';
+  return;
+ }
+ const a=list[0];
+ $("hero").innerHTML=`
+ <article class="hero">
+   ${imageHTML(a,"hero-image")}
+   <div class="hero-content">
+     <span class="badge">${esc(a.category||"NEWS")}</span>
+     <h2>${esc(currentText(a,"headline")||"Latest news")}</h2>
+     <p class="hero-summary">${esc(currentText(a,"summary")||"")}</p>
+     ${snippetHTML(a,true)}
+     <div class="meta">
+       <span>◷ ${esc(time(a.published_at))}</span><span>•</span>
+       <strong>${esc(a.location||"India")}</strong><span>•</span>
+       <strong>${esc(a.publisher||"")}</strong>
+       <a class="original" href="${safeURL(a.source_url||a.original_source_url)}" target="_blank" rel="noopener">Read Original →</a>
+     </div>
+   </div>
+ </article>`;
 }
 
+function renderTrending(list){
+ const items=list.slice(1,6);
+ $("trendList").innerHTML=items.length?items.map(a=>`
+ <article class="trend-item"><div class="trend-line"></div><div>
+   <div class="trend-tag">${esc(a.category||"NEWS")}</div>
+   <div class="trend-title">${esc(currentText(a,"headline")||"")}</div>
+   <div class="trend-meta">◷ ${esc(time(a.published_at))} • ${esc(a.publisher||"")}</div>
+ </div></article>`).join("") :
+ '<div style="padding:20px;color:#718096;font-size:11px">No trending stories available.</div>';
+}
 
-/* =========================================================
-   INITIAL LOAD
-========================================================= */
+function cardHTML(a){
+ const lines=snippetArray(a);
+ return `<article class="card">
+   ${imageHTML(a,"card-image")}
+   <div class="card-body">
+     <span class="badge">${esc(a.category||"NEWS")}</span>
+     <div class="card-title">${esc(currentText(a,"headline")||"")}</div>
+     <p class="card-summary">${esc(currentText(a,"summary")||"")}</p>
+     ${lines.length?`<ul class="card-snippets">${lines.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+     <div class="card-meta"><span>◷ ${esc(time(a.published_at))}</span><span>•</span><span>${esc(a.publisher||"")}</span></div>
+   </div>
+ </article>`;
+}
 
-changeLanguage("en");
+function renderCards(id,list){
+ $(id).innerHTML=list.length?list.map(cardHTML).join(""):
+ `<div style="grid-column:1/-1;padding:22px;background:#fff;border:1px solid var(--line);border-radius:15px;color:#7a8799;font-size:11px">No stories available yet.</div>`;
+}
 
-updateClock();
+function renderCategorySections(){
+ renderCards("indiaCards",articles.filter(a=>categoryMatch(a,"IN INDIA")).slice(0,4));
+ renderCards("securityCards",articles.filter(a=>categoryMatch(a,"SECURITY & PEACE")).slice(0,4));
+ renderCards("lawCards",articles.filter(a=>categoryMatch(a,"LAW AROUND US")).slice(0,4));
+ renderCards("scienceCards",articles.filter(a=>categoryMatch(a,"SCIENCE & DEVELOPMENT")).slice(0,4));
+ renderCards("businessCards",articles.filter(a=>categoryMatch(a,"BUSINESS & ECONOMY")).slice(0,4));
+ renderCards("societyCards",articles.filter(a=>categoryMatch(a,"SOCIETY & CULTURE")).slice(0,4));
+ renderCards("environmentCards",articles.filter(a=>categoryMatch(a,"HUMAN & ENVIRONMENT")).slice(0,4));
+ renderCards("techCards",articles.filter(a=>categoryMatch(a,"TECH & AI")).slice(0,4));
+ renderCards("goodReadsCards",articles.filter(a=>categoryMatch(a,"GOOD READS")).slice(0,4));
+}
 
-setInterval(updateClock, 30000);
+function renderTicker(list){
+ $("ticker").innerHTML=list.slice(0,8).map(a=>`<span><b>${esc(a.category||"NEWS")}</b> &nbsp; ${esc(currentText(a,"headline")||"")}</span>`).join("")
+ ||"<span>No headlines available.</span>";
+}
 
+function render(){
+ const list=activeList();
+ const info=CATEGORY_INFO[activeCategory]||CATEGORY_INFO.HOME;
+ $("sectionTitle").textContent=info[0];
+ $("sectionDescription").textContent=info[1];
+ $("count").textContent=`${list.length} stories`;
+ renderHero(list);renderTrending(list);renderTicker(list);
+ renderCards("editorCards",list.slice(1,5));
+ renderCategorySections();
+}
 
-/* =========================================================
-   CLOSE MODALS WITH ESC
-========================================================= */
+function selectCategory(category){
+ activeCategory=category;
+ document.querySelectorAll(".category-btn").forEach(b=>b.classList.toggle("active",b.dataset.cat===category));
+ document.querySelectorAll(".mobile-nav button").forEach(b=>b.classList.remove("active"));
+ render();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
 
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-
-        closeWeather();
-        closeCalendar();
-
-    }
-
+document.querySelectorAll("[data-cat]").forEach(btn=>{
+ btn.addEventListener("click",()=>selectCategory(btn.dataset.cat));
 });
 
-</script>
+document.querySelectorAll(".language-btn").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+  selectedLanguage=btn.dataset.lang;
+  document.querySelectorAll(".language-btn").forEach(b=>b.classList.toggle("active",b===btn));
+  render();
+ });
+});
 
+$("searchInput").addEventListener("input",e=>{
+ const q=e.target.value.trim().toLowerCase();
+ if(!q){render();return}
+ const results=activeList().filter(a=>{
+  const text=[
+   currentText(a,"headline"),currentText(a,"summary"),currentText(a,"snippet"),
+   a.category,a.publisher,a.location
+  ].filter(Boolean).join(" ").toLowerCase();
+  return text.includes(q);
+ });
+ $("sectionTitle").textContent="Search Results";
+ $("sectionDescription").textContent=`Stories matching “${e.target.value}”`;
+ $("count").textContent=`${results.length} results`;
+ renderHero(results);renderTrending(results);renderTicker(results);
+ renderCards("editorCards",results.slice(1,5));
+});
+
+function updateClock(){
+ const d=new Date();
+ $("clock").innerHTML=`<strong>${d.toLocaleTimeString("en-IN",{hour:"numeric",minute:"2-digit",hour12:true})}</strong>
+ ${d.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"})}`;
+}
+function publishStory(){alert("Connect this button to your Publish / Submit form.")}
+$("year").textContent=new Date().getFullYear();
+updateClock();setInterval(updateClock,30000);
+
+async function loadArticles(){
+ try{
+  const response=await fetch("articles.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("articles.json not found");
+  const data=await response.json();
+  articles=Array.isArray(data)?data:(Array.isArray(data.articles)?data.articles:[]);
+  render();
+ }catch(error){
+  console.error(error);
+  $("count").textContent="News unavailable";
+  $("hero").innerHTML='<div class="hero"><div class="hero-placeholder">Could not load articles.json</div></div>';
+  $("trendList").innerHTML='<div style="padding:20px;color:#718096;font-size:11px">Make sure articles.json is in the same folder as index.html.</div>';
+ }
+}
+loadArticles();
+</script>
 </body>
 </html>
