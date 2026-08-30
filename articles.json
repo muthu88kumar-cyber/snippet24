@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T03:04:46.688512+00:00",
-  "total": 1491,
+  "updated_at": "2026-08-30T03:34:35.938753+00:00",
+  "total": 1498,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
     "World": 121,
-    "India": 465,
+    "India": 469,
     "Business": 171,
     "Technology & AI": 101,
     "Sports": 131,
-    "Entertainment": 313,
-    "Lifestyle": 189
+    "Entertainment": 314,
+    "Lifestyle": 191
   },
   "articles": [
     {
@@ -165,6 +165,28 @@
       "published_at": "2026-08-09T04:48:25+00:00",
       "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/foreign-investors-continue-buying-spree-pour-rs-12921-cr-in-first-week-of-aug/articleshow/133062370.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Foreign%20investors%20continue%20buying%20spree%3B%20pour%20Rs%2012%2C921%20cr%20in%20first%20week%20of%20Aug.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1475187323",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4d1d175567cfaa38a0f1",
+      "category": "India",
+      "headline": "‘In America, behave true to America’: Mohan Bhagwat tells Indian diaspora to fulfil duty to ‘karma bhumi’",
+      "summary": "RSS chief Mohan Bhagwat said Indians living in the US should live as responsible Americans while retaining the values they received from their ‘janma bhumi’.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T03:21:18+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/in-america-behave-true-to-america-rss-chief-mohan-bhagwat-new-york-city-to-indian-diaspora-on-duty-to-karma-bhumi-101788056946523.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20%E2%80%98In%20America%2C%20behave%20true%20to%20America%E2%80%99%3A%20Mohan%20Bhagwat%20tells%20Indian%20diaspora%20to%20fulfil%20duty%20to%20%E2%80%98karma%20bhumi%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=102938885",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8dcb0142d8bb07716f85",
+      "category": "India",
+      "headline": "India sends 4th relief flight to flood-hit Nepal; 108 Indian nationals rescued, 275 still missing",
+      "summary": "Jaishankar said a fourth Indian Air Force flight carrying 11 tonnes of emergency assistance had been sent to Kathmandu.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T03:01:51+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/india-sends-4th-relief-flight-to-flood-hit-nepal-108-indian-nationals-rescued-275-still-missing-101788054303186.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20India%20sends%204th%20relief%20flight%20to%20flood-hit%20Nepal%3B%20108%20Indian%20nationals%20rescued%2C%20275%20still%20missing.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1145881107",
       "image_type": "ai_generated"
     },
     {
@@ -594,6 +616,17 @@
       "published_at": "2026-08-02T19:13:27+00:00",
       "source_url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-special-windows-seen-big-enough-to-bring-in-100b/articleshow/132813309.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20RBI%20special%20windows%20seen%20big%20enough%20to%20bring%20in%20%24100B.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1578929096",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "5ebf1669ff81b1e7bfd6",
+      "category": "India",
+      "headline": "Revanth seeks 4-week extension of T’gana SIR",
+      "summary": "Telangana chief minister A Revanth Reddy on Saturday urged the Election Commission of India (ECI) to extend the schedule for the Special Intensive Revision (SIR) of electoral rolls in the state by four weeks, in the wake of concern over possible deletion of a large number of voters during the verification",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:46:10+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/revanth-seeks-4-week-extension-of-t-gana-sir-101788029880830.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Revanth%20seeks%204-week%20extension%20of%20T%E2%80%99gana%20SIR.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=14578172",
       "image_type": "ai_generated"
     },
     {
@@ -2236,14 +2269,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "f944df0c4e7b360fd836",
+      "id": "db81f3bd2138b05bf610",
       "category": "India",
-      "headline": "Amended fire rules notified, with broader safety checklist",
+      "headline": "Smoke management system, refuge areas: Delhi notifies amended fire safety rules",
       "summary": "Delhi notifies Fire Service Amendment Rules 2026, replacing inspections with auditor",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T17:52:56+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/amended-fire-rules-notified-with-broader-safety-checklist-101788025976958.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Amended%20fire%20rules%20notified%2C%20with%20broader%20safety%20checklist.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3551532737",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Smoke%20management%20system%2C%20refuge%20areas%3A%20Delhi%20notifies%20amended%20fire%20safety%20rules.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3405077584",
       "image_type": "ai_generated"
     },
     {
@@ -4678,6 +4711,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "71c9c50c31f4eaf93307",
+      "category": "India",
+      "headline": "Tripura hostel warden gets 20 years in jail for sexually assaulting minor",
+      "summary": "A hostel warden in North Tripura was sentenced to 20 years in prison for repeatedly sexually assaulting a 12-year-old student, police said.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T02:58:00+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/tripura-hostel-warden-gets-20-years-in-jail-for-sexually-assaulting-minor-101788058628170.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Tripura%20hostel%20warden%20gets%2020%20years%20in%20jail%20for%20sexually%20assaulting%20minor.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=9576467",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "68b75b60123b2ae834d0",
       "category": "India",
       "headline": "SC refuses to roll back directions on illegal forest land diversion",
@@ -6009,14 +6053,14 @@
       "image_type": "ai_generated"
     },
     {
-      "id": "94127bb53c09edd316f3",
+      "id": "1e452765232e012a05ba",
       "category": "India",
-      "headline": "PM Modi lands in Uzbekistan on two-nation visit, SCO summit; President Shavkat Mirziyoyev receives him",
+      "headline": "PM Modi lands in Uzbekistan on two-nation visit; President Shavkat Mirziyoyev receives him",
       "summary": "PM Narendra Modi thanked Uzbek President Shavkat Mirziyoyev on social media for the “special gesture” of welcoming him at the airport",
       "publisher": "Hindustan Times India",
       "published_at": "2026-08-29T14:03:30+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20lands%20in%20Uzbekistan%20on%20two-nation%20visit%2C%20SCO%20summit%3B%20President%20Shavkat%20Mirziyoyev%20receives%20him.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4168859965",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20PM%20Modi%20lands%20in%20Uzbekistan%20on%20two-nation%20visit%3B%20President%20Shavkat%20Mirziyoyev%20receives%20him.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=965532568",
       "image_type": "ai_generated"
     },
     {
@@ -9793,6 +9837,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "bb8aa2e4e2b49371c414",
+      "category": "Lifestyle",
+      "headline": "Sushmita Sen's emotional Miss Universe India 2026 moment with Manipur designer caught on camera: 'Humbleness, purity'",
+      "summary": "Sushmita Sen's sweet backstage moment with Manipur designer at Miss Universe India 2026 is winning hearts – 'seeing you is like I'm home', she told him.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T03:06:52+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/fashion/sushmita-sen-miss-universe-india-2026-video-emotional-moment-with-manipur-designer-caught-on-camera-humbleness-purity-101788058270083.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Sushmita%20Sen%27s%20emotional%20Miss%20Universe%20India%202026%20moment%20with%20Manipur%20designer%20caught%20on%20camera%3A%20%27Humbleness%2C%20purity%27.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2443132554",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "4eb235c2db399c203158",
       "category": "Lifestyle",
       "headline": "Experience: I brought a bear back to life",
@@ -9980,6 +10035,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "e4b29fdb9df25f379076",
+      "category": "Entertainment",
+      "headline": "Leanne Morgan Had To Give LA Writers “Grace” To Capture Her Southern Voice: “They’re In A Bubble Out There”",
+      "summary": "With Season 2 of her namesake series now available to stream on Netflix, Leanne Morgan is praising her writers for capturing her Southern voice. The Leanne star recently discussed the culture shock of relocating from Tennessee to Los Angeles to film the sitcom, noting that she was worried her writers room would “stereotype the South […]",
+      "publisher": "Deadline",
+      "published_at": "2026-08-30T03:25:43+00:00",
+      "source_url": "https://deadline.com/2026/08/leanne-morgan-give-la-writers-grace-capture-southern-voice-1237062743/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Leanne%20Morgan%20Had%20To%20Give%20LA%20Writers%20%E2%80%9CGrace%E2%80%9D%20To%20Capture%20Her%20Southern%20Voice%3A%20%E2%80%9CThey%E2%80%99re%20In%20A%20Bubble%20Out%20There%E2%80%9D.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3544804154",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "92820c9984915678e610",
       "category": "Entertainment",
       "headline": "‘Borges and Me’ Review: Gentle, Nostalgic Literary Road Movie Is More Perky Than Poetic",
@@ -10159,7 +10225,7 @@
       "id": "c5ef97e8ce5f4329258d",
       "category": "Lifestyle",
       "headline": "How do you define good health – and achieve it – in a broken US medical system?",
-      "summary": "In a new book, Dr Lucy McBride aims to help us navigate US healthcare – and tread carefully in the wellness industry Most of us want to be healthy, but it’s easier said than done. In the US, people are caught between a broken medical system and a well-resourced wellness industry. The failings of the former – cost barriers, rushed appointments, impersonal attention – push them towards the snake",
+      "summary": "In a new book, Dr Lucy McBride aims to help us navigate US healthcare – and tread carefully in the wellness industry Most of us want to be healthy, but it’s easier said than done. In the US, people are caught between a broken medical system and a well-resourced wellness industry. The failings of the former – cost barriers, rushed appointments, impersonal attention – push them towards the snake-oil solutions of...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T16:00:32+00:00",
       "source_url": "https://www.theguardian.com/wellness/2026/aug/27/us-healthcare-system-good-health-wellness-industry",
@@ -11490,7 +11556,7 @@
       "id": "1ad83934827e3d480776",
       "category": "Lifestyle",
       "headline": "Hogging weights, loud grunting and sweaty benches: 11 gym dos and don’ts from fitness experts",
-      "summary": "Here’s what professionals have to say about good workout etiquette, from using equipment to being on your phone I like to think of myself as a fairly laid-back person. Other people’s behavior is not my business. There is one notable exception: my gym nemesis. He brings his computer to the gym and takes work conference calls at full volume. He has four to six pairs of dumbbells around him at all times",
+      "summary": "Here’s what professionals have to say about good workout etiquette, from using equipment to being on your phone I like to think of myself as a fairly laid-back person. Other people’s behavior is not my business. There is one notable exception: my gym nemesis. He brings his computer to the gym and takes work conference calls at full volume. He has four to six pairs of dumbbells around him at all times – then...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-19T14:00:13+00:00",
       "source_url": "https://www.theguardian.com/wellness/2026/aug/19/fitness-experts-gym-workout-etiquette",
@@ -11743,7 +11809,7 @@
       "id": "e429414cb32379fd84d0",
       "category": "Lifestyle",
       "headline": "Be an ambassador for the ocean – why the Great Barrier Reef’s future depends on responsible tourists",
-      "summary": "Tropical North Queensland is home to two extraordinary ecosystems side by side. Expect unbelievable wildernesses, ancient cultures and the privilege of realising your visit is protecting their future. Here’s everything you need to know Covering an area of about 350,000 sq km along Australia’s Queensland coastline , the Great Barrier Reef is the world’s largest coral reef system and living structure – so vast that...",
+      "summary": "Tropical North Queensland is home to two extraordinary ecosystems side by side. Expect unbelievable wildernesses, ancient cultures and the privilege of realising your visit is protecting their future. Here’s everything you need to know Covering an area of about 350,000 sq km along Australia’s Queensland coastline , the Great Barrier Reef is the world’s largest coral reef system and living structure",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-06-05T15:27:48+00:00",
       "source_url": "https://www.theguardian.com/discover-tropical-north-queensland/2026/jun/05/how-tourists-can-help-protect-the-great-barrier-reef",
@@ -11778,9 +11844,20 @@
       "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
       "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting short-stay visas. No it’s not. … Short-term visa stay and things...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T02:51:29+00:00",
+      "published_at": "2026-08-30T03:22:26+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "954d1add41a3ed75ebc0",
+      "category": "Lifestyle",
+      "headline": "Dementia or normal forgetfulness? Psychiatrist shares 5 early signs families should not miss",
+      "summary": "When can forgetfulness be concerning? Learn from an expert the alarming signs that may mean early dementia.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T03:09:42+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/dementia-or-normal-forgetfulness-psychiatrist-shares-5-early-signs-families-should-not-miss-101787915181640.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Dementia%20or%20normal%20forgetfulness%3F%20Psychiatrist%20shares%205%20early%20signs%20families%20should%20not%20miss.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4003842582",
       "image_type": "ai_generated"
     },
     {
@@ -13151,7 +13228,7 @@
       "id": "59639de88a0a923c564a",
       "category": "Lifestyle",
       "headline": "The showgirl sisterhood: five former variety stars look back at their wild careers – in pictures",
-      "summary": "The ‘Golden girls of Eastbourne’ first crossed paths more than 50 years ago. They recall flammable feather head-dresses, wardrobe malfunctions and topping the bill over the Beatles I hear the Golden Girls of Eastbourne before I see them – hooting laughter leaking out of a house in the East Sussex seaside town. Inside, I find five energetic women in their 80s and 90s, sitting in a knick-knack",
+      "summary": "The ‘Golden girls of Eastbourne’ first crossed paths more than 50 years ago. They recall flammable feather head-dresses, wardrobe malfunctions and topping the bill over the Beatles I hear the Golden Girls of Eastbourne before I see them – hooting laughter leaking out of a house in the East Sussex seaside town. Inside, I find five energetic women in their 80s and 90s, sitting in a knick-knack-filled living room...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T11:00:26+00:00",
       "source_url": "https://www.theguardian.com/stage/ng-interactive/2026/aug/29/showgirls-variety-stars-recall-days-on-stage-in-pictures",
@@ -13459,7 +13536,7 @@
       "id": "7e24bc77b4c44433cd3a",
       "category": "Lifestyle",
       "headline": "Flipping marvellous: Yotam Ottolenghi on the joy of simple breakfasts – plus six exclusive recipes",
-      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes – more than I would have ever...",
+      "summary": "Weekend mornings are for family – and whoever happens to be over. Forget fussing and focus on just one big lovely thing for the middle of the table. Here’s how Family life has had a bigger impact on how I cook at home than almost anything else. There’s a lot of pasta on the menu these days, and potato wedges with different sauces. A lot of meatballs. And a great many pancakes",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T07:00:20+00:00",
       "source_url": "https://www.theguardian.com/food/2026/aug/29/yotam-ottolenghi-simple-breakfasts-recipes",
@@ -13690,7 +13767,7 @@
       "id": "933ed334dfd3e3e0acfa",
       "category": "Lifestyle",
       "headline": "Tim Dowling: my TV contract has run out – and so has my patience",
-      "summary": "I need to buy a smart television big enough to read ransom notes – and I’m taking no prisoners Fourteen years ago, I received a text from my eldest son claiming he’d just found the TV face down on the sitting room floor, destroyed. I didn’t entirely buy his theory about the dogs being responsible – I discovered a football lying suspiciously near the crime scene – but it was a problem I needed to solve before my...",
+      "summary": "I need to buy a smart television big enough to read ransom notes – and I’m taking no prisoners Fourteen years ago, I received a text from my eldest son claiming he’d just found the TV face down on the sitting room floor, destroyed. I didn’t entirely buy his theory about the dogs being responsible – I discovered a football lying suspiciously near the crime scene",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-29T05:00:17+00:00",
       "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/29/tim-dowling-tv-contract-run-out-so-has-patience",
@@ -15703,7 +15780,7 @@
       "id": "02fbe9353c0a5fa41c82",
       "category": "Lifestyle",
       "headline": "High in cocoa, high on nostalgia: the chocolate I love most now",
-      "summary": "Including, to my surprise, a 100% cacao bar … Although I’m un peu fatiguée of chocolates in bonbon shape with coloured cocoa-butter splashes atop, I appreciate this is the way many chocolates truffles are made. Overcoming that prejudice, I tucked into a box of Scoff chocolates. They were beautifully fresh tasting – they are made in batches throughout the year and the latest batch has just been let loose. I liked...",
+      "summary": "Including, to my surprise, a 100% cacao bar … Although I’m un peu fatiguée of chocolates in bonbon shape with coloured cocoa-butter splashes atop, I appreciate this is the way many chocolates truffles are made. Overcoming that prejudice, I tucked into a box of Scoff chocolates. They were beautifully fresh tasting",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T11:00:12+00:00",
       "source_url": "https://www.theguardian.com/food/2026/aug/27/high-cocoa-high-nostalgia-chocolate-i-love-most-annalisa-barbieri",
@@ -15769,7 +15846,7 @@
       "id": "11998f7d14cc1e7b1837",
       "category": "Lifestyle",
       "headline": "Architourism in France: the retro futurist seaside town near Montpellier that’s out of this world",
-      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu – although I love both – but somewhere created specifically between the mid...",
+      "summary": "Built in the 60s and 70s to curb a holiday exodus to Spain, with apartments inspired by Mayan pyramids and featuring ‘intergalactic curves’, La Grande-Motte is having another moment in the sun with fans of modern architecture My dream holiday is a trip back in time. Not to see the results of seismic Pompeii or 15th-century Machu Picchu – although I love both",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-27T06:00:06+00:00",
       "source_url": "https://www.theguardian.com/travel/2026/aug/27/architourism-france-retro-futurist-la-grande-motte-seaside-town-near-montpellier",
@@ -15945,7 +16022,7 @@
       "id": "39b072b74f531d0e7676",
       "category": "Lifestyle",
       "headline": "Lloyds Bank is holding on to our urgently needed £5,500",
-      "summary": "We want our balance back, but we can’t access the money to pay for essential repairs and settle an electricity bill Last November, Lloyds Bank informed me, in my role as treasurer of my parish church, that the church account was to be closed and that I should open a new business account instead. This can only be done online, but a fault with their system prevented me – and local branch staff – from doing so. At...",
+      "summary": "We want our balance back, but we can’t access the money to pay for essential repairs and settle an electricity bill Last November, Lloyds Bank informed me, in my role as treasurer of my parish church, that the church account was to be closed and that I should open a new business account instead. This can only be done online, but a fault with their system prevented me – and local branch staff",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-25T06:00:50+00:00",
       "source_url": "https://www.theguardian.com/money/2026/aug/25/lloyds-bank-holding-on-to-funds-balance-account",
@@ -15956,7 +16033,7 @@
       "id": "6fa4d952b21db4dc55e2",
       "category": "Lifestyle",
       "headline": "Freddie Mercury’s ‘splendid things’ to go on display at V&A",
-      "summary": "Eight costumes spanning Queen frontman’s career will feature in a free trail developed with his former fiancee Eight famous costumes worn by Freddie Mercury, including the outfit featured on the cover of Queen’s debut album and the catsuit from the video for Bohemian Rhapsody, are to go on display at the V&A in London this autumn to mark what would have been the singer’s 80th birthday. Freddie Mercury | Splendid...",
+      "summary": "Eight costumes spanning Queen frontman’s career will feature in a free trail developed with his former fiancee Eight famous costumes worn by Freddie Mercury, including the outfit featured on the cover of Queen’s debut album and the catsuit from the video for Bohemian Rhapsody, are to go on display at the V&A in London this autumn to mark what would have been the singer’s 80th birthday. Freddie Mercury",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-25T04:00:49+00:00",
       "source_url": "https://www.theguardian.com/music/2026/aug/25/freddie-mercury-splendid-things-costumes-victoria-albert-museum-queen-v-and-a",
@@ -16000,7 +16077,7 @@
       "id": "289368ff7aaa90ae6dd7",
       "category": "Lifestyle",
       "headline": "‘When I make a sale, I’ll sing a high note’: a day in the life of an opera singing car salesman",
-      "summary": "Andrew Hiers is trying to start his own opera company. Until then, he’s serenading the parking lot Andrew Hiers, 38, is an opera singer – a bass-baritone – and a car salesman in Cocoa, Florida. You might think these professions have nothing to do with each other, but his librettos about cars or to customers have gone viral",
+      "summary": "Andrew Hiers is trying to start his own opera company. Until then, he’s serenading the parking lot Andrew Hiers, 38, is an opera singer – a bass-baritone – and a car salesman in Cocoa, Florida. You might think these professions have nothing to do with each other, but his librettos about cars or to customers have gone viral – all part of a larger plan to bring opera to the local community. What time did you wake...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-23T16:00:36+00:00",
       "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/23/andrew-hiers-opera-singer-car-salesman",
@@ -16033,7 +16110,7 @@
       "id": "a7aaf76c9c8eb663cbe0",
       "category": "Lifestyle",
       "headline": "Diamonds for sale: lab-grown gem auctions are all over TikTok right now, but some aren’t happy about it",
-      "summary": "Streamed auctions offer a cheap way to buy the precious gems, but experts warn that quality is not guaranteed The first time Andrea Greenhill came across a livestream auction for lab-grown diamonds while scrolling on TikTok, she was stunned. While the diamond engagement ring her husband proposed with years ago had cost thousands of dollars, these loose lab",
+      "summary": "Streamed auctions offer a cheap way to buy the precious gems, but experts warn that quality is not guaranteed The first time Andrea Greenhill came across a livestream auction for lab-grown diamonds while scrolling on TikTok, she was stunned. While the diamond engagement ring her husband proposed with years ago had cost thousands of dollars, these loose lab-grown diamonds were selling in seconds at a fraction of...",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-08-22T12:00:02+00:00",
       "source_url": "https://www.theguardian.com/technology/2026/aug/22/tiktok-auctions-lab-grown-diamonds",
@@ -16297,7 +16374,7 @@
       "id": "c939a681ea5dfa5b78a1",
       "category": "Lifestyle",
       "headline": "The best LED face masks in the UK, tested: 12 light therapy devices that are worth the hype",
-      "summary": "They claim to fix fine lines, blemishes, and redness – but which stand up to scrutiny? After consulting dermatologists and putting them to the test, we have crowned a brand new number one • The best anti-ageing creams, serums and treatments LED face masks are booming in popularity – despite being one of the most expensive at-home beauty products to hit the market. They claim to either reduce the appearance of...",
+      "summary": "They claim to fix fine lines, blemishes, and redness – but which stand up to scrutiny? After consulting dermatologists and putting them to the test, we have crowned a brand new number one • The best anti-ageing creams, serums and treatments LED face masks are booming in popularity – despite being one of the most expensive at",
       "publisher": "Guardian Lifestyle",
       "published_at": "2026-07-21T09:00:08+00:00",
       "source_url": "https://www.theguardian.com/thefilter/2025/sep/19/best-led-red-light-therapy-face-masks",
