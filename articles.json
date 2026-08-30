@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-30T05:04:31.031662+00:00",
-  "total": 1524,
+  "updated_at": "2026-08-30T05:34:46.267011+00:00",
+  "total": 1535,
   "minimum_target": 50,
   "maximum_target": null,
   "categories": {
-    "World": 123,
-    "India": 483,
+    "World": 125,
+    "India": 486,
     "Business": 172,
     "Technology & AI": 101,
-    "Sports": 131,
-    "Entertainment": 320,
-    "Lifestyle": 194
+    "Sports": 134,
+    "Entertainment": 321,
+    "Lifestyle": 196
   },
   "articles": [
     {
@@ -2082,6 +2082,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "7445fa7455e5439fe110",
+      "category": "India",
+      "headline": "AAP leader Gurpreet Gopi shot dead in Punjab’s Ferozepur",
+      "summary": "The four car-borne assailants got down from their vehicle in the main bazaar of Mamdot in Ferozepur on Saturday (August 29) evening and opened fire towards the car in which the 45-year",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T05:16:01+00:00",
+      "source_url": "https://www.thehindu.com/news/national/punjab/aap-leader-gurpreet-gopi-shot-dead-in-punjabs-ferozepur/article71406995.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AAP%20leader%20Gurpreet%20Gopi%20shot%20dead%20in%20Punjab%E2%80%99s%20Ferozepur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276543950",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "a720984c5e095dd46eb6",
       "category": "Entertainment",
       "headline": "Bethlehem Kudumba Unit Worldwide Box Office Collection Day 9: Beats Sarvam Maya To Become Nivin Pauly’s Highest Grossing Film",
@@ -2156,17 +2167,6 @@
       "published_at": "2026-08-30T04:01:37+00:00",
       "source_url": "https://www.hindustantimes.com/india-news/punjab-aap-activist-gurpreet-singh-gopi-shot-dead-near-ferozpur-cops-suspect-old-dispute-elections-as-motive-101788062091320.html",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Punjab%20AAP%20activist%20Gurpreet%20Singh%20Gopi%20shot%20dead%20near%20Ferozepur%3B%20cops%20suspect%20old%20dispute%2C%20elections%20as%20motive.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1826950985",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "7445fa7455e5439fe110",
-      "category": "India",
-      "headline": "AAP leader Gurpreet Gopi shot dead in Punjab’s Ferozepur",
-      "summary": "The four car-borne assailants got down from their vehicle in the main bazaar of Mamdot in Ferozepur on Saturday (August 29) evening and opened fire towards the car in which the 45-year",
-      "publisher": "The Hindu",
-      "published_at": "2026-08-30T04:00:24+00:00",
-      "source_url": "https://www.thehindu.com/news/national/punjab/aap-leader-gurpreet-gopi-shot-dead-in-punjabs-ferozepur/article71406995.ece",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20AAP%20leader%20Gurpreet%20Gopi%20shot%20dead%20in%20Punjab%E2%80%99s%20Ferozepur.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2276543950",
       "image_type": "ai_generated"
     },
     {
@@ -4851,6 +4851,50 @@
       "published_at": "2021-01-18T16:11:10+00:00",
       "source_url": "https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Business.%20Story%3A%20Govt%20may%20keep%20Rs%207%2C500%20cr%20outlay%20for%20IT%20hardware%20manufacturing%20under%20PLI%20scheme.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=3661487856",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "baa8619252d1adce76e0",
+      "category": "India",
+      "headline": "BJP brainstorming on Gen Z outreach concludes cohort is not ‘homogenous’",
+      "summary": "Sources said some leaders in the meeting suggested avoiding the term “Gen Z” and instead using the broader term “youth” or references to specific age groups",
+      "publisher": "The Hindu",
+      "published_at": "2026-08-30T05:24:43+00:00",
+      "source_url": "https://www.thehindu.com/news/national/bjp-brainstorming-on-genz-outreach-concludes-cohort-is-not-homogenous/article71407040.ece",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20BJP%20brainstorming%20on%20Gen%20Z%20outreach%20concludes%20cohort%20is%20not%20%E2%80%98homogenous%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=136908061",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "a9395b488c653bd21b35",
+      "category": "Entertainment",
+      "headline": "Toxic Hindi Box Office Day 4: Yash’s Magnum Opus Enters 100 Crore Club, Surpasses Allu Arjun’s Pushpa",
+      "summary": "The Hindi",
+      "publisher": "Koimoi",
+      "published_at": "2026-08-30T05:14:51+00:00",
+      "source_url": "https://www.koimoi.com/uncategorized/toxic-hindi-box-office-day-4-yashs-magnum-opus-enters-100-crore-club-surpasses-allu-arjuns-pushpa/",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Entertainment.%20Story%3A%20Toxic%20Hindi%20Box%20Office%20Day%204%3A%20Yash%E2%80%99s%20Magnum%20Opus%20Enters%20100%20Crore%20Club%2C%20Surpasses%20Allu%20Arjun%E2%80%99s%20Pushpa.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1705185427",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "8cc8da7cb0b2c58b163f",
+      "category": "India",
+      "headline": "Manipur set to get 5th chief secretary in 3 years as Puneet Goel retires",
+      "summary": "Though the government is yet to announce the new chief secretary, people familiar with the matter said that Rajeev Singh Thakur was likely to be appointed.",
+      "publisher": "Hindustan Times India",
+      "published_at": "2026-08-30T05:11:41+00:00",
+      "source_url": "https://www.hindustantimes.com/india-news/manipur-set-to-get-5th-chief-secretary-in-3-years-as-puneet-goel-retires-101788065085857.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Manipur%20set%20to%20get%205th%20chief%20secretary%20in%203%20years%20as%20Puneet%20Goel%20retires.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=306194216",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "701fa056dc6d9e383e97",
+      "category": "India",
+      "headline": "Watch: PM Modi takes part in yoga session during Uzbekistan visit",
+      "summary": "Prime Minister Narendra Modi joined a yoga session in Tashkent on Sunday, where he interacted with attendees and posed for a memorable group photo. Uzbek President Shavkat Mirziyoyev extended a warm welcome to the Prime Minister. Delegation-level discussions are planned to focus on trade and defense partnerships, ahead of Modi's participation in the upcoming SCO Summit in Bishkek.",
+      "publisher": "Times of India",
+      "published_at": "2026-08-30T05:06:52+00:00",
+      "source_url": "https://timesofindia.indiatimes.com/india/watch-pm-modi-takes-part-in-yoga-session-during-uzbekistan-visit/articleshow/133623338.cms",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20India.%20Story%3A%20Watch%3A%20PM%20Modi%20takes%20part%20in%20yoga%20session%20during%20Uzbekistan%20visit.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=363536727",
       "image_type": "ai_generated"
     },
     {
@@ -12070,14 +12114,91 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "017b7ad3a6efcb6e008d",
+      "category": "Sports",
+      "headline": "GB's Fery beaten in his first ATP Tour final",
+      "summary": "Arthur Fery misses out on his first ATP Tour title with a straight-set defeat by Ignacio Buse in the final of the Winston",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-30T05:32:40+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/cnvl3m06j6po?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20GB%27s%20Fery%20beaten%20in%20his%20first%20ATP%20Tour%20final.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1918315688",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "4b3fa1b8d634ebacbcfb",
+      "category": "Lifestyle",
+      "headline": "Toy, remote and hearing-aid hazard: Neonatologist Dr Bhawna Malik explains button batteries can cause oesophageal burns",
+      "summary": "Button batteries can pose severe risks if children swallow them. Learn the dangers, symptoms, and essential actions to take if a child swallows one.",
+      "publisher": "Hindustan Times Lifestyle",
+      "published_at": "2026-08-30T05:30:15+00:00",
+      "source_url": "https://www.hindustantimes.com/lifestyle/health/toy-remote-and-hearing-aid-hazard-neonatologist-dr-bhawna-malik-explains-button-batteries-can-cause-oesophageal-burns-101787835785589.html",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20Toy%2C%20remote%20and%20hearing-aid%20hazard%3A%20Neonatologist%20Dr%20Bhawna%20Malik%20explains%20button%20batteries%20can%20cause%20oesophageal%20burns.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4102542416",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "022d2fe0810633fd330d",
       "category": "World",
       "headline": "Australia news live: ‘we owe it to history’ to defeat One Nation, PM tells Labor faithful; man dies after falling from eighth-floor balcony in Sydney",
       "summary": "Police attempted to speak to man at Elizabeth Bay apartment block east of Sydney’s CBD on Sunday morning. Follow latest updates live Get our breaking news email , free app or daily news podcast Joyce explains One Nation’s migration policy with sheep and cattle Barnaby Joyce has used sheep and cattle to illustrate his claim that One Nation wants to cut net overseas migration to 130,000 people without counting...",
       "publisher": "Guardian World",
-      "published_at": "2026-08-30T04:50:41+00:00",
+      "published_at": "2026-08-30T05:29:41+00:00",
       "source_url": "https://www.theguardian.com/australia-news/live/2026/aug/30/nepal-tibet-floods-missing-australians-secret-harbour-byelection-wa-tanya-plibersek-insiders-pacific-islands-forum-ntwnfb",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Australia%20news%20live%3A%20%E2%80%98we%20owe%20it%20to%20history%E2%80%99%20to%20defeat%20One%20Nation%2C%20PM%20tells%20Labor%20faithful%3B%20man%20dies%20after%20falling%20from%20eighth-floor%20balcony%20in%20Sydney.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=4164941288",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "0374ca56848760cb7fe4",
+      "category": "Sports",
+      "headline": "'Unbelievable' - Stephenson & Bellow react to Hrgovic's stoppage of Itauma",
+      "summary": "Shakur Stevenson and Tony Bellew believe Moses Itauma still has what it takes to become a world champion after losing to Filip Hrgovic for the IBF heavyweight title.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-30T05:19:59+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/boxing/articles/c3reqjegv8ro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20%27Unbelievable%27%20-%20Stephenson%20%26%20Bellow%20react%20to%20Hrgovic%27s%20stoppage%20of%20Itauma.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2643706942",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "03fdad8b73148bea882c",
+      "category": "Sports",
+      "headline": "Sabalenka bids to rediscover form at intriguing US Open",
+      "summary": "Will Aryna Sabalenka rediscover her mojo? How will Carlos Alcaraz's comeback go? And can Novak Djokovic win? It's time for the 2026 US Open singles.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-30T05:06:28+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/c4glzvq3pzno?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Sabalenka%20bids%20to%20rediscover%20form%20at%20intriguing%20US%20Open.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=11380095",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "6782ac67fc0148e332a3",
+      "category": "World",
+      "headline": "The president and the penthouse: how Madrid’s government spent €6.3m on a temporary ‘office’",
+      "summary": "Saga surrounding purchase for outspoken rightwing regional leader Isabel Díaz Ayuso refuses to go away The outspoken rightwing leader of the Madrid region is under growing pressure to explain why her government spent €6.3m (£5.4m) on a residential penthouse purportedly to serve as a temporary workspace while her offices were being renovated. Isabel Díaz Ayuso, a prominent member of Spain’s opposition conservative...",
+      "publisher": "Guardian World",
+      "published_at": "2026-08-30T05:00:48+00:00",
+      "source_url": "https://www.theguardian.com/world/2026/aug/30/president-penthouse-madrid-government-63m-euros-temporary-office-isabel-diaz-ayuso",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20The%20president%20and%20the%20penthouse%3A%20how%20Madrid%E2%80%99s%20government%20spent%20%E2%82%AC6.3m%20on%20a%20temporary%20%E2%80%98office%E2%80%99.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=2112213195",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "50d94509e93ed7123d30",
+      "category": "Lifestyle",
+      "headline": "I’ve got feelings for a teacher at my children’s school. What should I do? | Ask Annalisa Barbieri",
+      "summary": "Crushes can feel freeing because they operate outside everyday life, but does that mean you should act on them? I’ve been married for 20 years and have two children. By most measures, our marriage is stable and successful. But lately I have found myself developing strong feelings for a teacher at my children’s school. While our interactions there are limited, we also attend a weekly non-school activity . What...",
+      "publisher": "Guardian Lifestyle",
+      "published_at": "2026-08-30T05:00:47+00:00",
+      "source_url": "https://www.theguardian.com/lifeandstyle/2026/aug/30/feelings-teacher-childrens-school-annalisa-barbieri",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Lifestyle.%20Story%3A%20I%E2%80%99ve%20got%20feelings%20for%20a%20teacher%20at%20my%20children%E2%80%99s%20school.%20What%20should%20I%20do%3F%20%7C%20Ask%20Annalisa%20Barbieri.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1684216197",
+      "image_type": "ai_generated"
+    },
+    {
+      "id": "76a3d02e81507f31892f",
+      "category": "World",
+      "headline": "WhatsApp chat used to send cash for crime and extremism",
+      "summary": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail.",
+      "publisher": "BBC World",
+      "published_at": "2026-08-30T04:59:56+00:00",
+      "source_url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20WhatsApp%20chat%20used%20to%20send%20cash%20for%20crime%20and%20extremism.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1332429440",
       "image_type": "ai_generated"
     },
     {
@@ -12301,6 +12422,17 @@
       "image_type": "ai_generated"
     },
     {
+      "id": "328c6ff33a20e9595f65",
+      "category": "Sports",
+      "headline": "Newly promoted Elversberg stun Leverkusen in five-goal thriller",
+      "summary": "Bundesliga newcomers Elversberg hold on to secure a famous 3-2 win over Bayer Leverkusen at home. Elversverg has a population of just 13,000 people and is the smallest town to host a Bundesliga club.",
+      "publisher": "BBC Sport",
+      "published_at": "2026-08-29T23:07:02+00:00",
+      "source_url": "https://www.bbc.co.uk/sport/football/videos/cx2zyqdnxlvo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20Newly%20promoted%20Elversberg%20stun%20Leverkusen%20in%20five-goal%20thriller.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1322651956",
+      "image_type": "ai_generated"
+    },
+    {
       "id": "05c08b931f46a7b5969b",
       "category": "Entertainment",
       "headline": "Owner of ‘Heated Rivalry’ Cabin Needed to Do Some ‘Soul Searching’ Before Inviting the Show Back for Season 2",
@@ -12441,17 +12573,6 @@
       "published_at": "2026-08-29T21:55:08+00:00",
       "source_url": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
       "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20World.%20Story%3A%20Palestinian%20woman%20and%20NBC%20News%20team%20reportedly%20attacked%20in%20West%20Bank.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1461158347",
-      "image_type": "ai_generated"
-    },
-    {
-      "id": "017b7ad3a6efcb6e008d",
-      "category": "Sports",
-      "headline": "GB's Fery beaten in his first ATP Tour final",
-      "summary": "Arthur Fery misses out on his first ATP Tour title with a straight-set defeat by Ignacio Buse in the final of the Winston",
-      "publisher": "BBC Sport",
-      "published_at": "2026-08-29T21:49:05+00:00",
-      "source_url": "https://www.bbc.co.uk/sport/tennis/articles/cnvl3m06j6po?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://image.pollinations.ai/prompt/Professional%20editorial%20news%20illustration%20for%20a%20modern%20digital%20news%20publication.%20Category%3A%20Sports.%20Story%3A%20GB%27s%20Fery%20beaten%20in%20his%20first%20ATP%20Tour%20final.%20Realistic%20journalistic%20visual%2C%20tasteful%20editorial%20composition%2C%20high%20quality%2C%20cinematic%20lighting.%20No%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logos%2C%20no%20watermark.?width=1200&height=675&nologo=true&seed=1918315688",
       "image_type": "ai_generated"
     },
     {
@@ -14042,7 +14163,7 @@
       "id": "6f3ea34bebb227101f0a",
       "category": "World",
       "headline": "Ireland will be united, says Gordon Brown",
-      "summary": "Former PM believes Northern Ireland will leave UK in the long term – but remains opposed to Scottish independence ‘I don’t want to be a backseat driver’: Gordon Brown on Burnham, billionaires – and his vision for a better Britain The former prime minister Gordon Brown has said it is inevitable that Ireland will become united at some point in the future, in a wide-ranging interview with the Guardian. While he...",
+      "summary": "Former PM believes Northern Ireland will leave UK in the long term – but remains opposed to Scottish independence ‘I don’t want to be a backseat driver’: Gordon Brown on Burnham, billionaires – and his vision for a better Britain The former prime minister Gordon Brown has said it is inevitable that Ireland will become united at some point in the future, in a wide",
       "publisher": "Guardian World",
       "published_at": "2026-08-29T05:00:18+00:00",
       "source_url": "https://www.theguardian.com/uk-news/2026/aug/29/ireland-will-be-united-says-gordon-brown",
