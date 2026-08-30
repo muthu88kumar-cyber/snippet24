@@ -5,2073 +5,2687 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Snippet24 — Fast News. Real Impact.</title>
-<meta name="description"
-      content="Snippet24 — Fast News. Real Impact. Short, original explanations of important stories.">
+<meta name="description" content="Snippet24 — Fast News. Real Impact.">
 
 <style>
-/* =========================================================
-   SNIPPET24
-   COLOURFUL NEWS DESIGN
-   ========================================================= */
-
-:root {
-    --bg: #f6f8ff;
-    --white: #ffffff;
-    --ink: #11182b;
-    --muted: #687287;
-    --light: #eef2fa;
-    --border: #e3e7f0;
-
-    --world: #1649ff;
-    --india: #ff7417;
-    --business: #149447;
-    --tech: #6415e8;
-    --sports: #00a8c7;
-    --ent: #ed174f;
-    --life: #f5a900;
-    --environment: #07894e;
-    --culture: #263dff;
-
-    --pink: #ef3e9d;
-    --purple: #6d1cff;
-    --orange: #ff7417;
-
-    --radius: 22px;
-    --shadow: 0 8px 30px rgba(30, 45, 80, .08);
+:root{
+  --bg:#f5f7fb;
+  --surface:#fff;
+  --ink:#0d1730;
+  --muted:#69748b;
+  --line:#e5e9f2;
+  --purple:#5b2cff;
+  --red:#ef3155;
+  --orange:#ff7417;
+  --green:#149447;
+  --blue:#1649ff;
+  --shadow:0 12px 35px rgba(18,31,62,.08);
+  --radius:20px;
 }
 
-* {
-    box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 
-body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family:
-        Inter,
-        ui-sans-serif,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,
+  "Segoe UI",sans-serif;
 }
 
 button,
-input,
-select {
-    font: inherit;
+input{
+  font:inherit;
 }
 
-button {
-    cursor: pointer;
+button{
+  cursor:pointer;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
-/* =========================================================
+/* =========================
    HEADER
-   ========================================================= */
+========================= */
 
-.site-header {
-    background: rgba(255,255,255,.97);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
 }
 
-.header-inner {
-    max-width: 1500px;
-    margin: auto;
-    min-height: 96px;
-    padding: 15px 28px;
-    display: grid;
-    grid-template-columns: 300px 1fr auto;
-    align-items: center;
-    gap: 30px;
+.header-inner{
+  max-width:1480px;
+  margin:auto;
+  min-height:78px;
+  padding:12px 28px;
+  display:grid;
+  grid-template-columns:270px minmax(300px,650px) auto;
+  align-items:center;
+  gap:28px;
 }
 
-/* =========================================================
-   LOGO
-   ========================================================= */
-
-.logo-wrap {
-    display: flex;
-    flex-direction: column;
+.logo{
+  display:flex;
+  align-items:center;
+  width:max-content;
+  font-size:38px;
+  font-weight:950;
+  letter-spacing:-3px;
+  line-height:1;
 }
 
-.logo {
-    display: inline-flex;
-    align-items: center;
-    width: max-content;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: .9;
-    letter-spacing: -3px;
+.logo-number{
+  margin-left:8px;
+  color:#fff;
+  font-size:31px;
+  letter-spacing:-2px;
+  padding:7px 11px 8px;
+  border-radius:13px 13px 13px 4px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff7417,
+      #f23f72,
+      #d72bb2
+    );
+
+  box-shadow:
+    0 7px 18px rgba(235,56,115,.22);
 }
 
-.logo-text {
-    color: #10182b;
+.logo-tagline{
+  margin-top:7px;
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:3.2px;
+  color:#7b8498;
 }
 
-.logo-number {
-    margin-left: 9px;
-    padding: 8px 12px 9px;
-    color: white;
-    font-size: 36px;
-    letter-spacing: -2px;
-    border-radius: 16px 16px 16px 5px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #ff7417 0%,
-            #f44367 48%,
-            #e536ad 100%
-        );
-
-    box-shadow:
-        0 6px 15px rgba(236,55,120,.2);
+.logo-tagline span{
+  color:var(--red);
 }
 
-.logo-tagline {
-    margin-top: 9px;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    color: #768095;
+/* SEARCH */
+
+.search{
+  height:46px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:#f8f9fc;
+  display:flex;
+  align-items:center;
+  padding:0 16px;
+  transition:.2s;
 }
 
-.logo-tagline span {
-    color: #ed174f;
+.search:focus-within{
+  background:#fff;
+  border-color:#c8c1ff;
+  box-shadow:
+    0 0 0 4px rgba(91,44,255,.07);
 }
 
-/* =========================================================
-   SEARCH
-   ========================================================= */
-
-.search-box {
-    height: 55px;
-    max-width: 620px;
-    width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(20,30,60,.02);
+.search svg{
+  width:19px;
+  height:19px;
+  stroke:#6d7890;
+  fill:none;
+  stroke-width:1.8;
+  margin-right:10px;
 }
 
-.search-box svg {
-    width: 22px;
-    height: 22px;
-    margin-right: 13px;
+.search input{
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--ink);
 }
 
-.search-box input {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: var(--ink);
+/* HEADER ACTIONS */
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:18px;
 }
 
-.search-box input::placeholder {
-    color: #788196;
+.status{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  font-weight:850;
+  white-space:nowrap;
 }
 
-/* =========================================================
-   HEADER INFO
-   ========================================================= */
+.live-dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#ef3155;
 
-.header-info {
-    display: flex;
-    align-items: center;
-    gap: 22px;
+  box-shadow:
+    0 0 0 5px rgba(239,49,85,.1);
 }
 
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;
+.weather{
+  font-size:12px;
+  color:var(--muted);
+  white-space:nowrap;
 }
 
-.info-icon {
-    width: 35px;
-    height: 35px;
+.weather strong{
+  display:block;
+  color:var(--ink);
+  font-size:14px;
 }
 
-.info-main {
-    font-size: 15px;
-    font-weight: 800;
+.profile{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#11182b;
+  color:#fff;
+  font-weight:850;
+  font-size:13px;
 }
 
-.info-small {
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 2px;
+/* =========================
+   LIVE TICKER
+========================= */
+
+.ticker{
+  background:#11182b;
+  color:#fff;
+  overflow:hidden;
+  border-bottom:1px solid #202944;
 }
 
-.profile {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 1px solid var(--border);
-    display: grid;
-    place-items: center;
-    background: #f5f6fa;
+.ticker-inner{
+  max-width:1480px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  height:39px;
+  padding:0 28px;
 }
 
-/* =========================================================
+.ticker-label{
+  flex:0 0 auto;
+  background:var(--red);
+  height:24px;
+  display:flex;
+  align-items:center;
+  padding:0 10px;
+  border-radius:6px;
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:1.1px;
+  margin-right:15px;
+}
+
+.ticker-track{
+  white-space:nowrap;
+  overflow:hidden;
+  font-size:12px;
+  color:#e9edf6;
+}
+
+.ticker-track span{
+  margin-right:45px;
+}
+
+.ticker-track b{
+  color:#fff;
+}
+
+/* =========================
    CATEGORY BAR
-   ========================================================= */
+========================= */
 
-.category-bar {
-    background: white;
-    border-bottom: 1px solid var(--border);
+.category-bar{
+  background:#fff;
+  border-bottom:1px solid var(--line);
 }
 
-.category-inner {
-    max-width: 1500px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+.category-inner{
+  max-width:1480px;
+  margin:auto;
+  padding:0 22px;
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  scrollbar-width:none;
 }
 
-.category-btn {
-    border: 0;
-    background: white;
-    padding: 14px 8px 11px;
-    min-height: 105px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 7px;
-
-    position: relative;
-
-    color: var(--category-color);
-    transition: .2s ease;
+.category-inner::-webkit-scrollbar{
+  display:none;
 }
 
-.category-btn:hover {
-    background: #fafbff;
+.category-btn{
+  border:0;
+  background:transparent;
+  color:#59647a;
+  padding:13px 14px 11px;
+  min-height:58px;
+
+  display:flex;
+  align-items:center;
+  gap:7px;
+
+  white-space:nowrap;
+
+  font-size:12px;
+  font-weight:850;
+
+  position:relative;
 }
 
-.category-btn.active {
-    background: linear-gradient(
-        180deg,
-        rgba(255,255,255,0),
-        rgba(100,21,232,.04)
+.category-btn svg{
+  width:21px;
+  height:21px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.7;
+}
+
+.category-btn.active{
+  color:var(--category-color);
+}
+
+.category-btn.active:after{
+  content:"";
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:0;
+  height:3px;
+  border-radius:3px;
+  background:var(--category-color);
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+  max-width:1480px;
+  margin:auto;
+  padding:28px 28px 70px;
+}
+
+.section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  margin-bottom:16px;
+}
+
+.section-head h2{
+  margin:0;
+  font-size:20px;
+  letter-spacing:-.5px;
+}
+
+.section-head p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.count{
+  font-size:12px;
+  color:#8a93a6;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.lead-layout{
+  display:grid;
+  grid-template-columns:
+    minmax(0,1.65fr)
+    minmax(330px,.75fr);
+
+  gap:20px;
+}
+
+.hero-card{
+  min-height:470px;
+  border-radius:24px;
+  overflow:hidden;
+  position:relative;
+  background:#dfe5f1;
+  box-shadow:var(--shadow);
+}
+
+.hero-card img,
+.hero-placeholder{
+  width:100%;
+  height:470px;
+  display:block;
+  object-fit:cover;
+}
+
+.hero-placeholder{
+  display:grid;
+  place-items:center;
+  color:#7f8aa0;
+  background:
+    linear-gradient(
+      135deg,
+      #e9edf5,
+      #dfe5f0
+    );
+
+  font-weight:750;
+}
+
+.hero-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8,15,33,0) 30%,
+      rgba(8,15,33,.88) 100%
     );
 }
 
-.category-btn.active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 12%;
-    right: 12%;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--category-color);
+.hero-content{
+  position:absolute;
+  z-index:2;
+  left:30px;
+  right:30px;
+  bottom:28px;
+  color:#fff;
 }
 
-.category-icon {
-    width: 48px;
-    height: 48px;
-    stroke: currentColor;
-    stroke-width: 1.7;
-    fill: none;
+.badges{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
 }
 
-.category-name {
-    font-size: 13px;
-    font-weight: 800;
-    text-align: center;
+.badge{
+  display:inline-flex;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#eee9ff;
+  color:#5727db;
+  font-size:10px;
+  font-weight:900;
 }
 
-/* =========================================================
-   PAGE
-   ========================================================= */
-
-.page {
-    max-width: 1500px;
-    margin: auto;
-    padding: 34px 28px 60px;
+.hero-content .badge{
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(8px);
 }
 
-.section-heading {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
+.hero-title{
+  margin:10px 0 10px;
+  font-size:clamp(28px,3vw,44px);
+  line-height:1.05;
+  letter-spacing:-1.8px;
+  max-width:900px;
 }
 
-.section-heading::before {
-    content: "";
-    width: 5px;
-    height: 21px;
-    border-radius: 5px;
-    background: var(--purple);
+.hero-summary{
+  margin:0 0 13px;
+  color:#e4e8f0;
+  font-size:13px;
+  line-height:1.5;
+  max-width:850px;
 }
 
-.section-heading h2 {
-    margin: 0;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: .2px;
+.hero-meta{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  color:#d7dce7;
+  font-size:10px;
 }
 
-.story-count {
-    margin-left: auto;
-    color: #8b94a7;
-    font-size: 14px;
+.read-original{
+  margin-left:auto;
+  color:#fff;
+  font-weight:900;
+  font-size:11px;
+
+  border:1px solid rgba(255,255,255,.28);
+  padding:8px 11px;
+  border-radius:999px;
 }
 
-/* =========================================================
-   WATERMARK
-   ========================================================= */
+/* =========================
+   TRENDING PANEL
+========================= */
 
-.news-area {
-    position: relative;
+.live-panel{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
 }
 
-.watermark {
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
+.live-head{
+  padding:18px;
+  border-bottom:1px solid var(--line);
 
-    font-size: clamp(65px, 8vw, 120px);
-    line-height: 1;
-
-    font-weight: 900;
-    letter-spacing: -6px;
-
-    color: rgba(103, 57, 235, .055);
-
-    white-space: nowrap;
-    pointer-events: none;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero {
-    position: relative;
-    z-index: 1;
-
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 30px;
-
-    align-items: center;
-
-    background: transparent;
+.live-head h3{
+  margin:0;
+  font-size:15px;
 }
 
-.hero-image {
-    width: 100%;
-    height: 330px;
-
-    object-fit: cover;
-
-    border-radius: 20px;
-
-    background: #edf1f8;
+.live-head span{
+  font-size:10px;
+  color:var(--red);
+  font-weight:950;
 }
 
-.hero-content {
-    padding-right: 30px;
+.live-list{
+  padding:4px 16px;
 }
 
-.badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 13px;
+.live-item{
+  display:grid;
+  grid-template-columns:8px 1fr;
+  gap:12px;
+  padding:15px 2px;
+  border-bottom:1px solid #edf0f5;
 }
 
-.badge {
-    padding: 5px 11px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 900;
-    background: #eee9ff;
-    color: var(--purple);
+.live-item:last-child{
+  border-bottom:0;
 }
 
-.badge.india {
-    background: #f0e7ff;
-    color: #6518dd;
+.live-bar{
+  width:4px;
+  border-radius:5px;
+  background:var(--red);
+  height:100%;
+  min-height:48px;
 }
 
-.hero-title {
-    margin: 0 0 12px;
-    font-size: clamp(27px, 3vw, 39px);
-    line-height: 1.08;
-    letter-spacing: -1.5px;
+.live-item .tag{
+  font-size:9px;
+  color:var(--purple);
+  font-weight:900;
+  text-transform:uppercase;
 }
 
-.hero-summary {
-    margin: 0 0 18px;
-    color: #59647a;
-    line-height: 1.6;
-    font-size: 15px;
-    max-width: 650px;
+.live-title{
+  margin:4px 0 5px;
+  font-size:13px;
+  line-height:1.35;
+  font-weight:850;
 }
 
-.meta {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 9px;
-
-    color: #566176;
-    font-size: 12px;
+.live-meta{
+  font-size:10px;
+  color:#8a93a6;
 }
 
-.meta strong {
-    color: var(--ink);
+/* =========================
+   QUICK READS
+========================= */
+
+.interest-strip{
+  margin-top:20px;
+  padding:13px 15px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  gap:9px;
+
+  overflow:auto;
+
+  box-shadow:
+    0 5px 20px rgba(18,31,62,.035);
+
+  scrollbar-width:none;
 }
 
-.read-original {
-    margin-left: auto;
-    color: var(--purple);
-    font-weight: 900;
-    font-size: 14px;
+.interest-strip::-webkit-scrollbar{
+  display:none;
 }
 
-/* =========================================================
-   STORY STRIP
-   ========================================================= */
-
-.story-strip {
-    position: relative;
-    z-index: 1;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 16px;
-
-    margin-top: 25px;
+.interest-title{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding-right:8px;
+  min-width:190px;
 }
 
-.mini-story {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    overflow: hidden;
-
-    display: grid;
-    grid-template-columns: 115px 1fr;
-
-    min-height: 118px;
-
-    box-shadow: 0 5px 20px rgba(25,40,80,.04);
+.interest-title>span{
+  font-size:20px;
 }
 
-.mini-image {
-    width: 100%;
-    height: 100%;
-    min-height: 118px;
-    object-fit: cover;
+.interest-title strong{
+  display:block;
+  font-size:12px;
 }
 
-.mini-body {
-    padding: 12px;
+.interest-title small{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  margin-top:2px;
 }
 
-.mini-title {
-    margin: 8px 0 12px;
+.interest-strip button{
+  border:1px solid #e3e6ef;
+  background:#f8f9fc;
+  color:#26314a;
 
-    font-size: 13px;
-    line-height: 1.35;
-    font-weight: 850;
+  border-radius:999px;
+
+  padding:8px 12px;
+
+  white-space:nowrap;
+
+  font-size:10px;
+  font-weight:850;
+
+  transition:.18s;
 }
 
-.mini-meta {
-    font-size: 10px;
-    color: #687287;
+.interest-strip button:hover{
+  background:#f0edff;
+  border-color:#d5ccff;
+  color:#4d24ce;
+  transform:translateY(-1px);
 }
 
-/* =========================================================
-   MORE STORIES
-   ========================================================= */
+/* =========================
+   STORIES
+========================= */
 
-.more-stories {
-    position: relative;
-    z-index: 1;
-    margin-top: 35px;
+.story-section{
+  margin-top:32px;
 }
 
-.story-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 17px;
+.story-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
 }
 
-.story-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    overflow: hidden;
+.story-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
 
-    box-shadow: 0 5px 20px rgba(25,40,80,.045);
+  box-shadow:
+    0 6px 22px rgba(18,31,62,.045);
 
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
+  transition:.2s;
 }
 
-.story-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+.story-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
 }
 
-.card-image {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    display: block;
-
-    background: #edf1f8;
+.card-image,
+.card-placeholder{
+  width:100%;
+  height:180px;
+  display:block;
+  object-fit:cover;
+  background:#e9edf5;
 }
 
-.card-body {
-    padding: 12px;
+.card-placeholder{
+  display:grid;
+  place-items:center;
+  color:#8791a4;
+  font-size:11px;
+  font-weight:750;
 }
 
-.card-title {
-    margin: 8px 0 10px;
-
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 850;
+.card-body{
+  padding:13px;
 }
 
-.card-meta {
-    font-size: 10px;
-    color: #687287;
-    display: flex;
-    gap: 7px;
-    flex-wrap: wrap;
+.card-title{
+  margin:8px 0 10px;
+  font-size:14px;
+  line-height:1.35;
+  font-weight:900;
+  letter-spacing:-.15px;
 }
 
-/* =========================================================
-   EMPTY IMAGE
-   ========================================================= */
-
-.image-fallback {
-    height: 100%;
-    min-height: 100px;
-
-    display: grid;
-    place-items: center;
-
-    color: #8b94a7;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f0f3f9,
-            #e7ebf5
-        );
-
-    font-size: 13px;
-    font-weight: 700;
+.card-meta{
+  font-size:10px;
+  color:#778197;
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
 }
 
-/* =========================================================
-   INFORMATION PANELS
-   ========================================================= */
+/* =========================
+   DEEP DIVE
+========================= */
 
-.feature-panels {
-    margin-top: 32px;
+.deep-dive{
+  margin-top:34px;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:18px;
 }
 
-.feature-panel {
-    min-height: 105px;
-    border-radius: 17px;
+.panel{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:22px;
 
-    padding: 15px;
-
-    display: flex;
-    align-items: center;
-    gap: 13px;
-
-    border: 1px solid rgba(0,0,0,.025);
+  box-shadow:
+    0 6px 22px rgba(18,31,62,.04);
 }
 
-.feature-panel:nth-child(1) {
-    background: #f2edff;
+.panel h3{
+  margin:0 0 6px;
+  font-size:17px;
 }
 
-.feature-panel:nth-child(2) {
-    background: #eef4ff;
+.panel p{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
 }
 
-.feature-panel:nth-child(3) {
-    background: #eefbf1;
+.panel-feature{
+  margin-top:17px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
 }
 
-.feature-panel:nth-child(4) {
-    background: #fff5e9;
+.panel-feature strong{
+  display:block;
+  font-size:14px;
+  line-height:1.35;
 }
 
-.feature-panel:nth-child(5) {
-    background: #fff0f5;
+.panel-feature small{
+  display:block;
+  margin-top:6px;
+  color:#7c869a;
 }
 
-.feature-icon {
-    width: 44px;
-    height: 44px;
-    flex: 0 0 44px;
+/* =========================
+   CITIZEN NEWS
+========================= */
+
+.citizen{
+  margin-top:34px;
+  border-radius:22px;
+  padding:25px 28px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      115deg,
+      #11182b,
+      #3b216f 55%,
+      #6d1cff
+    );
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
 
-.feature-title {
-    font-size: 12px;
-    font-weight: 900;
-    margin-bottom: 5px;
+.citizen h3{
+  margin:0 0 5px;
+  font-size:19px;
 }
 
-.feature-text {
-    font-size: 11px;
-    line-height: 1.4;
-    color: #59647a;
+.citizen p{
+  margin:0;
+  color:#dfe2ef;
+  font-size:12px;
 }
 
-/* =========================================================
-   MOBILE HEADER
-   ========================================================= */
+.citizen button{
+  border:0;
+  background:#fff;
+  color:#31158c;
 
-.mobile-header {
-    display: none;
+  border-radius:999px;
+
+  padding:11px 17px;
+
+  font-weight:900;
+  font-size:12px;
+
+  white-space:nowrap;
 }
 
-/* =========================================================
-   MOBILE BOTTOM NAV
-   ========================================================= */
+/* =========================
+   FOOTER
+========================= */
 
-.mobile-bottom {
-    display: none;
+.footer{
+  max-width:1480px;
+  margin:0 auto;
+  padding:25px 28px 50px;
+
+  color:#8992a5;
+  font-size:10px;
+
+  border-top:1px solid var(--line);
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* =========================
+   MOBILE NAV
+========================= */
 
-@media (max-width: 1200px) {
-
-    .header-inner {
-        grid-template-columns: 240px 1fr;
-    }
-
-    .header-info {
-        display: none;
-    }
-
-    .story-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .feature-panels {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.mobile-bottom{
+  display:none;
 }
 
-@media (max-width: 900px) {
+/* =========================
+   TABLET
+========================= */
 
-    .site-header {
-        display: none;
-    }
+@media(max-width:1150px){
 
-    .category-inner {
-        display: flex;
-        overflow-x: auto;
-        scrollbar-width: none;
-    }
+  .header-inner{
+    grid-template-columns:230px 1fr;
+  }
 
-    .category-inner::-webkit-scrollbar {
-        display: none;
-    }
+  .header-actions{
+    display:none;
+  }
 
-    .category-btn {
-        min-width: 85px;
-        min-height: 88px;
-    }
+  .lead-layout{
+    grid-template-columns:1fr;
+  }
 
-    .category-icon {
-        width: 34px;
-        height: 34px;
-    }
+  .live-panel{
+    display:grid;
+    grid-template-columns:170px 1fr;
+  }
 
-    .category-name {
-        font-size: 10px;
-    }
+  .live-head{
+    border-right:1px solid var(--line);
+    border-bottom:0;
 
-    .page {
-        padding: 25px 15px 100px;
-    }
+    align-items:start;
+    flex-direction:column;
+  }
 
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  .live-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:0 15px;
+  }
 
-    .hero-image {
-        height: 250px;
-    }
-
-    .hero-content {
-        padding-right: 0;
-    }
-
-    .story-strip {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .story-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .feature-panels {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .mobile-header {
-        display: flex;
-
-        height: 72px;
-        background: white;
-
-        align-items: center;
-        justify-content: space-between;
-
-        padding: 10px 18px;
-
-        border-bottom: 1px solid var(--border);
-
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    .mobile-logo {
-        font-size: 25px;
-        font-weight: 900;
-        letter-spacing: -1.5px;
-    }
-
-    .mobile-logo span {
-        color: white;
-        background: linear-gradient(
-            135deg,
-            #ff7417,
-            #e83d9f
-        );
-        padding: 5px 7px;
-        border-radius: 9px 9px 9px 3px;
-        margin-left: 3px;
-    }
-
-    .mobile-actions {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .mobile-actions svg {
-        width: 23px;
-        height: 23px;
-    }
-
-    .mobile-bottom {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-
-        position: fixed;
-
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        height: 72px;
-
-        background: rgba(255,255,255,.97);
-        backdrop-filter: blur(15px);
-
-        border-top: 1px solid var(--border);
-
-        z-index: 2000;
-    }
-
-    .bottom-item {
-        border: 0;
-        background: transparent;
-
-        color: #667085;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        gap: 4px;
-
-        font-size: 9px;
-        font-weight: 700;
-    }
-
-    .bottom-item svg {
-        width: 23px;
-        height: 23px;
-    }
-
-    .bottom-item.active {
-        color: var(--purple);
-    }
-
-    .watermark {
-        font-size: 55px;
-        letter-spacing: -3px;
-        top: 3px;
-    }
+  .story-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
 }
 
-@media (max-width: 600px) {
+/* =========================
+   MOBILE
+========================= */
 
-    .logo-tagline {
-        font-size: 9px;
-        letter-spacing: 2.5px;
-    }
+@media(max-width:800px){
 
-    .hero-title {
-        font-size: 27px;
-    }
+  .site-header{
+    position:relative;
+  }
 
-    .hero-summary {
-        font-size: 13px;
-    }
+  .header-inner{
+    display:flex;
+    min-height:68px;
+    padding:10px 15px;
+  }
 
-    .story-strip {
-        display: flex;
-        overflow-x: auto;
-        scrollbar-width: none;
-    }
+  .logo{
+    font-size:27px;
+    letter-spacing:-2px;
+  }
 
-    .story-strip::-webkit-scrollbar {
-        display: none;
-    }
+  .logo-number{
+    font-size:22px;
+    padding:5px 8px;
+    margin-left:5px;
+    border-radius:9px 9px 9px 3px;
+  }
 
-    .mini-story {
-        min-width: 290px;
-    }
+  .logo-tagline{
+    font-size:7px;
+    letter-spacing:2px;
+  }
 
-    .story-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+  .search{
+    margin-left:auto;
+    width:44px;
+    padding:0 12px;
+  }
 
-    .card-image {
-        height: 105px;
-    }
+  .search input{
+    display:none;
+  }
 
-    .card-body {
-        padding: 10px;
-    }
+  .search svg{
+    margin:0;
+  }
 
-    .card-title {
-        font-size: 12px;
-    }
+  .ticker-inner{
+    padding:0 15px;
+  }
 
-    .feature-panels {
-        grid-template-columns: 1fr;
-    }
+  .category-inner{
+    padding:0 10px;
+  }
 
-    .read-original {
-        width: 100%;
-        margin-top: 10px;
-    }
+  .category-btn{
+    min-height:50px;
+    padding:11px 10px;
+    font-size:10px;
+  }
 
-    .story-count {
-        font-size: 11px;
-    }
+  .category-btn svg{
+    width:18px;
+    height:18px;
+  }
+
+  .page{
+    padding:20px 14px 90px;
+  }
+
+  .hero-card,
+  .hero-card img,
+  .hero-placeholder{
+    min-height:390px;
+    height:390px;
+  }
+
+  .hero-content{
+    left:20px;
+    right:20px;
+    bottom:20px;
+  }
+
+  .hero-title{
+    font-size:29px;
+  }
+
+  .hero-summary{
+    font-size:12px;
+  }
+
+  .read-original{
+    margin-left:0;
+    margin-top:6px;
+  }
+
+  .live-panel{
+    display:block;
+  }
+
+  .live-head{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .live-list{
+    display:block;
+  }
+
+  .story-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:11px;
+  }
+
+  .card-image,
+  .card-placeholder{
+    height:135px;
+  }
+
+  .card-body{
+    padding:10px;
+  }
+
+  .card-title{
+    font-size:12px;
+  }
+
+  .deep-dive{
+    grid-template-columns:1fr;
+  }
+
+  .citizen{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .mobile-bottom{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    position:fixed;
+    z-index:2000;
+
+    bottom:0;
+    left:0;
+    right:0;
+
+    height:62px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(16px);
+
+    border-top:1px solid var(--line);
+  }
+
+  .mobile-bottom button{
+    border:0;
+    background:transparent;
+
+    color:#69748b;
+
+    font-size:9px;
+    font-weight:850;
+  }
+
+  .mobile-bottom button.active{
+    color:var(--purple);
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- =======================================================
-     SVG ICON DEFINITIONS
-     ======================================================= -->
+<!-- =========================
+     SVG ICONS
+========================= -->
 
 <svg style="display:none">
 
 <symbol id="icon-world" viewBox="0 0 48 48">
-    <circle cx="24" cy="24" r="19"/>
-    <path d="M5 24h38"/>
-    <path d="M24 5c6 6 8 12 8 19s-2 13-8 19"/>
-    <path d="M24 5c-6 6-8 12-8 19s2 13 8 19"/>
-    <path d="M9 14c9 4 21 4 30 0"/>
-    <path d="M9 34c9-4 21-4 30 0"/>
+  <circle cx="24" cy="24" r="19"/>
+  <path d="M5 24h38"/>
+  <path d="M24 5c6 6 8 12 8 19s-2 13-8 19"/>
+  <path d="M24 5c-6 6-8 12-8 19s2 13 8 19"/>
+  <path d="M9 14c9 4 21 4 30 0"/>
+  <path d="M9 34c9-4 21-4 30 0"/>
 </symbol>
 
 <symbol id="icon-india" viewBox="0 0 48 48">
-    <path d="M8 40h32"/>
-    <path d="M12 40V21h24v19"/>
-    <path d="M9 21h30"/>
-    <path d="M14 21l10-12 10 12"/>
-    <path d="M20 15h8"/>
-    <path d="M17 27h3"/>
-    <path d="M24 27h3"/>
-    <path d="M31 27h-3"/>
+  <path d="M8 40h32"/>
+  <path d="M12 40V21h24v19"/>
+  <path d="M9 21h30"/>
+  <path d="M14 21l10-12 10 12"/>
+  <path d="M20 15h8"/>
+  <path d="M17 27h3"/>
+  <path d="M24 27h3"/>
+  <path d="M31 27h-3"/>
 </symbol>
 
 <symbol id="icon-business" viewBox="0 0 48 48">
-    <path d="M7 40h34"/>
-    <path d="M10 35V25h7v10"/>
-    <path d="M21 35V19h7v16"/>
-    <path d="M32 35V11h7v24"/>
-    <path d="M8 17l9-6 8 3 12-9"/>
-    <path d="M32 5h5v5"/>
+  <path d="M7 40h34"/>
+  <path d="M10 35V25h7v10"/>
+  <path d="M21 35V19h7v16"/>
+  <path d="M32 35V11h7v24"/>
+  <path d="M8 17l9-6 8 3 12-9"/>
+  <path d="M32 5h5v5"/>
 </symbol>
 
 <symbol id="icon-tech" viewBox="0 0 48 48">
-    <circle cx="24" cy="24" r="18"/>
-    <circle cx="24" cy="24" r="3"/>
-    <path d="M24 6v7M24 35v7M6 24h7M35 24h7"/>
-    <path d="M13 13l5 5M30 30l5 5M35 13l-5 5M18 30l-5 5"/>
-    <path d="M18 24h12M24 18v12"/>
+  <circle cx="24" cy="24" r="18"/>
+  <circle cx="24" cy="24" r="3"/>
+  <path d="M24 6v7"/>
+  <path d="M24 35v7"/>
+  <path d="M6 24h7"/>
+  <path d="M35 24h7"/>
+  <path d="M13 13l5 5"/>
+  <path d="M30 30l5 5"/>
+  <path d="M35 13l-5 5"/>
+  <path d="M18 30l-5 5"/>
+  <path d="M18 24h12"/>
+  <path d="M24 18v12"/>
 </symbol>
 
 <symbol id="icon-sports" viewBox="0 0 48 48">
-    <path d="M7 35c10 3 19-2 23-11 3-6 7-12 13-11"/>
-    <path d="M15 41c-2-5 0-10 5-13"/>
-    <path d="M30 9l4 5 7-2"/>
-    <circle cx="36" cy="9" r="3"/>
+  <path d="M7 35c10 3 19-2 23-11 3-6 7-12 13-11"/>
+  <path d="M15 41c-2-5 0-10 5-13"/>
+  <path d="M30 9l4 5 7-2"/>
+  <circle cx="36" cy="9" r="3"/>
 </symbol>
 
 <symbol id="icon-ent" viewBox="0 0 48 48">
-    <path d="M7 13h34v25H7z"/>
-    <path d="M12 13l3-7h7l-3 7"/>
-    <path d="M25 13l3-7h7l-3 7"/>
-    <path d="M21 20l10 6-10 6z"/>
+  <path d="M7 13h34v25H7z"/>
+  <path d="M12 13l3-7h7l-3 7"/>
+  <path d="M25 13l3-7h7l-3 7"/>
+  <path d="M21 20l10 6-10 6z"/>
 </symbol>
 
 <symbol id="icon-life" viewBox="0 0 48 48">
-    <path d="M24 41V24"/>
-    <path d="M24 24c-9-1-14-7-14-15 8 0 14 5 14 15"/>
-    <path d="M24 25c9-1 14-7 14-15-8 0-14 5-14 15"/>
-    <path d="M24 34c-7 0-11-4-11-10 6 0 11 3 11 10"/>
+  <path d="M24 41V24"/>
+  <path d="M24 24c-9-1-14-7-14-15 8 0 14 5 14 15"/>
+  <path d="M24 25c9-1 14-7 14-15-8 0-14 5-14 15"/>
+  <path d="M24 34c-7 0-11-4-11-10 6 0 11 3 11 10"/>
 </symbol>
 
 <symbol id="icon-environment" viewBox="0 0 48 48">
-    <circle cx="24" cy="24" r="19"/>
-    <path d="M24 5v38"/>
-    <path d="M5 24h38"/>
-    <path d="M13 12c5 4 9 6 15 6 5 0 9-2 13-5"/>
-    <path d="M8 31c7-4 13-4 19 0 5 3 9 3 13 1"/>
-    <path d="M24 17c-3 4-3 10 0 15"/>
+  <circle cx="24" cy="24" r="19"/>
+  <path d="M24 5v38"/>
+  <path d="M5 24h38"/>
+  <path d="M13 12c5 4 9 6 15 6 5 0 9-2 13-5"/>
+  <path d="M8 31c7-4 13-4 19 0 5 3 9 3 13 1"/>
 </symbol>
 
 <symbol id="icon-culture" viewBox="0 0 48 48">
-    <path d="M7 39h34"/>
-    <path d="M12 39V19h24v20"/>
-    <path d="M9 19h30"/>
-    <path d="M14 19l10-11 10 11"/>
-    <path d="M19 27h10"/>
-    <path d="M19 32h10"/>
+  <path d="M7 39h34"/>
+  <path d="M12 39V19h24v20"/>
+  <path d="M9 19h30"/>
+  <path d="M14 19l10-11 10 11"/>
+  <path d="M19 27h10"/>
+  <path d="M19 32h10"/>
 </symbol>
 
 <symbol id="icon-search" viewBox="0 0 24 24">
-    <circle cx="10.5" cy="10.5" r="6.5"/>
-    <path d="M16 16l5 5"/>
-</symbol>
-
-<symbol id="icon-clock" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="9"/>
-    <path d="M12 7v5l3 2"/>
-</symbol>
-
-<symbol id="icon-user" viewBox="0 0 24 24">
-    <circle cx="12" cy="8" r="4"/>
-    <path d="M4 21c1-5 4-7 8-7s7 2 8 7"/>
-</symbol>
-
-<symbol id="icon-home" viewBox="0 0 24 24">
-    <path d="M3 11l9-8 9 8"/>
-    <path d="M5 10v10h14V10"/>
-</symbol>
-
-<symbol id="icon-bookmark" viewBox="0 0 24 24">
-    <path d="M6 4h12v17l-6-4-6 4z"/>
-</symbol>
-
-<symbol id="icon-trending" viewBox="0 0 24 24">
-    <path d="M4 17l6-6 4 4 6-8"/>
-    <path d="M15 7h5v5"/>
-</symbol>
-
-<symbol id="icon-heart" viewBox="0 0 24 24">
-    <path d="M20 8c0 6-8 11-8 11S4 14 4 8c0-3 2-5 5-5 2 0 3 1 3 3 0-2 1-3 3-3 3 0 5 2 5 5z"/>
+  <circle cx="10.5" cy="10.5" r="6.5"/>
+  <path d="M16 16l5 5"/>
 </symbol>
 
 </svg>
 
-<!-- =======================================================
-     MOBILE HEADER
-     ======================================================= -->
 
-<header class="mobile-header">
-
-    <div class="mobile-actions">
-        <svg><use href="#icon-home"></use></svg>
-    </div>
-
-    <div class="mobile-logo">
-        snippet <span>24</span>
-    </div>
-
-    <div class="mobile-actions">
-        <svg><use href="#icon-search"></use></svg>
-        <svg><use href="#icon-user"></use></svg>
-    </div>
-
-</header>
-
-<!-- =======================================================
-     DESKTOP HEADER
-     ======================================================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header class="site-header">
 
-    <div class="header-inner">
+<div class="header-inner">
 
-        <div class="logo-wrap">
+<div>
 
-            <div class="logo">
-                <span class="logo-text">snippet</span>
-                <span class="logo-number">24</span>
-            </div>
+<div class="logo">
+  <span>snippet</span>
+  <span class="logo-number">24</span>
+</div>
 
-            <div class="logo-tagline">
-                FAST NEWS. <span>REAL IMPACT.</span>
-            </div>
+<div class="logo-tagline">
+  FAST NEWS. <span>REAL IMPACT.</span>
+</div>
 
-        </div>
+</div>
 
-        <div class="search-box">
 
-            <svg>
-                <use href="#icon-search"></use>
-            </svg>
+<label class="search">
 
-            <input
-                id="searchInput"
-                type="search"
-                placeholder="Search stories, topics, people..."
-            >
+<svg>
+  <use href="#icon-search"></use>
+</svg>
 
-        </div>
+<input
+  id="searchInput"
+  type="search"
+  placeholder="Search stories, topics, people..."
+>
 
-        <div class="header-info">
+</label>
 
-            <div class="info-item">
 
-                <div style="font-size:28px;">☀️</div>
+<div class="header-actions">
 
-                <div>
-                    <div class="info-main">28°C</div>
-                    <div class="info-small">Chennai, India</div>
-                </div>
+<div class="status">
+  <i class="live-dot"></i>
+  LIVE NEWS
+</div>
 
-            </div>
+<div class="weather">
+  <strong>☀️ 28°C</strong>
+  Chennai, India
+</div>
 
-            <div class="info-item">
+<div id="currentTime" class="weather">
+  <strong>--:--</strong>
+  <span id="currentDate">--</span>
+</div>
 
-                <svg class="info-icon">
-                    <use href="#icon-clock"></use>
-                </svg>
+<div class="profile">
+  S24
+</div>
 
-                <div>
-                    <div class="info-main" id="currentTime">--:--</div>
-                    <div class="info-small" id="currentDate">--</div>
-                </div>
+</div>
 
-            </div>
-
-            <div class="profile">
-                <svg>
-                    <use href="#icon-user"></use>
-                </svg>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </header>
 
-<!-- =======================================================
-     CATEGORY NAVIGATION
-     ======================================================= -->
+
+<!-- =========================
+     LIVE WIRE
+========================= -->
+
+<div class="ticker">
+
+<div class="ticker-inner">
+
+<div class="ticker-label">
+  ⚡ LIVE WIRE
+</div>
+
+<div
+  class="ticker-track"
+  id="tickerTrack"
+>
+  <span>Loading the latest headlines...</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
 
 <nav class="category-bar">
 
-    <div class="category-inner" id="categoryNav"></div>
+<div
+  class="category-inner"
+  id="categoryNav"
+></div>
 
 </nav>
 
-<!-- =======================================================
+
+<!-- =========================
      MAIN
-     ======================================================= -->
+========================= -->
 
 <main class="page">
 
-    <div class="news-area">
 
-        <div class="watermark" id="watermark">
-            LATEST NEWS
-        </div>
+<div class="section-head">
 
-        <div class="section-heading">
+<div>
 
-            <h2>Latest Stories</h2>
+<h2 id="sectionTitle">
+  What Everyone Is Reading
+</h2>
 
-            <div class="story-count" id="storyCount">
-                Loading stories...
-            </div>
+<p>
+  Fast updates, useful context and stories worth your time.
+</p>
 
-        </div>
+</div>
 
-        <!-- HERO -->
-        <section id="hero"></section>
+<div
+  class="count"
+  id="storyCount"
+>
+  Loading stories...
+</div>
 
-        <!-- MINI STORIES -->
-        <section id="miniStories" class="story-strip"></section>
+</div>
 
-        <!-- MORE STORIES -->
-        <section class="more-stories">
 
-            <div class="section-heading">
-                <h2>More Top Stories</h2>
-            </div>
+<!-- HERO + TRENDING -->
 
-            <div
-                id="storyGrid"
-                class="story-grid">
-            </div>
+<section class="lead-layout">
 
-        </section>
+<div id="hero"></div>
 
-        <!-- INFORMATION PANELS -->
 
-        <section class="feature-panels">
+<aside class="live-panel">
 
-            <div class="feature-panel">
+<div class="live-head">
 
-                <svg
-                    class="feature-icon"
-                    style="color:#6415e8;">
-                    <use href="#icon-india"></use>
-                </svg>
+<h3>
+  Trending Now
+</h3>
 
-                <div>
-                    <div
-                        class="feature-title"
-                        style="color:#6415e8;">
-                        INDIA FIRST
-                    </div>
+<span>
+  ● LIVE
+</span>
 
-                    <div class="feature-text">
-                        Indian news and updates get priority in all
-                        categories except World.
-                    </div>
-                </div>
+</div>
 
-            </div>
+<div
+  class="live-list"
+  id="liveList"
+></div>
 
-            <div class="feature-panel">
+</aside>
 
-                <svg
-                    class="feature-icon"
-                    style="color:#1649ff;">
-                    <use href="#icon-world"></use>
-                </svg>
+</section>
 
-                <div>
-                    <div
-                        class="feature-title"
-                        style="color:#1649ff;">
-                        WORLD FOCUS
-                    </div>
 
-                    <div class="feature-text">
-                        World category focuses on important
-                        international developments.
-                    </div>
-                </div>
+<!-- QUICK READS -->
 
-            </div>
+<section class="interest-strip">
 
-            <div class="feature-panel">
+<div class="interest-title">
 
-                <div
-                    class="feature-icon"
-                    style="
-                        font-size:38px;
-                        color:#149447;
-                        display:grid;
-                        place-items:center;
-                    ">
-                    ∞
-                </div>
+<span>🔥</span>
 
-                <div>
-                    <div
-                        class="feature-title"
-                        style="color:#149447;">
-                        UNLIMITED STORIES
-                    </div>
+<div>
 
-                    <div class="feature-text">
-                        No artificial story-count limit.
-                        Relevant fresh stories are collected.
-                    </div>
-                </div>
+<strong>
+  Quick Reads
+</strong>
 
-            </div>
+<small>
+  What people are curious about today
+</small>
 
-            <div class="feature-panel">
+</div>
 
-                <div
-                    class="feature-icon"
-                    style="
-                        font-size:34px;
-                        color:#ff7417;
-                        display:grid;
-                        place-items:center;
-                    ">
-                    ▧
-                </div>
+</div>
 
-                <div>
-                    <div
-                        class="feature-title"
-                        style="color:#ff7417;">
-                        AI IMAGES
-                    </div>
 
-                    <div class="feature-text">
-                        Locally generated images can be used
-                        for stories.
-                    </div>
-                </div>
+<button onclick="quickCategory('EXPLAINED')">
+  🧠 Explain this
+</button>
 
-            </div>
+<button onclick="quickCategory('FACT CHECK')">
+  🔎 Check the facts
+</button>
 
-            <div class="feature-panel">
+<button onclick="quickCategory('MONEY')">
+  💰 Money matters
+</button>
 
-                <div
-                    class="feature-icon"
-                    style="
-                        font-size:35px;
-                        color:#ed174f;
-                        display:grid;
-                        place-items:center;
-                    ">
-                    ♢
-                </div>
+<button onclick="quickCategory('TECH & AI')">
+  🤖 AI &amp; Tech
+</button>
 
-                <div>
-                    <div
-                        class="feature-title"
-                        style="color:#ed174f;">
-                        TRUST & CREDIBILITY
-                    </div>
+<button onclick="quickCategory('GOOD NEWS')">
+  ✨ Good news
+</button>
 
-                    <div class="feature-text">
-                        Original source always credited.
-                        Transparent news presentation.
-                    </div>
-                </div>
+</section>
 
-            </div>
 
-        </section>
+<!-- STORIES -->
 
-    </div>
+<section class="story-section">
+
+<div class="section-head">
+
+<div>
+
+<h2>
+  🔥 More Stories
+</h2>
+
+<p>
+  Fresh stories selected for you
+</p>
+
+</div>
+
+</div>
+
+
+<div
+  id="storyGrid"
+  class="story-grid"
+></div>
+
+</section>
+
+
+<!-- DEEP DIVE -->
+
+<section class="deep-dive">
+
+
+<div class="panel">
+
+<h3>
+  🧠 Explained &amp; Deep Dive
+</h3>
+
+<p>
+  Go beyond the headline with concise context,
+  key facts and original explanations.
+</p>
+
+<div id="deepDiveList"></div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+  ✨ Good News &amp; Ideas
+</h3>
+
+<p>
+  Stories that are useful, inspiring and worth sharing.
+</p>
+
+
+<div class="panel-feature">
+
+<strong>
+  ✨ Good news worth sharing
+</strong>
+
+<small>
+  Positive stories, inspiring people and useful developments.
+</small>
+
+</div>
+
+
+<div class="panel-feature">
+
+<strong>
+  📊 Data that matters
+</strong>
+
+<small>
+  Numbers and facts that make important stories easier to understand.
+</small>
+
+</div>
+
+
+<div class="panel-feature">
+
+<strong>
+  🌱 Planet &amp; Life
+</strong>
+
+<small>
+  Stories about health, lifestyle, environment and everyday life.
+</small>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CITIZEN NEWS -->
+
+<section class="citizen">
+
+<div>
+
+<h3>
+  📍 Your City. Your Story.
+</h3>
+
+<p>
+  Have a local story, community update or important alert?
+  Share it with Snippet24.
+</p>
+
+</div>
+
+
+<button
+  type="button"
+  onclick="alert('Publish / Submit can be connected to your news submission form.')"
+>
+  Publish / Submit ↗
+</button>
+
+</section>
+
 
 </main>
 
-<!-- =======================================================
-     MOBILE BOTTOM NAVIGATION
-     ======================================================= -->
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+Snippet24 — Fast News. Real Impact.
+
+&nbsp; • &nbsp;
+
+Original sources credited
+
+&nbsp; • &nbsp;
+
+Built for fast, readable news discovery.
+
+</footer>
+
+
+<!-- MOBILE NAV -->
 
 <nav class="mobile-bottom">
 
-    <button class="bottom-item active">
+<button class="active">
+  ⌂<br>
+  Home
+</button>
 
-        <svg>
-            <use href="#icon-home"></use>
-        </svg>
+<button>
+  ⌕<br>
+  Search
+</button>
 
-        Home
+<button>
+  ↗<br>
+  Trending
+</button>
 
-    </button>
-
-    <button class="bottom-item">
-
-        <svg>
-            <use href="#icon-bookmark"></use>
-        </svg>
-
-        Bookmarks
-
-    </button>
-
-    <button class="bottom-item">
-
-        <svg>
-            <use href="#icon-trending"></use>
-        </svg>
-
-        Trending
-
-    </button>
-
-    <button class="bottom-item">
-
-        <svg>
-            <use href="#icon-heart"></use>
-        </svg>
-
-        My Feed
-
-    </button>
-
-    <button class="bottom-item">
-
-        <svg>
-            <use href="#icon-user"></use>
-        </svg>
-
-        Profile
-
-    </button>
+<button>
+  ☻<br>
+  Profile
+</button>
 
 </nav>
+
 
 <script>
 
 /* =========================================================
-   SNIPPET24 DATA
-   ========================================================= */
+   SNIPPET24 CATEGORIES
+========================================================= */
 
 const CATEGORIES = [
-    {
-        name: "World",
-        color: "#1649ff",
-        icon: "icon-world"
-    },
-    {
-        name: "India",
-        color: "#ff7417",
-        icon: "icon-india"
-    },
-    {
-        name: "Business",
-        color: "#149447",
-        icon: "icon-business"
-    },
-    {
-        name: "Technology & AI",
-        color: "#6415e8",
-        icon: "icon-tech"
-    },
-    {
-        name: "Sports",
-        color: "#00a8c7",
-        icon: "icon-sports"
-    },
-    {
-        name: "Entertainment",
-        color: "#ed174f",
-        icon: "icon-ent"
-    },
-    {
-        name: "Lifestyle",
-        color: "#f5a900",
-        icon: "icon-life"
-    },
-    {
-        name: "Environment",
-        color: "#07894e",
-        icon: "icon-environment"
-    },
-    {
-        name: "Sports & Culture",
-        color: "#263dff",
-        icon: "icon-culture"
-    }
-];
 
-let allArticles = [];
-let activeCategory = "ALL";
+{
+  name:"ALL",
+  icon:"icon-world",
+  color:"#5b2cff"
+},
 
-/* =========================================================
-   CATEGORY NAV
-   ========================================================= */
+{
+  name:"NOW",
+  icon:"icon-tech",
+  color:"#ef3155"
+},
 
-function renderCategories() {
+{
+  name:"INDIA",
+  icon:"icon-india",
+  color:"#ff7417"
+},
 
-    const nav = document.getElementById("categoryNav");
+{
+  name:"LOCAL",
+  icon:"icon-culture",
+  color:"#1649ff"
+},
 
-    nav.innerHTML = "";
+{
+  name:"MONEY",
+  icon:"icon-business",
+  color:"#149447"
+},
 
-    CATEGORIES.forEach(category => {
+{
+  name:"JOBS",
+  icon:"icon-business",
+  color:"#7b3ff2"
+},
 
-        const button = document.createElement("button");
+{
+  name:"TECH & AI",
+  icon:"icon-tech",
+  color:"#5b2cff"
+},
 
-        button.className = "category-btn";
+{
+  name:"EXPLAINED",
+  icon:"icon-world",
+  color:"#0b7db8"
+},
 
-        button.style.setProperty(
-            "--category-color",
-            category.color
-        );
+{
+  name:"FACT CHECK",
+  icon:"icon-search",
+  color:"#d72858"
+},
 
-        button.innerHTML = `
-            <svg class="category-icon">
-                <use href="#${category.icon}"></use>
-            </svg>
+{
+  name:"SPORTS",
+  icon:"icon-sports",
+  color:"#009e83"
+},
 
-            <span class="category-name">
-                ${category.name}
-            </span>
-        `;
+{
+  name:"ENTERTAINMENT",
+  icon:"icon-ent",
+  color:"#f01955"
+},
 
-        button.addEventListener("click", () => {
+{
+  name:"LIFE",
+  icon:"icon-life",
+  color:"#e49b00"
+},
 
-            document
-                .querySelectorAll(".category-btn")
-                .forEach(btn =>
-                    btn.classList.remove("active")
-                );
+{
+  name:"PLANET",
+  icon:"icon-environment",
+  color:"#149447"
+},
 
-            button.classList.add("active");
+{
+  name:"DATA",
+  icon:"icon-business",
+  color:"#2463d4"
+},
 
-            activeCategory = category.name;
-
-            document.getElementById("watermark")
-                .textContent = category.name.toUpperCase();
-
-            renderStories();
-
-        });
-
-        nav.appendChild(button);
-
-    });
-
-    if (nav.firstElementChild) {
-        nav.firstElementChild.classList.add("active");
-    }
+{
+  name:"GOOD NEWS",
+  icon:"icon-life",
+  color:"#10a56f"
 }
 
+];
+
+
+let allArticles = [];
+
+let activeCategory = "ALL";
+
+
 /* =========================================================
-   LOAD JSON
-   ========================================================= */
+   SECURITY / HELPERS
+========================================================= */
 
-async function loadArticles() {
+function escapeHTML(value){
 
-    try {
+  return String(value ?? "")
 
-        const response = await fetch(
-            "articles.json",
-            {
-                cache: "no-store"
-            }
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+
+}
+
+
+function safeURL(url){
+
+  if(!url){
+    return "#";
+  }
+
+  try{
+
+    const u =
+      new URL(
+        url,
+        window.location.href
+      );
+
+    return [
+      "http:",
+      "https:"
+    ].includes(u.protocol)
+      ? u.href
+      : "#";
+
+  }catch(e){
+
+    return "#";
+
+  }
+
+}
+
+
+function formatTime(value){
+
+  if(!value){
+    return "";
+  }
+
+  const d = new Date(value);
+
+  if(
+    Number.isNaN(
+      d.getTime()
+    )
+  ){
+    return "";
+  }
+
+  return d.toLocaleTimeString(
+    "en-IN",
+    {
+      hour:"numeric",
+      minute:"2-digit",
+      hour12:true
+    }
+  );
+
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+function getImage(article){
+
+  return (
+    article.image_url?.trim() ||
+    article.local_image?.trim() ||
+    article.image?.trim() ||
+    ""
+  );
+
+}
+
+
+function imageBlock(
+  article,
+  cls
+){
+
+  const src =
+    getImage(article);
+
+  if(src){
+
+    return `
+
+      <img
+        class="${cls}"
+        src="${escapeHTML(src)}"
+        alt=""
+        loading="lazy"
+
+        onerror="
+          this.outerHTML=
+          '<div class=&quot;${cls} card-placeholder&quot;>
+          Image unavailable
+          </div>'
+        "
+      >
+
+    `;
+
+  }
+
+  return `
+
+    <div
+      class="${cls} card-placeholder"
+    >
+      Image unavailable
+    </div>
+
+  `;
+
+}
+
+
+/* =========================================================
+   CATEGORY NAVIGATION
+========================================================= */
+
+function renderCategories(){
+
+  const nav =
+    document.getElementById(
+      "categoryNav"
+    );
+
+  nav.innerHTML = "";
+
+
+  CATEGORIES.forEach(
+    (category,index)=>{
+
+      const button =
+        document.createElement(
+          "button"
         );
 
-        if (!response.ok) {
-            throw new Error(
-                "Could not load articles.json"
-            );
-        }
+      button.className =
+        "category-btn";
 
-        const data = await response.json();
+      button.style.setProperty(
+        "--category-color",
+        category.color
+      );
 
-        allArticles =
-            Array.isArray(data.articles)
-                ? data.articles
-                : [];
+
+      button.innerHTML = `
+
+        <svg>
+          <use href="#${category.icon}">
+          </use>
+        </svg>
+
+        <span>
+          ${escapeHTML(category.name)}
+        </span>
+
+      `;
+
+
+      button.onclick = ()=>{
+
+        document
+          .querySelectorAll(
+            ".category-btn"
+          )
+          .forEach(
+            x =>
+              x.classList.remove(
+                "active"
+              )
+          );
+
+
+        button.classList.add(
+          "active"
+        );
+
+
+        activeCategory =
+          category.name;
+
 
         renderStories();
 
-    } catch (error) {
+      };
 
-        console.error(error);
 
-        document.getElementById("hero").innerHTML = `
-            <div class="story-card"
-                 style="padding:30px;">
-                Unable to load news database.
-            </div>
-        `;
+      nav.appendChild(
+        button
+      );
 
-        document.getElementById("storyCount")
-            .textContent = "News unavailable";
 
-    }
+      if(index === 0){
 
-}
-
-/* =========================================================
-   FILTER
-   ========================================================= */
-
-function getFilteredArticles() {
-
-    let articles = [...allArticles];
-
-    if (activeCategory !== "ALL") {
-
-        articles = articles.filter(article =>
-            String(article.category || "")
-                .toLowerCase()
-                === activeCategory.toLowerCase()
+        button.classList.add(
+          "active"
         );
 
-    }
+      }
 
-    return articles;
+    }
+  );
 
 }
+
 
 /* =========================================================
-   IMAGE HANDLING
-   ========================================================= */
+   FILTER ARTICLES
+========================================================= */
 
-function getImage(article) {
+function getFilteredArticles(){
 
-    if (
-        article.image_url &&
-        String(article.image_url).trim()
-    ) {
-        return article.image_url;
-    }
+  const items =
+    [...allArticles];
 
-    if (
-        article.local_image &&
-        String(article.local_image).trim()
-    ) {
-        return article.local_image;
-    }
 
-    if (
-        article.image &&
-        String(article.image).trim()
-    ) {
-        return article.image;
-    }
+  if(
+    activeCategory === "ALL"
+  ){
 
-    return "";
+    return items;
 
-}
+  }
 
-function imageHTML(article, className) {
 
-    const src = getImage(article);
-
-    if (!src) {
-
-        return `
-            <div class="${className} image-fallback">
-                Image unavailable
-            </div>
-        `;
-
-    }
-
-    return `
-        <img
-            class="${className}"
-            src="${escapeHTML(src)}"
-            alt=""
-            loading="lazy"
-            onerror="
-                this.outerHTML =
-                '<div class=&quot;${className} image-fallback&quot;>Image unavailable</div>'
-            "
-        >
-    `;
+  return items.filter(
+    article =>
+      String(
+        article.category || ""
+      ).toLowerCase()
+      ===
+      activeCategory.toLowerCase()
+  );
 
 }
+
 
 /* =========================================================
    HERO
-   ========================================================= */
+========================================================= */
 
-function renderHero(articles) {
+function renderHero(
+  articles
+){
 
-    const hero = document.getElementById("hero");
+  const hero =
+    document.getElementById(
+      "hero"
+    );
 
-    if (!articles.length) {
 
-        hero.innerHTML = `
-            <div class="story-card"
-                 style="padding:30px;">
-                No stories available for this category.
-            </div>
-        `;
-
-        return;
-
-    }
-
-    const article = articles[0];
+  if(!articles.length){
 
     hero.innerHTML = `
 
-        <section class="hero">
+      <div class="hero-card">
 
-            ${imageHTML(article, "hero-image")}
+        <div class="hero-placeholder">
 
-            <div class="hero-content">
+          No stories available
+          for this category.
 
-                <div class="badges">
+        </div>
 
-                    <span class="badge india">
-                        ${escapeHTML(article.category || "News")}
-                    </span>
+      </div>
 
-                    ${
-                        article.source_type
-                        ? `
-                        <span class="badge">
-                            Official
-                        </span>
-                        `
-                        : ""
-                    }
+    `;
 
-                </div>
+    return;
 
-                <h1 class="hero-title">
-                    ${escapeHTML(
-                        article.headline ||
-                        "Latest news"
-                    )}
-                </h1>
+  }
 
-                <p class="hero-summary">
-                    ${escapeHTML(
-                        article.summary ||
-                        ""
-                    )}
-                </p>
 
-                <div class="meta">
+  const article =
+    articles[0];
 
-                    <span>
-                        ◷
-                        ${formatTime(article.published_at)}
-                    </span>
 
-                    <span>•</span>
+  hero.innerHTML = `
 
-                    <strong>
-                        ${escapeHTML(
-                            article.location || "India"
-                        )}
-                    </strong>
+    <article
+      class="hero-card"
+    >
 
-                    <span>•</span>
+      ${imageBlock(
+        article,
+        "hero-card-image"
+      )}
 
-                    <strong>
-                        ${escapeHTML(
-                            article.publisher || ""
-                        )}
-                    </strong>
 
-                    <a
-                        class="read-original"
-                        href="${safeURL(article.source_url)}"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Read Original →
-                    </a>
+      <div
+        class="hero-content"
+      >
 
-                </div>
+        <div class="badges">
+
+          <span class="badge">
+
+            ${escapeHTML(
+              article.category ||
+              "News"
+            )}
+
+          </span>
+
+        </div>
+
+
+        <h1
+          class="hero-title"
+        >
+
+          ${escapeHTML(
+            article.headline ||
+            "Latest news"
+          )}
+
+        </h1>
+
+
+        <p
+          class="hero-summary"
+        >
+
+          ${escapeHTML(
+            article.summary ||
+            ""
+          )}
+
+        </p>
+
+
+        <div
+          class="hero-meta"
+        >
+
+          <span>
+            ◷
+            ${formatTime(
+              article.published_at
+            )}
+          </span>
+
+          <span>•</span>
+
+          <strong>
+            ${escapeHTML(
+              article.location ||
+              "India"
+            )}
+          </strong>
+
+          <span>•</span>
+
+          <strong>
+            ${escapeHTML(
+              article.publisher ||
+              ""
+            )}
+          </strong>
+
+
+          <a
+            class="read-original"
+            href="${safeURL(
+              article.source_url
+            )}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Original →
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  `;
+
+}
+
+
+/* =========================================================
+   TRENDING
+========================================================= */
+
+function renderLive(
+  articles
+){
+
+  const list =
+    document.getElementById(
+      "liveList"
+    );
+
+  list.innerHTML = "";
+
+
+  articles
+    .slice(1,6)
+    .forEach(
+      article => {
+
+        const item =
+          document.createElement(
+            "article"
+          );
+
+        item.className =
+          "live-item";
+
+
+        item.innerHTML = `
+
+          <div
+            class="live-bar"
+          ></div>
+
+
+          <div>
+
+            <div class="tag">
+
+              ${escapeHTML(
+                article.category ||
+                "News"
+              )}
 
             </div>
 
-        </section>
-    `;
-}
 
-/* =========================================================
-   MINI STORIES
-   ========================================================= */
+            <div
+              class="live-title"
+            >
 
-function renderMiniStories(articles) {
+              ${escapeHTML(
+                article.headline ||
+                ""
+              )}
 
-    const container =
-        document.getElementById("miniStories");
+            </div>
 
-    container.innerHTML = "";
 
-    articles
-        .slice(1, 5)
-        .forEach(article => {
+            <div
+              class="live-meta"
+            >
 
-            const item =
-                document.createElement("article");
+              ◷
+              ${formatTime(
+                article.published_at
+              )}
 
-            item.className = "mini-story";
+              &nbsp; • &nbsp;
 
-            item.innerHTML = `
+              ${escapeHTML(
+                article.publisher ||
+                ""
+              )}
 
-                ${imageHTML(article, "mini-image")}
+            </div>
 
-                <div class="mini-body">
+          </div>
 
-                    <div class="badges">
+        `;
 
-                        <span class="badge">
-                            ${escapeHTML(
-                                article.category || "News"
-                            )}
-                        </span>
 
-                    </div>
-
-                    <div class="mini-title">
-                        ${escapeHTML(
-                            article.headline ||
-                            ""
-                        )}
-                    </div>
-
-                    <div class="mini-meta">
-
-                        ◷
-                        ${formatTime(
-                            article.published_at
-                        )}
-
-                        &nbsp; • &nbsp;
-
-                        ${escapeHTML(
-                            article.publisher || ""
-                        )}
-
-                    </div>
-
-                </div>
-            `;
-
-            container.appendChild(item);
-
-        });
-
-}
-
-/* =========================================================
-   STORY GRID
-   ========================================================= */
-
-function renderGrid(articles) {
-
-    const grid =
-        document.getElementById("storyGrid");
-
-    grid.innerHTML = "";
-
-    articles
-        .slice(5)
-        .forEach(article => {
-
-            const card =
-                document.createElement("article");
-
-            card.className = "story-card";
-
-            card.innerHTML = `
-
-                ${imageHTML(article, "card-image")}
-
-                <div class="card-body">
-
-                    <div class="badges">
-
-                        <span class="badge">
-                            ${escapeHTML(
-                                article.category || "News"
-                            )}
-                        </span>
-
-                    </div>
-
-                    <div class="card-title">
-
-                        ${escapeHTML(
-                            article.headline ||
-                            ""
-                        )}
-
-                    </div>
-
-                    <div class="card-meta">
-
-                        <span>
-                            ◷
-                            ${formatTime(
-                                article.published_at
-                            )}
-                        </span>
-
-                        <span>•</span>
-
-                        <span>
-                            ${escapeHTML(
-                                article.publisher || ""
-                            )}
-                        </span>
-
-                    </div>
-
-                </div>
-
-            `;
-
-            grid.appendChild(card);
-
-        });
-
-}
-
-/* =========================================================
-   RENDER EVERYTHING
-   ========================================================= */
-
-function renderStories() {
-
-    const articles =
-        getFilteredArticles();
-
-    document.getElementById("storyCount")
-        .textContent =
-        `${articles.length} stories available`;
-
-    renderHero(articles);
-
-    renderMiniStories(articles);
-
-    renderGrid(articles);
-
-}
-
-/* =========================================================
-   SEARCH
-   ========================================================= */
-
-document
-    .getElementById("searchInput")
-    .addEventListener("input", function () {
-
-        const query =
-            this.value
-                .trim()
-                .toLowerCase();
-
-        if (!query) {
-
-            renderStories();
-
-            return;
-        }
-
-        let results =
-            getFilteredArticles()
-            .filter(article => {
-
-                const text = [
-
-                    article.headline,
-                    article.summary,
-                    article.publisher,
-                    article.category,
-                    article.location
-
-                ]
-                    .filter(Boolean)
-                    .join(" ")
-                    .toLowerCase();
-
-                return text.includes(query);
-
-            });
-
-        document.getElementById("storyCount")
-            .textContent =
-            `${results.length} stories found`;
-
-        renderHero(results);
-
-        renderMiniStories(results);
-
-        renderGrid(results);
-
-    });
-
-/* =========================================================
-   TIME
-   ========================================================= */
-
-function updateTime() {
-
-    const now = new Date();
-
-    const time =
-        now.toLocaleTimeString(
-            "en-IN",
-            {
-                hour: "numeric",
-                minute: "2-digit",
-                hour12: true
-            }
+        list.appendChild(
+          item
         );
 
-    const date =
-        now.toLocaleDateString(
-            "en-IN",
-            {
-                weekday: "short",
-                day: "2-digit",
-                month: "short",
-                year: "numeric"
-            }
-        );
-
-    document.getElementById("currentTime")
-        .textContent = time;
-
-    document.getElementById("currentDate")
-        .textContent = date;
-
-}
-
-updateTime();
-
-setInterval(
-    updateTime,
-    30000
-);
-
-/* =========================================================
-   FORMAT TIME
-   ========================================================= */
-
-function formatTime(value) {
-
-    if (!value) {
-        return "";
-    }
-
-    const date =
-        new Date(value);
-
-    if (Number.isNaN(date.getTime())) {
-        return "";
-    }
-
-    return date.toLocaleTimeString(
-        "en-IN",
-        {
-            hour: "numeric",
-            minute: "2-digit",
-            hour12: true
-        }
+      }
     );
 
 }
 
+
 /* =========================================================
-   SECURITY / HTML ESCAPE
-   ========================================================= */
+   STORY GRID
+========================================================= */
 
-function escapeHTML(value) {
+function renderGrid(
+  articles
+){
 
-    return String(value || "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
+  const grid =
+    document.getElementById(
+      "storyGrid"
+    );
+
+  grid.innerHTML = "";
+
+
+  articles
+    .slice(6,14)
+    .forEach(
+      article => {
+
+        const card =
+          document.createElement(
+            "article"
+          );
+
+        card.className =
+          "story-card";
+
+
+        card.innerHTML = `
+
+          ${imageBlock(
+            article,
+            "card-image"
+          )}
+
+
+          <div
+            class="card-body"
+          >
+
+            <div
+              class="badges"
+            >
+
+              <span
+                class="badge"
+              >
+
+                ${escapeHTML(
+                  article.category ||
+                  "News"
+                )}
+
+              </span>
+
+            </div>
+
+
+            <div
+              class="card-title"
+            >
+
+              ${escapeHTML(
+                article.headline ||
+                ""
+              )}
+
+            </div>
+
+
+            <div
+              class="card-meta"
+            >
+
+              <span>
+                ◷
+                ${formatTime(
+                  article.published_at
+                )}
+              </span>
+
+              <span>•</span>
+
+              <span>
+                ${escapeHTML(
+                  article.publisher ||
+                  ""
+                )}
+              </span>
+
+            </div>
+
+          </div>
+
+        `;
+
+
+        grid.appendChild(
+          card
+        );
+
+      }
+    );
 
 }
 
+
 /* =========================================================
-   SAFE URL
-   ========================================================= */
+   DEEP DIVE
+========================================================= */
 
-function safeURL(url) {
+function renderDeepDive(
+  articles
+){
 
-    if (!url) {
-        return "#";
+  const box =
+    document.getElementById(
+      "deepDiveList"
+    );
+
+  box.innerHTML = "";
+
+
+  articles
+    .slice(1,4)
+    .forEach(
+      article => {
+
+        const row =
+          document.createElement(
+            "div"
+          );
+
+        row.className =
+          "panel-feature";
+
+
+        row.innerHTML = `
+
+          <strong>
+
+            ${escapeHTML(
+              article.headline ||
+              ""
+            )}
+
+          </strong>
+
+
+          <small>
+
+            ${escapeHTML(
+              article.summary ||
+              ""
+            )}
+
+          </small>
+
+        `;
+
+
+        box.appendChild(
+          row
+        );
+
+      }
+    );
+
+}
+
+
+/* =========================================================
+   TICKER
+========================================================= */
+
+function renderTicker(
+  articles
+){
+
+  const track =
+    document.getElementById(
+      "tickerTrack"
+    );
+
+
+  const bits =
+    articles
+      .slice(0,7)
+      .map(
+        article => `
+
+          <span>
+
+            <b>
+              ${escapeHTML(
+                article.category ||
+                "NEWS"
+              )}
+            </b>
+
+            &nbsp;
+
+            ${escapeHTML(
+              article.headline ||
+              ""
+            )}
+
+          </span>
+
+        `
+      );
+
+
+  track.innerHTML =
+    bits.join("")
+    ||
+    "<span>No live headlines available.</span>";
+
+}
+
+
+/* =========================================================
+   QUICK CATEGORY
+========================================================= */
+
+function quickCategory(
+  name
+){
+
+  const buttons =
+    [
+      ...document.querySelectorAll(
+        ".category-btn"
+      )
+    ];
+
+
+  const match =
+    buttons.find(
+      button =>
+        button.textContent.trim()
+        === name
+    );
+
+
+  if(match){
+
+    match.click();
+
+  }
+
+
+  document
+    .querySelector(
+      ".story-section"
+    )
+    ?.scrollIntoView({
+      behavior:"smooth",
+      block:"start"
+    });
+
+}
+
+
+/* =========================================================
+   RENDER EVERYTHING
+========================================================= */
+
+function renderStories(){
+
+  const articles =
+    getFilteredArticles();
+
+
+  document.getElementById(
+    "storyCount"
+  ).textContent =
+    `${articles.length} stories`;
+
+
+  document.getElementById(
+    "sectionTitle"
+  ).textContent =
+    activeCategory === "ALL"
+      ? "What Everyone Is Reading"
+      : activeCategory;
+
+
+  renderHero(
+    articles
+  );
+
+  renderLive(
+    articles
+  );
+
+  renderGrid(
+    articles
+  );
+
+  renderDeepDive(
+    articles
+  );
+
+  renderTicker(
+    articles
+  );
+
+}
+
+
+/* =========================================================
+   LOAD NEWS JSON
+========================================================= */
+
+async function loadArticles(){
+
+  try{
+
+    const response =
+      await fetch(
+        "articles.json",
+        {
+          cache:"no-store"
+        }
+      );
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "Could not load articles.json"
+      );
+
     }
 
-    try {
 
-        const parsed =
-            new URL(
-                url,
-                window.location.href
-            );
+    const data =
+      await response.json();
 
-        if (
-            parsed.protocol === "http:" ||
-            parsed.protocol === "https:"
-        ) {
-            return parsed.href;
-        }
 
-    } catch (e) {}
+    allArticles =
+      Array.isArray(
+        data.articles
+      )
+        ? data.articles
+        : [];
 
-    return "#";
+
+    renderStories();
+
+
+  }catch(error){
+
+    console.error(
+      error
+    );
+
+
+    document.getElementById(
+      "storyCount"
+    ).textContent =
+      "News unavailable";
+
+
+    document.getElementById(
+      "hero"
+    ).innerHTML = `
+
+      <div class="hero-card">
+
+        <div
+          class="hero-placeholder"
+        >
+
+          Unable to load
+          news database.
+
+        </div>
+
+      </div>
+
+    `;
+
+
+    document.getElementById(
+      "liveList"
+    ).innerHTML = `
+
+      <div
+        style="
+          padding:18px;
+          color:#69748b;
+          font-size:12px;
+        "
+      >
+
+        Check that
+        <b>articles.json</b>
+        is in the same folder
+        as this HTML file.
+
+      </div>
+
+    `;
+
+  }
 
 }
+
+
+/* =========================================================
+   CLOCK
+========================================================= */
+
+function updateTime(){
+
+  const now =
+    new Date();
+
+
+  document
+    .querySelector(
+      "#currentTime strong"
+    )
+    .textContent =
+      now.toLocaleTimeString(
+        "en-IN",
+        {
+          hour:"numeric",
+          minute:"2-digit",
+          hour12:true
+        }
+      );
+
+
+  document.getElementById(
+    "currentDate"
+  ).textContent =
+    now.toLocaleDateString(
+      "en-IN",
+      {
+        weekday:"short",
+        day:"2-digit",
+        month:"short",
+        year:"numeric"
+      }
+    );
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+document
+  .getElementById(
+    "searchInput"
+  )
+  .addEventListener(
+    "input",
+    function(){
+
+      const query =
+        this.value
+          .trim()
+          .toLowerCase();
+
+
+      if(!query){
+
+        renderStories();
+
+        return;
+
+      }
+
+
+      const results =
+        getFilteredArticles()
+          .filter(
+            article => {
+
+              const searchable = [
+
+                article.headline,
+
+                article.summary,
+
+                article.publisher,
+
+                article.category,
+
+                article.location
+
+              ]
+              .filter(Boolean)
+              .join(" ")
+              .toLowerCase();
+
+
+              return searchable.includes(
+                query
+              );
+
+            }
+          );
+
+
+      document.getElementById(
+        "storyCount"
+      ).textContent =
+        `${results.length} stories found`;
+
+
+      renderHero(
+        results
+      );
+
+      renderLive(
+        results
+      );
+
+      renderGrid(
+        results
+      );
+
+      renderDeepDive(
+        results
+      );
+
+      renderTicker(
+        results
+      );
+
+    }
+  );
+
 
 /* =========================================================
    START
-   ========================================================= */
+========================================================= */
 
 renderCategories();
+
+updateTime();
+
+setInterval(
+  updateTime,
+  30000
+);
 
 loadArticles();
 
