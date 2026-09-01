@@ -1,2216 +1,527 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
 
-<title>Snippet24 — Fast News • Real Impact</title>
+<meta charset="utf-8">
 
-<style>
-/* =========================================================
-   SNIPPET24 - GLOBAL
-========================================================= */
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1"
+>
 
-:root {
-    --navy: #071b3a;
-    --red: #ed1c35;
-    --yellow: #ffbf00;
-    --blue: #1687e8;
-    --bg: #f4f7fb;
-    --white: #ffffff;
-    --text: #10233f;
-    --muted: #718096;
-    --border: #dce3ec;
-}
+<title>
+Snippet24 — Fast News • Real Impact
+</title>
 
-* {
-    box-sizing: border-box;
-}
+<meta
+  name="description"
+  content="Snippet24 — AI-curated multilingual news with original editorial illustrations."
+>
 
-html {
-    scroll-behavior: smooth;
-}
+<link
+  rel="stylesheet"
+  href="/styles.css"
+>
 
-body {
-    margin: 0;
-    font-family:
-        Arial,
-        "Noto Sans",
-        sans-serif;
-    background: var(--bg);
-    color: var(--text);
-}
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.site-header {
-    background: white;
-    border-bottom: 1px solid var(--border);
-}
-
-.header-inner {
-    max-width: 1200px;
-    margin: auto;
-    padding: 18px 20px 12px;
-
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-.logo {
-    font-size: 43px;
-    font-weight: 900;
-    letter-spacing: -3px;
-    color: var(--navy);
-    white-space: nowrap;
-}
-
-.logo span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--yellow);
-    color: white;
-
-    border-radius: 10px;
-
-    padding: 2px 8px;
-
-    margin-left: 4px;
-
-    font-size: 35px;
-}
-
-.tagline {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 5px;
-    color: var(--navy);
-    margin-top: 5px;
-}
-
-.tagline span {
-    color: var(--red);
-}
-
-.search-box {
-    flex: 1;
-    max-width: 480px;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 14px 18px;
-
-    border: 1px solid var(--border);
-    border-radius: 30px;
-
-    font-size: 14px;
-    outline: none;
-}
-
-.search-box input:focus {
-    border-color: var(--blue);
-}
-
-.header-info {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    white-space: nowrap;
-}
-
-.weather {
-    font-weight: 800;
-}
-
-.weather small {
-    display: block;
-    color: var(--muted);
-    font-weight: 400;
-}
-
-/* =========================================================
-   CATEGORY NAVIGATION
-========================================================= */
-
-.category-bar {
-    background: white;
-    border-top: 1px solid #eef1f5;
-    border-bottom: 1px solid var(--border);
-
-    overflow-x: auto;
-}
-
-.category-inner {
-    max-width: 1200px;
-    margin: auto;
-
-    display: flex;
-    gap: 5px;
-
-    padding: 0 20px;
-}
-
-.category-btn {
-    border: 0;
-    background: transparent;
-
-    padding: 15px 12px;
-
-    font-weight: 800;
-    color: var(--navy);
-
-    cursor: pointer;
-    white-space: nowrap;
-
-    border-bottom: 3px solid transparent;
-}
-
-.category-btn:hover,
-.category-btn.active {
-    color: var(--red);
-    border-bottom-color: var(--red);
-}
-
-/* =========================================================
-   LIVE WIRE
-========================================================= */
-
-.live-wire {
-    background: var(--navy);
-    color: white;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.live-label {
-    flex: 0 0 auto;
-
-    background: var(--red);
-
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-
-    padding: 0 22px;
-
-    font-weight: 900;
-    letter-spacing: 1px;
-
-    z-index: 2;
-}
-
-.ticker-window {
-    overflow: hidden;
-    white-space: nowrap;
-    flex: 1;
-}
-
-.ticker-track {
-    display: inline-flex;
-    gap: 60px;
-
-    animation: tickerMove 35s linear infinite;
-}
-
-.ticker-item {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.ticker-item::before {
-    content: "•";
-    color: var(--red);
-    margin-right: 12px;
-}
-
-@keyframes tickerMove {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-/* =========================================================
-   LANGUAGE BAR
-========================================================= */
-
-.language-bar {
-    background: white;
-    border-bottom: 1px solid var(--border);
-}
-
-.language-inner {
-    max-width: 1200px;
-    margin: auto;
-
-    padding: 10px 20px;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    gap: 8px;
-}
-
-.language-label {
-    font-size: 13px;
-    color: var(--muted);
-}
-
-.language-btn {
-    border: 1px solid var(--border);
-
-    background: white;
-
-    padding: 8px 16px;
-
-    border-radius: 22px;
-
-    cursor: pointer;
-
-    font-weight: 700;
-
-    color: var(--navy);
-}
-
-.language-btn:hover,
-.language-btn.active {
-    background: var(--red);
-    color: white;
-    border-color: var(--red);
-}
-
-/* =========================================================
-   MAIN
-========================================================= */
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-
-    padding: 35px 20px 100px;
-}
-
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 16px;
-}
-
-.section-heading h2 {
-    margin: 0;
-
-    font-size: 20px;
-
-    border-left: 5px solid var(--red);
-
-    padding-left: 10px;
-}
-
-.story-count {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-/* =========================================================
-   FEATURE STORY
-========================================================= */
-
-.feature {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-
-    background: white;
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    margin-bottom: 30px;
-
-    box-shadow: 0 5px 25px rgba(0,0,0,0.04);
-}
-
-.feature-image {
-    height: 390px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.feature-content {
-    padding: 35px;
-}
-
-.category {
-    color: var(--red);
-
-    font-size: 12px;
-
-    font-weight: 900;
-
-    text-transform: uppercase;
-}
-
-.feature-title {
-    font-size: 36px;
-    line-height: 1.05;
-
-    margin: 10px 0 15px;
-
-    color: var(--navy);
-}
-
-.summary {
-    color: #59677a;
-
-    line-height: 1.6;
-
-    font-size: 15px;
-}
-
-.read-original {
-    display: inline-block;
-
-    margin-top: 20px;
-
-    color: var(--red);
-
-    font-weight: 900;
-
-    text-decoration: none;
-}
-
-.read-original:hover {
-    text-decoration: underline;
-}
-
-/* =========================================================
-   NEWS GRID
-========================================================= */
-
-.news-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 18px;
-}
-
-.news-card {
-    background: white;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-
-    border: 1px solid var(--border);
-
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
-}
-
-.news-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.08);
-}
-
-.news-image {
-    width: 100%;
-    height: 180px;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-.news-body {
-    padding: 17px;
-}
-
-.news-title {
-    margin: 8px 0;
-
-    font-size: 18px;
-
-    line-height: 1.25;
-}
-
-.news-summary {
-    color: var(--muted);
-
-    font-size: 14px;
-
-    line-height: 1.5;
-}
-
-.news-meta {
-    margin-top: 14px;
-
-    color: var(--muted);
-
-    font-size: 12px;
-}
-
-.news-card a {
-    text-decoration: none;
-
-    color: inherit;
-}
-
-/* =========================================================
-   NO RESULTS
-========================================================= */
-
-.no-results {
-    display: none;
-
-    background: white;
-
-    border: 1px solid var(--border);
-
-    padding: 40px;
-
-    text-align: center;
-
-    border-radius: 15px;
-
-    color: var(--muted);
-}
-
-/* =========================================================
-   TRENDING
-========================================================= */
-
-.trending {
-    background: white;
-
-    margin-top: 35px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 18px;
-
-    overflow: hidden;
-}
-
-.trending-header {
-    padding: 20px 24px;
-
-    border-bottom: 1px solid var(--border);
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.trending-header h2 {
-    margin: 0;
-}
-
-.trending-live {
-    color: var(--red);
-    font-weight: 900;
-}
-
-.trending-item {
-    display: block;
-
-    padding: 20px 25px;
-
-    border-bottom: 1px solid var(--border);
-
-    text-decoration: none;
-
-    color: var(--text);
-}
-
-.trending-item:hover {
-    background: #f8fafc;
-}
-
-.trending-category {
-    color: var(--red);
-
-    font-weight: 900;
-
-    font-size: 12px;
-
-    text-transform: uppercase;
-}
-
-.trending-title {
-    display: block;
-
-    font-size: 17px;
-
-    font-weight: 800;
-
-    margin: 7px 0;
-}
-
-.trending-meta {
-    color: var(--muted);
-
-    font-size: 12px;
-}
-
-/* =========================================================
-   QUICK ACCESS
-========================================================= */
-
-.quick-access {
-    margin-top: 35px;
-
-    display: flex;
-
-    gap: 12px;
-
-    align-items: center;
-
-    overflow-x: auto;
-}
-
-.quick-access strong {
-    white-space: nowrap;
-}
-
-.quick-btn {
-    border: 1px solid var(--border);
-
-    background: white;
-
-    border-radius: 25px;
-
-    padding: 11px 22px;
-
-    color: var(--blue);
-
-    font-weight: 800;
-
-    cursor: pointer;
-
-    white-space: nowrap;
-}
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    background: var(--navy);
-
-    color: white;
-
-    padding: 45px 20px 25px;
-}
-
-.footer-inner {
-    max-width: 1200px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        2fr 1fr 1fr 1fr;
-
-    gap: 35px;
-}
-
-.footer-logo {
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.footer-logo span {
-    background: var(--yellow);
-
-    padding: 2px 7px;
-
-    border-radius: 6px;
-}
-
-footer p {
-    color: #b8c5d8;
-
-    line-height: 1.6;
-}
-
-footer h3 {
-    margin-top: 0;
-}
-
-footer a {
-    display: block;
-
-    color: #c8d4e5;
-
-    text-decoration: none;
-
-    margin: 10px 0;
-}
-
-footer a:hover {
-    color: white;
-}
-
-.footer-bottom {
-    max-width: 1200px;
-
-    margin: 35px auto 0;
-
-    padding-top: 20px;
-
-    border-top: 1px solid #29405f;
-
-    color: #9eacc0;
-
-    font-size: 13px;
-}
-
-/* =========================================================
-   MOBILE BOTTOM NAV
-========================================================= */
-
-.mobile-nav {
-    display: none;
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .header-inner {
-        padding: 15px;
-        gap: 12px;
-    }
-
-    .logo {
-        font-size: 34px;
-    }
-
-    .logo span {
-        font-size: 28px;
-    }
-
-    .tagline {
-        font-size: 8px;
-        letter-spacing: 3px;
-    }
-
-    .search-box {
-        max-width: 45px;
-    }
-
-    .search-box input {
-        width: 45px;
-        padding: 13px;
-        font-size: 0;
-    }
-
-    .header-info {
-        display: none;
-    }
-
-    .category-inner {
-        padding: 0 15px;
-    }
-
-    .language-inner {
-        justify-content: flex-start;
-
-        overflow-x: auto;
-
-        white-space: nowrap;
-    }
-
-    .container {
-        padding: 25px 15px 110px;
-    }
-
-    .feature {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-image {
-        height: 360px;
-    }
-
-    .feature-content {
-        padding: 24px;
-    }
-
-    .feature-title {
-        font-size: 30px;
-    }
-
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .mobile-nav {
-        position: fixed;
-
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        background: rgba(255,255,255,.97);
-
-        border-top: 1px solid var(--border);
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(4, 1fr);
-
-        z-index: 1000;
-
-        padding: 8px 5px;
-
-        box-shadow:
-            0 -5px 20px rgba(0,0,0,.08);
-    }
-
-    .mobile-nav button {
-        border: 0;
-
-        background: none;
-
-        color: #69778a;
-
-        font-weight: 800;
-
-        padding: 6px;
-
-        cursor: pointer;
-    }
-
-    .mobile-nav button.active {
-        color: var(--red);
-    }
-}
-
-@media (max-width: 520px) {
-
-    .live-label {
-        padding: 0 15px;
-        font-size: 12px;
-    }
-
-    .ticker-item {
-        font-size: 12px;
-    }
-
-    .feature-image {
-        height: 350px;
-    }
-
-    .feature-title {
-        font-size: 29px;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .news-image {
-        height: 220px;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
 </head>
+
 
 <body>
 
-<!-- ======================================================
-     HEADER
-====================================================== -->
 
 <header class="site-header">
 
-    <div class="header-inner">
+  <div class="topbar">
 
-        <div>
-            <div class="logo">
-                snippet<span>24</span>
-            </div>
+    <a
+      class="brand"
+      href="/"
+    >
 
-            <div class="tagline">
-                FAST NEWS
-                <span>• REAL IMPACT •</span>
-            </div>
-        </div>
+      <span>snippet</span>
 
-        <div class="search-box">
-            <input
-                id="searchInput"
-                type="search"
-                placeholder="Search stories, topics, people..."
-            >
-        </div>
+      <b>24</b>
 
-        <div class="header-info">
+    </a>
 
-            <div class="weather">
-                ☀️ 36°C
-                <small>Gudiyatham, Tamil Nadu</small>
-            </div>
 
-            <div id="clock">
-                01:48 AM
-            </div>
+    <div class="tagline">
 
-        </div>
+      FAST NEWS
+
+      <i>•</i>
+
+      REAL IMPACT
 
     </div>
+
+
+    <div class="tools">
+
+      <div class="search">
+
+        <span>⌕</span>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search stories, topics, people…"
+        >
+
+      </div>
+
+
+      <div class="weather">
+
+        ☀️
+
+        <strong>36°C</strong>
+
+        <small>India</small>
+
+      </div>
+
+
+      <div id="clock"></div>
+
+    </div>
+
+  </div>
+
+
+  <nav
+    id="categoryNav"
+    class="category-nav"
+  >
+
+    <button
+      class="category active"
+      data-category="all"
+    >
+      ⌂ Home
+    </button>
+
+
+    <button
+      class="category"
+      data-category="In India"
+    >
+      ✦ In India
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Global"
+    >
+      ◈ Global
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Security & Peace"
+    >
+      ◆ Security & Peace
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Law Around Us"
+    >
+      § Law Around Us
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Science & Development"
+    >
+      ◇ Science & Development
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Business & Economy"
+    >
+      ₹ Business & Economy
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Society & Culture"
+    >
+      ♟ Society & Culture
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Human & Environment"
+    >
+      ♧ Human & Environment
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Tech & AI"
+    >
+      ⌘ Tech & AI
+    </button>
+
+
+    <button
+      class="category"
+      data-category="Sports"
+    >
+      ⚽ Sports
+    </button>
+
+  </nav>
 
 </header>
 
 
-<!-- ======================================================
-     CATEGORY NAV
-====================================================== -->
+<section class="live">
 
-<nav class="category-bar">
-
-    <div class="category-inner">
-
-        <button
-            class="category-btn active"
-            data-category="All">
-            ⌂ Home
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="India">
-            ◉ In India
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Security">
-            ◇ Security & Peace
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Law">
-            § Law Around Us
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Science">
-            ◇ Science & Development
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Business">
-            ₹ Business & Economy
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Society">
-            ♟ Society & Culture
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Environment">
-            ♧ Human & Environment
-        </button>
-
-        <button
-            class="category-btn"
-            data-category="Tech">
-            ⌘ Tech & AI
-        </button>
-
-    </div>
-
-</nav>
+  <div class="live-label">
+    ⚡ LIVE WIRE
+  </div>
 
 
-<!-- ======================================================
-     LIVE WIRE
-====================================================== -->
+  <div class="ticker-window">
 
-<div class="live-wire">
+    <div
+      id="tickerTrack"
+      class="ticker-track"
+    ></div>
 
-    <div class="live-label">
-        ⚡ LIVE WIRE
-    </div>
+  </div>
 
-    <div class="ticker-window">
-
-        <div
-            class="ticker-track"
-            id="tickerTrack">
-        </div>
-
-    </div>
-
-</div>
+</section>
 
 
-<!-- ======================================================
-     LANGUAGES
-====================================================== -->
+<section class="languages">
 
-<div class="language-bar">
-
-    <div class="language-inner">
-
-        <span class="language-label">
-            🌐 Language:
-        </span>
-
-        <button
-            class="language-btn active"
-            data-language="en">
-            English
-        </button>
-
-        <button
-            class="language-btn"
-            data-language="ta">
-            தமிழ்
-        </button>
-
-        <button
-            class="language-btn"
-            data-language="te">
-            తెలుగు
-        </button>
-
-        <button
-            class="language-btn"
-            data-language="kn">
-            ಕನ್ನಡ
-        </button>
-
-        <button
-            class="language-btn"
-            data-language="ml">
-            മലയാളം
-        </button>
-
-        <button
-            class="language-btn"
-            data-language="hi">
-            हिन्दी
-        </button>
-
-    </div>
-
-</div>
+  <span>
+    🌐 Language:
+  </span>
 
 
-<!-- ======================================================
-     MAIN
-====================================================== -->
+  <button
+    class="language active"
+    data-lang="en"
+  >
+    English
+  </button>
+
+
+  <button
+    class="language"
+    data-lang="ta"
+  >
+    தமிழ்
+  </button>
+
+
+  <button
+    class="language"
+    data-lang="te"
+  >
+    తెలుగు
+  </button>
+
+
+  <button
+    class="language"
+    data-lang="kn"
+  >
+    ಕನ್ನಡ
+  </button>
+
+
+  <button
+    class="language"
+    data-lang="ml"
+  >
+    മലയാളം
+  </button>
+
+
+  <button
+    class="language"
+    data-lang="hi"
+  >
+    हिन्दी
+  </button>
+
+</section>
+
 
 <main class="container">
 
-    <div class="section-heading">
 
-        <h2 id="sectionTitle">
-            What Everyone Is Reading
-        </h2>
+  <div class="section-head">
 
-        <span
-            class="story-count"
-            id="storyCount">
-            0 stories
-        </span>
+    <div>
 
-    </div>
+      <h1>
 
+        <em></em>
 
-    <!-- FEATURE STORY -->
+        What Everyone Is Reading
 
-    <article
-        class="feature"
-        id="featureStory">
-    </article>
+      </h1>
 
 
-    <!-- NEWS -->
+      <p>
 
-    <div
-        class="news-grid"
-        id="newsGrid">
-    </div>
+        Fast updates, useful context and stories worth your time.
 
-    <div
-        class="no-results"
-        id="noResults">
-        No stories found in this category.
-    </div>
-
-
-    <!-- ==================================================
-         TRENDING
-    ================================================== -->
-
-    <section class="trending">
-
-        <div class="trending-header">
-
-            <h2>
-                🔥 Trending Now
-            </h2>
-
-            <span class="trending-live">
-                ● LIVE
-            </span>
-
-        </div>
-
-        <div id="trendingList">
-        </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         QUICK ACCESS
-    ================================================== -->
-
-    <div class="quick-access">
-
-        <strong>
-            Quick Access →
-        </strong>
-
-        <button
-            class="quick-btn"
-            data-category="India">
-            India
-        </button>
-
-        <button
-            class="quick-btn"
-            data-category="Security">
-            Security
-        </button>
-
-        <button
-            class="quick-btn"
-            data-category="Law">
-            Law
-        </button>
-
-        <button
-            class="quick-btn"
-            data-category="Business">
-            Money
-        </button>
-
-        <button
-            class="quick-btn"
-            data-category="Tech">
-            Tech
-        </button>
+      </p>
 
     </div>
+
+
+    <span id="storyCount">
+      0 stories
+    </span>
+
+  </div>
+
+
+  <div id="heroStory"></div>
+
+
+  <div class="section-head compact">
+
+    <h2>
+      🔥 Trending Now
+    </h2>
+
+    <b>
+      ● LIVE
+    </b>
+
+  </div>
+
+
+  <div
+    id="trending"
+    class="trending"
+  ></div>
+
+
+  <div class="section-head compact">
+
+    <h2 id="sectionTitle">
+      Latest Stories
+    </h2>
+
+  </div>
+
+
+  <div
+    id="newsGrid"
+    class="grid"
+  ></div>
+
+
+  <div class="quick">
+
+    <strong>
+      Quick Access →
+    </strong>
+
+
+    <button
+      data-category="In India"
+    >
+      India
+    </button>
+
+
+    <button
+      data-category="Security & Peace"
+    >
+      Security
+    </button>
+
+
+    <button
+      data-category="Law Around Us"
+    >
+      Law
+    </button>
+
+
+    <button
+      data-category="Business & Economy"
+    >
+      Money
+    </button>
+
+
+    <button
+      data-category="Tech & AI"
+    >
+      Tech
+    </button>
+
+  </div>
 
 </main>
 
 
-<!-- ======================================================
-     FOOTER
-====================================================== -->
+<footer class="footer">
 
-<footer>
-
-    <div class="footer-inner">
-
-        <div>
-
-            <div class="footer-logo">
-                snippet<span>24</span>
-            </div>
-
-            <p>
-                Fast news, useful context and stories
-                worth your time.
-            </p>
-
-            <p>
-                Snippet24 brings together important
-                developments from India and around
-                the world.
-            </p>
-
-        </div>
+  <div class="footer-top">
 
 
-        <div>
+    <div>
 
-            <h3>Explore</h3>
+      <div class="footer-brand">
 
-            <a href="#" data-category="India">
-                In India
-            </a>
+        snippet<b>24</b>
 
-            <a href="#" data-category="Security">
-                Security & Peace
-            </a>
-
-            <a href="#" data-category="Law">
-                Law Around Us
-            </a>
-
-            <a href="#" data-category="Science">
-                Science & Development
-            </a>
-
-        </div>
+      </div>
 
 
-        <div>
+      <p>
 
-            <h3>More</h3>
+        AI-curated news.
+        Original summaries.
+        AI-generated editorial illustrations.
 
-            <a href="#" data-category="Business">
-                Business & Economy
-            </a>
-
-            <a href="#" data-category="Society">
-                Society & Culture
-            </a>
-
-            <a href="#" data-category="Environment">
-                Human & Environment
-            </a>
-
-            <a href="#" data-category="Tech">
-                Tech & AI
-            </a>
-
-        </div>
-
-
-        <div>
-
-            <h3>Snippet24</h3>
-
-            <a href="#">
-                About Us
-            </a>
-
-            <a href="#">
-                Contact
-            </a>
-
-            <a href="#">
-                Privacy Policy
-            </a>
-
-            <a href="#">
-                Terms of Use
-            </a>
-
-            <a href="#">
-                Disclaimer
-            </a>
-
-            <a href="#">
-                Editorial Policy
-            </a>
-
-        </div>
+      </p>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div class="footer-links">
 
-        © 2026 Snippet24.in —
-        Fast News • Real Impact
+      <a href="#">
+        About
+      </a>
+
+      <a href="#">
+        Editorial Policy
+      </a>
+
+      <a href="#">
+        Corrections
+      </a>
+
+      <a href="#">
+        Privacy
+      </a>
+
+      <a href="#">
+        Terms
+      </a>
+
+      <a href="#">
+        Contact
+      </a>
 
     </div>
+
+  </div>
+
+
+  <p class="source-note">
+
+    Snippet24 attributes original sources
+    and links to the authoritative source.
+    AI-generated images are editorial illustrations
+    and are not presented as original event photographs.
+
+  </p>
+
+
+  <div>
+
+    ©
+
+    <span id="year"></span>
+
+    Snippet24.
+    All rights reserved.
+
+  </div>
 
 </footer>
 
 
-<!-- ======================================================
-     MOBILE BOTTOM NAV
-====================================================== -->
-
 <nav class="mobile-nav">
 
-    <button
-        class="active"
-        onclick="selectCategory('All')">
-        ⌂<br>
-        Home
-    </button>
 
-    <button
-        onclick="selectCategory('India')">
-        ✦<br>
-        India
-    </button>
+  <button
+    data-category="all"
+  >
 
-    <button
-        onclick="selectCategory('Business')">
-        ↗<br>
-        Money
-    </button>
+    ⌂
 
-    <button
-        onclick="scrollToCategories()">
-        ☰<br>
-        Categories
-    </button>
+    <small>
+      Home
+    </small>
+
+  </button>
+
+
+  <button
+    data-category="In India"
+  >
+
+    ✦
+
+    <small>
+      India
+    </small>
+
+  </button>
+
+
+  <button
+    data-category="Business & Economy"
+  >
+
+    ↗
+
+    <small>
+      Money
+    </small>
+
+  </button>
+
+
+  <button
+    id="mobileCategories"
+  >
+
+    ☷
+
+    <small>
+      Categories
+    </small>
+
+  </button>
+
 
 </nav>
 
 
-<script>
+<script
+  src="/app.js"
+></script>
 
-/* =========================================================
-   SNIPPET24 NEWS DATA
-   ---------------------------------------------------------
-   IMPORTANT:
-   Each story has:
-   - unique image
-   - originalUrl
-   - translations
-   - category
-========================================================= */
-
-const stories = [
-
-    {
-        id: 1,
-
-        category: "India",
-
-        image:
-        "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/broadcast-media",
-
-        source:
-        "Akashvani",
-
-        time:
-        "1:33 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "News Policy for Broadcast Media",
-
-                summary:
-                "The latest developments and policy information related to broadcast media in India."
-            },
-
-            ta: {
-                title:
-                "ஒளிபரப்பு ஊடகங்களுக்கான செய்திக் கொள்கை",
-
-                summary:
-                "இந்தியாவில் ஒளிபரப்பு ஊடகங்கள் தொடர்பான சமீபத்திய கொள்கை மற்றும் செய்தி விவரங்கள்."
-            },
-
-            te: {
-                title:
-                "ప్రసార మాధ్యమాల కోసం వార్తా విధానం",
-
-                summary:
-                "భారతదేశంలో ప్రసార మాధ్యమాలకు సంబంధించిన తాజా విధాన పరిణామాలు."
-            },
-
-            kn: {
-                title:
-                "ಪ್ರಸಾರ ಮಾಧ್ಯಮಗಳ ಸುದ್ದಿ ನೀತಿ",
-
-                summary:
-                "ಭಾರತದಲ್ಲಿನ ಪ್ರಸಾರ ಮಾಧ್ಯಮಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಇತ್ತೀಚಿನ ನೀತಿ ಬೆಳವಣಿಗೆಗಳು."
-            },
-
-            ml: {
-                title:
-                "പ്രക്ഷേപണ മാധ്യമങ്ങൾക്കായുള്ള വാർത്താ നയം",
-
-                summary:
-                "ഇന്ത്യയിലെ പ്രക്ഷേപണ മാധ്യമങ്ങളുമായി ബന്ധപ്പെട്ട പുതിയ നയ വിവരങ്ങൾ."
-            },
-
-            hi: {
-                title:
-                "प्रसारण मीडिया के लिए समाचार नीति",
-
-                summary:
-                "भारत में प्रसारण मीडिया से संबंधित नवीनतम नीति और समाचार जानकारी।"
-            }
-
-        }
-    },
-
-
-    {
-        id: 2,
-
-        category: "India",
-
-        image:
-        "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/telangana-voters",
-
-        source:
-        "News Desk",
-
-        time:
-        "1:30 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "Telangana CM urges ECI to extend deadline for voters to file objections",
-
-                summary:
-                "Latest political and electoral developments from Telangana."
-            },
-
-            ta: {
-                title:
-                "வாக்காளர்கள் ஆட்சேபனைகளை தாக்கல் செய்வதற்கான காலக்கெடுவை நீட்டிக்க தெலங்கானா முதல்வர் கோரிக்கை",
-
-                summary:
-                "தெலங்கானாவில் சமீபத்திய அரசியல் மற்றும் தேர்தல் தொடர்பான முன்னேற்றங்கள்."
-            },
-
-            te: {
-                title:
-                "ఓటర్లు అభ్యంతరాలు దాఖలు చేయడానికి గడువును పొడిగించాలని తెలంగాణ సీఎం కోరారు",
-
-                summary:
-                "తెలంగాణలో తాజా రాజకీయ మరియు ఎన్నికల పరిణామాలు."
-            },
-
-            kn: {
-                title:
-                "ಮತದಾರರು ಆಕ್ಷೇಪಣೆ ಸಲ್ಲಿಸಲು ಗಡುವು ವಿಸ್ತರಿಸುವಂತೆ ತೆಲಂಗಾಣ ಸಿಎಂ ಮನವಿ",
-
-                summary:
-                "ತೆಲಂಗಾಣದ ಇತ್ತೀಚಿನ ರಾಜಕೀಯ ಮತ್ತು ಚುನಾವಣಾ ಬೆಳವಣಿಗೆಗಳು."
-            },
-
-            ml: {
-                title:
-                "വോട്ടർമാർക്ക് എതിർപ്പുകൾ സമർപ്പിക്കാനുള്ള സമയപരിധി നീട്ടണമെന്ന് തെലങ്കാന മുഖ്യമന്ത്രി",
-
-                summary:
-                "തെലങ്കാനയിലെ ഏറ്റവും പുതിയ രാഷ്ട്രീയ, തിരഞ്ഞെടുപ്പ് സംഭവവികാസങ്ങൾ."
-            },
-
-            hi: {
-                title:
-                "तेलंगाना सीएम ने मतदाताओं के लिए आपत्तियां दर्ज कराने की समयसीमा बढ़ाने का आग्रह किया",
-
-                summary:
-                "तेलंगाना से नवीनतम राजनीतिक और चुनावी घटनाक्रम।"
-            }
-
-        }
-    },
-
-
-    {
-        id: 3,
-
-        category: "Security",
-
-        image:
-        "https://images.unsplash.com/photo-1524498250077-390f9e378fc0?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/security",
-
-        source:
-        "News Desk",
-
-        time:
-        "1:25 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "India reviews regional security developments",
-
-                summary:
-                "Officials are monitoring important security developments and regional developments."
-            },
-
-            ta: {
-                title:
-                "பிராந்திய பாதுகாப்பு முன்னேற்றங்களை இந்தியா ஆய்வு செய்கிறது",
-
-                summary:
-                "முக்கியமான பாதுகாப்பு மற்றும் பிராந்திய முன்னேற்றங்களை அதிகாரிகள் கண்காணித்து வருகின்றனர்."
-            },
-
-            te: {
-                title:
-                "ప్రాంతీయ భద్రతా పరిణామాలను భారత్ సమీక్షిస్తోంది",
-
-                summary:
-                "ముఖ్యమైన భద్రతా మరియు ప్రాంతీయ పరిణామాలను అధికారులు పరిశీలిస్తున్నారు."
-            },
-
-            kn: {
-                title:
-                "ಪ್ರಾದೇಶಿಕ ಭದ್ರತಾ ಬೆಳವಣಿಗೆಗಳನ್ನು ಭಾರತ ಪರಿಶೀಲಿಸುತ್ತಿದೆ",
-
-                summary:
-                "ಪ್ರಮುಖ ಭದ್ರತಾ ಮತ್ತು ಪ್ರಾದೇಶಿಕ ಬೆಳವಣಿಗೆಗಳನ್ನು ಅಧಿಕಾರಿಗಳು ಗಮನಿಸುತ್ತಿದ್ದಾರೆ."
-            },
-
-            ml: {
-                title:
-                "പ്രാദേശിക സുരക്ഷാ സംഭവവികാസങ്ങൾ ഇന്ത്യ അവലോകനം ചെയ്യുന്നു",
-
-                summary:
-                "പ്രധാന സുരക്ഷാ, പ്രാദേശിക സംഭവവികാസങ്ങൾ അധികൃതർ നിരീക്ഷിക്കുന്നു."
-            },
-
-            hi: {
-                title:
-                "भारत ने क्षेत्रीय सुरक्षा घटनाक्रम की समीक्षा की",
-
-                summary:
-                "अधिकारी महत्वपूर्ण सुरक्षा और क्षेत्रीय घटनाक्रम पर नजर रख रहे हैं।"
-            }
-
-        }
-    },
-
-
-    {
-        id: 4,
-
-        category: "Business",
-
-        image:
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/business",
-
-        source:
-        "Business Desk",
-
-        time:
-        "1:20 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "Markets and businesses watch the latest economic signals",
-
-                summary:
-                "Investors and businesses are assessing new developments in the economy."
-            },
-
-            ta: {
-                title:
-                "சந்தைகள் மற்றும் நிறுவனங்கள் சமீபத்திய பொருளாதார அறிகுறிகளை கவனிக்கின்றன",
-
-                summary:
-                "முதலீட்டாளர்கள் மற்றும் நிறுவனங்கள் பொருளாதாரத்தின் புதிய முன்னேற்றங்களை மதிப்பீடு செய்கின்றனர்."
-            },
-
-            te: {
-                title:
-                "మార్కెట్లు, వ్యాపారాలు తాజా ఆర్థిక సంకేతాలను పరిశీలిస్తున్నాయి",
-
-                summary:
-                "పెట్టుబడిదారులు మరియు వ్యాపారాలు ఆర్థిక పరిణామాలను అంచనా వేస్తున్నాయి."
-            },
-
-            kn: {
-                title:
-                "ಮಾರುಕಟ್ಟೆಗಳು ಮತ್ತು ವ್ಯವಹಾರಗಳು ಇತ್ತೀಚಿನ ಆರ್ಥಿಕ ಸೂಚನೆಗಳನ್ನು ಗಮನಿಸುತ್ತಿವೆ",
-
-                summary:
-                "ಹೂಡಿಕೆದಾರರು ಮತ್ತು ವ್ಯವಹಾರಗಳು ಹೊಸ ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆಗಳನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡುತ್ತಿವೆ."
-            },
-
-            ml: {
-                title:
-                "വിപണികളും ബിസിനസുകളും പുതിയ സാമ്പത്തിക സൂചനകൾ നിരീക്ഷിക്കുന്നു",
-
-                summary:
-                "നിക്ഷേപകരും ബിസിനസുകളും പുതിയ സാമ്പത്തിക സംഭവവികാസങ്ങൾ വിലയിരുത്തുന്നു."
-            },
-
-            hi: {
-                title:
-                "बाजार और कारोबार नवीनतम आर्थिक संकेतों पर नजर रख रहे हैं",
-
-                summary:
-                "निवेशक और कारोबारी अर्थव्यवस्था में नए घटनाक्रम का आकलन कर रहे हैं।"
-            }
-
-        }
-    },
-
-
-    {
-        id: 5,
-
-        category: "Tech",
-
-        image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/technology",
-
-        source:
-        "Tech Desk",
-
-        time:
-        "1:15 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "Technology and AI developments to watch",
-
-                summary:
-                "New developments in artificial intelligence and technology are drawing attention."
-            },
-
-            ta: {
-                title:
-                "கவனிக்க வேண்டிய தொழில்நுட்பம் மற்றும் செயற்கை நுண்ணறிவு முன்னேற்றங்கள்",
-
-                summary:
-                "செயற்கை நுண்ணறிவு மற்றும் தொழில்நுட்பத்தில் புதிய முன்னேற்றங்கள் கவனம் பெற்றுள்ளன."
-            },
-
-            te: {
-                title:
-                "గమనించాల్సిన సాంకేతికత మరియు AI పరిణామాలు",
-
-                summary:
-                "కృత్రిమ మేధస్సు మరియు సాంకేతిక రంగంలో కొత్త పరిణామాలు దృష్టిని ఆకర్షిస్తున్నాయి."
-            },
-
-            kn: {
-                title:
-                "ಗಮನಿಸಬೇಕಾದ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು AI ಬೆಳವಣಿಗೆಗಳು",
-
-                summary:
-                "ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಮತ್ತು ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಹೊಸ ಬೆಳವಣಿಗೆಗಳು ಗಮನ ಸೆಳೆಯುತ್ತಿವೆ."
-            },
-
-            ml: {
-                title:
-                "ശ്രദ്ധിക്കേണ്ട സാങ്കേതികവിദ്യയും AI വികസനങ്ങളും",
-
-                summary:
-                "കൃത്രിമ ബുദ്ധിയും സാങ്കേതികവിദ്യയും രംഗത്തെ പുതിയ വികസനങ്ങൾ ശ്രദ്ധ നേടുന്നു."
-            },
-
-            hi: {
-                title:
-                "तकनीक और AI के महत्वपूर्ण घटनाक्रम",
-
-                summary:
-                "कृत्रिम बुद्धिमत्ता और तकनीक में नए घटनाक्रम ध्यान आकर्षित कर रहे हैं।"
-            }
-
-        }
-    },
-
-
-    {
-        id: 6,
-
-        category: "Society",
-
-        image:
-        "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80",
-
-        originalUrl:
-        "https://www.example.com/news/society",
-
-        source:
-        "Society Desk",
-
-        time:
-        "1:10 AM",
-
-        translations: {
-
-            en: {
-                title:
-                "National Sports Day events highlight sporting talent",
-
-                summary:
-                "Events across the country are highlighting sports and community participation."
-            },
-
-            ta: {
-                title:
-                "தேசிய விளையாட்டு தின நிகழ்வுகள் விளையாட்டு திறமையை முன்னிலைப்படுத்துகின்றன",
-
-                summary:
-                "நாடு முழுவதும் நடைபெறும் நிகழ்வுகள் விளையாட்டு மற்றும் சமூக பங்கேற்பை முன்னிலைப்படுத்துகின்றன."
-            },
-
-            te: {
-                title:
-                "జాతీయ క్రీడా దినోత్సవ కార్యక్రమాలు క్రీడా ప్రతిభను చాటుతున్నాయి",
-
-                summary:
-                "దేశవ్యాప్తంగా కార్యక్రమాలు క్రీడలు మరియు సామాజిక భాగస్వామ్యాన్ని ప్రోత్సహిస్తున్నాయి."
-            },
-
-            kn: {
-                title:
-                "ರಾಷ್ಟ್ರೀಯ ಕ್ರೀಡಾ ದಿನ ಕಾರ್ಯಕ್ರಮಗಳು ಕ್ರೀಡಾ ಪ್ರತಿಭೆಯನ್ನು ಎತ್ತಿ ತೋರಿಸುತ್ತಿವೆ",
-
-                summary:
-                "ದೇಶಾದ್ಯಂತ ಕಾರ್ಯಕ್ರಮಗಳು ಕ್ರೀಡೆ ಮತ್ತು ಸಮುದಾಯದ ಭಾಗವಹಿಸುವಿಕೆಯನ್ನು ಉತ್ತೇಜಿಸುತ್ತಿವೆ."
-            },
-
-            ml: {
-                title:
-                "ദേശീയ കായിക ദിന പരിപാടികൾ കായിക പ്രതിഭയെ ഉയർത്തിക്കാട്ടുന്നു",
-
-                summary:
-                "രാജ്യമെമ്പാടുമുള്ള പരിപാടികൾ കായികവും സമൂഹ പങ്കാളിത്തവും പ്രോത്സാഹിപ്പിക്കുന്നു."
-            },
-
-            hi: {
-                title:
-                "राष्ट्रीय खेल दिवस कार्यक्रमों में खेल प्रतिभा को बढ़ावा",
-
-                summary:
-                "देशभर के कार्यक्रम खेल और सामुदायिक भागीदारी को बढ़ावा दे रहे हैं।"
-            }
-
-        }
-    }
-
-];
-
-
-/* =========================================================
-   STATE
-========================================================= */
-
-let currentLanguage = "en";
-let currentCategory = "All";
-
-
-/* =========================================================
-   GET TRANSLATION
-========================================================= */
-
-function getText(story) {
-
-    return story.translations[currentLanguage]
-        || story.translations.en;
-
-}
-
-
-/* =========================================================
-   RENDER NEWS
-========================================================= */
-
-function renderNews() {
-
-    const filtered = stories.filter(story => {
-
-        if (currentCategory === "All") {
-            return true;
-        }
-
-        return story.category === currentCategory;
-
-    });
-
-    document.getElementById("storyCount")
-        .textContent =
-        filtered.length + " stories";
-
-
-    /* -----------------------------------------------
-       FEATURE
-    ------------------------------------------------ */
-
-    const feature = filtered[0];
-
-    if (feature) {
-
-        const text = getText(feature);
-
-        document.getElementById("featureStory")
-            .innerHTML = `
-
-                <a
-                    href="${feature.originalUrl}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <img
-                        class="feature-image"
-                        src="${feature.image}"
-                        alt="${escapeHtml(text.title)}"
-                    >
-
-                </a>
-
-                <div class="feature-content">
-
-                    <div class="category">
-                        ${feature.category}
-                    </div>
-
-                    <h1 class="feature-title">
-                        ${escapeHtml(text.title)}
-                    </h1>
-
-                    <p class="summary">
-                        ${escapeHtml(text.summary)}
-                    </p>
-
-                    <div class="news-meta">
-                        ◷ ${feature.time}
-                        &nbsp; • &nbsp;
-                        ${escapeHtml(feature.source)}
-                    </div>
-
-                    <a
-                        class="read-original"
-                        href="${feature.originalUrl}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Read Original →
-                    </a>
-
-                </div>
-
-        `;
-
-    }
-
-
-    /* -----------------------------------------------
-       CARDS
-    ------------------------------------------------ */
-
-    const grid =
-        document.getElementById("newsGrid");
-
-    grid.innerHTML = "";
-
-    filtered.slice(1).forEach(story => {
-
-        const text = getText(story);
-
-        grid.innerHTML += `
-
-            <article class="news-card">
-
-                <a
-                    href="${story.originalUrl}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <img
-                        class="news-image"
-                        src="${story.image}"
-                        alt="${escapeHtml(text.title)}"
-                    >
-
-                    <div class="news-body">
-
-                        <div class="category">
-                            ${story.category}
-                        </div>
-
-                        <h3 class="news-title">
-                            ${escapeHtml(text.title)}
-                        </h3>
-
-                        <p class="news-summary">
-                            ${escapeHtml(text.summary)}
-                        </p>
-
-                        <div class="news-meta">
-
-                            ◷ ${story.time}
-                            &nbsp; • &nbsp;
-                            ${escapeHtml(story.source)}
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </article>
-
-        `;
-
-    });
-
-
-    document.getElementById("noResults")
-        .style.display =
-        filtered.length === 0
-            ? "block"
-            : "none";
-
-
-    renderTrending(filtered);
-
-}
-
-
-/* =========================================================
-   TRENDING
-========================================================= */
-
-function renderTrending(data) {
-
-    const list =
-        document.getElementById("trendingList");
-
-    list.innerHTML = "";
-
-    data.slice(0, 5).forEach(story => {
-
-        const text = getText(story);
-
-        list.innerHTML += `
-
-            <a
-                class="trending-item"
-                href="${story.originalUrl}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <span class="trending-category">
-                    ${story.category}
-                </span>
-
-                <span class="trending-title">
-                    ${escapeHtml(text.title)}
-                </span>
-
-                <span class="trending-meta">
-                    ◷ ${story.time}
-                    • ${escapeHtml(story.source)}
-                </span>
-
-            </a>
-
-        `;
-
-    });
-
-}
-
-
-/* =========================================================
-   LIVE WIRE
-========================================================= */
-
-function renderTicker() {
-
-    const track =
-        document.getElementById("tickerTrack");
-
-    track.innerHTML = "";
-
-    const tickerStories =
-        stories.slice(0, 6);
-
-    /*
-       Duplicate list so ticker
-       continuously flows.
-    */
-
-    [
-        ...tickerStories,
-        ...tickerStories
-    ].forEach(story => {
-
-        const text = getText(story);
-
-        track.innerHTML += `
-
-            <span class="ticker-item">
-                ${escapeHtml(text.title)}
-            </span>
-
-        `;
-
-    });
-
-}
-
-
-/* =========================================================
-   CATEGORY
-========================================================= */
-
-function selectCategory(category) {
-
-    currentCategory = category;
-
-    document
-        .querySelectorAll(".category-btn")
-        .forEach(button => {
-
-            button.classList.toggle(
-                "active",
-                button.dataset.category === category
-            );
-
-        });
-
-    renderNews();
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-}
-
-
-/* =========================================================
-   CATEGORY BUTTON EVENTS
-========================================================= */
-
-document
-    .querySelectorAll(".category-btn")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                selectCategory(
-                    button.dataset.category
-                );
-
-            }
-        );
-
-    });
-
-
-document
-    .querySelectorAll(".quick-btn")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                selectCategory(
-                    button.dataset.category
-                );
-
-            }
-        );
-
-    });
-
-
-/* =========================================================
-   LANGUAGE SWITCH
-========================================================= */
-
-document
-    .querySelectorAll(".language-btn")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                currentLanguage =
-                    button.dataset.language;
-
-                document
-                    .querySelectorAll(".language-btn")
-                    .forEach(btn => {
-
-                        btn.classList.toggle(
-                            "active",
-                            btn === button
-                        );
-
-                    });
-
-                renderNews();
-
-                renderTicker();
-
-            }
-        );
-
-    });
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-document
-    .getElementById("searchInput")
-    .addEventListener(
-        "input",
-        function() {
-
-            const query =
-                this.value
-                .trim()
-                .toLowerCase();
-
-            document
-                .querySelectorAll(".news-card")
-                .forEach(card => {
-
-                    const text =
-                        card.innerText.toLowerCase();
-
-                    card.style.display =
-                        text.includes(query)
-                            ? ""
-                            : "none";
-
-                });
-
-        }
-    );
-
-
-/* =========================================================
-   CLOCK
-========================================================= */
-
-function updateClock() {
-
-    const now = new Date();
-
-    document.getElementById("clock")
-        .textContent =
-        now.toLocaleTimeString(
-            "en-IN",
-            {
-                hour: "2-digit",
-                minute: "2-digit"
-            }
-        );
-
-}
-
-updateClock();
-
-setInterval(updateClock, 1000);
-
-
-/* =========================================================
-   MOBILE CATEGORY
-========================================================= */
-
-function scrollToCategories() {
-
-    document
-        .querySelector(".category-bar")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
-
-}
-
-
-/* =========================================================
-   HTML ESCAPE
-========================================================= */
-
-function escapeHtml(value) {
-
-    return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-
-}
-
-
-/* =========================================================
-   START
-========================================================= */
-
-renderNews();
-renderTicker();
-
-</script>
 
 </body>
+
 </html>
