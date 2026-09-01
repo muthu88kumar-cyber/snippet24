@@ -1,0 +1,16 @@
+{
+  "name": "snippet24-ai-news",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "openai": "^6.0.0",
+    "rss-parser": "^3.13.0"
+  }
+}
