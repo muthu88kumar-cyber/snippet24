@@ -12,29 +12,71 @@ const app = express();
 
 const PORT = Number(process.env.PORT || 3000);
 
-const parser = new Parser({
-  timeout: 20000
-});
-
-const openai = process.env.OPENAI_API_KEY
-  ? new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY
-    })
-  : null;
-
 const ROOT = process.cwd();
 
-const DATA_FILE = path.join(
+const PUBLIC_DIR = path.join(
   ROOT,
-  "data",
+  "public"
+);
+
+const DATA_DIR = path.join(
+  ROOT,
+  "data"
+);
+
+const DATA_FILE = path.join(
+  DATA_DIR,
   "stories.json"
 );
 
 const IMAGE_DIR = path.join(
-  ROOT,
-  "public",
+  PUBLIC_DIR,
   "generated"
 );
+
+
+/* =========================================================
+   OPENAI
+========================================================= */
+
+const openai =
+  process.env.OPENAI_API_KEY
+    ? new OpenAI({
+        apiKey:
+          process.env.OPENAI_API_KEY
+      })
+    : null;
+
+
+const TEXT_MODEL =
+  process.env.TEXT_MODEL ||
+  "gpt-5.6-luna";
+
+
+const IMAGE_MODEL =
+  process.env.IMAGE_MODEL ||
+  "gpt-image-2";
+
+
+const GENERATE_IMAGES =
+  String(
+    process.env.GENERATE_IMAGES
+  ).toLowerCase() === "true";
+
+
+/* =========================================================
+   RSS
+========================================================= */
+
+const parser =
+  new Parser({
+    timeout: 20000,
+
+    headers: {
+      "User-Agent":
+        "Snippet24 News Bot/1.0"
+    }
+  });
 
 
 /* =========================================================
@@ -42,12 +84,19 @@ const IMAGE_DIR = path.join(
 ========================================================= */
 
 const LANGS = {
+
   en: "English",
+
   ta: "Tamil",
+
   te: "Telugu",
+
   kn: "Kannada",
+
   ml: "Malayalam",
+
   hi: "Hindi"
+
 };
 
 
@@ -56,16 +105,27 @@ const LANGS = {
 ========================================================= */
 
 const CATEGORIES = [
+
   "In India",
+
   "Global",
+
   "Security & Peace",
+
   "Law Around Us",
+
   "Science & Development",
+
   "Business & Economy",
+
   "Society & Culture",
+
   "Human & Environment",
+
   "Tech & AI",
+
   "Sports"
+
 ];
 
 
@@ -79,15 +139,17 @@ app.use(
   })
 );
 
+
 app.use(
   express.urlencoded({
     extended: true
   })
 );
 
+
 app.use(
   express.static(
-    path.join(ROOT, "public")
+    PUBLIC_DIR
   )
 );
 
@@ -99,11 +161,12 @@ app.use(
 async function ensureFiles() {
 
   await fs.mkdir(
-    path.dirname(DATA_FILE),
+    DATA_DIR,
     {
       recursive: true
     }
   );
+
 
   await fs.mkdir(
     IMAGE_DIR,
@@ -111,6 +174,7 @@ async function ensureFiles() {
       recursive: true
     }
   );
+
 
   try {
 
@@ -125,7 +189,9 @@ async function ensureFiles() {
       "[]",
       "utf8"
     );
+
   }
+
 }
 
 
@@ -133,30 +199,36 @@ async function readStories() {
 
   await ensureFiles();
 
+
   try {
 
-    const data =
+    const raw =
       await fs.readFile(
         DATA_FILE,
         "utf8"
       );
 
-    const parsed =
-      JSON.parse(data);
 
-    return Array.isArray(parsed)
-      ? parsed
+    const data =
+      JSON.parse(raw);
+
+
+    return Array.isArray(data)
+      ? data
       : [];
 
   } catch (error) {
 
     console.error(
-      "Could not read stories.json:",
+      "Unable to read stories:",
       error.message
     );
 
+
     return [];
+
   }
+
 }
 
 
@@ -166,23 +238,21 @@ async function writeStories(
 
   await ensureFiles();
 
-  const temporaryFile =
-    `${DATA_FILE}.tmp`;
 
   await fs.writeFile(
-    temporaryFile,
+
+    DATA_FILE,
+
     JSON.stringify(
       stories,
       null,
       2
     ),
+
     "utf8"
+
   );
 
-  await fs.rename(
-    temporaryFile,
-    DATA_FILE
-  );
 }
 
 
@@ -195,43 +265,47 @@ function clean(value) {
   return String(
     value || ""
   )
+
     .replace(
       /<[^>]*>/g,
       " "
     )
+
     .replace(
       /&nbsp;/gi,
       " "
     )
+
     .replace(
       /&amp;/gi,
       "&"
     )
+
     .replace(
       /&quot;/gi,
       '"'
     )
+
     .replace(
       /&#39;/gi,
       "'"
     )
+
     .replace(
       /\s+/g,
       " "
     )
+
     .trim();
+
 }
 
 
-function safeText(
-  value,
-  fallback = ""
-) {
+function makeId() {
 
-  const result =
-    clean(value);
+  return crypto
+    .randomUUID();
 
-  return result || fallback;
 }
 
 
@@ -240,119 +314,100 @@ function parseJSON(
 ) {
 
   let cleaned =
-    String(
-      text || ""
-    ).trim();
-
-  cleaned =
-    cleaned
-      .replace(
-        /^```json\s*/i,
-        ""
-      )
-      .replace(
-        /^```\s*/i,
-        ""
-      )
-      .replace(
-        /\s*```$/i,
-        ""
-      )
+    String(text || "")
       .trim();
 
-  const first =
-    cleaned.indexOf("{");
 
-  const last =
-    cleaned.lastIndexOf("}");
+  cleaned =
+    cleaned.replace(
+      /^```json\s*/i,
+      ""
+    );
 
-  if (
-    first !== -1 &&
-    last !== -1 &&
-    last > first
-  ) {
 
-    cleaned =
-      cleaned.slice(
-        first,
-        last + 1
-      );
-  }
+  cleaned =
+    cleaned.replace(
+      /^```\s*/i,
+      ""
+    );
+
+
+  cleaned =
+    cleaned.replace(
+      /\s*```$/i,
+      ""
+    );
+
 
   return JSON.parse(
     cleaned
   );
+
 }
 
 
-function normalizeKeyPoints(
-  points
+function safeDate(
+  value
 ) {
 
-  if (!Array.isArray(points)) {
+  const date =
+    new Date(value);
 
-    return [];
-  }
 
-  return points
-    .map(
-      point =>
-        clean(point)
+  if (
+    Number.isNaN(
+      date.getTime()
     )
-    .filter(Boolean)
-    .slice(0, 3);
-}
-
-
-function normalizeTranslations(
-  translations,
-  fallback
-) {
-
-  const result = {};
-
-  for (
-    const lang of Object.keys(LANGS)
   ) {
 
-    const item =
-      translations?.[lang] || {};
+    return new Date();
 
-    result[lang] = {
-
-      headline:
-        safeText(
-          item.headline,
-          fallback.headline
-        ),
-
-      summary:
-        safeText(
-          item.summary,
-          fallback.summary
-        ),
-
-      keyPoints:
-        normalizeKeyPoints(
-          item.keyPoints
-        )
-    };
-
-    if (
-      result[lang].keyPoints.length === 0
-    ) {
-
-      result[lang].keyPoints =
-        fallback.keyPoints;
-    }
   }
 
-  return result;
+
+  return date;
+
+}
+
+
+function getStoryText(
+  story,
+  language
+) {
+
+  return (
+    story?.translations?.[
+      language
+    ] ||
+
+    story?.translations?.en ||
+
+    {
+
+      headline:
+        story?.snippet24
+          ?.headline ||
+        "",
+
+      summary:
+        story?.snippet24
+          ?.summary ||
+        "",
+
+      keyPoints:
+        story?.snippet24
+          ?.keyPoints ||
+        []
+
+    }
+
+  );
+
 }
 
 
 /* =========================================================
-   AI NEWS REWRITER
+   AI NEWS EDITOR
 ========================================================= */
 
 async function rewriteNews(
@@ -364,59 +419,46 @@ async function rewriteNews(
     throw new Error(
       "OPENAI_API_KEY is not configured."
     );
+
   }
 
 
   const prompt = `
 
-You are the senior AI editor for Snippet24.
+You are the senior AI editor of Snippet24.
 
 Snippet24 is an independent multilingual news platform.
 
-Your task is to create an ORIGINAL editorial presentation from the supplied source information.
+Create an ORIGINAL editorial presentation based ONLY on the supplied source information.
 
 IMPORTANT:
 
-- Do not copy sentences from the source.
-- Do not reproduce the source article.
+- Do not copy the source article.
+- Do not reproduce source sentences.
 - Do not invent facts.
-- Do not add facts that are not reasonably supported by the supplied information.
-- Preserve uncertainty.
+- Do not add unsupported claims.
 - Do not exaggerate.
-- Do not fabricate quotes.
-- Do not fabricate statistics.
-- Do not fabricate people.
-- Do not fabricate locations.
-- Write like a professional digital newsroom.
-- Keep the English summary between 60 and 90 words.
+- Preserve uncertainty.
+- Write an original headline.
+- Write an original 60-90 word summary.
 - Create exactly 3 useful key points.
-- Assign exactly ONE category.
-- Translate naturally into Indian-language journalism.
-- Do not translate word-for-word.
-- Tamil must be natural Tamil journalism.
-- Telugu must be natural Telugu journalism.
-- Kannada must be natural Kannada journalism.
-- Malayalam must be natural Malayalam journalism.
-- Hindi must be natural Hindi journalism.
+- Select exactly ONE category.
+- Provide the best-supported location.
+- Translate naturally into Indian languages.
+- Translations must read like professional native journalism.
+- Create a completely new AI editorial illustration prompt.
+- The illustration must NOT recreate an existing news photograph.
+- Do not include logos.
+- Do not include watermarks.
+- Do not put words or captions inside the image.
 
-IMAGE:
+Allowed categories:
 
-Create an ORIGINAL editorial illustration concept.
-
-The image must:
-- visually represent the subject
-- be different from the source photograph
-- not reproduce an existing news photograph
-- not contain logos
-- not contain watermarks
-- not contain text
-- not contain fake captions
-- not make the illustration look like the original event photograph
-- use symbolic/editorial visual storytelling where appropriate
+${CATEGORIES.join(", ")}
 
 Return ONLY valid JSON.
 
-Use exactly this structure:
+Required structure:
 
 {
   "headline": "",
@@ -463,26 +505,20 @@ Use exactly this structure:
   }
 }
 
-Allowed categories:
-
-${CATEGORIES.join(", ")}
-
-SOURCE INFORMATION
-
-Title:
+SOURCE TITLE:
 ${source.title}
 
-Description:
+SOURCE DESCRIPTION:
 ${source.description}
 
-Source:
+SOURCE NAME:
 ${source.sourceName}
 
-Original URL:
+SOURCE URL:
 ${source.sourceUrl}
 
-Published:
-${source.publishedAt || ""}
+PUBLISHED:
+${source.publishedAt}
 
 `;
 
@@ -491,17 +527,58 @@ ${source.publishedAt || ""}
     await openai.responses.create({
 
       model:
-        process.env.TEXT_MODEL ||
-        "gpt-5.6-luna",
+        TEXT_MODEL,
 
       input:
         prompt
+
     });
 
 
-  return parseJSON(
-    response.output_text
-  );
+  if (
+    !response ||
+    !response.output_text
+  ) {
+
+    throw new Error(
+      "OpenAI returned no text."
+    );
+
+  }
+
+
+  const result =
+    parseJSON(
+      response.output_text
+    );
+
+
+  if (
+    !result.headline ||
+    !result.summary
+  ) {
+
+    throw new Error(
+      "AI response is missing headline or summary."
+    );
+
+  }
+
+
+  if (
+    !CATEGORIES.includes(
+      result.category
+    )
+  ) {
+
+    result.category =
+      "Global";
+
+  }
+
+
+  return result;
+
 }
 
 
@@ -521,57 +598,53 @@ async function generateNewsImage(
     );
 
     return null;
+
   }
 
 
-  const enabled =
-    String(
-      process.env.GENERATE_IMAGES ||
-      "false"
-    ).toLowerCase() ===
-    "true";
-
-
-  if (!enabled) {
+  if (!GENERATE_IMAGES) {
 
     console.log(
       "Image generation disabled."
     );
 
     return null;
+
   }
 
 
-  const finalPrompt = `
+  const prompt = `
 
-Create a completely NEW editorial illustration for Snippet24.
+Create an original editorial illustration for the news platform Snippet24.
 
-NEWS SUBJECT:
+SUBJECT:
+
 ${imagePrompt}
 
 STYLE:
 
-- premium digital-news editorial illustration
-- realistic but clearly editorial
-- cinematic composition
-- strong visual storytelling
-- professional news website quality
-- landscape 3:2 composition
-- no text
-- no captions
-- no logos
-- no publisher branding
-- no watermark
-- no newspaper front page
-- no copied photograph
-- do not recreate an existing news photograph
-- do not make this look like an actual press photograph
-- no fake documentary evidence
-- avoid identifiable private individuals
+Professional contemporary news editorial illustration.
 
-The result should visually communicate the story through
-people, places, objects, symbols, architecture, environment
-or conceptual editorial elements.
+REQUIREMENTS:
+
+- Landscape 16:9 composition.
+- Strong visual storytelling.
+- Visually related to the subject.
+- Suitable for a premium news website.
+- Realistic editorial artwork.
+- Use original composition.
+- Do not recreate any existing news photograph.
+- Do not copy a journalist's photograph.
+- Do not use publisher logos.
+- Do not use brand logos.
+- No watermark.
+- No captions.
+- No written words.
+- No fake newspaper headlines.
+- No fake signs.
+- No political propaganda.
+- Do not depict identifiable private individuals.
+- The image must clearly function as an editorial illustration.
 
 `;
 
@@ -582,33 +655,43 @@ or conceptual editorial elements.
       await openai.images.generate({
 
         model:
-          process.env.IMAGE_MODEL ||
-          "gpt-image-2",
+          IMAGE_MODEL,
 
-        prompt:
-          finalPrompt,
+        prompt,
 
         size:
-          process.env.IMAGE_SIZE ||
-          "1536x1024",
+          "1536x1024"
 
-        quality:
-          process.env.IMAGE_QUALITY ||
-          "medium"
       });
 
 
+    const image =
+      response?.data?.[0];
+
+
+    if (!image) {
+
+      console.error(
+        "No image returned by OpenAI."
+      );
+
+      return null;
+
+    }
+
+
     const base64 =
-      response?.data?.[0]?.b64_json;
+      image.b64_json;
 
 
     if (!base64) {
 
       console.error(
-        "Image API returned no image data."
+        "Image response did not contain base64 data."
       );
 
       return null;
+
     }
 
 
@@ -624,30 +707,39 @@ or conceptual editorial elements.
 
 
     await fs.writeFile(
+
       filePath,
+
       Buffer.from(
         base64,
         "base64"
       )
+
     );
 
 
-    return `/generated/${filename}`;
+    return (
+      `/generated/${filename}`
+    );
+
 
   } catch (error) {
 
     console.error(
-      "IMAGE GENERATION ERROR:",
+      "Image generation failed:",
       error.message
     );
 
+
     return null;
+
   }
+
 }
 
 
 /* =========================================================
-   PROCESS ONE STORY
+   PROCESS STORY
 ========================================================= */
 
 async function processStory(
@@ -655,19 +747,19 @@ async function processStory(
 ) {
 
   const id =
-    crypto.randomUUID();
+    makeId();
 
 
   const source = {
 
     title:
-      safeText(
-        item.title,
+      clean(
+        item.title ||
         "Untitled story"
       ),
 
     description:
-      safeText(
+      clean(
         item.contentSnippet ||
         item.content ||
         item.summary ||
@@ -676,34 +768,36 @@ async function processStory(
       ),
 
     sourceName:
-      safeText(
+      clean(
         item.creator ||
         item.author ||
         item.feedTitle ||
         item.sourceName ||
-        "Source"
+        "News Source"
       ),
 
     sourceUrl:
-      String(
-        item.link ||
-        item.sourceUrl ||
-        ""
-      ).trim(),
+      item.link ||
+      item.sourceUrl ||
+      "",
 
     publishedAt:
       item.isoDate ||
       item.pubDate ||
       item.publishedAt ||
       new Date().toISOString()
+
   };
 
 
-  if (!source.sourceUrl) {
+  if (
+    !source.sourceUrl
+  ) {
 
     throw new Error(
-      "Source item has no original URL."
+      "Story does not contain an original source URL."
     );
+
   }
 
 
@@ -713,107 +807,78 @@ async function processStory(
     );
 
 
-  const fallback = {
-
-    headline:
-      safeText(
-        ai.headline,
-        source.title
-      ),
-
-    summary:
-      safeText(
-        ai.summary,
-        source.description
-      ),
-
-    keyPoints:
-      normalizeKeyPoints(
-        ai.keyPoints
-      )
-  };
-
-
-  const category =
-    CATEGORIES.includes(
-      ai.category
-    )
-      ? ai.category
-      : "Global";
-
-
-  const translations =
-    normalizeTranslations(
-      ai.translations,
-      fallback
-    );
-
-
   const imageUrl =
     await generateNewsImage(
+
       ai.imagePrompt,
+
       id
+
     );
 
 
-  return {
+  const story = {
 
     id,
 
     createdAt:
       new Date().toISOString(),
 
-    source: {
-
-      title:
-        source.title,
-
-      description:
-        source.description,
-
-      sourceName:
-        source.sourceName,
-
-      sourceUrl:
-        source.sourceUrl,
-
-      publishedAt:
-        source.publishedAt
-    },
-
+    source,
 
     snippet24: {
 
       headline:
-        fallback.headline,
+        clean(
+          ai.headline
+        ),
 
       summary:
-        fallback.summary,
+        clean(
+          ai.summary
+        ),
 
       keyPoints:
-        fallback.keyPoints,
+        Array.isArray(
+          ai.keyPoints
+        )
+          ? ai.keyPoints
+              .slice(0, 3)
+              .map(clean)
+          : [],
 
-      category,
+      category:
+        CATEGORIES.includes(
+          ai.category
+        )
+          ? ai.category
+          : "Global",
 
       location:
-        safeText(
+        clean(
           ai.location
         ),
 
       imagePrompt:
-        safeText(
+        clean(
           ai.imagePrompt
         )
+
     },
 
-
-    translations,
+    translations:
+      ai.translations,
 
     imageUrl,
 
     imageGenerated:
       Boolean(imageUrl)
+
   };
+
+
+  return story;
+
 }
 
 
@@ -823,39 +888,51 @@ async function processStory(
 
 async function ingestNews() {
 
-  const feeds =
+  const feedString =
     String(
       process.env.RSS_FEEDS ||
       ""
-    )
+    );
+
+
+  const feeds =
+    feedString
+
       .split(",")
+
       .map(
         feed =>
           feed.trim()
       )
+
       .filter(Boolean);
 
 
   if (!feeds.length) {
 
     throw new Error(
-      "No RSS_FEEDS configured in .env"
+      "RSS_FEEDS is empty. Add RSS feed URLs to .env."
     );
+
   }
 
 
-  const oldStories =
+  const existing =
     await readStories();
 
 
   const seenUrls =
     new Set(
-      oldStories
+
+      existing
+
         .map(
           story =>
-            story.source?.sourceUrl
+            story?.source?.sourceUrl
         )
+
         .filter(Boolean)
+
     );
 
 
@@ -882,48 +959,57 @@ async function ingestNews() {
 
 
       const items =
-        Array.isArray(feed.items)
-          ? feed.items.slice(
-              0,
-              Number(
-                process.env.MAX_ITEMS_PER_FEED ||
-                10
-              )
-            )
+        Array.isArray(
+          feed.items
+        )
+          ? feed.items
           : [];
 
 
+      /*
+        Process up to 10 new stories
+        from each RSS source.
+      */
+
+      const selected =
+        items.slice(
+          0,
+          10
+        );
+
+
       for (
-        const item of items
+        const item of selected
       ) {
 
-        const url =
-          String(
-            item.link ||
-            ""
-          ).trim();
+        const sourceUrl =
+          item.link;
 
 
-        if (!url) {
+        if (
+          !sourceUrl
+        ) {
 
           continue;
+
         }
 
 
         if (
           seenUrls.has(
-            url
+            sourceUrl
           )
         ) {
 
           continue;
+
         }
 
 
         try {
 
           console.log(
-            `Processing: ${item.title || "Untitled"}`
+            `AI processing: ${item.title}`
           );
 
 
@@ -933,7 +1019,9 @@ async function ingestNews() {
               ...item,
 
               feedTitle:
-                feed.title
+                feed.title ||
+                "News Source"
+
             });
 
 
@@ -943,37 +1031,68 @@ async function ingestNews() {
 
 
           seenUrls.add(
-            url
+            sourceUrl
+          );
+
+
+          /*
+            Small delay so we don't
+            hammer APIs.
+          */
+
+          await new Promise(
+            resolve =>
+              setTimeout(
+                resolve,
+                500
+              )
           );
 
 
         } catch (error) {
 
           console.error(
-            `Story error: ${item.title || "item"}`,
+            `Story failed: ${item.title}`,
             error.message
           );
 
 
-          errors.push(
-            `${item.title || "item"}: ${error.message}`
-          );
+          errors.push({
+
+            title:
+              item.title ||
+              "Unknown story",
+
+            error:
+              error.message
+
+          });
+
         }
+
       }
 
 
     } catch (error) {
 
       console.error(
-        `Feed error: ${feedUrl}`,
+        `RSS failed: ${feedUrl}`,
         error.message
       );
 
 
-      errors.push(
-        `${feedUrl}: ${error.message}`
-      );
+      errors.push({
+
+        feed:
+          feedUrl,
+
+        error:
+          error.message
+
+      });
+
     }
+
   }
 
 
@@ -981,44 +1100,23 @@ async function ingestNews() {
 
     ...added,
 
-    ...oldStories
+    ...existing
 
   ]
-    .filter(
-      (story, index, array) => {
 
-        const url =
-          story.source?.sourceUrl;
-
-        if (!url) {
-          return true;
-        }
-
-        return (
-          index ===
-          array.findIndex(
-            item =>
-              item.source?.sourceUrl ===
-              url
-          )
-        );
-      }
-    )
     .sort(
       (a, b) =>
-        new Date(
+        safeDate(
           b.createdAt
-        ) -
-        new Date(
+        ).getTime() -
+        safeDate(
           a.createdAt
-        )
+        ).getTime()
     )
+
     .slice(
       0,
-      Number(
-        process.env.MAX_STORIES ||
-        500
-      )
+      500
     );
 
 
@@ -1036,7 +1134,9 @@ async function ingestNews() {
       merged.length,
 
     errors
+
   };
+
 }
 
 
@@ -1046,33 +1146,65 @@ async function ingestNews() {
 
 app.get(
   "/api/health",
-  (req, res) => {
+  async (
+    req,
+    res
+  ) => {
+
+    const stories =
+      await readStories();
+
 
     res.json({
 
-      ok: true,
+      ok:
+        true,
+
+      site:
+        "Snippet24",
 
       aiConfigured:
         Boolean(openai),
 
       textModel:
-        process.env.TEXT_MODEL ||
-        "gpt-5.6-luna",
-
-      imageGeneration:
-        String(
-          process.env.GENERATE_IMAGES ||
-          "false"
-        ).toLowerCase() ===
-        "true",
+        TEXT_MODEL,
 
       imageModel:
-        process.env.IMAGE_MODEL ||
-        "gpt-image-2",
+        IMAGE_MODEL,
 
-      timestamp:
+      imageGeneration:
+        GENERATE_IMAGES,
+
+      stories:
+        stories.length,
+
+      time:
         new Date().toISOString()
+
     });
+
+  }
+);
+
+
+/* =========================================================
+   CATEGORIES API
+========================================================= */
+
+app.get(
+  "/api/categories",
+  (
+    req,
+    res
+  ) => {
+
+    res.json({
+
+      categories:
+        CATEGORIES
+
+    });
+
   }
 );
 
@@ -1083,7 +1215,10 @@ app.get(
 
 app.get(
   "/api/stories",
-  async (req, res) => {
+  async (
+    req,
+    res
+  ) => {
 
     try {
 
@@ -1092,7 +1227,9 @@ app.get(
 
 
       const language =
-        LANGS[req.query.lang]
+        LANGS[
+          req.query.lang
+        ]
           ? req.query.lang
           : "en";
 
@@ -1114,170 +1251,190 @@ app.get(
 
 
       let filtered =
-        category === "all"
-          ? stories
-          : stories.filter(
-              story =>
-                story.snippet24
-                  ?.category ===
-                category
-            );
+        stories;
 
 
-      if (search) {
+      /*
+        CATEGORY FILTER
+      */
+
+      if (
+        category !== "all"
+      ) {
+
+        filtered =
+          filtered.filter(
+
+            story =>
+              story?.snippet24
+                ?.category ===
+              category
+
+          );
+
+      }
+
+
+      /*
+        SEARCH FILTER
+      */
+
+      if (
+        search
+      ) {
 
         filtered =
           filtered.filter(
             story => {
 
-              const translated =
-                story.translations?.[
+              const text =
+                getStoryText(
+                  story,
                   language
-                ] ||
-                story.translations?.en ||
-                {};
+                );
 
 
-              const text = [
+              const searchable = [
 
-                translated.headline,
+                text.headline,
 
-                translated.summary,
+                text.summary,
 
-                ...(translated.keyPoints || []),
+                ...(Array.isArray(
+                  text.keyPoints
+                )
+                  ? text.keyPoints
+                  : []),
 
-                story.snippet24?.category,
+                story?.snippet24
+                  ?.category,
 
-                story.snippet24?.location
+                story?.snippet24
+                  ?.location,
+
+                story?.source
+                  ?.sourceName
 
               ]
-                .filter(Boolean)
+
                 .join(" ")
+
                 .toLowerCase();
 
 
-              return text.includes(
-                search
-              );
+              return searchable
+                .includes(
+                  search
+                );
+
             }
           );
+
       }
+
+
+      /*
+        Add display text so
+        frontend doesn't have
+        to understand storage.
+      */
+
+      const output =
+        filtered
+
+          .slice(
+            0,
+            100
+          )
+
+          .map(
+            story => {
+
+              const text =
+                getStoryText(
+                  story,
+                  language
+                );
+
+
+              return {
+
+                ...story,
+
+                display: {
+
+                  headline:
+                    text.headline ||
+                    story.snippet24
+                      ?.headline ||
+                    "",
+
+                  summary:
+                    text.summary ||
+                    story.snippet24
+                      ?.summary ||
+                    "",
+
+                  keyPoints:
+                    text.keyPoints ||
+                    story.snippet24
+                      ?.keyPoints ||
+                    []
+
+                }
+
+              };
+
+            }
+          );
 
 
       res.json({
 
+        ok:
+          true,
+
         language,
 
-        languages:
-          LANGS,
+        languageName:
+          LANGS[
+            language
+          ],
+
+        category,
 
         categories:
           CATEGORIES,
 
         count:
-          filtered.length,
+          output.length,
 
         stories:
-          filtered.slice(
-            0,
-            100
-          )
+          output
+
       });
 
 
     } catch (error) {
 
       console.error(
+        "Stories API error:",
         error
       );
 
 
       res.status(500).json({
 
-        error:
-          error.message
-      });
-    }
-  }
-);
-
-
-/* =========================================================
-   TRENDING API
-========================================================= */
-
-app.get(
-  "/api/trending",
-  async (req, res) => {
-
-    try {
-
-      const stories =
-        await readStories();
-
-
-      const language =
-        LANGS[req.query.lang]
-          ? req.query.lang
-          : "en";
-
-
-      const trending =
-        stories
-          .slice(
-            0,
-            10
-          )
-          .map(
-            story => {
-
-              const translated =
-                story.translations?.[
-                  language
-                ] ||
-                story.translations?.en ||
-                {};
-
-
-              return {
-
-                id:
-                  story.id,
-
-                headline:
-                  translated.headline ||
-                  story.snippet24?.headline ||
-                  "",
-
-                category:
-                  story.snippet24?.category ||
-                  "",
-
-                sourceName:
-                  story.source?.sourceName ||
-                  "",
-
-                publishedAt:
-                  story.source?.publishedAt ||
-                  story.createdAt
-              };
-            }
-          );
-
-
-      res.json({
-        trending
-      });
-
-
-    } catch (error) {
-
-      res.status(500).json({
+        ok:
+          false,
 
         error:
           error.message
+
       });
+
     }
+
   }
 );
 
@@ -1288,7 +1445,10 @@ app.get(
 
 app.get(
   "/api/story/:id",
-  async (req, res) => {
+  async (
+    req,
+    res
+  ) => {
 
     try {
 
@@ -1298,82 +1458,175 @@ app.get(
 
       const story =
         stories.find(
+
           item =>
             item.id ===
             req.params.id
+
         );
 
 
       if (!story) {
 
-        return res.status(404).json({
+        return res
+          .status(404)
+          .json({
 
-          error:
-            "Story not found"
-        });
+            ok:
+              false,
+
+            error:
+              "Story not found"
+
+          });
+
       }
 
 
-      res.json(
+      res.json({
+
+        ok:
+          true,
+
         story
-      );
+
+      });
 
 
     } catch (error) {
 
-      res.status(500).json({
+      res
+        .status(500)
+        .json({
 
-        error:
-          error.message
-      });
+          ok:
+            false,
+
+          error:
+            error.message
+
+        });
+
     }
+
   }
 );
 
 
 /* =========================================================
-   MANUAL INGEST
+   TRENDING API
 ========================================================= */
 
-app.post(
-  "/api/ingest",
-  async (req, res) => {
+app.get(
+  "/api/trending",
+  async (
+    req,
+    res
+  ) => {
 
     try {
 
-      const result =
-        await ingestNews();
+      const stories =
+        await readStories();
 
 
-      res.json(
-        result
-      );
+      const language =
+        LANGS[
+          req.query.lang
+        ]
+          ? req.query.lang
+          : "en";
+
+
+      const trending =
+        stories
+
+          .slice(
+            0,
+            10
+          )
+
+          .map(
+            story => {
+
+              const text =
+                getStoryText(
+                  story,
+                  language
+                );
+
+
+              return {
+
+                id:
+                  story.id,
+
+                headline:
+                  text.headline ||
+                  story.snippet24
+                    ?.headline ||
+                  "",
+
+                category:
+                  story.snippet24
+                    ?.category ||
+                  "Global",
+
+                source:
+                  story.source
+                    ?.sourceName ||
+                  "",
+
+                publishedAt:
+                  story.source
+                    ?.publishedAt ||
+                  story.createdAt
+
+              };
+
+            }
+          );
+
+
+      res.json({
+
+        ok:
+          true,
+
+        stories:
+          trending
+
+      });
 
 
     } catch (error) {
 
-      console.error(
-        error
-      );
-
-
       res.status(500).json({
+
+        ok:
+          false,
 
         error:
           error.message
+
       });
+
     }
+
   }
 );
 
 
 /* =========================================================
-   MANUAL STORY PROCESSING
+   MANUAL STORY PROCESSOR
 ========================================================= */
 
 app.post(
   "/api/process",
-  async (req, res) => {
+  async (
+    req,
+    res
+  ) => {
 
     try {
 
@@ -1386,11 +1639,18 @@ app.post(
         !body.sourceUrl
       ) {
 
-        return res.status(400).json({
+        return res
+          .status(400)
+          .json({
 
-          error:
-            "title and sourceUrl are required"
-        });
+            ok:
+              false,
+
+            error:
+              "title and sourceUrl are required"
+
+          });
+
       }
 
 
@@ -1401,10 +1661,13 @@ app.post(
             body.title,
 
           contentSnippet:
-            body.description,
+            body.description ||
+            body.content ||
+            "",
 
-          creator:
-            body.sourceName,
+          sourceName:
+            body.sourceName ||
+            "Manual Source",
 
           link:
             body.sourceUrl,
@@ -1412,11 +1675,46 @@ app.post(
           publishedAt:
             body.publishedAt ||
             new Date().toISOString()
+
         });
 
 
       const stories =
         await readStories();
+
+
+      /*
+        Prevent duplicate
+        source URLs.
+      */
+
+      const duplicate =
+        stories.find(
+
+          existing =>
+            existing?.source
+              ?.sourceUrl ===
+            story.source.sourceUrl
+
+        );
+
+
+      if (duplicate) {
+
+        return res.json({
+
+          ok:
+            true,
+
+          duplicate:
+            true,
+
+          story:
+            duplicate
+
+        });
+
+      }
 
 
       stories.unshift(
@@ -1426,52 +1724,210 @@ app.post(
 
       await writeStories(
 
-        stories
-          .filter(
-            (item, index, array) => {
+        stories.slice(
+          0,
+          500
+        )
 
-              const url =
-                item.source?.sourceUrl;
-
-              return (
-                !url ||
-                index ===
-                array.findIndex(
-                  x =>
-                    x.source?.sourceUrl ===
-                    url
-                )
-              );
-            }
-          )
-          .slice(
-            0,
-            Number(
-              process.env.MAX_STORIES ||
-              500
-            )
-          )
       );
 
 
-      res.json(
+      res.json({
+
+        ok:
+          true,
+
+        duplicate:
+          false,
+
         story
-      );
+
+      });
 
 
     } catch (error) {
 
       console.error(
+        "Manual processing error:",
         error
       );
 
 
       res.status(500).json({
 
+        ok:
+          false,
+
         error:
           error.message
+
       });
+
     }
+
+  }
+);
+
+
+/* =========================================================
+   INGEST API
+========================================================= */
+
+app.post(
+  "/api/ingest",
+  async (
+    req,
+    res
+  ) => {
+
+    try {
+
+      const result =
+        await ingestNews();
+
+
+      res.json({
+
+        ok:
+          true,
+
+        ...result
+
+      });
+
+
+    } catch (error) {
+
+      console.error(
+        "Ingestion error:",
+        error
+      );
+
+
+      res.status(500).json({
+
+        ok:
+          false,
+
+        error:
+          error.message
+
+      });
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   DELETE ALL STORIES
+   ADMIN / DEVELOPMENT ONLY
+========================================================= */
+
+app.post(
+  "/api/reset",
+  async (
+    req,
+    res
+  ) => {
+
+    try {
+
+      await writeStories(
+        []
+      );
+
+
+      /*
+        Remove generated images.
+      */
+
+      try {
+
+        const files =
+          await fs.readdir(
+            IMAGE_DIR
+          );
+
+
+        for (
+          const file of files
+        ) {
+
+          if (
+            file.endsWith(
+              ".png"
+            )
+          ) {
+
+            await fs.unlink(
+              path.join(
+                IMAGE_DIR,
+                file
+              )
+            );
+
+          }
+
+        }
+
+      } catch {
+
+        // Ignore image cleanup errors.
+
+      }
+
+
+      res.json({
+
+        ok:
+          true,
+
+        message:
+          "All Snippet24 stories were reset."
+
+      });
+
+
+    } catch (error) {
+
+      res.status(500).json({
+
+        ok:
+          false,
+
+        error:
+          error.message
+
+      });
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   ARTICLE PAGE
+========================================================= */
+
+app.get(
+  "/story",
+  (
+    req,
+    res
+  ) => {
+
+    res.sendFile(
+
+      path.join(
+        PUBLIC_DIR,
+        "story.html"
+      )
+
+    );
+
   }
 );
 
@@ -1482,34 +1938,20 @@ app.post(
 
 app.get(
   "/admin",
-  (req, res) => {
+  (
+    req,
+    res
+  ) => {
 
     res.sendFile(
+
       path.join(
-        ROOT,
-        "public",
+        PUBLIC_DIR,
         "admin.html"
       )
+
     );
-  }
-);
 
-
-/* =========================================================
-   STORY PAGE
-========================================================= */
-
-app.get(
-  "/story",
-  (req, res) => {
-
-    res.sendFile(
-      path.join(
-        ROOT,
-        "public",
-        "story.html"
-      )
-    );
   }
 );
 
@@ -1519,16 +1961,71 @@ app.get(
 ========================================================= */
 
 app.get(
-  "*splat",
-  (req, res) => {
+  "/",
+  (
+    req,
+    res
+  ) => {
 
     res.sendFile(
+
       path.join(
-        ROOT,
-        "public",
+        PUBLIC_DIR,
         "index.html"
       )
+
     );
+
+  }
+);
+
+
+/* =========================================================
+   FALLBACK
+========================================================= */
+
+app.get(
+  "*splat",
+  (
+    req,
+    res
+  ) => {
+
+    /*
+      API routes should never
+      reach this point.
+    */
+
+    if (
+      req.path.startsWith(
+        "/api/"
+      )
+    ) {
+
+      return res
+        .status(404)
+        .json({
+
+          ok:
+            false,
+
+          error:
+            "API endpoint not found"
+
+        });
+
+    }
+
+
+    res.sendFile(
+
+      path.join(
+        PUBLIC_DIR,
+        "index.html"
+      )
+
+    );
+
   }
 );
 
@@ -1545,19 +2042,23 @@ app.listen(
   () => {
 
     console.log(
-      "======================================"
+      ""
     );
 
     console.log(
-      "        SNIPPET24 SERVER"
+      "===================================="
     );
 
     console.log(
-      "======================================"
+      "       SNIPPET24 SERVER"
     );
 
     console.log(
-      `Running on port ${PORT}`
+      "===================================="
+    );
+
+    console.log(
+      `Website: http://localhost:${PORT}`
     );
 
     console.log(
@@ -1569,33 +2070,24 @@ app.listen(
     );
 
     console.log(
-      `Text model: ${
-        process.env.TEXT_MODEL ||
-        "gpt-5.6-luna"
-      }`
+      `Text model: ${TEXT_MODEL}`
     );
 
     console.log(
-      `Images: ${
-        String(
-          process.env.GENERATE_IMAGES ||
-          "false"
-        ).toLowerCase() ===
-        "true"
+      `Image model: ${IMAGE_MODEL}`
+    );
+
+    console.log(
+      `AI images: ${
+        GENERATE_IMAGES
           ? "ENABLED"
           : "DISABLED"
       }`
     );
 
     console.log(
-      `Image model: ${
-        process.env.IMAGE_MODEL ||
-        "gpt-image-2"
-      }`
+      "===================================="
     );
 
-    console.log(
-      "======================================"
-    );
   }
 );
