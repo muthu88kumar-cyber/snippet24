@@ -1,60 +1,49 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
 
-<meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-<meta
-  name="viewport"
-  content="width=device-width,initial-scale=1"
->
+  <title>Snippet24 — Fast News • Real Impact</title>
 
-<title>
-Snippet24 — Fast News • Real Impact
-</title>
+  <meta
+    name="description"
+    content="Snippet24 — AI-curated multilingual news with original editorial illustrations."
+  >
 
-<meta
-  name="description"
-  content="Snippet24 — AI-curated multilingual news with original editorial illustrations."
->
-
-<link
-  rel="stylesheet"
-  href="/styles.css"
->
-
+  <link
+    rel="stylesheet"
+    href="/styles.css"
+  >
 </head>
 
 
 <body>
 
-
 <header class="site-header">
+
+  <!-- =========================
+       TOP BAR
+  ========================== -->
 
   <div class="topbar">
 
     <a
       class="brand"
       href="/"
+      aria-label="Snippet24 Home"
     >
-
-      <span>snippet</span>
-
-      <b>24</b>
-
+      <span>snippet</span><b>24</b>
     </a>
 
 
     <div class="tagline">
-
-      FAST NEWS
-
-      <i>•</i>
-
-      REAL IMPACT
-
+      FAST NEWS <i>•</i> REAL IMPACT
     </div>
 
 
@@ -62,43 +51,63 @@ Snippet24 — Fast News • Real Impact
 
       <div class="search">
 
-        <span>⌕</span>
+        <span aria-hidden="true">⌕</span>
 
         <input
           id="searchInput"
           type="search"
           placeholder="Search stories, topics, people…"
+          autocomplete="off"
         >
 
       </div>
 
 
-      <div class="weather">
+      <!-- Weather is populated by app.js -->
 
-        ☀️
+      <button
+        id="weatherButton"
+        class="weather"
+        type="button"
+        title="View local weather"
+      >
 
-        <strong>36°C</strong>
+        <span id="weatherIcon">☀️</span>
 
-        <small>India</small>
+        <strong id="weatherTemp">--°C</strong>
 
+        <small id="weatherCity">Your City</small>
+
+      </button>
+
+
+      <div
+        id="clock"
+        class="clock"
+        aria-live="polite"
+      >
+        --:--
       </div>
-
-
-      <div id="clock"></div>
 
     </div>
 
   </div>
 
 
+  <!-- =========================
+       CATEGORY NAVIGATION
+  ========================== -->
+
   <nav
     id="categoryNav"
     class="category-nav"
+    aria-label="News categories"
   >
 
     <button
       class="category active"
       data-category="all"
+      type="button"
     >
       ⌂ Home
     </button>
@@ -107,6 +116,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="In India"
+      type="button"
     >
       ✦ In India
     </button>
@@ -115,6 +125,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Global"
+      type="button"
     >
       ◈ Global
     </button>
@@ -123,6 +134,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Security & Peace"
+      type="button"
     >
       ◆ Security & Peace
     </button>
@@ -131,6 +143,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Law Around Us"
+      type="button"
     >
       § Law Around Us
     </button>
@@ -139,6 +152,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Science & Development"
+      type="button"
     >
       ◇ Science & Development
     </button>
@@ -147,6 +161,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Business & Economy"
+      type="button"
     >
       ₹ Business & Economy
     </button>
@@ -155,6 +170,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Society & Culture"
+      type="button"
     >
       ♟ Society & Culture
     </button>
@@ -163,6 +179,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Human & Environment"
+      type="button"
     >
       ♧ Human & Environment
     </button>
@@ -171,6 +188,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Tech & AI"
+      type="button"
     >
       ⌘ Tech & AI
     </button>
@@ -179,6 +197,7 @@ Snippet24 — Fast News • Real Impact
     <button
       class="category"
       data-category="Sports"
+      type="button"
     >
       ⚽ Sports
     </button>
@@ -188,10 +207,21 @@ Snippet24 — Fast News • Real Impact
 </header>
 
 
-<section class="live">
+<!-- =========================
+     LIVE WIRE
+========================== -->
+
+<section
+  class="live"
+  aria-label="Live news updates"
+>
 
   <div class="live-label">
-    ⚡ LIVE WIRE
+
+    <span class="live-dot"></span>
+
+    LIVE WIRE
+
   </div>
 
 
@@ -200,16 +230,27 @@ Snippet24 — Fast News • Real Impact
     <div
       id="tickerTrack"
       class="ticker-track"
-    ></div>
+    >
+      <span>
+        Loading live updates…
+      </span>
+    </div>
 
   </div>
 
 </section>
 
 
-<section class="languages">
+<!-- =========================
+     LANGUAGE SELECTOR
+========================== -->
 
-  <span>
+<section
+  class="languages"
+  aria-label="Language selection"
+>
+
+  <span class="language-label">
     🌐 Language:
   </span>
 
@@ -217,6 +258,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language active"
     data-lang="en"
+    type="button"
   >
     English
   </button>
@@ -225,6 +267,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language"
     data-lang="ta"
+    type="button"
   >
     தமிழ்
   </button>
@@ -233,6 +276,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language"
     data-lang="te"
+    type="button"
   >
     తెలుగు
   </button>
@@ -241,6 +285,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language"
     data-lang="kn"
+    type="button"
   >
     ಕನ್ನಡ
   </button>
@@ -249,6 +294,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language"
     data-lang="ml"
+    type="button"
   >
     മലയാളം
   </button>
@@ -257,6 +303,7 @@ Snippet24 — Fast News • Real Impact
   <button
     class="language"
     data-lang="hi"
+    type="button"
   >
     हिन्दी
   </button>
@@ -264,8 +311,16 @@ Snippet24 — Fast News • Real Impact
 </section>
 
 
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
 <main class="container">
 
+
+  <!-- =========================
+       PAGE HEADING
+  ========================== -->
 
   <div class="section-head">
 
@@ -275,12 +330,14 @@ Snippet24 — Fast News • Real Impact
 
         <em></em>
 
-        What Everyone Is Reading
+        <span id="mainHeading">
+          What Everyone Is Reading
+        </span>
 
       </h1>
 
 
-      <p>
+      <p id="mainSubheading">
 
         Fast updates, useful context and stories worth your time.
 
@@ -296,8 +353,20 @@ Snippet24 — Fast News • Real Impact
   </div>
 
 
-  <div id="heroStory"></div>
+  <!-- =========================
+       HERO STORY
+  ========================== -->
 
+  <section
+    id="heroStory"
+    class="hero-story"
+    aria-label="Featured story"
+  ></section>
+
+
+  <!-- =========================
+       TRENDING
+  ========================== -->
 
   <div class="section-head compact">
 
@@ -305,18 +374,25 @@ Snippet24 — Fast News • Real Impact
       🔥 Trending Now
     </h2>
 
-    <b>
-      ● LIVE
+
+    <b class="live-status">
+      <span class="live-dot"></span>
+      LIVE
     </b>
 
   </div>
 
 
-  <div
+  <section
     id="trending"
     class="trending"
-  ></div>
+    aria-label="Trending stories"
+  ></section>
 
+
+  <!-- =========================
+       LATEST STORIES
+  ========================== -->
 
   <div class="section-head compact">
 
@@ -327,13 +403,63 @@ Snippet24 — Fast News • Real Impact
   </div>
 
 
-  <div
+  <section
     id="newsGrid"
     class="grid"
-  ></div>
+    aria-live="polite"
+  ></section>
 
 
-  <div class="quick">
+  <!-- =========================
+       EMPTY STATE
+  ========================== -->
+
+  <div
+    id="emptyState"
+    class="empty-state"
+    hidden
+  >
+
+    <div class="empty-icon">
+      📰
+    </div>
+
+
+    <h3>
+      No stories found
+    </h3>
+
+
+    <p>
+      Try another category, language or search term.
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       LOADING STATE
+  ========================== -->
+
+  <div
+    id="loadingState"
+    class="loading-state"
+  >
+
+    <div class="loader"></div>
+
+    <p>
+      Loading Snippet24…
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       QUICK ACCESS
+  ========================== -->
+
+  <section class="quick">
 
     <strong>
       Quick Access →
@@ -342,6 +468,7 @@ Snippet24 — Fast News • Real Impact
 
     <button
       data-category="In India"
+      type="button"
     >
       India
     </button>
@@ -349,6 +476,7 @@ Snippet24 — Fast News • Real Impact
 
     <button
       data-category="Security & Peace"
+      type="button"
     >
       Security
     </button>
@@ -356,6 +484,7 @@ Snippet24 — Fast News • Real Impact
 
     <button
       data-category="Law Around Us"
+      type="button"
     >
       Law
     </button>
@@ -363,6 +492,7 @@ Snippet24 — Fast News • Real Impact
 
     <button
       data-category="Business & Economy"
+      type="button"
     >
       Money
     </button>
@@ -370,14 +500,19 @@ Snippet24 — Fast News • Real Impact
 
     <button
       data-category="Tech & AI"
+      type="button"
     >
       Tech
     </button>
 
-  </div>
+  </section>
 
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer class="footer">
 
@@ -388,7 +523,7 @@ Snippet24 — Fast News • Real Impact
 
       <div class="footer-brand">
 
-        snippet<b>24</b>
+        <span>snippet</span><b>24</b>
 
       </div>
 
@@ -410,21 +545,26 @@ Snippet24 — Fast News • Real Impact
         About
       </a>
 
+
       <a href="#">
         Editorial Policy
       </a>
+
 
       <a href="#">
         Corrections
       </a>
 
+
       <a href="#">
         Privacy
       </a>
 
+
       <a href="#">
         Terms
       </a>
+
 
       <a href="#">
         Contact
@@ -435,17 +575,51 @@ Snippet24 — Fast News • Real Impact
   </div>
 
 
-  <p class="source-note">
+  <!-- =========================
+       LEGAL / SOURCE NOTE
+  ========================== -->
 
-    Snippet24 attributes original sources
-    and links to the authoritative source.
-    AI-generated images are editorial illustrations
-    and are not presented as original event photographs.
+  <div class="source-note">
 
-  </p>
+    <strong>
+      Editorial & Source Note
+    </strong>
 
 
-  <div>
+    <p>
+
+      Snippet24 uses publicly available news feeds
+      and source information to create original
+      editorial summaries. Stories are independently
+      rephrased and presented with attribution to
+      the original source.
+
+    </p>
+
+
+    <p>
+
+      AI-generated images are original editorial
+      illustrations. They are not presented as
+      original event photographs and are not intended
+      to represent an actual photograph of an event.
+
+    </p>
+
+
+    <p>
+
+      Copyright remains with the respective original
+      publishers and rights holders. Snippet24 does
+      not claim ownership of third-party source
+      material.
+
+    </p>
+
+  </div>
+
+
+  <div class="footer-bottom">
 
     ©
 
@@ -459,14 +633,22 @@ Snippet24 — Fast News • Real Impact
 </footer>
 
 
-<nav class="mobile-nav">
+<!-- =========================
+     MOBILE NAVIGATION
+========================== -->
+
+<nav
+  class="mobile-nav"
+  aria-label="Mobile navigation"
+>
 
 
   <button
     data-category="all"
+    type="button"
   >
 
-    ⌂
+    <span>⌂</span>
 
     <small>
       Home
@@ -477,9 +659,10 @@ Snippet24 — Fast News • Real Impact
 
   <button
     data-category="In India"
+    type="button"
   >
 
-    ✦
+    <span>✦</span>
 
     <small>
       India
@@ -489,10 +672,25 @@ Snippet24 — Fast News • Real Impact
 
 
   <button
-    data-category="Business & Economy"
+    data-category="Global"
+    type="button"
   >
 
-    ↗
+    <span>◈</span>
+
+    <small>
+      Global
+    </small>
+
+  </button>
+
+
+  <button
+    data-category="Business & Economy"
+    type="button"
+  >
+
+    <span>₹</span>
 
     <small>
       Money
@@ -503,9 +701,10 @@ Snippet24 — Fast News • Real Impact
 
   <button
     id="mobileCategories"
+    type="button"
   >
 
-    ☷
+    <span>☷</span>
 
     <small>
       Categories
@@ -513,14 +712,54 @@ Snippet24 — Fast News • Real Impact
 
   </button>
 
-
 </nav>
 
 
-<script
-  src="/app.js"
-></script>
+<!-- =========================
+     CATEGORY DRAWER
+========================== -->
 
+<div
+  id="categoryDrawer"
+  class="category-drawer"
+  hidden
+>
+
+  <div class="category-drawer-inner">
+
+    <div class="drawer-header">
+
+      <strong>
+        All Categories
+      </strong>
+
+
+      <button
+        id="closeCategoryDrawer"
+        type="button"
+        aria-label="Close categories"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      id="mobileCategoryList"
+      class="mobile-category-list"
+    ></div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script src="/app.js"></script>
 
 </body>
 
