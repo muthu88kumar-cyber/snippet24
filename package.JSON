@@ -1,16 +1,20 @@
 {
-  "name": "snippet24-ai-news",
+  "name": "snippet24",
   "version": "1.0.0",
-  "private": true,
+  "description": "Snippet24 - AI-curated multilingual news platform",
   "type": "module",
+  "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "dotenv": "^16.4.7",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "openai": "^6.0.0",
+    "openai": "^5.12.2",
     "rss-parser": "^3.13.0"
   }
 }
