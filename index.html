@@ -2,392 +2,293 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  >
-
-  <meta
-    name="theme-color"
-    content="#07182d"
-  >
-
-  <meta
-    name="description"
-    content="Snippet24 — Fast News, Real Impact. Understand what is happening in seconds."
-  >
+  <meta name="theme-color" content="#071525">
+  <meta name="description"
+        content="snippet24 — FAST NEWS • REAL IMPACT. Understand what matters in seconds.">
 
   <title>snippet24 — FAST NEWS • REAL IMPACT</title>
 
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-<div id="app">
+<header class="site-header">
 
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
+  <div class="header-inner">
 
-  <header class="topbar">
-
-    <a
-      class="brand"
-      href="/"
-      aria-label="Snippet24 Home"
-    >
-
-      <span class="brand-word">snippet</span>
-
-      <span class="brand-24">24</span>
-
-      <span class="brand-tag">
-        FAST NEWS
-        <i></i>
-        REAL IMPACT
+    <a class="brand" href="./index.html" aria-label="snippet24 home">
+      <span class="brand-word">
+        sn<span class="brand-i-dot">i</span>ppet
       </span>
 
+      <span class="brand-num">24</span>
     </a>
 
-
-    <!-- DESKTOP NAVIGATION -->
-
-    <nav
-      class="desktop-nav"
-      aria-label="Primary Navigation"
-    >
-
-      <button
-        data-category="All"
-        class="nav-link active"
-      >
-        Home
-      </button>
-
-      <button
-        data-category="India"
-        class="nav-link"
-      >
-        India
-      </button>
-
-      <button
-        data-category="Global"
-        class="nav-link"
-      >
-        Global
-      </button>
-
-      <button
-        data-category="Business & Economy"
-        class="nav-link"
-      >
-        Money
-      </button>
-
-      <button
-        data-category="Tech & AI"
-        class="nav-link"
-      >
-        Tech
-      </button>
-
-      <button
-        data-category="Sports"
-        class="nav-link"
-      >
-        Sports
-      </button>
-
-      <button
-        data-category="Society & Culture"
-        class="nav-link"
-      >
-        People
-      </button>
-
-      <button
-        data-category="More"
-        class="nav-link"
-      >
-        More⌄
-      </button>
-
-    </nav>
-
-
-    <!-- HEADER ACTIONS -->
+    <div class="tagline">
+      <span></span>
+      FAST NEWS • REAL IMPACT
+      <span></span>
+    </div>
 
     <div class="header-actions">
 
       <button
         class="icon-btn"
         id="searchBtn"
-        aria-label="Search"
-      >
+        aria-label="Search">
         ⌕
       </button>
 
-      <button
-        class="lang-pill"
-        id="langBtn"
-        aria-label="Choose language"
-      >
-        🌐
-        <span id="langLabel">EN</span>
-        ⌄
-      </button>
+      <select id="languageSelect" aria-label="Language">
+
+        <option value="en">🌐 English</option>
+
+        <option value="ta">தமிழ்</option>
+
+        <option value="te">తెలుగు</option>
+
+        <option value="kn">ಕನ್ನಡ</option>
+
+        <option value="ml">മലയാളം</option>
+
+        <option value="hi">हिन्दी</option>
+
+      </select>
 
       <button
-        class="signin-btn"
-        id="personalizeBtn"
-      >
+        class="outline-btn"
+        id="personalizeBtn">
         Personalize
       </button>
 
     </div>
 
-  </header>
+  </div>
 
 
-  <!-- =====================================================
-       MAIN
-  ====================================================== -->
+  <!-- MAIN NAVIGATION -->
 
-  <main>
+  <nav class="main-nav" aria-label="Primary navigation">
 
+    <a href="#" data-category="All">
+      Home
+    </a>
 
-    <!-- ===================================================
-         HERO
-    ==================================================== -->
+    <a href="#" data-category="India">
+      India
+    </a>
 
-    <section class="hero">
+    <a href="#" data-category="Global">
+      Global
+    </a>
 
-      <div class="hero-copy">
+    <a href="#" data-category="Business & Economy">
+      Money
+    </a>
 
-        <div class="eyebrow">
-          TODAY IN ONE MINUTE
-        </div>
+    <a href="#" data-category="Tech & AI">
+      Tech
+    </a>
 
-        <h1>
-          What's
-          <span>Happening?</span>
-        </h1>
+    <a href="#" data-category="Sports">
+      Sports
+    </a>
 
-        <p class="hero-sub">
-          News that matters.
-          Explained simply.
-          In your language.
-        </p>
+    <a href="#" data-category="Society & Culture">
+      People
+    </a>
 
+    <button
+      class="more-btn"
+      id="moreBtn">
+      More⌄
+    </button>
 
-        <!-- HERO ACTIONS -->
+  </nav>
 
-        <div class="hero-actions">
 
+  <!-- MORE MENU -->
 
-          <!-- CATCH ME UP -->
+  <div class="more-menu" id="moreMenu">
 
-          <button
-            class="catchup-btn"
-            id="catchupBtn"
-          >
+    <button data-category="Security & Peace">
+      Security & Peace
+    </button>
 
-            <span class="play">
-              ▶
-            </span>
+    <button data-category="Law Around Us">
+      Law Around Us
+    </button>
 
-            <span>
+    <button data-category="Science & Development">
+      Science & Development
+    </button>
 
-              <strong>
-                CATCH ME UP
-              </strong>
+    <button data-category="Human & Environment">
+      Environment
+    </button>
 
-              <small>
-                The things you need to know right now
-              </small>
+    <button data-category="Local">
+      Local
+    </button>
 
-            </span>
+  </div>
 
-            <b>
-              →
-            </b>
+</header>
 
-          </button>
 
+<main>
 
-          <!-- 10 SECOND -->
 
-          <div class="speed">
+  <!-- HERO -->
 
-            <span>
-              ϟ
-            </span>
+  <section class="hero">
 
-            <b>
-              10 SEC
-            </b>
+    <div class="eyebrow">
+      TODAY IN ONE MINUTE
+    </div>
 
-            <small>
-              Just the facts
-            </small>
+    <h1>
+      What's<br>
+      <em>Happening?</em>
+    </h1>
 
-          </div>
+    <p class="hero-copy">
+      News that matters.
+      Explained simply.
+      In your language.
+    </p>
 
 
-          <!-- 60 SECOND -->
+    <!-- CATCH ME UP -->
 
-          <div class="speed">
+    <button
+      class="catchup"
+      id="catchupBtn">
 
-            <span>
-              ◷
-            </span>
+      <strong>
+        ▶ CATCH ME UP
+      </strong>
 
-            <b>
-              60 SEC
-            </b>
+      <span>
+        The things you need to know right now
+      </span>
 
-            <small>
-              Understand it
-            </small>
+      <b>
+        →
+      </b>
 
-          </div>
+    </button>
 
 
-          <!-- 3 MIN -->
+    <!-- SPEED -->
 
-          <div class="speed">
+    <div class="speed-grid">
 
-            <span>
-              ▤
-            </span>
+      <button data-speed="10">
 
-            <b>
-              3 MIN
-            </b>
-
-            <small>
-              Explore deeper
-            </small>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- GLOBE -->
-
-      <div
-        class="hero-globe"
-        aria-hidden="true"
-      >
-
-        <div class="globe"></div>
-
-        <div class="globe-glow"></div>
-
-      </div>
-
-
-      <div class="hero-note">
-
-        A more informed
-        <br>
-
-        <em>tomorrow</em>
-
-        <br>
-
-        for a brighter you
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ===================================================
-         LIVE WIRE
-    ==================================================== -->
-
-    <section
-      class="live-wire"
-      aria-label="Live Wire"
-    >
-
-      <div class="live-label">
-
-        <i></i>
-
-        LIVE WIRE
-
-      </div>
-
-
-      <div class="ticker-viewport">
-
-        <div
-          id="ticker"
-          class="ticker-track"
-        >
-
-          <span>
-            Loading live updates...
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <button id="viewAllBtn">
-        View All →
-      </button>
-
-    </section>
-
-
-
-    <!-- ===================================================
-         CATEGORY STRIP
-    ==================================================== -->
-
-    <section
-      class="category-strip"
-      id="categoryStrip"
-    >
-
-
-      <!-- ALL -->
-
-      <button
-        class="category-card selected"
-        data-category="All"
-      >
+        <strong>
+          ϟ 10 SEC
+        </strong>
 
         <span>
-          ▦
+          Just the facts
         </span>
+
+      </button>
+
+
+      <button data-speed="60">
+
+        <strong>
+          ◷ 60 SEC
+        </strong>
+
+        <span>
+          Understand it
+        </span>
+
+      </button>
+
+
+      <button data-speed="180">
+
+        <strong>
+          ▤ 3 MIN
+        </strong>
+
+        <span>
+          Explore deeper
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <div class="hero-ending">
+
+      A more informed
+      <em>tomorrow</em>
+      <br>
+
+      for a brighter you.
+
+    </div>
+
+  </section>
+
+
+
+  <!-- LIVE WIRE -->
+
+  <section class="live-section">
+
+    <div class="section-kicker">
+      LIVE WIRE
+    </div>
+
+    <div class="ticker-shell">
+
+      <div
+        class="ticker-track"
+        id="tickerTrack">
+
+        <span>
+          Loading live updates…
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <button
+      class="view-all"
+      id="viewAllBtn">
+
+      View All →
+
+    </button>
+
+  </section>
+
+
+
+  <!-- CATEGORIES -->
+
+  <section class="category-section">
+
+    <div class="chip-row">
+
+
+      <button
+        class="category-chip active"
+        data-category="All">
+
+        ▦
 
         <b>
           All
@@ -400,16 +301,11 @@
       </button>
 
 
-      <!-- INDIA -->
-
       <button
-        class="category-card"
-        data-category="India"
-      >
+        class="category-chip"
+        data-category="India">
 
-        <span>
-          🇮🇳
-        </span>
+        🇮🇳
 
         <b>
           India
@@ -422,16 +318,11 @@
       </button>
 
 
-      <!-- GLOBAL -->
-
       <button
-        class="category-card"
-        data-category="Global"
-      >
+        class="category-chip"
+        data-category="Global">
 
-        <span>
-          🌎
-        </span>
+        🌍
 
         <b>
           Global
@@ -444,16 +335,11 @@
       </button>
 
 
-      <!-- MONEY -->
-
       <button
-        class="category-card"
-        data-category="Business & Economy"
-      >
+        class="category-chip"
+        data-category="Business & Economy">
 
-        <span>
-          📈
-        </span>
+        📈
 
         <b>
           Money
@@ -466,16 +352,11 @@
       </button>
 
 
-      <!-- TECH -->
-
       <button
-        class="category-card"
-        data-category="Tech & AI"
-      >
+        class="category-chip"
+        data-category="Tech & AI">
 
-        <span>
-          ▣
-        </span>
+        ▣
 
         <b>
           Tech
@@ -488,16 +369,11 @@
       </button>
 
 
-      <!-- SPORTS -->
-
       <button
-        class="category-card"
-        data-category="Sports"
-      >
+        class="category-chip"
+        data-category="Sports">
 
-        <span>
-          🏆
-        </span>
+        🏆
 
         <b>
           Sports
@@ -510,16 +386,11 @@
       </button>
 
 
-      <!-- PEOPLE -->
-
       <button
-        class="category-card"
-        data-category="Society & Culture"
-      >
+        class="category-chip"
+        data-category="Society & Culture">
 
-        <span>
-          👥
-        </span>
+        👥
 
         <b>
           People
@@ -532,16 +403,11 @@
       </button>
 
 
-      <!-- LOCAL -->
-
       <button
-        class="category-card"
-        data-category="Local"
-      >
+        class="category-chip"
+        data-category="Local">
 
-        <span>
-          ⌖
-        </span>
+        ⌖
 
         <b>
           Local
@@ -554,16 +420,11 @@
       </button>
 
 
-      <!-- ENVIRONMENT -->
-
       <button
-        class="category-card"
-        data-category="Human & Environment"
-      >
+        class="category-chip"
+        data-category="Human & Environment">
 
-        <span>
-          🌱
-        </span>
+        🌱
 
         <b>
           Environment
@@ -575,397 +436,159 @@
 
       </button>
 
-    </section>
+    </div>
+
+  </section>
 
 
 
-    <!-- ===================================================
-         SECTION TITLE
-    ==================================================== -->
+  <!-- THE SIGNAL -->
 
-    <section class="section-head">
+  <section
+    class="signal-section"
+    id="signal">
 
-      <div>
+    <div class="section-kicker">
+      THE SIGNAL
+    </div>
 
-        <span class="section-kicker">
-          THE SIGNAL
-        </span>
 
-        <h2>
-          What matters right now
-        </h2>
+    <div class="section-heading-row">
 
-      </div>
-
+      <h2>
+        What matters right now
+      </h2>
 
       <button
-        id="refreshBtn"
-        class="ghost-btn"
-      >
+        class="refresh-btn"
+        id="refreshBtn">
+
         ↻ Refresh
+
       </button>
 
-    </section>
+    </div>
 
 
+    <div
+      id="status"
+      class="status">
 
-    <!-- ===================================================
-         STORIES
-    ==================================================== -->
+      Finding the signal…
 
-    <section
+    </div>
+
+
+    <div
       id="stories"
-      class="story-grid"
-    >
+      class="story-grid">
 
-      <div class="loading-card">
+    </div>
 
-        <div class="spinner"></div>
-
-        <p>
-          Finding the signal…
-        </p>
-
-      </div>
-
-    </section>
+  </section>
 
 
 
-    <!-- ===================================================
-         AUDIENCE IMPACT
-    ==================================================== -->
+  <!-- AUDIENCE IMPACT -->
 
-    <section
-      id="audienceSection"
-      class="audience-section"
-    >
+  <section class="audience-section">
 
-      <div class="audience-copy">
-
-        <span class="section-kicker">
-          AUDIENCE IMPACT
-        </span>
-
-        <h2>
-          Who should care?
-        </h2>
-
-        <p>
-
-          Each story is scored for relevance
-          to different audiences.
-
-          These are
-          <strong>
-            story relevance signals
-          </strong>
-
-          — not claims about who is reading.
-
-        </p>
-
-      </div>
+    <div class="section-kicker">
+      WHO SHOULD CARE?
+    </div>
 
 
-      <div
-        id="audienceMeters"
-        class="audience-meters"
-      >
-
-      </div>
-
-    </section>
+    <h2>
+      One story.
+      Different impact.
+    </h2>
 
 
+    <p>
+      Relevance is explained without changing the facts.
+    </p>
 
-    <!-- ===================================================
-         LANGUAGE
-    ==================================================== -->
 
-    <section class="language-panel">
+    <div class="impact-grid">
 
       <div>
 
-        <span class="section-kicker">
-          READ YOUR WAY
+        <b>
+          Business
+        </b>
+
+        <span>
+          Money, markets & decisions
         </span>
 
-        <h2>
-          News in your language
-        </h2>
-
-        <p>
-          Same facts. Clearer understanding.
-        </p>
-
       </div>
 
-
-      <div
-        class="language-buttons"
-        id="languageButtons"
-      >
-
-        <button
-          class="selected"
-          data-lang="en"
-        >
-          English
-        </button>
-
-        <button
-          data-lang="ta"
-        >
-          தமிழ்
-        </button>
-
-        <button
-          data-lang="te"
-        >
-          తెలుగు
-        </button>
-
-        <button
-          data-lang="kn"
-        >
-          ಕನ್ನಡ
-        </button>
-
-        <button
-          data-lang="ml"
-        >
-          മലയാളം
-        </button>
-
-        <button
-          data-lang="hi"
-        >
-          हिन्दी
-        </button>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ===================================================
-         PERSONALIZATION
-    ==================================================== -->
-
-    <section class="personalize-panel">
 
       <div>
 
-        <span class="section-kicker">
-          MAKE IT YOURS
+        <b>
+          Technology
+        </b>
+
+        <span>
+          Innovation & digital change
         </span>
-
-        <h2>
-          News that understands what matters
-          to <em>you.</em>
-        </h2>
-
-        <p>
-
-          Choose the subjects you care about
-          and Snippet24 will put the most relevant
-          stories first.
-
-        </p>
 
       </div>
 
 
-      <button
-        id="personalizeBtn2"
-        class="light-btn"
-      >
-        Personalize My Feed →
-      </button>
+      <div>
 
-    </section>
+        <b>
+          Society
+        </b>
 
-  </main>
-
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-
-
-      <div class="footer-brand">
-
-        <a
-          class="brand footer-logo"
-          href="/"
-        >
-
-          <span class="brand-word">
-            snippet
-          </span>
-
-          <span class="brand-24">
-            24
-          </span>
-
-        </a>
-
-        <div class="brand-tag">
-
-          FAST NEWS
-          <i></i>
-          REAL IMPACT
-
-        </div>
+        <span>
+          People & everyday life
+        </span>
 
       </div>
 
 
-      <div class="trust-items">
+      <div>
+
+        <b>
+          Students
+        </b>
 
         <span>
-          ◇ Trusted Sources
-        </span>
-
-        <span>
-          ✦ AI-assisted summaries
-        </span>
-
-        <span>
-          文 Multiple Languages
-        </span>
-
-        <span>
-          ▯ Mobile Friendly
-        </span>
-
-        <span>
-          ⌑ Private & Secure
+          Learning & future careers
         </span>
 
       </div>
 
     </div>
 
-
-    <div class="footer-bottom">
-
-      <div class="footer-links">
-
-        <a href="/about.html">
-          About
-        </a>
-
-        <a href="/contact.html">
-          Contact
-        </a>
-
-        <a href="/disclaimer.html">
-          Disclaimer
-        </a>
-
-        <a href="/privacy.html">
-          Privacy
-        </a>
-
-        <a href="/terms.html">
-          Terms
-        </a>
-
-        <a href="/contribute.html">
-          Contribute News
-        </a>
-
-      </div>
+  </section>
 
 
-      <p>
 
-        AI-assisted summaries may contain errors.
-        Always check the original source for
-        critical information.
+  <!-- LANGUAGES -->
 
-        © <span id="year"></span>
-        Snippet24.
+  <section class="language-section">
 
-      </p>
-
+    <div class="section-kicker">
+      YOUR LANGUAGE
     </div>
 
-  </footer>
-
-</div>
-
-
-
-<!-- =====================================================
-     SEARCH MODAL
-====================================================== -->
-
-<div
-  id="searchModal"
-  class="modal hidden"
->
-
-  <div class="modal-box">
-
-    <button
-      class="modal-close"
-      data-close
-    >
-      ×
-    </button>
 
     <h2>
-      Search Snippet24
-    </h2>
-
-    <input
-      id="searchInput"
-      type="search"
-      placeholder="Search stories…"
-      autocomplete="off"
-    >
-
-    <div id="searchResults"></div>
-
-  </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     LANGUAGE MODAL
-====================================================== -->
-
-<div
-  id="langModal"
-  class="modal hidden"
->
-
-  <div class="modal-box small">
-
-    <button
-      class="modal-close"
-      data-close
-    >
-      ×
-    </button>
-
-    <h2>
-      Choose language
+      Understand it your way.
     </h2>
 
 
-    <div class="modal-langs">
+    <p>
+      English, Tamil, Telugu, Kannada,
+      Malayalam and Hindi.
+    </p>
+
+
+    <div class="language-pills">
 
       <button data-lang="en">
         English
@@ -993,140 +616,95 @@
 
     </div>
 
-  </div>
+  </section>
 
-</div>
+</main>
 
 
 
-<!-- =====================================================
-     CATCH ME UP MODAL
-====================================================== -->
+<!-- FOOTER -->
 
-<div
-  id="catchupModal"
-  class="modal hidden"
->
+<footer>
 
-  <div class="modal-box catchup-box">
+  <div class="footer-brand">
 
-    <button
-      class="modal-close"
-      data-close
-    >
-      ×
-    </button>
-
-    <span class="section-kicker">
-      CATCH ME UP
+    snippet
+    <span>
+      24
     </span>
-
-    <h2>
-      Today's world in 60 seconds.
-    </h2>
-
-    <p class="muted">
-
-      Start with the most important stories.
-
-      Tap any story for
-
-      <strong>
-        WHAT → WHY → IMPACT → NEXT
-      </strong>
-
-    </p>
-
-    <div id="catchupList"></div>
 
   </div>
 
-</div>
+
+  <p>
+    <b>
+      FAST NEWS • REAL IMPACT
+    </b>
+  </p>
+
+
+  <div class="footer-links">
+
+    <span>
+      AI-assisted summaries
+    </span>
+
+    <span>
+      Original sources credited
+    </span>
+
+    <span>
+      Corrections & feedback
+    </span>
+
+    <span>
+      Privacy
+    </span>
+
+  </div>
+
+
+  <small>
+
+    snippet24 uses AI assistance to summarize,
+    translate and present information.
+    AI-generated visuals are illustrative and
+    are not original publisher photographs.
+    Readers should follow the linked original
+    source for the full report.
+
+    Content is presented for information and
+    is subject to applicable copyright, privacy,
+    defamation and media laws.
+
+  </small>
+
+</footer>
 
 
 
-<!-- =====================================================
-     PERSONALIZATION MODAL
-====================================================== -->
+<!-- SEARCH -->
 
 <div
-  id="personalizeModal"
-  class="modal hidden"
->
+  class="search-panel"
+  id="searchPanel">
 
-  <div class="modal-box">
+  <div class="search-box">
 
-    <button
-      class="modal-close"
-      data-close
-    >
+    <button id="closeSearch">
       ×
     </button>
 
 
-    <span class="section-kicker">
-      YOUR SIGNAL
-    </span>
-
-    <h2>
-      What matters to you?
-    </h2>
-
-    <p class="muted">
-
-      Choose as many as you like.
-
-      We'll prioritize them on this device.
-
-    </p>
+    <input
+      id="searchInput"
+      placeholder="Search stories…"
+      autocomplete="off">
 
 
     <div
-      id="interestChoices"
-      class="interest-grid"
-    >
-
-      <button data-interest="Business">
-        💼 Business
-      </button>
-
-      <button data-interest="Technology">
-        💻 Technology
-      </button>
-
-      <button data-interest="Students">
-        🎓 Students
-      </button>
-
-      <button data-interest="Society">
-        👥 Society
-      </button>
-
-      <button data-interest="Money">
-        💰 Money
-      </button>
-
-      <button data-interest="Local">
-        📍 Local
-      </button>
-
-      <button data-interest="Global">
-        🌍 Global
-      </button>
-
-      <button data-interest="Sports">
-        🏆 Sports
-      </button>
-
+      id="searchResults">
     </div>
-
-
-    <button
-      id="saveInterests"
-      class="save-btn"
-    >
-      Save my feed →
-    </button>
 
   </div>
 
@@ -1134,7 +712,7 @@
 
 
 
-<script src="/app.js"></script>
+<script src="./app.js"></script>
 
 </body>
 </html>
