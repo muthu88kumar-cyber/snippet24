@@ -1,121 +1,173 @@
 (() => {
+  "use strict";
 
   const state = {
-
     stories: [],
-
     category: "All",
-
-    lang:
-      localStorage.getItem("snippet24_lang")
-      || "en"
-
+    lang: localStorage.getItem("snippet24_lang") || "en",
+    speed: 60
   };
 
-
-  const $ = selector =>
-    document.querySelector(selector);
-
-
-  const $$ = selector =>
-    [...document.querySelectorAll(selector)];
-
-
+  const $ = selector => document.querySelector(selector);
+  const $$ = selector => [...document.querySelectorAll(selector)];
 
   /* --------------------------------
      LANGUAGE DATA
   -------------------------------- */
 
-  function getTitle(story) {
-
+  function languageData(story) {
     return (
-      story?.translations?.[state.lang]?.title ||
-
-      story?.[state.lang]?.title ||
-
-      story?.title ||
-
-      ""
+      story?.translations?.[state.lang] ||
+      story?.[state.lang] ||
+      {}
     );
-
   }
 
+  function getTitle(story) {
+    const translated = languageData(story);
+
+    return (
+      translated.title ||
+      translated.headline ||
+      story?.title ||
+      story?.headline ||
+      ""
+    );
+  }
 
   function getSummary(story) {
+    const translated = languageData(story);
 
     return (
-      story?.translations?.[state.lang]?.summary ||
-
-      story?.[state.lang]?.summary ||
-
+      translated.summary ||
       story?.summary ||
-
       ""
     );
-
   }
-
 
   function getPoints(story) {
+    const translated = languageData(story);
 
-    return (
-      story?.translations?.[state.lang]?.key_points ||
+    if (Array.isArray(translated.key_points)) {
+      return translated.key_points;
+    }
 
-      story?.[state.lang]?.key_points ||
+    if (Array.isArray(story?.key_points)) {
+      return story.key_points;
+    }
 
-      story?.key_points ||
+    if (Array.isArray(translated.snippet_lines)) {
+      return translated.snippet_lines;
+    }
 
-      []
-    );
+    if (Array.isArray(story?.snippet_lines)) {
+      return story.snippet_lines;
+    }
 
+    return [];
   }
 
+  /* --------------------------------
+     CATEGORY
+  -------------------------------- */
 
   function categoryOf(story) {
 
-    return (
-      story.category ||
+    const raw =
+      story?.category ||
+      story?.section ||
+      "In India";
 
-      story.section ||
+    /*
+      Your JSON uses:
+      "In India"
 
+      Your website displays:
       "India"
-    );
+    */
 
+    if (raw === "In India") {
+
+      const text = [
+        story?.headline,
+        story?.snippet,
+        story?.summary
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      /*
+        Some sports stories are currently
+        stored under "In India".
+      */
+
+      const sportsTerms = [
+        "sport",
+        "sports",
+        "cricket",
+        "football",
+        "soccer",
+        "badminton",
+        "tennis",
+        "hockey",
+        "pickleball",
+        "olympic",
+        "paralympic",
+        "athlete",
+        "championship",
+        "world cup",
+        "tournament",
+        "match",
+        "shuttler",
+        "medal",
+        "wicket",
+        "goal",
+        "league"
+      ];
+
+      if (
+        sportsTerms.some(term =>
+          text.includes(term)
+        )
+      ) {
+        return "Sports";
+      }
+
+      return "India";
+    }
+
+    return raw;
   }
 
+  /* --------------------------------
+     SOURCE
+  -------------------------------- */
 
   function sourceOf(story) {
 
     return (
-      story.source_url ||
-
-      story.original_url ||
-
-      story.url ||
-
+      story?.source_url ||
+      story?.original_source_url ||
+      story?.original_url ||
+      story?.url ||
       ""
     );
-
   }
 
+  /* --------------------------------
+     IMAGE
+  -------------------------------- */
 
   function imageOf(story) {
 
     return (
-      story.ai_image_url ||
-
-      story.image ||
-
-      story.image_url ||
-
-      story.ai_image ||
-
+      story?.ai_image_url ||
+      story?.image ||
+      story?.image_url ||
+      story?.ai_image ||
       ""
     );
-
   }
-
-
 
   /* --------------------------------
      LOAD STORIES
@@ -125,9 +177,7 @@
 
     setStatus("Finding the signal…");
 
-
     let data = null;
-
 
     /*
       First try backend API.
@@ -139,12 +189,11 @@
         await fetch(
           "./api/stories",
           {
-            cache:"no-store"
+            cache: "no-store"
           }
         );
 
-
-      if(response.ok) {
+      if (response.ok) {
 
         data =
           await response.json();
@@ -152,8 +201,7 @@
       }
 
     }
-
-    catch(error) {
+    catch (error) {
 
       console.log(
         "API unavailable"
@@ -161,14 +209,12 @@
 
     }
 
-
-
     /*
       If backend is unavailable,
       use articles.json.
     */
 
-    if(!data) {
+    if (!data) {
 
       try {
 
@@ -176,12 +222,11 @@
           await fetch(
             "./articles.json",
             {
-              cache:"no-store"
+              cache: "no-store"
             }
           );
 
-
-        if(response.ok) {
+        if (response.ok) {
 
           data =
             await response.json();
@@ -189,8 +234,7 @@
         }
 
       }
-
-      catch(error) {
+      catch (error) {
 
         console.log(
           "articles.json unavailable"
@@ -200,19 +244,18 @@
 
     }
 
-
-
     /*
       Support several JSON structures.
     */
 
-    if(Array.isArray(data)) {
+    if (Array.isArray(data)) {
 
-      state.stories = data;
+      state.stories =
+        data;
 
     }
 
-    else if(
+    else if (
       Array.isArray(data?.stories)
     ) {
 
@@ -221,7 +264,7 @@
 
     }
 
-    else if(
+    else if (
       Array.isArray(data?.articles)
     ) {
 
@@ -236,12 +279,9 @@
 
     }
 
-
     render();
 
   }
-
-
 
   /* --------------------------------
      FILTER
@@ -253,54 +293,39 @@
       story => {
 
         /*
-          For languages other than English,
-          only show stories that actually
-          have that translation.
+          English is always available.
+
+          Other languages are shown only
+          when an actual translation exists.
         */
 
         const hasTranslation =
-          state.lang === "en"
-          ||
+          state.lang === "en" ||
           !!(
-            story.translations?.[
+            story?.translations?.[
               state.lang
-            ]
-
-            ||
-
-            story[
+            ] ||
+            story?.[
               state.lang
             ]
           );
 
+        if (!hasTranslation) {
+          return false;
+        }
 
         const category =
           categoryOf(story);
 
-
         return (
-
-          hasTranslation
-
-          &&
-
-          (
-            state.category === "All"
-
-            ||
-
-            category ===
-            state.category
-          )
-
+          state.category === "All" ||
+          category === state.category
         );
 
       }
     );
 
   }
-
-
 
   /* --------------------------------
      STATUS
@@ -311,8 +336,7 @@
     const element =
       $("#status");
 
-
-    if(element) {
+    if (element) {
 
       element.textContent =
         text;
@@ -321,38 +345,83 @@
 
   }
 
-
-
   /* --------------------------------
-     SECURITY / HTML ESCAPE
+     SECURITY
   -------------------------------- */
 
-  function escapeHtml(value = "") {
+  function escapeHtml(
+    value = ""
+  ) {
 
     return String(value)
-
       .replace(
         /[&<>"']/g,
-
         character => ({
-
-          "&":"&amp;",
-
-          "<":"&lt;",
-
-          ">":"&gt;",
-
-          '"':"&quot;",
-
-          "'":"&#39;"
-
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
         }[character])
-
       );
 
   }
 
+  /* --------------------------------
+     READING MODE
+  -------------------------------- */
 
+  function readingContent(story) {
+
+    const points =
+      getPoints(story);
+
+    const summary =
+      getSummary(story);
+
+    /*
+      Current articles.json contains:
+
+      headline
+      snippet_lines
+      summary
+
+      It does not currently contain
+      separate 10 SEC / 60 SEC / 3 MIN
+      article bodies.
+
+      Therefore we only display content
+      actually present in the JSON.
+    */
+
+    if (state.speed === 10) {
+
+      return {
+        points: points.slice(0, 1),
+        summary: ""
+      };
+
+    }
+
+    if (state.speed === 180) {
+
+      return {
+        points: points.slice(0, 3),
+        summary: summary
+      };
+
+    }
+
+    /*
+      Default = 60 seconds
+    */
+
+    return {
+      points: points.slice(0, 3),
+      summary: summary
+    };
+
+  }
 
   /* --------------------------------
      STORY CARD
@@ -363,55 +432,37 @@
     const title =
       getTitle(story);
 
-
-    const summary =
-      getSummary(story);
-
-
-    const points =
-      getPoints(story);
-
-
     const source =
       sourceOf(story);
-
 
     const image =
       imageOf(story);
 
+    const reading =
+      readingContent(story);
 
     const signal =
-      story.signal
-
-      ||
-
+      story?.signal ||
       (
-        story.breaking
+        story?.breaking
           ? "BREAKING"
           : "IMPORTANT"
       );
 
-
+    /* IMAGE */
 
     let imageHTML;
 
-
-    if(image) {
+    if (image) {
 
       imageHTML = `
 
         <img
-
           class="story-image"
-
           src="${escapeHtml(image)}"
-
           alt=""
-
           loading="lazy"
-
           onerror="this.style.display='none'"
-
         >
 
       `;
@@ -430,29 +481,29 @@
 
     }
 
-
+    /* KEY POINTS */
 
     const pointsHTML =
-      points.length
+      reading.points.length
 
       ?
 
       `
 
-      <ul class="key-points">
+        <ul class="key-points">
 
-        ${points
-          .slice(0,3)
-          .map(
-            point =>
-              `<li>
-                ${escapeHtml(point)}
-              </li>`
-          )
-          .join("")
-        }
+          ${reading.points
+            .map(
+              point => `
+                <li>
+                  ${escapeHtml(point)}
+                </li>
+              `
+            )
+            .join("")
+          }
 
-      </ul>
+        </ul>
 
       `
 
@@ -460,26 +511,28 @@
 
       "";
 
-
+    /* SUMMARY */
 
     const summaryHTML =
-      summary
+      reading.summary
 
       ?
 
       `
 
-      <div class="why">
+        <div class="why">
 
-        <b>
-          WHY IT MATTERS
-        </b>
+          <b>
+            WHY IT MATTERS
+          </b>
 
-        <br>
+          <br>
 
-        ${escapeHtml(summary)}
+          ${escapeHtml(
+            reading.summary
+          )}
 
-      </div>
+        </div>
 
       `
 
@@ -487,7 +540,7 @@
 
       "";
 
-
+    /* SOURCE */
 
     const sourceHTML =
       source
@@ -496,21 +549,16 @@
 
       `
 
-      <a
+        <a
+          class="source-link"
+          href="${escapeHtml(source)}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
 
-        class="source-link"
+          Original source →
 
-        href="${escapeHtml(source)}"
-
-        target="_blank"
-
-        rel="noopener noreferrer"
-
-      >
-
-        Original source →
-
-      </a>
+        </a>
 
       `
 
@@ -518,19 +566,40 @@
 
       "";
 
+    /* DATE */
 
+    const published =
+      story?.published_at
+        ?
+
+        " • " +
+        new Date(
+          story.published_at
+        ).toLocaleString()
+
+        :
+
+        "";
 
     return `
 
-      <article class="story-card">
+      <article
+        class="story-card"
+      >
 
         ${imageHTML}
 
-        <div class="story-body">
+        <div
+          class="story-body"
+        >
 
-          <span class="signal-label">
+          <span
+            class="signal-label"
+          >
 
-            ${escapeHtml(signal)}
+            ${escapeHtml(
+              signal
+            )}
 
           </span>
 
@@ -545,29 +614,17 @@
           </h3>
 
 
-          <div class="story-meta">
+          <div
+            class="story-meta"
+          >
 
             ${escapeHtml(
               categoryOf(story)
             )}
 
-            ${
-              story.published_at
-
-              ?
-
-              " • " +
-
-              escapeHtml(
-                new Date(
-                  story.published_at
-                ).toLocaleString()
-              )
-
-              :
-
-              ""
-            }
+            ${escapeHtml(
+              published
+            )}
 
           </div>
 
@@ -588,8 +645,6 @@
 
   }
 
-
-
   /* --------------------------------
      RENDER
   -------------------------------- */
@@ -599,12 +654,14 @@
     const stories =
       filtered();
 
-
     const container =
       $("#stories");
 
+    if (!container) {
+      return;
+    }
 
-    if(stories.length) {
+    if (stories.length) {
 
       container.innerHTML =
         stories
@@ -636,23 +693,20 @@
 
     }
 
-
-
     setStatus(
 
       stories.length
 
-      ?
+        ?
 
-      `${stories.length}
-       stories • updated now`
+        `${stories.length}
+         stories • updated now`
 
-      :
+        :
 
-      "No stories available yet."
+        "No stories available yet."
 
     );
-
 
     renderTicker(
       stories.length
@@ -660,12 +714,9 @@
         : state.stories
     );
 
-
     syncControls();
 
   }
-
-
 
   /* --------------------------------
      LIVE WIRE
@@ -673,15 +724,17 @@
 
   function renderTicker(stories) {
 
-    const items =
-      stories.slice(0,12);
-
-
     const ticker =
       $("#tickerTrack");
 
+    if (!ticker) {
+      return;
+    }
 
-    if(!items.length) {
+    const items =
+      stories.slice(0, 12);
+
+    if (!items.length) {
 
       ticker.innerHTML = `
 
@@ -698,24 +751,25 @@
 
     }
 
-
-
     /*
-      Duplicate the stories so the
+      Duplicate stories so the
       ticker can move continuously.
     */
 
     const combined =
-      [...items,...items];
-
+      [
+        ...items,
+        ...items
+      ];
 
     ticker.innerHTML =
       combined
-
         .map(
           story => `
 
-            <span class="ticker-item">
+            <span
+              class="ticker-item"
+            >
 
               ${escapeHtml(
                 getTitle(story)
@@ -725,15 +779,12 @@
 
           `
         )
-
         .join("");
 
   }
 
-
-
   /* --------------------------------
-     ACTIVE BUTTONS
+     ACTIVE CONTROLS
   -------------------------------- */
 
   function syncControls() {
@@ -741,7 +792,6 @@
     $$(
       "[data-category]"
     )
-
       .forEach(
         element => {
 
@@ -761,7 +811,6 @@
     $$(
       "[data-lang]"
     )
-
       .forEach(
         element => {
 
@@ -778,12 +827,37 @@
       );
 
 
-    $("#languageSelect").value =
-      state.lang;
+    const languageSelect =
+      $("#languageSelect");
+
+    if (languageSelect) {
+
+      languageSelect.value =
+        state.lang;
+
+    }
+
+
+    $$(
+      "[data-speed]"
+    )
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+
+            "active",
+
+            Number(
+              element.dataset.speed
+            ) === state.speed
+
+          );
+
+        }
+      );
 
   }
-
-
 
   /* --------------------------------
      CATEGORY
@@ -794,33 +868,34 @@
     state.category =
       category;
 
+    const signal =
+      $("#signal");
 
-    $("#signal")
-      .scrollIntoView({
+    if (signal) {
 
-        behavior:"smooth",
+      signal.scrollIntoView({
 
-        block:"start"
+        behavior: "smooth",
+
+        block: "start"
 
       });
 
+    }
 
     render();
 
   }
 
 
-
   $$(
     "[data-category]"
   )
-
     .forEach(
       element => {
 
         element.addEventListener(
           "click",
-
           event => {
 
             event.preventDefault();
@@ -835,8 +910,6 @@
       }
     );
 
-
-
   /* --------------------------------
      LANGUAGE BUTTONS
   -------------------------------- */
@@ -844,24 +917,20 @@
   $$(
     "[data-lang]"
   )
-
     .forEach(
       element => {
 
         element.addEventListener(
           "click",
-
           () => {
 
             state.lang =
               element.dataset.lang;
 
-
             localStorage.setItem(
               "snippet24_lang",
               state.lang
             );
-
 
             render();
 
@@ -871,116 +940,140 @@
       }
     );
 
-
-
   /* --------------------------------
      LANGUAGE DROPDOWN
   -------------------------------- */
 
-  $("#languageSelect")
-    .addEventListener(
-      "change",
+  const languageSelect =
+    $("#languageSelect");
 
+  if (languageSelect) {
+
+    languageSelect.addEventListener(
+      "change",
       event => {
 
         state.lang =
           event.target.value;
-
 
         localStorage.setItem(
           "snippet24_lang",
           state.lang
         );
 
-
         render();
 
       }
     );
 
-
+  }
 
   /* --------------------------------
-     MORE
+     MORE MENU
   -------------------------------- */
 
-  $("#moreBtn")
-    .addEventListener(
-      "click",
+  const moreBtn =
+    $("#moreBtn");
 
+  const moreMenu =
+    $("#moreMenu");
+
+  if (
+    moreBtn &&
+    moreMenu
+  ) {
+
+    moreBtn.addEventListener(
+      "click",
       () => {
 
-        $("#moreMenu")
-          .classList.toggle(
-            "show"
-          );
+        moreMenu.classList.toggle(
+          "show"
+        );
 
       }
     );
 
-
+  }
 
   /* --------------------------------
      VIEW ALL
   -------------------------------- */
 
-  $("#viewAllBtn")
-    .addEventListener(
-      "click",
+  const viewAllBtn =
+    $("#viewAllBtn");
 
+  if (viewAllBtn) {
+
+    viewAllBtn.addEventListener(
+      "click",
       () => {
 
-        setCategory("All");
+        setCategory(
+          "All"
+        );
 
       }
     );
 
-
+  }
 
   /* --------------------------------
      REFRESH
   -------------------------------- */
 
-  $("#refreshBtn")
-    .addEventListener(
+  const refreshBtn =
+    $("#refreshBtn");
+
+  if (refreshBtn) {
+
+    refreshBtn.addEventListener(
       "click",
-
       loadStories
-
     );
 
-
+  }
 
   /* --------------------------------
      CATCH ME UP
   -------------------------------- */
 
-  $("#catchupBtn")
-    .addEventListener(
-      "click",
+  const catchupBtn =
+    $("#catchupBtn");
 
+  if (catchupBtn) {
+
+    catchupBtn.addEventListener(
+      "click",
       () => {
 
         state.category =
           "All";
 
+        state.speed =
+          60;
 
-        $("#signal")
-          .scrollIntoView({
+        const signal =
+          $("#signal");
 
-            behavior:"smooth",
+        if (signal) {
 
-            block:"start"
+          signal.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
 
           });
 
+        }
 
         render();
 
       }
     );
 
-
+  }
 
   /* --------------------------------
      SPEED BUTTONS
@@ -989,23 +1082,34 @@
   $$(
     "[data-speed]"
   )
-
     .forEach(
       button => {
 
         button.addEventListener(
           "click",
-
           () => {
 
-            $("#signal")
-              .scrollIntoView({
+            state.speed =
+              Number(
+                button.dataset.speed
+              ) || 60;
 
-                behavior:"smooth",
+            const signal =
+              $("#signal");
 
-                block:"start"
+            if (signal) {
+
+              signal.scrollIntoView({
+
+                behavior: "smooth",
+
+                block: "start"
 
               });
+
+            }
+
+            render();
 
           }
         );
@@ -1013,73 +1117,97 @@
       }
     );
 
-
-
   /* --------------------------------
      SEARCH
   -------------------------------- */
 
-  $("#searchBtn")
-    .addEventListener(
-      "click",
+  const searchBtn =
+    $("#searchBtn");
 
+  const searchPanel =
+    $("#searchPanel");
+
+  const searchInput =
+    $("#searchInput");
+
+  const closeSearch =
+    $("#closeSearch");
+
+  const searchResults =
+    $("#searchResults");
+
+
+  if (
+    searchBtn &&
+    searchPanel &&
+    searchInput
+  ) {
+
+    searchBtn.addEventListener(
+      "click",
       () => {
 
-        $("#searchPanel")
-          .classList.add("show");
+        searchPanel.classList.add(
+          "show"
+        );
 
-
-        $("#searchInput")
-          .focus();
+        searchInput.focus();
 
       }
     );
 
+  }
 
 
-  $("#closeSearch")
-    .addEventListener(
+  if (
+    closeSearch &&
+    searchPanel
+  ) {
+
+    closeSearch.addEventListener(
       "click",
-
       () => {
 
-        $("#searchPanel")
-          .classList.remove(
-            "show"
-          );
+        searchPanel.classList.remove(
+          "show"
+        );
 
       }
     );
 
+  }
 
 
-  $("#searchPanel")
-    .addEventListener(
+  if (searchPanel) {
+
+    searchPanel.addEventListener(
       "click",
-
       event => {
 
-        if(
+        if (
           event.target.id ===
           "searchPanel"
         ) {
 
-          event.currentTarget
-            .classList.remove(
-              "show"
-            );
+          searchPanel.classList.remove(
+            "show"
+          );
 
         }
 
       }
     );
 
+  }
 
 
-  $("#searchInput")
-    .addEventListener(
+  if (
+    searchInput &&
+    searchResults
+  ) {
+
+    searchInput.addEventListener(
       "input",
-
       event => {
 
         const query =
@@ -1092,82 +1220,89 @@
           state.stories
 
             .filter(
-              story =>
-                getTitle(story)
-                  .toLowerCase()
-                  .includes(query)
-            )
-
-            .slice(0,8);
-
-
-        $("#searchResults")
-          .innerHTML =
-
-          query
-
-          ?
-
-          results
-            .map(
               story => {
 
-                const source =
-                  sourceOf(story);
+                const searchable = [
+
+                  getTitle(story),
+
+                  getSummary(story),
+
+                  ...getPoints(story)
+
+                ]
+                  .join(" ")
+                  .toLowerCase();
+
+                return searchable.includes(
+                  query
+                );
+
+              }
+            )
+
+            .slice(0, 8);
 
 
-                if(source) {
+        searchResults.innerHTML =
+          query
+
+            ?
+
+            results
+              .map(
+                story => {
+
+                  const source =
+                    sourceOf(story);
+
+                  if (source) {
+
+                    return `
+
+                      <a
+                        class="search-result"
+                        href="${escapeHtml(source)}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+
+                        ${escapeHtml(
+                          getTitle(story)
+                        )}
+
+                      </a>
+
+                    `;
+
+                  }
 
                   return `
 
-                    <a
-
+                    <div
                       class="search-result"
-
-                      href="${escapeHtml(source)}"
-
-                      target="_blank"
-
-                      rel="noopener"
-
                     >
 
                       ${escapeHtml(
                         getTitle(story)
                       )}
 
-                    </a>
+                    </div>
 
                   `;
 
                 }
+              )
+              .join("")
 
+            :
 
-                return `
-
-                  <div class="search-result">
-
-                    ${escapeHtml(
-                      getTitle(story)
-                    )}
-
-                  </div>
-
-                `;
-
-              }
-            )
-
-            .join("")
-
-          :
-
-          "";
+            "";
 
       }
     );
 
-
+  }
 
   /* --------------------------------
      START
