@@ -1,1773 +1,1178 @@
-/* =========================================================
-   SNIPPET24
-   FRONTEND APPLICATION
-========================================================= */
+(() => {
 
-"use strict";
+  const state = {
 
+    stories: [],
 
-/* =========================================================
-   CONFIGURATION
-========================================================= */
+    category: "All",
 
-const API_BASE = "/api";
+    lang:
+      localStorage.getItem("snippet24_lang")
+      || "en"
 
-const LANGUAGES = {
-  en: "English",
-  ta: "தமிழ்",
-  te: "తెలుగు",
-  kn: "ಕನ್ನಡ",
-  ml: "മലയാളം",
-  hi: "हिन्दी"
-};
-
-const CATEGORY_NAMES = [
-  "In India",
-  "Global",
-  "Security & Peace",
-  "Law Around Us",
-  "Science & Development",
-  "Business & Economy",
-  "Society & Culture",
-  "Human & Environment",
-  "Tech & AI",
-  "Sports"
-];
-
-
-/* =========================================================
-   APPLICATION STATE
-========================================================= */
-
-const state = {
-  language: "en",
-  category: "all",
-  search: "",
-  stories: [],
-  allStories: [],
-  loading: false
-};
-
-
-/* =========================================================
-   DOM HELPERS
-========================================================= */
-
-function $(selector) {
-  return document.querySelector(selector);
-}
-
-function $$(selector) {
-  return Array.from(
-    document.querySelectorAll(selector)
-  );
-}
-
-
-/* =========================================================
-   TEXT HELPERS
-========================================================= */
-
-function escapeHTML(value) {
-
-  return String(value || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-
-function cleanText(value) {
-
-  return String(value || "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-
-/* =========================================================
-   DATE / TIME
-========================================================= */
-
-function formatDate(value) {
-
-  if (!value) {
-    return "";
-  }
-
-  const date = new Date(value);
-
-  if (Number.isNaN(date.getTime())) {
-    return "";
-  }
-
-  return date.toLocaleDateString(
-    undefined,
-    {
-      day: "2-digit",
-      month: "short",
-      year: "numeric"
-    }
-  );
-}
-
-
-function formatTime(value) {
-
-  if (!value) {
-    return "";
-  }
-
-  const date = new Date(value);
-
-  if (Number.isNaN(date.getTime())) {
-    return "";
-  }
-
-  return date.toLocaleTimeString(
-    undefined,
-    {
-      hour: "2-digit",
-      minute: "2-digit"
-    }
-  );
-}
-
-
-/* =========================================================
-   LIVE CLOCK
-========================================================= */
-
-function startClock() {
-
-  const clock =
-    $("#clock");
-
-  if (!clock) {
-    return;
-  }
-
-  function updateClock() {
-
-    const now = new Date();
-
-    clock.textContent =
-      now.toLocaleTimeString(
-        undefined,
-        {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit"
-        }
-      );
-  }
-
-  updateClock();
-
-  setInterval(
-    updateClock,
-    1000
-  );
-}
-
-
-/* =========================================================
-   LANGUAGE
-========================================================= */
-
-function getStoryLanguage(story) {
-
-  if (
-    story &&
-    story.translations &&
-    story.translations[state.language]
-  ) {
-
-    return story.translations[state.language];
-  }
-
-  if (
-    story &&
-    story.translations &&
-    story.translations.en
-  ) {
-
-    return story.translations.en;
-  }
-
-  return {
-    headline:
-      story?.snippet24?.headline ||
-      story?.source?.title ||
-      "Untitled story",
-
-    summary:
-      story?.snippet24?.summary ||
-      "",
-
-    keyPoints:
-      story?.snippet24?.keyPoints ||
-      []
   };
-}
 
 
-/* =========================================================
-   LANGUAGE BUTTONS
-========================================================= */
+  const $ = selector =>
+    document.querySelector(selector);
 
-function setupLanguageButtons() {
 
-  const buttons =
-    $$(".language");
+  const $$ = selector =>
+    [...document.querySelectorAll(selector)];
 
-  buttons.forEach(
-    button => {
 
-      button.addEventListener(
-        "click",
-        () => {
 
-          const lang =
-            button.dataset.lang;
+  /* --------------------------------
+     LANGUAGE DATA
+  -------------------------------- */
 
-          if (
-            !LANGUAGES[lang]
-          ) {
-            return;
+  function getTitle(story) {
+
+    return (
+      story?.translations?.[state.lang]?.title ||
+
+      story?.[state.lang]?.title ||
+
+      story?.title ||
+
+      ""
+    );
+
+  }
+
+
+  function getSummary(story) {
+
+    return (
+      story?.translations?.[state.lang]?.summary ||
+
+      story?.[state.lang]?.summary ||
+
+      story?.summary ||
+
+      ""
+    );
+
+  }
+
+
+  function getPoints(story) {
+
+    return (
+      story?.translations?.[state.lang]?.key_points ||
+
+      story?.[state.lang]?.key_points ||
+
+      story?.key_points ||
+
+      []
+    );
+
+  }
+
+
+  function categoryOf(story) {
+
+    return (
+      story.category ||
+
+      story.section ||
+
+      "India"
+    );
+
+  }
+
+
+  function sourceOf(story) {
+
+    return (
+      story.source_url ||
+
+      story.original_url ||
+
+      story.url ||
+
+      ""
+    );
+
+  }
+
+
+  function imageOf(story) {
+
+    return (
+      story.ai_image_url ||
+
+      story.image ||
+
+      story.image_url ||
+
+      story.ai_image ||
+
+      ""
+    );
+
+  }
+
+
+
+  /* --------------------------------
+     LOAD STORIES
+  -------------------------------- */
+
+  async function loadStories() {
+
+    setStatus("Finding the signal…");
+
+
+    let data = null;
+
+
+    /*
+      First try backend API.
+    */
+
+    try {
+
+      const response =
+        await fetch(
+          "./api/stories",
+          {
+            cache:"no-store"
           }
+        );
 
-          state.language =
-            lang;
 
-          buttons.forEach(
-            item => {
+      if(response.ok) {
 
-              item.classList.toggle(
-                "active",
-                item.dataset.lang === lang
-              );
+        data =
+          await response.json();
 
+      }
+
+    }
+
+    catch(error) {
+
+      console.log(
+        "API unavailable"
+      );
+
+    }
+
+
+
+    /*
+      If backend is unavailable,
+      use articles.json.
+    */
+
+    if(!data) {
+
+      try {
+
+        const response =
+          await fetch(
+            "./articles.json",
+            {
+              cache:"no-store"
             }
           );
 
-          /*
-             Reload stories from API.
 
-             This is important because the backend
-             returns the requested language.
-          */
+        if(response.ok) {
 
-          loadStories();
+          data =
+            await response.json();
+
         }
-      );
 
-    }
-  );
-}
+      }
 
+      catch(error) {
 
-/* =========================================================
-   CATEGORY BUTTONS
-========================================================= */
-
-function setupCategoryButtons() {
-
-  document.addEventListener(
-    "click",
-    event => {
-
-      const button =
-        event.target.closest(
-          "[data-category]"
+        console.log(
+          "articles.json unavailable"
         );
 
-      if (!button) {
-        return;
       }
 
-      /*
-        Ignore language buttons.
-      */
-
-      if (
-        button.classList.contains(
-          "language"
-        )
-      ) {
-        return;
-      }
-
-      const category =
-        button.dataset.category;
-
-      if (!category) {
-        return;
-      }
-
-      state.category =
-        category;
-
-      updateCategoryButtons();
-
-      loadStories();
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
     }
-  );
-}
 
 
-function updateCategoryButtons() {
 
-  $$("[data-category]")
-    .forEach(
-      button => {
+    /*
+      Support several JSON structures.
+    */
 
-        if (
-          button.classList.contains(
-            "language"
-          )
-        ) {
-          return;
-        }
+    if(Array.isArray(data)) {
+
+      state.stories = data;
+
+    }
+
+    else if(
+      Array.isArray(data?.stories)
+    ) {
+
+      state.stories =
+        data.stories;
+
+    }
+
+    else if(
+      Array.isArray(data?.articles)
+    ) {
+
+      state.stories =
+        data.articles;
+
+    }
+
+    else {
+
+      state.stories = [];
+
+    }
+
+
+    render();
+
+  }
+
+
+
+  /* --------------------------------
+     FILTER
+  -------------------------------- */
+
+  function filtered() {
+
+    return state.stories.filter(
+      story => {
+
+        /*
+          For languages other than English,
+          only show stories that actually
+          have that translation.
+        */
+
+        const hasTranslation =
+          state.lang === "en"
+          ||
+          !!(
+            story.translations?.[
+              state.lang
+            ]
+
+            ||
+
+            story[
+              state.lang
+            ]
+          );
+
 
         const category =
-          button.dataset.category;
+          categoryOf(story);
 
-        button.classList.toggle(
-          "active",
-          category === state.category
-        );
-      }
-    );
-}
 
+        return (
 
-/* =========================================================
-   SEARCH
-========================================================= */
+          hasTranslation
 
-function setupSearch() {
+          &&
 
-  const input =
-    $("#searchInput");
+          (
+            state.category === "All"
 
-  if (!input) {
-    return;
-  }
+            ||
 
-  let timer = null;
-
-  input.addEventListener(
-    "input",
-    event => {
-
-      clearTimeout(timer);
-
-      state.search =
-        cleanText(
-          event.target.value
-        );
-
-      timer =
-        setTimeout(
-          () => {
-
-            loadStories();
-
-          },
-          350
-        );
-    }
-  );
-}
-
-
-/* =========================================================
-   API
-========================================================= */
-
-async function fetchStories() {
-
-  const params =
-    new URLSearchParams();
-
-  params.set(
-    "lang",
-    state.language
-  );
-
-  params.set(
-    "category",
-    state.category
-  );
-
-  if (state.search) {
-
-    params.set(
-      "q",
-      state.search
-    );
-  }
-
-  const response =
-    await fetch(
-      `${API_BASE}/stories?${params.toString()}`,
-      {
-        headers: {
-          Accept:
-            "application/json"
-        }
-      }
-    );
-
-  if (!response.ok) {
-
-    throw new Error(
-      `Unable to load stories (${response.status})`
-    );
-  }
-
-  return response.json();
-}
-
-
-/* =========================================================
-   LOAD STORIES
-========================================================= */
-
-async function loadStories() {
-
-  if (state.loading) {
-    return;
-  }
-
-  state.loading = true;
-
-  showLoading();
-
-  try {
-
-    const data =
-      await fetchStories();
-
-    state.stories =
-      Array.isArray(
-        data.stories
-      )
-        ? data.stories
-        : [];
-
-    renderAll();
-
-  } catch (error) {
-
-    console.error(
-      "Snippet24:",
-      error
-    );
-
-    showError(
-      "News could not be loaded. Please check that the server is running."
-    );
-
-  } finally {
-
-    state.loading = false;
-  }
-}
-
-
-/* =========================================================
-   LOADING
-========================================================= */
-
-function showLoading() {
-
-  const grid =
-    $("#newsGrid");
-
-  if (!grid) {
-    return;
-  }
-
-  grid.innerHTML = `
-    <div class="loading-state">
-      <div class="loader"></div>
-      <p>Loading the latest news…</p>
-    </div>
-  `;
-
-  const hero =
-    $("#heroStory");
-
-  if (hero) {
-    hero.innerHTML = "";
-  }
-}
-
-
-/* =========================================================
-   ERROR
-========================================================= */
-
-function showError(message) {
-
-  const grid =
-    $("#newsGrid");
-
-  if (!grid) {
-    return;
-  }
-
-  grid.innerHTML = `
-    <div class="empty-state">
-      <div class="empty-icon">⚠️</div>
-
-      <h3>Unable to load news</h3>
-
-      <p>
-        ${escapeHTML(message)}
-      </p>
-    </div>
-  `;
-}
-
-
-/* =========================================================
-   RENDER EVERYTHING
-========================================================= */
-
-function renderAll() {
-
-  renderStoryCount();
-
-  renderHero();
-
-  renderTrending();
-
-  renderNewsGrid();
-
-  renderLiveWire();
-
-  updateSectionTitle();
-}
-
-
-/* =========================================================
-   STORY COUNT
-========================================================= */
-
-function renderStoryCount() {
-
-  const element =
-    $("#storyCount");
-
-  if (!element) {
-    return;
-  }
-
-  const count =
-    state.stories.length;
-
-  element.textContent =
-    `${count} ${count === 1 ? "story" : "stories"}`;
-}
-
-
-/* =========================================================
-   SECTION TITLE
-========================================================= */
-
-function updateSectionTitle() {
-
-  const title =
-    $("#sectionTitle");
-
-  if (!title) {
-    return;
-  }
-
-  if (
-    state.search
-  ) {
-
-    title.textContent =
-      `Search Results for "${state.search}"`;
-
-    return;
-  }
-
-  if (
-    state.category === "all"
-  ) {
-
-    title.textContent =
-      "Latest Stories";
-
-    return;
-  }
-
-  title.textContent =
-    state.category;
-}
-
-
-/* =========================================================
-   HERO STORY
-========================================================= */
-
-function renderHero() {
-
-  const container =
-    $("#heroStory");
-
-  if (!container) {
-    return;
-  }
-
-  const story =
-    state.stories[0];
-
-  if (!story) {
-
-    container.innerHTML = "";
-
-    return;
-  }
-
-  const text =
-    getStoryLanguage(
-      story
-    );
-
-  const image =
-    getImageUrl(
-      story
-    );
-
-  const category =
-    story.snippet24?.category ||
-    "";
-
-  const location =
-    story.snippet24?.location ||
-    "";
-
-  const published =
-    story.source?.publishedAt;
-
-  container.innerHTML = `
-    <article
-      class="hero-card"
-      data-story-id="${escapeHTML(story.id)}"
-      tabindex="0"
-      role="button"
-      aria-label="Open story"
-    >
-
-      <div class="hero-card-image">
-
-        <img
-          src="${escapeHTML(image)}"
-          alt="${escapeHTML(text.headline)}"
-          loading="eager"
-          onerror="this.src='/fallback-news.svg'"
-        >
-
-      </div>
-
-      <div class="hero-card-content">
-
-        <span class="story-category">
-          ${escapeHTML(category)}
-        </span>
-
-        <h2>
-          ${escapeHTML(text.headline)}
-        </h2>
-
-        <p class="hero-card-summary">
-          ${escapeHTML(text.summary)}
-        </p>
-
-        <div class="hero-meta">
-
-          ${
-            location
-              ? `<span>📍 ${escapeHTML(location)}</span>`
-              : ""
-          }
-
-          ${
-            published
-              ? `<span>${escapeHTML(formatDate(published))}</span>`
-              : ""
-          }
-
-          ${
-            published
-              ? `<span>${escapeHTML(formatTime(published))}</span>`
-              : ""
-          }
-
-        </div>
-
-        <div class="hero-read">
-          Read full Snippet24 report →
-        </div>
-
-      </div>
-
-    </article>
-  `;
-
-  attachStoryNavigation(
-    container
-  );
-}
-
-
-/* =========================================================
-   NEWS GRID
-========================================================= */
-
-function renderNewsGrid() {
-
-  const grid =
-    $("#newsGrid");
-
-  if (!grid) {
-    return;
-  }
-
-  if (!state.stories.length) {
-
-    grid.innerHTML = `
-      <div class="empty-state">
-
-        <div class="empty-icon">
-          📰
-        </div>
-
-        <h3>
-          No stories found
-        </h3>
-
-        <p>
-          Try another category, language or search.
-        </p>
-
-      </div>
-    `;
-
-    return;
-  }
-
-  /*
-    Do not display the hero story again
-    in the normal grid.
-  */
-
-  const stories =
-    state.stories.slice(1);
-
-  if (!stories.length) {
-
-    grid.innerHTML = "";
-
-    return;
-  }
-
-  grid.innerHTML =
-    stories
-      .map(
-        story =>
-          createNewsCard(
-            story
+            category ===
+            state.category
           )
-      )
-      .join("");
 
-  attachStoryNavigation(
-    grid
-  );
-}
+        );
 
-
-/* =========================================================
-   CREATE NEWS CARD
-========================================================= */
-
-function createNewsCard(story) {
-
-  const text =
-    getStoryLanguage(
-      story
+      }
     );
 
-  const image =
-    getImageUrl(
-      story
-    );
+  }
 
-  const category =
-    story.snippet24?.category ||
-    "";
 
-  const location =
-    story.snippet24?.location ||
-    "";
 
-  const source =
-    story.source?.sourceName ||
-    "";
+  /* --------------------------------
+     STATUS
+  -------------------------------- */
 
-  const published =
-    story.source?.publishedAt;
+  function setStatus(text) {
 
-  return `
-    <article
-      class="news-card"
-      data-story-id="${escapeHTML(story.id)}"
-      tabindex="0"
-      role="button"
-      aria-label="Open story"
-    >
+    const element =
+      $("#status");
 
-      <div class="news-image">
+
+    if(element) {
+
+      element.textContent =
+        text;
+
+    }
+
+  }
+
+
+
+  /* --------------------------------
+     SECURITY / HTML ESCAPE
+  -------------------------------- */
+
+  function escapeHtml(value = "") {
+
+    return String(value)
+
+      .replace(
+        /[&<>"']/g,
+
+        character => ({
+
+          "&":"&amp;",
+
+          "<":"&lt;",
+
+          ">":"&gt;",
+
+          '"':"&quot;",
+
+          "'":"&#39;"
+
+        }[character])
+
+      );
+
+  }
+
+
+
+  /* --------------------------------
+     STORY CARD
+  -------------------------------- */
+
+  function storyCard(story) {
+
+    const title =
+      getTitle(story);
+
+
+    const summary =
+      getSummary(story);
+
+
+    const points =
+      getPoints(story);
+
+
+    const source =
+      sourceOf(story);
+
+
+    const image =
+      imageOf(story);
+
+
+    const signal =
+      story.signal
+
+      ||
+
+      (
+        story.breaking
+          ? "BREAKING"
+          : "IMPORTANT"
+      );
+
+
+
+    let imageHTML;
+
+
+    if(image) {
+
+      imageHTML = `
 
         <img
-          src="${escapeHTML(image)}"
-          alt="${escapeHTML(text.headline)}"
+
+          class="story-image"
+
+          src="${escapeHtml(image)}"
+
+          alt=""
+
           loading="lazy"
-          onerror="this.src='/fallback-news.svg'"
+
+          onerror="this.style.display='none'"
+
         >
 
-        ${
-          story.imageGenerated
-            ? `
-              <span class="image-label">
-                AI Editorial Illustration
-              </span>
-            `
-            : ""
+      `;
+
+    }
+
+    else {
+
+      imageHTML = `
+
+        <div
+          class="story-image">
+        </div>
+
+      `;
+
+    }
+
+
+
+    const pointsHTML =
+      points.length
+
+      ?
+
+      `
+
+      <ul class="key-points">
+
+        ${points
+          .slice(0,3)
+          .map(
+            point =>
+              `<li>
+                ${escapeHtml(point)}
+              </li>`
+          )
+          .join("")
         }
+
+      </ul>
+
+      `
+
+      :
+
+      "";
+
+
+
+    const summaryHTML =
+      summary
+
+      ?
+
+      `
+
+      <div class="why">
+
+        <b>
+          WHY IT MATTERS
+        </b>
+
+        <br>
+
+        ${escapeHtml(summary)}
 
       </div>
 
+      `
 
-      <div class="news-content">
+      :
 
-        <span class="news-category">
-          ${escapeHTML(category)}
-        </span>
-
-
-        <h3>
-          ${escapeHTML(text.headline)}
-        </h3>
+      "";
 
 
-        <p class="news-summary">
-          ${escapeHTML(text.summary)}
-        </p>
+
+    const sourceHTML =
+      source
+
+      ?
+
+      `
+
+      <a
+
+        class="source-link"
+
+        href="${escapeHtml(source)}"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        Original source →
+
+      </a>
+
+      `
+
+      :
+
+      "";
 
 
-        <div class="news-meta">
 
-          <span class="news-source">
-            ${escapeHTML(source)}
+    return `
+
+      <article class="story-card">
+
+        ${imageHTML}
+
+        <div class="story-body">
+
+          <span class="signal-label">
+
+            ${escapeHtml(signal)}
+
           </span>
 
-          <span class="news-location">
+
+          <h3>
+
+            ${escapeHtml(
+              title ||
+              "Story title unavailable"
+            )}
+
+          </h3>
+
+
+          <div class="story-meta">
+
+            ${escapeHtml(
+              categoryOf(story)
+            )}
 
             ${
-              location
-                ? `📍 ${escapeHTML(location)}`
-                : published
-                  ? escapeHTML(
-                      formatDate(
-                        published
-                      )
-                    )
-                  : ""
+              story.published_at
+
+              ?
+
+              " • " +
+
+              escapeHtml(
+                new Date(
+                  story.published_at
+                ).toLocaleString()
+              )
+
+              :
+
+              ""
             }
 
-          </span>
+          </div>
+
+
+          ${pointsHTML}
+
+
+          ${summaryHTML}
+
+
+          ${sourceHTML}
 
         </div>
 
-      </div>
+      </article>
 
-    </article>
-  `;
-}
+    `;
+
+  }
 
 
-/* =========================================================
-   STORY NAVIGATION
-========================================================= */
 
-function attachStoryNavigation(
-  container
-) {
+  /* --------------------------------
+     RENDER
+  -------------------------------- */
 
-  const cards =
-    container.querySelectorAll(
-      "[data-story-id]"
+  function render() {
+
+    const stories =
+      filtered();
+
+
+    const container =
+      $("#stories");
+
+
+    if(stories.length) {
+
+      container.innerHTML =
+        stories
+          .map(storyCard)
+          .join("");
+
+    }
+
+    else {
+
+      container.innerHTML = `
+
+        <div class="empty">
+
+          No published stories are
+          available in
+
+          <b>
+            ${escapeHtml(
+              state.lang
+            )}
+          </b>
+
+          for this section yet.
+
+        </div>
+
+      `;
+
+    }
+
+
+
+    setStatus(
+
+      stories.length
+
+      ?
+
+      `${stories.length}
+       stories • updated now`
+
+      :
+
+      "No stories available yet."
+
     );
 
-  cards.forEach(
-    card => {
 
-      card.addEventListener(
-        "click",
-        () => {
+    renderTicker(
+      stories.length
+        ? stories
+        : state.stories
+    );
 
-          const id =
-            card.dataset.storyId;
 
-          if (!id) {
-            return;
-          }
+    syncControls();
 
-          openStory(
-            id
+  }
+
+
+
+  /* --------------------------------
+     LIVE WIRE
+  -------------------------------- */
+
+  function renderTicker(stories) {
+
+    const items =
+      stories.slice(0,12);
+
+
+    const ticker =
+      $("#tickerTrack");
+
+
+    if(!items.length) {
+
+      ticker.innerHTML = `
+
+        <span>
+
+          Live Wire will appear
+          when stories are published.
+
+        </span>
+
+      `;
+
+      return;
+
+    }
+
+
+
+    /*
+      Duplicate the stories so the
+      ticker can move continuously.
+    */
+
+    const combined =
+      [...items,...items];
+
+
+    ticker.innerHTML =
+      combined
+
+        .map(
+          story => `
+
+            <span class="ticker-item">
+
+              ${escapeHtml(
+                getTitle(story)
+              )}
+
+            </span>
+
+          `
+        )
+
+        .join("");
+
+  }
+
+
+
+  /* --------------------------------
+     ACTIVE BUTTONS
+  -------------------------------- */
+
+  function syncControls() {
+
+    $$(
+      "[data-category]"
+    )
+
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+
+            "active",
+
+            element.dataset.category ===
+            state.category
+
           );
+
         }
       );
 
 
-      card.addEventListener(
-        "keydown",
-        event => {
+    $$(
+      "[data-lang]"
+    )
 
-          if (
-            event.key === "Enter" ||
-            event.key === " "
-          ) {
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+
+            "active",
+
+            element.dataset.lang ===
+            state.lang
+
+          );
+
+        }
+      );
+
+
+    $("#languageSelect").value =
+      state.lang;
+
+  }
+
+
+
+  /* --------------------------------
+     CATEGORY
+  -------------------------------- */
+
+  function setCategory(category) {
+
+    state.category =
+      category;
+
+
+    $("#signal")
+      .scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
+
+      });
+
+
+    render();
+
+  }
+
+
+
+  $$(
+    "[data-category]"
+  )
+
+    .forEach(
+      element => {
+
+        element.addEventListener(
+          "click",
+
+          event => {
 
             event.preventDefault();
 
-            const id =
-              card.dataset.storyId;
-
-            if (id) {
-              openStory(id);
-            }
-          }
-        }
-      );
-
-    }
-  );
-}
-
-
-/* =========================================================
-   OPEN STORY
-========================================================= */
-
-function openStory(id) {
-
-  /*
-    This opens OUR Snippet24 story page.
-
-    It does NOT send the user directly to
-    the source website.
-
-    The Snippet24 story page can then show:
-
-    - AI rewritten headline
-    - AI summary
-    - 3 key points
-    - AI editorial image
-    - date/time
-    - location
-    - source attribution
-    - original source link
-    - legal/media/copyright footnote
-  */
-
-  window.location.href =
-    `/story?id=${encodeURIComponent(id)}`;
-}
-
-
-/* =========================================================
-   IMAGE URL
-========================================================= */
-
-function getImageUrl(story) {
-
-  if (
-    story &&
-    story.imageUrl
-  ) {
-
-    return story.imageUrl;
-  }
-
-  /*
-    Do NOT reuse one random image for every story.
-
-    If an AI image was not generated,
-    use the neutral fallback.
-  */
-
-  return "/fallback-news.svg";
-}
-
-
-/* =========================================================
-   TRENDING
-========================================================= */
-
-function renderTrending() {
-
-  const container =
-    $("#trending");
-
-  if (!container) {
-    return;
-  }
-
-  const stories =
-    state.stories.slice(
-      0,
-      8
-    );
-
-  if (!stories.length) {
-
-    container.innerHTML = "";
-
-    return;
-  }
-
-  container.innerHTML =
-    stories
-      .map(
-        (story, index) => {
-
-          const text =
-            getStoryLanguage(
-              story
+            setCategory(
+              element.dataset.category
             );
 
-          const location =
-            story.snippet24?.location ||
-            "";
-
-          return `
-            <article
-              class="trending-card"
-              data-story-id="${escapeHTML(story.id)}"
-              tabindex="0"
-              role="button"
-            >
-
-              <div class="trending-number">
-                ${String(index + 1).padStart(2, "0")}
-              </div>
-
-              <h3>
-                ${escapeHTML(text.headline)}
-              </h3>
-
-              <small>
-                ${
-                  location
-                    ? `📍 ${escapeHTML(location)}`
-                    : "Latest update"
-                }
-              </small>
-
-            </article>
-          `;
-        }
-      )
-      .join("");
-
-  attachStoryNavigation(
-    container
-  );
-}
-
-
-/* =========================================================
-   LIVE WIRE
-========================================================= */
-
-function renderLiveWire() {
-
-  const track =
-    $("#tickerTrack");
-
-  if (!track) {
-    return;
-  }
-
-  const stories =
-    state.stories.slice(
-      0,
-      15
-    );
-
-  if (!stories.length) {
-
-    track.innerHTML =
-      `
-        <span class="ticker-item">
-          Waiting for the latest news updates…
-        </span>
-      `;
-
-    return;
-  }
-
-  const items =
-    stories
-      .map(
-        story => {
-
-          const text =
-            getStoryLanguage(
-              story
-            );
-
-          return `
-            <span
-              class="ticker-item"
-            >
-              ${escapeHTML(text.headline)}
-            </span>
-          `;
-        }
-      )
-      .join("");
-
-  /*
-    Duplicate the ticker content so the
-    walking/marquee effect remains continuous.
-  */
-
-  track.innerHTML =
-    items + items;
-}
-
-
-/* =========================================================
-   LIVE WIRE CLICK SUPPORT
-========================================================= */
-
-function setupTickerClicks() {
-
-  const ticker =
-    $("#tickerTrack");
-
-  if (!ticker) {
-    return;
-  }
-
-  ticker.addEventListener(
-    "click",
-    event => {
-
-      const item =
-        event.target.closest(
-          ".ticker-item"
-        );
-
-      if (!item) {
-        return;
-      }
-
-      /*
-        Find matching headline.
-      */
-
-      const headline =
-        item.textContent
-          .trim();
-
-      const story =
-        state.stories.find(
-          story => {
-
-            const text =
-              getStoryLanguage(
-                story
-              );
-
-            return (
-              text.headline ===
-              headline
-            );
           }
         );
 
-      if (story) {
-
-        openStory(
-          story.id
-        );
       }
-    }
-  );
-}
-
-
-/* =========================================================
-   MOBILE CATEGORY DRAWER
-========================================================= */
-
-function setupMobileCategories() {
-
-  const button =
-    $("#mobileCategories");
-
-  if (!button) {
-    return;
-  }
-
-  button.addEventListener(
-    "click",
-    () => {
-
-      openCategoryDrawer();
-
-    }
-  );
-}
-
-
-function openCategoryDrawer() {
-
-  closeCategoryDrawer();
-
-  const drawer =
-    document.createElement(
-      "div"
     );
 
-  drawer.className =
-    "category-drawer";
-
-  drawer.id =
-    "categoryDrawer";
-
-  drawer.innerHTML = `
-    <div
-      class="category-drawer-inner"
-      role="dialog"
-      aria-modal="true"
-    >
-
-      <div class="drawer-header">
-
-        <strong>
-          Categories
-        </strong>
-
-        <button
-          type="button"
-          id="closeCategoryDrawer"
-          aria-label="Close"
-        >
-          ×
-        </button>
-
-      </div>
 
 
-      <div class="mobile-category-list">
+  /* --------------------------------
+     LANGUAGE BUTTONS
+  -------------------------------- */
 
-        <button
-          data-category="all"
-          class="${state.category === "all" ? "active" : ""}"
-        >
-          ⌂ Home
-        </button>
+  $$(
+    "[data-lang]"
+  )
 
-        ${CATEGORY_NAMES.map(
-          category => `
-            <button
-              data-category="${escapeHTML(category)}"
-              class="${state.category === category ? "active" : ""}"
-            >
-              ${escapeHTML(category)}
-            </button>
-          `
-        ).join("")}
+    .forEach(
+      element => {
 
-      </div>
+        element.addEventListener(
+          "click",
 
-    </div>
-  `;
+          () => {
 
-  document.body.appendChild(
-    drawer
-  );
+            state.lang =
+              element.dataset.lang;
 
 
-  drawer
-    .querySelector(
-      "#closeCategoryDrawer"
-    )
-    ?.addEventListener(
+            localStorage.setItem(
+              "snippet24_lang",
+              state.lang
+            );
+
+
+            render();
+
+          }
+        );
+
+      }
+    );
+
+
+
+  /* --------------------------------
+     LANGUAGE DROPDOWN
+  -------------------------------- */
+
+  $("#languageSelect")
+    .addEventListener(
+      "change",
+
+      event => {
+
+        state.lang =
+          event.target.value;
+
+
+        localStorage.setItem(
+          "snippet24_lang",
+          state.lang
+        );
+
+
+        render();
+
+      }
+    );
+
+
+
+  /* --------------------------------
+     MORE
+  -------------------------------- */
+
+  $("#moreBtn")
+    .addEventListener(
       "click",
-      closeCategoryDrawer
+
+      () => {
+
+        $("#moreMenu")
+          .classList.toggle(
+            "show"
+          );
+
+      }
     );
 
 
-  drawer.addEventListener(
-    "click",
-    event => {
 
-      if (
-        event.target ===
-        drawer
-      ) {
+  /* --------------------------------
+     VIEW ALL
+  -------------------------------- */
 
-        closeCategoryDrawer();
+  $("#viewAllBtn")
+    .addEventListener(
+      "click",
 
-        return;
+      () => {
+
+        setCategory("All");
+
       }
+    );
 
-      const categoryButton =
-        event.target.closest(
-          "[data-category]"
-        );
 
-      if (
-        !categoryButton
-      ) {
-        return;
+
+  /* --------------------------------
+     REFRESH
+  -------------------------------- */
+
+  $("#refreshBtn")
+    .addEventListener(
+      "click",
+
+      loadStories
+
+    );
+
+
+
+  /* --------------------------------
+     CATCH ME UP
+  -------------------------------- */
+
+  $("#catchupBtn")
+    .addEventListener(
+      "click",
+
+      () => {
+
+        state.category =
+          "All";
+
+
+        $("#signal")
+          .scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"start"
+
+          });
+
+
+        render();
+
       }
-
-      state.category =
-        categoryButton.dataset.category;
-
-      updateCategoryButtons();
-
-      closeCategoryDrawer();
-
-      loadStories();
-
-    }
-  );
-}
+    );
 
 
-function closeCategoryDrawer() {
 
-  const drawer =
-    $("#categoryDrawer");
+  /* --------------------------------
+     SPEED BUTTONS
+  -------------------------------- */
 
-  if (drawer) {
-    drawer.remove();
-  }
-}
+  $$(
+    "[data-speed]"
+  )
 
-
-/* =========================================================
-   MOBILE NAV ACTIVE STATE
-========================================================= */
-
-function updateMobileNav() {
-
-  const nav =
-    $(".mobile-nav");
-
-  if (!nav) {
-    return;
-  }
-
-  nav
-    .querySelectorAll(
-      "button[data-category]"
-    )
     .forEach(
       button => {
 
-        button.classList.toggle(
-          "active",
-          button.dataset.category ===
-            state.category
-        );
-      }
-    );
-}
+        button.addEventListener(
+          "click",
 
+          () => {
 
-/* =========================================================
-   WEATHER / CITY
-========================================================= */
+            $("#signal")
+              .scrollIntoView({
 
-function setupWeather() {
+                behavior:"smooth",
 
-  const weather =
-    $(".weather");
+                block:"start"
 
-  if (!weather) {
-    return;
-  }
+              });
 
-  /*
-    We don't hard-code "India" as the city.
-
-    First try browser geolocation.
-
-    Then reverse geocode through OpenStreetMap.
-
-    If permission is denied, we display
-    "India" as a safe fallback.
-  */
-
-  weather.style.cursor =
-    "pointer";
-
-  weather.addEventListener(
-    "click",
-    requestLocation
-  );
-
-  requestLocation();
-}
-
-
-function requestLocation() {
-
-  if (
-    !navigator.geolocation
-  ) {
-
-    setWeatherFallback();
-
-    return;
-  }
-
-  navigator.geolocation.getCurrentPosition(
-    position => {
-
-      const latitude =
-        position.coords.latitude;
-
-      const longitude =
-        position.coords.longitude;
-
-      getCityFromCoordinates(
-        latitude,
-        longitude
-      );
-
-    },
-    () => {
-
-      setWeatherFallback();
-
-    },
-    {
-      enableHighAccuracy: false,
-
-      timeout: 8000,
-
-      maximumAge: 300000
-    }
-  );
-}
-
-
-async function getCityFromCoordinates(
-  latitude,
-  longitude
-) {
-
-  try {
-
-    const url =
-      `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(latitude)}&lon=${encodeURIComponent(longitude)}`;
-
-    const response =
-      await fetch(
-        url,
-        {
-          headers: {
-            Accept:
-              "application/json"
           }
-        }
-      );
-
-    if (!response.ok) {
-      throw new Error(
-        "Location lookup failed"
-      );
-    }
-
-    const data =
-      await response.json();
-
-    const address =
-      data.address ||
-      {};
-
-    const city =
-      address.city ||
-      address.town ||
-      address.municipality ||
-      address.village ||
-      address.county ||
-      address.state ||
-      "India";
-
-    setWeatherCity(
-      city
-    );
-
-    /*
-      Weather API integration can be connected
-      later. The city name is the important part
-      for now.
-    */
-
-  } catch (error) {
-
-    console.error(
-      "Location:",
-      error
-    );
-
-    setWeatherFallback();
-  }
-}
-
-
-function setWeatherCity(
-  city
-) {
-
-  const weather =
-    $(".weather");
-
-  if (!weather) {
-    return;
-  }
-
-  weather.innerHTML = `
-    <span>📍</span>
-
-    <strong>
-      ${escapeHTML(city)}
-    </strong>
-
-    <small>
-      Your city
-    </small>
-  `;
-}
-
-
-function setWeatherFallback() {
-
-  const weather =
-    $(".weather");
-
-  if (!weather) {
-    return;
-  }
-
-  weather.innerHTML = `
-    <span>📍</span>
-
-    <strong>
-      India
-    </strong>
-
-    <small>
-      Location unavailable
-    </small>
-  `;
-}
-
-
-/* =========================================================
-   KEYBOARD ESCAPE
-========================================================= */
-
-function setupEscapeKey() {
-
-  document.addEventListener(
-    "keydown",
-    event => {
-
-      if (
-        event.key === "Escape"
-      ) {
-
-        closeCategoryDrawer();
+        );
 
       }
-    }
-  );
-}
+    );
 
 
-/* =========================================================
-   PREVENT BROKEN IMAGE DISPLAY
-========================================================= */
 
-function setupImageFallback() {
+  /* --------------------------------
+     SEARCH
+  -------------------------------- */
 
-  document.addEventListener(
-    "error",
-    event => {
+  $("#searchBtn")
+    .addEventListener(
+      "click",
 
-      const image =
-        event.target;
+      () => {
 
-      if (
-        image &&
-        image.tagName ===
-          "IMG"
-      ) {
+        $("#searchPanel")
+          .classList.add("show");
 
-        if (
-          image.dataset.fallbackApplied
+
+        $("#searchInput")
+          .focus();
+
+      }
+    );
+
+
+
+  $("#closeSearch")
+    .addEventListener(
+      "click",
+
+      () => {
+
+        $("#searchPanel")
+          .classList.remove(
+            "show"
+          );
+
+      }
+    );
+
+
+
+  $("#searchPanel")
+    .addEventListener(
+      "click",
+
+      event => {
+
+        if(
+          event.target.id ===
+          "searchPanel"
         ) {
-          return;
+
+          event.currentTarget
+            .classList.remove(
+              "show"
+            );
+
         }
 
-        image.dataset.fallbackApplied =
-          "true";
-
-        image.src =
-          "/fallback-news.svg";
       }
-
-    },
-    true
-  );
-}
+    );
 
 
-/* =========================================================
-   AUTO REFRESH
-========================================================= */
 
-function startAutoRefresh() {
+  $("#searchInput")
+    .addEventListener(
+      "input",
 
-  /*
-    Refresh every 5 minutes.
+      event => {
 
-    This allows new RSS-ingested stories
-    to appear without manually refreshing
-    the browser.
+        const query =
+          event.target.value
+            .trim()
+            .toLowerCase();
 
-    The browser only reads /api/stories.
 
-    RSS ingestion itself is performed by
-    the backend /api/ingest.
-  */
+        const results =
+          state.stories
 
-  setInterval(
-    () => {
+            .filter(
+              story =>
+                getTitle(story)
+                  .toLowerCase()
+                  .includes(query)
+            )
 
-      if (
-        document.visibilityState ===
-        "visible"
-      ) {
+            .slice(0,8);
 
-        loadStories();
+
+        $("#searchResults")
+          .innerHTML =
+
+          query
+
+          ?
+
+          results
+            .map(
+              story => {
+
+                const source =
+                  sourceOf(story);
+
+
+                if(source) {
+
+                  return `
+
+                    <a
+
+                      class="search-result"
+
+                      href="${escapeHtml(source)}"
+
+                      target="_blank"
+
+                      rel="noopener"
+
+                    >
+
+                      ${escapeHtml(
+                        getTitle(story)
+                      )}
+
+                    </a>
+
+                  `;
+
+                }
+
+
+                return `
+
+                  <div class="search-result">
+
+                    ${escapeHtml(
+                      getTitle(story)
+                    )}
+
+                  </div>
+
+                `;
+
+              }
+            )
+
+            .join("")
+
+          :
+
+          "";
 
       }
-
-    },
-    5 * 60 * 1000
-  );
-}
+    );
 
 
-/* =========================================================
-   INIT
-========================================================= */
 
-async function init() {
+  /* --------------------------------
+     START
+  -------------------------------- */
 
-  console.log(
-    "Snippet24 frontend starting…"
-  );
+  loadStories();
 
-
-  startClock();
-
-
-  setupLanguageButtons();
-
-
-  setupCategoryButtons();
-
-
-  setupSearch();
-
-
-  setupMobileCategories();
-
-
-  setupEscapeKey();
-
-
-  setupImageFallback();
-
-
-  setupTickerClicks();
-
-
-  setupWeather();
-
-
-  updateCategoryButtons();
-
-
-  updateMobileNav();
-
-
-  await loadStories();
-
-
-  startAutoRefresh();
-
-
-  console.log(
-    "Snippet24 frontend ready."
-  );
-}
-
-
-/* =========================================================
-   START APPLICATION
-========================================================= */
-
-if (
-  document.readyState ===
-  "loading"
-) {
-
-  document.addEventListener(
-    "DOMContentLoaded",
-    init
-  );
-
-} else {
-
-  init();
-
-}
+})();
