@@ -1753,7 +1753,722 @@ if (year) {
    START
 
 ================================================== */
+/* =========================================
+   SMART MY WORLD LOCATION ENGINE
+========================================= */
 
+const LOCATION_KEY = "snippet24_location";
+
+state.location =
+  JSON.parse(
+    localStorage.getItem(LOCATION_KEY) || "null"
+  );
+
+
+function saveLocation(location) {
+
+  state.location = location;
+
+  localStorage.setItem(
+    LOCATION_KEY,
+    JSON.stringify(location)
+  );
+
+  updateWorldUI();
+
+  render();
+
+}
+
+
+function locationText(location) {
+
+  if (!location) {
+    return "Location not set";
+  }
+
+  return [
+    location.locality,
+    location.city,
+    location.district,
+    location.state
+  ]
+    .filter(Boolean)
+    .filter(
+      (value, index, array) =>
+        array.indexOf(value) === index
+    )
+    .join(", ");
+
+}
+
+
+function updateWorldUI() {
+
+  const status =
+    $("#locationStatus");
+
+  const name =
+    $("#locationName");
+
+  const detail =
+    $("#locationDetail");
+
+  const priority =
+    $("#worldPriority");
+
+  const priorityText =
+    $("#worldPriorityText");
+
+  if (!state.location) {
+
+    if (status)
+      status.textContent =
+        "Location not set";
+
+    if (name)
+      name.textContent =
+        "Understand what's around you";
+
+    if (detail)
+      detail.textContent =
+        "Allow location access to personalize your news.";
+
+    if (priority)
+      priority.hidden = true;
+
+    return;
+  }
+
+
+  const location =
+    state.location;
+
+
+  if (status)
+    status.textContent =
+      "YOUR WORLD";
+
+
+  if (name)
+    name.textContent =
+      locationText(location);
+
+
+  if (detail)
+    detail.textContent =
+      [
+        location.taluk,
+        location.district,
+        location.state
+      ]
+        .filter(Boolean)
+        .filter(
+          (value, index, array) =>
+            array.indexOf(value) === index
+        )
+        .join(" • ");
+
+
+  if (priority) {
+
+    priority.hidden = false;
+
+    if (priorityText) {
+
+      priorityText.textContent =
+        [
+          location.locality
+            ? "Local"
+            : null,
+          location.district
+            ? "District"
+            : null,
+          location.state
+            ? "State"
+            : null,
+          "India",
+          "Global"
+        ]
+          .filter(Boolean)
+          .join(" • ");
+
+    }
+
+  }
+
+}
+
+
+async function detectLocation() {
+
+  const status =
+    $("#locationStatus");
+
+  const name =
+    $("#locationName");
+
+  const detail =
+    $("#locationDetail");
+
+
+  if (!navigator.geolocation) {
+
+    if (status)
+      status.textContent =
+        "Location unavailable";
+
+    if (name)
+      name.textContent =
+        "Your browser does not support location.";
+
+    return;
+
+  }
+
+
+  if (status)
+    status.textContent =
+      "LOCATING…";
+
+  if (name)
+    name.textContent =
+      "Understanding your area";
+
+  if (detail)
+    detail.textContent =
+      "Please allow location access.";
+
+
+  navigator.geolocation.getCurrentPosition(
+
+    async position => {
+
+      const latitude =
+        position.coords.latitude;
+
+      const longitude =
+        position.coords.longitude;
+
+
+      try {
+
+        const response =
+          await fetch(
+            "https://api.bigdatacloud.net/data/reverse-geocode-client" +
+            "?latitude=" +
+            encodeURIComponent(latitude) +
+            "&longitude=" +
+            encodeURIComponent(longitude) +
+            "&localityLanguage=en",
+            {
+              cache: "no-store"
+            }
+          );
+
+
+        if (!response.ok) {
+          throw new Error(
+            "Reverse geocoding failed"
+          );
+        }
+
+
+        const data =
+          await response.json();
+
+
+        const address =
+          data.localityInfo || {};
+
+
+        const location = {
+
+          latitude,
+          longitude,
+
+          locality:
+            data.locality ||
+            data.localityName ||
+            "",
+
+          city:
+            data.city ||
+            data.locality ||
+            "",
+
+          district:
+            data.principalSubdivision ||
+            data.district ||
+            "",
+
+          state:
+            data.principalSubdivision ||
+            "",
+
+          country:
+            data.countryName ||
+            "India",
+
+          countryCode:
+            data.countryCode ||
+            "IN",
+
+          taluk:
+            data.localityInfo?.administrativeArea?.[0]?.name ||
+            ""
+
+        };
+
+
+        saveLocation(location);
+
+
+      } catch (error) {
+
+        console.error(
+          "Location lookup failed:",
+          error
+        );
+
+
+        if (status)
+          status.textContent =
+            "LOCATION FOUND";
+
+        if (name)
+          name.textContent =
+            "Your location was detected";
+
+        if (detail)
+          detail.textContent =
+            "We couldn't identify the area name. You can select it manually.";
+
+      }
+
+    },
+
+
+    error => {
+
+      console.log(
+        "Geolocation:",
+        error.message
+      );
+
+
+      if (status)
+        status.textContent =
+          "LOCATION NOT ALLOWED";
+
+      if (name)
+        name.textContent =
+          "Choose your location";
+
+      if (detail)
+        detail.textContent =
+          "You can select an area manually instead.";
+
+    },
+
+
+    {
+      enableHighAccuracy: false,
+      timeout: 10000,
+      maximumAge: 300000
+    }
+
+  );
+
+}
+
+
+/* -----------------------------------------
+   LOCATION MATCHING
+----------------------------------------- */
+
+function normalizeLocationValue(value) {
+
+  return String(value || "")
+    .toLowerCase()
+    .trim();
+
+}
+
+
+function articleLocationText(story) {
+
+  const location =
+    story.location ||
+    story.locations ||
+    {};
+
+  return [
+
+    story.locality,
+    story.village,
+    story.panchayat,
+    story.ward,
+
+    story.taluk,
+    story.block,
+
+    story.city,
+    story.town,
+
+    story.district,
+
+    story.state,
+
+    story.region,
+
+    location.locality,
+    location.village,
+    location.panchayat,
+    location.ward,
+    location.taluk,
+    location.block,
+    location.city,
+    location.town,
+    location.district,
+    location.state
+
+  ]
+    .filter(Boolean)
+    .map(normalizeLocationValue)
+    .join(" ");
+
+}
+
+
+function locationScore(story) {
+
+  if (!state.location)
+    return 0;
+
+
+  const location =
+    state.location;
+
+
+  const text =
+    articleLocationText(story);
+
+
+  if (!text)
+    return 0;
+
+
+  let score = 0;
+
+
+  const locality =
+    normalizeLocationValue(
+      location.locality
+    );
+
+  const city =
+    normalizeLocationValue(
+      location.city
+    );
+
+  const district =
+    normalizeLocationValue(
+      location.district
+    );
+
+  const stateName =
+    normalizeLocationValue(
+      location.state
+    );
+
+
+  if (
+    locality &&
+    text.includes(locality)
+  ) {
+    score += 100;
+  }
+
+
+  if (
+    city &&
+    text.includes(city)
+  ) {
+    score += 70;
+  }
+
+
+  if (
+    district &&
+    text.includes(district)
+  ) {
+    score += 50;
+  }
+
+
+  if (
+    stateName &&
+    text.includes(stateName)
+  ) {
+    score += 30;
+  }
+
+
+  return score;
+
+}
+
+
+/* -----------------------------------------
+   SMART STORY ORDER
+----------------------------------------- */
+
+function smartStories(stories) {
+
+  return [...stories]
+    .map(
+      story => ({
+
+        story,
+
+        locationScore:
+          locationScore(story),
+
+        importanceScore:
+          story.importance === "HIGH"
+            ? 30
+            : story.importance === "MEDIUM"
+              ? 15
+              : 5,
+
+        timeScore:
+          story.published_at
+            ? Math.max(
+                0,
+                20 -
+                (
+                  (
+                    Date.now() -
+                    new Date(
+                      story.published_at
+                    ).getTime()
+                  ) /
+                  3600000
+                )
+              )
+            : 0
+
+      })
+    )
+    .sort(
+      (a, b) => {
+
+        const aScore =
+          a.locationScore +
+          a.importanceScore +
+          a.timeScore;
+
+        const bScore =
+          b.locationScore +
+          b.importanceScore +
+          b.timeScore;
+
+        return bScore - aScore;
+
+      }
+    )
+    .map(
+      item => item.story
+    );
+
+}
+
+
+/* -----------------------------------------
+   UPDATE FILTER
+----------------------------------------- */
+
+const originalFiltered =
+  filtered;
+
+
+filtered = function () {
+
+  const stories =
+    originalFiltered();
+
+
+  return smartStories(
+    stories
+  );
+
+};
+
+
+/* -----------------------------------------
+   LOCATION UI EVENTS
+----------------------------------------- */
+
+function openLocationModal() {
+
+  const modal =
+    $("#locationModal");
+
+  if (!modal)
+    return;
+
+  modal.classList.add("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+}
+
+
+function closeLocationModal() {
+
+  const modal =
+    $("#locationModal");
+
+  if (!modal)
+    return;
+
+  modal.classList.remove("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+}
+
+
+function saveManualLocation() {
+
+  const location = {
+
+    locality:
+      $("#manualLocality")?.value.trim() || "",
+
+    city:
+      $("#manualCity")?.value.trim() || "",
+
+    district:
+      $("#manualDistrict")?.value.trim() || "",
+
+    state:
+      $("#manualState")?.value.trim() || "",
+
+    taluk:
+      $("#manualTaluk")?.value.trim() || "",
+
+    country:
+      "India",
+
+    countryCode:
+      "IN",
+
+    manual:
+      true
+
+  };
+
+
+  if (!location.state) {
+
+    alert(
+      "Please select a state."
+    );
+
+    return;
+
+  }
+
+
+  saveLocation(location);
+
+  closeLocationModal();
+
+}
+
+
+$("#detectLocationBtn")
+  ?.addEventListener(
+    "click",
+    detectLocation
+  );
+
+
+$("#changeLocationBtn")
+  ?.addEventListener(
+    "click",
+    openLocationModal
+  );
+
+
+$("#manualLocationBtn")
+  ?.addEventListener(
+    "click",
+    openLocationModal
+  );
+
+
+$("#locationModalClose")
+  ?.addEventListener(
+    "click",
+    closeLocationModal
+  );
+
+
+$("#locationModalBackdrop")
+  ?.addEventListener(
+    "click",
+    closeLocationModal
+  );
+
+
+$("#saveManualLocationBtn")
+  ?.addEventListener(
+    "click",
+    saveManualLocation
+  );
+
+
+$("#modalUseCurrentBtn")
+  ?.addEventListener(
+    "click",
+    () => {
+
+      closeLocationModal();
+
+      detectLocation();
+
+    }
+  );
+
+
+updateWorldUI();
+
+
+/* -----------------------------------------
+   FIRST VISIT
+----------------------------------------- */
+
+if (!state.location) {
+
+  setTimeout(
+    () => {
+
+      detectLocation();
+
+    },
+    900
+  );
+
+}
 loadLocation();
 
 loadArticles();
