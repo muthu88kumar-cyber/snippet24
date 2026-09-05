@@ -260,114 +260,210 @@
 
     <!-- ================= MY WORLD ================= -->
 
-    <section class="my-world">
+<section class="world-section" id="myWorld">
 
-      <div class="my-world-inner">
+  <div class="world-inner">
 
-        <div class="my-world-copy">
+    <div class="eyebrow">PERSONAL INTELLIGENCE</div>
 
-          <span class="section-kicker">
-            PERSONAL INTELLIGENCE
-          </span>
+    <h2 class="world-title">
+      <span class="pin">📍</span>
+      MY WORLD
+    </h2>
 
-          <h2>
-            📍 MY WORLD
-          </h2>
+    <p class="world-description">
+      The news around you. The news that matters.
+      All in one minute.
+    </p>
 
-          <p>
-            The news around you.
-            The news that matters.
-            All in one minute.
-          </p>
+    <div class="world-location-card" id="worldLocationCard">
 
+      <div class="world-location-icon">📍</div>
+
+      <div class="world-location-content">
+
+        <div class="world-location-status" id="locationStatus">
+          Understanding your location…
         </div>
 
-        <div class="location-selector">
+        <div
+          class="world-location-name"
+          id="locationName">
+          Finding your area
+        </div>
 
-          <button
-            id="locationBtn"
-            type="button"
-            class="location-btn"
-          >
-            <span>📍</span>
-            <span id="locationText">
-              Set your location
-            </span>
-            <span>›</span>
-          </button>
-
-          <div
-            id="locationPanel"
-            class="location-panel"
-          >
-
-            <label>
-              State
-              <select id="stateSelect">
-                <option value="">Select state</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Other">Other</option>
-              </select>
-            </label>
-
-            <label>
-              District
-              <input
-                id="districtInput"
-                type="text"
-                placeholder="District"
-              >
-            </label>
-
-            <label>
-              City / Town
-              <input
-                id="cityInput"
-                type="text"
-                placeholder="City or town"
-              >
-            </label>
-
-            <label>
-              Taluk / Block
-              <input
-                id="talukInput"
-                type="text"
-                placeholder="Taluk or block"
-              >
-            </label>
-
-            <label>
-              Village / Panchayat / Ward
-              <input
-                id="localityInput"
-                type="text"
-                placeholder="Local area"
-              >
-            </label>
-
-            <button
-              id="saveLocation"
-              type="button"
-              class="save-location"
-            >
-              SAVE LOCATION
-            </button>
-
-          </div>
-
+        <div
+          class="world-location-detail"
+          id="locationDetail">
+          Allow location access to personalize your news.
         </div>
 
       </div>
 
-    </section>
+      <button
+        type="button"
+        class="world-location-arrow"
+        id="changeLocationBtn"
+        aria-label="Change location">
+        ›
+      </button>
 
+    </div>
+
+    <div
+      class="world-location-actions"
+      id="locationActions">
+
+      <button
+        type="button"
+        class="location-detect-btn"
+        id="detectLocationBtn">
+        📍 USE MY LOCATION
+      </button>
+
+      <button
+        type="button"
+        class="location-manual-btn"
+        id="manualLocationBtn">
+        SELECT LOCATION MANUALLY
+      </button>
+
+    </div>
+
+    <div
+      class="world-priority"
+      id="worldPriority"
+      hidden>
+
+      <span>YOUR WORLD</span>
+
+      <span>→</span>
+
+      <span id="worldPriorityText">
+        Local • State • India • Global
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<div
+  class="location-modal"
+  id="locationModal"
+  aria-hidden="true">
+
+  <div class="location-modal-backdrop"
+       id="locationModalBackdrop"></div>
+
+  <div class="location-modal-card">
+
+    <button
+      type="button"
+      class="location-modal-close"
+      id="locationModalClose"
+      aria-label="Close">
+      ×
+    </button>
+
+    <div class="eyebrow">CHANGE LOCATION</div>
+
+    <h2>Choose your world</h2>
+
+    <p class="location-modal-description">
+      Select a place if you don't want to use your current location.
+    </p>
+
+    <label>
+      STATE
+      <select id="manualState">
+        <option value="">Select state</option>
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chhattisgarh</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+        <option>Delhi</option>
+        <option>Jammu and Kashmir</option>
+        <option>Ladakh</option>
+        <option>Puducherry</option>
+      </select>
+    </label>
+
+    <label>
+      DISTRICT
+      <input
+        id="manualDistrict"
+        type="text"
+        placeholder="District">
+    </label>
+
+    <label>
+      CITY / TOWN
+      <input
+        id="manualCity"
+        type="text"
+        placeholder="City or town">
+    </label>
+
+    <label>
+      TALUK / BLOCK
+      <input
+        id="manualTaluk"
+        type="text"
+        placeholder="Taluk or block">
+    </label>
+
+    <label>
+      LOCAL AREA
+      <input
+        id="manualLocality"
+        type="text"
+        placeholder="Village / locality / ward">
+    </label>
+
+    <button
+      type="button"
+      class="save-location-btn"
+      id="saveManualLocationBtn">
+      SAVE LOCATION
+    </button>
+
+    <button
+      type="button"
+      class="use-current-location-link"
+      id="modalUseCurrentBtn">
+      📍 Use my current location instead
+    </button>
+
+  </div>
+
+</div>
 
     <!-- ================= STORIES ================= -->
 
