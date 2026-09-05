@@ -1,0 +1,31 @@
+{
+  "site": "Snippet24",
+  "site_url": "https://snippet24.in",
+  "version": "2.0",
+  "updated_at": "2026-09-05T00:00:00.000Z",
+  "total": 0,
+
+  "editorial_engine": "Snippet24 AI Editorial",
+
+  "source_policy": "Only government, public broadcaster, official TV and verified official YouTube sources are accepted. Private and unknown sources are rejected.",
+
+  "global_policy": "Global contains clearly international events. India-related foreign affairs remain under In India.",
+
+  "ai_policy": "AI-assisted editorial processing creates factual reading levels without inventing unsupported information.",
+
+  "copyright_policy": "Third-party text, photographs, video, audio, logos and trademarks remain the property of their respective owners. Snippet24 links readers to the original source.",
+
+  "ai_disclosure": "Snippet24 uses an AI-assisted editorial process to condense and rephrase source material. The original source remains the authority for the complete report.",
+
+  "editorial_note": "Rephrased from the original source for clarity.",
+
+  "corrections": true,
+
+  "grievance": true,
+
+  "categories": {},
+
+  "source_types": {},
+
+  "articles": []
+}
