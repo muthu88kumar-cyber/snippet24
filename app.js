@@ -1,5 +1,4 @@
 (() => {
-  "use strict";
 
   const state = {
     stories: [],
@@ -8,64 +7,75 @@
     speed: 60
   };
 
-  const $ = selector => document.querySelector(selector);
-  const $$ = selector => [...document.querySelectorAll(selector)];
 
   /* --------------------------------
-     LANGUAGE DATA
+     HELPERS
   -------------------------------- */
 
-  function languageData(story) {
-    return (
-      story?.translations?.[state.lang] ||
-      story?.[state.lang] ||
-      {}
-    );
-  }
+  const $ = selector =>
+    document.querySelector(selector);
+
+  const $$ = selector =>
+    [...document.querySelectorAll(selector)];
+
+
+  /* --------------------------------
+     LANGUAGE / TITLE
+  -------------------------------- */
 
   function getTitle(story) {
-    const translated = languageData(story);
-
     return (
-      translated.title ||
-      translated.headline ||
-      story?.title ||
+      story?.translations?.[state.lang]?.title ||
+      story?.[state.lang]?.title ||
       story?.headline ||
+      story?.title ||
       ""
     );
   }
 
-  function getSummary(story) {
-    const translated = languageData(story);
 
+  /* --------------------------------
+     SUMMARY
+  -------------------------------- */
+
+  function getSummary(story) {
     return (
-      translated.summary ||
+      story?.translations?.[state.lang]?.summary ||
+      story?.[state.lang]?.summary ||
       story?.summary ||
       ""
     );
   }
 
+
+  /* --------------------------------
+     KEY POINTS
+     JSON uses snippet_lines
+  -------------------------------- */
+
   function getPoints(story) {
-    const translated = languageData(story);
 
-    if (Array.isArray(translated.key_points)) {
-      return translated.key_points;
-    }
+    const translated =
+      story?.translations?.[state.lang]?.key_points;
 
-    if (Array.isArray(story?.key_points)) {
-      return story.key_points;
-    }
+    const languagePoints =
+      story?.[state.lang]?.key_points;
 
-    if (Array.isArray(translated.snippet_lines)) {
-      return translated.snippet_lines;
-    }
+    const snippetLines =
+      story?.snippet_lines;
 
-    if (Array.isArray(story?.snippet_lines)) {
-      return story.snippet_lines;
-    }
+    const oldPoints =
+      story?.key_points;
 
-    return [];
+    return (
+      translated ||
+      languagePoints ||
+      snippetLines ||
+      oldPoints ||
+      []
+    );
   }
+
 
   /* --------------------------------
      CATEGORY
@@ -76,43 +86,46 @@
     const raw =
       story?.category ||
       story?.section ||
-      "In India";
+      "India";
 
     /*
-      Your JSON uses:
-      "In India"
-
-      Your website displays:
-      "India"
+      Existing JSON uses "In India"
+      while homepage navigation uses "India".
     */
 
     if (raw === "In India") {
+      return "India";
+    }
 
-      const text = [
-        story?.headline,
-        story?.snippet,
-        story?.summary
-      ]
-        .join(" ")
-        .toLowerCase();
+    if (raw === "Business & Economy") {
+      return "Business & Economy";
+    }
 
-      /*
-        Some sports stories are currently
-        stored under "In India".
-      */
+    if (raw === "Tech & AI") {
+      return "Tech & AI";
+    }
 
-      const sportsTerms = [
-        "sport",
-        "sports",
+    /*
+      Some sports stories are currently
+      stored under In India.
+    */
+
+    if (raw === "India") {
+
+      const text = (
+        getTitle(story) +
+        " " +
+        getSummary(story)
+      ).toLowerCase();
+
+      const sportsWords = [
         "cricket",
         "football",
-        "soccer",
         "badminton",
         "tennis",
         "hockey",
         "pickleball",
         "olympic",
-        "paralympic",
         "athlete",
         "championship",
         "world cup",
@@ -122,22 +135,22 @@
         "medal",
         "wicket",
         "goal",
-        "league"
+        "league",
+        "sport"
       ];
 
       if (
-        sportsTerms.some(term =>
-          text.includes(term)
+        sportsWords.some(
+          word => text.includes(word)
         )
       ) {
         return "Sports";
       }
-
-      return "India";
     }
 
     return raw;
   }
+
 
   /* --------------------------------
      SOURCE
@@ -146,13 +159,14 @@
   function sourceOf(story) {
 
     return (
-      story?.source_url ||
       story?.original_source_url ||
+      story?.source_url ||
       story?.original_url ||
       story?.url ||
       ""
     );
   }
+
 
   /* --------------------------------
      IMAGE
@@ -162,12 +176,13 @@
 
     return (
       story?.ai_image_url ||
-      story?.image ||
       story?.image_url ||
+      story?.image ||
       story?.ai_image ||
       ""
     );
   }
+
 
   /* --------------------------------
      LOAD STORIES
@@ -179,8 +194,9 @@
 
     let data = null;
 
+
     /*
-      First try backend API.
+      Try backend first.
     */
 
     try {
@@ -194,14 +210,10 @@
         );
 
       if (response.ok) {
-
-        data =
-          await response.json();
-
+        data = await response.json();
       }
 
-    }
-    catch (error) {
+    } catch (error) {
 
       console.log(
         "API unavailable"
@@ -209,9 +221,9 @@
 
     }
 
+
     /*
-      If backend is unavailable,
-      use articles.json.
+      Fallback to articles.json.
     */
 
     if (!data) {
@@ -227,61 +239,52 @@
           );
 
         if (response.ok) {
-
-          data =
-            await response.json();
-
+          data = await response.json();
         }
 
-      }
-      catch (error) {
+      } catch (error) {
 
         console.log(
           "articles.json unavailable"
         );
 
       }
-
     }
 
+
     /*
-      Support several JSON structures.
+      Support multiple JSON structures.
     */
 
     if (Array.isArray(data)) {
 
-      state.stories =
-        data;
+      state.stories = data;
 
-    }
-
-    else if (
+    } else if (
       Array.isArray(data?.stories)
     ) {
 
       state.stories =
         data.stories;
 
-    }
-
-    else if (
+    } else if (
       Array.isArray(data?.articles)
     ) {
 
       state.stories =
         data.articles;
 
-    }
-
-    else {
+    } else {
 
       state.stories = [];
 
     }
 
+
     render();
 
   }
+
 
   /* --------------------------------
      FILTER
@@ -294,9 +297,8 @@
 
         /*
           English is always available.
-
-          Other languages are shown only
-          when an actual translation exists.
+          Other languages require a real
+          translation in the JSON.
         */
 
         const hasTranslation =
@@ -310,22 +312,24 @@
             ]
           );
 
-        if (!hasTranslation) {
-          return false;
-        }
 
         const category =
           categoryOf(story);
 
+
         return (
-          state.category === "All" ||
-          category === state.category
+          hasTranslation &&
+          (
+            state.category === "All" ||
+            category === state.category
+          )
         );
 
       }
     );
 
   }
+
 
   /* --------------------------------
      STATUS
@@ -337,21 +341,17 @@
       $("#status");
 
     if (element) {
-
-      element.textContent =
-        text;
-
+      element.textContent = text;
     }
 
   }
+
 
   /* --------------------------------
      SECURITY
   -------------------------------- */
 
-  function escapeHtml(
-    value = ""
-  ) {
+  function escapeHtml(value = "") {
 
     return String(value)
       .replace(
@@ -367,11 +367,15 @@
 
   }
 
+
   /* --------------------------------
-     READING MODE
+     READING CONTENT
   -------------------------------- */
 
   function readingContent(story) {
+
+    const title =
+      getTitle(story);
 
     const points =
       getPoints(story);
@@ -379,49 +383,159 @@
     const summary =
       getSummary(story);
 
+
     /*
-      Current articles.json contains:
-
-      headline
-      snippet_lines
-      summary
-
-      It does not currently contain
-      separate 10 SEC / 60 SEC / 3 MIN
-      article bodies.
-
-      Therefore we only display content
-      actually present in the JSON.
+      10 SECOND
+      Only the essential fact.
     */
 
     if (state.speed === 10) {
 
-      return {
-        points: points.slice(0, 1),
-        summary: ""
-      };
+      return `
+        <div class="reading-level ten-sec">
+          <span class="reading-label">
+            10 SEC · WHAT HAPPENED?
+          </span>
+
+          <p>
+            ${escapeHtml(
+              points[0] ||
+              title
+            )}
+          </p>
+        </div>
+      `;
 
     }
 
-    if (state.speed === 180) {
-
-      return {
-        points: points.slice(0, 3),
-        summary: summary
-      };
-
-    }
 
     /*
-      Default = 60 seconds
+      60 SECOND
+      What happened + why it matters.
     */
 
-    return {
-      points: points.slice(0, 3),
-      summary: summary
-    };
+    if (state.speed === 60) {
+
+      return `
+        <div class="reading-level sixty-sec">
+
+          <span class="reading-label">
+            60 SEC · WHY IT MATTERS
+          </span>
+
+          ${
+            points.length
+              ? `
+                <ul class="key-points">
+                  ${points
+                    .slice(0, 3)
+                    .map(
+                      point => `
+                        <li>
+                          ${escapeHtml(point)}
+                        </li>
+                      `
+                    )
+                    .join("")
+                  }
+                </ul>
+              `
+              : ""
+          }
+
+          ${
+            summary
+              ? `
+                <div class="why">
+                  <b>WHY IT MATTERS</b>
+                  <p>
+                    ${escapeHtml(summary)}
+                  </p>
+                </div>
+              `
+              : ""
+          }
+
+        </div>
+      `;
+
+    }
+
+
+    /*
+      3 MINUTE
+      Bigger picture.
+      
+      IMPORTANT:
+      Do not invent additional facts.
+      Use only content available in JSON.
+    */
+
+    return `
+      <div class="reading-level three-min">
+
+        <span class="reading-label">
+          3 MIN · BIGGER PICTURE
+        </span>
+
+        ${
+          points.length
+            ? `
+              <div class="context-section">
+
+                <h4>
+                  WHAT HAPPENED
+                </h4>
+
+                <ul class="key-points">
+                  ${points
+                    .slice(0, 3)
+                    .map(
+                      point => `
+                        <li>
+                          ${escapeHtml(point)}
+                        </li>
+                      `
+                    )
+                    .join("")
+                  }
+                </ul>
+
+              </div>
+            `
+            : ""
+        }
+
+
+        ${
+          summary
+            ? `
+              <div class="context-section">
+
+                <h4>
+                  WHY IT MATTERS
+                </h4>
+
+                <p>
+                  ${escapeHtml(summary)}
+                </p>
+
+              </div>
+            `
+            : ""
+        }
+
+
+        <div class="editorial-note">
+          Rephrased from the original source
+          for clarity.
+        </div>
+
+      </div>
+    `;
 
   }
+
 
   /* --------------------------------
      STORY CARD
@@ -438,9 +552,6 @@
     const image =
       imageOf(story);
 
-    const reading =
-      readingContent(story);
-
     const signal =
       story?.signal ||
       (
@@ -449,14 +560,13 @@
           : "IMPORTANT"
       );
 
-    /* IMAGE */
 
     let imageHTML;
+
 
     if (image) {
 
       imageHTML = `
-
         <img
           class="story-image"
           src="${escapeHtml(image)}"
@@ -464,175 +574,92 @@
           loading="lazy"
           onerror="this.style.display='none'"
         >
-
       `;
 
-    }
-
-    else {
+    } else {
 
       imageHTML = `
-
-        <div
-          class="story-image">
-        </div>
-
+        <div class="story-image"></div>
       `;
 
     }
 
-    /* KEY POINTS */
-
-    const pointsHTML =
-      reading.points.length
-
-      ?
-
-      `
-
-        <ul class="key-points">
-
-          ${reading.points
-            .map(
-              point => `
-                <li>
-                  ${escapeHtml(point)}
-                </li>
-              `
-            )
-            .join("")
-          }
-
-        </ul>
-
-      `
-
-      :
-
-      "";
-
-    /* SUMMARY */
-
-    const summaryHTML =
-      reading.summary
-
-      ?
-
-      `
-
-        <div class="why">
-
-          <b>
-            WHY IT MATTERS
-          </b>
-
-          <br>
-
-          ${escapeHtml(
-            reading.summary
-          )}
-
-        </div>
-
-      `
-
-      :
-
-      "";
-
-    /* SOURCE */
 
     const sourceHTML =
       source
+        ? `
+          <div class="story-footer">
 
-      ?
+            <span class="editorial-note">
+              Rephrased from the original
+              source for clarity.
+            </span>
 
-      `
+            <a
+              class="source-link"
+              href="${escapeHtml(source)}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Original source →
+            </a>
 
-        <a
-          class="source-link"
-          href="${escapeHtml(source)}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          </div>
+        `
+        : `
+          <div class="story-footer">
 
-          Original source →
+            <span class="editorial-note">
+              Rephrased from the original
+              source for clarity.
+            </span>
 
-        </a>
+          </div>
+        `;
 
-      `
-
-      :
-
-      "";
-
-    /* DATE */
-
-    const published =
-      story?.published_at
-        ?
-
-        " • " +
-        new Date(
-          story.published_at
-        ).toLocaleString()
-
-        :
-
-        "";
 
     return `
 
-      <article
-        class="story-card"
-      >
+      <article class="story-card">
 
         ${imageHTML}
 
-        <div
-          class="story-body"
-        >
+        <div class="story-body">
 
-          <span
-            class="signal-label"
-          >
-
-            ${escapeHtml(
-              signal
-            )}
-
+          <span class="signal-label">
+            ${escapeHtml(signal)}
           </span>
 
 
           <h3>
-
             ${escapeHtml(
               title ||
               "Story title unavailable"
             )}
-
           </h3>
 
 
-          <div
-            class="story-meta"
-          >
+          <div class="story-meta">
 
             ${escapeHtml(
               categoryOf(story)
             )}
 
-            ${escapeHtml(
-              published
-            )}
+            ${
+              story?.published_at
+                ? " • " +
+                  escapeHtml(
+                    new Date(
+                      story.published_at
+                    ).toLocaleString()
+                  )
+                : ""
+            }
 
           </div>
 
 
-          ${pointsHTML}
-
-
-          ${summaryHTML}
+          ${readingContent(story)}
 
 
           ${sourceHTML}
@@ -644,6 +671,7 @@
     `;
 
   }
+
 
   /* --------------------------------
      RENDER
@@ -657,9 +685,11 @@
     const container =
       $("#stories");
 
+
     if (!container) {
       return;
     }
+
 
     if (stories.length) {
 
@@ -668,9 +698,7 @@
           .map(storyCard)
           .join("");
 
-    }
-
-    else {
+    } else {
 
       container.innerHTML = `
 
@@ -680,9 +708,7 @@
           available in
 
           <b>
-            ${escapeHtml(
-              state.lang
-            )}
+            ${escapeHtml(state.lang)}
           </b>
 
           for this section yet.
@@ -693,20 +719,13 @@
 
     }
 
+
     setStatus(
-
       stories.length
-
-        ?
-
-        `${stories.length}
-         stories • updated now`
-
-        :
-
-        "No stories available yet."
-
+        ? `${stories.length} stories • updated now`
+        : "No stories available yet."
     );
+
 
     renderTicker(
       stories.length
@@ -714,9 +733,11 @@
         : state.stories
     );
 
+
     syncControls();
 
   }
+
 
   /* --------------------------------
      LIVE WIRE
@@ -724,64 +745,55 @@
 
   function renderTicker(stories) {
 
+    const items =
+      stories.slice(0, 12);
+
     const ticker =
       $("#tickerTrack");
+
 
     if (!ticker) {
       return;
     }
 
-    const items =
-      stories.slice(0, 12);
 
     if (!items.length) {
 
       ticker.innerHTML = `
-
         <span>
-
           Live Wire will appear
           when stories are published.
-
         </span>
-
       `;
 
       return;
 
     }
 
+
     /*
-      Duplicate stories so the
-      ticker can move continuously.
+      Duplicate stories for continuous ticker.
     */
 
     const combined =
-      [
-        ...items,
-        ...items
-      ];
+      [...items, ...items];
+
 
     ticker.innerHTML =
       combined
         .map(
           story => `
-
-            <span
-              class="ticker-item"
-            >
-
+            <span class="ticker-item">
               ${escapeHtml(
                 getTitle(story)
               )}
-
             </span>
-
           `
         )
         .join("");
 
   }
+
 
   /* --------------------------------
      ACTIVE CONTROLS
@@ -789,38 +801,56 @@
 
   function syncControls() {
 
-    $$(
-      "[data-category]"
-    )
+
+    /*
+      Categories
+    */
+
+    $$("[data-category]")
       .forEach(
         element => {
 
           element.classList.toggle(
-
             "active",
-
             element.dataset.category ===
             state.category
-
           );
 
         }
       );
 
 
-    $$(
-      "[data-lang]"
-    )
+    /*
+      Languages
+    */
+
+    $$("[data-lang]")
       .forEach(
         element => {
 
           element.classList.toggle(
-
             "active",
-
             element.dataset.lang ===
             state.lang
+          );
 
+        }
+      );
+
+
+    /*
+      Speed buttons
+    */
+
+    $$("[data-speed]")
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+            "active",
+            Number(
+              element.dataset.speed
+            ) === state.speed
           );
 
         }
@@ -830,6 +860,7 @@
     const languageSelect =
       $("#languageSelect");
 
+
     if (languageSelect) {
 
       languageSelect.value =
@@ -837,27 +868,8 @@
 
     }
 
-
-    $$(
-      "[data-speed]"
-    )
-      .forEach(
-        element => {
-
-          element.classList.toggle(
-
-            "active",
-
-            Number(
-              element.dataset.speed
-            ) === state.speed
-
-          );
-
-        }
-      );
-
   }
+
 
   /* --------------------------------
      CATEGORY
@@ -868,29 +880,27 @@
     state.category =
       category;
 
+
     const signal =
       $("#signal");
+
 
     if (signal) {
 
       signal.scrollIntoView({
-
         behavior: "smooth",
-
         block: "start"
-
       });
 
     }
+
 
     render();
 
   }
 
 
-  $$(
-    "[data-category]"
-  )
+  $$("[data-category]")
     .forEach(
       element => {
 
@@ -910,13 +920,12 @@
       }
     );
 
+
   /* --------------------------------
      LANGUAGE BUTTONS
   -------------------------------- */
 
-  $$(
-    "[data-lang]"
-  )
+  $$("[data-lang]")
     .forEach(
       element => {
 
@@ -927,10 +936,12 @@
             state.lang =
               element.dataset.lang;
 
+
             localStorage.setItem(
               "snippet24_lang",
               state.lang
             );
+
 
             render();
 
@@ -940,12 +951,14 @@
       }
     );
 
+
   /* --------------------------------
      LANGUAGE DROPDOWN
   -------------------------------- */
 
   const languageSelect =
     $("#languageSelect");
+
 
   if (languageSelect) {
 
@@ -956,10 +969,12 @@
         state.lang =
           event.target.value;
 
+
         localStorage.setItem(
           "snippet24_lang",
           state.lang
         );
+
 
         render();
 
@@ -968,6 +983,7 @@
 
   }
 
+
   /* --------------------------------
      MORE MENU
   -------------------------------- */
@@ -975,26 +991,29 @@
   const moreBtn =
     $("#moreBtn");
 
-  const moreMenu =
-    $("#moreMenu");
 
-  if (
-    moreBtn &&
-    moreMenu
-  ) {
+  if (moreBtn) {
 
     moreBtn.addEventListener(
       "click",
       () => {
 
-        moreMenu.classList.toggle(
-          "show"
-        );
+        const menu =
+          $("#moreMenu");
+
+        if (menu) {
+
+          menu.classList.toggle(
+            "show"
+          );
+
+        }
 
       }
     );
 
   }
+
 
   /* --------------------------------
      VIEW ALL
@@ -1003,20 +1022,20 @@
   const viewAllBtn =
     $("#viewAllBtn");
 
+
   if (viewAllBtn) {
 
     viewAllBtn.addEventListener(
       "click",
       () => {
 
-        setCategory(
-          "All"
-        );
+        setCategory("All");
 
       }
     );
 
   }
+
 
   /* --------------------------------
      REFRESH
@@ -1024,6 +1043,7 @@
 
   const refreshBtn =
     $("#refreshBtn");
+
 
   if (refreshBtn) {
 
@@ -1034,6 +1054,7 @@
 
   }
 
+
   /* --------------------------------
      CATCH ME UP
   -------------------------------- */
@@ -1041,11 +1062,17 @@
   const catchupBtn =
     $("#catchupBtn");
 
+
   if (catchupBtn) {
 
     catchupBtn.addEventListener(
       "click",
       () => {
+
+        /*
+          Catch Me Up starts with
+          the 60-second experience.
+        */
 
         state.category =
           "All";
@@ -1053,20 +1080,20 @@
         state.speed =
           60;
 
+
         const signal =
           $("#signal");
+
 
         if (signal) {
 
           signal.scrollIntoView({
-
             behavior: "smooth",
-
             block: "start"
-
           });
 
         }
+
 
         render();
 
@@ -1075,13 +1102,12 @@
 
   }
 
+
   /* --------------------------------
      SPEED BUTTONS
   -------------------------------- */
 
-  $$(
-    "[data-speed]"
-  )
+  $$("[data-speed]")
     .forEach(
       button => {
 
@@ -1089,33 +1115,46 @@
           "click",
           () => {
 
-            state.speed =
+            const speed =
               Number(
                 button.dataset.speed
-              ) || 60;
+              );
+
+
+            if (
+              ![10, 60, 180]
+                .includes(speed)
+            ) {
+              return;
+            }
+
+
+            state.speed =
+              speed;
+
+
+            render();
+
 
             const signal =
               $("#signal");
 
+
             if (signal) {
 
               signal.scrollIntoView({
-
                 behavior: "smooth",
-
                 block: "start"
-
               });
 
             }
-
-            render();
 
           }
         );
 
       }
     );
+
 
   /* --------------------------------
      SEARCH
@@ -1124,34 +1163,32 @@
   const searchBtn =
     $("#searchBtn");
 
-  const searchPanel =
-    $("#searchPanel");
 
-  const searchInput =
-    $("#searchInput");
-
-  const closeSearch =
-    $("#closeSearch");
-
-  const searchResults =
-    $("#searchResults");
-
-
-  if (
-    searchBtn &&
-    searchPanel &&
-    searchInput
-  ) {
+  if (searchBtn) {
 
     searchBtn.addEventListener(
       "click",
       () => {
 
-        searchPanel.classList.add(
-          "show"
-        );
+        const panel =
+          $("#searchPanel");
 
-        searchInput.focus();
+        const input =
+          $("#searchInput");
+
+
+        if (panel) {
+
+          panel.classList.add("show");
+
+        }
+
+
+        if (input) {
+
+          input.focus();
+
+        }
 
       }
     );
@@ -1159,23 +1196,35 @@
   }
 
 
-  if (
-    closeSearch &&
-    searchPanel
-  ) {
+  const closeSearch =
+    $("#closeSearch");
+
+
+  if (closeSearch) {
 
     closeSearch.addEventListener(
       "click",
       () => {
 
-        searchPanel.classList.remove(
-          "show"
-        );
+        const panel =
+          $("#searchPanel");
+
+        if (panel) {
+
+          panel.classList.remove(
+            "show"
+          );
+
+        }
 
       }
     );
 
   }
+
+
+  const searchPanel =
+    $("#searchPanel");
 
 
   if (searchPanel) {
@@ -1189,9 +1238,10 @@
           "searchPanel"
         ) {
 
-          searchPanel.classList.remove(
-            "show"
-          );
+          event.currentTarget
+            .classList.remove(
+              "show"
+            );
 
         }
 
@@ -1201,10 +1251,11 @@
   }
 
 
-  if (
-    searchInput &&
-    searchResults
-  ) {
+  const searchInput =
+    $("#searchInput");
+
+
+  if (searchInput) {
 
     searchInput.addEventListener(
       "input",
@@ -1218,91 +1269,95 @@
 
         const results =
           state.stories
-
             .filter(
               story => {
 
-                const searchable = [
+                const title =
+                  getTitle(story)
+                    .toLowerCase();
 
-                  getTitle(story),
+                const summary =
+                  getSummary(story)
+                    .toLowerCase();
 
-                  getSummary(story),
+                const points =
+                  getPoints(story)
+                    .join(" ")
+                    .toLowerCase();
 
-                  ...getPoints(story)
 
-                ]
-                  .join(" ")
-                  .toLowerCase();
-
-                return searchable.includes(
-                  query
+                return (
+                  title.includes(query) ||
+                  summary.includes(query) ||
+                  points.includes(query)
                 );
 
               }
             )
-
             .slice(0, 8);
 
 
-        searchResults.innerHTML =
+        const resultsContainer =
+          $("#searchResults");
+
+
+        if (!resultsContainer) {
+          return;
+        }
+
+
+        resultsContainer.innerHTML =
           query
+            ? results
+                .map(
+                  story => {
 
-            ?
+                    const source =
+                      sourceOf(story);
 
-            results
-              .map(
-                story => {
 
-                  const source =
-                    sourceOf(story);
+                    if (source) {
 
-                  if (source) {
+                      return `
+
+                        <a
+                          class="search-result"
+                          href="${escapeHtml(source)}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          ${escapeHtml(
+                            getTitle(story)
+                          )}
+                        </a>
+
+                      `;
+
+                    }
+
 
                     return `
 
-                      <a
-                        class="search-result"
-                        href="${escapeHtml(source)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <div class="search-result">
 
                         ${escapeHtml(
                           getTitle(story)
                         )}
 
-                      </a>
+                      </div>
 
                     `;
 
                   }
-
-                  return `
-
-                    <div
-                      class="search-result"
-                    >
-
-                      ${escapeHtml(
-                        getTitle(story)
-                      )}
-
-                    </div>
-
-                  `;
-
-                }
-              )
-              .join("")
-
-            :
-
-            "";
+                )
+                .join("")
+            : "";
 
       }
     );
 
   }
+
 
   /* --------------------------------
      START
