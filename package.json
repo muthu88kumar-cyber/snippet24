@@ -1,0 +1,14 @@
+{
+  "name": "snippet24",
+  "version": "2.0.0",
+  "description": "Snippet24 — FAST NEWS • REAL IMPACT",
+  "main": "article-engine.js",
+  "scripts": {
+    "start": "node server.js",
+    "update": "node update_articles.js",
+    "check": "node --check app.js && node --check article-engine.js && node --check source-engine.js && node --check config.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
