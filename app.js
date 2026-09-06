@@ -1,17 +1,29 @@
 (() => {
   "use strict";
 
+
+  /* =========================================================
+     STATE
+     ========================================================= */
+
   const state = {
     stories: [],
     category: "All",
     speed: 10,
     lang: localStorage.getItem("snippet24_lang") || "en",
+
     location: JSON.parse(
       localStorage.getItem("snippet24_location") || "null"
     )
   };
 
-  const $ = selector => document.querySelector(selector);
+
+  /* =========================================================
+     HELPERS
+     ========================================================= */
+
+  const $ = selector =>
+    document.querySelector(selector);
 
   const $$ = selector =>
     [...document.querySelectorAll(selector)];
@@ -35,6 +47,7 @@
      ========================================================= */
 
   function titleOf(story) {
+
     return (
       story?.translations?.[state.lang]?.title ||
       story?.[state.lang]?.title ||
@@ -42,18 +55,24 @@
       story?.headline ||
       ""
     );
+
   }
 
+
   function summaryOf(story) {
+
     return (
       story?.translations?.[state.lang]?.summary ||
       story?.[state.lang]?.summary ||
       story?.summary ||
       ""
     );
+
   }
 
+
   function pointsOf(story) {
+
     return (
       story?.translations?.[state.lang]?.key_points ||
       story?.[state.lang]?.key_points ||
@@ -61,9 +80,12 @@
       story?.snippet_lines ||
       []
     );
+
   }
 
+
   function imageOf(story) {
+
     return (
       story?.ai_image_url ||
       story?.image ||
@@ -71,9 +93,12 @@
       story?.ai_image ||
       ""
     );
+
   }
 
+
   function sourceOf(story) {
+
     return (
       story?.source_url ||
       story?.original_source_url ||
@@ -81,9 +106,12 @@
       story?.url ||
       ""
     );
+
   }
 
+
   function categoryOf(story) {
+
     const raw =
       story?.category ||
       story?.section ||
@@ -94,9 +122,12 @@
     }
 
     return raw;
+
   }
 
+
   function hasTranslation(story) {
+
     return (
       state.lang === "en" ||
       !!(
@@ -104,11 +135,12 @@
         story?.[state.lang]
       )
     );
+
   }
 
 
   /* =========================================================
-     LOCATION
+     LOCATION MATCHING
      ========================================================= */
 
   function storyLocation(story) {
@@ -119,28 +151,46 @@
       {};
 
     return {
-      country: String(location.country || "").toLowerCase(),
-      state: String(location.state || "").toLowerCase(),
-      district: String(location.district || "").toLowerCase(),
-      city: String(
-        location.city ||
-        location.town ||
-        ""
-      ).toLowerCase(),
 
-      taluk: String(
-        location.taluk ||
-        location.block ||
-        ""
-      ).toLowerCase(),
+      country:
+        String(
+          location.country || ""
+        ).toLowerCase(),
 
-      locality: String(
-        location.locality ||
-        location.village ||
-        location.ward ||
-        ""
-      ).toLowerCase()
+      state:
+        String(
+          location.state || ""
+        ).toLowerCase(),
+
+      district:
+        String(
+          location.district || ""
+        ).toLowerCase(),
+
+      city:
+        String(
+          location.city ||
+          location.town ||
+          ""
+        ).toLowerCase(),
+
+      taluk:
+        String(
+          location.taluk ||
+          location.block ||
+          ""
+        ).toLowerCase(),
+
+      locality:
+        String(
+          location.locality ||
+          location.village ||
+          location.ward ||
+          ""
+        ).toLowerCase()
+
     };
+
   }
 
 
@@ -155,55 +205,71 @@
 
     const userLoc =
       Object.fromEntries(
-        Object.entries(state.location).map(
+        Object.entries(
+          state.location
+        ).map(
           ([key, value]) => [
             key,
-            String(value || "").toLowerCase()
+            String(
+              value || ""
+            ).toLowerCase()
           ]
         )
       );
 
+
     let score = 0;
+
 
     if (
       userLoc.locality &&
       storyLoc.locality &&
-      userLoc.locality === storyLoc.locality
+      userLoc.locality ===
+        storyLoc.locality
     ) {
       score += 120;
     }
 
+
     if (
       userLoc.taluk &&
       storyLoc.taluk &&
-      userLoc.taluk === storyLoc.taluk
+      userLoc.taluk ===
+        storyLoc.taluk
     ) {
       score += 95;
     }
 
+
     if (
       userLoc.city &&
       storyLoc.city &&
-      userLoc.city === storyLoc.city
+      userLoc.city ===
+        storyLoc.city
     ) {
       score += 75;
     }
 
+
     if (
       userLoc.district &&
       storyLoc.district &&
-      userLoc.district === storyLoc.district
+      userLoc.district ===
+        storyLoc.district
     ) {
       score += 55;
     }
 
+
     if (
       userLoc.state &&
       storyLoc.state &&
-      userLoc.state === storyLoc.state
+      userLoc.state ===
+        storyLoc.state
     ) {
       score += 30;
     }
+
 
     return score;
   }
@@ -223,58 +289,74 @@
         ).toUpperCase()
       ] || 10
     );
+
   }
 
 
   function freshnessScore(story) {
 
-    const time = Date.parse(
-      story?.published_at ||
-      story?.updated_at ||
-      ""
-    );
+    const time =
+      Date.parse(
+        story?.published_at ||
+        story?.updated_at ||
+        ""
+      );
+
 
     if (!Number.isFinite(time)) {
       return 0;
     }
 
+
     return Math.max(
       0,
       40 -
-        (Date.now() - time) /
+        (
+          Date.now() - time
+        ) /
           3600000
     );
+
   }
 
 
   function filtered() {
 
     return state.stories
-      .filter(hasTranslation)
+
+      .filter(
+        hasTranslation
+      )
+
       .filter(
         story =>
           state.category === "All" ||
           categoryOf(story) ===
             state.category
       )
+
       .sort(
-        (a, b) =>
-          (
+        (a, b) => {
+
+          const scoreB =
             locationScore(b) +
             importanceScore(b) +
-            freshnessScore(b)
-          ) -
-          (
+            freshnessScore(b);
+
+          const scoreA =
             locationScore(a) +
             importanceScore(a) +
-            freshnessScore(a)
-          )
+            freshnessScore(a);
+
+          return scoreB - scoreA;
+        }
       );
+
   }
 
 
   /* =========================================================
-     STORIES
+     LOAD STORIES
      ========================================================= */
 
   async function loadStories() {
@@ -283,7 +365,9 @@
       "Finding the signal…"
     );
 
+
     let data = null;
+
 
     try {
 
@@ -295,8 +379,10 @@
           }
         );
 
+
       if (response.ok) {
-        data = await response.json();
+        data =
+          await response.json();
       }
 
     } catch (_) {}
@@ -314,6 +400,7 @@
             }
           );
 
+
         if (response.ok) {
           data =
             await response.json();
@@ -326,7 +413,8 @@
 
     if (Array.isArray(data)) {
 
-      state.stories = data;
+      state.stories =
+        data;
 
     } else if (
       Array.isArray(data?.stories)
@@ -348,7 +436,9 @@
 
     }
 
+
     render();
+
   }
 
 
@@ -358,54 +448,82 @@
       $("#status");
 
     if (element) {
-      element.textContent = text;
+      element.textContent =
+        text;
     }
+
   }
 
+
+  /* =========================================================
+     RENDER
+     ========================================================= */
 
   function render() {
 
     const stories =
       filtered();
 
-    renderHeroStories(stories);
 
-    renderMoreStories(stories);
+    renderHeroStories(
+      stories
+    );
 
-    renderTicker(stories);
+    renderMoreStories(
+      stories
+    );
+
+    renderTicker(
+      stories
+    );
 
     renderCounts();
 
     syncControls();
+
 
     setStatus(
       stories.length
         ? `${stories.length} stories • updated now`
         : "No published stories available yet."
     );
+
   }
 
 
-  function renderHeroStories(stories) {
+  /* =========================================================
+     TOP STORIES
+     ========================================================= */
+
+  function renderHeroStories(
+    stories
+  ) {
 
     const box =
       $("#topStories");
+
 
     if (!box) {
       return;
     }
 
+
     const first =
       stories[0];
 
     const rest =
-      stories.slice(1, 4);
+      stories.slice(
+        1,
+        4
+      );
 
 
     if (!first) {
 
       box.innerHTML = `
+
         <article class="lead-story">
+
           <div class="lead-copy">
 
             <span class="signal">
@@ -424,7 +542,9 @@
             </p>
 
           </div>
+
         </article>
+
 
         <div class="side-stories">
 
@@ -433,6 +553,7 @@
             <div class="story-image"></div>
 
             <div>
+
               <h3>
                 More stories will appear
                 as the feed grows.
@@ -441,6 +562,7 @@
               <small>
                 FAST NEWS • REAL IMPACT
               </small>
+
             </div>
 
           </div>
@@ -454,6 +576,7 @@
 
     const image =
       imageOf(first);
+
 
     const imageTag =
       image
@@ -500,7 +623,7 @@
             ${esc(
               summaryOf(first) ||
               pointsOf(first)
-                .slice(0, 2)
+                .slice(0,2)
                 .join(" • ") ||
               "The latest important development, explained simply."
             )}
@@ -535,13 +658,16 @@
 
       </article>
 
+
       <div class="side-stories">
 
         ${
           rest.length
+
             ? rest
                 .map(sideCard)
                 .join("")
+
             : `
               <div class="side-card">
 
@@ -566,13 +692,17 @@
 
       </div>
     `;
+
   }
 
 
-  function sideCard(story) {
+  function sideCard(
+    story
+  ) {
 
     const image =
       imageOf(story);
+
 
     return `
 
@@ -580,6 +710,7 @@
 
         ${
           image
+
             ? `
               <img
                 src="${esc(image)}"
@@ -587,6 +718,7 @@
                 loading="lazy"
               >
             `
+
             : `
               <div class="story-image"></div>
             `
@@ -618,25 +750,38 @@
 
       </article>
     `;
+
   }
 
 
-  function renderMoreStories(stories) {
+  /* =========================================================
+     MORE STORIES
+     ========================================================= */
+
+  function renderMoreStories(
+    stories
+  ) {
 
     const box =
       $("#stories");
+
 
     if (!box) {
       return;
     }
 
+
     const items =
-      stories.slice(0, 8);
+      stories.slice(
+        0,
+        8
+      );
 
 
     if (!items.length) {
 
       box.innerHTML = `
+
         <div class="story-row">
 
           <div></div>
@@ -663,106 +808,136 @@
 
     box.innerHTML =
       items
-        .map(story => {
+        .map(
+          story => {
 
-          const image =
-            imageOf(story);
+            const image =
+              imageOf(story);
 
-          const source =
-            sourceOf(story);
+            const source =
+              sourceOf(story);
 
-          const body = `
 
-            ${
-              image
-                ? `
-                  <img
-                    src="${esc(image)}"
-                    alt=""
-                    loading="lazy"
-                  >
-                `
-                : `
-                  <img
-                    src=""
-                    alt=""
-                    aria-hidden="true"
-                  >
-                `
+            const body = `
+
+              ${
+                image
+
+                  ? `
+                    <img
+                      src="${esc(image)}"
+                      alt=""
+                      loading="lazy"
+                    >
+                  `
+
+                  : `
+                    <img
+                      src=""
+                      alt=""
+                      aria-hidden="true"
+                    >
+                  `
+              }
+
+
+              <div>
+
+                <h3>
+                  ${esc(
+                    titleOf(story) ||
+                    "Story title unavailable"
+                  )}
+                </h3>
+
+                <p>
+                  ${esc(
+                    summaryOf(story) ||
+                    pointsOf(story)[0] ||
+                    "Understand what happened and why it matters."
+                  )}
+                </p>
+
+              </div>
+
+
+              <span class="go">
+                ›
+              </span>
+
+            `;
+
+
+            if (source) {
+
+              return `
+
+                <a
+                  class="story-row"
+                  href="${esc(source)}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+
+                  ${body}
+
+                </a>
+              `;
+
             }
 
-            <div>
-
-              <h3>
-                ${esc(
-                  titleOf(story) ||
-                  "Story title unavailable"
-                )}
-              </h3>
-
-              <p>
-                ${esc(
-                  summaryOf(story) ||
-                  pointsOf(story)[0] ||
-                  "Understand what happened and why it matters."
-                )}
-              </p>
-
-            </div>
-
-            <span class="go">
-              ›
-            </span>
-          `;
-
-
-          if (source) {
 
             return `
-              <a
-                class="story-row"
-                href="${esc(source)}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+
+              <div class="story-row">
+
                 ${body}
-              </a>
+
+              </div>
             `;
 
           }
-
-
-          return `
-            <div class="story-row">
-              ${body}
-            </div>
-          `;
-
-        })
+        )
         .join("");
+
   }
 
 
-  function renderTicker(stories) {
+  /* =========================================================
+     LIVE WIRE
+     ========================================================= */
+
+  function renderTicker(
+    stories
+  ) {
 
     const element =
       $("#tickerTrack");
+
 
     if (!element) {
       return;
     }
 
+
     const items =
-      stories.slice(0, 10);
+      stories.slice(
+        0,
+        10
+      );
 
 
     if (!items.length) {
 
       element.innerHTML = `
+
         <span>
+
           <strong>●</strong>
+
           Waiting for the latest
           Snippet24 signal…
+
         </span>
       `;
 
@@ -774,12 +949,17 @@
       items
         .map(
           story => `
+
             <span>
+
               <strong>●</strong>
+
               ${esc(
                 titleOf(story)
               )}
+
             </span>
+
           `
         )
         .join("");
@@ -787,6 +967,7 @@
 
     element.innerHTML =
       line + line;
+
   }
 
 
@@ -798,7 +979,9 @@
 
     const relevant =
       state.stories
-        .filter(hasTranslation);
+        .filter(
+          hasTranslation
+        );
 
 
     const near =
@@ -842,8 +1025,11 @@
       state.location;
 
 
-    $("#aroundLocationName").textContent =
+    $("#aroundLocationName")
+      .textContent =
+
       location
+
         ? (
             location.locality ||
             location.city ||
@@ -851,34 +1037,55 @@
             location.state ||
             "Your location"
           )
+
         : "Location unavailable";
 
 
-    $("#aroundLocationDetail").textContent =
+    $("#aroundLocationDetail")
+      .textContent =
+
       location
+
         ? [
             location.district,
             location.state
           ]
             .filter(Boolean)
             .join(" • ")
+
         : "Allow location access to personalize local news";
 
 
-    $("#nearCount").textContent =
-      location ? near : "—";
+    $("#nearCount")
+      .textContent =
+      location
+        ? near
+        : "—";
 
-    $("#districtCount").textContent =
-      location ? district : "—";
 
-    $("#stateCount").textContent =
-      location ? stateCount : "—";
+    $("#districtCount")
+      .textContent =
+      location
+        ? district
+        : "—";
 
-    $("#indiaCount").textContent =
+
+    $("#stateCount")
+      .textContent =
+      location
+        ? stateCount
+        : "—";
+
+
+    $("#indiaCount")
+      .textContent =
       india;
 
-    $("#globalCount").textContent =
+
+    $("#globalCount")
+      .textContent =
       global;
+
   }
 
 
@@ -889,42 +1096,53 @@
   function syncControls() {
 
     $$("[data-category]")
-      .forEach(element => {
+      .forEach(
+        element => {
 
-        element.classList.toggle(
-          "active",
-          element.dataset.category ===
-            state.category
-        );
+          element.classList.toggle(
+            "active",
+            element.dataset.category ===
+              state.category
+          );
 
-      });
+        }
+      );
 
 
     $$("[data-speed]")
-      .forEach(element => {
+      .forEach(
+        element => {
 
-        element.classList.toggle(
-          "active",
-          Number(
-            element.dataset.speed
-          ) === state.speed
-        );
+          element.classList.toggle(
+            "active",
+            Number(
+              element.dataset.speed
+            ) === state.speed
+          );
 
-      });
+        }
+      );
+
   }
 
 
-  function setCategory(category) {
+  function setCategory(
+    category
+  ) {
 
     state.category =
       category;
 
+
     render();
 
-    $("#stories")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+
+    $("#stories")
+      ?.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+      });
+
   }
 
 
@@ -937,26 +1155,29 @@
     const overlay =
       $("#searchOverlay");
 
+
     if (!overlay) {
       return;
     }
 
-    overlay.hidden = false;
+
+    overlay.hidden =
+      false;
+
 
     overlay.setAttribute(
       "aria-hidden",
       "false"
     );
 
-    document.body.classList.add(
-      "search-open"
-    );
 
     setTimeout(
       () =>
-        $("#searchInput")?.focus(),
-      50
+        $("#searchInput")
+          ?.focus(),
+      30
     );
+
   }
 
 
@@ -965,39 +1186,47 @@
     const overlay =
       $("#searchOverlay");
 
+
     if (!overlay) {
       return;
     }
 
-    overlay.hidden = true;
+
+    overlay.hidden =
+      true;
+
 
     overlay.setAttribute(
       "aria-hidden",
       "true"
     );
 
-    document.body.classList.remove(
-      "search-open"
-    );
   }
 
 
-  function runSearch(query) {
+  function runSearch(
+    query
+  ) {
 
     const box =
       $("#searchResults");
+
 
     if (!box) {
       return;
     }
 
+
     const q =
-      query.trim().toLowerCase();
+      query
+        .trim()
+        .toLowerCase();
 
 
     if (!q) {
 
-      box.innerHTML = "";
+      box.innerHTML =
+        "";
 
       return;
     }
@@ -1005,79 +1234,102 @@
 
     const results =
       state.stories
-        .filter(story =>
-          [
-            titleOf(story),
-            summaryOf(story),
-            ...(pointsOf(story) || []),
-            categoryOf(story),
-            JSON.stringify(
-              story?.location || {}
-            )
-          ]
-            .join(" ")
-            .toLowerCase()
-            .includes(q)
+
+        .filter(
+          story =>
+
+            [
+              titleOf(story),
+              summaryOf(story),
+              ...(pointsOf(story) || []),
+              categoryOf(story),
+              JSON.stringify(
+                story?.location || {}
+              )
+            ]
+              .join(" ")
+              .toLowerCase()
+              .includes(q)
         )
-        .slice(0, 10);
+
+        .slice(
+          0,
+          10
+        );
 
 
     box.innerHTML =
+
       results.length
 
         ? results
-            .map(story => {
+            .map(
+              story => {
 
-              const source =
-                sourceOf(story);
-
-              const html = `
-
-                <strong>
-                  ${esc(
-                    titleOf(story)
-                  )}
-                </strong>
-
-                <br>
-
-                <small>
-                  ${esc(
-                    categoryOf(story)
-                  )}
-                </small>
-              `;
+                const source =
+                  sourceOf(story);
 
 
-              if (source) {
+                const html = `
+
+                  <strong>
+                    ${esc(
+                      titleOf(story)
+                    )}
+                  </strong>
+
+                  <br>
+
+                  <small>
+                    ${esc(
+                      categoryOf(story)
+                    )}
+                  </small>
+
+                `;
+
+
+                if (source) {
+
+                  return `
+
+                    <a
+                      class="search-result"
+                      href="${esc(source)}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+
+                      ${html}
+
+                    </a>
+                  `;
+
+                }
+
 
                 return `
-                  <a
-                    class="search-result"
-                    href="${esc(source)}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+
+                  <div class="search-result">
+
                     ${html}
-                  </a>
+
+                  </div>
                 `;
+
               }
-
-
-              return `
-                <div class="search-result">
-                  ${html}
-                </div>
-              `;
-
-            })
+            )
             .join("")
 
         : `
+
           <div class="search-result">
+
             No matching story yet.
+
           </div>
         `;
+
   }
 
 
@@ -1088,17 +1340,19 @@
   /*
    * IMPORTANT:
    *
-   * openLocationModal() is ONLY called by:
+   * This function is NOT called during startup.
    *
-   * #changeLocationBtn
+   * The ONLY automatic location operation is GPS detection.
    *
-   * It is NEVER called during startup.
+   * The location modal opens ONLY when the user
+   * deliberately taps "Change".
    */
 
   function openLocationModal() {
 
     const modal =
       $("#locationModal");
+
 
     if (!modal) {
       return;
@@ -1109,32 +1363,40 @@
       state.location || {};
 
 
-    $("#manualState").value =
+    $("#manualState")
+      .value =
       location.state || "";
 
-    $("#manualDistrict").value =
+
+    $("#manualDistrict")
+      .value =
       location.district || "";
 
-    $("#manualCity").value =
+
+    $("#manualCity")
+      .value =
       location.city || "";
 
-    $("#manualTaluk").value =
+
+    $("#manualTaluk")
+      .value =
       location.taluk || "";
 
-    $("#manualLocality").value =
+
+    $("#manualLocality")
+      .value =
       location.locality || "";
 
 
-    modal.hidden = false;
+    modal.hidden =
+      false;
+
 
     modal.setAttribute(
       "aria-hidden",
       "false"
     );
 
-    document.body.classList.add(
-      "location-open"
-    );
   }
 
 
@@ -1143,29 +1405,30 @@
     const modal =
       $("#locationModal");
 
+
     if (!modal) {
       return;
     }
 
 
-    modal.hidden = true;
+    modal.hidden =
+      true;
+
 
     modal.setAttribute(
       "aria-hidden",
       "true"
     );
 
-    document.body.classList.remove(
-      "location-open"
-    );
   }
 
 
   function saveManualLocation() {
 
-    const location = {
+    state.location = {
 
-      country: "India",
+      country:
+        "India",
 
       state:
         $("#manualState")
@@ -1192,25 +1455,26 @@
           .value
           .trim(),
 
-      source: "manual"
+      source:
+        "manual"
+
     };
-
-
-    state.location =
-      location;
 
 
     localStorage.setItem(
       "snippet24_location",
-      JSON.stringify(location)
+      JSON.stringify(
+        state.location
+      )
     );
 
 
-    closeLocationModal();
-
     updateHeaderWeatherFromLocation();
 
+    closeLocationModal();
+
     render();
+
   }
 
 
@@ -1232,9 +1496,11 @@
 
 
     if (!response.ok) {
+
       throw new Error(
         "Reverse geocoding failed"
       );
+
     }
 
 
@@ -1260,8 +1526,11 @@
             item.description || ""
           )
       )?.name ||
+
       address.locality ||
+
       address.county ||
+
       "";
 
 
@@ -1294,12 +1563,17 @@
         address.quarter ||
         "",
 
-      source: "gps",
+      source:
+        "gps",
 
-      lat: latitude,
+      lat:
+        latitude,
 
-      lon: longitude
+      lon:
+        longitude
+
     };
+
   }
 
 
@@ -1307,45 +1581,48 @@
      WEATHER
      ========================================================= */
 
-  function weatherText(code) {
+  function weatherText(
+    code
+  ) {
 
     if (code === 0)
-      return ["☀️", "Clear"];
+      return ["☀️","Clear"];
 
-    if ([1, 2].includes(code))
-      return ["🌤️", "Partly cloudy"];
+    if ([1,2].includes(code))
+      return ["🌤️","Partly cloudy"];
 
     if (code === 3)
-      return ["☁️", "Cloudy"];
+      return ["☁️","Cloudy"];
 
-    if ([45, 48].includes(code))
-      return ["🌫️", "Foggy"];
-
-    if (
-      [51, 53, 55, 56, 57]
-        .includes(code)
-    )
-      return ["🌦️", "Drizzle"];
+    if ([45,48].includes(code))
+      return ["🌫️","Foggy"];
 
     if (
-      [61, 63, 65, 66, 67, 80, 81, 82]
+      [51,53,55,56,57]
         .includes(code)
     )
-      return ["🌧️", "Rain"];
+      return ["🌦️","Drizzle"];
 
     if (
-      [71, 73, 75, 77, 85, 86]
+      [61,63,65,66,67,80,81,82]
         .includes(code)
     )
-      return ["🌨️", "Snow"];
+      return ["🌧️","Rain"];
 
     if (
-      [95, 96, 99]
+      [71,73,75,77,85,86]
         .includes(code)
     )
-      return ["⛈️", "Thunderstorm"];
+      return ["🌨️","Snow"];
 
-    return ["🌤️", "Weather"];
+    if (
+      [95,96,99]
+        .includes(code)
+    )
+      return ["⛈️","Thunderstorm"];
+
+    return ["🌤️","Weather"];
+
   }
 
 
@@ -1366,9 +1643,11 @@
 
 
       if (!response.ok) {
+
         throw new Error(
           "Weather failed"
         );
+
       }
 
 
@@ -1452,7 +1731,9 @@
       $("#weatherCondition")
         .textContent =
         "Weather unavailable";
+
     }
+
   }
 
 
@@ -1506,6 +1787,7 @@
       Number.isFinite(
         Number(location.lat)
       ) &&
+
       Number.isFinite(
         Number(location.lon)
       )
@@ -1530,7 +1812,9 @@
       $("#weatherCondition")
         .textContent =
         "Location saved";
+
     }
+
   }
 
 
@@ -1538,13 +1822,14 @@
      AUTOMATIC LOCATION
      ========================================================= */
 
-  function detectLocationSilently() {
+  /*
+   * SILENT GPS DETECTION.
+   *
+   * IMPORTANT:
+   * This function NEVER opens the location modal.
+   */
 
-    /*
-     * THIS FUNCTION ONLY DETECTS LOCATION.
-     *
-     * It NEVER opens the location modal.
-     */
+  function detectLocationSilently() {
 
     if (
       !navigator.geolocation
@@ -1575,11 +1860,14 @@
 
           localStorage.setItem(
             "snippet24_location",
-            JSON.stringify(location)
+            JSON.stringify(
+              location
+            )
           );
 
 
           render();
+
 
           await loadWeather(
             location.lat,
@@ -1594,28 +1882,35 @@
         } catch (_) {
 
           setLocationUnavailable();
+
         }
+
       },
 
 
       () => {
 
         /*
-         * Permission denied:
-         * continue normally.
-         * NO POPUP.
+         * Permission denied.
+         *
+         * Continue normally.
+         *
+         * NEVER OPEN LOCATION MODAL.
          */
 
         setLocationUnavailable();
+
       },
 
 
       {
-        enableHighAccuracy: false,
-        timeout: 9000,
-        maximumAge: 3600000
+        enableHighAccuracy:false,
+        timeout:9000,
+        maximumAge:3600000
       }
+
     );
+
   }
 
 
@@ -1625,67 +1920,81 @@
       .textContent =
       "📍";
 
+
     $("#weatherTemp")
       .textContent =
       "--°";
+
 
     $("#weatherLocation")
       .textContent =
       "Location unavailable";
 
+
     $("#weatherCondition")
       .textContent =
       "Tap Change if you want to set it";
 
+
     renderCounts();
+
   }
 
 
   /* =========================================================
-     EVENT HANDLERS
+     NAVIGATION
      ========================================================= */
 
   $$("[data-category]")
-    .forEach(element => {
+    .forEach(
+      element => {
 
-      element.addEventListener(
-        "click",
-        () => {
+        element.addEventListener(
+          "click",
+          () => {
 
-          if (
-            element.dataset.category
-          ) {
-
-            setCategory(
+            if (
               element.dataset.category
-            );
-          }
-        }
-      );
+            ) {
 
-    });
+              setCategory(
+                element.dataset.category
+              );
+
+            }
+
+          }
+        );
+
+      }
+    );
 
 
   $$("[data-speed]")
-    .forEach(element => {
+    .forEach(
+      element => {
 
-      element.addEventListener(
-        "click",
-        () => {
+        element.addEventListener(
+          "click",
+          () => {
 
-          state.speed =
-            Number(
-              element.dataset.speed
-            );
+            state.speed =
+              Number(
+                element.dataset.speed
+              );
 
-          syncControls();
-        }
-      );
+            syncControls();
 
-    });
+          }
+        );
+
+      }
+    );
 
 
-  /* SEARCH */
+  /* =========================================================
+     SEARCH EVENTS
+     ========================================================= */
 
   $("#searchBtn")
     ?.addEventListener(
@@ -1712,7 +2021,9 @@
         ) {
 
           closeSearch();
+
         }
+
       }
     );
 
@@ -1727,7 +2038,9 @@
     );
 
 
-  /* MENU */
+  /* =========================================================
+     MENU
+     ========================================================= */
 
   $("#menuBtn")
     ?.addEventListener(
@@ -1737,28 +2050,34 @@
         const menu =
           $("#mobileMenu");
 
+
         if (!menu) {
           return;
         }
 
+
         menu.hidden =
           !menu.hidden;
+
 
         $("#menuBtn")
           .setAttribute(
             "aria-expanded",
-            String(!menu.hidden)
+            String(
+              !menu.hidden
+            )
           );
+
       }
     );
 
 
   /* =========================================================
-     LOCATION
+     LOCATION EVENTS
      ========================================================= */
 
   /*
-   * THIS IS THE ONLY PLACE THAT OPENS
+   * THIS IS THE ONLY EVENT THAT OPENS
    * THE LOCATION MODAL.
    */
 
@@ -1798,16 +2117,20 @@
         closeLocationModal();
 
         detectLocationSilently();
+
       }
     );
 
 
-  /* OTHER */
+  /* =========================================================
+     OTHER EVENTS
+     ========================================================= */
 
   $("#worldArrow")
     ?.addEventListener(
       "click",
-      () => setCategory("India")
+      () =>
+        setCategory("India")
     );
 
 
@@ -1824,11 +2147,13 @@
 
         render();
 
+
         $("#topStories")
           ?.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+            behavior:"smooth",
+            block:"start"
           });
+
       }
     );
 
@@ -1856,33 +2181,37 @@
      ========================================================= */
 
   /*
-   * CRITICAL:
+   * ========================================================
+   * CRITICAL LOCATION RULE
+   * ========================================================
    *
-   * DO NOT CALL openLocationModal() HERE.
+   * NEVER call openLocationModal() here.
    *
-   * The modal is forcibly closed on startup.
+   * The modal is forcibly hidden when the page starts.
+   *
+   * GPS detection is silent.
    */
 
   const locationModal =
     $("#locationModal");
 
+
   if (locationModal) {
 
-    locationModal.hidden = true;
+    locationModal.hidden =
+      true;
 
     locationModal.setAttribute(
       "aria-hidden",
       "true"
     );
+
   }
 
 
-  document.body.classList.remove(
-    "location-open"
-  );
-
-
-  /* Start normal homepage */
+  /*
+   * Normal homepage startup.
+   */
 
   updateHeaderWeatherFromLocation();
 
@@ -1890,9 +2219,9 @@
 
 
   /*
-   * Automatic GPS detection is silent.
+   * Automatic GPS detection.
    *
-   * It does NOT open the modal.
+   * NO POPUP.
    */
 
   if (!state.location) {
@@ -1901,24 +2230,31 @@
       detectLocationSilently,
       500
     );
+
   }
 
 
-  /* ESC closes overlays */
+  /* =========================================================
+     ESC KEY
+     ========================================================= */
 
   document.addEventListener(
     "keydown",
     event => {
 
       if (
-        event.key === "Escape"
+        event.key ===
+        "Escape"
       ) {
 
         closeSearch();
 
         closeLocationModal();
+
       }
+
     }
   );
+
 
 })();
