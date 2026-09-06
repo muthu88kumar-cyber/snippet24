@@ -1177,3 +1177,29 @@ select{
   }
 
 }
+/* =========================================================
+   SNIPPET24 — LOCATION MODAL SAFETY
+   NEVER SHOW CLOSED MODALS
+   ========================================================= */
+
+[hidden] {
+  display: none !important;
+}
+
+.search-overlay[hidden],
+.location-modal[hidden],
+.mobile-menu[hidden] {
+  display: none !important;
+}
+
+/* Location modal must cover the page only when explicitly opened */
+.location-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+/* Prevent the page behind the modal from moving */
+body.location-open {
+  overflow: hidden;
+}
