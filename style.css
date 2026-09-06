@@ -32,8 +32,7 @@ button{
 .site-header{
   background:#071b2b;
   color:#fff;
-  position:sticky;
-  top:0;
+  position:relative;
   z-index:100;
   box-shadow:0 10px 35px rgba(0,0,0,.18);
 }
