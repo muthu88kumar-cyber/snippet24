@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#071b2b">
-  <meta name="description" content="Snippet24 — Fast News • Real Impact. Know what matters. Understand why.">
-  <title>snippet24 — Fast News • Real Impact</title>
+  <title>snippet24 — FAST NEWS • REAL IMPACT</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -13,41 +12,51 @@
 
 <header class="site-header">
 
-  <div class="header-main">
+  <!-- TOP ROW:
+       Weather left
+       Logo centered
+       Search + Menu right
+  -->
+  <div class="header-top">
+
+    <div class="header-weather" id="headerWeather">
+
+      <span class="weather-mini-icon" id="headerWeatherIcon">⛅</span>
+
+      <div>
+        <strong id="headerWeatherTemp">--°</strong>
+        <span id="headerLocationName">Finding location…</span>
+      </div>
+
+    </div>
+
 
     <a href="./" class="brand">
 
-      <div class="brand-row">
-        <span class="brand-word">snippet</span>
-        <span class="brand-number">24</span>
+      <div class="brand-name">
+        snippet<span>24</span>
       </div>
 
-      <small>FAST NEWS • REAL IMPACT</small>
+      <div class="brand-tagline">
+        FAST NEWS • REAL IMPACT
+      </div>
 
     </a>
 
+
     <div class="header-actions">
 
-      <button class="icon-btn" id="searchBtn" aria-label="Search">
+      <button
+        id="searchBtn"
+        class="header-icon"
+        aria-label="Search">
         ⌕
       </button>
 
-      <label class="language-pill">
-        <span>🌐</span>
-
-        <select id="languageSelect">
-          <option value="en">English</option>
-          <option value="ta">தமிழ்</option>
-          <option value="hi">हिन्दी</option>
-          <option value="te">తెలుగు</option>
-          <option value="kn">ಕನ್ನಡ</option>
-          <option value="ml">മലയാളം</option>
-          <option value="bn">বাংলা</option>
-          <option value="mr">मराठी</option>
-        </select>
-      </label>
-
-      <button class="icon-btn" id="menuBtn" aria-label="Menu">
+      <button
+        id="menuBtn"
+        class="header-icon"
+        aria-label="Menu">
         ☰
       </button>
 
@@ -56,37 +65,39 @@
   </div>
 
 
+  <!-- NAVIGATION -->
+
   <nav class="category-nav">
 
-    <button class="nav-chip active" data-category="All">
+    <button class="nav-item active" data-category="All">
       Home
     </button>
 
-    <button class="nav-chip" data-category="India">
+    <button class="nav-item" data-category="India">
       India
     </button>
 
-    <button class="nav-chip" data-category="Global">
+    <button class="nav-item" data-category="Global">
       Global
     </button>
 
-    <button class="nav-chip" data-category="Business & Economy">
+    <button class="nav-item" data-category="Business & Economy">
       Money
     </button>
 
-    <button class="nav-chip" data-category="Tech & AI">
+    <button class="nav-item" data-category="Tech & AI">
       Tech
     </button>
 
-    <button class="nav-chip" data-category="Sports">
+    <button class="nav-item" data-category="Sports">
       Sports
     </button>
 
-    <button class="nav-chip" data-category="Society & Culture">
+    <button class="nav-item" data-category="Society & Culture">
       People
     </button>
 
-    <button class="nav-chip more-chip" id="menuMoreBtn">
+    <button class="nav-item" id="moreBtn">
       More
     </button>
 
@@ -115,7 +126,7 @@
       Good Reads
     </button>
 
-    <button id="premiumBtn" class="premium-menu-button">
+    <button id="premiumBtn">
       ♛ Snippet24 Premium
     </button>
 
@@ -124,8 +135,11 @@
 </header>
 
 
+
 <main>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -135,18 +149,21 @@
       TODAY IN ONE MINUTE
     </div>
 
+
     <h1>
       What's<br>
       <em>Happening?</em>
     </h1>
 
+
     <p class="hero-subtitle">
       News that matters. Explained simply. In your language.
     </p>
 
-    <button class="catchup" id="catchupBtn">
 
-      <span class="catchup-play">
+    <button class="catch-up" id="catchupBtn">
+
+      <span class="play">
         ▶
       </span>
 
@@ -154,14 +171,13 @@
         CATCH ME UP
       </strong>
 
-      <span class="catchup-divider"></span>
+      <span class="catch-divider"></span>
 
-      <span class="catchup-description">
-        The things you need to know<br>
-        right now
+      <span class="catch-text">
+        The things you need to know right now
       </span>
 
-      <span class="catchup-arrow">
+      <span class="catch-arrow">
         →
       </span>
 
@@ -170,41 +186,32 @@
 
     <div class="reading-modes">
 
-      <button class="reading-mode active" data-speed="10">
+      <button
+        class="reading-mode active"
+        data-speed="10">
 
-        <strong>
-          ⚡ 10 SEC
-        </strong>
-
-        <span>
-          Just the facts
-        </span>
+        <strong>⚡ 10 SEC</strong>
+        <span>Just the facts</span>
 
       </button>
 
 
-      <button class="reading-mode" data-speed="60">
+      <button
+        class="reading-mode"
+        data-speed="60">
 
-        <strong>
-          ◷ 60 SEC
-        </strong>
-
-        <span>
-          Understand it
-        </span>
+        <strong>◷ 60 SEC</strong>
+        <span>Understand it</span>
 
       </button>
 
 
-      <button class="reading-mode" data-speed="180">
+      <button
+        class="reading-mode"
+        data-speed="180">
 
-        <strong>
-          ▤ 3 MIN
-        </strong>
-
-        <span>
-          Explore deeper
-        </span>
+        <strong>▤ 3 MIN</strong>
+        <span>Explore deeper</span>
 
       </button>
 
@@ -212,10 +219,8 @@
 
 
     <div class="hero-message">
-
       A more informed <em>tomorrow</em><br>
       for a brighter you.
-
     </div>
 
   </div>
@@ -224,14 +229,15 @@
 
 
 
-<section class="world-section">
+<!-- AROUND YOU -->
 
-  <div class="my-world" id="myWorld">
+<section class="around-section">
 
+  <div class="around-card">
 
-    <div class="world-introduction">
+    <div class="around-title">
 
-      <div class="world-pin">
+      <div class="around-icon">
         📍
       </div>
 
@@ -242,7 +248,7 @@
         </strong>
 
         <span>
-          News, weather and what matters where you are.
+          Local intelligence based on where you are.
         </span>
 
       </div>
@@ -250,69 +256,20 @@
     </div>
 
 
-    <div class="world-location">
+    <div class="around-location">
 
-      <div class="location-heading">
+      <strong id="aroundLocation">
+        Finding your area
+      </strong>
 
-        <span>📍</span>
-
-        <strong id="locationName">
-          Finding your area
-        </strong>
-
-        <button
-          id="changeLocationBtn"
-          aria-label="Change location">
-          ✎
-        </button>
-
-      </div>
-
-      <small id="locationDetail">
-        Understanding your location
+      <small id="aroundLocationDetail">
+        Location will be detected automatically
       </small>
 
     </div>
 
 
-    <div class="weather-card">
-
-      <div class="weather-icon" id="weatherIcon">
-        ⛅
-      </div>
-
-      <div class="weather-main">
-
-        <strong id="weatherTemp">
-          --°
-        </strong>
-
-        <span id="weatherCondition">
-          Weather
-        </span>
-
-      </div>
-
-      <div class="weather-details">
-
-        <span>
-          Feels <b id="weatherFeels">--°</b>
-        </span>
-
-        <span>
-          Rain <b id="weatherRain">--%</b>
-        </span>
-
-        <span>
-          Wind <b id="weatherWind">--</b>
-        </span>
-
-      </div>
-
-    </div>
-
-
-    <div class="world-counts">
+    <div class="around-stats">
 
       <div>
         <strong id="nearCount">—</strong>
@@ -343,10 +300,12 @@
 
 
     <button
-      class="world-arrow"
-      id="worldArrow"
-      aria-label="Open Around You">
-      ›
+      class="change-location"
+      id="changeLocationBtn"
+      aria-label="Change location">
+
+      ✎
+
     </button>
 
   </div>
@@ -355,20 +314,23 @@
 
 
 
+<!-- LIVE WIRE -->
+
 <section class="live-section">
 
-  <div class="live-title">
+  <div class="live-label">
 
-    <span class="live-dot"></span>
+    <span></span>
 
     LIVE WIRE
 
   </div>
 
+
   <div class="ticker">
 
     <div id="tickerTrack">
-      Finding the latest signal…
+      Waiting for the latest signal…
     </div>
 
   </div>
@@ -377,9 +339,11 @@
 
 
 
-<section class="content-section">
+<!-- TOP STORIES -->
 
-  <div class="section-heading">
+<section class="section">
+
+  <div class="section-header">
 
     <h2>
       TOP STORIES
@@ -401,9 +365,11 @@
 
 
 
-<section class="impact-section">
+<!-- WHY IT MATTERS -->
 
-  <div class="section-heading">
+<section class="section">
+
+  <div class="section-header">
 
     <h2>
       WHY IT MATTERS TO YOU
@@ -414,12 +380,11 @@
 
   <div class="impact-grid">
 
+    <button class="impact-card">
 
-    <button class="impact-card money">
-
-      <span class="impact-icon">
+      <div class="impact-symbol">
         ₹
-      </span>
+      </div>
 
       <div>
 
@@ -427,9 +392,9 @@
           YOUR MONEY
         </strong>
 
-        <small>
+        <span>
           Markets, jobs, business and the economy.
-        </small>
+        </span>
 
       </div>
 
@@ -438,11 +403,11 @@
     </button>
 
 
-    <button class="impact-card life">
+    <button class="impact-card">
 
-      <span class="impact-icon">
+      <div class="impact-symbol">
         ●●
-      </span>
+      </div>
 
       <div>
 
@@ -450,9 +415,9 @@
           YOUR LIFE
         </strong>
 
-        <small>
+        <span>
           Policies, law, transport and everyday life.
-        </small>
+        </span>
 
       </div>
 
@@ -461,11 +426,11 @@
     </button>
 
 
-    <button class="impact-card future">
+    <button class="impact-card">
 
-      <span class="impact-icon">
+      <div class="impact-symbol">
         ⌁
-      </span>
+      </div>
 
       <div>
 
@@ -473,9 +438,9 @@
           YOUR FUTURE
         </strong>
 
-        <small>
+        <span>
           Technology, climate and opportunities.
-        </small>
+        </span>
 
       </div>
 
@@ -483,23 +448,24 @@
 
     </button>
 
-
   </div>
 
 </section>
 
 
 
-<section class="content-section more-news-section">
+<!-- MORE NEWS -->
 
-  <div class="section-heading">
+<section class="section">
+
+  <div class="section-header">
 
     <h2>
       MORE NEWS
     </h2>
 
 
-    <div class="mini-tabs">
+    <div class="tabs">
 
       <button
         class="active"
@@ -542,7 +508,6 @@
 
 </section>
 
-
 </main>
 
 
@@ -551,7 +516,7 @@
 
   <div>
 
-    <div class="footer-brand">
+    <div class="footer-logo">
       snippet<span>24</span>
     </div>
 
@@ -575,15 +540,17 @@
 
 
 
+<!-- SEARCH -->
+
 <div
-  class="search-overlay"
+  class="overlay"
   id="searchOverlay"
   hidden>
 
-  <div class="search-panel">
+  <div class="search-box">
 
     <button
-      class="close-button"
+      class="close-btn"
       id="searchClose">
       ×
     </button>
@@ -599,12 +566,8 @@
     <input
       id="searchInput"
       type="search"
-      placeholder="Search a story, topic, person, place or event…"
+      placeholder="Search news, people, places or topics…"
       autocomplete="off">
-
-    <p class="search-hints">
-      Try: India today · Chennai · economy · technology · sports
-    </p>
 
     <div id="searchResults"></div>
 
@@ -614,21 +577,17 @@
 
 
 
+<!-- CHANGE LOCATION -->
+
 <div
-  class="location-modal"
+  class="overlay"
   id="locationModal"
   hidden>
 
-  <div
-    class="modal-backdrop"
-    id="locationModalBackdrop">
-  </div>
-
-
-  <div class="location-card">
+  <div class="location-box">
 
     <button
-      class="close-button"
+      class="close-btn"
       id="locationModalClose">
       ×
     </button>
@@ -640,13 +599,13 @@
 
 
     <h2>
-      Your world, your way.
+      Choose your location
     </h2>
 
 
     <p>
-      Use your current location automatically,
-      or choose a place manually.
+      Snippet24 normally uses your current location automatically.
+      Use this only if you want to override it.
     </p>
 
 
@@ -718,16 +677,6 @@
 
 
     <label>
-      TALUK / BLOCK
-
-      <input
-        id="manualTaluk"
-        placeholder="Taluk or block">
-
-    </label>
-
-
-    <label>
       LOCAL AREA
 
       <input
@@ -747,10 +696,10 @@
 
 
     <button
-      class="current-location"
+      class="use-current"
       id="modalUseCurrentBtn">
 
-      📍 Use my current location
+      📍 USE MY CURRENT LOCATION
 
     </button>
 
