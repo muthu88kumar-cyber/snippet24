@@ -1,2474 +1,2509 @@
-const state = {
+(() => {
 
-  articles: [],
+  "use strict";
 
-  category: "All",
 
-  speed: 60,
+  /* =========================================================
+     STATE
+  ========================================================= */
 
-  search: "",
+  const state = {
 
-  location: {
+    stories: [],
 
-    state: "",
+    category: "All",
 
-    district: "",
+    speed: 10,
 
-    city: "",
+    lang:
+      localStorage.getItem("snippet24_lang")
+      || "en",
 
-    taluk: "",
+    location:
+      JSON.parse(
+        localStorage.getItem("snippet24_location")
+        || "null"
+      ),
 
-    locality: ""
+    weather: null
+
+  };
+
+
+  /* =========================================================
+     HELPERS
+  ========================================================= */
+
+  const $ = selector =>
+    document.querySelector(selector);
+
+
+  const $$ = selector =>
+    [...document.querySelectorAll(selector)];
+
+
+  const escapeHtml = value =>
+    String(value ?? "")
+      .replace(
+        /[&<>"']/g,
+        character => ({
+          "&":"&amp;",
+          "<":"&lt;",
+          ">":"&gt;",
+          '"':"&quot;",
+          "'":"&#39;"
+        }[character])
+      );
+
+
+  /* =========================================================
+     ARTICLE HELPERS
+  ========================================================= */
+
+  function getTitle(story){
+
+    return (
+
+      story?.translations?.[state.lang]?.title ||
+
+      story?.[state.lang]?.title ||
+
+      story?.title ||
+
+      story?.headline ||
+
+      ""
+
+    );
 
   }
 
-};
 
-const $ = selector =>
+  function getSummary(story){
 
-  document.querySelector(selector);
+    return (
 
-const $$ = selector =>
+      story?.translations?.[state.lang]?.summary ||
 
-  [...document.querySelectorAll(selector)];
+      story?.[state.lang]?.summary ||
 
-/* ==================================================
+      story?.summary ||
 
-   LOAD ARTICLES
+      ""
 
-================================================== */
+    );
 
-async function loadArticles() {
+  }
 
-  setStatus("Loading latest stories...");
 
-  try {
+  function getPoints(story){
 
-    const response =
+    return (
 
-      await fetch(
+      story?.translations?.[state.lang]?.key_points ||
 
-        `articles.json?t=${Date.now()}`
+      story?.[state.lang]?.key_points ||
+
+      story?.key_points ||
+
+      story?.snippet_lines ||
+
+      []
+
+    );
+
+  }
+
+
+  function imageOf(story){
+
+    return (
+
+      story?.ai_image_url ||
+
+      story?.image ||
+
+      story?.image_url ||
+
+      story?.ai_image ||
+
+      ""
+
+    );
+
+  }
+
+
+  function sourceOf(story){
+
+    return (
+
+      story?.source_url ||
+
+      story?.original_source_url ||
+
+      story?.original_url ||
+
+      story?.url ||
+
+      ""
+
+    );
+
+  }
+
+
+  function categoryOf(story){
+
+    const raw =
+      story?.category ||
+      story?.section ||
+      "India";
+
+
+    if(raw === "In India")
+      return "India";
+
+
+    if(raw === "Business & Economy")
+      return "Business & Economy";
+
+
+    if(raw === "Tech & AI")
+      return "Tech & AI";
+
+
+    if(raw === "Human & Environment")
+      return "Human & Environment";
+
+
+    return raw;
+
+  }
+
+
+  function hasTranslation(story){
+
+    return (
+
+      state.lang === "en"
+
+      ||
+
+      !!(
+        story?.translations?.[state.lang]
+
+        ||
+
+        story?.[state.lang]
+      )
+
+    );
+
+  }
+
+
+  /* =========================================================
+     LOCATION
+  ========================================================= */
+
+  function locationText(){
+
+    const l =
+      state.location;
+
+
+    if(!l)
+      return "Finding your area";
+
+
+    return (
+
+      l.locality ||
+
+      l.city ||
+
+      l.town ||
+
+      l.district ||
+
+      l.state ||
+
+      "Your location"
+
+    );
+
+  }
+
+
+  function locationDetail(){
+
+    const l =
+      state.location;
+
+
+    if(!l)
+      return "Understanding your location";
+
+
+    const parts = [
+
+      l.district,
+
+      l.state
+
+    ].filter(Boolean);
+
+
+    return parts.length
+
+      ? parts.join(" • ")
+
+      : "Location personalized";
+
+  }
+
+
+  function normalizeLocation(value){
+
+    return String(
+      value || ""
+    )
+      .trim()
+      .toLowerCase();
+
+  }
+
+
+  function articleLocation(story){
+
+    const l =
+      story?.location ||
+
+      story?.geo ||
+
+      {};
+
+
+    return {
+
+      country:
+        normalizeLocation(
+          l.country
+        ),
+
+      state:
+        normalizeLocation(
+          l.state
+        ),
+
+      district:
+        normalizeLocation(
+          l.district
+        ),
+
+      city:
+        normalizeLocation(
+          l.city ||
+          l.town
+        ),
+
+      taluk:
+        normalizeLocation(
+          l.taluk ||
+          l.block
+        ),
+
+      locality:
+        normalizeLocation(
+          l.locality ||
+          l.village ||
+          l.ward
+        )
+
+    };
+
+  }
+
+
+  function locationScore(story){
+
+    if(!state.location)
+      return 0;
+
+
+    const article =
+      articleLocation(story);
+
+
+    const user = {
+
+      state:
+        normalizeLocation(
+          state.location.state
+        ),
+
+      district:
+        normalizeLocation(
+          state.location.district
+        ),
+
+      city:
+        normalizeLocation(
+          state.location.city
+        ),
+
+      taluk:
+        normalizeLocation(
+          state.location.taluk
+        ),
+
+      locality:
+        normalizeLocation(
+          state.location.locality
+        )
+
+    };
+
+
+    let score = 0;
+
+
+    if(
+      user.locality &&
+      article.locality &&
+      user.locality === article.locality
+    ){
+
+      score += 120;
+
+    }
+
+
+    if(
+      user.taluk &&
+      article.taluk &&
+      user.taluk === article.taluk
+    ){
+
+      score += 95;
+
+    }
+
+
+    if(
+      user.city &&
+      article.city &&
+      user.city === article.city
+    ){
+
+      score += 75;
+
+    }
+
+
+    if(
+      user.district &&
+      article.district &&
+      user.district === article.district
+    ){
+
+      score += 55;
+
+    }
+
+
+    if(
+      user.state &&
+      article.state &&
+      user.state === article.state
+    ){
+
+      score += 30;
+
+    }
+
+
+    return score;
+
+  }
+
+
+  function importanceScore(story){
+
+    const map = {
+
+      CRITICAL:80,
+
+      HIGH:50,
+
+      MEDIUM:20,
+
+      LOW:5
+
+    };
+
+
+    return (
+
+      map[
+        String(
+          story?.importance ||
+          ""
+        ).toUpperCase()
+      ]
+
+      || 10
+
+    );
+
+  }
+
+
+  function freshnessScore(story){
+
+    const timestamp =
+      Date.parse(
+        story?.published_at ||
+        story?.updated_at ||
+        ""
+      );
+
+
+    if(
+      !Number.isFinite(
+        timestamp
+      )
+    ){
+
+      return 0;
+
+    }
+
+
+    const hours =
+      (
+        Date.now() -
+        timestamp
+      ) / 3600000;
+
+
+    return Math.max(
+      0,
+      40 - hours
+    );
+
+  }
+
+
+  /* =========================================================
+     FILTER
+  ========================================================= */
+
+  function filtered(){
+
+    return state.stories
+
+      .filter(
+        hasTranslation
+      )
+
+      .filter(
+        story =>
+
+          state.category === "All"
+
+          ||
+
+          categoryOf(story)
+            ===
+          state.category
+
+      )
+
+      .sort(
+        (a,b) =>
+
+          (
+
+            locationScore(b)
+
+            +
+
+            importanceScore(b)
+
+            +
+
+            freshnessScore(b)
+
+          )
+
+          -
+
+          (
+
+            locationScore(a)
+
+            +
+
+            importanceScore(a)
+
+            +
+
+            freshnessScore(a)
+
+          )
 
       );
 
-    if (!response.ok) {
+  }
 
-      throw new Error(
 
-        `Unable to load articles: ${response.status}`
+  /* =========================================================
+     LOAD STORIES
+  ========================================================= */
 
+  async function loadStories(){
+
+    setStatus(
+      "Finding the signal…"
+    );
+
+
+    let data = null;
+
+
+    try{
+
+      const response =
+        await fetch(
+          "./api/stories",
+          {
+            cache:"no-store"
+          }
+        );
+
+
+      if(response.ok){
+
+        data =
+          await response.json();
+
+      }
+
+    }
+
+    catch(error){
+
+      console.log(
+        "API unavailable"
       );
 
     }
 
-    const data =
 
-      await response.json();
+    if(!data){
 
-    state.articles =
+      try{
 
-      Array.isArray(data.articles)
+        const response =
+          await fetch(
+            "./articles.json",
+            {
+              cache:"no-store"
+            }
+          );
 
-        ? data.articles
 
-        : [];
+        if(response.ok){
+
+          data =
+            await response.json();
+
+        }
+
+      }
+
+      catch(error){
+
+        console.log(
+          "articles.json unavailable"
+        );
+
+      }
+
+    }
+
+
+    if(Array.isArray(data)){
+
+      state.stories =
+        data;
+
+    }
+
+    else if(
+      Array.isArray(
+        data?.stories
+      )
+    ){
+
+      state.stories =
+        data.stories;
+
+    }
+
+    else if(
+      Array.isArray(
+        data?.articles
+      )
+    ){
+
+      state.stories =
+        data.articles;
+
+    }
+
+    else{
+
+      state.stories =
+        [];
+
+    }
+
 
     render();
 
-    updateTicker();
+  }
 
-    setStatus(
 
-      `${state.articles.length.toLocaleString()} stories`
+  /* =========================================================
+     WEATHER
+     OPEN-METEO
+     NO API KEY REQUIRED
+  ========================================================= */
 
+  async function loadWeather(){
+
+    if(
+      !state.location?.latitude ||
+      !state.location?.longitude
+    ){
+
+      return;
+
+    }
+
+
+    try{
+
+      const latitude =
+        state.location.latitude;
+
+
+      const longitude =
+        state.location.longitude;
+
+
+      const url =
+
+        "https://api.open-meteo.com/v1/forecast"
+
+        +
+
+        "?latitude=" +
+        encodeURIComponent(latitude)
+
+        +
+
+        "&longitude=" +
+        encodeURIComponent(longitude)
+
+        +
+
+        "&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m"
+
+        +
+
+        "&hourly=precipitation_probability"
+
+        +
+
+        "&timezone=auto";
+
+
+      const response =
+        await fetch(url);
+
+
+      if(!response.ok)
+        throw new Error(
+          "Weather unavailable"
+        );
+
+
+      const data =
+        await response.json();
+
+
+      state.weather =
+        data;
+
+
+      renderWeather();
+
+    }
+
+    catch(error){
+
+      console.log(
+        "Weather unavailable",
+        error
+      );
+
+    }
+
+  }
+
+
+  function weatherDescription(code){
+
+    const descriptions = {
+
+      0:"Clear sky",
+
+      1:"Mainly clear",
+
+      2:"Partly cloudy",
+
+      3:"Overcast",
+
+      45:"Foggy",
+
+      48:"Foggy",
+
+      51:"Light drizzle",
+
+      53:"Drizzle",
+
+      55:"Heavy drizzle",
+
+      61:"Light rain",
+
+      63:"Rain",
+
+      65:"Heavy rain",
+
+      71:"Light snow",
+
+      73:"Snow",
+
+      75:"Heavy snow",
+
+      80:"Rain showers",
+
+      81:"Rain showers",
+
+      82:"Heavy showers",
+
+      95:"Thunderstorm",
+
+      96:"Thunderstorm",
+
+      99:"Thunderstorm"
+
+    };
+
+
+    return (
+      descriptions[code]
+      ||
+      "Current weather"
     );
 
-  } catch (error) {
+  }
 
-    console.error(error);
 
-    setStatus(
+  function weatherIcon(code){
 
-      "Unable to load stories."
+    if(code === 0)
+      return "☀️";
 
-    );
+
+    if(
+      code === 1 ||
+      code === 2
+    )
+      return "⛅";
+
+
+    if(code === 3)
+      return "☁️";
+
+
+    if(
+      code >= 45 &&
+      code <= 48
+    )
+      return "🌫️";
+
+
+    if(
+      code >= 51 &&
+      code <= 67
+    )
+      return "🌧️";
+
+
+    if(
+      code >= 71 &&
+      code <= 77
+    )
+      return "❄️";
+
+
+    if(
+      code >= 80 &&
+      code <= 82
+    )
+      return "🌦️";
+
+
+    if(code >= 95)
+      return "⛈️";
+
+
+    return "🌤️";
+
+  }
+
+
+  function renderWeather(){
+
+    const weather =
+      state.weather;
+
+
+    if(
+      !weather ||
+      !weather.current
+    ){
+
+      return;
+
+    }
+
+
+    const current =
+      weather.current;
+
+
+    const temp =
+      Math.round(
+        current.temperature_2m
+      );
+
+
+    const feels =
+      Math.round(
+        current.apparent_temperature
+      );
+
+
+    const wind =
+      Math.round(
+        current.wind_speed_10m
+      );
+
+
+    const code =
+      current.weather_code;
+
+
+    $("#weatherTemp")
+      .textContent =
+      `${temp}°`;
+
+
+    $("#weatherFeels")
+      .textContent =
+      `${feels}°`;
+
+
+    $("#weatherCondition")
+      .textContent =
+      weatherDescription(
+        code
+      );
+
+
+    $("#weatherIcon")
+      .textContent =
+      weatherIcon(
+        code
+      );
+
+
+    $("#weatherWind")
+      .textContent =
+      `${wind} km/h`;
+
+
+    let rainProbability =
+      "--";
+
+
+    if(
+      Array.isArray(
+        weather?.hourly?.precipitation_probability
+      )
+    ){
+
+      const value =
+        weather.hourly
+          .precipitation_probability[0];
+
+
+      if(
+        Number.isFinite(
+          value
+        )
+      ){
+
+        rainProbability =
+          `${value}%`;
+
+      }
+
+    }
+
+
+    $("#weatherRain")
+      .textContent =
+      rainProbability;
+
+  }
+
+
+  /* =========================================================
+     RENDER
+  ========================================================= */
+
+  function render(){
 
     const stories =
+      filtered();
 
-      $("#stories");
 
-    if (stories) {
+    renderTopStories(
+      stories
+    );
 
-      stories.innerHTML = `
 
-        <div class="empty-state">
+    renderMoreStories(
+      stories
+    );
 
-          <h3>Stories unavailable</h3>
+
+    renderTicker(
+      stories
+    );
+
+
+    renderCounts();
+
+
+    renderWeather();
+
+
+    syncControls();
+
+
+    setStatus(
+
+      stories.length
+
+      ?
+
+      `${stories.length} stories • updated now`
+
+      :
+
+      "No published stories available yet."
+
+    );
+
+  }
+
+
+  /* =========================================================
+     TOP STORIES
+  ========================================================= */
+
+  function renderTopStories(
+    stories
+  ){
+
+    const container =
+      $("#topStories");
+
+
+    if(!container)
+      return;
+
+
+    const first =
+      stories[0];
+
+
+    const rest =
+      stories.slice(1,4);
+
+
+    if(!first){
+
+      container.innerHTML = `
+
+        <article class="lead-story">
+
+          <div class="lead-copy">
+
+            <span class="signal">
+              WAITING FOR SIGNAL
+            </span>
+
+            <h3>
+              Your most important stories
+              will appear here.
+            </h3>
+
+            <p>
+              Publish stories to articles.json
+              or connect the /api/stories feed.
+            </p>
+
+          </div>
+
+        </article>
+
+      `;
+
+      return;
+
+    }
+
+
+    const image =
+      imageOf(first);
+
+
+    const imageHTML =
+      image
+
+      ?
+
+      `
+
+      <img
+        src="${escapeHtml(image)}"
+        alt=""
+        loading="eager">
+
+      `
+
+      :
+
+      "";
+
+
+    const summary =
+      getSummary(first);
+
+
+    const source =
+      sourceOf(first);
+
+
+    container.innerHTML = `
+
+      <article class="lead-story">
+
+        ${imageHTML}
+
+        <div class="lead-shade"></div>
+
+        <div class="lead-copy">
+
+          <span class="signal">
+
+            ${escapeHtml(
+              first.signal ||
+              "TOP SIGNAL"
+            )}
+
+          </span>
+
+
+          <h3>
+
+            ${escapeHtml(
+              getTitle(first)
+              ||
+              "Story title unavailable"
+            )}
+
+          </h3>
+
 
           <p>
 
-            Please refresh and try again.
+            ${escapeHtml(
+              summary
+              ||
+              getPoints(first)[0]
+              ||
+              "The latest important development, explained simply."
+            )}
 
           </p>
+
+
+          <div class="lead-meta">
+
+            ${escapeHtml(
+              categoryOf(first)
+            )}
+
+            ${
+              first.published_at
+
+              ?
+
+              " • " +
+              escapeHtml(
+                new Date(
+                  first.published_at
+                ).toLocaleDateString()
+              )
+
+              :
+
+              ""
+            }
+
+            ${
+              source
+              ?
+
+              " • Original source"
+
+              :
+
+              ""
+            }
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <div class="side-stories">
+
+        ${
+          rest.length
+
+          ?
+
+          rest
+            .map(
+              sideStory
+            )
+            .join("")
+
+          :
+
+          `
+
+          <div class="side-card">
+
+            <div></div>
+
+            <div>
+
+              <h3>
+                More stories will appear
+                as the feed grows.
+              </h3>
+
+              <small>
+                FAST NEWS • REAL IMPACT
+              </small>
+
+            </div>
+
+          </div>
+
+          `
+        }
+
+      </div>
+
+    `;
+
+  }
+
+
+  function sideStory(story){
+
+    const image =
+      imageOf(story);
+
+
+    return `
+
+      <article class="side-card">
+
+        ${
+          image
+
+          ?
+
+          `
+
+          <img
+            src="${escapeHtml(image)}"
+            alt=""
+            loading="lazy">
+
+          `
+
+          :
+
+          `
+
+          <div class="story-placeholder"></div>
+
+          `
+        }
+
+
+        <div>
+
+          <span class="signal">
+
+            ${escapeHtml(
+              story.signal ||
+              categoryOf(story)
+            )}
+
+          </span>
+
+
+          <h3>
+
+            ${escapeHtml(
+              getTitle(story)
+            )}
+
+          </h3>
+
+
+          <small>
+
+            ${escapeHtml(
+              categoryOf(story)
+            )}
+
+          </small>
+
+        </div>
+
+      </article>
+
+    `;
+
+  }
+
+
+  /* =========================================================
+     MORE STORIES
+  ========================================================= */
+
+  function renderMoreStories(
+    stories
+  ){
+
+    const container =
+      $("#stories");
+
+
+    if(!container)
+      return;
+
+
+    const items =
+      stories.slice(0,8);
+
+
+    if(!items.length){
+
+      container.innerHTML = `
+
+        <div class="story-row">
+
+          <div></div>
+
+          <div>
+
+            <h3>
+              No stories found yet.
+            </h3>
+
+            <p>
+              Connect the news feed to start publishing.
+            </p>
+
+          </div>
 
         </div>
 
       `;
 
-    }
-
-  }
-
-}
-
-/* ==================================================
-
-   BASIC HELPERS
-
-================================================== */
-
-function titleOf(article) {
-
-  return (
-
-    article.headline ||
-
-    article.title ||
-
-    "Untitled story"
-
-  );
-
-}
-
-function summaryOf(article) {
-
-  return (
-
-    article.summary ||
-
-    ""
-
-  );
-
-}
-
-function pointsOf(article) {
-
-  if (
-
-    Array.isArray(article.snippet_lines)
-
-  ) {
-
-    return article.snippet_lines
-
-      .filter(Boolean);
-
-  }
-
-  if (
-
-    Array.isArray(article.key_points)
-
-  ) {
-
-    return article.key_points
-
-      .filter(Boolean);
-
-  }
-
-  if (
-
-    typeof article.snippet === "string"
-
-  ) {
-
-    return article.snippet
-
-      .split("\n")
-
-      .filter(Boolean);
-
-  }
-
-  return [];
-
-}
-
-function sourceOf(article) {
-
-  return (
-
-    article.original_source_url ||
-
-    article.source_url ||
-
-    ""
-
-  );
-
-}
-
-function imageOf(article) {
-
-  return article.image_url || "";
-
-}
-
-function categoryOf(article) {
-
-  const raw =
-
-    article.category || "";
-
-  const mapping = {
-
-    "In India": "India",
-
-    "Business & Economy": "Money",
-
-    "Tech & AI": "Tech",
-
-    "Society & Culture": "People",
-
-    "Human & Environment": "Environment"
-
-  };
-
-  if (mapping[raw]) {
-
-    if (
-
-      raw === "In India" &&
-
-      looksLikeSports(article)
-
-    ) {
-
-      return "Sports";
+      return;
 
     }
 
-    return mapping[raw];
 
-  }
+    container.innerHTML =
 
-  return raw;
+      items
 
-}
+        .map(
+          story => {
 
-/* ==================================================
+            const image =
+              imageOf(story);
 
-   SPORTS DETECTION
 
-================================================== */
+            const source =
+              sourceOf(story);
 
-function looksLikeSports(article) {
 
-  const text = [
+            const content = `
 
-    titleOf(article),
+              ${
+                image
 
-    summaryOf(article),
+                ?
 
-    ...pointsOf(article)
+                `
 
-  ]
+                <img
+                  src="${escapeHtml(image)}"
+                  alt=""
+                  loading="lazy">
 
-    .join(" ")
+                `
 
-    .toLowerCase();
+                :
 
-  const terms = [
+                `<div></div>`
 
-    "cricket",
+              }
 
-    "football",
 
-    "badminton",
+              <div>
 
-    "tennis",
+                <h3>
 
-    "hockey",
+                  ${escapeHtml(
+                    getTitle(story)
+                  )}
 
-    "pickleball",
+                </h3>
 
-    "olympic",
 
-    "athlete",
+                <p>
 
-    "championship",
+                  ${escapeHtml(
+                    getSummary(story)
+                    ||
+                    getPoints(story)[0]
+                    ||
+                    "Understand what happened and why it matters."
+                  )}
 
-    "tournament",
+                </p>
 
-    "world cup",
+              </div>
 
-    "match",
 
-    "shuttler",
-
-    "medal",
-
-    "wicket",
-
-    "goal",
-
-    "league",
-
-    "sport",
-
-    "ipl",
-
-    "fifa",
-
-    "bcci",
-
-    "icc"
-
-  ];
-
-  return terms.some(
-
-    term => text.includes(term)
-
-  );
-
-}
-
-/* ==================================================
-
-   READING MODES
-
-================================================== */
-
-function getReading(article) {
-
-  const reading =
-
-    article.reading;
-
-  if (reading) {
-
-    if (state.speed === 10) {
-
-      return {
-
-        label: "KNOW",
-
-        blocks: [
-
-          reading["10_sec"] ||
-
-          titleOf(article)
-
-        ].filter(Boolean)
-
-      };
-
-    }
-
-    if (state.speed === 60) {
-
-      const data =
-
-        reading["60_sec"] || {};
-
-      return {
-
-        label: "UNDERSTAND",
-
-        blocks: [
-
-          data.what_happened,
-
-          data.why_it_matters
-
-        ].filter(Boolean)
-
-      };
-
-    }
-
-    if (state.speed === 180) {
-
-      const data =
-
-        reading["3_min"] || {};
-
-      return {
-
-        label: "THINK",
-
-        blocks: [
-
-          data.what_happened,
-
-          data.why_it_matters,
-
-          data.who_is_affected,
-
-          data.whats_next
-
-        ].filter(Boolean)
-
-      };
-
-    }
-
-  }
-
-  /*
-
-   * Compatibility for older articles.
-
-   */
-
-  const points =
-
-    pointsOf(article);
-
-  if (state.speed === 10) {
-
-    return {
-
-      label: "KNOW",
-
-      blocks: [
-
-        points[0] ||
-
-        titleOf(article)
-
-      ]
-
-    };
-
-  }
-
-  if (state.speed === 60) {
-
-    return {
-
-      label: "UNDERSTAND",
-
-      blocks: [
-
-        ...points,
-
-        summaryOf(article)
-
-      ].filter(Boolean)
-
-    };
-
-  }
-
-  return {
-
-    label: "THINK",
-
-    blocks: [
-
-      ...points,
-
-      summaryOf(article)
-
-    ].filter(Boolean)
-
-  };
-
-}
-
-/* ==================================================
-
-   LOCATION
-
-================================================== */
-
-function loadLocation() {
-
-  try {
-
-    const saved =
-
-      localStorage.getItem(
-
-        "snippet24_location"
-
-      );
-
-    if (saved) {
-
-      state.location =
-
-        JSON.parse(saved);
-
-    }
-
-  } catch (error) {
-
-    console.warn(
-
-      "Location could not be loaded."
-
-    );
-
-  }
-
-  updateLocationText();
-
-}
-
-function saveLocation() {
-
-  state.location = {
-
-    state:
-
-      $("#stateSelect")?.value || "",
-
-    district:
-
-      $("#districtInput")?.value.trim() || "",
-
-    city:
-
-      $("#cityInput")?.value.trim() || "",
-
-    taluk:
-
-      $("#talukInput")?.value.trim() || "",
-
-    locality:
-
-      $("#localityInput")?.value.trim() || ""
-
-  };
-
-  localStorage.setItem(
-
-    "snippet24_location",
-
-    JSON.stringify(state.location)
-
-  );
-
-  updateLocationText();
-
-  $("#locationPanel")?.classList.remove(
-
-    "open"
-
-  );
-
-  state.category = "Local";
-
-  render();
-
-}
-
-function updateLocationText() {
-
-  const locationText =
-
-    $("#locationText");
-
-  if (!locationText) {
-
-    return;
-
-  }
-
-  const location =
-
-    state.location;
-
-  const parts = [
-
-    location.city,
-
-    location.district,
-
-    location.state
-
-  ].filter(Boolean);
-
-  locationText.textContent =
-
-    parts.length
-
-      ? parts.join(", ")
-
-      : "Set your location";
-
-}
-
-function articleMatchesLocation(article) {
-
-  const location =
-
-    state.location;
-
-  const text = [
-
-    titleOf(article),
-
-    summaryOf(article),
-
-    ...pointsOf(article),
-
-    article.location?.state || "",
-
-    article.location?.district || "",
-
-    article.location?.city || "",
-
-    article.location?.taluk || "",
-
-    article.location?.locality || "",
-
-    article.state || "",
-
-    article.district || "",
-
-    article.city || "",
-
-    article.taluk || "",
-
-    article.locality || ""
-
-  ]
-
-    .join(" ")
-
-    .toLowerCase();
-
-  const terms = [
-
-    location.locality,
-
-    location.taluk,
-
-    location.city,
-
-    location.district,
-
-    location.state
-
-  ]
-
-    .filter(Boolean)
-
-    .map(value =>
-
-      value.toLowerCase()
-
-    );
-
-  if (!terms.length) {
-
-    return false;
-
-  }
-
-  return terms.some(
-
-    term => text.includes(term)
-
-  );
-
-}
-
-/* ==================================================
-
-   FILTER
-
-================================================== */
-
-function filteredArticles() {
-
-  let stories =
-
-    [...state.articles];
-
-  if (state.category === "Local") {
-
-    const local =
-
-      stories.filter(
-
-        article =>
-
-          articleMatchesLocation(article)
-
-      );
-
-    stories =
-
-      local.length
-
-        ? local
-
-        : stories.filter(
-
-            article =>
-
-              categoryOf(article) === "India"
-
-          );
-
-  } else if (
-
-    state.category !== "All"
-
-  ) {
-
-    stories =
-
-      stories.filter(
-
-        article =>
-
-          categoryOf(article) ===
-
-          state.category
-
-      );
-
-  }
-
-  if (state.search.trim()) {
-
-    const query =
-
-      state.search
-
-        .trim()
-
-        .toLowerCase();
-
-    stories =
-
-      stories.filter(article => {
-
-        const searchable = [
-
-          titleOf(article),
-
-          summaryOf(article),
-
-          ...pointsOf(article),
-
-          article.publisher || "",
-
-          article.category || "",
-
-          article.location?.city || "",
-
-          article.location?.district || "",
-
-          article.location?.state || ""
-
-        ]
-
-          .join(" ")
-
-          .toLowerCase();
-
-        return searchable.includes(query);
-
-      });
-
-  }
-
-  return stories;
-
-}
-
-/* ==================================================
-
-   STORY CARD
-
-================================================== */
-
-function createStoryCard(article) {
-
-  const card =
-
-    document.createElement("article");
-
-  card.className =
-
-    "story-card";
-
-  card.dataset.id =
-
-    article.id || "";
-
-  const reading =
-
-    getReading(article);
-
-  const title =
-
-    titleOf(article);
-
-  const category =
-
-    categoryOf(article);
-
-  const publisher =
-
-    article.publisher || "";
-
-  const source =
-
-    sourceOf(article);
-
-  const image =
-
-    imageOf(article);
-
-  let html = "";
-
-  if (image) {
-
-    html += `
-
-      <div class="story-image">
-
-        <img
-
-          src="${escapeAttr(image)}"
-
-          alt=""
-
-          loading="lazy"
-
-          onerror="
-
-            this.parentElement.style.display='none'
-
-          "
-
-        >
-
-      </div>
-
-    `;
-
-  }
-
-  html += `
-
-    <div class="story-content">
-
-      <div class="story-meta">
-
-        <span class="story-category">
-
-          ${escapeHtml(category)}
-
-        </span>
-
-        ${
-
-          publisher
-
-            ? `
-
-              <span class="story-publisher">
-
-                ${escapeHtml(publisher)}
-
+              <span class="go">
+                ›
               </span>
 
-            `
+            `;
 
-            : ""
 
-        }
+            if(source){
 
-      </div>
+              return `
 
-      <h2 class="story-title">
+                <a
+                  class="story-row"
+                  href="${escapeHtml(source)}"
+                  target="_blank"
+                  rel="noopener noreferrer">
 
-        ${escapeHtml(title)}
+                  ${content}
 
-      </h2>
+                </a>
 
-      <div class="reading-label">
+              `;
 
-        ${escapeHtml(reading.label)}
+            }
 
-      </div>
 
-      <div class="story-reading">
+            return `
 
-        ${
+              <div class="story-row">
 
-          reading.blocks
+                ${content}
 
-            .map(
+              </div>
 
-              block =>
-
-                `<p>${escapeHtml(block)}</p>`
-
-            )
-
-            .join("")
-
-        }
-
-      </div>
-
-      <div class="story-footer">
-
-        ${
-
-          source
-
-            ? `
-
-              <a
-
-                class="source-link"
-
-                href="${escapeAttr(source)}"
-
-                target="_blank"
-
-                rel="noopener noreferrer"
-
-              >
-
-                Original source →
-
-              </a>
-
-            `
-
-            : ""
-
-        }
-
-        <span class="editorial-note">
-
-          ${
-
-            article.editorial_note ||
-
-            "Rephrased from the original source for clarity."
+            `;
 
           }
 
+        )
+
+        .join("");
+
+  }
+
+
+  /* =========================================================
+     LIVE WIRE
+  ========================================================= */
+
+  function renderTicker(
+    stories
+  ){
+
+    const ticker =
+      $("#tickerTrack");
+
+
+    if(!ticker)
+      return;
+
+
+    const items =
+      stories.slice(0,10);
+
+
+    if(!items.length){
+
+      ticker.innerHTML = `
+
+        <span>
+
+          <strong>● LIVE</strong>
+
+          Waiting for the latest
+          Snippet24 signal…
+
         </span>
 
-      </div>
-
-    </div>
-
-  `;
-
-  card.innerHTML = html;
-
-  return card;
-
-}
-
-/* ==================================================
-
-   RENDER
-
-================================================== */
-
-function render() {
-
-  const container =
-
-    $("#stories");
-
-  if (!container) {
-
-    return;
-
-  }
-
-  const stories =
-
-    filteredArticles();
-
-  container.innerHTML = "";
-
-  if (!stories.length) {
-
-    container.innerHTML = `
-
-      <div class="empty-state">
-
-        <h3>No stories found</h3>
-
-        <p>
-
-          Try another category or search.
-
-        </p>
-
-      </div>
-
-    `;
-
-    syncControls();
-
-    return;
-
-  }
-
-  const fragment =
-
-    document.createDocumentFragment();
-
-  stories.forEach(article => {
-
-    fragment.appendChild(
-
-      createStoryCard(article)
-
-    );
-
-  });
-
-  container.appendChild(
-
-    fragment
-
-  );
-
-  syncControls();
-
-}
-
-/* ==================================================
-
-   SPEED
-
-================================================== */
-
-function setSpeed(speed) {
-
-  state.speed =
-
-    Number(speed);
-
-  render();
-
-  $("#signal")?.scrollIntoView({
-
-    behavior: "smooth",
-
-    block: "start"
-
-  });
-
-}
-
-/* ==================================================
-
-   CATEGORY
-
-================================================== */
-
-function setCategory(category) {
-
-  state.category =
-
-    category;
-
-  state.search = "";
-
-  const input =
-
-    $("#searchInput");
-
-  if (input) {
-
-    input.value = "";
-
-  }
-
-  render();
-
-  $("#signal")?.scrollIntoView({
-
-    behavior: "smooth",
-
-    block: "start"
-
-  });
-
-}
-
-/* ==================================================
-
-   CATCH ME UP
-
-================================================== */
-
-function catchMeUp() {
-
-  state.category = "All";
-
-  state.speed = 60;
-
-  state.search = "";
-
-  const input =
-
-    $("#searchInput");
-
-  if (input) {
-
-    input.value = "";
-
-  }
-
-  render();
-
-  $("#signal")?.scrollIntoView({
-
-    behavior: "smooth",
-
-    block: "start"
-
-  });
-
-}
-
-/* ==================================================
-
-   CONTROLS
-
-================================================== */
-
-function syncControls() {
-
-  $$("[data-speed]")
-
-    .forEach(button => {
-
-      const active =
-
-        Number(button.dataset.speed) ===
-
-        state.speed;
-
-      button.classList.toggle(
-
-        "active",
-
-        active
-
-      );
-
-    });
-
-  $$(".nav-item[data-category]")
-
-    .forEach(button => {
-
-      button.classList.toggle(
-
-        "active",
-
-        button.dataset.category ===
-
-        state.category
-
-      );
-
-    });
-
-}
-
-/* ==================================================
-
-   SEARCH
-
-================================================== */
-
-function openSearch() {
-
-  const panel =
-
-    $("#searchPanel");
-
-  if (!panel) {
-
-    return;
-
-  }
-
-  panel.classList.add("open");
-
-  panel.setAttribute(
-
-    "aria-hidden",
-
-    "false"
-
-  );
-
-  $("#searchInput")?.focus();
-
-  renderSearchResults();
-
-}
-
-function closeSearch() {
-
-  const panel =
-
-    $("#searchPanel");
-
-  if (!panel) {
-
-    return;
-
-  }
-
-  panel.classList.remove("open");
-
-  panel.setAttribute(
-
-    "aria-hidden",
-
-    "true"
-
-  );
-
-}
-
-function searchArticles() {
-
-  state.search =
-
-    $("#searchInput")?.value || "";
-
-  renderSearchResults();
-
-  render();
-
-}
-
-function renderSearchResults() {
-
-  const results =
-
-    $("#searchResults");
-
-  if (!results) {
-
-    return;
-
-  }
-
-  const query =
-
-    state.search
-
-      .trim()
-
-      .toLowerCase();
-
-  if (!query) {
-
-    results.innerHTML = "";
-
-    return;
-
-  }
-
-  const matches =
-
-    state.articles
-
-      .filter(article => {
-
-        const text = [
-
-          titleOf(article),
-
-          summaryOf(article),
-
-          ...pointsOf(article),
-
-          article.publisher || "",
-
-          article.category || "",
-
-          article.location?.city || "",
-
-          article.location?.district || ""
-
-        ]
-
-          .join(" ")
-
-          .toLowerCase();
-
-        return text.includes(query);
-
-      })
-
-      .slice(0, 30);
-
-  if (!matches.length) {
-
-    results.innerHTML = `
-
-      <div class="empty-state">
-
-        No matching stories.
-
-      </div>
-
-    `;
-
-    return;
-
-  }
-
-  results.innerHTML =
-
-    matches.map(article => `
-
-      <button
-
-        class="search-result"
-
-        data-story-id="${escapeAttr(article.id)}"
-
-        type="button"
-
-      >
-
-        <strong>
-
-          ${escapeHtml(
-
-            titleOf(article)
-
-          )}
-
-        </strong>
-
-        <small>
-
-          ${escapeHtml(
-
-            categoryOf(article)
-
-          )}
-
-        </small>
-
-      </button>
-
-    `).join("");
-
-}
-
-/* ==================================================
-
-   LIVE TICKER
-
-================================================== */
-
-function updateTicker() {
-
-  const ticker =
-
-    $("#liveTicker");
-
-  if (!ticker) {
-
-    return;
-
-  }
-
-  const latest =
-
-    state.articles
-
-      .slice(0, 8)
-
-      .map(article =>
-
-        titleOf(article)
-
-      )
-
-      .filter(Boolean);
-
-  ticker.textContent =
-
-    latest.length
-
-      ? latest.join("  •  ")
-
-      : "Latest updates will appear here.";
-
-}
-
-/* ==================================================
-
-   STATUS
-
-================================================== */
-
-function setStatus(text) {
-
-  const status =
-
-    $("#status");
-
-  if (status) {
-
-    status.textContent = text;
-
-  }
-
-}
-
-/* ==================================================
-
-   SECURITY / HTML ESCAPING
-
-================================================== */
-
-function escapeHtml(value) {
-
-  return String(value ?? "")
-
-    .replaceAll("&", "&amp;")
-
-    .replaceAll("<", "&lt;")
-
-    .replaceAll(">", "&gt;")
-
-    .replaceAll('"', "&quot;")
-
-    .replaceAll("'", "&#039;");
-
-}
-
-function escapeAttr(value) {
-
-  return escapeHtml(value);
-
-}
-
-/* ==================================================
-
-   EVENTS
-
-================================================== */
-
-document.addEventListener(
-
-  "click",
-
-  event => {
-
-    const speedButton =
-
-      event.target.closest(
-
-        "[data-speed]"
-
-      );
-
-    if (speedButton) {
-
-      setSpeed(
-
-        speedButton.dataset.speed
-
-      );
+      `;
 
       return;
 
     }
 
-    const categoryButton =
 
-      event.target.closest(
+    const line =
 
-        "[data-category]"
+      items
 
-      );
+        .map(
+          story => `
 
-    if (categoryButton) {
+            <span>
 
-      setCategory(
+              <strong>●</strong>
 
-        categoryButton.dataset.category
+              ${escapeHtml(
+                getTitle(story)
+              )}
 
-      );
+            </span>
 
-      $("#moreMenu")
+          `
+        )
 
-        ?.classList.remove("open");
+        .join("");
 
-      return;
 
-    }
+    ticker.innerHTML =
+      line + line;
 
-    const result =
+  }
 
-      event.target.closest(
 
-        "[data-story-id]"
+  /* =========================================================
+     COUNTS
+  ========================================================= */
 
-      );
+  function renderCounts(){
 
-    if (result) {
-
-      const id =
-
-        result.dataset.storyId;
-
-      const card =
-
-        document.querySelector(
-
-          `.story-card[data-id="${CSS.escape(id)}"]`
-
+    const stories =
+      state.stories
+        .filter(
+          hasTranslation
         );
 
-      closeSearch();
 
-      card?.scrollIntoView({
+    const location =
+      state.location;
 
-        behavior: "smooth",
 
-        block: "center"
+    const near =
+      stories.filter(
+        story =>
+          locationScore(story)
+          >=
+          70
+      ).length;
+
+
+    const district =
+      stories.filter(
+        story =>
+          locationScore(story)
+          >=
+          55
+      ).length;
+
+
+    const stateCount =
+      stories.filter(
+        story =>
+          locationScore(story)
+          >=
+          30
+      ).length;
+
+
+    const india =
+      stories.filter(
+        story =>
+          categoryOf(story)
+          ===
+          "India"
+      ).length;
+
+
+    const global =
+      stories.filter(
+        story =>
+          categoryOf(story)
+          ===
+          "Global"
+      ).length;
+
+
+    $("#locationName")
+      .textContent =
+      locationText();
+
+
+    $("#locationDetail")
+      .textContent =
+      locationDetail();
+
+
+    $("#nearCount")
+      .textContent =
+      location
+      ? near
+      : "—";
+
+
+    $("#districtCount")
+      .textContent =
+      location
+      ? district
+      : "—";
+
+
+    $("#stateCount")
+      .textContent =
+      location
+      ? stateCount
+      : "—";
+
+
+    $("#indiaCount")
+      .textContent =
+      india;
+
+
+    $("#globalCount")
+      .textContent =
+      global;
+
+  }
+
+
+  /* =========================================================
+     CONTROLS
+  ========================================================= */
+
+  function syncControls(){
+
+    $$("[data-category]")
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+
+            "active",
+
+            element.dataset.category
+            ===
+            state.category
+
+          );
+
+        }
+      );
+
+
+    $$("[data-speed]")
+      .forEach(
+        element => {
+
+          element.classList.toggle(
+
+            "active",
+
+            Number(
+              element.dataset.speed
+            )
+            ===
+            state.speed
+
+          );
+
+        }
+      );
+
+
+    $("#languageSelect")
+      .value =
+      state.lang;
+
+  }
+
+
+  function setCategory(
+    category
+  ){
+
+    state.category =
+      category;
+
+
+    render();
+
+
+    $("#stories")
+      ?.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
 
       });
 
-    }
-
-  }
-
-);
-
-/* ==================================================
-
-   SEARCH EVENTS
-
-================================================== */
-
-$("#searchBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    openSearch
-
-  );
-
-$("#closeSearch")
-
-  ?.addEventListener(
-
-    "click",
-
-    closeSearch
-
-  );
-
-$("#searchInput")
-
-  ?.addEventListener(
-
-    "input",
-
-    searchArticles
-
-  );
-
-/* ==================================================
-
-   MENU
-
-================================================== */
-
-$("#menuBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    () => {
-
-      $("#mainNav")
-
-        ?.classList.toggle("open");
-
-    }
-
-  );
-
-$("#moreBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    event => {
-
-      event.stopPropagation();
-
-      $("#moreMenu")
-
-        ?.classList.toggle("open");
-
-    }
-
-  );
-
-document.addEventListener(
-
-  "keydown",
-
-  event => {
-
-    if (event.key === "Escape") {
-
-      closeSearch();
-
-      $("#moreMenu")
-
-        ?.classList.remove("open");
-
-      $("#locationPanel")
-
-        ?.classList.remove("open");
-
-    }
-
-  }
-
-);
-
-/* ==================================================
-
-   LOCATION EVENTS
-
-================================================== */
-
-$("#locationBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    () => {
-
-      $("#locationPanel")
-
-        ?.classList.toggle("open");
-
-    }
-
-  );
-
-$("#saveLocation")
-
-  ?.addEventListener(
-
-    "click",
-
-    saveLocation
-
-  );
-
-/* ==================================================
-
-   REFRESH
-
-================================================== */
-
-$("#refreshBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    loadArticles
-
-  );
-
-/* ==================================================
-
-   CATCH ME UP
-
-================================================== */
-
-$("#catchupBtn")
-
-  ?.addEventListener(
-
-    "click",
-
-    catchMeUp
-
-  );
-
-/* ==================================================
-
-   YEAR
-
-================================================== */
-
-const year =
-
-  $("#year");
-
-if (year) {
-
-  year.textContent =
-
-    new Date().getFullYear();
-
-}
-
-/* ==================================================
-
-   START
-
-================================================== */
-/* =========================================
-   SMART MY WORLD LOCATION ENGINE
-========================================= */
-
-const LOCATION_KEY = "snippet24_location";
-
-state.location =
-  JSON.parse(
-    localStorage.getItem(LOCATION_KEY) || "null"
-  );
-
-
-function saveLocation(location) {
-
-  state.location = location;
-
-  localStorage.setItem(
-    LOCATION_KEY,
-    JSON.stringify(location)
-  );
-
-  updateWorldUI();
-
-  render();
-
-}
-
-
-function locationText(location) {
-
-  if (!location) {
-    return "Location not set";
-  }
-
-  return [
-    location.locality,
-    location.city,
-    location.district,
-    location.state
-  ]
-    .filter(Boolean)
-    .filter(
-      (value, index, array) =>
-        array.indexOf(value) === index
-    )
-    .join(", ");
-
-}
-
-
-function updateWorldUI() {
-
-  const status =
-    $("#locationStatus");
-
-  const name =
-    $("#locationName");
-
-  const detail =
-    $("#locationDetail");
-
-  const priority =
-    $("#worldPriority");
-
-  const priorityText =
-    $("#worldPriorityText");
-
-  if (!state.location) {
-
-    if (status)
-      status.textContent =
-        "Location not set";
-
-    if (name)
-      name.textContent =
-        "Understand what's around you";
-
-    if (detail)
-      detail.textContent =
-        "Allow location access to personalize your news.";
-
-    if (priority)
-      priority.hidden = true;
-
-    return;
   }
 
 
-  const location =
-    state.location;
+  /* =========================================================
+     SEARCH
+  ========================================================= */
+
+  function openSearch(){
+
+    $("#searchOverlay")
+      .hidden =
+      false;
 
 
-  if (status)
-    status.textContent =
-      "YOUR WORLD";
+    setTimeout(
+      () =>
+        $("#searchInput")
+          .focus(),
+      50
+    );
+
+  }
 
 
-  if (name)
-    name.textContent =
-      locationText(location);
+  function runSearch(
+    query
+  ){
+
+    const q =
+      query
+        .trim()
+        .toLowerCase();
 
 
-  if (detail)
-    detail.textContent =
-      [
-        location.taluk,
-        location.district,
-        location.state
-      ]
-        .filter(Boolean)
+    const results =
+      $("#searchResults");
+
+
+    if(!q){
+
+      results.innerHTML =
+        "";
+
+      return;
+
+    }
+
+
+    const matches =
+      state.stories
+
         .filter(
-          (value, index, array) =>
-            array.indexOf(value) === index
+          story => {
+
+            const text = [
+
+              getTitle(story),
+
+              getSummary(story),
+
+              ...(getPoints(story) || []),
+
+              categoryOf(story)
+
+            ]
+
+            .join(" ")
+            .toLowerCase();
+
+
+            return text.includes(q);
+
+          }
         )
-        .join(" • ");
+
+        .slice(0,10);
 
 
-  if (priority) {
+    if(!matches.length){
 
-    priority.hidden = false;
+      results.innerHTML = `
 
-    if (priorityText) {
+        <div class="search-result">
 
-      priorityText.textContent =
-        [
-          location.locality
-            ? "Local"
-            : null,
-          location.district
-            ? "District"
-            : null,
-          location.state
-            ? "State"
-            : null,
-          "India",
-          "Global"
-        ]
-          .filter(Boolean)
-          .join(" • ");
+          No matching story yet.
+
+        </div>
+
+      `;
+
+      return;
 
     }
 
+
+    results.innerHTML =
+
+      matches
+
+        .map(
+          story => {
+
+            const source =
+              sourceOf(story);
+
+
+            const html = `
+
+              <strong>
+
+                ${escapeHtml(
+                  getTitle(story)
+                )}
+
+              </strong>
+
+              <br>
+
+              <small>
+
+                ${escapeHtml(
+                  categoryOf(story)
+                )}
+
+              </small>
+
+            `;
+
+
+            return source
+
+              ?
+
+              `
+
+              <a
+                class="search-result"
+                href="${escapeHtml(source)}"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                ${html}
+
+              </a>
+
+              `
+
+              :
+
+              `
+
+              <div class="search-result">
+
+                ${html}
+
+              </div>
+
+              `;
+
+          }
+        )
+
+        .join("");
+
   }
 
-}
+
+  /* =========================================================
+     LOCATION MODAL
+  ========================================================= */
+
+  function openLocationModal(){
+
+    const location =
+      state.location || {};
 
 
-async function detectLocation() {
-
-  const status =
-    $("#locationStatus");
-
-  const name =
-    $("#locationName");
-
-  const detail =
-    $("#locationDetail");
+    $("#manualState")
+      .value =
+      location.state || "";
 
 
-  if (!navigator.geolocation) {
+    $("#manualDistrict")
+      .value =
+      location.district || "";
 
-    if (status)
-      status.textContent =
-        "Location unavailable";
 
-    if (name)
-      name.textContent =
-        "Your browser does not support location.";
+    $("#manualCity")
+      .value =
+      location.city || "";
 
-    return;
+
+    $("#manualTaluk")
+      .value =
+      location.taluk || "";
+
+
+    $("#manualLocality")
+      .value =
+      location.locality || "";
+
+
+    $("#locationModal")
+      .hidden =
+      false;
 
   }
 
 
-  if (status)
-    status.textContent =
-      "LOCATING…";
+  function closeLocationModal(){
 
-  if (name)
-    name.textContent =
-      "Understanding your area";
+    $("#locationModal")
+      .hidden =
+      true;
 
-  if (detail)
-    detail.textContent =
-      "Please allow location access.";
+  }
 
 
-  navigator.geolocation.getCurrentPosition(
+  function saveManualLocation(){
 
-    async position => {
+    state.location = {
 
-      const latitude =
-        position.coords.latitude;
+      country:"India",
 
-      const longitude =
-        position.coords.longitude;
+      state:
+        $("#manualState")
+          .value
+          .trim(),
+
+      district:
+        $("#manualDistrict")
+          .value
+          .trim(),
+
+      city:
+        $("#manualCity")
+          .value
+          .trim(),
+
+      taluk:
+        $("#manualTaluk")
+          .value
+          .trim(),
+
+      locality:
+        $("#manualLocality")
+          .value
+          .trim(),
+
+      source:"manual",
+
+      latitude:null,
+
+      longitude:null
+
+    };
 
 
-      try {
+    localStorage.setItem(
 
-        const response =
-          await fetch(
-            "https://api.bigdatacloud.net/data/reverse-geocode-client" +
-            "?latitude=" +
-            encodeURIComponent(latitude) +
-            "&longitude=" +
-            encodeURIComponent(longitude) +
-            "&localityLanguage=en",
-            {
-              cache: "no-store"
-            }
+      "snippet24_location",
+
+      JSON.stringify(
+        state.location
+      )
+
+    );
+
+
+    closeLocationModal();
+
+
+    render();
+
+  }
+
+
+  /* =========================================================
+     REVERSE GEOCODING
+  ========================================================= */
+
+  async function reverseGeocode(
+    latitude,
+    longitude
+  ){
+
+    const url =
+
+      "https://api.bigdatacloud.net/data/reverse-geocode-client"
+
+      +
+
+      "?latitude=" +
+      encodeURIComponent(latitude)
+
+      +
+
+      "&longitude=" +
+      encodeURIComponent(longitude)
+
+      +
+
+      "&localityLanguage=en";
+
+
+    const response =
+      await fetch(url);
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "Reverse geocoding failed"
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const address =
+      data.address || {};
+
+
+    const administrative =
+      data
+        ?.localityInfo
+        ?.administrative
+        || [];
+
+
+    const district =
+      administrative.find(
+        item =>
+          /district/i.test(
+            item.description || ""
+          )
+      )?.name
+
+      ||
+
+      address.locality
+
+      ||
+
+      "";
+
+
+    return {
+
+      country:
+        address.countryName
+        ||
+        data.countryName
+        ||
+        "India",
+
+      state:
+        address.principalSubdivision
+        ||
+        "",
+
+      district,
+
+      city:
+        address.city
+        ||
+        address.locality
+        ||
+        "",
+
+      taluk:
+        address.suburb
+        ||
+        "",
+
+      locality:
+        address.locality
+        ||
+        address.village
+        ||
+        "",
+
+      latitude,
+
+      longitude,
+
+      source:"gps"
+
+    };
+
+  }
+
+
+  /* =========================================================
+     GPS LOCATION
+  ========================================================= */
+
+  function detectLocation(){
+
+    if(
+      !navigator.geolocation
+    ){
+
+      openLocationModal();
+
+      return;
+
+    }
+
+
+    $("#locationName")
+      .textContent =
+      "Understanding your location…";
+
+
+    $("#locationDetail")
+      .textContent =
+      "Finding your locality and weather";
+
+
+    navigator.geolocation
+      .getCurrentPosition(
+
+        async position => {
+
+          try{
+
+            const latitude =
+              position.coords.latitude;
+
+
+            const longitude =
+              position.coords.longitude;
+
+
+            state.location =
+              await reverseGeocode(
+                latitude,
+                longitude
+              );
+
+
+            localStorage.setItem(
+
+              "snippet24_location",
+
+              JSON.stringify(
+                state.location
+              )
+
+            );
+
+
+            render();
+
+
+            await loadWeather();
+
+          }
+
+          catch(error){
+
+            console.log(
+              "Location lookup failed",
+              error
+            );
+
+
+            openLocationModal();
+
+          }
+
+        },
+
+        error => {
+
+          console.log(
+            "Location permission denied",
+            error
           );
 
 
-        if (!response.ok) {
-          throw new Error(
-            "Reverse geocoding failed"
-          );
+          openLocationModal();
+
+        },
+
+        {
+
+          enableHighAccuracy:false,
+
+          timeout:10000,
+
+          maximumAge:3600000
+
         }
 
+      );
 
-        const data =
-          await response.json();
-
-
-        const address =
-          data.localityInfo || {};
+  }
 
 
-        const location = {
+  /* =========================================================
+     EVENTS
+  ========================================================= */
 
-          latitude,
-          longitude,
+  $$("[data-category]")
+    .forEach(
+      element => {
 
-          locality:
-            data.locality ||
-            data.localityName ||
-            "",
+        element.addEventListener(
+          "click",
+          () => {
 
-          city:
-            data.city ||
-            data.locality ||
-            "",
+            setCategory(
+              element.dataset.category
+            );
 
-          district:
-            data.principalSubdivision ||
-            data.district ||
-            "",
+          }
+        );
 
-          state:
-            data.principalSubdivision ||
-            "",
-
-          country:
-            data.countryName ||
-            "India",
-
-          countryCode:
-            data.countryCode ||
-            "IN",
-
-          taluk:
-            data.localityInfo?.administrativeArea?.[0]?.name ||
-            ""
-
-        };
+      }
+    );
 
 
-        saveLocation(location);
+  $("#languageSelect")
+    .addEventListener(
+      "change",
+      event => {
+
+        state.lang =
+          event.target.value;
 
 
-      } catch (error) {
+        localStorage.setItem(
 
-        console.error(
-          "Location lookup failed:",
-          error
+          "snippet24_lang",
+
+          state.lang
+
         );
 
 
-        if (status)
-          status.textContent =
-            "LOCATION FOUND";
-
-        if (name)
-          name.textContent =
-            "Your location was detected";
-
-        if (detail)
-          detail.textContent =
-            "We couldn't identify the area name. You can select it manually.";
+        render();
 
       }
-
-    },
-
-
-    error => {
-
-      console.log(
-        "Geolocation:",
-        error.message
-      );
-
-
-      if (status)
-        status.textContent =
-          "LOCATION NOT ALLOWED";
-
-      if (name)
-        name.textContent =
-          "Choose your location";
-
-      if (detail)
-        detail.textContent =
-          "You can select an area manually instead.";
-
-    },
-
-
-    {
-      enableHighAccuracy: false,
-      timeout: 10000,
-      maximumAge: 300000
-    }
-
-  );
-
-}
-
-
-/* -----------------------------------------
-   LOCATION MATCHING
------------------------------------------ */
-
-function normalizeLocationValue(value) {
-
-  return String(value || "")
-    .toLowerCase()
-    .trim();
-
-}
-
-
-function articleLocationText(story) {
-
-  const location =
-    story.location ||
-    story.locations ||
-    {};
-
-  return [
-
-    story.locality,
-    story.village,
-    story.panchayat,
-    story.ward,
-
-    story.taluk,
-    story.block,
-
-    story.city,
-    story.town,
-
-    story.district,
-
-    story.state,
-
-    story.region,
-
-    location.locality,
-    location.village,
-    location.panchayat,
-    location.ward,
-    location.taluk,
-    location.block,
-    location.city,
-    location.town,
-    location.district,
-    location.state
-
-  ]
-    .filter(Boolean)
-    .map(normalizeLocationValue)
-    .join(" ");
-
-}
-
-
-function locationScore(story) {
-
-  if (!state.location)
-    return 0;
-
-
-  const location =
-    state.location;
-
-
-  const text =
-    articleLocationText(story);
-
-
-  if (!text)
-    return 0;
-
-
-  let score = 0;
-
-
-  const locality =
-    normalizeLocationValue(
-      location.locality
-    );
-
-  const city =
-    normalizeLocationValue(
-      location.city
-    );
-
-  const district =
-    normalizeLocationValue(
-      location.district
-    );
-
-  const stateName =
-    normalizeLocationValue(
-      location.state
     );
 
 
-  if (
-    locality &&
-    text.includes(locality)
-  ) {
-    score += 100;
-  }
+  $$("[data-speed]")
+    .forEach(
+      element => {
+
+        element.addEventListener(
+          "click",
+          () => {
+
+            state.speed =
+              Number(
+                element.dataset.speed
+              );
 
 
-  if (
-    city &&
-    text.includes(city)
-  ) {
-    score += 70;
-  }
+            syncControls();
 
-
-  if (
-    district &&
-    text.includes(district)
-  ) {
-    score += 50;
-  }
-
-
-  if (
-    stateName &&
-    text.includes(stateName)
-  ) {
-    score += 30;
-  }
-
-
-  return score;
-
-}
-
-
-/* -----------------------------------------
-   SMART STORY ORDER
------------------------------------------ */
-
-function smartStories(stories) {
-
-  return [...stories]
-    .map(
-      story => ({
-
-        story,
-
-        locationScore:
-          locationScore(story),
-
-        importanceScore:
-          story.importance === "HIGH"
-            ? 30
-            : story.importance === "MEDIUM"
-              ? 15
-              : 5,
-
-        timeScore:
-          story.published_at
-            ? Math.max(
-                0,
-                20 -
-                (
-                  (
-                    Date.now() -
-                    new Date(
-                      story.published_at
-                    ).getTime()
-                  ) /
-                  3600000
-                )
-              )
-            : 0
-
-      })
-    )
-    .sort(
-      (a, b) => {
-
-        const aScore =
-          a.locationScore +
-          a.importanceScore +
-          a.timeScore;
-
-        const bScore =
-          b.locationScore +
-          b.importanceScore +
-          b.timeScore;
-
-        return bScore - aScore;
+          }
+        );
 
       }
-    )
-    .map(
-      item => item.story
     );
 
-}
 
-
-/* -----------------------------------------
-   UPDATE FILTER
------------------------------------------ */
-
-const originalFiltered =
-  filtered;
-
-
-filtered = function () {
-
-  const stories =
-    originalFiltered();
-
-
-  return smartStories(
-    stories
-  );
-
-};
-
-
-/* -----------------------------------------
-   LOCATION UI EVENTS
------------------------------------------ */
-
-function openLocationModal() {
-
-  const modal =
-    $("#locationModal");
-
-  if (!modal)
-    return;
-
-  modal.classList.add("show");
-
-  modal.setAttribute(
-    "aria-hidden",
-    "false"
-  );
-
-}
-
-
-function closeLocationModal() {
-
-  const modal =
-    $("#locationModal");
-
-  if (!modal)
-    return;
-
-  modal.classList.remove("show");
-
-  modal.setAttribute(
-    "aria-hidden",
-    "true"
-  );
-
-}
-
-
-function saveManualLocation() {
-
-  const location = {
-
-    locality:
-      $("#manualLocality")?.value.trim() || "",
-
-    city:
-      $("#manualCity")?.value.trim() || "",
-
-    district:
-      $("#manualDistrict")?.value.trim() || "",
-
-    state:
-      $("#manualState")?.value.trim() || "",
-
-    taluk:
-      $("#manualTaluk")?.value.trim() || "",
-
-    country:
-      "India",
-
-    countryCode:
-      "IN",
-
-    manual:
-      true
-
-  };
-
-
-  if (!location.state) {
-
-    alert(
-      "Please select a state."
+  $("#searchBtn")
+    .addEventListener(
+      "click",
+      openSearch
     );
 
-    return;
+
+  $("#searchClose")
+    .addEventListener(
+      "click",
+      () => {
+
+        $("#searchOverlay")
+          .hidden =
+          true;
+
+      }
+    );
+
+
+  $("#searchInput")
+    .addEventListener(
+      "input",
+      event => {
+
+        runSearch(
+          event.target.value
+        );
+
+      }
+    );
+
+
+  $("#menuMoreBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        const menu =
+          $("#moreMenu");
+
+
+        menu.hidden =
+          !menu.hidden;
+
+      }
+    );
+
+
+  $("#changeLocationBtn")
+    .addEventListener(
+      "click",
+      openLocationModal
+    );
+
+
+  $("#worldArrow")
+    .addEventListener(
+      "click",
+      openLocationModal
+    );
+
+
+  $("#locationModalClose")
+    .addEventListener(
+      "click",
+      closeLocationModal
+    );
+
+
+  $("#locationModalBackdrop")
+    .addEventListener(
+      "click",
+      closeLocationModal
+    );
+
+
+  $("#saveManualLocationBtn")
+    .addEventListener(
+      "click",
+      saveManualLocation
+    );
+
+
+  $("#modalUseCurrentBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        closeLocationModal();
+
+        detectLocation();
+
+      }
+    );
+
+
+  /* =========================================================
+     CATCH ME UP
+  ========================================================= */
+
+  $("#catchupBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        state.category =
+          "All";
+
+
+        state.speed =
+          60;
+
+
+        render();
+
+
+        $("#topStories")
+          ?.scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"start"
+
+          });
+
+      }
+    );
+
+
+  /* =========================================================
+     VIEW ALL
+  ========================================================= */
+
+  $("#viewAllBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        setCategory(
+          "All"
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     PREMIUM
+  ========================================================= */
+
+  $("#premiumBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        window.location.href =
+          "./premium.html";
+
+      }
+    );
+
+
+  /* =========================================================
+     START
+  ========================================================= */
+
+  loadStories();
+
+
+  /*
+    If a saved GPS location exists,
+    load its weather immediately.
+  */
+
+  if(
+    state.location?.latitude &&
+    state.location?.longitude
+  ){
+
+    loadWeather();
 
   }
 
 
-  saveLocation(location);
+  /*
+    First-time visitors:
+    ask for location automatically.
+  */
 
-  closeLocationModal();
+  if(
+    !state.location
+  ){
 
-}
+    setTimeout(
+      detectLocation,
+      900
+    );
 
-
-$("#detectLocationBtn")
-  ?.addEventListener(
-    "click",
-    detectLocation
-  );
-
-
-$("#changeLocationBtn")
-  ?.addEventListener(
-    "click",
-    openLocationModal
-  );
+  }
 
 
-$("#manualLocationBtn")
-  ?.addEventListener(
-    "click",
-    openLocationModal
-  );
-
-
-$("#locationModalClose")
-  ?.addEventListener(
-    "click",
-    closeLocationModal
-  );
-
-
-$("#locationModalBackdrop")
-  ?.addEventListener(
-    "click",
-    closeLocationModal
-  );
-
-
-$("#saveManualLocationBtn")
-  ?.addEventListener(
-    "click",
-    saveManualLocation
-  );
-
-
-$("#modalUseCurrentBtn")
-  ?.addEventListener(
-    "click",
-    () => {
-
-      closeLocationModal();
-
-      detectLocation();
-
-    }
-  );
-
-
-updateWorldUI();
-
-
-/* -----------------------------------------
-   FIRST VISIT
------------------------------------------ */
-
-if (!state.location) {
-
-  setTimeout(
-    () => {
-
-      detectLocation();
-
-    },
-    900
-  );
-
-}
-loadLocation();
-
-loadArticles();
+})();
