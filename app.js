@@ -2126,19 +2126,14 @@
      OTHER EVENTS
      ========================================================= */
 
-  $("#worldArrow")
-    ?.addEventListener(
-      "click",
-      () =>
-        setCategory("India")
-    );
+$("#worldArrow").addEventListener("click", () => {
+  setCategory("India");
+});
 
-
-  $("#catchupBtn")
-    ?.addEventListener(
-      "click",
-      () => {
-
+$("#catchupBtn")
+  ?.addEventListener(
+    "click",
+    () => {
         state.category =
           "All";
 
