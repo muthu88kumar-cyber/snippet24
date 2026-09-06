@@ -25,7 +25,7 @@
         || "null"
       ),
 
-    weather: null
+    weather:null
 
   };
 
@@ -42,18 +42,23 @@
     [...document.querySelectorAll(selector)];
 
 
-  const escapeHtml = value =>
-    String(value ?? "")
+  function escapeHtml(value){
+
+    return String(value ?? "")
       .replace(
         /[&<>"']/g,
         character => ({
+
           "&":"&amp;",
           "<":"&lt;",
           ">":"&gt;",
           '"':"&quot;",
           "'":"&#39;"
+
         }[character])
       );
+
+  }
 
 
   /* =========================================================
@@ -155,48 +160,34 @@
 
   function categoryOf(story){
 
-    const raw =
+    const value =
       story?.category ||
       story?.section ||
       "India";
 
 
-    if(raw === "In India")
+    if(value === "In India")
       return "India";
 
 
-    if(raw === "Business & Economy")
-      return "Business & Economy";
-
-
-    if(raw === "Tech & AI")
-      return "Tech & AI";
-
-
-    if(raw === "Human & Environment")
-      return "Human & Environment";
-
-
-    return raw;
+    return value;
 
   }
 
 
   function hasTranslation(story){
 
-    return (
+    if(state.lang === "en")
+      return true;
 
-      state.lang === "en"
+
+    return !!(
+
+      story?.translations?.[state.lang]
 
       ||
 
-      !!(
-        story?.translations?.[state.lang]
-
-        ||
-
-        story?.[state.lang]
-      )
+      story?.[state.lang]
 
     );
 
@@ -207,27 +198,32 @@
      LOCATION
   ========================================================= */
 
+  function normalize(value){
+
+    return String(value || "")
+      .trim()
+      .toLowerCase();
+
+  }
+
+
   function locationText(){
 
-    const l =
-      state.location;
-
-
-    if(!l)
+    if(!state.location)
       return "Finding your area";
 
 
     return (
 
-      l.locality ||
+      state.location.locality ||
 
-      l.city ||
+      state.location.city ||
 
-      l.town ||
+      state.location.town ||
 
-      l.district ||
+      state.location.district ||
 
-      l.state ||
+      state.location.state ||
 
       "Your location"
 
@@ -238,19 +234,15 @@
 
   function locationDetail(){
 
-    const l =
-      state.location;
-
-
-    if(!l)
-      return "Understanding your location";
+    if(!state.location)
+      return "Location will be detected automatically";
 
 
     const parts = [
 
-      l.district,
+      state.location.district,
 
-      l.state
+      state.location.state
 
     ].filter(Boolean);
 
@@ -264,20 +256,10 @@
   }
 
 
-  function normalizeLocation(value){
-
-    return String(
-      value || ""
-    )
-      .trim()
-      .toLowerCase();
-
-  }
-
-
   function articleLocation(story){
 
-    const l =
+    const location =
+
       story?.location ||
 
       story?.geo ||
@@ -288,37 +270,31 @@
     return {
 
       country:
-        normalizeLocation(
-          l.country
-        ),
+        normalize(location.country),
 
       state:
-        normalizeLocation(
-          l.state
-        ),
+        normalize(location.state),
 
       district:
-        normalizeLocation(
-          l.district
-        ),
+        normalize(location.district),
 
       city:
-        normalizeLocation(
-          l.city ||
-          l.town
+        normalize(
+          location.city ||
+          location.town
         ),
 
       taluk:
-        normalizeLocation(
-          l.taluk ||
-          l.block
+        normalize(
+          location.taluk ||
+          location.block
         ),
 
       locality:
-        normalizeLocation(
-          l.locality ||
-          l.village ||
-          l.ward
+        normalize(
+          location.locality ||
+          location.village ||
+          location.ward
         )
 
     };
@@ -339,27 +315,27 @@
     const user = {
 
       state:
-        normalizeLocation(
+        normalize(
           state.location.state
         ),
 
       district:
-        normalizeLocation(
+        normalize(
           state.location.district
         ),
 
       city:
-        normalizeLocation(
+        normalize(
           state.location.city
         ),
 
       taluk:
-        normalizeLocation(
+        normalize(
           state.location.taluk
         ),
 
       locality:
-        normalizeLocation(
+        normalize(
           state.location.locality
         )
 
@@ -373,55 +349,40 @@
       user.locality &&
       article.locality &&
       user.locality === article.locality
-    ){
-
+    )
       score += 120;
-
-    }
 
 
     if(
       user.taluk &&
       article.taluk &&
       user.taluk === article.taluk
-    ){
-
+    )
       score += 95;
-
-    }
 
 
     if(
       user.city &&
       article.city &&
       user.city === article.city
-    ){
-
+    )
       score += 75;
-
-    }
 
 
     if(
       user.district &&
       article.district &&
       user.district === article.district
-    ){
-
+    )
       score += 55;
-
-    }
 
 
     if(
       user.state &&
       article.state &&
       user.state === article.state
-    ){
-
+    )
       score += 30;
-
-    }
 
 
     return score;
@@ -448,8 +409,7 @@
 
       map[
         String(
-          story?.importance ||
-          ""
+          story?.importance || ""
         ).toUpperCase()
       ]
 
@@ -470,15 +430,8 @@
       );
 
 
-    if(
-      !Number.isFinite(
-        timestamp
-      )
-    ){
-
+    if(!Number.isFinite(timestamp))
       return 0;
-
-    }
 
 
     const hours =
@@ -526,13 +479,9 @@
 
           (
 
-            locationScore(b)
+            locationScore(b) +
 
-            +
-
-            importanceScore(b)
-
-            +
+            importanceScore(b) +
 
             freshnessScore(b)
 
@@ -542,13 +491,9 @@
 
           (
 
-            locationScore(a)
+            locationScore(a) +
 
-            +
-
-            importanceScore(a)
-
-            +
+            importanceScore(a) +
 
             freshnessScore(a)
 
@@ -564,11 +509,6 @@
   ========================================================= */
 
   async function loadStories(){
-
-    setStatus(
-      "Finding the signal…"
-    );
-
 
     let data = null;
 
@@ -592,7 +532,6 @@
       }
 
     }
-
     catch(error){
 
       console.log(
@@ -623,7 +562,6 @@
         }
 
       }
-
       catch(error){
 
         console.log(
@@ -643,9 +581,7 @@
     }
 
     else if(
-      Array.isArray(
-        data?.stories
-      )
+      Array.isArray(data?.stories)
     ){
 
       state.stories =
@@ -654,9 +590,7 @@
     }
 
     else if(
-      Array.isArray(
-        data?.articles
-      )
+      Array.isArray(data?.articles)
     ){
 
       state.stories =
@@ -679,8 +613,6 @@
 
   /* =========================================================
      WEATHER
-     OPEN-METEO
-     NO API KEY REQUIRED
   ========================================================= */
 
   async function loadWeather(){
@@ -697,14 +629,6 @@
 
     try{
 
-      const latitude =
-        state.location.latitude;
-
-
-      const longitude =
-        state.location.longitude;
-
-
       const url =
 
         "https://api.open-meteo.com/v1/forecast"
@@ -712,16 +636,20 @@
         +
 
         "?latitude=" +
-        encodeURIComponent(latitude)
+        encodeURIComponent(
+          state.location.latitude
+        )
 
         +
 
         "&longitude=" +
-        encodeURIComponent(longitude)
+        encodeURIComponent(
+          state.location.longitude
+        )
 
         +
 
-        "&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m"
+        "&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m"
 
         +
 
@@ -742,23 +670,17 @@
         );
 
 
-      const data =
-        await response.json();
-
-
       state.weather =
-        data;
+        await response.json();
 
 
       renderWeather();
 
     }
-
     catch(error){
 
       console.log(
-        "Weather unavailable",
-        error
+        "Weather unavailable"
       );
 
     }
@@ -768,58 +690,34 @@
 
   function weatherDescription(code){
 
-    const descriptions = {
+    const map = {
 
       0:"Clear sky",
-
       1:"Mainly clear",
-
       2:"Partly cloudy",
-
       3:"Overcast",
-
       45:"Foggy",
-
       48:"Foggy",
-
       51:"Light drizzle",
-
       53:"Drizzle",
-
       55:"Heavy drizzle",
-
       61:"Light rain",
-
       63:"Rain",
-
       65:"Heavy rain",
-
-      71:"Light snow",
-
+      71:"Snow",
       73:"Snow",
-
       75:"Heavy snow",
-
       80:"Rain showers",
-
       81:"Rain showers",
-
       82:"Heavy showers",
-
       95:"Thunderstorm",
-
       96:"Thunderstorm",
-
       99:"Thunderstorm"
 
     };
 
 
-    return (
-      descriptions[code]
-      ||
-      "Current weather"
-    );
+    return map[code] || "Weather";
 
   }
 
@@ -830,10 +728,7 @@
       return "☀️";
 
 
-    if(
-      code === 1 ||
-      code === 2
-    )
+    if(code === 1 || code === 2)
       return "⛅";
 
 
@@ -841,31 +736,19 @@
       return "☁️";
 
 
-    if(
-      code >= 45 &&
-      code <= 48
-    )
+    if(code >= 45 && code <= 48)
       return "🌫️";
 
 
-    if(
-      code >= 51 &&
-      code <= 67
-    )
+    if(code >= 51 && code <= 67)
       return "🌧️";
 
 
-    if(
-      code >= 71 &&
-      code <= 77
-    )
+    if(code >= 71 && code <= 77)
       return "❄️";
 
 
-    if(
-      code >= 80 &&
-      code <= 82
-    )
+    if(code >= 80 && code <= 82)
       return "🌦️";
 
 
@@ -880,22 +763,14 @@
 
   function renderWeather(){
 
-    const weather =
-      state.weather;
-
-
     if(
-      !weather ||
-      !weather.current
-    ){
-
+      !state.weather?.current
+    )
       return;
-
-    }
 
 
     const current =
-      weather.current;
+      state.weather.current;
 
 
     const temp =
@@ -904,83 +779,231 @@
       );
 
 
-    const feels =
-      Math.round(
-        current.apparent_temperature
-      );
-
-
-    const wind =
-      Math.round(
-        current.wind_speed_10m
-      );
-
-
     const code =
       current.weather_code;
 
 
-    $("#weatherTemp")
+    $("#headerWeatherIcon")
+      .textContent =
+      weatherIcon(code);
+
+
+    $("#headerWeatherTemp")
       .textContent =
       `${temp}°`;
 
-
-    $("#weatherFeels")
-      .textContent =
-      `${feels}°`;
+  }
 
 
-    $("#weatherCondition")
-      .textContent =
-      weatherDescription(
-        code
+  /* =========================================================
+     LOCATION DETECTION
+  ========================================================= */
+
+  async function reverseGeocode(
+    latitude,
+    longitude
+  ){
+
+    const url =
+
+      "https://api.bigdatacloud.net/data/reverse-geocode-client"
+
+      +
+
+      "?latitude=" +
+      encodeURIComponent(latitude)
+
+      +
+
+      "&longitude=" +
+      encodeURIComponent(longitude)
+
+      +
+
+      "&localityLanguage=en";
+
+
+    const response =
+      await fetch(url);
+
+
+    if(!response.ok)
+      throw new Error(
+        "Reverse geocoding failed"
       );
 
 
-    $("#weatherIcon")
-      .textContent =
-      weatherIcon(
-        code
-      );
+    const data =
+      await response.json();
 
 
-    $("#weatherWind")
-      .textContent =
-      `${wind} km/h`;
+    const address =
+      data.address || {};
 
 
-    let rainProbability =
-      "--";
+    return {
 
+      country:
+        address.countryName ||
+        data.countryName ||
+        "India",
+
+      state:
+        address.principalSubdivision ||
+        "",
+
+      district:
+        address.locality ||
+        address.district ||
+        "",
+
+      city:
+        address.city ||
+        address.town ||
+        address.locality ||
+        "",
+
+      taluk:
+        address.suburb ||
+        "",
+
+      locality:
+        address.locality ||
+        address.village ||
+        "",
+
+      latitude,
+
+      longitude,
+
+      source:"gps"
+
+    };
+
+  }
+
+
+  function detectLocation(){
 
     if(
-      Array.isArray(
-        weather?.hourly?.precipitation_probability
-      )
+      !navigator.geolocation
     ){
 
-      const value =
-        weather.hourly
-          .precipitation_probability[0];
+      showLocationUnavailable();
 
-
-      if(
-        Number.isFinite(
-          value
-        )
-      ){
-
-        rainProbability =
-          `${value}%`;
-
-      }
+      return;
 
     }
 
 
-    $("#weatherRain")
+    navigator.geolocation
+      .getCurrentPosition(
+
+        async position => {
+
+          try{
+
+            state.location =
+              await reverseGeocode(
+
+                position.coords.latitude,
+
+                position.coords.longitude
+
+              );
+
+
+            localStorage.setItem(
+
+              "snippet24_location",
+
+              JSON.stringify(
+                state.location
+              )
+
+            );
+
+
+            render();
+
+
+            loadWeather();
+
+          }
+          catch(error){
+
+            console.log(
+              "Location lookup failed",
+              error
+            );
+
+
+            showLocationUnavailable();
+
+          }
+
+        },
+
+
+        error => {
+
+          console.log(
+            "Location unavailable",
+            error
+          );
+
+
+          /*
+             IMPORTANT:
+             Do NOT open a popup.
+             Homepage continues normally.
+          */
+
+          showLocationUnavailable();
+
+        },
+
+
+        {
+
+          enableHighAccuracy:false,
+
+          timeout:10000,
+
+          maximumAge:3600000
+
+        }
+
+      );
+
+  }
+
+
+  function showLocationUnavailable(){
+
+    $("#headerWeatherTemp")
       .textContent =
-      rainProbability;
+      "--°";
+
+
+    $("#headerWeatherIcon")
+      .textContent =
+      "☁️";
+
+
+    $("#headerLocationName")
+      .textContent =
+      "Location unavailable";
+
+
+    $("#aroundLocation")
+      .textContent =
+      "Location not shared";
+
+
+    $("#aroundLocationDetail")
+      .textContent =
+      "Tap ✎ if you want to choose a location";
 
   }
 
@@ -1013,25 +1036,117 @@
     renderCounts();
 
 
-    renderWeather();
-
-
     syncControls();
 
 
-    setStatus(
+    $("#status")
+      .textContent =
 
       stories.length
 
       ?
 
-      `${stories.length} stories • updated now`
+      `${stories.length} stories`
 
       :
 
-      "No published stories available yet."
+      "No published stories available yet.";
 
-    );
+  }
+
+
+  /* =========================================================
+     COUNTS
+  ========================================================= */
+
+  function renderCounts(){
+
+    const stories =
+      state.stories
+        .filter(
+          hasTranslation
+        );
+
+
+    const near =
+      stories.filter(
+        story =>
+          locationScore(story) >= 70
+      ).length;
+
+
+    const district =
+      stories.filter(
+        story =>
+          locationScore(story) >= 55
+      ).length;
+
+
+    const stateCount =
+      stories.filter(
+        story =>
+          locationScore(story) >= 30
+      ).length;
+
+
+    const india =
+      stories.filter(
+        story =>
+          categoryOf(story) === "India"
+      ).length;
+
+
+    const global =
+      stories.filter(
+        story =>
+          categoryOf(story) === "Global"
+      ).length;
+
+
+    $("#headerLocationName")
+      .textContent =
+      locationText();
+
+
+    $("#aroundLocation")
+      .textContent =
+      locationText();
+
+
+    $("#aroundLocationDetail")
+      .textContent =
+      locationDetail();
+
+
+    $("#nearCount")
+      .textContent =
+      state.location
+      ? near
+      : "—";
+
+
+    $("#districtCount")
+      .textContent =
+      state.location
+      ? district
+      : "—";
+
+
+    $("#stateCount")
+      .textContent =
+      state.location
+      ? stateCount
+      : "—";
+
+
+    $("#indiaCount")
+      .textContent =
+      india;
+
+
+    $("#globalCount")
+      .textContent =
+      global;
 
   }
 
@@ -1048,19 +1163,7 @@
       $("#topStories");
 
 
-    if(!container)
-      return;
-
-
-    const first =
-      stories[0];
-
-
-    const rest =
-      stories.slice(1,4);
-
-
-    if(!first){
+    if(!stories.length){
 
       container.innerHTML = `
 
@@ -1069,7 +1172,7 @@
           <div class="lead-copy">
 
             <span class="signal">
-              WAITING FOR SIGNAL
+              SNIPPET24
             </span>
 
             <h3>
@@ -1078,8 +1181,7 @@
             </h3>
 
             <p>
-              Publish stories to articles.json
-              or connect the /api/stories feed.
+              Connect your news feed to start publishing.
             </p>
 
           </div>
@@ -1093,177 +1195,21 @@
     }
 
 
+    const first =
+      stories[0];
+
+
+    const rest =
+      stories.slice(1,4);
+
+
     const image =
       imageOf(first);
-
-
-    const imageHTML =
-      image
-
-      ?
-
-      `
-
-      <img
-        src="${escapeHtml(image)}"
-        alt=""
-        loading="eager">
-
-      `
-
-      :
-
-      "";
-
-
-    const summary =
-      getSummary(first);
-
-
-    const source =
-      sourceOf(first);
 
 
     container.innerHTML = `
 
       <article class="lead-story">
-
-        ${imageHTML}
-
-        <div class="lead-shade"></div>
-
-        <div class="lead-copy">
-
-          <span class="signal">
-
-            ${escapeHtml(
-              first.signal ||
-              "TOP SIGNAL"
-            )}
-
-          </span>
-
-
-          <h3>
-
-            ${escapeHtml(
-              getTitle(first)
-              ||
-              "Story title unavailable"
-            )}
-
-          </h3>
-
-
-          <p>
-
-            ${escapeHtml(
-              summary
-              ||
-              getPoints(first)[0]
-              ||
-              "The latest important development, explained simply."
-            )}
-
-          </p>
-
-
-          <div class="lead-meta">
-
-            ${escapeHtml(
-              categoryOf(first)
-            )}
-
-            ${
-              first.published_at
-
-              ?
-
-              " • " +
-              escapeHtml(
-                new Date(
-                  first.published_at
-                ).toLocaleDateString()
-              )
-
-              :
-
-              ""
-            }
-
-            ${
-              source
-              ?
-
-              " • Original source"
-
-              :
-
-              ""
-            }
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <div class="side-stories">
-
-        ${
-          rest.length
-
-          ?
-
-          rest
-            .map(
-              sideStory
-            )
-            .join("")
-
-          :
-
-          `
-
-          <div class="side-card">
-
-            <div></div>
-
-            <div>
-
-              <h3>
-                More stories will appear
-                as the feed grows.
-              </h3>
-
-              <small>
-                FAST NEWS • REAL IMPACT
-              </small>
-
-            </div>
-
-          </div>
-
-          `
-        }
-
-      </div>
-
-    `;
-
-  }
-
-
-  function sideStory(story){
-
-    const image =
-      imageOf(story);
-
-
-    return `
-
-      <article class="side-card">
 
         ${
           image
@@ -1275,52 +1221,139 @@
           <img
             src="${escapeHtml(image)}"
             alt=""
-            loading="lazy">
+            loading="eager">
 
           `
 
           :
 
-          `
+          ""
 
-          <div class="story-placeholder"></div>
-
-          `
         }
 
 
-        <div>
+        <div class="lead-shade"></div>
+
+
+        <div class="lead-copy">
 
           <span class="signal">
-
-            ${escapeHtml(
-              story.signal ||
-              categoryOf(story)
-            )}
-
+            TOP SIGNAL
           </span>
 
 
           <h3>
 
             ${escapeHtml(
-              getTitle(story)
+              getTitle(first)
             )}
 
           </h3>
 
 
-          <small>
+          <p>
 
             ${escapeHtml(
-              categoryOf(story)
+              getSummary(first)
+
+              ||
+
+              getPoints(first)[0]
+
+              ||
+
+              "Understand what happened and why it matters."
             )}
 
-          </small>
+          </p>
+
+
+          <div class="lead-meta">
+
+            ${escapeHtml(
+              categoryOf(first)
+            )}
+
+          </div>
 
         </div>
 
       </article>
+
+
+      <div class="side-stories">
+
+        ${
+          rest
+            .map(
+              story => {
+
+                const image =
+                  imageOf(story);
+
+
+                return `
+
+                  <article class="side-card">
+
+                    ${
+                      image
+
+                      ?
+
+                      `
+
+                      <img
+                        src="${escapeHtml(image)}"
+                        alt=""
+                        loading="lazy">
+
+                      `
+
+                      :
+
+                      `<div class="story-placeholder"></div>`
+
+                    }
+
+
+                    <div>
+
+                      <span class="signal">
+
+                        ${escapeHtml(
+                          categoryOf(story)
+                        )}
+
+                      </span>
+
+
+                      <h3>
+
+                        ${escapeHtml(
+                          getTitle(story)
+                        )}
+
+                      </h3>
+
+
+                      <small>
+                        Snippet24
+                      </small>
+
+                    </div>
+
+                  </article>
+
+                `;
+
+              }
+            )
+            .join("")
+
+        }
+
+      </div>
 
     `;
 
@@ -1337,10 +1370,6 @@
 
     const container =
       $("#stories");
-
-
-    if(!container)
-      return;
 
 
     const items =
@@ -1362,7 +1391,7 @@
             </h3>
 
             <p>
-              Connect the news feed to start publishing.
+              Connect your news feed to start publishing.
             </p>
 
           </div>
@@ -1379,7 +1408,6 @@
     container.innerHTML =
 
       items
-
         .map(
           story => {
 
@@ -1391,7 +1419,7 @@
               sourceOf(story);
 
 
-            const content = `
+            const html = `
 
               ${
                 image
@@ -1429,9 +1457,13 @@
 
                   ${escapeHtml(
                     getSummary(story)
+
                     ||
+
                     getPoints(story)[0]
+
                     ||
+
                     "Understand what happened and why it matters."
                   )}
 
@@ -1457,7 +1489,7 @@
                   target="_blank"
                   rel="noopener noreferrer">
 
-                  ${content}
+                  ${html}
 
                 </a>
 
@@ -1470,16 +1502,14 @@
 
               <div class="story-row">
 
-                ${content}
+                ${html}
 
               </div>
 
             `;
 
           }
-
         )
-
         .join("");
 
   }
@@ -1497,15 +1527,7 @@
       $("#tickerTrack");
 
 
-    if(!ticker)
-      return;
-
-
-    const items =
-      stories.slice(0,10);
-
-
-    if(!items.length){
+    if(!stories.length){
 
       ticker.innerHTML = `
 
@@ -1513,8 +1535,7 @@
 
           <strong>● LIVE</strong>
 
-          Waiting for the latest
-          Snippet24 signal…
+          Waiting for the latest Snippet24 signal…
 
         </span>
 
@@ -1527,8 +1548,8 @@
 
     const line =
 
-      items
-
+      stories
+        .slice(0,10)
         .map(
           story => `
 
@@ -1544,191 +1565,11 @@
 
           `
         )
-
         .join("");
 
 
     ticker.innerHTML =
       line + line;
-
-  }
-
-
-  /* =========================================================
-     COUNTS
-  ========================================================= */
-
-  function renderCounts(){
-
-    const stories =
-      state.stories
-        .filter(
-          hasTranslation
-        );
-
-
-    const location =
-      state.location;
-
-
-    const near =
-      stories.filter(
-        story =>
-          locationScore(story)
-          >=
-          70
-      ).length;
-
-
-    const district =
-      stories.filter(
-        story =>
-          locationScore(story)
-          >=
-          55
-      ).length;
-
-
-    const stateCount =
-      stories.filter(
-        story =>
-          locationScore(story)
-          >=
-          30
-      ).length;
-
-
-    const india =
-      stories.filter(
-        story =>
-          categoryOf(story)
-          ===
-          "India"
-      ).length;
-
-
-    const global =
-      stories.filter(
-        story =>
-          categoryOf(story)
-          ===
-          "Global"
-      ).length;
-
-
-    $("#locationName")
-      .textContent =
-      locationText();
-
-
-    $("#locationDetail")
-      .textContent =
-      locationDetail();
-
-
-    $("#nearCount")
-      .textContent =
-      location
-      ? near
-      : "—";
-
-
-    $("#districtCount")
-      .textContent =
-      location
-      ? district
-      : "—";
-
-
-    $("#stateCount")
-      .textContent =
-      location
-      ? stateCount
-      : "—";
-
-
-    $("#indiaCount")
-      .textContent =
-      india;
-
-
-    $("#globalCount")
-      .textContent =
-      global;
-
-  }
-
-
-  /* =========================================================
-     CONTROLS
-  ========================================================= */
-
-  function syncControls(){
-
-    $$("[data-category]")
-      .forEach(
-        element => {
-
-          element.classList.toggle(
-
-            "active",
-
-            element.dataset.category
-            ===
-            state.category
-
-          );
-
-        }
-      );
-
-
-    $$("[data-speed]")
-      .forEach(
-        element => {
-
-          element.classList.toggle(
-
-            "active",
-
-            Number(
-              element.dataset.speed
-            )
-            ===
-            state.speed
-
-          );
-
-        }
-      );
-
-
-    $("#languageSelect")
-      .value =
-      state.lang;
-
-  }
-
-
-  function setCategory(
-    category
-  ){
-
-    state.category =
-      category;
-
-
-    render();
-
-
-    $("#stories")
-      ?.scrollIntoView({
-
-        behavior:"smooth",
-
-        block:"start"
-
-      });
 
   }
 
@@ -1780,7 +1621,6 @@
 
     const matches =
       state.stories
-
         .filter(
           story => {
 
@@ -1795,16 +1635,14 @@
               categoryOf(story)
 
             ]
-
-            .join(" ")
-            .toLowerCase();
+              .join(" ")
+              .toLowerCase();
 
 
             return text.includes(q);
 
           }
         )
-
         .slice(0,10);
 
 
@@ -1813,9 +1651,7 @@
       results.innerHTML = `
 
         <div class="search-result">
-
-          No matching story yet.
-
+          No matching story found.
         </div>
 
       `;
@@ -1828,7 +1664,6 @@
     results.innerHTML =
 
       matches
-
         .map(
           story => {
 
@@ -1891,7 +1726,6 @@
 
           }
         )
-
         .join("");
 
   }
@@ -1920,11 +1754,6 @@
     $("#manualCity")
       .value =
       location.city || "";
-
-
-    $("#manualTaluk")
-      .value =
-      location.taluk || "";
 
 
     $("#manualLocality")
@@ -1969,21 +1798,16 @@
           .value
           .trim(),
 
-      taluk:
-        $("#manualTaluk")
-          .value
-          .trim(),
-
       locality:
         $("#manualLocality")
           .value
           .trim(),
 
-      source:"manual",
-
       latitude:null,
 
-      longitude:null
+      longitude:null,
+
+      source:"manual"
 
     };
 
@@ -2008,274 +1832,82 @@
 
 
   /* =========================================================
-     REVERSE GEOCODING
+     CATEGORY
   ========================================================= */
 
-  async function reverseGeocode(
-    latitude,
-    longitude
+  function setCategory(
+    category
   ){
 
-    const url =
-
-      "https://api.bigdatacloud.net/data/reverse-geocode-client"
-
-      +
-
-      "?latitude=" +
-      encodeURIComponent(latitude)
-
-      +
-
-      "&longitude=" +
-      encodeURIComponent(longitude)
-
-      +
-
-      "&localityLanguage=en";
+    state.category =
+      category;
 
 
-    const response =
-      await fetch(url);
-
-
-    if(!response.ok){
-
-      throw new Error(
-        "Reverse geocoding failed"
-      );
-
-    }
-
-
-    const data =
-      await response.json();
-
-
-    const address =
-      data.address || {};
-
-
-    const administrative =
-      data
-        ?.localityInfo
-        ?.administrative
-        || [];
-
-
-    const district =
-      administrative.find(
-        item =>
-          /district/i.test(
-            item.description || ""
-          )
-      )?.name
-
-      ||
-
-      address.locality
-
-      ||
-
-      "";
-
-
-    return {
-
-      country:
-        address.countryName
-        ||
-        data.countryName
-        ||
-        "India",
-
-      state:
-        address.principalSubdivision
-        ||
-        "",
-
-      district,
-
-      city:
-        address.city
-        ||
-        address.locality
-        ||
-        "",
-
-      taluk:
-        address.suburb
-        ||
-        "",
-
-      locality:
-        address.locality
-        ||
-        address.village
-        ||
-        "",
-
-      latitude,
-
-      longitude,
-
-      source:"gps"
-
-    };
+    render();
 
   }
 
 
   /* =========================================================
-     GPS LOCATION
+     CONTROLS
   ========================================================= */
 
-  function detectLocation(){
+  function syncControls(){
 
-    if(
-      !navigator.geolocation
-    ){
+    $$("[data-category]")
+      .forEach(
+        button => {
 
-      openLocationModal();
+          button.classList.toggle(
 
-      return;
+            "active",
 
-    }
+            button.dataset.category
+            ===
+            state.category
 
-
-    $("#locationName")
-      .textContent =
-      "Understanding your location…";
-
-
-    $("#locationDetail")
-      .textContent =
-      "Finding your locality and weather";
-
-
-    navigator.geolocation
-      .getCurrentPosition(
-
-        async position => {
-
-          try{
-
-            const latitude =
-              position.coords.latitude;
-
-
-            const longitude =
-              position.coords.longitude;
-
-
-            state.location =
-              await reverseGeocode(
-                latitude,
-                longitude
-              );
-
-
-            localStorage.setItem(
-
-              "snippet24_location",
-
-              JSON.stringify(
-                state.location
-              )
-
-            );
-
-
-            render();
-
-
-            await loadWeather();
-
-          }
-
-          catch(error){
-
-            console.log(
-              "Location lookup failed",
-              error
-            );
-
-
-            openLocationModal();
-
-          }
-
-        },
-
-        error => {
-
-          console.log(
-            "Location permission denied",
-            error
           );
 
+        }
+      );
 
-          openLocationModal();
 
-        },
+    $$("[data-speed]")
+      .forEach(
+        button => {
 
-        {
+          button.classList.toggle(
 
-          enableHighAccuracy:false,
+            "active",
 
-          timeout:10000,
+            Number(
+              button.dataset.speed
+            )
+            ===
+            state.speed
 
-          maximumAge:3600000
+          );
 
         }
-
       );
 
   }
 
-
-  /* =========================================================
-     EVENTS
-  ========================================================= */
 
   $$("[data-category]")
     .forEach(
-      element => {
+      button => {
 
-        element.addEventListener(
+        button.addEventListener(
           "click",
           () => {
 
             setCategory(
-              element.dataset.category
+              button.dataset.category
             );
 
           }
         );
-
-      }
-    );
-
-
-  $("#languageSelect")
-    .addEventListener(
-      "change",
-      event => {
-
-        state.lang =
-          event.target.value;
-
-
-        localStorage.setItem(
-
-          "snippet24_lang",
-
-          state.lang
-
-        );
-
-
-        render();
 
       }
     );
@@ -2283,15 +1915,15 @@
 
   $$("[data-speed]")
     .forEach(
-      element => {
+      button => {
 
-        element.addEventListener(
+        button.addEventListener(
           "click",
           () => {
 
             state.speed =
               Number(
-                element.dataset.speed
+                button.dataset.speed
               );
 
 
@@ -2303,6 +1935,10 @@
       }
     );
 
+
+  /* =========================================================
+     EVENTS
+  ========================================================= */
 
   $("#searchBtn")
     .addEventListener(
@@ -2337,7 +1973,7 @@
     );
 
 
-  $("#menuMoreBtn")
+  $("#moreBtn")
     .addEventListener(
       "click",
       () => {
@@ -2360,21 +1996,7 @@
     );
 
 
-  $("#worldArrow")
-    .addEventListener(
-      "click",
-      openLocationModal
-    );
-
-
   $("#locationModalClose")
-    .addEventListener(
-      "click",
-      closeLocationModal
-    );
-
-
-  $("#locationModalBackdrop")
     .addEventListener(
       "click",
       closeLocationModal
@@ -2401,10 +2023,6 @@
     );
 
 
-  /* =========================================================
-     CATCH ME UP
-  ========================================================= */
-
   $("#catchupBtn")
     .addEventListener(
       "click",
@@ -2412,7 +2030,6 @@
 
         state.category =
           "All";
-
 
         state.speed =
           60;
@@ -2422,21 +2039,13 @@
 
 
         $("#topStories")
-          ?.scrollIntoView({
-
-            behavior:"smooth",
-
-            block:"start"
-
+          .scrollIntoView({
+            behavior:"smooth"
           });
 
       }
     );
 
-
-  /* =========================================================
-     VIEW ALL
-  ========================================================= */
 
   $("#viewAllBtn")
     .addEventListener(
@@ -2450,10 +2059,6 @@
       }
     );
 
-
-  /* =========================================================
-     PREMIUM
-  ========================================================= */
 
   $("#premiumBtn")
     .addEventListener(
@@ -2475,8 +2080,8 @@
 
 
   /*
-    If a saved GPS location exists,
-    load its weather immediately.
+    Existing saved GPS location:
+    load weather silently.
   */
 
   if(
@@ -2490,17 +2095,16 @@
 
 
   /*
-    First-time visitors:
-    ask for location automatically.
+    New visitor:
+    detect location silently.
+    NEVER open a location popup automatically.
   */
 
-  if(
-    !state.location
-  ){
+  if(!state.location){
 
     setTimeout(
       detectLocation,
-      900
+      700
     );
 
   }
