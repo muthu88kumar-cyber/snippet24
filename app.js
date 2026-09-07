@@ -1,102 +1,166 @@
 (() => {
   "use strict";
 
+  /*
+   * SNIPPET24 — PRODUCTION FRONTEND
+   *
+   * Important:
+   * - NEVER requests browser GPS permission.
+   * - Uses silent IP-based approximate location.
+   * - AROUND YOU = Near You / District / State only.
+   * - India / Global remain in the main navigation.
+   * - No language selector dependency.
+   * - External URLs are validated before being rendered.
+   */
+
   const state = {
     stories: [],
     category: "All",
     speed: 10,
-    location: JSON.parse(
-      localStorage.getItem("snippet24_location") || "null"
-    )
+    location: null
   };
 
+  const $ = (selector) =>
+    document.querySelector(selector);
 
-  const $ = s => document.querySelector(s);
-
-  const $$ = s => [
-    ...document.querySelectorAll(s)
-  ];
+  const $$ = (selector) =>
+    [...document.querySelectorAll(selector)];
 
 
-  const esc = value =>
+  /* =========================================================
+     SAFE HELPERS
+  ========================================================= */
+
+  const esc = (value) =>
     String(value ?? "").replace(
       /[&<>"']/g,
-      c => ({
-        "&":"&amp;",
-        "<":"&lt;",
-        ">":"&gt;",
-        '"':"&quot;",
-        "'":"&#39;"
-      }[c])
+      (char) =>
+        ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        })[char]
     );
 
 
-  function titleOf(s) {
+  function safeUrl(value) {
+    if (!value) return "";
 
+    try {
+      const url = new URL(
+        String(value),
+        window.location.origin
+      );
+
+      if (
+        url.protocol !== "https:" &&
+        url.protocol !== "http:"
+      ) {
+        return "";
+      }
+
+      return url.href;
+
+    } catch (_) {
+      return "";
+    }
+  }
+
+
+  function safeImageUrl(value) {
+    const url = safeUrl(value);
+
+    if (!url) return "";
+
+    return url;
+  }
+
+
+  function formatDate(value) {
+    const time = Date.parse(value || "");
+
+    if (!Number.isFinite(time)) {
+      return "";
+    }
+
+    return new Date(time).toLocaleDateString(
+      undefined,
+      {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+      }
+    );
+  }
+
+
+  /* =========================================================
+     STORY HELPERS
+  ========================================================= */
+
+  function titleOf(story) {
     return (
-      s?.title ||
-      s?.headline ||
-      s?.translations?.en?.title ||
+      story?.translations?.en?.title ||
+      story?.en?.title ||
+      story?.title ||
+      story?.headline ||
       ""
     );
-
   }
 
 
-  function summaryOf(s) {
-
+  function summaryOf(story) {
     return (
-      s?.summary ||
-      s?.translations?.en?.summary ||
+      story?.translations?.en?.summary ||
+      story?.en?.summary ||
+      story?.summary ||
       ""
     );
-
   }
 
 
-  function pointsOf(s) {
+  function pointsOf(story) {
+    const points =
+      story?.translations?.en?.key_points ||
+      story?.en?.key_points ||
+      story?.key_points ||
+      story?.snippet_lines ||
+      [];
 
-    return (
-      s?.key_points ||
-      s?.snippet_lines ||
-      s?.translations?.en?.key_points ||
-      []
-    );
-
+    return Array.isArray(points)
+      ? points
+      : [];
   }
 
 
-  function imageOf(s) {
-
+  function imageOf(story) {
     return (
-      s?.ai_image_url ||
-      s?.image ||
-      s?.image_url ||
-      s?.ai_image ||
+      story?.ai_image_url ||
+      story?.image ||
+      story?.image_url ||
+      story?.ai_image ||
       ""
     );
-
   }
 
 
-  function sourceOf(s) {
-
+  function sourceOf(story) {
     return (
-      s?.source_url ||
-      s?.original_source_url ||
-      s?.original_url ||
-      s?.url ||
+      story?.source_url ||
+      story?.original_source_url ||
+      story?.original_url ||
+      story?.url ||
       ""
     );
-
   }
 
 
-  function categoryOf(s) {
-
+  function categoryOf(story) {
     const raw =
-      s?.category ||
-      s?.section ||
+      story?.category ||
+      story?.section ||
       "India";
 
     if (raw === "In India") {
@@ -104,184 +168,875 @@
     }
 
     return raw;
-
   }
 
 
-  function storyLocation(s) {
-
-    const l =
-      s?.location ||
-      s?.geo ||
-      {};
-
-    return {
-
-      country:
-        String(l.country || "").toLowerCase(),
-
-      state:
-        String(l.state || "").toLowerCase(),
-
-      district:
-        String(l.district || "").toLowerCase(),
-
-      city:
-        String(
-          l.city ||
-          l.town ||
-          ""
-        ).toLowerCase(),
-
-      taluk:
-        String(
-          l.taluk ||
-          l.block ||
-          ""
-        ).toLowerCase(),
-
-      locality:
-        String(
-          l.locality ||
-          l.village ||
-          l.ward ||
-          ""
-        ).toLowerCase()
-
+  function importanceScore(story) {
+    const map = {
+      CRITICAL: 80,
+      HIGH: 50,
+      MEDIUM: 20,
+      LOW: 5
     };
 
+    return (
+      map[
+        String(
+          story?.importance || ""
+        ).toUpperCase()
+      ] || 10
+    );
   }
 
 
-  function locationScore(s) {
+  function freshnessScore(story) {
+    const time = Date.parse(
+      story?.published_at ||
+      story?.updated_at ||
+      ""
+    );
 
-    if (!state.location) {
+    if (!Number.isFinite(time)) {
       return 0;
     }
 
-    const sl =
-      storyLocation(s);
+    const hours =
+      (Date.now() - time) /
+      3600000;
 
-    const l =
-      Object.fromEntries(
-        Object.entries(state.location).map(
-          ([k,v]) => [
-            k,
-            String(v || "").toLowerCase()
-          ]
-        )
+    return Math.max(
+      0,
+      40 - hours
+    );
+  }
+
+
+  /* =========================================================
+     LOCATION
+  ========================================================= */
+
+  function loadSavedLocation() {
+    try {
+      const saved =
+        localStorage.getItem(
+          "snippet24_location"
+        );
+
+      if (!saved) {
+        return null;
+      }
+
+      const parsed =
+        JSON.parse(saved);
+
+      if (
+        parsed &&
+        typeof parsed === "object"
+      ) {
+        return parsed;
+      }
+
+    } catch (_) {}
+
+    return null;
+  }
+
+
+  function saveLocation(location) {
+    state.location = location;
+
+    try {
+      localStorage.setItem(
+        "snippet24_location",
+        JSON.stringify(location)
       );
+    } catch (_) {}
+  }
+
+
+  function storyLocation(story) {
+    const location =
+      story?.location ||
+      story?.geo ||
+      {};
+
+    return {
+      country: String(
+        location.country || ""
+      ).toLowerCase(),
+
+      state: String(
+        location.state || ""
+      ).toLowerCase(),
+
+      district: String(
+        location.district || ""
+      ).toLowerCase(),
+
+      city: String(
+        location.city ||
+        location.town ||
+        ""
+      ).toLowerCase(),
+
+      taluk: String(
+        location.taluk ||
+        location.block ||
+        ""
+      ).toLowerCase(),
+
+      locality: String(
+        location.locality ||
+        location.village ||
+        location.ward ||
+        ""
+      ).toLowerCase()
+    };
+  }
+
+
+  function locationScore(story) {
+    const current =
+      state.location;
+
+    if (!current) {
+      return 0;
+    }
+
+    const storyLoc =
+      storyLocation(story);
+
+    const currentLoc = {
+      country: String(
+        current.country || ""
+      ).toLowerCase(),
+
+      state: String(
+        current.state || ""
+      ).toLowerCase(),
+
+      district: String(
+        current.district || ""
+      ).toLowerCase(),
+
+      city: String(
+        current.city || ""
+      ).toLowerCase(),
+
+      taluk: String(
+        current.taluk || ""
+      ).toLowerCase(),
+
+      locality: String(
+        current.locality || ""
+      ).toLowerCase()
+    };
 
     let score = 0;
 
 
     if (
-      l.locality &&
-      sl.locality &&
-      l.locality === sl.locality
+      currentLoc.locality &&
+      storyLoc.locality &&
+      currentLoc.locality ===
+      storyLoc.locality
     ) {
       score += 120;
     }
 
 
     if (
-      l.taluk &&
-      sl.taluk &&
-      l.taluk === sl.taluk
+      currentLoc.taluk &&
+      storyLoc.taluk &&
+      currentLoc.taluk ===
+      storyLoc.taluk
     ) {
       score += 95;
     }
 
 
     if (
-      l.city &&
-      sl.city &&
-      l.city === sl.city
+      currentLoc.city &&
+      storyLoc.city &&
+      currentLoc.city ===
+      storyLoc.city
     ) {
       score += 75;
     }
 
 
     if (
-      l.district &&
-      sl.district &&
-      l.district === sl.district
+      currentLoc.district &&
+      storyLoc.district &&
+      currentLoc.district ===
+      storyLoc.district
     ) {
       score += 55;
     }
 
 
     if (
-      l.state &&
-      sl.state &&
-      l.state === sl.state
+      currentLoc.state &&
+      storyLoc.state &&
+      currentLoc.state ===
+      storyLoc.state
     ) {
       score += 30;
     }
 
 
     return score;
-
   }
 
 
-  function importanceScore(s) {
+  /*
+   * We deliberately DO NOT use:
+   *
+   * navigator.geolocation
+   *
+   * This prevents the browser from asking:
+   * "Allow Snippet24 to use your location?"
+   */
 
-    const map = {
-      CRITICAL:80,
-      HIGH:50,
-      MEDIUM:20,
-      LOW:5
-    };
 
-    return (
-      map[
-        String(
-          s?.importance || ""
-        ).toUpperCase()
-      ] || 10
+  async function detectLocation() {
+
+    setWeatherDisplay(
+      "--°",
+      "Finding your area",
+      "Detecting automatically…",
+      "📍"
     );
 
-  }
+
+    try {
+
+      const response =
+        await fetch(
+          "https://ipapi.co/json/",
+          {
+            cache: "no-store"
+          }
+        );
 
 
-  function freshnessScore(s) {
+      if (!response.ok) {
+        throw new Error(
+          "Location service unavailable"
+        );
+      }
 
-    const t =
-      Date.parse(
-        s?.published_at ||
-        s?.updated_at ||
-        ""
+
+      const data =
+        await response.json();
+
+
+      const latitude =
+        Number(data.latitude);
+
+      const longitude =
+        Number(data.longitude);
+
+
+      if (
+        !data.city &&
+        !data.region
+      ) {
+        throw new Error(
+          "Location name unavailable"
+        );
+      }
+
+
+      let location = {
+
+        country:
+          data.country_name ||
+          data.country ||
+          "",
+
+        state:
+          data.region ||
+          "",
+
+        district:
+          "",
+
+        city:
+          data.city ||
+          "",
+
+        taluk:
+          "",
+
+        locality:
+          data.city ||
+          "",
+
+        lat:
+          Number.isFinite(latitude)
+            ? latitude
+            : null,
+
+        lon:
+          Number.isFinite(longitude)
+            ? longitude
+            : null,
+
+        source:
+          "ip"
+
+      };
+
+
+      /*
+       * Try to improve district/local
+       * information using the approximate
+       * IP coordinates.
+       *
+       * This is still completely silent.
+       */
+
+      if (
+        Number.isFinite(latitude) &&
+        Number.isFinite(longitude)
+      ) {
+
+        try {
+
+          const reverse =
+            await reverseGeocode(
+              latitude,
+              longitude
+            );
+
+
+          location = {
+            ...location,
+            ...reverse,
+            lat: latitude,
+            lon: longitude,
+            source: "ip"
+          };
+
+        } catch (_) {
+
+          /*
+           * IP city/state information
+           * remains valid if reverse
+           * geocoding fails.
+           */
+
+        }
+
+      }
+
+
+      saveLocation(location);
+
+      await updateWeather();
+
+      render();
+
+    } catch (_) {
+
+      setWeatherDisplay(
+        "--°",
+        "Location unavailable",
+        "Weather unavailable",
+        "📍"
       );
 
-    if (!Number.isFinite(t)) {
-      return 0;
-    }
+      renderCounts();
 
-    return Math.max(
-      0,
-      40 -
-      (
-        (Date.now() - t) /
-        3600000
-      )
-    );
+    }
 
   }
 
 
-  function filtered() {
+  async function reverseGeocode(
+    latitude,
+    longitude
+  ) {
+
+    const url =
+      "https://api.bigdatacloud.net/data/" +
+      "reverse-geocode-client" +
+      `?latitude=${encodeURIComponent(latitude)}` +
+      `&longitude=${encodeURIComponent(longitude)}` +
+      "&localityLanguage=en";
+
+
+    const response =
+      await fetch(
+        url,
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+      throw new Error(
+        "Reverse geocoding failed"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const address =
+      data.address || {};
+
+
+    const admin =
+      data.localityInfo?.administrative ||
+      [];
+
+
+    const district =
+      admin.find(
+        item =>
+          /district/i.test(
+            item.description || ""
+          )
+      );
+
+
+    return {
+
+      country:
+        address.countryName ||
+        data.countryName ||
+        "",
+
+      state:
+        address.principalSubdivision ||
+        "",
+
+      district:
+        district?.name ||
+        "",
+
+      city:
+        address.city ||
+        address.town ||
+        address.village ||
+        address.locality ||
+        "",
+
+      taluk:
+        address.municipality ||
+        address.suburb ||
+        "",
+
+      locality:
+        address.village ||
+        address.locality ||
+        address.city ||
+        address.town ||
+        ""
+
+    };
+
+  }
+
+
+  /* =========================================================
+     WEATHER
+  ========================================================= */
+
+  function weatherDescription(code) {
+
+    const value =
+      Number(code);
+
+
+    if (value === 0) {
+      return [
+        "☀️",
+        "Clear"
+      ];
+    }
+
+
+    if (
+      [1, 2].includes(value)
+    ) {
+      return [
+        "🌤️",
+        "Partly cloudy"
+      ];
+    }
+
+
+    if (value === 3) {
+      return [
+        "☁️",
+        "Cloudy"
+      ];
+    }
+
+
+    if (
+      [45, 48].includes(value)
+    ) {
+      return [
+        "🌫️",
+        "Foggy"
+      ];
+    }
+
+
+    if (
+      [51, 53, 55, 56, 57].includes(value)
+    ) {
+      return [
+        "🌦️",
+        "Drizzle"
+      ];
+    }
+
+
+    if (
+      [61, 63, 65, 66, 67].includes(value)
+    ) {
+      return [
+        "🌧️",
+        "Rain"
+      ];
+    }
+
+
+    if (
+      [71, 73, 75, 77].includes(value)
+    ) {
+      return [
+        "❄️",
+        "Snow"
+      ];
+    }
+
+
+    if (
+      [80, 81, 82].includes(value)
+    ) {
+      return [
+        "🌦️",
+        "Showers"
+      ];
+    }
+
+
+    if (
+      [95, 96, 99].includes(value)
+    ) {
+      return [
+        "⛈️",
+        "Thunderstorm"
+      ];
+    }
+
+
+    return [
+      "🌤️",
+      "Weather"
+    ];
+
+  }
+
+
+  function setWeatherDisplay(
+    temperature,
+    location,
+    condition,
+    icon
+  ) {
+
+    const temp =
+      $("#weatherTemp");
+
+    const place =
+      $("#weatherLocation");
+
+    const description =
+      $("#weatherCondition");
+
+    const weatherIcon =
+      $("#weatherIcon");
+
+
+    if (temp) {
+      temp.textContent =
+        temperature;
+    }
+
+
+    if (place) {
+      place.textContent =
+        location;
+    }
+
+
+    if (description) {
+      description.textContent =
+        condition;
+    }
+
+
+    if (weatherIcon) {
+      weatherIcon.textContent =
+        icon;
+    }
+
+  }
+
+
+  async function updateWeather() {
+
+    const location =
+      state.location;
+
+
+    if (!location) {
+
+      setWeatherDisplay(
+        "--°",
+        "Finding your area",
+        "Weather updating…",
+        "📍"
+      );
+
+      return;
+
+    }
+
+
+    const place =
+      location.city ||
+      location.locality ||
+      location.district ||
+      location.state ||
+      "Your area";
+
+
+    if (
+      !Number.isFinite(
+        Number(location.lat)
+      ) ||
+      !Number.isFinite(
+        Number(location.lon)
+      )
+    ) {
+
+      setWeatherDisplay(
+        "--°",
+        place,
+        "Weather unavailable",
+        "📍"
+      );
+
+      return;
+
+    }
+
+
+    try {
+
+      const url =
+        "https://api.open-meteo.com/v1/forecast" +
+        `?latitude=${encodeURIComponent(location.lat)}` +
+        `&longitude=${encodeURIComponent(location.lon)}` +
+        "&current=temperature_2m,weather_code" +
+        "&timezone=auto" +
+        "&forecast_days=1";
+
+
+      const response =
+        await fetch(
+          url,
+          {
+            cache: "no-store"
+          }
+        );
+
+
+      if (!response.ok) {
+        throw new Error(
+          "Weather unavailable"
+        );
+      }
+
+
+      const data =
+        await response.json();
+
+
+      const temperature =
+        Number(
+          data.current?.temperature_2m
+        );
+
+
+      const weatherCode =
+        Number(
+          data.current?.weather_code
+        );
+
+
+      const [
+        icon,
+        condition
+      ] =
+        weatherDescription(
+          weatherCode
+        );
+
+
+      setWeatherDisplay(
+
+        Number.isFinite(temperature)
+          ? `${Math.round(temperature)}°`
+          : "--°",
+
+        place,
+
+        condition,
+
+        icon
+
+      );
+
+    } catch (_) {
+
+      setWeatherDisplay(
+        "--°",
+        place,
+        "Weather unavailable",
+        "📍"
+      );
+
+    }
+
+  }
+
+
+  /* =========================================================
+     NEWS FEED
+  ========================================================= */
+
+  async function loadStories() {
+
+    setStatus(
+      "Finding the signal…"
+    );
+
+
+    let data = null;
+
+
+    /*
+     * First try API.
+     */
+
+    try {
+
+      const response =
+        await fetch(
+          "./api/stories",
+          {
+            cache: "no-store"
+          }
+        );
+
+
+      if (response.ok) {
+        data =
+          await response.json();
+      }
+
+    } catch (_) {}
+
+
+    /*
+     * GitHub Pages / static fallback.
+     */
+
+    if (!data) {
+
+      try {
+
+        const response =
+          await fetch(
+            "./articles.json",
+            {
+              cache: "no-store"
+            }
+          );
+
+
+        if (response.ok) {
+          data =
+            await response.json();
+        }
+
+      } catch (_) {}
+
+    }
+
+
+    if (Array.isArray(data)) {
+
+      state.stories =
+        data;
+
+    } else if (
+      Array.isArray(data?.stories)
+    ) {
+
+      state.stories =
+        data.stories;
+
+    } else if (
+      Array.isArray(data?.articles)
+    ) {
+
+      state.stories =
+        data.articles;
+
+    } else {
+
+      state.stories =
+        [];
+
+    }
+
+
+    render();
+
+  }
+
+
+  function filteredStories() {
 
     return state.stories
 
       .filter(
-        s =>
+        story =>
+          titleOf(story)
+      )
+
+      .filter(
+        story =>
           state.category === "All" ||
-          categoryOf(s) === state.category
+          categoryOf(story) ===
+          state.category
       )
 
       .sort(
-        (a,b) =>
+        (a, b) =>
           (
             locationScore(b) +
             importanceScore(b) +
@@ -297,88 +1052,18 @@
   }
 
 
-  async function loadStories() {
-
-    setStatus(
-      "Finding the signal…"
-    );
-
-    let data = null;
-
-
-    try {
-
-      const r =
-        await fetch(
-          "./api/stories",
-          {
-            cache:"no-store"
-          }
-        );
-
-      if (r.ok) {
-        data = await r.json();
-      }
-
-    } catch (_) {}
-
-
-    if (!data) {
-
-      try {
-
-        const r =
-          await fetch(
-            "./articles.json",
-            {
-              cache:"no-store"
-            }
-          );
-
-        if (r.ok) {
-          data = await r.json();
-        }
-
-      } catch (_) {}
-
-    }
-
-
-    if (Array.isArray(data)) {
-
-      state.stories = data;
-
-    } else if (
-      Array.isArray(data?.stories)
-    ) {
-
-      state.stories = data.stories;
-
-    } else if (
-      Array.isArray(data?.articles)
-    ) {
-
-      state.stories = data.articles;
-
-    } else {
-
-      state.stories = [];
-
-    }
-
-
-    render();
-
-  }
-
+  /* =========================================================
+     RENDER
+  ========================================================= */
 
   function setStatus(text) {
 
-    const el =
+    const element =
       $("#status");
 
-    if (el) {
-      el.textContent = text;
+    if (element) {
+      element.textContent =
+        text;
     }
 
   }
@@ -386,14 +1071,24 @@
 
   function render() {
 
-    const all =
-      filtered();
+    const stories =
+      filteredStories();
 
-    renderHeroStories(all);
 
-    renderMoreStories(all);
+    renderHeroStories(
+      stories
+    );
 
-    renderTicker(all);
+
+    renderMoreStories(
+      stories
+    );
+
+
+    renderTicker(
+      stories
+    );
+
 
     renderCounts();
 
@@ -401,8 +1096,8 @@
 
 
     setStatus(
-      all.length
-        ? `${all.length} stories • updated now`
+      stories.length
+        ? `${stories.length} stories • updated now`
         : "No published stories available yet."
     );
 
@@ -411,10 +1106,11 @@
 
   function renderHeroStories(stories) {
 
-    const box =
+    const container =
       $("#topStories");
 
-    if (!box) {
+
+    if (!container) {
       return;
     }
 
@@ -422,14 +1118,16 @@
     const first =
       stories[0];
 
+
     const rest =
-      stories.slice(1,4);
+      stories.slice(1, 4);
 
 
     if (!first) {
 
-      box.innerHTML = `
-        <div class="lead-story">
+      container.innerHTML = `
+
+        <article class="lead-story">
 
           <div class="lead-copy">
 
@@ -442,13 +1140,13 @@
             </h3>
 
             <p>
-              Publish stories to articles.json
-              or connect the /api/stories feed.
+              The Snippet24 news feed is waiting for published stories.
             </p>
 
           </div>
 
-        </div>
+        </article>
+
       `;
 
       return;
@@ -456,15 +1154,17 @@
     }
 
 
-    const img =
-      imageOf(first);
+    const image =
+      safeImageUrl(
+        imageOf(first)
+      );
 
 
-    const imageTag =
-      img
+    const imageHTML =
+      image
         ? `
           <img
-            src="${esc(img)}"
+            src="${esc(image)}"
             alt=""
             loading="eager"
             onerror="this.remove()"
@@ -473,22 +1173,34 @@
         : "";
 
 
-    const pts =
+    const source =
+      safeUrl(
+        sourceOf(first)
+      );
+
+
+    const points =
       pointsOf(first)
-        .slice(0,3)
-        .map(esc)
+        .slice(0, 3)
+        .map(
+          item =>
+            esc(item)
+        )
         .join(" • ");
 
 
-    const source =
-      sourceOf(first);
+    const date =
+      formatDate(
+        first.published_at ||
+        first.updated_at
+      );
 
 
-    box.innerHTML = `
+    container.innerHTML = `
 
       <article class="lead-story">
 
-        ${imageTag}
+        ${imageHTML}
 
         <div class="shade"></div>
 
@@ -503,37 +1215,33 @@
 
           <h3>
             ${esc(
-              titleOf(first) ||
-              "Story title unavailable"
+              titleOf(first)
             )}
           </h3>
 
           <p>
             ${esc(
               summaryOf(first) ||
-              pts ||
+              points ||
               "The latest important development, explained simply."
             )}
           </p>
 
           <div class="lead-meta">
 
-            ${esc(categoryOf(first))}
+            ${esc(
+              categoryOf(first)
+            )}
 
             ${
-              first.published_at
-                ? " • " +
-                  esc(
-                    new Date(
-                      first.published_at
-                    ).toLocaleDateString()
-                  )
+              date
+                ? ` • ${esc(date)}`
                 : ""
             }
 
             ${
               source
-                ? " • Original source"
+                ? " • Verified source"
                 : ""
             }
 
@@ -549,7 +1257,12 @@
         ${
           rest.length
             ? rest
-                .map(sideCard)
+                .map(
+                  story =>
+                    renderSideCard(
+                      story
+                    )
+                )
                 .join("")
 
             : `
@@ -561,7 +1274,7 @@
                 <div>
 
                   <h3>
-                    More stories will appear as the feed grows.
+                    More important stories will appear here.
                   </h3>
 
                   <small>
@@ -582,10 +1295,12 @@
   }
 
 
-  function sideCard(s) {
+  function renderSideCard(story) {
 
-    const img =
-      imageOf(s);
+    const image =
+      safeImageUrl(
+        imageOf(story)
+      );
 
 
     return `
@@ -593,40 +1308,39 @@
       <article class="side-card">
 
         ${
-          img
-
+          image
             ? `
               <img
-                src="${esc(img)}"
+                src="${esc(image)}"
                 alt=""
                 loading="lazy"
+                onerror="this.style.visibility='hidden'"
               >
             `
-
             : `
-              <div class="story-image"></div>
+              <div></div>
             `
         }
-
 
         <div>
 
           <span class="signal">
             ${esc(
-              s.signal ||
-              categoryOf(s)
+              story.signal ||
+              categoryOf(story)
             )}
           </span>
 
           <h3>
             ${esc(
-              titleOf(s) ||
-              "Story title unavailable"
+              titleOf(story)
             )}
           </h3>
 
           <small>
-            ${esc(categoryOf(s))}
+            ${esc(
+              categoryOf(story)
+            )}
           </small>
 
         </div>
@@ -640,150 +1354,191 @@
 
   function renderMoreStories(stories) {
 
-    const box =
+    const container =
       $("#stories");
 
-    if (!box) {
+
+    if (!container) {
       return;
     }
 
 
     const items =
-      stories.slice(0,8);
+      stories.slice(0, 10);
 
 
-    box.innerHTML =
-      items.length
+    if (!items.length) {
 
-        ? items.map(s => {
+      container.innerHTML = `
 
-            const img =
-              imageOf(s);
+        <div class="story-row">
 
-            const src =
-              sourceOf(s);
+          <div></div>
 
+          <div>
 
-            const body = `
+            <h3>
+              No stories found yet.
+            </h3>
 
-              ${
-                img
-
-                  ? `
-                    <img
-                      src="${esc(img)}"
-                      alt=""
-                      loading="lazy"
-                    >
-                  `
-
-                  : `
-                    <img
-                      src=""
-                      alt=""
-                      aria-hidden="true"
-                    >
-                  `
-              }
-
-
-              <div>
-
-                <h3>
-                  ${esc(
-                    titleOf(s) ||
-                    "Story title unavailable"
-                  )}
-                </h3>
-
-                <p>
-                  ${esc(
-                    summaryOf(s) ||
-                    pointsOf(s)[0] ||
-                    "Understand what happened and why it matters."
-                  )}
-                </p>
-
-              </div>
-
-
-              <span class="go">
-                ›
-              </span>
-
-            `;
-
-
-            return src
-
-              ? `
-                <a
-                  class="story-row"
-                  href="${esc(src)}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ${body}
-                </a>
-              `
-
-              : `
-                <div class="story-row">
-                  ${body}
-                </div>
-              `;
-
-          }).join("")
-
-
-        : `
-
-          <div class="story-row">
-
-            <div></div>
-
-            <div>
-
-              <h3>
-                No stories found yet.
-              </h3>
-
-              <p>
-                Connect the news feed to start publishing.
-              </p>
-
-            </div>
+            <p>
+              Connect the Snippet24 news feed to start publishing.
+            </p>
 
           </div>
 
-        `;
+          <span class="go">
+            ›
+          </span>
+
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    container.innerHTML =
+      items
+        .map(
+          story =>
+            renderStoryRow(
+              story
+            )
+        )
+        .join("");
+
+  }
+
+
+  function renderStoryRow(story) {
+
+    const image =
+      safeImageUrl(
+        imageOf(story)
+      );
+
+
+    const source =
+      safeUrl(
+        sourceOf(story)
+      );
+
+
+    const body = `
+
+      ${
+        image
+
+          ? `
+            <img
+              src="${esc(image)}"
+              alt=""
+              loading="lazy"
+              onerror="this.style.visibility='hidden'"
+            >
+          `
+
+          : `
+            <img
+              src=""
+              alt=""
+              aria-hidden="true"
+            >
+          `
+      }
+
+
+      <div>
+
+        <h3>
+          ${esc(
+            titleOf(story)
+          )}
+        </h3>
+
+        <p>
+          ${esc(
+            summaryOf(story) ||
+            pointsOf(story)[0] ||
+            "Understand what happened and why it matters."
+          )}
+        </p>
+
+      </div>
+
+
+      <span class="go">
+        ›
+      </span>
+
+    `;
+
+
+    if (source) {
+
+      return `
+
+        <a
+          class="story-row"
+          href="${esc(source)}"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+
+          ${body}
+
+        </a>
+
+      `;
+
+    }
+
+
+    return `
+
+      <div class="story-row">
+
+        ${body}
+
+      </div>
+
+    `;
 
   }
 
 
   function renderTicker(stories) {
 
-    const el =
+    const element =
       $("#tickerTrack");
 
-    if (!el) {
+
+    if (!element) {
       return;
     }
 
 
     const items =
-      stories.slice(0,10);
+      stories.slice(0, 10);
 
 
     if (!items.length) {
 
-      el.innerHTML = `
+      element.innerHTML = `
+
         <span>
+
           <strong>
             LIVE
           </strong>
+
           Waiting for the latest Snippet24 signal…
+
         </span>
+
       `;
 
       return;
@@ -794,99 +1549,181 @@
     const line =
       items
         .map(
-          s => `
-            <span>
-              <strong>
-                ●
-              </strong>
+          story =>
+            `
 
-              ${esc(
-                titleOf(s)
-              )}
+              <span>
 
-            </span>
-          `
+                <strong>
+                  ●
+                </strong>
+
+                ${esc(
+                  titleOf(story)
+                )}
+
+              </span>
+
+            `
         )
         .join("");
 
 
-    el.innerHTML =
+    element.innerHTML =
       line + line;
 
   }
 
 
+  /* =========================================================
+     AROUND YOU
+  ========================================================= */
+
   function renderCounts() {
 
-    const relevant =
+    const stories =
       state.stories;
 
 
+    if (!state.location) {
+
+      if ($("#nearCount")) {
+        $("#nearCount")
+          .textContent = "—";
+      }
+
+      if ($("#districtCount")) {
+        $("#districtCount")
+          .textContent = "—";
+      }
+
+      if ($("#stateCount")) {
+        $("#stateCount")
+          .textContent = "—";
+      }
+
+      return;
+
+    }
+
+
     const near =
-      relevant.filter(
-        s =>
-          locationScore(s) >= 70
+      stories.filter(
+        story =>
+          locationScore(story) >= 70
       ).length;
 
 
     const district =
-      relevant.filter(
-        s =>
-          locationScore(s) >= 55
+      stories.filter(
+        story =>
+          locationScore(story) >= 55
       ).length;
 
 
-    const stateN =
-      relevant.filter(
-        s =>
-          locationScore(s) >= 30
+    const stateNews =
+      stories.filter(
+        story =>
+          locationScore(story) >= 30
       ).length;
 
 
-    const nearEl =
-      $("#nearCount");
+    if ($("#nearCount")) {
 
-    const districtEl =
-      $("#districtCount");
+      $("#nearCount")
+        .textContent =
+        near;
 
-    const stateEl =
-      $("#stateCount");
-
-
-    if (nearEl) {
-      nearEl.textContent =
-        state.location
-          ? near
-          : "—";
     }
 
 
-    if (districtEl) {
-      districtEl.textContent =
-        state.location
-          ? district
-          : "—";
+    if ($("#districtCount")) {
+
+      $("#districtCount")
+        .textContent =
+        district;
+
     }
 
 
-    if (stateEl) {
-      stateEl.textContent =
-        state.location
-          ? stateN
-          : "—";
+    if ($("#stateCount")) {
+
+      $("#stateCount")
+        .textContent =
+        stateNews;
+
     }
 
   }
 
 
+  function showLocalStories() {
+
+    if (!state.location) {
+
+      setStatus(
+        "Finding local stories around you…"
+      );
+
+      detectLocation();
+
+      return;
+
+    }
+
+
+    const localStories =
+      state.stories
+        .filter(
+          story =>
+            locationScore(story) >= 30
+        )
+        .sort(
+          (a, b) =>
+            (
+              locationScore(b) +
+              freshnessScore(b)
+            ) -
+            (
+              locationScore(a) +
+              freshnessScore(a)
+            )
+        );
+
+
+    renderMoreStories(
+      localStories
+    );
+
+
+    setStatus(
+      localStories.length
+        ? `${localStories.length} local stories around you`
+        : "No local stories available yet."
+    );
+
+
+    $("#stories")
+      ?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+  }
+
+
+  /* =========================================================
+     CONTROLS
+  ========================================================= */
+
   function syncControls() {
 
     $$("[data-category]")
       .forEach(
-        el =>
-          el.classList.toggle(
+        element =>
+          element.classList.toggle(
             "active",
-            el.dataset.category ===
+            element.dataset.category ===
             state.category
           )
       );
@@ -894,11 +1731,12 @@
 
     $$("[data-speed]")
       .forEach(
-        el =>
-          el.classList.toggle(
+        element =>
+          element.classList.toggle(
             "active",
-            Number(el.dataset.speed) ===
-            state.speed
+            Number(
+              element.dataset.speed
+            ) === state.speed
           )
       );
 
@@ -913,6 +1751,7 @@
     state.category =
       category;
 
+
     render();
 
 
@@ -920,8 +1759,8 @@
 
       $("#stories")
         ?.scrollIntoView({
-          behavior:"smooth",
-          block:"start"
+          behavior: "smooth",
+          block: "start"
         });
 
     }
@@ -929,10 +1768,15 @@
   }
 
 
+  /* =========================================================
+     SEARCH
+  ========================================================= */
+
   function openSearch() {
 
     const overlay =
       $("#searchOverlay");
+
 
     if (!overlay) {
       return;
@@ -943,12 +1787,22 @@
       false;
 
 
-    setTimeout(
-      () =>
-        $("#searchInput")
-          ?.focus(),
-      20
-    );
+    $("#searchInput")
+      ?.focus();
+
+  }
+
+
+  function closeSearch() {
+
+    const overlay =
+      $("#searchOverlay");
+
+
+    if (overlay) {
+      overlay.hidden =
+        true;
+    }
 
   }
 
@@ -958,13 +1812,14 @@
     const box =
       $("#searchResults");
 
+
     if (!box) {
       return;
     }
 
 
     const q =
-      query
+      String(query || "")
         .trim()
         .toLowerCase();
 
@@ -981,116 +1836,172 @@
 
     const results =
       state.stories
-        .filter(s => {
+        .filter(
+          story => {
 
-          const hay = [
+            const text = [
 
-            titleOf(s),
+              titleOf(story),
 
-            summaryOf(s),
+              summaryOf(story),
 
-            ...(pointsOf(s) || []),
+              ...pointsOf(story),
 
-            categoryOf(s)
+              categoryOf(story)
 
-          ]
-            .join(" ")
-            .toLowerCase();
+            ]
+              .join(" ")
+              .toLowerCase();
 
 
-          return hay.includes(q);
+            return text.includes(q);
 
-        })
-        .slice(0,10);
+          }
+        )
+        .slice(0, 10);
+
+
+    if (!results.length) {
+
+      box.innerHTML = `
+
+        <div class="search-result">
+
+          No matching story yet.
+
+        </div>
+
+      `;
+
+      return;
+
+    }
 
 
     box.innerHTML =
+      results
+        .map(
+          story => {
 
-      results.length
-
-        ? results
-            .map(s => {
-
-              const src =
-                sourceOf(s);
+            const source =
+              safeUrl(
+                sourceOf(story)
+              );
 
 
-              const html = `
+            const content = `
 
-                <strong>
-                  ${esc(
-                    titleOf(s)
-                  )}
-                </strong>
+              <strong>
+                ${esc(
+                  titleOf(story)
+                )}
+              </strong>
 
-                <br>
+              <br>
 
-                <small>
-                  ${esc(
-                    categoryOf(s)
-                  )}
-                </small>
+              <small>
+                ${esc(
+                  categoryOf(story)
+                )}
+              </small>
+
+            `;
+
+
+            if (source) {
+
+              return `
+
+                <a
+                  class="search-result"
+                  href="${esc(source)}"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+
+                  ${content}
+
+                </a>
 
               `;
 
-
-              return src
-
-                ? `
-                  <a
-                    class="search-result"
-                    href="${esc(src)}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ${html}
-                  </a>
-                `
-
-                : `
-                  <div class="search-result">
-                    ${html}
-                  </div>
-                `;
-
-            })
-            .join("")
+            }
 
 
-        : `
-          <div class="search-result">
-            No matching story yet.
-          </div>
-        `;
+            return `
+
+              <div class="search-result">
+
+                ${content}
+
+              </div>
+
+            `;
+
+          }
+        )
+        .join("");
 
   }
 
 
+  /* =========================================================
+     MANUAL LOCATION
+  ========================================================= */
+
   function openLocationModal() {
-
-    const l =
-      state.location ||
-      {};
-
-
-    $("#manualState").value =
-      l.state || "";
-
-    $("#manualDistrict").value =
-      l.district || "";
-
-    $("#manualCity").value =
-      l.city || "";
-
-    $("#manualTaluk").value =
-      l.taluk || "";
-
-    $("#manualLocality").value =
-      l.locality || "";
-
 
     const modal =
       $("#locationModal");
+
+
+    if (!modal) {
+      return;
+    }
+
+
+    const location =
+      state.location || {};
+
+
+    if ($("#manualState")) {
+
+      $("#manualState").value =
+        location.state || "";
+
+    }
+
+
+    if ($("#manualDistrict")) {
+
+      $("#manualDistrict").value =
+        location.district || "";
+
+    }
+
+
+    if ($("#manualCity")) {
+
+      $("#manualCity").value =
+        location.city || "";
+
+    }
+
+
+    if ($("#manualTaluk")) {
+
+      $("#manualTaluk").value =
+        location.taluk || "";
+
+    }
+
+
+    if ($("#manualLocality")) {
+
+      $("#manualLocality").value =
+        location.locality || "";
+
+    }
 
 
     modal.hidden =
@@ -1109,6 +2020,7 @@
 
     const modal =
       $("#locationModal");
+
 
     if (!modal) {
       return;
@@ -1129,48 +2041,78 @@
 
   function saveManualLocation() {
 
-    state.location = {
+    const city =
+      $("#manualCity")
+        ?.value
+        .trim() || "";
+
+
+    const district =
+      $("#manualDistrict")
+        ?.value
+        .trim() || "";
+
+
+    const selectedState =
+      $("#manualState")
+        ?.value
+        .trim() || "";
+
+
+    const taluk =
+      $("#manualTaluk")
+        ?.value
+        .trim() || "";
+
+
+    const locality =
+      $("#manualLocality")
+        ?.value
+        .trim() || "";
+
+
+    if (
+      !city &&
+      !district &&
+      !selectedState &&
+      !locality
+    ) {
+
+      return;
+
+    }
+
+
+    saveLocation({
 
       country:
         "India",
 
       state:
-        $("#manualState")
-          .value
-          .trim(),
+        selectedState,
 
       district:
-        $("#manualDistrict")
-          .value
-          .trim(),
+        district,
 
       city:
-        $("#manualCity")
-          .value
-          .trim(),
+        city,
 
       taluk:
-        $("#manualTaluk")
-          .value
-          .trim(),
+        taluk,
 
       locality:
-        $("#manualLocality")
-          .value
-          .trim(),
+        locality,
+
+      lat:
+        null,
+
+      lon:
+        null,
 
       source:
         "manual"
 
-    };
-
-
-    localStorage.setItem(
-      "snippet24_location",
-      JSON.stringify(
-        state.location
-      )
-    );
+    });
 
 
     closeLocationModal();
@@ -1182,611 +2124,60 @@
   }
 
 
-  /*
-    SILENT LOCATION DETECTION
+  /* =========================================================
+     MENU
+  ========================================================= */
 
-    IMPORTANT:
-    This NEVER uses navigator.geolocation.
-    Therefore it does NOT request
-    the iPhone "Allow Location" permission.
-  */
+  function toggleMenu() {
 
-  async function detectLocation(
-    {
-      showModalOnFail = false
-    } = {}
-  ) {
+    const menu =
+      $("#mobileMenu");
 
-    setWeatherText(
-      "--°",
-      "Finding your area",
-      "Detecting automatically…",
-      "📍"
-    );
 
+    const button =
+      $("#menuBtn");
 
-    try {
 
-      const r =
-        await fetch(
-          "https://ipapi.co/json/",
-          {
-            cache:"no-store"
-          }
-        );
-
-
-      if (!r.ok) {
-        throw new Error(
-          "IP location failed"
-        );
-      }
-
-
-      const d =
-        await r.json();
-
-
-      const lat =
-        Number(d.latitude);
-
-      const lon =
-        Number(d.longitude);
-
-
-      let location = {
-
-        country:
-          d.country_name || "",
-
-        state:
-          d.region || "",
-
-        district:
-          "",
-
-        city:
-          d.city || "",
-
-        taluk:
-          "",
-
-        locality:
-          d.city || "",
-
-        lat:
-          Number.isFinite(lat)
-            ? lat
-            : null,
-
-        lon:
-          Number.isFinite(lon)
-            ? lon
-            : null,
-
-        source:
-          "ip"
-
-      };
-
-
-      /*
-        Improve district / town information
-        using the approximate IP coordinates.
-      */
-
-      if (
-        Number.isFinite(lat) &&
-        Number.isFinite(lon)
-      ) {
-
-        try {
-
-          const g =
-            await reverseGeocode(
-              lat,
-              lon
-            );
-
-
-          location = {
-
-            ...location,
-
-            ...g,
-
-            lat,
-
-            lon,
-
-            source:
-              "ip"
-
-          };
-
-        } catch (_) {}
-
-      }
-
-
-      if (
-        !location.city &&
-        !location.state
-      ) {
-
-        throw new Error(
-          "No location name returned"
-        );
-
-      }
-
-
-      state.location =
-        location;
-
-
-      localStorage.setItem(
-        "snippet24_location",
-        JSON.stringify(
-          state.location
-        )
-      );
-
-
-      closeLocationModal();
-
-
-      await updateWeather();
-
-
-      render();
-
-    }
-
-
-    catch (_) {
-
-      setWeatherText(
-        "--°",
-        "Location unavailable",
-        "Weather unavailable",
-        "📍"
-      );
-
-
-      renderCounts();
-
-
-      /*
-        Automatic startup never opens
-        the location popup.
-
-        The popup can only be opened
-        when the user taps Change.
-      */
-
-      if (showModalOnFail) {
-        openLocationModal();
-      }
-
-    }
-
-  }
-
-
-  async function reverseGeocode(
-    lat,
-    lon
-  ) {
-
-    const url =
-      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
-
-
-    const r =
-      await fetch(
-        url,
-        {
-          cache:"no-store"
-        }
-      );
-
-
-    if (!r.ok) {
-      throw new Error(
-        "Reverse geocoding failed"
-      );
-    }
-
-
-    const d =
-      await r.json();
-
-
-    const a =
-      d.address || {};
-
-
-    const admin =
-      d.localityInfo?.administrative ||
-      [];
-
-
-    const districtItem =
-      admin.find(
-        x =>
-          /district/i.test(
-            x.description || ""
-          )
-      );
-
-
-    return {
-
-      country:
-        a.countryName ||
-        d.countryName ||
-        "",
-
-      state:
-        a.principalSubdivision ||
-        "",
-
-      district:
-        districtItem?.name ||
-        a.locality ||
-        "",
-
-      city:
-        a.city ||
-        a.locality ||
-        a.town ||
-        a.village ||
-        "",
-
-      taluk:
-        a.suburb ||
-        a.municipality ||
-        "",
-
-      locality:
-        a.locality ||
-        a.village ||
-        a.city ||
-        a.town ||
-        ""
-
-    };
-
-  }
-
-
-  function weatherDescription(
-    code
-  ) {
-
-    const c =
-      Number(code);
-
-
-    if (c === 0) {
-      return [
-        "☀️",
-        "Clear"
-      ];
-    }
-
-
-    if (
-      [1,2].includes(c)
-    ) {
-      return [
-        "🌤️",
-        "Partly cloudy"
-      ];
-    }
-
-
-    if (c === 3) {
-      return [
-        "☁️",
-        "Cloudy"
-      ];
-    }
-
-
-    if (
-      [45,48].includes(c)
-    ) {
-      return [
-        "🌫️",
-        "Foggy"
-      ];
-    }
-
-
-    if (
-      [51,53,55,56,57].includes(c)
-    ) {
-      return [
-        "🌦️",
-        "Drizzle"
-      ];
-    }
-
-
-    if (
-      [61,63,65,66,67].includes(c)
-    ) {
-      return [
-        "🌧️",
-        "Rain"
-      ];
-    }
-
-
-    if (
-      [71,73,75,77].includes(c)
-    ) {
-      return [
-        "❄️",
-        "Snow"
-      ];
-    }
-
-
-    if (
-      [80,81,82].includes(c)
-    ) {
-      return [
-        "🌦️",
-        "Showers"
-      ];
-    }
-
-
-    if (
-      [95,96,99].includes(c)
-    ) {
-      return [
-        "⛈️",
-        "Thunderstorm"
-      ];
-    }
-
-
-    return [
-      "🌤️",
-      "Weather"
-    ];
-
-  }
-
-
-  function setWeatherText(
-    temp,
-    place,
-    condition,
-    icon
-  ) {
-
-    if ($("#weatherTemp")) {
-
-      $("#weatherTemp")
-        .textContent = temp;
-
-    }
-
-
-    if ($("#weatherLocation")) {
-
-      $("#weatherLocation")
-        .textContent = place;
-
-    }
-
-
-    if ($("#weatherCondition")) {
-
-      $("#weatherCondition")
-        .textContent = condition;
-
-    }
-
-
-    if ($("#weatherIcon")) {
-
-      $("#weatherIcon")
-        .textContent = icon;
-
-    }
-
-  }
-
-
-  async function updateWeather() {
-
-    const l =
-      state.location;
-
-
-    const place =
-      l?.city ||
-      l?.locality ||
-      l?.state ||
-      "Your area";
-
-
-    if (
-      !l?.lat ||
-      !l?.lon
-    ) {
-
-      setWeatherText(
-        "--°",
-        place,
-        "Weather unavailable",
-        "📍"
-      );
-
-      return;
-
-    }
-
-
-    try {
-
-      const url =
-        `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(l.lat)}&longitude=${encodeURIComponent(l.lon)}&current=temperature_2m,weather_code&timezone=auto&forecast_days=1`;
-
-
-      const r =
-        await fetch(
-          url,
-          {
-            cache:"no-store"
-          }
-        );
-
-
-      if (!r.ok) {
-        throw new Error(
-          "Weather failed"
-        );
-      }
-
-
-      const d =
-        await r.json();
-
-
-      const [
-        icon,
-        condition
-      ] =
-        weatherDescription(
-          d.current?.weather_code
-        );
-
-
-      const tempValue =
-        Number(
-          d.current?.temperature_2m
-        );
-
-
-      const temp =
-        Number.isFinite(tempValue)
-
-          ? `${Math.round(tempValue)}°`
-
-          : "--°";
-
-
-      setWeatherText(
-        temp,
-        place,
-        condition,
-        icon
-      );
-
-    }
-
-
-    catch (_) {
-
-      setWeatherText(
-        "--°",
-        place,
-        "Weather unavailable",
-        "📍"
-      );
-
-    }
-
-  }
-
-
-  /*
-    AROUND YOU
-
-    Local-only.
-    India and Global are already
-    available in the main navigation.
-
-    The arrow / local buttons show
-    location-relevant stories.
-  */
-
-  function showLocalNews() {
-
-    const local =
-      state.stories
-
-        .filter(
-          s =>
-            locationScore(s) >= 30
-        )
-
-        .sort(
-          (a,b) =>
-            (
-              locationScore(b) +
-              freshnessScore(b)
-            ) -
-            (
-              locationScore(a) +
-              freshnessScore(a)
-            )
-        );
-
-
-    const box =
-      $("#stories");
-
-
-    if (!box) {
+    if (!menu) {
       return;
     }
 
 
-    renderMoreStories(
-      local
-    );
+    menu.hidden =
+      !menu.hidden;
 
 
-    setStatus(
-      local.length
-        ? `${local.length} local stories around you`
-        : "No local stories available yet."
-    );
+    if (button) {
 
+      button.setAttribute(
+        "aria-expanded",
+        String(!menu.hidden)
+      );
 
-    box.scrollIntoView({
-      behavior:"smooth",
-      block:"start"
-    });
+    }
 
   }
 
 
-  /*
-    NAVIGATION
-  */
+  /* =========================================================
+     EVENT LISTENERS
+  ========================================================= */
 
   $$("[data-category]")
     .forEach(
-      el =>
-        el.addEventListener(
+      element =>
+        element.addEventListener(
           "click",
           () => {
 
-            if (
-              el.dataset.category
-            ) {
+            const category =
+              element.dataset.category;
+
+
+            if (category) {
 
               setCategory(
-                el.dataset.category
+                category
               );
 
             }
@@ -1796,20 +2187,16 @@
     );
 
 
-  /*
-    READING MODES
-  */
-
   $$("[data-speed]")
     .forEach(
-      el =>
-        el.addEventListener(
+      element =>
+        element.addEventListener(
           "click",
           () => {
 
             state.speed =
               Number(
-                el.dataset.speed
+                element.dataset.speed
               );
 
 
@@ -1819,10 +2206,6 @@
         )
     );
 
-
-  /*
-    SEARCH
-  */
 
   $("#searchBtn")
     ?.addEventListener(
@@ -1834,60 +2217,26 @@
   $("#searchClose")
     ?.addEventListener(
       "click",
-      () => {
-
-        $("#searchOverlay")
-          .hidden = true;
-
-      }
+      closeSearch
     );
 
 
   $("#searchInput")
     ?.addEventListener(
       "input",
-      e =>
+      event =>
         runSearch(
-          e.target.value
+          event.target.value
         )
     );
 
 
-  /*
-    MOBILE MENU
-  */
-
   $("#menuBtn")
     ?.addEventListener(
       "click",
-      () => {
-
-        const m =
-          $("#mobileMenu");
-
-
-        if (!m) {
-          return;
-        }
-
-
-        m.hidden =
-          !m.hidden;
-
-
-        $("#menuBtn")
-          ?.setAttribute(
-            "aria-expanded",
-            String(!m.hidden)
-          );
-
-      }
+      toggleMenu
     );
 
-
-  /*
-    LOCATION
-  */
 
   $("#changeLocationBtn")
     ?.addEventListener(
@@ -1897,160 +2246,4 @@
 
 
   /*
-    AROUND YOU ARROW
-  */
-
-  $("#worldArrow")
-    ?.addEventListener(
-      "click",
-      showLocalNews
-    );
-
-
-  $("#nearCard")
-    ?.addEventListener(
-      "click",
-      showLocalNews
-    );
-
-
-  $("#districtCard")
-    ?.addEventListener(
-      "click",
-      showLocalNews
-    );
-
-
-  $("#stateCard")
-    ?.addEventListener(
-      "click",
-      showLocalNews
-    );
-
-
-  $("#locationModalClose")
-    ?.addEventListener(
-      "click",
-      closeLocationModal
-    );
-
-
-  $("#locationModalBackdrop")
-    ?.addEventListener(
-      "click",
-      closeLocationModal
-    );
-
-
-  $("#saveManualLocationBtn")
-    ?.addEventListener(
-      "click",
-      saveManualLocation
-    );
-
-
-  /*
-    User can manually request
-    automatic detection from the
-    Change Location window.
-
-    Still NO browser GPS permission.
-  */
-
-  $("#modalUseCurrentBtn")
-    ?.addEventListener(
-      "click",
-      () =>
-        detectLocation({
-          showModalOnFail:true
-        })
-    );
-
-
-  /*
-    CATCH ME UP
-  */
-
-  $("#catchupBtn")
-    ?.addEventListener(
-      "click",
-      () => {
-
-        state.category =
-          "All";
-
-        state.speed =
-          60;
-
-        render();
-
-
-        $("#topStories")
-          ?.scrollIntoView({
-            behavior:"smooth",
-            block:"start"
-          });
-
-      }
-    );
-
-
-  /*
-    SEE ALL
-  */
-
-  $("#viewAllBtn")
-    ?.addEventListener(
-      "click",
-      () =>
-        setCategory("All")
-    );
-
-
-  /*
-    PREMIUM
-  */
-
-  $("#premiumBtn")
-    ?.addEventListener(
-      "click",
-      () =>
-        alert(
-          "Snippet24 Premium — Deep Dive, expert perspective, data & context, what's next and ad-free reading."
-        )
-    );
-
-
-  /*
-    STARTUP
-
-    If manual location exists:
-      use it.
-
-    Otherwise:
-      silently detect approximate
-      location using IP.
-
-    NEVER use navigator.geolocation.
-  */
-
-  if (state.location) {
-
-    updateWeather();
-
-    renderCounts();
-
-  } else {
-
-    detectLocation();
-
-  }
-
-
-  /*
-    LOAD NEWS
-  */
-
-  loadStories();
-
-})();
+   * AROUND YOU
