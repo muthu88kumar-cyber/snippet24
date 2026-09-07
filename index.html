@@ -2,110 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#071b2b">
-  <meta name="description" content="snippet24 — Fast News • Real Impact.">
-  <title>snippet24 — Fast News • Real Impact</title>
-  <link rel="stylesheet" href="./style.css?v=20260907-2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Snippet24 — fast news, real impact. Understand what matters around you in one minute.">
+  <title>Snippet24 — Fast News • Real Impact</title>
+  <link rel="stylesheet" href="./style.css?v=20260907-3">
 </head>
+
 <body>
 
 <header class="site-header">
 
-  <div class="brand-row">
-    <a class="brand" href="./" aria-label="snippet24 home">
-      <span class="brand-word">snippet</span><span class="brand-badge">24</span>
-      <small>FAST NEWS • REAL IMPACT</small>
-    </a>
-  </div>
+  <div class="header-top">
 
-  <div class="utility-row">
-
-    <div class="weather-indicator" id="weatherIndicator" aria-label="Local weather">
-      <span class="weather-icon" id="weatherIcon">☁️</span>
-
-      <div class="weather-copy">
+    <div class="weather-location" id="weatherLocation">
+      <span id="weatherIcon">☁</span>
+      <div>
         <strong id="weatherTemp">--°</strong>
-        <span id="weatherLocation">Finding your area</span>
-        <small id="weatherCondition">Weather updating…</small>
+        <small id="weatherPlace">Detecting area…</small>
       </div>
+      <button id="changeLocation" class="change-btn" type="button">Change</button>
     </div>
 
-    <button class="search-button" id="searchBtn" aria-label="Search">
-      <span>⌕</span>
-      <small>Search</small>
-    </button>
+    <a class="brand" href="./" aria-label="Snippet24 Home">
+      <span>snippet</span><b>24</b>
+    </a>
 
-    <button class="menu-button" id="menuBtn" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="header-actions">
+      <button id="searchBtn" class="icon-btn" type="button" aria-label="Search">
+        ⌕
+      </button>
+
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
   </div>
 
-  <nav class="category-nav" id="categoryNav" aria-label="Primary navigation">
-
-    <button class="nav-chip active" data-category="All">Home</button>
-
-    <button class="nav-chip" data-category="India">India</button>
-
-    <button class="nav-chip" data-category="Global">Global</button>
-
-    <button class="nav-chip" data-category="Business & Economy">
-      Money
-    </button>
-
-    <button class="nav-chip" data-category="Tech & AI">
-      Tech
-    </button>
-
-    <button class="nav-chip" data-category="Sports">
-      Sports
-    </button>
-
-    <button class="nav-chip" data-category="Society & Culture">
-      People
-    </button>
-
-    <button class="nav-chip" data-category="Security & Peace">
-      More
-    </button>
-
-    <button class="nav-chip premium-chip" id="premiumBtn">
-      ♛ Premium
-    </button>
-
+  <nav class="main-nav" id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#india">India</a>
+    <a href="#global">Global</a>
+    <a href="#money">Money</a>
+    <a href="#tech">Tech</a>
+    <a href="#sports">Sports</a>
+    <a href="#people">People</a>
+    <a href="#more">More</a>
   </nav>
-
-  <div class="mobile-menu" id="mobileMenu" hidden>
-
-    <button data-category="Security & Peace">
-      Security & Peace
-    </button>
-
-    <button data-category="Law Around Us">
-      Law Around Us
-    </button>
-
-    <button data-category="Science & Development">
-      Science & Development
-    </button>
-
-    <button data-category="Human & Environment">
-      Environment
-    </button>
-
-    <button data-category="Good Reads">
-      Good Reads
-    </button>
-
-  </div>
 
 </header>
 
 
-<main>
+<main id="home">
 
   <!-- HERO -->
 
@@ -113,66 +64,35 @@
 
     <div class="hero-copy">
 
-      <div class="eyebrow">
-        TODAY IN ONE MINUTE
-      </div>
+      <p class="eyebrow">TODAY IN ONE MINUTE</p>
 
-      <h1>
-        What's<br>
-        <em>Happening?</em>
-      </h1>
+      <h1>What’s Happening?</h1>
 
-      <p class="hero-sub">
+      <p class="hero-subtitle">
         News that matters. Explained simply. In your language.
       </p>
 
-      <button class="catchup" id="catchupBtn">
-
-        <span class="play">
-          ▶
-        </span>
-
-        <strong>
-          CATCH ME UP
-        </strong>
-
-        <span class="catchup-divider"></span>
-
-        <span class="catchup-text">
-          The things you need to know<br>
-          right now
-        </span>
-
-        <span class="arrow">
-          →
-        </span>
-
+      <button id="catchUpBtn" class="catch-up-btn" type="button">
+        ▶ CATCH ME UP
       </button>
-
 
       <div class="reading-modes">
 
-        <button class="mode active" data-speed="10">
-          <b>ϟ 10 SEC</b>
-          <span>Just the facts</span>
-        </button>
+        <div class="mode">
+          <strong>10 SEC</strong>
+          <span>KNOW</span>
+        </div>
 
-        <button class="mode" data-speed="60">
-          <b>◷ 60 SEC</b>
-          <span>Understand it</span>
-        </button>
+        <div class="mode active">
+          <strong>60 SEC</strong>
+          <span>UNDERSTAND</span>
+        </div>
 
-        <button class="mode" data-speed="180">
-          <b>▤ 3 MIN</b>
-          <span>Explore deeper</span>
-        </button>
+        <div class="mode">
+          <strong>3 MIN</strong>
+          <span>THINK</span>
+        </div>
 
-      </div>
-
-
-      <div class="hero-line">
-        A more informed <em>tomorrow</em><br>
-        for a brighter you.
       </div>
 
     </div>
@@ -182,92 +102,38 @@
 
   <!-- AROUND YOU -->
 
-  <section class="around-wrap">
+  <section class="section around-section" id="aroundYou">
 
-    <div class="around-you" id="aroundYou">
-
-      <div class="around-top">
-
-        <div class="around-title">
-
-          <span class="around-icon">
-            ●
-          </span>
-
-          <div>
-
-            <strong>
-              AROUND YOU
-            </strong>
-
-            <small>
-              What matters where you are.
-            </small>
-
-          </div>
-
-        </div>
-
-
-        <button
-          class="change-location"
-          id="changeLocationBtn"
-        >
-          Change <span>✎</span>
-        </button>
-
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">LOCAL INTELLIGENCE</p>
+        <h2>AROUND YOU</h2>
+        <p>What matters where you are.</p>
       </div>
 
+      <button id="worldArrow" class="round-arrow" type="button" aria-label="View local stories">
+        →
+      </button>
+    </div>
 
-      <div class="around-grid">
+    <div class="around-grid">
 
-        <button type="button" id="nearCard">
+      <button class="around-card" id="nearCard" type="button">
+        <span class="around-label">NEAR YOU</span>
+        <strong id="nearCount">—</strong>
+        <small>Local stories</small>
+      </button>
 
-          <b id="nearCount">
-            —
-          </b>
+      <button class="around-card" id="districtCard" type="button">
+        <span class="around-label">DISTRICT</span>
+        <strong id="districtCount">—</strong>
+        <small>District updates</small>
+      </button>
 
-          <span>
-            Near you
-          </span>
-
-        </button>
-
-
-        <button type="button" id="districtCard">
-
-          <b id="districtCount">
-            —
-          </b>
-
-          <span>
-            District
-          </span>
-
-        </button>
-
-
-        <button type="button" id="stateCard">
-
-          <b id="stateCount">
-            —
-          </b>
-
-          <span>
-            State
-          </span>
-
-        </button>
-
-      </div>
-
-
-      <button
-        class="around-arrow"
-        id="worldArrow"
-        aria-label="Open local news"
-      >
-        ›
+      <button class="around-card" id="stateCard" type="button">
+        <span class="around-label">STATE</span>
+        <strong id="stateCount">—</strong>
+        <small>State updates</small>
       </button>
 
     </div>
@@ -277,19 +143,15 @@
 
   <!-- LIVE WIRE -->
 
-  <section class="live-section">
+  <section class="live-wire">
 
     <div class="live-label">
-      <i></i>
+      <span class="live-dot"></span>
       LIVE WIRE
     </div>
 
-    <div class="ticker">
-
-      <div id="tickerTrack">
-        Finding the latest signal…
-      </div>
-
+    <div class="ticker" id="liveTicker">
+      <span>Loading latest updates…</span>
     </div>
 
   </section>
@@ -297,98 +159,58 @@
 
   <!-- TOP STORIES -->
 
-  <section class="content-section">
+  <section class="section stories-section" id="topStories">
 
-    <div class="section-head">
-
-      <h2>
-        TOP STORIES
-      </h2>
-
-      <button id="viewAllBtn">
-        See all <span>→</span>
-      </button>
-
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">THE BIG PICTURE</p>
+        <h2>TOP STORIES</h2>
+        <p>The stories you should know right now.</p>
+      </div>
     </div>
 
-    <div
-      id="topStories"
-      class="top-stories"
-    ></div>
+    <div class="stories-grid" id="topStoriesGrid">
+      <article class="waiting-card">
+        <span>●</span>
+        <h3>WAITING FOR SIGNAL</h3>
+        <p>Loading the latest stories…</p>
+      </article>
+    </div>
 
   </section>
 
 
   <!-- WHY IT MATTERS -->
 
-  <section class="impact-section">
+  <section class="section why-section">
 
-    <div class="section-head">
-
-      <h2>
-        WHY IT MATTERS TO YOU
-      </h2>
-
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">MAKE IT RELEVANT</p>
+        <h2>WHY IT MATTERS</h2>
+        <p>News connected to your everyday life.</p>
+      </div>
     </div>
 
+    <div class="why-grid">
 
-    <div class="impact-grid">
-
-      <button data-category="Business & Economy">
-
+      <article class="why-card">
         <span>₹</span>
+        <h3>YOUR MONEY</h3>
+        <p>Markets, prices, taxes, jobs and decisions that affect your finances.</p>
+      </article>
 
-        <strong>
-          YOUR MONEY
-        </strong>
+      <article class="why-card">
+        <span>♡</span>
+        <h3>YOUR LIFE</h3>
+        <p>Health, society, safety and changes that affect everyday life.</p>
+      </article>
 
-        <small>
-          Markets, jobs, business and the economy.
-        </small>
-
-        <b>
-          ›
-        </b>
-
-      </button>
-
-
-      <button data-category="Law Around Us">
-
-        <span>●●</span>
-
-        <strong>
-          YOUR LIFE
-        </strong>
-
-        <small>
-          Policies, law, transport and everyday life.
-        </small>
-
-        <b>
-          ›
-        </b>
-
-      </button>
-
-
-      <button data-category="Tech & AI">
-
-        <span>⌁</span>
-
-        <strong>
-          YOUR FUTURE
-        </strong>
-
-        <small>
-          Technology, climate and opportunities.
-        </small>
-
-        <b>
-          ›
-        </b>
-
-      </button>
+      <article class="why-card">
+        <span>↗</span>
+        <h3>YOUR FUTURE</h3>
+        <p>Technology, policy, climate and developments shaping tomorrow.</p>
+      </article>
 
     </div>
 
@@ -397,56 +219,28 @@
 
   <!-- MORE NEWS -->
 
-  <section class="content-section">
+  <section class="section more-section" id="more">
 
-    <div class="section-head">
-
-      <h2>
-        MORE NEWS
-      </h2>
-
-
-      <div class="mini-tabs">
-
-        <button
-          class="active"
-          data-category="India"
-        >
-          India
-        </button>
-
-        <button data-category="Global">
-          Global
-        </button>
-
-        <button data-category="Business & Economy">
-          Money
-        </button>
-
-        <button data-category="Tech & AI">
-          Tech
-        </button>
-
-        <button data-category="All">
-          More →
-        </button>
-
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">KEEP EXPLORING</p>
+        <h2>MORE NEWS</h2>
+        <p>More stories, without the endless scrolling.</p>
       </div>
-
     </div>
 
+    <div class="category-tabs" id="categoryTabs">
+      <button class="category-tab active" data-category="all">All</button>
+      <button class="category-tab" data-category="india">India</button>
+      <button class="category-tab" data-category="global">Global</button>
+      <button class="category-tab" data-category="business">Money</button>
+      <button class="category-tab" data-category="tech">Tech</button>
+      <button class="category-tab" data-category="sports">Sports</button>
+      <button class="category-tab" data-category="people">People</button>
+    </div>
 
-    <div
-      id="stories"
-      class="story-list"
-    ></div>
-
-
-    <div
-      id="status"
-      class="status"
-    >
-      Finding the signal…
+    <div class="more-news-grid" id="moreNewsGrid">
+      <p class="empty-state">Loading stories…</p>
     </div>
 
   </section>
@@ -454,225 +248,95 @@
 </main>
 
 
-<footer class="footer">
+<!-- SEARCH OVERLAY -->
 
-  <div>
+<div class="overlay search-overlay" id="searchOverlay" hidden>
 
-    <div class="footer-brand">
-      snippet<span>24</span>
-    </div>
+  <div class="search-box">
 
-    <small>
-      FAST NEWS • REAL IMPACT
-    </small>
+    <button id="closeSearch" class="close-btn" type="button">×</button>
+
+    <p class="section-kicker">SEARCH SNIPPET24</p>
+
+    <h2>What do you want to know?</h2>
+
+    <form id="searchForm">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search news, topics, places…"
+        autocomplete="off"
+      >
+      <button type="submit">SEARCH</button>
+    </form>
+
+    <div id="searchResults" class="search-results"></div>
 
   </div>
 
-
-  <strong>
-    Don’t just read the news. Understand it.
-  </strong>
+</div>
 
 
-  <span>
-    News • Context • Impact • What’s Next
-  </span>
+<!-- LOCATION MODAL -->
+
+<div class="overlay location-overlay" id="locationOverlay" hidden>
+
+  <div class="location-box">
+
+    <button id="closeLocation" class="close-btn" type="button">×</button>
+
+    <p class="section-kicker">YOUR LOCAL NEWS</p>
+
+    <h2>Choose your area</h2>
+
+    <p class="modal-note">
+      Automatic detection uses approximate IP-based location. Browser GPS is never requested.
+    </p>
+
+    <div class="location-fields">
+
+      <input id="manualState" type="text" placeholder="State">
+
+      <input id="manualDistrict" type="text" placeholder="District">
+
+      <input id="manualCity" type="text" placeholder="City / Town">
+
+      <input id="manualTaluk" type="text" placeholder="Taluk">
+
+      <input id="manualLocality" type="text" placeholder="Locality">
+
+    </div>
+
+    <div class="location-actions">
+
+      <button id="detectAutomatic" type="button" class="secondary-btn">
+        DETECT AUTOMATICALLY
+      </button>
+
+      <button id="saveLocation" type="button" class="primary-btn">
+        SAVE LOCATION
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+
+  <div>
+    <strong>snippet24</strong>
+    <span>FAST NEWS • REAL IMPACT</span>
+  </div>
+
+  <p>News that matters. Explained simply.</p>
 
 </footer>
 
 
-<!-- SEARCH -->
-
-<div
-  class="search-overlay"
-  id="searchOverlay"
-  hidden
->
-
-  <div class="search-panel">
-
-    <button
-      class="close-btn"
-      id="searchClose"
-    >
-      ×
-    </button>
-
-    <div class="eyebrow">
-      SNIPPET24 SEARCH
-    </div>
-
-    <h2>
-      What do you want to know?
-    </h2>
-
-    <input
-      id="searchInput"
-      type="search"
-      placeholder="Search a story, topic, person, place or event…"
-      autocomplete="off"
-    >
-
-    <div class="search-hints">
-      Try: India today · Chennai · economy · technology · sports
-    </div>
-
-    <div id="searchResults"></div>
-
-  </div>
-
-</div>
-
-
-<!-- MANUAL LOCATION -->
-
-<div
-  class="location-modal"
-  id="locationModal"
-  hidden
-  aria-hidden="true"
->
-
-  <div
-    class="modal-backdrop"
-    id="locationModalBackdrop"
-  ></div>
-
-
-  <div class="location-card">
-
-    <button
-      class="close-btn"
-      id="locationModalClose"
-    >
-      ×
-    </button>
-
-    <div class="eyebrow">
-      CHANGE LOCATION
-    </div>
-
-    <h2>
-      Choose your location.
-    </h2>
-
-    <p>
-      Location is detected automatically. You can override it here whenever you want.
-    </p>
-
-
-    <label>
-      STATE
-
-      <select id="manualState">
-
-        <option value="">
-          Select state
-        </option>
-
-        <option>Andhra Pradesh</option>
-        <option>Arunachal Pradesh</option>
-        <option>Assam</option>
-        <option>Bihar</option>
-        <option>Chhattisgarh</option>
-        <option>Goa</option>
-        <option>Gujarat</option>
-        <option>Haryana</option>
-        <option>Himachal Pradesh</option>
-        <option>Jharkhand</option>
-        <option>Karnataka</option>
-        <option>Kerala</option>
-        <option>Madhya Pradesh</option>
-        <option>Maharashtra</option>
-        <option>Manipur</option>
-        <option>Meghalaya</option>
-        <option>Mizoram</option>
-        <option>Nagaland</option>
-        <option>Odisha</option>
-        <option>Punjab</option>
-        <option>Rajasthan</option>
-        <option>Sikkim</option>
-        <option>Tamil Nadu</option>
-        <option>Telangana</option>
-        <option>Tripura</option>
-        <option>Uttar Pradesh</option>
-        <option>Uttarakhand</option>
-        <option>West Bengal</option>
-        <option>Delhi</option>
-        <option>Jammu and Kashmir</option>
-        <option>Ladakh</option>
-        <option>Puducherry</option>
-
-      </select>
-
-    </label>
-
-
-    <label>
-      DISTRICT
-
-      <input
-        id="manualDistrict"
-        placeholder="District"
-      >
-
-    </label>
-
-
-    <label>
-      CITY / TOWN
-
-      <input
-        id="manualCity"
-        placeholder="City or town"
-      >
-
-    </label>
-
-
-    <label>
-      TALUK / BLOCK
-
-      <input
-        id="manualTaluk"
-        placeholder="Taluk or block"
-      >
-
-    </label>
-
-
-    <label>
-      LOCAL AREA
-
-      <input
-        id="manualLocality"
-        placeholder="Village / locality / ward"
-      >
-
-    </label>
-
-
-    <button
-      class="save-location"
-      id="saveManualLocationBtn"
-    >
-      SAVE LOCATION
-    </button>
-
-
-    <button
-      class="current-location"
-      id="modalUseCurrentBtn"
-    >
-      📍 DETECT AUTOMATICALLY
-    </button>
-
-  </div>
-
-</div>
-
-
-<script src="./app.js?v=20260907-2"></script>
+<script src="./app.js?v=20260907-3"></script>
 
 </body>
 </html>
