@@ -6,9 +6,8 @@
   <meta name="theme-color" content="#071b2b">
   <meta name="description" content="snippet24 — Fast News • Real Impact.">
   <title>snippet24 — Fast News • Real Impact</title>
-  <link rel="stylesheet" href="./style.css?v=20260906-2">
+  <link rel="stylesheet" href="./style.css?v=20260907-2">
 </head>
-
 <body>
 
 <header class="site-header">
@@ -22,12 +21,12 @@
 
   <div class="utility-row">
 
-    <div class="weather-indicator" id="weatherIndicator">
+    <div class="weather-indicator" id="weatherIndicator" aria-label="Local weather">
       <span class="weather-icon" id="weatherIcon">☁️</span>
 
       <div class="weather-copy">
         <strong id="weatherTemp">--°</strong>
-        <span id="weatherLocation">Finding your location</span>
+        <span id="weatherLocation">Finding your area</span>
         <small id="weatherCondition">Weather updating…</small>
       </div>
     </div>
@@ -46,29 +45,69 @@
   </div>
 
   <nav class="category-nav" id="categoryNav" aria-label="Primary navigation">
+
     <button class="nav-chip active" data-category="All">Home</button>
+
     <button class="nav-chip" data-category="India">India</button>
+
     <button class="nav-chip" data-category="Global">Global</button>
-    <button class="nav-chip" data-category="Business & Economy">Money</button>
-    <button class="nav-chip" data-category="Tech & AI">Tech</button>
-    <button class="nav-chip" data-category="Sports">Sports</button>
-    <button class="nav-chip" data-category="Society & Culture">People</button>
-    <button class="nav-chip" data-category="Security & Peace">More</button>
-    <button class="nav-chip premium-chip" id="premiumBtn">♛ Premium</button>
+
+    <button class="nav-chip" data-category="Business & Economy">
+      Money
+    </button>
+
+    <button class="nav-chip" data-category="Tech & AI">
+      Tech
+    </button>
+
+    <button class="nav-chip" data-category="Sports">
+      Sports
+    </button>
+
+    <button class="nav-chip" data-category="Society & Culture">
+      People
+    </button>
+
+    <button class="nav-chip" data-category="Security & Peace">
+      More
+    </button>
+
+    <button class="nav-chip premium-chip" id="premiumBtn">
+      ♛ Premium
+    </button>
+
   </nav>
 
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <button data-category="Security & Peace">Security & Peace</button>
-    <button data-category="Law Around Us">Law Around Us</button>
-    <button data-category="Science & Development">Science & Development</button>
-    <button data-category="Human & Environment">Environment</button>
-    <button data-category="Good Reads">Good Reads</button>
+
+    <button data-category="Security & Peace">
+      Security & Peace
+    </button>
+
+    <button data-category="Law Around Us">
+      Law Around Us
+    </button>
+
+    <button data-category="Science & Development">
+      Science & Development
+    </button>
+
+    <button data-category="Human & Environment">
+      Environment
+    </button>
+
+    <button data-category="Good Reads">
+      Good Reads
+    </button>
+
   </div>
 
 </header>
 
 
 <main>
+
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -89,9 +128,13 @@
 
       <button class="catchup" id="catchupBtn">
 
-        <span class="play">▶</span>
+        <span class="play">
+          ▶
+        </span>
 
-        <strong>CATCH ME UP</strong>
+        <strong>
+          CATCH ME UP
+        </strong>
 
         <span class="catchup-divider"></span>
 
@@ -100,9 +143,12 @@
           right now
         </span>
 
-        <span class="arrow">→</span>
+        <span class="arrow">
+          →
+        </span>
 
       </button>
+
 
       <div class="reading-modes">
 
@@ -123,6 +169,7 @@
 
       </div>
 
+
       <div class="hero-line">
         A more informed <em>tomorrow</em><br>
         for a brighter you.
@@ -133,7 +180,7 @@
   </section>
 
 
-  <!-- AROUND YOU — LOCAL NEWS ONLY -->
+  <!-- AROUND YOU -->
 
   <section class="around-wrap">
 
@@ -143,19 +190,28 @@
 
         <div class="around-title">
 
-          <span class="around-icon">●</span>
+          <span class="around-icon">
+            ●
+          </span>
 
           <div>
-            <strong>AROUND YOU</strong>
-            <small>Local news and what matters where you are.</small>
+
+            <strong>
+              AROUND YOU
+            </strong>
+
+            <small>
+              What matters where you are.
+            </small>
+
           </div>
 
         </div>
 
+
         <button
           class="change-location"
           id="changeLocationBtn"
-          type="button"
         >
           Change <span>✎</span>
         </button>
@@ -163,55 +219,53 @@
       </div>
 
 
-      <div class="around-location">
-
-        <span>📍</span>
-
-        <strong id="aroundLocationName">
-          Finding your area
-        </strong>
-
-        <small id="aroundLocationDetail">
-          Location is detected automatically
-        </small>
-
-      </div>
-
-
       <div class="around-grid">
 
-        <div>
-          <b id="nearCount">—</b>
-          <span>Near you</span>
-        </div>
+        <button type="button" id="nearCard">
 
-        <div>
-          <b id="districtCount">—</b>
-          <span>District</span>
-        </div>
+          <b id="nearCount">
+            —
+          </b>
 
-        <div>
-          <b id="stateCount">—</b>
-          <span>State</span>
-        </div>
+          <span>
+            Near you
+          </span>
 
-        <div>
-          <b id="indiaCount">—</b>
-          <span>India</span>
-        </div>
+        </button>
 
-        <div>
-          <b id="globalCount">—</b>
-          <span>Global</span>
-        </div>
+
+        <button type="button" id="districtCard">
+
+          <b id="districtCount">
+            —
+          </b>
+
+          <span>
+            District
+          </span>
+
+        </button>
+
+
+        <button type="button" id="stateCard">
+
+          <b id="stateCount">
+            —
+          </b>
+
+          <span>
+            State
+          </span>
+
+        </button>
 
       </div>
+
 
       <button
         class="around-arrow"
         id="worldArrow"
         aria-label="Open local news"
-        type="button"
       >
         ›
       </button>
@@ -226,13 +280,16 @@
   <section class="live-section">
 
     <div class="live-label">
-      <i></i> LIVE WIRE
+      <i></i>
+      LIVE WIRE
     </div>
 
     <div class="ticker">
+
       <div id="tickerTrack">
         Finding the latest signal…
       </div>
+
     </div>
 
   </section>
@@ -244,15 +301,20 @@
 
     <div class="section-head">
 
-      <h2>TOP STORIES</h2>
+      <h2>
+        TOP STORIES
+      </h2>
 
-      <button id="viewAllBtn" type="button">
+      <button id="viewAllBtn">
         See all <span>→</span>
       </button>
 
     </div>
 
-    <div id="topStories" class="top-stories"></div>
+    <div
+      id="topStories"
+      class="top-stories"
+    ></div>
 
   </section>
 
@@ -262,30 +324,70 @@
   <section class="impact-section">
 
     <div class="section-head">
-      <h2>WHY IT MATTERS TO YOU</h2>
+
+      <h2>
+        WHY IT MATTERS TO YOU
+      </h2>
+
     </div>
+
 
     <div class="impact-grid">
 
-      <button type="button">
+      <button data-category="Business & Economy">
+
         <span>₹</span>
-        <strong>YOUR MONEY</strong>
-        <small>Markets, jobs, business and the economy.</small>
-        <b>›</b>
+
+        <strong>
+          YOUR MONEY
+        </strong>
+
+        <small>
+          Markets, jobs, business and the economy.
+        </small>
+
+        <b>
+          ›
+        </b>
+
       </button>
 
-      <button type="button">
+
+      <button data-category="Law Around Us">
+
         <span>●●</span>
-        <strong>YOUR LIFE</strong>
-        <small>Policies, law, transport and everyday life.</small>
-        <b>›</b>
+
+        <strong>
+          YOUR LIFE
+        </strong>
+
+        <small>
+          Policies, law, transport and everyday life.
+        </small>
+
+        <b>
+          ›
+        </b>
+
       </button>
 
-      <button type="button">
+
+      <button data-category="Tech & AI">
+
         <span>⌁</span>
-        <strong>YOUR FUTURE</strong>
-        <small>Technology, climate and opportunities.</small>
-        <b>›</b>
+
+        <strong>
+          YOUR FUTURE
+        </strong>
+
+        <small>
+          Technology, climate and opportunities.
+        </small>
+
+        <b>
+          ›
+        </b>
+
       </button>
 
     </div>
@@ -299,11 +401,17 @@
 
     <div class="section-head">
 
-      <h2>MORE NEWS</h2>
+      <h2>
+        MORE NEWS
+      </h2>
+
 
       <div class="mini-tabs">
 
-        <button class="active" data-category="India">
+        <button
+          class="active"
+          data-category="India"
+        >
           India
         </button>
 
@@ -327,9 +435,17 @@
 
     </div>
 
-    <div id="stories" class="story-list"></div>
 
-    <div id="status" class="status">
+    <div
+      id="stories"
+      class="story-list"
+    ></div>
+
+
+    <div
+      id="status"
+      class="status"
+    >
       Finding the signal…
     </div>
 
@@ -352,9 +468,11 @@
 
   </div>
 
+
   <strong>
     Don’t just read the news. Understand it.
   </strong>
+
 
   <span>
     News • Context • Impact • What’s Next
@@ -363,13 +481,12 @@
 </footer>
 
 
-<!-- SEARCH OVERLAY -->
+<!-- SEARCH -->
 
 <div
   class="search-overlay"
   id="searchOverlay"
   hidden
-  aria-hidden="true"
 >
 
   <div class="search-panel">
@@ -377,8 +494,6 @@
     <button
       class="close-btn"
       id="searchClose"
-      type="button"
-      aria-label="Close search"
     >
       ×
     </button>
@@ -409,14 +524,7 @@
 </div>
 
 
-<!--
-  LOCATION MODAL
-
-  IMPORTANT:
-  This starts hidden.
-  It NEVER opens automatically.
-  It opens only when Change is clicked.
--->
+<!-- MANUAL LOCATION -->
 
 <div
   class="location-modal"
@@ -430,13 +538,12 @@
     id="locationModalBackdrop"
   ></div>
 
+
   <div class="location-card">
 
     <button
       class="close-btn"
       id="locationModalClose"
-      type="button"
-      aria-label="Close location"
     >
       ×
     </button>
@@ -450,8 +557,7 @@
     </h2>
 
     <p>
-      Use your current location automatically,
-      or choose a place manually.
+      Location is detected automatically. You can override it here whenever you want.
     </p>
 
 
@@ -549,7 +655,6 @@
     <button
       class="save-location"
       id="saveManualLocationBtn"
-      type="button"
     >
       SAVE LOCATION
     </button>
@@ -558,9 +663,8 @@
     <button
       class="current-location"
       id="modalUseCurrentBtn"
-      type="button"
     >
-      📍 USE MY CURRENT LOCATION
+      📍 DETECT AUTOMATICALLY
     </button>
 
   </div>
@@ -568,7 +672,7 @@
 </div>
 
 
-<script src="./app.js?v=20260906-2"></script>
+<script src="./app.js?v=20260907-2"></script>
 
 </body>
 </html>
