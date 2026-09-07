@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="Snippet24 — fast news, real impact. Understand what matters around you in one minute.">
+  <meta name="description" content="Snippet24 — FAST NEWS • REAL IMPACT">
   <title>Snippet24 — Fast News • Real Impact</title>
-  <link rel="stylesheet" href="./style.css?v=20260907-3">
+
+  <link rel="stylesheet" href="./style.css?v=20260907-4">
 </head>
 
 <body>
@@ -15,34 +16,55 @@
 
   <div class="header-top">
 
-    <div class="weather-location" id="weatherLocation">
+    <div class="weather-location">
       <span id="weatherIcon">☁</span>
+
       <div>
         <strong id="weatherTemp">--°</strong>
         <small id="weatherPlace">Detecting area…</small>
       </div>
-      <button id="changeLocation" class="change-btn" type="button">Change</button>
+
+      <button
+        id="changeLocation"
+        class="change-btn"
+        type="button">
+        Change
+      </button>
     </div>
 
-    <a class="brand" href="./" aria-label="Snippet24 Home">
+
+    <a href="./" class="brand" aria-label="Snippet24 Home">
       <span>snippet</span><b>24</b>
     </a>
 
+
     <div class="header-actions">
-      <button id="searchBtn" class="icon-btn" type="button" aria-label="Search">
+
+      <button
+        id="searchBtn"
+        class="icon-btn"
+        type="button"
+        aria-label="Search">
         ⌕
       </button>
 
-      <button id="menuBtn" class="menu-btn" type="button" aria-label="Menu">
+      <button
+        id="menuBtn"
+        class="menu-btn"
+        type="button"
+        aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
     </div>
 
   </div>
 
+
   <nav class="main-nav" id="mainNav">
+
     <a href="#home">Home</a>
     <a href="#india">India</a>
     <a href="#global">Global</a>
@@ -51,6 +73,7 @@
     <a href="#sports">Sports</a>
     <a href="#people">People</a>
     <a href="#more">More</a>
+
   </nav>
 
 </header>
@@ -58,23 +81,32 @@
 
 <main id="home">
 
+
   <!-- HERO -->
 
   <section class="hero">
 
     <div class="hero-copy">
 
-      <p class="eyebrow">TODAY IN ONE MINUTE</p>
+      <p class="eyebrow">
+        TODAY IN ONE MINUTE
+      </p>
 
-      <h1>What’s Happening?</h1>
+      <h1>
+        What’s<br class="mobile-break"> Happening?
+      </h1>
 
       <p class="hero-subtitle">
         News that matters. Explained simply. In your language.
       </p>
 
-      <button id="catchUpBtn" class="catch-up-btn" type="button">
+      <button
+        id="catchUpBtn"
+        class="catch-up-btn"
+        type="button">
         ▶ CATCH ME UP
       </button>
+
 
       <div class="reading-modes">
 
@@ -102,38 +134,103 @@
 
   <!-- AROUND YOU -->
 
-  <section class="section around-section" id="aroundYou">
+  <section
+    class="section around-section"
+    id="aroundYou">
 
     <div class="section-heading">
+
       <div>
-        <p class="section-kicker">LOCAL INTELLIGENCE</p>
-        <h2>AROUND YOU</h2>
-        <p>What matters where you are.</p>
+        <p class="section-kicker">
+          LOCAL INTELLIGENCE
+        </p>
+
+        <h2>
+          AROUND YOU
+        </h2>
+
+        <p>
+          What matters where you are.
+        </p>
       </div>
 
-      <button id="worldArrow" class="round-arrow" type="button" aria-label="View local stories">
+
+      <button
+        id="worldArrow"
+        class="round-arrow"
+        type="button"
+        aria-label="View local stories">
         →
       </button>
+
     </div>
+
 
     <div class="around-grid">
 
-      <button class="around-card" id="nearCard" type="button">
-        <span class="around-label">NEAR YOU</span>
-        <strong id="nearCount">—</strong>
-        <small>Local stories</small>
+      <button
+        id="nearCard"
+        class="around-card"
+        type="button">
+
+        <div>
+          <span class="around-label">
+            NEAR YOU
+          </span>
+
+          <small>
+            Local stories
+          </small>
+        </div>
+
+        <strong id="nearCount">
+          —
+        </strong>
+
       </button>
 
-      <button class="around-card" id="districtCard" type="button">
-        <span class="around-label">DISTRICT</span>
-        <strong id="districtCount">—</strong>
-        <small>District updates</small>
+
+      <button
+        id="districtCard"
+        class="around-card"
+        type="button">
+
+        <div>
+          <span class="around-label">
+            DISTRICT
+          </span>
+
+          <small>
+            District updates
+          </small>
+        </div>
+
+        <strong id="districtCount">
+          —
+        </strong>
+
       </button>
 
-      <button class="around-card" id="stateCard" type="button">
-        <span class="around-label">STATE</span>
-        <strong id="stateCount">—</strong>
-        <small>State updates</small>
+
+      <button
+        id="stateCard"
+        class="around-card"
+        type="button">
+
+        <div>
+          <span class="around-label">
+            STATE
+          </span>
+
+          <small>
+            State updates
+          </small>
+        </div>
+
+        <strong id="stateCount">
+          —
+        </strong>
+
       </button>
 
     </div>
@@ -150,7 +247,9 @@
       LIVE WIRE
     </div>
 
-    <div class="ticker" id="liveTicker">
+    <div
+      id="liveTicker"
+      class="ticker">
       <span>Loading latest updates…</span>
     </div>
 
@@ -159,22 +258,49 @@
 
   <!-- TOP STORIES -->
 
-  <section class="section stories-section" id="topStories">
+  <section
+    class="section stories-section"
+    id="topStories">
 
     <div class="section-heading">
+
       <div>
-        <p class="section-kicker">THE BIG PICTURE</p>
-        <h2>TOP STORIES</h2>
-        <p>The stories you should know right now.</p>
+
+        <p class="section-kicker">
+          THE BIG PICTURE
+        </p>
+
+        <h2>
+          TOP STORIES
+        </h2>
+
+        <p>
+          The stories you should know right now.
+        </p>
+
       </div>
+
     </div>
 
-    <div class="stories-grid" id="topStoriesGrid">
+
+    <div
+      id="topStoriesGrid"
+      class="stories-grid">
+
       <article class="waiting-card">
+
         <span>●</span>
-        <h3>WAITING FOR SIGNAL</h3>
-        <p>Loading the latest stories…</p>
+
+        <h3>
+          LOADING STORIES
+        </h3>
+
+        <p>
+          Getting the latest Snippet24 updates…
+        </p>
+
       </article>
+
     </div>
 
   </section>
@@ -185,31 +311,67 @@
   <section class="section why-section">
 
     <div class="section-heading">
+
       <div>
-        <p class="section-kicker">MAKE IT RELEVANT</p>
-        <h2>WHY IT MATTERS</h2>
-        <p>News connected to your everyday life.</p>
+
+        <p class="section-kicker">
+          MAKE IT RELEVANT
+        </p>
+
+        <h2>
+          WHY IT MATTERS
+        </h2>
+
+        <p>
+          News connected to your everyday life.
+        </p>
+
       </div>
+
     </div>
+
 
     <div class="why-grid">
 
       <article class="why-card">
         <span>₹</span>
-        <h3>YOUR MONEY</h3>
-        <p>Markets, prices, taxes, jobs and decisions that affect your finances.</p>
+
+        <h3>
+          YOUR MONEY
+        </h3>
+
+        <p>
+          Markets, prices, taxes, jobs and decisions
+          that affect your finances.
+        </p>
       </article>
+
 
       <article class="why-card">
         <span>♡</span>
-        <h3>YOUR LIFE</h3>
-        <p>Health, society, safety and changes that affect everyday life.</p>
+
+        <h3>
+          YOUR LIFE
+        </h3>
+
+        <p>
+          Health, society, safety and changes
+          that affect everyday life.
+        </p>
       </article>
+
 
       <article class="why-card">
         <span>↗</span>
-        <h3>YOUR FUTURE</h3>
-        <p>Technology, policy, climate and developments shaping tomorrow.</p>
+
+        <h3>
+          YOUR FUTURE
+        </h3>
+
+        <p>
+          Technology, policy, climate and developments
+          shaping tomorrow.
+        </p>
       </article>
 
     </div>
@@ -219,28 +381,95 @@
 
   <!-- MORE NEWS -->
 
-  <section class="section more-section" id="more">
+  <section
+    class="section more-section"
+    id="more">
 
     <div class="section-heading">
+
       <div>
-        <p class="section-kicker">KEEP EXPLORING</p>
-        <h2>MORE NEWS</h2>
-        <p>More stories, without the endless scrolling.</p>
+
+        <p class="section-kicker">
+          KEEP EXPLORING
+        </p>
+
+        <h2>
+          MORE NEWS
+        </h2>
+
+        <p>
+          More stories, without the endless scrolling.
+        </p>
+
       </div>
+
     </div>
 
-    <div class="category-tabs" id="categoryTabs">
-      <button class="category-tab active" data-category="all">All</button>
-      <button class="category-tab" data-category="india">India</button>
-      <button class="category-tab" data-category="global">Global</button>
-      <button class="category-tab" data-category="business">Money</button>
-      <button class="category-tab" data-category="tech">Tech</button>
-      <button class="category-tab" data-category="sports">Sports</button>
-      <button class="category-tab" data-category="people">People</button>
+
+    <div
+      id="categoryTabs"
+      class="category-tabs">
+
+      <button
+        class="category-tab active"
+        data-category="all"
+        type="button">
+        All
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="india"
+        type="button">
+        India
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="global"
+        type="button">
+        Global
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="business"
+        type="button">
+        Money
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="tech"
+        type="button">
+        Tech
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="sports"
+        type="button">
+        Sports
+      </button>
+
+      <button
+        class="category-tab"
+        data-category="people"
+        type="button">
+        People
+      </button>
+
     </div>
 
-    <div class="more-news-grid" id="moreNewsGrid">
-      <p class="empty-state">Loading stories…</p>
+
+    <div
+      id="moreNewsGrid"
+      class="more-news-grid">
+
+      <p class="empty-state">
+        Loading stories…
+      </p>
+
     </div>
 
   </section>
@@ -248,72 +477,129 @@
 </main>
 
 
-<!-- SEARCH OVERLAY -->
+<!-- SEARCH -->
 
-<div class="overlay search-overlay" id="searchOverlay" hidden>
+<div
+  id="searchOverlay"
+  class="overlay search-overlay"
+  hidden>
 
   <div class="search-box">
 
-    <button id="closeSearch" class="close-btn" type="button">×</button>
+    <button
+      id="closeSearch"
+      class="close-btn"
+      type="button">
+      ×
+    </button>
 
-    <p class="section-kicker">SEARCH SNIPPET24</p>
+    <p class="section-kicker">
+      SEARCH SNIPPET24
+    </p>
 
-    <h2>What do you want to know?</h2>
+    <h2>
+      What do you want to know?
+    </h2>
+
 
     <form id="searchForm">
+
       <input
         id="searchInput"
         type="search"
         placeholder="Search news, topics, places…"
-        autocomplete="off"
-      >
-      <button type="submit">SEARCH</button>
+        autocomplete="off">
+
+      <button type="submit">
+        SEARCH
+      </button>
+
     </form>
 
-    <div id="searchResults" class="search-results"></div>
+
+    <div
+      id="searchResults"
+      class="search-results">
+    </div>
 
   </div>
 
 </div>
 
 
-<!-- LOCATION MODAL -->
+<!-- LOCATION -->
 
-<div class="overlay location-overlay" id="locationOverlay" hidden>
+<div
+  id="locationOverlay"
+  class="overlay location-overlay"
+  hidden>
 
   <div class="location-box">
 
-    <button id="closeLocation" class="close-btn" type="button">×</button>
+    <button
+      id="closeLocation"
+      class="close-btn"
+      type="button">
+      ×
+    </button>
 
-    <p class="section-kicker">YOUR LOCAL NEWS</p>
+    <p class="section-kicker">
+      YOUR LOCAL NEWS
+    </p>
 
-    <h2>Choose your area</h2>
+    <h2>
+      Choose your area
+    </h2>
 
     <p class="modal-note">
-      Automatic detection uses approximate IP-based location. Browser GPS is never requested.
+      Snippet24 uses approximate IP-based location.
+      Browser GPS permission is never requested.
     </p>
+
 
     <div class="location-fields">
 
-      <input id="manualState" type="text" placeholder="State">
+      <input
+        id="manualState"
+        type="text"
+        placeholder="State">
 
-      <input id="manualDistrict" type="text" placeholder="District">
+      <input
+        id="manualDistrict"
+        type="text"
+        placeholder="District">
 
-      <input id="manualCity" type="text" placeholder="City / Town">
+      <input
+        id="manualCity"
+        type="text"
+        placeholder="City / Town">
 
-      <input id="manualTaluk" type="text" placeholder="Taluk">
+      <input
+        id="manualTaluk"
+        type="text"
+        placeholder="Taluk">
 
-      <input id="manualLocality" type="text" placeholder="Locality">
+      <input
+        id="manualLocality"
+        type="text"
+        placeholder="Locality">
 
     </div>
 
+
     <div class="location-actions">
 
-      <button id="detectAutomatic" type="button" class="secondary-btn">
+      <button
+        id="detectAutomatic"
+        class="secondary-btn"
+        type="button">
         DETECT AUTOMATICALLY
       </button>
 
-      <button id="saveLocation" type="button" class="primary-btn">
+      <button
+        id="saveLocation"
+        class="primary-btn"
+        type="button">
         SAVE LOCATION
       </button>
 
@@ -328,15 +614,20 @@
 
   <div>
     <strong>snippet24</strong>
-    <span>FAST NEWS • REAL IMPACT</span>
+
+    <span>
+      FAST NEWS • REAL IMPACT
+    </span>
   </div>
 
-  <p>News that matters. Explained simply.</p>
+  <p>
+    News that matters. Explained simply.
+  </p>
 
 </footer>
 
 
-<script src="./app.js?v=20260907-3"></script>
+<script src="./app.js?v=20260907-4"></script>
 
 </body>
 </html>
