@@ -3,1264 +3,386 @@
   "use strict";
 
 
-  /* =========================================================
+  /* =========================================
      STATE
-  ========================================================= */
+  ========================================== */
 
   const state = {
 
     stories: [],
 
-    category: "All",
+    topic: "For You",
 
-    speed: 10,
+    language:
+      localStorage.getItem("snippet24_language")
+      || "en",
 
-    page: 1,
+    saved:
+      JSON.parse(
+        localStorage.getItem("snippet24_saved")
+        || "[]"
+      ),
 
-    pageSize: 12,
+    liked:
+      JSON.parse(
+        localStorage.getItem("snippet24_liked")
+        || "[]"
+      ),
 
-    loading: false,
-
-    location: safeRead("snippet24_location"),
-
-    lang: "en"
+    location:
+      localStorage.getItem("snippet24_location")
+      || "Around You"
 
   };
 
 
-  /* =========================================================
-     HELPERS
-  ========================================================= */
+  const REFRESH_INTERVAL =
+    5 * 60 * 1000;
+
+
+  /* =========================================
+     DOM
+  ========================================== */
 
   const $ = selector =>
     document.querySelector(selector);
-
 
   const $$ = selector =>
     [...document.querySelectorAll(selector)];
 
 
-  function safeRead(key){
+  /* =========================================
+     TRANSLATIONS
+  ========================================== */
 
-    try{
+  const UI = {
 
-      return JSON.parse(
-        localStorage.getItem(key) || "null"
-      );
+    en: {
+      forYou: "For You",
+      around: "Around You",
+      liveFeed: "LIVE FEED",
+      howAffects: "HOW IT AFFECTS YOU",
+      source: "Source",
+      stories: "stories",
+      updated: "Updated",
+      search: "Search stories, topics, places..."
+    },
 
-    }catch(error){
+    ta: {
+      forYou: "உங்களுக்காக",
+      around: "உங்களைச் சுற்றி",
+      liveFeed: "நேரலை செய்தி",
+      howAffects: "உங்களை இது எப்படி பாதிக்கும்",
+      source: "ஆதாரம்",
+      stories: "செய்திகள்",
+      updated: "புதுப்பிக்கப்பட்டது",
+      search: "செய்திகள், தலைப்புகள், இடங்களைத் தேடுங்கள்..."
+    },
 
-      try{
-        localStorage.removeItem(key);
-      }catch(_){}
-
-      return null;
-
+    hi: {
+      forYou: "आपके लिए",
+      around: "आपके आसपास",
+      liveFeed: "लाइव फीड",
+      howAffects: "आप पर इसका असर",
+      source: "स्रोत",
+      stories: "समाचार",
+      updated: "अपडेट",
+      search: "समाचार, विषय और स्थान खोजें..."
     }
 
+  };
+
+
+  function t(key) {
+
+    return (
+      UI[state.language]?.[key]
+      ||
+      UI.en[key]
+      ||
+      key
+    );
+
   }
 
 
-  function safeWrite(key,value){
+  /* =========================================
+     TEXT HELPERS
+  ========================================== */
 
-    try{
+  function getLocalized(story, field) {
 
-      localStorage.setItem(
-        key,
-        JSON.stringify(value)
+    return (
+
+      story?.translations?.[
+        state.language
+      ]?.[field]
+
+      ||
+
+      story?.[state.language]?.[field]
+
+      ||
+
+      story?.[field]
+
+      ||
+
+      ""
+
+    );
+
+  }
+
+
+  function getTitle(story) {
+
+    return getLocalized(
+      story,
+      "title"
+    );
+
+  }
+
+
+  function getSummary(story) {
+
+    return getLocalized(
+      story,
+      "summary"
+    );
+
+  }
+
+
+  function getImpact(story) {
+
+    return (
+
+      getLocalized(
+        story,
+        "impact"
+      )
+
+      ||
+
+      story.how_it_affects_you
+
+      ||
+
+      "No immediate direct impact identified."
+
+    );
+
+  }
+
+
+  function getCategory(story) {
+
+    return (
+      story.category
+      ||
+      "India"
+    );
+
+  }
+
+
+  function getSource(story) {
+
+    return (
+      story.publisher
+      ||
+      story.source
+      ||
+      "SNIPPET24 Sources"
+    );
+
+  }
+
+
+  function getURL(story) {
+
+    return (
+      story.source_url
+      ||
+      story.url
+      ||
+      "#"
+    );
+
+  }
+
+
+  function getImage(story) {
+
+    return (
+      story.image_url
+      ||
+      story.image
+      ||
+      ""
+    );
+
+  }
+
+
+  function getPublishedTime(story) {
+
+    const value =
+      story.published_at
+      ||
+      story.updated_at
+      ||
+      story.created_at;
+
+    if (!value) {
+      return "";
+    }
+
+    const date =
+      new Date(value);
+
+    if (
+      Number.isNaN(
+        date.getTime()
+      )
+    ) {
+      return "";
+    }
+
+    const diff =
+      Date.now()
+      -
+      date.getTime();
+
+    const minutes =
+      Math.floor(
+        diff / 60000
       );
 
-    }catch(_){}
+    if (minutes < 1) {
+      return "Just now";
+    }
+
+    if (minutes < 60) {
+      return `${minutes} min ago`;
+    }
+
+    const hours =
+      Math.floor(
+        minutes / 60
+      );
+
+    if (hours < 24) {
+      return `${hours} hr ago`;
+    }
+
+    return date.toLocaleDateString(
+      state.language,
+      {
+        day: "numeric",
+        month: "short"
+      }
+    );
 
   }
 
 
-  function esc(value){
+  /* =========================================
+     SECURITY
+  ========================================== */
+
+  function escapeHTML(value) {
 
     return String(value ?? "")
-      .replace(/[&<>"']/g, character => ({
-        "&":"&amp;",
-        "<":"&lt;",
-        ">":"&gt;",
-        '"':"&quot;",
-        "'":"&#39;"
-      }[character]));
+
+      .replaceAll("&", "&amp;")
+
+      .replaceAll("<", "&lt;")
+
+      .replaceAll(">", "&gt;")
+
+      .replaceAll('"', "&quot;")
+
+      .replaceAll(
+        "'",
+        "&#039;"
+      );
 
   }
 
 
-  function safeUrl(value){
+  function safeURL(value) {
 
-    try{
+    try {
 
-      const url = new URL(
-        String(value || ""),
-        location.href
-      );
+      const url =
+        new URL(
+          value || "#",
+          window.location.href
+        );
 
-      if(
-        url.protocol !== "https:" &&
-        url.protocol !== "http:"
-      ){
+      if (
+        url.protocol === "http:"
+        ||
+        url.protocol === "https:"
+      ) {
 
-        return "";
+        return url.href;
 
       }
 
-      return url.href;
+    } catch (_) {}
 
-    }catch(_){
-
-      return "";
-
-    }
+    return "#";
 
   }
 
 
-  /* =========================================================
-     ARTICLE FIELDS
-  ========================================================= */
+  /* =========================================
+     API
+  ========================================== */
 
-  function titleOf(article){
+  async function loadStories() {
 
-    return (
-
-      article?.translations?.[state.lang]?.title ||
-
-      article?.[state.lang]?.title ||
-
-      article?.headline ||
-
-      article?.title ||
-
-      ""
-
-    );
-
-  }
-
-
-  function summaryOf(article){
-
-    return (
-
-      article?.translations?.[state.lang]?.summary ||
-
-      article?.[state.lang]?.summary ||
-
-      article?.summary ||
-
-      ""
-
-    );
-
-  }
-
-
-  function pointsOf(article){
-
-    const points =
-
-      article?.translations?.[state.lang]?.key_points ||
-
-      article?.[state.lang]?.key_points ||
-
-      article?.key_points ||
-
-      article?.snippet_lines ||
-
-      [];
-
-    return Array.isArray(points)
-      ? points
-      : [String(points || "")];
-
-  }
-
-
-  function imageOf(article){
-
-    return (
-
-      article?.ai_image_url ||
-
-      article?.image_url ||
-
-      article?.image ||
-
-      article?.local_image ||
-
-      ""
-
-    );
-
-  }
-
-
-  function sourceOf(article){
-
-    return (
-
-      article?.source_url ||
-
-      article?.original_source_url ||
-
-      article?.original_url ||
-
-      article?.url ||
-
-      ""
-
-    );
-
-  }
-
-
-  function categoryOf(article){
-
-    const raw = String(
-      article?.category ||
-      article?.section ||
-      "India"
-    ).trim();
-
-    if(raw === "In India"){
-
-      return "India";
-
-    }
-
-    return raw;
-
-  }
-
-
-  function publishedTime(article){
-
-    const time = Date.parse(
-
-      article?.published_at ||
-
-      article?.updated_at ||
-
-      ""
-
-    );
-
-    return Number.isFinite(time)
-      ? time
-      : 0;
-
-  }
-
-
-  function freshnessScore(article){
-
-    const published = publishedTime(article);
-
-    if(!published){
-
-      return 0;
-
-    }
-
-    return Math.max(
-      0,
-      40 -
-      (
-        (Date.now() - published) /
-        3600000
-      )
-    );
-
-  }
-
-
-  function importanceScore(article){
-
-    return (
-
-      {
-        CRITICAL:80,
-        HIGH:50,
-        MEDIUM:20,
-        LOW:5
-      }[
-        String(
-          article?.importance || ""
-        ).toUpperCase()
-      ] || 10
-
-    );
-
-  }
-
-
-  /* =========================================================
-     LOCATION
-  ========================================================= */
-
-  function storyLocation(article){
-
-    const location =
-      article?.location ||
-      article?.geo ||
-      {};
-
-    return {
-
-      country:
-        String(
-          location.country || ""
-        ).toLowerCase(),
-
-      state:
-        String(
-          location.state || ""
-        ).toLowerCase(),
-
-      district:
-        String(
-          location.district || ""
-        ).toLowerCase(),
-
-      city:
-        String(
-          location.city ||
-          location.town ||
-          ""
-        ).toLowerCase(),
-
-      taluk:
-        String(
-          location.taluk ||
-          location.block ||
-          ""
-        ).toLowerCase(),
-
-      locality:
-        String(
-          location.locality ||
-          location.village ||
-          location.ward ||
-          ""
-        ).toLowerCase()
-
-    };
-
-  }
-
-
-  function locationScore(article){
-
-    if(!state.location){
-
-      return 0;
-
-    }
-
-    const story = storyLocation(article);
-
-    const current = state.location;
-
-    const value = key =>
-      String(
-        current?.[key] || ""
-      ).toLowerCase();
-
-    let score = 0;
-
-
-    if(
-      value("locality") &&
-      story.locality === value("locality")
-    ){
-
-      score += 120;
-
-    }
-
-
-    if(
-      value("taluk") &&
-      story.taluk === value("taluk")
-    ){
-
-      score += 95;
-
-    }
-
-
-    if(
-      value("city") &&
-      story.city === value("city")
-    ){
-
-      score += 75;
-
-    }
-
-
-    if(
-      value("district") &&
-      story.district === value("district")
-    ){
-
-      score += 55;
-
-    }
-
-
-    if(
-      value("state") &&
-      story.state === value("state")
-    ){
-
-      score += 30;
-
-    }
-
-
-    return score;
-
-  }
-
-
-  /* =========================================================
-     FILTER / SORT
-  ========================================================= */
-
-  function allFiltered(){
-
-    return state.stories
-
-      .filter(article => {
-
-        return (
-          state.category === "All" ||
-          categoryOf(article) === state.category
-        );
-
-      })
-
-      .sort((a,b) => {
-
-        const scoreA =
-          locationScore(a) +
-          importanceScore(a) +
-          freshnessScore(a);
-
-        const scoreB =
-          locationScore(b) +
-          importanceScore(b) +
-          freshnessScore(b);
-
-        return (
-
-          scoreB - scoreA ||
-
-          publishedTime(b) -
-          publishedTime(a)
-
-        );
-
-      });
-
-  }
-
-
-  /* =========================================================
-     STATUS
-  ========================================================= */
-
-  function setStatus(text){
-
-    const element =
-      $("#status");
-
-    if(element){
-
-      element.textContent = text;
-
-    }
-
-  }
-
-
-  /* =========================================================
-     LOCATION DISPLAY
-  ========================================================= */
-
-  function locationText(){
-
-    if(!state.location){
-
-      return "Finding your area";
-
-    }
-
-    return (
-
-      state.location.city ||
-
-      state.location.locality ||
-
-      state.location.district ||
-
-      state.location.state ||
-
-      "Your area"
-
-    );
-
-  }
-
-
-  function locationDetail(){
-
-    if(!state.location){
-
-      return "Personalized from your area";
-
-    }
-
-    return (
-
-      [
-        state.location.district,
-        state.location.state
-      ]
-
-      .filter(Boolean)
-
-      .join(" • ") ||
-
-      "Location personalized"
-
-    );
-
-  }
-
-
-  /* =========================================================
-     MAIN RENDER
-  ========================================================= */
-
-  function render(){
-
-    const list =
-      allFiltered();
-
-
-    renderHeroStories(list);
-
-    renderMoreStories(list);
-
-    renderTicker(list);
-
-    renderCounts();
-
-    syncControls();
-
-
-    if(list.length){
-
-      setStatus(
-        `${list.length} stories • showing ${Math.min(
-          list.length,
-          state.page * state.pageSize
-        )}`
-      );
-
-    }else{
-
-      setStatus(
-        "No published stories available yet."
-      );
-
-    }
-
-  }
-
-
-  /* =========================================================
-     TOP STORIES
-  ========================================================= */
-
-  function renderHeroStories(list){
-
-    const box =
-      $("#topStories");
-
-    if(!box){
-
-      return;
-
-    }
-
-
-    const first =
-      list[0];
-
-    const rest =
-      list.slice(1,4);
-
-
-    if(!first){
-
-      box.innerHTML = `
-
-        <div class="lead-story">
-
-          <div class="lead-copy">
-
-            <span class="signal">
-              WAITING FOR SIGNAL
-            </span>
-
-            <h3>
-              Your latest important stories
-              will appear here.
-            </h3>
-
-            <p>
-              The news feed is ready.
-              Add articles.json to the same
-              GitHub Pages root as index.html.
-            </p>
-
-          </div>
-
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    const image =
-      safeUrl(imageOf(first));
-
-    const title =
-      esc(
-        titleOf(first) ||
-        "Story title unavailable"
-      );
-
-
-    const summary =
-      esc(
-        summaryOf(first) ||
-        pointsOf(first)
-          .filter(Boolean)
-          .slice(0,3)
-          .join(" • ") ||
-        "The latest important development, explained simply."
-      );
-
-
-    const meta =
-      `${esc(categoryOf(first))}${
-        first.published_at
-          ? " • " +
-            esc(
-              new Date(
-                first.published_at
-              ).toLocaleDateString()
-            )
-          : ""
-      }`;
-
-
-    box.innerHTML = `
-
-      <article class="lead-story">
-
-        ${
-          image
-
-          ?
-
-          `
-          <img
-            src="${esc(image)}"
-            alt=""
-            loading="eager"
-            decoding="async"
-            onerror="this.remove()">
-          `
-
-          :
-
-          ""
-
-        }
-
-        <div class="shade"></div>
-
-        <div class="lead-copy">
-
-          <span class="signal">
-            ${esc(
-              first.signal ||
-              "TOP SIGNAL"
-            )}
-          </span>
-
-          <h3>
-            ${title}
-          </h3>
-
-          <p>
-            ${summary}
-          </p>
-
-          <div class="lead-meta">
-
-            ${meta}
-
-            ${
-              sourceOf(first)
-                ? " • Original source"
-                : ""
-            }
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <div class="side-stories">
-
-        ${rest.map(sideCard).join("")}
-
-      </div>
-
-    `;
-
-  }
-
-
-  function sideCard(article){
-
-    const image =
-      safeUrl(
-        imageOf(article)
-      );
-
-
-    return `
-
-      <article class="side-card">
-
-        ${
-          image
-
-          ?
-
-          `
-          <img
-            src="${esc(image)}"
-            alt=""
-            loading="lazy"
-            decoding="async"
-            onerror="this.style.display='none'">
-          `
-
-          :
-
-          `
-          <div class="story-image"></div>
-          `
-
-        }
-
-
-        <div>
-
-          <span class="signal">
-
-            ${esc(
-              article.signal ||
-              categoryOf(article)
-            )}
-
-          </span>
-
-
-          <h3>
-
-            ${esc(
-              titleOf(article) ||
-              "Story title unavailable"
-            )}
-
-          </h3>
-
-
-          <small>
-
-            ${esc(
-              categoryOf(article)
-            )}
-
-          </small>
-
-        </div>
-
-      </article>
-
-    `;
-
-  }
-
-
-  /* =========================================================
-     MORE STORIES
-  ========================================================= */
-
-  function renderMoreStories(list){
-
-    const box =
-      $("#stories");
-
-    if(!box){
-
-      return;
-
-    }
-
-
-    const visible =
-      list.slice(
-        0,
-        state.page *
-        state.pageSize
-      );
-
-
-    if(!visible.length){
-
-      box.innerHTML = `
-
-        <div class="story-row">
-
-          <div></div>
-
-          <div>
-
-            <h3>
-              No stories found yet.
-            </h3>
-
-            <p>
-              Connect the news feed
-              to start publishing.
-            </p>
-
-          </div>
-
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    box.innerHTML = visible.map(article => {
-
-      const image =
-        safeUrl(
-          imageOf(article)
-        );
-
-      const source =
-        safeUrl(
-          sourceOf(article)
-        );
-
-
-      const summary =
-        summaryOf(article) ||
-        pointsOf(article)[0] ||
-        "Understand what happened and why it matters.";
-
-
-      const content = `
-
-        ${
-          image
-
-          ?
-
-          `
-          <img
-            src="${esc(image)}"
-            alt=""
-            loading="lazy"
-            decoding="async"
-            onerror="this.style.display='none'">
-          `
-
-          :
-
-          `<div></div>`
-
-        }
-
-
-        <div>
-
-          <h3>
-            ${esc(
-              titleOf(article) ||
-              "Story title unavailable"
-            )}
-          </h3>
-
-          <p>
-            ${esc(summary)}
-          </p>
-
-          <small class="story-attribution">
-
-            ${esc(
-              article.publisher ||
-              article.source_label ||
-              "Original source"
-            )}
-
-          </small>
-
-        </div>
-
-
-        <span class="go">
-          ›
-        </span>
-
-      `;
-
-
-      if(source){
-
-        return `
-
-          <a
-            class="story-row"
-            href="${esc(source)}"
-            target="_blank"
-            rel="noopener noreferrer">
-
-            ${content}
-
-          </a>
-
-        `;
-
-      }
-
-
-      return `
-
-        <div class="story-row">
-
-          ${content}
-
-        </div>
-
-      `;
-
-    }).join("");
-
-
-    if(list.length > visible.length){
-
-      box.insertAdjacentHTML(
-
-        "beforeend",
-
-        `
-
-        <button
-          class="load-more"
-          id="loadMoreBtn">
-
-          LOAD MORE STORIES
-
-          <span>
-            ↓
-          </span>
-
-        </button>
-
-        `
-
-      );
-
-
-      $("#loadMoreBtn")
-        ?.addEventListener(
-          "click",
-          () => {
-
-            state.page += 1;
-
-            render();
-
-          }
-        );
-
-    }
-
-  }
-
-
-  /* =========================================================
-     LIVE WIRE
-  ========================================================= */
-
-  function renderTicker(list){
-
-    const element =
-      $("#tickerTrack");
-
-    if(!element){
-
-      return;
-
-    }
-
-
-    const items =
-      list.slice(0,12);
-
-
-    if(!items.length){
-
-      element.innerHTML = `
-
-        <span>
-          LIVE • Waiting for the latest
-          Snippet24 signal…
-        </span>
-
-      `;
-
-      return;
-
-    }
-
-
-    const line =
-      items.map(article => `
-
-        <span>
-
-          <strong>
-            ●
-          </strong>
-
-          ${esc(
-            titleOf(article)
-          )}
-
-        </span>
-
-      `).join("");
-
-
-    element.innerHTML =
-      line + line;
-
-  }
-
-
-  /* =========================================================
-     AROUND YOU COUNTS
-  ========================================================= */
-
-  function renderCounts(){
-
-    const relevant =
-      state.stories;
-
-
-    const near =
-      relevant.filter(
-        article =>
-          locationScore(article) >= 70
-      ).length;
-
-
-    const district =
-      relevant.filter(
-        article =>
-          locationScore(article) >= 55
-      ).length;
-
-
-    const stateCount =
-      relevant.filter(
-        article =>
-          locationScore(article) >= 30
-      ).length;
-
-
-    const set =
-      (selector,value) => {
-
-        const element =
-          $(selector);
-
-        if(element){
-
-          element.textContent =
-            value;
-
-        }
-
-      };
-
-
-    set(
-      "#nearCount",
-      state.location
-        ? near
-        : "—"
-    );
-
-
-    set(
-      "#districtCount",
-      state.location
-        ? district
-        : "—"
-    );
-
-
-    set(
-      "#stateCount",
-      state.location
-        ? stateCount
-        : "—"
-    );
-
-
-    set(
-      "#weatherLocation",
-      locationText()
-    );
-
-
-    set(
-      "#weatherCondition",
-      locationDetail()
-    );
-
-  }
-
-
-  /* =========================================================
-     CONTROLS
-  ========================================================= */
-
-  function syncControls(){
-
-    $$("[data-category]")
-      .forEach(element => {
-
-        element.classList.toggle(
-
-          "active",
-
-          element.dataset.category ===
-          state.category
-
-        );
-
-      });
-
-
-    $$("[data-speed]")
-      .forEach(element => {
-
-        element.classList.toggle(
-
-          "active",
-
-          Number(
-            element.dataset.speed
-          ) === state.speed
-
-        );
-
-      });
-
-  }
-
-
-  /* =========================================================
-     LOAD ARTICLES
-  ========================================================= */
-
-  async function loadStories(){
-
-    if(state.loading){
-
-      return;
-
-    }
-
-
-    state.loading = true;
-
-    setStatus(
-      "Finding the signal…"
-    );
-
+    setLoading(true);
 
     let data = null;
 
 
     /*
-      PRODUCTION:
-
-      articles.json is loaded first.
-
-      This works on GitHub Pages
-      and your custom domain.
+      FIRST:
+      Real backend
     */
 
-    try{
+    try {
 
       const response =
         await fetch(
-          `./articles.json?v=${Date.now()}`,
+          "/api/stories",
           {
-            cache:"no-store"
+            method: "GET",
+            cache: "no-store",
+            headers: {
+              "Accept":
+                "application/json"
+            }
           }
         );
 
 
-      if(response.ok){
+      if (response.ok) {
 
         data =
           await response.json();
 
       }
 
-    }catch(error){
+    } catch (error) {
 
-      console.warn(
-        "articles.json unavailable",
+      console.log(
+        "Live API unavailable",
         error
       );
 
@@ -1268,33 +390,33 @@
 
 
     /*
-      OPTIONAL API FALLBACK
+      SECOND:
+      Local demo data
     */
 
-    if(!data){
+    if (!data) {
 
-      try{
+      try {
 
         const response =
           await fetch(
-            "./api/stories",
+            "/articles.json",
             {
-              cache:"no-store"
+              cache: "no-store"
             }
           );
 
-
-        if(response.ok){
+        if (response.ok) {
 
           data =
             await response.json();
 
         }
 
-      }catch(error){
+      } catch (error) {
 
-        console.warn(
-          "API unavailable",
+        console.log(
+          "Demo data unavailable",
           error
         );
 
@@ -1303,601 +425,170 @@
     }
 
 
-    if(Array.isArray(data)){
+    if (
+      Array.isArray(data)
+    ) {
 
       state.stories =
         data;
 
     }
 
-    else if(
-      Array.isArray(
-        data?.stories
-      )
-    ){
+    else if (
+      Array.isArray(data?.stories)
+    ) {
 
       state.stories =
         data.stories;
 
     }
 
-    else if(
-      Array.isArray(
-        data?.articles
-      )
-    ){
+    else if (
+      Array.isArray(data?.articles)
+    ) {
 
       state.stories =
         data.articles;
 
     }
 
-    else{
+    else {
 
-      state.stories =
-        [];
+      state.stories = [];
 
     }
 
 
-    state.page = 1;
+    /*
+      LIFO:
+      newest first
+    */
 
-    state.loading = false;
+    state.stories.sort(
+      (a, b) => {
+
+        const aTime =
+          new Date(
+            a.published_at
+            ||
+            a.updated_at
+            ||
+            a.created_at
+            ||
+            0
+          ).getTime();
+
+        const bTime =
+          new Date(
+            b.published_at
+            ||
+            b.updated_at
+            ||
+            b.created_at
+            ||
+            0
+          ).getTime();
+
+        return bTime - aTime;
+
+      }
+    );
+
 
     render();
 
+    updateLastUpdated();
+
+    setLoading(false);
+
   }
 
 
-  /* =========================================================
-     AUTOMATIC IP LOCATION
-     NO BROWSER GPS
-  ========================================================= */
+  /* =========================================
+     FILTER
+  ========================================== */
 
-  async function detectLocationSilently(){
+  function filteredStories() {
 
-    try{
+    if (
+      state.topic === "For You"
+    ) {
 
-      const response =
-        await fetch(
-          "https://ipapi.co/json/",
-          {
-            cache:"no-store"
-          }
-        );
+      return state.stories;
+
+    }
 
 
-      if(!response.ok){
+    return state.stories.filter(
+      story => {
 
-        throw new Error(
-          "IP location unavailable"
-        );
+        const category =
+          String(
+            getCategory(story)
+          ).toLowerCase();
 
-      }
+        const wanted =
+          state.topic.toLowerCase();
 
+        if (
+          wanted === "technology"
+        ) {
 
-      const data =
-        await response.json();
-
-
-      const base = {
-
-        country:
-          data.country_name ||
-          "India",
-
-        state:
-          data.region ||
-          "",
-
-        district:
-          "",
-
-        city:
-          data.city ||
-          "",
-
-        taluk:
-          "",
-
-        locality:
-          data.city ||
-          "",
-
-        latitude:
-          Number(data.latitude) ||
-          null,
-
-        longitude:
-          Number(data.longitude) ||
-          null,
-
-        source:
-          "ip"
-
-      };
-
-
-      /*
-        Better administrative
-        location.
-      */
-
-      try{
-
-        if(
-          Number.isFinite(
-            base.latitude
-          ) &&
-          Number.isFinite(
-            base.longitude
-          )
-        ){
-
-          const url =
-
-            "https://api.bigdatacloud.net/data/" +
-
-            "reverse-geocode-client" +
-
-            "?latitude=" +
-
-            encodeURIComponent(
-              base.latitude
-            ) +
-
-            "&longitude=" +
-
-            encodeURIComponent(
-              base.longitude
-            ) +
-
-            "&localityLanguage=en";
-
-
-          const reverse =
-            await fetch(
-              url,
-              {
-                cache:"no-store"
-              }
-            );
-
-
-          if(reverse.ok){
-
-            const geo =
-              await reverse.json();
-
-
-            const address =
-              geo.address ||
-              {};
-
-
-            base.state =
-              address.principalSubdivision ||
-              base.state;
-
-
-            base.city =
-              address.city ||
-              address.locality ||
-              base.city;
-
-
-            base.locality =
-              address.locality ||
-              address.village ||
-              base.locality;
-
-
-            const administrative =
-              address
-                ?.localityInfo
-                ?.administrative ||
-              [];
-
-
-            const districtItem =
-              administrative.find(
-                item =>
-                  /district/i.test(
-                    item.description ||
-                    ""
-                  )
-              );
-
-
-            base.district =
-              districtItem?.name ||
-              address.county ||
-              base.district;
-
-
-            base.taluk =
-              address.suburb ||
-              address.municipality ||
-              base.taluk;
-
-          }
+          return (
+            category.includes("tech")
+            ||
+            category.includes("ai")
+          );
 
         }
 
-      }catch(error){
-
-        console.warn(
-          "Reverse geocode unavailable",
-          error
+        return (
+          category.includes(wanted)
         );
 
       }
-
-
-      state.location =
-        base;
-
-
-      safeWrite(
-        "snippet24_location",
-        base
-      );
-
-
-      if(
-        Number.isFinite(
-          base.latitude
-        ) &&
-        Number.isFinite(
-          base.longitude
-        )
-      ){
-
-        renderWeather(
-          base.latitude,
-          base.longitude
-        );
-
-      }
-
-
-      renderCounts();
-
-      render();
-
-    }catch(error){
-
-      console.warn(
-        "Automatic location unavailable",
-        error
-      );
-
-
-      const element =
-        $("#weatherLocation");
-
-
-      if(
-        element &&
-        !state.location
-      ){
-
-        element.textContent =
-          "Your area";
-
-      }
-
-    }
-
-  }
-
-
-  /* =========================================================
-     WEATHER
-  ========================================================= */
-
-  async function renderWeather(
-    latitude,
-    longitude
-  ){
-
-    if(
-      !Number.isFinite(
-        Number(latitude)
-      ) ||
-      !Number.isFinite(
-        Number(longitude)
-      )
-    ){
-
-      return;
-
-    }
-
-
-    try{
-
-      const url =
-
-        "https://api.open-meteo.com/v1/forecast" +
-
-        "?latitude=" +
-
-        encodeURIComponent(
-          latitude
-        ) +
-
-        "&longitude=" +
-
-        encodeURIComponent(
-          longitude
-        ) +
-
-        "&current=temperature_2m,weather_code" +
-
-        "&timezone=auto" +
-
-        "&forecast_days=1";
-
-
-      const response =
-        await fetch(
-          url,
-          {
-            cache:"no-store"
-          }
-        );
-
-
-      if(!response.ok){
-
-        return;
-
-      }
-
-
-      const data =
-        await response.json();
-
-
-      const temperature =
-        Math.round(
-          Number(
-            data?.current
-              ?.temperature_2m
-          )
-        );
-
-
-      const code =
-        Number(
-          data?.current
-            ?.weather_code
-        );
-
-
-      const weatherMap = {
-
-        0:["☀️","Clear"],
-
-        1:["🌤️","Mostly clear"],
-
-        2:["⛅","Partly cloudy"],
-
-        3:["☁️","Cloudy"],
-
-        45:["🌫️","Foggy"],
-
-        48:["🌫️","Foggy"],
-
-        51:["🌦️","Drizzle"],
-
-        53:["🌦️","Drizzle"],
-
-        55:["🌧️","Drizzle"],
-
-        61:["🌧️","Rain"],
-
-        63:["🌧️","Rain"],
-
-        65:["🌧️","Heavy rain"],
-
-        71:["🌨️","Snow"],
-
-        73:["🌨️","Snow"],
-
-        75:["❄️","Snow"],
-
-        80:["🌦️","Showers"],
-
-        81:["🌦️","Showers"],
-
-        82:["⛈️","Heavy showers"],
-
-        95:["⛈️","Thunderstorm"],
-
-        96:["⛈️","Thunderstorm"],
-
-        99:["⛈️","Thunderstorm"]
-
-      };
-
-
-      const info =
-        weatherMap[code] ||
-        ["🌤️","Current weather"];
-
-
-      const tempElement =
-        $("#weatherTemp");
-
-
-      if(tempElement){
-
-        tempElement.textContent =
-          Number.isFinite(
-            temperature
-          )
-
-            ? `${temperature}°`
-
-            : "--°";
-
-      }
-
-
-      const iconElement =
-        $("#weatherIcon");
-
-
-      if(iconElement){
-
-        iconElement.textContent =
-          info[0];
-
-      }
-
-
-      const conditionElement =
-        $("#weatherCondition");
-
-
-      if(conditionElement){
-
-        conditionElement.textContent =
-          info[1];
-
-      }
-
-    }catch(error){
-
-      console.warn(
-        "Weather unavailable",
-        error
-      );
-
-    }
-
-  }
-
-
-  /* =========================================================
-     SEARCH
-  ========================================================= */
-
-  function openSearch(){
-
-    const overlay =
-      $("#searchOverlay");
-
-
-    if(!overlay){
-
-      return;
-
-    }
-
-
-    overlay.hidden =
-      false;
-
-
-    setTimeout(
-      () =>
-        $("#searchInput")?.focus(),
-      50
     );
 
   }
 
 
-  function closeSearch(){
+  /* =========================================
+     RENDER
+  ========================================== */
 
-    const overlay =
-      $("#searchOverlay");
+  function render() {
 
+    renderFeed();
 
-    if(overlay){
+    renderAround();
 
-      overlay.hidden =
-        true;
+    updateLanguageUI();
 
-    }
+    updateCounters();
 
   }
 
 
-  function runSearch(query){
+  /* =========================================
+     FEED
+  ========================================== */
 
-    const box =
-      $("#searchResults");
+  function renderFeed() {
 
+    const container =
+      $("#feed");
 
-    if(!box){
-
-      return;
-
-    }
-
-
-    const q =
-      String(query || "")
-        .trim()
-        .toLowerCase();
+    const stories =
+      filteredStories();
 
 
-    if(!q){
+    if (!stories.length) {
 
-      box.innerHTML =
-        "";
+      container.innerHTML = `
 
-      return;
+        <div class="loading">
 
-    }
-
-
-    const results =
-      state.stories
-
-        .filter(article => {
-
-          const text = [
-
-            titleOf(article),
-
-            summaryOf(article),
-
-            ...pointsOf(article),
-
-            categoryOf(article),
-
-            article.publisher,
-
-            article.location
-
-          ]
-
-          .filter(Boolean)
-
-          .join(" ")
-
-          .toLowerCase();
-
-
-          return text.includes(q);
-
-        })
-
-        .slice(0,20);
-
-
-    if(!results.length){
-
-      box.innerHTML = `
-
-        <div class="search-result">
-
-          No matching story yet.
+          No stories available yet.
 
         </div>
 
@@ -1908,556 +599,1054 @@
     }
 
 
-    box.innerHTML =
-      results.map(article => {
+    container.innerHTML =
+      stories
+        .map(
+          renderStory
+        )
+        .join("");
 
-        const source =
-          safeUrl(
-            sourceOf(article)
-          );
-
-
-        const html = `
-
-          <strong>
-            ${esc(
-              titleOf(article)
-            )}
-          </strong>
-
-          <br>
-
-          <small>
-            ${esc(
-              categoryOf(article)
-            )}
-          </small>
-
-        `;
+  }
 
 
-        if(source){
+  function renderStory(story) {
 
-          return `
+    const id =
+      story.id
+      ||
+      story.story_id
+      ||
+      story.url
+      ||
+      Math.random()
+        .toString(36)
+        .slice(2);
 
-            <a
-              class="search-result"
-              href="${esc(source)}"
-              target="_blank"
-              rel="noopener noreferrer">
 
-              ${html}
+    const title =
+      getTitle(story);
 
-            </a>
+    const summary =
+      getSummary(story);
 
-          `;
+    const impact =
+      getImpact(story);
 
+    const category =
+      getCategory(story);
+
+    const image =
+      getImage(story);
+
+    const source =
+      getSource(story);
+
+    const sourceURL =
+      safeURL(
+        getURL(story)
+      );
+
+    const time =
+      getPublishedTime(story);
+
+    const isSaved =
+      state.saved.includes(
+        String(id)
+      );
+
+    const isLiked =
+      state.liked.includes(
+        String(id)
+      );
+
+
+    return `
+
+      <article
+        class="story-card"
+        data-story-id="${escapeHTML(id)}"
+      >
+
+        ${
+          image
+          ?
+          `
+          <img
+            class="story-image"
+            src="${safeURL(image)}"
+            alt=""
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          `
+          :
+          ""
         }
 
 
-        return `
+        <div class="story-body">
 
-          <div class="search-result">
+          <div class="story-topline">
 
-            ${html}
+            <span class="story-category">
+              ${escapeHTML(category)}
+            </span>
+
+            <span>•</span>
+
+            <span class="story-time">
+              ${escapeHTML(time)}
+            </span>
 
           </div>
 
-        `;
 
-      }).join("");
+          <h3 class="story-title">
 
-  }
+            ${escapeHTML(title)}
 
-
-  /* =========================================================
-     LOCATION MODAL
-  ========================================================= */
-
-  function openLocationModal(){
-
-    const location =
-      state.location || {};
+          </h3>
 
 
-    const fields = {
+          <p class="story-summary">
 
-      State:
-        location.state || "",
+            ${escapeHTML(summary)}
 
-      District:
-        location.district || "",
-
-      City:
-        location.city || "",
-
-      Taluk:
-        location.taluk || "",
-
-      Locality:
-        location.locality || ""
-
-    };
+          </p>
 
 
-    Object.entries(fields)
-      .forEach(
-        ([key,value]) => {
+          <div class="impact">
 
-          const element =
-            $(
-              "#manual" +
-              key
-            );
+            <div class="impact-label">
 
+              👤 ${escapeHTML(
+                t("howAffects")
+              )}
 
-          if(element){
+            </div>
 
-            element.value =
-              value;
+            <p>
 
-          }
+              ${escapeHTML(impact)}
 
-        }
-      );
+            </p>
+
+          </div>
 
 
-    const modal =
-      $("#locationModal");
+          <div class="story-source">
+
+            ${escapeHTML(
+              t("source")
+            )}:
+
+            <a
+              href="${sourceURL}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ${escapeHTML(source)}
+            </a>
+
+          </div>
 
 
-    if(modal){
+          <div class="story-actions">
 
-      modal.hidden =
-        false;
-
-      modal.setAttribute(
-        "aria-hidden",
-        "false"
-      );
-
-    }
-
-  }
+            <button
+              data-action="like"
+              data-id="${escapeHTML(id)}"
+              aria-label="Like"
+            >
+              ${isLiked ? "❤️" : "♡"}
+            </button>
 
 
-  function closeLocationModal(){
+            <button
+              data-action="comment"
+              data-id="${escapeHTML(id)}"
+            >
+              💬
+            </button>
 
-    const modal =
-      $("#locationModal");
+
+            <button
+              data-action="share"
+              data-id="${escapeHTML(id)}"
+            >
+              ↗
+            </button>
 
 
-    if(modal){
+            <button
+              data-action="save"
+              data-id="${escapeHTML(id)}"
+              aria-label="Save"
+            >
+              ${isSaved ? "🔖" : "♡"}
+            </button>
 
-      modal.hidden =
-        true;
+          </div>
 
-      modal.setAttribute(
-        "aria-hidden",
-        "true"
-      );
+        </div>
 
-    }
+      </article>
+
+    `;
 
   }
 
 
-  function saveManualLocation(){
+  /* =========================================
+     AROUND YOU
+  ========================================== */
 
-    state.location = {
+  function renderAround() {
 
-      country:"India",
+    $("#locationText").textContent =
+      state.location;
 
-      state:
-        $("#manualState")
-          ?.value
-          .trim() ||
-        "",
 
-      district:
-        $("#manualDistrict")
-          ?.value
-          .trim() ||
-        "",
+    const localStories =
+      state.stories
+        .filter(
+          story => {
 
-      city:
-        $("#manualCity")
-          ?.value
-          .trim() ||
-        "",
-
-      taluk:
-        $("#manualTaluk")
-          ?.value
-          .trim() ||
-        "",
-
-      locality:
-        $("#manualLocality")
-          ?.value
-          .trim() ||
-        "",
-
-      source:"manual"
-
-    };
-
-
-    safeWrite(
-      "snippet24_location",
-      state.location
-    );
-
-
-    closeLocationModal();
-
-    render();
-
-  }
-
-
-  /* =========================================================
-     BIND EVENTS
-  ========================================================= */
-
-  function bind(){
-
-    $$("[data-category]")
-      .forEach(element => {
-
-        element.addEventListener(
-          "click",
-          () => {
-
-            const category =
-              element.dataset.category;
-
-
-            if(!category){
-
-              return;
-
-            }
-
-
-            state.category =
-              category;
-
-
-            state.page =
-              1;
-
-
-            const mobileMenu =
-              $("#mobileMenu");
-
-
-            if(mobileMenu){
-
-              mobileMenu.hidden =
-                true;
-
-            }
-
-
-            render();
-
-
-            $("#stories")
-              ?.scrollIntoView({
-                behavior:"smooth",
-                block:"start"
-              });
-
-          }
-        );
-
-      });
-
-
-    $$("[data-speed]")
-      .forEach(element => {
-
-        element.addEventListener(
-          "click",
-          () => {
-
-            state.speed =
-              Number(
-                element.dataset.speed
-              );
-
-
-            syncControls();
-
-          }
-        );
-
-      });
-
-
-    $("#searchBtn")
-      ?.addEventListener(
-        "click",
-        openSearch
-      );
-
-
-    $("#searchClose")
-      ?.addEventListener(
-        "click",
-        closeSearch
-      );
-
-
-    $("#searchInput")
-      ?.addEventListener(
-        "input",
-        event =>
-          runSearch(
-            event.target.value
-          )
-      );
-
-
-    $("#searchOverlay")
-      ?.addEventListener(
-        "click",
-        event => {
-
-          if(
-            event.target.id ===
-            "searchOverlay"
-          ){
-
-            closeSearch();
-
-          }
-
-        }
-      );
-
-
-    $("#menuBtn")
-      ?.addEventListener(
-        "click",
-        () => {
-
-          const menu =
-            $("#mobileMenu");
-
-
-          if(!menu){
-
-            return;
-
-          }
-
-
-          menu.hidden =
-            !menu.hidden;
-
-
-          $("#menuBtn")
-            ?.setAttribute(
-              "aria-expanded",
+            const location =
               String(
-                !menu.hidden
+                story.location
+                ||
+                ""
+              ).toLowerCase();
+
+            return (
+              location
+              &&
+              (
+                location.includes(
+                  state.location.toLowerCase()
+                )
+                ||
+                location === "local"
+                ||
+                location === "nearby"
               )
             );
 
-        }
-      );
-
-
-    $("#changeLocationBtn")
-      ?.addEventListener(
-        "click",
-        openLocationModal
-      );
-
-
-    $("#worldArrow")
-      ?.addEventListener(
-        "click",
-        () => {
-
-          $("#stories")
-            ?.scrollIntoView({
-              behavior:"smooth",
-              block:"start"
-            });
-
-        }
-      );
-
-
-    [
-      "nearCard",
-      "districtCard",
-      "stateCard"
-
-    ].forEach(id => {
-
-      $("#" + id)
-        ?.addEventListener(
-          "click",
-          () => {
-
-            $("#stories")
-              ?.scrollIntoView({
-                behavior:"smooth",
-                block:"start"
-              });
-
           }
+        )
+        .slice(0, 12);
+
+
+    const stories =
+      localStories.length
+      ?
+      localStories
+      :
+      state.stories.slice(0, 8);
+
+
+    $("#aroundFeed").innerHTML =
+      stories
+        .map(
+          story => `
+
+            <article
+              class="around-card"
+              data-id="${escapeHTML(
+                story.id || ""
+              )}"
+            >
+
+              <div class="tag">
+                ${escapeHTML(
+                  getCategory(story)
+                )}
+              </div>
+
+              <h3>
+                ${escapeHTML(
+                  getTitle(story)
+                )}
+              </h3>
+
+              <p>
+                ${escapeHTML(
+                  getSummary(story)
+                )}
+              </p>
+
+            </article>
+
+          `
+        )
+        .join("");
+
+  }
+
+
+  /* =========================================
+     INTERACTION
+  ========================================== */
+
+  document.addEventListener(
+    "click",
+    event => {
+
+      const button =
+        event.target.closest(
+          "[data-action]"
         );
 
-    });
+      if (!button) {
+        return;
+      }
 
 
-    $("#locationModalClose")
-      ?.addEventListener(
-        "click",
-        closeLocationModal
+      const action =
+        button.dataset.action;
+
+      const id =
+        String(
+          button.dataset.id
+        );
+
+
+      if (action === "like") {
+
+        toggleArray(
+          state.liked,
+          id
+        );
+
+        localStorage.setItem(
+          "snippet24_liked",
+          JSON.stringify(
+            state.liked
+          )
+        );
+
+        render();
+
+      }
+
+
+      if (action === "save") {
+
+        toggleArray(
+          state.saved,
+          id
+        );
+
+        localStorage.setItem(
+          "snippet24_saved",
+          JSON.stringify(
+            state.saved
+          )
+        );
+
+        render();
+
+      }
+
+
+      if (action === "share") {
+
+        shareStory(id);
+
+      }
+
+
+      if (action === "comment") {
+
+        openStory(id);
+
+      }
+
+    }
+  );
+
+
+  function toggleArray(
+    array,
+    value
+  ) {
+
+    const index =
+      array.indexOf(value);
+
+    if (index >= 0) {
+
+      array.splice(
+        index,
+        1
+      );
+
+    } else {
+
+      array.push(value);
+
+    }
+
+  }
+
+
+  /* =========================================
+     SHARE
+  ========================================== */
+
+  async function shareStory(id) {
+
+    const story =
+      state.stories.find(
+        item =>
+          String(
+            item.id
+            ||
+            item.story_id
+            ||
+            item.url
+          )
+          ===
+          String(id)
       );
 
 
-    $("#locationModalBackdrop")
-      ?.addEventListener(
-        "click",
-        closeLocationModal
+    if (!story) {
+      return;
+    }
+
+
+    const title =
+      getTitle(story);
+
+
+    if (
+      navigator.share
+    ) {
+
+      try {
+
+        await navigator.share({
+
+          title:
+            `SNIPPET24 — ${title}`,
+
+          text:
+            `${title}\n\n${getSummary(story)}`,
+
+          url:
+            getURL(story)
+
+        });
+
+      } catch (_) {}
+
+      return;
+
+    }
+
+
+    try {
+
+      await navigator.clipboard.writeText(
+        `${title}\n${getURL(story)}`
+      );
+
+      alert(
+        "Story link copied."
+      );
+
+    } catch (_) {
+
+      alert(
+        getURL(story)
+      );
+
+    }
+
+  }
+
+
+  /* =========================================
+     OPEN STORY
+  ========================================== */
+
+  function openStory(id) {
+
+    const story =
+      state.stories.find(
+        item =>
+          String(
+            item.id
+            ||
+            item.story_id
+            ||
+            item.url
+          )
+          ===
+          String(id)
       );
 
 
-    $("#saveManualLocationBtn")
-      ?.addEventListener(
-        "click",
-        saveManualLocation
-      );
+    if (!story) {
+      return;
+    }
 
 
-    $("#modalUseCurrentBtn")
-      ?.addEventListener(
-        "click",
-        async () => {
+    $("#modalContent").innerHTML = `
 
-          closeLocationModal();
+      <div class="story-category">
 
-          await detectLocationSilently();
+        ${escapeHTML(
+          getCategory(story)
+        )}
 
-        }
-      );
+      </div>
 
 
-    $("#catchupBtn")
-      ?.addEventListener(
+      <h2>
+
+        ${escapeHTML(
+          getTitle(story)
+        )}
+
+      </h2>
+
+
+      <p class="story-summary">
+
+        ${escapeHTML(
+          getSummary(story)
+        )}
+
+      </p>
+
+
+      <div class="impact">
+
+        <div class="impact-label">
+
+          👤 ${escapeHTML(
+            t("howAffects")
+          )}
+
+        </div>
+
+        <p>
+
+          ${escapeHTML(
+            getImpact(story)
+          )}
+
+        </p>
+
+      </div>
+
+
+      <p class="story-source">
+
+        ${escapeHTML(
+          t("source")
+        )}:
+
+        <a
+          href="${safeURL(
+            getURL(story)
+          )}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ${escapeHTML(
+            getSource(story)
+          )}
+        </a>
+
+      </p>
+
+    `;
+
+
+    $("#storyModal").hidden =
+      false;
+
+  }
+
+
+  /* =========================================
+     TOPICS
+  ========================================== */
+
+  $$(".topic").forEach(
+    button => {
+
+      button.addEventListener(
         "click",
         () => {
 
-          state.category =
-            "All";
-
-          state.speed =
-            60;
-
-          state.page =
-            1;
-
-          render();
-
-          $("#topStories")
-            ?.scrollIntoView({
-              behavior:"smooth",
-              block:"start"
-            });
-
-        }
-      );
+          $$(".topic")
+            .forEach(
+              item =>
+                item.classList.remove(
+                  "active"
+                )
+            );
 
 
-    $("#viewAllBtn")
-      ?.addEventListener(
-        "click",
-        () => {
-
-          state.category =
-            "All";
-
-          state.page =
-            1;
-
-          render();
-
-          $("#stories")
-            ?.scrollIntoView({
-              behavior:"smooth",
-              block:"start"
-            });
-
-        }
-      );
-
-
-    $("#premiumBtn")
-      ?.addEventListener(
-        "click",
-        () => {
-
-          alert(
-            "Snippet24 Premium — Deep Dive, expert perspective, data & context, what's next and ad-free reading."
+          button.classList.add(
+            "active"
           );
 
+
+          state.topic =
+            button.dataset.topic;
+
+
+          $("#feedTitle")
+            .textContent =
+              state.topic;
+
+
+          renderFeed();
+
+          window.scrollTo({
+            top:
+              document.querySelector(
+                ".feed-section"
+              ).offsetTop - 110,
+
+            behavior:
+              "smooth"
+          });
+
         }
       );
 
+    }
+  );
+
+
+  /* =========================================
+     LANGUAGE
+  ========================================== */
+
+  $("#languageBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        const panel =
+          $("#languagePanel");
+
+        panel.hidden =
+          !panel.hidden;
+
+      }
+    );
+
+
+  $$(
+    "[data-language]"
+  ).forEach(
+    button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          state.language =
+            button.dataset.language;
+
+
+          localStorage.setItem(
+            "snippet24_language",
+            state.language
+          );
+
+
+          $("#languagePanel")
+            .hidden = true;
+
+
+          updateLanguageUI();
+
+          render();
+
+        }
+      );
+
+    }
+  );
+
+
+  function updateLanguageUI() {
+
+    $("#languageBtn")
+      .textContent =
+        state.language
+          .toUpperCase();
+
+
+    $("#searchInput")
+      .placeholder =
+        t("search");
+
   }
 
 
-  /* =========================================================
+  /* =========================================
+     SEARCH
+  ========================================== */
+
+  $("#searchBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        $("#searchPanel")
+          .hidden = false;
+
+        $("#searchInput")
+          .focus();
+
+      }
+    );
+
+
+  $("#closeSearch")
+    .addEventListener(
+      "click",
+      () => {
+
+        $("#searchPanel")
+          .hidden = true;
+
+      }
+    );
+
+
+  $("#searchInput")
+    .addEventListener(
+      "input",
+      event => {
+
+        const query =
+          event.target.value
+            .trim()
+            .toLowerCase();
+
+
+        if (!query) {
+
+          state.topic =
+            "For You";
+
+          renderFeed();
+
+          return;
+
+        }
+
+
+        const results =
+          state.stories.filter(
+            story => {
+
+              const text = [
+
+                getTitle(story),
+
+                getSummary(story),
+
+                getCategory(story),
+
+                story.location
+
+              ]
+                .filter(Boolean)
+                .join(" ")
+                .toLowerCase();
+
+
+              return text.includes(
+                query
+              );
+
+            }
+          );
+
+
+        $("#feed").innerHTML =
+          results.length
+          ?
+          results
+            .map(
+              renderStory
+            )
+            .join("")
+          :
+          `
+
+            <div class="loading">
+
+              No matching stories found.
+
+            </div>
+
+          `;
+
+      }
+    );
+
+
+  /* =========================================
+     REFRESH
+  ========================================== */
+
+  $("#refreshBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        loadStories();
+
+      }
+    );
+
+
+  setInterval(
+    () => {
+
+      loadStories();
+
+    },
+    REFRESH_INTERVAL
+  );
+
+
+  /* =========================================
+     CATCH ME UP
+  ========================================== */
+
+  $("#catchUpBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        const stories =
+          state.stories
+            .slice(0, 10);
+
+
+        if (!stories.length) {
+          return;
+        }
+
+
+        $("#modalContent").innerHTML = `
+
+          <div class="eyebrow">
+            SNIPPET24 AI
+          </div>
+
+          <h2>
+            Catch Me Up
+          </h2>
+
+          <p class="story-summary">
+
+            Here are the latest things worth knowing.
+
+          </p>
+
+          ${
+
+            stories
+              .map(
+                story => `
+
+                  <div
+                    style="
+                      padding:14px 0;
+                      border-bottom:1px solid #292929;
+                    "
+                  >
+
+                    <strong>
+
+                      ${escapeHTML(
+                        getTitle(story)
+                      )}
+
+                    </strong>
+
+                    <p
+                      style="
+                        color:#aaa;
+                        font-size:12px;
+                        line-height:1.5;
+                      "
+                    >
+
+                      ${escapeHTML(
+                        getSummary(story)
+                      )}
+
+                    </p>
+
+                  </div>
+
+                `
+              )
+              .join("")
+
+          }
+
+        `;
+
+
+        $("#storyModal")
+          .hidden = false;
+
+      }
+    );
+
+
+  /* =========================================
+     MODAL
+  ========================================== */
+
+  $("#modalClose")
+    .addEventListener(
+      "click",
+      () => {
+
+        $("#storyModal")
+          .hidden = true;
+
+      }
+    );
+
+
+  $("#storyModal")
+    .addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target.id
+          ===
+          "storyModal"
+        ) {
+
+          $("#storyModal")
+            .hidden = true;
+
+        }
+
+      }
+    );
+
+
+  /* =========================================
+     LOCATION
+  ========================================== */
+
+  $("#locationBtn")
+    .addEventListener(
+      "click",
+      () => {
+
+        const location =
+          prompt(
+            "Enter your city or area:"
+          );
+
+
+        if (
+          location
+          &&
+          location.trim()
+        ) {
+
+          state.location =
+            location.trim();
+
+
+          localStorage.setItem(
+            "snippet24_location",
+            state.location
+          );
+
+
+          renderAround();
+
+        }
+
+      }
+    );
+
+
+  /* =========================================
+     COUNTERS
+  ========================================== */
+
+  function updateCounters() {
+
+    const count =
+      filteredStories().length;
+
+
+    $("#storyCounter")
+      .textContent =
+        `${count} ${t("stories")}`;
+
+  }
+
+
+  function updateLastUpdated() {
+
+    const now =
+      new Date();
+
+
+    $("#lastUpdated")
+      .textContent =
+        `${t("updated")} ${
+          now.toLocaleTimeString(
+            [],
+            {
+              hour: "numeric",
+              minute: "2-digit"
+            }
+          )
+        }`;
+
+  }
+
+
+  function setLoading(
+    loading
+  ) {
+
+    $("#loading")
+      .style.display =
+        loading
+        ?
+        "block"
+        :
+        "none";
+
+  }
+
+
+  /* =========================================
      START
-  ========================================================= */
+  ========================================== */
 
-  bind();
-
+  updateLanguageUI();
 
   loadStories();
-
-
-  /*
-    If location already exists,
-    immediately show weather.
-  */
-
-  if(
-    state.location?.latitude &&
-    state.location?.longitude
-  ){
-
-    renderWeather(
-      state.location.latitude,
-      state.location.longitude
-    );
-
-  }
-
-  else{
-
-    /*
-      Silent IP detection.
-
-      IMPORTANT:
-      navigator.geolocation is NOT used.
-      Therefore there is no browser
-      location permission popup.
-    */
-
-    setTimeout(
-      detectLocationSilently,
-      300
-    );
-
-  }
 
 
 })();
