@@ -1,31 +1,123 @@
-{
-  "site": "Snippet24",
-  "site_url": "https://snippet24.in",
-  "version": "2.0",
-  "updated_at": "2026-09-05T00:00:00.000Z",
-  "total": 0,
+[
+  {
+    "id": "story-001",
+    "category": "Technology",
+    "location": "Around You",
+    "title": "AI tools are becoming part of everyday work",
+    "summary": "New AI capabilities are making it easier to summarize information, automate repetitive tasks and work with large amounts of data. Businesses and individuals are increasingly using AI as an everyday productivity layer.",
+    "impact": "You may be able to complete routine work faster and spend more time on decisions that require human judgment.",
+    "publisher": "SNIPPET24 Demo",
+    "source_url": "https://snippet24.in",
+    "published_at": "2026-10-03T13:40:00+05:30",
+    "translations": {
+      "ta": {
+        "title": "அன்றாட வேலைகளில் AI கருவிகளின் பயன்பாடு அதிகரிக்கிறது",
+        "summary": "தகவல்களை சுருக்குவது, மீண்டும் மீண்டும் செய்யும் பணிகளை தானியக்கமாக்குவது மற்றும் அதிக அளவிலான தரவுகளை கையாளுவது போன்றவற்றில் AI உதவுகிறது.",
+        "impact": "வழக்கமான பணிகளை வேகமாக முடித்து, மனித முடிவெடுப்பில் அதிக கவனம் செலுத்த முடியும்."
+      },
+      "hi": {
+        "title": "AI टूल्स रोजमर्रा के काम का हिस्सा बन रहे हैं",
+        "summary": "AI अब जानकारी को संक्षेप में समझने और दोहराए जाने वाले कामों को आसान बनाने में मदद कर रहा है।",
+        "impact": "आप कुछ नियमित काम कम समय में पूरा कर सकते हैं।"
+      }
+    }
+  },
 
-  "editorial_engine": "Snippet24 AI Editorial",
+  {
+    "id": "story-002",
+    "category": "Health",
+    "location": "Around You",
+    "title": "Health authorities emphasize seasonal disease prevention",
+    "summary": "Public-health agencies are reminding people to follow basic hygiene and preventive measures as seasonal illnesses increase in some regions. Local conditions can vary.",
+    "impact": "Simple preventive habits may help reduce your exposure to seasonal infections.",
+    "publisher": "Public Health Source",
+    "source_url": "https://www.who.int/",
+    "published_at": "2026-10-03T13:35:00+05:30",
+    "translations": {
+      "ta": {
+        "title": "பருவகால நோய்களைத் தடுப்பதில் சுகாதார அதிகாரிகள் கவனம்",
+        "summary": "சில பகுதிகளில் பருவகால நோய்கள் அதிகரிப்பதால் அடிப்படை சுகாதார பழக்கங்களைப் பின்பற்றுமாறு சுகாதார அமைப்புகள் அறிவுறுத்துகின்றன.",
+        "impact": "சில அடிப்படை முன்னெச்சரிக்கை நடவடிக்கைகள் பருவகால தொற்றுகளுக்கான உங்கள் வெளிப்பாட்டைக் குறைக்க உதவும்."
+      }
+    }
+  },
 
-  "source_policy": "Only government, public broadcaster, official TV and verified official YouTube sources are accepted. Private and unknown sources are rejected.",
+  {
+    "id": "story-003",
+    "category": "Food",
+    "location": "Around You",
+    "title": "Food prices continue to move with seasonal supply",
+    "summary": "Prices of some commonly purchased food items can change as supply, transport and seasonal production shift. Local markets may see different price movements.",
+    "impact": "Your weekly grocery spending may change depending on the products you regularly buy.",
+    "publisher": "SNIPPET24 Food Desk",
+    "source_url": "https://snippet24.in",
+    "published_at": "2026-10-03T13:30:00+05:30",
+    "translations": {
+      "ta": {
+        "title": "பருவகால விநியோகத்துடன் உணவுப் பொருட்களின் விலைகள் மாறுகின்றன",
+        "summary": "விநியோகம், போக்குவரத்து மற்றும் பருவகால உற்பத்தியில் ஏற்படும் மாற்றங்களால் சில உணவுப் பொருட்களின் விலைகள் மாறக்கூடும்.",
+        "impact": "நீங்கள் வழக்கமாக வாங்கும் பொருட்களைப் பொறுத்து வாராந்திர மளிகைச் செலவு மாறலாம்."
+      }
+    }
+  },
 
-  "global_policy": "Global contains clearly international events. India-related foreign affairs remain under In India.",
+  {
+    "id": "story-004",
+    "category": "Business",
+    "location": "India",
+    "title": "Businesses continue to adapt to a faster digital economy",
+    "summary": "Companies across sectors are increasing their use of digital tools, automation and data-driven decision making as competition changes.",
+    "impact": "Digital skills may become increasingly useful in your workplace or career.",
+    "publisher": "SNIPPET24 Business Desk",
+    "source_url": "https://snippet24.in",
+    "published_at": "2026-10-03T13:25:00+05:30"
+  },
 
-  "ai_policy": "AI-assisted editorial processing creates factual reading levels without inventing unsupported information.",
+  {
+    "id": "story-005",
+    "category": "Money",
+    "location": "India",
+    "title": "Households continue to watch interest rates and inflation",
+    "summary": "Borrowing costs, savings returns and everyday prices remain important factors for household financial planning.",
+    "impact": "Changes in rates or prices can affect your EMI, savings and monthly household budget.",
+    "publisher": "SNIPPET24 Money Desk",
+    "source_url": "https://www.rbi.org.in/",
+    "published_at": "2026-10-03T13:20:00+05:30"
+  },
 
-  "copyright_policy": "Third-party text, photographs, video, audio, logos and trademarks remain the property of their respective owners. Snippet24 links readers to the original source.",
+  {
+    "id": "story-006",
+    "category": "World",
+    "location": "World",
+    "title": "Global markets continue to respond to economic signals",
+    "summary": "Investors around the world are watching interest rates, inflation, energy prices and geopolitical developments for signals about the global economy.",
+    "impact": "Global economic changes can indirectly affect investments, business activity and prices.",
+    "publisher": "SNIPPET24 World Desk",
+    "source_url": "https://www.imf.org/",
+    "published_at": "2026-10-03T13:15:00+05:30"
+  },
 
-  "ai_disclosure": "Snippet24 uses an AI-assisted editorial process to condense and rephrase source material. The original source remains the authority for the complete report.",
+  {
+    "id": "story-007",
+    "category": "Sports",
+    "location": "World",
+    "title": "Major sporting events continue to attract global attention",
+    "summary": "Teams and athletes are competing across major international sporting events, with results changing throughout the day.",
+    "impact": "If you follow the competition, the latest result could affect your team's or athlete's position.",
+    "publisher": "SNIPPET24 Sports Desk",
+    "source_url": "https://www.olympics.com/",
+    "published_at": "2026-10-03T13:10:00+05:30"
+  },
 
-  "editorial_note": "Rephrased from the original source for clarity.",
-
-  "corrections": true,
-
-  "grievance": true,
-
-  "categories": {},
-
-  "source_types": {},
-
-  "articles": []
-}
+  {
+    "id": "story-008",
+    "category": "Culture",
+    "location": "World",
+    "title": "Digital culture continues to change how people discover entertainment",
+    "summary": "Streaming, short-form video and creator platforms are changing how audiences discover films, music and cultural content.",
+    "impact": "The way you discover and consume entertainment is likely to keep changing.",
+    "publisher": "SNIPPET24 Culture Desk",
+    "source_url": "https://snippet24.in",
+    "published_at": "2026-10-03T13:05:00+05:30"
+  }
+]
