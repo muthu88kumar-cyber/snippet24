@@ -1,31 +1,38 @@
 // ============================================================
 // SNIPPET24 — LIVE NEWS INTELLIGENCE WORKER
 // Cloudflare Workers + D1 + Gemini
-// Version: 1.0
+// Version: 2.0
 //
-// Flow:
+// FLOW
 //
-// Approved Sources
+// Approved Source
 //      ↓
-// RSS / API
+// RSS / Atom
 //      ↓
-// Duplicate Check
+// Source Item Duplicate Check
 //      ↓
-// Gemini AI Editor
+// Event Duplicate Check
 //      ↓
-// 3–4 line story
+// Gemini Editorial AI
+//      ↓
+// Validation
+//      ↓
+// 3–4 Line Brief
 //      ↓
 // How it affects you
 //      ↓
-// Category + Location + Languages
+// Category + Location + Language
 //      ↓
 // D1
 //      ↓
 // /api/stories
 //
-// IMPORTANT:
+// IMPORTANT
+//
 // GEMINI_API_KEY must be stored as a Cloudflare Secret.
-// Never put the API key in GitHub code.
+// ADMIN_TOKEN must also be stored as a Cloudflare Secret.
+//
+// NEVER put either secret in GitHub.
 // ============================================================
 
 import {
@@ -41,14 +48,20 @@ import {
 // CONFIGURATION
 // ============================================================
 
-const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+const DEFAULT_GEMINI_MODEL =
+  "gemini-3.6-flash";
 
-const MAX_STORIES = 200;
+const MAX_STORIES =
+  200;
 
-const FETCH_TIMEOUT_MS = 20000;
+const MAX_FEED_ITEMS =
+  30;
+
+const FETCH_TIMEOUT_MS =
+  20000;
 
 const USER_AGENT =
-  "SNIPPET24/1.0 (+https://snippet24.in)";
+  "SNIPPET24/2.0 (+https://snippet24.in)";
 
 
 // ============================================================
@@ -57,9 +70,14 @@ const USER_AGENT =
 
 export default {
 
-  async fetch(request, env, ctx) {
+  async fetch(
+    request,
+    env,
+    ctx
+  ) {
 
-    const url = new URL(request.url);
+    const url =
+      new URL(request.url);
 
     try {
 
@@ -72,12 +90,9 @@ export default {
         url.pathname === "/api/health"
       ) {
 
-        return jsonResponse({
-          ok: true,
-          service: "SNIPPET24 Live API",
-          version: "1.0",
-          time: new Date().toISOString()
-        });
+        return await handleHealth(
+          env
+        );
 
       }
 
@@ -91,7 +106,10 @@ export default {
         url.pathname === "/api/stories"
       ) {
 
-        return await handleStories(request, env);
+        return await handleStories(
+          request,
+          env
+        );
 
       }
 
@@ -102,12 +120,17 @@ export default {
 
       if (
         request.method === "GET" &&
-        url.pathname.startsWith("/api/stories/")
+        url.pathname.startsWith(
+          "/api/stories/"
+        )
       ) {
 
         const storyId =
           decodeURIComponent(
-            url.pathname.replace("/api/stories/", "")
+            url.pathname.replace(
+              "/api/stories/",
+              ""
+            )
           );
 
         return await handleSingleStory(
@@ -127,7 +150,12 @@ export default {
         url.pathname === "/api/refresh"
       ) {
 
-        if (!isAuthorized(request, env)) {
+        if (
+          !isAuthorized(
+            request,
+            env
+          )
+        ) {
 
           return jsonResponse(
             {
@@ -140,9 +168,13 @@ export default {
         }
 
         const result =
-          await refreshNews(env);
+          await refreshNews(
+            env
+          );
 
-        return jsonResponse(result);
+        return jsonResponse(
+          result
+        );
 
       }
 
@@ -153,10 +185,16 @@ export default {
 
       if (
         request.method === "GET" &&
-        url.pathname === "/api/source-status"
+        url.pathname ===
+          "/api/source-status"
       ) {
 
-        if (!isAuthorized(request, env)) {
+        if (
+          !isAuthorized(
+            request,
+            env
+          )
+        ) {
 
           return jsonResponse(
             {
@@ -168,7 +206,9 @@ export default {
 
         }
 
-        return await handleSourceStatus(env);
+        return await handleSourceStatus(
+          env
+        );
 
       }
 
@@ -195,7 +235,11 @@ export default {
       return jsonResponse(
         {
           ok: false,
-          error: "Internal server error"
+          error:
+            String(
+              error?.message ||
+              error
+            ).slice(0, 1000)
         },
         500
       );
@@ -209,16 +253,25 @@ export default {
   // CLOUDFLARE CRON
   // ==========================================================
 
-  async scheduled(event, env, ctx) {
+  async scheduled(
+    event,
+    env,
+    ctx
+  ) {
 
     ctx.waitUntil(
-      refreshNews(env)
-        .catch(error => {
+      refreshNews(
+        env
+      ).catch(
+        error => {
+
           console.error(
-            "Scheduled refresh failed:",
+            "SNIPPET24 scheduled refresh failed:",
             error
           );
-        })
+
+        }
+      )
     );
 
   }
@@ -227,32 +280,159 @@ export default {
 
 
 // ============================================================
+// HEALTH
+// ============================================================
+
+async function handleHealth(
+  env
+) {
+
+  let database =
+    false;
+
+  let storiesCount =
+    0;
+
+  let approvedSources =
+    0;
+
+  try {
+
+    const result =
+      await env.DB
+        .prepare(`
+          SELECT COUNT(*) AS count
+          FROM stories
+        `)
+        .first();
+
+    storiesCount =
+      Number(
+        result?.count || 0
+      );
+
+    database =
+      true;
+
+  } catch (error) {
+
+    console.error(
+      "Health database check failed:",
+      error
+    );
+
+  }
+
+
+  try {
+
+    const result =
+      await env.DB
+        .prepare(`
+          SELECT COUNT(*) AS count
+          FROM sources
+          WHERE enabled = 1
+            AND rights_status = 'approved'
+        `)
+        .first();
+
+    approvedSources =
+      Number(
+        result?.count || 0
+      );
+
+  } catch (error) {
+
+    console.error(
+      "Health source check failed:",
+      error
+    );
+
+  }
+
+
+  return jsonResponse({
+
+    ok:
+      database,
+
+    service:
+      "SNIPPET24 Live API",
+
+    version:
+      "2.0",
+
+    database:
+      database
+        ? "connected"
+        : "error",
+
+    stories:
+      storiesCount,
+
+    approved_sources:
+      approvedSources,
+
+    configured_sources:
+      SOURCES.length,
+
+    gemini:
+      env.GEMINI_API_KEY
+        ? "configured"
+        : "missing",
+
+    time:
+      new Date().toISOString()
+
+  });
+
+}
+
+
+// ============================================================
 // STORIES API
 // ============================================================
 
-async function handleStories(request, env) {
+async function handleStories(
+  request,
+  env
+) {
 
-  const url = new URL(request.url);
+  const url =
+    new URL(request.url);
+
 
   const category =
     cleanText(
-      url.searchParams.get("category")
+      url.searchParams.get(
+        "category"
+      )
     );
+
 
   const location =
     cleanText(
-      url.searchParams.get("location")
+      url.searchParams.get(
+        "location"
+      )
     );
+
 
   const language =
     cleanText(
-      url.searchParams.get("language")
+      url.searchParams.get(
+        "language"
+      )
     ) || "en";
+
 
   let limit =
     Number(
-      url.searchParams.get("limit") || 50
+      url.searchParams.get(
+        "limit"
+      ) || 50
     );
+
 
   if (
     !Number.isFinite(limit) ||
@@ -262,6 +442,7 @@ async function handleStories(request, env) {
     limit = 50;
 
   }
+
 
   limit =
     Math.min(
@@ -297,14 +478,18 @@ async function handleStories(request, env) {
       created_at
     FROM stories
     WHERE rights_status = 'approved'
-      AND story_status IN ('published', 'developing')
+      AND story_status IN (
+        'published',
+        'developing'
+      )
   `;
+
 
   const bindings = [];
 
 
   // ----------------------------------------------------------
-  // CATEGORY FILTER
+  // CATEGORY
   // ----------------------------------------------------------
 
   if (
@@ -316,21 +501,26 @@ async function handleStories(request, env) {
       AND category = ?
     `;
 
-    bindings.push(category);
+    bindings.push(
+      category
+    );
 
   }
 
 
   // ----------------------------------------------------------
-  // LOCATION FILTER
+  // LOCATION
   // ----------------------------------------------------------
 
   if (location) {
 
     sql += `
       AND (
-        LOWER(location) LIKE LOWER(?)
-        OR LOWER(country) LIKE LOWER(?)
+        LOWER(location)
+          LIKE LOWER(?)
+        OR
+        LOWER(country)
+          LIKE LOWER(?)
       )
     `;
 
@@ -343,7 +533,7 @@ async function handleStories(request, env) {
 
 
   // ----------------------------------------------------------
-  // SORT
+  // NEWEST FIRST
   // ----------------------------------------------------------
 
   sql += `
@@ -352,7 +542,10 @@ async function handleStories(request, env) {
     LIMIT ?
   `;
 
-  bindings.push(limit);
+
+  bindings.push(
+    limit
+  );
 
 
   const result =
@@ -363,21 +556,23 @@ async function handleStories(request, env) {
 
 
   const stories =
-    (result.results || [])
-      .map(
-        story =>
-          normalizeStory(
-            story,
-            language
-          )
-      );
+    (
+      result.results || []
+    ).map(
+      story =>
+        normalizeStory(
+          story,
+          language
+        )
+    );
 
 
   return jsonResponse({
 
     ok: true,
 
-    count: stories.length,
+    count:
+      stories.length,
 
     updated_at:
       new Date().toISOString(),
@@ -407,7 +602,9 @@ async function handleSingleStory(
           AND rights_status = 'approved'
         LIMIT 1
       `)
-      .bind(storyId)
+      .bind(
+        storyId
+      )
       .first();
 
 
@@ -425,19 +622,22 @@ async function handleSingleStory(
 
 
   return jsonResponse({
+
     ok: true,
+
     story:
       normalizeStory(
         result,
         "en"
       )
+
   });
 
 }
 
 
 // ============================================================
-// NORMALIZE STORY FOR FRONTEND
+// NORMALIZE STORY
 // ============================================================
 
 function normalizeStory(
@@ -446,6 +646,7 @@ function normalizeStory(
 ) {
 
   let translations = {};
+
 
   try {
 
@@ -473,9 +674,11 @@ function normalizeStory(
     translated?.title ||
     story.title;
 
+
   const finalSummary =
     translated?.summary ||
     story.summary;
+
 
   const finalImpact =
     translated?.impact ||
@@ -484,7 +687,8 @@ function normalizeStory(
 
   return {
 
-    id: story.id,
+    id:
+      story.id,
 
     event_key:
       story.event_key,
@@ -540,7 +744,8 @@ function normalizeStory(
     language:
       requestedLanguage,
 
-    translations,
+    translations:
+      translations,
 
     image_url:
       story.image_url || null,
@@ -549,7 +754,9 @@ function normalizeStory(
       story.story_status,
 
     correction_version:
-      story.correction_version || 0
+      Number(
+        story.correction_version || 0
+      )
 
   };
 
@@ -560,15 +767,30 @@ function normalizeStory(
 // NEWS REFRESH
 // ============================================================
 
-async function refreshNews(env) {
+async function refreshNews(
+  env
+) {
 
   const startedAt =
     new Date().toISOString();
 
 
+  // ----------------------------------------------------------
+  // SYNC CONFIGURED SOURCES INTO D1
+  // ----------------------------------------------------------
+
+  await syncSourcesToDatabase(
+    env
+  );
+
+
   const approvedSources =
     getApprovedSources();
 
+
+  // ----------------------------------------------------------
+  // NO APPROVED SOURCES
+  // ----------------------------------------------------------
 
   if (
     approvedSources.length === 0
@@ -578,11 +800,20 @@ async function refreshNews(env) {
       "SNIPPET24: No approved sources enabled."
     );
 
+
     await updateSystemState(
       env,
       "backend_status",
       "waiting_for_approved_sources"
     );
+
+
+    await updateSystemState(
+      env,
+      "last_refresh_at",
+      startedAt
+    );
+
 
     return {
 
@@ -591,21 +822,34 @@ async function refreshNews(env) {
       status:
         "waiting_for_approved_sources",
 
-      sources_checked: 0,
+      sources_checked:
+        0,
 
-      stories_created: 0,
+      items_found:
+        0,
 
-      time: startedAt
+      stories_created:
+        0,
+
+      time:
+        startedAt
 
     };
 
   }
 
 
-  let totalFound = 0;
-  let totalNew = 0;
-  let totalCreated = 0;
-  let totalSkipped = 0;
+  let totalFound =
+    0;
+
+  let totalNew =
+    0;
+
+  let totalCreated =
+    0;
+
+  let totalSkipped =
+    0;
 
 
   await updateSystemState(
@@ -616,7 +860,7 @@ async function refreshNews(env) {
 
 
   // ----------------------------------------------------------
-  // PROCESS EACH APPROVED SOURCE
+  // PROCESS SOURCES
   // ----------------------------------------------------------
 
   for (
@@ -646,8 +890,7 @@ async function refreshNews(env) {
 
       const items =
         parseFeed(
-          feed,
-          source
+          feed
         );
 
 
@@ -655,10 +898,19 @@ async function refreshNews(env) {
         items.length;
 
 
-      let sourceNew = 0;
-      let sourceCreated = 0;
-      let sourceSkipped = 0;
+      let sourceNew =
+        0;
 
+      let sourceCreated =
+        0;
+
+      let sourceSkipped =
+        0;
+
+
+      // ------------------------------------------------------
+      // PROCESS FEED ITEMS
+      // ------------------------------------------------------
 
       for (
         const item
@@ -680,24 +932,33 @@ async function refreshNews(env) {
 
 
           // --------------------------------------------------
-          // SOURCE ITEM DUPLICATE CHECK
+          // SOURCE ITEM DUPLICATE
           // --------------------------------------------------
 
           const existingItem =
             await env.DB
               .prepare(`
-                SELECT id
+                SELECT
+                  id,
+                  processed,
+                  rejected,
+                  story_id
                 FROM source_items
                 WHERE item_key = ?
                 LIMIT 1
               `)
-              .bind(itemKey)
+              .bind(
+                itemKey
+              )
               .first();
 
 
-          if (existingItem) {
+          if (
+            existingItem
+          ) {
 
             sourceSkipped++;
+            totalSkipped++;
 
             continue;
 
@@ -705,13 +966,13 @@ async function refreshNews(env) {
 
 
           // --------------------------------------------------
-          // EVENT DUPLICATE CHECK
+          // EVENT KEY
           // --------------------------------------------------
 
           const eventKey =
             await makeHash(
               normalizeKey(
-                source.name +
+                source.id +
                 "|" +
                 item.title +
                 "|" +
@@ -720,19 +981,28 @@ async function refreshNews(env) {
             );
 
 
+          // --------------------------------------------------
+          // EXISTING STORY
+          // --------------------------------------------------
+
           const existingStory =
             await env.DB
               .prepare(`
-                SELECT id
+                SELECT
+                  id
                 FROM stories
                 WHERE event_key = ?
                 LIMIT 1
               `)
-              .bind(eventKey)
+              .bind(
+                eventKey
+              )
               .first();
 
 
-          // Save source item even if an existing event exists.
+          // --------------------------------------------------
+          // CREATE SOURCE ITEM
+          // --------------------------------------------------
 
           const sourceItemId =
             crypto.randomUUID();
@@ -750,21 +1020,41 @@ async function refreshNews(env) {
                 description,
                 processed,
                 rejected,
+                rejection_reason,
                 story_id
               )
-              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+              VALUES (
+                ?, ?, ?, ?, ?, ?,
+                ?, ?, ?, ?, ?
+              )
             `)
             .bind(
+
               sourceItemId,
+
               source.id,
+
               itemKey,
+
               item.title,
+
               item.link,
+
               item.published_at,
+
               item.description || "",
-              existingStory ? 1 : 0,
-              existingStory ? 0 : 0,
-              existingStory?.id || null
+
+              existingStory
+                ? 1
+                : 0,
+
+              0,
+
+              null,
+
+              existingStory?.id ||
+                null
+
             )
             .run();
 
@@ -773,9 +1063,16 @@ async function refreshNews(env) {
           totalNew++;
 
 
-          if (existingStory) {
+          // --------------------------------------------------
+          // EXISTING EVENT
+          // --------------------------------------------------
+
+          if (
+            existingStory
+          ) {
 
             sourceSkipped++;
+            totalSkipped++;
 
             continue;
 
@@ -803,6 +1100,7 @@ async function refreshNews(env) {
             );
 
             sourceSkipped++;
+            totalSkipped++;
 
             continue;
 
@@ -810,18 +1108,18 @@ async function refreshNews(env) {
 
 
           // --------------------------------------------------
-          // VALIDATE AI OUTPUT
+          // VALIDATE AI
           // --------------------------------------------------
 
           const validated =
             validateAIStory(
-              aiStory,
-              source,
-              item
+              aiStory
             );
 
 
-          if (!validated.ok) {
+          if (
+            !validated.ok
+          ) {
 
             await markSourceItemRejected(
               env,
@@ -830,6 +1128,7 @@ async function refreshNews(env) {
             );
 
             sourceSkipped++;
+            totalSkipped++;
 
             continue;
 
@@ -837,11 +1136,20 @@ async function refreshNews(env) {
 
 
           // --------------------------------------------------
-          // SAVE STORY
+          // CREATE STORY
           // --------------------------------------------------
 
           const storyId =
             crypto.randomUUID();
+
+
+          const publishedAt =
+            item.published_at ||
+            new Date().toISOString();
+
+
+          const updatedAt =
+            new Date().toISOString();
 
 
           await env.DB
@@ -878,38 +1186,61 @@ async function refreshNews(env) {
               )
             `)
             .bind(
+
               storyId,
+
               eventKey,
+
               validated.story.category,
+
               validated.story.subcategory,
+
               validated.story.location,
+
               validated.story.country,
+
               validated.story.title,
+
               validated.story.summary,
+
               validated.story.impact,
+
               source.publisher,
+
               item.link,
+
               source.source_type,
-              item.published_at ||
-                new Date().toISOString(),
-              new Date().toISOString(),
-              "verified",
-              "Generated from an approved source feed and reviewed by the SNIPPET24 editorial AI layer.",
+
+              publishedAt,
+
+              updatedAt,
+
+              "source_confirmed",
+
+              "Processed from an approved source feed by the SNIPPET24 editorial AI layer.",
+
               "approved",
+
               "en",
+
               JSON.stringify(
                 validated.story.translations
               ),
+
               null,
+
               "published",
+
               1,
+
               0
+
             )
             .run();
 
 
           // --------------------------------------------------
-          // LINK SOURCE TO STORY
+          // SOURCE LINK
           // --------------------------------------------------
 
           await env.DB
@@ -923,16 +1254,26 @@ async function refreshNews(env) {
                 published_at,
                 verification_status
               )
-              VALUES (?, ?, ?, ?, ?, ?, ?)
+              VALUES (
+                ?, ?, ?, ?, ?, ?, ?
+              )
             `)
             .bind(
+
               crypto.randomUUID(),
+
               storyId,
+
               source.publisher,
+
               item.link,
+
               source.source_type,
-              item.published_at,
-              "verified"
+
+              publishedAt,
+
+              "source_confirmed"
+
             )
             .run();
 
@@ -960,14 +1301,17 @@ async function refreshNews(env) {
           totalCreated++;
 
 
-        } catch (itemError) {
+        } catch (
+          itemError
+        ) {
 
           console.error(
-            `Item processing failed for ${source.id}:`,
+            `SNIPPET24 item failed for ${source.id}:`,
             itemError
           );
 
           sourceSkipped++;
+          totalSkipped++;
 
         }
 
@@ -996,10 +1340,12 @@ async function refreshNews(env) {
       );
 
 
-    } catch (sourceError) {
+    } catch (
+      sourceError
+    ) {
 
       console.error(
-        `Source failed: ${source.id}`,
+        `SNIPPET24 source failed: ${source.id}`,
         sourceError
       );
 
@@ -1044,7 +1390,9 @@ async function refreshNews(env) {
   );
 
 
-  if (totalCreated > 0) {
+  if (
+    totalCreated > 0
+  ) {
 
     await updateSystemState(
       env,
@@ -1066,7 +1414,8 @@ async function refreshNews(env) {
 
     ok: true,
 
-    status: "completed",
+    status:
+      "completed",
 
     sources_checked:
       approvedSources.length,
@@ -1092,10 +1441,96 @@ async function refreshNews(env) {
 
 
 // ============================================================
+// SYNC SOURCE CONFIGURATION INTO D1
+// ============================================================
+
+async function syncSourcesToDatabase(
+  env
+) {
+
+  for (
+    const source
+    of SOURCES
+  ) {
+
+    await env.DB
+      .prepare(`
+        INSERT INTO sources (
+          id,
+          name,
+          feed_url,
+          source_type,
+          rights_status,
+          enabled,
+          verification_level,
+          country,
+          language,
+          last_checked_at,
+          last_success_at,
+          last_error,
+          created_at,
+          updated_at
+        )
+        VALUES (
+          ?, ?, ?, ?, ?, ?, ?, ?, ?,
+          NULL, NULL, NULL,
+          CURRENT_TIMESTAMP,
+          CURRENT_TIMESTAMP
+        )
+        ON CONFLICT(id)
+        DO UPDATE SET
+          name = excluded.name,
+          feed_url = excluded.feed_url,
+          source_type = excluded.source_type,
+          rights_status = excluded.rights_status,
+          enabled = excluded.enabled,
+          verification_level =
+            excluded.verification_level,
+          country = excluded.country,
+          language = excluded.language,
+          updated_at =
+            CURRENT_TIMESTAMP
+      `)
+      .bind(
+
+        source.id,
+
+        source.name,
+
+        source.feed_url,
+
+        source.source_type,
+
+        source.rights_status,
+
+        source.enabled
+          ? 1
+          : 0,
+
+        source.verification_level ||
+          "standard",
+
+        source.country ||
+          null,
+
+        source.language ||
+          "en"
+
+      )
+      .run();
+
+  }
+
+}
+
+
+// ============================================================
 // FETCH RSS / ATOM
 // ============================================================
 
-async function fetchFeed(feedUrl) {
+async function fetchFeed(
+  feedUrl
+) {
 
   if (!feedUrl) {
 
@@ -1112,8 +1547,9 @@ async function fetchFeed(feedUrl) {
 
   const timeout =
     setTimeout(
-      () =>
-        controller.abort(),
+      () => {
+        controller.abort();
+      },
       FETCH_TIMEOUT_MS
     );
 
@@ -1124,23 +1560,29 @@ async function fetchFeed(feedUrl) {
       await fetch(
         feedUrl,
         {
-          method: "GET",
+          method:
+            "GET",
 
           headers: {
+
             "User-Agent":
               USER_AGENT,
 
             "Accept":
               "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+
           },
 
           signal:
             controller.signal
+
         }
       );
 
 
-    if (!response.ok) {
+    if (
+      !response.ok
+    ) {
 
       throw new Error(
         `Feed returned HTTP ${response.status}`
@@ -1153,7 +1595,9 @@ async function fetchFeed(feedUrl) {
 
   } finally {
 
-    clearTimeout(timeout);
+    clearTimeout(
+      timeout
+    );
 
   }
 
@@ -1165,8 +1609,7 @@ async function fetchFeed(feedUrl) {
 // ============================================================
 
 function parseFeed(
-  xml,
-  source
+  xml
 ) {
 
   if (!xml) {
@@ -1180,7 +1623,7 @@ function parseFeed(
 
 
   // ----------------------------------------------------------
-  // RSS <item>
+  // RSS
   // ----------------------------------------------------------
 
   const rssMatches =
@@ -1200,10 +1643,12 @@ function parseFeed(
         "title"
       );
 
+
     const link =
       extractLink(
         block
       );
+
 
     const description =
       extractTag(
@@ -1227,7 +1672,10 @@ function parseFeed(
       );
 
 
-    if (!title || !link) {
+    if (
+      !title ||
+      !link
+    ) {
 
       continue;
 
@@ -1237,10 +1685,14 @@ function parseFeed(
     items.push({
 
       title:
-        cleanText(title),
+        cleanText(
+          title
+        ),
 
       link:
-        cleanUrl(link),
+        cleanUrl(
+          link
+        ),
 
       description:
         cleanText(
@@ -1258,7 +1710,7 @@ function parseFeed(
 
 
   // ----------------------------------------------------------
-  // ATOM <entry>
+  // ATOM
   // ----------------------------------------------------------
 
   const atomMatches =
@@ -1307,7 +1759,10 @@ function parseFeed(
       );
 
 
-    if (!title || !link) {
+    if (
+      !title ||
+      !link
+    ) {
 
       continue;
 
@@ -1317,10 +1772,14 @@ function parseFeed(
     items.push({
 
       title:
-        cleanText(title),
+        cleanText(
+          title
+        ),
 
       link:
-        cleanUrl(link),
+        cleanUrl(
+          link
+        ),
 
       description:
         cleanText(
@@ -1338,7 +1797,7 @@ function parseFeed(
 
 
   // ----------------------------------------------------------
-  // REMOVE DUPLICATES
+  // DEDUPLICATE
   // ----------------------------------------------------------
 
   const unique =
@@ -1357,7 +1816,11 @@ function parseFeed(
       );
 
 
-    if (!unique.has(key)) {
+    if (
+      !unique.has(
+        key
+      )
+    ) {
 
       unique.set(
         key,
@@ -1369,10 +1832,14 @@ function parseFeed(
   }
 
 
-  return Array.from(
-    unique.values()
-  )
-  .slice(0, 30);
+  return Array
+    .from(
+      unique.values()
+    )
+    .slice(
+      0,
+      MAX_FEED_ITEMS
+    );
 
 }
 
@@ -1406,69 +1873,121 @@ async function createAIStory(
 
 
   const prompt = `
+
 You are the editorial intelligence engine for SNIPPET24.
 
-SNIPPET24 is a concise international news-intelligence product.
+SNIPPET24 is a premium international news-intelligence
+product called:
 
-Your task is to transform a source-feed item into an original,
-fact-based SNIPPET24 news brief.
+"Know More. In Less."
 
-SOURCE:
-Publisher: ${source.publisher}
-Country: ${source.country || "Unknown"}
-Language: ${source.language || "en"}
+Transform the supplied source-feed item into a concise,
+original SNIPPET24 news brief.
 
-HEADLINE:
+SOURCE INFORMATION
+
+Publisher:
+${source.publisher}
+
+Country:
+${source.country || "Unknown"}
+
+Language:
+${source.language || "en"}
+
+HEADLINE
+
 ${item.title}
 
-SOURCE DESCRIPTION:
+SOURCE DESCRIPTION
+
 ${item.description || "No description provided."}
 
-SOURCE URL:
+SOURCE URL
+
 ${item.link}
 
-EDITORIAL RULES:
 
-1. Do not copy the source article.
-2. Do not reproduce long source text.
-3. Use only facts supported by the supplied source information.
-4. Do not invent names, numbers, quotes, locations, dates or causes.
-5. Do not speculate about motives.
-6. Do not sensationalize.
-7. Do not provide medical diagnosis.
-8. Do not provide investment advice.
-9. Keep the main summary to 3–4 short sentences.
-10. The impact field must explain "How it affects you" in one concise sentence.
-11. Use neutral international English.
-12. Identify the most appropriate SNIPPET24 category.
-13. If location is unclear, return an empty location.
-14. If country is unclear, return an empty country.
-15. Translations must preserve the same meaning.
-16. Do not add facts merely because they are commonly known.
-17. Do not pretend the AI itself is a source.
+EDITORIAL RULES
 
-ALLOWED CATEGORIES:
+1. Use ONLY information supported by the supplied source data.
+
+2. Do not invent facts.
+
+3. Do not invent names.
+
+4. Do not invent numbers.
+
+5. Do not invent dates.
+
+6. Do not invent quotes.
+
+7. Do not infer motives.
+
+8. Do not sensationalize.
+
+9. Do not reproduce the source article.
+
+10. Do not reproduce long source text.
+
+11. Create an original concise summary.
+
+12. Main summary must contain 3–4 short sentences.
+
+13. Impact must explain "How it affects you" in one concise
+sentence.
+
+14. Do not provide medical diagnosis.
+
+15. Do not provide investment advice.
+
+16. Do not present AI as the original source.
+
+17. If location is unknown, return an empty location.
+
+18. If country is unknown, return an empty country.
+
+19. Category must be one of the allowed categories.
+
+20. Translations must preserve the same meaning.
+
+21. If the source description does not contain enough
+information, remain conservative rather than guessing.
+
+22. Use neutral international English.
+
+23. The story should be suitable for a premium global news
+feed.
+
+
+ALLOWED CATEGORIES
 
 ${CATEGORIES.join(", ")}
 
-SUPPORTED TRANSLATIONS:
+
+SUPPORTED LANGUAGES
 
 ${LANGUAGES
-  .filter(language => language.code !== "en")
-  .map(language =>
-    `${language.code} = ${language.name}`
+  .filter(
+    language =>
+      language.code !== "en"
+  )
+  .map(
+    language =>
+      `${language.code} = ${language.name}`
   )
   .join(", ")}
 
-Return ONLY valid JSON.
 
-Required structure:
+RETURN ONLY VALID JSON.
+
+REQUIRED JSON STRUCTURE
 
 {
-  "title": "short factual headline",
-  "summary": "3–4 short factual sentences",
-  "impact": "How it affects you: ...",
-  "category": "one allowed category",
+  "title": "",
+  "summary": "",
+  "impact": "",
+  "category": "",
   "subcategory": "",
   "location": "",
   "country": "",
@@ -1520,62 +2039,86 @@ Required structure:
     }
   }
 }
+
 `;
 
 
   const endpoint =
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(
+      model
+    )}:generateContent`;
 
 
   const response =
     await fetch(
       endpoint,
       {
-        method: "POST",
+
+        method:
+          "POST",
 
         headers: {
+
           "Content-Type":
             "application/json",
 
           "x-goog-api-key":
             apiKey
+
         },
 
-        body: JSON.stringify({
+        body:
+          JSON.stringify({
 
-          contents: [
-            {
-              role: "user",
+            contents: [
 
-              parts: [
-                {
-                  text: prompt
-                }
-              ]
+              {
+
+                role:
+                  "user",
+
+                parts: [
+
+                  {
+                    text:
+                      prompt
+                  }
+
+                ]
+
+              }
+
+            ],
+
+            generationConfig: {
+
+              temperature:
+                0.2,
+
+              responseMimeType:
+                "application/json"
+
             }
-          ],
 
-          generationConfig: {
+          })
 
-            temperature: 0.2,
-
-            responseMimeType:
-              "application/json"
-
-          }
-
-        })
       }
     );
 
 
-  if (!response.ok) {
+  if (
+    !response.ok
+  ) {
 
     const errorText =
       await response.text();
 
+
     throw new Error(
-      `Gemini API error ${response.status}: ${errorText.slice(0, 500)}`
+      `Gemini API error ${response.status}: ${errorText.slice(
+        0,
+        500
+      )}`
     );
 
   }
@@ -1608,7 +2151,7 @@ Required structure:
 
 
 // ============================================================
-// GEMINI RESPONSE EXTRACTION
+// GEMINI RESPONSE
 // ============================================================
 
 function extractGeminiText(
@@ -1620,12 +2163,14 @@ function extractGeminiText(
     return (
       data
         ?.candidates?.[0]
-        ?.content
-        ?.parts?.map(
-          part => part.text || ""
+        ?.content?.parts
+        ?.map(
+          part =>
+            part.text || ""
         )
         .join("")
-        .trim() || ""
+        .trim() ||
+      ""
     );
 
   } catch {
@@ -1642,16 +2187,21 @@ function extractGeminiText(
 // ============================================================
 
 function validateAIStory(
-  aiStory,
-  source,
-  item
+  aiStory
 ) {
 
-  if (!aiStory) {
+  if (
+    !aiStory ||
+    typeof aiStory !== "object"
+  ) {
 
     return {
+
       ok: false,
-      error: "Empty AI story"
+
+      error:
+        "Empty or invalid AI story"
+
     };
 
   }
@@ -1669,7 +2219,7 @@ function validateAIStory(
     );
 
 
-  const impact =
+  const rawImpact =
     cleanText(
       aiStory.impact
     );
@@ -1682,10 +2232,13 @@ function validateAIStory(
 
 
   if (
-    !isValidCategory(category)
+    !isValidCategory(
+      category
+    )
   ) {
 
-    category = "World";
+    category =
+      "World";
 
   }
 
@@ -1693,8 +2246,12 @@ function validateAIStory(
   if (!title) {
 
     return {
+
       ok: false,
-      error: "AI story has no title"
+
+      error:
+        "AI story has no title"
+
     };
 
   }
@@ -1703,18 +2260,26 @@ function validateAIStory(
   if (!summary) {
 
     return {
+
       ok: false,
-      error: "AI story has no summary"
+
+      error:
+        "AI story has no summary"
+
     };
 
   }
 
 
-  if (!impact) {
+  if (!rawImpact) {
 
     return {
+
       ok: false,
-      error: "AI story has no impact"
+
+      error:
+        "AI story has no impact"
+
     };
 
   }
@@ -1725,8 +2290,12 @@ function validateAIStory(
   ) {
 
     return {
+
       ok: false,
-      error: "Title too long"
+
+      error:
+        "Title too long"
+
     };
 
   }
@@ -1737,23 +2306,39 @@ function validateAIStory(
   ) {
 
     return {
+
       ok: false,
-      error: "Summary too long"
+
+      error:
+        "Summary too long"
+
     };
 
   }
 
 
   if (
-    impact.length > 400
+    rawImpact.length > 400
   ) {
 
     return {
+
       ok: false,
-      error: "Impact too long"
+
+      error:
+        "Impact too long"
+
     };
 
   }
+
+
+  const impact =
+    rawImpact.startsWith(
+      "How it affects you"
+    )
+      ? rawImpact
+      : `How it affects you: ${rawImpact}`;
 
 
   return {
@@ -1766,12 +2351,7 @@ function validateAIStory(
 
       summary,
 
-      impact:
-        impact.startsWith(
-          "How it affects you"
-        )
-          ? impact
-          : `How it affects you: ${impact}`,
+      impact,
 
       category,
 
@@ -1815,7 +2395,8 @@ function validateTranslations(
 
   if (
     !translations ||
-    typeof translations !== "object"
+    typeof translations !==
+      "object"
   ) {
 
     return result;
@@ -1845,7 +2426,8 @@ function validateTranslations(
 
     if (
       !value ||
-      typeof value !== "object"
+      typeof value !==
+        "object"
     ) {
 
       continue;
@@ -1858,10 +2440,12 @@ function validateTranslations(
         value.title
       );
 
+
     const summary =
       cleanText(
         value.summary
       );
+
 
     const impact =
       cleanText(
@@ -1904,6 +2488,11 @@ function validateTranslations(
 async function handleSourceStatus(
   env
 ) {
+
+  await syncSourcesToDatabase(
+    env
+  );
+
 
   const result =
     await env.DB
@@ -1948,7 +2537,7 @@ async function handleSourceStatus(
 
 
 // ============================================================
-// DATABASE SOURCE STATUS
+// SOURCE SUCCESS
 // ============================================================
 
 async function updateSourceSuccess(
@@ -1981,6 +2570,10 @@ async function updateSourceSuccess(
 }
 
 
+// ============================================================
+// SOURCE ERROR
+// ============================================================
+
 async function updateSourceError(
   env,
   sourceId,
@@ -2001,10 +2594,20 @@ async function updateSourceError(
       WHERE id = ?
     `)
     .bind(
+
       now,
-      String(error).slice(0, 2000),
+
+      String(
+        error
+      ).slice(
+        0,
+        2000
+      ),
+
       now,
+
       sourceId
+
     )
     .run();
 
@@ -2030,18 +2633,29 @@ async function createIngestionLog(
         started_at,
         status
       )
-      VALUES (?, ?, ?, ?)
+      VALUES (
+        ?, ?, ?, ?
+      )
     `)
     .bind(
+
       id,
+
       sourceId,
+
       startedAt,
+
       "running"
+
     )
     .run();
 
 }
 
+
+// ============================================================
+// FINISH INGESTION LOG
+// ============================================================
 
 async function finishIngestionLog(
   env,
@@ -2068,14 +2682,23 @@ async function finishIngestionLog(
       WHERE id = ?
     `)
     .bind(
+
       new Date().toISOString(),
+
       status,
+
       itemsFound,
+
       itemsNew,
+
       storiesCreated,
+
       storiesSkipped,
+
       errorMessage,
+
       id
+
     )
     .run();
 
@@ -2083,7 +2706,7 @@ async function finishIngestionLog(
 
 
 // ============================================================
-// SOURCE ITEM REJECTION
+// REJECT SOURCE ITEM
 // ============================================================
 
 async function markSourceItemRejected(
@@ -2102,8 +2725,16 @@ async function markSourceItemRejected(
       WHERE item_key = ?
     `)
     .bind(
-      String(reason).slice(0, 1000),
+
+      String(
+        reason
+      ).slice(
+        0,
+        1000
+      ),
+
       itemKey
+
     )
     .run();
 
@@ -2127,16 +2758,24 @@ async function updateSystemState(
         value,
         updated_at
       )
-      VALUES (?, ?, ?)
+      VALUES (
+        ?, ?, ?
+      )
       ON CONFLICT(key)
       DO UPDATE SET
         value = excluded.value,
         updated_at = excluded.updated_at
     `)
     .bind(
+
       key,
-      String(value),
+
+      String(
+        value
+      ),
+
       new Date().toISOString()
+
     )
     .run();
 
@@ -2153,7 +2792,9 @@ function extractTag(
 ) {
 
   const escaped =
-    escapeRegExp(tag);
+    escapeRegExp(
+      tag
+    );
 
 
   const regex =
@@ -2164,15 +2805,23 @@ function extractTag(
 
 
   const match =
-    xml.match(regex);
+    xml.match(
+      regex
+    );
 
 
   return match
-    ? decodeXML(match[1])
+    ? decodeXML(
+        match[1]
+      )
     : "";
 
 }
 
+
+// ============================================================
+// RSS LINK
+// ============================================================
 
 function extractLink(
   block
@@ -2185,7 +2834,9 @@ function extractLink(
     );
 
 
-  if (direct) {
+  if (
+    direct
+  ) {
 
     return direct;
 
@@ -2204,6 +2855,10 @@ function extractLink(
 
 }
 
+
+// ============================================================
+// ATOM LINK
+// ============================================================
 
 function extractAtomLink(
   block
@@ -2234,7 +2889,10 @@ function extractAtomLink(
 
     if (
       href &&
-      (!rel || rel === "alternate")
+      (
+        !rel ||
+        rel === "alternate"
+      )
     ) {
 
       return href;
@@ -2268,7 +2926,9 @@ function cleanText(
 
 
   return decodeXML(
-    String(value)
+    String(
+      value
+    )
   )
     .replace(
       /<script[\s\S]*?<\/script>/gi,
@@ -2291,11 +2951,17 @@ function cleanText(
 }
 
 
+// ============================================================
+// XML DECODE
+// ============================================================
+
 function decodeXML(
   value
 ) {
 
-  return String(value || "")
+  return String(
+    value || ""
+  )
     .replace(
       /&amp;/gi,
       "&"
@@ -2322,21 +2988,36 @@ function decodeXML(
     )
     .replace(
       /&#(\d+);/g,
-      (_, code) =>
+      (
+        _,
+        code
+      ) =>
         String.fromCharCode(
-          Number(code)
+          Number(
+            code
+          )
         )
     )
     .replace(
       /&#x([0-9a-f]+);/gi,
-      (_, code) =>
+      (
+        _,
+        code
+      ) =>
         String.fromCharCode(
-          parseInt(code, 16)
+          parseInt(
+            code,
+            16
+          )
         )
     );
 
 }
 
+
+// ============================================================
+// URL
+// ============================================================
 
 function cleanUrl(
   value
@@ -2348,6 +3029,10 @@ function cleanUrl(
 
 }
 
+
+// ============================================================
+// NORMALIZE KEY
+// ============================================================
 
 function normalizeKey(
   value
@@ -2366,6 +3051,10 @@ function normalizeKey(
 }
 
 
+// ============================================================
+// NORMALIZE DATE
+// ============================================================
+
 function normalizeDate(
   value
 ) {
@@ -2379,7 +3068,9 @@ function normalizeDate(
 
 
   const date =
-    new Date(value);
+    new Date(
+      value
+    );
 
 
   if (
@@ -2399,15 +3090,20 @@ function normalizeDate(
 }
 
 
+// ============================================================
+// REGEX ESCAPE
+// ============================================================
+
 function escapeRegExp(
   value
 ) {
 
-  return String(value)
-    .replace(
-      /[.*+?^${}()|[\]\\]/g,
-      "\\$&"
-    );
+  return String(
+    value
+  ).replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&"
+  );
 
 }
 
@@ -2421,7 +3117,9 @@ function parseJSON(
 ) {
 
   const cleaned =
-    String(text || "")
+    String(
+      text || ""
+    )
       .trim()
       .replace(
         /^```json\s*/i,
@@ -2447,10 +3145,15 @@ function parseJSON(
   } catch {
 
     const first =
-      cleaned.indexOf("{");
+      cleaned.indexOf(
+        "{"
+      );
+
 
     const last =
-      cleaned.lastIndexOf("}");
+      cleaned.lastIndexOf(
+        "}"
+      );
 
 
     if (
@@ -2478,7 +3181,7 @@ function parseJSON(
 
 
 // ============================================================
-// SHA-256 HASH
+// SHA-256
 // ============================================================
 
 async function makeHash(
@@ -2501,13 +3204,18 @@ async function makeHash(
 
   return Array
     .from(
-      new Uint8Array(hash)
+      new Uint8Array(
+        hash
+      )
     )
     .map(
       byte =>
         byte
           .toString(16)
-          .padStart(2, "0")
+          .padStart(
+            2,
+            "0"
+          )
     )
     .join("");
 
@@ -2515,7 +3223,7 @@ async function makeHash(
 
 
 // ============================================================
-// AUTHENTICATION
+// ADMIN AUTHENTICATION
 // ============================================================
 
 function isAuthorized(
@@ -2527,7 +3235,9 @@ function isAuthorized(
     env.ADMIN_TOKEN;
 
 
-  if (!configuredToken) {
+  if (
+    !configuredToken
+  ) {
 
     return false;
 
@@ -2540,24 +3250,25 @@ function isAuthorized(
     );
 
 
-  if (!authorization) {
+  if (
+    !authorization
+  ) {
 
     return false;
 
   }
 
 
-  const expected =
-    `Bearer ${configuredToken}`;
-
-
-  return authorization === expected;
+  return (
+    authorization ===
+    `Bearer ${configuredToken}`
+  );
 
 }
 
 
 // ============================================================
-// RESPONSE
+// JSON RESPONSE
 // ============================================================
 
 function jsonResponse(
@@ -2566,15 +3277,19 @@ function jsonResponse(
 ) {
 
   return new Response(
+
     JSON.stringify(
       data,
       null,
       2
     ),
+
     {
+
       status,
 
       headers: {
+
         "Content-Type":
           "application/json; charset=utf-8",
 
@@ -2586,8 +3301,11 @@ function jsonResponse(
 
         "Access-Control-Allow-Headers":
           "Content-Type, Authorization"
+
       }
+
     }
+
   );
 
 }
